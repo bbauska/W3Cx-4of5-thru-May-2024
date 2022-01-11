@@ -1,16 +1,17 @@
-# W3Cx-4of5-HTML5.2x
+# W3Cx-4of5-HTML5.2x - HTML5 Apps and Games
 
-HTML5 Apps and Games
+W3Cx: HTML5 Apps and Games
 
-#### \### Table of Contents
+#### \### Course Outline
 
 ## \# Module 1: Advanced HTML5 multimedia
 
-1.  [Introduction](https://learning.edx.org/course/course-v1:W3Cx+HTML5.2x+2T2020a/block-v1:W3Cx+HTML5.2x+2T2020a+type@sequential+block@38011a0819f14b949db9713d17fe564f)
-2.  [The Timed Text Track API](https://learning.edx.org/course/course-v1:W3Cx+HTML5.2x+2T2020a/block-v1:W3Cx+HTML5.2x+2T2020a+type@sequential+block@ec8e23b4f7824399af519baa2319e2a6)
-3.  [Advanced features for audio and video players](https://learning.edx.org/course/course-v1:W3Cx+HTML5.2x+2T2020a/block-v1:W3Cx+HTML5.2x+2T2020a+type@sequential+block@a01770f16a0946999ddcfb9bb3929b6e)
-4.  [Creating tracks on the fly, syncing HTML content with a video](https://learning.edx.org/course/course-v1:W3Cx+HTML5.2x+2T2020a/block-v1:W3Cx+HTML5.2x+2T2020a+type@sequential+block@b48b0d1504864633b862ef7306f4258b)
-5.  [The Web Audio API](https://learning.edx.org/course/course-v1:W3Cx+HTML5.2x+2T2020a/block-v1:W3Cx+HTML5.2x+2T2020a+type@sequential+block@f162bb287eca4f04bb22d60b2c5456ac)
+> #### [1.1 Introduction](https://learning.edx.org/course/course-v1:W3Cx+HTML5.2x+2T2020a/block-v1:W3Cx+HTML5.2x+2T2020a+type@sequential+block@38011a0819f14b949db9713d17fe564f)
+
+1.  [The Timed Text Track API](https://learning.edx.org/course/course-v1:W3Cx+HTML5.2x+2T2020a/block-v1:W3Cx+HTML5.2x+2T2020a+type@sequential+block@ec8e23b4f7824399af519baa2319e2a6)
+2.  [Advanced features for audio and video players](https://learning.edx.org/course/course-v1:W3Cx+HTML5.2x+2T2020a/block-v1:W3Cx+HTML5.2x+2T2020a+type@sequential+block@a01770f16a0946999ddcfb9bb3929b6e)
+3.  [Creating tracks on the fly, syncing HTML content with a video](https://learning.edx.org/course/course-v1:W3Cx+HTML5.2x+2T2020a/block-v1:W3Cx+HTML5.2x+2T2020a+type@sequential+block@b48b0d1504864633b862ef7306f4258b)
+4.  [The Web Audio API](https://learning.edx.org/course/course-v1:W3Cx+HTML5.2x+2T2020a/block-v1:W3Cx+HTML5.2x+2T2020a+type@sequential+block@f162bb287eca4f04bb22d60b2c5456ac)
 
 ## \# Module 2: Game programming with HTML5
 
