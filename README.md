@@ -2780,17 +2780,11 @@ Example of enter and exit event listeners on a track\'s cues
 14.     // do something
 
 15.   };
-
 16. 
-
 17.   cue.onexit = function(){
-
 18.     console.log(\'exit cue id=\' + cue.id);
-
 19.      // do something else
-
 20.   };
-
 21. } // end of addCueListeners\...
 
 Showing real examples of event listeners
@@ -2836,64 +2830,38 @@ shows how to use enter and exit events on
 cues](https://jsbin.com/xawajoh/1/edit?html,css,js,output):
 
 ![Example that displays message in enter and exit cue listeners of tjhe
-selected track](./images/image029.jpeg){width="4.0in"
-height="4.406656824146982in"}
+selected track](./images/image029.jpeg){width="50%"}
 
 ### Source code extract:
 
 1.  function readContent(track) {
-
 2.     console.log(\"adding enter and exit listeners to all cues of this
     > track\");
-
 3.  
-
 4.     trackStatusesDiv.innerHTML = \"\";
-
 5.  
-
 6.     // get the list of cues for that track
-
 7.     var cues = track.cues;
-
 8.     // iterate on them
-
 9.     for(var i=0; i \< cues.length; i++) {
-
 10.       // current cue
-
 11.       var cue = cues\[i\];   
-
 12.      ** addCueListeners(cue);**
-
 13.  }
-
 14. 
-
 15. video.play();
-
 16. }
-
 17.  
-
 18. function addCueListeners(cue) {
-
 19.    cue.onenter = function(){
-
 20.       trackStatusesDiv.innerHTML += \'entered cue
     > id=\' + this.id + \" \"
-
 21.                                  + this.text + \"\<br\>\";
-
 22.    };
-
 23.    cue.onexit = function(){
-
 24.       trackStatusesDiv.innerHTML += \'exited cue
     > id=\' + this.id + \"\<br\>\";
-
 25.    };
-
 26. } // end of addCueListeners\...
 
 ## 1.3 Advanced Features for \<audio\> and \<video\> Players
