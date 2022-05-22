@@ -26172,77 +26172,46 @@ alt="orientation api 1" /><img src="./media/image254.png" style="width:4in;heigh
 alt="orientation api 2" />
 
 Typical use / code from the above example:
-
+```
 1.  ...
-
-2.  \<h2\>Device Orientation with HTML5\</h2\>
-
+2.  <h2>Device Orientation with HTML5</h2>
 3.  You need to be on a mobile device or use a laptop with
     accelerometer/orientation
-
 4.  device.
-
-5.  \<p\>
-
-6.  \<div id="LR"\>\</div\>
-
-7.  \<div id="FB"\>\</div\>
-
-8.  \<div id="DIR"\>\</div\>
-
-9.  \<script type="text/javascript"\>
-
+5.  <p>
+6.  <div id="LR"></div>
+7.  <div id="FB"></div>
+8.  <div id="DIR"></div>
+9.  <script type="text/javascript">
 10.    if (window.DeviceOrientationEvent) {
-
 11.       console.log("DeviceOrientation is supported");
-
 12.       **window.addEventListener('deviceorientation', function(eventData) {**
-
 13.          // gamme is for left/right inclination
-
 14.          var LR =** eventData.gamma;**
-
 15.          // beta is for front/back inclination
-
 16.          var FB =** eventData.beta;**
-
 17.          // alpha is for orientation
-
 18.          var DIR =** eventData.alpha;**
-
 19.          // display values on screen
-
 20.          deviceOrientationHandler(LR, FB, DIR);
-
 21.       }, false);
-
 22.    } else {
-
 23.       alert("Device orientation not supported on your device or
     browser. Sorry.");
-
 24.    }
-
 25. 
-
 26. function deviceOrientationHandler(LR, FB, DIR) {
-
 27.    document.querySelector("#LR").innerHTML = "gamma :
     " + Math.round(LR);
-
 28.    document.querySelector("#FB").innerHTML = "beta :
     " + Math.round(FB);
-
 29.    document.querySelector("#DIR").innerHTML = "alpha :
     " + Math.round(DIR);
-
 30. }
-
-31. \</script\>
-
+31. </script>
 32.  ...
-
-### Another example that shows how to orient the HTML5 logo using the orientation API + CSS3 3D rotations
+```
+<h4>Another example that shows how to orient the HTML5 logo using the orientation API + CSS3 3D rotations</h4>
 
 This is just a variation of the previous example, [try it at
 JsBin](https://jsbin.com/manobezoji/edit?html,js,output)
@@ -26262,96 +26231,57 @@ alt="logo 3" />
 This example is also
 on [video](https://www.youtube.com/watch?v=OrNLhOAGSdE).
 
-### Code from the example:
-
+<h4>Code from the example:</h4>
+```
 1.  ...
-
 2.  \<h2\>Device Orientation with HTML5\</h2\>
-
 3.  You need to be on a mobile device or use a laptop with
     accelerometer/orientation
-
 4.  device.
-
 5.  \<p\>
-
 6.  \<div id="LR"\>\</div\>
-
 7.  \<div id="FB"\>\</div\>
-
 8.  \<div id="DIR"\>\</div\>
-
 9.  \<img src="https://www.html5
-
 10. rocks.com/en/tutorials/device/orientation/html5_logo.png" id="imgLogo"
-
 11. class="logo"\>
-
 12. \<script type="text/javascript"\>
-
 13.    if (window.DeviceOrientationEvent) {
-
 14.       console.log("DeviceOrientation is supported");
-
 15.      
     window.addEventListener('deviceorientation', function(eventData) {
-
 16.           var LR = eventData.gamma;
-
 17.           var FB = eventData.beta;
-
 18.           var DIR = eventData.alpha;
-
 19.           deviceOrientationHandler(LR, FB, DIR);
-
 20.       }, false);
-
 21.    } else {
-
 22.       alert("Not supported on your device or browser. Sorry.");
-
 23.    }
-
 24. 
-
 25.    function deviceOrientationHandler(LR, FB, DIR) {
-
 26.       // USE CSS3 rotations for rotating the HTML5 logo
-
 27.       //for webkit browser
-
 28.       document.getElementById("imgLogo").style.webkitTransform =
-
 29.       "rotate(" + LR + "deg) rotate3d(1,0,0,
     " + (FB \* -1) + "deg)";
-
 30. 
-
 31.       //for HTML5 standard-compliance
-
 32.       document.getElementById("imgLogo").style.transform =
-
 33.       "rotate(" + LR + "deg) rotate3d(1,0,0,
     " + (FB \* -1) + "deg)";
-
 34. 
-
 35.       document.querySelector("#LR").innerHTML = "gamma :
     " + Math.round(LR);
-
 36.       document.querySelector("#FB").innerHTML = "beta :
     " + Math.round(FB);
-
 37.       document.querySelector("#DIR").innerHTML = "alpha :
     " + Math.round(DIR);
-
 38. }
-
 39. \</script\>
-
 40.  ...
-
-### A simple level tool using device orientation
+```
+<h4>A simple level tool using device orientation</h4>
 
 This example works in Firefox, Chrome, and IOS Safari. Created by [Derek
 Anderson](https://twitter.com/derekanderson) @[Media
@@ -26365,7 +26295,7 @@ mode](https://jsbin.com/quboge) (using a mobile device).
 <img src="./media/image259.png" style="width:5in;height:2.68109in"
 alt="level tool using device orientation" />
 
-### Other interesting uses: mix orientation API and WebSockets
+<h4>Other interesting uses: mix orientation API and WebSockets</h4>
 
 You can imagine the above example that sends the current orientation of
 the device to a server using WebSockets. The server in turn updates the
@@ -26384,7 +26314,7 @@ Click on the image to see the YouTube video:
 <img src="./media/image260.png" style="width:3.33333in;height:1.86458in"
 alt="orientation API + websockets" />
 
-## 4.4.4 The Device Motion API
+<h3>4.4.4 The Device Motion API</h3>
 
 This section presents the Device Motion API which is used in a similar
 manner to the device orientation API discussed earlier.
@@ -26406,29 +26336,21 @@ Use cases proposed by the specification are:
 -   **Mapping**: a mapping Web application uses the device's orientation
     to correctly align the map with reality.
 
-### Basic usage
+<h4>Basic usage</h4>
 
 588. function handleMotionEvent(event) {
 
 589. 
-
 590.    var x = event.accelerationIncludingGravity.x;
-
 591.    var y = event.accelerationIncludingGravity.y;
-
 592.    var z = event.accelerationIncludingGravity.z;
-
 593. 
-
 594.    // Process ...
-
 595. }
-
 596. 
-
 597. window.addEventListener("devicemotion", handleMotionEvent, true);
-
-### Basics about acceleration
+```
+<h4>Basics about acceleration</h4>
 
 The deviceMotion API is rather straightforward and is very similar to
 the orientation API except that it returns more than just
@@ -26491,111 +26413,77 @@ Remember the coordinate system for a mobile phone:
 <img src="./media/image263.jpeg" style="width:3in;height:2.14847in"
 alt="telephone coordinates system" />
 
-### Common steps
+<h4>Common steps</h4>
 
 The principles are the same as for the orientation API:
-
+```
 1.  Test if the API is supported by the browser,
-
 2.  Add a listener for 'devicemotion' events,
-
 3.  Get the acceleration values from the DOM event that has been passed
     to the listener,
-
 4.  Process the data.
-
-### Common processing with acceleration values
+```
+<h4>Common processing with acceleration values</h4>
 
 Test the value of the acceleration.z property: If \> 0 then the device
 is facing up, otherwise it is facing down. This would be useful if you
 wanted to play [heads or
 tails](https://en.wikipedia.org/wiki/Coin_flipping) with your phone ;-)
-
+```
 1.  // For example, if acceleration.z is \> 0 then the phone is facing
     up
-
 2.  var facingUp = -1;
-
 3.  if (acceleration.z \> 0) {
-
 4.     facingUp = +1;
-
 5.  }
-
+```
 Compute the angle corresponding to the Left / Right and Front / Back
 tilts. This example uses the accelerationIncludingGravity property of
 the event.
-
+```
 1.  function deviceMotionHandler(eventData) {
-
 2.     // Grab the acceleration including gravity from the results
-
 3.     var acceleration = eventData.accelerationIncludingGravity;
-
 4.  
-
 5.     // Convert the value from acceleration to degrees
-
-6.     // acceleration.x\|y is the acceleration according
-
+6.     // acceleration.x|y is the acceleration according
 7.     //  to gravity, we'll assume we're on  Earth and divide
-
 8.     // by 9.81 (earth gravity) to get a percentage value, 
-
 9.     // and then multiply that by 90 to convert to degrees.
-
-10.    var tiltLR = Math.round(((acceleration.x) / 9.81) \* -90);
-
-11.    var tiltFB = Math.round(((acceleration.y + 9.81) / 9.81) \* 90 \* facingUp);
-
+10.    var tiltLR = Math.round(((acceleration.x) / 9.81) * -90);
+11.    var tiltFB = Math.round(((acceleration.y + 9.81) / 9.81) * 90 * facingUp);
 12. 
-
 13.    // ... do something
-
 14. }
-
+```
 Compute the vertical (direction of the sky) - this extract comes from a
 complete example further down this page...
-
+```
 1.  ...
-
 2.  var angle = Math.atan2(accel.y,accel.x);
-
 3.  
-
 4.  var canvas = document.getElementById('myCanvas');
-
 5.  var ctx = canvas.getContext('2d');
-
 6.   
-
 7.  ctx.moveTo(50,50);
-
 8.  // Draw sky direction in the canvas
-
 9.  ctx.lineTo(50-50\*Math.cos(angle),50+50\*Math.sin(angle));
-
 10. ctx.stroke();
-
+```
 Use acceleration values to move a ball on the screen of a tablet when
 the tablet is tilted front / back or left / right (complete example
 later on)...
-
+```
 1.  ...
-
 2.  
-
 3.  ball.x += acceleration.x;
-
 4.  ball.y += acceleration.y;
-
 5.  
-
 6.  ...
+```
+<h4>Complete examples</h4>
 
-### Complete examples
-
-### Move the HTML5 logo
+<h4>Move the HTML5 logo</h4>
 
 [Online example at
 JsBin](https://jsbin.com/pasoboyucu/edit?html,js,output).
@@ -26603,158 +26491,88 @@ JsBin](https://jsbin.com/pasoboyucu/edit?html,js,output).
 <img src="./media/image264.jpeg" style="width:3in;height:4.00247in"
 alt="Devicemotion API example" />
 
-### Code from this example:
-
-1.  \<!doctype html\>
-
-2.  \<html\>
-
+<h4>Code from this example:</h4>
+```
+1.  <!doctype html>
+2.  <html>
 3.  
-
-4.     \<head\>\</head\>
-
+4.     <head></head>
 5.  
-
-6.     \<body\>
-
-7.        \<h2\>Device Orientation with HTML5\</h2\>
-
+6.     <body>
+7.        <h2>Device Orientation with HTML5</h2>
 8.        You need to be on a mobile device or use a laptop with
     accelerometer/orientation
-
 9.        device.
-
-10.       \<p\>
-
-11.       \<div id="rawAccel"\>\</div\>
-
-12.       \<div id="tiltFB"\>\</div\>
-
-13.       \<div id="tiltLR"\>\</div\>
-
-14.       \<div id="upDown"\>\</div\>
-
-15.       \<img src="https://www.html5rocks.com/en/tutorials/device/orientation/html5_logo.png" id="imgLogo" class="logo"\>
-
-16.       \<script type="text/javascript"\>
-
+10.       <p>
+11.       <div id="rawAccel"></div>
+12.       <div id="tiltFB"></div>
+13.       <div id="tiltLR"></div>
+14.       <div id="upDown"></div>
+15.       <img src="https://www.html5rocks.com/en/tutorials/device/orientation/html5_logo.png" id="imgLogo" class="logo">
+16.       <script type="text/javascript">
 17.          if (window.DeviceMotionEvent != undefined) {
-
 18.          console.log("DeviceMotion is supported");
-
 19. 
-
 20.         
     window.addEventListener('devicemotion', function(eventData) {
-
 21.             // Grab the acceleration including gravity from the
     results
-
 22.             var acceleration = eventData.accelerationIncludingGravity;
-
 23.             // Display the raw acceleration data
-
-24.             var rawAcceleration = "\[" + Math.round(acceleration.x) + ",
+24.             var rawAcceleration = "[" + Math.round(acceleration.x) + ",
     " + Math.round(acceleration.y) 
-
-25.             + ", " + Math.round(acceleration.z) + "\]";
-
+25.             + ", " + Math.round(acceleration.z) + "]";
 26. 
-
 27.             // Z is the acceleration in the Z axis, and if the
     device
-
 28.             // is facing up or down
-
 29.             var facingUp = -1;
-
-30.             if (acceleration.z \> 0) {
-
+30.             if (acceleration.z > 0) {
 31.                facingUp = +1;
-
 32.             }
-
 33. 
-
 34.             // Convert the value from acceleration to degrees
-
-35.             // acceleration.x\|y is the acceleration according to
+35.             // acceleration.x|y is the acceleration according to
     gravity,
-
 36.             //  we'll assume we're on Earth and divide
-
 37.             // by 9.81 (earth gravity) to get a percentage value,  
-
 38.             // and then multiply that by 90 to convert to degrees.
-
-39.             var tiltLR = Math.round(((acceleration.x) / 9.81) \* -90);
-
-40.             var tiltFB = Math.round(((acceleration.y + 9.81) / 9.81) \* 90 \* facingUp);
-
+39.             var tiltLR = Math.round(((acceleration.x) / 9.81) * -90);
+40.             var tiltFB = Math.round(((acceleration.y + 9.81) / 9.81) * 90 * facingUp);
 41. 
-
 42.             document.querySelector("#rawAccel").innerHTML =
-
 43.                                "Raw acceleration" + rawAcceleration;
-
 44.             document.querySelector("#tiltFB").innerHTML =
-
 45.                                "Tilt front/back : " + tiltFB;
-
 46.             document.querySelector("#tiltLR").innerHTML =
-
 47.                                "Tilt left/right : " + tiltLR;
-
 48.             document.querySelector("#upDown").innerHTML =
-
 49.                                "Face Up:Down : " + facingUp;
-
 50. 
-
 51. 
-
 52.             updateLogoOrientation(tiltLR, tiltFB);
-
 53.          }, false);
-
 54.       } else {
-
 55.         alert("Not supported on your device or browser. Sorry.");
-
 56.       }
-
 57. 
-
 58.       function updateLogoOrientation(tiltLR, tiltFB) {
-
 59.          // USE CSS3 rotations for rotating the HTML5 logo
-
 60.          //for webkit browser
-
 61.          document.getElementById("imgLogo").style.webkitTransform =
-
 62.          "rotate(" + tiltLR + "deg) rotate3d(1,0,0,
-    " + (tiltFB \* -1) + "deg)";
-
+    " + (tiltFB * -1) + "deg)";
 63. 
-
 64.          //for HTML5 standard-compliance
-
 65.          document.getElementById("imgLogo").style.transform =
-
 66.          "rotate(" + tiltLR + "deg) rotate3d(1,0,0,
-    " + (tiltFB \* -1) + "deg)";
-
+    " + (tiltFB * -1) + "deg)";
 67.       }
-
-68.    \</script\>
-
-69.   \</body\>
-
+68.    </script>
+69.   </body>
 70. 
-
-71. \</html\>
-
+71. </html>
+```
 Interesting example that uses jQuery mobile
 
 This example shows how the X and Y acceleration values can be used for
@@ -26768,471 +26586,260 @@ it: <https://jsbin.com/uyuqek/4/edit>
 <img src="./media/image265.jpeg" style="width:3in;height:3.99734in"
 alt="devicemotion API" />
 
-### Code from the example:
-
-1.  \<html\>
-
-2.     \<head\>
-
+<h4>Code from the example:</h4>
+```
+1.  <html>
+2.     <head>
 3.  
-
-4.       \<meta http-equiv="content-type" content="text/html;
-    charset=utf-8"\>
-
-5.       \<meta name="viewport" content="user-scalable=no,
-    width=device-width" /\>
-
+4.       <meta http-equiv="content-type" content="text/html;
+    charset=utf-8">
+5.       <meta name="viewport" content="user-scalable=no,
+    width=device-width" />
 6.  
-
-7.       \<link rel="stylesheet"
-
+7.       <link rel="stylesheet"
 8.           
-     href="https://code.jquery.com/mobile/1.0b2/jquery.mobile-1.0b2.min.css" /\>
-
+     href="https://code.jquery.com/mobile/1.0b2/jquery.mobile-1.0b2.min.css" />
 9.  
-
-10.      \<script type="text/javascript"
-
-11.              src = "https://code.jquery.com/jquery-1.6.2.min.js"\>
-
-12.      \</script\>
-
-13.      \<script type="text/javascript"
-
+10.      <script type="text/javascript"
+11.              src = "https://code.jquery.com/jquery-1.6.2.min.js">
+12.      </script>
+13.      <script type="text/javascript"
 14.            
-     src = "https://code.jquery.com/mobile/1.0b2/jquery.mobile-1.0b2.min.js"\>
-
-15.      \</script\>
-
+     src = "https://code.jquery.com/mobile/1.0b2/jquery.mobile-1.0b2.min.js">
+15.      </script>
 16. 
-
-17.      \<script type="text/javascript"\>
-
+17.      script type="text/javascript">
 18.         $(document).ready(function(){
-
 19.            
     window.addEventListener("devicemotion",onDeviceMotion,false);
-
 20.         });
-
 21. 
-
 22.         function onDeviceMotion(event){
-
 23.             var ctx = document.getElementById("c").getContext("2d");
-
 24.             var accel = event.accelerationIncludingGravity;
-
 25.            
     $("#sliderX").val(Math.round(accel.x)).slider("refresh");
-
 26.            
     $("#sliderY").val(Math.round(accel.y)).slider("refresh");
-
 27.            
     $("#sliderZ").val(Math.round(accel.z)).slider("refresh");
-
 28.             // sky direction
-
 29.             var angle = Math.atan2(accel.y,accel.x)
-
 30.             ctx.clearRect(0,0,100,100);
-
 31.             ctx.beginPath();
-
-32.             ctx.arc(50,50,5,0,2\*Math.PI,false);
-
+32.             ctx.arc(50,50,5,0,2*Math.PI,false);
 33.             ctx.moveTo(50,50);
-
 34.             // Draw sky direction
-
 35.            
-    ctx.lineTo(50-50\*Math.cos(angle),50+50\*Math.sin(angle));
-
+    ctx.lineTo(50-50*Math.cos(angle),50+50*Math.sin(angle));
 36.             ctx.stroke();
-
 37.         }
-
-38.      \</script\>
-
+38.      </script>
 39. 
-
-40.    \</head\>
-
-41.    \<body\>
-
+40.    </head>
+41.    <body>
 42. 
-
-43.       \<div data-role="page" id = "intropage"\>
-
+43.       <div data-role="page" id = "intropage">
 44. 
-
-45.         \<div data-role="header"\>
-
-46.            \<h1\>Accelerometer\</h1\>
-
-47.         \</div\>
-
+45.         <div data-role="header">
+46.            <h1>Accelerometer</h1>
+47.         </div>
 48. 
-
-49.         \<div data-role="content"\>
-
-50.            \<label for="sliderX"\>X Acceleration (Roll)\</label\>
-
-51.            \<input type="range" name="sliderX" id="sliderX"
-
-52.                   value="0" min="-10" max="10" data-theme="a" /\>
-
+49.         <div data-role="content">
+50.            <label for="sliderX">X Acceleration (Roll)</label>
+51.            <input type="range" name="sliderX" id="sliderX"
+52.                   value="0" min="-10" max="10" data-theme="a" />
 53. 
-
-54.            \<label for="sliderY"\>Y Acceleration (Pitch)\</label\>
-
-55.            \<input type="range" name="sliderY" id="sliderY"
-
-56.                   value="0" min="-10" max="10" data-theme="b" /\>
-
+54.            <label for="sliderY">Y Acceleration (Pitch)</label>
+55.            <input type="range" name="sliderY" id="sliderY"
+56.                   value="0" min="-10" max="10" data-theme="b" />
 57. 
-
-58.            \<label for="sliderZ"\>Z Acceleration
-    (\<strike\>Yaw\</strike\>
-
+58.            <label for="sliderZ">Z Acceleration
+    (<strike>Yaw</strike>
 59.               Face up/down)
-
-60.            \</label\>
-
-61.            \<input type="range" name="sliderZ" id="sliderZ"
-
-62.                   value="0" min="-10" max="10" data-theme="c" /\>
-
-63.         \</div\>
-
+60.            </label>
+61.            <input type="range" name="sliderZ" id="sliderZ"
+62.                   value="0" min="-10" max="10" data-theme="c" />
+63.         </div>
 64. 
-
-65.         \<p style = "text-align:center"\>SKY direction:
-
-66.                                       follow this line:\</p\>
-
-67.         \<div style = "text-align:center;margin-top:10px;"\>
-
+65.         <p style = "text-align:center">SKY direction:
+66.                                       follow this line:</p>
+67.         <div style = "text-align:center;margin-top:10px;">
 68. 
-
-69.            \<canvas id="c" width="100" height="100"\>\</canvas\>
-
-70.         \</div\>
-
+69.            <canvas id="c" width="100" height="100"></canvas>
+70.         </div>
 71. 
-
-72.      \</div\>
-
+72.      </div>
 73. 
-
-74.    \</body\>
-
-75. \</html\>
-
-### Move a ball on the screen
+74.    </body>
+75. </html>
+```
+<h4>Move a ball on the screen</h4>
 
 [Try this example at JsBin](https://jsbin.com/eyahuv/2/edit). If using a
 mobile device, [use this URL instead](https://jsbin.com/eyahuv/2)!
+<!------------------------------------------------------------------------------------------------>
+<!---------------------------------- 266 moving balls (###) -------------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<img src="./media/image266.png"
+   alt="Moving Balls"
+   width="35%" />
+</p>
+<!---   style="width:3in;height:1.99379in" --->
 
-<img src="./media/image266.png" style="width:3in;height:1.99379in"
-alt="moving balls" />
-
-### Code from this example:
-
-1.  \<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"\>
-
-2.  \<html xmlns="https://www.w3.org/1999/xhtml"\>
-
+<h4>Code from this example:</h4>
+```
+1.  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+2.  <html xmlns="https://www.w3.org/1999/xhtml">
 3.  
-
-4.      \<head\>
-
-5.         \<meta http-equiv="Content-Type" content="text/html;
+4.      <head\>
+5.         <meta http-equiv="Content-Type" content="text/html;
     charset=UTF-8" /\>
-
-6.         \<meta name="viewport" content="width=device-width,
-
+6.         <meta name="viewport" content="width=device-width,
 7.                                        target-densityDpi=device-dpi,
-
 8.                                        initial-scale=1.0,
-
 9.                                        user-scalable=no,
-
-10.                                       maximum-scale=1.0"\>
-
-11.        \<title\>iOS 4.2 Device Accellerometer\</title\>
-
-12.        \<style\>
-
+10.                                       maximum-scale=1.0">
+11.        <title>iOS 4.2 Device Accellerometer</title>
+12.        <style>
 13.           body {
-
 14.              font-family:Arial, Helvetica, sans-serif;
-
 15.              font-size: 14px;
-
 16.           }
-
 17.           #board {
-
 18.              position:absolute;
-
 19.              left:0px;
-
 20.              right:0px;
-
 21.              top:0px;
-
 22.              bottom:0px;
-
 23.           }
-
 24.           #ball {
-
 25.              position:absolute;
-
 26.              width: 60px;
-
 27.              height: 60px;
-
 28.              border-radius: 30px;
-
 29.             
     background-image: -webkit-gradient(radial, 45% 45%, 5, 60% 60%,
-
 30.                  
     40, from(red), color-stop(75%, black), to(rgba(255, 255, 255, 0)));
-
 31.              -webkit-box-shadow: 3px 3px 5px #888;
-
 32.           }
-
-33.        \</style\>
-
-34.        \<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"\>
-
-35.        \</script\>
-
-36.        \<script\>
-
-37.           !window.jQuery && document.write('\<script
-    src="./js/jquery.min.js"\>\<\\/script\>')
-
-38.        \</script\>
-
-39.        \<script\>
-
+33.        </style>
+34.        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js">
+35.        </script>
+36.        <script>
+37.           !window.jQuery && document.write('<script
+    src="./js/jquery.min.js"></script>')
+38.        </script>
+39.        <script>
 40.           var offset;
-
 41.           var velocity;
-
 42.           var board;
-
 43.           var ball;
-
 44.           var interval;
-
 45. 
-
 46.           $(document).ready(function() {
-
 47.              
     window.addEventListener("devicemotion", onDeviceMotion, false);
-
 48.               $('#timestamp').html(new Date().toString());
-
 49.               $('#status').html("Ready!");
-
 50. 
-
 51.               velocity = {};
-
 52.               velocity.x = 0;
-
 53.               velocity.y = 0;
-
 54. 
-
 55.               offset = {};
-
 56.               board = $('#board');
-
 57.               ball = $('#ball');
-
 58. 
-
 59.               offset.left = (board.width() - ball.width()) / 2;
-
 60.               offset.top = (board.height() - ball.height()) / 2;
-
 61. 
-
 62.               $('#ball').offset(offset);
-
 63.               interval = setInterval(updateBall, 25);
-
 64.           });
-
 65. 
-
 66.           function onDeviceMotion(event) {
-
 67.              $('#timestamp').html(new Date().toString());
-
 68.              $('#status').html("Device Motion Event");
-
 69. 
-
 70.              var eventDetails;
-
 71.              try {
-
 72.                  var accel = event.accelerationIncludingGravity;
-
 73.                  eventDetails = "accelerationIncludingGravity: {" +
-
-74.                  "\<br\>     x: " + accel.x +
-
-75.                  "\<br\>     y: " + accel.y +
-
-76.                  "\<br\>     z: " + accel.z +
-
-77.                  "\<br/\>} \<br/\>\<br/\>" +
-
+74.                  "<br>     x: " + accel.x +
+75.                  "<br>     y: " + accel.y +
+76.                  "<br>     z: " + accel.z +
+77.                  "<br/>} </br><br/>" +
 78.                  "interval: " + event.interval;
-
 79.                  updateVelocity(event);
-
 80.              } catch (e) {
-
 81.                  eventDetails = e.toString();
-
 82.              }
-
 83. 
-
 84.              $('#details').html(eventDetails);
-
 85.           }
-
 86. 
-
 87.           var decay = .9;
-
 88.           var bounceDecay = .95;
-
 89.           var maxVelocity = 100;
-
 90. 
-
 91.           function updateVelocity(event) {
-
 92.              velocity.x += event.accelerationIncludingGravity.x;
-
-93.              if (Math.abs(velocity.x) \> maxVelocity) {
-
-94.                  if (velocity.x \> 0) velocity.x = maxVelocity;
-
+93.              if (Math.abs(velocity.x) > maxVelocity) {
+94.                  if (velocity.x > 0) velocity.x = maxVelocity;
 95.                  else velocity.x = -maxVelocity;
-
 96.              }
-
 97. 
-
 98.              velocity.y += event.accelerationIncludingGravity.y;
-
-99.              if (Math.abs(velocity.y) \> maxVelocity) {
-
-100.                  if (velocity.y \> 0) velocity.y = maxVelocity;
-
+99.              if (Math.abs(velocity.y) > maxVelocity) {
+100.                  if (velocity.y > 0) velocity.y = maxVelocity;
 101.                  else velocity.y = -maxVelocity;
-
 102.              }
-
 103.           }
-
 104. 
-
 105.           function updateBall() {
-
-106.              if (offset.left \<= -(ball.width() / 2)) {
-
-107.                 velocity.x = Math.abs(velocity.x \* bounceDecay);
-
-108.              } else if (offset.left \>= (board.width() - (ball.width() / 2))) {
-
-109.                 velocity.x = -Math.abs(velocity.x \* bounceDecay);
-
+106.              if (offset.left <= -(ball.width() / 2)) {
+107.                 velocity.x = Math.abs(velocity.x * bounceDecay);
+108.              } else if (offset.left >= (board.width() - (ball.width() / 2))) {
+109.                 velocity.x = -Math.abs(velocity.x * bounceDecay);
 110.              } else {
-
 111.                 velocity.x = parseInt(velocity.x);
-
-112.                 velocity.x \*= decay;
-
+112.                 velocity.x *= decay;
 113.              }
-
 114. 
-
-115.           if (offset.top \<= -(ball.height() / 2)) {
-
-116.              velocity.y = -Math.abs(velocity.y \* bounceDecay);
-
-117.           } else if (offset.top \>= (board.height() - (ball.height() / 2))) {
-
-118.              velocity.y = Math.abs(velocity.y \* bounceDecay);
-
+115.           if (offset.top <= -(ball.height() / 2)) {
+116.              velocity.y = -Math.abs(velocity.y * bounceDecay);
+117.           } else if (offset.top >= (board.height() - (ball.height() / 2))) {
+118.              velocity.y = Math.abs(velocity.y * bounceDecay);
 119.           } else {
-
 120.              velocity.y = parseInt(velocity.y);
-
-121.              velocity.y \*= decay;
-
+121.              velocity.y *= decay;
 122.           }
-
 123. 
-
 124.           offset.left += velocity.x;
-
 125.           offset.top -= velocity.y;
-
 126. 
-
 127. 
-
 128.           $('#ball').offset(offset);
-
 129.       }
-
-130.     \</script\>
-
-131.   \</head\>
-
+130.     </script>
+131.   </head>
 132. 
-
-133.   \<body\>
-
-134.      \<div id="timestamp"\>\</div\>
-
-135.      \<div id="status"\>\</div\>
-
-136.      \<div id="details"\>\</div\>
-
-137.      \<div id="board"\>
-
-138.          \<div id="ball"\>\</div\>
-
-139.      \</div\>spec: \<a href="https://w3c.github.io/deviceorientation/spec-source-orientation.html" target="https://w3c.github.io/deviceorientation/spec-source-orientation.html"\>https://w3c.github.io/deviceorientation/spec-source-orientation.html\</a\>
-
+133.   <body>
+134.      <div id="timestamp"></div>
+135.      <div id="status"></div>
+136.      <div id="details"></div>
+137.      <div id="board">
+138.          <div id="ball"></div>
+139.      </div>spec: <a href="https://w3c.github.io/deviceorientation/spec-source-orientation.html" target="https://w3c.github.io/deviceorientation/spec-source-orientation.html"\>https://w3c.github.io/deviceorientation/spec-source-orientation.html</a>
 140. 
-
-141.   \</body\>
-
+141.   </body>
 142. 
-
-143. \</html\>
-
-### External resources
+143. </html>
+```
+<h4>External resources</h4>
 
 -   From the W3C specification: [devicemotion
     Event](https://w3c.github.io/deviceorientation/spec-source-orientation.html#devicemotion)
@@ -27244,12 +26851,12 @@ alt="moving balls" />
     Orientation and
     Acceleration](https://dev.opera.com/articles/w3c-device-orientation-api/)"
 
-## 4.4.5 Discussion and projects
+<h3>4.4.5 Discussion and projects</h3>
 
 Here is the discussion forum for this part of the course. Please post
 your comments/observations/questions and share your creations.
 
-### Suggested topics of discussion:
+<h4>Suggested topics of discussion:</h4>
 
 -   Did you know that you can "fake" the orientation using the devtools
     of some desktop browsers?
@@ -27257,7 +26864,7 @@ your comments/observations/questions and share your creations.
 -   What kind of application would benefit from the Orientation and
     Motion APIs (apart from games)?
 
-### Optional projects:
+<h4>Optional projects:</h4>
 
 -   [The Christmas
     game](https://mainline.i3s.unice.fr/mooc/SkywardBound/) developed by
@@ -27269,4 +26876,5 @@ your comments/observations/questions and share your creations.
     orientation API, so that it avoids the balls - see the last example
     from Module 2 of the course!
 
-## The end.
+<h5>The end...</h5>
+<h5>Last Updated: 5-21-2022 11:25pm</h5>
