@@ -8317,128 +8317,68 @@ audio graph.
 ##### JavaScript source code:
 
 1.  var ctx;
-
 2.   
-
 3.  var soundURL =
-
 4.  'https://mainline.i3s.unice.fr/mooc/shoot2.mp3';
-
 5.  var decodedSound;
-
 6.   
-
 7.  window.onload = function init() {
-
 8.     // The page has been loaded
-
 9.  
-
 10.    // To make it work even on browsers like Safari, that still
-
 11.    // do not recognize the non prefixed version of AudioContext
-
-12.  
-     var audioContext = window.AudioContext \|\| window.webkitAudioContext;
-
+12.  var audioContext = window.AudioContext \|\| window.webkitAudioContext;
 13.  
-
 14.    ctx = new audioContext();
-
 15.  
-
 16.    loadSoundUsingAjax(soundURL);
-
 17. 
-
 18.    // By default the button is disabled, it will be
-
 19.    // clickable only when the sound sample will be loaded
-
 20.    playButton.onclick = function(evt) {
-
 21.       playSound(decodedSound);
-
 22.    };
-
 23. };
-
 24.  
-
 25. function loadSoundUsingAjax(url) {
-
 26.    var request = new XMLHttpRequest();
-
 27. 
-
 28.    request.open('GET', url, true);
-
 29.    // Important: we're loading binary data
-
 30.    request.responseType = 'arraybuffer';
-
 31.  
-
 32.    // Decode asynchronously
-
 33.    request.onload = function() {
-
 34.       console.log("Sound loaded");
-
 35. 
-
 36.       // Let's decode it. This is also asynchronous
-
 37.       ctx.decodeAudioData(request.response,
-
 38.           function(buffer) { // success
-
 39.              console.log("Sound decoded");
-
 40.              decodedSound = buffer;    
-
 41.              // we enable the button
-
 42.              playButton.disabled = false;
-
 43.           },
-
 44.           function(e) { // error
-
 45.              console.log("error");
-
 46.           }
-
 47.       ); // end of decodeAudioData callback
-
 48.     };   // end of the onload callback
-
 49. 
-
 50.     // Send the request. When the file will be loaded,
-
 51.     // the request.onload callback will be called (above)
-
 52.     request.send();
-
 53. }
-
 54.  
-
 55. **function playSound(buffer){**
-
 56. **    // builds the audio graph, then start playing the source**
-
 57. **    var bufferSource = ctx.createBufferSource();**
-
 58. **    bufferSource.buffer = buffer;**
-
 59. **    bufferSource.connect(ctx.destination);**
-
 60. **    bufferSource.start(); // remember, you can start() a source
     only once!**
-
 61. **}**
+```
 
 ##### **Explanations:**
 
@@ -17097,162 +17037,89 @@ alt="Downloading file with Xhr2" />
 
 **Complete source code:**
 
+```
 1.  \<!DOCTYPE html\>
-
 2.  \<html lang="en"\>
-
 3.   \<head\>
-
 4.     \<title\>XHR2 and binary files + Web Audio API\</title\>
-
 5.   \</head\>
-
 6.  \<body\>
-
 7.  \<p\>Example of using XHR2 and \<code\>xhr.responseType =
     'arraybuffer';\</code\> to download a binary sound file
-
 8.  and start playing it on user-click using the Web Audio API.\</p\>
-
 9.  
-
 10. \<p\>
-
 11. \<h2\>Load file using Ajax/XHR2 and the arrayBuffer response
     type\</h2\>
-
 12. \<button **onclick="downloadSoundFile('https://myserver.com/song.mp3');**"\>
-
 13.      Download and play example song.
-
 14.  \</button\>
-
 15. \<button onclick="playSound()" disabled\>Start\</button\>
-
 16. \<button onclick="stopSound()" disabled\>Stop\</button\>
-
 17. \<script\>
-
 18.   // WebAudio context
-
 19.   var context = new window.AudioContext();
-
 20.   var source = null;
-
 21.   var audioBuffer = null;
-
 22.  
-
 23.   function stopSound() {
-
 24.     if (source) {
-
 25.        source.stop();
-
 26.     }
-
 27.   }
-
 28.  
-
 29.   function playSound() {
-
 30.     // Build a source node for the audio graph
-
 31.     source = context.createBufferSource();
-
 32.     source.buffer = audioBuffer;
-
 33.     source.loop = false;
-
 34.     // connect to the speakers
-
 35.     source.connect(context.destination);
-
 36.     source.start(0); // Play immediately.
-
 37.   }
-
 38.  
-
 39.   function initSound(audioFile) {
-
 40.     // The audio file may be an mp3 - we must decode it before
     playing it from memory
-
 41.     context.decodeAudioData(audioFile, function(buffer) {
-
 42.       console.log("Song decoded!");
-
 43.       // audioBuffer the decoded audio file we're going to work with
-
 44.       audioBuffer = buffer;
-
 45. 
-
 46.       // Enable all buttons once the audio file is
-
 47.       // decoded
-
 48.       var buttons = document.querySelectorAll('button');
-
 49.       buttons\[1\].disabled = false; // play
-
 50.       buttons\[2\].disabled = false; // stop
-
 51.       alert("Binary file has been loaded and decoded, use play /
     stop buttons!")
-
 52.     }, function(e) {
-
 53.        console.log('Error decoding file', e);
-
 54.     });
-
 55.   }
-
 56.  
-
 57.   // Load a binary file from a URL as an ArrayBuffer.
-
 58.   function downloadSoundFile(url) {
-
 59.     var xhr = new XMLHttpRequest();
-
 60.     xhr.open('GET', url, true);
-
 61.  
-
 62.     **xhr.responseType = 'arraybuffer'; // THIS IS NEW WITH HTML5!**
-
 63.     xhr.onload = function(e) {
-
 64.        console.log("Song downloaded, decoding...");
-
 65.        initSound(this.response); // this.response is an ArrayBuffer.
-
 66.     };
-
 67.     xhr.onerror = function(e) {
-
 68.       console.log("error downloading file");
-
 69.     }
-
 70.  
-
 71.     xhr.send();
-
 72.        console.log("Ajax request sent... wait until it downloads
     completely");
-
 73.   }
-
 74. \</script\>
-
 75. \</body\>
-
 76. \</html\>
+```
 
 **Explanations**: 
 
@@ -21659,23 +21526,18 @@ request represents one read or one write operation. Requests are always
 run within a transaction. The example below adds a customer to the
 object store named "customers".
 
+```
 1.  // Use the transaction to add data...
-
 2.  var objectStore = transaction.objectStore("customers");
-
 3.  for (var i in customerData) {
-
-4.      **var request = objectStore.add(customerData\[i\]);**
-
-5.      **request.onsuccess **= function(event) {
-
+4.      <b>var request = objectStore.add(customerData\[i\]);</b>
+5.      <b>request.onsuccess </b>= function(event) {
 6.          // event.target.result == customerData\[i\].ssn
-
 7.  };
-
 8.  }
+```
 
-### Index
+<h4>Index</h4>
 
 It is sometimes useful to
 retrieve [records](https://www.w3.org/TR/IndexedDB/#dfn-record) from an
@@ -21710,9 +21572,9 @@ referenced object store, such that an indexed attribute's value already
 exists in an index, then the attempted modification to the object store
 fails.
 
-### **Key and values**
+<h4>Key and values</h4>
 
-#### Key
+<h5>Key</h5>
 
 A data value by which stored values are organized and retrieved in the
 object store. The object store can derive the key from one of three
@@ -21736,14 +21598,14 @@ Alternatively, you can also look up records in an object store
 using [ an
 index](https://developer.mozilla.org/en-US/docs/IndexedDB/Basic_Concepts_Behind_IndexedDB#gloss_index).
 
-#### Key generator
+<h5>Key generator</h5>
 
 A mechanism for producing new keys in an ordered sequence. If an object
 store does not have a key generator, then the application must provide
 keys for records being stored. Similar to auto-generated primary keys in
 SQL databases.
 
-#### In-line key
+<h5>In-line key</h5>
 
 A key that is stored as part of the stored value. Example: the email of
 a person or a student number in an object representing a student in a
@@ -21752,7 +21614,7 @@ generated using a generator. After the key has been generated, it can
 then be stored in the value using the key path, or it can also be used
 as a key.
 
-#### Out-of-line key
+<h5>Out-of-line key</h5>
 
 A key that is stored separately from the value being stored, for
 instance, an auto-incremented id that is not part of the object.
@@ -21761,14 +21623,14 @@ firstName:Michel} and {name:Forgue, firstName: Marie}, each will have a
 key (think of it as a primary key, an id...) that can be auto-generated
 or specified, but that is not part of the object stored.
 
-#### Key path
+<h5>Key path</h5>
 
 Defines where the browser should extract the key from a value in the
 object store or index. **A valid key path can include one of the
 following: an empty string, a JavaScript identifier, or multiple
 JavaScript identifiers separated by periods. It cannot include spaces.**
 
-#### Value
+<h5>Value</h5>
 
 Each record has a value, which could include anything that can be
 expressed in JavaScript,
@@ -21781,9 +21643,9 @@ object or array can also be anything that is a valid value.
 Blobs and files can be stored, (supported by all major browsers, IE \>
 9). The example in the next chapter stores images using blobs.
 
-### **Range and scope**
+<h4>Range and scope</h4>
 
-#### Scope
+<h5>Scope</h5>
 
 The set of object stores and indexes to which a transaction applies. The
 scopes of read-only transactions can overlap and execute at the same
@@ -21791,7 +21653,7 @@ time. On the other hand, the scopes of writing transactions cannot
 overlap. You can still start several transactions with the same scope at
 the same time, but they just queue up and execute one after another.
 
-#### Cursor
+<h5>Cursor</h5>
 
 A mechanism for iterating over multiple records within a *key range*.
 The cursor has a source defining which index or object store it is
@@ -21800,7 +21662,7 @@ sequentially according to the value of their keys in either increasing
 or decreasing order. For the reference documentation on cursors,
 see IDBCursor.
 
-#### Key range
+<h5>Key range</h5>
 
 A continuous interval over some data type used for keys. Records can be
 retrieved from object stores and indexes using keys or a range of keys.
@@ -21809,7 +21671,7 @@ example, you can iterate over all the values of a key between x and y.
 
 For the reference documentation on key range, see IDBKeyRange.
 
-## 3.6.4 Using IndexedDB
+<h3 id="ch3-6-4">3.6.4 Using IndexedDB</h3>
 
 This page and the following one, entitled "Using IndexedDB",
 provide simple examples for creating, adding, removing, updating, and
@@ -21817,19 +21679,19 @@ searching data in an IndexedDB database. They explain the basic steps to
 perform such common operations, while explaining the
 programming principles behind IndexedDB.
 
-**In the "Using IndexedDB" pages of this course, you will learn about:**
+<b>In the "Using IndexedDB" pages of this course, you will learn about:</b>
 
--   Creating and populating a database
+-   Creating and populating a database,
 
--   Working with data
+-   Working with data,
 
--   Using transactions
+-   Using transactions,
 
--   Inserting, deleting, updating and getting data
+-   Inserting, deleting, updating and getting data,
 
--   Creating and populating a database
+-   Creating and populating a database.
 
-### External resources
+<h4>External resources</h4>
 
 Additional information is available on these Web sites. Take a look at
 these!
@@ -21846,14 +21708,12 @@ these!
 -   [How to view IndexedDB content in
     Firefox](https://stackoverflow.com/questions/9846013/how-to-view-indexeddb-content-in-firefox)
 
-## 3.6.5 Creating and deleting a database
+<h3 id="ch3-6-5">3.6.5 Creating and deleting a database</h3>
 
 Hi! Let's look now at some pieces of code and examples that will explain
 how to really program an IndexedDB application.
 
-So… one of the first thing is that you need
-
-to create or to open an existing database before working with data.
+So… one of the first thing is that you need to create or to open an existing database before working with data.
 
 All operations are asynchronous and, if you want to open a database, you
 use IndexedDB.open(…).
@@ -21862,86 +21722,52 @@ You specify the name of the database and the version. Each database is
 versioned... and
 
 if the "CustomerDB" database -from this example- exists with a version
-"2", it will
-
-just open it. If it exists, but with a previous, lower version, it will
+"2", it will just open it. If it exists, but with a previous, lower version, it will
 be "upgraded".
 
 This is why we need to define, on the object that is returned by
 open(...), some event listeners.
 
 The "onsuccess" listener is called when the database has been opened.
-"onerror" (listener)
-
-if there is an error, and "onupgradeneeded" (listener) will be called
-only if we are creating
-
-a new version of the database. It's the case when the database does not
+"onerror" (listener) if there is an error, and "onupgradeneeded" (listener) will be called
+only if we are creating a new version of the database. It's the case when the database does not
 exist.
 
 So the database has a version, and the first version is "0". You can
-have the same database that
-
-exists in different versions at a time, but the very common way is to
-define the two listeners I talked about,
-
-and create the database and the schema in the "onupgradeneeded" event
+have the same database that exists in different versions at a time, but the very common way is to
+define the two listeners I talked about, and create the database and the schema in the "onupgradeneeded" event
 listener.
 
 And work with data on the "onsuccess" listener… because when you enter
-in the "onsuccess »,
-
-it means that the database exists.
+in the "onsuccess », it means that the database exists.
 
 Be careful because on the Web you will find lots and lots of old
-tutorials that use a
-
-previous, deprecated version of the API. You can identify that if it
-uses the setVersion()
-
-method on an object called IDBDatabase. In that case look for a more
+tutorials that use a previous, deprecated version of the API. You can identify that if it
+uses the setVersion() method on an object called IDBDatabase. In that case look for a more
 recent tutorial!
 
 Here is an example of a database creation: you indicate a name...
-"customerDB",
-
-you try to open it with version "2", and if the database does not exist,
-you will enter
-
-the "onupgradeneeded" listener. If it exists, you go to the "onsuccess"
+"customerDB", you try to open it with version "2", and if the database does not exist,
+you will enter the "onupgradeneeded" listener. If it exists, you go to the "onsuccess"
 listener.
 
 The result (the event.target.result) will be the database itself. We
-will work with this object for
-
-inserting, deleting, modifying or looking for data.
+will work with this object for inserting, deleting, modifying or looking for data.
 
 Now, let's zoom a little bit on what happens in this listener here,
-because this is where
-
-we are going to create the database.
+because this is where we are going to create the database.
 
 For creating and populating a new object datastore - a new object
 database -, here is how we proceed:
 
 in the "onupgradeneeded" listener, we get the database itself... Then
-you create an object
-
-store in it, and you need to indicate the name of the object store -
-"customers" - and
-
-the name of the "KeyPath". Remember, the KeyPath is a unique ID that
-will be attached
-
-to all objects stored in the database (!: correction -\> datastore).
+you create an object store in it, and you need to indicate the name of the object store -
+"customers" - and the name of the "KeyPath". Remember, the KeyPath is a unique ID that
+will be attached to all objects stored in the database (!: correction -\> datastore).
 
 And we can also create "indexes". Here, we are saying that every object
-that will be stored
-
-in the database (!: correction -\> datastore), will have a property
-called "name", that will
-
-not be necessarily unique, and we will have a property called "email"
+that will be stored in the database (!: correction -\> datastore), will have a property
+called "name", that will not be necessarily unique, and we will have a property called "email"
 that will be unique.
 
 Just after creating it, we are populating the objectstore with some test
@@ -26877,4 +26703,4 @@ your comments/observations/questions and share your creations.
     from Module 2 of the course!
 
 <h5>The end...</h5>
-<h5>Last Updated: 5-21-2022 11:25pm</h5>
+<h5>Last Updated: 8-04-2022 9:54pm</h5>
