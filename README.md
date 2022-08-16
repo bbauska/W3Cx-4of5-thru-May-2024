@@ -17,7 +17,7 @@
 <!------------------------------ 01. W3Cx-4of5-HTML5.2x logo (01) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image001.jpg?raw=true"
+<img src="./images/image001.png?raw=true"
    width="65%"
    alt="W3Cx HTML 5.2x logo" />
 </p>
@@ -38,7 +38,7 @@
 ## [**Module 1: Advanced HTML5 Multimedia**](ch1)
 >### 1.1. [**Video introduction - Module 1**](#ch1-1-1)
 >### 1.2. [**The Timed Text Track API**](ch1-2-1)
->### 1.3. [**Advanced features for audio and video players**](ch-1-3-1)
+>### 1.3. [**Advanced features for audio and video players**](ch1-3-1)
 >### 1.4. [**Creating tracks on the fly, syncing HTML content with a video**](#ch1-4-1)
 >### 1.5. [**The Web Audio API**](#ch1-5-1)
 
@@ -51,7 +51,7 @@
 >### 2.6.[**Sprite-based animation**](#ch2-6-1)
 >### 2.7.[**Game states**](#ch2-7-1)
 
-## [**Module 3: HTML5 file upload and download**]{ch3)
+## [**Module 3: HTML5 file upload and download**](ch3)
 >### 3.1.[**Video introduction**](#ch3-1-1)
 >### 3.2.[**File API and Ajax / XHR2 requests**](#ch3-2-1)
 >### 3.3.[**Drag and drop: the basics**](#ch3-3-1)
@@ -150,7 +150,7 @@ courses, you *do NOT need to re-take that course*.
 <li>4.  Time-based animation</li>
 <li>5.  Animating multiple objects, collision detection</li>
 <li>6.  Sprite-based animation</li>
-<li>7.  Game states</li>
+<li>7.  Game stats</li>
 </ol>
 
 <h3>Module 3: HTML5 file upload and download</h3>
@@ -2017,71 +2017,42 @@ manipulate these elements as "HTML elements" - we will call them the
 
 <img src="./media/image027.png" style="width:4in;height:3.93208in" />
 
-### Here is the JavaScript source code:
+<h4>Here is the JavaScript source code:</h4>
 
+```
 1.  var video, htmlTracks;
-
 2.  var trackStatusesDiv;
-
 3.  
-
 4.  window.onload = function() {
-
 5.  // called when the page has been loaded
-
 6.  video = document.querySelector("#myVideo");
-
 7.  trackStatusesDiv = document.querySelector("#trackStatusesDiv");
-
 8.  
-
 9.  // Get the tracks as HTML elements
-
 10. htmlTracks = document.querySelectorAll("track");
-
 11. 
-
 12. // displays their statuses in a div under the video
-
 13. displayTrackStatuses(htmlTracks);
-
 14. };
-
 15. 
-
 16. function displayTrackStatuses(htmlTracks) {
-
 17. // displays track info
-
 18. for(var i = 0; i < htmlTracks.length; i++) {
-
 19. var currentHtmlTrack = htmlTracks[i];
-
 20. 
-
 21. var label = "<li>label = " + currentHtmlTrack.label + "</li>";
-
 22. var kind = "<li>kind = "   + currentHtmlTrack.kind + "</li>";
-
 23. var lang = "<li>lang = "   + currentHtmlTrack.srclang + "</li>";
-
 24. var readyState = "<li>readyState = " 
-
 25. + currentHtmlTrack.readyState + "</li>"
-
 26. 
-
 27. trackStatusesDiv.innerHTML += "<li><b>Track:" + i + ":</b></li>"
-
 28. + "<ul>" + label + kind + lang + readyState + "</ul>";
-
 29. }
-
 30. }
-
 <!-- -->
-
 23. 
+```
 
 ### The code is rather straightforward:
 
@@ -2123,7 +2094,7 @@ have been loaded. 
 Now, it's time to look at the twin brother of an HTML track: the
 corresponding TextTrack object!
 
-## 1.2.3 The TextTrack Object
+<h3 id="ch1-2-3"1.2.3 The TextTrack Object</h3>
 
 Hi! Now we are preparing ourselves for reading the content of the
 different text tracks and display them.
