@@ -17,7 +17,7 @@
 <!------------------------------ 01. W3Cx-4of5-HTML5.2x logo (01) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image001.png?raw=true"
+<img src="./images/image001.jpg?raw=true"
    width="65%"
    alt="W3Cx HTML 5.2x logo" />
 </p>
@@ -69,7 +69,7 @@
 
 **W3Cx-4of5-HTML5.2x – Apps and Games**
 
-<img src="./media/image1.png" style="width:5in;height:2.76408in" />
+<img src="./media/image001.png" style="width:5in;height:2.76408in" />
 
 ## Course outline
 
@@ -131,65 +131,54 @@ courses, you *do NOT need to re-take that course*.
     in edX Help
     Center</u>](https://support.edx.org/hc/en-us/categories/115002269607-Courses).
 
-#### Table of Contents
+<h3 id="toc">Table of Contents</h3>
 
-## Module 1: Advanced HTML5 multimedia
+<h3>Module 1: Advanced HTML5 multimedia</h3>
+<ol type="1">
+<li>1.  Video introduction</li>
+<li>2.  The Timed Text Track API</li>
+<li>3.  Advanced features for audio and video players</li>
+<li>4.  Creating tracks on the fly, syncing HTML content with a video</li>
+<li>5.  The Web Audio API</li>
+</ol>
 
-1.  Video introduction
+<h3>Module 2: Game programming with HTML5</h3>
+<ol type="1">
+<li>1.  Video introduction</li>
+<li>2.  Basic concepts of HTML5 game development</li>
+<li>3.  A simple game framework: graphics, animations and interactions</li>
+<li>4.  Time-based animation</li>
+<li>5.  Animating multiple objects, collision detection</li>
+<li>6.  Sprite-based animation</li>
+<li>7.  Game states</li>
+</ol>
 
-2.  The Timed Text Track API
+<h3>Module 3: HTML5 file upload and download</h3>
+<ol type="1">
+<li>1.  [**Video
+    introduction**](https://learning.edx.org/course/course-v1:W3Cx+HTML5.2x+2T2020a/block-v1:W3Cx+HTML5.2x+2T2020a+type@sequential+block@8745dbff90204e63806b4f140f379f6c)</li>
+<li>2.  File API and Ajax / XHR2 requests</li>
+<li>3.  Drag and drop: the basics</li>
+<li>4.  Drag and drop: working with files</li>
+<li>5.  Forms and files</li>
 
-3.  Advanced features for audio and video players
+<li>6.  [**IndexedDB**](https://learning.edx.org/course/course-v1:W3Cx+HTML5.2x+2T2020a/block-v1:W3Cx+HTML5.2x+2T2020a+type@sequential+block@6c3721f499ec4df395514b458961002f)
+</li>
+<li>7.  Conclusion on client-side persistence</li>
+</ol>
 
-4.  Creating tracks on the fly, syncing HTML content with a video
+<h3>Module 4: Web components and other HTML5 APIs</h3>
+<ol type="1">
+<li>1.  **Video introduction**</li>
+<li>2.  [**Web
+    Components**](https://learning.edx.org/course/course-v1:W3Cx+HTML5.2x+2T2020a/block-v1:W3Cx+HTML5.2x+2T2020a+type@sequential+block@a15f811948fa423185c346089a36bb85)</li>
 
-5.  The Web Audio API
+<li>3.  **Web Workers**</li>
 
-## Module 2: Game programming with HTML5
+<li>4.  **The Orientation and Device Motion APIs**</li>
 
-1.  Video introduction
-
-2.  Basic concepts of HTML5 game development
-
-3.  A simple game framework: graphics, animations and interactions
-
-4.  Time-based animation
-
-5.  Animating multiple objects, collision detection
-
-6.  Sprite-based animation
-
-7.  Game states
-
-## Module 3: HTML5 file upload and download
-
-1.  [**Video
-    introduction**](https://learning.edx.org/course/course-v1:W3Cx+HTML5.2x+2T2020a/block-v1:W3Cx+HTML5.2x+2T2020a+type@sequential+block@8745dbff90204e63806b4f140f379f6c)
-
-2.  File API and Ajax / XHR2 requests
-
-3.  Drag and drop: the basics
-
-4.  Drag and drop: working with files
-
-5.  Forms and files
-
-6.  [**IndexedDB**](https://learning.edx.org/course/course-v1:W3Cx+HTML5.2x+2T2020a/block-v1:W3Cx+HTML5.2x+2T2020a+type@sequential+block@6c3721f499ec4df395514b458961002f)
-
-7.  Conclusion on client-side persistence
-
-## Module 4: Web components and other HTML5 APIs
-
-1.  **Video introduction**
-
-2.  [**Web
-    Components**](https://learning.edx.org/course/course-v1:W3Cx+HTML5.2x+2T2020a/block-v1:W3Cx+HTML5.2x+2T2020a+type@sequential+block@a15f811948fa423185c346089a36bb85)
-
-3.  **Web Workers**
-
-4.  **The Orientation and Device Motion APIs**
-
-5.  **Where to from here?**
+<li>5.  **Where to from here?**</li>
+</ol>
 
 # **Contents**
 
@@ -1044,7 +1033,7 @@ During this course, you will notably learn:
 
 ### Web browsers
 
-<img src="./media/image3.jpeg" style="width:1.1875in;height:1.1875in"
+<img src="./media/image003.jpeg" style="width:1.1875in;height:1.1875in"
 alt="A man looking at his laptop screen as if he is considering which browser to use - a few browser logos float in the background" />
 
 Not surprisingly, it would be helpful to have a browser (short for "Web
@@ -1102,7 +1091,7 @@ examples will actually use these.
 
 ### JS Bin
 
-<img src="./media/image4.png" style="width:0.72917in;height:0.72917in"
+<img src="./media/image004.png" style="width:0.72917in;height:0.72917in"
 alt="JS Bin logo" />[JS Bin](http://jsbin.com/) is an open source
 collaborative Web development debugging tool. This tool is really
 simple, just open the link to the provided examples, look at the code,
@@ -1116,7 +1105,7 @@ or on YouTube. Keep in mind that it's always better to be logged in
 
 ### CodePen
 
-<img src="./media/image5.png" style="width:0.72917in;height:0.72917in"
+<img src="./media/image005.png" style="width:0.72917in;height:0.72917in"
 alt="CodePen logo" />[CodePen](http://codepen.io/) is an HTML, CSS, and
 JavaScript code editor that previews/showcases your code bits in your
 browser. It helps with cross-device testing, real-time remote pair
@@ -1148,7 +1137,7 @@ tools ](https://w3c.github.io/developers/tools/)site.
 
 ### W3C Validator
 
-### <img src="./media/image6.png" style="width:1in;height:0.40556in" />
+### <img src="./media/image006.png" style="width:1in;height:0.40556in" />
 
 The [W3C validator](https://validator.w3.org/) checks the [markup
 validity](https://validator.w3.org/docs/help.html#validation_basics) of
@@ -1160,7 +1149,7 @@ The [CSS validator](https://jigsaw.w3.org/css-validator/) checks
 Cascading Style Sheets (CSS) and (X)HTML documents that use CSS
 stylesheets.
 
-<img src="./media/image7.png" style="width:1in;height:0.82159in"
+<img src="./media/image007.png" style="width:1in;height:0.82159in"
 alt="Laptop showing unicorn validator" />
 
 ### Unicorn
@@ -1197,8 +1186,8 @@ completed by summaries of guidelines developed at W3C, in particular Web
 accessibility guidelines, the Mobile Web Best Practices, and a number of
 internationalization tips.
 
-<img src="./media/image8.png" style="width:3in;height:2.09497in"
-alt="W3C Cheatsheet snapshot image" />
+<img src="./media/image008.png" style="width:3in;height:2.09497in"
+alt="W3C Cheatsheet snapshot image00" />
 
 Its main feature is a lookup search box, where one can start typing a
 keyword and get a list of matching
@@ -1242,12 +1231,12 @@ of front-end Web technologies on desktop and mobile Web browsers. Below
 is a snapshot of what information is given by CanIUse when searching for
 "CSS3 colors".
 
-<img src="./media/image9.png" style="width:5.04167in;height:2.16667in"
+<img src="./media/image009.png" style="width:5.04167in;height:2.16667in"
 alt="Example of a CanIUse browser support table (using CSS3 colors)" />
 
 ### MDN Web Docs
 
-<img src="./media/image10.png" style="width:3in;height:0.94534in"
+<img src="./media/image010.png" style="width:3in;height:0.94534in"
 alt="Logo of MDN Web Docs" />
 
 To help developers make these decisions consciously rather than
@@ -1285,7 +1274,7 @@ Contributing to this standardization process might be a bit scary or
 hard to approach at first, but understanding at a deeper level how these
 technologies are built is a great way to build your expertise.
 
-<img src="./media/image11.png" style="width:1in;height:0.82895in"
+<img src="./media/image011.png" style="width:1in;height:0.82895in"
 alt="Logo of GitHub (the Octocat)" />
 
 If you're looking to an easy way to dive into this standardization
@@ -1296,7 +1285,7 @@ see if you find anything where you think you would be ready to help.
 
 Shape the future
 
-<img src="./media/image12.png" style="width:2in;height:0.55411in"
+<img src="./media/image012.png" style="width:2in;height:0.55411in"
 alt="Logo of the W3C Web Incubator Community Group" />
 
 Another approach is to go and bring feedback on ideas for future
@@ -1309,7 +1298,7 @@ Happy Web building!
 
 ### What is W3C?
 
-### <img src="./media/image13.png" style="width:3in;height:0.7612in" />
+### <img src="./media/image013.png" style="width:3in;height:0.7612in" />
 
 **As steward of global Web standards, W3C's mission is to safeguard the
 openness, accessibility, and freedom of the World Wide Web from a
@@ -1329,7 +1318,7 @@ communication around the globe. He then created the first Web browser,
 server, and Web page. He wrote the first specifications for URLs, HTTP,
 and HTML.
 
-<img src="./media/image14.jpeg" style="width:1in;height:1in"
+<img src="./media/image014.jpeg" style="width:1in;height:1in"
 alt="Tim Berners-Lee at his desk in CERN, 1994" />
 
 *Tim Berners-Lee at his desk in CERN, 1994*
@@ -1498,7 +1487,7 @@ Checker](https://validator.w3.org/i18n-checker/).  If there are
 internationalization problems with your page, this checker explains what
 they are and what to do about it.
 
-## Module 1
+<h3 id="ch1-1-1">Module 1 Advanced HTML5 multimedia</h3>
 
 In the [W3Cx HTML5 Coding Essentials and Best
 Practices](https://www.edx.org/course/html5-coding-essentials-and-best-practices) course,
@@ -1542,7 +1531,7 @@ width!):
 And here is how it renders in your current browser (please play the
 video and try to show/hide the subtitles/captions):
 
-<img src="./media/image15.png"
+<img src="./media/image015.png"
 style="width:4.90625in;height:2.79167in" />
 
 Notice that the support for multiple tracks may differs significantly
@@ -1554,7 +1543,7 @@ versions. Here is a quick summary (as in May 2020).
     the default attribute set, then it is loaded by default. Otherwise,
     the default is off.
 
-<img src="./media/image16.png"
+<img src="./media/image016.png"
 style="width:4.90625in;height:2.79167in" />
 
 -   Chrome and Opera both provide a subtitle menu and load the text
@@ -1616,7 +1605,7 @@ WEBVTT
 
 12. <v Proog>Everything is safe. Perfectly safe.</v>
 
-<img src="./media/image17.jpeg" style="width:2.02083in;height:4.83333in"
+<img src="./media/image017.jpeg" style="width:2.02083in;height:4.83333in"
 alt="remote controller with subtitles button" />
 
 The different time segments are called "cues" and each cue has an id (1,
@@ -1647,7 +1636,7 @@ implement missing features such as:
 
 -   etc.
 
-## Module 1
+<h2 id="ch1">Module 1</h2>
 
 Hi! Welcome to Part 2 of the W3C HTML5 course. How about we start by
 looking at advanced HTML5 multimedia features? First, we will look at
@@ -1684,7 +1673,7 @@ We hope you will enjoy this first week and we wish you the best!
 Hi, today I've prepared for you a small example of a video that is
 associated with three different tracks.
 
-<img src="./media/image18.png" style="width:6.5in;height:6.36875in" />
+<img src="./media/image018.png" style="width:6.5in;height:6.36875in" />
 
 Two for subtitles, in English and in German, and one track for chapters.
 
@@ -1722,11 +1711,11 @@ activating them, and so on. Now, I would like to remind you the
 structure of a track. I'm just going to display the content of one of
 these tracks.
 
-<img src="./media/image19.png" style="width:5in;height:3.07853in" />
+<img src="./media/image019.png" style="width:5in;height:3.07853in" />
 
-<img src="./media/image20.png" style="width:5in;height:3.07853in" />
+<img src="./media/image020.png" style="width:5in;height:3.07853in" />
 
-<img src="./media/image21.png" style="width:5in;height:5.2094in" />
+<img src="./media/image021.png" style="width:5in;height:5.2094in" />
 
 The tracks are made of cues and what we call a cue is a kind of time
 segment that is defined with a starting time and an ending time. And the
@@ -1742,7 +1731,7 @@ the exact time the video tells the words that are on the transcript. And
 we will see also how to choose the subtitle or caption track language
 for the video.
 
-<img src="./media/image22.png" style="width:5in;height:5.2094in" />
+<img src="./media/image022.png" style="width:5in;height:5.2094in" />
 
 This is finished for this small introduction video, I will just conclude
 by this thing
@@ -1757,7 +1746,7 @@ security constraints errors. And if your server is configured for
 accepting different origins, then you can add this attribute
 crossOrigin="anonymous" in your HTML document and it is going to work.
 
-<img src="./media/image23.png" style="width:5in;height:3.64476in" />
+<img src="./media/image023.png" style="width:5in;height:3.64476in" />
 
 The server here: mainline.i3s.unice.fr has been configured for allowing
 external HTML pages to include the videos it hosts and the subtitles it
@@ -1810,7 +1799,7 @@ width!):
 And here is how it renders in your current browser (please play the
 video and try to show/hide the subtitles/captions):
 
-<img src="./media/image24.png" style="width:4in;height:2.24412in" />
+<img src="./media/image024.png" style="width:4in;height:2.24412in" />
 
 Notice that the support for multiple tracks may differs significantly
 from one browser to another, in particular if you are using old
@@ -1828,7 +1817,7 @@ Here is a quick summary:
     the default attribute set, then it is loaded by default. Otherwise,
     the default is off.
 
-    -   <img src="./media/image25.jpeg" style="width:4in;height:2.32697in"
+    -   <img src="./media/image025.jpeg" style="width:4in;height:2.32697in"
         > alt="screenshot of safari menu fr choosing subtitle track" />
 
 -   Chrome and Opera both provide a subtitle menu and load the text
@@ -2024,9 +2013,9 @@ manipulate these elements as "HTML elements" - we will call them the
 
 ### [<span id="_Toc98696550" class="anchor"></span>Example at JSBin that displays the different elements we can get from an HTML track](https://jsbin.com/kuqevegapi/2/edit?html,css,output):
 
-<img src="./media/image26.png" style="width:4in;height:2.23647in" />
+<img src="./media/image026.png" style="width:4in;height:2.23647in" />
 
-<img src="./media/image27.png" style="width:4in;height:3.93208in" />
+<img src="./media/image027.png" style="width:4in;height:3.93208in" />
 
 ### Here is the JavaScript source code:
 
@@ -2361,7 +2350,7 @@ video as soon as the track has finished loading.
 [Try the example at
 JSBin](https://jsbin.com/bubeye/1/edit?html,console,output)
 
-<img src="./media/image28.jpeg" style="width:5in;height:4.44178in" />
+<img src="./media/image028.jpeg" style="width:5in;height:4.44178in" />
 
 Here is what we added to the HTML code:
 
@@ -2585,7 +2574,7 @@ properties and methods
     correspond to the position of the cue, as specified in the WebVTT
     file. See the HTML5 course Part 1 about cue positioning.
 
-<img src="./media/image29.jpeg" style="width:5in;height:2.01365in"
+<img src="./media/image029.jpeg" style="width:5in;height:2.01365in"
 alt="a webVtt file extract with arrows showing id, startTime, endTime and text" />
 
 ### Example that displays the content of a track
@@ -2593,7 +2582,7 @@ alt="a webVtt file extract with arrows showing id, startTime, endTime and text" 
 [Here is an example at JSBin that displays the content of a
 track](https://jsbin.com/teruhay/1/edit?html,css,js,output):
 
-<img src="./media/image30.png" style="width:4in;height:4.89057in" />
+<img src="./media/image030.png" style="width:4in;height:4.89057in" />
 
 We just changed the content of the readContent(track) method from the
 example in the previous lesson:
@@ -2811,7 +2800,7 @@ Showing real examples of event listeners
 [Here is an example at JSBin that shows how to listen
 for cuechange events](https://jsbin.com/dohilo/1/edit?html,output):
 
-<img src="./media/image31.jpeg" style="width:4in;height:4.42106in"
+<img src="./media/image031.jpeg" style="width:4in;height:4.42106in"
 alt="example that displays cue contents with cuechange even listeners" />
 
 ### Source code extract:
@@ -2847,7 +2836,7 @@ alt="example that displays cue contents with cuechange even listeners" />
 shows how to use enter and exit events on
 cues](https://jsbin.com/xawajoh/1/edit?html,css,js,output):
 
-<img src="./media/image32.jpeg" style="width:4in;height:4.40666in"
+<img src="./media/image032.jpeg" style="width:4in;height:4.40666in"
 alt="Example that displays message in enter and exit cue listeners of tjhe selected track" />
 
 ### Source code extract:
@@ -3043,7 +3032,7 @@ transcript, you can click on a sentence to make the video jump to the
 corresponding location. We will learn how to do this using the track
 API.
 
-<img src="./media/image33.png" style="width:6in;height:3.70705in" />
+<img src="./media/image033.png" style="width:6in;height:3.70705in" />
 
 Read the WebVTT file at once using the track API and make a clickable
 transcript
@@ -3083,7 +3072,7 @@ Some important things here:
 [Try this example at
 JSBin](https://jsbin.com/sodihux/1/edit?html,css,js,output):
 
-<img src="./media/image34.png" style="width:6in;height:3.70705in" />
+<img src="./media/image034.png" style="width:6in;height:3.70705in" />
 
 HTML code:
 
@@ -3516,7 +3505,7 @@ in 2012...
 cues</u>](https://jsbin.com/vedelequso/edit?html,js,output) in the
 different tracks:
 
-<img src="./media/image35.png" style="width:5in;height:4.47489in" />
+<img src="./media/image035.png" style="width:5in;height:4.47489in" />
 
 This example, adapted from an example from (now offline) dev.opera.com,
 uses some JavaScript code that takes a WebVTT subtitle (or caption) file
@@ -3684,7 +3673,7 @@ between *"hidden"* and *"disabled"* is that hidden tracks can fire
 events (more on that at the end of the first example) whereas disabled
 tracks do not fire events.
 
-<img src="./media/image36.jpeg" style="width:5in;height:4.64476in"
+<img src="./media/image036.jpeg" style="width:5in;height:4.64476in"
 alt="Example that shows how to toggle track modes and listen to events" />
 
 [Here is an example at
@@ -4037,7 +4026,7 @@ JSBin](https://jsbin.com/balowuq/1/edit?html,css,js,output): we added
 two buttons below the video to enable/disable subtitles/captions and let
 you choose which track you prefer. 
 
-<img src="./media/image37.jpeg" style="width:6.17708in;height:5.73958in"
+<img src="./media/image037.jpeg" style="width:6.17708in;height:5.73958in"
 alt="Buttons for choosing the track/language under a standard video player" />
 
 ### HTML code:
@@ -4162,7 +4151,7 @@ alt="Buttons for choosing the track/language under a standard video player" />
 
 Example #4: making a simple chapter navigation menu
 
-<img src="./media/image38.jpeg" style="width:4.57292in;height:2.08333in"
+<img src="./media/image038.jpeg" style="width:4.57292in;height:2.08333in"
 alt="Simple chapter navigation" />
 
 We can use WebVTT files to define chapters. The syntax is exactly the
@@ -4299,7 +4288,7 @@ version includes the modifications we presented earlier - nothing more.
 Notice that we kept the existing buttons to display a clickable
 transcript:
 
-<img src="./media/image38.jpeg" style="width:5in;height:2.28152in"
+<img src="./media/image038.jpeg" style="width:5in;height:2.28152in"
 alt="Simple chapter navigation" />
 
 Look at the JavaScript and HTML tab of the JSBin example to see the
@@ -4309,7 +4298,7 @@ except for the small changes we explained earlier.
 Chapter navigation, illustrated in the video player below, is fairly
 popular.
 
-<img src="./media/image39.jpeg" style="width:5in;height:2.76977in"
+<img src="./media/image039.jpeg" style="width:5in;height:2.76977in"
 alt="Example of video player that uses text based chapter navigation" />
 
 In addition to the clickable chapter list, this one displays an enhanced
@@ -4386,7 +4375,7 @@ Earlier we saw [an example that could display chapter markers as
 clickable text on the right of a
 video](https://jsbin.com/jiyodit/edit?html,css,js,output).
 
-<img src="./media/image38.jpeg" style="width:5in;height:2.28152in"
+<img src="./media/image038.jpeg" style="width:5in;height:2.28152in"
 alt="SImple chapter menu in plain text" />
 
 ### This example used only standard plain text content for the cues:
@@ -4422,13 +4411,13 @@ example [this](https://trac.ffmpeg.org/wiki/Create%20a%20thumbnail%20image%20ev
 Here are the images which correspond to the seven chapters of the video
 from the previous example:
 
-<img src="./media/image40.jpeg" style="width:2.57292in;height:1.20833in"
-alt="chapter 1 thumbnail" /><img src="./media/image41.jpeg" style="width:2.51042in;height:1.19792in"
-alt="chapter 2 thumbnail" /><img src="./media/image42.jpeg" style="width:2.5625in;height:1.19792in"
-alt="chapter 3 thumbnail" /><img src="./media/image43.jpeg" style="width:2.54167in;height:1.19792in"
-alt="chapter 4 thumbnail" /><img src="./media/image44.jpeg" style="width:2.53125in;height:1.21875in"
-alt="chapter 5 thumbnails" /><img src="./media/image45.jpeg" style="width:2.5in;height:1.19792in"
-alt="chapter 6 thumbnail" /><img src="./media/image46.jpeg" style="width:2.54167in;height:1.21875in"
+<img src="./media/image040.jpeg" style="width:2.57292in;height:1.20833in"
+alt="chapter 1 thumbnail" /><img src="./media/image041.jpeg" style="width:2.51042in;height:1.19792in"
+alt="chapter 2 thumbnail" /><img src="./media/image042.jpeg" style="width:2.5625in;height:1.19792in"
+alt="chapter 3 thumbnail" /><img src="./media/image043.jpeg" style="width:2.54167in;height:1.19792in"
+alt="chapter 4 thumbnail" /><img src="./media/image044.jpeg" style="width:2.53125in;height:1.21875in"
+alt="chapter 5 thumbnails" /><img src="./media/image045.jpeg" style="width:2.5in;height:1.19792in"
+alt="chapter 6 thumbnail" /><img src="./media/image046.jpeg" style="width:2.54167in;height:1.21875in"
 alt="chapter 7 thumbnail" />
 
 To associate these images with its chapter description, we will use JSON
@@ -4460,7 +4449,7 @@ Before explaining the code, we propose that you [try this example at
 JSBin that uses this new .vtt
 file](https://jsbin.com/pulefe/1/edit?html,css,js,output):
 
-<img src="./media/image47.jpeg" style="width:5in;height:5.72864in"
+<img src="./media/image047.jpeg" style="width:5in;height:5.72864in"
 alt="Video with nice chapter menu that uses thumbnail images" />
 
 <h4>HTML code:</h4>
@@ -4792,7 +4781,7 @@ to style and position the thumbnails using CSS.
 A sample menu marker is shown below (it's also animated - hover your
 mouse over the thumbnail to see its animated shadow):
 
-<img src="./media/image40.jpeg" style="width:4in;height:1.8818in" />
+<img src="./media/image040.jpeg" style="width:4in;height:1.8818in" />
 
 ### Introduction
 
@@ -4806,7 +4795,7 @@ code from earlier in this lesson.
 
 [Try it at JSBin](https://jsbin.com/zewemaj/edit?html,js,output)
 
-<img src="./media/image48.jpeg" style="width:5in;height:6.18857in"
+<img src="./media/image048.jpeg" style="width:5in;height:6.18857in"
 alt="Chapter menu + clickable transcript" />
 
 ### 1.4.1 Creating Tracks on the Fly
@@ -4839,7 +4828,7 @@ sounds](https://mainline.i3s.unice.fr/mooc/animalSounds.mp3).
 
 ### Below is the sound file. You can try to play it:
 
-<img src="./media/image49.jpeg" style="width:5in;height:4.91453in"
+<img src="./media/image049.jpeg" style="width:5in;height:4.91453in"
 alt="Click a button to play an animal sound" />
 
 ### **Explanations:**
@@ -5180,7 +5169,7 @@ see "for development purpose only" messages during the execution of this
 demo. You'll need a valid Google API key in order to remove these
 messages.
 
-<img src="./media/image50.jpeg" style="width:5in;height:4.46635in"
+<img src="./media/image050.jpeg" style="width:5in;height:4.46635in"
 alt="Video synced with google map and google street map" />
 
 ##### Example of a cue content from this demonstration:
@@ -5259,7 +5248,7 @@ browsers), we use the @@polyfill presented in the previous section:
 [Try the example at
 JSBin](https://jsbin.com/gucutiyoyu/2/edit?html,js,output)
 
-<img src="./media/image51.jpeg" style="width:5in;height:5.55609in"
+<img src="./media/image051.jpeg" style="width:5in;height:5.55609in"
 alt="video synced with an iframe that shows external URLs and with a google map" />
 
 ### HTML code extract:
@@ -5637,7 +5626,7 @@ synthesis and scheduling notes, that we will not study oin this course.
 Here's a screenshot from one example we will study: an audio player with
 animated waveform and volume meters that 'dance' with the music:
 
-<img src="./media/image52.jpeg" style="width:3in;height:1.92453in"
+<img src="./media/image052.jpeg" style="width:3in;height:1.92453in"
 alt="A fancy audio player with multiple visualizations" />
 
 ### Web Audio concepts
@@ -5670,7 +5659,7 @@ The easiest way to understand this principle is to look
 **[at a first example at
 JSBin](https://jsbin.com/gaduqojeke/edit?html,js).**
 
-<img src="./media/image53.jpeg" style="width:3in;height:0.73669in"
+<img src="./media/image053.jpeg" style="width:3in;height:0.73669in"
 alt="audio player with gain" />
 
 This example is detailed in the next lesson. For the moment, all you
@@ -5691,7 +5680,7 @@ Google Chrome extension named "WebAudio Inspector" (or "Audion").  You
 can install it [from the Chrome Web
 Store](https://chrome.google.com/webstore/detail/web-audio-inspector/cmhomipkklckpomafalojobppmmidlgl).
 
-<img src="./media/image54.jpeg" style="width:5in;height:4.05556in"
+<img src="./media/image054.jpeg" style="width:5in;height:4.05556in"
 alt="Chrome WebAudio Inspector extension" />
 
 Once installed, open a Web page that contains some WebAudio code ([this
@@ -5702,13 +5691,13 @@ open the Web Audio tab. Then reload the target webpage so that all Web
 audio activity can be monitored by the tool. You can click on the
 WebAudio graph nodes to see their properties' values.
 
-<img src="./media/image55.jpeg" style="width:5in;height:2.34989in"
+<img src="./media/image055.jpeg" style="width:5in;height:2.34989in"
 alt="WebAudio Inspector tab" />
 
 Note that JSBin examples should be opened in standalone mode (not in
 editor mode).
 
-<img src="./media/image56.jpeg" style="width:5in;height:2.40492in"
+<img src="./media/image056.jpeg" style="width:5in;height:2.40492in"
 alt="How to go in JsBin standalone mode: click the black arrow on top right of the output tab" />
 
 Audio nodes are linked via their inputs and outputs, forming a chain
@@ -5849,7 +5838,7 @@ hundreds of nodes (the picture below has been taken while the WebAudio
 debugger was still included in FireFox, you should get similar results
 with the Chrome WebAudio Inspector extension).
 
-<img src="./media/image57.jpeg" style="width:5in;height:6.84402in"
+<img src="./media/image057.jpeg" style="width:5in;height:6.84402in"
 alt="audio graph of the vocoder app is made of hundreds of nodes" />
 
 ## 1.5.2 Working with Streamed Content
@@ -6089,7 +6078,7 @@ See also the Biquad Filter node's documentation.
 try it in your browser, with a lowpass filter, only the frequency slider
 will have a noticeable effect:
 
-Frequency  Detune  Q  Type        ![](./media/image58.wmf)
+Frequency  Detune  Q  Type        ![](./media/image058.wmf)
 
 The most useful slider is the frequency slider (that changes
 the frequency value property of the node). The meaning of the
@@ -6107,7 +6096,7 @@ filters](https://webaudioapi.com/samples/frequency-response/), you can
 choose the type of filters and play with the different property values
 using sliders:
 
-<img src="./media/image59.jpeg" style="width:5in;height:5.08474in"
+<img src="./media/image059.jpeg" style="width:5in;height:5.08474in"
 alt="Frequency responses for various filters. Screenshot of a nice application that visualizes that" />
 
 Multiple filters are often used together. We will make a multi band
@@ -6234,7 +6223,7 @@ Opera of Milan, in Italy. It's a .wav file.
 Try[ this demo](https://webaudioapi.com/samples/room-effects/) to see
 the difference between different impulse files!
 
-<img src="./media/image60.jpeg" style="width:5in;height:1.92376in"
+<img src="./media/image060.jpeg" style="width:5in;height:1.92376in"
 alt="screenshot of a webapp that enable to switch between different impulse files" />
 
 So before building the audio graph, we need to download the impulse. For
@@ -6333,7 +6322,7 @@ The audio graph will look like this (picture taken with the now
 discontinued FireFox WebAudio debugger, you should get similar results
 with the Chrome WebAudio Inspector extension):
 
-<img src="./media/image61.jpeg" style="width:5in;height:2.85737in"
+<img src="./media/image061.jpeg" style="width:5in;height:2.85737in"
 alt="audio graph of the previous example" />
 
 ### And here is the function which builds the graph:
@@ -6423,7 +6412,7 @@ Audio graph with the compressor activated (picture taken with the now
 discontinued FireFox WebAudio debugger, you should get similar results
 with the Chrome WebAudio Inspector extension):
 
-<img src="./media/image62.jpeg" style="width:5in;height:3.11966in"
+<img src="./media/image062.jpeg" style="width:5in;height:3.11966in"
 alt="Audio graph of the previous example" />
 
 ### Extract of the HTML code:
@@ -6586,7 +6575,7 @@ Example \#1: an audio equalizer with an \<audio\> element
 at JSBin,](https://jsbin.com/loquwih/edit?html,css,js,output) here is a
 screenshot:
 
-<img src="./media/image63.jpeg" style="width:3in;height:1.79534in"
+<img src="./media/image063.jpeg" style="width:3in;height:1.79534in"
 alt="an audio player with an equalizer" />
 
 This example uses six BiquadFilter nodes with type="peaking".
@@ -6774,7 +6763,7 @@ Here is the final audio graph (picture taken with the now discontinued
 FireFox WebAudio debugger, you should get similar results with the
 Chrome WebAudio Inspector extension):
 
-<img src="./media/image64.jpeg" style="width:5in;height:3.02403in"
+<img src="./media/image064.jpeg" style="width:5in;height:3.02403in"
 alt="audio graph of the previous example" />
 
 Example \#2: equalizer with a \<video\> element
@@ -6794,7 +6783,7 @@ moving the sliders to change the sound!
 
 [Example at JSBin](https://jsbin.com/kukupot/edit?html,css,js,output):
 
-<img src="./media/image65.jpeg" style="width:3in;height:3.22115in"
+<img src="./media/image065.jpeg" style="width:3in;height:3.22115in"
 alt="same example as previously but with a video above the equalizer" />
 
 ## 1.5.5 Waveforms
@@ -6910,7 +6899,7 @@ Example \#1: audio player with waveform visualization
 
 [Example at JSBin](https://jsbin.com/sufatup/edit?html,js,output)
 
-<img src="./media/image66.jpeg" style="width:3in;height:1.53543in"
+<img src="./media/image066.jpeg" style="width:3in;height:1.53543in"
 alt="Audio player with waveform visualization" />
 
 Do things in order!
@@ -7016,7 +7005,7 @@ With the exception of *lines 8-12*, where we set the analyser options
 now discontinued FireFox WebAudio debugger, you should get similar
 results with the Chrome WebAudio Inspector extension):
 
-<img src="./media/image67.jpeg" style="width:5in;height:3.3563in"
+<img src="./media/image067.jpeg" style="width:5in;height:3.3563in"
 alt="Audio graph with analyser node and properties" />
 
 Step \#2: write the animation loop
@@ -7153,7 +7142,7 @@ changed "audio" to "video" in the HTML code. 
 [Example at
 JSBin](https://jsbin.com/fuyejuz/edit?html,js,console,output):
 
-<img src="./media/image68.jpeg" style="width:3in;height:3.26685in"
+<img src="./media/image068.jpeg" style="width:3in;height:3.26685in"
 alt="a video player with real time waveform visualization" />
 
 Example \#3: both previous examples, this time with the graphic
@@ -7165,12 +7154,12 @@ you should see the waveform changing.
 
 [Example at JSBin](https://jsbin.com/qijujuz/edit?html,js,output)
 
-<img src="./media/image69.jpeg" style="width:3in;height:2.5726in"
+<img src="./media/image069.jpeg" style="width:3in;height:2.5726in"
 alt="audio player + equalizer + visualization" />
 
 [Example at JSBin](https://jsbin.com/jafoboh/edit?js,console,output):
 
-<img src="./media/image70.jpeg" style="width:3in;height:4.04878in"
+<img src="./media/image070.jpeg" style="width:3in;height:4.04878in"
 alt="Video player + equalizer + waveform visualization" />
 
 ## 1.5.6 Frequencies
@@ -7179,8 +7168,8 @@ alt="Video player + equalizer + waveform visualization" />
 
 [Example at JSBin](https://jsbin.com/wenuvub/edit?js,output):
 
-<img src="./media/image71.jpeg" style="width:3in;height:1.63496in"
-alt="audio player with frequency visualisations with red bars" /><img src="./media/image72.jpeg" style="width:3in;height:1.57732in"
+<img src="./media/image071.jpeg" style="width:3in;height:1.63496in"
+alt="audio player with frequency visualisations with red bars" /><img src="./media/image072.jpeg" style="width:3in;height:1.57732in"
 alt="frequency viualisation this time fftsize = 64" />
 
 This time, instead of a waveform we want to visualize an animated bar
@@ -7337,7 +7326,7 @@ JSBin](https://jsbin.com/muzifi/edit?html,css,js,output) with a
 different look for the visualization: please read the source code
 and try to understand how the drawing of the frequency is done.
 
-<img src="./media/image73.jpeg" style="width:3in;height:1.57105in"
+<img src="./media/image073.jpeg" style="width:3in;height:1.57105in"
 alt="Same example as before but with symmetric and colored frequency visualisations" />
 
 [Last example at
@@ -7345,14 +7334,14 @@ JSBin](https://jsbin.com/fekorej/edit?html,js,output) with this time the
 graphic equalizer, a master volume (gain) and a stereo panner node just
 before the visualizer node:
 
-<img src="./media/image74.jpeg" style="width:3in;height:3.36034in"
+<img src="./media/image074.jpeg" style="width:3in;height:3.36034in"
 alt="Previous example with a master volume (gain node) and the equalizer + a stereoPanner node" />
 
 And here is the audio graph for this example (picture taken with the now
 discontinued FireFox WebAudio debugger, you should get similar results
 with the Chrome WebAudio Inspector extension):
 
-<img src="./media/image75.jpeg" style="width:6.5in;height:1.06667in"
+<img src="./media/image075.jpeg" style="width:6.5in;height:1.06667in"
 alt="audio graph from above example" />
 
 Source code from this example's the buildAudioGraph function:
@@ -7458,7 +7447,7 @@ Example \#1: add a single volume meter to the audio player
 
 [Try it at JSBin](https://jsbin.com/kuciset/edit?html,css,js,output):
 
-<img src="./media/image76.jpeg" style="width:3in;height:1.77337in"
+<img src="./media/image076.jpeg" style="width:3in;height:1.77337in"
 alt="Single volume meter that dances with the music" />
 
 In order to have a "volume meter" which traces upward/downward with the
@@ -7605,14 +7594,14 @@ analyser (*lines 46 and 47* of the example below)
 
 [Example at JSBin](https://jsbin.com/qezevew/edit?html,css,js,output):
 
-<img src="./media/image52.jpeg" style="width:3in;height:1.92453in"
+<img src="./media/image052.jpeg" style="width:3in;height:1.92453in"
 alt="Example with stereo volume meters" />
 
 This is the audio graph we've built (picture taken with the now
 discontinued FireFox WebAudio debugger, you should get similar results
 with the Chrome WebAudio Inspector extension):
 
-<img src="./media/image77.jpeg" style="width:5in;height:2.02564in"
+<img src="./media/image077.jpeg" style="width:5in;height:2.02564in"
 alt="Audiograph from previous example" />
 
 As you can see there are two routes: the one on top sends the output
@@ -7833,7 +7822,7 @@ Here is how the WebAudio graph looks like (picture taken with the now
 discontinued FireFox WebAudio debugger, you should get similar results
 with the Chrome WebAudio Inspector extension):
 
-<img src="./media/image78.jpeg" style="width:4in;height:3.27308in"
+<img src="./media/image078.jpeg" style="width:4in;height:3.27308in"
 alt="Screenshot with buttons that play sound samples many times with different pitch, volume, interval of times" />
 
 Music applications such as Digital Audio Workstations (GarageBand-like
@@ -7846,7 +7835,7 @@ song (midi file) the app will play-along, selecting the same musical
 note from the corresponding instrument audio sample. This is all done
 with Web Audio and samples loaded in memory:
 
-<img src="./media/image79.jpeg" style="width:4in;height:3.87522in"
+<img src="./media/image079.jpeg" style="width:4in;height:3.87522in"
 alt="The remixer DAW workstation, a typical screenshot of a DAW with tracks, mix table etc." />
 
 The author of this course wrote a multitrack audio player: it loads
@@ -7857,7 +7846,7 @@ them in sync.
 GitHub](https://github.com/squallooo/MT5). The documentation is in the
 help menu.
 
-<img src="./media/image80.jpeg" style="width:4in;height:3.87438in"
+<img src="./media/image080.jpeg" style="width:4in;height:3.87438in"
 alt="Screenshot of MT5 a multitrack player" />
 
 Try also this small demonstration that uses the [Howler.js
@@ -7868,7 +7857,7 @@ fast the sound effects are played. Click as fast as you can!
 
 [Try the explosion demo at JSBin](https://jsbin.com/gefezu/edit):
 
-<img src="./media/image81.png" style="width:4in;height:4.26316in" />
+<img src="./media/image081.png" style="width:4in;height:4.26316in" />
 
 ## 1.5.9 Load and play sound samples
 
@@ -7907,7 +7896,7 @@ to the buffer property of an AudioBufferSourceNode.**
 [Try the example at
 JSBin](https://jsbin.com/botagas/edit?html,js,console,output):
 
-<img src="./media/image82.jpeg" style="width:4.4375in;height:2.07292in"
+<img src="./media/image082.jpeg" style="width:4.4375in;height:2.07292in"
 alt="example that loads and play a unique sound" />
 
 In this example, as soon as the page is loaded, we send an Ajax request
@@ -8067,7 +8056,7 @@ have packaged the code into an object called the BufferedLoader.
 [Example at JSBin that uses the BufferLoader
 utility](https://jsbin.com/javoger/edit?html,js,console,output):
 
-<img src="./media/image83.jpeg" style="width:5in;height:1.37255in"
+<img src="./media/image083.jpeg" style="width:5in;height:1.37255in"
 alt="Example that loads two sounds and create two buttons for playing them" />
 
 ##### HTML code:
@@ -8203,7 +8192,7 @@ with the Chrome WebAudio Inspector extension).
 [Example at
 JSBin](https://jsbin.com/zebokeg/edit?html,js,console,output):
 
-<img src="./media/image84.jpeg" style="width:4in;height:2.85641in"
+<img src="./media/image084.jpeg" style="width:4in;height:2.85641in"
 alt="Audio Graph used in the previous example source node -&gt; gain -&gt; compressor -&gt; destination" />
 
 In this example, we added a function (borrowed and adapted from [this
@@ -8322,7 +8311,7 @@ Below, we have mixed the code from two previous examples:
 
 [This one at JSBin](https://jsbin.com/vejocav/edit?html,css,js,output):
 
-<img src="./media/image52.jpeg" style="width:2in;height:1.28302in"
+<img src="./media/image052.jpeg" style="width:2in;height:1.28302in"
 alt="audio player with volume meters and waveform" />
 
 [And this one at
@@ -8330,20 +8319,20 @@ JSBin](https://jsbin.com/nazega/edit?html,js,console,output) (picture
 taken with the now discontinued FireFox WebAudio debugger, you should
 get similar results with the Chrome WebAudio Inspector extension):
 
-<img src="./media/image85.jpeg" style="width:5in;height:3.57051in"
+<img src="./media/image085.jpeg" style="width:5in;height:3.57051in"
 alt="multiple sound samples played at different intervals and rates" />
 
 And here is the result ([try it at
 JSBin](https://jsbin.com/coraso/edit?html,js,console,output)):
 
-<img src="./media/image86.jpeg" style="width:5in;height:2.56836in"
+<img src="./media/image086.jpeg" style="width:5in;height:2.56836in"
 alt="Sound samples and 2D visualization" />
 
 Here is the audio graph of this example (picture taken with the now
 discontinued FireFox WebAudio debugger, you should get similar results
 with the Chrome WebAudio Inspector extension):
 
-<img src="./media/image87.jpeg" style="width:5in;height:6.6266in"
+<img src="./media/image087.jpeg" style="width:5in;height:6.6266in"
 alt="audio graph of the previous example" />
 
 Look at the source code on JSBin, it's a quick merge of the two previous
@@ -8381,64 +8370,42 @@ recommend the following:
 
 -   For writing musical applications, take a look at ToneJS !
 
-## Module 2
+<h2 id="ch2">Module 2</h2>
 
 Hi! When I was 14, I was fan of the Ramones. I bought an electric guitar
-and I played in
-
-a rock band in my school. A few years later, I wanted to become a game
-creator. This is
-
-how I became a scientist in computer engineering. During this week, I
+and I played in a rock band in my school. A few years later, I wanted to become a game
+creator. This is how I became a scientist in computer engineering. During this week, I
 went back in time, because
 
 I'm going to teach you how to write HTML5 games.
 
 During this week, you will greatly improve your knowledge of the HTML5
-canvas API by
-
-learning the core techniques for writing 2D games that run at 60
+canvas API by learning the core techniques for writing 2D games that run at 60
 frames/s.
 
 We’ll teach you how to create a low level game framework that provides
-all the basic
-
-blocks you need for writing a video game: game loop with time based
-animation - this
-
-is an important technique that will enable your game to run at the same
+all the basic blocks you need for writing a video game: game loop with time based
+animation - this is an important technique that will enable your game to run at the same
 speed on different devices.
 
-We will look at richer interactions with keyboard,
-
-mouse, gamepad, and also we will learn how to animate multiple objects
+We will look at richer interactions with keyboard, mouse, gamepad, and also we will learn how to animate multiple objects
 on screen.
 
 Not to forget learning about efficient collision detection, managing
-game states (start menu,
-
-game itself with different levels, game over at the end).
+game states (start menu, game itself with different levels, game over at the end).
 
 We will look also at the sprite based animation technique, that consists
-in
-
-extracting small images of a character posture and by drawing the
+in extracting small images of a character posture and by drawing the
 different sub-images.
 
 It gives the impression of the character moving. We will provide a
-sprite engine that will
-
-help you greatly use this technique. And finally we will look at how we
-can add
-
-music and sound effects with the Web Audio API seen during Week 1.
+sprite engine that will help you greatly use this technique. And finally we will look at how we
+can add music and sound effects with the Web Audio API seen during Week 1.
 
 This is one of the most funny weeks of this course so we hope you will
-share your own
+share your own creations and enjoy this funny part of the course.
 
-creations and enjoy this funny part of the course.
-
-## 2.2.1 History of JavaScript games
+<h3 id="ch2-2-1">2.2.1 History of JavaScript games</h3>
 
 There is a widely-held belief that games running in Web browsers and
 without the help of plugins are a relatively new phenomenon. This is not
@@ -8446,7 +8413,7 @@ true: back in 1998, Donkey Kong ran in a browser (screenshot below). It
 was a game by Scott Porter, written using only standard Web technologies
 (HTML, JavaScript, and CSS) .
 
-<img src="./media/image88.png" style="width:2.17708in;height:2.83333in"
+<img src="./media/image088.png" style="width:2.17708in;height:2.83333in"
 alt="A screenshot of a DHTML / Javascript Donkey Kong from 1998" />
 
 Just a few years after the Web was born, JavaScript appeared -  a simple
@@ -8472,7 +8439,7 @@ years, [Brent Silby](https://def-logic.com/) presented 'Game Lib 2'. It
 is still possible to play many games created with that library on his
 Web site.
 
-<img src="./media/image89.png" style="width:2in;height:1.63509in"
+<img src="./media/image089.png" style="width:2in;height:1.63509in"
 alt="a mario DHTML game" />
 
 The DHTML era was a time when JavaScript games were as good as those
@@ -8502,7 +8469,7 @@ by Andreas Rosdal - a port of Sid Meier's Civilization,
 and[ Sarien.net](http://sarien.net/) by Martin Kool, an emulator of old
 Sierra games. 
 
-<img src="./media/image91.png" style="width:1in;height:1.32039in"
+<img src="./media/image091.png" style="width:1in;height:1.32039in"
 alt="html5 logo" />
 
 And now we are entering a new era in the history of the Web: "HTML5"!
@@ -8518,7 +8485,7 @@ Here, we present some elements that are useful in writing games.
 
 ##### Drawing: the \<canvas\> element
 
-<img src="./media/image92.jpeg" style="width:2in;height:2in"
+<img src="./media/image092.jpeg" style="width:2in;height:2in"
 alt="the html5 canvas logo" />
 
 The \<canvas\> is a new HTML element described as "*a
@@ -8562,7 +8529,7 @@ performed when the canvas is not visible, thus saving CPU resources.
 
 ##### Videos and animated textures: the \<video\> element
 
-<img src="./media/image93.png" style="width:1in;height:1in"
+<img src="./media/image093.png" style="width:1in;height:1in"
 alt="a movie film icon" />
 
 The HTML5 \<video\> element was introduced in the HTML5 specification
@@ -8580,7 +8547,7 @@ as "animated textures" over graphic objects.
 
 #### 
 
-#### <img src="./media/image94.png" style="width:2in;height:2.00966in"
+#### <img src="./media/image094.png" style="width:2in;height:2.00966in"
 alt="a picture of a speaker" />
 
 ##### The \<audio\> element
@@ -8605,7 +8572,7 @@ Edge supports it).
 
 ### **Interacting**: dealing with keyboard and mouse events, the GamePad API
 
-<img src="./media/image95.png" style="width:0.72917in;height:0.80208in"
+<img src="./media/image095.png" style="width:0.72917in;height:0.80208in"
 alt="a gamepad picture" />
 
 User inputs will rely on several APIs, some of which are well
@@ -8631,12 +8598,12 @@ as [socket.io](https://socket.io/), provide the means for sending
 messages to a server and receiving event-driven responses without having
 to poll the server for a reply. 
 
-<img src="./media/image96.gif" style="width:2in;height:2.28807in"
+<img src="./media/image096.gif" style="width:2in;height:2.28807in"
 alt="a graph showing several clients interacting with a websocket server" />
 
 ## 2.2.3 The "game loop"
 
-<img src="./media/image97.png" style="width:2in;height:3.78182in"
+<img src="./media/image097.png" style="width:2in;height:3.78182in"
 alt=" a game loop diagram" />
 
 The "game loop" is the main component of any game. It separates the game
@@ -8674,7 +8641,7 @@ argument.
 [Try an example at JSBin](https://jsbin.com/qopefu/edit) : open the
 HTML, JavaScript and output tabs to see the code.
 
-<img src="./media/image98.png"
+<img src="./media/image098.png"
 style="width:6.03125in;height:2.86458in" />
 
 Source code extract:
@@ -8940,7 +8907,7 @@ Here is a screenshot of an example and the code we added to our game
 engine, for measuring FPS ([try it online at
 JSBin](https://jsbin.com/noqibu/edit)):
 
-<img src="./media/image99.jpeg" style="width:4in;height:1.87097in"
+<img src="./media/image099.jpeg" style="width:4in;height:1.87097in"
 alt="screenshot of the example that displays 60 frames/s" />
 
 Source code extract:
