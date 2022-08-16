@@ -1,4 +1,3 @@
-# W3Cx-4of5-HTML5.2x - Apps and Games
 <h2 align="center">W3Cx Front-End Web Developer</h2>
 <br/>
 
@@ -23,77 +22,50 @@
    alt="W3Cx HTML 5.2x logo" />
 </p>
 
+## [Table of contents](#table-of-contents)
 
-<!------------------------------------------------------------------------------------------------>
-<!----------------------------- 01. W3Cx-4of5-Apps-and-Games logo -------------------------------->
-<!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="/images/image001.png?raw=true"
-   width="50%"
-   alt="W3Cx HTML 5.2x Apps and Games logo" />
-</p>
+## [**About W3C and the Web**](#cha)
+>### - [**About W3C and the Web**](#cha-1)
+>### - [**Why accessibility is important**](#cha-2)
+>### - [**Why internationalization is important**](#cha-3)
 
-#### W3Cx: HTML5 Apps and Games
+## [**Course information**](#chb)
+>### * Welcome to "HTML5.2x - Apps and Games"**](#chb-1)
+>### * Course outline, grading and due dates**](#chb-2)
+>### * Course practical information**](#chb-3)
+>### * Course tools**](#chb-4)
 
-## Course outline
+## [**Module 1: Advanced HTML5 Multimedia**](ch1)
+>### 1.1. [**Video introduction - Module 1**](#ch1-1-1)
+>### 1.2. [**The Timed Text Track API**](ch1-2-1)
+>### 1.3. [**Advanced features for audio and video players**](ch-1-3-1)
+>### 1.4. [**Creating tracks on the fly, syncing HTML content with a video**](#ch1-4-1)
+>### 1.5. [**The Web Audio API**](#ch1-5-1)
 
-## About W3C and the Web
-> ##### - About W3C and the Web
-> ##### - Why accessibility is important
-> ##### - Why internationalization is important
+Module 2: Game programming with HTML5
+2.1.	Video introduction
+2.2.	Basic concepts of HTML5 game development
+2.3.	A simple game framework: graphics, animations and interactions
+2.4.	Time-based animation
+2.5.	Animating multiple objects, collision detection
+2.6.	Sprite-based animation
+2.7.	Game states
 
-## Course information
-> ##### * Welcome to "HTML5 and CSS Fundamentals"
-> ##### * Course outline, grading and due dates
-> ##### * Course practical information
-> ##### * Course tools
+Module 3: HTML5 file upload and download
+3.1.	Video introduction
+3.2.	File API and Ajax / XHR2 requests
+3.3.	Drag and drop: the basics
+3.4.	Drag and drop: working with files
+3.5.	Forms and files
+3.6.	IndexedDB
+3.7.	Conclusion on client-side persistence
 
-## [Module 1: My first Web page in HTML5](/modules/module1.md)
-
-> ##### 1.1 Introduction to Module 1 
-> ##### 1.2 The big three: HTML5, CSS3 and JavaScript 
-> ##### 1.3 Elements, tags and attributes 
-> ##### 1.4 Character encoding 
-> ##### 1.5 Best practices 
-> ##### 1.6 More on tags 
-> ##### 1.7 Exercises - Module 1
-
-## [Module 2: Attributes, images and links](/modules/module2.md)
-> ##### 2.1 Introduction to Module 2
-> ##### 2.2 Attributes
-> ##### 2.3 Semantic meaning
-> ##### 2.4 Images
-> ##### 2.5 Hyperlinks
-> ##### 2.6 Exercises - Module 2
-
-## [Module 3: Adding style with CSS](/modules/module3.md)
-> ##### 3.1 Introduction to Module 3 
-> ##### 3.2 CSS basic syntax 
-> ##### 3.3 CSS properties 
-> ##### 3.4 Lists and selectors 
-> ##### 3.5 Exercises - Module 3 
-
-## [Module 4: Fixing and debugging](/modules/module4.md)
-> ##### 4.1 Introduction to Module 4 
-> ##### 4.2 Debugging tools and HTML5 
-> ##### 4.4 Debugging CSS precedence 
-> ##### 4.5 Exercises - Module 4 
-
-## [Module 5: More HTML5 and CSS](/modules/module5.md)
-> ##### 5.1 Introduction to Module 5 
-> ##### 5.2 Tables 
-> ##### 5.3 Multimedia 
-> ##### 5.4 Embedding content
-> ##### 5.5 CSS tricks 
-> ##### 5.6 Exercises - Module 5 
-
-## [Module 6: Basics of page Layout](/modules/module6.md)
-> ##### 6.1 Introduction to Module 6 
-> ##### 6.2 Concepts 
-> ##### 6.3 CSS Flexbox 
-> ##### 6.4 More flexbox
-> ##### 6.5 CSS Grid
-> ##### 6.6 Recipe project 
+Module 4: Web components and other HTML5 APIs
+4.1.	Video introduction
+4.2.	Web Components
+4.3.	Web Workers
+4.4.	The Orientation and Device Motion APIs
+4.5.	Where to from here?
 
 **W3Cx-4of5-HTML5.2x – Apps and Games**
 
@@ -271,7 +243,7 @@ an HTML track: [35](#_Toc98696550)](#_Toc98696550)
 [Source code extract:
 [51](#source-code-extract-1)](#source-code-extract-1)
 
-[1.3 Advanced Features for \<audio\> and \<video\> Players
+[1.3 Advanced Features for <audio> and <video> Players
 [52](#advanced-features-for-audio-and-video-players)](#advanced-features-for-audio-and-video-players)
 
 [1.3.1 With a Clickable Transcript on the Side
@@ -359,22 +331,22 @@ an HTML track: [35](#_Toc98696550)](#_Toc98696550)
 [How to measure time when we use requestAnimationFrame?
 [214](#how-to-measure-time-when-we-use-requestanimationframe)](#how-to-measure-time-when-we-use-requestanimationframe)
 
-[Example \#1: no use of time-based animation
+[Example #1: no use of time-based animation
 [215](#example-1-no-use-of-time-based-animation)](#example-1-no-use-of-time-based-animation)
 
-[Example \#2: simulating a low-end device
+[Example #2: simulating a low-end device
 [217](#example-2-simulating-a-low-end-device)](#example-2-simulating-a-low-end-device)
 
 [2.4.2 Measuring time between frames
 [218](#measuring-time-between-frames)](#measuring-time-between-frames)
 
-[Method \#1: using the JavaScript Date object
+[Method #1: using the JavaScript Date object
 [218](#method-1-using-the-javascript-date-object)](#method-1-using-the-javascript-date-object)
 
-[Method \#2: using the new HTML5 high-resolution timer
+[Method #2: using the new HTML5 high-resolution timer
 [223](#method-2-using-the-new-html5-high-resolution-timer)](#method-2-using-the-new-html5-high-resolution-timer)
 
-[Method \#3: using the optional timestamp parameter of the callback
+[Method #3: using the optional timestamp parameter of the callback
 function of requestAnimationFrame
 [225](#method-3-using-the-optional-timestamp-parameter-of-the-callback-function-of-requestanimationframe)](#method-3-using-the-optional-timestamp-parameter-of-the-callback-function-of-requestanimationframe)
 
@@ -416,7 +388,7 @@ velocity variable
 [The collision test occurs in the main loop:
 [250](#the-collision-test-occurs-in-the-main-loop)](#the-collision-test-occurs-in-the-main-loop)
 
-[\[Advanced technique\] Use several bounding circles for complex shapes,
+[[Advanced technique] Use several bounding circles for complex shapes,
 recompute bounding circles when the shape changes over time (animated
 objects)
 [251](#advanced-technique-use-several-bounding-circles-for-complex-shapes-recompute-bounding-circles-when-the-shape-changes-over-time-animated-objects)](#advanced-technique-use-several-bounding-circles-for-complex-shapes-recompute-bounding-circles-when-the-shape-changes-over-time-animated-objects)
@@ -460,7 +432,7 @@ objects)
 
 [Principle [267](#principle)](#principle)
 
-[Example \#1 [267](#example-1)](#example-1)
+[Example #1 [267](#example-1)](#example-1)
 
 [Try it at JSBin: [268](#_Toc98696629)](#_Toc98696629)
 
@@ -468,7 +440,7 @@ objects)
 
 [Explanations: [272](#explanations-8)](#explanations-8)
 
-[Example \#2 [272](#example-2)](#example-2)
+[Example #2 [272](#example-2)](#example-2)
 
 [2.6.4 A small sprite animation framework
 [273](#a-small-sprite-animation-framework)](#a-small-sprite-animation-framework)
@@ -570,14 +542,14 @@ objects)
 
 [Complete example [320](#complete-example)](#complete-example)
 
-[3.3.4 A few words about data-\* attributes
+[3.3.4 A few words about data-* attributes
 [323](#a-few-words-about-data--attributes)](#a-few-words-about-data--attributes)
 
 [JavaScript API: the dataset property
 [323](#javascript-api-the-dataset-property)](#javascript-api-the-dataset-property)
 
 [Using CSS pseudo elements ::before and ::after with the attr() function
-to display the value of data-\* attributes
+to display the value of data-* attributes
 [325](#using-css-pseudo-elements-before-and-after-with-the-attr-function-to-display-the-value-of-data--attributes)](#using-css-pseudo-elements-before-and-after-with-the-attr-function-to-display-the-value-of-data--attributes)
 
 [3.3.5 Add visual feedback
@@ -669,24 +641,24 @@ the form is submitted
 
 [3.5.3 Serial approach [369](#serial-approach)](#serial-approach)
 
-[Example \#1: auto-loading of the files, regular form submission,
+[Example #1: auto-loading of the files, regular form submission,
 benefits of the HTML5 form validation system
 [369](#example-1-auto-loading-of-the-files-regular-form-submission-benefits-of-the-html5-form-validation-system)](#example-1-auto-loading-of-the-files-regular-form-submission-benefits-of-the-html5-form-validation-system)
 
-[Example \#2: similar example but using drag and drop instead of a file
+[Example #2: similar example but using drag and drop instead of a file
 selector
 [370](#example-2-similar-example-but-using-drag-and-drop-instead-of-a-file-selector)](#example-2-similar-example-but-using-drag-and-drop-instead-of-a-file-selector)
 
-[And here is the PHP code for the server-side part of examples \#1 and
-\#2
+[And here is the PHP code for the server-side part of examples #1 and
+#2
 [371](#and-here-is-the-php-code-for-the-server-side-part-of-examples-1-and-2)](#and-here-is-the-php-code-for-the-server-side-part-of-examples-1-and-2)
 
 [3.5.4 Package approach [372](#package-approach)](#package-approach)
 
-[Example \#3: uploading everything at once using a file selector
+[Example #3: uploading everything at once using a file selector
 [372](#example-3-uploading-everything-at-once-using-a-file-selector)](#example-3-uploading-everything-at-once-using-a-file-selector)
 
-[Example \#4: uploading using drag and drop
+[Example #4: uploading using drag and drop
 [373](#example-4-uploading-using-drag-and-drop)](#example-4-uploading-using-drag-and-drop)
 
 [PHP code for the single-packaged examples (with and without drag and
@@ -747,10 +719,10 @@ drop, the PHP is the same)
 
 [3.6.7 Inserting data [401](#inserting-data)](#inserting-data)
 
-[Example \#1: basic steps
+[Example #1: basic steps
 [403](#example-1-basic-steps)](#example-1-basic-steps)
 
-[Example \#2: adding a form and validating inputs
+[Example #2: adding a form and validating inputs
 [407](#example-2-adding-a-form-and-validating-inputs)](#example-2-adding-a-form-and-validating-inputs)
 
 [3.6.8 Removing data [411](#removing-data)](#removing-data)
@@ -807,7 +779,7 @@ drop, the PHP is the same)
 
 [4.2.4 Shadow DOM [443](#shadow-dom)](#shadow-dom)
 
-[Example using the Shadow DOM: the \<video\> element
+[Example using the Shadow DOM: the <video> element
 [447](#example-using-the-shadow-dom-the-video-element)](#example-using-the-shadow-dom-the-video-element)
 
 [Another simple example
@@ -836,7 +808,7 @@ drop, the PHP is the same)
 
 [4.2.8 HTML Imports [461](#html-imports)](#html-imports)
 
-[\*\*\*\*\* Important note \*\*\*\*
+[***** Important note ****
 [461](#important-note)](#important-note)
 
 [If you want to know what HTML Imports were about...
@@ -881,22 +853,22 @@ alt="ScriptNotResponding1" />
 
 [4.3.2 Use cases [471](#use-cases)](#use-cases)
 
-[Use case \#1: a "parent HTML5 page" creates workers from a script
+[Use case #1: a "parent HTML5 page" creates workers from a script
 [471](#use-case-1-a-parent-html5-page-creates-workers-from-a-script)](#use-case-1-a-parent-html5-page-creates-workers-from-a-script)
 
-[Use case \#2: you manage a worker by communicating with it using
+[Use case #2: you manage a worker by communicating with it using
 "messages"
 [471](#use-case-2-you-manage-a-worker-by-communicating-with-it-using-messages)](#use-case-2-you-manage-a-worker-by-communicating-with-it-using-messages)
 
-[Use case \#3: a complete example
+[Use case #3: a complete example
 [471](#use-case-3-a-complete-example)](#use-case-3-a-complete-example)
 
-[Use case \#4: handling errors
+[Use case #4: handling errors
 [472](#use-case-4-handling-errors)](#use-case-4-handling-errors)
 
 [4.3.3 Examples [473](#examples-1)](#examples-1)
 
-[Example \#1: compute prime numbers in the background while keeping the
+[Example #1: compute prime numbers in the background while keeping the
 page user interface responsive
 [473](#example-1-compute-prime-numbers-in-the-background-while-keeping-the-page-user-interface-responsive)](#example-1-compute-prime-numbers-in-the-background-while-keeping-the-page-user-interface-responsive)
 
@@ -913,7 +885,7 @@ page user interface responsive
 [Here is the worker1.js code:
 [476](#here-is-the-worker1.js-code)](#here-is-the-worker1.js-code)
 
-[Example \#2: how to stop/kill a worker after a given amount of time
+[Example #2: how to stop/kill a worker after a given amount of time
 [477](#example-2-how-to-stopkill-a-worker-after-a-given-amount-of-time)](#example-2-how-to-stopkill-a-worker-after-a-given-amount-of-time)
 
 [HTML code: [477](#html-code-6)](#html-code-6)
@@ -949,9 +921,9 @@ page user interface responsive
 
 [4.3.4 Demos [481](#demos)](#demos)
 
-[Demo \#1 [481](#demo-1)](#demo-1)
+[Demo #1 [481](#demo-1)](#demo-1)
 
-[Demo \#2 [482](#demo-2)](#demo-2)
+[Demo #2 [482](#demo-2)](#demo-2)
 
 [Other demos [483](#other-demos)](#other-demos)
 
@@ -973,15 +945,15 @@ page user interface responsive
 [485](#the-coordinate-system)](#the-coordinate-system)
 
 [Rotate the device frame around its z axis by alpha degrees,
-with alpha in \[0, 360\]
+with alpha in [0, 360]
 [485](#rotate-the-device-frame-around-its-z-axis-by-alpha-degrees-with-alpha-in-0-360)](#rotate-the-device-frame-around-its-z-axis-by-alpha-degrees-with-alpha-in-0-360)
 
 [Rotate the device frame around its x axis by beta degrees,
-with beta in\[-180, 180\]
+with beta in[-180, 180]
 [487](#rotate-the-device-frame-around-its-x-axis-by-beta-degrees-with-beta-in-180-180)](#rotate-the-device-frame-around-its-x-axis-by-beta-degrees-with-beta-in-180-180)
 
 [Rotate the device frame around its y axis by gamma degrees,
-with gamma in \[-90, 90\]
+with gamma in [-90, 90]
 [489](#rotate-the-device-frame-around-its-y-axis-by-gamma-degrees-with-gamma-in--90-90)](#rotate-the-device-frame-around-its-y-axis-by-gamma-degrees-with-gamma-in--90-90)
 
 [4.4.3 Get different angles
@@ -1154,8 +1126,8 @@ This is a great service to get you started quickly as it doesn't require
 you to download anything and you can access it, along with your saved
 projects from any Web browser. Here's an article which will be
 of-interest if you use CodePen: [Things you can do with
-CodePen](https://codepen.io/brentmiller/post/things-you-can-do-with-codepen) \[Brent
-Miller, February 6, 2019\].
+CodePen](https://codepen.io/brentmiller/post/things-you-can-do-with-codepen) [Brent
+Miller, February 6, 2019].
 
 There are many other handy tools such as JSFiddle, and Dabblet (Lea
 Verou's tool that we will use extensively in a future CSS course).
@@ -1364,7 +1336,7 @@ alt="Tim Berners-Lee at his desk in CERN, 1994" />
 
 In October 1994, Tim Berners-Lee founded the World Wide Web Consortium
 (W3C) at the Massachusetts Institute of Technology, Laboratory for
-Computer Science \[MIT/LCS\] in collaboration
+Computer Science [MIT/LCS] in collaboration
 with [CERN](https://home.cern/), where the Web originated (see
 information on the [original CERN Server](https://www.w3.org/Daemon/)),
 with support from DARPA and the [European
@@ -1424,49 +1396,49 @@ your Web page works for people around the world, and to make it work
 differently for different cultures, where needed. Let's meet the words
 'charset' and 'lang', soon to become your favorite markup ;)
 
-Example \#1: character encoding declaration
+Example #1: character encoding declaration
 
 A character encoding declaration is *vital to ensure that the text in
 your page is recognized by browsers around the world*, and not garbled.
 You will learn more about what this is, and how to use it as you work
 through the course.  For now, just ensure that it's always there.
 
-***Check \#1*: There is a character encoding declaration near the start
+***Check #1*: There is a character encoding declaration near the start
 of your source code, and its value is UTF-8.**
 
-1.  \<head\>
+1.  <head>
 
-2.  \<meta charset="utf-8"/\>
+2.  <meta charset="utf-8"/>
 
 3.  ...
 
-4.  \</head\>
+4.  </head>
 
-### Example \#2: primary language declaration
+### Example #2: primary language declaration
 
 For a wide variety of reasons, it's important for a browser to know what
 language your page is written in, including font selection,
 text-to-speech conversion, spell-checking, hyphenation and automated
 line breaking, text transforms, automated translation, and more. *You
-should always indicate the primary language of your page in the \<html\>
+should always indicate the primary language of your page in the <html>
 tag*. Again you will learn how to do this during the course.  You will
 also learn how to change the language, where necessary, for parts of
 your document that are in a different language.
 
-***Check \#2*: The HTML tag has a lang attribute which correctly
+***Check #2*: The HTML tag has a lang attribute which correctly
 indicates the language of your content.**
 
 This example below indicates that the page is in French.
 
-5.  \<!doctype html\>
+5.  <!doctype html>
 
-6.  \<html lang="fr"\>
+6.  <html lang="fr">
 
-7.  \<head\>
+7.  <head>
 
 8.  ...
 
-### Example \#3: cultural bias
+### Example #3: cultural bias
 
 People around the world don't always understand cultural references that
 you are familiar with, for example the concept of a 'home run' in
@@ -1480,7 +1452,7 @@ details, you will quickly find that your assumptions about how personal
 names and addresses work are very different from those of people from
 other cultures.
 
-***Check \#3*: If your content will be seen by people from diverse
+***Check #3*: If your content will be seen by people from diverse
 cultures, check that your cultural references will be recognized and
 that there is no inappropriate cultural bias.**
 
@@ -1530,8 +1502,8 @@ they are and what to do about it.
 
 In the [W3Cx HTML5 Coding Essentials and Best
 Practices](https://www.edx.org/course/html5-coding-essentials-and-best-practices) course,
-we saw that \<video\> and \<audio\> elements can
-have \<track\> elements. A \<track\> can have a label,
+we saw that <video> and <audio> elements can
+have <track> elements. A <track> can have a label,
 a kind (subtitles, captions, chapters, metadata, etc.), a language
 (srclang attribute), a source URL (src attribute), etc.
 
@@ -1539,33 +1511,33 @@ Here is a small example of a video with 3 different tracks
 ("......" masks the real URL here, as it is too long to fit in this page
 width!):
 
-9.  \<video id="myVideo" preload="metadata" controls crossOrigin="anonymous"\>
+9.  <video id="myVideo" preload="metadata" controls crossOrigin="anonymous">
 
 10.  
-      \<source src="https://...../elephants-dream-medium.mp4" type="video/mp4"\>
+      <source src="https://...../elephants-dream-medium.mp4" type="video/mp4">
 
 11.  
-      \<source src="https://...../elephants-dream-medium.webm" type="video/webm"\>
+      <source src="https://...../elephants-dream-medium.webm" type="video/webm">
 
-12.     **\<track label="English
+12.     **<track label="English
     subtitles" kind="subtitles" srclang="en"**
 
 13. **         
-     src="https://**.....**/elephants-dream-subtitles-en.vtt"\>**
+     src="https://**.....**/elephants-dream-subtitles-en.vtt">**
 
-14. **    \<track label="Deutsch
+14. **    <track label="Deutsch
     subtitles" kind="subtitles" srclang="de"**
 
 15. **         
-     src="https://**.....**/elephants-dream-subtitles-de.vtt" default\>**
+     src="https://**.....**/elephants-dream-subtitles-de.vtt" default>**
 
-16. **    \<track label="English
+16. **    <track label="English
     chapters" kind="chapters" srclang="en"**
 
 17. **         
-     src="https://**.....**/elephants-dream-chapters-en.vtt"\>**
+     src="https://**.....**/elephants-dream-chapters-en.vtt">**
 
-18. \</video\>
+18. </video>
 
 And here is how it renders in your current browser (please play the
 video and try to show/hide the subtitles/captions):
@@ -1597,7 +1569,7 @@ style="width:4.90625in;height:2.79167in" />
 
 Also, there is [a Timed Text Track API in the HTML5/HTML5.1
 specification](https://www.w3.org/TR/html51/semantics-embedded-content.html#timed-text-tracks) that
-enables us to manipulate \<track\> contents from JavaScript. Do you
+enables us to manipulate <track> contents from JavaScript. Do you
 recall that text tracks are associated with WebVTT files? As a quick
 reminder, let's look at a WebVTT file:
 
@@ -1608,11 +1580,8 @@ WEBVTT
 <!-- -->
 
 1.  1
-
-2.  00:00:15.000 --\> 00:00:18.000 align:start
-
-3.  \<v Proog\>On the left we can see...\</v\>
-
+2.  00:00:15.000 --> 00:00:18.000 align:start
+3.  <v Proog>On the left we can see...</v>
 <!-- -->
 
 20. 
@@ -1620,10 +1589,8 @@ WEBVTT
 <!-- -->
 
 4.  2
-
-5.  00:00:18.167 --\> 00:00:20.083 align:middle
-
-6.  \<v Proog\>On the right we can see the...\</v\>
+5.  00:00:18.167 --> 00:00:20.083 align:middle
+6.  <v Proog>On the right we can see the...</v>
 
 <!-- -->
 
@@ -1633,9 +1600,9 @@ WEBVTT
 
 7.  3
 
-8.  00:00:20.083 --\> 00:00:22.000
+8.  00:00:20.083 --> 00:00:22.000
 
-9.  \<v Proog\>...the \<c.highlight\>head-snarlers\</c\>\</v\>
+9.  <v Proog>...the <c.highlight>head-snarlers</c></v>
 
 <!-- -->
 
@@ -1645,19 +1612,19 @@ WEBVTT
 
 10. 4
 
-11. 00:00:22.000 --\> 00:00:24.417 align:end
+11. 00:00:22.000 --> 00:00:24.417 align:end
 
-12. \<v Proog\>Everything is safe. Perfectly safe.\</v\>
+12. <v Proog>Everything is safe. Perfectly safe.</v>
 
 <img src="./media/image17.jpeg" style="width:2.02083in;height:4.83333in"
 alt="remote controller with subtitles button" />
 
 The different time segments are called "cues" and each cue has an id (1,
 2, 3 and 4 in the above example), a startTime and an endTime, and
-a text content that can contain HTML tags for styling (\<b\>, etc...)
+a text content that can contain HTML tags for styling (<b>, etc...)
 or be associated with a "voice" as in the above example. In this case,
 the text content is wrapped
-inside \<v *name_of_speaker*\>...\</v\> elements.
+inside <v *name_of_speaker*>...</v> elements.
 
 It's now time to look at the JavaScript API for manipulating tracks,
 cues, and events associated with their life cycle. In the following
@@ -1803,8 +1770,8 @@ This is all for this first video, I’ll see you in the next one!
 
 In the [W3Cx HTML5 Coding Essentials and Best
 Practices](https://www.edx.org/course/html5-coding-essentials-and-best-practices) course,
-we saw that \<video\> and \<audio\> elements can
-have \<track\> elements. A \<track\> can have a label,
+we saw that <video> and <audio> elements can
+have <track> elements. A <track> can have a label,
 a kind (subtitles, captions, chapters, metadata, etc.), a language
 (srclang attribute), a source URL (src attribute), etc.
 
@@ -1812,33 +1779,33 @@ Here is a small example of a video with 3 different tracks
 ("......" masks the real URL here, as it is too long to fit in this page
 width!):
 
-1.  \<video id="myVideo" preload="metadata" controls crossOrigin="anonymous"\>
+1.  <video id="myVideo" preload="metadata" controls crossOrigin="anonymous">
 
 2.   
-      \<source src="https://...../elephants-dream-medium.mp4" type="video/mp4"\>
+      <source src="https://...../elephants-dream-medium.mp4" type="video/mp4">
 
 3.   
-      \<source src="https://...../elephants-dream-medium.webm" type="video/webm"\>
+      <source src="https://...../elephants-dream-medium.webm" type="video/webm">
 
-4.      **\<track label="English
+4.      **<track label="English
     subtitles" kind="subtitles" srclang="en"**
 
 5.  **         
-     src="https://**.....**/elephants-dream-subtitles-en.vtt"\>**
+     src="https://**.....**/elephants-dream-subtitles-en.vtt">**
 
-6.  **    \<track label="Deutsch
+6.  **    <track label="Deutsch
     subtitles" kind="subtitles" srclang="de"**
 
 7.  **         
-     src="https://**.....**/elephants-dream-subtitles-de.vtt" default\>**
+     src="https://**.....**/elephants-dream-subtitles-de.vtt" default>**
 
-8.  **    \<track label="English
+8.  **    <track label="English
     chapters" kind="chapters" srclang="en"**
 
 9.  **         
-     src="https://**.....**/elephants-dream-chapters-en.vtt"\>**
+     src="https://**.....**/elephants-dream-chapters-en.vtt">**
 
-10. \</video\>
+10. </video>
 
 And here is how it renders in your current browser (please play the
 video and try to show/hide the subtitles/captions):
@@ -1876,50 +1843,36 @@ Here is a quick summary:
 
 There is [a Timed Text Track API in the HTML5/HTML5.1
 specification](https://www.w3.org/TR/html51/semantics-embedded-content.html#timed-text-tracks) that
-enables us to manipulate \<track\> contents from JavaScript. Do you
+enables us to manipulate <track> contents from JavaScript. Do you
 recall that text tracks are associated with WebVTT files? As a quick
 reminder, let's look at a WebVTT file:
 
+```
 1.  WEBVTT
-
 2.   
-
 3.  1
-
-4.  00:00:15.000 --\> 00:00:18.000 align:start
-
-5.  \<v Proog\>On the left we can see...\</v\>
-
+4.  00:00:15.000 --> 00:00:18.000 align:start
+5.  <v Proog>On the left we can see...</v>
 6.   
-
 7.  2
-
-8.  00:00:18.167 --\> 00:00:20.083 align:middle
-
-9.  \<v Proog\>On the right we can see the...\</v\>
-
+8.  00:00:18.167 --> 00:00:20.083 align:middle
+9.  <v Proog>On the right we can see the...</v>
 10.  
-
 11. 3
-
-12. 00:00:20.083 --\> 00:00:22.000
-
-13. \<v Proog\>...the \<c.highlight\>head-snarlers\</c\>\</v\>
-
+12. 00:00:20.083 --> 00:00:22.000
+13. <v Proog>...the <c.highlight>head-snarlers</c></v>
 14.  
-
 15. 4
-
-16. 00:00:22.000 --\> 00:00:24.417 align:end
-
-17. \<v Proog\>Everything is safe. Perfectly safe.\</v\>
+16. 00:00:22.000 --> 00:00:24.417 align:end
+17. <v Proog>Everything is safe. Perfectly safe.</v>
+```
 
 The different time segments are called "cues" and each cue has an id (1,
 2, 3 and 4 in the above example), a startTime and an endTime, and
-a text content that can contain HTML tags for styling (\<b\>, etc...)
+a text content that can contain HTML tags for styling (<b>, etc...)
 or be associated with a "voice" as in the above example. In this case,
 the text content is wrapped
-inside \<v *name_of_speaker*\>...\</v\> elements.
+inside <v *name_of_speaker*>...</v> elements.
 
 It's now time to look at the JavaScript API for manipulating tracks,
 cues, and events associated with their life cycle. In the following
@@ -2028,42 +1981,42 @@ choosing the different tracks. I will explain that in a next video.
 
 ### Let's go back to our example. Below is the HTML code:
 
-1.  \<video id="myVideo" preload="metadata" controls crossOrigin="anonymous"\>
+1.  <video id="myVideo" preload="metadata" controls crossOrigin="anonymous">
 
 2.   
-      \<source src="https://...../elephants-dream-medium.mp4" type="video/mp4"\>
+      <source src="https://...../elephants-dream-medium.mp4" type="video/mp4">
 
 3.   
-      \<source src="https://...../elephants-dream-medium.webm" type="video/webm"\>
+      <source src="https://...../elephants-dream-medium.webm" type="video/webm">
 
-4.      **\<track label="English
+4.      **<track label="English
     subtitles" kind="subtitles" srclang="en"**
 
 > **         
->  src="https://**.....**/elephants-dream-subtitles-en.vtt" \>**
+>  src="https://**.....**/elephants-dream-subtitles-en.vtt" >**
 
-5.  **    \<track label="Deutsch
+5.  **    <track label="Deutsch
     subtitles" kind="subtitles" srclang="de"**
 
 > **         
->  src="https://**.....**/elephants-dream-subtitles-de.vtt" default\>**
+>  src="https://**.....**/elephants-dream-subtitles-de.vtt" default>**
 
-6.  **    \<track label="English
+6.  **    <track label="English
     chapters" kind="chapters" srclang="en"**
 
-7.  **src="https://**.....**/elephants-dream-chapters-en.vtt"\>**
+7.  **src="https://**.....**/elephants-dream-chapters-en.vtt">**
 
-8.  \</video\>
+8.  </video>
 
 9.  
 
-10. \<div id="trackStatusesDiv"\>
+10. <div id="trackStatusesDiv">
 
-11.     \<h3\>HTML track descriptions\</h3\>
+11.     <h3>HTML track descriptions</h3>
 
-12. \</div\>
+12. </div>
 
-This example defines three \<track\> elements. From JavaScript, we can
+This example defines three <track> elements. From JavaScript, we can
 manipulate these elements as "HTML elements" - we will call them the
 "HTML views" of tracks.
 
@@ -2111,27 +2064,27 @@ manipulate these elements as "HTML elements" - we will call them the
 
 17. // displays track info
 
-18. for(var i = 0; i \< htmlTracks.length; i++) {
+18. for(var i = 0; i < htmlTracks.length; i++) {
 
-19. var currentHtmlTrack = htmlTracks\[i\];
+19. var currentHtmlTrack = htmlTracks[i];
 
 20. 
 
-21. var label = "\<li\>label = " + currentHtmlTrack.label + "\</li\>";
+21. var label = "<li>label = " + currentHtmlTrack.label + "</li>";
 
-22. var kind = "\<li\>kind = "   + currentHtmlTrack.kind + "\</li\>";
+22. var kind = "<li>kind = "   + currentHtmlTrack.kind + "</li>";
 
-23. var lang = "\<li\>lang = "   + currentHtmlTrack.srclang + "\</li\>";
+23. var lang = "<li>lang = "   + currentHtmlTrack.srclang + "</li>";
 
-24. var readyState = "\<li\>readyState = " 
+24. var readyState = "<li>readyState = " 
 
-25. + currentHtmlTrack.readyState + "\</li\>"
+25. + currentHtmlTrack.readyState + "</li>"
 
 26. 
 
-27. trackStatusesDiv.innerHTML += "\<li\>\<b\>Track:" + i + ":\</b\>\</li\>"
+27. trackStatusesDiv.innerHTML += "<li><b>Track:" + i + ":</b></li>"
 
-28. + "\<ul\>" + label + kind + lang + readyState + "\</ul\>";
+28. + "<ul>" + label + kind + lang + readyState + "</ul>";
 
 29. }
 
@@ -2335,7 +2288,7 @@ TextTrack object.
 
 28. // The TextTrack object associated with the first HTML track
 
-29. var textTrack = htmlTracks\[0\].track;
+29. var textTrack = htmlTracks[0].track;
 
 30. var kind = textTrack.kind;
 
@@ -2352,7 +2305,7 @@ and methods are described later in this lesson.
 
 **Second method:** get TextTrack from the HTML video element.
 
-The \<video\> element (and \<audio\> element too) has
+The <video> element (and <audio> element too) has
 a TextTrack property accessible from JavaScript:
 
 1.  var videoElement = document.querySelector("#myVideo");
@@ -2362,7 +2315,7 @@ a TextTrack property accessible from JavaScript:
 1.  **var textTracks = videoElement.textTracks; // one TextTrack for
     each HTML track element**
 
-2.  var textTrack = textTracks\[0\]; // corresponds to the first track
+2.  var textTrack = textTracks[0]; // corresponds to the first track
     element
 
 3.  var kind = textTrack.kind // e.g. "subtitles"
@@ -2412,25 +2365,25 @@ JSBin](https://jsbin.com/bubeye/1/edit?html,console,output)
 
 Here is what we added to the HTML code:
 
-1.  \<button id="buttonLoadFirstTrack"
+1.  <button id="buttonLoadFirstTrack"
 
 2.          onclick="forceLoadTrack(0);"
 
-3.          disabled\>
+3.          disabled>
 
 4.     Force load track 0
 
-5.  \</button\>
+5.  </button>
 
-6.  \<button id="buttonLoadThirdTrack"
+6.  <button id="buttonLoadThirdTrack"
 
 7.          onclick="forceLoadTrack(2);"
 
-8.          disabled\>
+8.          disabled>
 
 9.     Force load track 2
 
-10. \</button\>
+10. </button>
 
 The buttons will call a function named forceLoadTrack(trackNumber) that
 takes as a parameter the number of the track to get (and force load if
@@ -2500,7 +2453,7 @@ example:
 
 29.     // that takes the loaded TextTrack as parameter
 
-30.     getTrack(htmlTracks\[n\], readContent);
+30.     getTrack(htmlTracks[n], readContent);
 
 31. }
 
@@ -2592,7 +2545,7 @@ A TextTrack object has different properties and methods
     the same spelling!)
 
 -   mode: explained earlier. Can have values equal to:
-    "disabled"\|"hidden"\|"showing". Can force a track to be loaded (by
+    "disabled"|"hidden"|"showing". Can force a track to be loaded (by
     setting the mode to "hidden" or "showing").
 
 -   cues: get a list of cues as a TextTrackCueList object. This is the
@@ -2667,18 +2620,18 @@ example in the previous lesson:
 
 11.    // iterate on them
 
-12.    for(var i=0; i \< cues.length; i++) {
+12.    for(var i=0; i < cues.length; i++) {
 
 13.       // current cue
 
-14.       var cue = cues\[i\];
+14.       var cue = cues[i];
 
-15.       var id = cue.id + "\<br\>";
+15.       var id = cue.id + "<br>";
 
-16.       var timeSegment = cue.startTime + " =\>
-    " + cue.endTime + "\<br\>";
+16.       var timeSegment = cue.startTime + " =>
+    " + cue.endTime + "<br>";
 
-17.       var text = cue.text + "\<P\>"
+17.       var text = cue.text + "<P>"
 
 18.       trackStatusesDiv.innerHTML += id + timeSegment + text;
 
@@ -2790,7 +2743,7 @@ The two types of cue event are:
 
 2.  track.addEventListener("cuechange", function(e) {
 
-3.     var cue = this.activeCues\[0\];
+3.     var cue = this.activeCues[0];
 
 4.     console.log("cue change");
 
@@ -2815,11 +2768,11 @@ Example of enter and exit event listeners on a track's cues
 
 2.   var cues = track.cues;
 
-3.   for(var i=0, len = cues.length; i \< len; i++) {
+3.   for(var i=0, len = cues.length; i < len; i++) {
 
 4.     // current cue, also add enter and exit listeners to it
 
-5.     var cue = cues\[i\];
+5.     var cue = cues[i];
 
 6.     addCueListeners(cue);
 
@@ -2875,12 +2828,12 @@ alt="example that displays cue contents with cuechange even listeners" />
 
 6.  **   track.addEventListener("cuechange", function(e) {**
 
-7.  **      var cue = this.activeCues\[0\];**
+7.  **      var cue = this.activeCues[0];**
 
 8.  **      if(cue !== undefined)**
 
 9.  **         trackStatusesDiv.innerHTML += "cue change: text =
-    " + cue.text + "\<br\>";**
+    " + cue.text + "<br>";**
 
 10. **   });**
 
@@ -2916,11 +2869,11 @@ alt="Example that displays message in enter and exit cue listeners of tjhe selec
 
 8.     // iterate on them
 
-9.     for(var i=0; i \< cues.length; i++) {
+9.     for(var i=0; i < cues.length; i++) {
 
 10.       // current cue
 
-11.       var cue = cues\[i\];   
+11.       var cue = cues[i];   
 
 12.      ** addCueListeners(cue);**
 
@@ -2941,20 +2894,20 @@ alt="Example that displays message in enter and exit cue listeners of tjhe selec
 20.       trackStatusesDiv.innerHTML += 'entered cue id=' + this.id + "
     > "
 
-21.                                  + this.text + "\<br\>";
+21.                                  + this.text + "<br>";
 
 22.    };
 
 23.    cue.onexit = function(){
 
 24.       trackStatusesDiv.innerHTML += 'exited cue
-    > id=' + this.id + "\<br\>";
+    > id=' + this.id + "<br>";
 
 25.    };
 
 26. } // end of addCueListeners...
 
-## 1.3 Advanced Features for \<audio\> and \<video\> Players
+## 1.3 Advanced Features for <audio> and <video> Players
 
 ### 1.3.1 With a Clickable Transcript on the Side
 
@@ -3080,7 +3033,7 @@ Foreword about the set of five examples presented in this section: the
 code of the examples is larger than usual, but each example integrates
 blocks of code already presented and detailed in the previous lessons.
 
-Example \#1: create an accessible player with a clickable transcript of
+Example #1: create an accessible player with a clickable transcript of
 the video presentation.
 
 It might be interesting to read the content of a track before playing
@@ -3113,11 +3066,11 @@ Some important things here:
     been loaded yet*.
 
 2.  When a track file is loaded, then we iterate on the different cues
-    and generate the transcript as a set of \<li\>...\</li\> elements.
-    One \<li\> per cue/sentence. 
+    and generate the transcript as a set of <li>...</li> elements.
+    One <li> per cue/sentence. 
 
-3.  We define the id attribute of the \<li\> to be the same as
-    the cue.id value. In this way, when we click on a \<li\> we can get
+3.  We define the id attribute of the <li> to be the same as
+    the cue.id value. In this way, when we click on a <li> we can get
     its id and find the corresponding cue start time, and make the video
     jump to that time location.
 
@@ -3134,45 +3087,45 @@ JSBin](https://jsbin.com/sodihux/1/edit?html,css,js,output):
 
 HTML code:
 
-1.  \<section id="all"\>
+1.  <section id="all">
 
-2.  \<button disabled id="buttonEnglish"
+2.  <button disabled id="buttonEnglish"
 
-3.           onclick="loadTranscript('en');"\>
+3.           onclick="loadTranscript('en');">
 
 4.      Display English transcript
 
-5.   \</button\>
+5.   </button>
 
-6.  \<button disabled id="buttonDeutsch"
+6.  <button disabled id="buttonDeutsch"
 
-7.           onclick="loadTranscript('de');"\>
+7.           onclick="loadTranscript('de');">
 
 8.      Display Deutsch transcript
 
-9.  \</button\>
+9.  </button>
 
-10. \</p\>
+10. </p>
 
-11. \<video id="myVideo" preload="metadata" controls crossOrigin="anonymous"\>
+11. <video id="myVideo" preload="metadata" controls crossOrigin="anonymous">
 
-12.      \<source src="https://...../elephants-dream-medium.mp4"
+12.      <source src="https://...../elephants-dream-medium.mp4"
 
-13.              type="video/mp4"\>
+13.              type="video/mp4">
 
-14.      \<source src="https://...../elephants-dream-medium.webm"
+14.      <source src="https://...../elephants-dream-medium.webm"
 
-15.              type="video/webm"\>
+15.              type="video/webm">
 
-16.      \<track label="English subtitles"
+16.      <track label="English subtitles"
 
 17.             kind="subtitles"
 
 18.             srclang="en"
 
-19.             src="https://...../elephants-dream-subtitles-en.vtt" \>
+19.             src="https://...../elephants-dream-subtitles-en.vtt" >
 
-20.      \<track label="Deutsch subtitles"
+20.      <track label="Deutsch subtitles"
 
 21.             kind="subtitles"
 
@@ -3180,25 +3133,25 @@ HTML code:
 
 23.             src="https://...../elephants-dream-subtitles-de.vtt"
 
-24.             **default**\>
+24.             **default**>
 
-25.      \<track label="English chapters"
+25.      <track label="English chapters"
 
 26.             kind="chapters"
 
 27.             srclang="en"
 
-28.             src="https://...../elephants-dream-chapters-en.vtt"\>
+28.             src="https://...../elephants-dream-chapters-en.vtt">
 
-29. \</video\>
+29. </video>
 
-30. \<div id="transcript"\>\</div\>
+30. <div id="transcript"></div>
 
-31. \</section\>
+31. </section>
 
 CSS code:
 
-1.  \#all {
+1.  #all {
 
 2.     background-color: lightgrey;
 
@@ -3244,7 +3197,7 @@ CSS code:
 
 23.  
 
-24. \#myVideo {
+24. #myVideo {
 
 25.    display: block;
 
@@ -3262,7 +3215,7 @@ CSS code:
 
 32.  
 
-33. \#transcript {
+33. #transcript {
 
 34.    padding: 10px;
 
@@ -3284,188 +3237,100 @@ CSS code:
 
 43. }
 
-JavaScript code:
+<h4>JavaScript code:</h4>
 
+```
 1.  var video, transcriptDiv;
-
 2.  // TextTracks, html tracks, urls of tracks
-
-3.  var tracks, trackElems, tracksURLs = \[\]; 
-
+3.  var tracks, trackElems, tracksURLs = []; 
 4.  var buttonEnglish, buttonDeutsch;
-
 5.   
-
 6.  window.onload = function() {
-
 7.     console.log("init");
-
 8.     // when the page is loaded, get the different DOM nodes
-
 9.     // we're going to work with
-
 10.    video = document.querySelector("#myVideo");
-
 11.    transcriptDiv = document.querySelector("#transcript");
-
 12. 
-
 13.    // The tracks as HTML elements
-
 14.    trackElems = document.querySelectorAll("track");
-
 15. 
-
 16.    // Get the URLs of the vtt files
-
-17.    for(var i = 0; i \< trackElems.length; i++) {
-
-18.       var currentTrackElem = trackElems\[i\];
-
-19.       tracksURLs\[i\] = currentTrackElem.src;
-
+17.    for(var i = 0; i < trackElems.length; i++) {
+18.       var currentTrackElem = trackElems[i];
+19.       tracksURLs[i] = currentTrackElem.src;
 20.    }
-
 21. 
-
 22.    buttonEnglish = document.querySelector("#buttonEnglish");
-
 23.    buttonDeutsch = document.querySelector("#buttonDeutsch");
-
 24. 
-
 25.    // we enable the buttons only in this load callback,
-
 26.    // we cannot click before the video is in the DOM
-
 27.    buttonEnglish.disabled = false;
-
 28.    buttonDeutsch.disabled = false;
-
 29. 
-
 30.    // The tracks as TextTrack JS objects
-
 31.    tracks = video.textTracks;
-
 32. };
-
 33.  
-
 34. function loadTranscript(lang) {
-
 35.   // Called when a button is clicked
-
 36. 
-
 37.   // clear current transcript
-
 38.   clearTranscriptDiv();
-
 39. 
-
 40.   // set all track modes to disabled. We will only activate the
-
 41.   // one whose content will be displayed as transcript
-
 42.   disableAllTracks();
-
 43. 
-
 44.   // Locate the track with language = lang
-
-45.   for(var i = 0; i \< tracks.length; i++) {
-
+45.   for(var i = 0; i < tracks.length; i++) {
 46.     // current track
-
-47.     var track = tracks\[i\];
-
-48.     var trackAsHtmlElem = trackElems\[i\];
-
+47.     var track = tracks[i];
+48.     var trackAsHtmlElem = trackElems[i];
 49. 
-
 50.     // Only subtitles/captions are ok for this example...
-
 51.     if((track.language === lang) && (track.kind !== "chapters")) {
-
 52.        track.mode="showing";
-
 53.  
-
 54.        if(trackAsHtmlElem.readyState === 2) {
-
 55.           // the track has already been loaded
-
 56.           displayCues(track);
-
 57.        } else {
-
 58.           displayCuesAfterTrackLoaded(trackAsHtmlElem, track);
-
 59.        }
-
 60. 
-
-61.        /\* Fallback for FireFox that still does not implement cue
+61.        /* Fallback for FireFox that still does not implement cue
     enter and exit events
-
 62.          track.addEventListener("cuechange", function(e) {
-
-63.              var cue = this.activeCues\[0\];
-
+63.              var cue = this.activeCues[0];
 64.              console.log("cue change");
-
 65.              var transcriptText = document.getElementById(cue.id);
-
 66.              transcriptText.classList.add("current");
-
 67.          });
-
-68.       \*/
-
+68.       */
 69.     }
-
 70.   }
-
 71. }
-
 72. 
-
 73. function displayCuesAfterTrackLoaded(trackElem, track) {
-
 74.   // Create a listener that will only be called once the track has
-
 75.   // been loaded. We cannot display the transcript before
-
 76.   // the track is loaded
-
 77.    trackElem.addEventListener('load', function(e) {
-
 78.       console.log("track loaded");
-
 79.       displayCues(track);
-
 80.    });
-
 81. }
-
 82. 
-
 83. function disableAllTracks() {
-
-84.   for(var i = 0; i \< tracks.length; i++)
-
+84.   for(var i = 0; i < tracks.length; i++)
 85.      // the track mode is important: disabled tracks do not fire
-    events
-
-86.      tracks\[i\].mode = "disabled"; 
-
+   events
+86.      tracks[i].mode = "disabled"; 
 87. }
-
 88.  
-
 89. function displayCues(track) { 
-
 90.    // displays the transcript of a TextTrack
 
 91.    var cues = track.cues;
@@ -3474,29 +3339,29 @@ JavaScript code:
 
 93.    // iterate on all cues of the current track
 
-94.    for(var i=0, len = cues.length; i \< len; i++) {
+94.    for(var i=0, len = cues.length; i < len; i++) {
 
 95.       // current cue, also add enter and exit listeners to it
 
-96.       var cue = cues\[i\];
+96.       var cue = cues[i];
 
 97.       addCueListeners(cue);
 
 98.  
 
-99.       // Test if the cue content is a voice \<v speaker\>....\</v\>
+99.       // Test if the cue content is a voice <v speaker>....</v>
 
 100.       var voices = getVoices(cue.text);
 
 101.       var transText="";
 
-102.       if (voices.length \> 0) {
+102.       if (voices.length > 0) {
 
-103.          for (var j = 0; j \< voices.length; j++) { // how many
+103.          for (var j = 0; j < voices.length; j++) { // how many
      voices?
 
-104.             transText += voices\[j\].voice + ':
-     ' + removeHTML(voices\[j\].text);
+104.             transText += voices[j].voice + ':
+     ' + removeHTML(voices[j].text);
 
 105.          }
 
@@ -3506,13 +3371,13 @@ JavaScript code:
 
 108. 
 
-109.       var clickableTransText = "\<li class='cues' id=" + cue.id
+109.       var clickableTransText = "<li class='cues' id=" + cue.id
 
 110.                                + " onclick='jumpTo("
 
-111.                                + cue.startTime + ");'" + "\>"
+111.                                + cue.startTime + ");'" + ">"
 
-112.                                + transText + "\</li\>";
+112.                                + transText + "</li>";
 
 113.  
 
@@ -3528,18 +3393,18 @@ JavaScript code:
 
 119.    // takes a text content and check if there are voices
 
-120.    var voices = \[\]; // inside
+120.    var voices = []; // inside
 
-121.    var pos = speech.indexOf('\<v'); // voices are like \<v Michel\>
+121.    var pos = speech.indexOf('<v'); // voices are like <v Michel>
      ....
 
 122.    while (pos != -1) {
 
-123.       endVoice = speech.indexOf('\>');
+123.       endVoice = speech.indexOf('>');
 
 124.       var voice = speech.substring(pos + 2, endVoice).trim();
 
-125.       var endSpeech = speech.indexOf('\</v\>');
+125.       var endSpeech = speech.indexOf('</v>');
 
 126.       var text = speech.substring(endVoice + 1, endSpeech);
 
@@ -3553,7 +3418,7 @@ JavaScript code:
 
 131.       speech = speech.substring(endSpeech + 4);
 
-132.       pos = speech.indexOf('\<v');
+132.       pos = speech.indexOf('<v');
 
 133.   }
 
@@ -3569,7 +3434,7 @@ JavaScript code:
 
 139.   div.innerHTML = text;
 
-140.   return div.textContent \|\| div.innerText \|\| '';
+140.   return div.textContent || div.innerText || '';
 
 141. }
 
@@ -3658,248 +3523,158 @@ uses some JavaScript code that takes a WebVTT subtitle (or caption) file
 as an argument, parses it, and displays the text on screen, in an
 element with an id of transcript.
 
-Extract from HTML code:
+<h4>Extract from HTML code:</h4>
 
+```
 1.  ...
 
-2.  \<video preload="metadata" controls \>
+2.  <video preload="metadata" controls >
 
 3.   
-      \<source src="https://..../elephants-dream-medium.mp4" type="video/mp4"\>
+      <source src="https://..../elephants-dream-medium.mp4" type="video/mp4">
 
 4.   
-      \<source src="https://..../elephants-dream-medium.webm" type="video/webm"\>
+      <source src="https://..../elephants-dream-medium.webm" type="video/webm">
 
-5.      \<track label="English subtitles" kind="subtitles" srclang="en"
+5.      <track label="English subtitles" kind="subtitles" srclang="en"
 
 6.           
-     src="https://..../elephants-dream-subtitles-en.vtt" default\>
+     src="https://..../elephants-dream-subtitles-en.vtt" default>
 
-7.      \<track label="Deutsch subtitles" kind="subtitles" srclang="de"
+7.      <track label="Deutsch subtitles" kind="subtitles" srclang="de"
 
-8.             src="https://..../elephants-dream-subtitles-de.vtt"\>
+8.             src="https://..../elephants-dream-subtitles-de.vtt">
 
-9.      \<track label="English chapters" kind="chapters" srclang="en"
+9.      <track label="English chapters" kind="chapters" srclang="en"
 
-10.            src="https://..../elephants-dream-chapters-en.vtt"\>
+10.            src="https://..../elephants-dream-chapters-en.vtt">
 
-11. \</video\>
+11. </video>
 
 12.  ...
 
-13.    \<h3\>Video Transcript\</h3\>
+13.    <h3>Video Transcript</h3>
 
-14.    \<button onclick="loadTranscript('en');"\>English\</button\>
+14.    <button onclick="loadTranscript('en');">English</button>
 
-15.    \<button onclick="loadTranscript('de');"\>Deutsch\</button\>
+15.    <button onclick="loadTranscript('de');">Deutsch</button>
 
-16.     \</div\>
+16.     </div>
 
-17.     \<div id="transcript"\>\</div\>
+17.     <div id="transcript"></div>
 
 18. ...
+```
 
-JavaScript code:
+<h4>JavaScript code:</h4>
 
+```
 1.  // Transcript.js, by dev.opera.com
-
 2.  function loadTranscript(lang) {
-
 3.     var url = "https://mainline.i3s.unice.fr/mooc/" +
-
 4.         'elephants-dream-subtitles-' + lang + '.vtt';
-
 5.  
-
 6.     // Will download using Ajax + extract subtitles/captions   
-
 7.     loadTranscriptFile(url); 
-
 8.  }
-
 9.   
-
 10. function loadTranscriptFile(webvttFileUrl) {
-
 11.    // Using Ajax/XHR2 (explained in detail in Module 3)
-
 12.    var reqTrans = new XMLHttpRequest();
-
 13. 
-
 14.    reqTrans.open('GET', webvttFileUrl);
-
 15. 
-
 16.    // callback, called only once the response is ready
-
 17.    reqTrans.onload = function(e) { 
-
 18. 
-
-19.        var pattern = /^(\[0-9\]+)$/;
-
+19.        var pattern = /^([0-9]+)$/;
 20.      
-     var patternTimecode = /^(\[0-9\]{2}:\[0-9\]{2}:\[0-9\]{2}\[,.\]{1}\[0-9\]{3})
-    --\\\> (\[0-9\]
-
+     var patternTimecode = /^([0-9]{2}:[0-9]{2}:[0-9]{2}[,.]{1}[0-9]{3})
+    --> ([0-9]
 21.                            
-     {2}:\[0-9\]{2}:\[0-9\]{2}\[,.\]{1}\[0-9\]{3})(.\*)$/;
-
+     {2}:[0-9]{2}:[0-9]{2}[,.]{1}[0-9]{3})(.*)$/;
 22. 
-
 23.        var content = this.response; // content of the webVTT file
-
 24. 
-
-25.        var lines = content.split(/\\r?\\n/); // Get an array of text
+25.        var lines = content.split(/r?n/); // Get an array of text
     lines
-
 26.        var transcript = '';
-
-27.        for (i = 0; i \< lines.length; i++) {
-
-28.          var identifier = pattern.exec(lines\[i\]);
-
+27.        for (i = 0; i < lines.length; i++) {
+28.          var identifier = pattern.exec(lines[i]);
 29. 
-
 30.          // is there an id for this line, if it is, go to next line
-
 31.          if (identifier) { 
-
 32.            i++;
-
-33.            var timecode = patternTimecode.exec(lines\[i\]); 
-
+33.            var timecode = patternTimecode.exec(lines[i]); 
 34.            // is the current line a timecode?
-
-35.            if (timecode && i \< lines.length) {      
-
+35.            if (timecode && i < lines.length) {      
 36.               // if it is go to next line     
-
 37.               i++;
-
 38.               // it can only be a text line now
-
-39.               var text = lines\[i\];  
-
+39.               var text = lines[i];  
 40.                         
-
 41.               // is the text multiline?
-
-42.               while (lines\[i\] !== '' && i \< lines.length) {   
-
-43.                  text = text + '\\n' + lines\[i\];
-
+42.               while (lines[i] !== '' && i < lines.length) {   
+43.                  text = text + 'n' + lines[i];
 44.                  i++;
-
 45.               }
-
 46. 
-
 47.               var transText = '';
-
 48.               var voices = getVoices(text);
-
 49.               // is the extracted text multi voices ? 
-
-50.               if (voices.length \> 0) {
-
+50.               if (voices.length > 0) {
 51.                  // how many voices ?
-
-52.                  for (var j = 0; j \< voices.length; j++) { 
-
-53.                  transText += voices\[j\].voice + ': '
-
-54.                            + removeHTML(voices\[j\].text)
-
-55.                            + '\<br /\>';
-
+52.                  for (var j = 0; j < voices.length; j++) { 
+53.                  transText += voices[j].voice + ': '
+54.                            + removeHTML(voices[j].text)
+55.                            + '<br />';
 56.               }
-
 57.           } else 
-
 58.              // not a voice text
-
-59.              transText = removeHTML(text) + '\<br /\>'; 
-
+59.              transText = removeHTML(text) + '<br />'; 
 60. 
-
 61.          transcript += transText;
-
 62.        }
-
 63.      }
-
 64. 
-
 65.      var oTrans = document.getElementById('transcript');
-
 66.      oTrans.innerHTML = transcript;
-
 67.    }
-
 68. };
-
 69.  reqTrans.send(); // send the Ajax request
-
 70. }
-
 71.  
-
 72. function getVoices(speech) {  // takes a text content and check if
     there are voices 
-
-73.   var voices = \[\];            // inside
-
-74.   var pos = speech.indexOf('\<v'); // voices are like \<v Michel\>
+73.   var voices = [];            // inside
+74.   var pos = speech.indexOf('<v'); // voices are like <v Michel>
     ....
-
 75. 
-
 76.   while (pos != -1) {
-
-77.     endVoice = speech.indexOf('\>');
-
+77.     endVoice = speech.indexOf('>');
 78.     var voice = speech.substring(pos + 2, endVoice).trim();
-
-79.     var endSpeech = speech.indexOf('\</v\>');
-
+79.     var endSpeech = speech.indexOf('</v>');
 80.     var text = speech.substring(endVoice + 1, endSpeech);
-
 81.     voices.push({
-
 82.        'voice': voice,
-
 83.        'text': text
-
 84.     });
-
 85.     speech = speech.substring(endSpeech + 4);
-
-86.     pos = speech.indexOf('\<v');
-
+86.     pos = speech.indexOf('<v');
 87.   }
-
 88.   return voices;
-
 89. }
-
 90.  
-
 91. function removeHTML(text) {
-
 92.   var div = document.createElement('div');
-
 93.   div.innerHTML = text;
-
-94.   return div.textContent \|\| div.innerText \|\| '';
-
+94.   return div.textContent || div.innerText || '';
 95. }
+```
 
 ## 1.3.2 Captions, Descriptions, Chapters and Metadata
 
-Example \#2: showing video description while playing, listening to
+Example #2: showing video description while playing, listening to
 events, changing the mode of a track.
 
 Each track has a mode property (and a mode attribute) that can
@@ -3926,17 +3701,17 @@ captions and descriptions.
 
 ### Extract from HTML code:
 
-34. \<html lang="en"\>
+34. <html lang="en">
 
 35. ...
 
-36. \<body onload="init();"\>
+36. <body onload="init();">
 
 37. ...
 
-38. \<p\>
+38. <p>
 
-39. \<video id="myVideo" preload="metadata"
+39. <video id="myVideo" preload="metadata"
 
 40. poster ="https://...../sintel.jpg"
 
@@ -3944,114 +3719,114 @@ captions and descriptions.
 
 42. controls="controls"
 
-43. width="640" height="272"\>
+43. width="640" height="272">
 
 44. 
 
-45. \<source src="https://...../sintel.mp4"
+45. <source src="https://...../sintel.mp4"
 
-46. type="video/mp4" /\>
+46. type="video/mp4" />
 
-47. \<source src="https://...../sintel.webm"
+47. <source src="https://...../sintel.webm"
 
-48. type="video/webm" /\>
+48. type="video/webm" />
 
-49. \<track src="https://...../sintel-captions.vtt"
+49. <track src="https://...../sintel-captions.vtt"
 
 50. kind="captions"
 
 51. label="English Captions"
 
-52. **default**/\>
+52. **default**/>
 
-53. \<track src="https://...../sintel-descriptions.vtt"
+53. <track src="https://...../sintel-descriptions.vtt"
 
 54. kind="descriptions"
 
-55. label="Audio Descriptions" /\>
+55. label="Audio Descriptions" />
 
-56. \<track src="https://...../sintel-chapters.vtt"
+56. <track src="https://...../sintel-chapters.vtt"
 
 57. kind="chapters"
 
-58. label="Chapter Markers" /\>
+58. label="Chapter Markers" />
 
-59. \<track src="https://...../sintel-thumbs.vtt"
+59. <track src="https://...../sintel-thumbs.vtt"
 
 60. kind="metadata"
 
-61. label="Preview Thumbs" /\>
+61. label="Preview Thumbs" />
 
-62. \</video\>
+62. </video>
 
-63. \</p\>
+63. </p>
 
 64. 
 
-65. \<p\>
+65. <p>
 
-66. \<div id="currentTrackStatuses"\>\</div\>
+66. <div id="currentTrackStatuses"></div>
 
-67. \<p\>
+67. <p>
 
-68. \<p\>
+68. <p>
 
-69. \<div id="subtitlesCaptions"\>\</div\>
+69. <div id="subtitlesCaptions"></div>
 
-70. \</p\>
+70. </p>
 
 71. 
 
-72. \<p\>
+72. <p>
 
-73. \<button onclick="clearSubtitlesCaptions();"\>
+73. <button onclick="clearSubtitlesCaptions();">
 
 74. Clear subtitles/captions log
 
-75. \</button\>
+75. </button>
 
-76. \</p\>
+76. </p>
 
 77. 
 
-78. \<p\>Click one of these buttons to toggle the mode of each
-    track:\</p\>
+78. <p>Click one of these buttons to toggle the mode of each
+    track:</p>
 
-79. \<button onclick="toggleTrack(0);"\>
+79. <button onclick="toggleTrack(0);">
 
 80. Toggle english caption track mode
 
-81. \</button\>
+81. </button>
 
-82. \<br\>
+82. <br>
 
-83. \<button onclick="toggleTrack(1);"\>
+83. <button onclick="toggleTrack(1);">
 
 84. Toggle audio description track mode
 
-85. \</button\>
+85. </button>
 
-86. \<br\>
+86. <br>
 
-87. \<button onclick="toggleTrack(2);"\>
+87. <button onclick="toggleTrack(2);">
 
 88. Toggle chapter track mode
 
-89. \</button\>
+89. </button>
 
-90. \<br\>
+90. <br>
 
-91. \<button onclick="toggleTrack(3);"\>
+91. <button onclick="toggleTrack(3);">
 
 92. Toggle preview thumbnail track modes
 
-93. \</button\>
+93. </button>
 
 94. 
 
-95. \</body\>
+95. </body>
 
-96. \</html\>
+96. </html>
 
 ### JavaScript code:
 
@@ -4081,9 +3856,9 @@ captions and descriptions.
 108.       // defines cue listeners for the active track; we can do this
      only after the video metadata have been loaded
 
-109.       for(var i=0; i\<tracks.length; i++) {
+109.       for(var i=0; i<tracks.length; i++) {
 
-110.          var t = tracks\[i\].track;
+110.          var t = tracks[i].track;
 
 111.          if(t.mode === "showing") {
 
@@ -4110,9 +3885,9 @@ captions and descriptions.
 
 122.     // In red if disabled, in green if showing
 
-123.     for(var i=0; i\<tracks.length; i++) {
+123.     for(var i=0; i<tracks.length; i++) {
 
-124.        var t = tracks\[i\].track;
+124.        var t = tracks[i].track;
 
 125.        var mode = t.mode;
 
@@ -4120,13 +3895,13 @@ captions and descriptions.
 
 127.        if(mode === "disabled") {
 
-128.           mode = "\<span
-     style='color:red'\>" + t.mode + "\</span\>";
+128.           mode = "<span
+     style='color:red'>" + t.mode + "</span>";
 
 129.        } else if(mode === "showing") {
 
-130.           mode = "\<span
-     style='color:green'\>" + t.mode + "\</span\>";
+130.           mode = "<span
+     style='color:green'>" + t.mode + "</span>";
 
 131.        }
 
@@ -4151,7 +3926,7 @@ captions and descriptions.
 
 141.    var inner = div.innerHTML;
 
-142.    div.innerHTML = inner + text + "\<br/\>";
+142.    div.innerHTML = inner + text + "<br/>";
 
 143.    // Make it display the last line appended
 
@@ -4187,7 +3962,7 @@ captions and descriptions.
 
 159.    // and becomes "hidden"
 
-160.    var t = tracks\[i\].track;
+160.    var t = tracks[i].track;
 
 161.    switch (t.mode) {
 
@@ -4221,7 +3996,7 @@ captions and descriptions.
 
 176.     displayTrackStatus();
 
-177.     appendToScrollableDiv(statusDiv,"\<br\>" + t.label+" are now
+177.     appendToScrollableDiv(statusDiv,"<br>" + t.label+" are now
      " +t.mode);
 
 178. }
@@ -4234,7 +4009,7 @@ captions and descriptions.
 
 182.    if(this.activeCues && this.activeCues.length) {
 
-183.       var t = this.activeCues\[0\].text; // text of current cue
+183.       var t = this.activeCues[0].text; // text of current cue
 
 184.       appendToScrollableDiv(subtitlesCaptionsDiv, "Active "
 
@@ -4247,7 +4022,7 @@ captions and descriptions.
 
 1.3.3 With Buttons for Choosing the Subtitle Language
 
-Example \#3: adding buttons for choosing the subtitle/caption track
+Example #3: adding buttons for choosing the subtitle/caption track
 
 You might have noticed that with some browsers, before 2018, the
 standard implementation of the video element did not let the user choose
@@ -4267,199 +4042,111 @@ alt="Buttons for choosing the track/language under a standard video player" />
 
 ### HTML code:
 
+```
 1.  ...
-
-2.  \<body onload="init()"\>
-
+2.  <body onload="init()">
 3.   ...
-
-4.  \<video id="myVideo" preload="metadata" controls crossOrigin="anonymous" \>
-
-5.       \<source src="https://...../elephants-dream-medium.mp4"
-
-6.               type="video/mp4"\>
-
-7.       \<source src="https://...../elephants-dream-medium.webm"
-
-8.               type="video/webm"\>
-
-9.       \<track  label="English subtitles"
-
+4.  <video id="myVideo" preload="metadata" controls crossOrigin="anonymous" >
+5.       <source src="https://...../elephants-dream-medium.mp4"
+6.               type="video/mp4">
+7.       <source src="https://...../elephants-dream-medium.webm"
+8.               type="video/webm">
+9.       <track  label="English subtitles"
 10.              kind="subtitles"
-
 11.              srclang="en"
-
 12.              src="https://...../elephants-dream-subtitles-en.vtt"
-
-13.              **default**\>
-
-14.      \<track  label="Deutsch subtitles"
-
+13.              **default**>
+14.      <track  label="Deutsch subtitles"
 15.              kind="subtitles"
-
 16.              srclang="de"
-
-17.              src="https://...../elephants-dream-subtitles-de.vtt"\>
-
-18.      \<track  label="English chapters"
-
+17.              src="https://...../elephants-dream-subtitles-de.vtt">
+18.      <track  label="English chapters"
 19.              kind="chapters"
-
 20.              srclang="en"
-
-21.              src="https://...../elephants-dream-chapters-en.vtt"\>
-
-22. \</video\>
-
-23. \<h3\>Current track: \<span id="currentLang"\>\</span\>\</h3\>
-
-24. \<div id="langButtonDiv"\>\</div\>
-
-25. \</section\>
-
+21.              src="https://...../elephants-dream-chapters-en.vtt">
+22. </video>
+23. <h3>Current track: <span id="currentLang"></span></h3>
+24. <div id="langButtonDiv"></div>
+25. </section>
 26. ...
+```
 
 ### JavaScript code:
 
+```
 1.  var langButtonDiv, currentLangSpan, video;
-
 2.   
-
 3.  function init() {
-
 4.     langButtonDiv = document.querySelector("#langButtonDiv");
-
 5.     currentLangSpan = document.querySelector("#currentLang");
-
 6.     video = document.querySelector("#myVideo");
-
 7.  
-
 8.     console.log("Number of tracks = "
-
 9.                 + video.textTracks.length);
-
 10.    // Updates the display of the current track activated
-
 11.    currentLangSpan.innerHTML = activeTrack();
-
 12.    // Build the buttons for choosing a track
-
 13.    buildButtons();
-
 14. }
-
 15.  
-
 16. function activeTrack() {
-
-17.    for (var i = 0; i \< video.textTracks.length; i++) {
-
-18.       if(video.textTracks\[i\].mode === 'showing') {
-
-19.          return video.textTracks\[i\].label + " ("
-
-20.                 + video.textTracks\[i\].language + ")";
-
+17.    for (var i = 0; i < video.textTracks.length; i++) {
+18.       if(video.textTracks[i].mode === 'showing') {
+19.          return video.textTracks[i].label + " ("
+20.                 + video.textTracks[i].language + ")";
 21.       }
-
 22.    }
-
 23.    return "no subtitles/caption selected";
-
 24. }
-
 25.  
-
 26. function buildButtons() {
-
 27.    if (video.textTracks) { // if the video contains track elements
-
 28.       // For each track, create a button
-
-29.       for (var i = 0; i \< video.textTracks.length; i++) {
-
+29.       for (var i = 0; i < video.textTracks.length; i++) {
 30.          // We create buttons only for the caption and subtitle
     tracks
-
-31.          var track = video.textTracks\[i\];
-
+31.          var track = video.textTracks[i];
 32.        
      if((track.kind !== "subtitles") && (track.kind !== "captions"))
-
 33.             continue;
-
 34. 
-
 35.          // create a button for track number i         
-
-36.          createButton(video.textTracks\[i\]); 
-
+36.          createButton(video.textTracks[i]); 
 37.       }
-
 38.    }
-
 39. }
-
 40. 
-
 41. function createButton(track) {
-
 42.    // Create a button
-
 43.    var b = document.createElement("button");
-
 44.    b.value=track.label;
-
 45.    // use the lang attribute of the button to keep trace of the
-
 46.    // associated track language. Will be useful in the click
-    listener
-
+   listener
 47.    b.setAttribute("lang", track.language); 
-
 48.    b.addEventListener('click', function(e) {
-
 49.      // Check which track is the track with the language
     we're looking for
-
 50.      // Get the value of the lang attribute of the clicked button
-
 51.      var lang = this.getAttribute('lang'); 
-
 52. 
-
-53.      for (var i = 0; i \< video.textTracks.length; i++) {
-
-54.        if (video.textTracks\[i\].language == lang) {
-
-55.           video.textTracks\[i\].mode = 'showing';
-
+53.      for (var i = 0; i < video.textTracks.length; i++) {
+54.        if (video.textTracks[i].language == lang) {
+55.           video.textTracks[i].mode = 'showing';
 56.        } else {
-
-57.           video.textTracks\[i\].mode = 'hidden';
-
+57.           video.textTracks[i].mode = 'hidden';
 58.        }
-
 59.      }
-
 60.      // Updates the span so that it displays the new active track
-
 61.     currentLangSpan.innerHTML = activeTrack();
-
 62.   });
-
 63.   // Creates a label inside the button
-
 64.   b.appendChild(document.createTextNode(track.label));
-
 65.   // Add the button to a div at the end of the HTML document
-
 66.   langButtonDiv.appendChild(b);
-
 67. }
-
 68. 
+```
 
 ### External resources
 
@@ -4473,7 +4160,7 @@ alt="Buttons for choosing the track/language under a standard video player" />
 
 ## 1.3.4 With a Simple Chapter Navigation Menu
 
-Example \#4: making a simple chapter navigation menu
+Example #4: making a simple chapter navigation menu
 
 <img src="./media/image38.jpeg" style="width:4.57292in;height:2.08333in"
 alt="Simple chapter navigation" />
@@ -4483,45 +4170,29 @@ same as for subtitles/caption .vtt files. The only difference is in the
 declaration of the track. Here is how we declared a chapter track in one
 of the previous examples (in bold in the example below):
 
-HTML code:
+<h4>HTML code:</h4>
 
-188. \<video id="myVideo" preload="metadata" controls crossOrigin="anonymous"\>
-
-189. \<source src=<https://...../elephants-dream-medium.mp4>
-
-190. type="video/mp4"\>
-
-191. \<source src=<https://...../elephants-dream-medium.webm>
-
-192. type="video/webm"\>
-
-193. \<track label="English subtitles"
-
+```
+188. <video id="myVideo" preload="metadata" controls crossOrigin="anonymous">
+189. <source src=<https://...../elephants-dream-medium.mp4>
+190. type="video/mp4">
+191. <source src=<https://...../elephants-dream-medium.webm>
+192. type="video/webm">
+193. <track label="English subtitles"
 194. kind="subtitles"
-
 195. srclang="en"
-
-196. src="https://...../elephants-dream-subtitles-en.vtt" \>
-
-197. \<track label="Deutsch subtitles"
-
+196. src="https://...../elephants-dream-subtitles-en.vtt" >
+197. <track label="Deutsch subtitles"
 198. kind="subtitles"
-
 199. srclang="de"
-
 200. src=<https://...../elephants-dream-subtitles-de.vtt>
-
-201. default\>
-
-202. \<track label="English chapters"
-
+201. default>
+202. <track label="English chapters"
 203. kind="chapters"
-
 204. srclang="en"
-
-205. src="https://...../elephants-dream-chapters-en.vtt"\>
-
-206. \</video\>
+205. src="https://...../elephants-dream-chapters-en.vtt">
+206. </video>
+```
 
 If we try this code in an HTML document, nothing special happens. No
 magic menu, no extra button!
@@ -4535,63 +4206,37 @@ Let's start by examining the sample .vtt file
 
 [elephant-dream-chapters-en.vtt](https://mainline.i3s.unice.fr/mooc/elephants-dream-chapters-en.vtt):
 
+```
 1.  WEBVTT
-
 2.  
-
 3.  chapter-1
-
-4.  00:00:00.000 --\> 00:00:26.000
-
+4.  00:00:00.000 --> 00:00:26.000
 5.  Introduction
-
 6.  
-
 7.  chapter-2
-
-8.  00:00:28.206 --\> 00:01:02.000
-
+8.  00:00:28.206 --> 00:01:02.000
 9.  Watch out!
-
 10. 
-
 11. chapter-3
-
-12. 00:01:02.034 --\> 00:03:10.000
-
+12. 00:01:02.034 --> 00:03:10.000
 13. Let's go
-
 14. 
-
 15. chapter-4
-
-16. 00:03:10.014 --\> 00:05:40.000
-
+16. 00:03:10.014 --> 00:05:40.000
 17. The machine
-
 18. 
-
 19. chapter-5
-
-20. 00:05:41.208 --\> 00:07:26.000
-
+20. 00:05:41.208 --> 00:07:26.000
 21. Close your eyes
-
 22. 
-
 23. chapter-6
-
-24. 00:07:27.125 --\> 00:08:12.000
-
+24. 00:07:27.125 --> 00:08:12.000
 25. There's nothing there
-
 26. 
-
 27. chapter-7
-
-28. 00:08:13.000 --\> 00:09:07.500
-
+28. 00:08:13.000 --> 00:09:07.500
 29. The Colossus of Rhodes
+```
 
 There are 7 cues (one for each chapter). Each cue id is the word
 "chapter-" followed by the chapter number, then we have the start and
@@ -4610,11 +4255,11 @@ modify it a little bit:
 
 <!-- -->
 
-207. \<button disabled id="buttonEnglishChapters" **onclick="loadTranscript('en', 'chapters');"**\>
+207. <button disabled id="buttonEnglishChapters" **onclick="loadTranscript('en', 'chapters');"**>
 
 208. Display English chapter markers
 
-209. \</button\>
+209. </button>
 
      1.  We modify the loadTranscript function from the previous
          > example, so that it matches both the srclang and
@@ -4631,7 +4276,7 @@ modify it a little bit:
 
 213. // Locate the track with lang and kind that match the parameters
 
-214. for(var i = 0; i \< tracks.length; i++) {
+214. for(var i = 0; i < tracks.length; i++) {
 
 215. ...
 
@@ -4677,7 +4322,7 @@ contents. This will be the topic of the next two lessons!
 
 1.3.5 With Thumbnails, Using JSON Cues
 
-Example \#5: create a chapter menu with image thumbnails
+Example #5: create a chapter menu with image thumbnails
 
 Instead of using text (optionally using HTML for styling, multi lines,
 etc.), it is also possible to use JSON objects as cue values that can be
@@ -4694,60 +4339,42 @@ processing such data from JavaScript is easier than parsing plain text.
 
 222. 
 
+```
 <!-- -->
-
 2.  Wikipedia
-
-3.  00:01:15.200 --\> 00:02:18.800
-
+3.  00:01:15.200 --> 00:02:18.800
 4.  {
-
 5.  "title": "State of Wikipedia",
-
 6.  "description": "Jimmy Wales talking ...",
-
 7.  "src": "https://upload.wikimedia.org/...../120px-Wikipedia-logo-
-
 8.  v2.svg.png",
-
 9.  "href": "https://en.wikipedia.org/wiki/Wikipedia"
-
 10. }
+```
 
 This JSON object (in bold green) is a JavaScript object encoded as a
 text string. If we listen for cue events or if we read a WebVTT file as
 done in previous examples, we can extract this text content using the
  cue.text property. For example:
 
+```
 1.  var videoElement = document.querySelector("#myvideo");
-
 2.  var textTracks = videoElement.textTracks; // one for each track
     element
-
-3.  var textTrack = textTracks\[0\]; // corresponds to the first track
+3.  var textTrack = textTracks[0]; // corresponds to the first track
     element
-
 4.  
-
 5.  var cues = textTrack.cues;
-
-6.  var cue = cues\[0\]; // first cue
-
+6.  var cue = cues[0]; // first cue
 7.  
-
 8.  // cue.text is in JSON format, with JSON.parse we turn it back
-
 9.  // to a real JavaScript object
-
 10. var obj = JSON.parse(cue.text); 
-
 11. 
-
 12. var title = obj.title; // "State of Wikipedia"
-
 13. var description = obj.description; // Jimmy Wales talking...
-
 14. etc...
+```
 
 This is a powerful way of embedding metadata, especially when used in
 conjunction with listening for cue and track events.
@@ -4764,25 +4391,18 @@ alt="SImple chapter menu in plain text" />
 
 ### This example used only standard plain text content for the cues:
 
+```
 1.  WEBVTT
-
 2.  
-
 3.  chapter-1
-
-4.  00:00:00.000 --\> 00:00:26.000
-
+4.  00:00:00.000 --> 00:00:26.000
 5.  Introduction
-
 6.  
-
 7.  chapter-2
-
-8.  00:00:28.206 --\> 00:01:02.000
-
+8.  00:00:28.206 --> 00:01:02.000
 9.  Watch out!
-
 10. ...
+```
 
 We used this example to manually capture the images from the video that
 correspond to each of the seven chapters:
@@ -4816,39 +4436,25 @@ objects as cue contents:
 
 [elephants-dream-chapters-en-JSON.vtt](https://mainline.i3s.unice.fr/mooc/elephants-dream-chapters-en-JSON.vtt):
 
+```
 1.  WEBVTT
-
 2.   
-
 3.  chapter-1
-
-4.  00:00:00.000 --\> 00:00:26.000
-
+4.  00:00:00.000 --> 00:00:26.000
 5.  {
-
 6.  "description": "Introduction",
-
 7.  "image": "introduction.jpg"
-
 8.  }
-
 9.   
-
 10.  
-
 11. chapter-2
-
-12. 00:00:28.206 --\> 00:01:02.000
-
+12. 00:00:28.206 --> 00:01:02.000
 13. {
-
 14. "description": "Watch out!",
-
 15. "image": "watchOut.jpg"
-
 16. }
-
 17. ...
+```
 
 Before explaining the code, we propose that you [try this example at
 JSBin that uses this new .vtt
@@ -4857,47 +4463,30 @@ file](https://jsbin.com/pulefe/1/edit?html,css,js,output):
 <img src="./media/image47.jpeg" style="width:5in;height:5.72864in"
 alt="Video with nice chapter menu that uses thumbnail images" />
 
-### HTML code:
+<h4>HTML code:</h4>
 
+```
 1.  ...
-
-2.  \<video id="myVideo" preload="metadata" controls crossOrigin="anonymous"\>
-
-3.  \<source src="https://...../elephants-dream-medium.mp4"
-
-4.           type="video/mp4"\>
-
-5.  \<source src="https://...../elephants-dream-medium.webm"
-
-6.           type="video/webm"\>
-
-7.  \<track label="English subtitles"
-
+2.  <video id="myVideo" preload="metadata" controls crossOrigin="anonymous">
+3.  <source src="https://...../elephants-dream-medium.mp4"
+4.           type="video/mp4">
+5.  <source src="https://...../elephants-dream-medium.webm"
+6.           type="video/webm">
+7.  <track label="English subtitles"
 8.          kind="subtitles"
-
 9.         
     srclang="en" src="https://...../elephants-dream-subtitles-en.vtt" \>
-
 10. \<track label="Deutsch subtitles"
-
 11.         kind="subtitles"
-
 12.        
     srclang="de" src="https://...../elephants-dream-subtitles-de.vtt" default\>
-
 13. **\<track label="English chapters"**
-
 14. **         kind="chapters"**
-
 15. **       
     srclang="en" src="https://...../elephants-dream-chapters-en-JSON.vtt"\>**
-
 16. \</video\>
-
 17. \<h2\>Chapter menu\</h2\>
-
 18. **\<div id="chapterMenu"\>\</div\>**
-
 19.  ...
 
 It's the same code we had in the first example, except that this time we
