@@ -42,30 +42,30 @@
 >### 1.4. [**Creating tracks on the fly, syncing HTML content with a video**](#ch1-4-1)
 >### 1.5. [**The Web Audio API**](#ch1-5-1)
 
-Module 2: Game programming with HTML5
-2.1.	Video introduction
-2.2.	Basic concepts of HTML5 game development
-2.3.	A simple game framework: graphics, animations and interactions
-2.4.	Time-based animation
-2.5.	Animating multiple objects, collision detection
-2.6.	Sprite-based animation
-2.7.	Game states
+## [**Module 2: Game programming with HTML5**](ch2)
+>### 2.1. [**Video introduction - Module 2**](#ch2-1-1)
+>### 2.2.[**Basic concepts of HTML5 game development**](#ch2-2-1)
+>### 2.3.[**A simple game framework: graphics, animations and interactions**](#ch2-3-1)
+>### 2.4.[**Time-based animation**](#ch2-4-1)
+>### 2.5.[**Animating multiple objects, collision detection**](#ch2-5-1)
+>### 2.6.[**Sprite-based animation**](#ch2-6-1)
+>### 2.7.[**Game states**](#ch2-7-1)
 
-Module 3: HTML5 file upload and download
-3.1.	Video introduction
-3.2.	File API and Ajax / XHR2 requests
-3.3.	Drag and drop: the basics
-3.4.	Drag and drop: working with files
-3.5.	Forms and files
-3.6.	IndexedDB
-3.7.	Conclusion on client-side persistence
+## [**Module 3: HTML5 file upload and download**]{ch3)
+>### 3.1.[**Video introduction**](#ch3-1-1)
+>### 3.2.[**File API and Ajax / XHR2 requests**](#ch3-2-1)
+>### 3.3.[**Drag and drop: the basics**](#ch3-3-1)
+>### 3.4.[**Drag and drop: working with files**](#ch3-4-1)
+>### 3.5.[**Forms and files**](#ch3-5-1)
+>### 3.6.[**IndexedDB**](#ch3-6-1)
+>### 3.7.[**Conclusion on client-side persistence**](#ch3-7-1)
 
-Module 4: Web components and other HTML5 APIs
-4.1.	Video introduction
-4.2.	Web Components
-4.3.	Web Workers
-4.4.	The Orientation and Device Motion APIs
-4.5.	Where to from here?
+## [**Module 4: Web components and other HTML5 APIs**](ch4)
+>### 4.1.[**Video introduction**](#ch4-1-1)
+>### 4.2.[**Web Components**](#ch4-2-1)
+>### 4.3.[**Web Workers**](#ch4-3-1)
+>### 4.4.[**The Orientation and Device Motion APIs**](#ch4-4-1)
+>### 4.5.[**Where to from here?**](#ch4-5-1)
 
 **W3Cx-4of5-HTML5.2x – Apps and Games**
 
@@ -26317,4 +26317,4 @@ your comments/observations/questions and share your creations.
     from Module 2 of the course!
 
 <h5>The end...</h5>
-<h5>Last Updated: 8-04-2022 9:54pm</h5>
+<h5>Last Updated: 8-16-2022 8:09am</h5>
