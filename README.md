@@ -69,39 +69,36 @@
 
 **W3Cx-4of5-HTML5.2x – Apps and Games**
 
-## Course outline
+<h3>Course outline</h3>
 
 During this course, you will discover advanced HTML5 techniques to help
 you develop innovative projects and applications. Please try to work on
 one of the many proposed optional projects, to be found at the end of
 each section. Remember that if you are not comfortable with JavaScript,
 no worries. Just start creating from one of the provided examples or
-follow our [JavaScript
-Introduction](https://www.edx.org/course/javascript-introduction) course.
+follow our <a href="https://www.edx.org/course/javascript-introduction">JavaScript
+Introduction</a> course.
 And most of all, have fun!
-
--   Play with audio and video in "**Module 1**: Advanced HTML5
-    multimedia".
-
--   Start programming an HTML5-based game of your own in **Module 2**!
+<ul>
+<li>Play with audio and video in "<b>Module 1</b>: Advanced HTML5
+    multimedia".</li>
+<li>Start programming an HTML5-based game of your own in <b>Module 2</b>!
     Learn the core techniques for writing 2D video games that run at 60
     frames/s. Discover basic game development concepts, set up a single
     game framework, understand time-based animation, animate multiple
     objects, use sprite sheets, detect collisions, deal with gamepad
-    events, and many more.
-
--   **Module 3** is about drag and drop, upload/download files with
+    events, and many more.</li>
+<li><b>Module 3</b> is about drag and drop, upload/download files with
     Ajax/XHR2 and IndexedDB. The Indexed Database API is a recommended
     standard interface for a local database of records holding simple
     values and hierarchical objects. Note that IndexedDB is also useful
-    for storing your HTML5 game scores!
-
--   This is the last set of lectures! **Module 4** gives a lot of space
+    for storing your HTML5 game scores!</li>
+<li>This is the last set of lectures! <b>Module 4</b> gives a lot of space
     to Web components as they help build Web pages using ready to use
     standardized building blocks. Web components comprise Custom
-    Elements, Shadow DOM and HTML Imports and Templates. 
-
--   These specifications are under continuous development at W3C.
+    Elements, Shadow DOM and HTML Imports and Templates.</li>
+<li>These specifications are under continuous development at W3C.</li>
+</ul>
 
 This module also gives you a flavor of other HTML5 APIs such as the
 Orientation API which is useful for monitoring and controlling games and
@@ -173,7 +170,7 @@ courses, you *do NOT need to re-take that course*.
 <li>5.  **Where to from here?**</li>
 </ol>
 
-# **Contents**
+<h2>Contents</h2>
 
 [Advanced HTML5 Multimedia [26](#module-1-1)](#module-1-1)
 
@@ -818,15 +815,13 @@ drop, the PHP is the same)
 [4.3.1 Introduction [467](#introduction-8)](#introduction-8)
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------------------- 266. moving balls (489) -------------------------------------->
+<!------------------------------- 02. script not reesponding (xx) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img src="./images/image002.png"
    alt="ScriptNotResponding1"
    width="45%" />
 </p>
 
-[<img src="./images/image002.png" style="width:4.625in;height:2.04167in"
-alt="ScriptNotResponding1" />
 [467](#scriptnotresponding1)](#scriptnotresponding1)
 
 [An example that does not use Web Workers
@@ -10504,187 +10499,95 @@ alt="Bouncing square with time bases animation" />
 
 Source code from the example:
 
+```
 1.  <!DOCTYPE html>
-
 2.  <html lang="en">
-
 3.  <head>
-
 4.    <meta charset=utf-8 />
-
 5.    <title>Move rectangle using time based animation</title>
-
 6.    <script>
-
 7.      var canvas, ctx;
-
 8.      var width, height;
-
-9.      var x, y, incX; // incX is the distance from the previously
-    > drawn
-
+9.      var x, y, incX; // incX is the distance from the previously > drawn
 10.                     // rectangle to the new one
-
-11.     **var speedX; // speedX is the target speed of the rectangle, in
-    > pixels/s**
-
+11.     **var speedX; // speedX is the target speed of the rectangle, in > pixels/s**
 12. 
-
 13.     **// for time based animation**
-
 14.     **var now, delta;**
-
 15.     **var then = new Date().getTime();**
-
 16. 
-
 17.     // Called after the DOM is ready (page loaded)
-
 18.     function init() {
-
 19.       // Init the different variables
-
 20.       canvas = document.querySelector("#mycanvas");
-
 21.       ctx = canvas.getContext('2d');
-
 22.       width = canvas.width;
-
 23.       height = canvas.height;
-
 24. 
-
 25.       x=10; y = 10;
-
-26.       // Target speed in pixels/second, try with high values, 1000,
-    > 2000...
-
+26.       // Target speed in pixels/second, try with high values, 1000, > 2000...
 27.       speedX = 200;
-
 28. 
-
 29.       // Start animation
-
 30.      animationLoop();
-
 31.    }
-
 32. 
-
 33.    function animationLoop() {
-
 34.      **// Measure time**
-
 35.      **now = new Date().getTime();**
-
 36.  
-
 37.      // How long between the current frame and the previous one?
-
 38.      **delta = now - then;**
-
 39.      //console.log(delta);
-
-40.      // Compute the displacement in x (in pixels) in function of the
-    > time elapsed and
-
+40.      // Compute the displacement in x (in pixels) in function of the > time elapsed and
 41.      // in function of the wanted speed
-
 42.      **incX = calcDistanceToMove(delta, speedX);**
-
 43. 
-
 44.      // an animation involves: 1) clear canvas and 2) draw shapes,
-
-45.      // 3) move shapes, 4) recall the loop with
-    > requestAnimationFrame
-
+45.      // 3) move shapes, 4) recall the loop with  > requestAnimationFrame
 46. 
-
 47.      // clear canvas
-
 48.      ctx.clearRect(0, 0, width, height);
-
 49. 
-
 50.      ctx.strokeRect(x, y, 10, 10);
-
 51. 
-
 52.      // move rectangle
-
 53.      x += incX;
-
 54. 
-
 55.      // check collision on left or right
-
 56.      if((x+10 >= width) || (x <= 0)) {
-
 57.         // cancel move + inverse speed
-
 58.         x -= incX;
-
 59.         speedX = -speedX;
-
 60.      }
-
 61. 
-
 62.      **// Store time**
-
 63.      **then = now;**
-
 64. 
-
 65.      requestAnimationFrame(animationLoop);
-
 66.  }
-
 67. 
-
 68. 
-
 69. 
-
 70.  // We want the rectangle to move at a speed given in pixels/second
-
 71.  // (there are 60 frames in a second)
-
 72.  // If we are really running at 60 frames/s, the delay between
-
 73.  // frames should be 1/60
-
-74.  // = 16.66 ms, so the number of pixels to move = (speed *
-    > del)/1000.
-
+74.  // = 16.66 ms, so the number of pixels to move = (speed * > del)/1000.
 75.  // If the delay is twice as
-
-76.  // long, the formula works: let's move the rectangle for twice as
-    > long!
-
+76.  // long, the formula works: let's move the rectangle for twice as > long!
 77. ** var calcDistanceToMove = function(delta, speed) {**
-
 78. **     return (speed * delta) / 1000;**
-
 79. ** }**
-
 80. 
-
 81.  </script>
-
 82. </head>
-
 83. 
-
 84. <body onload="init();">
-
-85.  <canvas id="mycanvas" width="200" height="50" style="border: 2px solid
-    > black"></canvas>
-
+85.  <canvas id="mycanvas" width="200" height="50" style="border: 2px solid > black"></canvas>
 86. </body>
-
 87. </html>
+```
 
 In this example, we only added a few lines of code for measuring the
 time and computing the time elapsed between two consecutive frames
@@ -10716,82 +10619,46 @@ animation should be very jerky. However, notice that the apparent speed
 of the square is the same as in the previous example: the animation
 adapts itself!
 
+```
 1.  function animationLoop() {
-
 2.     // Measure time
-
 3.    now = new Date().getTime();
-
 4.   
-
 5.    // How long between the current frame and the previous one ?
-
 6.    delta = now - then;
-
 7.    //console.log(delta);
-
-8.    // Compute the displacement in x (in pixels) in function of the
-    time elapsed and
-
+8.    // Compute the displacement in x (in pixels) in function of the time elapsed and
 9.    // in function of the wanted speed
-
 10.   incX = calcDistanceToMove(delta, speedX);
-
 11. 
-
 12.   // an animation is : 1) clear canvas and 2) draw shapes,
-
 13.   // 3) move shapes, 4) recall the loop with requestAnimationFrame
-
 14. 
-
 15.   // clear canvas
-
 16.   ctx.clearRect(0, 0, width, height);
-
 17. 
-
 18.   **for(var i = 0; i < 50000000; i++) {**
-
 19. **    // just to slow down the animation**
-
 20. **  }**
-
 21. 
-
 22.   ctx.strokeRect(x, y, 10, 10);
-
 23. 
-
 24.   // move rectangle
-
 25.   x += incX;
-
 26. 
-
 27.   // check collision on left or right
-
 28.   if((x+10 >= width) || (x <= 0)) {
-
 29.    // cancel move + inverse speed
-
 30.    x -= incX;
-
 31.    speedX = -speedX;
-
 32.   }
-
 33. 
-
 34.   // Store time
-
 35.   then = now;
-
 36. 
-
 37.   requestAnimationFrame(animationLoop);
-
 38. }
+```
 
 ### Method #2: using the new HTML5 high-resolution timer
 
@@ -10802,7 +10669,9 @@ called the "[High Resolution Time API](https://www.w3.org/TR/hr-time/)".
 
 This API is very simple to use - just do:
 
+```
 1.  var time = performance.now();
+```
 
 ... to get a sub-millisecond time-stamp. It is similar to Date.now()
 except that the accuracy is much higher and that the result is not
@@ -10841,115 +10710,61 @@ timer](https://jsbin.com/wecaho/edit).
 
 Source code of the example:
 
-223.  ...
-
-224.  <script>
-
-225.    ...
-
-226.    var speedX; // speedX is the target speed of the rectangle in
-     pixels/s
-
-227. 
-
-228.    // for time based animation
-
-229.    var now, delta;
-
-230.    **// High resolution timer**
-
-231.    **var then = performance.now();**
-
-232. 
-
-233.    // Called after the DOM is ready (page loaded)
-
-234.    function init() {
-
-235.      ...
-
-236.    }
-
-237. 
-
-238.    function animationLoop() {
-
-239.      **// Measure time, with high resolution timer**
-
-240.      **now = performance.now();**
-
-241.  
-
-242.      // How long between the current frame and the previous one?
-
-243.     delta = now - then;
-
-244.     //console.log(delta);
-
-245.     // Compute the displacement in x (in pixels) in function
-
-246.     // of the time elapsed and
-
-247.     // in function of the wanted speed
-
-248.     incX = calcDistanceToMove(delta, speedX);
-
-249.     //console.log("dist = " + incX);
-
-250.     // an animation involves: 1) clear canvas and 2) draw shapes,
-
-251.     // 3) move shapes, 4) recall the loop with
-     requestAnimationFrame
-
-252. 
-
-253.     // clear canvas
-
-254.    ctx.clearRect(0, 0, width, height);
-
-255. 
-
-256.    ctx.strokeRect(x, y, 10, 10);
-
-257. 
-
-258.    // move rectangle
-
-259.    x += incX;
-
-260. 
-
-261.    // check collision on left or right
-
-262.    if((x+10 >= width) || (x <= 0)) {
-
-263.       // cancel move + inverse speed
-
-264.       x -= incX;
-
-265.       speedX = -speedX;
-
-266.    }
-
-267. 
-
-268.    // Store time
-
-269.    then = now;
-
-270. 
-
-271.    // call the animation loop again
-
-272.    requestAnimationFrame(animationLoop);
-
-273.  }
-
-274.  ...
-
-275. 
-
-276.  </script>
+1.  ...
+2.  <script>
+3.    ...
+4.    var speedX; // speedX is the target speed of the rectangle in pixels/s
+5. 
+6.    // for time based animation
+7.    var now, delta;
+8.    **// High resolution timer**
+9.    **var then = performance.now();**
+10. 
+11.    // Called after the DOM is ready (page loaded)
+12.    function init() {
+13.      ...
+14.    }
+15. 
+16.    function animationLoop() {
+17.      **// Measure time, with high resolution timer**
+18.      **now = performance.now();**
+19.  
+20.      // How long between the current frame and the previous one?
+21.     delta = now - then;
+22.     //console.log(delta);
+23.     // Compute the displacement in x (in pixels) in function
+24.     // of the time elapsed and
+25.     // in function of the wanted speed
+26.     incX = calcDistanceToMove(delta, speedX);
+27.     //console.log("dist = " + incX);
+28.     // an animation involves: 1) clear canvas and 2) draw shapes,
+29.     // 3) move shapes, 4) recall the loop with requestAnimationFrame
+30. 
+31.     // clear canvas
+32.    ctx.clearRect(0, 0, width, height);
+33. 
+34.    ctx.strokeRect(x, y, 10, 10);
+35. 
+36.    // move rectangle
+37.    x += incX;
+38. 
+39.    // check collision on left or right
+40.    if((x+10 >= width) || (x <= 0)) {
+41.       // cancel move + inverse speed
+42.       x -= incX;
+43.       speedX = -speedX;
+44.    }
+45. 
+46.    // Store time
+47.    then = now;
+48. 
+49.    // call the animation loop again
+50.    requestAnimationFrame(animationLoop);
+51.  }
+52.  ...
+53. 
+54.  </script>
+```
 
 Only two lines have changed but the accuracy is much higher, if you
 uncomment the console.log(...) calls in the main loop. You will see the
