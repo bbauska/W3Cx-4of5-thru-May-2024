@@ -44,32 +44,30 @@
 
 ## [**Module 2: Game programming with HTML5**](#ch2)
 >### 2.1. [**Video introduction - Module 2**](#ch2-1-1)
->### 2.2.[**Basic concepts of HTML5 game development**](#ch2-2-1)
->### 2.3.[**A simple game framework: graphics, animations and interactions**](#ch2-3-1)
->### 2.4.[**Time-based animation**](#ch2-4-1)
->### 2.5.[**Animating multiple objects, collision detection**](#ch2-5-1)
->### 2.6.[**Sprite-based animation**](#ch2-6-1)
->### 2.7.[**Game states**](#ch2-7-1)
+>### 2.2. [**Basic concepts of HTML5 game development**](#ch2-2-1)
+>### 2.3. [**A simple game framework: graphics, animations and interactions**](#ch2-3-1)
+>### 2.4. [**Time-based animation**](#ch2-4-1)
+>### 2.5. [**Animating multiple objects, collision detection**](#ch2-5-1)
+>### 2.6. [**Sprite-based animation**](#ch2-6-1)
+>### 2.7. [**Game states**](#ch2-7-1)
 
 ## [**Module 3: HTML5 file upload and download**](#ch3)
->### 3.1.[**Video introduction**](#ch3-1-1)
->### 3.2.[**File API and Ajax / XHR2 requests**](#ch3-2-1)
->### 3.3.[**Drag and drop: the basics**](#ch3-3-1)
->### 3.4.[**Drag and drop: working with files**](#ch3-4-1)
->### 3.5.[**Forms and files**](#ch3-5-1)
->### 3.6.[**IndexedDB**](#ch3-6-1)
->### 3.7.[**Conclusion on client-side persistence**](#ch3-7-1)
+>### 3.1. [**Video introduction**](#ch3-1-1)
+>### 3.2. [**File API and Ajax / XHR2 requests**](#ch3-2-1)
+>### 3.3. [**Drag and drop: the basics**](#ch3-3-1)
+>### 3.4. [**Drag and drop: working with files**](#ch3-4-1)
+>### 3.5. [**Forms and files**](#ch3-5-1)
+>### 3.6. [**IndexedDB**](#ch3-6-1)
+>### 3.7. [**Conclusion on client-side persistence**](#ch3-7-1)
 
 ## [**Module 4: Web components and other HTML5 APIs**](#ch4)
 >### 4.1.[**Video introduction**](#ch4-1-1)
 >### 4.2.[**Web Components**](#ch4-2-1)
 >### 4.3.[**Web Workers**](#ch4-3-1)
 >### 4.4.[**The Orientation and Device Motion APIs**](#ch4-4-1)
->### 4.5.[**Where to from here?**](#ch4-5-1)
+>### 4.5. [**Where to from here?**](#ch4-5-1)
 
 **W3Cx-4of5-HTML5.2x – Apps and Games**
-
-<img src="./media/image001.png" style="width:5in;height:2.76408in" />
 
 ## Course outline
 
@@ -110,12 +108,12 @@ Orientation API which is useful for monitoring and controlling games and
 other activities; and Web Workers which introduce the power of parallel
 processing to Web apps.
 
-This HTML5 Apps and Games course is part of the [<u>Front-End Web
+This HTML5 Apps and Games course is part of the [<b>Front-End Web
 Developer" (FEWD) Professional
-Certificate</u>](https://www.edx.org/professional-certificate/w3cx-front-end-web-developer) program.
+Certificate</b>](https://www.edx.org/professional-certificate/w3cx-front-end-web-developer) program.
 To get this FEWD certificate, you will need to successfully pass all 5
 courses that compose that program. Find out more
-on [<u>w3cx.org</u>](https://w3cx.org/)!
+on [<b>w3cx.org</b>](https://w3cx.org/)!
 
 If you already have a verified certificate in one or more of these
 courses, you *do NOT need to re-take that course*.
@@ -161,7 +159,6 @@ courses, you *do NOT need to re-take that course*.
 <li>3.  Drag and drop: the basics</li>
 <li>4.  Drag and drop: working with files</li>
 <li>5.  Forms and files</li>
-
 <li>6.  [**IndexedDB**](https://learning.edx.org/course/course-v1:W3Cx+HTML5.2x+2T2020a/block-v1:W3Cx+HTML5.2x+2T2020a+type@sequential+block@6c3721f499ec4df395514b458961002f)
 </li>
 <li>7.  Conclusion on client-side persistence</li>
@@ -170,13 +167,9 @@ courses, you *do NOT need to re-take that course*.
 <h3>Module 4: Web components and other HTML5 APIs</h3>
 <ol type="1">
 <li>1.  **Video introduction**</li>
-<li>2.  [**Web
-    Components**](https://learning.edx.org/course/course-v1:W3Cx+HTML5.2x+2T2020a/block-v1:W3Cx+HTML5.2x+2T2020a+type@sequential+block@a15f811948fa423185c346089a36bb85)</li>
-
+<li>2.  [**Web Components**](https://learning.edx.org/course/course-v1:W3Cx+HTML5.2x+2T2020a/block-v1:W3Cx+HTML5.2x+2T2020a+type@sequential+block@a15f811948fa423185c346089a36bb85)</li>
 <li>3.  **Web Workers**</li>
-
 <li>4.  **The Orientation and Device Motion APIs**</li>
-
 <li>5.  **Where to from here?**</li>
 </ol>
 
@@ -824,7 +817,15 @@ drop, the PHP is the same)
 
 [4.3.1 Introduction [467](#introduction-8)](#introduction-8)
 
-[<img src="./media/image2.png" style="width:4.625in;height:2.04167in"
+<!------------------------------------------------------------------------------------------------>
+<!--------------------------------- 266. moving balls (489) -------------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<img src="./images/image002.png"
+   alt="ScriptNotResponding1"
+   width="45%" />
+</p>
+
+[<img src="./images/image002.png" style="width:4.625in;height:2.04167in"
 alt="ScriptNotResponding1" />
 [467](#scriptnotresponding1)](#scriptnotresponding1)
 
@@ -1033,7 +1034,7 @@ During this course, you will notably learn:
 
 ### Web browsers
 
-<img src="./media/image003.jpeg" style="width:1.1875in;height:1.1875in"
+<img src="./images/image003.jpeg" style="width:1.1875in;height:1.1875in"
 alt="A man looking at his laptop screen as if he is considering which browser to use - a few browser logos float in the background" />
 
 Not surprisingly, it would be helpful to have a browser (short for "Web
@@ -1091,7 +1092,7 @@ examples will actually use these.
 
 ### JS Bin
 
-<img src="./media/image004.png" style="width:0.72917in;height:0.72917in"
+<img src="./images/image004.png" style="width:0.72917in;height:0.72917in"
 alt="JS Bin logo" />[JS Bin](http://jsbin.com/) is an open source
 collaborative Web development debugging tool. This tool is really
 simple, just open the link to the provided examples, look at the code,
@@ -1105,7 +1106,7 @@ or on YouTube. Keep in mind that it's always better to be logged in
 
 ### CodePen
 
-<img src="./media/image005.png" style="width:0.72917in;height:0.72917in"
+<img src="./images/image005.png" style="width:0.72917in;height:0.72917in"
 alt="CodePen logo" />[CodePen](http://codepen.io/) is an HTML, CSS, and
 JavaScript code editor that previews/showcases your code bits in your
 browser. It helps with cross-device testing, real-time remote pair
@@ -1137,7 +1138,7 @@ tools ](https://w3c.github.io/developers/tools/)site.
 
 ### W3C Validator
 
-### <img src="./media/image006.png" style="width:1in;height:0.40556in" />
+### <img src="./images/image006.png" style="width:1in;height:0.40556in" />
 
 The [W3C validator](https://validator.w3.org/) checks the [markup
 validity](https://validator.w3.org/docs/help.html#validation_basics) of
@@ -1149,7 +1150,7 @@ The [CSS validator](https://jigsaw.w3.org/css-validator/) checks
 Cascading Style Sheets (CSS) and (X)HTML documents that use CSS
 stylesheets.
 
-<img src="./media/image007.png" style="width:1in;height:0.82159in"
+<img src="./images/image007.png" style="width:1in;height:0.82159in"
 alt="Laptop showing unicorn validator" />
 
 ### Unicorn
@@ -1185,9 +1186,14 @@ compilation of useful knowledge extracted from W3C specifications,
 completed by summaries of guidelines developed at W3C, in particular Web
 accessibility guidelines, the Mobile Web Best Practices, and a number of
 internationalization tips.
-
-<img src="./media/image008.png" style="width:3in;height:2.09497in"
-alt="W3C Cheatsheet snapshot image00" />
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 08. tim berners-lee in 1994 (11) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image008.jpeg?raw=true"
+   width="35%"
+   alt="Tim Berners-Lee at his desk in CERN, 1994" />
+</p>
 
 Its main feature is a lookup search box, where one can start typing a
 keyword and get a list of matching
@@ -1195,8 +1201,8 @@ properties/elements/attributes/functions in the above-mentioned
 specifications, and further details on those when selecting the one of
 interest.
 
-The W3C cheatsheet is only available as a [pure Web
-application](https://dev.w3.org/2009/cheatsheet/doc/).
+The W3C cheatsheet is only available as a <a href="https://dev.w3.org/2009/cheatsheet/doc/">pure Web
+application</a>.
 
 ### Browser Compatibility
 
@@ -1231,13 +1237,25 @@ of front-end Web technologies on desktop and mobile Web browsers. Below
 is a snapshot of what information is given by CanIUse when searching for
 "CSS3 colors".
 
-<img src="./media/image009.png" style="width:5.04167in;height:2.16667in"
-alt="Example of a CanIUse browser support table (using CSS3 colors)" />
+<!------------------------------------------------------------------------------------------------>
+<!---------- 09. Example of a CanIUse browser support table (using CSS3 colors) (xx) ------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image009.gif?raw=true"
+   width="85%"
+   alt="Example of a CanIUse browser support table (using CSS3 colors)." />
+</p>
 
 ### MDN Web Docs
 
-<img src="./media/image010.png" style="width:3in;height:0.94534in"
-alt="Logo of MDN Web Docs" />
+<!------------------------------------------------------------------------------------------------>
+<!---------------------------------- 10. mdn web docs logo (xx) ---------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image010.png?raw=true"
+   width="30%"
+   alt="MDN Web Docs logo" />
+</p>
 
 To help developers make these decisions consciously rather than
 accidentally, 
@@ -1274,7 +1292,7 @@ Contributing to this standardization process might be a bit scary or
 hard to approach at first, but understanding at a deeper level how these
 technologies are built is a great way to build your expertise.
 
-<img src="./media/image011.png" style="width:1in;height:0.82895in"
+<img src="./images/image011.png" style="width:1in;height:0.82895in"
 alt="Logo of GitHub (the Octocat)" />
 
 If you're looking to an easy way to dive into this standardization
@@ -1285,7 +1303,7 @@ see if you find anything where you think you would be ready to help.
 
 Shape the future
 
-<img src="./media/image012.png" style="width:2in;height:0.55411in"
+<img src="./images/image012.png" style="width:2in;height:0.55411in"
 alt="Logo of the W3C Web Incubator Community Group" />
 
 Another approach is to go and bring feedback on ideas for future
@@ -1298,7 +1316,7 @@ Happy Web building!
 
 ### What is W3C?
 
-### <img src="./media/image013.png" style="width:3in;height:0.7612in" />
+### <img src="./images/image013.png" style="width:3in;height:0.7612in" />
 
 **As steward of global Web standards, W3C's mission is to safeguard the
 openness, accessibility, and freedom of the World Wide Web from a
@@ -1318,7 +1336,7 @@ communication around the globe. He then created the first Web browser,
 server, and Web page. He wrote the first specifications for URLs, HTTP,
 and HTML.
 
-<img src="./media/image014.jpeg" style="width:1in;height:1in"
+<img src="./images/image014.jpeg" style="width:1in;height:1in"
 alt="Tim Berners-Lee at his desk in CERN, 1994" />
 
 *Tim Berners-Lee at his desk in CERN, 1994*
@@ -1517,7 +1535,7 @@ width!):
 And here is how it renders in your current browser (please play the
 video and try to show/hide the subtitles/captions):
 
-<img src="./media/image015.png"
+<img src="./images/image015.png"
 style="width:4.90625in;height:2.79167in" />
 
 Notice that the support for multiple tracks may differs significantly
@@ -1529,7 +1547,7 @@ versions. Here is a quick summary (as in May 2020).
     the default attribute set, then it is loaded by default. Otherwise,
     the default is off.
 
-<img src="./media/image016.png"
+<img src="./images/image016.png"
 style="width:4.90625in;height:2.79167in" />
 
 -   Chrome and Opera both provide a subtitle menu and load the text
@@ -1576,7 +1594,7 @@ WEBVTT
 12. <v Proog>Everything is safe. Perfectly safe.</v>
 ```
 
-<img src="./media/image017.jpeg" style="width:2.02083in;height:4.83333in"
+<img src="./images/image017.jpeg" style="width:2.02083in;height:4.83333in"
 alt="remote controller with subtitles button" />
 
 The different time segments are called "cues" and each cue has an id (1,
@@ -1644,7 +1662,7 @@ We hope you will enjoy this first week and we wish you the best!
 Hi, today I've prepared for you a small example of a video that is
 associated with three different tracks.
 
-<img src="./media/image018.png" style="width:6.5in;height:6.36875in" />
+<img src="./images/image018.png" style="width:6.5in;height:6.36875in" />
 
 Two for subtitles, in English and in German, and one track for chapters.
 
@@ -1682,11 +1700,11 @@ activating them, and so on. Now, I would like to remind you the
 structure of a track. I'm just going to display the content of one of
 these tracks.
 
-<img src="./media/image019.png" style="width:5in;height:3.07853in" />
+<img src="./images/image019.png" style="width:5in;height:3.07853in" />
 
-<img src="./media/image020.png" style="width:5in;height:3.07853in" />
+<img src="./images/image020.png" style="width:5in;height:3.07853in" />
 
-<img src="./media/image021.png" style="width:5in;height:5.2094in" />
+<img src="./images/image021.png" style="width:5in;height:5.2094in" />
 
 The tracks are made of cues and what we call a cue is a kind of time
 segment that is defined with a starting time and an ending time. And the
@@ -1702,7 +1720,7 @@ the exact time the video tells the words that are on the transcript. And
 we will see also how to choose the subtitle or caption track language
 for the video.
 
-<img src="./media/image022.png" style="width:5in;height:5.2094in" />
+<img src="./images/image022.png" style="width:5in;height:5.2094in" />
 
 This is finished for this small introduction video, I will just conclude
 by this thing
@@ -1717,7 +1735,7 @@ security constraints errors. And if your server is configured for
 accepting different origins, then you can add this attribute
 crossOrigin="anonymous" in your HTML document and it is going to work.
 
-<img src="./media/image023.png" style="width:5in;height:3.64476in" />
+<img src="./images/image023.png" style="width:5in;height:3.64476in" />
 
 The server here: mainline.i3s.unice.fr has been configured for allowing
 external HTML pages to include the videos it hosts and the subtitles it
@@ -1755,7 +1773,7 @@ width!):
 And here is how it renders in your current browser (please play the
 video and try to show/hide the subtitles/captions):
 
-<img src="./media/image024.png" style="width:4in;height:2.24412in" />
+<img src="./images/image024.png" style="width:4in;height:2.24412in" />
 
 Notice that the support for multiple tracks may differs significantly
 from one browser to another, in particular if you are using old
@@ -1773,7 +1791,7 @@ Here is a quick summary:
     the default attribute set, then it is loaded by default. Otherwise,
     the default is off.
 
-    -   <img src="./media/image025.jpeg" style="width:4in;height:2.32697in"
+    -   <img src="./images/image025.jpeg" style="width:4in;height:2.32697in"
         > alt="screenshot of safari menu fr choosing subtitle track" />
 
 -   Chrome and Opera both provide a subtitle menu and load the text
@@ -1926,40 +1944,26 @@ choosing the different tracks. I will explain that in a next video.
 
 ### Let's go back to our example. Below is the HTML code:
 
+```
 1.  <video id="myVideo" preload="metadata" controls crossOrigin="anonymous">
-
-2.   
-      <source src="https://...../elephants-dream-medium.mp4" type="video/mp4">
-
-3.   
-      <source src="https://...../elephants-dream-medium.webm" type="video/webm">
-
-4.      **<track label="English
-    subtitles" kind="subtitles" srclang="en"**
-
+2.   <source src="https://...../elephants-dream-medium.mp4" type="video/mp4">
+3.   <source src="https://...../elephants-dream-medium.webm" type="video/webm">
+4.      **<track label="English subtitles" kind="subtitles" srclang="en"**
 > **         
 >  src="https://**.....**/elephants-dream-subtitles-en.vtt" >**
-
 5.  **    <track label="Deutsch
     subtitles" kind="subtitles" srclang="de"**
-
 > **         
 >  src="https://**.....**/elephants-dream-subtitles-de.vtt" default>**
-
 6.  **    <track label="English
     chapters" kind="chapters" srclang="en"**
-
 7.  **src="https://**.....**/elephants-dream-chapters-en.vtt">**
-
 8.  </video>
-
 9.  
-
 10. <div id="trackStatusesDiv">
-
 11.     <h3>HTML track descriptions</h3>
-
 12. </div>
+```
 
 This example defines three <track> elements. From JavaScript, we can
 manipulate these elements as "HTML elements" - we will call them the
@@ -1969,9 +1973,9 @@ manipulate these elements as "HTML elements" - we will call them the
 
 ### [<span id="_Toc98696550" class="anchor"></span>Example at JSBin that displays the different elements we can get from an HTML track](https://jsbin.com/kuqevegapi/2/edit?html,css,output):
 
-<img src="./media/image026.png" style="width:4in;height:2.23647in" />
+<img src="./images/image026.png" style="width:4in;height:2.23647in" />
 
-<img src="./media/image027.png" style="width:4in;height:3.93208in" />
+<img src="./images/image027.png" style="width:4in;height:3.93208in" />
 
 <h4>Here is the JavaScript source code:</h4>
 
@@ -2136,12 +2140,8 @@ track, we get the text track.
 Then we check on the HTML track if it is already loaded.
 
 If it is the case, then we will call the function that has been passed
-as the second
-
-parameter: it's the readContent. And the readContent is just here, for
-the
-
-moment it will not read the content really, but it will just update the
+as the second parameter: it's the readContent. And the readContent is just here, for
+the moment it will not read the content really, but it will just update the
 status.
 
 If I click on « force load track 2 » for example, it will load the track
@@ -2149,26 +2149,19 @@ and when the track is arrived, it will call the displayStatus() that
 will show the updated status of the track.
 
 In the case the track is not here, the readyState is not equal to 2,
-then we will force
-
-the track to be loaded. By doing this we set the mode to "hidden".
+then we will force the track to be loaded. By doing this we set the mode to "hidden".
 
 This may will take some time: you understand that the browser is loading
 on the Web the track. It may take 2 seconds for example. We need to have
-a listener that will listen to the load event. So
-htmlTrack.addEventListenner('load'...) will trigger
+a listener that will listen to the load event. 
 
-only when the track has been loaded, and only in that case we will call
+So htmlTrack.addEventListenner('load'...) will trigger only when the track has been loaded, and only in that case we will call
 the callback function: the readContent that has been passed in the
 second parameter, in order to read the track.
 
 If I look at the console, and if I start again the application. Only the
-second track has
-
-been loaded, I click "force load track 0", it says "forcing the track to
-be loaded",
-
-it loads the track and it calls the callback "reading content of loaded
+second track has been loaded, I click "force load track 0", it says "forcing the track to
+be loaded", it loads the track and it calls the callback "reading content of loaded
 track".
 
 If I click again the same button, it says "the text track is already
@@ -2194,25 +2187,18 @@ TextTrack object.
 
 ### Example source code:
 
+```
 24. // HTML tracks
-
 25. var htmlTracks = document.querySelectorAll("track");
-
 26. 
-
 27. 
-
 28. // The TextTrack object associated with the first HTML track
-
 29. var textTrack = htmlTracks[0].track;
-
 30. var kind = textTrack.kind;
-
 31. var label = textTrack.label;
-
 32. var lang = textTrack.language;
-
 33. // etc.
+```
 
 Note that once we get a TextTrack object, we can manipulate
 the kind, label, language attributes (be careful, it's not srclang,
@@ -2224,19 +2210,16 @@ and methods are described later in this lesson.
 The <video> element (and <audio> element too) has
 a TextTrack property accessible from JavaScript:
 
+```
 1.  var videoElement = document.querySelector("#myVideo");
-
 <!-- -->
-
 1.  **var textTracks = videoElement.textTracks; // one TextTrack for
-    each HTML track element**
-
+   each HTML track element**
 2.  var textTrack = textTracks[0]; // corresponds to the first track
     element
-
 3.  var kind = textTrack.kind // e.g. "subtitles"
-
 4.  var mode = textTrack.mode // e.g. "disabled", "hidden" or "showing"
+```
 
 The mode property of TextTrack objects TextTrack objects have a
 mode property, that is set to one of:
@@ -2277,29 +2260,22 @@ video as soon as the track has finished loading.
 [Try the example at
 JSBin](https://jsbin.com/bubeye/1/edit?html,console,output)
 
-<img src="./media/image028.jpeg" style="width:5in;height:4.44178in" />
+<img src="./images/image028.jpeg" style="width:5in;height:4.44178in" />
 
 Here is what we added to the HTML code:
 
+```
 1.  <button id="buttonLoadFirstTrack"
-
 2.          onclick="forceLoadTrack(0);"
-
 3.          disabled>
-
 4.     Force load track 0
-
 5.  </button>
-
 6.  <button id="buttonLoadThirdTrack"
-
 7.          onclick="forceLoadTrack(2);"
-
 8.          disabled>
-
 9.     Force load track 2
-
 10. </button>
+```
 
 The buttons will call a function named forceLoadTrack(trackNumber) that
 takes as a parameter the number of the track to get (and force load if
@@ -2501,7 +2477,7 @@ properties and methods
     correspond to the position of the cue, as specified in the WebVTT
     file. See the HTML5 course Part 1 about cue positioning.
 
-<img src="./media/image029.jpeg" style="width:5in;height:2.01365in"
+<img src="./images/image029.jpeg" style="width:5in;height:2.01365in"
 alt="a webVtt file extract with arrows showing id, startTime, endTime and text" />
 
 ### Example that displays the content of a track
@@ -2509,7 +2485,7 @@ alt="a webVtt file extract with arrows showing id, startTime, endTime and text" 
 [Here is an example at JSBin that displays the content of a
 track](https://jsbin.com/teruhay/1/edit?html,css,js,output):
 
-<img src="./media/image030.png" style="width:4in;height:4.89057in" />
+<img src="./images/image030.png" style="width:4in;height:4.89057in" />
 
 We just changed the content of the readContent(track) method from the
 example in the previous lesson:
@@ -2727,7 +2703,7 @@ Showing real examples of event listeners
 [Here is an example at JSBin that shows how to listen
 for cuechange events](https://jsbin.com/dohilo/1/edit?html,output):
 
-<img src="./media/image031.jpeg" style="width:4in;height:4.42106in"
+<img src="./images/image031.jpeg" style="width:4in;height:4.42106in"
 alt="example that displays cue contents with cuechange even listeners" />
 
 ### Source code extract:
@@ -2763,7 +2739,7 @@ alt="example that displays cue contents with cuechange even listeners" />
 shows how to use enter and exit events on
 cues](https://jsbin.com/xawajoh/1/edit?html,css,js,output):
 
-<img src="./media/image032.jpeg" style="width:4in;height:4.40666in"
+<img src="./images/image032.jpeg" style="width:4in;height:4.40666in"
 alt="Example that displays message in enter and exit cue listeners of tjhe selected track" />
 
 ### Source code extract:
@@ -2959,7 +2935,7 @@ transcript, you can click on a sentence to make the video jump to the
 corresponding location. We will learn how to do this using the track
 API.
 
-<img src="./media/image033.png" style="width:6in;height:3.70705in" />
+<img src="./images/image033.png" style="width:6in;height:3.70705in" />
 
 Read the WebVTT file at once using the track API and make a clickable
 transcript
@@ -2999,7 +2975,7 @@ Some important things here:
 [Try this example at
 JSBin](https://jsbin.com/sodihux/1/edit?html,css,js,output):
 
-<img src="./media/image034.png" style="width:6in;height:3.70705in" />
+<img src="./images/image034.png" style="width:6in;height:3.70705in" />
 
 HTML code:
 
@@ -3432,7 +3408,7 @@ in 2012...
 cues</u>](https://jsbin.com/vedelequso/edit?html,js,output) in the
 different tracks:
 
-<img src="./media/image035.png" style="width:5in;height:4.47489in" />
+<img src="./images/image035.png" style="width:5in;height:4.47489in" />
 
 This example, adapted from an example from (now offline) dev.opera.com,
 uses some JavaScript code that takes a WebVTT subtitle (or caption) file
@@ -3600,7 +3576,7 @@ between *"hidden"* and *"disabled"* is that hidden tracks can fire
 events (more on that at the end of the first example) whereas disabled
 tracks do not fire events.
 
-<img src="./media/image036.jpeg" style="width:5in;height:4.64476in"
+<img src="./images/image036.jpeg" style="width:5in;height:4.64476in"
 alt="Example that shows how to toggle track modes and listen to events" />
 
 [Here is an example at
@@ -3953,7 +3929,7 @@ JSBin](https://jsbin.com/balowuq/1/edit?html,css,js,output): we added
 two buttons below the video to enable/disable subtitles/captions and let
 you choose which track you prefer. 
 
-<img src="./media/image037.jpeg" style="width:6.17708in;height:5.73958in"
+<img src="./images/image037.jpeg" style="width:6.17708in;height:5.73958in"
 alt="Buttons for choosing the track/language under a standard video player" />
 
 ### HTML code:
@@ -4078,7 +4054,7 @@ alt="Buttons for choosing the track/language under a standard video player" />
 
 Example #4: making a simple chapter navigation menu
 
-<img src="./media/image038.jpeg" style="width:4.57292in;height:2.08333in"
+<img src="./images/image038.jpeg" style="width:4.57292in;height:2.08333in"
 alt="Simple chapter navigation" />
 
 We can use WebVTT files to define chapters. The syntax is exactly the
@@ -4215,7 +4191,7 @@ version includes the modifications we presented earlier - nothing more.
 Notice that we kept the existing buttons to display a clickable
 transcript:
 
-<img src="./media/image038.jpeg" style="width:5in;height:2.28152in"
+<img src="./images/image038.jpeg" style="width:5in;height:2.28152in"
 alt="Simple chapter navigation" />
 
 Look at the JavaScript and HTML tab of the JSBin example to see the
@@ -4225,7 +4201,7 @@ except for the small changes we explained earlier.
 Chapter navigation, illustrated in the video player below, is fairly
 popular.
 
-<img src="./media/image039.jpeg" style="width:5in;height:2.76977in"
+<img src="./images/image039.jpeg" style="width:5in;height:2.76977in"
 alt="Example of video player that uses text based chapter navigation" />
 
 In addition to the clickable chapter list, this one displays an enhanced
@@ -4302,7 +4278,7 @@ Earlier we saw [an example that could display chapter markers as
 clickable text on the right of a
 video](https://jsbin.com/jiyodit/edit?html,css,js,output).
 
-<img src="./media/image038.jpeg" style="width:5in;height:2.28152in"
+<img src="./images/image038.jpeg" style="width:5in;height:2.28152in"
 alt="SImple chapter menu in plain text" />
 
 ### This example used only standard plain text content for the cues:
@@ -4338,13 +4314,13 @@ example [this](https://trac.ffmpeg.org/wiki/Create%20a%20thumbnail%20image%20ev
 Here are the images which correspond to the seven chapters of the video
 from the previous example:
 
-<img src="./media/image040.jpeg" style="width:2.57292in;height:1.20833in"
-alt="chapter 1 thumbnail" /><img src="./media/image041.jpeg" style="width:2.51042in;height:1.19792in"
-alt="chapter 2 thumbnail" /><img src="./media/image042.jpeg" style="width:2.5625in;height:1.19792in"
-alt="chapter 3 thumbnail" /><img src="./media/image043.jpeg" style="width:2.54167in;height:1.19792in"
-alt="chapter 4 thumbnail" /><img src="./media/image044.jpeg" style="width:2.53125in;height:1.21875in"
-alt="chapter 5 thumbnails" /><img src="./media/image045.jpeg" style="width:2.5in;height:1.19792in"
-alt="chapter 6 thumbnail" /><img src="./media/image046.jpeg" style="width:2.54167in;height:1.21875in"
+<img src="./images/image040.jpeg" style="width:2.57292in;height:1.20833in"
+alt="chapter 1 thumbnail" /><img src="./images/image041.jpeg" style="width:2.51042in;height:1.19792in"
+alt="chapter 2 thumbnail" /><img src="./images/image042.jpeg" style="width:2.5625in;height:1.19792in"
+alt="chapter 3 thumbnail" /><img src="./images/image043.jpeg" style="width:2.54167in;height:1.19792in"
+alt="chapter 4 thumbnail" /><img src="./images/image044.jpeg" style="width:2.53125in;height:1.21875in"
+alt="chapter 5 thumbnails" /><img src="./images/image045.jpeg" style="width:2.5in;height:1.19792in"
+alt="chapter 6 thumbnail" /><img src="./images/image046.jpeg" style="width:2.54167in;height:1.21875in"
 alt="chapter 7 thumbnail" />
 
 To associate these images with its chapter description, we will use JSON
@@ -4376,7 +4352,7 @@ Before explaining the code, we propose that you [try this example at
 JSBin that uses this new .vtt
 file](https://jsbin.com/pulefe/1/edit?html,css,js,output):
 
-<img src="./media/image047.jpeg" style="width:5in;height:5.72864in"
+<img src="./images/image047.jpeg" style="width:5in;height:5.72864in"
 alt="Video with nice chapter menu that uses thumbnail images" />
 
 <h4>HTML code:</h4>
@@ -4708,7 +4684,7 @@ to style and position the thumbnails using CSS.
 A sample menu marker is shown below (it's also animated - hover your
 mouse over the thumbnail to see its animated shadow):
 
-<img src="./media/image040.jpeg" style="width:4in;height:1.8818in" />
+<img src="./images/image040.jpeg" style="width:4in;height:1.8818in" />
 
 ### Introduction
 
@@ -4722,7 +4698,7 @@ code from earlier in this lesson.
 
 [Try it at JSBin](https://jsbin.com/zewemaj/edit?html,js,output)
 
-<img src="./media/image048.jpeg" style="width:5in;height:6.18857in"
+<img src="./images/image048.jpeg" style="width:5in;height:6.18857in"
 alt="Chapter menu + clickable transcript" />
 
 ### 1.4.1 Creating Tracks on the Fly
@@ -4755,7 +4731,7 @@ sounds](https://mainline.i3s.unice.fr/mooc/animalSounds.mp3).
 
 ### Below is the sound file. You can try to play it:
 
-<img src="./media/image049.jpeg" style="width:5in;height:4.91453in"
+<img src="./images/image049.jpeg" style="width:5in;height:4.91453in"
 alt="Click a button to play an animal sound" />
 
 ### **Explanations:**
@@ -5096,7 +5072,7 @@ see "for development purpose only" messages during the execution of this
 demo. You'll need a valid Google API key in order to remove these
 messages.
 
-<img src="./media/image050.jpeg" style="width:5in;height:4.46635in"
+<img src="./images/image050.jpeg" style="width:5in;height:4.46635in"
 alt="Video synced with google map and google street map" />
 
 ##### Example of a cue content from this demonstration:
@@ -5175,7 +5151,7 @@ browsers), we use the @@polyfill presented in the previous section:
 [Try the example at
 JSBin](https://jsbin.com/gucutiyoyu/2/edit?html,js,output)
 
-<img src="./media/image051.jpeg" style="width:5in;height:5.55609in"
+<img src="./images/image051.jpeg" style="width:5in;height:5.55609in"
 alt="video synced with an iframe that shows external URLs and with a google map" />
 
 ### HTML code extract:
@@ -5553,7 +5529,7 @@ synthesis and scheduling notes, that we will not study oin this course.
 Here's a screenshot from one example we will study: an audio player with
 animated waveform and volume meters that 'dance' with the music:
 
-<img src="./media/image052.jpeg" style="width:3in;height:1.92453in"
+<img src="./images/image052.jpeg" style="width:3in;height:1.92453in"
 alt="A fancy audio player with multiple visualizations" />
 
 ### Web Audio concepts
@@ -5586,7 +5562,7 @@ The easiest way to understand this principle is to look
 **[at a first example at
 JSBin](https://jsbin.com/gaduqojeke/edit?html,js).**
 
-<img src="./media/image053.jpeg" style="width:3in;height:0.73669in"
+<img src="./images/image053.jpeg" style="width:3in;height:0.73669in"
 alt="audio player with gain" />
 
 This example is detailed in the next lesson. For the moment, all you
@@ -5607,7 +5583,7 @@ Google Chrome extension named "WebAudio Inspector" (or "Audion").  You
 can install it [from the Chrome Web
 Store](https://chrome.google.com/webstore/detail/web-audio-inspector/cmhomipkklckpomafalojobppmmidlgl).
 
-<img src="./media/image054.jpeg" style="width:5in;height:4.05556in"
+<img src="./images/image054.jpeg" style="width:5in;height:4.05556in"
 alt="Chrome WebAudio Inspector extension" />
 
 Once installed, open a Web page that contains some WebAudio code ([this
@@ -5618,13 +5594,13 @@ open the Web Audio tab. Then reload the target webpage so that all Web
 audio activity can be monitored by the tool. You can click on the
 WebAudio graph nodes to see their properties' values.
 
-<img src="./media/image055.jpeg" style="width:5in;height:2.34989in"
+<img src="./images/image055.jpeg" style="width:5in;height:2.34989in"
 alt="WebAudio Inspector tab" />
 
 Note that JSBin examples should be opened in standalone mode (not in
 editor mode).
 
-<img src="./media/image056.jpeg" style="width:5in;height:2.40492in"
+<img src="./images/image056.jpeg" style="width:5in;height:2.40492in"
 alt="How to go in JsBin standalone mode: click the black arrow on top right of the output tab" />
 
 Audio nodes are linked via their inputs and outputs, forming a chain
@@ -5765,7 +5741,7 @@ hundreds of nodes (the picture below has been taken while the WebAudio
 debugger was still included in FireFox, you should get similar results
 with the Chrome WebAudio Inspector extension).
 
-<img src="./media/image057.jpeg" style="width:5in;height:6.84402in"
+<img src="./images/image057.jpeg" style="width:5in;height:6.84402in"
 alt="audio graph of the vocoder app is made of hundreds of nodes" />
 
 ## 1.5.2 Working with Streamed Content
@@ -5992,7 +5968,7 @@ See also the Biquad Filter node's documentation.
 try it in your browser, with a lowpass filter, only the frequency slider
 will have a noticeable effect:
 
-Frequency  Detune  Q  Type        ![](./media/image058.wmf)
+Frequency  Detune  Q  Type        ![](./images/image058.wmf)
 
 The most useful slider is the frequency slider (that changes
 the frequency value property of the node). The meaning of the
@@ -6010,7 +5986,7 @@ filters](https://webaudioapi.com/samples/frequency-response/), you can
 choose the type of filters and play with the different property values
 using sliders:
 
-<img src="./media/image059.jpeg" style="width:5in;height:5.08474in"
+<img src="./images/image059.jpeg" style="width:5in;height:5.08474in"
 alt="Frequency responses for various filters. Screenshot of a nice application that visualizes that" />
 
 Multiple filters are often used together. We will make a multi band
@@ -6100,7 +6076,7 @@ Opera of Milan, in Italy. It's a .wav file.
 Try[ this demo](https://webaudioapi.com/samples/room-effects/) to see
 the difference between different impulse files!
 
-<img src="./media/image060.jpeg" style="width:5in;height:1.92376in"
+<img src="./images/image060.jpeg" style="width:5in;height:1.92376in"
 alt="screenshot of a webapp that enable to switch between different impulse files" />
 
 So before building the audio graph, we need to download the impulse. For
@@ -6167,7 +6143,7 @@ The audio graph will look like this (picture taken with the now
 discontinued FireFox WebAudio debugger, you should get similar results
 with the Chrome WebAudio Inspector extension):
 
-<img src="./media/image061.jpeg" style="width:5in;height:2.85737in"
+<img src="./images/image061.jpeg" style="width:5in;height:2.85737in"
 alt="audio graph of the previous example" />
 
 ### And here is the function which builds the graph:
@@ -6236,7 +6212,7 @@ Audio graph with the compressor activated (picture taken with the now
 discontinued FireFox WebAudio debugger, you should get similar results
 with the Chrome WebAudio Inspector extension):
 
-<img src="./media/image062.jpeg" style="width:5in;height:3.11966in"
+<img src="./images/image062.jpeg" style="width:5in;height:3.11966in"
 alt="Audio graph of the previous example" />
 
 ### Extract of the HTML code:
@@ -6337,7 +6313,7 @@ Example #1: an audio equalizer with an <audio> element
 at JSBin,](https://jsbin.com/loquwih/edit?html,css,js,output) here is a
 screenshot:
 
-<img src="./media/image063.jpeg" style="width:3in;height:1.79534in"
+<img src="./images/image063.jpeg" style="width:3in;height:1.79534in"
 alt="an audio player with an equalizer" />
 
 This example uses six BiquadFilter nodes with type="peaking".
@@ -6455,7 +6431,7 @@ Here is the final audio graph (picture taken with the now discontinued
 FireFox WebAudio debugger, you should get similar results with the
 Chrome WebAudio Inspector extension):
 
-<img src="./media/image064.jpeg" style="width:5in;height:3.02403in"
+<img src="./images/image064.jpeg" style="width:5in;height:3.02403in"
 alt="audio graph of the previous example" />
 
 Example #2: equalizer with a <video> element
@@ -6463,19 +6439,18 @@ Example #2: equalizer with a <video> element
 We cloned the previous example and simply changed
 the <audio>...</audio> part of the HTML code by:
 
+```
 1.  <video id="player" width="320" height="240" controls crossOrigin="anonymous">
-
-2.     
-    <source src="https://mainline.i3s.unice.fr/mooc/elephants-dream-medium.mp4" >
-
+2.  <source src="https://mainline.i3s.unice.fr/mooc/elephants-dream-medium.mp4" >
 3.  </video>
+```
 
 And the example works in the same way, but this time with a video. Try
 moving the sliders to change the sound!
 
 [Example at JSBin](https://jsbin.com/kukupot/edit?html,css,js,output):
 
-<img src="./media/image065.jpeg" style="width:3in;height:3.22115in"
+<img src="./images/image065.jpeg" style="width:3in;height:3.22115in"
 alt="same example as previously but with a video above the equalizer" />
 
 <h3 id="ch1-5-5">1.5.5 Waveforms</h3>
@@ -6587,7 +6562,7 @@ Example #1: audio player with waveform visualization
 
 [Example at JSBin](https://jsbin.com/sufatup/edit?html,js,output)
 
-<img src="./media/image066.jpeg" style="width:3in;height:1.53543in"
+<img src="./images/image066.jpeg" style="width:3in;height:1.53543in"
 alt="Audio player with waveform visualization" />
 
 Do things in order!
@@ -6664,7 +6639,7 @@ With the exception of *lines 8-12*, where we set the analyser options
 now discontinued FireFox WebAudio debugger, you should get similar
 results with the Chrome WebAudio Inspector extension):
 
-<img src="./media/image067.jpeg" style="width:5in;height:3.3563in"
+<img src="./images/image067.jpeg" style="width:5in;height:3.3563in"
 alt="Audio graph with analyser node and properties" />
 
 Step #2: write the animation loop
@@ -6758,7 +6733,7 @@ changed "audio" to "video" in the HTML code. 
 [Example at
 JSBin](https://jsbin.com/fuyejuz/edit?html,js,console,output):
 
-<img src="./media/image068.jpeg" style="width:3in;height:3.26685in"
+<img src="./images/image068.jpeg" style="width:3in;height:3.26685in"
 alt="a video player with real time waveform visualization" />
 
 Example #3: both previous examples, this time with the graphic
@@ -6770,12 +6745,12 @@ you should see the waveform changing.
 
 [Example at JSBin](https://jsbin.com/qijujuz/edit?html,js,output)
 
-<img src="./media/image069.jpeg" style="width:3in;height:2.5726in"
+<img src="./images/image069.jpeg" style="width:3in;height:2.5726in"
 alt="audio player + equalizer + visualization" />
 
 [Example at JSBin](https://jsbin.com/jafoboh/edit?js,console,output):
 
-<img src="./media/image070.jpeg" style="width:3in;height:4.04878in"
+<img src="./images/image070.jpeg" style="width:3in;height:4.04878in"
 alt="Video player + equalizer + waveform visualization" />
 
 <h3 id="ch1-5-6">1.5.6 Frequencies</h3>
@@ -6784,8 +6759,8 @@ alt="Video player + equalizer + waveform visualization" />
 
 [Example at JSBin](https://jsbin.com/wenuvub/edit?js,output):
 
-<img src="./media/image071.jpeg" style="width:3in;height:1.63496in"
-alt="audio player with frequency visualisations with red bars" /><img src="./media/image072.jpeg" style="width:3in;height:1.57732in"
+<img src="./images/image071.jpeg" style="width:3in;height:1.63496in"
+alt="audio player with frequency visualisations with red bars" /><img src="./images/image072.jpeg" style="width:3in;height:1.57732in"
 alt="frequency viualisation this time fftsize = 64" />
 
 This time, instead of a waveform we want to visualize an animated bar
@@ -6942,7 +6917,7 @@ JSBin](https://jsbin.com/muzifi/edit?html,css,js,output) with a
 different look for the visualization: please read the source code
 and try to understand how the drawing of the frequency is done.
 
-<img src="./media/image073.jpeg" style="width:3in;height:1.57105in"
+<img src="./images/image073.jpeg" style="width:3in;height:1.57105in"
 alt="Same example as before but with symmetric and colored frequency visualisations" />
 
 [Last example at
@@ -6950,14 +6925,14 @@ JSBin](https://jsbin.com/fekorej/edit?html,js,output) with this time the
 graphic equalizer, a master volume (gain) and a stereo panner node just
 before the visualizer node:
 
-<img src="./media/image074.jpeg" style="width:3in;height:3.36034in"
+<img src="./images/image074.jpeg" style="width:3in;height:3.36034in"
 alt="Previous example with a master volume (gain node) and the equalizer + a stereoPanner node" />
 
 And here is the audio graph for this example (picture taken with the now
 discontinued FireFox WebAudio debugger, you should get similar results
 with the Chrome WebAudio Inspector extension):
 
-<img src="./media/image075.jpeg" style="width:6.5in;height:1.06667in"
+<img src="./images/image075.jpeg" style="width:6.5in;height:1.06667in"
 alt="audio graph from above example" />
 
 Source code from this example's the buildAudioGraph function:
@@ -7063,7 +7038,7 @@ Example #1: add a single volume meter to the audio player
 
 [Try it at JSBin](https://jsbin.com/kuciset/edit?html,css,js,output):
 
-<img src="./media/image076.jpeg" style="width:3in;height:1.77337in"
+<img src="./images/image076.jpeg" style="width:3in;height:1.77337in"
 alt="Single volume meter that dances with the music" />
 
 In order to have a "volume meter" which traces upward/downward with the
@@ -7210,14 +7185,14 @@ analyser (*lines 46 and 47* of the example below)
 
 [Example at JSBin](https://jsbin.com/qezevew/edit?html,css,js,output):
 
-<img src="./media/image052.jpeg" style="width:3in;height:1.92453in"
+<img src="./images/image052.jpeg" style="width:3in;height:1.92453in"
 alt="Example with stereo volume meters" />
 
 This is the audio graph we've built (picture taken with the now
 discontinued FireFox WebAudio debugger, you should get similar results
 with the Chrome WebAudio Inspector extension):
 
-<img src="./media/image077.jpeg" style="width:5in;height:2.02564in"
+<img src="./images/image077.jpeg" style="width:5in;height:2.02564in"
 alt="Audiograph from previous example" />
 
 As you can see there are two routes: the one on top sends the output
@@ -7438,7 +7413,7 @@ Here is how the WebAudio graph looks like (picture taken with the now
 discontinued FireFox WebAudio debugger, you should get similar results
 with the Chrome WebAudio Inspector extension):
 
-<img src="./media/image078.jpeg" style="width:4in;height:3.27308in"
+<img src="./images/image078.jpeg" style="width:4in;height:3.27308in"
 alt="Screenshot with buttons that play sound samples many times with different pitch, volume, interval of times" />
 
 Music applications such as Digital Audio Workstations (GarageBand-like
@@ -7451,7 +7426,7 @@ song (midi file) the app will play-along, selecting the same musical
 note from the corresponding instrument audio sample. This is all done
 with Web Audio and samples loaded in memory:
 
-<img src="./media/image079.jpeg" style="width:4in;height:3.87522in"
+<img src="./images/image079.jpeg" style="width:4in;height:3.87522in"
 alt="The remixer DAW workstation, a typical screenshot of a DAW with tracks, mix table etc." />
 
 The author of this course wrote a multitrack audio player: it loads
@@ -7462,7 +7437,7 @@ them in sync.
 GitHub](https://github.com/squallooo/MT5). The documentation is in the
 help menu.
 
-<img src="./media/image080.jpeg" style="width:4in;height:3.87438in"
+<img src="./images/image080.jpeg" style="width:4in;height:3.87438in"
 alt="Screenshot of MT5 a multitrack player" />
 
 Try also this small demonstration that uses the [Howler.js
@@ -7473,7 +7448,7 @@ fast the sound effects are played. Click as fast as you can!
 
 [Try the explosion demo at JSBin](https://jsbin.com/gefezu/edit):
 
-<img src="./media/image081.png" style="width:4in;height:4.26316in" />
+<img src="./images/image081.png" style="width:4in;height:4.26316in" />
 
 <h3 id="ch1-5-9">1.5.9 Load and play sound samples</h3>
 
@@ -7512,7 +7487,7 @@ to the buffer property of an AudioBufferSourceNode.**
 [Try the example at
 JSBin](https://jsbin.com/botagas/edit?html,js,console,output):
 
-<img src="./media/image082.jpeg" style="width:4.4375in;height:2.07292in"
+<img src="./images/image082.jpeg" style="width:4.4375in;height:2.07292in"
 alt="example that loads and play a unique sound" />
 
 In this example, as soon as the page is loaded, we send an Ajax request
@@ -7672,7 +7647,7 @@ have packaged the code into an object called the BufferedLoader.
 [Example at JSBin that uses the BufferLoader
 utility](https://jsbin.com/javoger/edit?html,js,console,output):
 
-<img src="./media/image083.jpeg" style="width:5in;height:1.37255in"
+<img src="./images/image083.jpeg" style="width:5in;height:1.37255in"
 alt="Example that loads two sounds and create two buttons for playing them" />
 
 ##### HTML code:
@@ -7808,7 +7783,7 @@ with the Chrome WebAudio Inspector extension).
 [Example at
 JSBin](https://jsbin.com/zebokeg/edit?html,js,console,output):
 
-<img src="./media/image084.jpeg" style="width:4in;height:2.85641in"
+<img src="./images/image084.jpeg" style="width:4in;height:2.85641in"
 alt="Audio Graph used in the previous example source node -&gt; gain -&gt; compressor -&gt; destination" />
 
 In this example, we added a function (borrowed and adapted from [this
@@ -7927,7 +7902,7 @@ Below, we have mixed the code from two previous examples:
 
 [This one at JSBin](https://jsbin.com/vejocav/edit?html,css,js,output):
 
-<img src="./media/image052.jpeg" style="width:2in;height:1.28302in"
+<img src="./images/image052.jpeg" style="width:2in;height:1.28302in"
 alt="audio player with volume meters and waveform" />
 
 [And this one at
@@ -7935,20 +7910,20 @@ JSBin](https://jsbin.com/nazega/edit?html,js,console,output) (picture
 taken with the now discontinued FireFox WebAudio debugger, you should
 get similar results with the Chrome WebAudio Inspector extension):
 
-<img src="./media/image085.jpeg" style="width:5in;height:3.57051in"
+<img src="./images/image085.jpeg" style="width:5in;height:3.57051in"
 alt="multiple sound samples played at different intervals and rates" />
 
 And here is the result ([try it at
 JSBin](https://jsbin.com/coraso/edit?html,js,console,output)):
 
-<img src="./media/image086.jpeg" style="width:5in;height:2.56836in"
+<img src="./images/image086.jpeg" style="width:5in;height:2.56836in"
 alt="Sound samples and 2D visualization" />
 
 Here is the audio graph of this example (picture taken with the now
 discontinued FireFox WebAudio debugger, you should get similar results
 with the Chrome WebAudio Inspector extension):
 
-<img src="./media/image087.jpeg" style="width:5in;height:6.6266in"
+<img src="./images/image087.jpeg" style="width:5in;height:6.6266in"
 alt="audio graph of the previous example" />
 
 Look at the source code on JSBin, it's a quick merge of the two previous
@@ -8029,7 +8004,7 @@ true: back in 1998, Donkey Kong ran in a browser (screenshot below). It
 was a game by Scott Porter, written using only standard Web technologies
 (HTML, JavaScript, and CSS) .
 
-<img src="./media/image088.png" style="width:2.17708in;height:2.83333in"
+<img src="./images/image088.png" style="width:2.17708in;height:2.83333in"
 alt="A screenshot of a DHTML / Javascript Donkey Kong from 1998" />
 
 Just a few years after the Web was born, JavaScript appeared -  a simple
@@ -8055,7 +8030,7 @@ years, [Brent Silby](https://def-logic.com/) presented 'Game Lib 2'. It
 is still possible to play many games created with that library on his
 Web site.
 
-<img src="./media/image089.png" style="width:2in;height:1.63509in"
+<img src="./images/image089.png" style="width:2in;height:1.63509in"
 alt="a mario DHTML game" />
 
 The DHTML era was a time when JavaScript games were as good as those
@@ -8068,7 +8043,7 @@ polished browser games were also developed; Jacob Sidelin, creator of
 dedicated to JavaScript
 games](https://web.archive.org/web/20090519005306/http:/www.javascriptgaming.com/).
 
-<img src="./media/image90.png" style="width:2in;height:2.48341in"
+<img src="./images/image90.png" style="width:2in;height:2.48341in"
 alt="free civ game" />
 
 And then came 2005: 'the year
@@ -8085,7 +8060,7 @@ by Andreas Rosdal - a port of Sid Meier's Civilization,
 and[ Sarien.net](http://sarien.net/) by Martin Kool, an emulator of old
 Sierra games. 
 
-<img src="./media/image091.png" style="width:1in;height:1.32039in"
+<img src="./images/image091.png" style="width:1in;height:1.32039in"
 alt="html5 logo" />
 
 And now we are entering a new era in the history of the Web: "HTML5"!
@@ -8101,7 +8076,7 @@ Here, we present some elements that are useful in writing games.
 
 ##### Drawing: the <canvas> element
 
-<img src="./media/image092.jpeg" style="width:2in;height:2in"
+<img src="./images/image092.jpeg" style="width:2in;height:2in"
 alt="the html5 canvas logo" />
 
 The <canvas> is a new HTML element described as "*a
@@ -8145,7 +8120,7 @@ performed when the canvas is not visible, thus saving CPU resources.
 
 ##### Videos and animated textures: the <video> element
 
-<img src="./media/image093.png" style="width:1in;height:1in"
+<img src="./images/image093.png" style="width:1in;height:1in"
 alt="a movie film icon" />
 
 The HTML5 <video> element was introduced in the HTML5 specification
@@ -8163,7 +8138,7 @@ as "animated textures" over graphic objects.
 
 #### 
 
-#### <img src="./media/image094.png" style="width:2in;height:2.00966in"
+#### <img src="./images/image094.png" style="width:2in;height:2.00966in"
 alt="a picture of a speaker" />
 
 ##### The <audio> element
@@ -8188,7 +8163,7 @@ Edge supports it).
 
 ### **Interacting**: dealing with keyboard and mouse events, the GamePad API
 
-<img src="./media/image095.png" style="width:0.72917in;height:0.80208in"
+<img src="./images/image095.png" style="width:0.72917in;height:0.80208in"
 alt="a gamepad picture" />
 
 User inputs will rely on several APIs, some of which are well
@@ -8214,12 +8189,12 @@ as [socket.io](https://socket.io/), provide the means for sending
 messages to a server and receiving event-driven responses without having
 to poll the server for a reply. 
 
-<img src="./media/image096.gif" style="width:2in;height:2.28807in"
+<img src="./images/image096.gif" style="width:2in;height:2.28807in"
 alt="a graph showing several clients interacting with a websocket server" />
 
 ## 2.2.3 The "game loop"
 
-<img src="./media/image097.png" style="width:2in;height:3.78182in"
+<img src="./images/image097.png" style="width:2in;height:3.78182in"
 alt=" a game loop diagram" />
 
 The "game loop" is the main component of any game. It separates the game
@@ -8257,7 +8232,7 @@ argument.
 [Try an example at JSBin](https://jsbin.com/qopefu/edit) : open the
 HTML, JavaScript and output tabs to see the code.
 
-<img src="./media/image098.png"
+<img src="./images/image098.png"
 style="width:6.03125in;height:2.86458in" />
 
 Source code extract:
@@ -8523,7 +8498,7 @@ Here is a screenshot of an example and the code we added to our game
 engine, for measuring FPS ([try it online at
 JSBin](https://jsbin.com/noqibu/edit)):
 
-<img src="./media/image099.jpeg" style="width:4in;height:1.87097in"
+<img src="./images/image099.jpeg" style="width:4in;height:1.87097in"
 alt="screenshot of the example that displays 60 frames/s" />
 
 Source code extract:
@@ -8652,7 +8627,7 @@ is the mainloop function itself, and so on.
 Funny right? Please [try this and check the number of FPS displayed with
 this JSBin example](https://jsbin.com/notupe/edit).
 
-<img src="./media/image100.jpeg" style="width:4in;height:2.26742in"
+<img src="./images/image100.jpeg" style="width:4in;height:2.26742in"
 alt="Screenshot of example with 4441 FPS displayed" />
 
 ##### Source code extract of this example:
@@ -8699,7 +8674,7 @@ course](https://www.edx.org/course/html5-coding-essentials-and-best-practices).
 How to draw a monster in a canvas: [you can try it online at
 JSBin](https://jsbin.com/ponaki/edit).
 
-<img src="./media/image101.jpeg"
+<img src="./images/image101.jpeg"
 style="width:2.82292in;height:2.80208in"
 alt="Small monster drawn in a canvas" />
 
@@ -8914,7 +8889,7 @@ our game engine:
 [You can try this version online at
 JSBin](https://jsbin.com/xuruja/edit). 
 
-<img src="./media/image102.jpeg" style="width:2in;height:1.96516in"
+<img src="./images/image102.jpeg" style="width:2in;height:1.96516in"
 alt="Screenshot of a trembling monster in a 60 f/s animation" />
 
 ##### HTML code:
@@ -9222,10 +9197,10 @@ example](http://www.asquare.net/javascript/tests/KeyCode.html), and here
 is a list of keyCodes (from [CSS
 Tricks](https://css-tricks.com/snippets/javascript/javascript-keycodes/)
 
-<img src="./media/image103.png"
+<img src="./images/image103.png"
 style="width:5.66667in;height:7.61458in" />
 
-<img src="./media/image104.png"
+<img src="./images/image104.png"
 style="width:5.66667in;height:1.29167in" />
 
 ##### Game requirements: managing multiple keypress / keyrelease events
@@ -9279,7 +9254,7 @@ far from finished yet):
 [Here is the online example you can try at
 JSBin](https://jsbin.com/razeya/edit)
 
-<img src="./media/image105.jpeg" style="width:2in;height:2.0766in"
+<img src="./images/image105.jpeg" style="width:2in;height:2.0766in"
 alt="trembling monster with multiple key press management." />
 
 ##### And here is the complete source code:
@@ -9507,7 +9482,7 @@ up + right should work in combination.
 
 ##### A few reminders
 
-<img src="./media/image106.jpeg" style="width:4in;height:2.73282in"
+<img src="./images/image106.jpeg" style="width:4in;height:2.73282in"
 alt="a schema of mouse internals" />
 
 Working with mouse events requires detecting whether a mouse button is
@@ -9531,7 +9506,7 @@ next example.
 Here is [an online example at JSBin](https://jsbin.com/metavu/edit) that
 covers all cases correctly.
 
-<img src="./media/image107.jpeg" style="width:3in;height:1.09515in"
+<img src="./images/image107.jpeg" style="width:3in;height:1.09515in"
 alt="screenshot of a JsBin example that shows the mouse position + button pressed" />
 
 Move the mouse over the canvas and press or release mouse buttons.
@@ -9644,7 +9619,7 @@ Below is the JavaScript source code for this small example:
 
 [Try this example at JsBin](https://jsbin.com/soduko/edit?js,output)
 
-<img src="./media/image108.jpeg" style="width:2in;height:2.04192in"
+<img src="./images/image108.jpeg" style="width:2in;height:2.04192in"
 alt="A rectangle that follows the mouse cursor" />
 
 ##### Source code:
@@ -9788,7 +9763,7 @@ the getMousePos() function, for example).
 [The new online version of the game engine can be tried at
 JSBin](https://jsbin.com/rizuyah/edit):
 
-<img src="./media/image109.jpeg" style="width:2in;height:2.03687in"
+<img src="./images/image109.jpeg" style="width:2in;height:2.03687in"
 alt="Screenshot of a JsBin example that shows message on mouse events" />
 
 Try pressing arrows and space keys, moving the mouse, and pressing the
@@ -10217,7 +10192,7 @@ going to develop during this week. Bye! Bye!
 Some games, mainly arcade/action games, are designed to be used with a
 gamepad:
 
-<img src="./media/image110.png" style="width:5in;height:3.22951in" />
+<img src="./images/image110.png" style="width:5in;height:3.22951in" />
 
 [The Gamepad API ](https://w3c.github.io/gamepad/)is currently
 supported by all major browsers (including Microsoft Edge), except
@@ -10272,7 +10247,7 @@ describes the connected device.
 
 12. });
 
-<img src="./media/image111.jpeg" style="width:5in;height:2.57425in"
+<img src="./images/image111.jpeg" style="width:5in;height:2.57425in"
 alt="Gamepad detected, message on the jsbin exmaple" />
 
 If a gamepad is disconnected (you unplug it),
@@ -10292,7 +10267,7 @@ their connected property set to false.
 
 6.  });
 
-<img src="./media/image112.jpeg"
+<img src="./images/image112.jpeg"
 style="width:3.92708in;height:1.41667in"
 alt="gamepad disconnected, screenshot from jsbin console" />
 
@@ -10397,7 +10372,7 @@ properties](https://w3c.github.io/gamepad/#gamepad-interface):
     > gamepads [use a standard default
     > layout](https://w3c.github.io/gamepad/#remapping).
 
-[<img src="./media/image113.jpeg" style="width:5in;height:2.60684in"
+[<img src="./images/image113.jpeg" style="width:5in;height:2.60684in"
 alt="standard gamepad layout" /><u>  
 </u>](https://courses.edx.org/assets/courseware/v1/5a634bfb4d73130fbd4edb3ec19f4d1f/asset-v1:W3Cx+HTML5.2x+2T2020a+type@asset+block/standardGPLayout.jpg)Click
 the above image to open a large view in another window/tab.
@@ -10433,7 +10408,7 @@ and one.
 a look at at this demo that does the same thing but with multiple
 gamepads.
 
-<img src="./media/image114.jpeg" style="width:6in;height:4.96603in"
+<img src="./images/image114.jpeg" style="width:6in;height:4.96603in"
 alt="button status detected, example on jsbin" />
 
 Code for checking if a button is pressed:
@@ -10503,7 +10478,7 @@ the gamepad.buttons will return the same  states every time.
 
 [Example on JSBin](https://jsbin.com/yaxika/edit)
 
-<img src="./media/image115.jpeg" style="width:5in;height:5.18999in"
+<img src="./images/image115.jpeg" style="width:5in;height:5.18999in"
 alt="axes detection in JsBin" />
 
 Code for detecting the axes' values:
@@ -10540,7 +10515,7 @@ manage this:
 
 [JSBin example](https://jsbin.com/vuxoqo/edit?js,output):
 
-<img src="./media/image116.jpeg" style="width:4in;height:1.98354in"
+<img src="./images/image116.jpeg" style="width:4in;height:1.98354in"
 alt="direction and angle detection for joystick" />
 
 Source code extract:
@@ -10938,116 +10913,68 @@ lesson.
 
 #### We modified the game loop as follows:
 
+```
 1.  var mainLoop = function(time){
-
 2.    // Main function, called each frame
-
 3.    measureFPS(time);
-
 4.  
-
 5.    // Clears the canvas
-
 6.    clearCanvas();
-
 7.  
-
 8.    **// Draws the monster**
-
 9.  **  drawMyMonster(monster.x, monster.y);**
-
 10. 
-
 11.   **// Checks inputs and moves the monster**
-
 12. **  updateMonsterPosition();**
-
 13. 
-
 14.   // Calls the animation loop every 1/60th of second
-
 15.   requestAnimationFrame(mainLoop);
-
 16. };
+```
 
 We moved all the parts that check the input states in
 the updateMonsterPosition() function:
 
+```
 1.  function updateMonsterPosition() {
-
 2.    monster.speedX = monster.speedY = 0;
-
 3.  
-
 4.    // Checks inputStates
-
 5.    if (inputStates.left) {
-
 6.      ctx.fillText("left", 150, 20);
-
 7.      monster.speedX = -monster.speed;
-
 8.    }
-
 9.    if (inputStates.up) {
-
 10.     ctx.fillText("up", 150, 40);
-
 11.     monster.speedY = -monster.speed;
-
 12.   }
-
 13.   if (inputStates.right) {
-
 14.     ctx.fillText("right", 150, 60);
-
 15.     monster.speedX = monster.speed;
-
 16.   }
-
 17.   if (inputStates.down) {
-
 18.     ctx.fillText("down", 150, 80);
-
 19.     monster.speedY = monster.speed;
-
 20.   }
-
 21.   if (inputStates.space) {
-
 22.     ctx.fillText("space bar", 140, 100);
-
 23.   }
-
 24.   if (inputStates.mousePos) {
-
 25.     ctx.fillText("x = " + inputStates.mousePos.x + " y = " +
-
 26.                           inputStates.mousePos.y, 5, 150);
-
 27.   }
-
 28.   if (inputStates.mousedown) {
-
 29.     ctx.fillText("mousedown b" + inputStates.mouseButton, 5, 180);
-
 30.     monster.speed = 5;
-
 31.   } else {
-
 32.   // Mouse up
-
 33.   monster.speed = 1;
-
 34.   }
-
 35. 
-
 36.   monster.x += monster.speedX;
-
 37.   monster.y += monster.speedY;
-
 38. }
+```
 
 **Explanations**:
 
@@ -11088,67 +11015,46 @@ and added one new call in the game loop for updating the gamepad status:
 
 [Check the result on JSBin:](https://jsbin.com/yidohe/edit)
 
-<img src="./media/image117.jpeg" style="width:3.0625in;height:4.02083in"
+<img src="./images/image117.jpeg" style="width:3.0625in;height:4.02083in"
 alt="move the monster with the gamepad, jsbin screenshot" />
 
 The new updated mainloop:
 
+```
 1.  var mainLoop = function(time){
-
 2.     //main function, called each frame
-
 3.     measureFPS(time);
-
 4.  
-
 5.     // Clear the canvas
-
 6.     clearCanvas();
-
 7.  
-
 8.    ** // gamepad**
-
 9.  **   updateGamePadStatus();**
-
 10. 
-
 11.    // draw the monster
-
 12.    drawMyMonster(monster.x, monster.y);
-
 13. 
-
 14.    // Check inputs and move the monster
-
 15.    updateMonsterPosition();
-
 16. 
-
 17.    // Call the animation loop every 1/60th of second
-
 18.    requestAnimationFrame(mainLoop);
-
 19. };
+```
 
 And here is the updateGamePadStatus function (the inner function calls
 are to gamepad utility functions detailed in the previous lesson):
 
+```
 1.  function updateGamePadStatus() {
-
 2.    // get new snapshot of the gamepad properties
-
 3.    scangamepads();
-
 4.    // Check gamepad button states
-
 5.    checkButtons(gamepad);
-
 6.    // Check joysticks
-
 7.    checkAxes(gamepad);
-
 8.  }
+```
 
 The checkAxes function updates the left, right, up, down properties of
 the inputStates object we previously used with key events. Therefore,
@@ -11345,7 +11251,7 @@ second = 16.66 ms.
 
 [Online example at JSBin](https://jsbin.com/dibuze/edit)
 
-<img src="./media/image118.jpeg" style="width:2.75in;height:0.8125in"
+<img src="./images/image118.jpeg" style="width:2.75in;height:0.8125in"
 alt="image of a small rectangle in a canvas, moving from left to right" />
 
 1.  <!DOCTYPE html>
@@ -11538,7 +11444,7 @@ to move the shape to achieve a given speed (in pixels/s).
 
 [Online example at JSBin](https://jsbin.com/riferi/edit):
 
-<img src="./media/image119.jpeg"
+<img src="./images/image119.jpeg"
 style="width:5.26042in;height:1.61458in"
 alt="Bouncing square with time bases animation" />
 
@@ -12192,7 +12098,7 @@ Here is the [online example at JSBin](https://jsbin.com/bonutur/edit).
 
 1.  <sup>setFrameRateInFramesPerSecond(5); // try other values!</sup>
 
-<img src="./media/image120.png" style="width:4in;height:2.0047in" />
+<img src="./images/image120.png" style="width:4in;height:2.0047in" />
 
 **Source code of the example:**
 
@@ -12673,7 +12579,7 @@ speed in pixels/s and we use time-based animation. Try it and verify the
 smoothness of the animation; the FPS counter on a Mac Book Pro core i7
 shows 60 fps.
 
-<img src="./media/image121.jpeg"
+<img src="./images/image121.jpeg"
 style="width:3.51042in;height:3.66667in"
 alt="screenshot of the monster moving at 60 f/s" />
 
@@ -12685,7 +12591,7 @@ However, if you move the monster using the arrow keys, its speed on the
 screen is the same, excepting that it's not as smooth as in the previous
 version, which ran at 60 fps.
 
-<img src="./media/image122.jpeg"
+<img src="./images/image122.jpeg"
 style="width:3.48958in;height:3.58333in"
 alt="screenshot of example that runs at 37 f/s" />
 
@@ -12862,7 +12768,7 @@ will not use time-based animation in the first examples.
 
 [Online example at JSBin](https://jsbin.com/fikomik/edit?js,output):
 
-<img src="./media/image123.jpeg" style="width:3.1875in;height:3.22917in"
+<img src="./images/image123.jpeg" style="width:3.1875in;height:3.22917in"
 alt="Some circular balls that bounce agains vertical and horizontal borders of the canvas" />
 
 In this example, we define *a constructor function* for creating balls.
@@ -13300,7 +13206,7 @@ the parameters controlling the creation of the balls: number, speed,
 radius, etc. Also, try changing the monster's default speed. See the
 results.
 
-<img src="./media/image124.jpeg" style="width:4in;height:4.13077in"
+<img src="./images/image124.jpeg" style="width:4in;height:4.13077in"
 alt="Monster + balls in the game framework. On the screen we see the monster + a bunch of balls" />
 
 For this version, we copied and pasted some code from the previous
@@ -13436,7 +13342,7 @@ sketches of more complex algorithms.
 
 ### Circle collision test
 
-<img src="./media/image125.png" style="width:3in;height:2.47in"
+<img src="./images/image125.png" style="width:3in;height:2.47in"
 alt="two circles with distances between the centers drawn" />
 
 Collision between circles is easy. Imagine there are two circles:
@@ -13507,7 +13413,7 @@ monster with the arrow keys and use the mouse to move "the player": a
 small circle. Try to make collisions between the monster and the circle
 you control.
 
-<img src="./media/image126.jpeg" style="width:4in;height:3.97101in"
+<img src="./images/image126.jpeg" style="width:4in;height:3.97101in"
 alt="monster and small circle: collision, they are drawn in red and a &quot;collision&quot; message appears" />
 
 This online example uses the game framework (without time-based
@@ -13663,25 +13569,25 @@ left that contains the whole arm, then if there is a collision, test for
 the two sub-circles, etc... this recursive algorithm will not be covered
 in this course, but it's a classic optimization.
 
-<img src="./media/image127.png" style="width:4in;height:2.20258in"
+<img src="./images/image127.png" style="width:4in;height:2.20258in"
 alt="Image of an arm with a hierarchy of bounding circles: one for the whole arm, and two smaller for the forearm and the other part" />
 
 In 3D, you can use spheres instead of circles:
 
-<img src="./media/image128.png" style="width:4in;height:2.2583in"
+<img src="./images/image128.png" style="width:4in;height:2.2583in"
 alt="a 3D object (a lamp) with bounding spheres" />
 
 The famous game Gran Turismo 4 on the PlayStation 2 uses bounding
 spheres for detecting collisions between cars:
 
-<img src="./media/image129.png" style="width:3in;height:2.26531in"
+<img src="./images/image129.png" style="width:3in;height:2.26531in"
 alt="Grand turismo used collisions between bounding spheres: image of the game (a car on a road track)" />
 
 ### Rectangle (aligned along X and Y axis) detection test
 
 Let's look at a simple illustration:
 
-<img src="./media/image130.jpeg"
+<img src="./images/image130.jpeg"
 style="width:4.47917in;height:2.09375in"
 alt="two pictures: one with non intersected rectangles: the projection of horizontal sides of rectangles to the X axis do not intersect (then rectangles do not intersect), the other with both projections intersect (rectangles intersect)" />
 
@@ -13696,20 +13602,20 @@ alt="two pictures: one with non intersected rectangles: the projection of horizo
 1 - Only horizontal axis projections overlap: no collision between
 rectangles
 
-<img src="./media/image131.jpeg" style="width:3.53125in;height:2.875in"
+<img src="./images/image131.jpeg" style="width:3.53125in;height:2.875in"
 alt="Only horizontal axis overlap: no collision" />
 
 2 - Only vertical axis projections overlap: no collision between
 rectangles
 
-<img src="./media/image132.jpeg"
+<img src="./images/image132.jpeg"
 style="width:3.42708in;height:2.88542in"
 alt="Only vertical axis projections overlap: no collision" />
 
 3 - Horizontal and vertical axis projections overlap: collision
 detected!
 
-<img src="./media/image133.jpeg"
+<img src="./images/image133.jpeg"
 style="width:3.44792in;height:3.01042in"
 alt="the projections of axis overlap: collision detected" />
 
@@ -13749,9 +13655,9 @@ time a small rectangle. Try to make collisions between the monster and
 the circle you control. Notice that this time the collision detection is
 more accurate and can work with elongated shapes.
 
-<img src="./media/image134.jpeg"
+<img src="./images/image134.jpeg"
 style="width:2.39583in;height:1.90625in"
-alt="Player as a square is inside the monster bounding circle but not inside the bounding rectangle, as we use rect rect collision test: no collision detected" /><img src="./media/image135.jpeg" style="width:2.125in;height:1.90625in"
+alt="Player as a square is inside the monster bounding circle but not inside the bounding rectangle, as we use rect rect collision test: no collision detected" /><img src="./images/image135.jpeg" style="width:2.125in;height:1.90625in"
 alt="Same as previous picture but this time the player square is inside the monster bounding rectangle: collision detected" />
 
 Here is what we modified (in bold) in the code:
@@ -13938,7 +13844,7 @@ terms of computation. "Rectangle-rectangle" collisions are used in many
 shoot'em'ups ever made - you can play it using the MAME arcade game
 emulator):
 
-<img src="./media/image136.jpeg" style="width:5in;height:3.13408in"
+<img src="./images/image136.jpeg" style="width:5in;height:3.13408in"
 alt="screenshot of dodonpachi" />
 
 You could also try the free Genetos shoot'em up game (Windows only) that
@@ -13947,7 +13853,7 @@ here](https://tatsuya-koyama.com/works/games/genetos/)). Press the G key
 to see the bounding rectangles used for collision test. Here is a
 screenshot:
 
-<img src="./media/image137.jpeg" style="width:5in;height:3.77137in"
+<img src="./images/image137.jpeg" style="width:5in;height:3.77137in"
 alt="genetos screenshot" />
 
 These games run at 60 fps and can have hundreds of bullets moving at the
@@ -14000,8 +13906,8 @@ StackOverflow](https://stackoverflow.com/questions/401847/circle-rectangle-colli
 [Try this function in this example on
 JSBin](https://jsbin.com/acohiv/845/edit?html,output).
 
-<img src="./media/image138.jpeg" style="width:2.0625in;height:2.20833in"
-alt="Circle and rectangle not in collision" /><img src="./media/image139.jpeg"
+<img src="./images/image138.jpeg" style="width:2.0625in;height:2.20833in"
+alt="Circle and rectangle not in collision" /><img src="./images/image139.jpeg"
 style="width:2.10417in;height:2.19792in"
 alt="circle collides a rectangle" />
 
@@ -14016,7 +13922,7 @@ alt="circle collides a rectangle" />
     that does the same with a blurring
     effect](https://jsbin.com/nopefe/edit)
 
-<img src="./media/image140.jpeg" style="width:5in;height:2.01389in"
+<img src="./images/image140.jpeg" style="width:5in;height:2.01389in"
 alt="ball ball collision example" />
 
 The principle behind collision resolution for pool balls is as follows.
@@ -14036,7 +13942,7 @@ components between the two balls (as we move from step 2 to step 3),
 then finally recombine the velocities for each ball to achieve the
 result (step 4):
 
-<img src="./media/image141.png" style="width:3in;height:2.48276in"
+<img src="./images/image141.png" style="width:3in;height:2.48276in"
 alt="diagram with two balls, velocities, tengeantial and normal planes" />
 
 The above picture has been borrowed from [this interesting article about
@@ -14075,7 +13981,7 @@ the ball color to red.
 
 [Try the example at JsBin!](https://jsbin.com/bohebe/edit?js,output)
 
-<img src="./media/image142.jpeg" style="width:3in;height:3.02853in"
+<img src="./images/image142.jpeg" style="width:3in;height:3.02853in"
 alt="Collision between balls and the monster" />
 
 ### Source code extract:
@@ -14141,7 +14047,7 @@ one-after-the-other, we obtain an animation effect.
 Here is an example of a *spritesheet*, where each line animates a woman
 walking in a particular direction:
 
-<img src="./media/image143.png" style="width:4in;height:4.71795in"
+<img src="./images/image143.png" style="width:4in;height:4.71795in"
 alt="sprite sheet of a woman walking, with different postures" />
 
 The first line corresponds to the direction we called "south", the
@@ -14161,7 +14067,7 @@ with the above sprite sheet.  Use the arrow keys and take a look! We
 accentuated the movement by changing the scale of the sprite as the
 woman moves up (further from us) or down (closer to us).
 
-<img src="./media/image144.jpeg" style="width:5in;height:5.21421in"
+<img src="./images/image144.jpeg" style="width:5in;height:5.21421in"
 alt="A woman animated using sprite. Screenshot of the JsBin example that explain how to run it in standalone mode" />
 
 We have not yet investigated how this works, nor have we built it into
@@ -14181,7 +14087,7 @@ or postures, each corresponding to a direction. In this example, each
 posture comprises exactly 13 sprites, aligned in a single row across the
 sprite sheet.
 
-<img src="./media/image143.png" style="width:3.5in;height:4.12821in"
+<img src="./images/image143.png" style="width:3.5in;height:4.12821in"
 alt="sprite sheet of a woman walking, with different postures" />
 
 ## One posture per sprite sheet
@@ -14189,7 +14095,7 @@ alt="sprite sheet of a woman walking, with different postures" />
 Some sprite sheets have a single sprite set, spreading over multiple
 lines; like this walking robot:
 
-<img src="./media/image145.png" style="width:3in;height:3in"
+<img src="./images/image145.png" style="width:3in;height:3in"
 alt="a sprite sheet with a walking robot (only the posture &quot;move to the right&quot; is in the sprite sheet)" />
 
 This is an example that you will see a lot around the Internet, in many
@@ -14198,7 +14104,7 @@ multiple sprite sheets: one for each posture.
 
 As another example, here is the "jumping robot" sprite sheet:
 
-<img src="./media/image146.png" style="width:3.5in;height:3.5in"
+<img src="./images/image146.png" style="width:3.5in;height:3.5in"
 alt="sprite sheet for a robot jump" />
 
 Whereas the walking robot posture is made of 16 sprites, the jumping
@@ -14210,7 +14116,7 @@ You will also find sprite sheets that contain completely different sets
 of sprites (this one comes from [the famous Gridrunner IOS game by Jeff
 Minter](https://www.youtube.com/watch?v=1tLNcj1ygFA)):
 
-<img src="./media/image147.png" style="width:3.5in;height:3.24984in"
+<img src="./images/image147.png" style="width:3.5in;height:3.24984in"
 alt="Gridrunner spritesheet" />
 
 So, when we think about writing a "sprite engine", we need to consider
@@ -14245,7 +14151,7 @@ next, see how the animation is created? 
 
 ### [<span id="_Toc98696629" class="anchor"></span>Try it at JSBin](https://jsbin.com/yukacep/edit?html,js,output):
 
-<img src="./media/image148.jpeg" style="width:5in;height:4.31036in"
+<img src="./images/image148.jpeg" style="width:5in;height:4.31036in"
 alt="Screenshot of the example: move a slider to select a subimage/sprite from the spritesheet" />
 
 ### HTML code:
@@ -14556,7 +14462,7 @@ sprites:
      another sprite sheet (the one with the robot) - see [on
      JSBin.](https://jsbin.com/jeledoq/edit?html,js,output)
 
-<img src="./media/image149.jpeg" style="width:5in;height:3.03739in"
+<img src="./images/image149.jpeg" style="width:5in;height:3.03739in"
 alt="same example but with the robot spritesheet" />
 
 543. Now it's time to see how we can make a small sprite animation
@@ -14641,7 +14547,7 @@ first!](https://jsbin.com/rugosu/edit?js,output) Experiment by
 editing *line 20*: **robot.setNbImagesPerSecond(20); **changing the
 value of the parameter and observing the result.
 
-<img src="./media/image150.jpeg" style="width:6.5in;height:4.27847in"
+<img src="./images/image150.jpeg" style="width:6.5in;height:4.27847in"
 alt="Example of the sprite framework on JsBin. Screenshot" />
 
 ### The SpriteImage object and sprite models
@@ -14837,7 +14743,7 @@ robot in the previous example.
 
 [Try this JsBin](http://jsbin.com/fekacu/edit?js,output)
 
-<img src="./media/image151.jpeg" style="width:5in;height:2.07853in"
+<img src="./images/image151.jpeg" style="width:5in;height:2.07853in"
 alt="Woman animated" />
 
 This time, we have changed the parameters of the sprites and sprite
@@ -14872,7 +14778,7 @@ sprite sheet has 8 different postures, so you can call:
 
 [Example at JsBin](https://jsbin.com/muwoje/edit?js,output)
 
-<img src="./media/image152.jpeg" style="width:5in;height:2.58547in"
+<img src="./images/image152.jpeg" style="width:5in;height:2.58547in"
 alt="Woman moving left and right, jsbin screenshot" />
 
 As usual, we used key listeners, an inputStates global object, and this
@@ -14898,7 +14804,7 @@ with gamepad, etc)).
 **First, try this [example at
 JsBin](https://jsbin.com/mifeva/edit?js,console,output)**
 
-<img src="./media/image153.jpeg" style="width:6.5in;height:3.03819in"
+<img src="./images/image153.jpeg" style="width:6.5in;height:3.03819in"
 alt="The woman sprite in the game framework, jsbin screenshot" />
 
 ### How to add sprites to the game framework...
@@ -15160,7 +15066,7 @@ the monster.
 
 [Try this jsBin!](https://jsbin.com/jixolu/edit?js,console,output)
 
-<img src="./media/image154.jpeg" style="width:3in;height:3.02821in"
+<img src="./images/image154.jpeg" style="width:3in;height:3.02821in"
 alt="Eat the ball game" />
 
 Source code extract:
@@ -15272,12 +15178,12 @@ look at the source code. Start from the mainloop!
 
 currentGameState = gameStates.gameOver:
 
-<img src="./media/image155.jpeg" style="width:4.69792in;height:4.75in"
+<img src="./images/image155.jpeg" style="width:4.69792in;height:4.75in"
 alt="Game Over Screen, asking to press space to start again" />
 
 currentGameState = gameStates.gamerunning:
 
-<img src="./media/image156.jpeg"
+<img src="./images/image156.jpeg"
 style="width:4.78125in;height:4.79167in"
 alt="game running, showing score, time, level" />
 
@@ -15578,7 +15484,7 @@ file called game.js, and locate it in a subdirectory js under the
 directory where the game.html file is located. Similarly, we'll keep the
 CSS file in a css subdirectory:
 
-<img src="./media/image157.jpeg"
+<img src="./images/image157.jpeg"
 style="width:1.98958in;height:2.29167in" alt="first game structure" />
 
 Try the game: open the game.html file in your browser. If the game does
@@ -15630,7 +15536,7 @@ the draw method, otherwise it won't be recognized... 
 Just for fun, let's try the game without fixing this, and look at the
 devtools console:
 
-<img src="./media/image158.jpeg" style="width:6.08333in;height:5.375in"
+<img src="./images/image158.jpeg" style="width:6.08333in;height:5.375in"
 alt="error the function calcDistToMove not found in ball.js" />
 
 Aha! The calcDistanceToMove function is indeed used by the Ball
@@ -15751,7 +15657,7 @@ fps.js:
 
 At this stage, the structure looks like this:
 
-<img src="./media/image159.jpeg" style="width:1.625in;height:2.25in"
+<img src="./images/image159.jpeg" style="width:1.625in;height:2.25in"
 alt="Game structure" />
 
 ### Let's continue and isolate the event listeners
@@ -15849,7 +15755,7 @@ during the course, could be put into this file as well.
 
 After all that, we reach this tidy structure:
 
-<img src="./media/image160.jpeg"
+<img src="./images/image160.jpeg"
 style="width:1.86458in;height:2.96875in"
 alt="final game structure in files" />
 
@@ -15943,8 +15849,8 @@ Some of them are based on the framework presented in the course.
     game is fun and is an interesting variation on examples presented in
     the course.
 
-<img src="./media/image161.jpeg" style="width:2in;height:1.80212in"
-alt="Main screen of the game called Wanted" /><img src="./media/image162.jpeg"
+<img src="./images/image161.jpeg" style="width:2in;height:1.80212in"
+alt="Main screen of the game called Wanted" /><img src="./images/image162.jpeg"
 style="width:2.64583in;height:2.65625in"
 alt="The game running, monster with black bombs and gold coins" />
 
@@ -15956,14 +15862,14 @@ alt="The game running, monster with black bombs and gold coins" />
     yourself](https://courses.edx.org/assets/courseware/v1/a48a111288de4f3583b4fd9ae352cc12/asset-v1:W3Cx+HTML5.2x+2T2020a+type@asset+block/DuckHuntSpriteAndSounds.zip) (500k).
     This one started with the game framework presented in the course.
 
-<img src="./media/image163.jpeg" style="width:4in;height:2.82873in"
+<img src="./images/image163.jpeg" style="width:4in;height:2.82873in"
 alt="Screenshot of the Duck hunt game" />
 
 -   Shoot em up (by Max Chazarra) (sources [on the GitHub
     site](https://github.com/MaxChazarra/MIAGE-Jeu-JS/tree/5e78fa85d257b81116fd784460848172040b3b71)).
     This one started with the game framework presented in the course:
 
-<img src="./media/image164.jpeg" style="width:4in;height:3.88192in"
+<img src="./images/image164.jpeg" style="width:4in;height:3.88192in"
 alt="Screenshot of the shoot em up game" />
 
 -   Gameboy Tetris (written starting from the game framework presented
@@ -15971,7 +15877,7 @@ alt="Screenshot of the shoot em up game" />
     sources](https://courses.edx.org/assets/courseware/v1/b3fc2d6c5c519aaa5986f58e064a6426/asset-v1:W3Cx+HTML5.2x+2T2020a+type@asset+block/Tetris.rar) (author
     Maxime Demetrio)
 
-<img src="./media/image165.jpeg" style="width:3.125in;height:2.83333in"
+<img src="./images/image165.jpeg" style="width:3.125in;height:2.83333in"
 alt="gameboy tetris in html5" />
 
 -   A small "kill the ninjas" game (by Tristan Poilvet). This game used
@@ -15979,7 +15885,7 @@ alt="gameboy tetris in html5" />
     point. [Sources available
     here.](https://courses.edx.org/assets/courseware/v1/19ecac62725b07966804bb28031f0fba/asset-v1:W3Cx+HTML5.2x+2T2020a+type@asset+block/snna.zip)
 
-<img src="./media/image166.jpeg" style="width:4in;height:2.34815in"
+<img src="./images/image166.jpeg" style="width:4in;height:2.34815in"
 alt="a &quot;kill the ninja game&quot;" />
 
 ## Module 3. HTML5 File Upload and Download
@@ -16229,7 +16135,7 @@ JSBin](https://jsbin.com/mecakaz/edit?html,js,console,output):
 In this example, instead of reading the file from disk, we download it
 using XHR2.
 
-<img src="./media/image167.jpeg" style="width:5in;height:2.48451in"
+<img src="./images/image167.jpeg" style="width:5in;height:2.48451in"
 alt="Downloading file with Xhr2" />
 
 **Complete source code:**
@@ -16337,7 +16243,7 @@ alt="Downloading file with Xhr2" />
 
 ### Monitoring uploads or downloads using a progress event
 
-<img src="./media/image168.jpeg"
+<img src="./images/image168.jpeg"
 style="width:4.41667in;height:0.79167in"
 alt="downloading progression using a progress element" />
 
@@ -16470,18 +16376,18 @@ For example, with a file that is 10,000 bytes long, if the current
 number of bytes downloaded is 1000, then <progress value=1000
 max=10000> will look like this: 
 
-581. <img src="./media/image169.jpeg"
+581. <img src="./images/image169.jpeg"
      style="width:2.66667in;height:0.57292in" alt="progress bar 10%" />
 
 And a current download of 2000 bytes will define <progress value=2000
 max=10000> and will look like this:
 
-582. <img src="./media/image170.jpeg" style="width:2.66667in;height:0.5in"
+582. <img src="./images/image170.jpeg" style="width:2.66667in;height:0.5in"
      alt="progress bar 20%" />
 
 ### Complete example: monitoring the download of a song file
 
-<img src="./media/image171.jpeg" style="width:5in;height:1.11271in"
+<img src="./images/image171.jpeg" style="width:5in;height:1.11271in"
 alt="monitoring download" />
 
 This is a variant of the previous example that uses the progress event
@@ -16575,7 +16481,7 @@ lecture.
 
 [Try the example on JSBin](https://jsbin.com/pidusap/edit):
 
-<img src="./media/image172.jpeg"
+<img src="./images/image172.jpeg"
 style="width:3.96875in;height:2.21875in" alt="file upload example 1" />
 
 ### Source code of the example:
@@ -16678,7 +16584,7 @@ that used for monitoring file downloads:
     number of bytes that have been uploaded, and to the total number of
     bytes we need to upload (i.e., the file size).
 
-<img src="./media/image173.jpeg"
+<img src="./images/image173.jpeg"
 style="width:3.89583in;height:1.28125in"
 alt="file upload with progress bar" />
 
@@ -16983,7 +16889,7 @@ CodePen](https://codepen.io/w3devcampus/pen/MaWKZb).
 
 ### Screenshot:
 
-<img src="./media/image174.jpeg" style="width:5in;height:1.60844in"
+<img src="./images/image174.jpeg" style="width:5in;height:1.60844in"
 alt="drag n drop fruits" />
 
 ### Complete code from the example:
@@ -17122,7 +17028,7 @@ element that has been dropped (we get this from the clipboard at *lines
 
 ### Complete example
 
-<img src="./media/image175.jpeg"
+<img src="./images/image175.jpeg"
 style="width:3.90625in;height:3.22917in" alt="drag n drop fruits" />
 
 ### Try it in your browser below or [play with it at CodePen](https://codepen.io/w3devcampus/pen/YyzWKy?editors=110):
@@ -17333,7 +17239,7 @@ of any HTML element.
 Here is [an online at
 JsBin](https://jsbin.com/yowimebawo/edit?html,css,js,output) example: 
 
-<img src="./media/image176.png" style="width:5in;height:0.80556in"
+<img src="./images/image176.png" style="width:5in;height:0.80556in"
 alt="Data attribut example 1" />
 
 In this example, when you click on the sentence that starts with "John
@@ -17408,7 +17314,7 @@ the attr() CSS function.
 
 Try [the online example at JsBin](https://jsbin.com/alunuk/6/edit). 
 
-<img src="./media/image177.png" style="width:3.17708in;height:0.85417in"
+<img src="./images/image177.png" style="width:3.17708in;height:0.85417in"
 alt="Using CSS attr() function" />
 
 ### HTML code from this example:
@@ -17557,7 +17463,7 @@ dragged object to its default. The full runnable online example is a bit
 further down the page (it includes, in addition, visual feedback on the
 drop zone):
 
-<img src="./media/image178.jpeg" style="width:5in;height:2.57746in"
+<img src="./images/image178.jpeg" style="width:5in;height:2.57746in"
 alt="drag n drop colorful" />
 
 ### Source code extract:
@@ -17874,23 +17780,23 @@ drag. For example, if you "copy" a fruit into the drop zone, as we did
 in the previous example, a "copy" cursor like the one below would be
 appropriate:
 
-<img src="./media/image179.jpeg"
+<img src="./images/image179.jpeg"
 style="width:2.39583in;height:0.78125in" alt="dropEffect" />
 
 If you are "moving" objects, this style of cursor would be appropriate:
 
-<img src="./media/image180.jpeg"
+<img src="./images/image180.jpeg"
 style="width:2.58333in;height:0.88542in" alt="drop effect #2" />
 
 And if you are making a "link" or a "shortcut", a cursor would be
 looking like this:
 
-<img src="./media/image181.jpeg" style="width:2.65625in;height:0.9375in"
+<img src="./images/image181.jpeg" style="width:2.65625in;height:0.9375in"
 alt="drop effect #3" />
 
 Alternatively, you could use any custom image/icon you like:
 
-<img src="./media/image182.jpeg"
+<img src="./images/image182.jpeg"
 style="width:5.13542in;height:4.35417in" alt="drop effect with image" />
 
 To give this visual feedback, we use
@@ -18119,7 +18025,7 @@ one <img> from its initial position to another location in the page).
 
 ## 3.3.8 Drag and drop a text selection
 
-<img src="./media/image183.png" style="width:5in;height:1.75374in" />
+<img src="./images/image183.png" style="width:5in;height:1.75374in" />
 
 **There is no need to add a dragstart handler on an element that
 contains text.** Any selected text is automatically added to the
@@ -18521,7 +18427,7 @@ them. That's all. Bye, bye!
 
 ### Example: drag and drop files to a drop zone, display file details in a list
 
-<img src="./media/image184.jpeg"
+<img src="./images/image184.jpeg"
 style="width:4.64583in;height:3.89583in"
 alt="Example of drag&#39;n&#39;drop of a file" />
 
@@ -18745,7 +18651,7 @@ Click the "Choose files" button (an <input type="file"> element),
 select one or more images -- and you should see image thumbnails
 displayed in the open space beneath it:
 
-<img src="./media/image185.png" style="width:6.5in;height:1.83264in" />
+<img src="./images/image185.png" style="width:6.5in;height:1.83264in" />
 
 Source code extract (the part that reads the image file content and
 displays the thumbnails):
@@ -18822,7 +18728,7 @@ HTML of this example.
 
 #### Complete example of drag and drop + thumbnails of images
 
-<img src="./media/image186.jpeg" style="width:6.5in;height:4.05625in"
+<img src="./images/image186.jpeg" style="width:6.5in;height:4.05625in"
 alt="ilmage drag&#39;n&#39;drop with thumbnails" />
 
 Try it below in your browser (drag'n'drop image files into the drop
@@ -19086,7 +18992,7 @@ The example below allows files to be selected using a file chooser or by
 drag  and dropping them, like in the screenshot below (the interactive
 example is a bit further down the page):
 
-<img src="./media/image187.png" style="width:6.5in;height:6.36944in"
+<img src="./images/image187.png" style="width:6.5in;height:6.36944in"
 alt="example of file chooser and dir chooser" />
 
 In the above screenshot, which is derived from the example detailed
@@ -19463,7 +19369,7 @@ JSBin](https://jsbin.com/conigekoda/edit) (this example does not work on
 CodePen. We are using a fake remote server and it cancels the connection
 as soon as we try to connect):
 
-<img src="./media/image188.jpeg"
+<img src="./images/image188.jpeg"
 style="width:4.36458in;height:2.90625in"
 alt="example that uses drag&#39;n&#39;drop and a progress element for monitoring the ajax upload of the files" />
 
@@ -19737,7 +19643,7 @@ An example of this kind of form is shown below: when the user drags and
 drops files, they will start being uploaded immediately. However,  the
 form will only be sent when all the fields are valid. 
 
-<img src="./media/image189.jpeg" style="width:6.5in;height:3.98264in"
+<img src="./images/image189.jpeg" style="width:6.5in;height:3.98264in"
 alt="uploading files using Xhr2, drag&#39;n&#39;drop and progress bar" />
 
 This approach is similar to Gmail's behavior when you compose a message
@@ -19761,7 +19667,7 @@ with each of the examples.
 -   or we may *use multiple Ajax requests*, which we don't start until
     the submit button has been clicked.
 
-<img src="./media/image190.jpeg"
+<img src="./images/image190.jpeg"
 style="width:6.29167in;height:2.32292in"
 alt="Second approach, send files only when the sublit button has been clicked" />
 
@@ -19823,7 +19729,7 @@ more difficult to follow.
 
 Example using a file selector (<input type="file">):
 
-<img src="./media/image191.png" style="width:4.85417in;height:1.79167in"
+<img src="./images/image191.png" style="width:4.85417in;height:1.79167in"
 alt="example 1 of file upload" />
 
 [Try the online example at
@@ -19849,7 +19755,7 @@ collect the filenames, not an input field. [Try it at
 JSBin](https://jsbin.com/qijoza/edit?html,css,js,output) and look at the
 source code - there are plenty of comments.
 
-<img src="./media/image192.png" style="width:6.5in;height:3.98264in"
+<img src="./images/image192.png" style="width:6.5in;height:3.98264in"
 alt="example 2 of file uploads, uses drag&#39;n&#39;drop" />
 
 ### And here is the PHP code for the server-side part of examples #1 and #2
@@ -19957,7 +19863,7 @@ You can [try this example at
 JSBin](https://jsbin.com/quzohi/edit?html,css,js,output), and look at
 the source code and comments for details.
 
-<img src="./media/image193.png" style="width:6.07292in;height:2.17708in"
+<img src="./images/image193.png" style="width:6.07292in;height:2.17708in"
 alt="Example 3 of file uploads" />
 
 ### Example #4: uploading using drag and drop
@@ -19966,7 +19872,7 @@ alt="Example 3 of file uploads" />
 JSBin](https://jsbin.com/xonemow/edit?html,css,output) and look at
 source code and comments.
 
-<img src="./media/image194.png" style="width:5.38542in;height:3.71875in"
+<img src="./images/image194.png" style="width:5.38542in;height:3.71875in"
 alt="Example 4: uses drag&#39;n&#39;drop of files" />
 
 ### PHP code for the single-packaged examples (with and without drag and drop, the PHP is the same)
@@ -20272,7 +20178,7 @@ in-order traversal of very large numbers of data records.
 
 #### Examples of applications where IndexedDB should be considered
 
-<img src="./media/image195.jpeg"
+<img src="./images/image195.jpeg"
 style="width:3.28125in;height:4.04167in"
 alt="google drive uses indexedDB" />
 
@@ -21043,12 +20949,12 @@ the example: it will call the createDB() JavaScript function that:
 **Chrome DevTools (F12 or cmd-alt-i) shows the IndexedDB databases,
 object stores and data:**
 
-<img src="./media/image196.png" style="width:6.5in;height:4.77847in" />
+<img src="./images/image196.png" style="width:6.5in;height:4.77847in" />
 
 Normally, when you create a database for the first time, the console
 should show this message:
 
-<img src="./media/image197.jpeg" style="width:6.5in;height:0.825in"
+<img src="./images/image197.jpeg" style="width:6.5in;height:0.825in"
 alt="Message displayed in console when the database is created the first time you run the example" />
 
 This message comes from the JavaScript request.onupgradeneeded callback.
@@ -21236,19 +21142,19 @@ CustomerDB database used in all examples of this course section by
 opening one of the JsBin examples , then opening the devtool console,
 then executing indexedDB.deleteDatabase("CustomerDB"); in the console:
 
-<img src="./media/image198.jpeg" style="width:6.5in;height:4.48889in"
+<img src="./images/image198.jpeg" style="width:6.5in;height:4.48889in"
 alt="deleting indexed DB part 1, open the devtool console" />
 
-<img src="./media/image199.jpeg" style="width:6.5in;height:3.34097in"
+<img src="./images/image199.jpeg" style="width:6.5in;height:3.34097in"
 alt="Run the command" />
 
-<img src="./media/image200.jpeg" style="width:6.5in;height:1.41319in"
+<img src="./images/image200.jpeg" style="width:6.5in;height:1.41319in"
 alt="Execute the command" />
 
-<img src="./media/image201.jpeg" style="width:6.5in;height:2.33264in"
+<img src="./images/image201.jpeg" style="width:6.5in;height:2.33264in"
 alt="Refresh IndexedDB display of objectStores" />
 
-<img src="./media/image202.jpeg" style="width:6.5in;height:1.84375in"
+<img src="./images/image202.jpeg" style="width:6.5in;height:1.84375in"
 alt="Final result: the objectStore has been deleted" />
 
 ## 3.6.6 Working with data
@@ -21446,7 +21352,7 @@ been added.
 **Be sure to click on the "create database" button before clicking the
 "insert new customer" button.**
 
-<img src="./media/image203.png" style="width:6.5in;height:2.81667in"
+<img src="./images/image203.png" style="width:6.5in;height:2.81667in"
 alt="example on JsBin for inserting data in IndexedDB" />
 
 The next screenshot shows the IndexedDB object store in Chrome dev.
@@ -21455,7 +21361,7 @@ database creates or opens the database, and clicking "Add a new
 Customer" button adds a customer named "Michel Buffa" into the object
 store:
 
-<img src="./media/image204.png" style="width:6.5in;height:3.53333in"
+<img src="./images/image204.png" style="width:6.5in;height:3.53333in"
 alt="Devtools show that a new customer named Michel Buffa has been inserted" />
 
 **Code from the example, explanations:**
@@ -21568,14 +21474,14 @@ datastore remains unchanged.
 
 Here is the trace from the dev tools console:
 
-<img src="./media/image205.png" style="width:6.5in;height:1.23889in"
+<img src="./images/image205.png" style="width:6.5in;height:1.23889in"
 alt="Trace from the devtools console" />
 
 ### Example #2: adding a form and validating inputs
 
 [Online example available at JSBin](https://jsbin.com/jayida):
 
-<img src="./media/image206.jpeg" style="width:6.5in;height:1.50278in"
+<img src="./images/image206.jpeg" style="width:6.5in;height:1.50278in"
 alt="a form has been added to the previous example, for creating a new customer" />
 
 You can try this example by following these steps:
@@ -21613,7 +21519,7 @@ message if:
 -   Try to insert the same customer twice, or different customers with
     the same ssn. An alert like this should pop up:
 
-<img src="./media/image207.jpeg"
+<img src="./images/image207.jpeg"
 style="width:6.08333in;height:2.32292in" alt="insert error" />
 
 **Here is the updated version of the HTML code of this example:**
@@ -21745,7 +21651,7 @@ such a way of coding (!).
 
 Also, note that it works if you try to insert empty data:
 
-<img src="./media/image208.jpeg" style="width:6.5in;height:2.68889in"
+<img src="./images/image208.jpeg" style="width:6.5in;height:2.68889in"
 alt="devtools show that inserting blank data works" />
 
 Indeed, entering an empty value for the keyPath or for indexes is a
@@ -21757,7 +21663,7 @@ add more JavaScript code. We will let you do this as an exercise.
 Let's move to the next [online example at
 JSBin](https://jsbin.com/bavifa):
 
-<img src="./media/image208.jpeg" style="width:6.5in;height:2.68889in"
+<img src="./images/image208.jpeg" style="width:6.5in;height:2.68889in"
 alt="devtools show that a customer has been removed once clicked on the remove customer button" />
 
 See the changes in Chrome dev. tools: refresh the view (right
@@ -21874,7 +21780,7 @@ update a customer!
 
 [Online example at JSBin](https://jsbin.com/zugowe):
 
-<img src="./media/image209.jpeg" style="width:6.5in;height:3.44306in"
+<img src="./images/image209.jpeg" style="width:6.5in;height:3.44306in"
 alt="devtools show a customer being updated in IndexedDB" />
 
 The above screenshot shows how we added an empty customer with ssn="",
@@ -21886,7 +21792,7 @@ with ssn="" and click on the "update data about an existing customer"
 button. This updates the data in the object store, as shown in this
 screenshot:
 
-<img src="./media/image210.jpeg" style="width:6.5in;height:1.08194in"
+<img src="./images/image210.jpeg" style="width:6.5in;height:1.08194in"
 alt="devtools show updated customer" />
 
 Here is the new code added to our example:
@@ -21983,14 +21889,14 @@ retrieves an object when we know its key/keypath.
 
 [Online example at JSBin](https://jsbin.com/saquru):
 
-<img src="./media/image211.jpeg" style="width:6.5in;height:4.19028in"
+<img src="./images/image211.jpeg" style="width:6.5in;height:4.19028in"
 alt="Getting data from IndexedDB, first enter a ssn, then press the search button" />
 
 If the ssn exists in the object store, then the results are displayed in
 the form itself (the code that gets the results and that updates the
 form is in the request.onsuccess callback).
 
-<img src="./media/image212.jpeg" style="width:6.5in;height:1.98333in"
+<img src="./images/image212.jpeg" style="width:6.5in;height:1.98333in"
 alt="Form updated with data retrieved" />
 
 Here is the code added to that example:
@@ -22231,7 +22137,7 @@ Here's what it looks like:
 It adds a button to our application. Clicking on it will display a set
 of alerts, each showing details of an object in the object store:
 
-<img src="./media/image213.jpeg" style="width:6.5in;height:1.88889in"
+<img src="./images/image213.jpeg" style="width:6.5in;height:1.88889in"
 alt="Screenshot with a &quot;list all customers button&quot; and an alert showing one of them" />
 
 The openCursor() function can take several (optional) arguments.
@@ -22357,7 +22263,7 @@ the person-objects from the dataStore which have a name equal to "Bill".
 
 [Online example you can try at JsBin](https://jsbin.com/gituxa)
 
-<img src="./media/image214.jpeg" style="width:6.5in;height:5.12639in"
+<img src="./images/image214.jpeg" style="width:6.5in;height:5.12639in"
 alt="retrieving data using an index. The screenshot shows a button &quot;look for all customers named Bill&quot;, and shows an alert with the result." />
 
 The above example retrieves only the first object that has a name/index
@@ -22431,7 +22337,7 @@ Can you see the difference? 
 You can try [an online example at JSBin that uses the above
 methods](https://jsbin.com/kubuwof):
 
-<img src="./media/image215.jpeg" style="width:6.5in;height:4.45625in"
+<img src="./images/image215.jpeg" style="width:6.5in;height:4.45625in"
 alt="getting data using index. The screenshot shows two buttons: one for getting one single data and one for getting all data, using indexes" />
 
 How to try this example:
@@ -22575,10 +22481,10 @@ URL](https://github.com/mdn/IDBKeyRange-example/blob/gh-pages/index.html)):
 Try [the online example at JsBin](https://jsbin.com/lawaju/edit) (enter
 "Gaming", "Batman" etc. as key range values):
 
-<img src="./media/image216.jpeg" style="width:6.5in;height:6.53819in"
+<img src="./images/image216.jpeg" style="width:6.5in;height:6.53819in"
 alt="Example of use of IdbKeyRange" />
 
-<img src="./media/image217.jpeg" style="width:6.5in;height:5.99583in"
+<img src="./images/image217.jpeg" style="width:6.5in;height:5.99583in"
 alt="IDBKeyRange in action" />
 
 ## 3.6.12 Discussion and projects
@@ -22833,7 +22739,7 @@ You need to unarchive it in the Web server htdocs directory of your
 WAMP/MAMP/LAMP http distribution, for example. Then open
 the index.html file located in that directory.
 
-<img src="./media/image218.jpeg" style="width:5in;height:2.37393in"
+<img src="./images/image218.jpeg" style="width:5in;height:2.37393in"
 alt="running the example in an Apache Web Server" />
 
 ## 4.2.2 Introduction
@@ -22855,7 +22761,7 @@ Let's start with an example! This code...:
 order of the animation is reversed when the last image is reached and
 again when the animation goes back to the first image.
 
-<img src="./media/image219.jpeg" style="width:4in;height:2.93333in"
+<img src="./images/image219.jpeg" style="width:4in;height:2.93333in"
 alt="animated gif in a page" />
 
 Click on the image to run the animated GIF demo, or visit [this Web
@@ -22878,7 +22784,7 @@ Even more impressive: if you use the devtools or the right click context
 menu to view the source of the page, you will not see the DOM of this
 animated GIF player:
 
-<img src="./media/image220.jpeg" style="width:5in;height:2.55502in"
+<img src="./images/image220.jpeg" style="width:5in;height:2.55502in"
 alt="shadow root of the x-gif web component" />
 
 ...*and your document will still be valid.* Looking at the source code
@@ -22897,14 +22803,14 @@ them with browsers that do not yet support Web Components.
 *Example*: let's go to the the [Web Components Web
 site](https://www.webcomponents.org/).
 
-<img src="./media/image221.png" style="width:4in;height:3.0906in"
+<img src="./images/image221.png" style="width:4in;height:3.0906in"
 alt="The webcomponents.org home page" />
 
 We then search for Web components tagged with the "voice" tag and find
 input fields with voice recognition, and a text area that could vocalize
 the text:
 
-<img src="./media/image222.png" style="width:4in;height:2.10812in"
+<img src="./images/image222.png" style="width:4in;height:2.10812in"
 alt="Results for a search on &quot;voice&quot;" />
 
 Now, please try a [demonstration of this
@@ -23133,7 +23039,7 @@ A template is typically used like this:
 Here is [an online example at JSBin](https://jsbin.com/dozele/edit) that
 uses exactly the code presented:
 
-<img src="./media/image223.jpeg"
+<img src="./images/image223.jpeg"
 style="width:2.90625in;height:4.23958in" alt="template use" />
 
 And here is the complete source code...
@@ -23348,7 +23254,7 @@ element. You will see the exact HTML code that is in this example, but
 you cannot see the elements that compose the control bar. You don't have
 access to the play button, etc.
 
-<img src="./media/image224.jpeg" style="width:6.5in;height:4.65556in"
+<img src="./images/image224.jpeg" style="width:6.5in;height:4.65556in"
 alt="devtools2" />
 
 Let's take a look behind the scenes, and see the Shadow DOM associated
@@ -23357,25 +23263,25 @@ with the <video> element.
 First, click on the Settings icon (three vertical dots) and select
 Settings in the drop down menu:
 
-<img src="./media/image225.jpeg" style="width:6.5in;height:5.07431in"
+<img src="./images/image225.jpeg" style="width:6.5in;height:5.07431in"
 alt="shadow dom in devtools 1" />
 
 Then scroll down until you see the "Show user agent shadow DOM" option
 and check it. Close the panel.
 
-<img src="./media/image226.jpeg" style="width:6.5in;height:3.54444in"
+<img src="./images/image226.jpeg" style="width:6.5in;height:3.54444in"
 alt="Show shadow dom option in devtoops" />
 
 Now, look for the video element again and within the DOM view you should
 see something new:
 
-<img src="./media/image227.jpeg" style="width:6.5in;height:1.95833in"
+<img src="./images/image227.jpeg" style="width:6.5in;height:1.95833in"
 alt="devtools4" />
 
 Open this shadow root by clicking on it, and move the mouse pointer over
 the different elements:
 
-<img src="./media/image228.jpeg" style="width:6.5in;height:4.66389in"
+<img src="./images/image228.jpeg" style="width:6.5in;height:4.66389in"
 alt="devtools5" />
 
 Chrome developers are already using the shadow DOM to define their own
@@ -23428,7 +23334,7 @@ HTML element. In this example, the <div> defined at* line 1* is a
 shadow host, and it is associated with the shadow root which
 contains three words of text (*line 11*).
 
-<img src="./media/image229.jpeg" style="width:6.5in;height:1.79444in"
+<img src="./images/image229.jpeg" style="width:6.5in;height:1.79444in"
 alt="Shadow DOM simple example" />
 
 This example illustrates the three rules of the shadow DOM. Let's look
@@ -23452,7 +23358,7 @@ example, try to change the text of the div (*line 1*), and you will
 notice that nothing changes. Then modify the text at *line 11* and
 observe the result
 
-<img src="./media/image230.jpeg" style="width:6.5in;height:3.04583in"
+<img src="./images/image230.jpeg" style="width:6.5in;height:3.04583in"
 alt="Shadow DOM: the shadow root is rendered instead of the shadow host content" />
 
 ## 4.2.5 Shadow DOM: encapsulate code
@@ -23506,7 +23412,7 @@ The JavaScript part:
 
 [Online example at JSBin](https://jsbin.com/quguwa/edit?html,js,output):
 
-<img src="./media/image231.jpeg"
+<img src="./images/image231.jpeg"
 style="width:5.52083in;height:1.63542in" alt="shadow dom 3" />
 
 Note that once again, the content shown is the shadow root + the styles
@@ -23561,7 +23467,7 @@ We added a new H1 at *line 11*. 
 
 And here is the result:
 
-<img src="./media/image232.jpeg"
+<img src="./images/image232.jpeg"
 style="width:5.55208in;height:2.91667in" alt="shadow dom 4" />
 
 The second H1 is not affected by the CSS defined in the template used by
@@ -23575,7 +23481,7 @@ the first H1. Try to add this CSS rule to this example :
 
 And you should see something like that:
 
-<img src="./media/image233.jpeg" style="width:4.53125in;height:2.9375in"
+<img src="./images/image233.jpeg" style="width:4.53125in;height:2.9375in"
 alt="The global CSS rule will affect the H1 in the body of the document, not the one in the shadow DOM." />
 
 In which the "regular" CSS rule changed the color of the H1 located in
@@ -23627,7 +23533,7 @@ the <slot>...</slot> element, as shown below:
 
 ### See [the complete online example at JSBin](https://jsbin.com/jepucoz/edit?html,js,output):
 
-<img src="./media/image234.jpeg" style="width:5in;height:2.17521in"
+<img src="./images/image234.jpeg" style="width:5in;height:2.17521in"
 alt="Content injection in HTML templates using slot elements" />
 
 ### External resources
@@ -23805,7 +23711,7 @@ template used here is the last one we studied in a previous lesson about
 HTML templates. Check [the full example online at
 JSBin](https://jsbin.com/cacuvuf/edit?html,js,console,output): 
 
-<img src="./media/image235.jpeg" style="width:6.5in;height:2.7625in"
+<img src="./images/image235.jpeg" style="width:6.5in;height:2.7625in"
 alt="Custom element full example at JsBin" />
 
 ### External resources
@@ -24069,8 +23975,8 @@ your comments/observations/questions and share your creations.
     your audio player or other applications that would look cool with
     rotating knobs, switches, LEDs, etc.
 
--   <img src="./media/image236.png" style="width:5.48958in;height:2.61458in"
-    alt="web audio controls" /><img src="./media/image237.jpeg"
+-   <img src="./images/image236.png" style="width:5.48958in;height:2.61458in"
+    alt="web audio controls" /><img src="./images/image237.jpeg"
     style="width:5.19792in;height:2.52083in"
     alt="guitar amp sim with web components" />
 
@@ -24097,12 +24003,12 @@ something like this during your Web browsing experiences:
 
 ### With Internet Explorer:
 
-# <img src="./media/image002.png" style="width:4.625in;height:2.04167in"
+# <img src="./images/image002.png" style="width:4.625in;height:2.04167in"
 alt="ScriptNotResponding1" />
 
 ### Or maybe:
 
-<img src="./media/image238.jpeg"
+<img src="./images/image238.jpeg"
 style="width:5.85417in;height:1.71875in" alt="script not responding2" />
 
 A solution for this problem, offered by HTML5, is to run certain
@@ -24125,7 +24031,7 @@ NOT CLICK ON THE BUTTON unless you are prepared to kill your
 browser/tab, because this routine will consume 100% of CPU time,
 completely blocking the user interface: 
 
-<img src="./media/image239.jpeg" style="width:5.5in;height:1.84375in"
+<img src="./images/image239.jpeg" style="width:5.5in;height:1.84375in"
 alt="Examples that eats all the cpu" />
 
 ### Code from the example:
@@ -24459,7 +24365,7 @@ online](https://codepen.io/w3devcampus/project/editor/ZynNvX/) using
 CodePen. Note that we cannot run this example on JsBin as Workers need
 to be defined in a separate JavaScript file.
 
-<img src="./media/image240.jpeg"
+<img src="./images/image240.jpeg"
 style="width:5.70833in;height:1.34375in"
 alt="Prime nulmber computation" />
 
@@ -24537,7 +24443,7 @@ supports Web Workers, and by displaying some additional messages.
 > file:// URL. **You need an HTTP web server that will serve the
 > files**. Here is what happens if you do not follow this constraint:
 
-<img src="./media/image241.jpeg" style="width:6.5in;height:1.67292in"
+<img src="./images/image241.jpeg" style="width:6.5in;height:1.67292in"
 alt="using file URL does not work for security reasons" />
 
 This occurs with Opera, Chrome and Firefox. With Chrome, Safari or
@@ -24772,7 +24678,7 @@ avoid such a pain, the Web Workers API does several things:
 
 ### This is well illustrated below:
 
-<img src="./media/image242.png" style="width:5.20833in;height:3.39583in"
+<img src="./images/image242.png" style="width:5.20833in;height:3.39583in"
 alt="web worker scope" />
 
 **Note that:**
@@ -24804,7 +24710,7 @@ worker. In these windows, you can set breakpoints, inspect variables,
 log messages, etc. Here is a screenshot of a debugging session with the
 prime numbers example:
 
-<img src="./media/image243.jpeg" style="width:5in;height:3.11538in"
+<img src="./images/image243.jpeg" style="width:5in;height:3.11538in"
 alt="chrome debug web workers" />
 
 -   **FireFox** has similar tools, see [Firefox developer
@@ -24825,7 +24731,7 @@ the WITH WORKERS button: this will run the code that computes prime
 numbers in a Web Worker. Now, try to change the color of the button, it
 reacts instantly...
 
-<img src="./media/image244.png" style="width:5in;height:3.12767in"
+<img src="./images/image244.png" style="width:5in;height:3.12767in"
 alt="Demo screenshot" />
 
 ### Demo \#2
@@ -24841,7 +24747,7 @@ compute parts of the image (pixels). If you use too many Web Workers,
 the performance decreases because too much time is spent exchanging data
 between workers and their creator, instead of computing in parallel.
 
-<img src="./media/image245.jpeg" style="width:4in;height:3.99165in"
+<img src="./images/image245.jpeg" style="width:4in;height:3.99165in"
 alt="ray tracer with web workers" />
 
 ### Other demos
@@ -24879,7 +24785,7 @@ your comments/observations/questions and share your creations.
     is drawn and animated. The demo had up to 10 *workers* operating
     in *parallel*, in the *background*.
 
-<img src="./media/image246.png" style="width:4in;height:2.55983in"
+<img src="./images/image246.png" style="width:4in;height:2.55983in"
 alt="IE 10 web worker fountain demo" />
 
 ## 4.4.1 The Orientation API
@@ -24962,7 +24868,7 @@ order:
 <tr class="header">
 <th>Device in the initial position, with Earth (XYZ) and<br />
 body (xyz) frames aligned.</th>
-<th><img src="./media/image247.png"
+<th><img src="./images/image247.png"
 style="width:4.6875in;height:4.6875in" alt="start orientation" /></th>
 </tr>
 </thead>
@@ -24971,7 +24877,7 @@ style="width:4.6875in;height:4.6875in" alt="start orientation" /></th>
 <td>Device rotated through angle alpha about z axis,<br />
 with previous locations of x and y axes shown as x<sub>0</sub> and
 y<sub>0</sub>.</td>
-<td><img src="./media/image248.png"
+<td><img src="./images/image248.png"
 style="width:4.6875in;height:4.6875in"
 alt="rotation about z axis" /></td>
 </tr>
@@ -24989,7 +24895,7 @@ alt="rotation about z axis" /></td>
 <tr class="header">
 <th>Device in the initial position, with Earth (XYZ) and<br />
 body (xyz) frames aligned.</th>
-<th><img src="./media/image247.png"
+<th><img src="./images/image247.png"
 style="width:4.6875in;height:4.6875in" alt="start orientation" /></th>
 </tr>
 </thead>
@@ -24998,7 +24904,7 @@ style="width:4.6875in;height:4.6875in" alt="start orientation" /></th>
 <td>Device rotated through angle beta about new x axis,<br />
 with previous locations of y and z axes shown as y<sub>0</sub> and
 z<sub>0</sub>.</td>
-<td><img src="./media/image249.png"
+<td><img src="./images/image249.png"
 style="width:4.6875in;height:4.6875in"
 alt="rotation about x axis" /></td>
 </tr>
@@ -25016,7 +24922,7 @@ alt="rotation about x axis" /></td>
 <tr class="header">
 <th>Device in the initial position, with Earth (XYZ) and<br />
 body (xyz) frames aligned.</th>
-<th><img src="./media/image247.png"
+<th><img src="./images/image247.png"
 style="width:4.6875in;height:4.6875in" alt="start orientation" /></th>
 </tr>
 </thead>
@@ -25025,7 +24931,7 @@ style="width:4.6875in;height:4.6875in" alt="start orientation" /></th>
 <td>Device rotated through angle gamma about new y axis,<br />
 with previous locations of x and z axes shown as x<sub>0</sub> and
 z<sub>0</sub>.</td>
-<td><img src="./media/image250.png"
+<td><img src="./images/image250.png"
 style="width:4.6875in;height:4.6875in"
 alt="rotation about y axis" /></td>
 </tr>
@@ -25055,7 +24961,7 @@ The use of this API is very straightforward:
 (If using a mobile device,  [open the page in standalone
 mode](https://jsbin.com/limugat) (without the JsBin editor) )
 
-<img src="./media/image251.png" style="width:4in;height:1.03889in"
+<img src="./images/image251.png" style="width:4in;height:1.03889in"
 alt="orientation api 2" />
 
 The above screenshot came from an iPad laying immobile on a desk.
@@ -25068,9 +24974,9 @@ with Math.round() at display time (see code).
 
 If we change the orientation of the device here are the results:
 
-<img src="./media/image252.png" style="width:4in;height:2.99701in"
-alt="orientation api 3" /><img src="./media/image253.png" style="width:4in;height:3.00171in"
-alt="orientation api 1" /><img src="./media/image254.png" style="width:4in;height:3.00171in"
+<img src="./images/image252.png" style="width:4in;height:2.99701in"
+alt="orientation api 3" /><img src="./images/image253.png" style="width:4in;height:3.00171in"
+alt="orientation api 1" /><img src="./images/image254.png" style="width:4in;height:3.00171in"
 alt="orientation api 2" />
 
 Typical use / code from the above example:
@@ -25118,16 +25024,16 @@ Typical use / code from the above example:
 This is just a variation of the previous example, [try it at
 JsBin](https://jsbin.com/manobezoji/edit?html,js,output)
 
-<img src="./media/image255.png" style="width:4in;height:4.54188in"
+<img src="./images/image255.png" style="width:4in;height:4.54188in"
 alt="orientation api example 3" />
 
 Results on the iPad: the logo rotates when we change the iPad's
 orientation. This is a good "visual feedback" for an orientation
 controlled game...
 
-<img src="./media/image256.png" style="width:2.94792in;height:3.92708in"
-alt="logo 1" /><img src="./media/image257.png" style="width:2.96875in;height:3.95833in"
-alt="logo 2" /><img src="./media/image258.png" style="width:2.97917in;height:3.96875in"
+<img src="./images/image256.png" style="width:2.94792in;height:3.92708in"
+alt="logo 1" /><img src="./images/image257.png" style="width:2.96875in;height:3.95833in"
+alt="logo 2" /><img src="./images/image258.png" style="width:2.97917in;height:3.96875in"
 alt="logo 3" />
 
 This example is also
@@ -25188,14 +25094,14 @@ on [video](https://www.youtube.com/watch?v=OrNLhOAGSdE).
 
 This example works in Firefox, Chrome, and IOS Safari. Created by [Derek
 Anderson](https://twitter.com/derekanderson) @[Media
-Upstream](https://mediaupstream.com/). Original source code
-available [GitHub](https://github.com/mediaupstream/levelToolJS).
+Upstream](https://imagesupstream.com/). Original source code
+available [GitHub](https://github.com/imagesupstream/levelToolJS).
 
 [We adapted the source code so that you can tweak it in
 JsBin](https://jsbin.com/quboge/edit), or [test it in standalone
 mode](https://jsbin.com/quboge) (using a mobile device).
 
-<img src="./media/image259.png" style="width:5in;height:2.68109in"
+<img src="./images/image259.png" style="width:5in;height:2.68109in"
 alt="level tool using device orientation" />
 
 <h4>Other interesting uses: mix orientation API and WebSockets</h4>
@@ -25214,7 +25120,7 @@ desktop browser:
 
 Click on the image to see the YouTube video:
 
-<img src="./media/image260.png" style="width:3.33333in;height:1.86458in"
+<img src="./images/image260.png" style="width:3.33333in;height:1.86458in"
 alt="orientation API + websockets" />
 
 <h3 id="ch4-4-4">4.4.4 The Device Motion API</h3>
@@ -25303,7 +25209,7 @@ If a laptop is in its normal position with the screen facing up, the
 data returned would be (info taken from
 this [article](https://developers.google.com/web/fundamentals/native-hardware/device-orientation/)):
 
-<img src="./media/image261.png" style="width:6.5in;height:0.79653in"
+<img src="./images/image261.png" style="width:6.5in;height:0.79653in"
 alt="acceleration values 1" />
 
 A mobile phone rotated along the x-axis so the screen is perpendicular
@@ -25312,7 +25218,7 @@ to its normal position would return:
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------- 262. acceleration values 2 (xxx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<img src="./media/image262.png"
+<img src="./images/image262.png"
    alt="Acceleration values 2."
    width="65%" />
 </p>
@@ -25321,7 +25227,7 @@ Remember the coordinate system for a mobile phone:
 <!------------------------------------------------------------------------------------------------>
 <!------------------------- 263. telephone coordinates system (xxx) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
-<img src="./media/image263.png"
+<img src="./images/image263.png"
    alt="Telephone coordinates system."
    width="30%" />
 </p>
@@ -25414,7 +25320,7 @@ JsBin](https://jsbin.com/pasoboyucu/edit?html,js,output).
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 264. devicemotion api example (xxx) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
-<img src="./media/image264.jpeg"
+<img src="./images/image264.jpeg"
    alt="Devicemotion API example."
    width="30%" />
 </p>
@@ -25516,7 +25422,7 @@ it: <a href="https://jsbin.com/uyuqek/4/edit">https://jsbin.com/uyuqek/4/edit</
 <!------------------------------------------------------------------------------------------------>
 <!--------------------------------- 265. devicemotion api (487) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<img src="./media/image265.jpeg"
+<img src="./images/image265.jpeg"
    alt="Devicemotion API."
    width="35%" />
 </p>
@@ -25619,7 +25525,7 @@ mobile device, <a href="https://jsbin.com/eyahuv/2"use this URL instead</a>!
 <!------------------------------------------------------------------------------------------------>
 <!--------------------------------- 266. moving balls (489) -------------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<img src="./media/image266.png"
+<img src="./images/image266.png"
    alt="Moving Balls"
    width="35%" />
 </p>
