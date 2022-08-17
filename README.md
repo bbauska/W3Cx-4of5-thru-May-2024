@@ -1746,8 +1746,8 @@ This is all for this first video, I’ll see you in the next one!
 
 ### The Timed Text Track JavaScript API
 
-In the [W3Cx HTML5 Coding Essentials and Best
-Practices](https://www.edx.org/course/html5-coding-essentials-and-best-practices) course,
+In the <a href="https://www.edx.org/course/html5-coding-essentials-and-best-practices">W3Cx HTML5 Coding Essentials and Best
+Practices</a> course,
 we saw that <video> and <audio> elements can
 have <track> elements. A <track> can have a label,
 a kind (subtitles, captions, chapters, metadata, etc.), a language
@@ -3419,42 +3419,22 @@ element with an id of transcript.
 
 ```
 1.  ...
-
 2.  <video preload="metadata" controls >
-
-3.   
-      <source src="https://..../elephants-dream-medium.mp4" type="video/mp4">
-
-4.   
-      <source src="https://..../elephants-dream-medium.webm" type="video/webm">
-
+3.   <source src="https://..../elephants-dream-medium.mp4" type="video/mp4">
+4.   <source src="https://..../elephants-dream-medium.webm" type="video/webm">
 5.      <track label="English subtitles" kind="subtitles" srclang="en"
-
-6.           
-     src="https://..../elephants-dream-subtitles-en.vtt" default>
-
+6.           src="https://..../elephants-dream-subtitles-en.vtt" default>
 7.      <track label="Deutsch subtitles" kind="subtitles" srclang="de"
-
 8.             src="https://..../elephants-dream-subtitles-de.vtt">
-
 9.      <track label="English chapters" kind="chapters" srclang="en"
-
 10.            src="https://..../elephants-dream-chapters-en.vtt">
-
 11. </video>
-
 12.  ...
-
 13.    <h3>Video Transcript</h3>
-
 14.    <button onclick="loadTranscript('en');">English</button>
-
 15.    <button onclick="loadTranscript('de');">Deutsch</button>
-
 16.     </div>
-
 17.     <div id="transcript"></div>
-
 18. ...
 ```
 
@@ -3480,16 +3460,12 @@ element with an id of transcript.
 17.    reqTrans.onload = function(e) { 
 18. 
 19.        var pattern = /^([0-9]+)$/;
-20.      
-     var patternTimecode = /^([0-9]{2}:[0-9]{2}:[0-9]{2}[,.]{1}[0-9]{3})
-    --> ([0-9]
-21.                            
-     {2}:[0-9]{2}:[0-9]{2}[,.]{1}[0-9]{3})(.*)$/;
+20.      var patternTimecode = /^([0-9]{2}:[0-9]{2}:[0-9]{2}[,.]{1}[0-9]{3})    --> ([0-9]
+21.                             {2}:[0-9]{2}:[0-9]{2}[,.]{1}[0-9]{3})(.*)$/;
 22. 
 23.        var content = this.response; // content of the webVTT file
 24. 
-25.        var lines = content.split(/r?n/); // Get an array of text
-    lines
+25.        var lines = content.split(/r?n/); // Get an array of text lines
 26.        var transcript = '';
 27.        for (i = 0; i < lines.length; i++) {
 28.          var identifier = pattern.exec(lines[i]);
@@ -3536,11 +3512,9 @@ element with an id of transcript.
 69.  reqTrans.send(); // send the Ajax request
 70. }
 71.  
-72. function getVoices(speech) {  // takes a text content and check if
-    there are voices 
+72. function getVoices(speech) {  // takes a text content and check if there are voices 
 73.   var voices = [];            // inside
-74.   var pos = speech.indexOf('<v'); // voices are like <v Michel>
-    ....
+74.   var pos = speech.indexOf('<v'); // voices are like <v Michel> ....
 75. 
 76.   while (pos != -1) {
 77.     endVoice = speech.indexOf('>');
@@ -3593,326 +3567,170 @@ captions and descriptions.
 
 ### Extract from HTML code:
 
+```
 34. <html lang="en">
-
 35. ...
-
 36. <body onload="init();">
-
 37. ...
-
 38. <p>
-
 39. <video id="myVideo" preload="metadata"
-
 40. poster ="https://...../sintel.jpg"
-
 41. crossorigin="anonymous"
-
 42. controls="controls"
-
 43. width="640" height="272">
-
 44. 
-
 45. <source src="https://...../sintel.mp4"
-
 46. type="video/mp4" />
-
 47. <source src="https://...../sintel.webm"
-
 48. type="video/webm" />
-
 49. <track src="https://...../sintel-captions.vtt"
-
 50. kind="captions"
-
 51. label="English Captions"
-
 52. **default**/>
-
 53. <track src="https://...../sintel-descriptions.vtt"
-
 54. kind="descriptions"
-
 55. label="Audio Descriptions" />
-
 56. <track src="https://...../sintel-chapters.vtt"
-
 57. kind="chapters"
-
 58. label="Chapter Markers" />
-
 59. <track src="https://...../sintel-thumbs.vtt"
-
 60. kind="metadata"
-
 61. label="Preview Thumbs" />
-
 62. </video>
-
 63. </p>
-
 64. 
-
 65. <p>
-
 66. <div id="currentTrackStatuses"></div>
-
 67. <p>
-
 68. <p>
-
 69. <div id="subtitlesCaptions"></div>
-
 70. </p>
-
 71. 
-
 72. <p>
-
 73. <button onclick="clearSubtitlesCaptions();">
-
 74. Clear subtitles/captions log
-
 75. </button>
-
 76. </p>
-
 77. 
-
-78. <p>Click one of these buttons to toggle the mode of each
-    track:</p>
-
+78. <p>Click one of these buttons to toggle the mode of each track:</p>
 79. <button onclick="toggleTrack(0);">
-
 80. Toggle english caption track mode
-
 81. </button>
-
 82. <br>
-
 83. <button onclick="toggleTrack(1);">
-
 84. Toggle audio description track mode
-
 85. </button>
-
 86. <br>
-
 87. <button onclick="toggleTrack(2);">
-
 88. Toggle chapter track mode
-
 89. </button>
-
 90. <br>
-
 91. <button onclick="toggleTrack(3);">
-
 92. Toggle preview thumbnail track modes
-
 93. </button>
-
 94. 
-
 95. </body>
-
 96. </html>
+```
 
 ### JavaScript code:
 
+```
 97. var tracks, video, statusDiv, subtitlesCaptionsDiv;
-
 98.  
-
 99. function init() {
-
 100.    video = document.querySelector("#myVideo");
-
 101.    statusDiv = document.querySelector("#currentTrackStatuses");
-
-102.  
-      subtitlesCaptionsDiv = document.querySelector("#subtitlesCaptions");
-
+102.       subtitlesCaptionsDiv = document.querySelector("#subtitlesCaptions");
 103.    tracks = document.querySelectorAll("track");
-
 104. 
-
 105.    video.addEventListener('loadedmetadata', function() {
-
 106.       console.log("metadata loaded");
-
 107. 
-
 108.       // defines cue listeners for the active track; we can do this
      only after the video metadata have been loaded
-
 109.       for(var i=0; i<tracks.length; i++) {
-
 110.          var t = tracks[i].track;
-
 111.          if(t.mode === "showing") {
-
 112.             t.addEventListener('cuechange', logCue, false);
-
 113.          }
-
 114.        }
-
-115.        // display in a div the list of tracks and their status/mode
-     value
-
+115.        // display in a div the list of tracks and their status/mode value
 116.        displayTrackStatus();  
-
 117.     });
-
 118. }
-
 119.  
-
 120. function displayTrackStatus() {
-
 121.     // display the status / mode value of each track.
-
 122.     // In red if disabled, in green if showing
-
 123.     for(var i=0; i<tracks.length; i++) {
-
 124.        var t = tracks[i].track;
-
 125.        var mode = t.mode;
-
 126. 
-
 127.        if(mode === "disabled") {
-
-128.           mode = "<span
-     style='color:red'>" + t.mode + "</span>";
-
+128.           mode = "<span style='color:red'>" + t.mode + "</span>";
 129.        } else if(mode === "showing") {
-
-130.           mode = "<span
-     style='color:green'>" + t.mode + "</span>";
-
+130.           mode = "<span style='color:green'>" + t.mode + "</span>";
 131.        }
-
-132.        appendToScrollableDiv(statusDiv, "track " + i + ":
-     " + t.label
-
+132.        appendToScrollableDiv(statusDiv, "track " + i + ":" + t.label
 133.                                         + " " + t.kind+" in "
-
 134.                                         + mode + " mode");
-
 135.     }
-
 136. }
-
 137. function appendToScrollableDiv(div, text) {
-
 138.    // we've got two scrollable divs. This function
-
 139.    // appends text to the div passed as a parameter
-
 140.    // The div is scrollable (thanks to CSS overflow:auto)
-
 141.    var inner = div.innerHTML;
-
 142.    div.innerHTML = inner + text + "<br/>";
-
 143.    // Make it display the last line appended
-
 144.    div.scrollTop = div.scrollHeight;
-
 145. }
-
 146.  
-
 147. function clearDiv(div) {
-
 148.    div.innerHTML = '';
-
 149. }
-
 150.  
-
 151. function clearSubtitlesCaptions() {
-
 152.    clearDiv(subtitlesCaptionsDiv);
-
 153. }
-
 154. 
-
 155. function toggleTrack(i) {
-
 156.    // toggles the mode of track i, removes the cue listener
-
 157.    // if its mode becomes "disabled"
-
 158.    // adds a cue listener if its mode was "disabled"
-
 159.    // and becomes "hidden"
-
 160.    var t = tracks[i].track;
-
 161.    switch (t.mode) {
-
 162.       case "disabled":
-
 163.          t.addEventListener('cuechange', logCue, false);
-
 164.          t.mode = "hidden";
-
 165.          break;
-
 166.       case "hidden":
-
 167.          t.mode = "showing";
-
 168.          break;
-
 169.       case "showing":
-
 170.          t.removeEventListener('cuechange', logCue, false);
-
 171.          t.mode = "disabled";
-
 172.          break;
-
 173.     }
-
 174.     // updates the status
-
 175.     clearDiv(statusDiv);
-
 176.     displayTrackStatus();
-
-177.     appendToScrollableDiv(statusDiv,"<br>" + t.label+" are now
-     " +t.mode);
-
+177.     appendToScrollableDiv(statusDiv,"<br>" + t.label+" are now " +t.mode);
 178. }
-
 179.  
-
 180. function logCue() {
-
 181.    // callback for the cue event
-
 182.    if(this.activeCues && this.activeCues.length) {
-
 183.       var t = this.activeCues[0].text; // text of current cue
-
 184.       appendToScrollableDiv(subtitlesCaptionsDiv, "Active "
-
-185.                                           + this.kind + " changed
-     to: " + t);
-
+185.                                           + this.kind + " changed to: " + t);
 186.    }
-
 187. }
+```
 
-1.3.3 With Buttons for Choosing the Subtitle Language
+<h3 id="ch1-3-3">1.3.3 With Buttons for Choosing the Subtitle Language</h3>
 
 Example #3: adding buttons for choosing the subtitle/caption track
 
@@ -3932,7 +3750,7 @@ you choose which track you prefer. 
 <img src="./images/image037.jpeg" style="width:6.17708in;height:5.73958in"
 alt="Buttons for choosing the track/language under a standard video player" />
 
-### HTML code:
+<h4>HTML code:</h4>
 
 ```
 1.  ...
@@ -3963,7 +3781,7 @@ alt="Buttons for choosing the track/language under a standard video player" />
 26. ...
 ```
 
-### JavaScript code:
+<h4> JavaScript code:
 
 ```
 1.  var langButtonDiv, currentLangSpan, video;
@@ -4040,7 +3858,7 @@ alt="Buttons for choosing the track/language under a standard video player" />
 68. 
 ```
 
-### External resources
+<h4> External resources
 
 -   If you are interested in building a complete custom video player,
     MDN offers an online tutorial with further information
@@ -4281,7 +4099,7 @@ video](https://jsbin.com/jiyodit/edit?html,css,js,output).
 <img src="./images/image038.jpeg" style="width:5in;height:2.28152in"
 alt="SImple chapter menu in plain text" />
 
-### This example used only standard plain text content for the cues:
+<h4> This example used only standard plain text content for the cues:
 
 ```
 1.  WEBVTT
@@ -4387,7 +4205,7 @@ the sake of simplicity, we also removed the buttons and all the code for
 displaying a clickable transcript of the subtitles/captions on the right
 of the video.
 
-### JavaScript code:
+<h4> JavaScript code:
 
 1.  var video, chapterMenuDiv;
 
@@ -4572,7 +4390,7 @@ of the video.
 
 88.  
 
-### **Explanations:**
+<h4> **Explanations:**
 
 -   *Lines  4-18*: when the page is loaded, we assemble all of the track
     HTML elements and their corresponding TextTrack objects.
@@ -4615,7 +4433,7 @@ location (the example above is for the first chapter with start time =
 We also added CSS classes "img", "thumb" and "desc", which make it easy
 to style and position the thumbnails using CSS.
 
-### CSS source code extract:
+<h4> CSS source code extract:
 
 1.  #chapterMenuSection {
 
@@ -4686,7 +4504,7 @@ mouse over the thumbnail to see its animated shadow):
 
 <img src="./images/image040.jpeg" style="width:4in;height:1.8818in" />
 
-### Introduction
+<h4> Introduction
 
 Combining techniques: a clickable transcript and a chapter menu
 
@@ -4701,7 +4519,7 @@ code from earlier in this lesson.
 <img src="./images/image048.jpeg" style="width:5in;height:6.18857in"
 alt="Chapter menu + clickable transcript" />
 
-### 1.4.1 Creating Tracks on the Fly
+<h3 id="ch1-4-1">1.4.1 Creating Tracks on the Fly</h3>
 
 In this lesson, we are going to show:
 
@@ -4729,12 +4547,12 @@ from an original demo by Sam Dutton, uses [a single mp3 file that
 contains recorded animal
 sounds](https://mainline.i3s.unice.fr/mooc/animalSounds.mp3).
 
-### Below is the sound file. You can try to play it:
+<h4> Below is the sound file. You can try to play it:
 
 <img src="./images/image049.jpeg" style="width:5in;height:4.91453in"
 alt="Click a button to play an animal sound" />
 
-### **Explanations:**
+<h4> **Explanations:**
 
 The demo uses a JavaScript array for defining the different animal
 sounds in this audio file:
@@ -4832,7 +4650,7 @@ in some browsers), it's easy to use this small polyfill:
 
 14.  }
 
-### Techniques
+<h4> Techniques
 
 To add a TextTrack to a track element, use
 the [addTextTrack method](https://www.w3.org/TR/html5/embedded-content-0.html#text-track-api) (of the
@@ -4856,7 +4674,7 @@ addCue method, eg track.addCue(cue). The argument is a *cue instance* -
 as above. Note that the track **must** be a *TextTrack* object because
 addCue does **not** work with *HTMLTrackElement* Objects.
 
-### HTML source code extract:
+<h4> HTML source code extract:
 
 1.  ...
 
@@ -5075,76 +4893,57 @@ messages.
 <img src="./images/image050.jpeg" style="width:5in;height:4.46635in"
 alt="Video synced with google map and google street map" />
 
-##### Example of a cue content from this demonstration:
+<h4>Example of a cue content from this demonstration:</h4>
 
+```
 1.  {"lat":37.4219276, "lng":-122.088218, "t":1331363000}
+```
 
-### Cue events and cue content:
+<h4> Cue events and cue content:
 
 We can acquire a cue DOM object using the techniques we have seen
 previously, or by using the new HTML5 TextTrack getCueById() method. 
 
+```
 1.  var videoElement = document.querySelector("#myvideo");
-
-2.  var textTracks = videoElement.textTracks; // one for each track
-    element
-
-3.  var textTrack = textTracks[0]; // corresponds to the first track
-    element
-
+2.  var textTracks = videoElement.textTracks; // one for each track element
+3.  var textTrack = textTracks[0]; // corresponds to the first track element
 4.  
-
 5.  **// Get a cue with ID="wikipedia"**
-
 6.  **var cue = textTrack.getCueById("Wikipedia"); **
+```
 
-##### And once we have a cue object, it is possible to add event listeners to it:
+<h4>And once we have a cue object, it is possible to add event listeners to it:</h4>
 
+```
 1.  cue.onenter = function(){
-
 2.     // display something, play a sound, update any DOM element...
-
 3.  };
-
 4.  
-
 5.  cue.onexit = function(){
-
 6.     // do something else
-
 7.  };
+```
 
 If the getCueById method is not implemented (this is the case in some
 browsers), we use the @@polyfill presented in the previous section:
 
+```
 1.   // for browsers that do not implement the getCueById() method
-
 2.  
-
-3.   // let's assume we're adding the getCueById function to a TextTrack
-    object
-
+3.   // let's assume we're adding the getCueById function to a TextTrack object
 4.   //named "track"
-
 5.  if (typeof track.getCueById !== "function") {
-
 6.     track.getCueById = function(id) {
-
 7.       var cues = track.cues;
-
 8.       for (var i = 0; i != track.cues.length; ++i) {
-
 9.         if (cues[i].id === id) {
-
 10.          return cues[i];
-
 11.        }
-
 12.      }
-
 13.   };
-
 14.  }
+```
 
 ##### Example that displays a wikipedia page and a google map while a video is playing
 
@@ -5156,204 +4955,107 @@ alt="video synced with an iframe that shows external URLs and with a google map"
 
 ### HTML code extract:
 
+```
 1.  <!DOCTYPE html>
-
 2.  <html lang="en">
-
 3.  <head>
-
 4.  <meta charset="utf-8">
-
-5.  <title>Example syncing element of the document with video metadata
-    in webVTT file</title>
-
+5.  <title>Example syncing element of the document with video metadata in webVTT file</title>
 6.  </head>
-
 7.  <body >
-
 8.  <main>
-
 9.  <video id="myVideo" controls crossorigin="anonymous" >
-
-10.  
-     <source src="https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.mp4"
-
+10.       <source src="https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.mp4"
 11.            type="video/mp4">
-
 12.    ...
-
 13.    </source>
-
 14. <track label="urls track"
-
 15.         src="https://...../SamuraiPizzaCat-metadata.vtt"
-
 16.         kind="metadata" >
-
 17.  </track>
-
 18. </video>
-
 19.    ** <div id="map"></div>**
-
 20. </main>
-
 21.  
-
 22. <aside>
-
-23.  
-      **<iframe sandbox="allow-same-origin" id="myIframe" > </iframe>**
-
+23.        **<iframe sandbox="allow-same-origin" id="myIframe" > </iframe>**
 24. </aside>
-
-25. <h3>Wikipedia URL: <span id="currentURL"> Non
-    défini </span></h3>
-
+25. <h3>Wikipedia URL: <span id="currentURL"> Non défini </span></h3>
 26.  
-
 27. <script src="https://maps.google.com/maps/api/js?sensor=false"></script>
-
 28. ...
+```
 
 ### JavaScript code:
 
+```
 1.  window.onload = function() {
-
 2.      var videoElement = document.querySelector("#myVideo");
-
 3.      var myIFrame = document.querySelector("#myIframe");
-
 4.      var currentURLSpan = document.querySelector("#currentURL");
-
 5.  
-
-6.      var textTracks = videoElement.textTracks; // one for each track
-    element
-
-7.      var textTrack = textTracks[0]; // corresponds to the first
-    track element
-
+6.      var textTracks = videoElement.textTracks; // one for each track element
+7.      var textTrack = textTracks[0]; // corresponds to the first track element
 8.     
-
 9.      // change mode so we can use the track
-
 10.     textTrack.mode = "hidden";
-
 11.     // Default position on the google map
-
 12.     var centerpos = new google.maps.LatLng(48.579400,7.7519);
-
 13.  
-
 14.     // default options for the google map
-
 15.     var optionsGmaps = {
-
 16.        center:centerpos,
-
 17.        navigationControlOptions: {style:
-
 18.                  google.maps.NavigationControlStyle.SMALL},
-
 19.        mapTypeId: google.maps.MapTypeId.ROADMAP,
-
 20.        zoom: 15
-
 21.     };
-
 22.  
-
 23.     // Init map object
-
 24.     var map = new google.maps.Map(document.getElementById("map"),
-
 25.                                   optionsGmaps);
-
 26.  
-
-27.     // cue change listener, this is where the synchronization
-    between
-
+27.     // cue change listener, this is where the synchronization between
 28.     // the HTML document and the video is done
-
 29.     textTrack.oncuechange = function (){
-
 30.        // we assume that we have no overlapping cues
-
 31.        var cue = this.activeCues[0];
-
 32.        if(cue === undefined) return;
-
 33. 
-
 34.        // get cue content as a JavaScript object
-
 35.        var cueContentJSON = JSON.parse(cue.text);
-
 36. 
-
-37.        // do different things depending on the type of sync
-    (wikipedia, gmap)
-
+37.        // do different things depending on the type of sync (wikipedia, gmap)
 38.        switch(cueContentJSON.type) {
-
 39.          case'WikipediaPage':
-
 40.             var myURL = cueContentJSON.url;
-
-41.             var myLink = "<a
-    href="" + myURL + "">" + myURL + "</a>";
-
+41.             var myLink = "<a href="" + myURL + "">" + myURL + "</a>";
 42.             currentURLSpan.innerHTML = myLink;
-
 43. 
-
 44.             myIFrame.src = myURL; // assign url to src property
-
 45.             break;
-
 46.          case 'LongLat':
-
 47.             drawPosition(cueContentJSON.long, cueContentJSON.lat);
-
 48.             break;
-
 49.        }
-
 50.    };
-
 51.  
-
 52.    function drawPosition(long, lat) {
-
 53.       // Make new object LatLng for Google Maps
-
 54.       var latlng = new google.maps.LatLng(lat, long);
-
 55.  
-
 56.       // Add a marker at position
-
 57.       var marker = new google.maps.Marker({
-
 58.           position: latlng,
-
 59.           map: map,
-
 60.           title:"You are here"
-
 61.       });
-
 62. 
-
 63.       // center map on longitude and latitude
-
 64.       map.panTo(latlng);
-
 65.    }
-
 66. };
+```
 
 All the critical work is done by the cuechange event listener, *lines
 27-50*. We have only the one track, so we set its mode to "hidden"
@@ -16922,206 +16624,107 @@ CodePen](https://codepen.io/w3devcampus/pen/ojNLEL):
 Complete source code (for clarity's sake, we put the CSS and JavaScript
 into a single HTML page):
 
+```
 1.  <!DOCTYPE html>
-
 2.  <html>
-
 3.  <head>
-
 4.     <style>
-
 5.       div {
-
 6.          height: 150px;
-
 7.          width: 150px;
-
 8.          float: left;
-
 9.          border: 2px solid #666666;
-
 10.         background-color: #ccc;
-
 11.         margin-right: 5px;
-
 12.         border-radius: 10px;
-
 13.         box-shadow: inset 0 0 3px #000;
-
 14.         text-align: center;
-
 15.         cursor: move;
-
 16.      }
-
 17. 
-
 18.      .dragged {
-
 19.         border: 2px dashed #000;
-
 20.         background-color: green;
-
 21.      }
-
 22. 
-
 23.      .draggedOver {
-
 24.         border: 2px dashed #000;
-
 25.         background-color: green;
-
 26.      }
-
 27. </style>
-
 28. <script>
-
 29.      function dragStartHandler(event) {
-
 30.         // Change css class for visual feedback
-
 31.         event.target.style.opacity = '0.4';
-
 32.         event.target.classList.add('dragged');
-
 33. 
-
-34.         console.log('dragstart event, target:
-    ' + event.target.innerHTML);
-
-35.         // Copy in the drag'n'drop clipboard the value of the data*
-    attribute of the target,
-
+34.         console.log('dragstart event, target: ' + event.target.innerHTML);
+35.         // Copy in the drag'n'drop clipboard the value of the data* attribute of the target,
 36.         // with a type "Fruits".
-
-37.        
-    event.dataTransfer.setData("Fruit", event.target.dataset.value);
-
+37.            event.dataTransfer.setData("Fruit", event.target.dataset.value);
 38.      }
-
 39. 
-
 40.      function dragEndHandler(event) {
-
 41.         console.log("drag end");
-
 42.         event.target.style.opacity = '1';
-
 43.         event.target.classList.remove('dragged');
-
 44.      }
-
 45. 
-
 46.      function dragLeaveHandler(event) {
-
 47.         console.log("drag leave");
-
 48.         event.target.classList.remove('draggedOver');
-
 49.      }
-
 50. 
-
 51.      function dragEnterHandler(event) {
-
 52.         console.log("Drag enter");
-
 53.         event.target.classList.add('draggedOver');
-
 54.      }
-
 55. 
-
 56.      function dragOverHandler(event) {
-
 57.         //console.log("Drag over a droppable zone");
-
 58.         event.preventDefault(); // Necessary. Allows us to drop.
-
 59.      }
-
 60. 
-
 61.      function dropHandler(event) {
-
 62.         console.log('drop event, target: ' + event.target);
-
 63.         // reset the visual look of the drop zone to default
-
 64.         event.target.classList.remove('draggedOver');
-
 65. 
-
 66.         var li = document.createElement('li');
-
-67.         // get the data from the drag'n'drop clipboard, with a
-    type="Fruit"
-
+67.         // get the data from the drag'n'drop clipboard, with a type="Fruit"
 68.         var data = event.dataTransfer.getData("Fruit");
-
 69. 
-
 70.         if (data == 'fruit-apple') {
-
 71.             li.textContent = 'Apples';
-
 72.         } else if (data == 'fruit-orange') {
-
 73.             li.textContent = 'Oranges';
-
 74.         } else if (data == 'fruit-pear') {
-
 75.             li.textContent = 'Pears';
-
 76.         } else {
-
 77.             li.textContent = 'Unknown Fruit';
-
 78.      }
-
 79.      // add the dropped data as a child of the list.
-
 80.      document.querySelector("#droppedFruits").appendChild(li);
-
 81.    }
-
 82.   </script>
-
 83. </head>
-
 84. <body>
-
 85. <p>What fruits do you like? Try to drag an element!</p>
-
 86. <ol ondragstart="dragStartHandler(event)" ondragend="dragEndHandler(event)" >
-
 87.     <li draggable="true" data-value="fruit-apple">Apples</li>
-
 88.     <li draggable="true" data-value="fruit-orange">Oranges</li>
-
 89.     <li draggable="true" data-value="fruit-pear">Pears</li>
-
 90. </ol>
-
 91. <div id="droppableZone" ondragenter="dragEnterHandler(event)" ondrop="dropHandler(event)"
-
-92.    
-      ondragover="dragOverHandler(event)" ondragleave="dragLeaveHandler(event)">
-
+92.          ondragover="dragOverHandler(event)" ondragleave="dragLeaveHandler(event)">
 93.       Drop your favorite fruits below:
-
 94.       <ol id="droppedFruits"></ol>
-
 95.  </div>
-
 96. <body>
-
 97. <html>
+```
 
-## 3.3.6 The dropEffect property
+<h3 id="ch3-3-6">3.3.6 The dropEffect property</h3>
 
 ### More feedback using the dropEffect property: changing the cursor's shape
 
@@ -17159,56 +16762,42 @@ in the dragEnter or dragOver handler.
 
 Here is an extract of the code we can add to the example we saw earlier:
 
+```
 1.  function dragStartHandler(event) {
-
 2.      **// Allow a "copy" cursor effect**
-
 3.      **event.dataTransfer.effectAllowed = 'copy';**
-
 4.      ...
-
 5.  }
+```
 
 And here is where we can set the cursor to a permitted value:
 
+```
 1.  function dragEnterHandler(event) {
-
 2.     **// change the cursor shape to a "+"**
-
 3.     **event.dataTransfer.dropEffect = 'copy';**
-
 4.     ...
-
 5.  }
+```
 
 To set a custom image, we also do the following in
 the dragstart handler:
 
+```
 1.  function dragStartHandler(event) {
-
 2.     // allowed cursor effects
-
 3.     event.dataTransfer.effectAllowed = 'copy';
-
 4.  
-
 5.     **// Load and create an image**
-
 6.     var dragIcon = document.createElement('img');
-
 7.     dragIcon.src = 'anImage.png';
-
 8.     dragIcon.width = 100;
-
 9.  
-
 10.    **// set the cursor to this image, with an offset in X, Y**
-
 11.    **event.dataTransfer.setDragImage(dragIcon, -10, -10);**
-
 12.    ...
-
 13. }
+```
 
 ### Complete online example
 
@@ -17375,7 +16964,7 @@ clipboard), and *line 19* (make it a child of the div. Consequently, it
 is no longer a child of the <body>, and indeed we have "moved"
 one <img> from its initial position to another location in the page).
 
-## 3.3.8 Drag and drop a text selection
+<ch id="ch3-3-8">3.3.8 Drag and drop a text selection</h3>
 
 <img src="./images/image183.png" style="width:5in;height:1.75374in" />
 
@@ -17385,13 +16974,12 @@ clipboard with a name/key equal to "text/plain". Just add a drop event
 handler on the drop zone and fetch the data from the clipboard using
 "text/plain" as the access key:
 
+```
 1.  function drop(target, event) {
-
 2.     event.preventDefault();
-
 3.     target.innerHTML = event.dataTransfer.getData(**'text/plain'**);
-
 4.  };
+```
 
 #### Example: select some text and drag and drop the selection in the drop zone
 
