@@ -8501,63 +8501,38 @@ JSBin](https://jsbin.com/noqibu/edit)):
 <img src="./images/image099.jpeg" style="width:4in;height:1.87097in"
 alt="screenshot of the example that displays 60 frames/s" />
 
-Source code extract:
+<h4>Source code extract:</h4>
 
+```
 1.     // vars for counting frames/s, used by the measureFPS function
-
 2.  var frameCount = 0;
-
 3.  var lastTime;
-
 4.  var fpsContainer;
-
 5.  var fps;
-
 6.  
-
 7.  var measureFPS = function(newTime){
-
 8.  
-
 9.     // test for the very first invocation
-
 10.    if(lastTime === undefined) {
-
 11.      lastTime = newTime;
-
 12.      return;
-
 13.    }
-
 14. 
-
 15.    // calculate the delta between last & current frame
-
 16.    var diffTime = newTime - lastTime;
-
 17. 
-
 18.    if (diffTime >= 1000) {
-
 19.      fps = frameCount;
-
 20.      frameCount = 0;
-
 21.      lastTime = newTime;
-
 22.    }
-
 23. 
-
 24.    // and display it in an element we appended to the
-
 25.    // document in the start() function
-
 26.    fpsContainer.innerHTML = 'FPS: ' + fps;
-
 27.    frameCount++;
-
 28. };
+```
 
 Now we can call the measureFPS function from inside the animation loop,
 passing it the current time, given by the high resolution timer that
@@ -8607,17 +8582,14 @@ even more than 60fps (this is the limit using requestAnimationFrame).
 My favorite hack uses the onerror callback on an <img> element like
 this:
 
+```
 1.  function mainloop(){
-
 2.    var img = new Image;
-
 3.  
-
 4.    img.onerror = mainloop;
-
 5.    img.src = 'data:image/png,' + Math.random();
-
 6.  }
+```
 
 What we are doing here, is creating a new image on each frame and
 providing invalid data as a source of the image. The image cannot be
@@ -8632,26 +8604,18 @@ alt="Screenshot of example with 4441 FPS displayed" />
 
 ##### Source code extract of this example:
 
+```
 1.  var mainLoop = function(){
-
 2.    // main function, called each frame
-
 3.  
-
 4.    measureFPS(+(new Date()));
-
 5.  
-
-6.    // call the animation loop every LOTS of seconds using previous
-    hack method
-
+6.    // call the animation loop every LOTS of seconds using previous hack method
 7.    var img = new Image();
-
 8.    img.onerror = mainLoop;
-
 9.    img.src = 'data:image/png,' + Math.random();
-
 10. };
+```
 
 ## 2.3.2 Introducing graphics
 
@@ -8680,25 +8644,18 @@ alt="Small monster drawn in a canvas" />
 
 ##### HTML code (declaration of the canvas):
 
+```
 1.  <!DOCTYPE html>
-
 2.  <html lang="en">
-
 3.  <head>
-
 4.     <meta charset="utf-8">
-
 5.     <title>Draw a monster in a canvas</title>
-
 6.  </head>
-
 7.  <body>
-
 8.     **<canvas id="myCanvas" width="200" height="200"></canvas>**
-
 9.  </body>
-
 10. </html>
+```
 
 The canvas declaration is at* line 8*. Use attributes to give
 it a width and a height, but unless you add some CSS properties, you
@@ -8707,11 +8664,11 @@ will not see it on the screen because it's transparent!
 Let's use CSS to reveal the canvas, for example, add a 1px black border
 around it:
 
+```
 1.  canvas {
-
 2.     border: 1px solid black;
-
 3.  }
+```
 
 And here is a reminder of best practices when using the canvas, as
 described in the HTML5 Part 1 course:
@@ -8735,107 +8692,59 @@ described in the HTML5 Part 1 course:
 
 Here is JavaScript code which implements those best practices:
 
+```
 1.  // useful to have them as global variables
-
 2.  var canvas, ctx, w, h;
-
 3.   
-
 4.   
-
 5.  window.onload = function init() {
-
 6.    // Called AFTER the page has been loaded
-
 7.    canvas = document.querySelector("#myCanvas");
-
 8.  
-
 9.    // Often useful
-
 10.   w = canvas.width;
-
 11.   h = canvas.height;
-
 12. 
-
 13.   // Important, we will draw with this object
-
 14.   ctx = canvas.getContext('2d');
-
 15. 
-
 16.   // Ready to go!
-
 17.   // Try to change the parameter values to move
-
 18.   // the monster
-
 19.   drawMyMonster(10, 10);
-
 20. };
-
 21.  
-
 22. function drawMyMonster(x, y) {
-
 23.   // Draw a big monster!
-
 24.   // Head
-
 25. 
-
 26.   // BEST practice: save the context, use 2D transformations
-
 27.   ctx.save();
-
 28. 
-
 29.   // Translate the coordinate system, draw relative to it
-
 30.   ctx.translate(x, y);
-
 31. 
-
 32.   // (0, 0) is the top left corner of the monster.
-
 33.   ctx.strokeRect(0, 0, 100, 100);
-
 34. 
-
 35.   // Eyes
-
 36.   ctx.fillRect(20, 20, 10, 10);
-
 37.   ctx.fillRect(65, 20, 10, 10);
-
 38. 
-
 39.   // Nose
-
 40.   ctx.strokeRect(45, 40, 10, 40);
-
 41. 
-
 42.   // Mouth
-
 43.   ctx.strokeRect(35, 84, 30, 10);
-
 44. 
-
 45.   // Teeth
-
 46.   ctx.fillRect(38, 84, 10, 10);
-
 47.   ctx.fillRect(52, 84, 10, 10);
-
 48. 
-
 49.   // BEST practice: restore the context
-
 50.   ctx.restore();
-
 51. }
+```
 
 In this small example, we used the context object to draw a monster
 using the default color (black) and wireframe and filled modes:
@@ -8892,160 +8801,90 @@ JSBin](https://jsbin.com/xuruja/edit). 
 <img src="./images/image102.jpeg" style="width:2in;height:1.96516in"
 alt="Screenshot of a trembling monster in a 60 f/s animation" />
 
-##### HTML code:
+<h4>HTML code:</h4>
 
+```
 1.  <!DOCTYPE html>
-
 2.  <html lang="en">
-
 3.  <head>
-
 4.  <meta charset="utf-8">
-
 5.  <title>Trembling monster in the Game Framework</title>
-
 6.  </head>
-
 7.  <body>
-
 8.  **<canvas id="myCanvas" width="200" height="200"></canvas>**
-
 9.  </body>
-
 10. </html>
+```
 
 ##### JavaScript complete code:
 
+```
 1.  // Inits
-
 2.  window.onload = function init() {
-
 3.    var game = new GF();
-
 4.    game.start();
-
 5.  };
-
 6.   
-
 7.   
-
 8.  // GAME FRAMEWORK STARTS HERE
-
 9.  var GF = function(){
-
 10.   **// Vars relative to the canvas**
-
 11.   **var canvas, ctx, w, h;**
-
 12.  
-
 13.   ...
-
 14. 
-
 15.   var measureFPS = function(newTime){
-
 16. 
-
 17.     ...
-
 18. };
-
 19. 
-
 20. // Clears the canvas content
-
 21. function clearCanvas() {
-
 22.    ctx.clearRect(0, 0, w, h);
-
 23. }
-
 24. 
-
 25. // Functions for drawing the monster and perhaps other objects
-
 26. function drawMyMonster(x, y) {
-
 27.    ...
-
 28. }
-
 29. 
-
 30. var mainLoop = function(time){
-
 31.     // Main function, called each frame
-
 32.     measureFPS(time);
-
 33. 
-
 34.    ** // Clear the canvas**
-
 35.     **clearCanvas();**
-
 36. 
-
 37.     **// Draw the monster**
-
 38.     **drawMyMonster(10+Math.random()*10, 10+Math.random()*10);**
-
 39. 
-
 40.     // Call the animation loop every 1/60th of second
-
 41.     requestAnimationFrame(mainLoop);
-
 42. };
-
 43.  
-
 44. var start = function(){
-
 45.     ...
-
 46. 
-
 47.     **// Canvas, context etc.**
-
 48.     **canvas = document.querySelector("#myCanvas");**
-
 49. 
-
 50.     **// often useful**
-
 51. **    w = canvas.width;**
-
 52. **    h = canvas.height;**
-
 53. 
-
 54. **    // important, we will draw with this object**
-
 55. **    ctx = canvas.getContext('2d');**
-
 56.  
-
 57.     // Start the animation
-
 58.     requestAnimationFrame(mainLoop);
-
 59. };
-
 60.  
-
-61. //our GameFramework returns a public API visible from outside its
-    scope
-
+61. //our GameFramework returns a public API visible from outside its scope
 62. return {
-
 63.    start: start
-
 64. };
-
 65. };
+```
 
 ##### **Explanations**:
 
@@ -9094,8 +8933,10 @@ attach an event inline in your HTML code like this:
 
 ##### Method #1: declare an event handler in the HTML code
 
+```
 1.  <div id="someDiv" **onclick**="alert('clicked!')"> content of the
     div </div>
+```
 
 This method is very easy to use, but it is not the recommended way to
 handle events. Indeed, It works today but is *deprecated* (will probably
@@ -9105,11 +8946,11 @@ host of problems during development.
 
 ##### Method #2: attach an event handler to an HTML element in JavaScript
 
+```
 1.  document.getElementById('someDiv').**onclick **= function() {
-
 2.     alert('clicked!');
-
 3.  }
+```
 
 This method is fine, but  you will not be able to attach
 multiple *listener* functions. If you need to do this, use the version
@@ -9117,11 +8958,11 @@ shown below.
 
 ##### Method #3: register a callback to the event listener with the addEventListener method (preferred  method)
 
+```
 1.  document.getElementById('someDiv').**addEventListener**('click', function() {
-
 2.     alert('clicked!');
-
 3.  }, false);
+```
 
 Note that the third parameter describes whether the *callback* has to be
 called during the captured phase. This is not important for now, just
@@ -9133,11 +8974,11 @@ When you create an *event listener* and attach it to an element, the
 listener will create an *event object* to describe what happened. This
 object is provided as a parameter of the callback function:
 
+```
 1.  element.addEventListener('click', function(**event**) {
-
 2.     **// now you can use event object inside the callback**
-
 3.  }, false);
+```
 
 Depending on the type of event you are listening to, you will consult
 different properties from the event object in order to obtain useful
@@ -9180,15 +9021,13 @@ After a keyboard-related event (eg keydown or keyup), the code of the
 key that fired the event will be passed to the listener function. It is
 possible to test which key has been pressed or released, like this:
 
+```
 1.  window.addEventListener('keydown', function(event) {
-
 2.     if (event.keyCode === 37) {
-
 3.       // Left arrow was pressed
-
 4.     }
-
 5.  }, false);
+```
 
 At *line 2, *the key code of *37* corresponds to the left arrow key.
 
@@ -9259,219 +9098,115 @@ alt="trembling monster with multiple key press management." />
 
 ##### And here is the complete source code:
 
+```
 1.  // Inits
-
 2.  window.onload = function init() {
-
 3.    var game = new GF();
-
 4.    game.start();
-
 5.  };
-
 6.  
-
 7.  
-
 8.  // GAME FRAMEWORK STARTS HERE
-
 9.  var GF = function(){
-
 10.    ... 
-
 11. 
-
 12.    **// vars for handling inputs**
-
 13. **   var inputStates = {};**
-
 14. 
-
 15.    var measureFPS = function(newTime){
-
 16.       ...
-
 17.    };
-
 18. 
-
 19.    // Clears the canvas content
-
 20.    function clearCanvas() {
-
 21.      ctx.clearRect(0, 0, w, h);
-
 22.    }
-
 23. 
-
 24.    // Functions for drawing the monster and perhaps other objects
-
 25.    function drawMyMonster(x, y) {
-
 26.       ...
-
 27.    }
-
 28. 
-
 29.    var mainLoop = function(time){
-
 30.      // Main function, called each frame
-
 31.      measureFPS(time);
-
 32. 
-
 33.      // Clears the canvas
-
 34.      clearCanvas();
-
 35. 
-
 36.      // Draws the monster
-
 37.      drawMyMonster(10+Math.random()*10, 10+Math.random()*10);
-
 38.  
-
 39.  **   // check inputStates**
-
 40. **    if (inputStates.left) {**
-
 41. **      ctx.fillText("left", 150, 20);**
-
 42. **    }**
-
 43. **    if (inputStates.up) {**
-
 44. **      ctx.fillText("up", 150, 50);**
-
 45. **    }**
-
 46. **   if (inputStates.right) {**
-
 47. **      ctx.fillText("right", 150, 80);**
-
 48. **   }**
-
 49. **   if (inputStates.down) {**
-
 50. **     ctx.fillText("down", 150, 120);**
-
 51. **   }**
-
 52. **   if (inputStates.space) {**
-
 53. **     ctx.fillText("space bar", 140, 150);**
-
 54. **   }**
-
 55. 
-
 56.    // Calls the animation loop every 1/60th of second
-
 57.    requestAnimationFrame(mainLoop);
-
 58. };
-
 59. 
-
 60. var start = function(){
-
 61.     ...
-
 62.     // Important, we will draw with this object
-
 63.     ctx = canvas.getContext('2d');
-
 64.     // Default police for text
-
 65.     ctx.font="20px Arial";
-
 66. 
-
 67. **    // Add the listener to the main, window object, and update the
     states**
-
 68. **    window.addEventListener('keydown', function(event){**
-
 69. **      if (event.keyCode === 37) {**
-
 70. **        inputStates.left = true;**
-
 71. **      } else if (event.keyCode === 38) {**
-
 72. **        inputStates.up = true;**
-
 73. **      } else if (event.keyCode === 39) {**
-
 74. **        inputStates.right = true;**
-
 75. **      } else if (event.keyCode === 40) {**
-
 76. **        inputStates.down = true;**
-
 77. **      } else if (event.keyCode === 32) {**
-
 78. **        inputStates.space = true;**
-
 79. **      }**
-
 80. **    }, false);**
-
 81. 
-
 82. **    // If the key is released, change the states object**
-
 83. **    window.addEventListener('keyup', function(event){**
-
 84. **      if (event.keyCode === 37) {**
-
 85. **        inputStates.left = false;**
-
 86. **      } else if (event.keyCode === 38) {**
-
 87. **        inputStates.up = false;**
-
 88. **      } else if (event.keyCode === 39) {**
-
 89. **        inputStates.right = false;**
-
 90. **      } else if (event.keyCode === 40) {**
-
 91. **        inputStates.down = false;**
-
 92. **      } else if (event.keyCode === 32) {**
-
 93. **        inputStates.space = false;**
-
 94. **      }**
-
 95.     }, false);
-
 96. 
-
 97. 
-
 98.    // Starts the animation
-
 99.    requestAnimationFrame(mainLoop);
-
 100.  };
-
 101. 
-
-102. // our GameFramework returns a public API visible from outside its
-     scope
-
+102. // our GameFramework returns a public API visible from outside its scope
 103. return {
-
 104.    start: start
-
 105. };
-
 106. };
+```
 
 You may notice that on some computers / operating systems, it is not
 possible to simultaneously press the up and down arrow keys, or left and
@@ -9516,104 +9251,58 @@ down) as part of the inputStates object, just as we do with the keyboard
 
 Below is the JavaScript source code for this small example:
 
+```
 1.  var canvas, ctx;
-
 2.  **var inputStates = {};**
-
 3.  
-
 4.  window.onload = function init() {
-
 5.     canvas = document.getElementById('myCanvas');
-
 6.     ctx = canvas.getContext('2d');
-
 7.  
-
 8.     **canvas.addEventListener('mousemove', function (evt) {**
-
 9.        **inputStates.mousePos = getMousePos(canvas, evt);**
-
 10.       var message = 'Mouse position:
     ' + inputStates.mousePos.x + ',' +                                 
       inputStates.mousePos.y;
-
 11.       writeMessage(canvas, message);
-
 12.    }, false);
-
 13. 
-
 14.    **canvas.addEventListener('mousedown', function (evt) {**
-
 15.       **inputStates.mousedown = true;**
-
 16.       **inputStates.mouseButton = evt.button;**
-
-17.       var message = "Mouse button " + evt.button + " down at
-    position: " + 
-
+17.       var message = "Mouse button " + evt.button + " down at position: " + 
 18.                    
     inputStates.mousePos.x + ',' + inputStates.mousePos.y;
-
 19.       writeMessage(canvas, message);
-
 20.    }, false);
-
 21. 
-
 22.    **canvas.addEventListener('mouseup', function (evt) {**
-
 23.       **inputStates.mousedown = false;**
-
-24.       var message = "Mouse up at position:
-    " + inputStates.mousePos.x + ',' +     
-
+24.       var message = "Mouse up at position: " + inputStates.mousePos.x + ',' +     
 25.                     inputStates.mousePos.y;
-
 26.       writeMessage(canvas, message);
-
 27.    }, false);
-
 28. };
-
 29. 
-
 30. function writeMessage(canvas, message) {
-
 31.   var ctx = canvas.getContext('2d');
-
 32.   ctx.save();
-
 33.   ctx.clearRect(0, 0, canvas.width, canvas.height);
-
 34.   ctx.font = '18pt Calibri';
-
 35.   ctx.fillStyle = 'black';
-
 36.   ctx.fillText(message, 10, 25);
-
 37.   ctx.restore();
-
 38. }
-
 39. 
-
 40. **function getMousePos(canvas, evt) {**
-
 41. **  // necessary to take into account CSS boudaries**
-
 42. **  var rect = canvas.getBoundingClientRect();**
-
 43. **  return {**
-
 44. **     x: evt.clientX - rect.left,**
-
 45. **     y: evt.clientY - rect.top**
-
 46. **  };**
-
 47. **}**
+```
 
 ##### Making an object follow the mouse cursor
 
@@ -9624,123 +9313,67 @@ alt="A rectangle that follows the mouse cursor" />
 
 ##### Source code:
 
+```
 1.  var canvas, ctx, width, height;
-
 2.  var rect = {x:40, y:40, rayon: 30, width:80, height:80, v:1};
-
 3.  var mousepos = {x:0, y:0};
-
 4.   
-
 5.  function init() {
-
 6.      canvas = document.querySelector("#myCanvas");
-
 7.      ctx = canvas.getContext('2d');
-
 8.      width = canvas.width;
-
 9.      height = canvas.height;
-
 10. 
-
 11.     canvas.addEventListener('mousemove', function (evt) {
-
 12.        mousepos = getMousePos(canvas, evt);
-
 13.     }, false);
-
 14. 
-
 15.     mainloop();
-
 16. }
-
 17.  
-
 18. function mainloop() {
-
 19.    // 1) clear screen
-
 20.    ctx.clearRect(0, 0, canvas.width, canvas.height);
-
 21. 
-
 22.    // 2) move object
-
 23.     var dx = rect.x - mousepos.x;
-
 24.     var dy = rect.y - mousepos.y;
-
 25.     **var angle = Math.atan2(dy, dx);**
-
 26. 
-
 27.     **rect.x -= rect.v*Math.cos(angle);**
-
 28. **    rect.y -= rect.v*Math.sin(angle);**
-
 29. 
-
 30.     // 3) draw object
-
 31.     drawRectangle(angle);
-
 32. 
-
 33.     // request new frame
-
 34.     window.requestAnimationFrame(mainloop);
-
 35. }
-
 36. 
-
 37. function drawRectangle(angle) {
-
 38.    ctx.save();
-
 39. 
-
 40.    **// These two lines move the coordinate system**
-
 41. **   ctx.translate(rect.x, rect.y);**
-
 42. **   ctx.rotate(angle);**
-
 43. **   // recenter the coordinate system in the middle**
-
 44. **   // the rectangle. Like that it will rotate around**
-
 45. **   // this point instead of top left corner**
-
 46. **   ctx.translate(-rect.width/2, -rect.height/2);**
-
 47. 
-
 48.    ctx.fillRect(0, 0, rect.width, rect.height);
-
 49.    ctx.restore();
-
 50. }
-
 51.  
-
 52. function getMousePos(canvas, evt) {
-
 53.    // necessary to take into account CSS boudaries
-
 54.    var rect = canvas.getBoundingClientRect();
-
 55.    return {
-
 56.       x: evt.clientX - rect.left,
-
 57.       y: evt.clientY - rect.top
-
 58.    };
-
 59. }
+```
 
 ##### **Explanations:**
 
@@ -9774,302 +9407,163 @@ to direct movements every 1/60th second.
 
 ##### JavaScript source code:
 
+```
 1.  // Inits
-
 2.  window.onload = function init() {
-
 3.    var game = new GF();
-
 4.    game.start();
-
 5.  };
-
 6.  
-
 7.  
-
 8.  // GAME FRAMEWORK STARTS HERE
-
 9.  var GF = function(){
-
 10.   ...
-
 11. 
-
 12.   // Vars for handling inputs
-
 13.   var inputStates = {};
-
 14. 
-
 15.   var measureFPS = function(newTime){
-
 16.      ...
-
 17.   };
-
 18. 
-
 19.   // Clears the canvas content
-
 20.   function clearCanvas() {
-
 21.     ctx.clearRect(0, 0, w, h);
-
 22.   }
-
 23. 
-
 24.   // Functions for drawing the monster and perhaps other objects
-
 25.   function drawMyMonster(x, y) {
-
 26.     ...
-
 27.   }
-
 28. 
-
 29.   var mainLoop = function(time){
-
 30.    // Main function, called each frame
-
 31.    measureFPS(time);
-
 32. 
-
 33.    // Clears the canvas
-
 34.    clearCanvas();
-
 35. 
-
 36.    // Draws the monster
-
 37.    drawMyMonster(10+Math.random()*10, 10+Math.random()*10);
-
 38.    // Checks inputStates
-
 39.    if (inputStates.left) {
-
 40.      ctx.fillText("left", 150, 20);
-
 41.    }
-
 42.    if (inputStates.up) {
-
 43.      ctx.fillText("up", 150, 40);
-
 44.    }
-
 45.    if (inputStates.right) {
-
 46.      ctx.fillText("right", 150, 60);
-
 47.    }
-
 48.    if (inputStates.down) {
-
 49.      ctx.fillText("down", 150, 80);
-
 50.    }
-
 51.    if (inputStates.space) {
-
 52.      ctx.fillText("space bar", 140, 100);
-
 53.    }
-
 54.    if (inputStates.mousePos) {
-
 55.      ctx.fillText("x = " + inputStates.mousePos.x + " y = " +
-
 56.                            inputStates.mousePos.y, 5, 150);
-
 57.    }
-
 58.    if (inputStates.mousedown) {
-
 59.      ctx.fillText("mousedown b" + inputStates.mouseButton, 5, 180);
-
 60.    }
-
 61. 
-
 62.    // Calls the animation loop every 1/60th of second
-
 63.    requestAnimationFrame(mainLoop);
-
 64.   };
-
 65. 
-
 66. 
-
 67.   function getMousePos(evt) {
-
 68.     // Necessary to take into account CSS boudaries
-
 69.     var rect = canvas.getBoundingClientRect();
-
 70.     return {
-
 71.       x: evt.clientX - rect.left,
-
 72.       y: evt.clientY - rect.top
-
 73.     };
-
 74.   }
-
 75. 
-
 76.   var start = function(){
-
 77.     ...
-
-78.     // Adds the listener to the main window object, and updates the
-    states
-
+78.     // Adds the listener to the main window object, and updates the states
 79.     window.addEventListener('keydown', function(event){
-
 80.       if (event.keyCode === 37) {
-
 81.         inputStates.left = true;
-
 82.       } else if (event.keyCode === 38) {
-
 83.         inputStates.up = true;
-
 84.       } else if (event.keyCode === 39) {
-
 85.         inputStates.right = true;
-
 86.       } else if (event.keyCode === 40) {
-
 87.         inputStates.down = true;
-
 88.       } else if (event.keyCode === 32) {
-
 89.         inputStates.space = true;
-
 90.       }
-
 91.     }, false);
-
 92. 
-
 93.     // If the key is released, changes the states object
-
 94.    window.addEventListener('keyup', function(event){
-
 95.       if (event.keyCode === 37) {
-
 96.         inputStates.left = false;
-
 97.       } else if (event.keyCode === 38) {
-
 98.        inputStates.up = false;
-
 99.       } else if (event.keyCode === 39) {
-
 100.        inputStates.right = false;
-
 101.       } else if (event.keyCode === 40) {
-
 102.        inputStates.down = false;
-
 103.       } else if (event.keyCode === 32) {
-
 104.         inputStates.space = false;
-
 105.       }
-
 106.    }, false);
-
 107. 
-
 108.    // Mouse event listeners
-
 109.    canvas.addEventListener('mousemove', function (evt) {
-
 110.      inputStates.mousePos = getMousePos(evt);
-
 111.    }, false);
-
 112. 
-
 113.    canvas.addEventListener('mousedown', function (evt) {
-
 114.      inputStates.mousedown = true;
-
 115.      inputStates.mouseButton = evt.button;
 
 116.    }, false);
 
 117. 
-
 118.    canvas.addEventListener('mouseup', function (evt) {
-
 119.      inputStates.mousedown = false;
-
 120.    }, false);
-
 121. 
-
 122. 
-
 123.    // Starts the animation
-
 124.    requestAnimationFrame(mainLoop);
-
 125.   };
-
 126. 
-
-127.   // Our GameFramework returns a public API visible from outside
-     its scope
-
+127.   // Our GameFramework returns a public API visible from outside its scope
 128.   return {
-
 129.     start: start
-
 130.   };
-
 131. };
+```
 
-## 2.3.6 Gamepad events
+<h3 id="ch2-3-6">2.3.6 Gamepad events</h3>
 
 Hi! In this lesson we will look at how we can manage such an input
-device! This is a
-
-Microsoft xbox 360 controller -a wired one- with an USB plug. And we
+device! This is a Microsoft xbox 360 controller -a wired one- with an USB plug. And we
 will see how we can
 
 use the gamepad API that is available on modern browsers... except a few
-ones... So, the first
-
-thing you can do is to add some even listeners for the gamepadconnect
+ones... So, the first thing you can do is to add some even listeners for the gamepadconnect
 and gamepaddisconnected events.
 
 If I plug in the game pad (I’m using Google Chrome for this demo), I
 plug it in...
 
 here we are! I need to press a button, for the gamepad to be detected.
-If I just plug
+If I just plug it in: it won't be detected. On FireFox, I tried too... and it has been
+detected as soon as I plugged it in. 
 
-it in: it won't be detected. On FireFox, I tried too... and it has been
-detected as soon
+Once it's plugged, you can get a property of the event that is called gamepad... and you can get the number of buttons,
+and the number of axes. 
 
-as I plugged it in. Once it's plugged, you can get a property of the
-
-event that is called gamepad... and you can get the number of buttons,
-and the number
-
-of axes. Here, it says it's got 4 axes... the axes are for the
-joysticks... horizontal
-
-and vertical axes. We will see how to manage that in a minute. And it's
+Here, it says it's got 4 axes... the axes are for the joysticks... horizontal and vertical axes. We will see how to manage that in a minute. And it's
 got 17 buttons.
 
 We can also detect when we disconnect it. So... I just unpluged it and
@@ -10223,29 +9717,20 @@ describes the connected device.
 
 [Example on JSBin](https://jsbin.com/kiduwu/edit?console,output)
 
+```
 1.  window.addEventListener("gamepadconnected", function(e) {
-
 2.     var gamepad = e.gamepad;
-
 3.     var index = gamepad.index;
-
 4.     var id = gamepad.id;
-
 5.     var nbButtons = gamepad.buttons.length;
-
 6.     var nbAxes = gamepad.axes.length;
-
 7.  
-
 8.     console.log("Gamepad No " + index +
-
 9.                 ", with id " + id + " is connected. It has " +
-
 10.                nbButtons + " buttons and " +
-
 11.                nbAxes + " axes");
-
 12. });
+```
 
 <img src="./images/image111.jpeg" style="width:5in;height:2.57425in"
 alt="Gamepad detected, message on the jsbin exmaple" />
@@ -10255,17 +9740,14 @@ a [gamepaddisconnected](https://w3c.github.io/gamepad/#event-gamepaddisconnecte
 is fired. Any references to the gamepad object will have
 their connected property set to false.
 
+```
 1.  window.addEventListener("gamepaddisconnected", function(e) {
-
 2.     var gamepad = e.gamepad;
-
 3.     var index = gamepad.index;
-
 4.  
-
 5.     console.log("Gamepad No " + index + " has been disconnected");
-
 6.  });
+```
 
 <img src="./images/image112.jpeg"
 style="width:3.92708in;height:1.41667in"
@@ -10285,51 +9767,31 @@ when the system detects that a gamepad has been unplugged.
 
 Here is the code to use to scan for a gamepad:
 
+```
 1.  var gamepad;
-
 2.   
-
 3.  function mainloop() {
-
 4.     ...
-
 5.     scangamepads();
-
 6.   
-
 7.     // test gamepad status: buttons, joysticks etc.
-
 8.     ...
-
 9.     requestAnimationFrame(mainloop);
-
 10. }
-
 11.  
-
 12. function scangamepads() {
-
 13.   // function called 60 times/s
-
 14.  ** // the gamepad is a "snapshot", so we need to set it**
-
 15. **  // 60 times / second in order to have an updated status**
-
 16.   var gamepads = navigator.getGamepads();
-
 17. 
-
 18.   for (var i = 0; i < gamepads.length; i++) {
-
 19.     // current gamepad is not necessarily the first
-
 20.     if(gamepads[i] !== undefined)
-
 21.        gamepad = gamepads[i];
-
 22.     }
-
 23. }
+```
 
 In this code, we check every 1/60 second for newly or re-connected
 gamepads, and we update the gamepad global var with the first gamepad
@@ -10413,38 +9875,25 @@ alt="button status detected, example on jsbin" />
 
 Code for checking if a button is pressed:
 
+```
 1.  function checkButtons(gamepad) {
-
 2.     for (var i = 0; i < gamepad.buttons.length; i++) {
-
 3.        // do nothing is the gamepad is not ok
-
 4.        if(gamepad === undefined) return;
-
 5.        if(!gamepad.connected) return;
-
 6.  
-
 7.        var b = gamepad.buttons[i];
-
 8.  
-
 9.        if(b.pressed) {
-
 10.          console.log("Button " + i + " is pressed.");
-
 11.          if(b.value !== undefined)
-
 12.              // analog trigger L2 or R2, value is a float in [0,
     1]
-
 13.              console.log("Its value:" + b.val);
-
 14.       }
-
 15.    }
-
 16. }
+```
 
 In *line 11*, notice how we detect whether the current button is an
 analog trigger (L2 or R2 on Xbox360 or PS2/PS3 gamepads). 
@@ -10454,25 +9903,18 @@ to call the scangamepads function from the loop, to generate fresh
 "snapshots" of the gamepad with updated properties. Without this call,
 the gamepad.buttons will return the same  states every time.
 
+```
 1.  function mainloop() {
-
 2.     // clear, draw objects, etc...
-
 3.     ...
-
 4.     scangamepads();
-
 5.     // Check gamepad button states
-
 6.     checkButtons(gamepad);
-
 7.  
-
 8.     // animate at 60 frames/s
-
 9.     requestAnimationFrame(mainloop);
-
 10. }
+```
 
 ##### Detecting axes (joystick) values
 
@@ -10483,27 +9925,19 @@ alt="axes detection in JsBin" />
 
 Code for detecting the axes' values:
 
+```
 1.  // detect axis (joystick states)
-
 2.  function checkAxes(gamepad) {
-
 3.     if(gamepad === undefined) return;
-
 4.     if(!gamepad.connected) return;
-
 5.  
-
 6.     for (var i=0; i<gamepad.axes.length; i++) {
-
 7.       var axisValue = gamepad.axes[i];
-
 8.       // do something with the value
-
 9.       ...
-
 10.    }
-
 11. }
+```
 
 ##### Detecting the direction (left, right, up, down, diagonals) and angle of the left joystick
 
@@ -10520,173 +9954,91 @@ alt="direction and angle detection for joystick" />
 
 Source code extract:
 
+```
 1.  **var inputStates = {};**
-
 2.  ...
-
 3.  function mainloop() {
-
 4.     // clear, draw objects, etc...
-
 5.     // update gamepad status
-
 6.     scangamepads();
-
 7.    // Check gamepad button states
-
 8.    checkButtons(gamepad);
-
 9.    // Check joysticks states
-
 10.   checkAxes(gamepad);
-
 11. 
-
 12.   **// Move the player, taking into account**
-
 13. **  // the gamepad left joystick state**
-
 14. **  updatePlayerPosition();**
-
 15. 
-
 16.   // We could use the same technique in
-
 17.   // order to react when buttons are pressed
-
 18.   //...
-
 19. 
-
 20.   // animate at 60 frames/s
-
 21.   requestAnimationFrame(mainloop);
-
 22. }
-
 23.  
-
 24. function updatePlayerPosition() {
-
 25.    directionDiv.innerHTML += "";
-
 26.   ** if(inputStates.left)** {
-
 27.       directionDiv.innerHTML = "Moving left";
-
 28.    }
-
 29.    **if(inputStates.right)** {
-
 30.       directionDiv.innerHTML = "Moving right";
-
 31.    }
-
 32.    **if(inputStates.up)** {
-
 33.       directionDiv.innerHTML = "Moving up";
-
 34.    }
-
 35.    **if(inputStates.down)** {
-
 36.       directionDiv.innerHTML = "Moving down";
-
 37.    }
-
 38.    // Display the angle in degrees, in the HTML page
-
-39.  
-     angleDiv.innerHTML = Math.round((**inputStates.angle***180/Math.PI));
-
+39.  angleDiv.innerHTML = Math.round((**inputStates.angle***180/Math.PI));
 40. }
-
 41.  
-
 42. // gamepad code below
-
 43. // -------------------------
-
 44. // detect axis (joystick states)
-
 45. function checkAxes(gamepad) {
-
 46.   if(gamepad === undefined) return;
-
 47.   if(!gamepad.connected) return;
-
 48. 
-
 49.   ...
-
 50. 
-
 51.  ** // Set inputStates.left, right, up, down**
-
-52. ** 
-    inputStates.left = inputStates.right = inputStates.up = inputStates.down = false;**
-
+52. ** inputStates.left = inputStates.right = inputStates.up = inputStates.down = false;**
 53. 
-
 54. **  // all values between [-1 and 1]**
-
 55.  ** // Horizontal detection**
-
 56. **  if(gamepad.axes[0] > 0.5) {**
-
 57. **     inputStates.right=true;**
-
 58. **     inputStates.left=false;**
-
 59. **  } else if(gamepad.axes[0] < -0.5) {**
-
 60. **     inputStates.left=true;**
-
 61. **     inputStates.right=false;**
-
 62. **  }**
-
 63. 
-
 64. **  // vertical detection**
-
 65. **  if(gamepad.axes[1] > 0.5) {**
-
 66. **    inputStates.down=true;**
-
 67. **    inputStates.up=false;**
-
 68. **  } else if(gamepad.axes[1] < -0.5) {**
-
 69. **    inputStates.up=true;**
-
 70. **    inputStates.down=false;**
-
 71. **  }**
-
 72.  
-
 73.   // compute the angle. gamepad.axes[1] is the
-
 74.   // sinus of the angle (values between [-1, 1]),
-
 75.   // gamepad.axes[0] is the cosinus of the angle.
-
 76.   // we display the value in degree as in a regular
-
 77.   // trigonometric circle, with the x axis to the right
-
 78.   // and the y axis that goes up.
-
 79.   // The angle = arcTan(sin/cos); We inverse the sign of
-
 80.   // the sinus in order to have the angle in standard
-
 81.   // x and y axis (y going up)
-
 82.   **inputStates.angle = Math.atan2(-gamepad.axes[1], gamepad.axes[0]);**
-
 83. }
+```
 
 #### Other gamepads and joysticks tested
 
