@@ -1,6 +1,5 @@
 <h2 align="center">W3Cx Front-End Web Developer</h2>
 <br/>
-
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------- readme.md of W3Cx-4of5-HTML5.2x -------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -68,6 +67,7 @@
 >### 4.5. [**Where to from here?**](#ch4-5-1)
 
 **W3Cx-4of5-HTML5.2x – Apps and Games**
+<a href="https://github.com/bbauska/W3Cx-4of5-Apps-and-Games.git">HTML5.2x Apps and Games - git</a>
 
 <h3>Course outline</h3>
 
@@ -115,16 +115,14 @@ on [<b>w3cx.org</b>](https://w3cx.org/)!
 If you already have a verified certificate in one or more of these
 courses, you *do NOT need to re-take that course*.
 
-##### Additional information:
-
--   If you are new to the edX platform, we encourage you to [<u>check
-    out DemoX</u>](https://www.edx.org/course/demox), a quick
-    walk-through of an edX experience. It will help answer basic “how
-    to's” on taking an edX course.
-
--   As an alternative, do not hesitate to browse the [<u>courses' FAQs
-    in edX Help
-    Center</u>](https://support.edx.org/hc/en-us/categories/115002269607-Courses).
+<h4>Additional information:</h4>
+<ul>
+<li>If you are new to the edX platform, we encourage you to (<b><a href="https://www.edx.org/course/demox">check
+    out DemoX</a></b>], a quick walk-through of an edX experience. It will help answer basic “how
+    to's” on taking an edX course.</li>
+<li>As an alternative, do not hesitate to browse the <b><a href="https://support.edx.org/hc/en-us/categories/115002269607-Courses"> courses' FAQs
+    in edX Help Center</a></b>.</li>
+</ul>
 
 <h3 id="toc">Table of Contents</h3>
 
@@ -24209,4 +24207,4 @@ your comments/observations/questions and share your creations.
 
 <h5>The end...</h5>
 
-<h5>Last Updated: 8-16-2022 4:11pm</h5>
+<h5>Last Updated: 8-16-2022 7:45pm</h5>
