@@ -1007,7 +1007,7 @@ Developer”](https://www.edx.org/professional-certificate/front-end-web-develop
 
 Professional Certificate program.
 
-You will dive into **advanced techniques**, combining HTML5, CSS and
+You will dive into <b>advanced techniques<b>, combining HTML5, CSS and
 JavaScript, to create your own HTML5 app and/or game.
 
 During this course, you will notably learn:
@@ -1083,21 +1083,22 @@ To help you practice during the whole duration of the course, you will
 use the following online editor tools. Pretty much all the course's
 examples will actually use these.
 
-### JS Bin
+<h4>JS Bin</h4>
 
 <img src="./images/image004.png" style="width:0.72917in;height:0.72917in"
-alt="JS Bin logo" />[JS Bin](http://jsbin.com/) is an open source
+alt="JS Bin logo." />
+
+<a href="http://jsbin.com/">JS Bin</a> is an open source
 collaborative Web development debugging tool. This tool is really
 simple, just open the link to the provided examples, look at the code,
 look at the result, etc. And you can modify the examples as you like,
 you can also modify / clone / save / share them.  
   
-Tutorials can be found on the Web (such as [this
-one](https://code.tutsplus.com/tutorials/javascript-tools-of-the-trade-jsbin--net-36843))
-or on YouTube. Keep in mind that it's always better to be logged in
-(it's free) if you do not want to lose your contributions/personal work.
+Tutorials can be found on the Web (such as <a href="https://code.tutsplus.com/tutorials/javascript-tools-of-the-trade-jsbin--net-36843">this
+one</a>)
+or on YouTube. Keep in mind that it's always better to be logged in (it's free) if you do not want to lose your contributions/personal work.
 
-### CodePen
+<h4>CodePen</h4>
 
 <img src="./images/image005.png" style="width:0.72917in;height:0.72917in"
 alt="CodePen logo" />[CodePen](http://codepen.io/) is an HTML, CSS, and
@@ -1119,25 +1120,25 @@ why! Share also your own code contributions, such as a nice canvas
 animation, a great looking HTML5 form, etc. Sharing them using JS Bin,
 or similar tools, would be really appreciated.
 
-### W3C Validators
+<h4>W3C Validators</h4>
 
 For over 20 years, the W3C has been developing and
-hosting [**<u>free</u>** and **<u>open
-source</u>** tools](https://w3c.github.io/developers/) used every day
-by **millions of Web developers and Web designers**. All the tools
+hosting [<b><u>free</u></b> and <b><u>open
+source</u></b> tools](https://w3c.github.io/developers/) used every day
+by <b>millions of Web developers and Web designers<b>. All the tools
 listed below are Web-based, and are available as downloadable sources or
 as free services on the [W3C Developers
 tools ](https://w3c.github.io/developers/tools/)site.
 
-### W3C Validator
+<h4>W3C Validator</h4>
 
-### <img src="./images/image006.png" style="width:1in;height:0.40556in" />
+<h4><img src="./images/image006.png" style="width:1in;height:0.40556in" /></h4>
 
 The [W3C validator](https://validator.w3.org/) checks the [markup
 validity](https://validator.w3.org/docs/help.html#validation_basics) of
 various Web document formats, such as HTML.
 
-### CSS Validator
+<h4>CSS Validator</h4>
 
 The [CSS validator](https://jigsaw.w3.org/css-validator/) checks
 Cascading Style Sheets (CSS) and (X)HTML documents that use CSS
@@ -1146,7 +1147,7 @@ stylesheets.
 <img src="./images/image007.png" style="width:1in;height:0.82159in"
 alt="Laptop showing unicorn validator" />
 
-### Unicorn
+<h4>Unicorn</h4>
 
 [Unicorn](https://validator.w3.org/unicorn/) is W3C's unified validator,
 which helps people improve the quality of their Web pages by performing
@@ -1154,7 +1155,7 @@ a variety of checks. Unicorn gathers the results of the popular HTML and
 CSS validators, as well as other useful services, such as RSS/Atom feeds
 and http headers.
 
-### Link Checker
+<h4>Link Checker</h4>
 
 The [W3C Link Checker](https://validator.w3.org/checklink) looks for
 issues in links, anchors and referenced objects in a Web page, CSS style
@@ -1162,7 +1163,7 @@ sheet, or recursively on a whole Web site. For best results, it is
 recommended to first ensure that the documents checked use valid [HTML
 Markup](https://validator.w3.org/) and [CSS](https://jigsaw.w3.org/css-validator/).
 
-### Internationalization Checker
+<h4>Internationalization Checker</h4>
 
 The [W3C Internationalization
 Checker](https://validator.w3.org/i18n-checker/) provides information
@@ -1170,9 +1171,9 @@ about various internationalization-related aspects of your page,
 including the HTTP headers that affect it. It also reports a number of
 issues and offers advice about how to resolve them.
 
-### W3C CheatSheet
+<h4>W3C CheatSheet</h4>
 
-The [W3C cheatsheet](https://www.w3.org/2009/cheatsheet/) provides quick
+The <a href="https://www.w3.org/2009/cheatsheet/">W3C cheatsheet</a> provides quick
 access to useful information from a variety of specifications published
 by W3C. It aims at giving in a very compact and mobile-friendly format a
 compilation of useful knowledge extracted from W3C specifications,
@@ -1197,7 +1198,7 @@ interest.
 The W3C cheatsheet is only available as a <a href="https://dev.w3.org/2009/cheatsheet/doc/">pure Web
 application</a>.
 
-### Browser Compatibility
+<h4>Browser Compatibility</h4>
 
 The term browser compatibility refers to the ability of a given Web site
 to appear fully functional on the browsers available in the market.
@@ -1219,13 +1220,13 @@ major browsers at once. As a Web developer, this is something you must
 consider if you’re relying on a feature to build your site.
 
 We are then providing references to the browser support of HTML5
-features presented in this course using 2 resources: [Can I
-Use](https://caniuse.com/) and [Mozilla Developer Network (MDN) Web
-Docs](https://developer.mozilla.org/en-US/).
+features presented in this course using 2 resources: <a href="https://caniuse.com/">Can I
+Use</a> and <a href="https://developer.mozilla.org/en-US/">Mozilla Developer Network (MDN) Web
+Docs</a>.
 
-### Can I use
+<h4>Can I use</h4>
 
-[Can I Use](https://caniuse.com/) provides up-to-date tables for support
+<a href="https://caniuse.com/">Can I Use</a> provides up-to-date tables for support
 of front-end Web technologies on desktop and mobile Web browsers. Below
 is a snapshot of what information is given by CanIUse when searching for
 "CSS3 colors".
@@ -1311,9 +1312,9 @@ Happy Web building!
 
 ### <img src="./images/image013.png" style="width:3in;height:0.7612in" />
 
-**As steward of global Web standards, W3C's mission is to safeguard the
+<b>As steward of global Web standards, W3C's mission is to safeguard the
 openness, accessibility, and freedom of the World Wide Web from a
-technical perspective.**
+technical perspective.<b>
 
 W3C's primary activity is to develop protocols and guidelines that
 ensure long-term growth for the Web. The widely adopted Web standards
@@ -1389,22 +1390,22 @@ vision and standards for the Web, ensuring the building blocks of the
 Web are open, accessible, secure, international and have been developed
 via the collaboration of global technical experts.
 
-### Essential Steps in Web i18n
+<h4>Essential Steps in Web i18n</h4>
 
 You find below three examples (and checks!) to help you to ensure that
 your Web page works for people around the world, and to make it work
 differently for different cultures, where needed. Let's meet the words
 'charset' and 'lang', soon to become your favorite markup ;)
 
-Example #1: character encoding declaration
+<h4>Example #1: character encoding declaration</h4>
 
-A character encoding declaration is *vital to ensure that the text in
-your page is recognized by browsers around the world*, and not garbled.
+A character encoding declaration is <i>vital to ensure that the text in
+your page is recognized by browsers around the world</i>, and not garbled.
 You will learn more about what this is, and how to use it as you work
 through the course.  For now, just ensure that it's always there.
 
-***Check #1*: There is a character encoding declaration near the start
-of your source code, and its value is UTF-8.**
+<b><i>Check #1</i>: There is a character encoding declaration near the start
+of your source code, and its value is UTF-8.</b>
 
 ```
 1.  <head>
@@ -1413,19 +1414,19 @@ of your source code, and its value is UTF-8.**
 4.  </head>
 ```
 
-### Example #2: primary language declaration
+<h4>Example #2: primary language declaration</h4>
 
 For a wide variety of reasons, it's important for a browser to know what
 language your page is written in, including font selection,
 text-to-speech conversion, spell-checking, hyphenation and automated
-line breaking, text transforms, automated translation, and more. *You
-should always indicate the primary language of your page in the <html>
-tag*. Again you will learn how to do this during the course.  You will
+line breaking, text transforms, automated translation, and more. <i>You
+should always indicate the primary language of your page in the &lt;html&gt;
+tag</i>. Again you will learn how to do this during the course.  You will
 also learn how to change the language, where necessary, for parts of
 your document that are in a different language.
 
-***Check #2*: The HTML tag has a lang attribute which correctly
-indicates the language of your content.**
+<b><i>Check #2</i>: The HTML tag has a lang attribute which correctly
+indicates the language of your content.</b>
 
 This example below indicates that the page is in French.
 
@@ -1436,7 +1437,7 @@ This example below indicates that the page is in French.
 8.  ...
 ```
 
-### Example #3: cultural bias
+<h4>Example #3: cultural bias</h4>
 
 People around the world don't always understand cultural references that
 you are familiar with, for example the concept of a 'home run' in
@@ -1450,9 +1451,9 @@ details, you will quickly find that your assumptions about how personal
 names and addresses work are very different from those of people from
 other cultures.
 
-***Check #3*: If your content will be seen by people from diverse
+<b><i>Check #3</i>: If your content will be seen by people from diverse
 cultures, check that your cultural references will be recognized and
-that there is no inappropriate cultural bias.**
+that there is no inappropriate cultural bias.</b>
 
 Don't worry!
 
@@ -1460,33 +1461,32 @@ The following 7 quick tips summarize some important concepts of
 international Web design. They will become more meaningful as you work
 through the course, so come back and review this page at the end.
 
-1.  **Encoding**: use the UTF-8 (Unicode) character encoding for
+1.  <b>Encoding</b>: use the UTF-8 (Unicode) character encoding for
     content, databases, etc. Always declare the encoding.
 
-2.  **Language**: declare the language of documents and indicate
+2.  <b>Language</b>: declare the language of documents and indicate
     internal language changes.
 
-3.  **Navigation**: on each page include clearly visible navigation to
+3.  <b>Navigation</b>: on each page include clearly visible navigation to
     localized pages or sites, using the target language.
 
-4.  **Escapes**: use characters rather than escapes (e.g. &#xE1; &#225;
+4.  <b>Escapes</b>: use characters rather than escapes (e.g. &#xE1; &#225;
     or &aacute;) whenever you can.
 
-5.  **Forms**: use UTF-8 on both form and server. Support local formats
+5.  <b>Forms</b>: use UTF-8 on both form and server. Support local formats
     of names/addresses, times/dates, etc.
 
-6.  **Localizable styling**: use CSS styling for the presentational
+6.  <b>Localizable styling</b>: use CSS styling for the presentational
     aspects of your page. So that it's easy to adapt content to suit the
     typographic needs of the audience, keep a clear separation between
     styling and semantic content, and don't use 'presentational' markup.
 
-7.  **Images, animations & examples**: if your content will be seen by
+7.  <b>Images, animations & examples</b>: if your content will be seen by
     people from diverse cultures, check for translatability and
     inappropriate cultural bias.
 
-You will find more quick tips on the [Internationalization quick
-tips](https://www.w3.org/International/quicktips/) page. Remember that
-these tips do not constitute complete guidelines.
+You will find more quick tips on the <a href="https://www.w3.org/International/quicktips/">Internationalization quick
+tips</a> page. Remember that these tips do not constitute complete guidelines.
 
 Internationalization checker
 
@@ -1500,8 +1500,8 @@ they are and what to do about it.
 
 In the [W3Cx HTML5 Coding Essentials and Best
 Practices](https://www.edx.org/course/html5-coding-essentials-and-best-practices) course,
-we saw that <video> and <audio> elements can
-have <track> elements. A <track> can have a label,
+we saw that &lt;video&gt; and <audio> elements can
+have &lt;track&gt; elements. A &lt;track&gt; can have a label,
 a kind (subtitles, captions, chapters, metadata, etc.), a language
 (srclang attribute), a source URL (src attribute), etc.
 
@@ -1555,7 +1555,7 @@ style="width:4.90625in;height:2.79167in" />
 
 Also, there is [a Timed Text Track API in the HTML5/HTML5.1
 specification](https://www.w3.org/TR/html51/semantics-embedded-content.html#timed-text-tracks) that
-enables us to manipulate <track> contents from JavaScript. Do you
+enables us to manipulate &lt;track&gt; contents from JavaScript. Do you
 recall that text tracks are associated with WebVTT files? As a quick
 reminder, let's look at a WebVTT file:
 
@@ -1742,7 +1742,7 @@ This is all for this first video, I’ll see you in the next one!
 In the <a href="https://www.edx.org/course/html5-coding-essentials-and-best-practices">W3Cx HTML5 Coding Essentials and Best
 Practices</a> course,
 we saw that <video> and <audio> elements can
-have <track> elements. A <track> can have a label,
+have &lt;track&gt; elements. A &lt;track&gt; can have a label,
 a kind (subtitles, captions, chapters, metadata, etc.), a language
 (srclang attribute), a source URL (src attribute), etc.
 
@@ -1799,7 +1799,7 @@ Here is a quick summary:
 
 There is [a Timed Text Track API in the HTML5/HTML5.1
 specification](https://www.w3.org/TR/html51/semantics-embedded-content.html#timed-text-tracks) that
-enables us to manipulate <track> contents from JavaScript. Do you
+enables us to manipulate &lt;track&gt; contents from JavaScript. Do you
 recall that text tracks are associated with WebVTT files? As a quick
 reminder, let's look at a WebVTT file:
 
@@ -1958,7 +1958,7 @@ choosing the different tracks. I will explain that in a next video.
 12. </div>
 ```
 
-This example defines three <track> elements. From JavaScript, we can
+This example defines three &lt;track&gt; elements. From JavaScript, we can
 manipulate these elements as "HTML elements" - we will call them the
 "HTML views" of tracks.
 
@@ -4517,7 +4517,7 @@ alt="Chapter menu + clickable transcript" />
 In this lesson, we are going to show:
 
 -   The addTextTrack method for adding a TextTrack to an
-    html <track> element, 
+    html &lt;track&gt; element, 
 
 -   The VTTCue constructor, for creating cues programmatically, and 
 
@@ -16802,110 +16802,64 @@ CodePen](https://codepen.io/w3devcampus/pen/vNYXyR):
 
 Complete source code from the example:
 
+```
 1.  <html lang="en">
-
 2.  <head>
-
 3.  <style>
-
 4.     .box {
-
 5.        border: silver solid;
-
 6.        width: 256px;
-
 7.        height: 128px;
-
 8.        margin: 10px;
-
 9.        padding: 5px;
-
 10.       float: left;
-
 11.    }
-
 12. 
-
 13.    .notDraggable {
-
 14.       user-select: none;
-
 15.    }
-
 16. </style>
-
 17. <script>
-
 18.     function drop(target, event) {
-
 19.        event.preventDefault();
-
 20.        target.innerHTML = event.dataTransfer.getData('text/plain');
-
 21.     };
-
 22. </script>
-
 23. </head>
-
 24. <body>
-
 25. <p id="text">
-
-26.     <b>Drag and drop a text selection from this paragraph</b>.
-    Drag and drop any
-
+26.     <b>Drag and drop a text selection from this paragraph</b>. Drag and drop any
 27.     part of this text to
-
-28.     the drop zone. Notice in the code: there is no need for a
-    dragstart handler in case of
-
+28.     the drop zone. Notice in the code: there is no need for a dragstart handler in case of
 29.     text selection:
-
-30.     the text is added to the clipboard when dragged with a key/name
-    equal to "text/plain".
-
+30.     the text is added to the clipboard when dragged with a key/name equal to "text/plain".
 31.     Just write a
-
-32.     drop handler that will do an
-    event.dataTransfer.getData("text/plain") and you are
-
+32.     drop handler that will do an event.dataTransfer.getData("text/plain") and you are
 33.     done!
-
 34.  </p>
-
 35. 
-
 36. **<p class="notDraggable">**
-
-37.      This paragraph is not selectable however. Look at the CSS in
-    the source code.
-
+37.      This paragraph is not selectable however. Look at the CSS in the source code.
 38. </p>
-
 39. 
-
 40. <div class="box" ondragover="return false" ondrop="drop(this, event)">
-
 41.      <p>Drop some text selection here.</p>
-
 42. </div>
-
 43. </body>
-
 44. </html>
+```
 
 Here, we use a CSS trick to make the second paragraph non-selectable, by
 setting the user-selected property to none.
 
 In the next chapter, we will see how to drag and drop files!
 
-## 3.3.9 Discussion and projects
+<h3 id="ch3-3-9">3.3.9 Discussion and projects</h3>
 
 Here is the discussion forum for this part of the course. Please either
 post your comments/observations/questions or share your creations.
 
-### Suggested topics of discussion:
+<h4>Suggested topics of discussion:</h4>
 
 -   If you find interesting drag and drop examples on the Web, please
     share them in the forum.
@@ -16913,7 +16867,7 @@ post your comments/observations/questions or share your creations.
 -   What other example(s) would you like to be added to the course (drag
     and drop of files is covered in the next lesson)?
 
-### Optional projects:
+<h4>Optional projects:</h4>
 
 -   Code an illustrative drag and drop demo, and share it in the forum.
     For example, try to add something similar to the "what is your
@@ -16925,7 +16879,7 @@ post your comments/observations/questions or share your creations.
     grid). In the meantime, the other pictures will have to move to give
     some room for the picture you dropped.
 
-## 3.4.1 Introduction
+<h3 id="ch3-4-1">3.4.1 Introduction</h3>
 
 In these lectures, we will learn how to *drag and drop files* between
 the browser and the desktop. The process shares similarities with the
@@ -16956,55 +16910,37 @@ which have been dragged and dropped from the desktop to a drop zone
 associated with this handler with
 an ondrop=dropHandler(event); attribute:
 
+```
 1.  function dropHandler(event) {
-
 2.     // Do not propagate the event
-
 3.     event.stopPropagation();
-
-4.     // Prevent default behavior, in particular when we drop images or
-    links
-
+4.     // Prevent default behavior, in particular when we drop images or links
 5.     event.preventDefault();
-
 6.  
-
 7.     **// get the dropped files from the clipboard**
-
 8.     **var files = event.dataTransfer.files;**
-
 9.  
-
 10.    var filenames = "";
-
 11. 
-
-12.    // do something with the files...here we iterate on them and log
-    the filenames
-
+12.    // do something with the files...here we iterate on them and log the filenames
 13.    for(var i = 0 ; i < files.length ; i++) {
-
 14.        filenames += 'n' + files[i].name;
-
 15.    }
-
 16. 
-
-17.    console.log(files.length + ' file(s) have been
-    dropped:n' + filenames);
-
+17.    console.log(files.length + ' file(s) have been dropped:n' + filenames);
 18. }
+```
 
-At *lines 7-8*, we get the files that have been dropped.
+At <i>lines 7-8</i>, we get the files that have been dropped.
 
-*Lines 12-15* iterate over the collection and build a string which
+<i>Lines 12-15</i> iterate over the collection and build a string which
 contains the list of file names.
 
-*Line 17* displays this string on the debugging console.
+<i>Line 17</i> displays this string on the debugging console.
 
 Complete working examples are to be presented later on...
 
-### Prevent the browser's default behavior
+<h4>Prevent the browser's default behavior</h4>
 
 If we drop an image into an HTML page, the browser will open a new tab
 and display the image. With a .mp3 file, it will open it in a new tab
@@ -17015,7 +16951,7 @@ etc.). So, when dragging and dropping images or links, we need to
 prevent the browser's default behavior.
 
 At the beginning of the drop handler in the previous piece of code, you
-can see the lines of code (*lines 2-5*) that stop the propagation of the
+can see the lines of code (<i>lines 2-5</i>) that stop the propagation of the
 drop event and prevent the default behavior of the browser. Normally
 when we drop an image or an HTTP link onto a web page, the browser will
 display the image or the web page pointed by the link, in a new
@@ -17030,10 +16966,10 @@ default behavior of the browser:
 4.  event.preventDefault();
 ```
 
-> **Best practice**: add these lines tothe drop handler AND
+> **Best practice**: add these lines to the drop handler AND
 > to the dragOver handler attached to the drop zone!
 
-... like in this example:
+<h4>... like in this example:</h4>
 
 ```
 1.  function dragOverHandler(event) {
@@ -17055,7 +16991,7 @@ default behavior of the browser:
 17. }
 ```
 
-### External resources
+<h4>External resources</h4>
 
 -   Web.dev article: "[Using the HTML5 drag and drop
     API](https://web.dev/drag-and-drop/)"
@@ -17353,7 +17289,7 @@ alt="ilmage drag&#39;n&#39;drop with thumbnails" />
 Try it below in your browser (drag'n'drop image files into the drop
 zone) or play with it at CodePen:
 
-Complete source code:
+<h4>Complete source code:</h4>
 
 ```
 1.  <!DOCTYPE html>
@@ -17480,7 +17416,7 @@ added the <output> element as a container for the <img> elements
 (constructed by the JavaScript code *lines 94-96*) which will display
 the thumbnails (*line 114*).
 
-## 3.4.4 Mixing drag and drop and input type=file
+<h3 id="ch3-4-4">3.4.4 Mixing drag and drop and input type=file</h3>
 
 Let's go further and also add an <input type="file">
 
@@ -17549,292 +17485,150 @@ CodePen](https://codepen.io/w3devcampus/pen/BoavPb):
 
 Complete source code:
 
+```
 1.  <!DOCTYPE html>
-
 2.  <html lang="en">
-
 3.  <head>
-
 4.     <style>
-
 5.        div {
-
 6.            height: 150px;
-
 7.            width: 350px;
-
 8.            border: 2px solid #666666;
-
 9.            background-color: #ccc;
-
 10.           margin-right: 5px;
-
 11.           border-radius: 10px;
-
 12.           box-shadow: inset 0 0 3px #000;
-
 13.           text-align: center;
-
 14.           cursor: move;
-
 15.       }
-
 16.  
-
 17.       .dragged {
-
 18.           border: 2px dashed #000;
-
 19.           background-color: green;
-
 20.       }
-
 21. 
-
 22.       .draggedOver {
-
 23.           border: 2px dashed #000;
-
 24.           background-color: green;
-
 25.       }
-
 26.  
-
 27. </style>
-
 28. <script>
-
 29.       function dragLeaveHandler(event) {
-
 30.          console.log("drag leave");
-
 31.          // Set style of drop zone to default
-
 32.          event.target.classList.remove('draggedOver');
-
 33.       }
-
 34. 
-
 35.       function dragEnterHandler(event) {
-
 36.          console.log("Drag enter");
-
 37.          // Show some visual feedback
-
 38.          event.target.classList.add('draggedOver');
-
 39.       }
-
 40. 
-
 41.       function dragOverHandler(event) {
-
 42.          //console.log("Drag over a droppable zone");
-
 43.          // Do not propagate the event
-
 44.          event.stopPropagation();
-
 45.          // Prevent default behavior, in particular when we drop
-
 46.          // images or links
-
 47.          event.preventDefault();
-
 48.       }
-
 49. 
-
 50.       function dropHandler(event) {
-
 51.          console.log('drop event');
-
 52. 
-
 53.          // Do not propagate the event
-
 54.          event.stopPropagation();
-
 55.          // Prevent default behavior, in particular when we drop
-
 56.          // images or links
-
 57.          event.preventDefault();
-
 58. 
-
 59. 
-
 60.          // reset the visual look of the drop zone to default
-
 61.          event.target.classList.remove('draggedOver');
-
 62. 
-
 63. 
-
 64.          // get the files from the clipboard
-
 65.          var files = event.dataTransfer.files;
-
 66.          var filesLen = files.length;
-
 67.          var filenames = "";
-
 68. 
-
 69.          // iterate on the files, get details using the file API
-
 70.          // Display file names in a list.
-
 71.          for(var i = 0 ; i < filesLen ; i++) {
-
 72.             filenames += 'n' + files[i].name;
-
-73.             // Create a li, set its value to a file name, add it to
-    the ol
-
+73.             // Create a li, set its value to a file name, add it to the ol
 74.             var li = document.createElement('li');
-
 75.             li.textContent = files[i].name;
-
 76.             document.querySelector("#droppedFiles").appendChild(li);
-
 77.          }
-
-78.          console.log(files.length + ' file(s) have been
-    dropped:n' + filenames);
-
+78.          console.log(files.length + ' file(s) have been dropped:n' + filenames);
 79. 
-
 80.          **readFilesAndDisplayPreview(files);**
-
 81.       }
-
 82. 
-
 83.       function readFilesAndDisplayPreview(files) {
-
 84.          // Loop through the FileList and render image files as
-
 85.          // thumbnails.
-
 86.          for (var i = 0, f; f = files[i]; i++) {
-
 87. 
-
 88.             // Only process image files.
-
 89.             if (!f.type.match('image.*')) {
-
 90.                continue;
-
 91.             }
-
 92. 
-
 93.             var reader = new FileReader();
-
 94. 
-
 95.             //capture the file information.
-
 96.             reader.onload = function(e) {
-
 97.                // Render thumbnail.
-
 98.                var span = document.createElement('span');
-
-99.                span.innerHTML = "<img class='thumb' width='100'
-    src='" +
-
+99.                span.innerHTML = "<img class='thumb' width='100' src='" +
 100.                                 e.target.result + "'/>";
-
-101.              
-      document.getElementById('list').insertBefore(span, null);
-
+101.              document.getElementById('list').insertBefore(span, null);
 102.             };            
-
 103.            // Read the image file as a data URL.
-
 104.            reader.readAsDataURL(f);
-
 105.         }
-
 106.      }
-
 107. 
-
 108.      **function handleFileSelect(evt) {**
-
 109.         **var files = evt.target.files; // FileList object**
-
 110.         **// do something with files... why not call**
-
 111. **        // readFilesAndDisplayPreview!**
-
 112.        **readFilesAndDisplayPreview(files);**
-
 113.      }
-
 114.   </script>
-
 115. </head>
-
 116. <body>
-
 117. <h2>Use one of these input fields for selecting files</h2>
-
 118. <p>Beware, the directory choser  may overload
-
 119. your browser memory if there are too many big images in the
-
 120. directory you choose.</p>
-
 121. **Choose multiple files
-     :** **<input type="file" id="files" multiple**
-
+    :** **<input type="file" id="files" multiple**
 122. **                             
       onchange="handleFileSelect(event)"/>**
-
 123. </p>
-
 124. **<p>Choose a directory (Chrome only): <input type="file"**
-
 125. **                                      id="dir" webkitdirectory**
-
-126. **                                     
-     onchange="handleFileSelect(event)"/>**
-
+126. **                                      onchange="handleFileSelect(event)"/>**
 127. </p>
-
 128.  
-
 129. <h2>Drop your files here!</h2>
-
 130.     <div id="droppableZone" ondragenter="dragEnterHandler(event)"
-
 131.                             ondrop="dropHandler(event)"
-
 132.                             ondragover="dragOverHandler(event)"
-
 133.                             ondragleave="dragLeaveHandler(event)">
-
 134.         Drop zone
-
 135.         <ol id="droppedFiles"></ol>
-
 136.      </div>
-
 137. <br/>
-
 138. <output id="list"></output>
-
 139. <body>
-
 140. <html>
+```
 
 The parts that we have added are in bold. As you can see, all methods
 share the same code for previewing the images.
@@ -24207,4 +24001,4 @@ your comments/observations/questions and share your creations.
 
 <h5>The end...</h5>
 
-<h5>Last Updated: 8-16-2022 7:45pm</h5>
+<h5>Last Updated: 8-21-2022 9:42pm</h5>
