@@ -17633,7 +17633,7 @@ Complete source code:
 The parts that we have added are in bold. As you can see, all methods
 share the same code for previewing the images.
 
-## 3.4.5 Files upload using Ajax/XHR2
+<h3 id="ch3-4-5">3.4.5 Files upload using Ajax/XHR2</h3>
 
 This time, let us mash-up a couple of examples. Let's combine the upload
 of files using XHR2, with progress monitoring (we worked on in the 3.2
@@ -17645,209 +17645,117 @@ a <progress> element to the drag and drop example.
 JSBin](https://jsbin.com/conigekoda/edit) (this example does not work on
 CodePen. We are using a fake remote server and it cancels the connection
 as soon as we try to connect):
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 188.  (01) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image188.jpeg?raw=true"
+   width="45%"
+   alt="Example that uses drag&#39;n&#39;drop and a progress element for monitoring the ajax upload of the files." />
+</p>
 
-<img src="./images/image188.jpeg"
-style="width:4.36458in;height:2.90625in"
-alt="example that uses drag&#39;n&#39;drop and a progress element for monitoring the ajax upload of the files" />
 
-Source code extract (we omitted the CSS):
+<h4>Source code extract (we omitted the CSS):</h4>
 
+```
 1.  <!DOCTYPE html>
-
 2.  <html>
-
 3.  <head>
-
 4.     <style>
-
 5.       ...
-
 6.     </style>
-
 7.     <script>
-
 8.       function dragLeaveHandler(event) {
-
 9.         console.log("drag leave");
-
 10.        // Set style of drop zone to default
-
 11.        event.target.classList.remove('draggedOver');
-
 12.      }
-
 13. 
-
 14.      function dragEnterHandler(event) {
-
 15.        console.log("Drag enter");
-
 16.        // Show some visual feedback
-
 17.        event.target.classList.add('draggedOver');
-
 18.      }
-
 19. 
-
 20.      function dragOverHandler(event) {
-
 21.        //console.log("Drag over a droppable zone");
-
 22.        // Do not propagate the event
-
 23.        event.stopPropagation();
-
-24.        // Prevent default behavior, in particular when we drop
-    images
-
+24.        // Prevent default behavior, in particular when we drop images
 25.        // or links
-
 26.        event.preventDefault();
-
 27.      }
-
 28. 
-
 29.      function dropHandler(event) {
-
 30.        console.log('drop event');
-
 31. 
-
 32.        // Do not propagate the event
-
 33.        event.stopPropagation();
-
-34.        // Prevent default behavior, in particular when we drop
-    images
-
+34.        // Prevent default behavior, in particular when we drop images
 35.        // or links
-
 36.        event.preventDefault();
-
 37. 
-
 38.        // reset the visual look of the drop zone to default
-
 39.        event.target.classList.remove('draggedOver');
-
 40. 
-
 41. 
-
 42.        // get the files from the clipboard
-
 43.        var files = event.dataTransfer.files;
-
 44.        var filesLen = files.length;
-
 45.        var filenames = "";
-
 46. 
-
 47.        // iterate on the files, get details using the file API
-
 48.        // Display file names in a list.
-
 49.        for(var i = 0 ; i < filesLen ; i++) {
-
 50.           filenames += 'n' + files[i].name;
-
-51.           // Create a li, set its value to a file name, add it to
-    the ol
-
+51.           // Create a li, set its value to a file name, add it to the ol
 52.           var li = document.createElement('li');
-
 53.           li.textContent = files[i].name;
-
 54.           document.querySelector("#droppedFiles").appendChild(li);
-
 55.        }
-
 56.        console.log(files.length + ' file(s) have been dropped:n'
-
 57.                                 + filenames);
-
 58. 
-
 59.        uploadAllFilesUsingAjax(files);
-
 60.      }
-
 61. 
-
 62.      function uploadAllFilesUsingAjax(files) {
-
 63.        var xhr = new XMLHttpRequest();
-
 64.        xhr.open('POST', 'upload.html');
-
 65. 
-
 66.        xhr.upload.onprogress = function(e) {
-
 67.           progress.value = e.loaded;
-
 68.           progress.max = e.total;
-
 69.        };
-
 70. 
-
 71.        xhr.onload = function() {
-
 72.          alert('Upload complete!');
-
 73.        };
-
 74. 
-
 75.        var form = new FormData();
-
 76.        for(var i = 0 ; i < files.length ; i++) {
-
 77.           form.append('file', files[i]);
-
 78.        }
-
 79.  
-
 80.        // Send the Ajax request
-
 81.        xhr.send(form);
-
 82.      }
-
 83.   </script>
-
 84. </head>
-
 85. <body>
-
 86. <h2>Drop your files here!</h2>
-
 87. <div id="droppableZone" ondragenter="dragEnterHandler(event)"
-
 88.                          ondrop="dropHandler(event)"
-
 89.                          ondragover="dragOverHandler(event)"     
-
 90.                          ondragleave="dragLeaveHandler(event)">
-
 91.      Drop zone
-
 92.      <ol id="droppedFiles"></ol>
-
 93. </div>
-
 94. <br/>
-
 95.  Uploading progress: <progress id="progress"></progress>
-
 96. <body>
-
 97. <html>
+```
 
 We have highlighted the interesting parts in the example!
 
@@ -18037,77 +17945,46 @@ alt="example 2 of file uploads, uses drag&#39;n&#39;drop" />
 
 ### And here is the PHP code for the server-side part of examples #1 and #2
 
-This code is given "as is":
+<h3>This code is given "as is":</h3>
 
+```
 1.  <?php
-
 2.  
-
 3.  if (isset($_POST['givenname']) && isset($_POST['familyname'])) {
-
-4.     echo $_POST['givenname'].' '.$_POST['familyname'].'
-    uploaded file(s).<br />';
-
+4.     echo $_POST['givenname'].' '.$_POST['familyname'].' uploaded file(s).<br />';
 5.  }
-
 6.  
-
 7.  if (isset($_POST['namesAllFiles']) && $_POST['namesAllFiles'] != "") {
-
 8.    $folderName = date("m.d.Y");
-
 9.    if (!is_dir('upload/'.$folderName)) {
-
 10.      mkdir('upload/'.$folderName);
-
 11. }
-
 12. 
-
 13. $filesName = explode("::", $_POST['namesAllFiles']);
-
 14.   for ($i=0; $i < count($filesName); $i++) {
-
 15.     copy('upload/RecycleBin/'.$filesName[$i],
-
 16.          'upload/'.$folderName.'/'.$filesName[$i]);
-
 17.     unlink('upload/RecycleBin/'.$filesName[$i]);
-
 18.     echo "$filesName[$i] uploaded<br />";
-
 19.   }
-
 20. }
-
 21. 
-
 22. $fn = (isset($_SERVER['HTTP_X_FILENAME']) ?
 
 23.                                
      $_SERVER['HTTP_X_FILENAME'] : false);
-
 24. 
-
 25. if ($fn) {
-
 26.   if (!is_dir('upload/RecycleBin')) {
-
 27.     mkdir('upload/RecycleBin');
-
 28.   }
-
 29.   file_put_contents('upload/RecycleBin/'.$fn,     
-
 30.                     file_get_contents('php://input'));
-
 31.   exit();
-
 32. }
-
 33. 
-
 34. ?>
+```
 
 **Explanations**:
 
@@ -24001,4 +23878,4 @@ your comments/observations/questions and share your creations.
 
 <h5>The end...</h5>
 
-<h5>Last Updated: 8-21-2022 9:42pm</h5>
+<h5>Last Updated: 8-22-2022 9:42pm</h5>
