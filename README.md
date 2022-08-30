@@ -124,50 +124,6 @@ courses, you <i>do NOT need to re-take that course</i>.
     in edX Help Center</a></b>.</li>
 </ul>
 
-<h3 id="toc">Table of Contents</h3>
-
-<h3>Module 1: Advanced HTML5 multimedia</h3>
-<ol type="1">
-<li>1.  Video introduction</li>
-<li>2.  The Timed Text Track API</li>
-<li>3.  Advanced features for audio and video players</li>
-<li>4.  Creating tracks on the fly, syncing HTML content with a video</li>
-<li>5.  The Web Audio API</li>
-</ol>
-
-<h3>Module 2: Game programming with HTML5</h3>
-<ol type="1">
-<li>1.  Video introduction</li>
-<li>2.  Basic concepts of HTML5 game development</li>
-<li>3.  A simple game framework: graphics, animations and interactions</li>
-<li>4.  Time-based animation</li>
-<li>5.  Animating multiple objects, collision detection</li>
-<li>6.  Sprite-based animation</li>
-<li>7.  Game stats</li>
-</ol>
-
-<h3>Module 3: HTML5 file upload and download</h3>
-<ol type="1">
-<li>1.  [<b>Video
-    introduction</b>](https://learning.edx.org/course/course-v1:W3Cx+HTML5.2x+2T2020a/block-v1:W3Cx+HTML5.2x+2T2020a+type@sequential+block@8745dbff90204e63806b4f140f379f6c)</li>
-<li>2.  File API and Ajax / XHR2 requests</li>
-<li>3.  Drag and drop: the basics</li>
-<li>4.  Drag and drop: working with files</li>
-<li>5.  Forms and files</li>
-<li>6.  [<b>IndexedDB</b>](https://learning.edx.org/course/course-v1:W3Cx+HTML5.2x+2T2020a/block-v1:W3Cx+HTML5.2x+2T2020a+type@sequential+block@6c3721f499ec4df395514b458961002f)
-</li>
-<li>7.  Conclusion on client-side persistence</li>
-</ol>
-
-<h3>Module 4: Web components and other HTML5 APIs</h3>
-<ol type="1">
-<li>1.  <b>Video introduction</b></li>
-<li>2.  [<b>Web Components</b>](https://learning.edx.org/course/course-v1:W3Cx+HTML5.2x+2T2020a/block-v1:W3Cx+HTML5.2x+2T2020a+type@sequential+block@a15f811948fa423185c346089a36bb85)</li>
-<li>3.  <b>Web Workers</b></li>
-<li>4.  <b>The Orientation and Device Motion APIs</b></li>
-<li>5.  <b>Where to from here?</b></li>
-</ol>
-
 <h2>Contents</h2>
 
 [Advanced HTML5 Multimedia [26](#module-1-1)](#module-1-1)
@@ -1023,9 +979,9 @@ During this course, you will notably learn:
 -   Persistence techniques for data storage including IndexedDB, File
     System API and Drag and Drop
 
-### Web Browsers and Editors
+<h3>Web Browsers and Editors</h3>
 
-### Web browsers
+<h4>Web browsers</h4>
 
 <img src="./images/image003.jpeg" style="width:1.1875in;height:1.1875in"
 alt="A man looking at his laptop screen as if he is considering which browser to use - a few browser logos float in the background" />
@@ -1042,7 +998,7 @@ browsers](https://en.wikipedia.org/wiki/Web_browser#History) (on
 Wikipedia). An interesting resource is the [market and platform market
 share](https://www.w3counter.com/globalstats.php) (updated regularly).
 
-### Web editors
+<h4>Web editors</h4>
 
 While any text editor, like NotePad or TextEdit, can be used to create
 Web pages, they don't necessarily offer a lot of help towards that end.
@@ -1240,7 +1196,7 @@ is a snapshot of what information is given by CanIUse when searching for
    alt="Example of a CanIUse browser support table (using CSS3 colors)." />
 </p>
 
-### MDN Web Docs
+<h3>MDN Web Docs</h3>
 
 <!------------------------------------------------------------------------------------------------>
 <!---------------------------------- 10. mdn web docs logo (xx) ---------------------------------->
@@ -1252,7 +1208,7 @@ is a snapshot of what information is given by CanIUse when searching for
 </p>
 
 To help developers make these decisions consciously rather than
-accidentally, 
+accidentally,
 
 [MDN Web Docs](https://developer.mozilla.org/) provides browser
 compatibility tables in its documentation pages,
@@ -1260,7 +1216,7 @@ compatibility tables in its documentation pages,
 so that when looking up a feature you’re considering for your project,
 you know exactly which browsers will support it.
 
-### External resources:
+<h4>External resources:</h4>
 
 -   [MDN browser compatibility data: Taking the guesswork out of web
     compatibility](https://hacks.mozilla.org/2018/02/mdn-browser-compatibility-data/)
@@ -1310,7 +1266,7 @@ Happy Web building!
 
 ### What is W3C?
 
-### <img src="./images/image013.png" style="width:3in;height:0.7612in" />
+<img src="./images/image013.png" style="width:3in;height:0.7612in" />
 
 <b>As steward of global Web standards, W3C's mission is to safeguard the
 openness, accessibility, and freedom of the World Wide Web from a
@@ -1349,7 +1305,7 @@ Campus) in Asia in 1996. In 2003, [ERCIM](https://www.ercim.eu/) took
 over the role of European W3C Host from Inria. In 2013, W3C
 announced Beihang University as the fourth Host.
 
-### A few figures
+<h4>A few figures</h4>
 
 As of August 2020, W3C:
 
@@ -1382,7 +1338,7 @@ Gathers over 13,129 active participants constituting the W3C community.
 Has a [technical staff](https://www.w3.org/People/) composed of 64
 people, spread on all five continents
 
-### W3C's core values
+<h4>W3C's core values</h4>
 
 Committed to core values of an open Web that promotes innovation,
 neutrality, and interoperability, W3C and its community are setting the
@@ -1737,7 +1693,7 @@ because Dropbox also enables cross origin requests.
 
 This is all for this first video, I’ll see you in the next one!
 
-### The Timed Text Track JavaScript API
+<h4>The Timed Text Track JavaScript API</h4>
 
 In the <a href="https://www.edx.org/course/html5-coding-essentials-and-best-practices">W3Cx HTML5 Coding Essentials and Best
 Practices</a> course,
@@ -1933,9 +1889,9 @@ different attributes for forcing some tracks to load programmatically
 from JavaScript and this will enable us to make a sort of menu for
 choosing the different tracks. I will explain that in a next video.
 
-### The HTML track element
+<h4>The HTML track element</h4>
 
-### Let's go back to our example. Below is the HTML code:
+<h4>Let's go back to our example. Below is the HTML code:</h4>
 
 ```
 1.  <video id="myVideo" preload="metadata" controls crossOrigin="anonymous">
@@ -1961,9 +1917,9 @@ This example defines three &lt;track&gt; elements. From JavaScript, we can
 manipulate these elements as "HTML elements" - we will call them the
 "HTML views" of tracks.
 
-### Getting the status of an HTML track
+<h4>Getting the status of an HTML track</h4>
 
-### [<span id="_Toc98696550" class="anchor"></span>Example at JSBin that displays the different elements we can get from an HTML track](https://jsbin.com/kuqevegapi/2/edit?html,css,output):
+<h4>[<span id="_Toc98696550" class="anchor"></span>Example at JSBin that displays the different elements we can get from an HTML track](https://jsbin.com/kuqevegapi/2/edit?html,css,output):</h4>
 
 <img src="./images/image026.png" style="width:4in;height:2.23647in" />
 
@@ -2006,7 +1962,7 @@ manipulate these elements as "HTML elements" - we will call them the
 23. 
 ```
 
-### The code is rather straightforward:
+<h4>The code is rather straightforward:</h4>
 
 -   We cannot access any HTML element before the page has been loaded.
     This is why we do all the work in the window.onload listener,
@@ -2030,7 +1986,7 @@ example)](https://jsbin.com/higebo/1/edit?html,css,js,output) that the
 German subtitle file has been loaded, and that none of the other tracks
 have been loaded. 
 
-### Possible values for the readyState attribute of HTML tracks:
+<h4>Possible values for the readyState attribute of HTML tracks:</h4>
 
 -   <b>0 = NONE</b> ; the text track's cues have not been obtained
 
@@ -2177,19 +2133,19 @@ Obtaining a TextTrack object that corresponds to an HTML track
 The HTML track element has a track property which returns the associated
 TextTrack object.
 
-### Example source code:
+<h4>Example source code:</h4>
 
 ```
-24. // HTML tracks
-25. var htmlTracks = document.querySelectorAll("track");
-26. 
-27. 
-28. // The TextTrack object associated with the first HTML track
-29. var textTrack = htmlTracks[0].track;
-30. var kind = textTrack.kind;
-31. var label = textTrack.label;
-32. var lang = textTrack.language;
-33. // etc.
+1. // HTML tracks
+2. var htmlTracks = document.querySelectorAll("track");
+3. 
+4. 
+5. // The TextTrack object associated with the first HTML track
+6. var textTrack = htmlTracks[0].track;
+7. var kind = textTrack.kind;
+8. var label = textTrack.label;
+9. var lang = textTrack.language;
+10. // etc.
 ```
 
 Note that once we get a TextTrack object, we can manipulate
@@ -2438,7 +2394,7 @@ properties and methods
 <img src="./images/image029.jpeg" style="width:5in;height:2.01365in"
 alt="a webVtt file extract with arrows showing id, startTime, endTime and text" />
 
-### Example that displays the content of a track
+<h4>Example that displays the content of a track</h4>
 
 [Here is an example at JSBin that displays the content of a
 track](https://jsbin.com/teruhay/1/edit?html,css,js,output):
@@ -2465,8 +2421,7 @@ example in the previous lesson:
 13.       // current cue
 14.       var cue = cues[i];
 15.       var id = cue.id + "<br>";
-16.       var timeSegment = cue.startTime + " =>
-    " + cue.endTime + "<br>";
+16.       var timeSegment = cue.startTime + " => " + cue.endTime + "<br>";
 17.       var text = cue.text + "<P>"
 18.       trackStatusesDiv.innerHTML += id + timeSegment + text;
 19.    }
@@ -2482,7 +2437,7 @@ This technique will be used in one of the next lessons, and we will show
 you how to make a clickable transcript on the side of the video
 - something quite similar to what the edX video player does.
 
-## 1.2.5 Listening to Events
+<h3 id="ch1-2-5">1.2.5 Listening to Events</h3>
 
 Ok. This time we will talk about track events and cue events.
 
@@ -2567,7 +2522,7 @@ The two types of cue event are:
 
 2.  cuechange events fired for TextTrack objects (good support).
 
-### Example of cuechange listener on TextTrack
+<h4>Example of cuechange listener on TextTrack</h4>
 
 ```
 1.  // track is a loaded TextTrack
@@ -3392,138 +3347,137 @@ displayed in real time in a small area below the video.
 In the screen-capture below, we have a WebVTT file displaying a scene's
 captions and descriptions.
 
-### Extract from HTML code:
+<h4>Extract from HTML code:</h4>
 
 ```
-34. <html lang="en">
-35. ...
-36. <body onload="init();">
-37. ...
-38. <p>
-39. <video id="myVideo" preload="metadata"
-40. poster ="https://...../sintel.jpg"
-41. crossorigin="anonymous"
-42. controls="controls"
-43. width="640" height="272">
+1. <html lang="en">
+2. ...
+3. <body onload="init();">
+4. ...
+5. <p>
+6. <video id="myVideo" preload="metadata"
+7. poster ="https://...../sintel.jpg"
+8. crossorigin="anonymous"
+9. controls="controls"
+10. width="640" height="272">
+11. 
+12. <source src="https://...../sintel.mp4"
+13. type="video/mp4" />
+14. <source src="https://...../sintel.webm"
+15. type="video/webm" />
+16. <track src="https://...../sintel-captions.vtt"
+17. kind="captions"
+18. label="English Captions"
+19. <b>default</b>/>
+20. <track src="https://...../sintel-descriptions.vtt"
+21. kind="descriptions"
+22. label="Audio Descriptions" />
+23. <track src="https://...../sintel-chapters.vtt"
+24. kind="chapters"
+25. label="Chapter Markers" />
+26. <track src="https://...../sintel-thumbs.vtt"
+27. kind="metadata"
+28. label="Preview Thumbs" />
+29. </video>
+30. </p>
+31. 
+32. <p>
+33. <div id="currentTrackStatuses"></div>
+34. <p>
+35. <p>
+36. <div id="subtitlesCaptions"></div>
+37. </p>
+38. 
+39. <p>
+40. <button onclick="clearSubtitlesCaptions();">
+41. Clear subtitles/captions log
+42. </button>
+43. </p>
 44. 
-45. <source src="https://...../sintel.mp4"
-46. type="video/mp4" />
-47. <source src="https://...../sintel.webm"
-48. type="video/webm" />
-49. <track src="https://...../sintel-captions.vtt"
-50. kind="captions"
-51. label="English Captions"
-52. <b>default</b>/>
-53. <track src="https://...../sintel-descriptions.vtt"
-54. kind="descriptions"
-55. label="Audio Descriptions" />
-56. <track src="https://...../sintel-chapters.vtt"
-57. kind="chapters"
-58. label="Chapter Markers" />
-59. <track src="https://...../sintel-thumbs.vtt"
-60. kind="metadata"
-61. label="Preview Thumbs" />
-62. </video>
-63. </p>
-64. 
-65. <p>
-66. <div id="currentTrackStatuses"></div>
-67. <p>
-68. <p>
-69. <div id="subtitlesCaptions"></div>
-70. </p>
-71. 
-72. <p>
-73. <button onclick="clearSubtitlesCaptions();">
-74. Clear subtitles/captions log
-75. </button>
-76. </p>
-77. 
-78. <p>Click one of these buttons to toggle the mode of each track:</p>
-79. <button onclick="toggleTrack(0);">
-80. Toggle english caption track mode
-81. </button>
-82. <br>
-83. <button onclick="toggleTrack(1);">
-84. Toggle audio description track mode
-85. </button>
-86. <br>
-87. <button onclick="toggleTrack(2);">
-88. Toggle chapter track mode
-89. </button>
-90. <br>
-91. <button onclick="toggleTrack(3);">
-92. Toggle preview thumbnail track modes
-93. </button>
-94. 
-95. </body>
-96. </html>
+45. <p>Click one of these buttons to toggle the mode of each track:</p>
+46. <button onclick="toggleTrack(0);">
+47. Toggle english caption track mode
+48. </button>
+49. <br>
+50. <button onclick="toggleTrack(1);">
+51. Toggle audio description track mode
+52. </button>
+53. <br>
+54. <button onclick="toggleTrack(2);">
+55. Toggle chapter track mode
+56. </button>
+57. <br>
+58. <button onclick="toggleTrack(3);">
+59. Toggle preview thumbnail track modes
+60. </button>
+61. 
+62. </body>
+63. </html>
 ```
 
-### JavaScript code:
+<h4>JavaScript code:</h4>
 
 ```
-97. var tracks, video, statusDiv, subtitlesCaptionsDiv;
-98.  
-99. function init() {
-100.    video = document.querySelector("#myVideo");
-101.    statusDiv = document.querySelector("#currentTrackStatuses");
-102.       subtitlesCaptionsDiv = document.querySelector("#subtitlesCaptions");
-103.    tracks = document.querySelectorAll("track");
-104. 
-105.    video.addEventListener('loadedmetadata', function() {
-106.       console.log("metadata loaded");
-107. 
-108.       // defines cue listeners for the active track; we can do this
-     only after the video metadata have been loaded
-109.       for(var i=0; i<tracks.length; i++) {
-110.          var t = tracks[i].track;
-111.          if(t.mode === "showing") {
-112.             t.addEventListener('cuechange', logCue, false);
-113.          }
-114.        }
-115.        // display in a div the list of tracks and their status/mode value
-116.        displayTrackStatus();  
-117.     });
-118. }
-119.  
-120. function displayTrackStatus() {
-121.     // display the status / mode value of each track.
-122.     // In red if disabled, in green if showing
-123.     for(var i=0; i<tracks.length; i++) {
-124.        var t = tracks[i].track;
-125.        var mode = t.mode;
-126. 
-127.        if(mode === "disabled") {
-128.           mode = "<span style='color:red'>" + t.mode + "</span>";
-129.        } else if(mode === "showing") {
-130.           mode = "<span style='color:green'>" + t.mode + "</span>";
-131.        }
-132.        appendToScrollableDiv(statusDiv, "track " + i + ":" + t.label
-133.                                         + " " + t.kind+" in "
-134.                                         + mode + " mode");
-135.     }
-136. }
-137. function appendToScrollableDiv(div, text) {
-138.    // we've got two scrollable divs. This function
-139.    // appends text to the div passed as a parameter
-140.    // The div is scrollable (thanks to CSS overflow:auto)
-141.    var inner = div.innerHTML;
-142.    div.innerHTML = inner + text + "<br/>";
-143.    // Make it display the last line appended
-144.    div.scrollTop = div.scrollHeight;
-145. }
-146.  
-147. function clearDiv(div) {
-148.    div.innerHTML = '';
-149. }
-150.  
-151. function clearSubtitlesCaptions() {
-152.    clearDiv(subtitlesCaptionsDiv);
-153. }
-154. 
-155. function toggleTrack(i) {
-156.    // toggles the mode of track i, removes the cue listener
+var tracks, video, statusDiv, subtitlesCaptionsDiv;
+ 
+function init() {
+    video = document.querySelector("#myVideo");
+    statusDiv = document.querySelector("#currentTrackStatuses");
+       subtitlesCaptionsDiv = document.querySelector("#subtitlesCaptions");
+    tracks = document.querySelectorAll("track");
+ 
+    video.addEventListener('loadedmetadata', function() {
+       console.log("metadata loaded");
+ 
+       // defines cue listeners for the active track; we can do this     only after the video metadata have been loaded
+       for(var i=0; i<tracks.length; i++) {
+          var t = tracks[i].track;
+          if(t.mode === "showing") {
+             t.addEventListener('cuechange', logCue, false);
+          }
+        }
+        // display in a div the list of tracks and their status/mode value
+        displayTrackStatus();  
+     });
+ }
+  
+ function displayTrackStatus() {
+     // display the status / mode value of each track.
+     // In red if disabled, in green if showing
+     for(var i=0; i<tracks.length; i++) {
+        var t = tracks[i].track;
+        var mode = t.mode;
+ 
+        if(mode === "disabled") {
+           mode = "<span style='color:red'>" + t.mode + "</span>";
+        } else if(mode === "showing") {
+           mode = "<span style='color:green'>" + t.mode + "</span>";
+        }
+        appendToScrollableDiv(statusDiv, "track " + i + ":" + t.label
+                                         + " " + t.kind+" in "
+                                         + mode + " mode");
+     }
+ }
+ function appendToScrollableDiv(div, text) {
+    // we've got two scrollable divs. This function
+    // appends text to the div passed as a parameter
+    // The div is scrollable (thanks to CSS overflow:auto)
+    var inner = div.innerHTML;
+    div.innerHTML = inner + text + "<br/>";
+    // Make it display the last line appended
+    div.scrollTop = div.scrollHeight;
+ }
+  
+ function clearDiv(div) {
+    div.innerHTML = '';
+ }
+  
+ function clearSubtitlesCaptions() {
+    clearDiv(subtitlesCaptionsDiv);
+ }
+ 
+ function toggleTrack(i) {
+    // toggles the mode of track i, removes the cue listener
 157.    // if its mode becomes "disabled"
 158.    // adds a cue listener if its mode was "disabled"
 159.    // and becomes "hidden"
@@ -3710,25 +3664,25 @@ of the previous examples (in bold in the example below):
 <h4>HTML code:</h4>
 
 ```
-188. <video id="myVideo" preload="metadata" controls crossOrigin="anonymous">
-189. <source src=<https://...../elephants-dream-medium.mp4>
-190. type="video/mp4">
-191. <source src=<https://...../elephants-dream-medium.webm>
-192. type="video/webm">
-193. <track label="English subtitles"
-194. kind="subtitles"
-195. srclang="en"
-196. src="https://...../elephants-dream-subtitles-en.vtt" >
-197. <track label="Deutsch subtitles"
-198. kind="subtitles"
-199. srclang="de"
-200. src=<https://...../elephants-dream-subtitles-de.vtt>
-201. default>
-202. <track label="English chapters"
-203. kind="chapters"
-204. srclang="en"
-205. src="https://...../elephants-dream-chapters-en.vtt">
-206. </video>
+ <video id="myVideo" preload="metadata" controls crossOrigin="anonymous">
+ <source src=<https://...../elephants-dream-medium.mp4>
+ type="video/mp4">
+ <source src=<https://...../elephants-dream-medium.webm>
+ type="video/webm">
+ <track label="English subtitles"
+ kind="subtitles"
+ srclang="en"
+ src="https://...../elephants-dream-subtitles-en.vtt" >
+ <track label="Deutsch subtitles"
+ kind="subtitles"
+ srclang="de"
+ src=<https://...../elephants-dream-subtitles-de.vtt>
+ default>
+ <track label="English chapters"
+ kind="chapters"
+ srclang="en"
+ src="https://...../elephants-dream-chapters-en.vtt">
+ </video>
 ```
 
 If we try this code in an HTML document, nothing special happens. No
@@ -3790,44 +3744,30 @@ modify it a little bit:
 1.  We add a "show English chapters" button with a click event listener
     > similar to this :
 
-<!-- -->
+```
+ <button disabled id="buttonEnglishChapters" <b>onclick="loadTranscript('en', 'chapters');"</b>>
+ Display English chapter markers
+ </button>
+```
 
-207. <button disabled id="buttonEnglishChapters" <b>onclick="loadTranscript('en', 'chapters');"</b>>
+We modify the loadTranscript function from the previous example, so that it matches both the srclang and
+ the kind attribute of the track.  
 
-208. Display English chapter markers
+Here is a new version: in bold are the source code lines we
+modified.
 
-209. </button>
-
-     1.  We modify the loadTranscript function from the previous
-         > example, so that it matches both the srclang and
-         > the kind attribute of the track.  
-         >   
-         > Here is a new version: in bold are the source code lines we
-         > modified.
-
-210. function loadTranscript(lang, kind) {
-
-211. ...
-
-212. 
-
-213. // Locate the track with lang and kind that match the parameters
-
-214. for(var i = 0; i < tracks.length; i++) {
-
-215. ...
-
-216. 
-
-217. if((track.language === lang) && (track.kind === kind)) {
-
-218. // display it contents...
-
-219. }
-
-220. }
-
-221. }
+```
+ function loadTranscript(lang, kind) {
+ ...
+ // Locate the track with lang and kind that match the parameters
+ for(var i = 0; i < tracks.length; i++) {
+ ...
+ if((track.language === lang) && (track.kind === kind)) {
+ // display it contents...
+ }
+ }
+ }
+```
 
 Simple approach: chapters as clickable text on the right of the video
 
@@ -3857,7 +3797,7 @@ the code provided, in order to add such an enhanced progress indicator.
 However, we will see how we can do better by using JSON objects as cue
 contents. This will be the topic of the next two lessons!
 
-1.3.5 With Thumbnails, Using JSON Cues
+<h3 id="ch1-3-5">1.3.5 With Thumbnails, Using JSON Cues</h3>
 
 Example #5: create a chapter menu with image thumbnails
 
@@ -3870,14 +3810,8 @@ Here is an example cue from a WebVTT file encoded as JSON instead of
 plain text. JSON is useful for describing "structured data"', and
 processing such data from JavaScript is easier than parsing plain text.
 
-1.  WEBVTT
-
-<!-- -->
-
-222. 
-
 ```
-<!-- -->
+1.  WEBVTT
 2.  Wikipedia
 3.  00:01:15.200 --> 00:02:18.800
 4.  {
@@ -4046,15 +3980,10 @@ of the video.
 12.    for(var i = 0; i < trackElems.length; i++) {
 13.       var currentTrackElem = trackElems[i];
 14.       tracksURLs[i] = currentTrackElem.src;
-
 15.    }
-
 16. 
-
 17.    // Get the tracks as JS TextTrack objects
-
 18.    tracks = video.textTracks;
-
 19. 
 20.    <b>// Build the chapter navigation menu for the given lang and kind</b>
 21. <b>   buildChapterMenu('en', 'chapters');</b>
@@ -4265,9 +4194,6 @@ sounds in this audio file:
 
 ```
 1.   var sounds = [
-```
-
-```
 1.      {
 2.         id: "purr",
 3.         startTime: 0.200,
@@ -4893,115 +4819,76 @@ this node), then to the speakers.
 Typical code to build an audio routing graph (the one used in the above
 example)
 
-HTML code extract:
+<h4>HTML code extract:</h4>
 
+```
 1.  <audio src="https://mainline.i3s.unice.fr/mooc/drums.mp3"
-
 2.          id="gainExample"
-
 3.          controls loop
-
 4.          crossorigin="anonymous">
-
 5.  </audio>
-
 6.  <br>
-
 7.  <label for="gainSlider">Gain</label>
-
 8.  <input type="range" min="0" max="1" step="0.01" value="1" id="gainSlider" />
+```
 
-### JavaScript source code:
+<h4>JavaScript source code:</h4>
 
+```
 1.  // This line is a trick to initialize the AudioContext
-
 2.  // that will work on all recent browsers
-
 3.  var ctx = window.AudioContext || window.webkitAudioContext;
-
 4.  var audioContext;
-
 5.  
-
 6.  var gainExemple, gainSlider, gainNode;
-
 7.   
-
 8.  window.onload = function() {
-
 9.  
-
 10.   // get the AudioContext
-
 11.   audioContext = new ctx();
-
 12.  
-
 13.   // the audio element
-
 14.   player = document.querySelector('#gainExample');
-
 15.   player.onplay = () => {
-
 16.      audioContext.resume();
-
 17.   }
-
 18.   gainSlider = document.querySelector('#gainSlider');
-
 19.  
-
 20.   <b>buildAudioGraph();**
-
 21. 
-
 22.   // input listener on the gain slider
-
 23.   gainSlider.oninput = function(evt){
-
 24.     gainNode.gain.value = evt.target.value;
-
 25.   };
-
 26. };
-
 27.  
-
-28. <b>function buildAudioGraph() {**
-
+28. <b>function buildAudioGraph() {</b>
 29.   // create source and gain node
-
 30.   var gainMediaElementSource = audioContext.createMediaElementSource(player);
-
 31.   gainNode = audioContext.createGain();
-
 32. 
-
-33.   <b>// connect nodes together**
-
-34. <b>  gainMediaElementSource.connect(gainNode);**
-
-35. <b>  gainNode.connect(audioContext.destination);**
-
+33.   <b>// connect nodes together</b>
+34. <b>  gainMediaElementSource.connect(gainNode);</b>
+35. <b>  gainNode.connect(audioContext.destination);</b>
 36. }
-
 37.  
+```
 
-### <b>Explanations:**
+<h4>Explanations:</h4>
 
 ### Here we applied a commonly used technique:
 
--   As soon as the page is loaded: initialize the audio context (*line
-    11*). Here we use a trick so that the code works on all browsers:
-    Chrome, FF, Opera, Safari, Edge. The trick at *line 3* is required
+-   As soon as the page is loaded: initialize the audio context (<i>line
+    11</i>). Here we use a trick so that the code works on all browsers:
+    Chrome, FF, Opera, Safari, Edge. The trick at <i>line 3</i> is required
     for Safari, as it still needs the WebKit prefixed version of the
     AudioContext constructor.
 
--   Then we build a graph (*line 20*).
+-   Then we build a graph (<i>line 20</i>).
 
 -   The build graph function first builds the nodes, then connects them
     to build the audio graph. Notice the use
-    of audioContext.destination for the speakers (*line 35*). This is a
+    of audioContext.destination for the speakers (<i>line 35</i>). This is a
     built-in node. Also, the MediaElementSource node "gainexample" which
     is the HTML's audio element.
 
@@ -5019,7 +4906,7 @@ with the Chrome WebAudio Inspector extension).
 <img src="./images/image057.jpeg" style="width:5in;height:6.84402in"
 alt="audio graph of the vocoder app is made of hundreds of nodes" />
 
-## 1.5.2 Working with Streamed Content
+<h3 id="ch1-5-2">1.5.2 Working with Streamed Content</h3>
 
 Hello! Using Web Audio with streamed content is really easy. I’m going
 to show you the most simple example we can do, directly on JSBin.
@@ -5088,32 +4975,27 @@ debugging Web Audio applications and visualize the audio graph.
 
 ### Typical use: 
 
-### [Example at JSBin](https://jsbin.com/mifaqa/edit?html,js,output)
+[Example at JSBin](https://jsbin.com/mifaqa/edit?html,js,output)
 
-### HTML:
+<h4>HTML:</h4>
 
+```
 1.  <audio <b>id="player"** controls crossorigin="anonymous" loop>
-
-2.   
-     <source src="https://mainline.i3s.unice.fr/mooc/guitarRiff1.mp3">
-
+2.     <source src="https://mainline.i3s.unice.fr/mooc/guitarRiff1.mp3">
 3.     Your browser does not support the audio tag.
-
 4.  </audio>
+```
 
-### JavaScript:
+<h4>JavaScript:</h4>
 
+```
 1.  var ctx = window.AudioContext || window.webkitAudioContext;
-
 2.  var context = new ctx();
-
 3.  
-
 4.  var mediaElement = document.querySelector('<b>#player**');
-
 5.  var sourceNode = context.createMediaElementSource(mediaElement);
-
 6.  sourceNode.connect(context.destination); // connect to the speakers
+```
 
 <b>The MediaElementSource node  is built**
 using context.createMediaElementSource(elem), where elem is
@@ -5156,33 +5038,22 @@ in your browser:
 
 ### Source code extract:
 
+```
 1.  /* Gain Node */
-
 2.   
-
 3.  var gainExample = document.querySelector('#gainExample');
-
 4.  var gainSlider = document.querySelector('#gainSlider');
-
 5.   
-
 6.  var gainMediaElementSource = audioContext.createMediaElementSource(gainExample);
-
 7.  var gainNode = audioContext.createGain();
-
 8.   
-
 9.  gainMediaElementSource.connect(gainNode);
-
 10. gainNode.connect(audioContext.destination);
-
 11.  
-
 12. gainSlider.oninput = function(evt){
-
 13.    gainNode.gain.value = evt.target.value;
-
 14. };
+```
 
 The gain property (*line 13* in the above code) corresponds to the
 multiplication we apply to the input signal volume. A value of 1 will
@@ -5314,10 +5185,10 @@ equalizer in a next lesson, and use six filters with type=peaking. 
 
 Convolver node: useful for convolution effects such as reverberation
 
-Definition: *"The *ConvolverNode* interface is an AudioNode that
+Definition: "The <i>ConvolverNode</i> interface is an AudioNode that
 performs a Linear Convolution on a given AudioBuffer, <b>often used to
-achieve a reverb effect**. A ConvolverNode always has exactly one input
-and one output."*
+achieve a reverb effect</b>. A ConvolverNode always has exactly one input
+and one output."
 
 See the Convolver node's documentation.
 
@@ -5328,7 +5199,7 @@ loading in its HTML pages. Try it at JSBin!
 
 Reverb (Dry/Wet) 
 
-[From Wikipedia](https://en.wikipedia.org/wiki/Convolution): *a
+[From Wikipedia](https://en.wikipedia.org/wiki/Convolution): a
 convolution is a mathematical process which can be applied to an audio
 signal to achieve many interesting high-quality linear effects. Very
 often, the effect is used to simulate an acoustic space such as a
@@ -5337,9 +5208,9 @@ for complex filter effects, like a muffled sound coming from inside a
 closet, sound underwater, sound coming through a telephone, or playing
 through a vintage speaker cabinet. This technique is very commonly used
 in major motion picture and music production and is considered to be
-extremely versatile and of high quality*.
+extremely versatile and of high quality.
 
-<b>Each unique effect is defined by an impulse response.** An impulse
+<b>Each unique effect is defined by an impulse response.</b> An impulse
 response can be represented as an audio file and can be recorded from a
 real acoustic space such as a cave, or can be synthetically generated
 through a wide variety of techniques. We can find many high quality
@@ -5427,10 +5298,10 @@ alt="audio graph of the previous example" />
 1.  function buildAudioGraphConvolver() {
 2.    // create the nodes
 3.    var source = audioContext.createMediaElementSource(playerConvolver);
-4.    <b>convolverNode = audioContext.createConvolver();**
+4.    <b>convolverNode = audioContext.createConvolver();</b>
 5.  <b>  // Set the buffer property of the convolver node with the
-    decoded impulse**
-6.  <b>  convolverNode.buffer = decodedImpulse;**
+    decoded impulse</b>
+6.  <b>  convolverNode.buffer = decodedImpulse;</b>
 7.  
 8.    convolverGain = audioContext.createGain();
 9.    convolverGain.gain.value = 0;
@@ -5501,7 +5372,7 @@ alt="Audio graph of the previous example" />
 2.  <br>
 3.  <label for="gainSlider1">Gain</label>
 4.  <input type="range" min="0" max="10" step="0.01"
-5.          <b>value="8"** id="gainSlider1" />
+5.          <b>value="8"</b> id="gainSlider1" />
 6.  <button id="compressorButton">Turn compressor On</button>
 ```
 
@@ -5543,13 +5414,13 @@ alt="Audio graph of the previous example" />
 33.         gainNode1.connect(audioContext.destination);
 34.         compressorButton.innerHTML="Turn compressor: On";
 35.      } else {
-36.         **// compressor was off, we connect the gain to the
-    compressor**
-37. **        // and the compressor to the destination**
-38. **        gainNode1.disconnect(audioContext.destination);**
-39. **        gainNode1.connect(compressorNode);**
-40. **        compressorNode.connect(audioContext.destination);**
-41. **        compressorButton.innerHTML="Turn compressor: Off";**
+36.         // compressor was off, we connect the gain to the
+    compressor
+37.         // and the compressor to the destination
+38.         gainNode1.disconnect(audioContext.destination);
+39.         gainNode1.connect(compressorNode);
+40.         compressorNode.connect(audioContext.destination);
+41.         compressorButton.innerHTML="Turn compressor: Off";
 42.      }
 43.      compressorOn = !compressorOn;
 44.    };
@@ -5563,14 +5434,14 @@ alt="Audio graph of the previous example" />
 52.    gainNode1.gain.value = parseFloat(gainSlider1.value);
 53. 
 54.    // do not connect it yet
-55.   ** compressorNode = audioContext.createDynamicsCompressor(); //
-    connect nodes together**
+55.    compressorNode = audioContext.createDynamicsCompressor(); //
+    connect nodes together
 56.    gainMediaElementSource.connect(gainNode1);
 57.    gainNode1.connect(audioContext.destination);
 58. }
 ```
 
-### **Explanations:**
+### Explanations:
 
 There is nothing special here compared to the other examples in this
 section, except that we have used a new method disconnect (*line
@@ -5877,9 +5748,9 @@ visualization is a graphic animation that
 uses the requestAnimationFrame API presented in teh W3C HTML5 Coding
 Essentials and Best Practices course (Module 4).
 
-**Typical code for building the audio graph:**
+<h4>Typical code for building the audio graph:</h4>
 
-HTML code:
+<h4>HTML code:</h4>
 
 ```
 1.  <audio src="https://mainline.i3s.unice.fr/mooc/guitarRiff1.mp3"
@@ -5888,21 +5759,21 @@ HTML code:
 4.  <canvas id="myCanvas" width=300 height=100></canvas>
 ```
 
-JavaScript code:
+<h4>JavaScript code:</h4>
 
 ```
 1.  function buildAudioGraph() {
 2.     var mediaElement = document.getElementById('player');
 3.     var sourceNode = audioContext.createMediaElementSource(mediaElement);
 4.  
-5.  **   // Create an analyser node**
-6.  **   analyser = audioContext.createAnalyser();**
+5.     // Create an analyser node
+6.     analyser = audioContext.createAnalyser();
 7.  
-8.  **   // set visualizer options, for lower precision change 1024 to 512,**
-9.  **   // 256, 128, 64 etc. bufferLength will be equal to fftSize/2**
-10. **   analyser.fftSize = 1024;**
-11. **   bufferLength = analyser.frequencyBinCount;**
-12. **   dataArray = new Uint8Array(bufferLength);**
+8.     // set visualizer options, for lower precision change 1024 to 512,
+9.     // 256, 128, 64 etc. bufferLength will be equal to fftSize/2
+10.    analyser.fftSize = 1024;
+11.    bufferLength = analyser.frequencyBinCount;
+12.    dataArray = new Uint8Array(bufferLength);
 13. 
 14.    sourceNode.connect(analyser);
 15.    analyser.connect(audioContext.destination);
@@ -5951,8 +5822,8 @@ Here is the code that is run 60 times per second to draw the waveform:
 6.    canvasContext.fillStyle = 'rgba(0, 0, 0, 0.5)';
 7.    canvasContext.fillRect(0, 0, width, height);
 8.  
-9.  **  // 2 - Get the analyser data - for waveforms we need time domain data**
-10. **  analyser.getByteTimeDomainData(dataArray);**
+9.    // 2 - Get the analyser data - for waveforms we need time domain data
+10.   analyser.getByteTimeDomainData(dataArray);
 11.  
 12.   // 3 - draws the waveform
 13.   canvasContext.lineWidth = 2;
@@ -5987,7 +5858,7 @@ Here is the code that is run 60 times per second to draw the waveform:
 42.   canvasContext.stroke();
 43. 
 44.   // once again call the visualize function at 60 frames/s
-45.   requestAnimationFrame(visualize)**Explanations:**
+45.   requestAnimationFrame(visualize)Explanations:
 ```
 
 -   *Lines 9-10*: we ask for the time domain analysis data. The call
@@ -6062,7 +5933,7 @@ concert with the music being played.
     bucket. It's just a representation of how much of each frequency is
     present in the signal (i.e. how "loud" the frequency is).
 
-You do **not** have to master the signal processing 'plumbing'
+You <b>do not</b> have to master the signal processing 'plumbing'
 summarised above - just plot the reported values!
 
 Enough said! Let's study some extracts from the source code. 
@@ -6071,27 +5942,19 @@ This code is very similar to the first example given at the top of this
 page. We've set the FFT size to a lower value, and rewritten the
 animation loop to plot frequency bars instead of a waveform:
 
+```
 1.  function buildAudioGraph() {
-
 2.    ...
-
 3.    // Create an analyser node
-
 4.    analyser = audioContext.createAnalyser();
-
 5.  
-
 6.  **  // Try changing to lower values: 512, 256, 128, 64...**
-
 7.  **  // Lower values are good for frequency visualizations,**
-
 8.  **  // try 128, 64 etc.? **
-
 9.  **  analyser.fftSize = 256;**
-
 10. **  ...**
-
 11. }
+```
 
 This time, when building the audio graph, we have used a smaller FFT
 size. Values between 64 and 512 are very common here. Try them in the
@@ -6100,74 +5963,41 @@ the same as in the first example.
 
 The new visualization code:
 
+```
 1.  function visualize() {
-
 2.    // clear the canvas
-
 3.    canvasContext.clearRect(0, 0, width, height);
-
 4.  
-
 5.  **  // Get the analyser data**
-
 6.  **  analyser.getByteFrequencyData(dataArray);**
-
 7.   
-
 8.    var barWidth = width / bufferLength;
-
 9.    var barHeight;
-
 10.   var x = 0;
-
 11. 
-
-12.   // values go from 0 to 255 and the canvas heigt is 100. Let's
-    rescale
-
+12.   // values go from 0 to 255 and the canvas heigt is 100. Let's    rescale
 13.   // before drawing. This is the scale factor
-
 14.   heightScale = height/128;
-
 15. 
-
 16.   for(var i = 0; i < bufferLength; i++) {
-
 17.     // between 0 and 255
-
 18.     barHeight = dataArray[i];
-
 19.  
-
 20.     // The color is red but lighter or darker depending on the value
-
 21.     canvasContext.fillStyle = 'rgb(' + (barHeight+100) + ',50,50)';
-
-22.     // scale from [0, 255] to the canvas height [0, height]
-    pixels
-
+22.     // scale from [0, 255] to the canvas height [0, height]    pixels
 23.     barHeight *= heightScale;
-
 24.     // draw the bar
-
-25.    
-    canvasContext.fillRect(x, height-barHeight/2, barWidth, barHeight/2);
-
+25.        canvasContext.fillRect(x, height-barHeight/2, barWidth, barHeight/2);
 26.  
-
 27.     // 1 is the number of pixels between bars - you can change it
-
 28.     x += barWidth + 1;
-
 29.   }
-
 30. 
-
 31.   // once again call the visualize function at 60 frames/s
-
 32.   requestAnimationFrame(visualize);
-
 33. }
+```
 
 **Explanations: **
 
@@ -6212,95 +6042,52 @@ alt="audio graph from above example" />
 
 Source code from this example's the buildAudioGraph function:
 
+```
 1.  function buildAudioGraph() {
-
 2.     var mediaElement = document.getElementById('player');
-
-3.   
-     var sourceNode = audioContext.createMediaElementSource(mediaElement);
-
+3.        var sourceNode = audioContext.createMediaElementSource(mediaElement);
 4.  
-
 5.     // Create an analyser node
-
 6.    analyser = audioContext.createAnalyser();
-
 7.  
-
 8.    // Try changing for lower values: 512, 256, 128, 64...
-
 9.    analyser.fftSize = 1024;
-
 10.   bufferLength = analyser.frequencyBinCount;
-
 11.   dataArray = new Uint8Array(bufferLength);
-
 12. 
-
 13.   // Create the equalizer, which comprises a set of biquad filters
-
 14.   // Set filters
-
 15.   [60, 170, 350, 1000, 3500, 10000].forEach(function(freq, i) {
-
 16.      var eq = audioContext.createBiquadFilter();
-
 17.      eq.frequency.value = freq;
-
 18.      eq.type = "peaking";
-
 19.      eq.gain.value = 0;
-
 20.      filters.push(eq);
-
 21.    });
-
 22.  
-
 23.    // Connect filters in sequence
-
 24.    sourceNode.connect(filters[0]);
-
 25.    for(var i = 0; i < filters.length - 1; i++) {
-
 26.      filters[i].connect(filters[i+1]);
-
 27.    }
-
 28. 
-
 29.    // Master volume is a gain node
-
 30.    masterGain = audioContext.createGain();
-
 31.    masterGain.value = 1;
-
 32. 
-
 33.    // Connect the last filter to the speakers
-
 34.    filters[filters.length - 1].connect(masterGain);
-
 35. 
-
 36.   ** // for stereo balancing, split the signal**
-
 37. **   stereoPanner = audioContext.createStereoPanner();**
-
 38. **   // connect master volume output to the stereo panner**
-
 39. **   masterGain.connect(stereoPanner);**
-
 40. 
-
-41.    // Connect the stereo panner to analyser and analyser to
-    destination
-
+41.    // Connect the stereo panner to analyser and analyser to    destination
 42.    stereoPanner.connect(analyser);
-
 43.    analyser.connect(audioContext.destination);
-
 44. }
+```
 
 <h3 id="ch1-5-7">1.5.7 Volume Meters</h3>
 
@@ -6323,67 +6110,41 @@ rectangle.
 
 Here are the two functions we will call from the animation loop:
 
+```
 1.  function drawVolumeMeter() {
-
 2.    canvasContext.save();
-
 3.  
-
 4.    **analyser.getByteFrequencyData(dataArray);**
-
 5.    var average = getAverageVolume(dataArray);
-
 6.  
-
 7.    // set the fill style to a nice gradient
-
 8.    canvasContext.fillStyle=gradient;
-
 9.  
-
 10.   // draw the vertical meter
-
 11.   canvasContext.fillRect(0,height-average,25,height);
-
 12. 
-
 13.   canvasContext.restore();
-
 14. }
-
 15.  
-
 16. function getAverageVolume(array) {
-
 17.   var values = 0;
-
 18.   var average;
-
 19. 
-
 20.   var length = array.length;
-
 21. 
-
 22.   // get all the frequency amplitudes
-
 23.   for (var i = 0; i < length; i++) {
-
 24.     values += array[i];
-
 25.   }
-
 26. 
-
 27.   average = values / length;
-
 28.   return average;
-
 29. }
+```
 
-Note that we are measuring intensity (*line 4*) and once the frequency
+Note that we are measuring intensity (<i>line 4</i>) and once the frequency
 analysis data is copied into the dataarray, we
-call the getAverageVolume function (*line 5*) to compute the average
+call the getAverageVolume function (<i>line 5</i>) to compute the average
 value which we will draw as the volume meter.
 
 This is how we create the gradient:
@@ -6443,7 +6204,7 @@ the left and right volume meter react.
 In order to isolate the left and the right channel (for creating
 individual volume meters), we used a new node called a Channel Splitter
 node. From this node, we created two routes, each going to a separate
-analyser (*lines 46 and 47* of the example below)
+analyser (<i>lines 46 and 47</i> of the example below)
 
 -   See the ChannelSplitterNode's documentation. Notice that there is
     also a ChannelMergerNode for merging multiple routes into a single
