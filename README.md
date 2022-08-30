@@ -105,12 +105,12 @@ Orientation API which is useful for monitoring and controlling games and
 other activities; and Web Workers which introduce the power of parallel
 processing to Web apps.
 
-This HTML5 Apps and Games course is part of the [<b>Front-End Web
+This HTML5 Apps and Games course is part of the <a href="https://www.edx.org/professional-certificate/w3cx-front-end-web-developer">Front-End Web
 Developer" (FEWD) Professional
-Certificate</b>](https://www.edx.org/professional-certificate/w3cx-front-end-web-developer) program.
+Certificate</a> program.
 To get this FEWD certificate, you will need to successfully pass all 5
 courses that compose that program. Find out more
-on [<b>w3cx.org</b>](https://w3cx.org/)!
+on <a href="https://w3cx.org/">w3cx.org</a>!
 
 If you already have a verified certificate in one or more of these
 courses, you <i>do NOT need to re-take that course</i>.
@@ -19103,8 +19103,8 @@ alt="Devtools show that a new customer named Michel Buffa has been inserted" />
 We just added a single function into the example from the previous
 section - the function AddACustomer() that adds one customer:
 
-1.  **{ ssn: "123-45-6789", name: "Michel Buffa", age: 47, email:** 
-     **"buffa@i3s.unice.fr" }**
+1.  **{ ssn: "123-45-6789", name: "Michel Buffa", age: 47, email:</b> 
+     **"buffa@i3s.unice.fr" }</b>
 
 Here is the complete source code of the addACustomer function:
 
@@ -19187,7 +19187,7 @@ Here is the complete source code of the addACustomer function:
 
 39. }
 
-**Explanations:**
+**Explanations:</b>
 
 In the code above, *lines 4, 19 and 22* show the main calls you have to
 perform in order to add a new object to the store:
@@ -19256,7 +19256,7 @@ message if:
 <img src="./images/image207.jpeg"
 style="width:6.08333in;height:2.32292in" alt="insert error" />
 
-**Here is the updated version of the HTML code of this example:**
+**Here is the updated version of the HTML code of this example:</b>
 
 1.  <fieldset>
 
@@ -19276,11 +19276,11 @@ style="width:6.08333in;height:2.32292in" alt="insert error" />
 
 9.  
 
-10. <button **onclick="addACustomer();"**>Add a new
+10. <button **onclick="addACustomer();"</b>>Add a new
     Customer</button>
 
 **And here is the new version of the addACustomer() JavaScript
-function:**
+function:</b>
 
 1.  function addACustomer() {
 
@@ -19465,7 +19465,7 @@ Code added in this example:
 
 22.    alert('removing customer ssn=444-44-4444');
 
-23.    **var request = objectStore.delete("444-44-4444");**
+23.    **var request = objectStore.delete("444-44-4444");</b>
 
 24. 
 
@@ -19493,7 +19493,7 @@ Notice that after the deletion of the Customer (*line 23*),
 the request.onsuccess callback is called. And if you try to print the
 value of the event.target.result variable, it is "undefined".
 
-**Short way of doing the delete:**
+**Short way of doing the delete:</b>
 
 It is also possible to shorten the code of the above function a lot by
 concatenating the different operations (getting the store from the db,
@@ -19586,7 +19586,7 @@ Here is the new code added to our example:
 
 27.    alert('updating customer ssn=' + customerToUpdate.ssn);
 
-28.    **var request = objectStore.put(customerToUpdate);**
+28.    **var request = objectStore.put(customerToUpdate);</b>
 
 29. 
 
@@ -19635,95 +19635,53 @@ alt="Form updated with data retrieved" />
 
 Here is the code added to that example:
 
+```
 1.  function searchACustomer() {
-
 2.     if(db === null) {
-
 3.       alert('Database must be opened first, please click the Create
-
 4.              CustomerDB Database first');
-
 5.       return;
-
 6.     }
-
 7.  
-
 8.     var transaction = db.transaction(["customers"], "readwrite");
-
 9.  
-
 10.    // Do something when all the data is added to the database.
-
 11.    transaction.oncomplete = function(event) {
-
 12.      console.log("All done!");
-
 13.    };
-
 14. 
-
 15.    transaction.onerror = function(event) {
-
-16.      console.log("transaction.onerror
-    errcode=" + event.target.error.name);
-
+16.      console.log("transaction.onerror errcode=" + event.target.error.name);
 17.    };
-
 18. 
-
 19.    var objectStore = transaction.objectStore("customers");
-
 20. 
-
 21.    // Init a customer object with just the ssn property initialized
-
 22.    // from the form
-
-23.    **var customerToSearch={};**
-
-24.    **customerToSearch.ssn = document.querySelector("#ssn").value;**
-
+23.    <b>var customerToSearch={};</b>
+24.    <b>customerToSearch.ssn = document.querySelector("#ssn").value;</b>
 25. 
-
 26.    alert('Looking for customer ssn=' + customerToSearch.ssn);
-
 27. 
-
 28.    // Look for the customer corresponding to the ssn in the object
-
 29.    // store
-
-30.    **var request = objectStore.get(customerToSearch.ssn);**
-
+30.    <b>var request = objectStore.get(customerToSearch.ssn);</b>
 31. 
-
 32.    request.onsuccess = function(event) {
-
-33.      **console.log("Customer found" + event.target.result.name);**
-
+33.      <b>console.log("Customer found" + event.target.result.name);**
 34.      document.querySelector("#name").value=event.target.result.name;
-
 35.      document.querySelector("#age").value = event.target.result.age;
-
 36.      document.querySelector("#email").value
-
 37.                                         =event.target.result.email;
-
 38.    };
-
 39.  
-
 40.    request.onerror = function(event) {
-
 41.      alert("request.onerror, could not find customer, errcode = " + 
                 event.target.error.name + ".
-
 42.             The ssn is not in the Database");
-
 43.   };
-
 44. }
+```
 
 The search is inititated at *line 30*, and the callback in the case of
 success is request.onsuccess, *lines 32-38*. event.target with result as
@@ -19733,73 +19691,48 @@ Well, this is a lot of code, isn't it? We can considerably abbreviate
 this function (though, admittedly it won't take care of all possible
 errors). Here is the shortened version:
 
+```
 1.  function searchACustomerShort() {
-
 2.    db.transaction("customers").objectStore("customers")
-
 3.  .get(document.querySelector("#ssn").value).onsuccess =   
-
 4.     function(event) {
-
 5.        document.querySelector("#name").value =
-
 6.                                            event.target.result.name;
-
 7.        document.querySelector("#age").value =
-
 8.                                            event.target.result.age;
-
 9.        document.querySelector("#email").value =
-
 10.                                           event.target.result.email;
-
 11.   }; // end of onsuccess callback
-
 12. }
+```
 
 You can try it on JSBin: this [version of the online example using this
 shortened version](https://jsbin.com/rifate) (the function is at the end
 of the JavaScript code):
 
+```
 1.  function searchACustomerShort() {
-
 2.     if(db === null) {
-
 3.        alert('Database must be opened first, please click the Create
-
 4.               CustomerDB Database first');
-
 5.        return;
-
 6.     }
-
 7.  
-
 8.     db.transaction("customers").objectStore("customers")
-
 9.       .get(document.querySelector("#ssn").value)
-
 10.      .onsuccess = 
-
 11.        function(event) {
-
 12.           document.querySelector("#name").value =
-
 13.                                      event.target.result.name;
-
 14.           document.querySelector("#age").value =
-
 15.                                      event.target.result.age;
-
 16.           document.querySelector("#email").value =
-
 17.                                      event.target.result.email;
-
 18.        };
-
 19. }
+```
 
-**Explanations:**
+<b>Explanations:</b>
 
 -   Since there's only one object store, you can avoid passing a list of
     object stores that you need in your transaction and just pass the
@@ -19831,30 +19764,30 @@ Here's what it looks like:
 
 4.  
 
-5.     **objectStore.openCursor().onsuccess **= function(event) {
+5.     <b>objectStore.openCursor().onsuccess **= function(event) {
 
 6.       // we enter this callback for each object in the store
 
 7.  
 
-8.       **// The result is the cursor itself**
+8.       <b>// The result is the cursor itself**
 
-9.       **var cursor = event.target.result;**
+9.       <b>var cursor = event.target.result;**
 
 10. 
 
 11.      if (cursor) {
 
-12.        alert("Name for SSN " +** cursor.key **+ " is " +
+12.        alert("Name for SSN " +<b> cursor.key **+ " is " +
 
-13.               **cursor.value.name**);
+13.               <b>cursor.value.name**);
 
 14.        // Calling continue on the cursor will result in this
     callback
 
 15.        // being called again if there are other objects in the store
 
-16.        **cursor.continue();**
+16.        <b>cursor.continue();**
 
 17.      } else {
 
@@ -19882,9 +19815,9 @@ The openCursor() function can take several (optional) arguments.
 -   Second, you can specify the direction that you want to iterate.
 
 In the above example, we're iterating over all objects in ascending
-order. The onsuccess callback for cursors is a little special. **The
+order. The onsuccess callback for cursors is a little special. <b>The
 cursor object itself is the result property of the request** (above
-we're using the shorthand, so it's event.target.result). Then **the
+we're using the shorthand, so it's event.target.result). Then <b>the
 actual key and value can be found on the key and value properties of the
 cursor object**. If you want to keep going, then you have to
 call cursor.continue() on the cursor.
@@ -19976,15 +19909,15 @@ object store, and returns the first one it finds with a name equal to
 
 10. 
 
-11.    **var index = objectStore.index("name");**
+11.    <b>var index = objectStore.index("name");**
 
 12. 
 
-13.    **index.get("Bill").onsuccess **= function(event) {
+13.    <b>index.get("Bill").onsuccess **= function(event) {
 
-14.       alert("Bill's SSN is " + **event.target.result.ssn **+
+14.       alert("Bill's SSN is " + <b>event.target.result.ssn **+
 
-15.             " his email is " + **event.target.result.email**);
+15.             " his email is " + <b>event.target.result.email**);
 
 16.    };
 
@@ -20004,40 +19937,40 @@ The above example retrieves only the first object that has a name/index
 with the value="Bill". Notice that there are two "Bill"s in the object
 store.
 
-**Retrieving more than one result when using an index**
+<b>Retrieving more than one result when using an index**
 
 In order to get all the "Bills", once again we have to use *a cursor*.
 
 When we work with indexes, we can open two different types of cursors on
 indexes:
 
-1.  **A normal cursor** which maps the index property to the object in
+1.  <b>A normal cursor** which maps the index property to the object in
     the object store, or,
 
-2.  **A key cursor** which maps the index property to the key used to
+2.  <b>A key cursor** which maps the index property to the key used to
     store the object in the object store.
 
 The differences are illustrated below.
 
 Normal cursor:
 
-1.  **index.openCursor().onsuccess **= function(event) {
+1.  <b>index.openCursor().onsuccess **= function(event) {
 
-2.    **var cursor = event.target.result;**
+2.    <b>var cursor = event.target.result;**
 
 3.    if (cursor) {
 
-4.      // cursor.key is a name, like "Bill", and **cursor.value is
+4.      // cursor.key is a name, like "Bill", and <b>cursor.value is
     the**
 
-5.      // **whole object.**
+5.      // <b>whole object.**
 
-6.      alert("Name: " +** cursor.key **+ ", SSN:
-    " +** cursor.value.ssn **+ ",
+6.      alert("Name: " +<b> cursor.key **+ ", SSN:
+    " +<b> cursor.value.ssn **+ ",
 
-7.             email: " +** cursor.value.email**);
+7.             email: " +<b> cursor.value.email**);
 
-8.      **cursor.continue();**
+8.      <b>cursor.continue();**
 
 9.  }
 
@@ -20045,20 +19978,20 @@ Normal cursor:
 
 Key cursor:
 
-1.  **index.openKeyCursor().onsuccess **= function(event) {
+1.  <b>index.openKeyCursor().onsuccess **= function(event) {
 
 2.     var cursor = event.target.result;
 
 3.     if (cursor) {
 
-4.       // cursor.key is a name, like "Bill",** and cursor.value is
+4.       // cursor.key is a name, like "Bill",<b> and cursor.value is
     the**
 
-5.  **     **//** SSN (the key)**.
+5.  <b>     **//<b> SSN (the key)**.
 
 6.       // No way to directly get the rest of the stored object.
 
-7.       alert("Name: " + cursor.key + ", "SSN: " + **cursor.value**);
+7.       alert("Name: " + cursor.key + ", "SSN: " + <b>cursor.value**);
 
 8.       cursor.continue();
 
@@ -20108,17 +20041,17 @@ Source code extract from this example:
 
 10. 
 
-11.   **var index = objectStore.index("name");**
+11.   <b>var index = objectStore.index("name");**
 
 12. 
 
 13.   // Only match "Bill"
 
-14.   **var singleKeyRange = IDBKeyRange.only("Bill");**
+14.   <b>var singleKeyRange = IDBKeyRange.only("Bill");**
 
 15. 
 
-16.   **index.openCursor(singleKeyRange).onsuccess **= function(event) {
+16.   <b>index.openCursor(singleKeyRange).onsuccess **= function(event) {
 
 17. 
 
@@ -20273,19 +20206,19 @@ learned best suit your needs.
 
 To sum up:
 
--   **If you need to work with transactions** (in the database sense:
+-   <b>If you need to work with transactions** (in the database sense:
     protect data against concurrent access, etc.), or do some searches
-    on a large amount of data, if you need indexes, etc., **then use
+    on a large amount of data, if you need indexes, etc., <b>then use
     IndexedDB**
 
 <!-- -->
 
--   **If you need a way to store simple strings or JSON objects, then
+-   <b>If you need a way to store simple strings or JSON objects, then
     use localStorage/sessionStorage**. *Example*: store HTML form
     content as you type, store a game's hi-scores, preferences of an
     application, etc.
 
--   **If you need to manipulate files (read or download/upload), then
+-   <b>If you need to manipulate files (read or download/upload), then
     use the File API and XHR2.**
 
 -   If you need to manipulate a file system, there is a FileSystem and a
@@ -20297,7 +20230,7 @@ To sum up:
 -   If you need an SQL database client-side: No! Forget this idea,
     please! There was once a WebSQL API, but it disappeared rapidly.
 
-> **Note that the above points may be used in any combination**: you may
+> <b>Note that the above points may be used in any combination**: you may
 > have a Web app that uses localStorage and IndexedDB to cache its
 > resources so that it can run in offline mode.
 
@@ -20450,7 +20383,7 @@ That's all, you saw how you can reuse existing components.
 
 Easy! Bye bye!
 
-**Important note about the above text
+<b>Important note about the above text
 video:** [webcomponents.org](https://www.webcomponents.org/) and
 customelements.io have been merged in 2017!
 
@@ -20562,7 +20495,7 @@ components for creating rich UIs with a common look and feel.
 #### Web components are built on four different APIS
 
 In this lesson, we are talking about "Web components". Note that this is
-not a single API - rather it's what we call an "umbrella API", **built
+not a single API - rather it's what we call an "umbrella API", <b>built
 on top of 4 W3C specifications, **which are going to be detailed
 in subsequent lessons.
 
@@ -20723,7 +20656,7 @@ Here is an example of code that defines a template:
 
 4.  </template>
 
-Note that it's ok to have the **src** attribute empty here, we will
+Note that it's ok to have the <b>src** attribute empty here, we will
 initialize it when the template is activated.
 
 ### To use a template, clone its content!
@@ -20753,7 +20686,7 @@ A template is typically used like this:
 
 7.  document.body.appendChild(clone);
 
-**Explanations**:
+<b>Explanations**:
 
 -   In this example, *line 1* assigns the DOM node corresponding to the
     template we defined to variable t.
@@ -20960,7 +20893,7 @@ It is not obvious but the Shadow DOM API is already used by browsers'
 developers for <audio> or <video> elements, and also for the
 new <input type="date">, <input type="color"> elements, etc.
 
-**The three rules of Shadow DOM:**
+<b>The three rules of Shadow DOM:**
 
 1.  With Shadow DOM, elements are associated with a new kind of node: *a
     shadow root*.
@@ -21074,7 +21007,7 @@ alt="Shadow DOM simple example" />
 This example illustrates the three rules of the shadow DOM. Let's look
 at them again:
 
-#### **The three rules of Shadow DOM:**
+#### <b>The three rules of Shadow DOM:**
 
 1.  With Shadow DOM, elements are associated with a new kind of node: *a
     shadow root*.
@@ -21100,7 +21033,7 @@ alt="Shadow DOM: the shadow root is rendered instead of the shadow host content"
 By mixing templates and the shadow DOM, it is possible to hide a
 template's content by embedding it in the shadow root. In this scenario,
 it's easy to encapsulate CSS styles and/or JavaScript code so that it
-will affect **only** the content of the shadow root. Conversely,
+will affect <b>only** the content of the shadow root. Conversely,
 external CSS will not apply inside the shadow root.
 
 This is an important feature: the content of a new "widget" that is
@@ -21255,7 +21188,7 @@ the <slot>...</slot> element, as shown below:
 
 12. </body>
 
-### **Explanations**:
+### <b>Explanations**:
 
 -   Look at *line 4*, this is the "injection point"'!
 
@@ -21404,7 +21337,7 @@ previous examples):
 
 21.   // Define the custom element to the browser
 
-22.   **customElements.define('my-widget', MyWidget);**
+22.   <b>customElements.define('my-widget', MyWidget);**
 
 23.   console.log("Element defined");
 
@@ -21414,7 +21347,7 @@ previous examples):
 
 26. }
 
-### **Explanations**: 
+### <b>Explanations**: 
 
 -   *Line 5: *we use this particular selector for safety. It means
     "select the element only in the HTML of the document that is
@@ -21495,7 +21428,7 @@ keep your applications working (you will note that I'm part of this
 discussion too ;-) ).
 
 So... is there a replacement for HTML imports today? The answer is
-clearly NO. But **there are ways to still use HTML imports** or to use a
+clearly NO. But <b>there are ways to still use HTML imports** or to use a
 more complicated "JavaScript bundler". Also, the people at W3C working
 on Web Components talk a lot about a future "HTML module" that would do
 something similar to HTML imports, but this is not even in a
@@ -21503,14 +21436,14 @@ specification yet...
 
 ### Here is where we are:
 
--   **RECOMMENDED**: There is a polyfill for HTML imports that works
+-   <b>RECOMMENDED**: There is a polyfill for HTML imports that works
     very well. Just include it and your code that use HTML imports will
     work out of the box on recent browsers
     (see [ref.](https://github.com/webcomponents/html-imports#dynamic-imports)).
     We use it on our own applications and it works 100% with cascading
     imports, imports created dynamically, etc. Very solid.
 
--   **RECOMMENDED**: The above polyfill is also integrated in the "Web
+-   <b>RECOMMENDED**: The above polyfill is also integrated in the "Web
     Component polyfill" that will also emulate other Web Components
     features (see webcomponentsjs). It is  the one used in the course's
     examples. This "global" polyfill has been made to make apps that use
@@ -21520,14 +21453,14 @@ specification yet...
     also other alternative polyfills for each feature,
     like AshleyScirra’s  but we haven't tried these...
 
--   **WORKS BUT REQUIRES EXTRA WORK**: You can bundle the code of your
+-   <b>WORKS BUT REQUIRES EXTRA WORK**: You can bundle the code of your
     Web Components into a single JavaScript file, using bundlers
     like [webpack](https://webpack.js.org/) or [parcel](https://parceljs.org/),
     then use JavaScript modules (<script type="module" src=...>). 
     This is what the Polymer 3 Web Component framework dev team did when
     they had to remove HTML imports. 
 
--   **MAYBE A FUTURE STANDARD WAY?** There is a lot of debate in W3C
+-   <b>MAYBE A FUTURE STANDARD WAY?** There is a lot of debate in W3C
     about future "HTML modules" that would do something close to HTML
     imports did, but while this topic has been under discussion since
     2017, it's still not even in a specification. See [the
@@ -21550,7 +21483,7 @@ It is as simple as:
 
 1.  <head>
 
-2.     ** <link rel="import" href="components/myComponents.html">**
+2.     <b> <link rel="import" href="components/myComponents.html">**
 
 3.  </head>
 
@@ -21608,17 +21541,17 @@ Components) :
 3.  <head>
 4.    <meta charset="UTF-8">
 5.    <title>WebComponent as aJavaScript module</title>
-6.  ** 
+6.  <b> 
     <script type="module" src="./mycomponent/index.js"></script>**
 7.  </head>
 8.  <body>
-9.    **<my-component name="Michel Buffa"></my-component>**
-10. **  <my-component name="Marie-Claire Forgue"></my-component>**
+9.    <b><my-component name="Michel Buffa"></my-component>**
+10. <b>  <my-component name="Marie-Claire Forgue"></my-component>**
 11. </body>
 12. </html>
 ```
 
-### **Explanations**:
+### <b>Explanations**:
 
 -   *Line 6*: In this example, the Web Component is in a single
     JavaScript file (./mycomponent/index.js), that is imported as
@@ -21663,7 +21596,7 @@ Components) :
 28. });
 ```
 
-### **Explanations**:
+### <b>Explanations**:
 
 -   *Line 1*: we call customElements.define and pass as the first
     parameter the name of the Web Component (here <my-component), and
@@ -21768,69 +21701,45 @@ completely blocking the user interface: 
 <img src="./images/image239.jpeg" style="width:5.5in;height:1.84375in"
 alt="Examples that eats all the cpu" />
 
-### Code from the example:
+<h4>Code from the example:</h4>
 
+```
 1.  <!DOCTYPE HTML>
-
 2.  <html>
-
 3.  <head>
-
 4.  <title>Worker example: One-core computation</title>
-
 5.  </head>
-
 6.  <body>
-
 7.  <button id="startButton">Click to start discovering prime
     numbers</button><p> Note that this will make the page
-    unresponsive, you will have to close the tab in order to get back
-    your CPU!
-
-8.  <p>The highest prime number discovered so far
-    is: <output id="result"></output></p>
-
+    unresponsive, you will have to close the tab in order to get back your CPU!
+8.  <p>The highest prime number discovered so far is: <output id="result"></output></p>
 9.  <script>
-
 10.    function computePrime() {
-
 11.       var n = 1;
-
-12.       search: **while (true)** {
-
+12.       search: <b>while (true)</b> {
 13.          n += 1;
-
 14.          for (var i = 2; i <= Math.sqrt(n); i += 1)
-
 15.          if (n % i == 0)
-
 16.          continue search;
-
 17.          // found a prime!
-
 18.          document.getElementById('result').textContent = n;
-
 19.       }
-
 20.     }
-
-21.    
-    document.querySelector("#startButton").addEventListener('click', computePrime);
-
+21.    document.querySelector("#startButton").addEventListener('click', computePrime);
 22. </script>
-
 23. </body>
-
 24. </html>
+```
 
-Notice the infinite loop in the function computePrime (*line 12*, in
+Notice the infinite loop in the function computePrime (<i>line 12</i>, in
 bold). This is guaranteed to block the user interface. If you are brave
 enough to click on the button that calls the computePrime() function,
 you will notice that the *line 18* execution (that should normally
 modify the DOM of the page and display the prime number that has been
-found) does nothing visible. The UI is unresponsive. *This is** really,
-really, bad** JavaScript programming - and should be **avoided** at all
-costs.*
+found) does nothing visible. The UI is unresponsive. <i>This is</i> really,
+really, bad JavaScript programming - and should be <b>avoided</b> at all
+costs.
 
 Shortly we will see a "good version" of this example that uses Web
 Workers.
@@ -21859,14 +21768,14 @@ previous paragraph, cannot occur.
 There are two different kinds of Web Workers described in the
 specification:
 
--   **Dedicated Web Workers**: threads that are dedicated to one single
+-   <b>Dedicated Web Workers**: threads that are dedicated to one single
     page/tab. Imagine a page with a given URL that runs a Web Worker
     that counts in the background 1-2-3- etc.  It will be duplicated if
     you open the same URL in two different tabs. So each independent
     thread will start counting from 1 at startup time (when the tab/page
     is loaded).
 
--   **Shared Web Workers**: these are threads which may be shared
+-   <b>Shared Web Workers**: these are threads which may be shared
     between different pages of tabs (they must conform to the
     same-origin policy) on the same client/browser. These threads will
     be able to communicate, exchange messages, etc. For example, a
@@ -22101,9 +22010,9 @@ to be defined in a separate JavaScript file.
 
 <img src="./images/image240.jpeg"
 style="width:5.70833in;height:1.34375in"
-alt="Prime nulmber computation" />
+alt="Prime nulmber computation." />
 
-The HTML5 page code from this example that uses a Web Worker:
+<h4>The HTML5 page code from this example that uses a Web Worker:</h4>
 
 ```
 1.  <!DOCTYPE HTML>
@@ -22112,8 +22021,7 @@ The HTML5 page code from this example that uses a Web Worker:
 4.  <title>Worker example: One-core computation</title>
 5.  </head>
 6.  <body>
-7.  <p>The highest prime number discovered so far
-    is: <output id="result"></output></p>
+7.  <p>The highest prime number discovered so far is: <output id="result"></output></p>
 8.  <script>
 9.      **var worker = new Worker('worker.js');**
 10.     **worker.onmessage = function (event)** {
@@ -22124,20 +22032,20 @@ The HTML5 page code from this example that uses a Web Worker:
 15. </html>
 ```
 
-### **Explanations:**
+<h4>Explanations:</h4>
 
--   the Web Worker is created at *line 9*
+-   the Web Worker is created at <i>line 9</i>
 
 -   its code is in the worker.js file
 
--   *Lines 10-12* process messages sent asynchronously by the worker
+-   <i>Lines 10-12</i> process messages sent asynchronously by the worker
 
 -   event.data is the message content.
 
 Workers can only communicate with their parent page using messages. See
 the code of the worker below to see how the message has been sent.
 
-### The code of the worker (worker.js):
+<h4>The code of the worker (worker.js):</h4>
 
 ```
 1.  var n = 1;
@@ -22147,7 +22055,7 @@ the code of the worker below to see how the message has been sent.
 5.      if (n % i == 0)
 6.      continue search;
 7.      // found a prime!
-8.     ** postMessage(n);**
+8.     <b> postMessage(n);**
 9.  }
 ```
 
@@ -22173,8 +22081,8 @@ There are a few interesting things to note here:
 We can improve this example a little by testing whether the browser
 supports Web Workers, and by displaying some additional messages.
 
-> **CAREFUL**: for security reasons you cannot try the examples using a
-> file:// URL. **You need an HTTP web server that will serve the
+> <b>CAREFUL**: for security reasons you cannot try the examples using a
+> file:// URL. <b>You need an HTTP web server that will serve the
 > files**. Here is what happens if you do not follow this constraint:
 
 <img src="./images/image241.jpeg" style="width:6.5in;height:1.67292in"
@@ -22296,7 +22204,7 @@ worker.
 19. 
 20.     setTimeout(function(){
 21.        // After 10 seconds, we kill the worker
-22.       ** worker.terminate();**
+22.       <b> worker.terminate();**
 23. 
 24.        document.body.appendChild(document.createTextNode("Worker
     killed, 10 seconds elapsed !")
@@ -22333,7 +22241,7 @@ worker after 10000ms.
 A Web worker can also kill itself by calling the close() method in the
 worker's JavaScript file:
 
-### **To sum up, there are 3 different ways to kill a Web Worker:**
+### <b>To sum up, there are 3 different ways to kill a Web Worker:**
 
 1.  Close the tab/window of the parent. This will kill all workers that
     have been created by this parent tab/window.
@@ -22352,8 +22260,8 @@ the importScripts() function.
 ### worker.js:
 
 ```
-1.  **importScripts('script1.js');**
-2.  **importScripts('script2.js');**
+1.  <b>importScripts('script1.js');**
+2.  <b>importScripts('script2.js');**
 3.  
 4.  // Other possible syntax
 5.  importScripts('script1.js', 'script2.js');
@@ -22415,7 +22323,7 @@ avoid such a pain, the Web Workers API does several things:
 <img src="./images/image242.png" style="width:5.20833in;height:3.39583in"
 alt="web worker scope" />
 
-**Note that:**
+<b>Note that:**
 
 1.  Chrome has already implemented a new way for transferring objects
     from/to Web Workers by reference, in addition to the standard "by
@@ -22433,7 +22341,7 @@ alt="web worker scope" />
     a tricky task, and having a good tool-kit makes this process much
     easier.
 
--   **Chrome** provides tools for debugging Web Workers. See [Debug
+-   <b>Chrome** provides tools for debugging Web Workers. See [Debug
     Background Services With Chrome
     DevTools](https://developers.google.com/web/tools/chrome-devtools/javascript/background-services).
 
@@ -22447,7 +22355,7 @@ prime numbers example:
 <img src="./images/image243.jpeg" style="width:5in;height:3.11538in"
 alt="chrome debug web workers" />
 
--   **FireFox** has similar tools, see [Firefox developer
+-   <b>FireFox** has similar tools, see [Firefox developer
     tools](https://developer.mozilla.org/en-US/docs/Tools).
 
 ## 4.3.4 Demos
@@ -22529,7 +22437,7 @@ API](https://www.w3.org/TR/screen-orientation/): a way to use angle
 measures provided by accelerometers from mobile devices or laptops such
 as MacBooks.
 
-**Beware**: all examples must be run on a device with an orientation
+<b>Beware**: all examples must be run on a device with an orientation
 sensor and/or with an accelerometer. Furthermore, Chrome/Safari and
 Mozilla support this API, but Opera mobile doesn't (yet) at the time of
 writing. 
@@ -22727,13 +22635,13 @@ Typical use / code from the above example:
 9.  <script type="text/javascript">
 10.    if (window.DeviceOrientationEvent) {
 11.       console.log("DeviceOrientation is supported");
-12.       **window.addEventListener('deviceorientation', function(eventData) {**
+12.       <b>window.addEventListener('deviceorientation', function(eventData) {**
 13.          // gamme is for left/right inclination
-14.          var LR =** eventData.gamma;**
+14.          var LR =<b> eventData.gamma;**
 15.          // beta is for front/back inclination
-16.          var FB =** eventData.beta;**
+16.          var FB =<b> eventData.beta;**
 17.          // alpha is for orientation
-18.          var DIR =** eventData.alpha;**
+18.          var DIR =<b> eventData.alpha;**
 19.          // display values on screen
 20.          deviceOrientationHandler(LR, FB, DIR);
 21.       }, false);
@@ -22867,11 +22775,11 @@ of *orientation *only.
 
 Use cases proposed by the specification are:
 
--   **Controlling a game**: a gaming Web application monitors the
+-   <b>Controlling a game**: a gaming Web application monitors the
     device's orientation and interprets tilting in a certain direction
     as a means to control an on-screen sprite.
 
--   **Gesture recognition**: a Web application monitors the device's
+-   <b>Gesture recognition**: a Web application monitors the device's
     acceleration and applies signal processing in order to recognize
     certain specific gestures. For example, using a shaking gesture to
     clear a web form.
@@ -22898,11 +22806,10 @@ Use cases proposed by the specification are:
 
 The deviceMotion API is rather straightforward and is very similar to
 the orientation API except that it returns more than just
-the *rotation* information, it also
-returns [acceleration ](https://en.wikipedia.org/wiki/Acceleration)information
-reflecting the device's actual movement.
+the <i>rotation</i> information, it also
+returns <a href="https://en.wikipedia.org/wiki/Acceleration)information">acceleration</a> reflecting the device's actual movement.
 
-The *acceleration* is in three parts:
+The <i>acceleration</i> is in three parts:
 
 1.  along the X axis
 
@@ -22922,11 +22829,11 @@ the effects of gravity.
 
 Why are there two different values? Because some devices have the
 capability of excluding the effects
-of [gravity](https://en.wikipedia.org/wiki/Gravity), eg if equipped with
-a gyroscope. Indeed [there is acceleration due implicitly to
-gravity](https://en.wikipedia.org/wiki/Acceleration_of_gravity), see
-also this: [Acceleration of Gravity on
-Earth](https://en.wikipedia.org/wiki/Acceleration_of_gravity#Earth.27s_gravity)... 
+of <a href="https://en.wikipedia.org/wiki/Gravity">gravity, eg if equipped with
+a gyroscope. Indeed <a href="https://en.wikipedia.org/wiki/Acceleration_of_gravity">there is acceleration due implicitly to
+gravity</a>, see
+also this: <a href="https://en.wikipedia.org/wiki/Acceleration_of_gravity#Earth.27s_gravity">Acceleration of Gravity on
+Earth</a>... 
 
 If the device doesn't have a gyroscope, the acceleration property will
 be returned as *null*. In this case, you have no choice but to use
@@ -22937,17 +22844,22 @@ The *device motion* *event* is a superset of the *device orientation
 event*; it returns *rotation* as well as *acceleration* information from
 the device. 
 
-Example of acceleration values
+<h4>Example of acceleration values</h4>
 
 If a laptop is in its normal position with the screen facing up, the
-data returned would be (info taken from
-this [article](https://developers.google.com/web/fundamentals/native-hardware/device-orientation/)):
+data returned would be <a href="https://developers.google.com/web/fundamentals/native-hardware/device-orientation/">(info taken from
+this [article]</a>):
 
-<img src="./images/image261.png" style="width:6.5in;height:0.79653in"
-alt="acceleration values 1" />
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------- 261. acceleration values 1 (xxx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<img src="./images/image261.png"
+   alt="Acceleration values 1."
+   width="65%" />
+</p>
 
-A mobile phone rotated along the x-axis so the screen is perpendicular
-to its normal position would return:
+<p>A mobile phone rotated along the x-axis so the screen is perpendicular
+to its normal position would return:</p>
 
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------- 262. acceleration values 2 (xxx) ------------------------------->
@@ -22957,7 +22869,7 @@ to its normal position would return:
    width="65%" />
 </p>
 
-Remember the coordinate system for a mobile phone:
+<h4>Remember the coordinate system for a mobile phone:</h4>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------- 263. telephone coordinates system (xxx) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
@@ -22968,22 +22880,20 @@ Remember the coordinate system for a mobile phone:
 
 <h4>Common steps</h4>
 
-The principles are the same as for the orientation API:
+<h4>The principles are the same as for the orientation API:</h4>
 
-```
 1.  Test if the API is supported by the browser,
 2.  Add a listener for 'devicemotion' events,
 3.  Get the acceleration values from the DOM event that has been passed
     to the listener,
 4.  Process the data.
-```
 
 <h4>Common processing with acceleration values</h4>
 
 Test the value of the acceleration.z property: If \> 0 then the device
 is facing up, otherwise it is facing down. This would be useful if you
-wanted to play [heads or
-tails](https://en.wikipedia.org/wiki/Coin_flipping) with your phone ;-)
+wanted to play <a href="https://en.wikipedia.org/wiki/Coin_flipping">heads or
+tails</a> with your phone ;-)
 
 ```
 1.  // For example, if acceleration.z is \> 0 then the phone is facing
@@ -23048,8 +22958,7 @@ later on)...
 
 <h4>Move the HTML5 logo</h4>
 
-[Online example at
-JsBin](https://jsbin.com/pasoboyucu/edit?html,js,output).
+<a href="https://jsbin.com/pasoboyucu/edit?html,js,output">Online example at JsBin</a>.
 
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 264. devicemotion api example (xxx) ------------------------------>
@@ -23069,8 +22978,7 @@ JsBin](https://jsbin.com/pasoboyucu/edit?html,js,output).
 5.  
 6.     <body>
 7.        <h2>Device Orientation with HTML5</h2>
-8.        You need to be on a mobile device or use a laptop with
-    accelerometer/orientation
+8.        You need to be on a mobile device or use a laptop with accelerometer/orientation
 9.        device.
 10.       <p>
 11.       <div id="rawAccel"></div>
@@ -23082,18 +22990,14 @@ JsBin](https://jsbin.com/pasoboyucu/edit?html,js,output).
 17.          if (window.DeviceMotionEvent != undefined) {
 18.          console.log("DeviceMotion is supported");
 19. 
-20.         
-    window.addEventListener('devicemotion', function(eventData) {
-21.             // Grab the acceleration including gravity from the
-    results
+20.          window.addEventListener('devicemotion', function(eventData) {
+21.             // Grab the acceleration including gravity from the results
 22.             var acceleration = eventData.accelerationIncludingGravity;
 23.             // Display the raw acceleration data
-24.             var rawAcceleration = "[" + Math.round(acceleration.x) + ",
-    " + Math.round(acceleration.y) 
+24.             var rawAcceleration = "[" + Math.round(acceleration.x) + ", " + Math.round(acceleration.y) 
 25.             + ", " + Math.round(acceleration.z) + "]";
 26. 
-27.             // Z is the acceleration in the Z axis, and if the
-    device
+27.             // Z is the acceleration in the Z axis, and if the device
 28.             // is facing up or down
 29.             var facingUp = -1;
 30.             if (acceleration.z > 0) {
@@ -23101,8 +23005,7 @@ JsBin](https://jsbin.com/pasoboyucu/edit?html,js,output).
 32.             }
 33. 
 34.             // Convert the value from acceleration to degrees
-35.             // acceleration.x|y is the acceleration according to
-    gravity,
+35.             // acceleration.x|y is the acceleration according to gravity,
 36.             //  we'll assume we're on Earth and divide
 37.             // by 9.81 (earth gravity) to get a percentage value,  
 38.             // and then multiply that by 90 to convert to degrees.
@@ -23129,13 +23032,11 @@ JsBin](https://jsbin.com/pasoboyucu/edit?html,js,output).
 59.          // USE CSS3 rotations for rotating the HTML5 logo
 60.          //for webkit browser
 61.          document.getElementById("imgLogo").style.webkitTransform =
-62.          "rotate(" + tiltLR + "deg) rotate3d(1,0,0,
-    " + (tiltFB * -1) + "deg)";
+62.          "rotate(" + tiltLR + "deg) rotate3d(1,0,0, " + (tiltFB * -1) + "deg)";
 63. 
 64.          //for HTML5 standard-compliance
 65.          document.getElementById("imgLogo").style.transform =
-66.          "rotate(" + tiltLR + "deg) rotate3d(1,0,0,
-    " + (tiltFB * -1) + "deg)";
+66.          "rotate(" + tiltLR + "deg) rotate3d(1,0,0, " + (tiltFB * -1) + "deg)";
 67.       }
 68.    </script>
 69.   </body>
@@ -23143,7 +23044,7 @@ JsBin](https://jsbin.com/pasoboyucu/edit?html,js,output).
 71. </html>
 ```
 
-Interesting example that uses jQuery mobile
+<h4>Interesting example that uses jQuery mobile</h4>
 
 This example shows how the X and Y acceleration values can be used for
 indicating the sky's direction (vertical), and how the Z acceleration
@@ -23167,38 +23068,30 @@ it: <a href="https://jsbin.com/uyuqek/4/edit">https://jsbin.com/uyuqek/4/edit</
 1.  <html>
 2.     <head>
 3.  
-4.       <meta http-equiv="content-type" content="text/html;
-    charset=utf-8">
-5.       <meta name="viewport" content="user-scalable=no,
-    width=device-width" />
+4.       <meta http-equiv="content-type" content="text/html; charset=utf-8">
+5.       <meta name="viewport" content="user-scalable=no, width=device-width" />
 6.  
 7.       <link rel="stylesheet"
-8.           
-     href="https://code.jquery.com/mobile/1.0b2/jquery.mobile-1.0b2.min.css" />
+8.           href="https://code.jquery.com/mobile/1.0b2/jquery.mobile-1.0b2.min.css" />
 9.  
 10.      <script type="text/javascript"
 11.              src = "https://code.jquery.com/jquery-1.6.2.min.js">
 12.      </script>
 13.      <script type="text/javascript"
-14.            
-     src = "https://code.jquery.com/mobile/1.0b2/jquery.mobile-1.0b2.min.js">
+14.              src = "https://code.jquery.com/mobile/1.0b2/jquery.mobile-1.0b2.min.js">
 15.      </script>
 16. 
 17.      script type="text/javascript">
 18.         $(document).ready(function(){
-19.            
-    window.addEventListener("devicemotion",onDeviceMotion,false);
+19.            window.addEventListener("devicemotion",onDeviceMotion,false);
 20.         });
 21. 
 22.         function onDeviceMotion(event){
 23.             var ctx = document.getElementById("c").getContext("2d");
 24.             var accel = event.accelerationIncludingGravity;
-25.            
-    $("#sliderX").val(Math.round(accel.x)).slider("refresh");
-26.            
-    $("#sliderY").val(Math.round(accel.y)).slider("refresh");
-27.            
-    $("#sliderZ").val(Math.round(accel.z)).slider("refresh");
+25.            $("#sliderX").val(Math.round(accel.x)).slider("refresh");
+26.            $("#sliderY").val(Math.round(accel.y)).slider("refresh");
+27.            $("#sliderZ").val(Math.round(accel.z)).slider("refresh");
 28.             // sky direction
 29.             var angle = Math.atan2(accel.y,accel.x)
 30.             ctx.clearRect(0,0,100,100);
@@ -23206,8 +23099,7 @@ it: <a href="https://jsbin.com/uyuqek/4/edit">https://jsbin.com/uyuqek/4/edit</
 32.             ctx.arc(50,50,5,0,2*Math.PI,false);
 33.             ctx.moveTo(50,50);
 34.             // Draw sky direction
-35.            
-    ctx.lineTo(50-50*Math.cos(angle),50+50*Math.sin(angle));
+35.             ctx.lineTo(50-50*Math.cos(angle),50+50*Math.sin(angle));
 36.             ctx.stroke();
 37.         }
 38.      </script>
@@ -23230,8 +23122,7 @@ it: <a href="https://jsbin.com/uyuqek/4/edit">https://jsbin.com/uyuqek/4/edit</
 55.            <input type="range" name="sliderY" id="sliderY"
 56.                   value="0" min="-10" max="10" data-theme="b" />
 57. 
-58.            <label for="sliderZ">Z Acceleration
-    (<strike>Yaw</strike>
+58.            <label for="sliderZ">Z Acceleration (<strike>Yaw</strike>
 59.               Face up/down)
 60.            </label>
 61.            <input type="range" name="sliderZ" id="sliderZ"
@@ -23268,13 +23159,11 @@ mobile device, <a href="https://jsbin.com/eyahuv/2"use this URL instead</a>!
 <h4>Code from this example:</h4>
 
 ```
-1.  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+1.  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 2.  <html xmlns="https://www.w3.org/1999/xhtml">
 3.  
 4.      <head\>
-5.         <meta http-equiv="Content-Type" content="text/html;
-    charset=UTF-8" /\>
+5.         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /\>
 6.         <meta name="viewport" content="width=device-width,
 7.                                        target-densityDpi=device-dpi,
 8.                                        initial-scale=1.0,
@@ -23298,18 +23187,15 @@ mobile device, <a href="https://jsbin.com/eyahuv/2"use this URL instead</a>!
 26.              width: 60px;
 27.              height: 60px;
 28.              border-radius: 30px;
-29.             
-    background-image: -webkit-gradient(radial, 45% 45%, 5, 60% 60%,
-30.                  
-    40, from(red), color-stop(75%, black), to(rgba(255, 255, 255, 0)));
+29.              background-image: -webkit-gradient(radial, 45% 45%, 5, 60% 60%,
+30.                  40, from(red), color-stop(75%, black), to(rgba(255, 255, 255, 0)));
 31.              -webkit-box-shadow: 3px 3px 5px #888;
 32.           }
 33.        </style>
 34.        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js">
 35.        </script>
 36.        <script>
-37.           !window.jQuery && document.write('<script
-    src="./js/jquery.min.js"></script>')
+37.           !window.jQuery && document.write('<script src="./js/jquery.min.js"></script>')
 38.        </script>
 39.        <script>
 40.           var offset;
@@ -23319,8 +23205,7 @@ mobile device, <a href="https://jsbin.com/eyahuv/2"use this URL instead</a>!
 44.           var interval;
 45. 
 46.           $(document).ready(function() {
-47.              
-    window.addEventListener("devicemotion", onDeviceMotion, false);
+47.              window.addEventListener("devicemotion", onDeviceMotion, false);
 48.               $('#timestamp').html(new Date().toString());
 49.               $('#status').html("Ready!");
 50. 
@@ -23430,7 +23315,7 @@ mobile device, <a href="https://jsbin.com/eyahuv/2"use this URL instead</a>!
     Acceleration</a>"</li>
 </ul>
 
-<h3>4.4.5 Discussion and projects</h3>
+<h3 id="ch4-4-5">4.4.5 Discussion and projects</h3>
 <p>
 Here is the discussion forum for this part of the course. Please post
 your comments/observations/questions and share your creations.
