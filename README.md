@@ -958,26 +958,23 @@ orientation API + CSS3 3D rotations
 
 Welcome!
 
-This course is one of the courses composing the ["Front-End Web
-Developer”](https://www.edx.org/professional-certificate/front-end-web-developer-9) 
+This course is one of the courses composing the <a href="https://www.edx.org/professional-certificate/front-end-web-developer-9">"Front-End Web
+Developer”</a>
 
-Professional Certificate program.
+<h4>Professional Certificate program.</h4>
 
-You will dive into <b>advanced techniques<b>, combining HTML5, CSS and
+You will dive into <b>advanced techniques</b>, combining HTML5, CSS and
 JavaScript, to create your own HTML5 app and/or game.
 
-During this course, you will notably learn:
-
--   Advanced multimedia features with the Track and Audio APIs
-
--   HTML5 games techniques
-
--   More APIs, including Web Workers and Service Workers
-
--   Web components
-
--   Persistence techniques for data storage including IndexedDB, File
-    System API and Drag and Drop
+<h3>During this course, you will notably learn:</h3>
+<ul>
+<li>Advanced multimedia features with the Track and Audio APIs</li>
+<li>HTML5 games techniques</li>
+<li>More APIs, including Web Workers and Service Workers</li>
+<li>Web components</li>
+<li>Persistence techniques for data storage including IndexedDB, File
+    System API and Drag and Drop</li>
+</ul>
 
 <h3>Web Browsers and Editors</h3>
 
@@ -6558,10 +6555,13 @@ audio graph.
 
 ##### HTML code extract:
 
+```
 1.  <button id="playButton" disabled=true>Play sound</button>
+```
 
 ##### JavaScript source code:
 
+```
 1.  var ctx;
 2.   
 3.  var soundURL =
@@ -6616,14 +6616,13 @@ audio graph.
 52.     request.send();
 53. }
 54.  
-55. **function playSound(buffer){**
-56. **    // builds the audio graph, then start playing the source**
-57. **    var bufferSource = ctx.createBufferSource();**
-58. **    bufferSource.buffer = buffer;**
-59. **    bufferSource.connect(ctx.destination);**
-60. **    bufferSource.start(); // remember, you can start() a source
-    only once!**
-61. **}**
+55. function playSound(buffer){
+56.     // builds the audio graph, then start playing the source
+57.     var bufferSource = ctx.createBufferSource();
+58.     bufferSource.buffer = buffer;
+59.     bufferSource.connect(ctx.destination);
+60.     bufferSource.start(); // remember, you can start() a source only once!
+61. }
 ```
 
 ##### **Explanations:**
@@ -6704,111 +6703,64 @@ alt="Example that loads two sounds and create two buttons for playing them" />
 
 ##### HTML code:
 
+```
 1.  <button id="shot1Normal" disabled=true>Shot 1</button>
-
 2.  <button id="shot2Normal" disabled=true>Shot 2</button>
+```
 
 ##### JavaScript code extract (does not contain the BufferLoader utility code):
 
+```
 1.  var listOfSoundSamplesURLs = [
-
 2.  'https://mainline.i3s.unice.fr/mooc/shoot1.mp3',
-
 3.  'https://mainline.i3s.unice.fr/mooc/shoot2.mp3'
-
 4.  ];
-
 5.   
-
 6.  window.onload = function init() {
-
 7.    // To make it work even on browsers like Safari, that still
-
 8.    // do not recognize the non prefixed version of AudioContext
-
-9.   
-    var audioContext = window.AudioContext || window.webkitAudioContext;
-
+9.   var audioContext = window.AudioContext || window.webkitAudioContext;
 10.  
-
 11.   ctx = new audioContext();
-
 12. 
-
 13.   loadAllSoundSamples();
-
 14. };
-
 15.  
-
 16. function playSampleNormal(buffer){
-
 17.   // builds the audio graph and play
-
 18.   var bufferSource = ctx.createBufferSource();
-
 19.   bufferSource.buffer = buffer;
-
 20.   bufferSource.connect(ctx.destination);
-
 21.   bufferSource.start();
-
 22. }
-
 23.  
-
 24.  
-
 25. function onSamplesDecoded(buffers){
-
 26.    console.log("all samples loaded and decoded");
-
 27.    // enables the buttons
-
 28.    shot1Normal.disabled=false;
-
 29.    shot2Normal.disabled=false;
-
 30. 
-
 31.    // creates the click listeners on the buttons
-
 32.    shot1Normal.onclick = function(evt) {
-
 33.       playSampleNormal(buffers[0]);
-
 34.    };
-
 35. 
-
 36.    shot2Normal.onclick = function(evt) {
-
 37.       playSampleNormal(buffers[1]);
-
 38.    };
-
 39. }
-
 40.  
-
 41. function loadAllSoundSamples() {
-
 42.   // onSamplesDecoded will be called when all samples
-
 43.   // have been loaded and decoded, and the decoded sample will
-
 44.   // be its only parameter (see function above)
-
-45.  
-    bufferLoader = new BufferLoader(ctx, listOfSoundSamplesURLs,onSamplesDecoded);
-
+45.  bufferLoader = new BufferLoader(ctx, listOfSoundSamplesURLs,onSamplesDecoded);
 46. 
-
 47.   // starts loading and decoding the files
-
 48.   bufferLoader.load();
-
 49. }
+```
 
 After the call to loadAllSoundSamples() (*line 13*), when all the sound
 sample files have been loaded and decoded, a callback will be initiated
@@ -6846,94 +6798,62 @@ HTML5Rocks)](https://www.html5rocks.com/en/tutorials/webaudio/games/):
 
 ##### Here is the source code of this function:
 
+```
 1.  function makeSource(buffer) {
-
 2.     // build graph source -> gain -> compressor -> speakers
-
 3.     // We use a compressor at the end to cut the part of the signal
-
 4.     // that would make peaks
-
 5.     // create the nodes
-
 6.     var source = ctx.createBufferSource();
-
 7.     var compressor = ctx.createDynamicsCompressor();
-
 8.     var gain = ctx.createGain();
-
 9.  
-
 10.    // set their properties
-
 11.    // Not all shots will have the same volume
-
 12.    gain.gain.value = 0.2 + Math.random();
-
 13. 
-
 14.    source.buffer = buffer;
-
 15. 
-
 16.    // Build the graph
-
 17.    source.connect(gain);
-
 18.   gain.connect(compressor);
-
 19.   compressor.connect(ctx.destination);
-
 20. return source;
-
 21. }
+```
 
 And this is the function that plays different sounds in a row,
 eventually creating random time intervals between them and random pitch
 variations:
 
+```
 1.  function playSampleRepeated(buffer, rounds, interval, random, random2) {
-
 2.     if (typeof random == 'undefined') {
-
 3.        random = 0;
-
 4.     }
-
 5.     if (typeof random2 == 'undefined') {
-
 6.        random2 = 0;
-
 7.     }
-
 8.  
-
 9.     var time = ctx.currentTime;
-
-10.    // Make multiple sources using the same buffer and play in quick
-    succession.
-
+10.    // Make multiple sources using the same buffer and play in quick succession.
 11.    for (var i = 0; i < rounds; i++) {
-
 12.       var source = makeSource(buffer);
-
 13.       source.playbackRate.value = 1 + Math.random() * random2;
-
 14.       source.start(time + i * interval + Math.random() * random);
-
 15.   } 
-
 16. }
+```
 
-##### **Explanations:**
+<h4>Explanations:</h4>
 
--   *Lines 11-15*: we make a loop for building multiple routes in the
+-   <i>Lines 11-15</i>: we make a loop for building multiple routes in the
     graph. The number of routes corresponds to the number of times that
     we want the same buffer to be played. Note that
     the random2 parameter enables us to randomize the playback rate of
     the source node that corresponds to the pitch of the sound. 
 
--   *Line 14*: this is where the sound is being played. Instead of
+-   <i>Line 14</i>: this is where the sound is being played. Instead of
     calling source.start(), we call source.start(delay), this tells the
     Web Audio scheduler to play the sound after a certain time. 
 
@@ -7117,7 +7037,7 @@ alt="html5 logo" />
 
 And now we are entering a new era in the history of the Web: "HTML5"!
 
-## 2.2.2 Elements and APIs useful for writing games
+<h3 id="ch2-2-2">2.2.2 Elements and APIs useful for writing games</h3>
 
 In the W3Cx [HTML5 Coding Essentials and Best
 Practices](https://www.edx.org/course/html5-coding-essentials-and-best-practices) course,
@@ -7126,7 +7046,7 @@ be revisited in more details in this section.
 
 Here, we present some elements that are useful in writing games.
 
-##### Drawing: the <canvas> element
+##### Drawing: the &lt;canvas&gt; element
 
 <img src="./images/image092.jpeg" style="width:2in;height:2in"
 alt="the html5 canvas logo" />
@@ -7188,9 +7108,7 @@ as "animated textures" over graphic objects.
 
 ##### Audio (streamed audio and real time sound effects): the <audio> element and the Web Audio API
 
-#### 
-
-#### <img src="./images/image094.png" style="width:2in;height:2.00966in"
+<img src="./images/image094.png" style="width:2in;height:2.00966in"
 alt="a picture of a speaker" />
 
 ##### The <audio> element
@@ -7244,7 +7162,7 @@ to poll the server for a reply. 
 <img src="./images/image096.gif" style="width:2in;height:2.28807in"
 alt="a graph showing several clients interacting with a websocket server" />
 
-## 2.2.3 The "game loop"
+<h3 id="ch2-2-3">2.2.3 The "game loop"</h3>
 
 <img src="./images/image097.png" style="width:2in;height:3.78182in"
 alt=" a game loop diagram" />
@@ -7337,21 +7255,16 @@ thing as the previous example by adding a "*" to the document every
 
 Source code extract:
 
+```
 1.  var addStarToTheBody = function(){
-
 2.      document.body.innerHTML += "*";
-
-3.      **// calls again itself AFTER 200ms**
-
-4.      **setTimeout(addStarToTheBody, 200);**
-
+3.      // calls again itself AFTER 200ms
+4.      setTimeout(addStarToTheBody, 200);
 5.  };
-
 6.  
-
-7.  **// calls the function AFTER 200ms**
-
-8.  **setTimeout(addStarToTheBody, 200);**
+7.  // calls the function AFTER 200ms
+8.  setTimeout(addStarToTheBody, 200);
+```
 
 This example will work like the previous example. However, it is a
 definite improvement, because the timer waits for the function to finish
@@ -7388,27 +7301,19 @@ JSBin](https://jsbin.com/geqija/1/edit?html,js,output).
 
 Source code extract:
 
+```
 1.  window.onload = function init() {
-
 2.     // called after the page is entirely loaded
-
-3.     **requestAnimationFrame(mainloop);**
-
+3.     requestAnimationFrame(mainloop);
 4.  };
-
 5.  
-
 6.  function mainloop(timestamp) {
-
 7.     document.body.innerHTML += "*";
-
 8.  
-
-9.     **// call back itself every 60th of second**
-
-10.    **requestAnimationFrame(mainloop);**
-
+9.     // call back itself every 60th of second
+10.    requestAnimationFrame(mainloop);
 11. }
+```
 
 Notice that calling requestAnimationFrame(mainloop) at *line 10*, asks
 the browser to call the mainloop function every 16.6 ms: this
@@ -7429,7 +7334,7 @@ exactly that: it gives a high resolution time.
 
 We will cover this in more detail, later in the course.
 
-## 2.3.1 A game framework skeleton
+<h3 id="ch2-3-1">2.3.1 A game framework skeleton</h3>
 
 We are going to develop a game - not all at once, let's divide the whole
 job into a series of smaller tasks. The first step is to create
@@ -7447,51 +7352,34 @@ single file.
 
 ##### Here is the starting point:
 
+```
 1.  var GF = function(){
-
 2.  
-
 3.    var mainLoop = function(time){
-
 4.      //Main function, called each frame
-
 5.      requestAnimationFrame(mainLoop);
-
 6.    };
-
 7.  
-
 8.    var start = function(){
-
 9.      requestAnimationFrame(mainLoop);
-
 10.   };
-
 11. 
-
-12.   // Our GameFramework returns a public API visible from outside its
-    scope
-
-13.   // Here we only expose the start method, under the "start"
-    property name.
-
-14.   **return {**
-
-15. **    start: start**
-
-16. **  };**
-
+12.   // Our GameFramework returns a public API visible from outside its scope
+13.   // Here we only expose the start method, under the "start" property name.
+14.   return {
+15.     start: start
+16.   };
 17. };
+```
 
 ##### With this skeleton, it's very easy to create a new game instance:
 
+```
 1.  var game = new GF();
-
 2.  
-
 3.  // Launch the game, start the animation loop, etc.
-
-4.  **game.start();**
+4.  game.start();
+```
 
 ##### Examples
 
@@ -7504,19 +7392,15 @@ have a real game yet, but we're improving our game engine :-)
 
 ##### Source code extract:
 
+```
 1.  var mainLoop = function(time){
-
 2.    // main function, called each frame
-
 3.    document.body.innerHTML = Math.random();
-
 4.  
-
 5.    // call the animation loop every 1/60th of second
-
 6.    requestAnimationFrame(mainLoop);
-
 7.  };
+```
 
 ##### Let's measure that animation's frame rate
 
@@ -7590,40 +7474,29 @@ Now we can call the measureFPS function from inside the animation loop,
 passing it the current time, given by the high resolution timer that
 comes with the requestAnimationFrame API:
 
-1.  var mainLoop = function(**time**){
-
-2.    // compute FPS, called each frame, uses the high resolution time
-    parameter 
-
-3.    // given by the browser that implements the requestAnimationFrame
-    API
-
-4.    **measureFPS(time);**
-
+```
+1.  var mainLoop = function(time){
+2.    // compute FPS, called each frame, uses the high resolution time parameter 
+3.    // given by the browser that implements the requestAnimationFrame API
+4.    measureFPS(time);
 5.  
-
 6.    // call the animation loop every 1/60th of second
-
 7.    requestAnimationFrame(mainLoop);
-
 8.  };
+```
 
-And the <div> element used to display FPS on the screen is created in
+And the &lt;div&gt; element used to display FPS on the screen is created in
 this example by the start() function:
 
+```
 1.  var start = function(){
-
-2.    **// adds a div for displaying the fps value**
-
-3.  **  fpsContainer = document.createElement('div');**
-
-4.  **  document.body.appendChild(fpsContainer);**
-
+2.    // adds a div for displaying the fps value
+3.    fpsContainer = document.createElement(div);
+4.    document.body.appendChild(fpsContainer);
 5.  
-
 6.    requestAnimationFrame(mainLoop);
-
 7.  };
+```
 
 Hack:  achieving more than 60 fPS? It's possible but to be avoided
 except in hackers' circles!
@@ -7631,7 +7504,7 @@ except in hackers' circles!
 We also know methods of implementing loops in JavaScript which achieve
 even more than 60fps (this is the limit using requestAnimationFrame).
 
-My favorite hack uses the onerror callback on an <img> element like
+My favorite hack uses the onerror callback on an &lt;img&gt; element like
 this:
 
 ```
@@ -7654,7 +7527,7 @@ this JSBin example](https://jsbin.com/notupe/edit).
 <img src="./images/image100.jpeg" style="width:4in;height:2.26742in"
 alt="Screenshot of example with 4441 FPS displayed" />
 
-##### Source code extract of this example:
+<h4>Source code extract of this example:</h4>
 
 ```
 1.  var mainLoop = function(){
@@ -7669,7 +7542,7 @@ alt="Screenshot of example with 4441 FPS displayed" />
 10. };
 ```
 
-## 2.3.2 Introducing graphics
+<h3 id="ch2-3-2">2.3.2 Introducing graphics</h3>
 
 [*Note*: drawing within a canvas is studied in detail during the [W3C
 HTML5 Coding Essentials and Best Practices
@@ -7868,7 +7741,7 @@ alt="Screenshot of a trembling monster in a 60 f/s animation" />
 10. </html>
 ```
 
-##### JavaScript complete code:
+<h4>JavaScript complete code:</h4>
 
 ```
 1.  // Inits
@@ -7938,7 +7811,7 @@ alt="Screenshot of a trembling monster in a 60 f/s animation" />
 65. };
 ```
 
-##### **Explanations**:
+<h4>Explanations:</h4>
 
 -   Note that we now start the game engine in a window.onload callback
     (*line 2*), so only after the page has been loaded.
@@ -7962,7 +7835,7 @@ per second!
 
 Next, let's see how to interact with it using the mouse or the keyboard.
 
-## 2.3.3 User interaction and event handling
+<h3 id="ch2-3-3">2.3.3 User interaction and event handling</h3>
 
 ##### Input & output: how do events work in Web apps & games?
 
@@ -8058,7 +7931,7 @@ references useful:
 -   [Separation of concerns - Wikipedia, the free
     encyclopedia](https://en.wikipedia.org/wiki/Separation_of_concerns)
 
-## 2.3.4 Adding key listeners
+<h3 id="ch2-3-4">2.3.4 Addi key listeners</h3>
 
 ##### A few reminders
 
@@ -8265,7 +8138,7 @@ possible to simultaneously press the up and down arrow keys, or left and
 right arrow keys, because they are mutually exclusive. However space +
 up + right should work in combination.
 
-## 2.3.5 Adding mouse listeners
+<h3 id="ch2-3-5">2.3.5 Adding mouse listeners</h3>
 
 ##### A few reminders
 
@@ -8301,7 +8174,7 @@ Notice that we keep the state of the mouse (position, buttons up or
 down) as part of the inputStates object, just as we do with the keyboard
 (per previous lesson).
 
-Below is the JavaScript source code for this small example:
+<h4>Below is the JavaScript source code for this small example:</h4>
 
 ```
 1.  var canvas, ctx;
@@ -8358,12 +8231,12 @@ Below is the JavaScript source code for this small example:
 
 ##### Making an object follow the mouse cursor
 
-[Try this example at JsBin](https://jsbin.com/soduko/edit?js,output)
+<a href="https://jsbin.com/soduko/edit?js,output">Try this example at JsBin</a>
 
 <img src="./images/image108.jpeg" style="width:2in;height:2.04192in"
 alt="A rectangle that follows the mouse cursor" />
 
-##### Source code:
+<h4>Source code:</h4>
 
 ```
 1.  var canvas, ctx, width, height;
@@ -8427,19 +8300,19 @@ alt="A rectangle that follows the mouse cursor" />
 59. }
 ```
 
-##### **Explanations:**
+<h4>Explanations:</h4>
 
--   *Line 25* calculates the *angle* between mouse cursor and the
+-   <i>Line 25</i> calculates the <i>angle</i> between mouse cursor and the
     rectangle,
 
--   *Lines 27-28* *move* the rectangle v pixels along a line between the
+-   <i>Lines 27-28</i> <i>move</i> the rectangle v pixels along a line between the
     rectangle's current position and the mouse cursor,
 
--   *Lines 41-46* *translate* the rectangle, *rotate* it, and recenter
-    the *rotational point* to the center of the rectangle (in its new
+-   <i>Lines 41-46</i> <i>translate</i> the rectangle, <i>rotate</i> it, and recenter
+    the <i>rotational point</i> to the center of the rectangle (in its new
     position).
 
-##### Adding mouse listeners to the game framework
+<h4>Adding mouse listeners to the game framework</h4>
 
 Now we will include these listeners into our game framework. Notice that
 we changed some parameters (no need to pass the canvas as a parameter of
@@ -8457,7 +8330,7 @@ handles all these events simultaneously because the global variable
 named inputStates is updated by keyboard and mouse events, and consulted
 to direct movements every 1/60th second.
 
-##### JavaScript source code:
+<h4>JavaScript source code:</h4>
 
 ```
 1.  // Inits
@@ -17152,7 +17025,7 @@ post your comments/observations/questions or share your creations.
     (alternatively, if you have style-sheet skills, you could try this
     using CSS transitions).
 
-## 3.5.1 Introduction
+<h3 id="ch3-5-1">3.5.1 Introduction</h3>
 
 We had many questions about how to submit a form with regular input
 fields AND benefit from the HTML5 built-in validation AND upload files
@@ -17220,7 +17093,7 @@ input field content and the selected files.
 The next page provides the source code of several examples, as well as
 the server-side PHP code.
 
-## 3.5.2 Installation guide
+<h3 id="ch3-5-2">3.5.2 Installation guide</h3>
 
 Please download all examples (authors: Michel Buffa, improvements and
 fixes by Vincent Mazenod): [Zip file containing all examples (html +
@@ -17255,7 +17128,7 @@ HTTP header.
 This part of the lesson is optional and is mainly useful for students
 who are also involved in the server side of the Web development.
 
-## 3.5.3 Serial approach
+<h3 id="ch3-5-3">3.5.3 Serial approach</h3>
 
 We made two examples that rely on the serial approach:
 
@@ -17328,8 +17201,7 @@ alt="example 2 of file uploads, uses drag&#39;n&#39;drop" />
 21. 
 22. $fn = (isset($_SERVER['HTTP_X_FILENAME']) ?
 
-23.                                
-     $_SERVER['HTTP_X_FILENAME'] : false);
+23.              $_SERVER['HTTP_X_FILENAME'] : false);
 24. 
 25. if ($fn) {
 26.   if (!is_dir('upload/RecycleBin')) {
@@ -17347,14 +17219,14 @@ alt="example 2 of file uploads, uses drag&#39;n&#39;drop" />
 
 -   When files are first uploaded, they are stored in a directory
     called upload/RecycleBin. If it does not exist, this directory is
-    created (*lines 22-32*).
+    created (<i>lines 22-32</i>).
 
 -   When the form is submitted, a directory whose name is today's date
     is created, and the files located in the RecycleBin directory are
     moved to that directory. If it does not already exist, the directory
-    will be created  (*lines 7-20*).
+    will be created  (<i>lines 7-20</i>).
 
-## 3.5.4 Package approach
+<h3 id="ch3-5-4">3.5.4 Package approach</h3>
 
 Let's use the previous two examples as a basis for two further examples:
 
@@ -17392,103 +17264,55 @@ This code is given "as is". The principle is the same as with the
 examples given in the previous section, except that this time we do not
 have to deal with a temporary "RecycleBin" directory.
 
+```
 1.  <?php
-
 2.  
-
 3.  if (isset($_POST['givenname']) && isset($_POST['familyname'])) {
-
-4.      echo $_POST['givenname'] . ' ' . $_POST['familyname'] . '
-    try to upload
-
+4.      echo $_POST['givenname'] . ' ' . $_POST['familyname'] . ' try to upload
 5.           file(s).';
-
 6.  }
-
 7.  
-
 8.  $folderName = date("m.d.Y");
-
 9.  if (!is_dir('upload/'.$folderName)) {
-
 10.     mkdir('upload/'.$folderName);
-
 11. }
-
 12. 
-
 13. $fn = (isset($_SERVER['HTTP_X_FILENAME']) ? $_SERVER['HTTP_X_FILENAME'] :
-
 14.                                             false);
-
 15. if ($fn)
-
 16. {
-
 17.     file_put_contents('upload/' . $folderName . '/' . $fn,     
-
 18.                       file_get_contents('php://input'));
-
 19.     echo "$fn uploaded";
-
 20.     exit();
-
 21. }
-
 22. else {
-
-23.  
-     if (isset($_FILES) && is_array($_FILES) && array_key_exists('formFiles',
-
+23. if (isset($_FILES) && is_array($_FILES) && array_key_exists('formFiles',
 24.                                               $_FILES)) {
-
 25.       $number_files_send = count($_FILES['formFiles']['name']);
-
 26.       $dir = realpath('.') . '/upload/' . $folderName . '/';
-
 27. 
-
 28.       if ($number_files_send > 0) {
-
 29.          for ($i = 0; $i < $number_files_send; $i++) {
-
-30.             echo '<br/>Reception of :
-    ' . $_FILES['formFiles']['name'][$i];
-
-31.            
-    $copy = move_uploaded_file($_FILES['formFiles']['tmp_name']
-
-32.                    
-    [$i], $dir . $_FILES['formFiles']['name'][$i]);
-
+30.             echo '<br/>Reception of : ' . $_FILES['formFiles']['name'][$i];
+31.            $copy = move_uploaded_file($_FILES['formFiles']['tmp_name']
+32.                    [$i], $dir . $_FILES['formFiles']['name'][$i]);
 33.             if ($copy) {
-
-34.               echo '<br />File
-    ' . $_FILES['formFiles']['name'][$i] .
-
+34.               echo '<br />File ' . $_FILES['formFiles']['name'][$i] .
 35.                    ' copy';
-
 36.             }
-
 37.             else {
-
 38.               echo '<br />No file to upload';
-
 39.             }
-
 40.         }
-
 41.      }
-
 42.    }
-
 43. }
-
 44. 
-
 45. ?>
+```
 
-## 3.5.5 Discussion
+<h3 id="ch3-5-5">3.5.5 Discussion</h3>
 
 Here is the discussion forum for this part of the course.
 
@@ -17502,7 +17326,7 @@ Here is the discussion forum for this part of the course.
     upload, etc. The examples are given "as is"... if you improve them,
     as usual, share them in the forum!
 
-## 3.6.1 Concepts (part 1)
+<h3 id="ch3-6-1">3.6.1 Concepts (part 1)</h3>
 
 Hello everyone! Today I will talk about IndexedDB.
 
@@ -17530,13 +17354,8 @@ properties:
 firstName and lastName. It is designed to work with huge amount of
 
 data with also very good performances. You can use indexes. So an index
-system allows
-
-you to specify that some properties will be ‘indexes’ and this will make
-requests on these
-
-properties much faster. For example, if I've got 100 000 people in my
-
+system allows you to specify that some properties will be ‘indexes’ and this will make
+requests on these properties much faster. For example, if I've got 100 000 people in my
 database, and I am looking for all the people with the last name equal
 to ‘Buffa’.
 
@@ -17554,9 +17373,7 @@ opened in a callback.
 You insert data, you will need to check in a callback that the insert
 has been performed correctly.
 
-So databases, when you store objects inside
-
-are called ‘object stores’, they have a name and they are attached to a
+So databases, when you store objects inside are called ‘object stores’, they have a name and they are attached to a
 domain.
 
 You can imagine they are attached to a Web app.
@@ -17565,75 +17382,44 @@ So let's look at some examples. The first very popular example is Google
 Drive.
 
 So Google Drive stores lots of documents, spreadsheets, presentations…
-and if you are
-
-offline, it works! So I just open the dev tools and you can see
-
+and if you are offline, it works! So I just open the dev tools and you can see
 that Google Drive relies a lot on IndexedDB. So we've got different data
-stores here and
-
-the different data stores will hold, for example, the synced documents
+stores here and the different data stores will hold, for example, the synced documents
 I've got in my repository.
 
 And these documents are JavaScript objects, you can see the brackets
-here that are typical
-
-of JavaScript objects, and you have got properties like the data, the
+here that are typical of JavaScript objects, and you have got properties like the data, the
 viewMode and so on.
 
 Another example is a guitar pedalboard I wrote for processing in real
-time the
-
-sound of the guitar. You can see that we have got different categories…
+time the sound of the guitar. You can see that we have got different categories…
 
 and we can select different presets, and each preset is attached with
 some values or a position…
 
 and if I reload the application it remembers exactly the settings
-because every time I am
-
-doing an action, I am storing the current state in an IndexedDB
-database, here... and I
-
-am storing directly JavaScript object with the preset values and so on.
+because every time I am doing an action, I am storing the current state in an IndexedDB
+database, here... and I am storing directly JavaScript object with the preset values and so on.
 
 And we are synchronizing this database that is located in the browser
-with a MongoDB database
-
-that is located on the server side and that holds also JavaScript
+with a MongoDB database that is located on the server side and that holds also JavaScript
 objects.
 
 So having the same representation for data -JavaScript objects-, is
 really comfortable.
 
 So in the course, you will see a lot of small examples that we prepared
-on JSBin, and each
-
-of these examples show an individual operation, a very core operation
+on JSBin, and each of these examples show an individual operation, a very core operation
 like creating a Customer database.
 
-So if I click on the "create CustomerDB database" (button),
-
-and if I open the devtools console, and I go to IndexedDB, I can see
-that the CustomerDB
-
-database I created appeared here, and I can see that the objects are
-stored: people with an age,
-
-email, name and a social security number. So you will see examples for
-creating a database,
-
-for working with data, for inserting data, removing data, modifying
-data, getting data
-
-and so on. And each of these small examples will provide
-
-very useful code that you can reuse in your own examples.
+So if I click on the "create CustomerDB database" (button), and if I open the devtools console, and I go to IndexedDB, I can see
+that the CustomerDB database I created appeared here, and I can see that the objects are
+stored: people with an age, email, name and a social security number. So you will see examples for
+creating a database, for working with data, for inserting data, removing data, modifying
+data, getting data and so on. And each of these small examples will provide very useful code that you can reuse in your own examples.
 
 In the course, you will also find more complete examples like this one
-that shows how you can
-
-make requests to collect just some subset of data using what we called
+that shows how you can make requests to collect just some subset of data using what we called
 ‘bounds’.
 
 So, for example, if you want to get just one single result, you can
