@@ -983,8 +983,14 @@ During this course, you will notably learn:
 
 <h4>Web browsers</h4>
 
-<img src="./images/image003.jpeg" style="width:1.1875in;height:1.1875in"
-alt="A man looking at his laptop screen as if he is considering which browser to use - a few browser logos float in the background" />
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------------- 03. which browser? (xx) ------------------------------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image003.jpeg?raw=true"
+   width="18%"
+   alt="A man looking at his laptop screen as if he is considering which browser to use - a few browser logos float in the background." />
+</p>
 
 Not surprisingly, it would be helpful to have a browser (short for "Web
 Browser") installed so that you can see the end result of your source
@@ -1041,8 +1047,13 @@ examples will actually use these.
 
 <h4>JS Bin</h4>
 
-<img src="./images/image004.png" style="width:0.72917in;height:0.72917in"
-alt="JS Bin logo." />
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------- 04. js bin logo (xx) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<img src="./images/image004.png"
+   alt="JS Bin logo."
+   width="10%" />
+</p>
 
 <a href="http://jsbin.com/">JS Bin</a> is an open source
 collaborative Web development debugging tool. This tool is really
@@ -1056,8 +1067,15 @@ or on YouTube. Keep in mind that it's always better to be logged in (it's free) 
 
 <h4>CodePen</h4>
 
-<img src="./images/image005.png" style="width:0.72917in;height:0.72917in"
-alt="CodePen logo" />[CodePen](http://codepen.io/) is an HTML, CSS, and
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------------ 05. codepen logo (xx) ------------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<img src="./images/image005.png"
+   alt="CodePen logo."
+   width="10%" />
+</p>
+
+<a href="http://codepen.io/">CodePen</a> is an HTML, CSS, and
 JavaScript code editor that previews/showcases your code bits in your
 browser. It helps with cross-device testing, real-time remote pair
 programming and teaching.
@@ -1065,9 +1083,8 @@ programming and teaching.
 This is a great service to get you started quickly as it doesn't require
 you to download anything and you can access it, along with your saved
 projects from any Web browser. Here's an article which will be
-of-interest if you use CodePen: [Things you can do with
-CodePen](https://codepen.io/brentmiller/post/things-you-can-do-with-codepen) [Brent
-Miller, February 6, 2019].
+of-interest if you use CodePen: <a href="https://codepen.io/brentmiller/post/things-you-can-do-with-codepen">Things you can do with
+CodePen</a> [Brent Miller, February 6, 2019].
 
 There are many other handy tools such as JSFiddle, and Dabblet (Lea
 Verou's tool that we will use extensively in a future CSS course).
@@ -1079,20 +1096,24 @@ or similar tools, would be really appreciated.
 <h4>W3C Validators</h4>
 
 For over 20 years, the W3C has been developing and
-hosting [<b><u>free</u></b> and <b><u>open
-source</u></b> tools](https://w3c.github.io/developers/) used every day
+hosting <a href="https://w3c.github.io/developers/">[<b><u>free</u></b> and <b><u>open
+source</u></b> tools</a> used every day
 by <b>millions of Web developers and Web designers<b>. All the tools
 listed below are Web-based, and are available as downloadable sources or
-as free services on the [W3C Developers
-tools ](https://w3c.github.io/developers/tools/)site.
+as free services on the <a href="https://w3c.github.io/developers/tools/">W3C Developers tools</a> site.
 
 <h4>W3C Validator</h4>
 
-<h4><img src="./images/image006.png" style="width:1in;height:0.40556in" /></h4>
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------------ 06. w3c validator (xx) ------------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<img src="./images/image006.png"
+   alt="W3C Validator."
+   width="10%" />
+</p>
 
-The [W3C validator](https://validator.w3.org/) checks the [markup
-validity](https://validator.w3.org/docs/help.html#validation_basics) of
-various Web document formats, such as HTML.
+The <a href="https://validator.w3.org/">W3C validator</a> checks the <a href="https://validator.w3.org/docs/help.html#validation_basics">markup
+validity</a> of various Web document formats, such as HTML.
 
 <h4>CSS Validator</h4>
 
@@ -1100,12 +1121,17 @@ The [CSS validator](https://jigsaw.w3.org/css-validator/) checks
 Cascading Style Sheets (CSS) and (X)HTML documents that use CSS
 stylesheets.
 
-<img src="./images/image007.png" style="width:1in;height:0.82159in"
-alt="Laptop showing unicorn validator" />
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------------- 07. css validator (xx) ------------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<img src="./images/image007.png"
+   alt="Laptop showing unicorn validator."
+   width="10%" />
+</p>
 
 <h4>Unicorn</h4>
 
-[Unicorn](https://validator.w3.org/unicorn/) is W3C's unified validator,
+<a href="https://validator.w3.org/unicorn/">Unicorn</a> is W3C's unified validator,
 which helps people improve the quality of their Web pages by performing
 a variety of checks. Unicorn gathers the results of the popular HTML and
 CSS validators, as well as other useful services, such as RSS/Atom feeds
@@ -1113,17 +1139,16 @@ and http headers.
 
 <h4>Link Checker</h4>
 
-The [W3C Link Checker](https://validator.w3.org/checklink) looks for
+The <a href="https://validator.w3.org/checklink">W3C Link Checker</a> looks for
 issues in links, anchors and referenced objects in a Web page, CSS style
 sheet, or recursively on a whole Web site. For best results, it is
-recommended to first ensure that the documents checked use valid [HTML
-Markup](https://validator.w3.org/) and [CSS](https://jigsaw.w3.org/css-validator/).
+recommended to first ensure that the documents checked use valid <a href="https://validator.w3.org/) and [CSS](https://jigsaw.w3.org/css-validator/">HTML
+Markup</a>.
 
 <h4>Internationalization Checker</h4>
 
-The [W3C Internationalization
-Checker](https://validator.w3.org/i18n-checker/) provides information
-about various internationalization-related aspects of your page,
+The <a href="https://validator.w3.org/i18n-checker/">W3C Internationalization
+Checker</a> provides information about various internationalization-related aspects of your page,
 including the HTTP headers that affect it. It also reports a number of
 issues and offers advice about how to resolve them.
 
@@ -1136,6 +1161,7 @@ compilation of useful knowledge extracted from W3C specifications,
 completed by summaries of guidelines developed at W3C, in particular Web
 accessibility guidelines, the Mobile Web Best Practices, and a number of
 internationalization tips.
+
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 08. tim berners-lee in 1994 (11) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -4176,11 +4202,8 @@ the <audio> element.
 Let's create on the fly a WebVTT file with many cues, in order to cut a
 big sound file into segments and play them on demand
 
-[This JsBin
-demonstration](https://jsbin.com/lodiju/edit?html,js,output), adapted
-from an original demo by Sam Dutton, uses [a single mp3 file that
-contains recorded animal
-sounds](https://mainline.i3s.unice.fr/mooc/animalSounds.mp3).
+<a href="https://jsbin.com/lodiju/edit?html,js,output">This JsBin demonstration</a>, adapted
+from an original demo by Sam Dutton, uses <a href="https://mainline.i3s.unice.fr/mooc/animalSounds.mp3">a single mp3 file that contains recorded animal sounds</a>.
 
 <h4> Below is the sound file. You can try to play it:</h4>
 
@@ -4254,7 +4277,7 @@ in some browsers), it's easy to use this small polyfill:
 <h4>Techniques</h4>
 
 To add a TextTrack to a track element, use
-the [addTextTrack method](https://www.w3.org/TR/html5/embedded-content-0.html#text-track-api) (of the
+the <a href="https://www.w3.org/TR/html5/embedded-content-0.html#text-track-api">addTextTrack method</a> (of the
 audio or video element). The function's signature is
 addTextTrack(kind[,label[,language]]) where kind is our familiar
 choice between subtitles, captions, chapters, etc. The optional label is
@@ -4265,10 +4288,9 @@ optional <i>language</i> is from our usual list of BCP-47 abbreviations, eg
 The VTTCue constructor enables us to create our own cue class-instances
 programmatically. We create a cue instance by using the new keyword. The
 constructor function expects three familiar arguments, thus: new
-VTTCue(startTime, endTime, id) - more detail is available from [the
-MDN](https://developer.mozilla.org/en-US/docs/Web/API/Web_Video_Text_Tracks_Format) and [the
-W3C's two applicable
-groups](https://w3c.github.io/webvtt/#the-vttcue-interface).
+VTTCue(startTime, endTime, id) - more detail is available from <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Video_Text_Tracks_Format">the
+MDN</a> and <a href="https://w3c.github.io/webvtt/#the-vttcue-interface">the
+W3C's two applicable groups</a>.
 
 To add cue-instances to a TextTrack on-the-fly, use the track object's
 addCue method, eg track.addCue(cue). The argument is a <i>cue instance</i> -
@@ -4388,18 +4410,15 @@ within a cuechange listener attached to a TextTrack:
 6.      // do something
 7.  }
 ```
-
-Here is [a very impressive demo by Sam Dutton that uses JSON cues
+<p>
+Here is <a href="https://simpl.info/track/map/index.html">a very impressive demo by Sam Dutton that uses JSON cues
 containing the latitude and longitude of the camera used for filming the
-video, to synchronize two map
-views](https://simpl.info/track/map/index.html): every time the active
-cue changes, the Google map and equivalent Google street view are
-updated. 
+video, to synchronize two map views</a>: every time the active cue changes, the Google map and equivalent Google street view are updated. 
 
 WARNING: as this Google service is no longer free of charge, you might
 see "for development purpose only" messages during the execution of this
 demo. You'll need a valid Google API key in order to remove these
-messages.
+messages.</p>
 
 <img src="./images/image050.jpeg" style="width:5in;height:4.46635in"
 alt="Video synced with google map and google street map" />
@@ -4412,8 +4431,8 @@ alt="Video synced with google map and google street map" />
 
 <h4>Cue events and cue content:</h4>
 
-We can acquire a cue DOM object using the techniques we have seen
-previously, or by using the new HTML5 TextTrack getCueById() method. 
+<p>We can acquire a cue DOM object using the techniques we have seen
+previously, or by using the new HTML5 TextTrack getCueById() method.</p>
 
 ```
 1.  var videoElement = document.querySelector("#myvideo");
@@ -4436,8 +4455,8 @@ previously, or by using the new HTML5 TextTrack getCueById() method. 
 7.  };
 ```
 
-If the getCueById method is not implemented (this is the case in some
-browsers), we use the @@polyfill presented in the previous section:
+<p>If the getCueById method is not implemented (this is the case in some
+browsers), we use the @@polyfill presented in the previous section:</p>
 
 ```
 1.   // for browsers that do not implement the getCueById() method
@@ -4679,8 +4698,8 @@ step by step how to do such an application.
 Shortcomings of the standard APIs that we have discussed so far...
 
 In Module 2 of the HTML5 Coding Essentials course, you learned how to
-add an audio or video player to an HTML document, using the <audio>
-and <video> elements. 
+add an audio or video player to an HTML document, using the &lt;audio&gt;
+and &lt;video&gt; elements. 
 
 <h4>For example:</h4>
 
@@ -4688,41 +4707,36 @@ and <video> elements. 
 1.  <audio src="https://mainline.i3s.unice.fr/mooc/LaSueur.mp3" controls>
 ```
 
-... render like this in your document:
+<p>... render like this in your document:</p>
 
 <h4>Under the hood, this HTML code:</h4>
-
-1.  initiates a network request to stream the content,
-
-2.  deals with decoding/streaming/buffering the incoming data,
-
-3.  renders audio controls,
-
-4.  updates the progress indicator, time, etc.
-
-You also learned that it's possible to write a custom player: to make
+<ol type="1">
+<li>initiates a network request to stream the content,</li>
+<li>deals with decoding/streaming/buffering the incoming data,</li>
+<li>renders audio controls,</li>
+<li>updates the progress indicator, time, etc.</li>
+</ol>
+<p>You also learned that it's possible to write a custom player: to make
 your own controls and use the JavaScript API of
 the <audio> and <video> elements; to call play() and pause(); to
 read/write properties such as currentTime; to listen to events
-(ended, error, timeupdate, etc.); and to manage a playlist, etc.
+(ended, error, timeupdate, etc.); and to manage a playlist, etc.</p>
 
 <h4>However, there are many things we still cannot do, including:</h4>
+<ul>
+<li>Play multiple sounds or music in perfect sync,</li>
+<li>Play non-streamed sounds (this is a requirement for games: sounds
+    must be loaded in memory),</li>
+<li>Output directly to the speakers; adding special effects, equalizer,
+    stereo balancing, reverb, etc.</li>
+<li>Any fancy visualizations that dance with the music (e.g. waveforms
+    and frequencies).</li>
+</ul>
 
--   Play multiple sounds or music in perfect sync,
+<p>The Web Audio API fulfills such missing parts, and much more.
 
--   Play non-streamed sounds (this is a requirement for games: sounds
-    must be loaded in memory),
-
--   Output directly to the speakers; adding special effects, equalizer,
-    stereo balancing, reverb, etc.
-
--   Any fancy visualizations that dance with the music (e.g. waveforms
-    and frequencies).
-
-The Web Audio API fulfills such missing parts, and much more.
-
-In this course, we do not cover the whole [Web Audio API
-specification](https://webaudio.github.io/web-audio-api/). Instead, we
+In this course, we do not cover the whole <a href="https://webaudio.github.io/web-audio-api/">Web Audio API
+specification</a>. Instead, we
 focus on the parts of the API that can be useful for writing enhanced
 multimedia players (that work with streamed audio or video), and on
 parts that are useful for games (i.e. parts that work with small sound
@@ -4731,13 +4745,14 @@ synthesis and scheduling notes, that we will not study oin this course.
 
 Here's a screenshot from one example we will study: an audio player with
 animated waveform and volume meters that 'dance' with the music:
+</p>
 
 <img src="./images/image052.jpeg" style="width:3in;height:1.92453in"
 alt="A fancy audio player with multiple visualizations" />
 
 </h4>Web Audio concepts</h4>
 
-The audio context
+<p>The audio context
 
 The canvas used a graphic context for drawing shapes and handling
 properties such as colors and line widths.
@@ -4762,10 +4777,11 @@ nodes.
 
 The easiest way to understand this principle is to look <b><a href="https://jsbin.com/gaduqojeke/edit?html,js">at a first example at
 JSBin</a>.</b>
+</p>
 
 <img src="./images/image053.jpeg" style="width:3in;height:0.73669in"
 alt="audio player with gain" />
-
+<p>
 This example is detailed in the next lesson. For the moment, all you
 need to know is that it routes the signal from an <audio> element
 using a special node that bridges the "streamed audio" world  to the Web
@@ -4781,8 +4797,8 @@ Use the Audio Chrome extension to see the WebAudio graph in devtools
 For a long time, FireFox had a very good WebAudio debugger built in its
 devtools, but it has been discontinued in 2019. Meanwhile you can use a
 Google Chrome extension named "WebAudio Inspector" (or "Audion").  You
-can install it [from the Chrome Web
-Store](https://chrome.google.com/webstore/detail/web-audio-inspector/cmhomipkklckpomafalojobppmmidlgl).
+can install it <a href="https://chrome.google.com/webstore/detail/web-audio-inspector/cmhomipkklckpomafalojobppmmidlgl">from the Chrome Web Store]</a>.
+</p>
 
 <img src="./images/image054.jpeg" style="width:5in;height:4.05556in"
 alt="Chrome WebAudio Inspector extension" />
@@ -22364,8 +22380,14 @@ The use of this API is very straightforward:
 mode](https://jsbin.com/limugat) (without the JsBin editor) )
 
 
-<img src="./images/image251.png" style="width:4in;height:1.03889in"
-alt="orientation api 2" />
+<!------------------------------------------------------------------------------------------------>
+<!-------------------------------- 251. orientation api 2 (###) ---------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image251.png?raw=true"
+   width="40%"
+   alt="Orientation API 2." />
+</p>
 
 The above screenshot came from an iPad laying immobile on a desk.
 Theoretically, all the angle values will be zero when the device is laid
@@ -22377,14 +22399,32 @@ with Math.round() at display time (see code).
 
 If we change the orientation of the device here are the results:
 
-<img src="./images/image252.png" style="width:4in;height:2.99701in"
-alt="orientation api 3" />
+<!------------------------------------------------------------------------------------------------>
+<!-------------------------------- 252. orientation api 3 (###) ---------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image252.png?raw=true"
+   width="40%"
+   alt="Orientation API 3." />
+</p>
 
-<img src="./images/image253.png" style="width:4in;height:3.00171in"
-alt="orientation api 1" />
+<!------------------------------------------------------------------------------------------------>
+<!-------------------------------- 253. orientation api 1 (###) ---------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image253.png?raw=true"
+   width="35%"
+   alt="Orientation API 1." />
+</p>
 
-<img src="./images/image254.png" style="width:4in;height:3.00171in"
-alt="orientation api 2" />
+<!------------------------------------------------------------------------------------------------>
+<!-------------------------------- 254. orientation api 2 (###) ---------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image254.png?raw=true"
+   width="40%"
+   alt="Orientation API 2." />
+</p>
 
 <h4>Typical use / code from the above example:</h4>
 
@@ -22429,21 +22469,47 @@ alt="orientation api 2" />
 This is just a variation of the previous example, [try it at
 JsBin](https://jsbin.com/manobezoji/edit?html,js,output)
 
-<img src="./images/image255.png" style="width:4in;height:4.54188in"
-alt="orientation api example 3" />
+<!------------------------------------------------------------------------------------------------>
+<!---------------------------- 255. orientation api example 3 (###) ------------------------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image255.png?raw=true"
+   width="40%"
+   alt="Orientation API example 3." />
+</p>
 
 Results on the iPad: the logo rotates when we change the iPad's
 orientation. This is a good "visual feedback" for an orientation
 controlled game...
 
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------------- 256. logo 1 (###) ---------------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image256.png?raw=true"
+   width="30%"
+   alt="Logo 1." />
+</p>
 <img src="./images/image256.png" style="width:2.94792in;height:3.92708in"
 alt="logo 1" />
 
-<img src="./images/image257.png" style="width:2.96875in;height:3.95833in"
-alt="logo 2" />
+<!------------------------------------------------------------------------------------------------>
+<!-------------------------------------- 257. logo 2 (###) --------------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image257.png?raw=true"
+   width="30%"
+   alt="Logo 2." />
+</p>
 
-<img src="./images/image258.png" style="width:2.97917in;height:3.96875in"
-alt="logo 3" />
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------------- 258. logo 3 (###) ---------------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image258.png?raw=true"
+   width="29%"
+   alt="Logo 3." />
+</p>
 
 This example is also
 on [video](https://www.youtube.com/watch?v=OrNLhOAGSdE).
@@ -22506,8 +22572,14 @@ available [GitHub](https://github.com/imagesupstream/levelToolJS).
 JsBin](https://jsbin.com/quboge/edit), or [test it in standalone
 mode](https://jsbin.com/quboge) (using a mobile device).
 
-<img src="./images/image259.png" style="width:5in;height:2.68109in"
-alt="level tool using device orientation" />
+<!------------------------------------------------------------------------------------------------>
+<!----------------------- 259. level tool using device orientation (###) ------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image259.png?raw=true"
+   width="50%"
+   alt="Level tool using device orientation." />
+</p>
 
 <h4>Other interesting uses: mix orientation API and WebSockets</h4>
 
@@ -22525,8 +22597,14 @@ desktop browser:
 
 Click on the image to see the YouTube video:
 
-<img src="./images/image260.png" style="width:3.33333in;height:1.86458in"
-alt="orientation API + websockets" />
+<!------------------------------------------------------------------------------------------------>
+<!--------------------------- 260. orientation api + websockets (###) ---------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image260.png?raw=true"
+   width="35%"
+   alt="Orientation API + websockets." />
+</p>
 
 <h3 id="ch4-4-4">4.4.4 The Device Motion API</h3>
 
@@ -23103,6 +23181,15 @@ your comments/observations/questions and share your creations.
     from Module 2 of the course!</li>
 </ul>
 
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ ##.  (##) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image.jpeg?raw=true"
+   width="35%"
+   alt="." />
+</p>
+
 <h5>The end...</h5>
 
-<h5>Last Updated: 8-29-2022 7:57pm</h5>
+<h5>Last Updated: 8-30-2022 9:13pm</h5>
