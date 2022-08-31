@@ -1160,12 +1160,12 @@ accessibility guidelines, the Mobile Web Best Practices, and a number of
 internationalization tips.
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 08. tim berners-lee in 1994 (11) -------------------------------->
+<!------------------------------ 08. w3c lookup (11) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image008.jpeg?raw=true"
+<img src="./images/image008.png?raw=true"
    width="35%"
-   alt="Tim Berners-Lee at his desk in CERN, 1994" />
+   alt="W3C lookup." />
 </p>
 
 Its main feature is a lookup search box, where one can start typing a
@@ -1189,10 +1189,9 @@ devices and operating systems!
 
 To make the Web evolve in a sane and sustainable way for both users and
 developers, browser vendors work together to standardize new features,
-whether it’s a new [HTML
-element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element), [CSS
-property](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Keyword_index),
-or [JavaScript API](https://developer.mozilla.org/en-US/docs/Web/API).
+whether it’s a new <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTML
+element</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Keyword_index">CSS property</a>,
+or <a href="https://developer.mozilla.org/en-US/docs/Web/API">JavaScript API</a>.
 But different vendors have different priorities, resources, and release
 cycles — so it’s very unlikely that a new feature will land on all the
 major browsers at once. As a Web developer, this is something you must
@@ -1233,7 +1232,7 @@ is a snapshot of what information is given by CanIUse when searching for
 To help developers make these decisions consciously rather than
 accidentally,
 
-[MDN Web Docs](https://developer.mozilla.org/) provides browser
+<a href="https://developer.mozilla.org/">MDN Web Docs</a> provides browser
 compatibility tables in its documentation pages,
 
 so that when looking up a feature you’re considering for your project,
@@ -1241,20 +1240,20 @@ you know exactly which browsers will support it.
 
 <h4>External resources:</h4>
 
--   [MDN browser compatibility data: Taking the guesswork out of web
-    compatibility](https://hacks.mozilla.org/2018/02/mdn-browser-compatibility-data/)
+-   <a href="https://hacks.mozilla.org/2018/02/mdn-browser-compatibility-data/">MDN browser compatibility data: Taking the guesswork out of web
+    compatibility</a>
 
--   [Caniuse and MDN compatibility data
-    collaboration](https://hacks.mozilla.org/2019/09/caniuse-and-mdn-compat-data-collaboration/)
+-   <a href="https://hacks.mozilla.org/2019/09/caniuse-and-mdn-compat-data-collaboration/">Caniuse and MDN compatibility data
+    collaboration</a>
 
-### Help Build the Web Platform
+<h4>Help Build the Web Platform</h4>
 
 Most of the technologies you use when developing Web applications and
 Web sites are designed and standardized in W3C in a completely open and
 transparent process.
 
-In fact, all W3C specifications are developed in public [GitHub
-repositories](https://github.com/w3c/), so if you are familiar with
+In fact, all W3C specifications are developed in public <a href="https://github.com/w3c/">GitHub
+repositories</a>, so if you are familiar with
 GitHub, you already know how to contribute to W3C specifications! This
 is all about raising issues (with feedback and suggestions) and/or
 bringing pull requests to fix identified issues.
@@ -1301,9 +1300,9 @@ define key parts of what actually makes the World Wide Web work.
 
 A few history bits
 
-In March 1989, while at CERN, [Sir Tim
-Berners-Lee](https://www.w3.org/People/Berners-Lee/) wrote “[Information
-Management: A Proposal](https://www.w3.org/History/1989/proposal.html)”
+In March 1989, while at CERN, <a href="https://www.w3.org/People/Berners-Lee/">Sir Tim
+Berners-Lee</a> wrote “<a href="https://www.w3.org/History/1989/proposal.html">Information
+Management: A Proposal</a>”
 outlining the World Wide Web. Tim’s memo was about to revolutionize
 communication around the globe. He then created the first Web browser,
 server, and Web page. He wrote the first specifications for URLs, HTTP,
@@ -1489,19 +1488,16 @@ Here is a small example of a video with 3 different tracks
 width!):
 
 ```
-9.  <video id="myVideo" preload="metadata" controls crossOrigin="anonymous">
-10. <source src="https://...../elephants-dream-medium.mp4" type="video/mp4">
-11. <source src="https://...../elephants-dream-medium.webm" type="video/webm">
-12.     <b><track label="English
-    subtitles" kind="subtitles" srclang="en"</b>
-13. <b>src="https://</b>.....<b>/elephants-dream-subtitles-en.vtt"></b>
-14. <b>    <track label="Deutsch
-    subtitles" kind="subtitles" srclang="de"</b>
-15. <b>src="https://</b>.....<b>/elephants-dream-subtitles-de.vtt" default></b>
-16. <b>    <track label="English
-    chapters" kind="chapters" srclang="en"</b>
-17. <b>src="https://</b>.....<b>/elephants-dream-chapters-en.vtt"></b>
-18. </video>
+1.  <video id="myVideo" preload="metadata" controls crossOrigin="anonymous">
+2. <source src="https://...../elephants-dream-medium.mp4" type="video/mp4">
+3. <source src="https://...../elephants-dream-medium.webm" type="video/webm">
+4.     <b><track label="English    subtitles" kind="subtitles" srclang="en"</b>
+5. <b>src="https://</b>.....<b>/elephants-dream-subtitles-en.vtt"></b>
+6. <b>    <track label="Deutsch subtitles" kind="subtitles" srclang="de"</b>
+7. <b>src="https://</b>.....<b>/elephants-dream-subtitles-de.vtt" default></b>
+8. <b>    <track label="English chapters" kind="chapters" srclang="en"</b>
+9. <b>src="https://</b>.....<b>/elephants-dream-chapters-en.vtt"></b>
+10. </video>
 ```
 
 And here is how it renders in your current browser (please play the
@@ -1605,12 +1601,8 @@ the Web Audio API that helps processing and synthesizing audio in Web
 applications. You will be able to load sound samples into memory and
 play them, loop them, process them through a chain of sound effects such
 as reverberation, delay, graphic equalizer, compressor, distortion, etc.
-You can also write nice real time visualizations
-
-like dancing frequency graphs, animated waveforms that dance with the
-music,
-
-or generate music programmatically.
+You can also write nice real time visualizations like dancing frequency graphs, animated waveforms that dance with the
+music, or generate music programmatically.
 
 The Web Audio API is particularly suited for games or for music
 applications.
@@ -1644,9 +1636,7 @@ will enable or disable subtitles. What we can see is that by default the
 subtitles that are displayed are in German (in this example).
 
 And I can just switch them on and off. It loaded the first track that
-has the default
-
-attribute. And I have no menu for choosing what track, what language I
+has the default attribute. And I have no menu for choosing what track, what language I
 want to be displayed here …
 
 If we look at FireFox, it's even worse!
@@ -2053,9 +2043,7 @@ implementation of the video player supports that. And a track that is
 How did we manipulate and access this mode property?
 
 The displayTrackStatuses function, that we wrote earlier, displayed the
-different
-
-properties of the HTML track, like the label, the kind or the language.
+different properties of the HTML track, like the label, the kind or the language.
 This time, we accessed his twin brother, the TextTrack by using the
 track property.
 
@@ -2070,8 +2058,7 @@ value of the mode, from "disabled" to "showing" or to "hidden", it will
 force the track to be loaded asynchronously in the background by the
 browser. We added in this example two buttons, "force load track 0" and
 "force load track 2" because by default, the track 0, the English
-subtitles, is not loaded. And the chapters, in track number 2, are
-
+subtitles, is not loaded. And the chapters, in track number 2, are 
 not loaded either. We are going to force the track 0 to be loaded.
 
 If I click here "force load track 0", you see that the status changes -
@@ -3672,7 +3659,7 @@ alt="Buttons for choosing the track/language under a standard video player" />
 -   The MDN documentation on [Web Video Text Tracks
     Format](https://developer.mozilla.org/fr/docs/Web/API/WebVTT_API) (WebVTT)
 
-## 1.3.4 With a Simple Chapter Navigation Menu
+<h3 id="ch1-3-4">1.3.4 With a Simple Chapter Navigation Menu</h3>
 
 Example #4: making a simple chapter navigation menu
 
@@ -3979,6 +3966,7 @@ alt="Video with nice chapter menu that uses thumbnail images" />
 17. <h2>Chapter menu</h2>
 18. <b><div id="chapterMenu"></div></b>
 19.  ...
+```
 
 It's the same code we had in the first example, except that this time we
 use a new WebVTT file that uses JSON cues to describe each chapter. For
@@ -5023,7 +5011,7 @@ useful with streamed audio and with the MediaElementSource node. Adding
 them in the audio graph will enable us to change the sound in many
 different ways.
 
-## 1.5.3 Most Useful Filter Nodes
+<h3 id="ch1-5-3">1.5.3 Most Useful Filter Nodes</h3>
 
 All definitions come from the [Mozilla Developer Network (MDN) pages
 giving details about the Web Audio
@@ -5151,7 +5139,7 @@ alt="Frequency responses for various filters. Screenshot of a nice application t
 Multiple filters are often used together. We will make a multi band
 equalizer in a next lesson, and use six filters with type=peaking. 
 
-### Source code extract:
+<h4>Source code extract:</h4>
 
 ```
 1.  var ctx = window.AudioContext || window.webkitAudioContext;
@@ -5427,8 +5415,7 @@ alt="Audio graph of the previous example" />
 33.         gainNode1.connect(audioContext.destination);
 34.         compressorButton.innerHTML="Turn compressor: On";
 35.      } else {
-36.         // compressor was off, we connect the gain to the
-    compressor
+36.         // compressor was off, we connect the gain to the compressor
 37.         // and the compressor to the destination
 38.         gainNode1.disconnect(audioContext.destination);
 39.         gainNode1.connect(compressorNode);
@@ -5447,8 +5434,7 @@ alt="Audio graph of the previous example" />
 52.    gainNode1.gain.value = parseFloat(gainSlider1.value);
 53. 
 54.    // do not connect it yet
-55.    compressorNode = audioContext.createDynamicsCompressor(); //
-    connect nodes together
+55.    compressorNode = audioContext.createDynamicsCompressor(); //  connect nodes together
 56.    gainMediaElementSource.connect(gainNode1);
 57.    gainNode1.connect(audioContext.destination);
 58. }
@@ -6162,41 +6148,31 @@ value which we will draw as the volume meter.
 
 This is how we create the gradient:
 
+```
 1.  // create a vertical gradient of the height of the canvas
-
 2.  gradient = canvasContext.createLinearGradient(0,0,0, height);
-
 3.  gradient.addColorStop(1,'#000000');
-
 4.  gradient.addColorStop(0.75,'#ff0000');
-
 5.  gradient.addColorStop(0.25,'#ffff00');
-
 6.  gradient.addColorStop(0,'#ffffff');
+```
 
 And here is what the new animation loop looks like (for the sake of
 clarity, we have moved the code that draws the signal waveform to a
 separate function):
 
+```
 1.  function visualize() {
-
 2.  
-
 3.    clearCanvas();
-
 4.  
-
 5.    drawVolumeMeter();
-
 6.    drawWaveform();
-
 7.   
-
 8.     // call again the visualize function at 60 frames/s
-
 9.    requestAnimationFrame(visualize);
-
 10. }
+```
 
 Notice that we used the best practices seen in week 3 of the HTML5 part
 1 course: we saved and restored the context in all functions that change
@@ -6251,157 +6227,89 @@ left and right parts to separate analyser nodes which draw the two
 volume meters. Just before the split, we added a stereoPanner to enable
 adjustment of the left/right balance with a slider.
 
-Source code extract:
+<h4>Source code extract:</h4>
 
+```
 1.  function buildAudioGraph() {
-
 2.    var mediaElement = document.getElementById('player');
-
 3.    var sourceNode = audioContext.createMediaElementSource(mediaElement);
-
 4.  
-
 5.   ** // connect the source node to a stereo panner**
-
 6.  **  stereoPanner = audioContext.createStereoPanner();**
-
 7.  **  sourceNode.connect(stereoPanner);**
-
 8.  
-
 9.    // Create an analyser node for the waveform
-
 10.   analyser = audioContext.createAnalyser();
-
 11. 
-
 12.   // Use FFT value adapted to waveform drawing
-
 13.   analyser.fftSize = 1024;
-
 14.   bufferLength = analyser.frequencyBinCount;
-
 15.   dataArray = new Uint8Array(bufferLength);
-
 16. 
-
 17.   // Connect the stereo panner to the analyser
-
 18.   stereoPanner.connect(analyser);
-
 19.    // and the analyser to the destination
-
 20.   analyser.connect(audioContext.destination);
-
 21. 
-
 22. **  // End of route 1.  We start another route from the**
-
 23. **  // stereoPanner node, with two analysers for the meters**
-
 24. 
-
 25.   // Two analysers for the stereo volume meters
-
 26.   // Here we use a small FFT value as we're gonna work with
-
 27.   // frequency analysis data
-
 28.   analyserLeft = audioContext.createAnalyser();
-
 29.   analyserLeft.fftSize = 256;
-
 30.   bufferLengthLeft = analyserLeft.frequencyBinCount;
-
 31.   dataArrayLeft = new Uint8Array(bufferLengthLeft);
-
 32. 
-
 33.   analyserRight = audioContext.createAnalyser();
-
 34.   analyserRight.fftSize = 256;
-
 35.   bufferLengthRight = analyserRight.frequencyBinCount;
-
 36.   dataArrayRight = new Uint8Array(bufferLengthRight);
-
 37.  
-
 38.  ** // Split the signal**
-
 39. **  splitter = audioContext.createChannelSplitter();**
-
 40. 
-
 41.   // Connect the stereo panner to the splitter node
-
 42.   stereoPanner.connect(splitter);
-
 43. 
-
 44.   // Connect each of the outputs from the splitter to
-
 45.   // the analysers
-
 46.   splitter.connect(analyserLeft,0,0);
-
 47.   splitter.connect(analyserRight,1,0);
-
 48. 
-
 49.   // No need to connect these analysers to something, the sound
-
 50.   // is already connected through the route that goes through
-
 51.   // the analyser used for the waveform
-
 52. }
+```
 
 ### And here is the new function for drawing the two volume meters:
 
+```
 1.  function drawVolumeMeters() {
-
 2.    canvasContext.save();
-
 3.  
-
 4.    // set the fill style to a nice gradient
-
 5.    canvasContext.fillStyle=gradient;
-
 6.  
-
 7.    // left channel
-
 8.    analyserLeft.getByteFrequencyData(dataArrayLeft);
-
 9.    var averageLeft = getAverageVolume(dataArrayLeft);
-
 10. 
-
 11.   // draw the vertical meter for left channel
-
 12.   canvasContext.fillRect(0,height-averageLeft,25,height);
-
 13. 
-
 14.   // right channel
-
 15.   analyserRight.getByteFrequencyData(dataArrayRight);
-
 16.   var averageRight = getAverageVolume(dataArrayRight);
-
 17. 
-
 18.   // draw the vertical meter for left channel
-
 19.   canvasContext.fillRect(26,height-averageRight,25,height);
-
 20. 
-
 21.   canvasContext.restore();
-
 22. }
+```
 
 The code is very similar to the previous one. We draw two rectangles
 side-by-side, corresponding to the two analyser nodes - instead of the
@@ -7051,7 +6959,7 @@ Here, we present some elements that are useful in writing games.
 <img src="./images/image092.jpeg" style="width:2in;height:2in"
 alt="the html5 canvas logo" />
 
-The <canvas> is a new HTML element described as "*a
+The &lt;canvas&gt; is a new HTML element described as "*a
 resolution-dependent bitmap canvas which can be used for rendering
 graphs, game graphics, or other visual images on the fly*." It's a
 rectangle included in your page where you can draw using scripting with
@@ -7207,31 +7115,29 @@ style="width:6.03125in;height:2.86458in" />
 
 Source code extract:
 
+```
 1.  var addStarToTheBody = function(){
-
 2.     document.body.innerHTML += "*";
-
 3.  };
-
 4.  
-
 5.  **//this will add one star to the document each 200ms (1/5s)**
-
 6.  **setInterval(addStarToTheBody, 200);**
+```
 
 WRONG:
 
+```
 1.  setInterval(‘addStarToTheBody()’, 200);
-
 2.  setInterval(‘document.body.innerHTML += “*”;’, 200);
+```
 
 GOOD:
 
+```
 1.  setInterval(function(){
-
 2.     document.body.innerHTML += “*”;
-
 3.  }, 200);
+```
 
 or like we did in the example, with an external function.
 
@@ -8090,8 +7996,7 @@ alt="trembling monster with multiple key press management." />
 64.     // Default police for text
 65.     ctx.font="20px Arial";
 66. 
-67. **    // Add the listener to the main, window object, and update the
-    states**
+67. **    // Add the listener to the main, window object, and update the states**
 68. **    window.addEventListener('keydown', function(event){**
 69. **      if (event.keyCode === 37) {**
 70. **        inputStates.left = true;**
@@ -12930,221 +12835,116 @@ alt="The woman sprite in the game framework, jsbin screenshot" />
 
 Source code extract:
 
+```
 1.  // Inits
-
 2.  window.onload = function init() {
-
 3.  var game = new GF();
-
 4.  game.start();
-
 5.  };
-
 6.   
-
 7.  // GAME FRAMEWORK STARTS HERE
-
 8.  var GF = function(){
-
 9.     ...
-
 10.    // Woman object and sprites
-
 11.    // sprite index corresponding to posture
-
 12.    var WOMAN_DIR_RIGHT = 6;
-
 13.    var WOMAN_DIR_LEFT = 2;
-
 14.    var woman = {
-
 15.       x:100,
-
 16.       y:200,
-
 17.       width:48,
-
 18.       speed:100, // pixels/s this time!
-
 19.       direction: WOMAN_DIR_RIGHT
-
 20.    };
-
 21.  
-
 22.    var womanSprites = [];
-
 23.  
-
 24. **   var mainLoop = function(time){**
-
 25. **     ...**
-
 26. **     // Draw a woman moving left and right**
-
 27. **    womanSprites[woman.direction].draw(ctx, woman.x, woman.y);**
-
 28. **    updateWomanPosition(delta);**
-
 29. **    ...**
-
 30. **  };**
-
 31. 
-
 32.   function updateWomanPosition(delta) {
-
 33.     // check collision on left or right
-
-34.  
-      if(((woman.x+woman.width) > canvas.width) || (woman.x < 0)) {
-
+34.     if(((woman.x+woman.width) > canvas.width) || (woman.x < 0)) {
 35.       // inverse speed
-
 36.       woman.speed = -woman.speed;
-
 37.     }
-
 38. 
-
 39.     // change sprite direction
-
 40.     if(woman.speed >= 0) {
-
 41.       woman.direction = WOMAN_DIR_RIGHT;
-
 42.     } else {
-
 43.       woman.direction = WOMAN_DIR_LEFT;
-
 44.     }
-
 45.     woman.x += calcDistanceToMove(delta, woman.speed);
-
 46.   }
-
 47.  
-
 48.   /*---------------------------------------*/
-
 49.   /* SPRITE UTILITY FUNCTIONS              */
-
 50.   /*---------------------------------------*/
-
 51.   function SpriteImage(img, x, y, width, height) {
-
 52.     ...
-
 53.     this.draw = function(ctx, xPos, yPos, scale) {...};
-
 54.   }
-
 55.  
-
 56.   function Sprite() {
-
 57.     ...
-
 58.     this.extractSprites = function(...) {...};
-
 59.     this.drawStopped = function(ctx, x, y) {...};
-
 60.     this.draw = function(ctx, x, y) {...};
-
 61.     this.setNbImagesPerSecond = function(nb) {...};
-
 62.   }
-
 63.   /*---------------------------------------*/
-
 64.   /* EN OF SPRITE UTILITY FUNCTIONS        */
-
 65.   /*---------------------------------------*/
-
 66. 
-
 67. var loadAssets = function(callback) {
-
 68.     var SPRITESHEET_URL = "https://i.imgur.com/3VesWqx.png";
-
 69.     var SPRITE_WIDTH = 48;
-
 70.     var SPRITE_HEIGHT = 92;
-
 71.     var NB_POSTURES=8;
-
 72.     var NB_FRAMES_PER_POSTURE = 13;
-
 73. 
-
 74.     // load the spritesheet
-
 75.     var spritesheet = new Image();
-
 76.     spritesheet.src = SPRITESHEET_URL;
-
 77. 
-
 78.     // Called when the spritesheet has been loaded
-
 79.     spritesheet.onload = function() {
-
 80.       // Create woman sprites
-
 81.       for(var i = 0; i < NB_POSTURES; i++) {
-
 82.         var sprite = new Sprite();
-
 83. 
-
 84.         sprite.extractSprites(spritesheet, NB_POSTURES, (i+1),
-
 85.                               NB_FRAMES_PER_POSTURE,
-
 86.                               SPRITE_WIDTH, SPRITE_HEIGHT);
-
 87.         sprite.setNbImagesPerSecond(20);
-
 88.         womanSprites[i] = sprite;
-
 89.       }
-
 90.       // call the callback function passed as a parameter,
-
 91.       // we're done with loading assets and building the sprites
-
 92.       callback();
-
 93.     };
-
 94.   };
-
 95. 
-
 96.   var start = function(){
-
 97.     ...
-
-98.     **// Load sounds and images, then when this is done, start the
-    mainLoop**
-
+98.     **// Load sounds and images, then when this is done, start the  mainLoop**
 99. **    loadAssets(function() {**
-
 100. **       // We enter here only when all assets have been loaded**
-
 101. **       requestAnimationFrame(mainLoop);**
-
 102. **    });**
-
 103.   };
-
 104.   ...
-
 105.  };
-
 106.  
+```
 
-## 2.7.1 Menus, high score tables, etc.
+<h3 id="ch2-7-1">2.7.1 Menus, high score tables, etc.</h3>
 
 With our game framework handling the basics, we can make things more
 exciting by causing something to happen when a collision occurs - maybe
@@ -13168,93 +12968,56 @@ alt="Eat the ball game" />
 
 Source code extract:
 
+```
 1.  function updateBalls(delta) {
-
 2.     **// for each ball in the array**
-
 3.  **   var allBallDead = true;**
-
 4.  
-
 5.     for(var i=0; i < ballArray.length; i++) {
-
 6.       var ball = ballArray[i];
-
 7.  
-
 8.      ** if(ball.dead) continue; // do nothing if the ball is dead**
-
 9.  
-
 10.     ** // if we are here: the ball is not dead**
-
 11. **     allBallDead = false;**
-
 12. 
-
 13.      // 1) move the ball
-
 14.      ball.move();
-
 15. 
-
 16.      // 2) test if the ball collides with a wall
-
 17.      testCollisionWithWalls(ball);
-
 18.  
-
 19.      // Test if the monster collides
-
 20.      if(circRectsOverlap(monster.x, monster.y,
-
 21.                          monster.width, monster.height,
-
 22.                          ball.x, ball.y, ball.radius)) {
-
 23. 
-
 24.         //change the color of the ball
-
 25.         ball.color = 'red';
-
 26.         **ball.dead = true;**
-
 27.         // Here, a sound effect would greatly improve
-
 28.         // the experience!
-
 29. 
-
 30.        ** currentScore+= 1;**
-
 31.      }
-
 32. 
-
 33.      // 3) draw the ball
-
 34.      ball.draw();
-
 35.   }
+```
 
 <!-- -->
 
+```
 1.   ** if(allBallDead) {**
-
 2.  **     // reset all balls, create more balls each time**
-
 3.  **     // as a way of increasing the difficulty**
-
 4.  **     // in a real game: change the level, play nice music!**
-
 5.  **     nbBalls++;**
-
 6.  **     createBalls(nbBalls);**
-
 7.  **   }**
-
 8.  }
+```
 
 ### Game states:menus, high score tables, etc.
 
@@ -13286,223 +13049,123 @@ alt="game running, showing score, time, level" />
 
 Game state management in the JavaScript code:
 
+```
 1.  ...
-
 2.  // game states
-
 3.  var gameStates = {
-
 4.     mainMenu: 0,
-
 5.     gameRunning: 1,
-
 6.     gameOver: 2
-
 7.  };
-
 8.   
-
 9.  var currentGameState = gameStates.gameRunning;
-
 10. var currentLevel = 1;
-
 11. var TIME_BETWEEN_LEVELS = 5000; // 5 seconds
-
 12. var currentLevelTime = TIME_BETWEEN_LEVELS;
-
 13. ...
-
 14. var mainLoop = function (time) {
-
 15.    ...
-
 16.    // number of ms since last frame draw
-
 17.    delta = timer(time);
-
 18.  
-
 19.    // Clear the canvas
-
 20.    clearCanvas();
-
 21.  
-
 22.    // monster.dead is set to true in updateBalls when there
-
 23.    // is a collision
-
 24.    **if (monster.dead) {**
-
 25. **      currentGameState = gameStates.gameOver;**
-
 26. **   }**
-
 27.  
-
 28.    **switch (currentGameState) {**
-
 29. **      case gameStates.gameRunning:**
-
 30.         // draw the monster
-
 31.         drawMyMonster(monster.x, monster.y);
-
 32.  
-
 33.         // Check inputs and move the monster
-
 34.         updateMonsterPosition(delta);
-
 35.  
-
 36.         // update and draw balls
-
 37.         updateBalls(delta);
-
 38.  
-
 39.         // display Score
-
 40.         displayScore();
-
 41.  
-
 42.         // decrease currentLevelTime. Survive 5s per level
-
 43.         // When < 0 go to next level
-
 44.        currentLevelTime -= delta;
-
 45.  
-
 46.        if (currentLevelTime < 0) {
-
 47.           goToNextLevel();
-
 48.        }
-
 49.        break;
-
 50.     **case gameStates.mainMenu:**
-
 51.        // TO DO! We could have a main menu with high scores etc.
-
 52.        break;
-
 53.     **case gameStates.gameOver:**
-
 54.        ctx.fillText("GAME OVER", 50, 100);
-
 55.        ctx.fillText("Press SPACE to start again", 50, 150);
-
 56.        ctx.fillText("Move with arrow keys", 50, 200);
-
 57.        ctx.fillText("Survive 5 seconds for next level", 50, 250);
-
 58.  
-
 59.        if (inputStates.space) {
-
 60.           startNewGame();
-
 61.        }
-
 62.        break;
-
 63.     }
-
 64.      ...
-
 65.    };
-
 66. ... 
+```
 
 And below are the functions for starting a new level, starting a new
 game, and the updateBalls function that determines when a player loses
 and changes the current game-state to GameOver:
 
+```
 1.  function startNewGame() {
-
 2.      monster.dead = false;
-
 3.      currentLevelTime = 5000;
-
 4.      currentLevel = 1;
-
 5.      nbBalls = 5;
-
 6.      createBalls(nbBalls);
-
 7.      **currentGameState = gameStates.gameRunning;**
-
 8.  }
-
 9.   
-
 10. function goToNextLevel() {
-
 11.     // reset time available for next level
-
 12.     // 5 seconds in this example
-
 13.    currentLevelTime = 5000;
-
 14.    currentLevel++;
-
 15.    // Add two balls per level
-
 16.    nbBalls += 2;
-
 17.    createBalls(nbBalls);
-
 18. }
-
 19.  
-
 20. function updateBalls(delta) {
-
 21.     // Move and draw each ball, test collisions,
-
 22.     for (var i = 0; i < ballArray.length; i++) {
-
 23.        ...
-
 24.        // Test if the monster collides
-
 25.        if (circRectsOverlap(monster.x, monster.y,
-
 26.                             monster.width, monster.height,
-
 27.                             ball.x, ball.y, ball.radius)) {
-
 28.  
-
 29.            //change the color of the ball
-
 30.            ball.color = 'red';
-
 31.           ** monster.dead = true;**
-
 32.            // Here, a sound effect greatly improves
-
 33.            // the experience!
-
 34.            plopSound.play();
-
 35.        }
-
 36.  
-
 37.        // 3) draw the ball
-
 38.        ball.draw();
-
 39.     }
-
 40. }
+```
 
-## 2.7.2 Splitting the game into several JS files
+<h3 id="ch2-7-2">2.7.2 Splitting the game into several JS files</h3>
 
 JSBin is a great tool for sharing code, for experimenting, etc. But as
 soon as the size of your project increases, you'll find that the tool is
@@ -19319,48 +18982,29 @@ between those in a certain range, then you must use *a cursor*.
 
 Here's what it looks like:
 
+```
 1.  function listAllCustomers() {
-
 2.     var objectStore =   
-
 3.       db.transaction("customers").objectStore("customers");
-
 4.  
-
 5.     <b>objectStore.openCursor().onsuccess </b>= function(event) {
-
 6.       // we enter this callback for each object in the store
-
 7.  
-
 8.       <b>// The result is the cursor itself</b>
-
 9.       <b>var cursor = event.target.result;</b>
-
 10. 
-
 11.      if (cursor) {
-
 12.        alert("Name for SSN " +<b> cursor.key </b>+ " is " +
-
 13.               <b>cursor.value.name</b>);
-
-14.        // Calling continue on the cursor will result in this
-    callback
-
+14.        // Calling continue on the cursor will result in this callback
 15.        // being called again if there are other objects in the store
-
 16.        <b>cursor.continue();</b>
-
 17.      } else {
-
 18.        alert("No more entries!");
-
 19.      }
-
 20.   }; // end of onsuccess...
-
 21. } // end of listAllCustomers()
+```
 
 [You can try this example on JSBin](https://jsbin.com/xetumu).
 
@@ -19392,43 +19036,27 @@ a success callback, but the result property is undefined.
 One common pattern with cursors is to retrieve all objects in an object
 store and add them to an array, like this:
 
+```
 1.  function listAllCustomersArray() {
-
 2.    var objectStore =   
-
 3.        db.transaction("customers").objectStore("customers");
-
 4.  
-
 5.    var customers = []; // the array of customers that will hold
-
 6.                        // results
-
 7.  
-
 8.    objectStore.openCursor().onsuccess = function(event) {
-
 9.      var cursor = event.target.result;
-
 10. 
-
 11.     if (cursor) {
-
 12.       customers.push(cursor.value); // add a customer in the
-
 13.                                     // array
-
 14.       cursor.continue();
-
 15.     } else {
-
 16.       alert("Got all customers: " + customers);
-
 17.     }
-
 18.  }; // end of onsuccess
-
 19. } // end of listAllCustomersArray()
+```
 
 [You can try this version on JSBin](https://jsbin.com/bitoqa).
 
@@ -19452,39 +19080,25 @@ Here is a function that examines by name the person-objects in the
 object store, and returns the first one it finds with a name equal to
 "Bill":
 
+```
 1.  function getCustomerByName() {
-
 2.     if(db === null) {
-
 3.       alert('Database must be opened first, please click the Create
-
 4.              CustomerDB Database first');
-
 5.       return;
-
 6.     }
-
 7.  
-
 8.     var objectStore =   
-
 9.        db.transaction("customers").objectStore("customers");
-
 10. 
-
 11.    <b>var index = objectStore.index("name");</b>
-
 12. 
-
 13.    <b>index.get("Bill").onsuccess </b>= function(event) {
-
 14.       alert("Bill's SSN is " + <b>event.target.result.ssn </b>+
-
 15.             " his email is " + <b>event.target.result.email</b>);
-
 16.    };
-
 17. }
+```
 
 The search by index occurs at *lines 11 and 13*: *line 11* creates an
 "index" object that corresponds to the "name" property. *Line 13* calls
@@ -19507,60 +19121,42 @@ In order to get all the "Bills", once again we have to use *a cursor*.
 When we work with indexes, we can open two different types of cursors on
 indexes:
 
-1.  <b>A normal cursor</b> which maps the index property to the object in
-    the object store, or,
-
-2.  <b>A key cursor</b> which maps the index property to the key used to
-    store the object in the object store.
+```
+1.  <b>A normal cursor</b> which maps the index property to the object in the object store, or,
+2.  <b>A key cursor</b> which maps the index property to the key used to store the object in the object store.
+```
 
 The differences are illustrated below.
 
 Normal cursor:
 
+```
 1.  <b>index.openCursor().onsuccess </b>= function(event) {
-
 2.    <b>var cursor = event.target.result;</b>
-
 3.    if (cursor) {
-
-4.      // cursor.key is a name, like "Bill", and <b>cursor.value is
-    the</b>
-
+4.      // cursor.key is a name, like "Bill", and <b>cursor.value is  the</b>
 5.      // <b>whole object.</b>
-
-6.      alert("Name: " +<b> cursor.key </b>+ ", SSN:
-    " +<b> cursor.value.ssn </b>+ ",
-
+6.      alert("Name: " +<b> cursor.key </b>+ ", SSN: " +<b> cursor.value.ssn </b>+ ",
 7.             email: " +<b> cursor.value.email</b>);
-
 8.      <b>cursor.continue();</b>
-
 9.  }
-
 10. };
+```
 
 Key cursor:
 
+```
 1.  <b>index.openKeyCursor().onsuccess </b>= function(event) {
-
 2.     var cursor = event.target.result;
-
 3.     if (cursor) {
-
-4.       // cursor.key is a name, like "Bill",<b> and cursor.value is
-    the</b>
-
+4.       // cursor.key is a name, like "Bill",<b> and cursor.value is the</b>
 5.  <b>     </b>//<b> SSN (the key)</b>.
-
 6.       // No way to directly get the rest of the stored object.
-
 7.       alert("Name: " + cursor.key + ", "SSN: " + <b>cursor.value</b>);
-
 8.       cursor.continue();
-
 9.     }
-
 10. };
+```
 
 Can you see the difference? 
 
@@ -19584,63 +19180,38 @@ How to try this example:
 
 Source code extract from this example:
 
+```
 1.  function getAllCustomersByName() {
-
 2.    if(db === null) {
-
 3.      alert('Database must be opened first, please click the Create
-
 4.             CustomerDB Database first');
-
 5.      return;
-
 6.    }
-
 7.  
-
 8.    var objectStore =
-
 9.       db.transaction("customers").objectStore("customers");
-
 10. 
-
 11.   <b>var index = objectStore.index("name");</b>
-
 12. 
-
 13.   // Only match "Bill"
-
 14.   <b>var singleKeyRange = IDBKeyRange.only("Bill");</b>
-
 15. 
-
 16.   <b>index.openCursor(singleKeyRange).onsuccess </b>= function(event) {
-
 17. 
-
 18.     var cursor = event.target.result;
-
 19. 
-
 20.     if (cursor) {
-
 21.       // cursor.key is a name, like "Bill", and cursor.value is the
-
 22.       // whole object.
-
 23.       alert("Name: " + cursor.key + ", SSN: " + cursor.value.ssn ",
-
 24.              + email: " + cursor.value.email);
-
 25.       cursor.continue();
-
 26.    }
-
 27. };
-
 28. }
+```
 
-## 3.6.11 Limiting the range of values in a cursor
+<h3 id="ch3-6-11">3.6.11 Limiting the range of values in a cursor</h3>
 
 How to specify the range and direction of cursors with IndexedDB?
 
@@ -19655,53 +19226,31 @@ given value(s)). 
 Let's look at some examples ([adapted from this MDN
 article](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Using_IndexedDB#Specifying_the_range_and_direction_of_cursors)):
 
+```
 1.  // Only match "Donna"
-
 2.  var singleKeyRange = IDBKeyRange.only("Donna");
-
 3.   
-
 4.  // Match anything past "Bill", including "Bill"
-
 5.  var lowerBoundKeyRange = IDBKeyRange.lowerBound("Bill");
-
 6.   
-
 7.  // Match anything past "Bill", but don't include "Bill"
-
 8.  var lowerBoundOpenKeyRange = IDBKeyRange.lowerBound("Bill", true);
-
 9.   
-
 10. // Match anything up to, but not including, "Donna"
-
 11. var upperBoundOpenKeyRange = IDBKeyRange.upperBound("Donna", true);
-
 12.  
-
-13. // Match anything between "Bill" and "Donna", but not including
-    "Donna"
-
+13. // Match anything between "Bill" and "Donna", but not including "Donna"
 14. var boundKeyRange = IDBKeyRange.bound("Bill", "Donna", false, true);
-
 15.  
-
-16. // To use one of the key ranges, pass it in as the first argument of
-    openCursor()/openKeyCursor()
-
+16. // To use one of the key ranges, pass it in as the first argument of openCursor()/openKeyCursor()
 17. index.openCursor(boundKeyRange).onsuccess = function(event) {
-
 18.     var cursor = event.target.result;
-
 19.     if (cursor) {
-
 20.         // Do something with the matches.
-
 21.         cursor.continue();
-
 22.     }
-
 23. };
+```
 
 ### Complete example
 
@@ -19717,7 +19266,7 @@ alt="Example of use of IdbKeyRange" />
 <img src="./images/image217.jpeg" style="width:6.5in;height:5.99583in"
 alt="IDBKeyRange in action" />
 
-## 3.6.12 Discussion and projects
+<h3 id="ch3-6-12">3.6.12 Discussion and projects</h3>
 
 Here is the discussion forum for this part of the course. Please post
 your comments/observations/questions and share your creations.
@@ -19824,12 +19373,8 @@ player, or component that will vocalize what you type for example, you
 need to include lots of JavaScript and CSS.
 
 You need to look for some code written by somebody on the Web and read
-documentation,
-
-and reusing it is rather complex. With Web components, it's as easy as
-importing
-
-in an HTML5 another HTML5, that defines all the plumbery for creating
+documentation, and reusing it is rather complex. With Web components, it's as easy as
+importing in an HTML5 another HTML5, that defines all the plumbery for creating
 the new components.
 
 And it also defines custom elements. For example, you import a
@@ -19855,7 +19400,7 @@ forum. It has always been a great pleasure to try them, and also
 interacting with the students is really what makes me happy. I hope you
 enjoyed the course and see you maybe for a next one on W3Cx. Bye-bye!
 
-## 4.2.1 Web components in video
+<h3 id="ch4-2-1">4.2.1 Web components in video</h3>
 
 Hi! Today, I am going to talk about Web components, that are reusable
 widgets.
@@ -19972,7 +19517,7 @@ the index.html file located in that directory.
 <img src="./images/image218.jpeg" style="width:5in;height:2.37393in"
 alt="running the example in an Apache Web Server" />
 
-## 4.2.2 Introduction
+<h3 id="ch4-2-2">4.2.2 Introduction</h3>
 
 Web components provide a standard way to build your own
 widgets/components using similar methods to those used by browser
@@ -20111,7 +19656,7 @@ HTML imports have been replaced by a more standard way involving
 JavaScript imports
 (see [discussions](https://github.com/w3c/webcomponents/blob/gh-pages/proposals/HTML-Imports-and-ES-Modules.md)).
 
-## 4.2.3 HTML templates
+<h3 id="ch4-2-3">4.2.3 HTML templates</h3>
 
 Hi! In this lesson, I am going to talk about the template API. You must
 know that Web components are what we call ‘an umbrella API’ that is
@@ -20120,27 +19665,17 @@ built on four W3C specifications.
 One is the template specification about how to make HTML code that will
 be duplicated each time you will need to create a new widget. It is a
 sort of ’inert code’: if it includes videos they will not be played; if
-it includes JavaScript, it will not be
-
-executed, until you clone this template and add it to your document.
+it includes JavaScript, it will not be executed, until you clone this template and add it to your document.
 
 The other APIs we will present in the course are the shadow DOM
-specification that will
-
-make encapsulations. In other words, it will hide the JavaScript,
+specification that will make encapsulations. In other words, it will hide the JavaScript,
 
 the HTML and the CSS from your widget to the external world. If you do
-’view source’
-
-in a page, you will not see anything. And if you use CSS in your
-document, it will
-
-not cross the boundaries of the different Web components.
+’view source’ in a page, you will not see anything. And if you use CSS in your
+document, it will not cross the boundaries of the different Web components.
 
 The two last APIs are much more simpler. One is for designing custom
-elements like the
-
-x-gif Web component element we saw in the previous lesson.
+elements like the x-gif Web component element we saw in the previous lesson.
 
 You will add new custom elements and the browser will render them.
 
@@ -20148,18 +19683,12 @@ The last one enables the browser to import in an HTML document another
 HTML document.
 
 Here is a small example that defines a template. So you define a
-template using a template
-
-element, and usually you give it an id because you will use this id from
+template using a template element, and usually you give it an id because you will use this id from
 JavaScript in order to clone its content and to add it to the document.
 
 So, this code is not rendered: it is just a skeleton. And this skeleton,
-we are going
-
-to work with it from JavaScript! In order to clone a template and make
-it live,
-
-we need first to select it: document.querySelector('#mytemplate') (we
+we are going to work with it from JavaScript! In order to clone a template and make
+it live, we need first to select it: document.querySelector('#mytemplate') (we
 select the template with the given id), then we can complete its
 content.
 
@@ -20181,12 +19710,9 @@ The last parameter ‘true’ means deep cloning.
 We can have templates that includes templates, and so on.
 
 And then once you cloned the content of the template, you add it to the
-document: ‘document.body.appendChild’,
+document: ‘document.body.appendChild’, with the cloned template, will do that. 
 
-with the cloned template, will do that. Let's try it, I put a button in
-the document
-
-that calls the instantiate function from JavaScript, that does all the
+Let's try it, I put a button in the document that calls the instantiate function from JavaScript, that does all the
 different steps I detailed just earlier. If I click on the button, it
 will add all the HTML code from the template, and I can do that as many
 times as I want.
@@ -20205,19 +19731,18 @@ scenes.
 HTML templates define fragments of code (HTML, JavaScript and CSS
 styles) that can be reused.
 
-These parts of code are* inert* (i.e., CSS will not be applied,
+These parts of code are<i> inert</i> (i.e., CSS will not be applied,
 JavaScript will not be executed, images will not be loaded, videos will
 not be played, etc.) until the template is used.
 
 Here is an example of code that defines a template:
 
+```
 1.  <template id="mytemplate">
-
 2.     <img src="" alt="great image">
-
 3.     <div class="comment"></div>
-
 4.  </template>
+```
 
 Note that it's ok to have the <b>src</b> attribute empty here, we will
 initialize it when the template is activated.
@@ -20225,9 +19750,9 @@ initialize it when the template is activated.
 ### To use a template, clone its content!
 
 A template has "content" (the lines of code
-between <template> and </template>), and to manipulate it we use the
+between &lt;template&gt; and &lt;/template&gt;), and to manipulate it we use the
 DOM API and the content attribute of the DOM node that corresponds to a
-given template (*line 3* of the source code example below).
+given template (<i>line 3</i> of the source code example below).
 
 In order to use a template's content, we clone it using
 the document.importNode(templateContent, true) method, where the node is
@@ -20235,34 +19760,30 @@ the template's content and true means "deep copy" the content.
 
 A template is typically used like this:
 
+```
 1.  var t = document.querySelector('#mytemplate');
-
 2.  // Populate the src at runtime.
-
 3.  t.content.querySelector('img').src = 'https://webcomponents.github.io/img/logo.svg';
-
 4.  
-
 5.  // Clone the template, sort of "instantiation"!
-
 6.  var clone = document.importNode(t.content, true);
-
 7.  document.body.appendChild(clone);
+```
 
-<b>Explanations</b>:
+<h4>Explanations</h4>:
 
--   In this example, *line 1* assigns the DOM node corresponding to the
+-   In this example, <i>line 1</i> assigns the DOM node corresponding to the
     template we defined to variable t.
 
--   t.content (*line 3*) is the root of the subtree in the template (in
+-   t.content (<i>line 3</i>) is the root of the subtree in the template (in
     other words, the lines of HTML code inside the template element)
 
 -   Note that we set the value of the src attribute of the image inside
-    the template at *line 3*, using a CSS selector on the template's
+    the template at <i>line 3</i>, using a CSS selector on the template's
     content.
 
--   *Lines 5 and 6* clone the template's content and add it to
-    the <body> of the document.
+-   <i>Lines 5 and 6</i> clone the template's content and add it to
+    the &lt;body&gt; of the document.
 
 ### Example
 
@@ -21221,7 +20742,7 @@ your comments/observations/questions and share your creations.
 -   Try writing a small tutorial about reusing and customizing a super
     cool Web component you have found!
 
-## 4.3.1 Introduction
+<h3 id="ch4-3-1">4.3.1 Introduction</h3>
 
 In the browser, 'normal' JavaScript code is run in a single thread (a
 thread is a light-weight CPU process, see [this Wikipedia page for
@@ -21375,7 +20896,7 @@ version of this course when implementations are more stable/available.
     -   [Shared Web Workers on
         CanIUse](https://caniuse.com/#feat=sharedworkers) (not studied)
 
-## 4.3.2 Use cases
+<h3 id="ch4-3-2">4.3.2 Use cases</h3>
 
 ### Use case #1: a "parent HTML5 page" creates workers from a script 
 
@@ -21402,33 +20923,27 @@ check: [serialized](https://en.wikipedia.org/wiki/Serialization)
 
 <!-- -->
 
+```
 1.  var worker = new Worker("worker0.js");
-
 2.  
-
 3.  // String message example
-
 4.  worker.postMessage("Hello");
-
 5.  
-
 6.  // Object message example
-
 7.  var personObject = {'firstName': 'Michel', 'lastName':'Buffa'};
-
 8.  worker.postMessage(personObject );
+```
 
 > (2) Messages (like the object message example, above) are received
 > from a worker using this method (code located in the JavaScript file
 > of the worker):
 
+```
 1.  onmessage = function (event) {
-
 2.     // do something with event.data
-
 3.    alert('received ' + event.data.firstName);
-
 4.  };
+```
 
 > (3) The worker will then send messages back to the parent page (code
 > located in the JavaScript file of the worker):
@@ -21438,114 +20953,80 @@ check: [serialized](https://en.wikipedia.org/wiki/Serialization)
 > (4) And the parent page can listen to messages from a worker like
 > this:
 
+```
 1.  worker.onmessage = function(event){
-
 2.      // do something with event.data
-
 3.  };
+```
 
 ### Use case #3: a complete example
 
 The "Parent HTML page" of a simplistic example using a dedicated Web
+
 Worker:
 
+```
 1.  <!DOCTYPE HTML>
-
 2.  <html>
-
 3.  <head>
-
 4.  <title>Worker example: One-core computation</title>
-
 5.  </head>
-
 6.  <body>
-
 7.  <p>The most simple example of Web Workers</p>
-
 8.  <script>
-
-9.     // create a new worker (a thread that will be run in the
-    background)
-
+9.     // create a new worker (a thread that will be run in the background)
 10.    var worker = new Worker("worker0.js");
-
 11. 
-
 12.    // Watch for messages from the worker
-
 13.    worker.onmessage = function(e){
-
 14.      // Do something with the message from the client: e.data
-
 15.      alert("Got message that the background work is finished...")
-
 16.    };
-
 17. 
-
 18.    // Send a message to the worker
-
 19.    worker.postMessage("start");
-
 20. </script>
-
 21. </body>
-
 22. </html>
+```
 
 The JavaScript code of the worker (worker0.js):
 
+```
 1.  onmessage = function(e){
-
 2.     if ( e.data === "start" ) {
-
 3.        // Do some computation that can last a few seconds...
-
 4.        // alert the creator of the thread that the job is finished
-
 5.        done();
-
 6.      }
-
 7.  };
-
 8.  
-
 9.  function done(){
-
 10.     // Send back the results to the parent page
-
 11.     postMessage("done");
-
 12. }
+```
 
 ### Use case #4: handling errors
 
 The parent page can handle errors that may occur inside its workers, by
 listening for an onError event from a worker object:
 
+```
 1.  var worker = new Worker('worker.js');
-
 2.  worker.onmessage = function (event) {
-
 3.      // do something with event.data
-
 4.  };
-
 5.  
-
 6.  worker.onerror = function (event) {
-
 7.      console.log(event.message, event);
-
 8.  };
-
 9.  }
+```
 
 See also the section "how to debug Web Workers" on next page.
 
-## 4.3.3 Examples
+<h3 id="ch4-3-3">4.3.3 Examples</h3>
 
 <i>Dedicated Workers</i> are the simplest kind of Workers. Once created, they
 remain linked to their <i>parent page</i> (the HTML5 page that created them).
@@ -21665,7 +21146,7 @@ before starting the computation of prime numbers.
 You can download this
 example: [WebWorkersExample1.zip](https://courses.edx.org/assets/courseware/v1/4af4dd2326f40b5d5d55aa15bbb12d70/asset-v1:W3Cx+HTML5.2x+2T2020a+type@asset+block/WebWorkersExample1.zip)
 
-### HTML code:
+<h4>HTML code:</h4>
 
 ```
 1.  <!DOCTYPE HTML>
@@ -21750,15 +21231,13 @@ worker.
 4.  <title>Worker example: One-core computation</title>
 5.  </head>
 6.  <body>
-7.  <p>The highest prime number discovered so far
-    is: <output id="result"\>\</output\>\</p\>
+7.  <p>The highest prime number discovered so far is: <output id="result"\>\</output\>\</p\>
 8.  <script>
 9.      if(window.Worker){
 10.        // web workers supported by the browser
 11.        var worker=new Worker("worker2.js");
 12.        worker.onmessage=function(event){
-13.           
-    document.getElementById('result').textContent = event.data;
+13.           document.getElementById('result').textContent = event.data;
 14.        };
 15.     }else{
 16.        // the browser does not support web workers
@@ -21769,8 +21248,7 @@ worker.
 21.        // After 10 seconds, we kill the worker
 22.       <b> worker.terminate();</b>
 23. 
-24.        document.body.appendChild(document.createTextNode("Worker
-    killed, 10 seconds elapsed !")
+24.        document.body.appendChild(document.createTextNode("Worker killed, 10 seconds elapsed !")
 25.     );}, 10000);
 26. </script>
 27. </body>
