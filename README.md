@@ -15893,12 +15893,11 @@ default behavior of the browser:
     with
     HTML5](https://www.htmlgoodies.com/html5/javascript/drag-files-into-the-browser-from-the-desktop-HTML5.html)"
 
-## 3.4.2 Drag and drop files in a drop zone
+<h3 id="ch3-4-2">3.4.2 Drag and drop files in a drop zone</h3>
 
 Hi! This time let's look at how we can drag and
 
-drop files into a document. So, the first thing you must know is that,
-
+drop files into a document. So, the first thing you must know is that, 
 by default, the browser does things when you drag and drop.
 
 If I drag and drop an image, it just shows the image in full size in a
@@ -15908,85 +15907,45 @@ If I drag and drop a video, the browser will just play it using a
 default player.
 
 So, if you want to drag and drop some multimedia files, we will have to
-take care and prevent
+take care and prevent this default behavior. So first, let's look at a more simple example.
 
-this default behavior. So first, let's look at a more simple example.
-
-We will just drag and drop files, one or multiple files into a drop
-zone.
+We will just drag and drop files, one or multiple files into a drop zone.
 
 The first thing you must know… (ok, I wanted to drag and drop multiple
-files but I missed
-
-the multiple selection…) OK, it work with multiple files.
+files but I missed the multiple selection…) OK, it work with multiple files.
 
 So the first thing you must know is that we can't have a dragstart
-handler, there is no
+handler, there is no need for a dragstart handler. As soon as you drop files in a document,
+the file descriptors are copied in the drag and drop clipboard. The source code is much
+simpler than the one we saw in the previous videos. So here we define a drop zone, a div
+called droppableZone, with a dragenter, drop, dragover and dragleave event listeners.
 
-need for a dragstart handler. As soon as you drop files in a document,
-the file descriptors
-
-are copied in the drag and drop clipboard. The source code is much
-simpler than the one
-
-we saw in the previous videos. So here we define a drop zone, a div
-called
-
-droppableZone, with a dragenter, drop, dragover and dragleave event
-listeners. We also created
-
-an empty numbered list inside the div … this is the container that will
-be used to display the
-
-file names here. What do we do in order to prevent this default
+We also created an empty numbered list inside the div … this is the container that will
+be used to display the file names here. What do we do in order to prevent this default
 behavior?
 
-Because if I drag and drop an image in this
-
-div without taking some precautions, it will just open a new tab with
+Because if I drag and drop an image in this div without taking some precautions, it will just open a new tab with
 the image.
 
 So, in the different drop and dragover handlers we will have to call
-event.preventDefault()
+event.preventDefault() for preventing this default behavior and we also call stopPropagation(),
+so that the event will not go to the parents of the div... and in case they will also have
+this default behavior triggered. As we don't have any dragstart handler, and the files are copied directly into the drag and drop clipboard, we get
+back the files using event.dataTransfer.files. 
 
-for preventing this default behavior and we also call stopPropagation(),
-so that the event
-
-will not go to the parents of the div... and in case they will also have
-this default behavior
-
-triggered. As we don't have any dragstart handler, and
-
-the files are copied directly into the drag and drop clipboard, we get
-back the files
-
-using event.dataTransfer.files. We are not using a key to get the value
-here,
-
-it is just files. It is the same name and the same content we got when
-we use an onchange
-
-listener on an input type="file". Each element (from files) has the same
-properties
-
-we saw in the HTML5 Part 1 course about forms, and in particular about
+We are not using a key to get the value
+here, it is just files. It is the same name and the same content we got when
+we use an onchange listener on an input type="file". Each element (from files) has the same
+properties we saw in the HTML5 Part 1 course about forms, and in particular about
 the input type="file".
 
 We get the files that have been copied into the clipboard and then we do
-a loop on the
+a loop on the files, we get the current file name here, and we create a list item and
+we just set the text content. 
 
-files, we get the current file name here, and we create a list item and
-we just set
-
-the text content. Then we append the list item that has the file name as
-its content,
-
-to the dropped zone. That's all, it is very easy, you drag and
-
-drop files... in the drop handler you stop the propagation, prevent the
-default behavior,
-
-get the files property with all the files copied, do a loop and process
+Then we append the list item that has the file name as
+its content, to the dropped zone. That's all, it is very easy, you drag and drop files... in the drop handler you stop the propagation, prevent the
+default behavior, get the files property with all the files copied, do a loop and process
 them. That's all. Bye, bye!
 
 ### Example: drag and drop files to a drop zone, display file details in a list
@@ -16111,7 +16070,7 @@ worked through earlier, except that this time we're working with
 files. *And when we work with files, it is important to prevent the
 browser's default behavior.*
 
-## 3.4.3 Images with thumbnails
+<h3 id="ch3-4-3">3.4.3 Images with thumbnails</h3>
 
 This time, let's reuse the readFilesAndDisplayPreview() method (studied
 in the W3Cx HTML5 Coding Essentials and Best Practices course). We have
@@ -16158,7 +16117,7 @@ displays the thumbnails):
 27. }
 ```
 
-At *line7*, there is a test that will avoid processing non image files.
+At <i>line7</i>, there is a test that will avoid processing non image files.
 The "!" is the NOT operator in JavaScript. The call to continue at *line
 8* will make the for loop go to its end and process the next file. See
 the HTML5 part 1 course about the file API for more details (each file
@@ -16166,7 +16125,7 @@ has a name, type, lastModificationDate and size attribute. The call
 to match(...) here is a standard way in JavaScript to match a string
 value with a regular expression).
 
-At *line 19*, we insert the <img> element that was created and
+At <i>line 19</i>, we insert the &lt;img&gt; element that was created and
 initialized with the dataURL of the image file, into the HTML list with
 an id of "list".
 
@@ -16499,10 +16458,8 @@ Complete source code:
 118. <p>Beware, the directory choser  may overload
 119. your browser memory if there are too many big images in the
 120. directory you choose.</p>
-121. <b>Choose multiple files
-    :</b> <b><input type="file" id="files" multiple</b>
-122. <b>                             
-      onchange="handleFileSelect(event)"/></b>
+121. <b>Choose multiple files:</b> <b><input type="file" id="files" multiple</b>
+122. <b>                             onchange="handleFileSelect(event)"/></b>
 123. </p>
 124. <b><p>Choose a directory (Chrome only): <input type="file"</b>
 125. <b>                                      id="dir" webkitdirectory</b>
@@ -16546,7 +16503,6 @@ as soon as we try to connect):
    width="45%"
    alt="Example that uses drag&#39;n&#39;drop and a progress element for monitoring the ajax upload of the files." />
 </p>
-
 
 <h4>Source code extract (we omitted the CSS):</h4>
 
@@ -16661,7 +16617,7 @@ Instead of uploading all the files at once, it might be interesting to
 upload one file at a time with visual feedback, such as: "uploading file
 MichaelJackson.jpg.....". We will leave this exercise up to you.
 
-## 3.4.6 Discussion and projects
+<h3 id="ch3-4-6">3.4.6 Discussion and projects</h3>
 
 Here is the discussion forum for this part of the course. Please either
 post your comments/observations/questions or share your creations.
@@ -18757,88 +18713,51 @@ alt="devtools show updated customer" />
 
 Here is the new code added to our example:
 
+```
 1.  function updateACustomer() {
-
 2.     if(db === null) {
-
 3.       alert('Database must be opened first, please click the Create
-
 4.              CustomerDB Database first');
-
 5.       return;
-
 6.     }
-
 7.  
-
 8.     var transaction = db.transaction(["customers"], "readwrite");
-
 9.  
-
 10.    // Do something when all the data is added to the database.
-
 11.    transaction.oncomplete = function(event) {
-
 12.      console.log("All done!");
-
 13.    };
-
 14. 
-
 15.    transaction.onerror = function(event) {
-
-16.      console.log("transaction.onerror
-    errcode=" + event.target.error.name);
-
+16.      console.log("transaction.onerror errcode=" + event.target.error.name);
 17.    };
-
 18. 
-
 19.    var objectStore = transaction.objectStore("customers");
-
 20. 
-
 21.    var customerToUpdate={};
-
 22.    customerToUpdate.ssn = document.querySelector("#ssn").value;
-
 23.    customerToUpdate.name = document.querySelector("#name").value;
-
 24.    customerToUpdate.age = document.querySelector("#age").value;
-
 25.    customerToUpdate.email = document.querySelector("#email").value;
-
 26.  
-
 27.    alert('updating customer ssn=' + customerToUpdate.ssn);
-
 28.    <b>var request = objectStore.put(customerToUpdate);</b>
-
 29. 
-
 30.    request.onsuccess = function(event) {
-
 31.      console.log("Customer updated.");
-
 32.    };
-
 33.  
-
 34.    request.onerror = function(event) {
-
 35.      alert("request.onerror, could not update customer, errcode= " +
-
 36.         event.target.error.name + ". The ssn is not in the
-
 37.         Database");
-
 38.   };
-
 39. }
+```
 
 The update occurs at *line 28*.
 
-## 3.6.10 Getting data
+<h3 id="ch3-6-10">3.6.10 Getting data</h3>
 
 There are several ways to retrieve data from a data store.
 
