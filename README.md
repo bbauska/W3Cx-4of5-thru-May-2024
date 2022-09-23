@@ -13676,7 +13676,7 @@ scores
 
 in the small game you have certainly wrote during week 2. Enjoy!
 
-## 3.2.1 Ajax and XHR2
+<h3 id="ch3-2-1">3.2.1 Ajax and XHR2</h3>
 
 We present below a short history of Ajax: an introduction to
 XMLHttpRequest level 2 (XHR2).
@@ -13720,7 +13720,7 @@ progress.
 The current support of XHR2 is excellent: see [related CanIUse's browser
 compatibility table](https://caniuse.com/#feat=xhr2).
 
-## 3.2.2 Ajax/XHR2 and binary files
+<h3 id="ch3-2-2">3.2.2 Ajax/XHR2 and binary files</h3>
 
 Hi everyone! In this lesson, I will present you how we can manage file
 
@@ -13761,12 +13761,8 @@ We set the method: GET is for downloading a file, the URL, and the last
 parameter "true", leave it like that.
 
 Then, as we are going to download a binary file, we set the response
-type to
-
-"arrayBuffer", and this is new. It was not possible with the previous
-version of
-
-Ajax, that was available in the browsers. HTTP is a text based transfer
+type to "arrayBuffer", and this is new. It was not possible with the previous
+version of Ajax, that was available in the browsers. HTTP is a text based transfer
 protocol.
 
 The text encoded files needed to be decoded in the browser or in the
@@ -13794,9 +13790,7 @@ called by the browser.
 
 Then, we call the initSound() function that will decode in memory the
 mp3 file, and then enable the start and stop buttons, so that we can
-play the
-
-song using Web Audio. Before looking at the initSound (function) let's
+play the song using Web Audio. Before looking at the initSound (function) let's
 start it. I click…
 
 You can see that the message "Ajax request sent" is displayed first,
@@ -13867,25 +13861,18 @@ Below is a function that loads a sound sample using XMLHttpRequest level
 *Note*: 1) the simple and concise syntax, and 2) the use of the
 new arrayBuffer type for the expected response (*line 5*):
 
+```
 1.  // Load a binary file from a URL as an ArrayBuffer.
-
 2.  function loadSoundFile(url) {
-
 3.  var xhr = new XMLHttpRequest();
-
 4.  xhr.open('GET', url, true);
-
 5.  xhr.responseType = 'arraybuffer';
-
 6.  xhr.onload = function(e) {
-
 7.  initSound(this.response); // this.response is an ArrayBuffer.
-
 8.  };
-
 9.  xhr.send();
-
 10. }
+```
 
 #### Example: download a binary song file using XHR2 and responseType='arraybuffer', and play it using Web Audio
 
@@ -14031,46 +14018,33 @@ method), or an upload (using POST).
 
 **Syntax for download:**
 
+```
 1.  var xhr = new XMLHttpRequest();
-
 2.  xhr.open('GET', url, true);
-
 3.  ...
-
 4.  xhr.onprogress = function(e) {
-
 5.  // do something
-
 6.  }
-
-<!-- -->
-
 580. 
-
 <!-- -->
-
 7.  xhr.send();
+```
 
 Note that an alternative syntax such as xhr.addEventListener('progress',
 callback, false) also works.
 
 **Syntax for upload:**
 
+```
 1.  var xhr = new XMLHttpRequest();
-
 2.  xhr.open('POST', url, true);
-
 3.  ...
-
 4.  **xhr.upload.onprogress = function(e) {**
-
 5.  **// do something**
-
 6.  **}**
-
 7.   
-
 8.  xhr.send();
+```
 
 Notice that the only difference is the "upload" added after the name of
 the request object: with GET we use xhr.onprogress and with POST we
@@ -14093,39 +14067,30 @@ Combining these with a <progress> element, makes it very easy to
 render an animated *progress bar*. Here is a source code extract that
 does this for a download operation:
 
-HTML:
+<h4>HTML</h4>
 
+```
 1.  <progress id="downloadProgress" value=0><progress>
+```
 
-### JavaScript:
+<h4>Script:</h4>
 
+```
 1.  // progress element
-
 2.  **var progress = document.querySelector('#downloadProgress');**
-
 3.   
-
 4.  function downloadSoundFile(url) {
-
 5.    var xhr = new XMLHttpRequest();
-
 6.    xhr.open('GET', url, true);
-
 7.   
-
 8.    ...
-
 9.    xhr.onprogress = function(e) {
-
 10.     **progress.value = e.loaded;**
-
 11.     **progress.max = e.total;**
-
 12.   }
-
 13.   xhr.send();
-
 14. }
+```
 
 **Explanations**: by setting the value and max attributes of
 the <progress> element with the current number of bytes downloaded by
@@ -14135,20 +14100,46 @@ reflect the actual proportions of the file downloaded/still to come.
 For example, with a file that is 10,000 bytes long, if the current
 number of bytes downloaded is 1000, then <progress value=1000
 max=10000> will look like this: 
-
-581. <img src="./images/image169.jpeg"
-     style="width:2.66667in;height:0.57292in" alt="progress bar 10%" />
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 169 (##) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image169.jpeg?raw=true"
+   width="35%"
+   alt="." />
+</p>
+<!-------
+style="width:2.66667in;height:0.57292in" alt="progress bar 10%" />
+--------->
 
 And a current download of 2000 bytes will define <progress value=2000
 max=10000> and will look like this:
 
-582. <img src="./images/image170.jpeg" style="width:2.66667in;height:0.5in"
-     alt="progress bar 20%" />
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 170.  (##) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image170.jpeg?raw=true"
+   width="35%"
+   alt="Progress bar 20%." />
+</p>
+<!---------
+style="width:2.66667in;height:0.5in"
+----------->
 
 ### Complete example: monitoring the download of a song file
 
-<img src="./images/image171.jpeg" style="width:5in;height:1.11271in"
-alt="monitoring download" />
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 171.  (##) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image171.jpeg?raw=true"
+   width="35%"
+   alt="Monitoring download." />
+</p>
+<!---------
+style="width:5in;height:1.11271in"
+---------->
 
 This is a variant of the previous example that uses the progress event
 and a <progress> HTML5 element to display an animated progression bar
@@ -14157,20 +14148,14 @@ while the download is going on.
 [Try it on JSBin](https://jsbin.com/nuxanaf/edit?html,output) - look at
 the code, which includes the previous source code extract.
 
-## 3.2.3 Uploading files and monitoring progress
+<h3 id="ch3-2-3">3.2.3 Uploading files and monitoring progress</h3>
 
 We saw how to download files. Let's see now how we can upload files!
 
 Uploading a file means sending it to a remote server. In this example,
-we will
-
-just look at the simplest possible thing: uploading one single file.
-Later on, in the course,
-
-course you will see how to upload multiple files, including form input
-fields and
-
-so on. We've got a file selector here: an input type=file, and we will
+we will just look at the simplest possible thing: uploading one single file.
+Later on, in the course, course you will see how to upload multiple files, including form input
+fields and so on. We've got a file selector here: an input type=file, and we will
 select one file.
 
 For example, here I'm selecting an mp3 song. As soon as the file has
@@ -14241,79 +14226,57 @@ lecture.
 
 [Try the example on JSBin](https://jsbin.com/pidusap/edit):
 
-<img src="./images/image172.jpeg"
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 172. file update example 1 (##) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image172.jpeg?raw=true"
+   width="35%"
+   alt="File upload example 1." />
+</p>
+<!------------
 style="width:3.96875in;height:2.21875in" alt="file upload example 1" />
+------------->
 
 ### Source code of the example:
 
+```
 1.  <!DOCTYPE html>
-
 2.  <html lang="en">
-
 3.  <head>
-
 4.     <meta charset="utf-8" />
-
 5.     <title>File upload with XMLHttpRequest level 2 and
     HTML5</title>
-
 6.  </head>
-
 7.   
-
 8.  <body>
-
 9.  <h1>Example of XHR2 file upload</h1>
-
 10.   Choose a file and wait a little until it is uploaded (on a fake  
-
 11.   server). A message should pop up once the file is uploaded 100%.
-
 12. <p>
-
 13. <input id="file" type="file" />
-
 14. </p>
-
 15. <script>
-
 16. var fileInput = document.querySelector('#file');
-
 17.  
-
 18. fileInput.onchange = function() {
-
 19.    var xhr = new XMLHttpRequest();
-
 20.    xhr.open('POST', 'upload.html'); // With FormData,
-
 21.                                     // POST is mandatory
-
 22.  
-
 23.    **xhr.onload = function() {**
-
 24.      **alert('Upload complete !');**
-
 25.    **};**
-
 26.  
-
 27.    **var form = new FormData();**
-
 28.    **form.append('file', fileInput.files[0]);**
-
 29.    // send the request
-
 30.    xhr.send(form);
-
 31. };
-
 32. </script>
-
 33. </body>
-
 34. </html>
+```
 
 ### **Explanations**:
 
@@ -14344,110 +14307,80 @@ that used for monitoring file downloads:
     number of bytes that have been uploaded, and to the total number of
     bytes we need to upload (i.e., the file size).
 
-<img src="./images/image173.jpeg"
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 173. file upload with progress bar (##) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image173.jpeg?raw=true"
+   width="35%"
+   alt="File upload with progress bar." />
+</p>
+<!------------
 style="width:3.89583in;height:1.28125in"
-alt="file upload with progress bar" />
+------------->
 
 Here is the code of such an event listener:
 
-583. xhr.upload.onprogress = function(e) {
-
-584.   progress.value = e.loaded; // number of bytes uploaded
-
-585.   progress.max = e.total;    // total number of bytes in the file
-
-586. };
+```
+1. xhr.upload.onprogress = function(e) {
+2.   progress.value = e.loaded; // number of bytes uploaded
+3.   progress.max = e.total;    // total number of bytes in the file
+4. };
+```
 
 ### [Try the example on JSBin](https://jsbin.com/qedaja/edit?html,css,output):
 
 ### Code from this example (nearly the same as previous example's code):
 
+```
 1.  <!DOCTYPE html>
-
 2.  <html lang="en">
-
 3.  <head>
-
 4.     <meta charset="utf-8" />
-
 5.     <title>HTML5 file upload with monitoring</title>
-
 6.  </head>
-
 7.   
-
 8.  <body>
-
 9.  <h1>Example of XHR2 file upload, with progress bar</h1>
-
 10. Choose a file and wait a little until it is uploaded (on a fake
     server).
-
 11. <p>
-
 12. <input id="file" type="file" />
-
 13. <br/><br/>
-
 14. **<progress id="progress" value=0></progress>**
-
 15.  
-
 16. <script>
-
 17.    var fileInput = document.querySelector('#file'),
-
 18.    **progress = document.querySelector('#progress');**
-
 19.  
-
 20.    fileInput.onchange = function() {
-
 21.      var xhr = new XMLHttpRequest();
-
 22.      xhr.open('POST', 'upload.html');
-
 23.  
-
 24.      **xhr.upload.onprogress = function(e) {**
-
 25.        **progress.value = e.loaded;**
-
 26.        **progress.max = e.total;**
-
 27.      **};**
-
 28. 
-
 29.      xhr.onload = function() {
-
 30.      alert('Upload complete!');
-
 31.    };
-
 32.  
-
 33.    var form = new FormData();
-
 34.    form.append('file', fileInput.files[0]);
-
 35.  
-
 36.    xhr.send(form);
-
 37. };
-
 38. </script>
-
 39. </body>
-
 40. </html>
+```
 
 The only difference between these two worked-examples is
 the onprogress listener which updates the progress
 bar's value and max attributes. 
 
-## 3.2.4 Discussion and projects
+<h3 id="ch3-2-4">3.2.4 Discussion and projects</h3>
 
 Here is the discussion forum for this part of the course. Please either
 post your comments/observations/questions or share your creations.
@@ -14507,7 +14440,7 @@ the particular case of drag and dropping files.
 -   Nice [shopping cart
     demo](https://nettutsplus.s3.amazonaws.com/64_html5dragdrop/demo/index.html).
 
-## 3.3.2 Drag detection
+<h3 id="ch3-3-2">3.3.2 Drag detection</h3>
 
 Hi! Welcome to the drag and drop lesson. So, the first thing is that
 before looking at examples is that
@@ -14518,27 +14451,21 @@ by default. By default, a text selection is draggable, as you can see...
 An image
 
 is draggable too, but you cannot drag a H1 or drag a list item without
-adding first a
-
-draggable=true attribute.
+adding first a draggable=true attribute.
 
 In the examples we are going to detail. We added draggable=true to the
 elements that will be candidate for drag and drop. Also, the first this
 you must do, before doing anything, is to detect that an element has
-been dragged. For this we are
+been dragged. 
 
-using the ondragstartstart event listener, so either as an attribute
-here, or in the
-
-JavaScript. And, in that case we use a dragstart listener on the
-numbered list, and children will inherit this event listener. This is
-another particularity: you can define event listeners, for the drag and
+For this we are using the ondragstartstart event listener, so either as an attribute
+here, or in the JavaScript. And, in that case we use a dragstart listener on the
+numbered list, and children will inherit this event listener.
+This is another particularity: you can define event listeners, for the drag and
 drop on parents. And the children inherit this listener.
 
 Let's look at a small example with drag and drop of list items. The code
-we have
-
-here on CodePen is the same as (the one) I've just showed in the course.
+we have here on CodePen is the same as (the one) I've just showed in the course.
 We've got a list with an ondragstart event handler, and we've got list
 items with draggable=true.
 
@@ -14559,79 +14486,58 @@ and, use it here... and it works too. I can get the content!
 And these attributes, these data attributes, are all valid! I go back to
 the initial code.
 
-Once we managed to detect a drag,
-
-and can get some values... some interesting values from the dragged
-object, now we will
-
-detect a drop!
+Once we managed to detect a drag, and can get some values... some interesting values from the dragged
+object, now we will detect a drop!
 
 What do we do when we want to drag something and drop it somewhere, and
 make something happen in the drop zone? We need to copy, in the
-dragstart handler,
+dragstart handler, some data that will be obtained back in the drop handler. 
 
-some data that will be obtained back in the drop handler. There is a
-clipboard called event.dataTransfer, that is specialized for drag and
-drop. And it's got a setData method for writing in it a key/value pair,
+There is a clipboard called event.dataTransfer, that is specialized for drag and
+drop. 
+And it's got a setData method for writing in it a key/value pair,
 so here we copy, with the name "fruit", the value of the data attribute
-of the dragged object. And in the drop handler, we will get back the
-data that was copied in the drag and drop clipboard, using getData.
+of the dragged object.
+
+And in the drop handler, we will get back the data that was copied in the drag and drop clipboard, using getData.
 
 We wrote a value with a key="fruit", we get this value back here. And in
 the drop handler, in that case, we create a list item element and then
-we
-
-initialize, we set the text content of the list item, with the value
-
+we initialize, we set the text content of the list item, with the value
 corresponding to the value we got back from the clipboard.
 
 And then, we just add to do drop zone...
-(#droppedFruits)...appendChild() the list item. Let's look
-
-at how the drop zone was defined: the drop zone in that
-
-example is a div. We've got an ondrop listener, that calls the drop
-callback we just saw.
+(#droppedFruits)...appendChild() the list item. Let's look at how the drop zone was defined: the drop zone in that
+example is a div. We've got an ondrop listener, that calls the drop callback we just saw.
 
 And we also added an ondragover="return false" listener. This will avoid
-the
-
-propagation of the event, because when we drag over the drop zone, each
+the propagation of the event, because when we drag over the drop zone, each
 mouse movement will fire a lot of dagover events and this can slow down
 the browser... so in that case we just returned false for performance
-reasons. So, when I drop it, I'm in the drop handler, I get back
-"Apples », I creates a list item, I set the list item content with
-"Apples", and I append the list item to the drop, to the div. That's all
-for this video! You understood the main steps for doing drag and drop:
+reasons.
 
-detect a drag, copy some data in the clipboard, detect a drop, get back
-the data
+So, when I drop it, I'm in the drop handler, I get back "Apples », I creates a list item, I set the list item content with
+"Apples", and I append the list item to the drop, to the div.
+That's all for this video! You understood the main steps for doing drag and drop:
+detect a drag, copy some data in the clipboard, detect a drop, get back the data and do something.
 
-and do something. And avoid firing too many events by just stopping the
+And avoid firing too many events by just stopping the propagation with an ondragover="return false";
 
-propagation with an ondragover="return false";
+See you for the next video! I will explain how to give a nice visual feedback when we drag and drop things.
 
-See you for the next video! I will explain how to give a nice visual
+In order to make any visible element *draggable*, add the draggable="true" attribute to any visible HTML5 element.
+Notice that some elements are draggable by default, such as <img> elements.
 
-feedback when we drag and drop things.
+In order to detect a drag, add an event listener for the dragstart event:
 
-In order to make any visible element *draggable*, add
-the draggable="true" attribute to any visible HTML5 element. Notice that
-some elements are draggable by default, such as <img> elements.
-
-In order to detect a drag, add an event listener for
-the dragstart event:
-
+```
 1.  <ol **ondragstart="dragStartHandler(event)"**>
-
 2.     <li **draggable="true"** data-value="fruit-apple">Apples</li>
-
 3.   
-     <li **draggable="true"** data-value="fruit-orange">Oranges</li>
-
+    <li **draggable="true"** data-value="fruit-orange">Oranges</li>
 4.     <li **draggable="true"** data-value="fruit-pear">Pears</li>
-
 5.  </ol>
+```
 
 In the above code, we made all of the <li> elements draggable, and we
 detect a dragstart event occurring to any item within the ordered
@@ -14648,56 +14554,47 @@ drag one of the list items) or [play with it at
 CodePen](https://codepen.io/w3devcampus/pen/MaWKZb).
 
 ### Screenshot:
-
-<img src="./images/image174.jpeg" style="width:5in;height:1.60844in"
-alt="drag n drop fruits" />
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 174.  (##) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image174.jpeg?raw=true"
+   width="35%"
+   alt="Drag 'n drop fruis." />
+</p>
+<!-----------
+style="width:5in;height:1.60844in"
+------------->
 
 ### Complete code from the example:
 
+```
 1.  <!DOCTYPE html>
-
 2.  <html lang="en">
-
 3.  <head>
-
 4.     <script>
-
 5.       function dragStartHandler(event) {
-
 6.           alert('dragstart event, target:
-    ' + event.target.innerHTML);
-
+   ' + event.target.innerHTML);
 7.       }
-
 8.     </script>
-
 9.  </head>
-
 10. <body>
-
 11.   <p>What fruits do you like? Try to drag an element!</p>
-
 12.   <ol ondragstart="dragStartHandler(event)">
-
 13.       <li draggable="true" data-value="fruit-apple">Apples</li>
-
-14.    
-      <li draggable="true" data-value="fruit-orange">Oranges</li>
-
+14.       <li draggable="true" data-value="fruit-orange">Oranges</li>
 15.       <li draggable="true" data-value="fruit-pear">Pears</li>
-
 16.   </ol>
-
 17. <p>Drop your favorite fruits below:</p>
-
 18.  <body>
-
 19. <html>
+```
 
 In this script, the event handler will only display an alert showing the
 name of the target element that launched the event. 
 
-## 3.3.3 Drop detection
+<h3 id="ch3-3-3">3.3.3 Drop detection</h3>
 
 Let's continue to develop the example. We show how to drag an element
 and detect a drop, receiving a value which corresponds to the dragged
@@ -14717,23 +14614,17 @@ The variable event.target at *line 5* below is the <li> element that
 has been dragged, and event.target.dataset.value is the value of its
 data-value attribute (in our case "apples", "oranges" or "pears"):
 
+```
 1.  function dragStartHandler(event) {
-
 2.      console.log('dragstart event, target:
     ' + event.target.innerHTML);
-
 3.  
-
 4.      // Copy to the drag'n'drop clipboard the value of the
-
 5.      // data* attribute of the target,
-
 6.      // with a type "Fruit".
-
-7.   
-      **event.dataTransfer.setData("Fruit", event.target.dataset.value);**
-
+7.   **event.dataTransfer.setData("Fruit", event.target.dataset.value);**
 8.  }
+```
 
 #### Step #2: define a "drop zone"
 
@@ -14742,13 +14633,12 @@ listener for the drop event. Note that most of the time, as events may
 be propagated, we will also listen for dragover or dragend events and
 stop their propagation. More on this later...
 
+```
 1.  <div **ondragover="return false"** **ondrop="dropHandler(event);**">
-
 2.  Drop your favorite fruits below:
-
 3.  <ol id="droppedFruits"></ol>
-
 4.  </div>
+```
 
 Whenever the mouse is moving above a (any) drop zone, dragover events
 will fire. Accordingly, a large number of dragover events may need to be
@@ -14758,29 +14648,20 @@ the false value at *line 1*.
 
 #### Step #3: write a drop handler, fetch content from the clipboard, and do something with it
 
+```
 1.  function dropHandler(event) {
-
 2.     console.log('drop event, target: ' + event.target.innerHTML);
-
 3.  
-
 4.     ...
-
 5.  
-
 6.     // get the data from the drag'n'drop clipboard,GET
-
 7.     // with a type="Fruit"
-
 8.     var data = event.dataTransfer.getData("Fruit");
-
 9.  
-
 10.    // do something with the data
-
 11.    ...
-
 12. }
+```
 
 Typically, in the drop handler, we need to acquire data about the
 element that has been dropped (we get this from the clipboard at *lines
@@ -14788,111 +14669,73 @@ element that has been dropped (we get this from the clipboard at *lines
 
 ### Complete example
 
-<img src="./images/image175.jpeg"
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 175.  (##) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image175.jpeg?raw=true"
+   width="35%"
+   alt="Drag 'n drop fruits." />
+</p>
+<!---------
 style="width:3.90625in;height:3.22917in" alt="drag n drop fruits" />
+----------->
 
 ### Try it in your browser below or [play with it at CodePen](https://codepen.io/w3devcampus/pen/YyzWKy?editors=110):
 
 ### Source code:
 
+```
 1.  <!DOCTYPE html>
-
 2.  <html>
-
 3.  <head>
-
 4.     <script>
-
 5.        function dragStartHandler(event) {
-
 6.            console.log('dragstart event, target: ' +
-
 7.                         event.target.innerHTML);
-
 8.            // Copy to the drag'n'drop clipboard the value
-
 9.            // of the data* attribute of
-
 10.           // the target, with a type "Fruits".
-
 11.           event.dataTransfer.setData("Fruit",
-
 12.                                 event.target.dataset.value);
-
 13.       }
-
 14. 
-
 15.       function dropHandler(event) {
-
 16.          console.log('drop event, target: ' +
-
 17.                                 event.target.innerHTML);
-
 18.          var li = document.createElement('li');
-
 19.          // get the data from the drag'n'drop clipboard,
-
 20.          // with a type="Fruit"
-
 21.          var data = event.dataTransfer.getData("Fruit");
-
 22. 
-
 23.          if (data == 'fruit-apple') {
-
 24.             li.textContent = 'Apples';
-
 25.          } else if (data == 'fruit-orange') {
-
 26.             li.textContent = 'Oranges';
-
 27.          } else if (data == 'fruit-pear') {
-
 28.             li.textContent = 'Pears';
-
 29.          } else {
-
 30.             li.textContent = 'Unknown Fruit';
-
 31.          }
-
 32.          // add the dropped data as a child of the list.
-
 33.          document.querySelector("#droppedFruits").appendChild(li);
-
 34.       }
-
 35.   </script>
-
 36. </head>
-
 37. <body>
-
 38.    <p>What fruits do you like? Try to drag an element!</p>
-
 39.    <ol ondragstart="dragStartHandler(event)">
-
 40.       <li draggable="true" data-value="fruit-apple">Apples</li>
-
-41.    
-      <li draggable="true" data-value="fruit-orange">Oranges</li>
-
+41.       <li draggable="true" data-value="fruit-orange">Oranges</li>
 42.       <li draggable="true" data-value="fruit-pear">Pears</li>
-
 43.    </ol>
-
 44.    <div ondragover="return false" ondrop="dropHandler(event);">
-
 45.        Drop your favorite fruits below:
-
 46.        <ol id="droppedFruits"></ol>
-
 47.    </div>
-
 48. <body>
-
 49. <html>
+```
 
 ### In the above code, note:
 
@@ -14924,39 +14767,26 @@ Notice that we use some CSS to set aside some screen-space for the drop
 zone (not presented in the source code above, but available in the
 online example):
 
+```
 1.  div {
-
 2.     height: 150px;
-
 3.     width: 150px;
-
 4.     float: left;
-
 5.     border: 2px solid #666666;
-
 6.     background-color: #ccc;
-
 7.     margin-right: 5px;
-
 8.     border-radius: 10px;
-
 9.     box-shadow: inset 0 0 3px #000;
-
 10.    text-align: center;
-
 11.    cursor: move;
-
 12. }
-
 13. 
-
 14. li:hover {
-
 15.    border: 2px dashed #000;
-
 16. }
+```
 
-## 3.3.4 A few words about data-* attributes
+<h3 id="ch3-3-4">3.3.4 A few words about data-* attributes</h3>
 
 Microdata is a powerful way to add structured data into HTML code, but
 HTML5 has also added the possibility of adding arbitrary data to an HTML
@@ -15008,59 +14838,39 @@ are taken from data­-* attributes of the <li> element.
 
 ### HTML code from the example:
 
+```
 1.  <li class="user" **data-name="John Resig"** **data-city="Boston"**
-
 2.      **data-lang="js"** **data-food="Bacon"**>
-
 3.  <b>John says:</b> <span>Hello, how are you?</span>
-
 4.  </li>
+```
 
 We just defined four data‐ attributes. 
 
 ### JavaScript code from the example:
 
+```
 1.  <script>
-
 2.    var user = document.getElementsByTagName("li")[0];
-
 3.    var pos = 0, span = user.getElementsByTagName("span")[0];
-
 4.    var phrases = [
-
 5.      {name: "city", prefix: "I am from "},
-
 6.      {name: "food", prefix: "I like to eat "},
-
 7.      {name: "lang", prefix: "I like to program in "}
-
 8.    ];
-
 9.    user.addEventListener( "click", function(){
-
 10.     // Pick the first, second or third phrase
-
 11.     var phrase = phrases[ pos++ % 3 ];
-
 12. 
-
-13.     // Use the .dataset property depending on the value of
-    phrase.name
-
+13.     // Use the .dataset property depending on the value of phrase.name
 14.     // phrase.name is "city", "food" or "lang"
-
 15.     span.innerHTML = phrase.prefix + user.dataset[ phrase.name ];
-
 16. 
-
 17.     // could be replaces by old way..
-
-18.     // span.innerHTML = phrase.prefix + user.getAttribute("data-" +
-    phrase.name );
-
+18.     // span.innerHTML = phrase.prefix + user.getAttribute("data-" + phrase.name );
 19.   }, false);
-
 20. </script>
+```
 
 All data‐ attributes are accessed using the dataset property of the HTML
 element: in this example, user.dataset[phrase.name] is
@@ -15074,57 +14884,57 @@ the attr() CSS function.
 
 Try [the online example at JsBin](https://jsbin.com/alunuk/6/edit). 
 
-<img src="./images/image177.png" style="width:3.17708in;height:0.85417in"
-alt="Using CSS attr() function" />
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 177. using css attr() function (##) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image177.jpeg?raw=true"
+   width="35%"
+   alt="Using CSS attr() function." />
+</p>
+<!------------
+style="width:3.17708in;height:0.85417in"
+------------->
 
 ### HTML code from this example:
 
+```
 1.  <input type="range" min="0" max="100" value="25">
+```
 
 This is just one of the new input types introduced by HTML5.
 
 ### JavaScript code from this example:
 
+```
 1.  <script>
-
 2.  var input = document.querySelector('input');
-
 3.   
-
 4.  input.dataset.myvaluename = input.value; // Set an initial value.
-
 5.   
-
 6.  input.addEventListener('change', function(e) {
-
 7.      this.dataset.myvaluename = this.value;
-
 8.  });
-
 9.  </script>
+```
 
 ### CSS code from this example:
 
+```
 1.  <style>
-
 2.  input::after {
-
 3.      color:red;
-
 4.      content:** attr(data-myvaluename)** '/' attr(max);
-
 5.      position: relative;
-
 6.      left: 100px; top: -15px;
-
 7.  }
-
 8.  </style>
+```
 
 The attr() function takes an attribute name as a parameter and returns
 its value. Here we used the name of the attribute we added on the fly.
 
-## 3.3.5 Add visual feedback
+<h3 id="ch3-3-5">3.3.5 Add visual feedback</h3>
 
 Hi! Let's add some visual feedback to the drag and drop operations.
 
@@ -15154,9 +14964,7 @@ that they are
 
 the same… so there is certainly a way to simplify this example... So,
 the "dragged" and the "draggedOver" classes just add a border (2 pixels
-dashed black)
-
-and change the background color to green.
+dashed black) and change the background color to green.
 
 Let's have a look at the JavaScript: let's look at the ‘dragenter’, the
 ‘dropleave’ and the ‘dropenter’ handlers. What do we do when we enter
@@ -15223,77 +15031,54 @@ dragged object to its default. The full runnable online example is a bit
 further down the page (it includes, in addition, visual feedback on the
 drop zone):
 
-<img src="./images/image178.jpeg" style="width:5in;height:2.57746in"
-alt="drag n drop colorful" />
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 178.  (##) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image178.jpeg?raw=true"
+   width="35%"
+   alt="Drag 'n drop colorful." />
+</p>
+<!----------
+style="width:5in;height:2.57746in"
+----------->
 
 ### Source code extract:
 
+```
 1.  ...
-
 2.  <style>
-
 3.    .dragged {
-
 4.       border: 2px dashed #000;
-
 5.       background-color: green;
-
 6.    }
-
 7.  </style>
-
 8.  <script>
-
 9.    function dragStartHandler(event) {
-
 10.      // Change CSS class for visual feedback
-
 11.      event.target.style.opacity = '0.4';
-
 12.      event.target.classList.add('dragged');
-
 13. 
-
 14.      console.log('dragstart event, target: ' + event.target);
-
-15.      // Copy to the drag'n'drop clipboard the value of the data*
-    attribute of the target,
-
+15.      // Copy to the drag'n'drop clipboard the value of the data* attribute of the target,
 16.      // with a type "Fruits".
-
-17.    
-     event.dataTransfer.setData("Fruit", event.target.dataset.value);
-
+17.      event.dataTransfer.setData("Fruit", event.target.dataset.value);
 18.   }
-
 19. 
-
 20.   function dragEndHandler(event) {
-
 21.      console.log("drag end");
-
 22.      // Set draggable object to default style
-
 23.      event.target.style.opacity = '1';
-
 24.      event.target.classList.remove('dragged');
-
 25.   }
-
 26. </script>
-
 27. ...
-
-28. <ol
-    ondragstart="dragStartHandler(event)" ondragend="dragEndHandler(event)" >
-
+28. <ol ondragstart="dragStartHandler(event)" ondragend="dragEndHandler(event)" >
 29.     <li draggable="true" data-value="fruit-apple">Apples</li>
-
 30.     <li draggable="true" data-value="fruit-orange">Oranges</li>
-
 31.     <li draggable="true" data-value="fruit-pear">Pears</li>
-
 32. </ol>
+```
 
 Notice at *lines 12 and 24* the use of the classlist property that has
 been introduced with HTML5 in order to allow CSS class manipulation from
@@ -15441,8 +15226,17 @@ drag. For example, if you "copy" a fruit into the drop zone, as we did
 in the previous example, a "copy" cursor like the one below would be
 appropriate:
 
-<img src="./images/image179.jpeg"
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 179.  (##) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image179.jpeg?raw=true"
+   width="35%"
+   alt="dropEffect." />
+</p>
+<!------------
 style="width:2.39583in;height:0.78125in" alt="dropEffect" />
+------------->
 
 If you are "moving" objects, this style of cursor would be appropriate:
 
@@ -15452,13 +15246,31 @@ style="width:2.58333in;height:0.88542in" alt="drop effect #2" />
 And if you are making a "link" or a "shortcut", a cursor would be
 looking like this:
 
-<img src="./images/image181.jpeg" style="width:2.65625in;height:0.9375in"
-alt="drop effect #3" />
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 181.  (##) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image181.jpeg?raw=true"
+   width="35%"
+   alt="Drop effect #3." />
+</p>
+<!------------
+style="width:2.65625in;height:0.9375in"
+------------->
 
 Alternatively, you could use any custom image/icon you like:
 
-<img src="./images/image182.jpeg"
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 182.  (##) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image182.jpeg?raw=true"
+   width="35%"
+   alt="Drop effect with image." />
+</p>
+<!------------
 style="width:5.13542in;height:4.35417in" alt="drop effect with image" />
+-------------->
 
 To give this visual feedback, we use
 the effectAllowed and dropEffect properties of the dataTransfer object.
@@ -15527,7 +15339,7 @@ All possible values for dropEffect and effectAllowed:
 -   **dataTransfer.dropEffect **can take on one of the following
     values: **none**, **copy**, **link**, **move**.
 
-## 3.3.7 Drag and drop HTML elements
+<h3 id="ch3-3-7">3.3.7 Drag and drop HTML elements</h3>
 
 ### Drag and drop images or any HTML element within a document
 
@@ -15536,11 +15348,11 @@ sections. There are other interesting uses that differ in the way we
 copy and paste things to/from the clipboard. The clipboard is accessed
 through the dataTransfer property of the different events:
 
+```
 1.  event.dataTransfer.setData("Fruit", event.target.dataset.value);
-
 2.  ...
-
 3.  var data = event.dataTransfer.getData("Fruit");
+```
 
 #### <img> elements are all draggable by default!
 
@@ -15559,102 +15371,51 @@ CodePen](https://codepen.io/w3devcampus/pen/xwxEZg):
 Code from the example:
 
 1.  <html lang="en">
-
 2.  <head>
-
 3.  <style>
-
 4.     .box {
-
 5.        border: silver solid;
-
 6.        width: 256px;
-
 7.        height: 128px;
-
 8.        margin: 10px;
-
 9.        padding: 5px;
-
 10.       float: left;
-
 11.    }
-
 12. </style>
-
 13. <script>
-
 14.     function drag(target, evt) {
-
 15.         evt.dataTransfer.setData("Text", target.id);
-
 16.     }
-
 17.     function drop(target, evt) {
-
 18.         var id = evt.dataTransfer.getData("Text");
-
 19.         target.appendChild(document.getElementById(id));
-
 20.         // prevent default behavior
-
 21.         evt.preventDefault();
-
 22.     }
-
 23. </script>
-
 24. </head>
-
 25. <body>
-
 26. Drag and drop browser images in a zone:<br/>
-
-27.  
-     <img src="https://mainline.i3s.unice.fr/mooc/ABiBCwZ.png" id="cr" 
-        
-
+27.   <img src="https://mainline.i3s.unice.fr/mooc/ABiBCwZ.png" id="cr" 
 28.         ondragstart="drag(this, event)" alt="Logo Chrome">
-
-29.  
-     <img src="https://mainline.i3s.unice.fr/mooc/n7xo93U.png" id="ff"
-
+29.   <img src="https://mainline.i3s.unice.fr/mooc/n7xo93U.png" id="ff"
 30.         ondragstart="drag(this, event)" alt="Logo Firefox">
-
-31.  
-     <img src="https://mainline.i3s.unice.fr/mooc/ugUmuGQ.png" id="ie"
-
+31.   <img src="https://mainline.i3s.unice.fr/mooc/ugUmuGQ.png" id="ie"
 32.         ondragstart="drag(this, event)" alt="Logo IE">
-
-33.  
-     <img src="https://mainline.i3s.unice.fr/mooc/jfrNErz.png" id="op"
-
+33.   <img src="https://mainline.i3s.unice.fr/mooc/jfrNErz.png" id="op"
 34.         ondragstart="drag(this, event)" alt="Logo Opera">
-
-35.  
-     <img src="https://mainline.i3s.unice.fr/mooc/gDJCG0l.png" id="sf"
-
+35.   <img src="https://mainline.i3s.unice.fr/mooc/gDJCG0l.png" id="sf"
 36.         ondragstart="drag(this, event)" alt="Logo Safari"><br/>
-
 37. 
-
-38.  
-     <div class="box" ondragover="return false" ondrop="drop(this, event)">
-
+38.  <div class="box" ondragover="return false" ondrop="drop(this, event)">
 39.         <p>Good web browsers</p>
-
 40.    </div>
-
-41.  
-     <div class="box" ondragover="return false" ondrop="drop(this, event)">
-
+41.   <div class="box" ondragover="return false" ondrop="drop(this, event)">
 42.         <p>Bad web browsers</p>
-
 43.    </div>
-
 44. </body>
-
 45. </html>
+```
 
 The trick here is to only work on the DOM directly. We used a variant of
 the event handler proposed by the DOM API. This time, we used handlers
@@ -15672,7 +15433,17 @@ one <img> from its initial position to another location in the page).
 
 <ch id="ch3-3-8">3.3.8 Drag and drop a text selection</h3>
 
-<img src="./images/image183.png" style="width:5in;height:1.75374in" />
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 183.  (##) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image183.jpeg?raw=true"
+   width="35%"
+   alt="." />
+</p>
+<!----------
+style="width:5in;height:1.75374in" />
+----------->
 
 **There is no need to add a dragstart handler on an element that
 contains text.** Any selected text is automatically added to the
@@ -22363,7 +22134,7 @@ your comments/observations/questions and share your creations.
     orientation API, so that it avoids the balls - see the last example
     from Module 2 of the course!</li>
 </ul>
-
+<!------
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ ##.  (##) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -22372,7 +22143,8 @@ your comments/observations/questions and share your creations.
    width="35%"
    alt="." />
 </p>
+------>
 
 <h5>The end...</h5>
 
-<h5>Last Updated: 8-30-2022 9:13pm</h5>
+<h4>Last Updated: 9-21-2022 9:31pm</h4>
