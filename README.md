@@ -10621,72 +10621,46 @@ We refer to it from the game loop, to measure the time between frames.
 Notice that here we pass the delta as a parameter to
 the updateMonsterPosition call:
 
+```
 1.  **function timer(currentTime) {**
-
 2.  **   var delta = currentTime - oldTime;**
-
 3.  **   oldTime = currentTime;**
-
 4.  **   return delta;**
-
 5.  **}**
-
 6.  
-
 7.  var mainLoop = function(**time**){
-
 8.     //main function, called each frame
-
 9.     **measureFPS(time);**
-
 10. 
-
 11.    **// number of ms since last frame draw**
-
 12. **   delta = timer(time);**
-
 13. 
-
 14.    // Clear the canvas
-
 15.    clearCanvas();
-
 16. 
-
 17.    // draw the monster
-
 18.    drawMyMonster(monster.x, monster.y);
-
 19. 
-
 20.    **// Check inputs and move the monster**
-
 21. **   updateMonsterPosition(delta);**
-
 22. 
-
 23.    // call the animation loop every 1/60th of second
-
 24.    requestAnimationFrame(mainLoop);
-
 25. };
+```
 
 -   Finally, we use the time-delta in
     the updateMonsterPosition(...) function
 
+```
 1.  function updateMonsterPosition(**delta**) {
-
 2.     ...
-
 3.     // Compute the incX and inY in pixels depending
-
 4.     // on the time elapsed since last redraw
-
 5.     **monster.x += calcDistanceToMove(delta, monster.speedX);**
-
 6.    ** monster.y += calcDistanceToMove(delta, monster.speedY);**
-
 7.   }
+```
 
 ## 2.5.1 Animating multiple objects
 
@@ -10787,68 +10761,49 @@ variable for adjusting the size of the balls: the radius.
 
 Here is the constructor function for building balls:
 
+```
 1.  // Constructor function for balls
-
 2.  function Ball(x, y, vx, vy, diameter) {
-
 3.    // property of each ball: a x and y position, speeds, radius
-
 4.    this.x = x;
-
 5.    this.y = y;
-
 6.    this.vx = vx;
-
 7.    this.vy = vy;
-
 8.    this.radius = diameter/2;
-
 9.  
-
 10.   // methods
-
 11.   this.draw = function() {
-
 12.     ctx.beginPath();
-
 13.     ctx.arc(this.x, this.y, this.radius, 0, 2*Math.PI);
-
 14.     ctx.fill();
-
 15.   };
-
 16. 
-
 17.   this.move = function() {
-
 18.     // add horizontal increment to the x pos
-
 19.     // add vertical increment to the y pos
-
 20.     this.x += this.vx;
-
 21.     this.y += this.vy;
-
 22.  };
-
 23. }
+```
 
 Using a constructor function makes it easy to build new balls as
 follows:
 
+```
 1.  var b1 = new Ball(10, 10, 2, 2, 5); // x, y, vx, vy, radius
-
 2.  var b1 = new Ball(100, 130, 4, 5, 5); 
-
 3.  etc...
+```
 
 We defined two methods in the constructor function for moving the ball
 and for drawing the ball as a black filled circle. Here is the syntax
 for moving and drawing a ball:
 
+```
 1.  b1.draw();
-
 2.  b1.move();
+```
 
 We will call these methods from inside the mainLoop, and as you'll see,
 we will create many balls. This object-oriented design makes it easier
@@ -10856,160 +10811,84 @@ to handle large quantities.
 
 Here is the rest of the code from this example:
 
+```
 1.  var canvas, ctx, width, height;
-
 2.  
-
 3.  **// array of balls to animate**
-
 4.  **var ballArray = [];**
-
 5.  
-
 6.  function init() {
-
 7.    canvas = document.querySelector("#myCanvas");
-
 8.    ctx = canvas.getContext('2d');
-
 9.    width = canvas.width;
-
 10.   height = canvas.height;
-
 11. 
-
 12.   **// try to change this number**
-
 13. **  createBalls(16);**
-
 14. 
-
 15.   requestAnimationFrame(mainLoop);
-
 16. }
-
 17. 
-
 18. function createBalls(numberOfBalls) {
-
 19.   for(var i=0; i < numberOfBalls; i++) {
-
 20. 
-
 21.     **// Create a ball with random position and speed.**
-
 22. **    // You can change the radius**
-
 23. **    var ball = new Ball(width*Math.random(),**
-
 24. **                        height*Math.random(),**
-
 25. **                        (10*Math.random())-5,**
-
 26. **                        (10*Math.random())-5,**
-
 27. **                        30);**
-
 28. 
-
 29. **    // add the ball to the array**
-
 30.     **ballArray[i] = ball;**
-
 31.    }
-
 32. }
-
 33. 
-
 34. function mainLoop() {
-
 35.   // clear the canvas
-
 36.   ctx.clearRect(0, 0, width, height);
-
 37. 
-
 38.   **// for each ball in the array**
-
 39. **  for(var i=0; i < ballArray.length; i++) {**
-
 40. **    var ball = ballArray[i]; **
-
 41. 
-
 42. **    // 1) move the ball**
-
 43. **    ball.move();**
-
 44. 
-
 45. **    // 2) test if the ball collides with a wall**
-
 46. **    testCollisionWithWalls(ball);**
-
 47. 
-
 48. **    // 3) draw the ball**
-
 49. **    ball.draw();**
-
 50. **  }**
-
 51.   // ask for a new frame of animation at 60f/s
-
 52.   window.requestAnimationFrame(mainLoop);
-
 53. }
-
 54. 
-
 55. function testCollisionWithWalls(ball) {
-
 56.   // left
-
-57.   if (ball.x < ball.radius) { // x and y of the ball are at the
-    center of the circle
-
-58.     ball.x = ball.radius;     // if collision, we replace the ball
-    at a position
-
-59.     ball.vx *= -1;            // where it's exactly in contact with
-    the left border
-
+57.   if (ball.x < ball.radius) { // x and y of the ball are at the center of the circle
+58.     ball.x = ball.radius;     // if collision, we replace the ball at a position
+59.     ball.vx *= -1;            // where it's exactly in contact with the left border
 60.   }                           // and we reverse the horizontal speed
-
 61.   // right
-
 62.   if (ball.x > width - (ball.radius)) {
-
 63.     ball.x = width - (ball.radius);
-
 64.     ball.vx *= -1;
-
 65.   }
-
 66.   // up
-
 67.   if (ball.y < ball.radius) {
-
 68.     ball.y = ball.radius;
-
 69.     ball.vy *= -1;
-
 70.   }
-
 71.   // down
-
 72.   if (ball.y > height - (ball.radius)) {
-
 73.     ball.y = height - (ball.radius);
-
 74.     ball.vy *= -1;
-
 75.   }
-
 76. }
+```
 
 **Notice that:**
 
@@ -11042,149 +10921,80 @@ Note that we just changed the way we designed the balls and computed the
 angles after they rebound from the walls. The changes are highlighted in
 bold:
 
+```
 1.  var canvas, ctx, width, height;
-
 2.  
-
 3.  // Array of balls to animate
-
 4.  var ballArray = [];
-
 5.  
-
 6.  function init() {
-
 7.    ...
-
 8.  }
-
 9.  
-
 10. function createBalls(numberOfBalls) {
-
 11.   for(var i=0; i < numberOfBalls; i++) {
-
 12. 
-
 13.     // Create a ball with random position and speed.
-
 14.     // You can change the radius
-
 15.     var ball = new Ball(width*Math.random(),
-
 16.                         height*Math.random(),
-
 17.               **(2*Math.PI)*Math.random(), // angle**
-
 18.               **(10*Math.random())-5,      // speed**
-
 19.                         30);
-
 20. 
-
 21.    // We add it in an array
-
 22.    ballArray[i] = ball;
-
 23.   }
-
 24. }
-
 25. 
-
 26. function mainLoop() {
-
 27.   ...
-
 28. }
-
 29. 
-
 30. function testCollisionWithWalls(ball) {
-
 31.   // left
-
 32.   if (ball.x < ball.radius) {
-
 33.      ball.x = ball.radius;
-
 34.      **ball.angle = -ball.angle + Math.PI;**
-
 35.   }
-
 36.   // right
-
 37.   if (ball.x > width - (ball.radius)) {
-
 38.     ball.x = width - (ball.radius);
-
 39.     **ball.angle = -ball.angle + Math.PI;**
-
 40.   }
-
 41.   // up
-
 42.   if (ball.y < ball.radius) {
-
 43.     ball.y = ball.radius;
-
 44.     **ball.angle = -ball.angle;**
-
 45.   }
-
 46.   // down
-
 47.   if (ball.y > height - (ball.radius)) {
-
 48.     ball.y = height - (ball.radius);
-
 49.    ** ball.angle =-ball.angle;**
-
 50.   }
-
 51. }
-
 52. 
-
 53. // constructor function for balls
-
 54. function Ball(x, y, angle, v, diameter) {
-
 55.   this.x = x;
-
 56.   this.y = y;
-
 57.   **this.angle = angle;**
-
 58. **  this.v = v;**
-
 59.   this.radius = diameter/2;
-
 60. 
-
 61.   this.draw = function() {
-
 62.    ...
-
 63.   };
-
 64. 
-
 65.   this.move = function() {
-
 66.    // add horizontal increment to the x pos
-
 67.    // add vertical increment to the y pos
-
 68. 
-
 69.    **this.x += this.v * Math.cos(this.angle);**
-
 70. **   this.y += this.v * Math.sin(this.angle);**
-
 71.   };
-
 72. }
+```
 
 Using angles or horizontal and vertical increments is equivalent.
 However, one method might be preferable to the other: for example, to
@@ -11219,117 +11029,68 @@ jsbin.com is a good playground to try-out and test things...
 
 The new mainLoop :
 
+```
 1.  var mainLoop = function(time){
-
 2.    //main function, called each frame
-
 3.    measureFPS(time);
-
 4.  
-
 5.    // number of ms since last frame draw
-
 6.    delta = timer(time);
-
 7.  
-
 8.    // Clear the canvas
-
 9.    clearCanvas();
-
 10. 
-
 11.   // Draw the monster
-
 12.   drawMyMonster(monster.x, monster.y);
-
 13. 
-
 14.   // Check inputs and move the monster
-
 15.   updateMonsterPosition(delta);
-
 16. 
-
 17.   // Update and draw balls
-
 18.   updateBalls(delta);
-
 19. 
-
 20.   // Call the animation loop every 1/60th of second
-
 21.   requestAnimationFrame(mainLoop);
-
 22. };
+```
 
 As you can see, we draw the player/monster, we update its position; and
 we call an updateBalls function to do the same  for the balls: draw and
 update their position.
 
 1.  function updateMonsterPosition(delta) {
-
 2.    monster.speedX = monster.speedY = 0;
-
 3.    // check inputStates
-
 4.    if (inputStates.left) {
-
 5.      monster.speedX = -monster.speed;
-
 6.    }
-
 7.    if (inputStates.up) {
-
 8.      monster.speedY = -monster.speed;
-
 9.    }
-
 10.   ...
-
 11. 
-
 12.   // Compute the incX and incY in pixels depending
-
 13.   // on the time elapsed since last redraw
-
 14.   monster.x += calcDistanceToMove(delta, monster.speedX);
-
 15.   monster.y += calcDistanceToMove(delta, monster.speedY);
-
 16. }
-
 17. 
-
 18. function updateBalls(delta) {
-
 19.   // for each ball in the array
-
 20.   for(var i=0; i < ballArray.length; i++) {
-
 21.    var ball = ballArray[i];
-
 22. 
-
 23.    // 1) move the ball
-
 24.    ball.move();
-
 25. 
-
 26.    // 2) test if the ball collides with a wall
-
 27.    testCollisionWithWalls(ball);
-
 28. 
-
 29.    // 3) draw the ball
-
 30.    ball.draw();
-
 31. }
-
 32. }
+```
 
 Now, in order to turn this into a game, we need to create some
 interactions between the player (the monster) and the obstacles/enemies
@@ -11369,40 +11130,39 @@ definition, equal to their respective radii. So:
 
 Let's implement this as a JavaScript function step-by-step:
 
+```
 1.  function circleCollideNonOptimised(x1, y1, r1, x2, y2, r2) {
-
 2.  var dx = x1 - x2;
-
 3.  var dy = y1 - y2;
-
 4.  **var distance = Math.sqrt(dx * dx + dy * dy);**
+```
 
 <!-- -->
-
 457. 
 
 <!-- -->
 
+```
 5.  return (distance < r1 + r2);
-
 6.  }
+```
 
 This could be optimized a little averting the need to compute a square
 root:
 
+```
 1.  (x2-x1)^2 + (y1-y2)^2 <= (r1+r2)^2
+```
 
 ### Which yields:
 
+```
 1.  function circleCollide(x1, y1, r1, x2, y2, r2) {
-
 2.  var dx = x1 - x2;
-
 3.  var dy = y1 - y2;
-
 4.  return ((dx * dx + dy * dy) < (r1 + r2)*(r1+r2));
-
 5.  }
+```
 
 This technique is attractive because a "bounding circle" can often be
 used with graphic objects of other shapes, providing they are not too
@@ -11424,142 +11184,71 @@ circle that follows the mouse cursor), and a "monster". We created two
 JavaScript objects for describing the monster and the player, and these
 objects both have a boundingCircleRadius property:
 
-458. // The monster!
+```
+// The monster!
+var monster = {
+  x:80,
+  y:80,
+  width: 100,
+  height : 100,
+  speed:1,
+ ** boundingCircleRadius: 70**
+};
 
-459. var monster = {
-
-460.   x:80,
-
-461.   y:80,
-
-462.   width: 100,
-
-463.   height : 100,
-
-464.   speed:1,
-
-465.  ** boundingCircleRadius: 70**
-
-466. };
-
-467. 
-
-468. var player = {
-
-469.   x:0,
-
-470.   y:0,
-
-471.   **boundingCircleRadius: 20**
-
-472. };
+var player = {
+  x:0,
+  y:0,
+  **boundingCircleRadius: 20**
+};
+```
 
 ### The collision test occurs in the main loop:
 
-473. var mainLoop = function(time){
+```
+var mainLoop = function(time){
+//main function, called each frame
+measureFPS(time);
+// Clear the canvas
+clearCanvas();
+// Draw the monster
+  drawMyMonster();
+// Check inputs and move the monster
+updateMonsterPosition();
+updatePlayer();
+checkCollisions();
+// Call the animation loop every 1/60th of second
+requestAnimationFrame(mainLoop);
+};
+function updatePlayer() {
+// The player is just a circle drawn at the mouse position
+// Just to test circle/circle collision.
+if(inputStates.mousePos) {            // Move the player and draw it as a circle
+  player.x = inputStates.mousePos.x;  // when the mouse moves
+  player.y = inputStates.mousePos.y;
+  ctx.beginPath();
+  ctx.arc(player.x, player.y, player.boundingCircleRadius, 0, 2*Math.PI);
+  ctx.stroke();
+  }
+}
+function checkCollisions() {
+if(circleCollide(player.x, player.y, player.boundingCircleRadius,
+   monster.x, monster.y, monster.boundingCircleRadius))** {  
+   // Draw everything in red
+   ctx.fillText("Collision", 150, 20);
+   ctx.strokeStyle = ctx.fillStyle = 'red';
+  } else {  
+// Draw in black
+  ctx.fillText("No collision", 150, 20);
 
-474.   //main function, called each frame
-
-475.   measureFPS(time);
-
-476. 
-
-477.   // Clear the canvas
-
-478.   clearCanvas();
-
-479. 
-
-480.   // Draw the monster
-
-481.   drawMyMonster();
-
-482. 
-
-483.   // Check inputs and move the monster
-
-484.   updateMonsterPosition();
-
-485. 
-
-486.   updatePlayer();
-
-487. 
-
-488.   **checkCollisions();**
-
-489. 
-
-490.   // Call the animation loop every 1/60th of second
-
-491.   requestAnimationFrame(mainLoop);
-
-492. };
-
-493. 
-
-494. function updatePlayer() {
-
-495.   // The player is just a circle drawn at the mouse position
-
-496.   // Just to test circle/circle collision.
-
-497. 
-
-498.   if(inputStates.mousePos) {            // Move the player and draw
-     it as a circle
-
-499.     player.x = inputStates.mousePos.x;  // when the mouse moves
-
-500.     player.y = inputStates.mousePos.y;
-
-501.     ctx.beginPath();
-
-502.    
-     ctx.arc(player.x, player.y, player.boundingCircleRadius, 0, 2*Math.PI);
-
-503.     ctx.stroke();
-
-504.   }
-
-505. }
-
-506. 
-
-507. function checkCollisions() {
-
-508.  ** if(circleCollide(player.x, player.y, player.boundingCircleRadius,**
-
-509. **                 
-      monster.x, monster.y, monster.boundingCircleRadius))** {  
-         // Draw everything in red
-
-510.     ctx.fillText("Collision", 150, 20);
-
-511.     ctx.strokeStyle = ctx.fillStyle = 'red';
-
-512.   } else {  
-         // Draw in black
-
-513.     ctx.fillText("No collision", 150, 20);
-
-514.     ctx.strokeStyle = ctx.fillStyle = 'black';
-
-515.   }
-
-516. }
-
-517. 
-
-518. **function circleCollide(x1, y1, r1, x2, y2, r2) {**
-
-519. **   var dx = x1 - x2;**
-
-520. **   var dy = y1 - y2;**
-
-521. **   return ((dx * dx + dy * dy) < (r1 + r2)*(r1+r2));**
-
-522. **}**
+  ctx.strokeStyle = ctx.fillStyle = 'black';
+  }
+}
+function circleCollide(x1, y1, r1, x2, y2, r2) {
+   var dx = x1 - x2;
+   var dy = y1 - y2;
+   return ((dx * dx + dy * dy) < (r1 + r2)*(r1+r2));
+}
+```
 
 ### [Advanced technique] Use several bounding circles for complex shapes, recompute bounding circles when the shape changes over time (animated objects)
 
