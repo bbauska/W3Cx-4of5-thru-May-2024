@@ -21544,8 +21544,11 @@ it: <a href="https://jsbin.com/uyuqek/4/edit">https://jsbin.com/uyuqek/4/edit</
    alt="Devicemotion API."
    width="35%" />
 </p>
-
-<h4>Code from the example:</h4>
+<!-- <h4>Code from the example:</h4> -->
+<details>
+<h4>
+  <summary>Code from this example</summary>
+</h4>
 
 ```
 1.  <html>
@@ -21625,6 +21628,9 @@ it: <a href="https://jsbin.com/uyuqek/4/edit">https://jsbin.com/uyuqek/4/edit</
 75. </html>
 ```
 
+</details>
+
+
 <h4>Move a ball on the screen</h4>
 
 <a href="https://jsbin.com/eyahuv/2/edit">Try this example at JsBin</a>. If using a
@@ -21639,7 +21645,10 @@ mobile device, <a href="https://jsbin.com/eyahuv/2"use this URL instead</a>!
 </p>
 <!---   style="width:3in;height:1.99379in" --->
 
-<h4>Code from this example:</h4>
+<h4>
+<details>
+  <summary Code from this example</summary>
+</h4>
 
 ```
 1.  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -21787,6 +21796,8 @@ mobile device, <a href="https://jsbin.com/eyahuv/2"use this URL instead</a>!
 143. </html>
 ```
 
+</details>
+
 <h4>External resources</h4>
 <ul>
 <li>From the W3C specification: <a href="https://w3c.github.io/deviceorientation/spec-source-orientation.html#devicemotion">devicemotion
@@ -21836,4 +21847,4 @@ your comments/observations/questions and share your creations.
 
 <h5>The end...</h5>
 
-<h4>Last Updated: 9-21-2022 9:31pm</h4>
+<h4>Last Updated: 9-28-2022 3:33pm</h4>
