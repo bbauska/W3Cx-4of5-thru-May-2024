@@ -126,6 +126,9 @@ courses, you <i>do NOT need to re-take that course</i>.
 
 <h2>Contents</h2>
 
+<details>
+  <summary>Contents</summary>
+
 [Advanced HTML5 Multimedia [26](#module-1-1)](#module-1-1)
 
 [1.2.1 The Timed Text Track API
@@ -955,6 +958,10 @@ orientation API + CSS3 3D rotations
 [Optional projects: [509](#optional-projects-6)](#optional-projects-6)
 
 [The end. [509](#the-end.)](#the-end.)
+
+</details>
+
+<hr>
 
 Welcome!
 
