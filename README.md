@@ -124,10 +124,10 @@ courses, you <i>do NOT need to re-take that course</i>.
     in edX Help Center</a></b>.</li>
 </ul>
 
-<h2>
+<h2>Contents</h2>
+
 <details>
-  <summary>Contents</summary>
-</h2>
+  <summary>Here!</summary>
 
 [Advanced HTML5 Multimedia [26](#module-1-1)](#module-1-1)
 
