@@ -129,6 +129,7 @@ courses, you <i>do NOT need to re-take that course</i>.
 <details>
   <summary>Here!</summary>
 
+
 [Advanced HTML5 Multimedia [26](#module-1-1)](#module-1-1)
 
 [1.2.1 The Timed Text Track API
@@ -1543,6 +1544,9 @@ reminder, let's look at a WebVTT file:
 
 WEBVTT
 
+<details>
+  <summary>Here!</summary>
+
 ```
 19. 
 <!-- -->
@@ -1569,8 +1573,10 @@ WEBVTT
 12. <v Proog>Everything is safe. Perfectly safe.</v>
 ```
 
+</details>
+
 <img src="./images/image017.jpeg" style="width:2.02083in;height:4.83333in"
-alt="remote controller with subtitles button" />
+alt="remote controller with subtitles button." />
 
 The different time segments are called "cues" and each cue has an id (1,
 2, 3 and 4 in the above example), a startTime and an endTime, and
@@ -1692,11 +1698,9 @@ for the video.
 <img src="./images/image022.png" style="width:5in;height:5.2094in" />
 
 This is finished for this small introduction video, I will just conclude
-by this thing
-
-here: explaining this crossOrigin="anonymous". We saw that during the
-HTML5 Part 1 course and many people asked questions about this. This is
-because of security constraints.
+by this thing here: explaining this crossOrigin="anonymous". 
+We saw that during the HTML5 Part 1 course and many people asked questions about this. 
+This is because of security constraints.
 
 In browsers, when you've got the HTML page that is on a different
 location than the video file and the tracks files, you will have
@@ -1779,6 +1783,9 @@ enables us to manipulate &lt;track&gt; contents from JavaScript. Do you
 recall that text tracks are associated with WebVTT files? As a quick
 reminder, let's look at a WebVTT file:
 
+<details>
+  <summary>WEBVTT code!</summary>
+
 ```
 1.  WEBVTT
 2.   
@@ -1798,6 +1805,9 @@ reminder, let's look at a WebVTT file:
 16. 00:00:22.000 --> 00:00:24.417 align:end
 17. <v Proog>Everything is safe. Perfectly safe.</v>
 ```
+
+</details>
+
 
 The different time segments are called "cues" and each cue has an id (1,
 2, 3 and 4 in the above example), a startTime and an endTime, and
@@ -1913,6 +1923,9 @@ choosing the different tracks. I will explain that in a next video.
 
 <h4>Let's go back to our example. Below is the HTML code:</h4>
 
+<details>
+  <summary>HTML code!</summary>
+
 ```
 1.  <video id="myVideo" preload="metadata" controls crossOrigin="anonymous">
 2.   <source src="https://...../elephants-dream-medium.mp4" type="video/mp4">
@@ -1933,6 +1946,10 @@ choosing the different tracks. I will explain that in a next video.
 12. </div>
 ```
 
+</details>
+
+<hr>
+
 This example defines three &lt;track&gt; elements. From JavaScript, we can
 manipulate these elements as "HTML elements" - we will call them the
 "HTML views" of tracks.
@@ -1946,6 +1963,9 @@ manipulate these elements as "HTML elements" - we will call them the
 <img src="./images/image027.png" style="width:4in;height:3.93208in" />
 
 <h4>Here is the JavaScript source code:</h4>
+
+<details>
+  <summary>JavaScript code!</summary>
 
 ```
 1.  var video, htmlTracks;
@@ -1981,6 +2001,9 @@ manipulate these elements as "HTML elements" - we will call them the
 <!-- -->
 23. 
 ```
+
+</details>
+<hr>
 
 <h4>The code is rather straightforward:</h4>
 
@@ -2176,14 +2199,11 @@ The <video> element (and <audio> element too) has
 a TextTrack property accessible from JavaScript:
 
 ```
-1.  var videoElement = document.querySelector("#myVideo");
-<!-- -->
-1.  <b>var textTracks = videoElement.textTracks; // one TextTrack for
-   each HTML track element</b>
-2.  var textTrack = textTracks[0]; // corresponds to the first track
-    element
-3.  var kind = textTrack.kind // e.g. "subtitles"
-4.  var mode = textTrack.mode // e.g. "disabled", "hidden" or "showing"
+var videoElement = document.querySelector("#myVideo");
+var textTracks = videoElement.textTracks; // one TextTrack for each HTML track element
+var textTrack = textTracks[0]; // corresponds to the first track element
+var kind = textTrack.kind // e.g. "subtitles"
+var mode = textTrack.mode // e.g. "disabled", "hidden" or "showing"
 ```
 
 The mode property of TextTrack objects TextTrack objects have a
@@ -2249,6 +2269,9 @@ necessary).
 Here are the additions we made to the JavaScript code from the previous
 example:
 
+<details>
+  <summary>JavaScript additions</summary>
+
 ```
 1.  function readContent(track) {
 2.     console.log("reading content of loaded track...");
@@ -2284,6 +2307,8 @@ example:
 30.     getTrack(htmlTracks[n], readContent);
 31. }
 ```
+
+</details>
 
 Explanations:
 
@@ -2422,6 +2447,9 @@ track](https://jsbin.com/teruhay/1/edit?html,css,js,output):
 We just changed the content of the readContent(track) method from the
 example in the previous lesson:
 
+<details>
+  <summary>readContent code!</summary>
+
 ```
 1.  function readContent(track) {
 2.     console.log("reading content of loaded track...");
@@ -2444,6 +2472,8 @@ example in the previous lesson:
 19.    }
 20. }
 ```
+
+</details>
 
 As you can see, the code is simple: you first get the cues for the given
 TextTrack (it must be loaded; this is the case since we took care of it
@@ -2479,9 +2509,7 @@ addCueListeners, it will define two listeners: the cue enter listener
 and the cue exit event listener.
 
 On the cue enter listener we just create a string "entered cue id=" and
-"text=" that
-
-will correspond to the text displayed when a cue is just reached.
+"text=" that will correspond to the text displayed when a cue is just reached.
 
 We display the id and we display the text. The same thing is done when
 we exit. When we exit, we just display the id "exited cue id=". This is
@@ -2542,12 +2570,12 @@ The two types of cue event are:
 <h4>Example of cuechange listener on TextTrack</h4>
 
 ```
-1.  // track is a loaded TextTrack
-2.  track.addEventListener("cuechange", function(e) {
-3.     var cue = this.activeCues[0];
-4.     console.log("cue change");
-5.     // do something with the current cue
-6.   });
+// track is a loaded TextTrack
+track.addEventListener("cuechange", function(e) {
+   var cue = this.activeCues[0];
+   console.log("cue change");
+   // do something with the current cue
+});
 ```
 
 In the above example, let's assume that we have no overlapping cues for
@@ -2562,6 +2590,9 @@ In the following lessons, we show how to deal with overlapping cues
 (cases where we have more than one active cue).
 
 Example of enter and exit event listeners on a track's cues
+
+<details>
+  <summary>Code!</summary>
 
 ```
 1.   // iterate on all cues of the current track
@@ -2587,6 +2618,8 @@ Example of enter and exit event listeners on a track's cues
 21. } // end of addCueListeners...
 ```
 
+</details>
+
 Showing real examples of event listeners
 
 <a href="https://jsbin.com/dohilo/1/edit?html,output">Here is an example at JSBin that shows how to listen
@@ -2607,22 +2640,26 @@ alt="" />
 
 <h4>Source code extract:</h4>
 
+<details>
+  <summary>readContent code</summary>
+
 ```
 1.  function readContent(track) {
 2.     console.log("adding cue change listener to loaded track...");
 3.     trackStatusesDiv.innerHTML = "";
 4.  
-5.     <b>// add a cue change listener to the TextTrack</b>
-6.  <b>   track.addEventListener("cuechange", function(e) {</b>
-7.  <b>      var cue = this.activeCues[0];</b>
-8.  <b>      if(cue !== undefined)</b>
-9.  <b>         trackStatusesDiv.innerHTML += "cue change: text =
-   " + cue.text + "<br>";</b>
-10. <b>   });</b>
+5.     <b>// add a cue change listener to the TextTrack
+6.     track.addEventListener("cuechange", function(e) {
+7.        var cue = this.activeCues[0];
+8.        if(cue !== undefined)
+9.           trackStatusesDiv.innerHTML += "cue change: text = " + cue.text + "<br>";
+10.    });
 11. 
 12.    video.play();
 13. }
 ```
+
+</details>
 
 <a href="https://jsbin.com/xawajoh/1/edit?html,css,js,output">And here is another modified version of this example at JSBin, that
 shows how to use enter and exit events on cues</a>:
@@ -2637,11 +2674,12 @@ shows how to use enter and exit events on cues</a>:
 </p>
 
 <h4>Source code extract:</h4>
+<details>
+  <summary>Source code!</summary>
 
 ```
 1.  function readContent(track) {
-2.     console.log("adding enter and exit listeners to all cues of this
-    > track");
+2.     console.log("adding enter and exit listeners to all cues of this > track");
 3.  
 4.     trackStatusesDiv.innerHTML = "";
 5.  
@@ -2659,16 +2697,16 @@ shows how to use enter and exit events on cues</a>:
 17.  
 18. function addCueListeners(cue) {
 19.    cue.onenter = function(){
-20.       trackStatusesDiv.innerHTML += 'entered cue id=' + this.id + "
-    > "
+20.       trackStatusesDiv.innerHTML += 'entered cue id=' + this.id + " > "
 21.                                  + this.text + "<br>";
 22.    };
 23.    cue.onexit = function(){
-24.       trackStatusesDiv.innerHTML += 'exited cue
-    > id=' + this.id + "<br>";
+24.       trackStatusesDiv.innerHTML += 'exited cue > id=' + this.id + "<br>";
 25.    };
 26. } // end of addCueListeners...
 ```
+
+</details>
 
 <h3 id="ch1-3">1.3 Advanced Features for <audio> and <video> Players</h3>
 
@@ -2942,6 +2980,9 @@ JSBin](https://jsbin.com/sodihux/1/edit?html,css,js,output):
 
 <h4>JavaScript code:</h4>
 
+<details>
+  <summary>JavaScript code!</summary>
+
 ```
 1.  var video, transcriptDiv;
 2.  // TextTracks, html tracks, urls of tracks
@@ -3118,6 +3159,8 @@ JSBin](https://jsbin.com/sodihux/1/edit?html,css,js,output):
 173. } // end of addCueListeners...
 ```
 
+</details>
+
 Load a WebVTT file using Ajax/XHR2 and parse it manually.
 
 This is an old example written in 2012 at a time when the track API was
@@ -3141,6 +3184,9 @@ element with an id of transcript.
 
 <h4>Extract from HTML code:</h4>
 
+<details>
+  <summary>HTML code!</summary>
+
 ```
 1.  ...
 2.  <video preload="metadata" controls >
@@ -3162,7 +3208,12 @@ element with an id of transcript.
 18. ...
 ```
 
+</details>
+
 <h4>JavaScript code:</h4>
+
+<details>
+  <summary>JavaScript code!</summary>
 
 ```
 1.  // Transcript.js, by dev.opera.com
@@ -3262,7 +3313,9 @@ element with an id of transcript.
 95. }
 ```
 
-## 1.3.2 Captions, Descriptions, Chapters and Metadata
+</details>
+
+<h3 id="ch1-3-2">1.3.2 Captions, Descriptions, Chapters and Metadata</h3>
 
 Example #2: showing video description while playing, listening to
 events, changing the mode of a track.
@@ -3290,6 +3343,8 @@ In the screen-capture below, we have a WebVTT file displaying a scene's
 captions and descriptions.
 
 <h4>Extract from HTML code:</h4>
+<details>
+  <summary>HTML code!</summary>
 
 ```
 1. <html lang="en">
@@ -3357,100 +3412,104 @@ captions and descriptions.
 63. </html>
 ```
 
+</details>
+
 <h4>JavaScript code:</h4>
+<details>
+  <summary>JavaScript code!</summary>
 
 ```
 var tracks, video, statusDiv, subtitlesCaptionsDiv;
  
 function init() {
-    video = document.querySelector("#myVideo");
-    statusDiv = document.querySelector("#currentTrackStatuses");
-       subtitlesCaptionsDiv = document.querySelector("#subtitlesCaptions");
-    tracks = document.querySelectorAll("track");
+   video = document.querySelector("#myVideo");
+   statusDiv = document.querySelector("#currentTrackStatuses");
+      subtitlesCaptionsDiv = document.querySelector("#subtitlesCaptions");
+   tracks = document.querySelectorAll("track");
+
+   video.addEventListener('loadedmetadata', function() {
+      console.log("metadata loaded");
+
+      // defines cue listeners for the active track; we can do this     only after the video metadata have been loaded
+      for(var i=0; i<tracks.length; i++) {
+         var t = tracks[i].track;
+         if(t.mode === "showing") {
+            t.addEventListener('cuechange', logCue, false);
+         }
+       }
+       // display in a div the list of tracks and their status/mode value
+       displayTrackStatus();  
+    });
+}
+ 
+function displayTrackStatus() {
+    // display the status / mode value of each track.
+    // In red if disabled, in green if showing
+    for(var i=0; i<tracks.length; i++) {
+       var t = tracks[i].track;
+       var mode = t.mode;
+
+       if(mode === "disabled") {
+          mode = "<span style='color:red'>" + t.mode + "</span>";
+       } else if(mode === "showing") {
+          mode = "<span style='color:green'>" + t.mode + "</span>";
+       }
+       appendToScrollableDiv(statusDiv, "track " + i + ":" + t.label
+                                        + " " + t.kind+" in "
+                                        + mode + " mode");
+    }
+}
+function appendToScrollableDiv(div, text) {
+   // we've got two scrollable divs. This function
+   // appends text to the div passed as a parameter
+   // The div is scrollable (thanks to CSS overflow:auto)
+   var inner = div.innerHTML;
+   div.innerHTML = inner + text + "<br/>";
+   // Make it display the last line appended
+   div.scrollTop = div.scrollHeight;
+}
+ 
+function clearDiv(div) {
+   div.innerHTML = '';
+}
+ 
+function clearSubtitlesCaptions() {
+   clearDiv(subtitlesCaptionsDiv);
+}
  
-    video.addEventListener('loadedmetadata', function() {
-       console.log("metadata loaded");
- 
-       // defines cue listeners for the active track; we can do this     only after the video metadata have been loaded
-       for(var i=0; i<tracks.length; i++) {
-          var t = tracks[i].track;
-          if(t.mode === "showing") {
-             t.addEventListener('cuechange', logCue, false);
-          }
-        }
-        // display in a div the list of tracks and their status/mode value
-        displayTrackStatus();  
-     });
- }
-  
- function displayTrackStatus() {
-     // display the status / mode value of each track.
-     // In red if disabled, in green if showing
-     for(var i=0; i<tracks.length; i++) {
-        var t = tracks[i].track;
-        var mode = t.mode;
- 
-        if(mode === "disabled") {
-           mode = "<span style='color:red'>" + t.mode + "</span>";
-        } else if(mode === "showing") {
-           mode = "<span style='color:green'>" + t.mode + "</span>";
-        }
-        appendToScrollableDiv(statusDiv, "track " + i + ":" + t.label
-                                         + " " + t.kind+" in "
-                                         + mode + " mode");
-     }
- }
- function appendToScrollableDiv(div, text) {
-    // we've got two scrollable divs. This function
-    // appends text to the div passed as a parameter
-    // The div is scrollable (thanks to CSS overflow:auto)
-    var inner = div.innerHTML;
-    div.innerHTML = inner + text + "<br/>";
-    // Make it display the last line appended
-    div.scrollTop = div.scrollHeight;
- }
-  
- function clearDiv(div) {
-    div.innerHTML = '';
- }
-  
- function clearSubtitlesCaptions() {
-    clearDiv(subtitlesCaptionsDiv);
- }
- 
- function toggleTrack(i) {
-    // toggles the mode of track i, removes the cue listener
-157.    // if its mode becomes "disabled"
-158.    // adds a cue listener if its mode was "disabled"
-159.    // and becomes "hidden"
-160.    var t = tracks[i].track;
-161.    switch (t.mode) {
-162.       case "disabled":
-163.          t.addEventListener('cuechange', logCue, false);
-164.          t.mode = "hidden";
-165.          break;
-166.       case "hidden":
-167.          t.mode = "showing";
-168.          break;
-169.       case "showing":
-170.          t.removeEventListener('cuechange', logCue, false);
-171.          t.mode = "disabled";
-172.          break;
-173.     }
-174.     // updates the status
-175.     clearDiv(statusDiv);
-176.     displayTrackStatus();
-177.     appendToScrollableDiv(statusDiv,"<br>" + t.label+" are now " +t.mode);
-178. }
-179.  
-180. function logCue() {
-181.    // callback for the cue event
-182.    if(this.activeCues && this.activeCues.length) {
-183.       var t = this.activeCues[0].text; // text of current cue
-184.       appendToScrollableDiv(subtitlesCaptionsDiv, "Active "
-185.                                           + this.kind + " changed to: " + t);
-186.    }
-187. }
+function toggleTrack(i) {
+   // toggles the mode of track i, removes the cue listener
+   // if its mode becomes "disabled"
+   // adds a cue listener if its mode was "disabled"
+   // and becomes "hidden"
+   var t = tracks[i].track;
+   switch (t.mode) {
+      case "disabled":
+         t.addEventListener('cuechange', logCue, false);
+         t.mode = "hidden";
+         break;
+      case "hidden":
+         t.mode = "showing";
+         break;
+      case "showing":
+         t.removeEventListener('cuechange', logCue, false);
+         t.mode = "disabled";
+         break;
+    }
+    // updates the status
+    clearDiv(statusDiv);
+    displayTrackStatus();
+    appendToScrollableDiv(statusDiv,"<br>" + t.label+" are now " +t.mode);
+}
+ 
+function logCue() {
+   // callback for the cue event
+   if(this.activeCues && this.activeCues.length) {
+      var t = this.activeCues[0].text; // text of current cue
+      appendToScrollableDiv(subtitlesCaptionsDiv, "Active "
+                                          + this.kind + " changed to: " + t);
+   }
+}
 ```
 
 <h3 id="ch1-3-3">1.3.3 With Buttons for Choosing the Subtitle Language</h3>
@@ -3474,6 +3533,8 @@ you choose which track you prefer. 
 alt="Buttons for choosing the track/language under a standard video player" />
 
 <h4>HTML code:</h4>
+<details>
+  <summary>HTML code!</summary>
 
 ```
 1.  ...
@@ -3504,7 +3565,11 @@ alt="Buttons for choosing the track/language under a standard video player" />
 26. ...
 ```
 
+</details>
+
 <h4> JavaScript code:
+<details>
+  <summary>JavaScript code!</summary>
 
 ```
 1.  var langButtonDiv, currentLangSpan, video;
@@ -3536,11 +3601,9 @@ alt="Buttons for choosing the track/language under a standard video player" />
 27.    if (video.textTracks) { // if the video contains track elements
 28.       // For each track, create a button
 29.       for (var i = 0; i < video.textTracks.length; i++) {
-30.          // We create buttons only for the caption and subtitle
-    tracks
+30.          // We create buttons only for the caption and subtitle tracks
 31.          var track = video.textTracks[i];
-32.        
-     if((track.kind !== "subtitles") && (track.kind !== "captions"))
+32.         if((track.kind !== "subtitles") && (track.kind !== "captions"))
 33.             continue;
 34. 
 35.          // create a button for track number i         
@@ -3554,12 +3617,10 @@ alt="Buttons for choosing the track/language under a standard video player" />
 43.    var b = document.createElement("button");
 44.    b.value=track.label;
 45.    // use the lang attribute of the button to keep trace of the
-46.    // associated track language. Will be useful in the click
-   listener
+46.    // associated track language. Will be useful in the click listener
 47.    b.setAttribute("lang", track.language); 
 48.    b.addEventListener('click', function(e) {
-49.      // Check which track is the track with the language
-    we're looking for
+49.      // Check which track is the track with the language we're looking for
 50.      // Get the value of the lang attribute of the clicked button
 51.      var lang = this.getAttribute('lang'); 
 52. 
@@ -3580,6 +3641,8 @@ alt="Buttons for choosing the track/language under a standard video player" />
 67. }
 68. 
 ```
+
+</details>
 
 <h4> External resources
 
@@ -3604,28 +3667,32 @@ declaration of the track. Here is how we declared a chapter track in one
 of the previous examples (in bold in the example below):
 
 <h4>HTML code:</h4>
+<details>
+  <summary>HTML code!</summary>
 
 ```
- <video id="myVideo" preload="metadata" controls crossOrigin="anonymous">
- <source src=<https://...../elephants-dream-medium.mp4>
- type="video/mp4">
- <source src=<https://...../elephants-dream-medium.webm>
- type="video/webm">
- <track label="English subtitles"
- kind="subtitles"
- srclang="en"
- src="https://...../elephants-dream-subtitles-en.vtt" >
- <track label="Deutsch subtitles"
- kind="subtitles"
- srclang="de"
- src=<https://...../elephants-dream-subtitles-de.vtt>
- default>
- <track label="English chapters"
- kind="chapters"
- srclang="en"
- src="https://...../elephants-dream-chapters-en.vtt">
- </video>
+<video id="myVideo" preload="metadata" controls crossOrigin="anonymous">
+  <source src=<https://...../elephants-dream-medium.mp4>
+  type="video/mp4">
+  <source src=<https://...../elephants-dream-medium.webm>
+  type="video/webm">
+  <track label="English subtitles"
+  kind="subtitles"
+  srclang="en"
+  src="https://...../elephants-dream-subtitles-en.vtt" >
+  <track label="Deutsch subtitles"
+  kind="subtitles"
+  srclang="de"
+  src=<https://...../elephants-dream-subtitles-de.vtt>
+  default>
+  <track label="English chapters"
+  kind="chapters"
+  srclang="en"
+  src="https://...../elephants-dream-chapters-en.vtt">
+</video>
 ```
+
+</details>
 
 If we try this code in an HTML document, nothing special happens. No
 magic menu, no extra button!
@@ -3638,6 +3705,9 @@ navigation menu is not complicated.
 Let's start by examining the sample .vtt file
 
 [elephant-dream-chapters-en.vtt](https://mainline.i3s.unice.fr/mooc/elephants-dream-chapters-en.vtt):
+
+<details>
+  <summary>WEBVTT!</summary>
 
 ```
 1.  WEBVTT
@@ -3671,6 +3741,8 @@ Let's start by examining the sample .vtt file
 29. The Colossus of Rhodes
 ```
 
+</details>
+
 There are 7 cues (one for each chapter). Each cue id is the word
 "chapter-" followed by the chapter number, then we have the start and
 end time of the cue/chapter, and the cue content. In this case: the
@@ -3699,16 +3771,16 @@ Here is a new version: in bold are the source code lines we
 modified.
 
 ```
- function loadTranscript(lang, kind) {
- ...
- // Locate the track with lang and kind that match the parameters
- for(var i = 0; i < tracks.length; i++) {
- ...
- if((track.language === lang) && (track.kind === kind)) {
- // display it contents...
- }
- }
- }
+function loadTranscript(lang, kind) {
+  ...
+  // Locate the track with lang and kind that match the parameters
+  for(var i = 0; i < tracks.length; i++) {
+    ...
+    if((track.language === lang) && (track.kind === kind)) {
+    // display it contents...
+    }
+  }
+}
 ```
 
 Simple approach: chapters as clickable text on the right of the video
@@ -3849,6 +3921,9 @@ objects as cue contents:
 
 [elephants-dream-chapters-en-JSON.vtt](https://mainline.i3s.unice.fr/mooc/elephants-dream-chapters-en-JSON.vtt):
 
+<details>
+  <summary>WEBTT!</summary>
+
 ```
 1.  WEBVTT
 2.   
@@ -3869,6 +3944,8 @@ objects as cue contents:
 17. ...
 ```
 
+</details>
+
 Before explaining the code, we propose that you [try this example at
 JSBin that uses this new .vtt
 file](https://jsbin.com/pulefe/1/edit?html,css,js,output):
@@ -3877,6 +3954,8 @@ file](https://jsbin.com/pulefe/1/edit?html,css,js,output):
 alt="Video with nice chapter menu that uses thumbnail images" />
 
 <h4>HTML code:</h4>
+<details>
+  <summary>HTML code!</summary>
 
 ```
 1.  ...
@@ -3900,6 +3979,8 @@ alt="Video with nice chapter menu that uses thumbnail images" />
 19.  ...
 ```
 
+</details>
+
 It's the same code we had in the first example, except that this time we
 use a new WebVTT file that uses JSON cues to describe each chapter. For
 the sake of simplicity, we also removed the buttons and all the code for
@@ -3907,6 +3988,8 @@ displaying a clickable transcript of the subtitles/captions on the right
 of the video.
 
 <h4> JavaScript code:</h4>
+<details>
+  <summary>JavaScript code!</summary>
 
 ```
 1.  var video, chapterMenuDiv;
@@ -3999,6 +4082,8 @@ of the video.
 88.  
 ```
 
+</details>
+
 <h4><b>Explanations:</b></h4>
 
 -   <i>Lines  4-18</i>: when the page is loaded, we assemble all of the track
@@ -4041,6 +4126,8 @@ We also added CSS classes "img", "thumb" and "desc", which make it easy
 to style and position the thumbnails using CSS.
 
 <h4>CSS source code extract:</h4>
+<details>
+  <summary>CSS code!</summary>
 
 ```
 1.  #chapterMenuSection {
@@ -4076,6 +4163,8 @@ to style and position the thumbnails using CSS.
 31.   box-shadow: 5px 5px 5px black;
 32. }
 ```
+
+</details>
 
 A sample menu marker is shown below (it's also animated - hover your
 mouse over the thumbnail to see its animated shadow):
@@ -4132,6 +4221,9 @@ alt="Click a button to play an animal sound" />
 The demo uses a JavaScript array for defining the different animal
 sounds in this audio file:
 
+<details>
+  <summary>JavaScript code!</summary>
+
 ```
 1.   var sounds = [
 1.      {
@@ -4157,6 +4249,8 @@ sounds in this audio file:
 21.     ...
 22. ];
 ```
+
+</details>
 
 The idea is to create a track on the fly, then add cues within this
 track. Each cue will be created with the id, the start and end
@@ -4352,44 +4446,44 @@ alt="Video synced with google map and google street map" />
 previously, or by using the new HTML5 TextTrack getCueById() method.</p>
 
 ```
-1.  var videoElement = document.querySelector("#myvideo");
-2.  var textTracks = videoElement.textTracks; // one for each track element
-3.  var textTrack = textTracks[0]; // corresponds to the first track element
-4.  
-5.  <b>// Get a cue with ID="wikipedia"**
-6.  <b>var cue = textTrack.getCueById("Wikipedia"); **
+var videoElement = document.querySelector("#myvideo");
+var textTracks = videoElement.textTracks; // one for each track element
+var textTrack = textTracks[0]; // corresponds to the first track element
+
+// Get a cue with ID="wikipedia"
+var cue = textTrack.getCueById("Wikipedia");
 ```
 
 <h4>And once we have a cue object, it is possible to add event listeners to it:</h4>
 
 ```
-1.  cue.onenter = function(){
-2.     // display something, play a sound, update any DOM element...
-3.  };
-4.  
-5.  cue.onexit = function(){
-6.     // do something else
-7.  };
+cue.onenter = function(){
+   // display something, play a sound, update any DOM element...
+};
+
+cue.onexit = function(){
+   // do something else
+};
 ```
 
 <p>If the getCueById method is not implemented (this is the case in some
 browsers), we use the @@polyfill presented in the previous section:</p>
 
 ```
-1.   // for browsers that do not implement the getCueById() method
-2.  
-3.   // let's assume we're adding the getCueById function to a TextTrack object
-4.   //named "track"
-5.  if (typeof track.getCueById !== "function") {
-6.     track.getCueById = function(id) {
-7.       var cues = track.cues;
-8.       for (var i = 0; i != track.cues.length; ++i) {
-9.         if (cues[i].id === id) {
-10.          return cues[i];
-11.        }
-12.      }
-13.   };
-14.  }
+// for browsers that do not implement the getCueById() method
+
+// let's assume we're adding the getCueById function to a TextTrack object
+//named "track"
+if (typeof track.getCueById !== "function") {
+  track.getCueById = function(id) {
+    var cues = track.cues;
+    for (var i = 0; i != track.cues.length; ++i) {
+      if (cues[i].id === id) {
+        return cues[i];
+      }
+    }
+ };
+}
 ```
 
 <h4>Example that displays a wikipedia page and a google map while a video is playing</h4>
@@ -4401,6 +4495,8 @@ browsers), we use the @@polyfill presented in the previous section:</p>
 alt="video synced with an iframe that shows external URLs and with a google map" />
 
 <h4>HTML code extract:</h4>
+<details>
+  <summary>HTML code!</summary>
 
 ```
 1.  <!DOCTYPE html>
@@ -4433,7 +4529,11 @@ alt="video synced with an iframe that shows external URLs and with a google map"
 28. ...
 ```
 
+</details>
+
 <h4>JavaScript code:</h4>
+<details>
+  <summary>JavaScript code!</summary>
 
 ```
 1.  window.onload = function() {
@@ -4503,6 +4603,8 @@ alt="video synced with an iframe that shows external URLs and with a google map"
 65.    }
 66. };
 ```
+
+</details>
 
 All the critical work is done by the cuechange event listener, *lines
 27-50*. We have only the one track, so we set its mode to "hidden"
