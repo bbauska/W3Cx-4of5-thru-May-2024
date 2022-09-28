@@ -2837,7 +2837,10 @@ JSBin](https://jsbin.com/sodihux/1/edit?html,css,js,output):
    alt="." />
 </p>
 
-<h4>HTML code:</h4>
+<!-- <h4>HTML code:</h4> -->
+
+<details>
+  <summary>HTML code</summary>
 
 ```
 1.  <section id="all">
@@ -2873,7 +2876,14 @@ JSBin](https://jsbin.com/sodihux/1/edit?html,css,js,output):
 31. </section>
 ```
 
+</details>
+
 <h4>CSS code:</h4>
+
+<details>
+<h4>
+  <summary>Code from this example</summary>
+</h4>
 
 ```
 1.  #all {
@@ -2920,6 +2930,8 @@ JSBin](https://jsbin.com/sodihux/1/edit?html,css,js,output):
 42.    list-style: none;
 43. }
 ```
+
+</details>
 
 <h4>JavaScript code:</h4>
 
@@ -2984,8 +2996,7 @@ JSBin](https://jsbin.com/sodihux/1/edit?html,css,js,output):
 58.           displayCuesAfterTrackLoaded(trackAsHtmlElem, track);
 59.        }
 60. 
-61.        /<i> Fallback for FireFox that still does not implement cue
-    enter and exit events
+61.        /<i> Fallback for FireFox that still does not implement cue enter and exit events
 62.          track.addEventListener("cuechange", function(e) {
 63.              var cue = this.activeCues[0];
 64.              console.log("cue change");
@@ -3009,182 +3020,96 @@ JSBin](https://jsbin.com/sodihux/1/edit?html,css,js,output):
 82. 
 83. function disableAllTracks() {
 84.   for(var i = 0; i < tracks.length; i++)
-85.      // the track mode is important: disabled tracks do not fire
-   events
+85.      // the track mode is important: disabled tracks do not fire events
 86.      tracks[i].mode = "disabled"; 
 87. }
 88.  
 89. function displayCues(track) { 
 90.    // displays the transcript of a TextTrack
-
 91.    var cues = track.cues;
-
 92. 
-
 93.    // iterate on all cues of the current track
-
 94.    for(var i=0, len = cues.length; i < len; i++) {
-
 95.       // current cue, also add enter and exit listeners to it
-
 96.       var cue = cues[i];
-
 97.       addCueListeners(cue);
-
 98.  
-
 99.       // Test if the cue content is a voice <v speaker>....</v>
-
 100.       var voices = getVoices(cue.text);
-
 101.       var transText="";
-
 102.       if (voices.length > 0) {
-
-103.          for (var j = 0; j < voices.length; j++) { // how many
-     voices?
-
-104.             transText += voices[j].voice + ':
-     ' + removeHTML(voices[j].text);
-
+103.          for (var j = 0; j < voices.length; j++) { // how many voices?
+104.             transText += voices[j].voice + ': ' + removeHTML(voices[j].text);
 105.          }
-
 106.       } else
-
 107.          transText = cue.text; // not a voice text
-
 108. 
-
 109.       var clickableTransText = "<li class='cues' id=" + cue.id
-
 110.                                + " onclick='jumpTo("
-
 111.                                + cue.startTime + ");'" + ">"
-
 112.                                + transText + "</li>";
-
 113.  
-
 114.       addToTranscriptDiv(clickableTransText);
-
 115.    }
-
 116. }
-
 117.  
-
 118. function getVoices(speech) { 
-
 119.    // takes a text content and check if there are voices
-
 120.    var voices = []; // inside
-
-121.    var pos = speech.indexOf('<v'); // voices are like <v Michel>
-     ....
-
+121.    var pos = speech.indexOf('<v'); // voices are like <v Michel> ....
 122.    while (pos != -1) {
-
 123.       endVoice = speech.indexOf('>');
-
 124.       var voice = speech.substring(pos + 2, endVoice).trim();
-
 125.       var endSpeech = speech.indexOf('</v>');
-
 126.       var text = speech.substring(endVoice + 1, endSpeech);
-
 127.       voices.push({
-
 128.           'voice': voice,
-
 129.           'text': text
-
 130.       });
-
 131.       speech = speech.substring(endSpeech + 4);
-
 132.       pos = speech.indexOf('<v');
-
 133.   }
-
 134.   return voices;
-
 135. }
-
 136.  
-
 137. function removeHTML(text) {
-
 138.   var div = document.createElement('div');
-
 139.   div.innerHTML = text;
-
 140.   return div.textContent || div.innerText || '';
-
 141. }
-
 142. 
-
 143. function jumpTo(time) {
-
 144.   // Make the video jump at the time position + force play
-
 145.   // if it was not playing
-
 146.   video.currentTime = time;
-
 147.   video.play();
-
 148. }
-
 149.  
-
 150. function clearTranscriptDiv() {
-
 151.   transcriptDiv.innerHTML = "";
-
 152. }
-
 153.  
-
 154. function addToTranscriptDiv(htmlText) {
-
 155.   transcriptDiv.innerHTML += htmlText;
-
 156. }
-
 157.  
-
 158. function addCueListeners(cue) {
-
 159.   cue.onenter = function(){
-
 160.      // Highlight current cue transcript by adding the
-
 161.      // cue.current CSS class
-
 162.      console.log('enter id=' + this.id);
-
 163.      var transcriptText = document.getElementById(this.id);
-
 164.      transcriptText.classList.add("current");
-
 165. };
-
 166.  
-
 167. cue.onexit = function(){
-
 168.    console.log('exit id=' + cue.id);
-
 169.    var transcriptText = document.getElementById(this.id);
-
 170.    transcriptText.classList.remove("current");
-
 171. };
-
 172. 
-
 173. } // end of addCueListeners...
+```
 
 Load a WebVTT file using Ajax/XHR2 and parse it manually.
 
