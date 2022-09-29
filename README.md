@@ -3512,6 +3512,8 @@ function logCue() {
 }
 ```
 
+</details>
+
 <h3 id="ch1-3-3">1.3.3 With Buttons for Choosing the Subtitle Language</h3>
 
 Example #3: adding buttons for choosing the subtitle/caption track
@@ -4109,12 +4111,12 @@ of the video.
 <h4>Here is the HTML code for one menu marker:</h4>
 
 ```
-1.  <figure class="img">
-2.      >  <img onclick="jumpTo(0);" class="thumb" src="https://...../introduction.jpg">
-3.     <figcaption class="desc">
-4.        Introduction
-5.     </figcaption>
-6.  </figure>
+<figure class="img">
+    >  <img onclick="jumpTo(0);" class="thumb" src="https://...../introduction.jpg">
+   <figcaption class="desc">
+      Introduction
+   </figcaption>
+</figure>
 ```
 
 Notice that we add a click listener to each thumbnail image. Clicking a
@@ -4309,6 +4311,8 @@ as above. Note that the track <b>must</b> be a <i>TextTrack</i> object because
 addCue does <b>not</b> work with <i>HTMLTrackElement</i> Objects.
 
 <h4>HTML source code extract:</h4>
+<details>
+  <summary>HTML code!</summary>
 
 ```
 1.  ...
@@ -4400,6 +4404,8 @@ addCue does <b>not</b> work with <i>HTMLTrackElement</i> Objects.
 78. };
 ```
 
+</details>
+
 <h3 id="ch1-4-2">1.4.2 Update the Document in Sync with a Media Playing</h3>
 
 Mixing JSON cue content with track and cue events, makes the
@@ -4437,7 +4443,7 @@ alt="Video synced with google map and google street map" />
 <h4>Example of a cue content from this demonstration:</h4>
 
 ```
-1.  {"lat":37.4219276, "lng":-122.088218, "t":1331363000}
+{"lat":37.4219276, "lng":-122.088218, "t":1331363000}
 ```
 
 <h4>Cue events and cue content:</h4>
@@ -4723,7 +4729,7 @@ and &lt;video&gt; elements. 
 <h4>For example:</h4>
 
 ```
-1.  <audio src="https://mainline.i3s.unice.fr/mooc/LaSueur.mp3" controls>
+<audio src="https://mainline.i3s.unice.fr/mooc/LaSueur.mp3" controls>
 ```
 
 <p>... render like this in your document:</p>
@@ -4855,6 +4861,8 @@ Typical code to build an audio routing graph (the one used in the above
 example)
 
 <h4>HTML code extract:</h4>
+<details>
+  <summary>HTML code!</summary>
 
 ```
 1.  <audio src="https://mainline.i3s.unice.fr/mooc/drums.mp3"
@@ -4867,7 +4875,11 @@ example)
 8.  <input type="range" min="0" max="1" step="0.01" value="1" id="gainSlider" />
 ```
 
+</details>
+
 <h4>JavaScript source code:</h4>
+<details>
+  <summary>JavaScript code!</summary>
 
 ```
 1.  // This line is a trick to initialize the AudioContext
@@ -4908,6 +4920,9 @@ example)
 36. }
 37.  
 ```
+
+<details>
+  <summary>HTML code!</summary>
 
 <h4>Explanations:</h4>
 
@@ -5015,21 +5030,21 @@ debugging Web Audio applications and visualize the audio graph.
 <h4>HTML:</h4>
 
 ```
-1.  <audio <b>id="player"** controls crossorigin="anonymous" loop>
-2.     <source src="https://mainline.i3s.unice.fr/mooc/guitarRiff1.mp3">
-3.     Your browser does not support the audio tag.
-4.  </audio>
+<audio <b>id="player"** controls crossorigin="anonymous" loop>
+   <source src="https://mainline.i3s.unice.fr/mooc/guitarRiff1.mp3">
+   Your browser does not support the audio tag.
+</audio>
 ```
 
 <h4>JavaScript:</h4>
 
 ```
-1.  var ctx = window.AudioContext || window.webkitAudioContext;
-2.  var context = new ctx();
-3.  
-4.  var mediaElement = document.querySelector('<b>#player**');
-5.  var sourceNode = context.createMediaElementSource(mediaElement);
-6.  sourceNode.connect(context.destination); // connect to the speakers
+var ctx = window.AudioContext || window.webkitAudioContext;
+var context = new ctx();
+
+var mediaElement = document.querySelector('<b>#player**');
+var sourceNode = context.createMediaElementSource(mediaElement);
+sourceNode.connect(context.destination); // connect to the speakers
 ```
 
 <b>The MediaElementSource node  is built**
@@ -5073,6 +5088,9 @@ in your browser:
 
 ### Source code extract:
 
+<details>
+  <summary>Source code!</summary>
+
 ```
 1.  /* Gain Node */
 2.   
@@ -5089,6 +5107,8 @@ in your browser:
 13.    gainNode.gain.value = evt.target.value;
 14. };
 ```
+
+</details>
 
 The gain property (*line 13* in the above code) corresponds to the
 multiplication we apply to the input signal volume. A value of 1 will
@@ -5115,6 +5135,9 @@ it in your browser:
 
 ### Source code extract:
 
+<details>
+  <summary>Source code!</summary>
+
 ```
 1.  // the audio element
 2.  playerPanner = document.querySelector('#pannerPlayer');
@@ -5133,6 +5156,8 @@ it in your browser:
 15.   pannerNode.pan.value = evt.target.value;
 16. };
 ```
+
+</details>
 
 ### Biquad filter
 
@@ -5174,6 +5199,8 @@ Multiple filters are often used together. We will make a multi band
 equalizer in a next lesson, and use six filters with type=peaking. 
 
 <h4>Source code extract:</h4>
+<details>
+  <summary>Source code!</summary>
 
 ```
 1.  var ctx = window.AudioContext || window.webkitAudioContext;
@@ -5218,6 +5245,7 @@ equalizer in a next lesson, and use six filters with type=peaking. 
 40. };
 ```
 
+</details>
 Convolver node: useful for convolution effects such as reverberation
 
 Definition: "The <i>ConvolverNode</i> interface is an AudioNode that
@@ -5268,6 +5296,9 @@ Accordingly, once the requested file has downloaded, we call the
 decodeAudioData method. Once the impulse is decoded, we can build the
 graph. So typical use is as follows:
 
+<details>
+  <summary>Source code!</summary>
+
 ```
 1.  var impulseURL = "https://mainline.i3s.unice.fr/mooc/Scala-Milan-Opera-Hall.wav";
 <!-- -->
@@ -5306,6 +5337,8 @@ graph. So typical use is as follows:
 33. }
 ```
 
+</details>
+
 Now let's consider the function which builds the graph. In order to set
 the quantity of reverb we would like to apply, we need two separate
 routes for the signal:
@@ -5328,6 +5361,9 @@ with the Chrome WebAudio Inspector extension):
 alt="audio graph of the previous example" />
 
 ### And here is the function which builds the graph:
+
+<details>
+  <summary>Source code!</summary>
 
 ```
 1.  function buildAudioGraphConvolver() {
@@ -5356,6 +5392,9 @@ alt="audio graph of the previous example" />
 23.   convolverGain.connect(audioContext.destination);
 24. }
 ```
+
+<details>
+  <summary>HTML code!</summary>
 
 Note that at *line 6* we use the decoded impulse. We could not have done
 this before the impulse was loaded and decoded.
@@ -5398,6 +5437,9 @@ alt="Audio graph of the previous example" />
 
 ### Extract of the HTML code:
 
+<details>
+  <summary>HTML code!</summary>
+
 ```
 1.  <audio src="https://mainline.i3s.unice.fr/mooc/guitarRiff1.mp3"
 <!-- -->
@@ -5411,7 +5453,11 @@ alt="Audio graph of the previous example" />
 6.  <button id="compressorButton">Turn compressor On</button>
 ```
 
+</details>
+
 ### JavaScript source code:
+<details>
+  <summary>JavaScript code!</summary>
 
 ```
 1.  // This line is a trick to initialize the AudioContext
@@ -5474,6 +5520,8 @@ alt="Audio graph of the previous example" />
 58. }
 ```
 
+</details>
+
 ### Explanations:
 
 There is nothing special here compared to the other examples in this
@@ -5483,9 +5531,9 @@ section, except that we have used a new method disconnect (*line
 button is clicked, we remove  or add a compressor in the audio graph
 (*lines 28-42*) and to achieve this, we disconnect and reconnect some of
 the nodes.
-
+<!------------------------------------------------------------------------------------------------>
 <h3 id="ch1-5-4">1.5.4 Writing an Equalizer</h3>
-
+<!------------------------------------------------------------------------------------------------>
 Example #1: an audio equalizer with an <audio> element
 
 [Example
@@ -5521,6 +5569,8 @@ The definition says that:
     for the purposes of this example.
 
 <h4>HTML code extract:</h4>
+<details>
+  <summary>HTML code!</summary>
 
 ```
 1.  <h2>Equalizer made with the Web Audio API</h2>
@@ -5561,7 +5611,11 @@ The definition says that:
 36. </div>
 ```
 
+</details>
+
 <h4>JavaScript code:</h4>
+<details>
+  <summary>JavaScript code!</summary>
 
 ```
 1.  //Builds an equalizer with multiple biquad filters
@@ -5606,6 +5660,8 @@ The definition says that:
 40. }
 ```
 
+</details>
+
 Here is the final audio graph (picture taken with the now discontinued
 FireFox WebAudio debugger, you should get similar results with the
 Chrome WebAudio Inspector extension):
@@ -5619,9 +5675,9 @@ We cloned the previous example and simply changed
 the <audio>...</audio> part of the HTML code by:
 
 ```
-1.  <video id="player" width="320" height="240" controls crossOrigin="anonymous">
-2.  <source src="https://mainline.i3s.unice.fr/mooc/elephants-dream-medium.mp4" >
-3.  </video>
+<video id="player" width="320" height="240" controls crossOrigin="anonymous">
+  <source src="https://mainline.i3s.unice.fr/mooc/elephants-dream-medium.mp4" >
+</video>
 ```
 
 And the example works in the same way, but this time with a video. Try
@@ -5677,16 +5733,12 @@ Here is how we can declare a buffer that will get the data. It is called
 dataArray here and we will use it in the animation loop.
 
 I've got a source node that corresponds to the audio stream, an analyser
-node that
-
-will analyse the stream, and then I connect the source to the analyser,
+node that will analyse the stream, and then I connect the source to the analyser,
 and the analyser to the destination, and the destination is the
 speakers.
 
 Let's have a look at the animation loop! We clear the canvas, and in the
-end we call
-
-again the animation loop, so that the animation will be done 60 times
+end we call again the animation loop, so that the animation will be done 60 times
 per seconds... and the way we will draw the waveform is just a set of
 connected line that we call "a path".
 
@@ -5694,12 +5746,8 @@ The "path" is a way of drawing that we presented during the HTML5 Part 1
 course.
 
 So here, for drawing an horizontal, flat waveform, we just do a loop on
-the number
-
-of data. Here, we are not using the real data but we will do a loop 512
-times and we
-
-compute an increment in x, so that depending on the width of the canvas
+the number of data. Here, we are not using the real data but we will do a loop 512
+times and we compute an increment in x, so that depending on the width of the canvas
 and on the number of data we have got to draw, we will add this
 increment to the x coordinate.
 
@@ -5750,6 +5798,9 @@ First, select the audio context and the canvas context, then build the
 audio graph, and finally run the animation loop.
 
 Typical operations to perform once the HTML page is loaded:
+<details>
+  <summary>HTML code!</summary>
+
 
 ```
 1.  window.onload = function() {
@@ -5769,6 +5820,8 @@ Typical operations to perform once the HTML page is loaded:
 15.    requestAnimationFrame(visualize);
 16. };
 ```
+
+</details>
 
 Step #1: build the audio graph with an analyser node at the end
 
@@ -5793,6 +5846,8 @@ Essentials and Best Practices course (Module 4).
 ```
 
 <h4>JavaScript code:</h4>
+<details>
+  <summary>JavaScript code!</summary>
 
 ```
 1.  function buildAudioGraph() {
@@ -5812,6 +5867,8 @@ Essentials and Best Practices course (Module 4).
 15.    analyser.connect(audioContext.destination);
 16. }
 ```
+
+</details>
 
 With the exception of *lines 8-12*, where we set the analyser options
 (explained later), we build the following graph (picture taken with the
@@ -7517,7 +7574,7 @@ alt="Small monster drawn in a canvas" />
 5.     <title>Draw a monster in a canvas</title>
 6.  </head>
 7.  <body>
-8.     **<canvas id="myCanvas" width="200" height="200"></canvas>**
+8.     <canvas id="myCanvas" width="200" height="200"></canvas>
 9.  </body>
 10. </html>
 ```
@@ -7676,7 +7733,7 @@ alt="Screenshot of a trembling monster in a 60 f/s animation" />
 5.  <title>Trembling monster in the Game Framework</title>
 6.  </head>
 7.  <body>
-8.  **<canvas id="myCanvas" width="200" height="200"></canvas>**
+8.  <canvas id="myCanvas" width="200" height="200"></canvas>
 9.  </body>
 10. </html>
 ```
@@ -7693,8 +7750,8 @@ alt="Screenshot of a trembling monster in a 60 f/s animation" />
 7.   
 8.  // GAME FRAMEWORK STARTS HERE
 9.  var GF = function(){
-10.   **// Vars relative to the canvas**
-11.   **var canvas, ctx, w, h;**
+10.   // Vars relative to the canvas
+11.   var canvas, ctx, w, h;
 12.  
 13.   ...
 14. 
@@ -7717,11 +7774,11 @@ alt="Screenshot of a trembling monster in a 60 f/s animation" />
 31.     // Main function, called each frame
 32.     measureFPS(time);
 33. 
-34.    ** // Clear the canvas**
-35.     **clearCanvas();**
+34.     // Clear the canvas
+35.     clearCanvas();
 36. 
-37.     **// Draw the monster**
-38.     **drawMyMonster(10+Math.random()*10, 10+Math.random()*10);**
+37.     // Draw the monster
+38.     drawMyMonster(10+Math.random()*10, 10+Math.random()*10);
 39. 
 40.     // Call the animation loop every 1/60th of second
 41.     requestAnimationFrame(mainLoop);
@@ -7730,15 +7787,15 @@ alt="Screenshot of a trembling monster in a 60 f/s animation" />
 44. var start = function(){
 45.     ...
 46. 
-47.     **// Canvas, context etc.**
-48.     **canvas = document.querySelector("#myCanvas");**
+47.     // Canvas, context etc.
+48.     canvas = document.querySelector("#myCanvas");
 49. 
-50.     **// often useful**
-51. **    w = canvas.width;**
-52. **    h = canvas.height;**
+50.     // often useful
+51.     w = canvas.width;
+52.     h = canvas.height;
 53. 
-54. **    // important, we will draw with this object**
-55. **    ctx = canvas.getContext('2d');**
+54.     // important, we will draw with this object
+55.     ctx = canvas.getContext('2d');
 56.  
 57.     // Start the animation
 58.     requestAnimationFrame(mainLoop);
@@ -7799,8 +7856,8 @@ attach an event inline in your HTML code like this:
 ##### Method #1: declare an event handler in the HTML code
 
 ```
-1.  <div id="someDiv" **onclick**="alert('clicked!')"> content of the
-    div </div>
+<div id="someDiv" onclick="alert('clicked!')"> content of the
+div </div>
 ```
 
 This method is very easy to use, but it is not the recommended way to
@@ -7812,9 +7869,9 @@ host of problems during development.
 ##### Method #2: attach an event handler to an HTML element in JavaScript
 
 ```
-1.  document.getElementById('someDiv').**onclick **= function() {
-2.     alert('clicked!');
-3.  }
+document.getElementById('someDiv').onclick = function() {
+   alert('clicked!');
+}
 ```
 
 This method is fine, but  you will not be able to attach
@@ -7824,9 +7881,9 @@ shown below.
 ##### Method #3: register a callback to the event listener with the addEventListener method (preferred  method)
 
 ```
-1.  document.getElementById('someDiv').**addEventListener**('click', function() {
-2.     alert('clicked!');
-3.  }, false);
+document.getElementById('someDiv').addEventListener**('click', function() {
+   alert('clicked!');
+}, false);
 ```
 
 Note that the third parameter describes whether the *callback* has to be
@@ -7840,9 +7897,9 @@ listener will create an *event object* to describe what happened. This
 object is provided as a parameter of the callback function:
 
 ```
-1.  element.addEventListener('click', function(**event**) {
-2.     **// now you can use event object inside the callback**
-3.  }, false);
+element.addEventListener('click', function(event) {
+   /** now you can use event object inside the callback**/
+}, false);
 ```
 
 Depending on the type of event you are listening to, you will consult
@@ -7975,8 +8032,8 @@ alt="trembling monster with multiple key press management." />
 9.  var GF = function(){
 10.    ... 
 11. 
-12.    **// vars for handling inputs**
-13. **   var inputStates = {};**
+12.    // vars for handling inputs
+13.    var inputStates = {};
 14. 
 15.    var measureFPS = function(newTime){
 16.       ...
@@ -8002,22 +8059,22 @@ alt="trembling monster with multiple key press management." />
 36.      // Draws the monster
 37.      drawMyMonster(10+Math.random()*10, 10+Math.random()*10);
 38.  
-39.  **   // check inputStates**
-40. **    if (inputStates.left) {**
-41. **      ctx.fillText("left", 150, 20);**
-42. **    }**
-43. **    if (inputStates.up) {**
-44. **      ctx.fillText("up", 150, 50);**
-45. **    }**
-46. **   if (inputStates.right) {**
-47. **      ctx.fillText("right", 150, 80);**
-48. **   }**
-49. **   if (inputStates.down) {**
-50. **     ctx.fillText("down", 150, 120);**
-51. **   }**
-52. **   if (inputStates.space) {**
-53. **     ctx.fillText("space bar", 140, 150);**
-54. **   }**
+39.     // check inputStates
+40.     if (inputStates.left) {
+41.       ctx.fillText("left", 150, 20);
+42.     }
+43.     if (inputStates.up) {
+44.       ctx.fillText("up", 150, 50);
+45.     }
+46.    if (inputStates.right) {
+47.       ctx.fillText("right", 150, 80);
+48.    }
+49.    if (inputStates.down) {
+50.      ctx.fillText("down", 150, 120);
+51.    }
+52.    if (inputStates.space) {
+53.      ctx.fillText("space bar", 140, 150);
+54.    }
 55. 
 56.    // Calls the animation loop every 1/60th of second
 57.    requestAnimationFrame(mainLoop);
@@ -8030,34 +8087,34 @@ alt="trembling monster with multiple key press management." />
 64.     // Default police for text
 65.     ctx.font="20px Arial";
 66. 
-67. **    // Add the listener to the main, window object, and update the states**
-68. **    window.addEventListener('keydown', function(event){**
-69. **      if (event.keyCode === 37) {**
-70. **        inputStates.left = true;**
-71. **      } else if (event.keyCode === 38) {**
-72. **        inputStates.up = true;**
-73. **      } else if (event.keyCode === 39) {**
-74. **        inputStates.right = true;**
-75. **      } else if (event.keyCode === 40) {**
-76. **        inputStates.down = true;**
-77. **      } else if (event.keyCode === 32) {**
-78. **        inputStates.space = true;**
-79. **      }**
-80. **    }, false);**
+67.     // Add the listener to the main, window object, and update the states
+68.     window.addEventListener('keydown', function(event){
+69.       if (event.keyCode === 37) {
+70.         inputStates.left = true;
+71.       } else if (event.keyCode === 38) {
+72.         inputStates.up = true;
+73.       } else if (event.keyCode === 39) {
+74.         inputStates.right = true;
+75.       } else if (event.keyCode === 40) {
+76.         inputStates.down = true;
+77.       } else if (event.keyCode === 32) {
+78.         inputStates.space = true;
+79.       }
+80.     }, false);
 81. 
-82. **    // If the key is released, change the states object**
-83. **    window.addEventListener('keyup', function(event){**
-84. **      if (event.keyCode === 37) {**
-85. **        inputStates.left = false;**
-86. **      } else if (event.keyCode === 38) {**
-87. **        inputStates.up = false;**
-88. **      } else if (event.keyCode === 39) {**
-89. **        inputStates.right = false;**
-90. **      } else if (event.keyCode === 40) {**
-91. **        inputStates.down = false;**
-92. **      } else if (event.keyCode === 32) {**
-93. **        inputStates.space = false;**
-94. **      }**
+82.     // If the key is released, change the states object
+83.     window.addEventListener('keyup', function(event){
+84.       if (event.keyCode === 37) {
+85.         inputStates.left = false;
+86.       } else if (event.keyCode === 38) {
+87.         inputStates.up = false;
+88.       } else if (event.keyCode === 39) {
+89.         inputStates.right = false;
+90.       } else if (event.keyCode === 40) {
+91.         inputStates.down = false;
+92.       } else if (event.keyCode === 32) {
+93.         inputStates.space = false;
+94.       }
 95.     }, false);
 96. 
 97. 
@@ -8117,31 +8174,31 @@ down) as part of the inputStates object, just as we do with the keyboard
 
 ```
 1.  var canvas, ctx;
-2.  **var inputStates = {};**
+2.  var inputStates = {};
 3.  
 4.  window.onload = function init() {
 5.     canvas = document.getElementById('myCanvas');
 6.     ctx = canvas.getContext('2d');
 7.  
-8.     **canvas.addEventListener('mousemove', function (evt) {**
-9.        **inputStates.mousePos = getMousePos(canvas, evt);**
+8.     canvas.addEventListener('mousemove', function (evt) {
+9.        inputStates.mousePos = getMousePos(canvas, evt);
 10.       var message = 'Mouse position:
     ' + inputStates.mousePos.x + ',' +                                 
       inputStates.mousePos.y;
 11.       writeMessage(canvas, message);
 12.    }, false);
 13. 
-14.    **canvas.addEventListener('mousedown', function (evt) {**
-15.       **inputStates.mousedown = true;**
-16.       **inputStates.mouseButton = evt.button;**
+14.    canvas.addEventListener('mousedown', function (evt) {
+15.       inputStates.mousedown = true;
+16.       inputStates.mouseButton = evt.button;
 17.       var message = "Mouse button " + evt.button + " down at position: " + 
 18.                    
     inputStates.mousePos.x + ',' + inputStates.mousePos.y;
 19.       writeMessage(canvas, message);
 20.    }, false);
 21. 
-22.    **canvas.addEventListener('mouseup', function (evt) {**
-23.       **inputStates.mousedown = false;**
+22.    canvas.addEventListener('mouseup', function (evt) {
+23.       inputStates.mousedown = false;
 24.       var message = "Mouse up at position: " + inputStates.mousePos.x + ',' +     
 25.                     inputStates.mousePos.y;
 26.       writeMessage(canvas, message);
@@ -8158,14 +8215,14 @@ down) as part of the inputStates object, just as we do with the keyboard
 37.   ctx.restore();
 38. }
 39. 
-40. **function getMousePos(canvas, evt) {**
-41. **  // necessary to take into account CSS boudaries**
-42. **  var rect = canvas.getBoundingClientRect();**
-43. **  return {**
-44. **     x: evt.clientX - rect.left,**
-45. **     y: evt.clientY - rect.top**
-46. **  };**
-47. **}**
+40. function getMousePos(canvas, evt) {
+41.   // necessary to take into account CSS boudaries
+42.   var rect = canvas.getBoundingClientRect();
+43.   return {
+44.      x: evt.clientX - rect.left,
+45.      y: evt.clientY - rect.top
+46.   };
+47. }
 ```
 
 ##### Making an object follow the mouse cursor
@@ -9877,6 +9934,7 @@ timer](https://jsbin.com/wecaho/edit).
 
 Source code of the example:
 
+```
 1.  ...
 2.  <script>
 3.    ...
@@ -9958,162 +10016,87 @@ timestamp parameter.
 [Online example at JSBin](https://jsbin.com/kuvumu/edit):
 
 **Source code of the example:**
-
-277. <!DOCTYPE html>
-
-278. <html lang="en">
-
-279. <head>
-
-280. <meta charset=utf-8 />
-
-281. <title>Time based animation using the parameter of the
-     requestAnimationFrame callback</title>
-
-282.  <script>
-
-283.    var canvas, ctx;
-
-284.    var width, height;
-
-285.    var x, y, incX; // incX is the distance from the previously
-     drawn rectangle
-
-286.                    // to the new one
-
-287.    var speedX;     // speedX is the target speed of the rectangle
-     in pixels/s
-
-288. 
-
-289.    // for time based animation
-
-290.    var now, delta=0;
-
-291.    // High resolution timer
-
-292.    var oldTime = 0;
-
-293. 
-
-294.    // Called after the DOM is ready (page loaded)
-
-295.    function init() {
-
-296.      // init the different variables
-
-297.      canvas = document.querySelector("#mycanvas");
-
-298.      ctx = canvas.getContext('2d');
-
-299.      width = canvas.width;
-
-300.      height = canvas.height;
-
-301. 
-
-302.      x=10; y = 10;
-
-303.      // Target speed in pixels/second, try with high values, 1000,
-     2000...
-
-304.      speedX = 200;
-
-305. 
-
-306.      // Start animation
-
-307.      requestAnimationFrame(animationLoop);
-
-308.    }
-
-309. 
-
-310.    function animationLoop(**currentTime**) {
-
-311.      // How long between the current frame and the previous one?
-
-312.      **delta = currentTime - oldTime;**
-
-313. 
-
-314.      // Compute the displacement in x (in pixels) in function of
-     the time elapsed and
-
-315.      // in function of the wanted speed
-
-316.      incX = calcDistanceToMove(delta, speedX);
-
-317. 
-
-318.      // clear canvas
-
-319.      ctx.clearRect(0, 0, width, height);
-
-320. 
-
-321.      ctx.strokeRect(x, y, 10, 10);
-
-322. 
-
-323.      // move rectangle
-
-324.      x += incX;
-
-325. 
-
-326.      // check collision on left or right
-
-327.      if(((x+10) > width) || (x < 0)) {
-
-328.        // inverse speed
-
-329.        x -= incX;
-
-330.        speedX = -speedX;
-
-331.      }
-
-332. 
-
-333.      // Store time
-
-334.      oldTime = currentTime;
-
-335. 
-
-336.      // asks for next frame
-
-337.      requestAnimationFrame(animationLoop);
-
-338.    }
-
-339. 
-
-340.    var calcDistanceToMove = function(delta, speed) {
-
-341.      return (speed * delta) / 1000;
-
-342.    }
-
-343. 
-
-344.  </script>
-
-345. </head>
-
-346. 
-
-347. <body onload="init();">
-
-348.  <canvas id="mycanvas" width="200" height="50" style="border: 2px solid
-     black"></canvas>
-
-349. </body>
-
-350. </html>
-
-## 2.4.3 Setting the frame rate
+<details>
+  <summary>HTML code!</summary>
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset=utf-8 />
+<title>Time based animation using the parameter of the requestAnimationFrame callback</title>
+  <script>
+   var canvas, ctx;
+   var width, height;
+   var x, y, incX; // incX is the distance from the previously drawn rectangle
+                   // to the new one
+   var speedX;     // speedX is the target speed of the rectangle in pixels/s
+
+   // for time based animation
+   var now, delta=0;
+   // High resolution timer
+   var oldTime = 0;
+
+   // Called after the DOM is ready (page loaded)
+   function init() {
+     // init the different variables
+     canvas = document.querySelector("#mycanvas");
+     ctx = canvas.getContext('2d');
+     width = canvas.width;
+     height = canvas.height;
+
+     x=10; y = 10;
+     // Target speed in pixels/second, try with high values, 1000, 2000...
+     speedX = 200;
+
+     // Start animation
+     requestAnimationFrame(animationLoop);
+   }
+
+   function animationLoop(**currentTime**) {
+     // How long between the current frame and the previous one?
+     **delta = currentTime - oldTime;**
+
+     // Compute the displacement in x (in pixels) in function of the time elapsed and
+     // in function of the wanted speed
+     incX = calcDistanceToMove(delta, speedX);
+
+     // clear canvas
+     ctx.clearRect(0, 0, width, height);
+
+     ctx.strokeRect(x, y, 10, 10);
+
+     // move rectangle
+     x += incX;
+
+     // check collision on left or right
+     if(((x+10) > width) || (x < 0)) {
+       // inverse speed
+       x -= incX;
+       speedX = -speedX;
+     }
+
+     // Store time
+     oldTime = currentTime;
+
+     // asks for next frame
+     requestAnimationFrame(animationLoop);
+   }
+
+   var calcDistanceToMove = function(delta, speed) {
+     return (speed * delta) / 1000;
+   }
+
+ </script>
+</head>
+
+<body onload="init();">
+ <canvas id="mycanvas" width="200" height="50" style="border: 2px solid black"></canvas>
+</body>
+</html>
+```
+
+<h3 id="ch2-4-3">2.4.3 Setting the frame rate</h3>
 
 Principle: even if the mainloop is called 60 times per second, ignore
 some frames in order to reach the desired frame rate.
@@ -10138,233 +10121,118 @@ Here is the [online example at JSBin](https://jsbin.com/bonutur/edit).
 
 **Source code of the example:**
 
+```
 351. <!DOCTYPE html>
-
 352. <html lang="en">
-
 353.  <head>
-
 354.  <meta charset=utf-8 />
-
 355.  <title>Set framerate using a high resolution timer</title>
-
 356.  </head>
-
 357.  <body>
-
 358.  <p>This example measures and sums deltas of time between
      consecutive frames of animation. It includes
      a <code>setFrameRateInFramesPerSecond</code> function you can
      use to reduce the number of frames per second of the main
      animation.</p>
-
 359.  
-
 360.  <canvas id="myCanvas" width="700" height="350">
-
 361.  </canvas>
-
 362.  <script>
-
 363.    var canvas = document.querySelector("#myCanvas");
-
 364.    var ctx = canvas.getContext("2d");
-
 365.    var width = canvas.width, height = canvas.height;
-
 366.    var lastX = width * Math.random();
-
 367.    var lastY = height * Math.random();
-
 368.    var hue = 0;
-
 369.  
-
-370.    **// Michel Buffa: set the target frame rate. TRY TO CHANGE THIS
-     VALUE AND SEE**
-
-371. **   // THE RESULT. Try 2 frames/s, 10 frames/s, 60 frames/s
-     Normally there**
-
-372. **   // should be a limit of 60 frames/s in the browser's
-     implementations.**
-
+370.    **// Michel Buffa: set the target frame rate. TRY TO CHANGE THIS VALUE AND SEE**
+371. **   // THE RESULT. Try 2 frames/s, 10 frames/s, 60 frames/s Normally there**
+372. **   // should be a limit of 60 frames/s in the browser's implementations.**
 373. **   setFrameRateInFramesPerSecond(60);**
-
 374.  
-
-375.   // for time based animation. DelayInMS corresponds to the target
-     framerate
-
+375.   // for time based animation. DelayInMS corresponds to the target framerate
 376.   var now, delta, delayInMS,** totalTimeSinceLastRedraw = 0;**
-
 377.  
-
 378.   // High resolution timer
-
 379.   var then = performance.now();
-
 380.  
-
 381.   // start the animation
-
 382.   requestAnimationFrame(mainloop);
-
 383.  
-
 384.   **function setFrameRateInFramesPerSecond(frameRate) {**
-
 385. **    delayInMs = 1000 / frameRate;**
-
 386. **  }**
-
 387.  
-
-388.   // each function that is going to be run as an animation should
-     end by
-
+388.   // each function that is going to be run as an animation should end by
 389.   // asking again for a new frame of animation
-
 390.   function mainloop(time) {
-
-391.     // Here we will only redraw something if the time we want
-     between frames has
-
+391.     // Here we will only redraw something if the time we want between frames has
 392.     // elapsed
-
 393.     // Measure time with high resolution timer
-
 394.     now = time;
-
 395.  
-
 396.     // How long between the current frame and the previous one?
-
 397.     delta = now - then;
-
 398.     // TRY TO UNCOMMENT THIS LINE AND LOOK AT THE CONSOLE
-
-399.     // console.log("delay = " + delayInMs + " delta = " + delta + "
-     total time = " +
-
+399.     // console.log("delay = " + delayInMs + " delta = " + delta + " total time = " +
 400.     // totalTimeSinceLastRedraw);
-
 401.  
-
-402.     // If the total time since the last redraw is > delay
-     corresponding to the wanted
-
-403.     // framerate, then redraw, else add the delta time between the
-     last call to line()
-
+402.     // If the total time since the last redraw is > delay corresponding to the wanted
+403.     // framerate, then redraw, else add the delta time between the last call to line()
 404.     // by requestAnimFrame to the total time..
-
 405.     if (totalTimeSinceLastRedraw > delayInMs) {
-
-406.        // if the time between the last frame and now is > delay
-     then we
-
+406.        // if the time between the last frame and now is > delay then we
 407.        // clear the canvas and redraw
-
 408.  
-
 409.        ctx.save();
-
 410.  
-
-411.        // Trick to make a blur effect: instead of clearing the
-     canvas
-
-412.        // we draw a rectangle with a transparent color. Changing
-     the 0.1
-
+411.        // Trick to make a blur effect: instead of clearing the canvas
+412.        // we draw a rectangle with a transparent color. Changing the 0.1
 413.        // for a smaller value will increase the blur...
-
 414.        ctx.fillStyle = "rgba(0,0,0,0.1)";
-
 415.        ctx.fillRect(0, 0, width, height);
-
 416.  
-
 417.        ctx.translate(width / 2, height / 2);
-
 418.        ctx.scale(0.9, 0.9);
-
 419.        ctx.translate(-width / 2, -height / 2);
-
 420.  
-
 421.        ctx.beginPath();
-
 422.        ctx.lineWidth = 5 + Math.random() * 10;
-
 423.        ctx.moveTo(lastX, lastY);
-
 424.        lastX = width * Math.random();
-
 425.        lastY = height * Math.random();
-
 426.  
-
 427.        ctx.bezierCurveTo(width * Math.random(),
-
 428.                          height * Math.random(),
-
 429.                          width * Math.random(),
-
 430.                          height * Math.random(),
-
 431.                          lastX, lastY);
-
 432.  
-
 433.        hue = hue + 10 * Math.random();
-
 434.        ctx.strokeStyle = "hsl(" + hue + ", 50%, 50%)";
-
 435.        ctx.shadowColor = "white";
-
 436.        ctx.shadowBlur = 10;
-
 437.        ctx.stroke();
-
 438.  
-
 439.        ctx.restore();
-
 440.  
-
 441.        **// reset the total time since last redraw**
-
 442. **       totalTimeSinceLastRedraw = 0;**
-
 443.     } else {
-
 444.        **// sum the total time since last redraw**
-
 445. **       totalTimeSinceLastRedraw += delta;**
-
 446.     }
-
 447.  
-
 448.     // Store time
-
 449.     then = now;
-
 450.  
-
 451.     // request new frame
-
 452.     requestAnimationFrame(mainloop);
-
 453.   }
-
 454.  </script>
-
 455.  </body>
-
 456. </html>
+```
 
 ### Same technique with the bouncing rectangle
 
@@ -10375,219 +10243,108 @@ technique](https://jsbin.com/momeci/edit). 
 
 **Source code:**
 
+```
 1.  <!DOCTYPE html>
-
 2.  <html lang="en">
-
 3.  <head>
-
 4.  <meta charset=utf-8 />
-
-5.  <title>Bouncing rectangle with high resolution timer and
-    adjustable frame rate</title>
-
+5.  <title>Bouncing rectangle with high resolution timer and adjustable frame rate</title>
 6.   <script>
-
 7.     var canvas, ctx;
-
 8.     var width, height;
-
-9.     var x, y, incX; // incX is the distance from the previously drawn
-    rectangle
-
+9.     var x, y, incX; // incX is the distance from the previously drawn rectangle
 10.                    // to the new one
-
-11.    var speedX; // speedX is the target speed of the rectangle in
-    pixels/s
-
+11.    var speedX; // speedX is the target speed of the rectangle in pixels/s
 12. 
-
-13.    // for time based animation, DelayInMS corresponds to the target
-    frame rate
-
+13.    // for time based animation, DelayInMS corresponds to the target frame rate
 14.    var now, delta, delayInMS, totalTimeSinceLastRedraw=0;
-
 15.    // High resolution timer
-
 16.    var then = performance.now();
-
 17. 
-
-18.    // Michel Buffa: set the target frame rate. TRY TO CHANGE THIS
-    VALUE AND SEE
-
-19.    // THE RESULT. Try 2 frames/s, 10 frames/s, 60, 100 frames/s
-    Normally there
-
-20.    // should be a limit of 60 frames/s in the browser's
-    implementations, but you can 
-
+18.    // Michel Buffa: set the target frame rate. TRY TO CHANGE THIS VALUE AND SEE
+19.    // THE RESULT. Try 2 frames/s, 10 frames/s, 60, 100 frames/s Normally there
+20.    // should be a limit of 60 frames/s in the browser's implementations, but you can 
 21.    // try higher values
-
 22.    setFrameRateInFramesPerSecond(25);
-
 23. 
-
 24.    function setFrameRateInFramesPerSecond(framerate) {
-
 25.      delayInMs = 1000 / framerate;
-
 26.    }
-
 27. 
-
 28.    // Called after the DOM is ready (page loaded)
-
 29.    function init() {
-
 30.      // init the different variables
-
 31.      canvas = document.querySelector("#mycanvas");
-
 32.      ctx = canvas.getContext('2d');
-
 33.      width = canvas.width;
-
 34.      height = canvas.height;
-
 35. 
-
 36.      x=10; y = 10;
-
-37.      // Target speed in pixels/second, try with high values, 1000,
-    2000...
-
+37.      // Target speed in pixels/second, try with high values, 1000, 2000...
 38.      speedX = 2000;
-
 39. 
-
 40.      // Start animation
-
 41.      requestAnimationFrame(animationLoop)
-
 42.    }
-
 43. 
-
 44.    function animationLoop(time) {
-
 45.      // Measure time with high resolution timer
-
 46.      now = time;
-
 47.  
-
 48.      // How long between the current frame and the previous one?
-
 49.      delta = now - then;
-
 50. 
-
 51. **     if(totalTimeSinceLastRedraw > delayInMs) {**
-
-52.        // Compute the displacement in x (in pixels) in function of
-    the time elapsed
-
+52.        // Compute the displacement in x (in pixels) in function of the time elapsed
 53.        // since the last draw and
-
-54.        // in function of the wanted speed. This time, instead of
-    delta we
-
-55.        // use totalTimeSinceLastRedraw as we're not always drawing
-    at
-
+54.        // in function of the wanted speed. This time, instead of delta we
+55.        // use totalTimeSinceLastRedraw as we're not always drawing at
 56.        // each execution of mainloop
-
-57.      
-     incX = calcDistanceToMove(**totalTimeSinceLastRedraw**, speedX);
-
+57.      incX = calcDistanceToMove(**totalTimeSinceLastRedraw**, speedX);
 58. 
-
 59.        // an animation involves: 1) clear canvas and 2) draw shapes,
-
-60.        // 3) move shapes, 4) recall the loop with
-    requestAnimationFrame
-
+60.        // 3) move shapes, 4) recall the loop with requestAnimationFrame
 61. 
-
 62.        // clear canvas
-
 63.        ctx.clearRect(0, 0, width, height);
-
 64. 
-
 65.        ctx.strokeRect(x, y, 10, 10);
-
 66. 
-
 67.        // move rectangle
-
 68.        x += incX;
-
 69. 
-
 70.       // check collision on left or right
-
 71.       if((x+10 >= width) || (x <= 0)) {
-
 72.         // cancel move + inverse speed
-
 73.         x -= incX;
-
 74.         speedX = -speedX;
-
 75.       }
-
 76.      ** // reset the total time since last redraw**
-
 77. **      totalTimeSinceLastRedraw = delta;**
-
 78.    } else {
-
 79.      // sum the total time since last redraw
-
 80.      totalTimeSinceLastRedraw += delta;
-
 81.    }
-
 82.    // Store time
-
 83.    then = now;
-
 84.  
-
 85. 
-
 86.    // animate. 
-
 87.    requestAnimationFrame(animationLoop);
-
 88.  }
-
 89. 
-
 90.  var calcDistanceToMove = function(delta, speed) {
-
 91.     return (speed * delta) / 1000;
-
 92.  }
-
 93. 
-
 94.  </script>
-
 95. </head>
-
 96. 
-
 97. <body onload="init();">
-
-98.  <canvas id="mycanvas" width="200" height="50" style="border: 2px solid
-    black"></canvas>
-
+98.  <canvas id="mycanvas" width="200" height="50" style="border: 2px solid black"></canvas>
 99. </body>
-
 100. </html>
+```
 
 ### Can we use setInterval?
 
@@ -10636,17 +10393,14 @@ Here are the parts we changed:
 -   Declaration of the monster object - now the speed is in pixels/s
     instead of in pixels per frame
 
+```
 1.  // The monster !
-
 2.  var monster = {
-
 3.     x:10,
-
 4.     y:10,
-
 5.     **speed:100, // pixels/s this time !**
-
 6.  };
+```
 
 -   We added a timer(currentTime) function that returns the delta of the
     time elapsed since its last call
@@ -11092,6 +10846,7 @@ As you can see, we draw the player/monster, we update its position; and
 we call an updateBalls function to do the same  for the balls: draw and
 update their position.
 
+```
 1.  function updateMonsterPosition(delta) {
 2.    monster.speedX = monster.speedY = 0;
 3.    // check inputStates
@@ -11169,14 +10924,9 @@ Let's implement this as a JavaScript function step-by-step:
 2.  var dx = x1 - x2;
 3.  var dy = y1 - y2;
 4.  **var distance = Math.sqrt(dx * dx + dy * dy);**
-```
-
 <!-- -->
 457. 
-
 <!-- -->
-
-```
 5.  return (distance < r1 + r2);
 6.  }
 ```
@@ -11347,30 +11097,20 @@ alt="the projections of axis overlap: collision detected" />
 Here is a JavaScript implementation of a rectangle - rectangle (aligned)
 collision test:
 
-523. // Collisions between aligned rectangles
+```
+// Collisions between aligned rectangles
+function rectsOverlap(x1, y1, w1, h1, x2, y2, w2, h2) {
+  
+  if ((x1 > (x2 + w2)) || ((x1 + w1) < x2))
+    return false; // No horizontal axis projection overlap
 
-524. function rectsOverlap(x1, y1, w1, h1, x2, y2, w2, h2) {
+  if ((y1 > (y2 + h2)) || ((y1 + h1) < y2))
+    return false; // No vertical axis projection overlap
 
-525.   
-
-526.   if ((x1 > (x2 + w2)) || ((x1 + w1) < x2))
-
-527.     return false; // No horizontal axis projection overlap
-
-528. 
-
-529.   if ((y1 > (y2 + h2)) || ((y1 + h1) < y2))
-
-530.     return false; // No vertical axis projection overlap
-
-531. 
-
-532.   return true;    // If previous tests failed, then both axis
-     projections
-
-533.                   // overlap and the rectangles intersect
-
-534. }
+  return true;    // If previous tests failed, then both axis projections
+                  // overlap and the rectangles intersect
+}
+```
 
 #### Let's test this method
 
@@ -11387,179 +11127,97 @@ alt="Same as previous picture but this time the player square is inside the mons
 
 Here is what we modified (in bold) in the code:
 
+```
 1.  ...
-
 2.  // The monster!
-
 3.  var monster = {
-
 4.  x: 80,
-
 5.  y: 80,
-
 6.  width: 100,
-
 7.  height: 100,
-
 8.  speed: 1,
-
 9.  boundingCircleRadius: 70
-
 10. };
-
 11. 
-
 12. var player = {
-
 13. x: 0,
-
 14. y: 0,
-
 15. boundingCircleRadius: 20
-
 16. };
-
 17. ...
-
 18. 
-
 19. function updatePlayer() {
-
 20. // The player is just a square drawn at the mouse position
-
 21. // Just to test rectangle/rectangle collisions.
-
 22. 
-
 23. if (inputStates.mousePos) {
-
 24. player.x = inputStates.mousePos.x;
-
 25. player.y = inputStates.mousePos.y;
-
 26. 
-
 <!-- -->
-
 535. 1.  **// draws a rectangle centered on the mouse position**
-
      2.  **// we draw it as a square.**
-
      3.  **// We remove size/2 to the x and y position at drawing time
          in**
-
      4.  **// order to recenter the rectangle on the mouse pos
          (normally**
-
      5.  **// the 0, 0 of a rectangle is at its top left corner)**
-
      6.  **var size = player.boundingCircleRadius;**
-
      7.  **ctx.fillRect(player.x - size / 2, player.y - size / 2, size, size);**
-
 <!-- -->
-
 27. }
-
 28. }
-
 <!-- -->
-
 536. 
-
 <!-- -->
-
 29. function checkCollisions() {
-
 30. **// Bounding rect position and size for the player. We need to
-    translate**
-
+   translate**
 31. **// it to half the player's size**
-
 32. **var playerSize = player.boundingCircleRadius;**
-
 33. **var playerXBoundingRect = player.x - playerSize / 2;**
-
 34. **var playerYBoundingRect = player.y - playerSize / 2;**
-
 35. **// Same with the monster bounding rect**
-
 36. **var monsterXBoundingRect = monster.x - monster.width / 2;**
-
 37. **var monsterYBoundingRect = monster.y - monster.height / 2;**
-
 <!-- -->
-
 537. 
-
 <!-- -->
-
 38. **if (rectsOverlap(playerXBoundingRect, playerYBoundingRect,**
-
     1.  **playerSize, playerSize,**
-
     2.  **monsterXBoundingRect, monsterYBoundingRect,**
-
     3.  **monster.width, monster.height)) {**
-
     <!-- -->
-
     1.  ctx.fillText("Collision", 150, 20);
-
     2.  ctx.strokeStyle = ctx.fillStyle = 'red';
-
 39. } else {
-
     1.  ctx.fillText("No collision", 150, 20);
-
     2.  ctx.strokeStyle = ctx.fillStyle = 'black';
-
 40. }
-
 41. }
-
 <!-- -->
-
 538. 
-
 <!-- -->
-
 42. **// Collisions between aligned rectangles**
-
 43. **function rectsOverlap(x1, y1, w1, h1, x2, y2, w2, h2) {**
-
 <!-- -->
-
 539. 
-
 <!-- -->
-
 44. **if ((x1 > (x2 + w2)) || ((x1 + w1) < x2))**
-
     1.  **return false; // No horizontal axis projection overlap**
-
 <!-- -->
-
 540. 
-
 <!-- -->
-
 45. **if ((y1 > (y2 + h2)) || ((y1 + h1) < y2))**
-
     1.  **return false; // No vertical axis projection overlap**
-
 <!-- -->
-
 541. 
-
 <!-- -->
-
 46. **return true; // If previous tests failed, then both axis
-    projections**
-
+   projections**
     1.  **// overlap and the rectangles intersect**
-
 47. **}**
+```
 
 ### Many real games use aligned rectangle collision tests
 
@@ -11604,29 +11262,20 @@ There are only two cases when a circle intersects with a rectangle:
 We propose this function (implemented after reading [this Thread at
 StackOverflow](https://stackoverflow.com/questions/401847/circle-rectangle-collision-detection-intersection)):
 
+```
 1.  // Collisions between rectangle and circle
-
 2.  function circRectsOverlap(x0, y0, w0, h0, cx, cy, r) {
-
 3.     var testX=cx;
-
 4.     var testY=cy;
-
 5.  
-
 6.     if (testX < x0) testX=x0;
-
 7.     if (testX > (x0+w0)) testX=(x0+w0);
-
 8.     if (testY < y0) testY=y0;
-
 9.     if (testY > (y0+h0)) testY=(y0+h0);
-
 10. 
-
 11.    return (((cx-testX)*(cx-testX)+(cy-testY)*(cy-testY))< r*r);
-
 12. }
+```
 
 [Try this function in this example on
 JSBin](https://jsbin.com/acohiv/845/edit?html,output).
@@ -11711,58 +11360,37 @@ alt="Collision between balls and the monster" />
 
 ### Source code extract:
 
+```
 1.  function updateBalls(delta) {
-
 2.     // for each ball in the array
-
 3.     for(var i=0; i < ballArray.length; i++) {
-
 4.       var ball = ballArray[i];
-
 5.  
-
 6.       // 1) move the ball
-
 7.       ball.move();
-
 8.  
-
 9.       // 2) test if the ball collides with a wall
-
 10.      testCollisionWithWalls(ball);
-
 11.  
-
 12.      **// 3) Test if the monster collides**
-
 13. **     if(circRectsOverlap(monster.x, monster.y,**
-
 14. **                         monster.width, monster.height,**
-
 15. **                        ball.x, ball.y, ball.radius)) {**
-
 16. 
-
 17. **        //change the color of the ball**
-
 18. **        ball.color = 'red';**
-
 19. **     }**
-
 20. 
-
 21.      // 3) draw the ball
-
 22.      ball.draw();
-
 23.   }
-
 24. }
+```
 
 The only additions are: *lines 13-19* in the updateBalls function, and
 the circRectsOverlap function!
 
-## 2.6.1 Introduction
+<h3 id="ch2-6-1">2.6.1 Introduction</h3>
 
 In this lesson, we learn how to animate images - which are known as
 "sprites". This technique uses components from a collection of animation
@@ -11799,7 +11427,7 @@ We have not yet investigated how this works, nor have we built it into
 the small game engine we started to build in earlier chapters. First,
 let's explain how to use "sprites" in JavaScript and canvas.
 
-## 2.6.2 Different sorts of sprite sheets
+<h3 id="ch2-6-2">2.6.2 Different sorts of sprite sheets</h3>
 
 There are different sorts of *sprite sheets*. See some examples below.
 
@@ -11847,7 +11475,7 @@ alt="Gridrunner spritesheet" />
 So, when we think about writing a "sprite engine", we need to consider
 how to support different layouts of sprite sheet.
 
-## 2.6.3 Sprite extraction and animation
+<h3 id="ch2-6-3">2.6.3 Sprite extraction and animation</h3>
 
 ### Principle
 
@@ -11881,57 +11509,36 @@ alt="Screenshot of the example: move a slider to select a subimage/sprite from t
 
 ### HTML code:
 
+```
 1.  <html lang="en">
-
 2.   <head>
-
 3.   <title>Extract and draw sprite</title>
-
 4.   <style>
-
 5.     canvas {
-
 6.        border: 1px solid black;
-
 7.      }
-
 8.   </style>
-
 9.   </head>
-
 10.  <body>
-
 11.    Sprite width: 48, height: 92, rows: 8, sprites per
     > posture: 13<p>
-
 12.    <label for="x">x: <input id="x" type="number" min=0><br/>
-
 13.    <label for="y">y: <input id="y" type="number" min=0><br/>
-
 14.    <label for="width">width: <input
-    > id="width" type="number" min=0><br/>
-
+   > id="width" type="number" min=0><br/>
 15.    <label for="height">height: <input
-    > id="height" type="number" min=0><p>
-
+   > id="height" type="number" min=0><p>
 16. 
-
 17. Select current sprite: <input type=range
     > id="spriteSelect" value=0> <output id="spriteNumber">
-
 18. 
-
 19.  <p/>
-
 20.    <canvas id="canvas" width="48" height="92" />
-
 21.  </p>
-
 22.    <canvas id="spritesheet"></canvas>
-
 23.  </body>
-
 24. </html>
+```
 
 Notice that we use an <input type="range"> to select the current
 sprite, and we have two canvases: a small one for displaying the
@@ -11943,209 +11550,116 @@ Here's an extract from the JavaScript. You don't have to understand all
 the details, just look at the part in bold which extracts the individual
 sprites:
 
+```
 1.  **var SPRITE_WIDTH = 48;   // Characteristics of the sprites and
     > spritesheet**
-
 2.  **var SPRITE_HEIGHT = 92;**
-
 3.  **var NB_ROWS = 8;**
-
 4.  **var NB_FRAMES_PER_POSTURE = 13;**
-
 5.   
-
 6.  // the different input and output fields
-
 7.  var xField, yField, wField, hField, spriteSelect, spriteNumber;
-
 8.  // The two canvases and respective contexts
-
 9.  var canvas, canvasSpriteSheet, ctx1, ctx2;
-
 10.  
-
 11. window.onload = function() {
-
 12.     canvas = document.getElementById("canvas");
-
 13.     ctx1 = canvas.getContext("2d");
-
 14.     canvasSpriteSheet = document.getElementById("spritesheet");
-
 15.     ctx2 = canvasSpriteSheet.getContext("2d");
-
 16. 
-
 17.     xField = document.querySelector("#x");
-
 18.     yField = document.querySelector("#y");
-
 19.     wField = document.querySelector("#width");
-
 20.     hField = document.querySelector("#height");
-
 21.     spriteSelect = document.querySelector("#spriteSelect");
-
 22.     spriteNumber = document.querySelector("#spriteNumber");
-
 23.     
-
 24.     // Update values of the input fields in the page
-
 25.     wField.value = SPRITE_WIDTH;
-
 26.     hField.value = SPRITE_HEIGHT;
-
 27.     xField.value = 0;
-
 28.     yField.value = 0;
-
 29.     // Set attributes for the slider depending on the number of
-    > sprites on the 
-
+   > sprites on the 
 30.     // sprite sheet
-
 31.     spriteSelect.min = 0;
-
 32.     spriteSelect.max=NB_ROWS*NB_FRAMES_PER_POSTURE - 1;
-
 33.     // By default the slider is disabled until the sprite sheet is
-    > fully loaded
-
+   > fully loaded
 34.     spriteSelect.disabled = true;
-
 35.     spriteNumber.innerHTML=0;
-
 36. 
-
 37.     // Load the spritesheet
-
 38.     spritesheet = new Image();
-
 39.     spritesheet.src="https://i.imgur.com/3VesWqx.png";
-
 40. 
-
 41.    ** // Called when the spritesheet has been loaded**
-
 42.     spritesheet.onload = function() {
-
 43.       // enable slider
-
 44.       spriteSelect.disabled = false;
-
 45. 
-
 46.       // Resize big canvas to the size of the sprite sheet image
-
 47.       canvasSpriteSheet.width = spritesheet.width;
-
 48.       canvasSpriteSheet.height = spritesheet.height;
-
 49. 
-
 50.      // Draw the whole spritesheet
-
 51.      ctx2.drawImage(spritesheet, 0, 0);
-
 52.      // Draw the first sprite in the big canvas, corresponding to
-    > sprite 0
-
+   > sprite 0
 53.      // wireframe rectangle in the sprite sheet
-
 54.    
-    >  drawWireFrameRect(ctx2, 0 , 0, SPRITE_WIDTH, SPRITE_HEIGHT, 'red', 3);
-
+   >  drawWireFrameRect(ctx2, 0 , 0, SPRITE_WIDTH, SPRITE_HEIGHT, 'red', 3);
 55.    
-    >      // small canvas, draw sub image corresponding to sprite 0
-
+   >      // small canvas, draw sub image corresponding to sprite 0
 56.      ctx1.drawImage(spritesheet, 0, 0, SPRITE_WIDTH, SPRITE_HEIGHT,
-
 57.                                  0, 0, SPRITE_WIDTH, SPRITE_HEIGHT);
-
 58.    };
-
 59. 
-
 60.    // input listener on the slider
-
 61.    spriteSelect.oninput = function(evt) {
-
 62.      // Current sprite number from 0 to NB_FRAMES_PER_POSTURE *
     > NB_ROWS
-
 63.      var index = spriteSelect.value;
-
 64. 
-
 65. **     // Computation of the x and y position that corresponds to
     > the sprite**
-
 66. **     // number index as selected by the slider**
-
 67. **     var x = index * SPRITE_WIDTH % spritesheet.width;**
-
 68. **   
     >  var y = Math.floor(index / NB_FRAMES_PER_POSTURE) * SPRITE_HEIGHT;**
-
 69. 
-
 70.      // Update fields
-
 71.      xField.value = x;
-
 72.      yField.value = y;
-
 73. 
-
 74.      // Clear big canvas, draw wireframe rect at x, y, redraw
     > stylesheet
-
 75.    
     >  ctx2.clearRect(0, 0, canvasSpriteSheet.width, canvasSpriteSheet.height);
-
 76.      ctx2.drawImage(spritesheet, 0, 0);
-
 77.    
     >  drawWireFrameRect(ctx2, x , y, SPRITE_WIDTH, SPRITE_HEIGHT, 'red', 3);
-
 78.  
-
 79.      // Draw the current sprite in the small canvas
-
 80.      ctx1.clearRect(0, 0, SPRITE_WIDTH, SPRITE_HEIGHT);
-
 81.      ctx1.drawImage(spritesheet, x, y, SPRITE_WIDTH, SPRITE_HEIGHT,
-
 82.                                  0, 0, SPRITE_WIDTH, SPRITE_HEIGHT);
-
 83.  
-
 84.      // Update output elem on the right of the slider
-
 85.      spriteNumber.innerHTML = index;
-
 86.   };
-
 87. };
-
 88.  
-
 89. function drawWireFrameRect(ctx, x, y, w, h, color, lineWidth) {
-
 90.   ctx.save();
-
 91.   ctx.strokeStyle = color;
-
 92.   ctx.lineWidth = lineWidth;
-
 93.   ctx.strokeRect(x , y, w, h);
-
 94.   ctx.restore();
-
 95. }
-
 96.  
+```
 
 ### **Explanations**:
 
@@ -15093,6 +14607,7 @@ CodePen](https://codepen.io/w3devcampus/pen/xwxEZg):
 
 Code from the example:
 
+```
 1.  <html lang="en">
 2.  <head>
 3.  <style>
@@ -16757,6 +16272,7 @@ transaction.
 
 ### Example of a transaction:
 
+```
 1.  // Open a transaction for reading and writing on the DB "customer"
 
 2.  var transaction = db.transaction(["customers"], "readwrite");
@@ -16800,6 +16316,7 @@ transaction.
 21. };
 
 22. }
+```
 
 Transactions have a well-defined lifetime. Attempting to use a
 transaction after it has completed throws an exception.
@@ -17386,6 +16903,7 @@ automatically be rounded to "1".
 
 ### JavaScript code from the example:
 
+```
 1.  var db; // the database connection we need to initialize
 
 2.   
@@ -17509,6 +17027,7 @@ automatically be rounded to "1".
 60.   };
 
 61. } // end of function createDatabase
+```
 
 ### <b>Explanations:</b>
 
@@ -17600,7 +17119,7 @@ In the following pages, we will explain how to insert, search, remove,
 and update data. A final example that merges all examples together will
 also be shown at the end of this section.
 
-## 3.6.7 Inserting data
+<h3 id="ch3-6-7">3.6.7 Inserting data</h3>
 
 So, about inserting data… Here this is what we did during the creation
 of the database.
@@ -17779,89 +17298,55 @@ alt="Devtools show that a new customer named Michel Buffa has been inserted" />
 We just added a single function into the example from the previous
 section - the function AddACustomer() that adds one customer:
 
-1.  <b>{ ssn: "123-45-6789", name: "Michel Buffa", age: 47, email:</b> 
-     <b>"buffa@i3s.unice.fr" }</b>
+```
+<b>{ ssn: "123-45-6789", name: "Michel Buffa", age: 47, email:</b> 
+<b>"buffa@i3s.unice.fr" }</b>
+```
 
 Here is the complete source code of the addACustomer function:
 
+```
 1.  function addACustomer() {
-
 2.     // 1 - get a transaction on the "customers" object store
-
 3.     // in readwrite, as we are going to insert a new object
-
 4.     var transaction = db.transaction(["customers"], "readwrite");
-
 5.  
-
 6.     // Do something when all the data is added to the database.
-
 7.     // This callback is called after transaction has been completely
-
 8.     // executed (committed)
-
 9.     transaction.oncomplete = function(event) {
-
 10.        alert("All done!");
-
 11.    };
-
 12. 
-
 13.    // This callback is called in case of error (rollback)
-
 14.    transaction.onerror = function(event) {
-
 15.       console.log("transaction.onerror
     errcode=" + event.target.error.name);
-
 16.    };
-
 17. 
-
 18.    // 2 - Init the transaction on the objectStore
-
 19.    var objectStore = transaction.objectStore("customers");
-
 20. 
-
 21.    // 3 - Get a request from the transaction for adding a new object
-
 22.    var request = objectStore.add({ ssn: "123-45-6789",
-
 23.                                    name: "Michel Buffa",
-
 24.                                    age: 47,
-
 25.                                    email: "buffa@i3s.unice.fr" });
-
 26. 
-
 27.    // The insertion was ok
-
 28.    request.onsuccess = function(event) {
-
 29.        console.log("Customer with ssn= " + event.target.result + "
-
 30.                     added.");
-
 31.    };
-
 32. 
-
 33.    // the insertion led to an error (object already in the store,
-
 34.    // for example)
-
 35.    request.onerror = function(event) {
-
 36.        console.log("request.onerror, could not insert customer,
-
 37.                     errcode = " + event.target.error.name);
-
 38.    };
-
 39. }
+```
 
 <b>Explanations:</b>
 
@@ -17934,30 +17419,23 @@ style="width:6.08333in;height:2.32292in" alt="insert error" />
 
 <b>Here is the updated version of the HTML code of this example:</b>
 
+```
 1.  <fieldset>
-
 2.    SSN: <input type="text" id="ssn" placeholder="444-44-4444"
-
 3.                required/><br>
-
 4.    Name: <input type="text" id="name"/><br>
-
 5.    Age: <input type="number" id="age" min="1" max="100"/><br>
-
 6.    Email:<input type="email" id="email"/> reminder, email must be
-
 7.                 unique (we declared it as a "unique" index)<br>
-
 8.  </fieldset>
-
 9.  
-
-10. <button <b>onclick="addACustomer();"</b>>Add a new
-    Customer</button>
+10. <button <b>onclick="addACustomer();"</b>>Add a new Customer</button>
+```
 
 <b>And here is the new version of the addACustomer() JavaScript
 function:</b>
 
+```
 1.  function addACustomer() {
 
 2.     if(db === null) {
@@ -18042,6 +17520,7 @@ function:</b>
 41.   };
 
 42. }
+```
 
 It is also possible to shorten the code of the above function by
 chaining the different operations using the "." operator (getting a
@@ -18097,6 +17576,7 @@ How to try the example:
 
 Code added in this example:
 
+```
 1.  function removeACustomer() {
 
 2.     if(db === null) {
@@ -18164,6 +17644,7 @@ Code added in this example:
 33.    };
 
 34. }
+```
 
 Notice that after the deletion of the Customer (*line 23*),
 the request.onsuccess callback is called. And if you try to print the
@@ -19229,6 +18710,7 @@ The HTML part:
 
 The JavaScript part:
 
+```
 1.  function instantiate() {
 
 2.     var t = document.querySelector('#mytemplate');
@@ -19246,8 +18728,9 @@ The JavaScript part:
 8.     document.body.appendChild(clone);
 
 9.  }
+```
 
-## 4.2.4 Shadow DOM
+<h3 id="ch4-2-4">4.2.4 Shadow DOM</h3>
 
 Hello! Let's talk about the shadow DOM. What is the
 
@@ -19467,6 +18950,7 @@ sandboxing](https://en.wikipedia.org/wiki/Sandbox_(computer_security)).
 
 Let's have a look at a very simple example:
 
+```
 1.  <div>Hello this is not rendered!</div>
 
 2.  <script>
@@ -19492,6 +18976,7 @@ Let's have a look at a very simple example:
     also use appendChild().
 
 12. </script>
+```
 
 *Lines 8 and 11* show how to associate a shadow root with an existing
 HTML element. In this example, the <div> defined at* line 1* is a
@@ -19540,6 +19025,7 @@ hidden in a shadow root is protected from external CSS, scripts, etc.
 
 HTML part:
 
+```
 1.  <template id="mytemplate">
 
 2.     <style>
@@ -19551,9 +19037,11 @@ HTML part:
 5.     <h1>This is a shadowed H1</h1>
 
 6.  </template>
+```
 
 The JavaScript part:
 
+```
 1.  // Instanciate the template
 
 2.  var t = document.querySelector('#mytemplate');
@@ -19573,6 +19061,7 @@ The JavaScript part:
 9.  // insert something into the shadow DOM, this will be rendered
 
 10. shadowRoot.appendChild(document.importNode(t.content, true));
+```
 
 [Online example at JSBin](https://jsbin.com/quguwa/edit?html,js,output):
 
@@ -19603,29 +19092,20 @@ and is not affected by the CSS within the Web Component.
 
 The HTML part:
 
+```
 1.  <template id="mytemplate">
-
 2.     <style>
-
 3.       h1 {color:white; background:red}
-
 4.     </style>
-
 5.     <h1>This is a shadowed H1</h1>
-
 6.  </template>
-
 7.  
-
 8.  <body>
-
 9.     <h1 id="withShadowDom">This is a text header</h1>
-
 10. 
-
 11.    <h1>Normal header with no shadow DOM associated.</h1>
-
 12. </body>
+```
 
 We added a new H1 at *line 11*. 
 
@@ -19637,11 +19117,11 @@ style="width:5.55208in;height:2.91667in" alt="shadow dom 4" />
 The second H1 is not affected by the CSS defined in the template used by
 the first H1. Try to add this CSS rule to this example :
 
+```
 1.  h1 {
-
 2.      color:green;
-
 3.  }
+```
 
 And you should see something like that:
 
@@ -19661,29 +19141,20 @@ It is possible to define a part of the template into which external HTML
 content will be "injected". For this, we use
 the <slot>...</slot> element, as shown below:
 
+```
 1.  <template id="mytemplate">
-
 2.      <h1 part='heading'>This is a shadowed H1</h1>
-
 3.      <p part="paragraph">
-
 4.          <slot name="my-text">My default text</slot>
-
 5.      </p>
-
 6.  </template>
-
 7.   
-
 8.  <body>
-
 9.  <h1 id="myWidget">
-
 10.     <span slot="my-text">Injected content using slot elem</span>
-
 11. </h1>
-
 12. </body>
+```
 
 ### <b>Explanations</b>:
 
@@ -19745,6 +19216,7 @@ will render as an instance of a template with a shadow DOM:
 
 ### HTML code for the use of the custom element:
 
+```
 1.  <body>
 
 2.  <my-widget>
@@ -19843,6 +19315,7 @@ previous examples):
 25.   console.log(error);
 
 26. }
+```
 
 ### <b>Explanations</b>: 
 
@@ -19978,23 +19451,17 @@ imported:
 
 It is as simple as:
 
+```
 1.  <head>
-
 2.     <b> <link rel="import" href="components/myComponents.html"></b>
-
 3.  </head>
-
 4.  <body>
-
 5.    <my-widget>
-
 6.      <span slot="my-title">Title injected</span>
-
 7.      <span slot="my-paragraph">Paragraph injected</span>
-
 8.    </my-widget>
-
 9.  </body>
+```
 
 Look at *line 2*: this is where the importation of the HTML, CSS and JS
 code of new "components" is done. The HTML+JS+CSS code that defines
@@ -21425,6 +20892,9 @@ Compute the angle corresponding to the Left / Right and Front / Back
 tilts. This example uses the accelerationIncludingGravity property of
 the event.
 
+<details>
+  <summary>HTML code!</summary>
+
 ```
 1.  function deviceMotionHandler(eventData) {
 2.     // Grab the acceleration including gravity from the results
@@ -21441,6 +20911,8 @@ the event.
 13.    // ... do something
 14. }
 ```
+
+</details>
 
 Compute the vertical (direction of the sky) - this extract comes from a
 complete example further down this page...
@@ -21486,6 +20958,9 @@ later on)...
 </p>
 
 <h4>Code from this example:</h4>
+
+<details>
+  <summary>HTML code!</summary>
 
 ```
 1.  <!doctype html>
@@ -21561,6 +21036,8 @@ later on)...
 71. </html>
 ```
 
+</details>
+
 <h4>Interesting example that uses jQuery mobile</h4>
 
 This example shows how the X and Y acceleration values can be used for
@@ -21578,11 +21055,11 @@ it: <a href="https://jsbin.com/uyuqek/4/edit">https://jsbin.com/uyuqek/4/edit</
    alt="Devicemotion API."
    width="35%" />
 </p>
-<!-- <h4>Code from the example:</h4> -->
+
+<h4>Code from the example:</h4>
+
 <details>
-<h4>
-  <summary>Code from this example</summary>
-</h4>
+  <summary>HTML code!</summary>
 
 ```
 1.  <html>
@@ -21834,13 +21311,13 @@ mobile device, <a href="https://jsbin.com/eyahuv/2"use this URL instead</a>!
 
 <h4>External resources</h4>
 <ul>
-<li>From the W3C specification: <a href="https://w3c.github.io/deviceorientation/spec-source-orientation.html#devicemotion">devicemotion
-    Event</a></li>
-<li>From Google Devs: "<a href="https://developers.google.com/web/fundamentals/native-hardware/device-orientation/">Device Orientation &
-    Motion</s>"</li>
-<li>On Dev. Opera: "<a href="https://dev.opera.com/articles/w3c-device-orientation-api/">The W3C Device Orientation API: Detecting
-    Orientation and
-    Acceleration</a>"</li>
+   <li>From the W3C specification: <a href="https://w3c.github.io/deviceorientation/spec-source-orientation.html#devicemotion">devicemotion
+       Event</a></li>
+   <li>From Google Devs: "<a href="https://developers.google.com/web/fundamentals/native-hardware/device-orientation/">Device Orientation &
+       Motion</s>"</li>
+   <li>On Dev. Opera: "<a href="https://dev.opera.com/articles/w3c-device-orientation-api/">The W3C Device Orientation API: Detecting
+       Orientation and
+       Acceleration</a>"</li>
 </ul>
 
 <h3 id="ch4-4-5">4.4.5 Discussion and projects</h3>
@@ -21851,33 +21328,31 @@ your comments/observations/questions and share your creations.
 
 <h4>Suggested topics of discussion:</h4>
 <ul>
-<li>Did you know that you can "fake" the orientation using the devtools
-    of some desktop browsers?</li>
-<li>What kind of application would benefit from the Orientation and
-    Motion APIs (apart from games)?</li>
+   <li>Did you know that you can "fake" the orientation using the devtools
+       of some desktop browsers?</li>
+   <li>What kind of application would benefit from the Orientation and
+       Motion APIs (apart from games)?</li>
 </ul>
 
 <h4>Optional projects:</h4>
 <ul>
-<li><a href="https://mainline.i3s.unice.fr/mooc/SkywardBound/">The Christmas
-    game</a> developed by
-    students from the previous run is a perfect candidate to be
-    controlled using the APIs seen in this course!! I would start with
-    the orientation API and try to move the bunny left/right...</li>
-<li>Using the game framework, try to control the monster using the
-    orientation API, so that it avoids the balls - see the last example
-    from Module 2 of the course!</li>
+   <li><a href="https://mainline.i3s.unice.fr/mooc/SkywardBound/">The Christmas
+       game</a> developed by
+       students from the previous run is a perfect candidate to be
+       controlled using the APIs seen in this course!! I would start with
+       the orientation API and try to move the bunny left/right...</li>
+   <li>Using the game framework, try to control the monster using the
+       orientation API, so that it avoids the balls - see the last example
+       from Module 2 of the course!</li>
 </ul>
-<!------
-<!------------------------------------------------------------------------------------------------>
-<!------------------------------ ##.  (##) -------------------------------->
-<!------------------------------------------------------------------------------------------------>
+
+<!----
 <p align="center" width="100%">
 <img src="./images/image.jpeg?raw=true"
    width="35%"
    alt="." />
 </p>
------->
+---->
 
 <h5>The end...</h5>
 
