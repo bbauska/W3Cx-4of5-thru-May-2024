@@ -2259,9 +2259,9 @@ mode property, that is set to one of:
 TextTrack content can only be accessed if a track has been loaded! Use
 the mode property to force a track to be loaded!
 
-<b>BE CAREFUL: you cannot access a TextTrack content if the corresponding
-HTML track has not been loaded by the browser!  
-<b>It is possible to force a track to be loaded by
+<b>BE CAREFUL:</b> you cannot access a TextTrack content if the corresponding
+HTML track has not been loaded by the browser!
+It is possible to force a track to be loaded by
 setting the mode property of the TextTrack object to "showing" or
 "hidden".   
 Tracks that are not loaded have their mode property of "disabled". 
