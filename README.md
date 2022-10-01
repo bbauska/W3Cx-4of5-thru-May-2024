@@ -127,7 +127,7 @@ courses, you <i>do NOT need to re-take that course</i>.
 <h2>Contents</h2>
 
 <details>
-  <summary>Here!</summary>
+  <summary>CONTENT Here!</summary>
 
 
 [Advanced HTML5 Multimedia [26](#module-1-1)](#module-1-1)
@@ -1570,7 +1570,7 @@ reminder, let's look at a WebVTT file:
 WEBVTT
 
 <details>
-  <summary>WEBTT Code Here!</summary>
+  <summary>WEBTT code extract!</summary>
 
 ```
 19. 
@@ -1813,7 +1813,7 @@ recall that text tracks are associated with WebVTT files? As a quick
 reminder, let's look at a WebVTT file:
 
 <details>
-  <summary>WEBVTT code!</summary>
+  <summary>WEBVTT code extract!</summary>
 
 ```
 1.  WEBVTT
@@ -1954,7 +1954,7 @@ choosing the different tracks. I will explain that in a next video.
 <h4>Let's go back to our example. Below is the HTML code:</h4>
 
 <details>
-  <summary>HTML code!</summary>
+  <summary>HTML code extract!</summary>
 
 ```
 1. <video id="myVideo" preload="metadata" controls crossOrigin="anonymous">
@@ -1992,7 +1992,7 @@ manipulate these elements as "HTML elements" - we will call them the
 <h4>Here is the JavaScript source code:</h4>
 
 <details>
-  <summary>JavaScript code!</summary>
+  <summary>JavaScript code extract!</summary>
 
 ```
 1.  var video, htmlTracks;
@@ -2300,7 +2300,7 @@ Here are the additions we made to the JavaScript code from the previous
 example:
 
 <details>
-  <summary>JavaScript additions!</summary>
+  <summary>JavaScript code extract!</summary>
 
 ```
 1.  function readContent(track) {
@@ -2626,7 +2626,7 @@ In the following lessons, we show how to deal with overlapping cues
 Example of enter and exit event listeners on a track's cues.
 
 <details>
-  <summary>JavaScript Code!</summary>
+  <summary>JavaScript code!</summary>
 
 ```
 1.   // iterate on all cues of the current track
@@ -2708,6 +2708,7 @@ shows how to use enter and exit events on cues</a>:
 </p>
 
 <h4>Source code extract:</h4>
+
 <details>
   <summary>Source code!</summary>
 
@@ -2965,7 +2966,7 @@ JSBin](https://jsbin.com/sodihux/1/edit?html,css,js,output):
 
 <details>
 <h4>
-  <summary>CSS code!</summary>
+  <summary>CSS code extract!</summary>
 </h4>
 
 ```
@@ -3019,7 +3020,7 @@ JSBin](https://jsbin.com/sodihux/1/edit?html,css,js,output):
 <h4>JavaScript code:</h4>
 
 <details>
-  <summary>JavaScript code!</summary>
+  <summary>JavaScript code extract!</summary>
 
 ```
 1.  var video, transcriptDiv;
@@ -3223,7 +3224,7 @@ element with an id of transcript.
 <h4>Extract from HTML code:</h4>
 
 <details>
-  <summary>HTML code!</summary>
+  <summary>HTML code extract!</summary>
 
 ```
 1.  ...
@@ -3251,7 +3252,7 @@ element with an id of transcript.
 <h4>JavaScript code:</h4>
 
 <details>
-  <summary>JavaScript code!</summary>
+  <summary>JavaScript code extract!</summary>
 
 ```
 1.  // Transcript.js, by dev.opera.com
@@ -3383,8 +3384,9 @@ In the screen-capture below, we have a WebVTT file displaying a scene's
 captions and descriptions.
 
 <h4>Extract from HTML code:</h4>
+
 <details>
-  <summary>HTML code!</summary>
+  <summary>HTML code extract!</summary>
 
 ```
 1. <html lang="en">
@@ -3455,8 +3457,9 @@ captions and descriptions.
 </details>
 
 <h4>JavaScript code:</h4>
+
 <details>
-  <summary>JavaScript code!</summary>
+  <summary>JavaScript code extract!</summary>
 
 ```
 var tracks, video, statusDiv, subtitlesCaptionsDiv;
@@ -3577,8 +3580,9 @@ you choose which track you prefer. 
 alt="Buttons for choosing the track/language under a standard video player" />
 
 <h4>HTML code:</h4>
+
 <details>
-  <summary>HTML code!</summary>
+  <summary>HTML code extract!</summary>
 
 ```
 1.  ...
@@ -3612,8 +3616,9 @@ alt="Buttons for choosing the track/language under a standard video player" />
 </details>
 
 <h4> JavaScript code:
+
 <details>
-  <summary>JavaScript code!</summary>
+  <summary>JavaScript code extract!</summary>
 
 ```
 1.  var langButtonDiv, currentLangSpan, video;
@@ -3713,8 +3718,9 @@ declaration of the track. Here is how we declared a chapter track in one
 of the previous examples (in bold in the example below):
 
 <h4>HTML code:</h4>
+
 <details>
-  <summary>HTML code!</summary>
+  <summary>HTML code extract!</summary>
 
 ```
 <video id="myVideo" preload="metadata" controls crossOrigin="anonymous">
@@ -3753,7 +3759,7 @@ Let's start by examining the sample .vtt file
 [elephant-dream-chapters-en.vtt](https://mainline.i3s.unice.fr/mooc/elephants-dream-chapters-en.vtt):
 
 <details>
-  <summary>WEBVTT!</summary>
+  <summary>WEBVTT code extract!</summary>
 
 ```
 1.  WEBVTT
@@ -3970,7 +3976,7 @@ objects as cue contents:
 [elephants-dream-chapters-en-JSON.vtt](https://mainline.i3s.unice.fr/mooc/elephants-dream-chapters-en-JSON.vtt):
 
 <details>
-  <summary>WEBTT!</summary>
+  <summary>WEBTT code extract!</summary>
 
 ```
 1.  WEBVTT
@@ -4002,8 +4008,9 @@ file](https://jsbin.com/pulefe/1/edit?html,css,js,output):
 alt="Video with nice chapter menu that uses thumbnail images" />
 
 <h4>HTML code:</h4>
+
 <details>
-  <summary>HTML code!</summary>
+  <summary>HTML code extract!</summary>
 
 ```
 1.  ...
@@ -4036,8 +4043,9 @@ displaying a clickable transcript of the subtitles/captions on the right
 of the video.
 
 <h4> JavaScript code:</h4>
+
 <details>
-  <summary>JavaScript code!</summary>
+  <summary>JavaScript code extract!</summary>
 
 ```
 1.  var video, chapterMenuDiv;
@@ -4174,8 +4182,9 @@ We also added CSS classes "img", "thumb" and "desc", which make it easy
 to style and position the thumbnails using CSS.
 
 <h4>CSS source code extract:</h4>
+
 <details>
-  <summary>CSS code!</summary>
+  <summary>CSS code extract!</summary>
 
 ```
 1.  #chapterMenuSection {
@@ -4272,7 +4281,7 @@ The demo uses a JavaScript array for defining the different animal
 sounds in this audio file:
 
 <details>
-  <summary>JavaScript code!</summary>
+  <summary>JavaScript code extract!</summary>
 
 ```
 1.   var sounds = [
@@ -4359,8 +4368,9 @@ as above. Note that the track <b>must</b> be a <i>TextTrack</i> object because
 addCue does <b>not</b> work with <i>HTMLTrackElement</i> Objects.
 
 <h4>HTML source code extract:</h4>
+
 <details>
-  <summary>HTML code!</summary>
+  <summary>HTML source code extract!</summary>
 
 ```
 1.  ...
@@ -4551,8 +4561,9 @@ if (typeof track.getCueById !== "function") {
 alt="video synced with an iframe that shows external URLs and with a google map" />
 
 <h4>HTML code extract:</h4>
+
 <details>
-  <summary>HTML code!</summary>
+  <summary>HTML source code!</summary>
 
 ```
 1.  <!DOCTYPE html>
@@ -4588,8 +4599,9 @@ alt="video synced with an iframe that shows external URLs and with a google map"
 </details>
 
 <h4>JavaScript code:</h4>
+
 <details>
-  <summary>JavaScript code!</summary>
+  <summary>JavaScript source code extract!</summary>
 
 ```
 1.  window.onload = function() {
@@ -4913,8 +4925,9 @@ Typical code to build an audio routing graph (the one used in the above
 example)
 
 <h4>HTML code extract:</h4>
+
 <details>
-  <summary>HTML code!</summary>
+  <summary>HTML source code extract!</summary>
 
 ```
 1.  <audio src="https://mainline.i3s.unice.fr/mooc/drums.mp3"
@@ -4930,8 +4943,9 @@ example)
 </details>
 
 <h4>JavaScript source code:</h4>
+
 <details>
-  <summary>JavaScript code!</summary>
+  <summary>JavaScript source code!</summary>
 
 ```
 1.  // This line is a trick to initialize the AudioContext
@@ -4973,8 +4987,7 @@ example)
 37.  
 ```
 
-<details>
-  <summary>HTML code!</summary>
+</details>
 
 <h4>Explanations:</h4>
 
@@ -5145,7 +5158,7 @@ in your browser:
 ### Source code extract:
 
 <details>
-  <summary>Source code!</summary>
+  <summary>Source code extract!</summary>
 
 ```
 1.  /* Gain Node */
@@ -5192,7 +5205,7 @@ it in your browser:
 ### Source code extract:
 
 <details>
-  <summary>Source code!</summary>
+  <summary>Source code extract!</summary>
 
 ```
 1.  // the audio element
@@ -5255,8 +5268,9 @@ Multiple filters are often used together. We will make a multi band
 equalizer in a next lesson, and use six filters with type=peaking. 
 
 <h4>Source code extract:</h4>
+
 <details>
-  <summary>Source code!</summary>
+  <summary>Source code extract!</summary>
 
 ```
 1.  var ctx = window.AudioContext || window.webkitAudioContext;
@@ -5302,6 +5316,7 @@ equalizer in a next lesson, and use six filters with type=peaking. 
 ```
 
 </details>
+
 Convolver node: useful for convolution effects such as reverberation
 
 Definition: "The <i>ConvolverNode</i> interface is an AudioNode that
@@ -5353,7 +5368,7 @@ decodeAudioData method. Once the impulse is decoded, we can build the
 graph. So typical use is as follows:
 
 <details>
-  <summary>Source code!</summary>
+  <summary>Source code extract!</summary>
 
 ```
 1.  var impulseURL = "https://mainline.i3s.unice.fr/mooc/Scala-Milan-Opera-Hall.wav";
@@ -5419,7 +5434,7 @@ alt="audio graph of the previous example" />
 ### And here is the function which builds the graph:
 
 <details>
-  <summary>Source code!</summary>
+  <summary>Source code extract!</summary>
 
 ```
 1.  function buildAudioGraphConvolver() {
@@ -5449,8 +5464,7 @@ alt="audio graph of the previous example" />
 24. }
 ```
 
-<details>
-  <summary>HTML code!</summary>
+</details>
 
 Note that at *line 6* we use the decoded impulse. We could not have done
 this before the impulse was loaded and decoded.
@@ -5494,7 +5508,7 @@ alt="Audio graph of the previous example" />
 ### Extract of the HTML code:
 
 <details>
-  <summary>HTML code!</summary>
+  <summary>Source code extract!</summary>
 
 ```
 1.  <audio src="https://mainline.i3s.unice.fr/mooc/guitarRiff1.mp3"
@@ -5512,8 +5526,9 @@ alt="Audio graph of the previous example" />
 </details>
 
 ### JavaScript source code:
+
 <details>
-  <summary>JavaScript code!</summary>
+  <summary>JavaScript source code!</summary>
 
 ```
 1.  // This line is a trick to initialize the AudioContext
@@ -5625,8 +5640,9 @@ The definition says that:
     for the purposes of this example.
 
 <h4>HTML code extract:</h4>
+
 <details>
-  <summary>HTML code!</summary>
+  <summary>HTML source code extract!</summary>
 
 ```
 1.  <h2>Equalizer made with the Web Audio API</h2>
@@ -5670,8 +5686,9 @@ The definition says that:
 </details>
 
 <h4>JavaScript code:</h4>
+
 <details>
-  <summary>JavaScript code!</summary>
+  <summary>JavaScript source code!</summary>
 
 ```
 1.  //Builds an equalizer with multiple biquad filters
@@ -5856,9 +5873,9 @@ First, select the audio context and the canvas context, then build the
 audio graph, and finally run the animation loop.
 
 Typical operations to perform once the HTML page is loaded:
-<details>
-  <summary>HTML code!</summary>
 
+<details>
+  <summary>Source code!</summary>
 
 ```
 1.  window.onload = function() {
@@ -5904,8 +5921,9 @@ Essentials and Best Practices course (Module 4).
 ```
 
 <h4>JavaScript code:</h4>
+
 <details>
-  <summary>JavaScript code!</summary>
+  <summary>JavaScript source code!</summary>
 
 ```
 1.  function buildAudioGraph() {
@@ -5961,6 +5979,9 @@ constants, to control the analysis during play-back.
 
 Here is the code that is run 60 times per second to draw the waveform:
 
+<details>
+  <summary>Source code!</summary>
+
 ```
 1.  function visualize() {
 2.    // 1 - clear the canvas
@@ -6008,6 +6029,8 @@ Here is the code that is run 60 times per second to draw the waveform:
 44.   // once again call the visualize function at 60 frames/s
 45.   requestAnimationFrame(visualize)Explanations:
 ```
+
+</details>
 
 -   *Lines 9-10*: we ask for the time domain analysis data. The call
     to getByteTimeDomainData(dataArray) will fill the array with values
@@ -10054,7 +10077,7 @@ timestamp parameter.
 
 **Source code of the example:**
 <details>
-  <summary>HTML code!</summary>
+  <summary>Source code!</summary>
 
 ```
 <!DOCTYPE html>
@@ -10132,6 +10155,8 @@ timestamp parameter.
 </body>
 </html>
 ```
+
+</details>
 
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch2-4-3">2.4.3 Setting the frame rate</h3>
@@ -11595,6 +11620,9 @@ Here's an extract from the JavaScript. You don't have to understand all
 the details, just look at the part in bold which extracts the individual
 sprites:
 
+<details>
+  <summary>JavaScript source code!</summary>
+
 ```
 1.  var SPRITE_WIDTH = 48;   // Characteristics of the sprites and
     > spritesheet
@@ -11705,6 +11733,8 @@ sprites:
 95. }
 96.  
 ```
+
+</details>
 
 ### **Explanations**:
 
@@ -13386,7 +13416,7 @@ does this for a download operation:
 
 ```
 1.  // progress element
-2.  **var progress = document.querySelector('#downloadProgress');**
+2.  var progress = document.querySelector('#downloadProgress');
 3.   
 4.  function downloadSoundFile(url) {
 5.    var xhr = new XMLHttpRequest();
@@ -13394,8 +13424,8 @@ does this for a download operation:
 7.   
 8.    ...
 9.    xhr.onprogress = function(e) {
-10.     **progress.value = e.loaded;**
-11.     **progress.max = e.total;**
+10.     progress.value = e.loaded;
+11.     progress.max = e.total;
 12.   }
 13.   xhr.send();
 14. }
@@ -13554,15 +13584,14 @@ style="width:3.96875in;height:2.21875in" alt="file upload example 1" />
 ### Source code of the example:
 
 <details>
-  <summary>HTML code!</summary>
+  <summary>HTML source code!</summary>
 
 ```
 1.  <!DOCTYPE html>
 2.  <html lang="en">
 3.  <head>
 4.     <meta charset="utf-8" />
-5.     <title>File upload with XMLHttpRequest level 2 and
-    HTML5</title>
+5.     <title>File upload with XMLHttpRequest level 2 and HTML5</title>
 6.  </head>
 7.   
 8.  <body>
@@ -15082,6 +15111,9 @@ CodePen](https://codepen.io/w3devcampus/pen/JYjpqV?editors=111):
 
 Complete source code from the example:
 
+<details>
+  <summary>Complete source code!</summary>
+
 ```
 1.  <!DOCTYPE html>
 2.  <html lang="en">
@@ -15173,6 +15205,8 @@ Complete source code from the example:
 88. <html>
 ```
 
+</details>
+
 Note that:
 
 -   We prevented the browser default behavior in
@@ -15211,6 +15245,9 @@ displayed in the open space beneath it:
 Source code extract (the part that reads the image file content and
 displays the thumbnails):
 
+<details>
+  <summary>Function's source code!</summary>
+
 ```
 1.  function readFilesAndDisplayPreview(files) {
 2.     // Loop through the FileList and render image files
@@ -15241,6 +15278,8 @@ displays the thumbnails):
 27. }
 ```
 
+</details>
+
 At <i>line7</i>, there is a test that will avoid processing non image files.
 The "!" is the NOT operator in JavaScript. The call to continue at *line
 8* will make the for loop go to its end and process the next file. See
@@ -15266,6 +15305,9 @@ Try it below in your browser (drag'n'drop image files into the drop
 zone) or play with it at CodePen:
 
 <h4>Complete source code:</h4>
+
+<details>
+  <summary>Complete source code!</summary>
 
 ```
 1.  <!DOCTYPE html>
@@ -15386,6 +15428,8 @@ zone) or play with it at CodePen:
 116. <html>
 ```
 
+</details>
+
 Above, we added the readFilesAndDisplayPreview() method detailed
 earlier. We called it at the end of the drop handler (*line 77*), and we
 added the <output> element as a container for the <img> elements
@@ -15421,6 +15465,9 @@ drop)](https://codepen.io/w3devcampus/pen/ZbExbM), you will notice that
 the event handler we used to track the selected files using <input
 type="file"/> looks like this:
 
+<details>
+  <summary>Source code!</summary>
+
 ```
 1.  <script>
 2.     function handleFileSelect(evt) {
@@ -15436,6 +15483,8 @@ type="file"/> looks like this:
 12.    Choose multiple files    :<input type="file" id="files" multiple /><br/>
 13. </body>
 ```
+
+</details>
 
 It calls readFilesAndDisplayPreview()at *line 5*! The same function with
 the same parameters is also used by [the example that used drag and drop
@@ -15462,6 +15511,9 @@ and drop image files into the drop zone), or [play with it at
 CodePen](https://codepen.io/w3devcampus/pen/BoavPb):
 
 Complete source code:
+
+<details>
+  <summary>Complete source code!</summary>
 
 ```
 1.  <!DOCTYPE html>
@@ -15605,6 +15657,8 @@ Complete source code:
 139. <body>
 140. <html>
 ```
+
+</details>
 
 The parts that we have added are in bold. As you can see, all methods
 share the same code for previewing the images.
@@ -19021,6 +19075,8 @@ Let's have a look at a very simple example:
 12. </script>
 ```
 
+</details>
+
 *Lines 8 and 11* show how to associate a shadow root with an existing
 HTML element. In this example, the <div> defined at* line 1* is a
 shadow host, and it is associated with the shadow root which
@@ -19192,6 +19248,8 @@ the &lt;slot&gt;...&lt;/slot&gt; element, as shown below:
 12. </body>
 ```
 
+</details>
+
 ### <b>Explanations</b>:
 
 -   Look at *line 4*, this is the "injection point"'!
@@ -19290,6 +19348,8 @@ previous examples):
 14. </template>
 ```
 
+</details>
+
 ### JavaScript code:
 
 <details>
@@ -19323,6 +19383,8 @@ previous examples):
 25.   console.log(error);
 26. }
 ```
+
+</details>
 
 ### <b>Explanations</b>: 
 
@@ -19529,6 +19591,8 @@ Components) :
 12. </html>
 ```
 
+</details>
+
 ### <b>Explanations</b>:
 
 -   *Line 6*: In this example, the Web Component is in a single
@@ -19576,6 +19640,8 @@ Components) :
 27.     }
 28. });
 ```
+
+</details>
 
 ### <b>Explanations</b>:
 
@@ -19719,6 +19785,8 @@ alt="Examples that eats all the cpu" />
 23. </body>
 24. </html>
 ```
+
+</details>
 
 Notice the infinite loop in the function computePrime (<i>line 12</i>, in
 bold). This is guaranteed to block the user interface. If you are brave
@@ -19899,6 +19967,8 @@ Worker:
 22. </html>
 ```
 
+</details>
+
 The JavaScript code of the worker (worker0.js):
 
 <details>
@@ -19918,6 +19988,8 @@ The JavaScript code of the worker (worker0.js):
 11.     postMessage("done");
 12. }
 ```
+
+</details>
 
 ### Use case #4: handling errors
 
@@ -19992,6 +20064,8 @@ alt="Prime nulmber computation." />
 14. </body>
 15. </html>
 ```
+
+</details>
 
 <h4>Explanations:</h4>
 
@@ -20094,6 +20168,8 @@ example: [WebWorkersExample1.zip](https://courses.edx.org/assets/courseware/v1/
 21. </html>
 ```
 
+</details>
+
 <i>Line 9</i> shows how to test if the browser can run JavaScript code that
 uses the HTML5 Web Workers API.
 
@@ -20120,6 +20196,8 @@ uses the HTML5 Web Workers API.
 14.      }
 15. }, 3000);
 ```
+
+</details>
 
 In this example, we just added a message that is sent to the "parent
 page" (<i>line 1</i>) and we use the standard JavaScript method setTimeout()
@@ -20181,6 +20259,8 @@ worker.
 28. </html>
 ```
 
+</details>
+
 Notice at <i>line 22</i> the call to worker.terminate(), that kills the
 worker after 10000ms.
 
@@ -20207,6 +20287,8 @@ worker after 10000ms.
 14.      }
 15. }, 3000);
 ```
+
+</details>
 
 A Web worker can also kill itself by calling the close() method in the
 worker's JavaScript file:
@@ -20677,6 +20759,8 @@ If we change the orientation of the device here are the results:
 32.  ...
 ```
 
+</details>
+
 <h4>Another example that shows how to orient the HTML5 logo using the orientation API + CSS3 3D rotations</h4>
 
 This is just a variation of the previous example, [try it at
@@ -20775,6 +20859,8 @@ on [video](https://www.youtube.com/watch?v=OrNLhOAGSdE).
 39. </script>
 40.  ...
 ```
+
+</details>
 
 <h4>A simple level tool using device orientation</h4>
 
