@@ -15246,7 +15246,7 @@ Source code extract (the part that reads the image file content and
 displays the thumbnails):
 
 <details>
-  <summary>Function's source code!</summary>
+  <summary>Function source code!</summary>
 
 ```
 1.  function readFilesAndDisplayPreview(files) {
@@ -15632,30 +15632,30 @@ Complete source code:
 114.   </script>
 115. </head>
 116. <body>
-117. <h2>Use one of these input fields for selecting files</h2>
-118. <p>Beware, the directory choser  may overload
-119. your browser memory if there are too many big images in the
-120. directory you choose.</p>
-121. <b>Choose multiple files:</b> <b><input type="file" id="files" multiple</b>
-122. <b>                             onchange="handleFileSelect(event)"/></b>
-123. </p>
-124. <b><p>Choose a directory (Chrome only): <input type="file"</b>
-125. <b>                                      id="dir" webkitdirectory</b>
-126. <b>                                      onchange="handleFileSelect(event)"/></b>
-127. </p>
+117.   <h2>Use one of these input fields for selecting files</h2>
+118.   <p>Beware, the directory choser  may overload
+119.     your browser memory if there are too many big images in the
+120.     directory you choose.</p>
+121.   <b>Choose multiple files:</b> <b><input type="file" id="files" multiple</b>
+122.   <b>                             onchange="handleFileSelect(event)"/></b>
+123.   </p>
+124.   <b><p>Choose a directory (Chrome only): <input type="file"</b>
+125.   <b>                                      id="dir" webkitdirectory</b>
+126.   <b>                                      onchange="handleFileSelect(event)"/></b>
+127.   </p>
 128.  
-129. <h2>Drop your files here!</h2>
-130.     <div id="droppableZone" ondragenter="dragEnterHandler(event)"
-131.                             ondrop="dropHandler(event)"
-132.                             ondragover="dragOverHandler(event)"
-133.                             ondragleave="dragLeaveHandler(event)">
-134.         Drop zone
-135.         <ol id="droppedFiles"></ol>
-136.      </div>
-137. <br/>
-138. <output id="list"></output>
-139. <body>
-140. <html>
+129.   <h2>Drop your files here!</h2>
+130.   <div id="droppableZone" ondragenter="dragEnterHandler(event)"
+131.                           ondrop="dropHandler(event)"
+132.                           ondragover="dragOverHandler(event)"
+133.                           ondragleave="dragLeaveHandler(event)">
+134.     Drop zone
+135.     <ol id="droppedFiles"></ol>
+136.   </div>
+137.   <br/>
+138.   <output id="list"></output>
+139. </body>
+140. </html>
 ```
 
 </details>
@@ -15687,6 +15687,9 @@ as soon as we try to connect):
 </p>
 
 <h4>Source code extract (we omitted the CSS):</h4>
+
+<details>
+  <summary>HTML source code!</summary>
 
 ```
 1.  <!DOCTYPE html>
@@ -15787,6 +15790,8 @@ as soon as we try to connect):
 96. <body>
 97. <html>
 ```
+
+</details>
 
 We have highlighted the interesting parts in the example!
 
@@ -19179,6 +19184,9 @@ and is not affected by the CSS within the Web Component.
 
 The HTML part:
 
+<details>
+  <summary>HTML code!</summary>
+
 ```
 1.  <template id="mytemplate">
 2.     <style>
@@ -19193,6 +19201,8 @@ The HTML part:
 11.    <h1>Normal header with no shadow DOM associated.</h1>
 12. </body>
 ```
+
+</details>
 
 We added a new H1 at *line 11*. 
 
@@ -19581,12 +19591,11 @@ Components) :
 3.  <head>
 4.    <meta charset="UTF-8">
 5.    <title>WebComponent as aJavaScript module</title>
-6.  <b> 
-    <script type="module" src="./mycomponent/index.js"></script></b>
+6.    <script type="module" src="./mycomponent/index.js"></script>
 7.  </head>
 8.  <body>
-9.    <b><my-component name="Michel Buffa"></my-component></b>
-10. <b>  <my-component name="Marie-Claire Forgue"></my-component></b>
+9.    <my-component name="Michel Buffa"></my-component>
+10.   <my-component name="Marie-Claire Forgue"></my-component>
 11. </body>
 12. </html>
 ```
@@ -19606,7 +19615,7 @@ Components) :
 ### And here is the code of the Web Component (in ./mycomponent/index.js):
 
 <details>
-  <summary>HTML code!</summary>
+  <summary>Source code!</summary>
 
 ```
 1.  customElements.define(
@@ -19615,8 +19624,7 @@ Components) :
 4.      constructor() {
 5.          super();
 6.          this.root = this.attachShadow({ mode:  });
-7.          this.name = this.getAttribute(); // get the "name" attribute
-    value
+7.          this.name = this.getAttribute(); // get the "name" attribute value
 8.      }
 9.   
 10.     connectedCallback() {
@@ -19636,7 +19644,7 @@ Components) :
 24.             </div>
 25.         `;
 26.         this.root.innerHTML = "<style>${this.css}</style><div 
-    id='wrapper'>${this.html}</div>";
+              id='wrapper'>${this.html}</div>";
 27.     }
 28. });
 ```
@@ -19761,15 +19769,15 @@ alt="Examples that eats all the cpu" />
 1.  <!DOCTYPE HTML>
 2.  <html>
 3.  <head>
-4.  <title>Worker example: One-core computation</title>
+4.    <title>Worker example: One-core computation</title>
 5.  </head>
 6.  <body>
-7.  <button id="startButton">Click to start discovering prime
-    numbers</button><p> Note that this will make the page
-    unresponsive, you will have to close the tab in order to get back your CPU!
-8.  <p>The highest prime number discovered so far is: <output id="result"></output></p>
-9.  <script>
-10.    function computePrime() {
+7.    <button id="startButton">Click to start discovering prime
+        numbers</button><p> Note that this will make the page
+        unresponsive, you will have to close the tab in order to get back your CPU!
+8.    <p>The highest prime number discovered so far is: <output id="result"></output></p>
+9.    <script>
+10.     function computePrime() {
 11.       var n = 1;
 12.       search: <b>while (true)</b> {
 13.          n += 1;
@@ -19780,8 +19788,8 @@ alt="Examples that eats all the cpu" />
 18.          document.getElementById('result').textContent = n;
 19.       }
 20.     }
-21.    document.querySelector("#startButton").addEventListener('click', computePrime);
-22. </script>
+21.     document.querySelector("#startButton").addEventListener('click', computePrime);
+22.   </script>
 23. </body>
 24. </html>
 ```
@@ -19878,7 +19886,9 @@ The HTML5 Web Worker API provides the Worker JavaScript interface for
 loading and executing a script in the background, in a different thread
 from the UI. The following instruction  loads and creates a worker:
 
-587. var worker = new Worker("worker0.js");
+```
+var worker = new Worker("worker0.js");
+```
 
 More than one worker can be created/loaded by a parent page. This is
 parallel computing after all :-)
@@ -19892,10 +19902,8 @@ handled by the Web Worker implementation of recent browser versions).
 Terminology
 check: [serialized](https://en.wikipedia.org/wiki/Serialization)
 
-1.  Messages can be sent by the parent page to a worker using this kind
-    of code:
-
-<!-- -->
+> (1) Messages can be sent by the parent page to a worker using this kind
+> of code:
 
 ```
 1.  var worker = new Worker("worker0.js");
@@ -19922,22 +19930,22 @@ check: [serialized](https://en.wikipedia.org/wiki/Serialization)
 > (3) The worker will then send messages back to the parent page (code
 > located in the JavaScript file of the worker):
 
-1.  postMessage("Message from a worker !");
+```
+postMessage("Message from a worker !");
+```
 
 > (4) And the parent page can listen to messages from a worker like
 > this:
 
 ```
-1.  worker.onmessage = function(event){
-2.      // do something with event.data
-3.  };
+worker.onmessage = function(event){
+    // do something with event.data
+};
 ```
 
 ### Use case #3: a complete example
 
-The "Parent HTML page" of a simplistic example using a dedicated Web
-
-Worker:
+The "Parent HTML page" of a simplistic example using a dedicated Web Worker:
 
 <details>
   <summary>HTML code!</summary>
@@ -19946,23 +19954,23 @@ Worker:
 1.  <!DOCTYPE HTML>
 2.  <html>
 3.  <head>
-4.  <title>Worker example: One-core computation</title>
+4.    <title>Worker example: One-core computation</title>
 5.  </head>
 6.  <body>
-7.  <p>The most simple example of Web Workers</p>
-8.  <script>
-9.     // create a new worker (a thread that will be run in the background)
-10.    var worker = new Worker("worker0.js");
+7.    <p>The most simple example of Web Workers</p>
+8.    <script>
+9.      // create a new worker (a thread that will be run in the background)
+10.     var worker = new Worker("worker0.js");
 11. 
-12.    // Watch for messages from the worker
-13.    worker.onmessage = function(e){
-14.      // Do something with the message from the client: e.data
+12.     // Watch for messages from the worker
+13.     worker.onmessage = function(e){
+14.     // Do something with the message from the client: e.data
 15.      alert("Got message that the background work is finished...")
-16.    };
+16.     };
 17. 
-18.    // Send a message to the worker
-19.    worker.postMessage("start");
-20. </script>
+18.     // Send a message to the worker
+19.     worker.postMessage("start");
+20.   </script>
 21. </body>
 22. </html>
 ```
@@ -19972,7 +19980,7 @@ Worker:
 The JavaScript code of the worker (worker0.js):
 
 <details>
-  <summary>HTML code!</summary>
+  <summary>JavaScript source code!</summary>
 
 ```
 1.  onmessage = function(e){
@@ -20051,16 +20059,16 @@ alt="Prime nulmber computation." />
 1.  <!DOCTYPE HTML>
 2.  <html>
 3.  <head>
-4.  <title>Worker example: One-core computation</title>
+4.    <title>Worker example: One-core computation</title>
 5.  </head>
 6.  <body>
-7.  <p>The highest prime number discovered so far is: <output id="result"></output></p>
-8.  <script>
-9.      <b>var worker = new Worker('worker.js');</b>
-10.     <b>worker.onmessage = function (event)</b> {
-11.         document.getElementById('result').textContent = event.data;
-12. };
-13. </script>
+7.    <p>The highest prime number discovered so far is: <output id="result"></output></p>
+8.    <script>
+9.      <b>var worker = new Worker('worker.js');</b>
+10.     <b>worker.onmessage = function (event)</b> {
+11.       document.getElementById('result').textContent = event.data;
+12.     };
+13.   </script>
 14. </body>
 15. </html>
 ```
@@ -21212,11 +21220,11 @@ This example has been adapted and put on jsbin.com so that you can tweak
 it: <a href="https://jsbin.com/uyuqek/4/edit">https://jsbin.com/uyuqek/4/edit</a>
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------------------- 265. devicemotion api (487) ---------------------------------->
+<!--------------------------------- 262. devicemotion api (481) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image265.jpeg"
-   alt="Devicemotion API."
+<img src="./images/image262.jpeg"
+   alt="Devicemotion API.  Uses jQuery mobile."
    width="35%" />
 </p>
 
@@ -21305,17 +21313,16 @@ it: <a href="https://jsbin.com/uyuqek/4/edit">https://jsbin.com/uyuqek/4/edit</
 
 </details>
 
-
 <h4>Move a ball on the screen</h4>
 
 <a href="https://jsbin.com/eyahuv/2/edit">Try this example at JsBin</a>. If using a
 mobile device, <a href="https://jsbin.com/eyahuv/2"use this URL instead</a>!
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------------------- 266. moving balls (489) -------------------------------------->
+<!--------------------------------- 263. moving balls (489) -------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image266.png"
+<img src="./images/image263.png"
    alt="Moving Balls"
    width="35%" />
 </p>
@@ -21463,8 +21470,10 @@ mobile device, <a href="https://jsbin.com/eyahuv/2"use this URL instead</a>!
 135.      <div id="status"></div>
 136.      <div id="details"></div>
 137.      <div id="board">
-138.          <div id="ball"></div>
-139.      </div>spec: <a href="https://w3c.github.io/deviceorientation/spec-source-orientation.html" target="https://w3c.github.io/deviceorientation/spec-source-orientation.html">https://w3c.github.io/deviceorientation/spec-source-orientation.html</a>
+138.        <div id="ball"></div>
+139.      </div>
+spec: 
+<a href="https://w3c.github.io/deviceorientation/spec-source-orientation.html" target="https://w3c.github.io/deviceorientation/spec-source-orientation.html">https://w3c.github.io/deviceorientation/spec-source-orientation.html</a>
 140. 
 141.   </body>
 142. 
@@ -21475,13 +21484,12 @@ mobile device, <a href="https://jsbin.com/eyahuv/2"use this URL instead</a>!
 
 <h4>External resources</h4>
 <ul>
-   <li>From the W3C specification: <a href="https://w3c.github.io/deviceorientation/spec-source-orientation.html#devicemotion">devicemotion
-       Event</a></li>
-   <li>From Google Devs: "<a href="https://developers.google.com/web/fundamentals/native-hardware/device-orientation/">Device Orientation &
-       Motion</s>"</li>
-   <li>On Dev. Opera: "<a href="https://dev.opera.com/articles/w3c-device-orientation-api/">The W3C Device Orientation API: Detecting
-       Orientation and
-       Acceleration</a>"</li>
+  <li>From the W3C specification: 
+    <a href="https://w3c.github.io/deviceorientation/spec-source-orientation.html#devicemotion">devicemotion Event</a></li>
+  <li>From Google Devs: 
+    "<a   href="https://developers.google.com/web/fundamentals/native-hardware/device-orientation/">Device Orientation & Motion</s>"</li>
+  <li>On Dev. Opera: "<a href="https://dev.opera.com/articles/w3c-device-orientation-api/">
+    The W3C Device Orientation API: Detecting Orientation and Acceleration</a>"</li>
 </ul>
 
 <!------------------------------------------------------------------------------------------------>
@@ -21502,14 +21510,13 @@ your comments/observations/questions and share your creations.
 
 <h4>Optional projects:</h4>
 <ul>
-   <li><a href="https://mainline.i3s.unice.fr/mooc/SkywardBound/">The Christmas
-       game</a> developed by
-       students from the previous run is a perfect candidate to be
-       controlled using the APIs seen in this course!! I would start with
-       the orientation API and try to move the bunny left/right...</li>
-   <li>Using the game framework, try to control the monster using the
-       orientation API, so that it avoids the balls - see the last example
-       from Module 2 of the course!</li>
+  <li><a href="https://mainline.i3s.unice.fr/mooc/SkywardBound/">The Christmas
+    game</a> developed by students from the previous run is a perfect candidate to be
+    controlled using the APIs seen in this course!! I would start with
+    the orientation API and try to move the bunny left/right...</li>
+  <li>Using the game framework, try to control the monster using the
+    orientation API, so that it avoids the balls - see the last example
+    from Module 2 of the course!</li>
 </ul>
 
 <!---
