@@ -775,6 +775,7 @@ drop, the PHP is the same)
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------- 02. script not reesponding (xx) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
 <img src="./images/image002.png"
    alt="ScriptNotResponding1"
    width="45%" />
@@ -1053,11 +1054,12 @@ examples will actually use these.
 <h4>JS Bin</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------- 04. js bin logo (xx) -------------------------------->
+<!------------------------------------ 04. js bin logo (xx) -------------------------------------->
 <!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
 <img src="./images/image004.png"
-   alt="JS Bin logo."
-   width="10%" />
+   width="10%"
+   alt="JS Bin logo." />
 </p>
 
 <a href="http://jsbin.com/">JS Bin</a> is an open source
@@ -1075,9 +1077,10 @@ or on YouTube. Keep in mind that it's always better to be logged in (it's free) 
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------------ 05. codepen logo (xx) ------------------------------------->
 <!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
 <img src="./images/image005.png"
+   width="10%"
    alt="CodePen logo."
-   width="10%" />
 </p>
 
 <a href="http://codepen.io/">CodePen</a> is an HTML, CSS, and
@@ -1103,7 +1106,7 @@ or similar tools, would be really appreciated.
 For over 20 years, the W3C has been developing and
 hosting <a href="https://w3c.github.io/developers/">[<b><u>free</u></b> and <b><u>open
 source</u></b> tools</a> used every day
-by <b>millions of Web developers and Web designers<b>. All the tools
+by <b>millions of Web developers and Web designers</b>. All the tools
 listed below are Web-based, and are available as downloadable sources or
 as free services on the <a href="https://w3c.github.io/developers/tools/">W3C Developers tools</a> site.
 
@@ -1112,9 +1115,10 @@ as free services on the <a href="https://w3c.github.io/developers/tools/">W3C D
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------------ 06. w3c validator (xx) ------------------------------------->
 <!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
 <img src="./images/image006.png"
-   alt="W3C Validator."
-   width="10%" />
+   width="10%"
+   alt="W3C Validator." />
 </p>
 
 The <a href="https://validator.w3.org/">W3C validator</a> checks the <a href="https://validator.w3.org/docs/help.html#validation_basics">markup
@@ -1129,9 +1133,10 @@ stylesheets.
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------------- 07. css validator (xx) ------------------------------------->
 <!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
 <img src="./images/image007.png"
-   alt="Laptop showing unicorn validator."
-   width="10%" />
+   width="10%"
+   alt="Laptop showing unicorn validator." />
 </p>
 
 <h4>Unicorn</h4>
@@ -1168,7 +1173,7 @@ accessibility guidelines, the Mobile Web Best Practices, and a number of
 internationalization tips.
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 08. w3c lookup (11) -------------------------------->
+<!------------------------------------ 08. w3c lookup (xx) --------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image008.png?raw=true"
@@ -1218,7 +1223,7 @@ is a snapshot of what information is given by CanIUse when searching for
 "CSS3 colors".
 
 <!------------------------------------------------------------------------------------------------>
-<!---------- 09. Example of a CanIUse browser support table (using CSS3 colors) (xx) ------------->
+<!----------- 09. Example of a CanIUse browser support table (using CSS3 colors) (xx) ------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image009.gif?raw=true"
@@ -1272,8 +1277,15 @@ Contributing to this standardization process might be a bit scary or
 hard to approach at first, but understanding at a deeper level how these
 technologies are built is a great way to build your expertise.
 
-<img src="./images/image011.png" style="width:1in;height:0.82895in"
-alt="Logo of GitHub (the Octocat)" />
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 11. github (the octocat) logo (##) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image011.png?raw=true"
+   width="10%"
+   alt="GitHub (the Octocat) logo." />
+</p>
+<!-- <img src="./images/image011.png" style="width:1in;height:0.82895in" -->
 
 If you're looking to an easy way to dive into this standardization
 processes, check out which [issues in the W3C GitHub repositories have
@@ -1283,8 +1295,14 @@ see if you find anything where you think you would be ready to help.
 
 Shape the future
 
-<img src="./images/image012.png" style="width:2in;height:0.55411in"
-alt="Logo of the W3C Web Incubator Community Group" />
+<!------------------------------------------------------------------------------------------------>
+<!---------------------- 12. w3c web incubator community group logo (##) ------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image012.png"
+  style="width:2in;height:0.55411in"
+  alt="Logo of the W3C Web Incubator Community Group" />
+</p>
 
 Another approach is to go and bring feedback on ideas for future
 technologies: the [W3C Web Platform Community Incubator
@@ -1296,11 +1314,16 @@ Happy Web building!
 
 ### What is W3C?
 
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 13. w3c www consortium logo (19) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
 <img src="./images/image013.png" style="width:3in;height:0.7612in" />
+</p>
 
 <b>As steward of global Web standards, W3C's mission is to safeguard the
 openness, accessibility, and freedom of the World Wide Web from a
-technical perspective.<b>
+technical perspective.</b>
 
 W3C's primary activity is to develop protocols and guidelines that
 ensure long-term growth for the Web. The widely adopted Web standards
@@ -1417,10 +1440,10 @@ indicates the language of your content.</b>
 This example below indicates that the page is in French.
 
 ```
-5.  <!doctype html>
-6.  <html lang="fr">
-7.  <head>
-8.  ...
+<!doctype html>
+<html lang="fr">
+<head>
+...
 ```
 
 <h4>Example #3: cultural bias</h4>
@@ -1499,14 +1522,14 @@ width!):
 
 ```
 1.  <video id="myVideo" preload="metadata" controls crossOrigin="anonymous">
-2. <source src="https://...../elephants-dream-medium.mp4" type="video/mp4">
-3. <source src="https://...../elephants-dream-medium.webm" type="video/webm">
-4.     <b><track label="English    subtitles" kind="subtitles" srclang="en"</b>
-5. <b>src="https://</b>.....<b>/elephants-dream-subtitles-en.vtt"></b>
-6. <b>    <track label="Deutsch subtitles" kind="subtitles" srclang="de"</b>
-7. <b>src="https://</b>.....<b>/elephants-dream-subtitles-de.vtt" default></b>
-8. <b>    <track label="English chapters" kind="chapters" srclang="en"</b>
-9. <b>src="https://</b>.....<b>/elephants-dream-chapters-en.vtt"></b>
+2.    <source src="https://...../elephants-dream-medium.mp4" type="video/mp4">
+3.    <source src="https://...../elephants-dream-medium.webm" type="video/webm">
+4.      <track label="English    subtitles" kind="subtitles" srclang="en"
+5.        src="https://.....<b>/elephants-dream-subtitles-en.vtt">
+6.      <track label="Deutsch subtitles" kind="subtitles" srclang="de"
+7.        src="https://...../elephants-dream-subtitles-de.vtt" default>
+8.      <track label="English chapters" kind="chapters" srclang="en"
+9.        src="https://...../elephants-dream-chapters-en.vtt">
 10. </video>
 ```
 
@@ -1547,7 +1570,7 @@ reminder, let's look at a WebVTT file:
 WEBVTT
 
 <details>
-  <summary>Here!</summary>
+  <summary>WEBTT Code Here!</summary>
 
 ```
 19. 
@@ -1582,7 +1605,7 @@ alt="remote controller with subtitles button." />
 
 The different time segments are called "cues" and each cue has an id (1,
 2, 3 and 4 in the above example), a startTime and an endTime, and
-a text content that can contain HTML tags for styling (<b>, etc...)
+a text content that can contain HTML tags for styling (&lt;b&gt;, etc...)
 or be associated with a "voice" as in the above example. In this case,
 the text content is wrapped
 inside <v <i>name_of_speaker</i>>...</v> elements.
@@ -1608,7 +1631,9 @@ implement missing features such as:
 
 -   etc.
 
+<!------------------------------------------------------------------------------------------------>
 <h2 id="ch1">Module 1</h2>
+<!------------------------------------------------------------------------------------------------>
 
 Hi! Welcome to Part 2 of the W3C HTML5 course. How about we start by
 looking at advanced HTML5 multimedia features? First, we will look at
@@ -1735,16 +1760,16 @@ Here is a small example of a video with 3 different tracks
 width!):
 
 ```
-1.  <video id="myVideo" preload="metadata" controls crossOrigin="anonymous">
-2.   <source src="https://...../elephants-dream-medium.mp4" type="video/mp4">
-3.   <source src="https://...../elephants-dream-medium.webm" type="video/webm">
-4.  <b><track label="English subtitles" kind="subtitles" srclang="en"</b>
-5.  <b>src="https://</b>.....<b>/elephants-dream-subtitles-en.vtt"></b>
-6.  <b><track label="Deutsch subtitles" kind="subtitles" srclang="de"</b>
-7.  <b>src="https://</b>.....<b>/elephants-dream-subtitles-de.vtt" default></b>
-8.  <b><track label="English chapters" kind="chapters" srclang="en"</b>
-9.  <b>src="https://</b>.....<b>/elephants-dream-chapters-en.vtt"></b>
-10. </video>
+<video id="myVideo" preload="metadata" controls crossOrigin="anonymous">
+  <source src="https://...../elephants-dream-medium.mp4" type="video/mp4">
+  <source src="https://...../elephants-dream-medium.webm" type="video/webm">
+  <track label="English subtitles" kind="subtitles" srclang="en"
+    src="https://...../elephants-dream-subtitles-en.vtt">
+  <track label="Deutsch subtitles" kind="subtitles" srclang="de"
+    src="https://...../elephants-dream-subtitles-de.vtt" default>
+  <track label="English chapters" kind="chapters" srclang="en"
+    src="https://...../elephants-dream-chapters-en.vtt">
+</video>
 ```
 
 And here is how it renders in your current browser (please play the
@@ -1812,10 +1837,9 @@ reminder, let's look at a WebVTT file:
 
 </details>
 
-
 The different time segments are called "cues" and each cue has an id (1,
 2, 3 and 4 in the above example), a startTime and an endTime, and
-a text content that can contain HTML tags for styling (<b>, etc...)
+a text content that can contain HTML tags for styling (&lt;b&gt;, etc...)
 or be associated with a "voice" as in the above example. In this case,
 the text content is wrapped
 inside <v <i>name_of_speaker</i>>...</v> elements.
@@ -1841,7 +1865,9 @@ implement missing features such as:
 
 -   etc.
 
+<!------------------------------------------------------------------------------------------------>
 <h3 id="ch1-2-2">1.2.2 The HTML Track Element, getting the status of a track</h3>
+<!------------------------------------------------------------------------------------------------>
 
 Hi, in this video I will show you how we can work with the track
 elements from JavaScript, just to know which track has been loaded and
@@ -1931,23 +1957,20 @@ choosing the different tracks. I will explain that in a next video.
   <summary>HTML code!</summary>
 
 ```
-1.  <video id="myVideo" preload="metadata" controls crossOrigin="anonymous">
+1. <video id="myVideo" preload="metadata" controls crossOrigin="anonymous">
 2.   <source src="https://...../elephants-dream-medium.mp4" type="video/mp4">
 3.   <source src="https://...../elephants-dream-medium.webm" type="video/webm">
-4.      <b><track label="English subtitles" kind="subtitles" srclang="en"</b>
-> <b>         
->  src="https://</b>.....<b>/elephants-dream-subtitles-en.vtt" ></b>
-5.  <b>    <track label="Deutsch
-    subtitles" kind="subtitles" srclang="de"</b>
->  <b>src="https://</b>.....<b>/elephants-dream-subtitles-de.vtt" default></b>
-6.  <b>    <track label="English
-    chapters" kind="chapters" srclang="en"</b>
-7.  <b>src="https://</b>.....<b>/elephants-dream-chapters-en.vtt"></b>
-8.  </video>
+4.     <track label="English subtitles" kind="subtitles" srclang="en"
+>        src="https://...../elephants-dream-subtitles-en.vtt" >
+5.     <track label="Deutsch subtitles" kind="subtitles" srclang="de"
+>        src="https://</b>.....<b>/elephants-dream-subtitles-de.vtt" default>
+6.      <track label="English chapters" kind="chapters" srclang="en"
+7.       src="https://</b>.....<b>/elephants-dream-chapters-en.vtt">
+8. </video>
 9.  
-10. <div id="trackStatusesDiv">
-11.     <h3>HTML track descriptions</h3>
-12. </div>
+10.<div id="trackStatusesDiv">
+11.  <h3>HTML track descriptions</h3>
+12.</div>
 ```
 
 </details>
@@ -2007,6 +2030,7 @@ manipulate these elements as "HTML elements" - we will call them the
 ```
 
 </details>
+
 <hr>
 
 <h4>The code is rather straightforward:</h4>
@@ -2049,7 +2073,9 @@ have been loaded. 
 Now, it's time to look at the twin brother of an HTML track: the
 corresponding TextTrack object!
 
+<!------------------------------------------------------------------------------------------------>
 <h3 id="ch1-2-3">1.2.3 The TextTrack Object</h3>
+<!------------------------------------------------------------------------------------------------>
 
 Hi! Now we are preparing ourselves for reading the content of the
 different text tracks and display them.
@@ -2274,7 +2300,7 @@ Here are the additions we made to the JavaScript code from the previous
 example:
 
 <details>
-  <summary>JavaScript additions</summary>
+  <summary>JavaScript additions!</summary>
 
 ```
 1.  function readContent(track) {
@@ -2339,7 +2365,9 @@ Explanations:
     TextTrack. Here we do nothing special for the moment except that we
     refresh the different track statuses in the HTML document.
 
+<!------------------------------------------------------------------------------------------------>
 <h3 id="ch1-2-4">1.2.4 Working With Cues</h3>
+<!------------------------------------------------------------------------------------------------>
 
 Hi! We will continue the last example from the previous video, and this
 time when we will click on the "force load track 0" or "force load track
@@ -2488,7 +2516,9 @@ This technique will be used in one of the next lessons, and we will show
 you how to make a clickable transcript on the side of the video
 - something quite similar to what the edX video player does.
 
+<!------------------------------------------------------------------------------------------------>
 <h3 id="ch1-2-5">1.2.5 Listening to Events</h3>
+<!------------------------------------------------------------------------------------------------>
 
 Ok. This time we will talk about track events and cue events.
 
@@ -2593,10 +2623,10 @@ track that fired the event.
 In the following lessons, we show how to deal with overlapping cues
 (cases where we have more than one active cue).
 
-Example of enter and exit event listeners on a track's cues
+Example of enter and exit event listeners on a track's cues.
 
 <details>
-  <summary>Code!</summary>
+  <summary>JavaScript Code!</summary>
 
 ```
 1.   // iterate on all cues of the current track
@@ -2645,7 +2675,7 @@ alt="" />
 <h4>Source code extract:</h4>
 
 <details>
-  <summary>readContent code</summary>
+  <summary>readContent code!</summary>
 
 ```
 1.  function readContent(track) {
@@ -2712,9 +2742,13 @@ shows how to use enter and exit events on cues</a>:
 
 </details>
 
+<!------------------------------------------------------------------------------------------------>
 <h3 id="ch1-3">1.3 Advanced Features for <audio> and <video> Players</h3>
+<!------------------------------------------------------------------------------------------------>
 
+<!------------------------------------------------------------------------------------------------>
 <h3 id="ch1-3-1">1.3.1 With a Clickable Transcript on the Side</h3>
+<!------------------------------------------------------------------------------------------------>
 
 Hi! This time, we will just go a little bit further than in the previous
 examples.
@@ -2889,7 +2923,7 @@ JSBin](https://jsbin.com/sodihux/1/edit?html,css,js,output):
 <!-- <h4>HTML code:</h4> -->
 
 <details>
-  <summary>HTML code</summary>
+  <summary>HTML code!</summary>
 
 ```
 1.  <section id="all">
@@ -2931,7 +2965,7 @@ JSBin](https://jsbin.com/sodihux/1/edit?html,css,js,output):
 
 <details>
 <h4>
-  <summary>Code from this example</summary>
+  <summary>CSS code!</summary>
 </h4>
 
 ```
@@ -3319,7 +3353,9 @@ element with an id of transcript.
 
 </details>
 
+<!------------------------------------------------------------------------------------------------>
 <h3 id="ch1-3-2">1.3.2 Captions, Descriptions, Chapters and Metadata</h3>
+<!------------------------------------------------------------------------------------------------>
 
 Example #2: showing video description while playing, listening to
 events, changing the mode of a track.
@@ -3518,7 +3554,9 @@ function logCue() {
 
 </details>
 
+<!------------------------------------------------------------------------------------------------>
 <h3 id="ch1-3-3">1.3.3 With Buttons for Choosing the Subtitle Language</h3>
+<!------------------------------------------------------------------------------------------------>
 
 Example #3: adding buttons for choosing the subtitle/caption track
 
@@ -3660,7 +3698,9 @@ alt="Buttons for choosing the track/language under a standard video player" />
 -   The MDN documentation on [Web Video Text Tracks
     Format](https://developer.mozilla.org/fr/docs/Web/API/WebVTT_API) (WebVTT)
 
+<!------------------------------------------------------------------------------------------------>
 <h3 id="ch1-3-4">1.3.4 With a Simple Chapter Navigation Menu</h3>
+<!------------------------------------------------------------------------------------------------>
 
 Example #4: making a simple chapter navigation menu
 
@@ -3817,7 +3857,9 @@ the code provided, in order to add such an enhanced progress indicator.
 However, we will see how we can do better by using JSON objects as cue
 contents. This will be the topic of the next two lessons!
 
+<!------------------------------------------------------------------------------------------------>
 <h3 id="ch1-3-5">1.3.5 With Thumbnails, Using JSON Cues</h3>
+<!------------------------------------------------------------------------------------------------>
 
 Example #5: create a chapter menu with image thumbnails
 
@@ -4192,7 +4234,9 @@ code from earlier in this lesson.
 <img src="./images/image048.jpeg" style="width:5in;height:6.18857in"
 alt="Chapter menu + clickable transcript" />
 
+<!------------------------------------------------------------------------------------------------>
 <h3 id="ch1-4-1">1.4.1 Creating Tracks on the Fly</h3>
+<!------------------------------------------------------------------------------------------------>
 
 In this lesson, we are going to show:
 
@@ -6481,8 +6525,12 @@ Here is how the WebAudio graph looks like (picture taken with the now
 discontinued FireFox WebAudio debugger, you should get similar results
 with the Chrome WebAudio Inspector extension):
 
-<img src="./images/image078.jpeg" style="width:4in;height:3.27308in"
-alt="Screenshot with buttons that play sound samples many times with different pitch, volume, interval of times" />
+<p align="center" width="100%">
+<img src="./images/image078.jpeg?raw=true"
+  width="40%"
+  alt="Screenshot with buttons that play sound samples many times with different pitch, volume, interval of times." />
+</p>
+<!-- <img src="./images/image078.jpeg" style="width:4in;height:3.27308in" -->
 
 Music applications such as Digital Audio Workstations (GarageBand-like
 apps) will need to play/record/loop music tracks in memory.
@@ -7969,7 +8017,7 @@ references useful:
     encyclopedia](https://en.wikipedia.org/wiki/Separation_of_concerns)
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch2-3-4">2.3.4 Addi key listeners</h3>
+<h3 id="ch2-3-4">2.3.4 Adding key listeners</h3>
 <!------------------------------------------------------------------------------------------------>
 
 ##### A few reminders
@@ -9573,123 +9621,67 @@ second = 16.66 ms.
 <img src="./images/image118.jpeg" style="width:2.75in;height:0.8125in"
 alt="image of a small rectangle in a canvas, moving from left to right" />
 
+
+```
 1.  <!DOCTYPE html>
-
 2.  <html lang="en">
-
 3.  <head>
-
 4.    <meta charset=utf-8 />
-
 5.    <title>Small animation example</title>
-
 6.    <script>
-
 7.      var canvas, ctx;
-
 8.      var width, height;
-
 9.      var x, y;
-
 10.     var speedX;
-
 11. 
-
 12.     // Called after the DOM is ready (page loaded)
-
 13.     function init() {
-
 14.        // init the different variables
-
 15.        canvas = document.querySelector("#mycanvas");
-
 16.        ctx = canvas.getContext('2d');
-
 17.        width = canvas.width;
-
 18.        height = canvas.height;
-
 19. 
-
 20.        x=10; y = 10;
-
 21. 
-
 22.        // Move 3 pixels left or right at each frame
-
 23.        speedX = 3;
-
 24. 
-
 25.        // Start animation
-
 26.        animationLoop();
-
 27.     }
-
 28. 
-
 29.     function animationLoop() {
-
 30.        // an animation involves: 1) clear canvas and 2) draw shapes,
-
-31.        // 3) move shapes, 4) recall the loop with
-    requestAnimationFrame
-
+31.        // 3) move shapes, 4) recall the loop with requestAnimationFrame
 32. 
-
 33.        // clear canvas
-
 34.        ctx.clearRect(0, 0, width, height);
-
 35. 
-
 36.        ctx.strokeRect(x, y, 10, 10);
-
 37. 
-
 38.        // move rectangle
-
 39.        x += speedX;
-
 40. 
-
 41.        // check collision on left or right
-
 42.        if(((x+5) > width) || (x <= 0)) {
-
 43.           // cancel move + inverse speed
-
 44.           x -= speedX;
-
 45.           speedX = -speedX;
-
 46.        }
-
 47. 
-
 48.        // animate.
-
 49.        requestAnimationFrame(animationLoop);
-
 50.     }
-
 51. </script>
-
 52. </head>
-
 53. 
-
 54. <body onload="init();">
-
-55. <canvas id="mycanvas" width="200" height="50" style="border: 2px solid
-    black">
-
+55. <canvas id="mycanvas" width="200" height="50" style="border: 2px solid black">
 56.  </canvas>
-
 57. </body>
-
 58. </html>
+```
 
 If you try this example on a low-end smartphone (use
 this [URL](https://jsbin.com/dibuze) for the example in stand-alone
@@ -9715,21 +9707,16 @@ ideal impossible to reach.
 square moves much slower on the screen. Indeed, its speed is a direct
 consequence of the extra time spent in the animation loop.
 
+```
 1.  function animationLoop() {
-
 2.      ...
-
-3.      **for(var i = 0; i < 50000000; i++) {**
-
-4.  **       // slow down artificially the animation**
-
-5.  **    }**
-
+3.      for(var i = 0; i < 50000000; i++) {
+4.         // slow down artificially the animation
+5.      }
 6.      ...
-
 7.      requestAnimationFrame(animationLoop);
-
 8.  }
+```
 
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch2-4-2">2.4.2 Measuring time between frames</h3>
@@ -9744,7 +9731,9 @@ Let's modify the example from the previous lesson slightly by adding
 a *time-based animation*.  Here we use the "standard JavaScript" way for
 measuring time, using JavaScript's Date object:
 
-1.  var time = new Date().getTime();
+```
+var time = new Date().getTime();
+```
 
 The getTime() method returns the number of milliseconds since midnight
 on January 1, 1970. This is the number of milliseconds that have elapsed
@@ -9782,11 +9771,11 @@ Source code from the example:
 8.      var width, height;
 9.      var x, y, incX; // incX is the distance from the previously > drawn
 10.                     // rectangle to the new one
-11.     **var speedX; // speedX is the target speed of the rectangle, in > pixels/s**
+11.     var speedX; // speedX is the target speed of the rectangle, in > pixels/s
 12. 
-13.     **// for time based animation**
-14.     **var now, delta;**
-15.     **var then = new Date().getTime();**
+13.     // for time based animation
+14.     var now, delta;
+15.     var then = new Date().getTime();
 16. 
 17.     // Called after the DOM is ready (page loaded)
 18.     function init() {
@@ -9805,15 +9794,15 @@ Source code from the example:
 31.    }
 32. 
 33.    function animationLoop() {
-34.      **// Measure time**
-35.      **now = new Date().getTime();**
+34.      // Measure time
+35.      now = new Date().getTime();
 36.  
 37.      // How long between the current frame and the previous one?
-38.      **delta = now - then;**
+38.      delta = now - then;
 39.      //console.log(delta);
 40.      // Compute the displacement in x (in pixels) in function of the > time elapsed and
 41.      // in function of the wanted speed
-42.      **incX = calcDistanceToMove(delta, speedX);**
+42.      incX = calcDistanceToMove(delta, speedX);
 43. 
 44.      // an animation involves: 1) clear canvas and 2) draw shapes,
 45.      // 3) move shapes, 4) recall the loop with  > requestAnimationFrame
@@ -9833,8 +9822,8 @@ Source code from the example:
 59.         speedX = -speedX;
 60.      }
 61. 
-62.      **// Store time**
-63.      **then = now;**
+62.      // Store time
+63.      then = now;
 64. 
 65.      requestAnimationFrame(animationLoop);
 66.  }
@@ -9848,9 +9837,9 @@ Source code from the example:
 74.  // = 16.66 ms, so the number of pixels to move = (speed * > del)/1000.
 75.  // If the delay is twice as
 76.  // long, the formula works: let's move the rectangle for twice as > long!
-77. ** var calcDistanceToMove = function(delta, speed) {**
-78. **     return (speed * delta) / 1000;**
-79. ** }**
+77.  var calcDistanceToMove = function(delta, speed) {
+78.      return (speed * delta) / 1000;
+79.  }
 80. 
 81.  </script>
 82. </head>
@@ -9909,9 +9898,9 @@ adapts itself!
 15.   // clear canvas
 16.   ctx.clearRect(0, 0, width, height);
 17. 
-18.   **for(var i = 0; i < 50000000; i++) {**
-19. **    // just to slow down the animation**
-20. **  }**
+18.   for(var i = 0; i < 50000000; i++) {
+19.     // just to slow down the animation
+20.   }
 21. 
 22.   ctx.strokeRect(x, y, 10, 10);
 23. 
@@ -9990,8 +9979,8 @@ Source code of the example:
 5. 
 6.    // for time based animation
 7.    var now, delta;
-8.    **// High resolution timer**
-9.    **var then = performance.now();**
+8.    // High resolution timer
+9.    var then = performance.now();
 10. 
 11.    // Called after the DOM is ready (page loaded)
 12.    function init() {
@@ -9999,8 +9988,8 @@ Source code of the example:
 14.    }
 15. 
 16.    function animationLoop() {
-17.      **// Measure time, with high resolution timer**
-18.      **now = performance.now();**
+17.      // Measure time, with high resolution timer
+18.      now = performance.now();
 19.  
 20.      // How long between the current frame and the previous one?
 21.     delta = now - then;
@@ -10101,9 +10090,9 @@ timestamp parameter.
      requestAnimationFrame(animationLoop);
    }
 
-   function animationLoop(**currentTime**) {
+   function animationLoop(currentTime) {
      // How long between the current frame and the previous one?
-     **delta = currentTime - oldTime;**
+     delta = currentTime - oldTime;
 
      // Compute the displacement in x (in pixels) in function of the time elapsed and
      // in function of the wanted speed
@@ -10195,13 +10184,13 @@ Here is the [online example at JSBin](https://jsbin.com/bonutur/edit).
 367.    var lastY = height * Math.random();
 368.    var hue = 0;
 369.  
-370.    **// Michel Buffa: set the target frame rate. TRY TO CHANGE THIS VALUE AND SEE**
-371. **   // THE RESULT. Try 2 frames/s, 10 frames/s, 60 frames/s Normally there**
-372. **   // should be a limit of 60 frames/s in the browser's implementations.**
-373. **   setFrameRateInFramesPerSecond(60);**
+370.    // Michel Buffa: set the target frame rate. TRY TO CHANGE THIS VALUE AND SEE
+371.    // THE RESULT. Try 2 frames/s, 10 frames/s, 60 frames/s Normally there
+372.    // should be a limit of 60 frames/s in the browser's implementations.
+373.    setFrameRateInFramesPerSecond(60);
 374.  
 375.   // for time based animation. DelayInMS corresponds to the target framerate
-376.   var now, delta, delayInMS,** totalTimeSinceLastRedraw = 0;**
+376.   var now, delta, delayInMS, totalTimeSinceLastRedraw = 0;
 377.  
 378.   // High resolution timer
 379.   var then = performance.now();
@@ -10209,9 +10198,9 @@ Here is the [online example at JSBin](https://jsbin.com/bonutur/edit).
 381.   // start the animation
 382.   requestAnimationFrame(mainloop);
 383.  
-384.   **function setFrameRateInFramesPerSecond(frameRate) {**
-385. **    delayInMs = 1000 / frameRate;**
-386. **  }**
+384.   function setFrameRateInFramesPerSecond(frameRate) {
+385.     delayInMs = 1000 / frameRate;
+386.   }
 387.  
 388.   // each function that is going to be run as an animation should end by
 389.   // asking again for a new frame of animation
@@ -10266,11 +10255,11 @@ Here is the [online example at JSBin](https://jsbin.com/bonutur/edit).
 438.  
 439.        ctx.restore();
 440.  
-441.        **// reset the total time since last redraw**
-442. **       totalTimeSinceLastRedraw = 0;**
+441.        // reset the total time since last redraw
+442.        totalTimeSinceLastRedraw = 0;
 443.     } else {
-444.        **// sum the total time since last redraw**
-445. **       totalTimeSinceLastRedraw += delta;**
+444.        // sum the total time since last redraw
+445.        totalTimeSinceLastRedraw += delta;
 446.     }
 447.  
 448.     // Store time
@@ -10344,13 +10333,13 @@ technique](https://jsbin.com/momeci/edit). 
 48.      // How long between the current frame and the previous one?
 49.      delta = now - then;
 50. 
-51. **     if(totalTimeSinceLastRedraw > delayInMs) {**
+51.      if(totalTimeSinceLastRedraw > delayInMs) {
 52.        // Compute the displacement in x (in pixels) in function of the time elapsed
 53.        // since the last draw and
 54.        // in function of the wanted speed. This time, instead of delta we
 55.        // use totalTimeSinceLastRedraw as we're not always drawing at
 56.        // each execution of mainloop
-57.      incX = calcDistanceToMove(**totalTimeSinceLastRedraw**, speedX);
+57.      incX = calcDistanceToMove(totalTimeSinceLastRedraw, speedX);
 58. 
 59.        // an animation involves: 1) clear canvas and 2) draw shapes,
 60.        // 3) move shapes, 4) recall the loop with requestAnimationFrame
@@ -10369,8 +10358,8 @@ technique](https://jsbin.com/momeci/edit). 
 73.         x -= incX;
 74.         speedX = -speedX;
 75.       }
-76.      ** // reset the total time since last redraw**
-77. **      totalTimeSinceLastRedraw = delta;**
+76.       // reset the total time since last redraw
+77.       totalTimeSinceLastRedraw = delta;
 78.    } else {
 79.      // sum the total time since last redraw
 80.      totalTimeSinceLastRedraw += delta;
@@ -10448,7 +10437,7 @@ Here are the parts we changed:
 2.  var monster = {
 3.     x:10,
 4.     y:10,
-5.     **speed:100, // pixels/s this time !**
+5.     speed:100, // pixels/s this time !
 6.  };
 ```
 
@@ -10460,18 +10449,18 @@ Notice that here we pass the delta as a parameter to
 the updateMonsterPosition call:
 
 ```
-1.  **function timer(currentTime) {**
-2.  **   var delta = currentTime - oldTime;**
-3.  **   oldTime = currentTime;**
-4.  **   return delta;**
-5.  **}**
+1.  function timer(currentTime) {
+2.     var delta = currentTime - oldTime;
+3.     oldTime = currentTime;
+4.     return delta;
+5.  }
 6.  
-7.  var mainLoop = function(**time**){
+7.  var mainLoop = function(time){
 8.     //main function, called each frame
-9.     **measureFPS(time);**
+9.     measureFPS(time);
 10. 
-11.    **// number of ms since last frame draw**
-12. **   delta = timer(time);**
+11.    // number of ms since last frame draw
+12.    delta = timer(time);
 13. 
 14.    // Clear the canvas
 15.    clearCanvas();
@@ -10479,8 +10468,8 @@ the updateMonsterPosition call:
 17.    // draw the monster
 18.    drawMyMonster(monster.x, monster.y);
 19. 
-20.    **// Check inputs and move the monster**
-21. **   updateMonsterPosition(delta);**
+20.    // Check inputs and move the monster
+21.    updateMonsterPosition(delta);
 22. 
 23.    // call the animation loop every 1/60th of second
 24.    requestAnimationFrame(mainLoop);
@@ -10491,12 +10480,12 @@ the updateMonsterPosition call:
     the updateMonsterPosition(...) function
 
 ```
-1.  function updateMonsterPosition(**delta**) {
+1.  function updateMonsterPosition(delta) {
 2.     ...
 3.     // Compute the incX and inY in pixels depending
 4.     // on the time elapsed since last redraw
-5.     **monster.x += calcDistanceToMove(delta, monster.speedX);**
-6.    ** monster.y += calcDistanceToMove(delta, monster.speedY);**
+5.     monster.x += calcDistanceToMove(delta, monster.speedX);
+6.     monster.y += calcDistanceToMove(delta, monster.speedY);
 7.   }
 ```
 
@@ -10652,8 +10641,8 @@ Here is the rest of the code from this example:
 ```
 1.  var canvas, ctx, width, height;
 2.  
-3.  **// array of balls to animate**
-4.  **var ballArray = [];**
+3.  // array of balls to animate
+4.  var ballArray = [];
 5.  
 6.  function init() {
 7.    canvas = document.querySelector("#myCanvas");
@@ -10661,8 +10650,8 @@ Here is the rest of the code from this example:
 9.    width = canvas.width;
 10.   height = canvas.height;
 11. 
-12.   **// try to change this number**
-13. **  createBalls(16);**
+12.   // try to change this number
+13.   createBalls(16);
 14. 
 15.   requestAnimationFrame(mainLoop);
 16. }
@@ -10670,16 +10659,16 @@ Here is the rest of the code from this example:
 18. function createBalls(numberOfBalls) {
 19.   for(var i=0; i < numberOfBalls; i++) {
 20. 
-21.     **// Create a ball with random position and speed.**
-22. **    // You can change the radius**
-23. **    var ball = new Ball(width*Math.random(),**
-24. **                        height*Math.random(),**
-25. **                        (10*Math.random())-5,**
-26. **                        (10*Math.random())-5,**
-27. **                        30);**
+21.     // Create a ball with random position and speed.
+22.     // You can change the radius
+23.     var ball = new Ball(width*Math.random(),
+24.                         height*Math.random(),
+25.                         (10*Math.random())-5,
+26.                         (10*Math.random())-5,
+27.                         30);
 28. 
-29. **    // add the ball to the array**
-30.     **ballArray[i] = ball;**
+29.     // add the ball to the array
+30.     ballArray[i] = ball;
 31.    }
 32. }
 33. 
@@ -10687,19 +10676,19 @@ Here is the rest of the code from this example:
 35.   // clear the canvas
 36.   ctx.clearRect(0, 0, width, height);
 37. 
-38.   **// for each ball in the array**
-39. **  for(var i=0; i < ballArray.length; i++) {**
-40. **    var ball = ballArray[i]; **
+38.   // for each ball in the array
+39.   for(var i=0; i < ballArray.length; i++) {
+40.     var ball = ballArray[i]; 
 41. 
-42. **    // 1) move the ball**
-43. **    ball.move();**
+42.     // 1) move the ball
+43.     ball.move();
 44. 
-45. **    // 2) test if the ball collides with a wall**
-46. **    testCollisionWithWalls(ball);**
+45.     // 2) test if the ball collides with a wall
+46.     testCollisionWithWalls(ball);
 47. 
-48. **    // 3) draw the ball**
-49. **    ball.draw();**
-50. **  }**
+48.     // 3) draw the ball
+49.     ball.draw();
+50.   }
 51.   // ask for a new frame of animation at 60f/s
 52.   window.requestAnimationFrame(mainLoop);
 53. }
@@ -10776,8 +10765,8 @@ bold:
 14.     // You can change the radius
 15.     var ball = new Ball(width*Math.random(),
 16.                         height*Math.random(),
-17.               **(2*Math.PI)*Math.random(), // angle**
-18.               **(10*Math.random())-5,      // speed**
+17.               (2*Math.PI)*Math.random(), // angle
+18.               (10*Math.random())-5,      // speed
 19.                         30);
 20. 
 21.    // We add it in an array
@@ -10793,22 +10782,22 @@ bold:
 31.   // left
 32.   if (ball.x < ball.radius) {
 33.      ball.x = ball.radius;
-34.      **ball.angle = -ball.angle + Math.PI;**
+34.      ball.angle = -ball.angle + Math.PI;
 35.   }
 36.   // right
 37.   if (ball.x > width - (ball.radius)) {
 38.     ball.x = width - (ball.radius);
-39.     **ball.angle = -ball.angle + Math.PI;**
+39.     ball.angle = -ball.angle + Math.PI;
 40.   }
 41.   // up
 42.   if (ball.y < ball.radius) {
 43.     ball.y = ball.radius;
-44.     **ball.angle = -ball.angle;**
+44.     ball.angle = -ball.angle;
 45.   }
 46.   // down
 47.   if (ball.y > height - (ball.radius)) {
 48.     ball.y = height - (ball.radius);
-49.    ** ball.angle =-ball.angle;**
+49.     ball.angle =-ball.angle;
 50.   }
 51. }
 52. 
@@ -10816,8 +10805,8 @@ bold:
 54. function Ball(x, y, angle, v, diameter) {
 55.   this.x = x;
 56.   this.y = y;
-57.   **this.angle = angle;**
-58. **  this.v = v;**
+57.   this.angle = angle;
+58.   this.v = v;
 59.   this.radius = diameter/2;
 60. 
 61.   this.draw = function() {
@@ -10828,8 +10817,8 @@ bold:
 66.    // add horizontal increment to the x pos
 67.    // add vertical increment to the y pos
 68. 
-69.    **this.x += this.v * Math.cos(this.angle);**
-70. **   this.y += this.v * Math.sin(this.angle);**
+69.    this.x += this.v * Math.cos(this.angle);
+70.    this.y += this.v * Math.sin(this.angle);
 71.   };
 72. }
 ```
@@ -10973,7 +10962,7 @@ Let's implement this as a JavaScript function step-by-step:
 1.  function circleCollideNonOptimised(x1, y1, r1, x2, y2, r2) {
 2.  var dx = x1 - x2;
 3.  var dy = y1 - y2;
-4.  **var distance = Math.sqrt(dx * dx + dy * dy);**
+4.  var distance = Math.sqrt(dx * dx + dy * dy);
 <!-- -->
 457. 
 <!-- -->
@@ -11026,13 +11015,13 @@ var monster = {
   width: 100,
   height : 100,
   speed:1,
- ** boundingCircleRadius: 70**
+  boundingCircleRadius: 70
 };
 
 var player = {
   x:0,
   y:0,
-  **boundingCircleRadius: 20**
+  boundingCircleRadius: 20
 };
 ```
 
@@ -11066,7 +11055,7 @@ if(inputStates.mousePos) {            // Move the player and draw it as a
 }
 function checkCollisions() {
 if(circleCollide(player.x, player.y, player.boundingCircleRadius,
-   monster.x, monster.y, monster.boundingCircleRadius))** {  
+   monster.x, monster.y, monster.boundingCircleRadius)) {  
    // Draw everything in red
    ctx.fillText("Collision", 150, 20);
    ctx.strokeStyle = ctx.fillStyle = 'red';
@@ -11205,15 +11194,15 @@ Here is what we modified (in bold) in the code:
 25. player.y = inputStates.mousePos.y;
 26. 
 <!-- -->
-535. 1.  **// draws a rectangle centered on the mouse position**
-     2.  **// we draw it as a square.**
-     3.  **// We remove size/2 to the x and y position at drawing time
-         in**
-     4.  **// order to recenter the rectangle on the mouse pos
-         (normally**
-     5.  **// the 0, 0 of a rectangle is at its top left corner)**
-     6.  **var size = player.boundingCircleRadius;**
-     7.  **ctx.fillRect(player.x - size / 2, player.y - size / 2, size, size);**
+535. 1.  // draws a rectangle centered on the mouse position
+     2.  // we draw it as a square.
+     3.  // We remove size/2 to the x and y position at drawing time
+         in
+     4.  // order to recenter the rectangle on the mouse pos
+         (normally
+     5.  // the 0, 0 of a rectangle is at its top left corner)
+     6.  var size = player.boundingCircleRadius;
+     7.  ctx.fillRect(player.x - size / 2, player.y - size / 2, size, size);
 <!-- -->
 27. }
 28. }
@@ -11221,22 +11210,22 @@ Here is what we modified (in bold) in the code:
 536. 
 <!-- -->
 29. function checkCollisions() {
-30. **// Bounding rect position and size for the player. We need to
-   translate**
-31. **// it to half the player's size**
-32. **var playerSize = player.boundingCircleRadius;**
-33. **var playerXBoundingRect = player.x - playerSize / 2;**
-34. **var playerYBoundingRect = player.y - playerSize / 2;**
-35. **// Same with the monster bounding rect**
-36. **var monsterXBoundingRect = monster.x - monster.width / 2;**
-37. **var monsterYBoundingRect = monster.y - monster.height / 2;**
+30. // Bounding rect position and size for the player. We need to
+   translate
+31. // it to half the player's size
+32. var playerSize = player.boundingCircleRadius;
+33. var playerXBoundingRect = player.x - playerSize / 2;
+34. var playerYBoundingRect = player.y - playerSize / 2;
+35. // Same with the monster bounding rect
+36. var monsterXBoundingRect = monster.x - monster.width / 2;
+37. var monsterYBoundingRect = monster.y - monster.height / 2;
 <!-- -->
 537. 
 <!-- -->
-38. **if (rectsOverlap(playerXBoundingRect, playerYBoundingRect,**
-    1.  **playerSize, playerSize,**
-    2.  **monsterXBoundingRect, monsterYBoundingRect,**
-    3.  **monster.width, monster.height)) {**
+38. if (rectsOverlap(playerXBoundingRect, playerYBoundingRect,
+    1.  playerSize, playerSize,
+    2.  monsterXBoundingRect, monsterYBoundingRect,
+    3.  monster.width, monster.height)) {
     <!-- -->
     1.  ctx.fillText("Collision", 150, 20);
     2.  ctx.strokeStyle = ctx.fillStyle = 'red';
@@ -11248,25 +11237,25 @@ Here is what we modified (in bold) in the code:
 <!-- -->
 538. 
 <!-- -->
-42. **// Collisions between aligned rectangles**
-43. **function rectsOverlap(x1, y1, w1, h1, x2, y2, w2, h2) {**
+42. // Collisions between aligned rectangles
+43. function rectsOverlap(x1, y1, w1, h1, x2, y2, w2, h2) {
 <!-- -->
 539. 
 <!-- -->
-44. **if ((x1 > (x2 + w2)) || ((x1 + w1) < x2))**
-    1.  **return false; // No horizontal axis projection overlap**
+44. if ((x1 > (x2 + w2)) || ((x1 + w1) < x2))
+    1.  return false; // No horizontal axis projection overlap
 <!-- -->
 540. 
 <!-- -->
-45. **if ((y1 > (y2 + h2)) || ((y1 + h1) < y2))**
-    1.  **return false; // No vertical axis projection overlap**
+45. if ((y1 > (y2 + h2)) || ((y1 + h1) < y2))
+    1.  return false; // No vertical axis projection overlap
 <!-- -->
 541. 
 <!-- -->
-46. **return true; // If previous tests failed, then both axis
-   projections**
-    1.  **// overlap and the rectangles intersect**
-47. **}**
+46. return true; // If previous tests failed, then both axis
+   projections
+    1.  // overlap and the rectangles intersect
+47. }
 ```
 
 ### Many real games use aligned rectangle collision tests
@@ -11422,14 +11411,14 @@ alt="Collision between balls and the monster" />
 9.       // 2) test if the ball collides with a wall
 10.      testCollisionWithWalls(ball);
 11.  
-12.      **// 3) Test if the monster collides**
-13. **     if(circRectsOverlap(monster.x, monster.y,**
-14. **                         monster.width, monster.height,**
-15. **                        ball.x, ball.y, ball.radius)) {**
+12.      // 3) Test if the monster collides
+13.      if(circRectsOverlap(monster.x, monster.y,
+14.                          monster.width, monster.height,
+15.                         ball.x, ball.y, ball.radius)) {
 16. 
-17. **        //change the color of the ball**
-18. **        ball.color = 'red';**
-19. **     }**
+17.         //change the color of the ball
+18.         ball.color = 'red';
+19.      }
 20. 
 21.      // 3) draw the ball
 22.      ball.draw();
@@ -11607,11 +11596,11 @@ the details, just look at the part in bold which extracts the individual
 sprites:
 
 ```
-1.  **var SPRITE_WIDTH = 48;   // Characteristics of the sprites and
-    > spritesheet**
-2.  **var SPRITE_HEIGHT = 92;**
-3.  **var NB_ROWS = 8;**
-4.  **var NB_FRAMES_PER_POSTURE = 13;**
+1.  var SPRITE_WIDTH = 48;   // Characteristics of the sprites and
+    > spritesheet
+2.  var SPRITE_HEIGHT = 92;
+3.  var NB_ROWS = 8;
+4.  var NB_FRAMES_PER_POSTURE = 13;
 5.   
 6.  // the different input and output fields
 7.  var xField, yField, wField, hField, spriteSelect, spriteNumber;
@@ -11650,7 +11639,7 @@ sprites:
 38.     spritesheet = new Image();
 39.     spritesheet.src="https://i.imgur.com/3VesWqx.png";
 40. 
-41.    ** // Called when the spritesheet has been loaded**
+41.     // Called when the spritesheet has been loaded
 42.     spritesheet.onload = function() {
 43.       // enable slider
 44.       spriteSelect.disabled = false;
@@ -11678,12 +11667,12 @@ sprites:
     > NB_ROWS
 63.      var index = spriteSelect.value;
 64. 
-65. **     // Computation of the x and y position that corresponds to
-    > the sprite**
-66. **     // number index as selected by the slider**
-67. **     var x = index * SPRITE_WIDTH % spritesheet.width;**
-68. **   
-    >  var y = Math.floor(index / NB_FRAMES_PER_POSTURE) * SPRITE_HEIGHT;**
+65.      // Computation of the x and y position that corresponds to
+    > the sprite
+66.      // number index as selected by the slider
+67.      var x = index * SPRITE_WIDTH % spritesheet.width;
+68.    
+    >  var y = Math.floor(index / NB_FRAMES_PER_POSTURE) * SPRITE_HEIGHT;
 69. 
 70.      // Update fields
 71.      xField.value = x;
@@ -12344,6 +12333,9 @@ alt="game running, showing score, time, level" />
 
 Game state management in the JavaScript code:
 
+<details>
+  <summary>JavaScript code!</summary>
+
 ```
 1.  ...
 2.  // game states
@@ -12413,9 +12405,14 @@ Game state management in the JavaScript code:
 66. ... 
 ```
 
+</details>
+
 And below are the functions for starting a new level, starting a new
 game, and the updateBalls function that determines when a player loses
 and changes the current game-state to GameOver:
+
+<details>
+  <summary>JavaScript code!</summary>
 
 ```
 1.  function startNewGame() {
@@ -12459,6 +12456,8 @@ and changes the current game-state to GameOver:
 39.     }
 40. }
 ```
+
+</details>
 
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch2-7-2">2.7.2 Splitting the game into several JS files</h3>
@@ -13188,6 +13187,9 @@ alt="Downloading file with Xhr2" />
 
 **Complete source code:**
 
+<details>
+  <summary>Complete source code!</summary>
+
 ```
 1.  <!DOCTYPE html>
 2.  <html lang="en">
@@ -13271,6 +13273,8 @@ alt="Downloading file with Xhr2" />
 75. </body>
 76. </html>
 ```
+
+</details>
 
 **Explanations**: 
 
@@ -13371,10 +13375,14 @@ does this for a download operation:
 <h4>HTML</h4>
 
 ```
-1.  <progress id="downloadProgress" value=0><progress>
+<progress id="downloadProgress" value=0><progress>
 ```
 
 <h4>Script:</h4>
+
+
+<details>
+  <summary>JavaScript code!</summary>
 
 ```
 1.  // progress element
@@ -13392,6 +13400,8 @@ does this for a download operation:
 13.   xhr.send();
 14. }
 ```
+
+</details>
 
 **Explanations**: by setting the value and max attributes of
 the <progress> element with the current number of bytes downloaded by
@@ -13543,6 +13553,9 @@ style="width:3.96875in;height:2.21875in" alt="file upload example 1" />
 
 ### Source code of the example:
 
+<details>
+  <summary>HTML code!</summary>
+
 ```
 1.  <!DOCTYPE html>
 2.  <html lang="en">
@@ -13580,6 +13593,8 @@ style="width:3.96875in;height:2.21875in" alt="file upload example 1" />
 33. </body>
 34. </html>
 ```
+
+</details>
 
 ### **Explanations**:
 
@@ -13635,6 +13650,9 @@ Here is the code of such an event listener:
 
 ### Code from this example (nearly the same as previous example's code):
 
+<details>
+  <summary>HTML code!</summary>
+
 ```
 1.  <!DOCTYPE html>
 2.  <html lang="en">
@@ -13678,6 +13696,8 @@ Here is the code of such an event listener:
 39. </body>
 40. </html>
 ```
+
+</details>
 
 The only difference between these two worked-examples is
 the onprogress listener which updates the progress
@@ -13875,6 +13895,9 @@ style="width:5in;height:1.60844in"
 
 ### Complete code from the example:
 
+<details>
+  <summary>Source code!</summary>
+
 ```
 1.  <!DOCTYPE html>
 2.  <html lang="en">
@@ -13897,6 +13920,8 @@ style="width:5in;height:1.60844in"
 18.  <body>
 19. <html>
 ```
+
+</details>
 
 In this script, the event handler will only display an alert showing the
 name of the target element that launched the event. 
@@ -16243,7 +16268,9 @@ IndexedDB](https://developer.mozilla.org/en-US/docs/IndexedDB/Using_IndexedDB)).
 [Current support is excellent](https://caniuse.com/#search=indexed) both
 on mobile and desktop browsers.
 
-## 3.6.2 Concepts (part 2)
+<!------------------------------------------------------------------------------------------------>
+<h3 id="ch3-6-2">3.6.2 Concepts (part 2)</h3>
+<!------------------------------------------------------------------------------------------------>
 
 Among the concepts used by IndexedDB is the concept of transactions.
 
@@ -16380,51 +16407,35 @@ transaction.
 
 ### Example of a transaction:
 
+<details>
+  <summary>Transaction source code!</summary>
+
 ```
 1.  // Open a transaction for reading and writing on the DB "customer"
-
 2.  var transaction = db.transaction(["customers"], "readwrite");
-
 3.  
-
 4.  // Do something when all the data is added to the database.
-
 5.  transaction.oncomplete = function(event) {
-
 6.     alert("All done!");
-
 7.  };
-
 8.  
-
 9.  transaction.onerror = function(event) {
-
 10.    // Don't forget to handle errors!
-
 11. };
-
 12. 
-
 13. // Use the transaction to add data...
-
 14. var objectStore = transaction.objectStore("customers");
-
 15.  
-
 16. for (var i in customerData) {
-
 17.    var request = objectStore.add(customerData[i]);
-
 18. 
-
 19.    request.onsuccess = function(event) {
-
 20.       // event.target.result == customerData[i].ssn
-
 21. };
-
 22. }
 ```
+
+</details>
 
 Transactions have a well-defined lifetime. Attempting to use a
 transaction after it has completed throws an exception.
@@ -17017,131 +17028,76 @@ automatically be rounded to "1".
 
 ### JavaScript code from the example:
 
+<details>
+  <summary>JavaScript code!</summary>
+
 ```
 1.  var db; // the database connection we need to initialize
-
 2.   
-
 3.  function createDatabase() {
-
 4.  
-
 5.    if(!window.indexedDB) {
-
 6.       window.alert("Your browser does not support a stable version
-
 7.                     of IndexedDB");
-
 8.    }
-
 9.  
-
 10.   // This is what our customer data looks like.
-
 11.   var customerData = [
-
 12.     { ssn: "444-44-4444", name: "Bill", age: 35, email:
-
 13.                                            "bill@company.com" },
-
 14.     { ssn: "555-55-5555", name: "Donna", age: 32, email:
-
 15.                                            "donna@home.org" }
-
 16.   ];
-
 17.   var dbName = "CustomerDB";
-
 18. 
-
 19.   // version must be an integer, not 1.1, 1.2 etc...
-
 20.   var request = indexedDB.open(dbName, 2);
-
 21. 
-
 22.   request.onerror = function(event) {
-
 23.      // Handle errors.
-
 24.      console.log("request.onerror
     errcode=" + event.target.error.name);
-
 25.   };
-
 26.   request.onupgradeneeded = function(event) {
-
 27.       console.log("request.onupgradeneeded, we are creating a
-
 28.                    new version of the dataBase");
-
 29. 
-
 30.       db = event.target.result;
-
 31. 
-
 32.       // Create an objectStore to hold information about our
-
 33.       // customers. We're going to use "ssn" as our key path because
-
 34.       //  it's guaranteed to be unique
-
 35.       var objectStore = db.createObjectStore("customers",
-
 36.                                                { keyPath: "ssn" });
-
 37. 
-
 38.       // Create an index to search customers by name. We may have  
-             
-
+            
 39.       // duplicates so we can't use a unique index.
-
 40.       objectStore.createIndex("name", "name", { unique: false });
-
 41. 
-
 42.       // Create an index to search customers by email. We want to
-
 43.       // ensure that no two customers have the same email, so use a
-
 44.       // unique index.
-
 45.       objectStore.createIndex("email", "email", { unique: true });
-
 46. 
-
 47.       // Store values in the newly created objectStore.
-
 48.       for (var i in customerData) {
-
 49.           objectStore.add(customerData[i]);
-
 50.       }
-
 51.   }; // end of request.onupgradeneeded
-
 52. 
-
 53.   request.onsuccess = function(event) {
-
 54.      // Handle errors.
-
 55.      console.log("request.onsuccess, database opened, now we can add
-
 56.                   / remove / look for data in it!");
-
 57. 
-
 58.      // The result is the database itself
-
 59.      db = event.target.result;
-
 60.   };
-
 61. } // end of function createDatabase
 ```
+
+</details>
 
 ### <b>Explanations:</b>
 
@@ -17423,6 +17379,9 @@ section - the function AddACustomer() that adds one customer:
 
 Here is the complete source code of the addACustomer function:
 
+<details>
+  <summary>addACustomer code!</summary>
+
 ```
 1.  function addACustomer() {
 2.     // 1 - get a transaction on the "customers" object store
@@ -17465,6 +17424,8 @@ Here is the complete source code of the addACustomer function:
 38.    };
 39. }
 ```
+
+</details>
 
 <b>Explanations:</b>
 
@@ -17553,92 +17514,58 @@ style="width:6.08333in;height:2.32292in" alt="insert error" />
 <b>And here is the new version of the addACustomer() JavaScript
 function:</b>
 
+
+<details>
+  <summary>addACustomer JavaScript function!</summary>
+
 ```
 1.  function addACustomer() {
-
 2.     if(db === null) {
-
 3.        alert('Database must be opened, please click the Create
-
 4.               CustomerDB Database first');
-
 5.        return;
-
 6.     }
-
 7.  
-
 8.     var transaction = db.transaction(["customers"], "readwrite");
-
 9.  
-
 10.    // Do something when all the data is added to the database.
-
 11.    transaction.oncomplete = function(event) {
-
 12.      console.log("All done!");
-
 13.    };
-
 14. 
-
 15.    transaction.onerror = function(event) {
-
 16.      console.log("transaction.onerror
     errcode=" + event.target.error.name);
-
 17.    };
-
 18. 
-
 19.    var objectStore = transaction.objectStore("customers");
-
 20. 
-
 21.    // adds the customer data
-
 22.    var newCustomer={};
-
 23.    newCustomer.ssn = document.querySelector("#ssn").value;
-
 24.    newCustomer.name = document.querySelector("#name").value;
-
 25.    newCustomer.age = document.querySelector("#age").value;
-
 26.    newCustomer.email = document.querySelector("#email").value;
-
 27.    alert('adding customer ssn=' + newCustomer.ssn);
-
 28.  
-
 29.    var request = objectStore.add(newCustomer);
-
 30. 
-
 31.    request.onsuccess = function(event) {
-
 32.      console.log("Customer with ssn= " + event.target.result + "
-
 33.                   added.");
 
 34.      };
-
 35.  
-
 36.   request.onerror = function(event) {
-
 37.      alert("request.onerror, could not insert customer, errcode = "
-
 38.            + event.target.error.name +
-
 39.            ". Certainly either the ssn or the email is already
-
 40.            present in the Database");
-
 41.   };
-
 42. }
 ```
+
+</details>
 
 It is also possible to shorten the code of the above function by
 chaining the different operations using the "." operator (getting a
@@ -17647,11 +17574,11 @@ etc.).
 
 Here is the short version:
 
+```
 1.  var request = db.transaction(["customers"], "readwrite")
-
 2.  .objectStore("customers")
-
 3.  .add(newCustomer);
+```
 
 The above code does not perform all the tests, but you may encounter
 such a way of coding (!).
@@ -17665,7 +17592,9 @@ Indeed, entering an empty value for the keyPath or for indexes is a
 valid value (in the IndexedDB sense). In order to avoid this, you should
 add more JavaScript code. We will let you do this as an exercise.
 
-## 3.6.8 Removing data
+<!------------------------------------------------------------------------------------------------>
+<h3 id="ch3-6-8">3.6.8 Removing data</h3>
+<!------------------------------------------------------------------------------------------------>
 
 Let's move to the next [online example at
 JSBin](https://jsbin.com/bavifa):
@@ -17694,75 +17623,47 @@ How to try the example:
 
 Code added in this example:
 
+<details>
+  <summary>JavaScript code!</summary>
+
 ```
 1.  function removeACustomer() {
-
 2.     if(db === null) {
-
 3.        alert('Database must be opened first, please click the
-
 4.               Create CustomerDB Database first');
-
 5.        return;
-
 6.     }
-
 7.  
-
 8.     var transaction = db.transaction(["customers"], "readwrite");
-
 9.  
-
 10.    // Do something when all the data is added to the database.
-
 11.    transaction.oncomplete = function(event) {
-
 12.       console.log("All done!");
-
 13.    };
-
 14. 
-
 15.    transaction.onerror = function(event) {
-
 16.       console.log("transaction.onerror errcode=" +
-
 17.                    event.target.error.name);
-
 18.    };
-
 19. 
-
 20.    var objectStore = transaction.objectStore("customers");
-
 21. 
-
 22.    alert('removing customer ssn=444-44-4444');
-
 23.    <b>var request = objectStore.delete("444-44-4444");</b>
-
 24. 
-
 25.    request.onsuccess = function(event) {
-
 26.       console.log("Customer removed.");
-
 27.    };
-
 28. 
-
 29.    request.onerror = function(event) {
-
 30.       alert("request.onerror, could not remove customer, errcode
-
 31.             = " + event.target.error.name + ". The ssn does not
-
 32.             exist in the Database");
-
 33.    };
-
 34. }
 ```
+
+</details>
 
 Notice that after the deletion of the Customer (*line 23*),
 the request.onsuccess callback is called. And if you try to print the
@@ -17774,13 +17675,15 @@ It is also possible to shorten the code of the above function a lot by
 concatenating the different operations (getting the store from the db,
 getting the request, calling delete, etc.). Here is the short version:
 
+```
 1.  var request = db.transaction(["customers"], "readwrite")
-
 2.  .objectStore("customers")
-
 3.  .delete("444-44-4444");
+```
 
-## 3.6.9 Modifying data
+<!------------------------------------------------------------------------------------------------>
+<h3 id="ch3-6-9">3.6.9 Modifying data</h3>
+<!------------------------------------------------------------------------------------------------>
 
 We used request.add(object) to add a new customer
 and request.delete(keypath) to remove a customer. Now, to modify data
@@ -17805,6 +17708,9 @@ screenshot:
 alt="devtools show updated customer" />
 
 Here is the new code added to our example:
+
+<details>
+  <summary>JavaScript code!</summary>
 
 ```
 1.  function updateACustomer() {
@@ -17848,6 +17754,8 @@ Here is the new code added to our example:
 39. }
 ```
 
+</details>
+
 The update occurs at *line 28*.
 
 <!------------------------------------------------------------------------------------------------>
@@ -17874,6 +17782,9 @@ form is in the request.onsuccess callback).
 alt="Form updated with data retrieved" />
 
 Here is the code added to that example:
+
+<details>
+  <summary>JavaScript code!</summary>
 
 ```
 1.  function searchACustomer() {
@@ -17923,6 +17834,8 @@ Here is the code added to that example:
 44. }
 ```
 
+</details>
+
 The search is inititated at *line 30*, and the callback in the case of
 success is request.onsuccess, *lines 32-38*. event.target with result as
 the retrieved object (*lines 33 to 36*).
@@ -17950,6 +17863,9 @@ You can try it on JSBin: this [version of the online example using this
 shortened version](https://jsbin.com/rifate) (the function is at the end
 of the JavaScript code):
 
+<details>
+  <summary>JavaScript code!</summary>
+
 ```
 1.  function searchACustomerShort() {
 2.     if(db === null) {
@@ -17971,6 +17887,8 @@ of the JavaScript code):
 18.        };
 19. }
 ```
+
+</details>
 
 <b>Explanations:</b>
 
@@ -17996,6 +17914,10 @@ between those in a certain range, then you must use *a cursor*.
 
 Here's what it looks like:
 
+
+<details>
+  <summary>JavaScript code!</summary>
+
 ```
 1.  function listAllCustomers() {
 2.     var objectStore =   
@@ -18019,6 +17941,8 @@ Here's what it looks like:
 20.   }; // end of onsuccess...
 21. } // end of listAllCustomers()
 ```
+
+</details>
 
 [You can try this example on JSBin](https://jsbin.com/xetumu).
 
@@ -18050,6 +17974,10 @@ a success callback, but the result property is undefined.
 One common pattern with cursors is to retrieve all objects in an object
 store and add them to an array, like this:
 
+
+<details>
+  <summary>function ListAllCustomersArray!</summary>
+
 ```
 1.  function listAllCustomersArray() {
 2.    var objectStore =   
@@ -18071,6 +17999,8 @@ store and add them to an array, like this:
 18.  }; // end of onsuccess
 19. } // end of listAllCustomersArray()
 ```
+
+</details>
 
 [You can try this version on JSBin](https://jsbin.com/bitoqa).
 
@@ -18094,6 +18024,10 @@ Here is a function that examines by name the person-objects in the
 object store, and returns the first one it finds with a name equal to
 "Bill":
 
+
+<details>
+  <summary>function getCustomerByName!</summary>
+
 ```
 1.  function getCustomerByName() {
 2.     if(db === null) {
@@ -18113,6 +18047,8 @@ object store, and returns the first one it finds with a name equal to
 16.    };
 17. }
 ```
+
+</details>
 
 The search by index occurs at *lines 11 and 13*: *line 11* creates an
 "index" object that corresponds to the "name" property. *Line 13* calls
@@ -18136,13 +18072,17 @@ When we work with indexes, we can open two different types of cursors on
 indexes:
 
 ```
-1.  <b>A normal cursor</b> which maps the index property to the object in the object store, or,
-2.  <b>A key cursor</b> which maps the index property to the key used to store the object in the object store.
+A normal cursor which maps the index property to the object in the object store, or,
+A key cursor which maps the index property to the key used to store the object in the object store.
 ```
 
 The differences are illustrated below.
 
 Normal cursor:
+
+
+<details>
+  <summary>Normal cursor code!</summary>
 
 ```
 1.  <b>index.openCursor().onsuccess </b>= function(event) {
@@ -18157,7 +18097,12 @@ Normal cursor:
 10. };
 ```
 
+</details>
+
 Key cursor:
+
+<details>
+  <summary>Key cursor code!</summary>
 
 ```
 1.  <b>index.openKeyCursor().onsuccess </b>= function(event) {
@@ -18171,6 +18116,8 @@ Key cursor:
 9.     }
 10. };
 ```
+
+</details>
 
 Can you see the difference? 
 
@@ -18193,6 +18140,9 @@ How to try this example:
     press the last button again.
 
 Source code extract from this example:
+
+<details>
+  <summary>function getAllCustomersByName!</summary>
 
 ```
 1.  function getAllCustomersByName() {
@@ -18224,6 +18174,8 @@ Source code extract from this example:
 27. };
 28. }
 ```
+
+</details>
 
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch3-6-11">3.6.11 Limiting the range of values in a cursor</h3>
@@ -18821,42 +18773,28 @@ And here is the complete source code...
 
 The HTML part:
 
+```
 1.  <template id="mytemplate">
-
 2.     <img src="" alt="great image">
-
 3.     <div class="comment">hello</div>
-
 4.  </template>
-
 5.  
-
 6.  <body>
-
-7.     <button onclick="instantiate()">Instantiate the
-    template</button><br>
-
+7.     <button onclick="instantiate()">Instantiate the template</button><br>
 8.  </body>
+```
 
 The JavaScript part:
 
 ```
 1.  function instantiate() {
-
 2.     var t = document.querySelector('#mytemplate');
-
 3.     // Populate the src at runtime.
-
 4.     t.content.querySelector('img').src =
-
 5.                  'https://webcomponents.github.io/img/logo.svg';
-
 6.  
-
 7.     var clone = document.importNode(t.content, true);
-
 8.     document.body.appendChild(clone);
-
 9.  }
 ```
 
@@ -18866,38 +18804,29 @@ The JavaScript part:
 
 Hello! Let's talk about the shadow DOM. What is the
 
-Shadow DOM? Let's first look at a video. You know the
-
-video element, we already used many times in this course.
+Shadow DOM? Let's first look at a video. You know the video element, 
+we already used many times in this course.
 
 If you look at the source of the video element, or if you try to select
-it using the devtools,
+it using the devtools, you can only select it at once, you can't select 
+individually the buttons, or the progress element, and so on. 
 
-you can only select it at once, you can't select individually the
-buttons, or the progress
+Look at the video, you see the video controls, autoplay, source elements, 
+and so on. But you can’t look at the internals because this video is a Web 
+component. 
 
-element, and so on. Look at the video, you see the video controls,
+Web components have been used by browser developers before the APIs went public.
 
-autoplay, source elements, and so on. But you can’t look at the
-internals because
-
-this video is a Web component. Web components have been used by browser
-developers before
-
-the APIs went public. You can enable in the settings (I am using
-
-Google Chrome here), you can enable the visualization of the user agent
-shadow DOM.
+You can enable in the settings (I am using Google Chrome here), you can enable the 
+visualization of the user agent shadow DOM.
 
 When this option is enabled, then you will see a shadow root in the
-debugger, when you
+debugger, when you look for a Web component. 
 
-look for a Web component. This time, if I open the shadow root in the
-debugger, and if
+This time, if I open the shadow root in the debugger, and if I move the inspector, 
+I can see how the Web component is made. 
 
-I move the inspector, I can see how the Web component is made. I
-
-can see its internals. I can look at the play button for example.
+I  can see its internals. I can look at the play button for example.
 
 The shadow DOM is a way to hide HTML code from the end user. If you do
 ‘view source’,
@@ -18905,33 +18834,26 @@ The shadow DOM is a way to hide HTML code from the end user. If you do
 you will not see how a Web Component is made, except if you set the
 correct debugging settings option.
 
-More than that, the Web component may include
-
-some CSS files and the CSS of the Web component will only apply to its
-own elements.
+More than that, the Web component may include some CSS files and the CSS 
+of the Web component will only apply to its own elements.
 
 Let's look at an example. Here, we(ve got a button that is called ‘a
 shadow host’.
 
 This is our Web component. For the moment we are not using custom
-elements, we are just
-
-associating a shadow DOM with the button element here.
+elements, we are just associating a shadow DOM with the button element here.
 
 This one is called ’the host’, and as you can see it is not rendered
-because it
+because it has a shadow DOM. 
 
-has a shadow DOM. So, the way we add a shadow DOM to an element
-
-is that we first select the host, and then we create a shadow root.
+The way we add a shadow DOM to an element is that we first select the host, 
+then we create a shadow root.
 
 Once you got the shadow root, you can start adding content in this node,
-in order to make
+in order to make the shadow DOM. 
 
-the shadow DOM. So here, ‘root.textContent’ will add this text
-
-to the shadow DOM and if you look at the button, this is the text that
-is rendered: ’Hello’.
+Here, ‘root.textContent’ will add this text to the shadow DOM and if you look 
+at the button, this is the text that is rendered: ’Hello’.
 
 If I inspect this element using the devtools, I will see a button, and a
 shadow root associated.
@@ -18948,18 +18870,16 @@ that contains a ‘H1’. This is a ‘shadowed H1’ and some CSS style defined
 in the template.
 
 When I create the root element for the shadow DOM, I can append the
-cloned code of
-
-the template. In this case I have got a skeleton: the template.
+cloned code of the template. 
+In this case I have got a skeleton: the template.
 
 I instantiate it and I add it to the shadow DOM.
 
-Look at the result here! I have got my host (that is a ‘H1’), and if I
+Look at the result here! I have got my host (that is a ‘H1’), and if I type 
+things it is not rendered. What is rendered is the content here of the template I 
+instantiated. 
 
-type things it is not rendered. What is rendered is the content here of
-the template
-
-I instantiated. And this template contains an ‘H1’ that is white on red.
+And this template contains an ‘H1’ that is white on red.
 
 But look: I have got a global CSS that says that all ‘H1s’ must be
 green, and this one is
@@ -19080,33 +19000,24 @@ sandboxing](https://en.wikipedia.org/wiki/Sandbox_(computer_security)).
 
 ### Another simple example
 
+<details>
+  <summary>HTML code!</summary>
+
 Let's have a look at a very simple example:
 
 ```
 1.  <div>Hello this is not rendered!</div>
-
 2.  <script>
-
 3.      // the div is the Shadow Host. Its content will not be rendered
-
 4.      var host = document.querySelector('div');
-
 5.  
-
 6.      // Create the shadow ROOT, the root node of the shadow DOM
-
-7.      // using mode:open makes it available, mode:close would return
-    null
-
+7.      // using mode:open makes it available, mode:close would return null
 8.      const shadowRoot = host.attachShadow({mode: 'open'});
-
 9.  
-
 10.     // insert something into the shadow DOM, this will be rendered
-
 11.     shadowRoot.innerHTML = '<h1>Hello Shadow DOM</h1>'; // Could
     also use appendChild().
-
 12. </script>
 ```
 
@@ -19161,15 +19072,10 @@ HTML part:
 
 ```
 1.  <template id="mytemplate">
-
 2.     <style>
-
 3.       h1 {color:white; background:red}
-
 4.     </style>
-
 5.     <h1>This is a shadowed H1</h1>
-
 6.  </template>
 ```
 
@@ -19177,23 +19083,14 @@ The JavaScript part:
 
 ```
 1.  // Instanciate the template
-
 2.  var t = document.querySelector('#mytemplate');
-
 3.   
-
 4.  // Create a root node under our H1 title
-
 5.  var host = document.querySelector('#withShadowDom');
-
 6.   
-
 7.  const shadowRoot = host.attachShadow({mode: 'open'});
-
 8.  
-
 9.  // insert something into the shadow DOM, this will be rendered
-
 10. shadowRoot.appendChild(document.importNode(t.content, true));
 ```
 
@@ -19275,7 +19172,10 @@ DOM using slots.
 
 It is possible to define a part of the template into which external HTML
 content will be "injected". For this, we use
-the <slot>...</slot> element, as shown below:
+the &lt;slot&gt;...&lt;/slot&gt; element, as shown below:
+
+<details>
+  <summary>HTML code!</summary>
 
 ```
 1.  <template id="mytemplate">
@@ -19330,7 +19230,9 @@ browser how to render them.
 
 ### Basic usage:
 
-1.  customElements.define('my-widget', MyWidget);
+```
+customElements.define('my-widget', MyWidget);
+```
 
 ### This is done using JavaScript and there are some constraints:
 
@@ -19356,102 +19258,69 @@ will render as an instance of a template with a shadow DOM:
 
 ```
 1.  <body>
-
 2.  <my-widget>
-
 3.     <span slot="my-title">Title injected</span>
-
 4.     <span slot="my-paragraph">Paragraph injected</span>
-
 5.  </my-widget>
-
 6.  </body>
+```
 
 Look at *lines 2 *and* 5*...
 
 HTML code for the declaration of the template (the same as in one of the
 previous examples):
 
+<details>
+  <summary>HTML code!</summary>
+
+```
 1.  <template id="mytemplate">
-
 2.    <style>
-
 3.      h1 {
-
 4.        color:white;
-
 5.        background:red;
-
 6.      }
-
 7.    </style>
-
 8.    <h1>
-
 9.      <slot name="my-title">My default text</slot>
-
 10.   </h1>
-
 11.   <p>
-
 12.     <slot name="my-paragraph">My default text</slot
-
 13.   </p>
-
 14. </template>
+```
 
 ### JavaScript code:
 
+<details>
+  <summary>JavaScript code!</summary>
+
+```
 1.  // TIP : use "document.currentScript" here to select
-
 2.  // the "local document", the one corresponding to this page.
-
 3.  // this may avoid problems when multiple WebComponents files
-
 4.  // are inserted in the same document. See below...
-
 5.  var localDoc = document.currentScript.ownerDocument;
-
 6.   
-
 7.  class MyWidget extends HTMLElement {
-
 8.    constructor() {
-
 9.      super(); // mandatory
-
 10.     const shadowRoot = this.attachShadow({mode: 'open'});
-
 11. 
-
 12.     // instanciate template
-
 13.     let t = localDoc.querySelector('#mytemplate');
-
 14.     // add it to the shadow DOM
-
 15. 
-
 16.     shadowRoot.appendChild(document.importNode(t.content, true));
-
 17.   }
-
 18. }
-
 19.  
-
 20. try {
-
 21.   // Define the custom element to the browser
-
 22.   <b>customElements.define('my-widget', MyWidget);</b>
-
 23.   console.log("Element defined");
-
 24. } catch (error) {
-
 25.   console.log(error);
-
 26. }
 ```
 
@@ -19505,7 +19374,7 @@ inherit from another custom element.
 <h3 id="ch4-2-8">4.2.8 HTML Imports</h3>
 <!------------------------------------------------------------------------------------------------>
 
-### ****** Important note ****
+### *** Important note ****
 
 As of 2020, HTML imports have been dropped, and there is no clear
 replacing solution. While you can use polyfills to use existing
@@ -19641,6 +19510,9 @@ statement and import the file as a ES Module.
 index.html (the host html page that imports and instantiates the Web
 Components) :
 
+<details>
+  <summary>HTML code!</summary>
+
 ```
 1.  <!DOCTYPE html>
 2.  <html lang="en">
@@ -19669,6 +19541,9 @@ Components) :
 
 ### And here is the code of the Web Component (in ./mycomponent/index.js):
 
+<details>
+  <summary>HTML code!</summary>
+
 ```
 1.  customElements.define(
 2.  "my-component",
@@ -19696,7 +19571,7 @@ Components) :
 23.                 <h1>${this.name}
 24.             </div>
 25.         `;
-26.         this.root.innerHTML = "<style>${this.css}</style><div
+26.         this.root.innerHTML = "<style>${this.css}</style><div 
     id='wrapper'>${this.html}</div>";
 27.     }
 28. });
@@ -19812,6 +19687,9 @@ completely blocking the user interface: 
 alt="Examples that eats all the cpu" />
 
 <h4>Code from the example:</h4>
+
+<details>
+  <summary>HTML code!</summary>
 
 ```
 1.  <!DOCTYPE HTML>
@@ -19993,6 +19871,9 @@ The "Parent HTML page" of a simplistic example using a dedicated Web
 
 Worker:
 
+<details>
+  <summary>HTML code!</summary>
+
 ```
 1.  <!DOCTYPE HTML>
 2.  <html>
@@ -20019,6 +19900,9 @@ Worker:
 ```
 
 The JavaScript code of the worker (worker0.js):
+
+<details>
+  <summary>HTML code!</summary>
 
 ```
 1.  onmessage = function(e){
@@ -20087,6 +19971,9 @@ style="width:5.70833in;height:1.34375in"
 alt="Prime nulmber computation." />
 
 <h4>The HTML5 page code from this example that uses a Web Worker:</h4>
+
+<details>
+  <summary>HTML code!</summary>
 
 ```
 1.  <!DOCTYPE HTML>
@@ -20178,6 +20065,9 @@ example: [WebWorkersExample1.zip](https://courses.edx.org/assets/courseware/v1/
 
 <h4>HTML code:</h4>
 
+<details>
+  <summary>HTML code!</summary>
+
 ```
 1.  <!DOCTYPE HTML>
 2.  <html>
@@ -20208,6 +20098,9 @@ example: [WebWorkersExample1.zip](https://courses.edx.org/assets/courseware/v1/
 uses the HTML5 Web Workers API.
 
 <h4>Here is the worker1.js code:</h4>
+
+<details>
+  <summary>HTML code!</summary>
 
 ```
 1.  postMessage("Hey, in 3s, I'll start to compute prime numbers...");
@@ -20254,6 +20147,9 @@ worker.
 
 <h4>HTML code:</h4>
 
+<details>
+  <summary>HTML code!</summary>
+
 ```
 1.  <!DOCTYPE HTML/image0>
 2.  <html>
@@ -20261,7 +20157,7 @@ worker.
 4.  <title>Worker example: One-core computation</title>
 5.  </head>
 6.  <body>
-7.  <p>The highest prime number discovered so far is: <output id="result"\>\</output\>\</p\>
+7.  <p>The highest prime number discovered so far is: <output id="result"></output></p>
 8.  <script>
 9.      if(window.Worker){
 10.        // web workers supported by the browser
@@ -20289,6 +20185,9 @@ Notice at <i>line 22</i> the call to worker.terminate(), that kills the
 worker after 10000ms.
 
 <h4>worker2.js is the same as in the last example:</h4>
+
+<details>
+  <summary>HTML code!</summary>
 
 ```
 1.  postMessage("Hey, in 3s, I'll start to compute prime numbers...");
@@ -20331,11 +20230,11 @@ the importScripts() function.
 ### worker.js:
 
 ```
-1.  <b>importScripts('script1.js');</b>
-2.  <b>importScripts('script2.js');</b>
-3.  
-4.  // Other possible syntax
-5.  importScripts('script1.js', 'script2.js');
+importScripts('script1.js');
+importScripts('script2.js');
+
+// Other possible syntax
+importScripts('script1.js', 'script2.js');
 ```
 
 The included scripts must follow [the same-origin
@@ -20463,7 +20362,7 @@ the performance decreases because too much time is spent exchanging data
 between workers and their creator, instead of computing in parallel.
 
 <img src="./images/image245.jpeg" style="width:4in;height:3.99165in"
-alt="ray tracer with web workers" />
+alt="Ray Tracer with web workers." />
 
 ### Other demos
 
@@ -20502,8 +20401,15 @@ your comments/observations/questions and share your creations.
     is drawn and animated. The demo had up to 10 <i>workers</i> operating
     in <i>parallel</i>, in the <i>background</i>.
 
-<img src="./images/image246.png" style="width:4in;height:2.55983in"
-alt="IE 10 web worker fountain demo" />
+<!------------------------------------------------------------------------------------------------>
+<!-------------------------- 246. ie10 web workers fountain demo (###) --------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image246.png?raw=true"
+   width="40%"
+   alt="IE 10 Web Workers fountain demo." />
+</p>
+<!-- <img src="./images/image246.png" style="width:4in;height:2.55983in" -->
 
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch4-4-1">4.4.1 The Orientation API</h3>
@@ -20732,6 +20638,9 @@ If we change the orientation of the device here are the results:
 
 <h4>Typical use / code from the above example:</h4>
 
+<details>
+  <summary>HTML code!</summary>
+
 ```
 1.  ...
 2.  <h2>Device Orientation with HTML5</h2>
@@ -20794,8 +20703,7 @@ controlled game...
    width="30%"
    alt="Logo 1." />
 </p>
-<img src="./images/image256.png" style="width:2.94792in;height:3.92708in"
-alt="logo 1" />
+<!-- <img src="./images/image256.png" style="width:2.94792in;height:3.92708in" -->
 
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------------------- 257. logo 2 (###) --------------------------------------->
@@ -20819,6 +20727,9 @@ This example is also
 on [video](https://www.youtube.com/watch?v=OrNLhOAGSdE).
 
 <h4>Code from the example:</h4>
+
+<details>
+  <summary>HTML code!</summary>
 
 ```
 1.  ...
@@ -21000,6 +20911,7 @@ this [article]</a>):
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------- 261. acceleration values 1 (xxx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
 <img src="./images/image261.png"
    alt="Acceleration values 1."
    width="65%" />
@@ -21011,6 +20923,7 @@ to its normal position would return:</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------- 262. acceleration values 2 (xxx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
 <img src="./images/image262.png"
    alt="Acceleration values 2."
    width="65%" />
@@ -21020,6 +20933,7 @@ to its normal position would return:</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------- 263. telephone coordinates system (xxx) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
 <img src="./images/image263.png"
    alt="Telephone coordinates system."
    width="30%" />
@@ -21043,9 +20957,9 @@ wanted to play <a href="https://en.wikipedia.org/wiki/Coin_flipping">heads or
 tails</a> with your phone ;-)
 
 ```
-1.  // For example, if acceleration.z is \> 0 then the phone is facing up
+1.  // For example, if acceleration.z is > 0 then the phone is facing up
 2.  var facingUp = -1;
-3.  if (acceleration.z \> 0) {
+3.  if (acceleration.z > 0) {
 4.     facingUp = +1;
 5.  }
 ```
@@ -21088,7 +21002,7 @@ complete example further down this page...
 6.   
 7.  ctx.moveTo(50,50);
 8.  // Draw sky direction in the canvas
-9.  ctx.lineTo(50-50\*Math.cos(angle),50+50\*Math.sin(angle));
+9.  ctx.lineTo(50-50*Math.cos(angle),50+50*Math.sin(angle));
 10. ctx.stroke();
 ```
 
@@ -21114,6 +21028,7 @@ later on)...
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 264. devicemotion api example (xxx) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
 <img src="./images/image264.jpeg"
    alt="Devicemotion API example."
    width="30%" />
@@ -21213,6 +21128,7 @@ it: <a href="https://jsbin.com/uyuqek/4/edit">https://jsbin.com/uyuqek/4/edit</
 <!------------------------------------------------------------------------------------------------>
 <!--------------------------------- 265. devicemotion api (487) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
 <img src="./images/image265.jpeg"
    alt="Devicemotion API."
    width="35%" />
@@ -21312,23 +21228,23 @@ mobile device, <a href="https://jsbin.com/eyahuv/2"use this URL instead</a>!
 <!------------------------------------------------------------------------------------------------>
 <!--------------------------------- 266. moving balls (489) -------------------------------------->
 <!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
 <img src="./images/image266.png"
    alt="Moving Balls"
    width="35%" />
 </p>
 <!---   style="width:3in;height:1.99379in" --->
 
-<h4>
+
 <details>
-  <summary Code from this example</summary>
-</h4>
+  <summary>Code from this example!</summary>
 
 ```
 1.  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 2.  <html xmlns="https://www.w3.org/1999/xhtml">
 3.  
-4.      <head\>
-5.         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /\>
+4.      <head>
+5.         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 6.         <meta name="viewport" content="width=device-width,
 7.                                        target-densityDpi=device-dpi,
 8.                                        initial-scale=1.0,
@@ -21462,7 +21378,7 @@ mobile device, <a href="https://jsbin.com/eyahuv/2"use this URL instead</a>!
 136.      <div id="details"></div>
 137.      <div id="board">
 138.          <div id="ball"></div>
-139.      </div>spec: <a href="https://w3c.github.io/deviceorientation/spec-source-orientation.html" target="https://w3c.github.io/deviceorientation/spec-source-orientation.html"\>https://w3c.github.io/deviceorientation/spec-source-orientation.html</a>
+139.      </div>spec: <a href="https://w3c.github.io/deviceorientation/spec-source-orientation.html" target="https://w3c.github.io/deviceorientation/spec-source-orientation.html">https://w3c.github.io/deviceorientation/spec-source-orientation.html</a>
 140. 
 141.   </body>
 142. 
@@ -21510,14 +21426,14 @@ your comments/observations/questions and share your creations.
        from Module 2 of the course!</li>
 </ul>
 
-<!----
+<!---
 <p align="center" width="100%">
 <img src="./images/image.jpeg?raw=true"
    width="35%"
    alt="." />
 </p>
----->
+--->
 
-<h5>The end...</h5>
+<h5>the end...</h5>
 
-<h4>Last Updated: 9-28-2022 3:33pm</h4>
+<h4>Last Updated: 9-30-2022 9:28am</h4>
