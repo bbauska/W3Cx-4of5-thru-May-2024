@@ -1520,6 +1520,10 @@ Here is a small example of a video with 3 different tracks
 ("......" masks the real URL here, as it is too long to fit in this page
 width!):
 
+
+<details>
+  <summary>Code extract!</summary>
+
 ```
 1.  <video id="myVideo" preload="metadata" controls crossOrigin="anonymous">
 2.    <source src="https://...../elephants-dream-medium.mp4" type="video/mp4">
@@ -1532,6 +1536,8 @@ width!):
 9.        src="https://...../elephants-dream-chapters-en.vtt">
 10. </video>
 ```
+
+</details>
 
 And here is how it renders in your current browser (please play the
 video and try to show/hide the subtitles/captions):
@@ -2279,6 +2285,9 @@ JSBin](https://jsbin.com/bubeye/1/edit?html,console,output)
 
 Here is what we added to the HTML code:
 
+<details>
+  <summary>Code extract!</summary>
+
 ```
 1.  <button id="buttonLoadFirstTrack"
 2.          onclick="forceLoadTrack(0);"
@@ -2291,6 +2300,8 @@ Here is what we added to the HTML code:
 9.     Force load track 2
 10. </button>
 ```
+
+</details>
 
 The buttons will call a function named forceLoadTrack(trackNumber) that
 takes as a parameter the number of the track to get (and force load if
@@ -2480,7 +2491,7 @@ We just changed the content of the readContent(track) method from the
 example in the previous lesson:
 
 <details>
-  <summary>readContent code!</summary>
+  <summary>Code readContent extract!</summary>
 
 ```
 1.  function readContent(track) {
@@ -2968,6 +2979,10 @@ JSBin](https://jsbin.com/sodihux/1/edit?html,css,js,output):
 <h4>
   <summary>CSS code extract!</summary>
 </h4>
+
+
+<details>
+  <summary>Code extract!</summary>
 
 ```
 1.  #all {
@@ -3878,6 +3893,10 @@ Here is an example cue from a WebVTT file encoded as JSON instead of
 plain text. JSON is useful for describing "structured data"', and
 processing such data from JavaScript is easier than parsing plain text.
 
+
+<details>
+  <summary>Code extract!</summary>
+
 ```
 1.  WEBVTT
 2.  Wikipedia
@@ -3891,10 +3910,16 @@ processing such data from JavaScript is easier than parsing plain text.
 10. }
 ```
 
+</details>
+
 This JSON object (in bold green) is a JavaScript object encoded as a
 text string. If we listen for cue events or if we read a WebVTT file as
 done in previous examples, we can extract this text content using the
  cue.text property. For example:
+
+
+<details>
+  <summary>Code extract!</summary>
 
 ```
 1.  var videoElement = document.querySelector("#myvideo");
@@ -3915,6 +3940,8 @@ done in previous examples, we can extract this text content using the
 14. etc...
 ```
 
+</details>
+
 This is a powerful way of embedding metadata, especially when used in
 conjunction with listening for cue and track events.
 
@@ -3930,6 +3957,10 @@ alt="SImple chapter menu in plain text" />
 
 <h4> This example used only standard plain text content for the cues:</h4>
 
+
+<details>
+  <summary>Code extract!</summary>
+
 ```
 1.  WEBVTT
 2.  
@@ -3942,6 +3973,8 @@ alt="SImple chapter menu in plain text" />
 9.  Watch out!
 10. ...
 ```
+
+</details>
 
 We used this example to manually capture the images from the video that
 correspond to each of the seven chapters:
@@ -4327,6 +4360,9 @@ all browsers yet. A simple polyfill is used in the examples
 presented. If the getCueById method is not implemented (this is the case
 in some browsers), it's easy to use this small polyfill:
 
+<details>
+  <summary>Code extract!</summary>
+
 ```
 1.   // for browsers that do not implement the getCueById() method
 2.  
@@ -4343,6 +4379,8 @@ in some browsers), it's easy to use this small polyfill:
 13.   };
 14.  }
 ```
+
+</details>
 
 <h4>Techniques</h4>
 
@@ -4370,96 +4408,93 @@ addCue does <b>not</b> work with <i>HTMLTrackElement</i> Objects.
 <h4>HTML source code extract:</h4>
 
 <details>
-  <summary>HTML source code extract!</summary>
+  <summary>Code extract!</summary>
 
 ```
-1.  ...
-2.  <h1>Playing audio sprites with the track element</h1>
-3.   <p>A demo by Sam Dutton, adapted for JsBin by M.Buffa</p>
-4.   
-5.  <div id="soundButtons" class="isSupported"></div>
-6.  ...
-```
-
-```
-1.   window.onload = function() {
-2.      // Create an audio element programmatically
-3.   var audio = newAudio("https://mainline.i3s.unice.fr/mooc/animalSounds.mp3");
-4.   
-5.      audio.addEventListener("loadedmetadata", function() {
-6.        <b>// When the audio file has its metadata loaded, we can add</b>
-7.  <b>      // a new track to it, with mode = hidden. It will fire events</b>
-8.  <b>      // even if it is hidden</b>
-9.        <b>var track = audio.addTextTrack("metadata", "sprite track", "en");</b>
-10.       <b>track.mode = "hidden";</b>
-11.  
-12.       // for browsers that do not implement the getCueById() method
-13.       if (typeof track.getCueById !== "function") {
-14.          track.getCueById = function(id) {
-15.             var cues = track.cues;
-16.             for (var i = 0; i != track.cues.length; ++i) {
-17.                if (cues[i].id === id) {
-18.                return cues[i];
-19.             }
-20.          }
-21.       };
-22.    }
-23.  
-24.    var sounds = [
-25.       {
-26.         id: "purr",
-27.         startTime: 0.200,
-28.         endTime: 1.800
-29.       },
-30.       {
-31.         id: "meow",
-32.         startTime: 2.300,
-33.         endTime: 3.300
-34.       },
-35.       ...
-36.    ];
-37.  
-38.    for (var i = 0; i !== sounds.length; ++i) {
-39.       // for each animal sound, create a cue with id, start and end time
-40.       var sound = sounds[i];
-41.    <b>var cue = new VTTCue(sound.startTime, sound.endTime, sound.id); </b>
-42.       <b>cue.id = sound.id;**
-43.       **// add it to the track**
-44.       **track.addCue(cue);**
-45.       // create a button and add it to the HTML document
-46.       document.querySelector("#soundButtons").innerHTML += 
-47.                        "<button class='playSound' id=" 
-48.                        + sound.id + ">" +sound.id 
-49.                        + "</button>";  }
-50.  
-51.    var endTime;
-52.    audio.addEventListener("timeupdate", function(event) {
-53.       // When we play a sound, we set the endtime var.
-54.       // We need to listen when the audio file is being played, 
-55.       // in order to pause it when endTime is reached.
-56.       if (event.target.currentTime > endTime)
-57.          event.target.pause();
-58.    });
-59.  
-60.    function playSound(id) {
-61.      // Plays the sound corresponding to the cue with id equal
-62.      // to the one passed as a parameter. We set the endTime var
-63.      // and position the audio currentTime at the start time
-64.      // of the sound
-65.      **var cue = track.getCueById(id);**
-66.      audio.currentTime = cue.startTime;
-67.      endTime = cue.endTime;
-68.      audio.play();
-69.   };
-70.   // create listeners for all buttons
-71.   var buttons = document.querySelectorAll("button.playSound");
-72.   for(var i=; i < buttons.length; i++) {    
-73.      buttons[i].addEventListener("click", function(e) {
-74.         playSound(this.id);
-75.      });
-76.   }
-77.  });
-78. };
+...
+<h1>Playing audio sprites with the track element</h1>
+ <p>A demo by Sam Dutton, adapted for JsBin by M.Buffa</p>
+ 
+<div id="soundButtons" class="isSupported"></div>
+...
+ window.onload = function() {
+    // Create an audio element programmatically
+ var audio = newAudio("https://mainline.i3s.unice.fr/mooc/animalSounds.mp3");
+ 
+    audio.addEventListener("loadedmetadata", function() {
+      <b>// When the audio file has its metadata loaded, we can add</b>
+<b>      // a new track to it, with mode = hidden. It will fire events</b>
+<b>      // even if it is hidden</b>
+      <b>var track = audio.addTextTrack("metadata", "sprite track", "en");</b>
+      <b>track.mode = "hidden";</b>
+ 
+      // for browsers that do not implement the getCueById() method
+      if (typeof track.getCueById !== "function") {
+         track.getCueById = function(id) {
+            var cues = track.cues;
+            for (var i = 0; i != track.cues.length; ++i) {
+               if (cues[i].id === id) {
+               return cues[i];
+            }
+         }
+      };
+   }
+ 
+   var sounds = [
+      {
+        id: "purr",
+        startTime: 0.200,
+        endTime: 1.800
+      },
+      {
+        id: "meow",
+        startTime: 2.300,
+        endTime: 3.300
+      },
+      ...
+   ];
+ 
+   for (var i = 0; i !== sounds.length; ++i) {
+      // for each animal sound, create a cue with id, start and end time
+      var sound = sounds[i];
+   <b>var cue = new VTTCue(sound.startTime, sound.endTime, sound.id); </b>
+      <b>cue.id = sound.id;**
+      **// add it to the track**
+      **track.addCue(cue);**
+      // create a button and add it to the HTML document
+      document.querySelector("#soundButtons").innerHTML += 
+                       "<button class='playSound' id=" 
+                       + sound.id + ">" +sound.id 
+                       + "</button>";  }
+ 
+   var endTime;
+   audio.addEventListener("timeupdate", function(event) {
+      // When we play a sound, we set the endtime var.
+      // We need to listen when the audio file is being played, 
+      // in order to pause it when endTime is reached.
+      if (event.target.currentTime > endTime)
+         event.target.pause();
+   });
+ 
+   function playSound(id) {
+     // Plays the sound corresponding to the cue with id equal
+     // to the one passed as a parameter. We set the endTime var
+     // and position the audio currentTime at the start time
+     // of the sound
+     **var cue = track.getCueById(id);**
+     audio.currentTime = cue.startTime;
+     endTime = cue.endTime;
+     audio.play();
+  };
+  // create listeners for all buttons
+  var buttons = document.querySelectorAll("button.playSound");
+  for(var i=; i < buttons.length; i++) {    
+     buttons[i].addEventListener("click", function(e) {
+        playSound(this.id);
+     });
+  }
+ });
+};
 ```
 
 </details>
@@ -4478,6 +4513,9 @@ Here is a small code extract that shows how we can capture the JSON
 content of a cue when the video reaches its start time. We do this
 within a cuechange listener attached to a TextTrack:
 
+<details>
+  <summary>Code extract!</h4>
+
 ```
 1.  textTrack.oncuechange = function (){
 2.      // "this" is the textTrack that fired the event.
@@ -4487,6 +4525,9 @@ within a cuechange listener attached to a TextTrack:
 6.      // do something
 7.  }
 ```
+
+</details>
+
 <p>
 Here is <a href="https://simpl.info/track/map/index.html">a very impressive demo by Sam Dutton that uses JSON cues
 containing the latitude and longitude of the camera used for filming the
@@ -6113,6 +6154,9 @@ This code is very similar to the first example given at the top of this
 page. We've set the FFT size to a lower value, and rewritten the
 animation loop to plot frequency bars instead of a waveform:
 
+<details>
+  <summary>Code extract!</h4>
+
 ```
 1.  function buildAudioGraph() {
 2.    ...
@@ -6127,12 +6171,17 @@ animation loop to plot frequency bars instead of a waveform:
 11. }
 ```
 
+</details>
+
 This time, when building the audio graph, we have used a smaller FFT
 size. Values between 64 and 512 are very common here. Try them in the
 JSBin example! Apart from the lines in bold, this function is exactly
 the same as in the first example.
 
 The new visualization code:
+
+<details>
+  <summary>Code extract!</h4>
 
 ```
 1.  function visualize() {
@@ -6169,6 +6218,8 @@ The new visualization code:
 32.   requestAnimationFrame(visualize);
 33. }
 ```
+
+</details>
 
 **Explanations: **
 
@@ -6212,6 +6263,9 @@ with the Chrome WebAudio Inspector extension):
 alt="audio graph from above example" />
 
 Source code from this example's the buildAudioGraph function:
+
+<details>
+  <summary>Code extract!</h4>
 
 ```
 1.  function buildAudioGraph() {
@@ -6260,6 +6314,8 @@ Source code from this example's the buildAudioGraph function:
 44. }
 ```
 
+</details>
+
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch1-5-7">1.5.7 Volume Meters</h3>
 <!------------------------------------------------------------------------------------------------>
@@ -6282,6 +6338,9 @@ frequency ranges, and draw this value using a nice gradient-filled
 rectangle.
 
 Here are the two functions we will call from the animation loop:
+
+<details>
+  <summary>Code extract!</h4>
 
 ```
 1.  function drawVolumeMeter() {
@@ -6315,12 +6374,17 @@ Here are the two functions we will call from the animation loop:
 29. }
 ```
 
+</details>
+
 Note that we are measuring intensity (<i>line 4</i>) and once the frequency
 analysis data is copied into the dataarray, we
 call the getAverageVolume function (<i>line 5</i>) to compute the average
 value which we will draw as the volume meter.
 
 This is how we create the gradient:
+
+<details>
+  <summary>Code extract!</h4>
 
 ```
 1.  // create a vertical gradient of the height of the canvas
@@ -6331,9 +6395,14 @@ This is how we create the gradient:
 6.  gradient.addColorStop(0,'#ffffff');
 ```
 
+</details>
+
 And here is what the new animation loop looks like (for the sake of
 clarity, we have moved the code that draws the signal waveform to a
 separate function):
+
+<details>
+  <summary>Code extract!</h4>
 
 ```
 1.  function visualize() {
@@ -6347,6 +6416,8 @@ separate function):
 9.    requestAnimationFrame(visualize);
 10. }
 ```
+
+</details>
 
 Notice that we used the best practices seen in week 3 of the HTML5 part
 1 course: we saved and restored the context in all functions that change
@@ -7670,6 +7741,9 @@ alt="Screenshot of example with 4441 FPS displayed" />
 
 <h4>Source code extract of this example:</h4>
 
+<details>
+  <summary>Code extract!</h4>
+
 ```
 1.  var mainLoop = function(){
 2.    // main function, called each frame
@@ -7682,6 +7756,8 @@ alt="Screenshot of example with 4441 FPS displayed" />
 9.    img.src = 'data:image/png,' + Math.random();
 10. };
 ```
+
+</details>
 
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch2-3-2">2.3.2 Introducing graphics</h3>
@@ -7765,6 +7841,9 @@ described in the HTML5 Part 1 course:
 
 Here is JavaScript code which implements those best practices:
 
+<details>
+  <summary>Code extract!</h4>
+
 ```
 1.  // useful to have them as global variables
 2.  var canvas, ctx, w, h;
@@ -7818,6 +7897,8 @@ Here is JavaScript code which implements those best practices:
 50.   ctx.restore();
 51. }
 ```
+
+</details>
 
 In this small example, we used the context object to draw a monster
 using the default color (black) and wireframe and filled modes:
@@ -7876,6 +7957,9 @@ alt="Screenshot of a trembling monster in a 60 f/s animation" />
 
 <h4>HTML code:</h4>
 
+<details>
+  <summary>Code extract!</h4>
+
 ```
 1.  <!DOCTYPE html>
 2.  <html lang="en">
@@ -7889,7 +7973,12 @@ alt="Screenshot of a trembling monster in a 60 f/s animation" />
 10. </html>
 ```
 
+</details>
+
 <h4>JavaScript complete code:</h4>
+
+<details>
+  <summary>Code extract!</h4>
 
 ```
 1.  // Inits
@@ -7958,6 +8047,8 @@ alt="Screenshot of a trembling monster in a 60 f/s animation" />
 64. };
 65. };
 ```
+
+</details>
 
 <h4>Explanations:</h4>
 
@@ -8175,6 +8266,9 @@ alt="trembling monster with multiple key press management." />
 
 <h4>And here is the complete source code:
 
+<details>
+  <summary>Code extract!</h4>
+
 ```
 1.  // Inits
 2.  window.onload = function init() {
@@ -8284,6 +8378,8 @@ alt="trembling monster with multiple key press management." />
 106. };
 ```
 
+</details>
+
 You may notice that on some computers / operating systems, it is not
 possible to simultaneously press the up and down arrow keys, or left and
 right arrow keys, because they are mutually exclusive. However space +
@@ -8328,6 +8424,9 @@ down) as part of the inputStates object, just as we do with the keyboard
 (per previous lesson).
 
 <h4>Below is the JavaScript source code for this small example:</h4>
+
+<details>
+  <summary>Code extract!</h4>
 
 ```
 1.  var canvas, ctx;
@@ -8382,6 +8481,8 @@ down) as part of the inputStates object, just as we do with the keyboard
 47. }
 ```
 
+</details>
+
 <h4>Making an object follow the mouse cursor
 
 <a href="https://jsbin.com/soduko/edit?js,output">Try this example at JsBin</a>
@@ -8390,6 +8491,9 @@ down) as part of the inputStates object, just as we do with the keyboard
 alt="A rectangle that follows the mouse cursor" />
 
 <h4>Source code:</h4>
+
+<details>
+  <summary>Code extract!</h4>
 
 ```
 1.  var canvas, ctx, width, height;
@@ -8453,6 +8557,8 @@ alt="A rectangle that follows the mouse cursor" />
 59. }
 ```
 
+</details>
+
 <h4>Explanations:</h4>
 
 -   <i>Line 25</i> calculates the <i>angle</i> between mouse cursor and the
@@ -8484,6 +8590,9 @@ named inputStates is updated by keyboard and mouse events, and consulted
 to direct movements every 1/60th second.
 
 <h4>JavaScript source code:</h4>
+
+<details>
+  <summary>Code extract!</h4>
 
 ```
 1.  // Inits
@@ -8620,6 +8729,8 @@ to direct movements every 1/60th second.
 130.   };
 131. };
 ```
+
+</details>
 
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch2-3-6">2.3.6 Gamepad events</h3>
@@ -8797,6 +8908,9 @@ describes the connected device.
 
 [Example on JSBin](https://jsbin.com/kiduwu/edit?console,output)
 
+<details>
+  <summary>Code extract!</h4>
+
 ```
 1.  window.addEventListener("gamepadconnected", function(e) {
 2.     var gamepad = e.gamepad;
@@ -8811,6 +8925,8 @@ describes the connected device.
 11.                nbAxes + " axes");
 12. });
 ```
+
+</details>
 
 <img src="./images/image111.jpeg" style="width:5in;height:2.57425in"
 alt="Gamepad detected, message on the jsbin exmaple" />
@@ -8847,6 +8963,9 @@ when the system detects that a gamepad has been unplugged.
 
 Here is the code to use to scan for a gamepad:
 
+<details>
+  <summary>Code extract!</h4>
+
 ```
 1.  var gamepad;
 2.   
@@ -8872,6 +8991,8 @@ Here is the code to use to scan for a gamepad:
 22.     }
 23. }
 ```
+
+</details>
 
 In this code, we check every 1/60 second for newly or re-connected
 gamepads, and we update the gamepad global var with the first gamepad
@@ -8955,6 +9076,9 @@ alt="button status detected, example on jsbin" />
 
 Code for checking if a button is pressed:
 
+<details>
+  <summary>Code extract!</h4>
+
 ```
 1.  function checkButtons(gamepad) {
 2.     for (var i = 0; i < gamepad.buttons.length; i++) {
@@ -8975,6 +9099,8 @@ Code for checking if a button is pressed:
 16. }
 ```
 
+</details>
+
 In *line 11*, notice how we detect whether the current button is an
 analog trigger (L2 or R2 on Xbox360 or PS2/PS3 gamepads). 
 
@@ -8982,6 +9108,9 @@ Next, we'll integrate it into the mainloop code. Note that we also need
 to call the scangamepads function from the loop, to generate fresh
 "snapshots" of the gamepad with updated properties. Without this call,
 the gamepad.buttons will return the same  states every time.
+
+<details>
+  <summary>Code extract!</h4>
 
 ```
 1.  function mainloop() {
@@ -8996,6 +9125,8 @@ the gamepad.buttons will return the same  states every time.
 10. }
 ```
 
+</details>
+
 <h4>Detecting axes (joystick) values
 
 [Example on JSBin](https://jsbin.com/yaxika/edit)
@@ -9004,6 +9135,9 @@ the gamepad.buttons will return the same  states every time.
 alt="axes detection in JsBin" />
 
 Code for detecting the axes' values:
+
+<details>
+  <summary>Code extract!</h4>
 
 ```
 1.  // detect axis (joystick states)
@@ -9019,6 +9153,8 @@ Code for detecting the axes' values:
 11. }
 ```
 
+</details>
+
 <h4>Detecting the direction (left, right, up, down, diagonals) and angle of the left joystick
 
 We could add an inputStates object similar to the one we used in the
@@ -9033,6 +9169,9 @@ manage this:
 alt="direction and angle detection for joystick" />
 
 Source code extract:
+
+<details>
+  <summary>Code extract!</h4>
 
 ```
 1.  **var inputStates = {};**
@@ -9119,6 +9258,8 @@ Source code extract:
 82.   **inputStates.angle = Math.atan2(-gamepad.axes[1], gamepad.axes[0]);**
 83. }
 ```
+
+</details>
 
 #### Other gamepads and joysticks tested
 
@@ -9323,17 +9464,14 @@ we've changed very few lines of code from the previous evolution!
 
 #### Add a JavaScript object to describe the monster
 
+```
 1.  // The monster!
-
 2.  var monster = {
-
 3.    x:10,
-
 4.    y:10,
-
 5.    speed:1
-
 6.  };
+```
 
 Where monster.x and monster.y define the monster's
 current position and monster.speed corresponds to the number of pixels
@@ -9344,6 +9482,9 @@ look at a far better solution - *"time based animation" - *in another
 lesson.
 
 #### We modified the game loop as follows:
+
+<details>
+  <summary>Code extract!</h4>
 
 ```
 1.  var mainLoop = function(time){
@@ -9364,8 +9505,13 @@ lesson.
 16. };
 ```
 
+</details>
+
 We moved all the parts that check the input states in
 the updateMonsterPosition() function:
+
+<details>
+  <summary>Code extract!</h4>
 
 ```
 1.  function updateMonsterPosition() {
@@ -9407,6 +9553,8 @@ the updateMonsterPosition() function:
 37.   monster.y += monster.speedY;
 38. }
 ```
+
+</details>
 
 **Explanations**:
 
@@ -9452,6 +9600,9 @@ alt="move the monster with the gamepad, jsbin screenshot" />
 
 The new updated mainloop:
 
+<details>
+  <summary>Code extract!</h4>
+
 ```
 1.  var mainLoop = function(time){
 2.     //main function, called each frame
@@ -9474,8 +9625,13 @@ The new updated mainloop:
 19. };
 ```
 
+</details>
+
 And here is the updateGamePadStatus function (the inner function calls
 are to gamepad utility functions detailed in the previous lesson):
+
+<details>
+  <summary>Code extract!</h4>
 
 ```
 1.  function updateGamePadStatus() {
@@ -9487,6 +9643,8 @@ are to gamepad utility functions detailed in the previous lesson):
 7.    checkAxes(gamepad);
 8.  }
 ```
+
+</details>
 
 The checkAxes function updates the left, right, up, down properties of
 the inputStates object we previously used with key events. Therefore,
@@ -9686,6 +9844,8 @@ second = 16.66 ms.
 <img src="./images/image118.jpeg" style="width:2.75in;height:0.8125in"
 alt="image of a small rectangle in a canvas, moving from left to right" />
 
+<details>
+  <summary>Code extract!</h4>
 
 ```
 1.  <!DOCTYPE html>
@@ -9748,6 +9908,8 @@ alt="image of a small rectangle in a canvas, moving from left to right" />
 58. </html>
 ```
 
+</details>
+
 If you try this example on a low-end smartphone (use
 this [URL](https://jsbin.com/dibuze) for the example in stand-alone
 mode) and if you run it at the same time on a desktop PC, it is obvious
@@ -9806,7 +9968,9 @@ during the Unix epoch (!).
 
 There is an alternative. We could have called:
 
-1.  var time = Date.now();
+```
+var time = Date.now();
+```
 
 So, if we measure the time at the beginning of each animation loop, and
 store it, we can then compute the delta of times elapsed between two
@@ -9824,6 +9988,9 @@ style="width:5.26042in;height:1.61458in"
 alt="Bouncing square with time bases animation" />
 
 Source code from the example:
+
+<details>
+  <summary>Code extract!</h4>
 
 ```
 1.  <!DOCTYPE html>
@@ -9915,6 +10082,8 @@ Source code from the example:
 87. </html>
 ```
 
+</details>
+
 In this example, we only added a few lines of code for measuring the
 time and computing the time elapsed between two consecutive frames
 (see *line 38*). Normally, requestAnimationFrame(callback) tries to call
@@ -9944,6 +10113,9 @@ We added a long loop in the middle of the animation loop. This time, the
 animation should be very jerky. However, notice that the apparent speed
 of the square is the same as in the previous example: the animation
 adapts itself!
+
+<details>
+  <summary>Code extract!</h4>
 
 ```
 1.  function animationLoop() {
@@ -9986,6 +10158,8 @@ adapts itself!
 38. }
 ```
 
+</details>
+
 ### Method #2: using the new HTML5 high-resolution timer
 
 Since the beginning of HTML5, game developers, musicians, and
@@ -9996,7 +10170,7 @@ called the "[High Resolution Time API](https://www.w3.org/TR/hr-time/)".
 This API is very simple to use - just do:
 
 ```
-1.  var time = performance.now();
+var time = performance.now();
 ```
 
 ... to get a sub-millisecond time-stamp. It is similar to Date.now()
@@ -10351,6 +10525,9 @@ technique](https://jsbin.com/momeci/edit). 
 
 **Source code:**
 
+<details>
+  <summary>Source code!</h4>
+
 ```
 1.  <!DOCTYPE html>
 2.  <html lang="en">
@@ -10454,6 +10631,8 @@ technique](https://jsbin.com/momeci/edit). 
 100. </html>
 ```
 
+</details>
+
 ### Can we use setInterval?
 
 It's quite possible to use setInterval(function, interval) if you do not
@@ -10466,7 +10645,7 @@ animation, but you would also have a call to setInterval(changeEyeColor,
 variable, eyeColor, every second, which will be taken into account
 within the drawMonster function, called 60 times/s from the mainloop.
 
-## 2.4.4 Adding time-based animation
+<h3 id="ch-2-4-4">2.4.4 Adding time-based animation</h3>
 
 To add time-based animation to our game engine, we will be using the
 technique discussed in the previous lesson. This technique is now widely
@@ -10517,6 +10696,9 @@ We refer to it from the game loop, to measure the time between frames.
 Notice that here we pass the delta as a parameter to
 the updateMonsterPosition call:
 
+<details>
+  <summary>Code extract!</h4>
+
 ```
 1.  function timer(currentTime) {
 2.     var delta = currentTime - oldTime;
@@ -10545,6 +10727,8 @@ the updateMonsterPosition call:
 25. };
 ```
 
+</details>
+
 -   Finally, we use the time-delta in
     the updateMonsterPosition(...) function
 
@@ -10558,17 +10742,14 @@ the updateMonsterPosition call:
 7.   }
 ```
 
-## 2.5.1 Animating multiple objects
+<h3 id="ch2-5-1">2.5.1 Animating multiple objects</h3>
 
-Hi, welcome! Let me show you how we can add many animated
+Hi, welcome! Let me show you how we can add many animated objects to the 
+game framework.
 
-objects to the game framework. You can imagine them as being the enemies
-
-the player should fight or whatever. For the sake of this example, we
-are using
-
-black balls, but you can imagine small images or small monsters or
-whatever.
+You can imagine them as being the enemies the player should 
+fight or whatever. For the sake of this example, we are using black balls, 
+but you can imagine small images or small monsters or whatever.
 
 Using here a constructor function is interesting because we can design a
 sort of class.
@@ -10657,6 +10838,9 @@ variable for adjusting the size of the balls: the radius.
 
 Here is the constructor function for building balls:
 
+<details>
+  <summary>Code extract!</h4>
+
 ```
 1.  // Constructor function for balls
 2.  function Ball(x, y, vx, vy, diameter) {
@@ -10683,6 +10867,8 @@ Here is the constructor function for building balls:
 23. }
 ```
 
+</details>
+
 Using a constructor function makes it easy to build new balls as
 follows:
 
@@ -10706,6 +10892,9 @@ we will create many balls. This object-oriented design makes it easier
 to handle large quantities.
 
 Here is the rest of the code from this example:
+
+<details>
+  <summary>Code extract!</h4>
 
 ```
 1.  var canvas, ctx, width, height;
@@ -10786,6 +10975,8 @@ Here is the rest of the code from this example:
 76. }
 ```
 
+</details>
+
 **Notice that:**
 
 -   All the balls are stored in an array (*line 4*),
@@ -10816,6 +11007,9 @@ in the same way as the previous example.
 Note that we just changed the way we designed the balls and computed the
 angles after they rebound from the walls. The changes are highlighted in
 bold:
+
+<details>
+  <summary>Code extract!</h4>
 
 ```
 1.  var canvas, ctx, width, height;
@@ -10892,6 +11086,8 @@ bold:
 72. }
 ```
 
+</details>
+
 Using angles or horizontal and vertical increments is equivalent.
 However, one method might be preferable to the other: for example, to
 control an object that follows the mouse, or that tracks another object
@@ -10925,6 +11121,9 @@ jsbin.com is a good playground to try-out and test things...
 
 The new mainLoop :
 
+<details>
+  <summary>Code extract!</h4>
+
 ```
 1.  var mainLoop = function(time){
 2.    //main function, called each frame
@@ -10950,9 +11149,14 @@ The new mainLoop :
 22. };
 ```
 
+</details>
+
 As you can see, we draw the player/monster, we update its position; and
 we call an updateBalls function to do the same  for the balls: draw and
 update their position.
+
+<details>
+  <summary>Code extract!</h4>
 
 ```
 1.  function updateMonsterPosition(delta) {
@@ -10989,18 +11193,20 @@ update their position.
 32. }
 ```
 
+</details>
+
 Now, in order to turn this into a game, we need to create some
 interactions between the player (the monster) and the obstacles/enemies
 (balls, walls)... It's time to take a look at collision detection.
 
-## 2.5.3 Collision detection
+<h3 id="ch2-5-3">2.5.3 Collision detection</h3>
 
 In this chapter, we explore some techniques for detecting collisions
 between objects. This includes moving and static objects. We first
 present three "classic" collision tests, and follow them with brief
 sketches of more complex algorithms.
 
-### Circle collision test
+<h4>Circle collision test</h4>
 
 <img src="./images/image125.png" style="width:3in;height:2.47in"
 alt="two circles with distances between the centers drawn" />
@@ -11027,6 +11233,9 @@ definition, equal to their respective radii. So:
 
 Let's implement this as a JavaScript function step-by-step:
 
+<details>
+  <summary>Code extract!</h4>
+
 ```
 1.  function circleCollideNonOptimised(x1, y1, r1, x2, y2, r2) {
 2.  var dx = x1 - x2;
@@ -11039,11 +11248,13 @@ Let's implement this as a JavaScript function step-by-step:
 6.  }
 ```
 
+</details>
+
 This could be optimized a little averting the need to compute a square
 root:
 
 ```
-1.  (x2-x1)^2 + (y1-y2)^2 <= (r1+r2)^2
+(x2-x1)^2 + (y1-y2)^2 <= (r1+r2)^2
 ```
 
 ### Which yields:
@@ -11235,6 +11446,9 @@ alt="Same as previous picture but this time the player square is inside the mons
 
 Here is what we modified (in bold) in the code:
 
+<details>
+  <summary>Code extract!</h4>
+
 ```
 1.  ...
 2.  // The monster!
@@ -11265,10 +11479,8 @@ Here is what we modified (in bold) in the code:
 <!-- -->
 535. 1.  // draws a rectangle centered on the mouse position
      2.  // we draw it as a square.
-     3.  // We remove size/2 to the x and y position at drawing time
-         in
-     4.  // order to recenter the rectangle on the mouse pos
-         (normally
+     3.  // We remove size/2 to the x and y position at drawing time in
+     4.  // order to recenter the rectangle on the mouse pos (normally
      5.  // the 0, 0 of a rectangle is at its top left corner)
      6.  var size = player.boundingCircleRadius;
      7.  ctx.fillRect(player.x - size / 2, player.y - size / 2, size, size);
@@ -11292,15 +11504,15 @@ Here is what we modified (in bold) in the code:
 537. 
 <!-- -->
 38. if (rectsOverlap(playerXBoundingRect, playerYBoundingRect,
-    1.  playerSize, playerSize,
-    2.  monsterXBoundingRect, monsterYBoundingRect,
-    3.  monster.width, monster.height)) {
+    playerSize, playerSize,
+    monsterXBoundingRect, monsterYBoundingRect,
+    monster.width, monster.height)) {
     <!-- -->
-    1.  ctx.fillText("Collision", 150, 20);
-    2.  ctx.strokeStyle = ctx.fillStyle = 'red';
+    ctx.fillText("Collision", 150, 20);
+    ctx.strokeStyle = ctx.fillStyle = 'red';
 39. } else {
-    1.  ctx.fillText("No collision", 150, 20);
-    2.  ctx.strokeStyle = ctx.fillStyle = 'black';
+    ctx.fillText("No collision", 150, 20);
+    ctx.strokeStyle = ctx.fillStyle = 'black';
 40. }
 41. }
 <!-- -->
@@ -11312,22 +11524,24 @@ Here is what we modified (in bold) in the code:
 539. 
 <!-- -->
 44. if ((x1 > (x2 + w2)) || ((x1 + w1) < x2))
-    1.  return false; // No horizontal axis projection overlap
+    return false; // No horizontal axis projection overlap
 <!-- -->
 540. 
 <!-- -->
 45. if ((y1 > (y2 + h2)) || ((y1 + h1) < y2))
-    1.  return false; // No vertical axis projection overlap
+    return false; // No vertical axis projection overlap
 <!-- -->
 541. 
 <!-- -->
 46. return true; // If previous tests failed, then both axis
    projections
-    1.  // overlap and the rectangles intersect
+    // overlap and the rectangles intersect
 47. }
 ```
 
-### Many real games use aligned rectangle collision tests
+</details>
+
+<h4>Many real games use aligned rectangle collision tests</h4>
 
 Testing "circle-circle" or "rectangle-rectangle collisions is *cheap* in
 terms of computation. "Rectangle-rectangle" collisions are used in many
@@ -11359,7 +11573,7 @@ In this section, we only give sketches and examples of more
 sophisticated collision tests. For further explanation, please follow
 the links provided.
 
-#### Aligned rectangle-circle
+<h4>Aligned rectangle-circle</h4>
 
 There are only two cases when a circle intersects with a rectangle:
 
@@ -11369,6 +11583,9 @@ There are only two cases when a circle intersects with a rectangle:
 
 We propose this function (implemented after reading [this Thread at
 StackOverflow](https://stackoverflow.com/questions/401847/circle-rectangle-collision-detection-intersection)):
+
+<details>
+  <summary>Code extract!</h4>
 
 ```
 1.  // Collisions between rectangle and circle
@@ -11385,6 +11602,8 @@ StackOverflow](https://stackoverflow.com/questions/401847/circle-rectangle-colli
 12. }
 ```
 
+</details>
+
 [Try this function in this example on
 JSBin](https://jsbin.com/acohiv/845/edit?html,output).
 
@@ -11393,7 +11612,7 @@ alt="Circle and rectangle not in collision" /><img src="./images/image139.jpeg"
 style="width:2.10417in;height:2.19792in"
 alt="circle collides a rectangle" />
 
-### [ADVANCED] Collision between balls (pool like)
+<h4>[ADVANCED] Collision between balls (pool like)
 
 -   Math and physics: please read [this external resource (for math), a
     great article that explains the physics of a pool
@@ -11442,7 +11661,7 @@ have also been expanded in the source code to make computations clearer.
 Note that this is not for beginners: advanced math and physics are
 involved!
 
-### To go further... video game physics!
+<h4>To go further... video game physics!
 
 For the ones who are not afraid by some math and physics and would like
 to learn how to do collision detection in a more realistic way (using
@@ -11450,7 +11669,7 @@ physics modeling), we recommend [this tutorial, that is the first of a
 three-part series  about  video game
 physics](https://www.toptal.com/game/video-game-physics-part-i-an-introduction-to-rigid-body-dynamics).
 
-## 2.5.4 Adding collision detection to the game framework
+<h3 id="ch2-5-4">2.5.4 Adding collision detection to the game framework</h3>
 
 Our previous lesson enabled us to animate balls in the game framework
 ([this example](https://jsbin.com/tehuve/edit)).
@@ -11466,7 +11685,7 @@ the ball color to red.
 <img src="./images/image142.jpeg" style="width:3in;height:3.02853in"
 alt="Collision between balls and the monster" />
 
-### Source code extract:
+<h4>Source code extract:
 
 ```
 1.  function updateBalls(delta) {
@@ -11543,7 +11762,7 @@ let's explain how to use "sprites" in JavaScript and canvas.
 
 There are different sorts of *sprite sheets*. See some examples below.
 
-### Multiple postures on a single sprite sheet
+<h4>Multiple postures on a single sprite sheet
 
 A sprite sheet with different "sprite" sets that correspond to different
 "postures": this is the case for the walking woman we just saw in the
@@ -11575,7 +11794,7 @@ alt="sprite sheet for a robot jump" />
 Whereas the walking robot posture is made of 16 sprites, the jumping
 robot needs 26!
 
-### Hybrid sprite sheets
+<h4>Hybrid sprite sheets
 
 You will also find sprite sheets that contain completely different sets
 of sprites (this one comes from [the famous Gridrunner IOS game by Jeff
@@ -11591,7 +11810,7 @@ how to support different layouts of sprite sheet.
 <h3 id="ch2-6-3">2.6.3 Sprite extraction and animation</h3>
 <!------------------------------------------------------------------------------------------------>
 
-### Principle
+<h4>Principle
 
 Before doing anything interesting with the sprites, we need to:
 
@@ -11608,7 +11827,7 @@ Before doing anything interesting with the sprites, we need to:
 In this lesson, let's construct an interactive tool to present the
 principles of sprite extraction and animation.
 
-### Example #1
+<h4>Example #1
 
 In this example, we'll move the slider to extract the sprite indicated
 by the slider value. See the red rectangle? This is the sprite image
@@ -11616,12 +11835,12 @@ currently selected! When you move the slider, the corresponding sprite
 is drawn in the small canvas. As you move the slider from one to the
 next, see how the animation is created? 
 
-### [<span id="_Toc98696629" class="anchor"></span>Try it at JSBin](https://jsbin.com/yukacep/edit?html,js,output):
+<h4>[<span id="_Toc98696629" class="anchor"></span>Try it at JSBin](https://jsbin.com/yukacep/edit?html,js,output):
 
 <img src="./images/image148.jpeg" style="width:5in;height:4.31036in"
 alt="Screenshot of the example: move a slider to select a subimage/sprite from the spritesheet" />
 
-### HTML code:
+<h4>HTML code:
 
 ```
 1.  <html lang="en">
@@ -11780,7 +11999,7 @@ sprites:
 
 </details>
 
-### **Explanations**:
+<h4>**Explanations**:
 
 -   *Lines 1-4*: characteristics of the sprite sheet. How many rows,
     i.e., how many sprites per row, etc.
@@ -11813,7 +12032,7 @@ sprites:
     sheets. Adjust the global parameters in bold at* lines 1-5* and try
     the extractor.
 
-### Example #2
+<h4>Example #2
 
 542. This is the same application with another sprite sheet.  
      We just changed these parameter values: try the same code but with
@@ -11878,7 +12097,7 @@ value of the parameter and observing the result.
 <img src="./images/image150.jpeg" style="width:6.5in;height:4.27847in"
 alt="Example of the sprite framework on JsBin. Screenshot" />
 
-### The SpriteImage object and sprite models
+<h4>The SpriteImage object and sprite models
 
 In this small framework we use "SpriteImage ", a JS object we build to
  represent one sprite image. Its properties are: the global sprite sheet
@@ -11994,7 +12213,7 @@ robot in the previous example.
 64. }
 ```
 
-### Same example but with the walking woman sprite sheet
+<h4>Same example but with the walking woman sprite sheet
 
 [Try this JsBin](http://jsbin.com/fekacu/edit?js,output)
 
@@ -12020,7 +12239,7 @@ sprite sheet has 8 different postures, so you can call:
 12. // etc...
 ```
 
-### Moving the sprites, stopping the sprites
+<h4>Moving the sprites, stopping the sprites
 
 [Example at JsBin](https://jsbin.com/muwoje/edit?js,output)
 
@@ -12033,7 +12252,7 @@ time we created 8 woman sprites, one for each direction.
 Notice that we added a drawStopped method in the Sprite model in order
 to stop animating the woman when no key is pressed for moving her.
 
-### External resource
+<h4>External resource
 
 -   Game development tutorial (5 May 2020): [Draw images and sprite
     animations](https://spicyyoghurt.com/tutorials/html5-javascript-game-development/images-and-sprite-animations)
@@ -12053,7 +12272,7 @@ JsBin](https://jsbin.com/mifeva/edit?js,console,output)**
 <img src="./images/image153.jpeg" style="width:6.5in;height:3.03819in"
 alt="The woman sprite in the game framework, jsbin screenshot" />
 
-### How to add sprites to the game framework...
+<h4>How to add sprites to the game framework...
 
 1.  We declare a woman object, similar to the monster object, with x, y,
     speed, width properties. We add a direction property that
@@ -12265,7 +12484,7 @@ Source code extract:
 8.  }
 ```
 
-### Game states:menus, high score tables, etc.
+<h4>Game states:menus, high score tables, etc.
 
 In this example, let's make use of a global gameState variable for
 managing the life-cycle of the game. Usually, there is a main menu with
@@ -12451,7 +12670,7 @@ JavaScript files:
 
 Let's do this together!
 
-### Start with a simple structure
+<h4>Start with a simple structure
 
 First, create a game.html file that contains the actual HTML code:
 
@@ -12502,7 +12721,7 @@ not work, open devtools, look at the console, fix the errors, try again,
 etc. You may have to do this several times when you split your files and
 encounter errors.
 
-### Isolate the ball function constructor
+<h4>Isolate the ball function constructor
 
 Put the Ball constructor function in a js/ball.js file, include it in
 the game.html file, and try the game: oops, it doesn't work! Let's open
@@ -12578,7 +12797,7 @@ now ball.draw(**ctx**); instead of ball.draw() without any parameter.
 
 </details>
 
-### Isolate the part that counts the number of frames per second
+<h4>Isolate the part that counts the number of frames per second
 
 We need to add a small initFPS function for creating the <div> that
 displays the FPS value... this function will be called from
@@ -12634,7 +12853,7 @@ At this stage, the structure looks like this:
 <img src="./images/image159.jpeg" style="width:1.625in;height:2.25in"
 alt="Game structure" />
 
-### Let's continue and isolate the event listeners
+<h4>Let's continue and isolate the event listeners
 
 Now, consider the code that creates the listeners, can we move it from
 the GF.start() method into a listeners.js file? We'll have to pass the
@@ -21211,7 +21430,7 @@ mobile device, <a href="https://jsbin.com/eyahuv/2"use this URL instead</a>!
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image263.png"
-   alt="Moving Balls"
+   alt="Moving Balls."
    width="35%" />
 </p>
 <!---   style="width:3in;height:1.99379in" --->
@@ -21417,4 +21636,4 @@ your comments/observations/questions and share your creations.
 
 <h5>the end...</h5>
 
-<h4>Last Updated: 10-03-2022 11:44am</h4>
+<h4>Last Updated: 10-03-2022 1:12pm</h4>
