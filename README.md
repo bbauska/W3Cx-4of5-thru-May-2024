@@ -1312,7 +1312,7 @@ consideration.
 
 Happy Web building!
 
-### What is W3C?
+<h4>What is W3C?
 
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 13. w3c www consortium logo (19) -------------------------------->
@@ -3615,7 +3615,7 @@ alt="Buttons for choosing the track/language under a standard video player" />
 
 </details>
 
-<h4> JavaScript code:
+<h4> JavaScript code:</h4>
 
 <details>
   <summary>JavaScript code extract!</summary>
@@ -3693,7 +3693,7 @@ alt="Buttons for choosing the track/language under a standard video player" />
 
 </details>
 
-<h4> External resources
+<h4> External resources</h4>
 
 -   If you are interested in building a complete custom video player,
     MDN offers an online tutorial with further information
@@ -3928,7 +3928,7 @@ video](https://jsbin.com/jiyodit/edit?html,css,js,output).
 <img src="./images/image038.jpeg" style="width:5in;height:2.28152in"
 alt="SImple chapter menu in plain text" />
 
-<h4> This example used only standard plain text content for the cues:
+<h4> This example used only standard plain text content for the cues:</h4>
 
 ```
 1.  WEBVTT
@@ -4991,7 +4991,7 @@ example)
 
 <h4>Explanations:</h4>
 
-### Here we applied a commonly used technique:
+<h4>Here we applied a commonly used technique:</h4>
 
 -   As soon as the page is loaded: initialize the audio context (<i>line
     11</i>). Here we use a trick so that the code works on all browsers:
@@ -5007,7 +5007,7 @@ example)
     built-in node. Also, the MediaElementSource node "gainexample" which
     is the HTML's audio element.
 
-### Example of bigger graphs
+<h4>Example of bigger graphs</h4>
 
 Web Audio nodes are implemented natively in the browser. The Web Audio
 framework has been designed to handle a very large number of nodes. It's
@@ -5090,7 +5090,7 @@ a <video> or <audio> element stream. The above video shows how to
 make a simple example step by step, and how to setup FireFox for
 debugging Web Audio applications and visualize the audio graph.
 
-### Typical use: 
+<h4>Typical use:</h4>
 
 [Example at JSBin](https://jsbin.com/mifaqa/edit?html,js,output)
 
@@ -5153,9 +5153,9 @@ same number of channels.*"
 JSBin](https://jsbin.com/davebu/edit?html,js,console,output), or try it
 in your browser:
 
-###   Gain 
+<h4>Gain Node</h4>
 
-### Source code extract:
+<h4>Source code extract:</h4>
 
 <details>
   <summary>Source code extract!</summary>
@@ -5200,9 +5200,9 @@ left pan) and 1 (full right pan)."*
 [Example at JSBin,](https://jsbin.com/jarimu/edit?html,js,output) or try
 it in your browser:
 
-###  Balance 
+<h4>Balance</h4>
 
-### Source code extract:
+<h4>Source code extract:</h4>
 
 <details>
   <summary>Source code extract!</summary>
@@ -5228,7 +5228,7 @@ it in your browser:
 
 </details>
 
-### Biquad filter
+<h4>Biquad filter</h4>
 
 Definition: "*The *BiquadFilterNode* interface represents a simple
 low-order filter, and is created using
@@ -5431,7 +5431,7 @@ with the Chrome WebAudio Inspector extension):
 <img src="./images/image061.jpeg" style="width:5in;height:2.85737in"
 alt="audio graph of the previous example" />
 
-### And here is the function which builds the graph:
+<h4>And here is the function which builds the graph:</h4>
 
 <details>
   <summary>Source code extract!</summary>
@@ -5505,27 +5505,25 @@ with the Chrome WebAudio Inspector extension):
 <img src="./images/image062.jpeg" style="width:5in;height:3.11966in"
 alt="Audio graph of the previous example" />
 
-### Extract of the HTML code:
+<h4>Extract of the HTML code:</h4>
 
 <details>
   <summary>Source code extract!</summary>
 
 ```
-1.  <audio src="https://mainline.i3s.unice.fr/mooc/guitarRiff1.mp3"
-<!-- -->
-1.          id="compressorExample" controls loop
-<!-- -->
-1.          crossorigin="anonymous"></audio>
-2.  <br>
-3.  <label for="gainSlider1">Gain</label>
-4.  <input type="range" min="0" max="10" step="0.01"
-5.          <b>value="8"</b> id="gainSlider1" />
-6.  <button id="compressorButton">Turn compressor On</button>
+<audio src="https://mainline.i3s.unice.fr/mooc/guitarRiff1.mp3"
+        id="compressorExample" controls loop
+        crossorigin="anonymous"></audio>
+<br>
+<label for="gainSlider1">Gain</label>
+<input type="range" min="0" max="10" step="0.01"
+        <b>value="8"</b> id="gainSlider1" />
+<button id="compressorButton">Turn compressor On</button>
 ```
 
 </details>
 
-### JavaScript source code:
+<h4>JavaScript source code:</h4>
 
 <details>
   <summary>JavaScript source code!</summary>
@@ -5593,7 +5591,7 @@ alt="Audio graph of the previous example" />
 
 </details>
 
-### Explanations:
+<h4>Explanations:</h4>
 
 There is nothing special here compared to the other examples in this
 section, except that we have used a new method disconnect (*line
@@ -6074,7 +6072,7 @@ alt="Video player + equalizer + waveform visualization" />
 <h3 id="ch1-5-6">1.5.6 Frequencies</h3>
 <!------------------------------------------------------------------------------------------------>
 
-### First typical example
+<h4>First typical example</h4>
 
 [Example at JSBin](https://jsbin.com/wenuvub/edit?js,output):
 
@@ -6405,6 +6403,9 @@ adjustment of the left/right balance with a slider.
 
 <h4>Source code extract:</h4>
 
+<details>
+  <summary>Source code extract!</summary>
+
 ```
 1.  function buildAudioGraph() {
 2.    var mediaElement = document.getElementById('player');
@@ -6460,7 +6461,12 @@ adjustment of the left/right balance with a slider.
 52. }
 ```
 
-### And here is the new function for drawing the two volume meters:
+</details>
+
+<h4>And here is the new function for drawing the two volume meters:</h4>
+
+<details>
+  <summary>Source code extract!</summary>
 
 ```
 1.  function drawVolumeMeters() {
@@ -6487,11 +6493,13 @@ adjustment of the left/right balance with a slider.
 22. }
 ```
 
+</details>
+
 The code is very similar to the previous one. We draw two rectangles
 side-by-side, corresponding to the two analyser nodes - instead of the
 single display in the previous example.
 
-### Extra explanations and resources
+<h4>Extra explanations and resources</h4>
 
 Indeed, the proposed examples are ok for making things "dancing in
 music" but rather inaccurate if you are looking for a real volume meter.
@@ -6620,7 +6628,7 @@ This node has different properties:
 
 -   detune: not relevant for this course.
 
-##### Loading and decoding a sound sample
+<h4>Loading and decoding a sound sample</h4>
 
 **Before use, a sound sample must be loaded using Ajax, decoded, and set
 to the buffer property of an AudioBufferSourceNode.**
@@ -6641,17 +6649,20 @@ Notice in the code that each time we click on the button, we rebuild the
 audio graph.
 
 > **This is because AudioBufferSourceNodes can be used only once!   
-> **  
+> **
 > But don't worry, Web Audio is optimized for handling thousands of
 > nodes...
 
-##### HTML code extract:
+<h4>HTML code extract:</h4>
 
 ```
-1.  <button id="playButton" disabled=true>Play sound</button>
+<button id="playButton" disabled=true>Play sound</button>
 ```
 
-##### JavaScript source code:
+<h4>JavaScript source code:</h4>
+
+<details>
+  <summary>JavaScript code extract!</summary>
 
 ```
 1.  var ctx;
@@ -6717,7 +6728,9 @@ audio graph.
 61. }
 ```
 
-##### **Explanations:**
+</details>
+
+<h4>Explanations:</h4>
 
 -   When the page is loaded, we first call
     the loadSoundUsingAjax function for loading and decoding the sound
@@ -6758,9 +6771,9 @@ audio graph.
     don't worry - it's a very fast operation, even with hundreds of
     nodes.**
 
-##### Loading and decoding multiple sounds: the BufferLoader utility
+<h4>Loading and decoding multiple sounds: the BufferLoader utility</h4>
 
-#### The problem: AJax requests are asynchronous
+<h4>The problem: AJax requests are asynchronous</h4>
 
 The asynchronous aspect of Ajax has always been problematic for
 beginners. For example, if our applications use multiple sound samples
@@ -6768,19 +6781,18 @@ and we need to be sure that all of them are loaded and decoded, using
 the code we presented in the earlier example will not work as is. We
 cannot call:
 
-1.  loadSoundSample(urlOfSound1);
-
-2.  loadSoundSample(urlOfSound2);
-
-3.  loadSoundSample(urlOfSound3);
-
-4.  etc...
+```
+loadSoundSample(urlOfSound1);
+loadSoundSample(urlOfSound2);
+loadSoundSample(urlOfSound3);
+etc...
+```
 
 ... because we will never know exactly when all the sounds have finished
 being loaded and decoded. All these calls will run operations in the
 background yet return instantly.
 
-#### The BufferLoader utility object: useful for preloading sound and image assets
+<h4>The BufferLoader utility object: useful for preloading sound and image assets</h4>
 
 There are different approaches for dealing with this problem. During the
 HTML5 Coding Essentials and Best Practices course, we presented utility
@@ -6793,14 +6805,17 @@ utility](https://jsbin.com/javoger/edit?html,js,console,output):
 <img src="./images/image083.jpeg" style="width:5in;height:1.37255in"
 alt="Example that loads two sounds and create two buttons for playing them" />
 
-##### HTML code:
+<h4>HTML code:</h4>
 
 ```
 1.  <button id="shot1Normal" disabled=true>Shot 1</button>
 2.  <button id="shot2Normal" disabled=true>Shot 2</button>
 ```
 
-##### JavaScript code extract (does not contain the BufferLoader utility code):
+<h4>JavaScript code extract (does not contain the BufferLoader utility code):</h4>
+
+<details>
+  <summary>JavaScript code extract!</summary>
 
 ```
 1.  var listOfSoundSamplesURLs = [
@@ -6854,6 +6869,8 @@ alt="Example that loads two sounds and create two buttons for playing them" />
 49. }
 ```
 
+</details>
+
 After the call to loadAllSoundSamples() (*line 13*), when all the sound
 sample files have been loaded and decoded, a callback will be initiated
 to onSamplesDecoded(decodedSamples), located at *line 25*. The array of
@@ -6888,7 +6905,10 @@ HTML5Rocks)](https://www.html5rocks.com/en/tutorials/webaudio/games/):
 
 -   makeSource(buffer)
 
-##### Here is the source code of this function:
+<h4>Here is the source code of this function:</h4>
+
+<details>
+  <summary>Source code extract!</summary>
 
 ```
 1.  function makeSource(buffer) {
@@ -6914,9 +6934,14 @@ HTML5Rocks)](https://www.html5rocks.com/en/tutorials/webaudio/games/):
 21. }
 ```
 
+</details>
+
 And this is the function that plays different sounds in a row,
 eventually creating random time intervals between them and random pitch
 variations:
+
+<details>
+  <summary>Source code extract!</summary>
 
 ```
 1.  function playSampleRepeated(buffer, rounds, interval, random, random2) {
@@ -6936,6 +6961,8 @@ variations:
 15.   } 
 16. }
 ```
+
+</details>
 
 <h4>Explanations:</h4>
 
@@ -7148,7 +7175,7 @@ be revisited in more details in this section.
 
 Here, we present some elements that are useful in writing games.
 
-##### Drawing: the &lt;canvas&gt; element
+<h4>Drawing: the &lt;canvas&gt; element</h4>
 
 <img src="./images/image092.jpeg" style="width:2in;height:2in"
 alt="the html5 canvas logo" />
@@ -7183,7 +7210,7 @@ Group](https://www.w3.org/html/wg/) published [HTML Canvas 2D
 Context](https://www.w3.org/TR/2dcontext/) as W3C Recommendation (i.e.,
 Web standard status).
 
-##### Animating at 60 fps: the requestAnimationFrame API 
+<h4>Animating at 60 fps: the requestAnimationFrame API</h4>
 
 The requestAnimationFrame API targets 60 frames per second animation in
 canvases. This API is quite simple and also comes with a high resolution
@@ -7192,7 +7219,7 @@ on major desktop computers. This is the preferred way to perform
 animation, as the browser will ensure that animation is not
 performed when the canvas is not visible, thus saving CPU resources.
 
-##### Videos and animated textures: the <video> element
+<h4>Videos and animated textures: the &lt;video&gt; element</h4>
 
 <img src="./images/image093.png" style="width:1in;height:1in"
 alt="a movie film icon" />
@@ -7208,14 +7235,14 @@ it is possible to manipulate video data to incorporate a variety of
 visual effects  in real time, and conversely, to use images from videos
 as "animated textures" over graphic objects.
 
-##### Audio (streamed audio and real time sound effects): the <audio> element and the Web Audio API
+<h4>Audio (streamed audio and real time sound effects): the <audio> element and the Web Audio API</h4>
 
 <img src="./images/image094.png" style="width:2in;height:2.00966in"
 alt="a picture of a speaker" />
 
-##### The <audio> element
+<h4>The &lt;audio&gt; element</h4>
 
-<audio> is an HTML element that was introduced to give a consistent
+&lt;audio&gt; is an HTML element that was introduced to give a consistent
 API for playing *streamed* sounds in browsers. File format support
 varies between browsers, but MP3 works in nearly all browsers today.
 Unfortunately, the <audio> element is only for streaming compressed
@@ -7224,7 +7251,7 @@ effects where you would like to change the playing speed or add real
 time effects such as reverberation or doppler. For this,  [the Web Audio
 API](https://www.w3.org/TR/webaudio/) is preferable.
 
-##### The Web Audio API
+<h4>The Web Audio API</h4>
 
 This is a 100% JavaScript API designed for working in real time with
 uncompressed sound samples or for generating procedural music. Sound
@@ -7233,7 +7260,7 @@ being used. Up to 12 sound effects are provided natively by browsers
 that support the API (all major browsers except IE, although Microsoft
 Edge supports it).
 
-### **Interacting**: dealing with keyboard and mouse events, the GamePad API
+<h4><b>Interacting</b>: dealing with keyboard and mouse events, the GamePad API</h4>
 
 <img src="./images/image095.png" style="width:0.72917in;height:0.80208in"
 alt="a gamepad picture" />
@@ -7246,7 +7273,7 @@ is already implemented by some browsers, which we will also cover in
 this course. The Gamepad specification defines a low-level interface
 that represents gamepad devices.
 
-##### Multi-participants feature: WebSockets
+<h4>Multi-participants feature: WebSockets</h4>
 
 IMPORTANT INFORMATION: NOT COVERED IN THIS COURSE
 
@@ -7343,7 +7370,7 @@ loop function EACH 200ms, <u>even if the previous one is not yet
 finished</u>.  Because of this disadvantage, we might prefer to use
 another function, better suited to our goals.
 
-##### Using setTimeout() instead of setInterval()
+<h4>Using setTimeout() instead of setInterval()</h4>
 
 -   Syntax: setTimeout(function, ms);
 
@@ -7454,7 +7481,10 @@ We will evolve this framework throughout the lessons in this course, and
 cut it in different files once it becomes too large to fit within one
 single file.
 
-##### Here is the starting point:
+<h4>Here is the starting point:</h4>
+
+<details>
+  <summary>Source code extract!</summary>
 
 ```
 1.  var GF = function(){
@@ -7476,7 +7506,9 @@ single file.
 17. };
 ```
 
-##### With this skeleton, it's very easy to create a new game instance:
+</details>
+
+<h4>With this skeleton, it's very easy to create a new game instance:</h4>
 
 ```
 1.  var game = new GF();
@@ -7485,7 +7517,7 @@ single file.
 4.  game.start();
 ```
 
-##### Examples
+<h4>Examples</h4>
 
 Let's put something into the mainLoop function, and check if it works
 
@@ -7494,7 +7526,7 @@ a new mainloop:  (check the JavaScript and output tabs). This page
 should display a different random number every 1/60 second. We don't
 have a real game yet, but we're improving our game engine :-)
 
-##### Source code extract:
+<h4>Source code extract:</h4>
 
 ```
 1.  var mainLoop = function(time){
@@ -7506,7 +7538,7 @@ have a real game yet, but we're improving our game engine :-)
 7.  };
 ```
 
-##### Let's measure that animation's frame rate
+<h4>Let's measure that animation's frame rate</h4>
 
 Every game needs to have a function which measures the actual frame rate
 achieved by the code.
@@ -7543,6 +7575,9 @@ alt="screenshot of the example that displays 60 frames/s" />
 
 <h4>Source code extract:</h4>
 
+<details>
+  <summary>Source code extract!</summary>
+
 ```
 1.     // vars for counting frames/s, used by the measureFPS function
 2.  var frameCount = 0;
@@ -7573,6 +7608,8 @@ alt="screenshot of the example that displays 60 frames/s" />
 27.    frameCount++;
 28. };
 ```
+
+</details>
 
 Now we can call the measureFPS function from inside the animation loop,
 passing it the current time, given by the high resolution timer that
@@ -7673,7 +7710,10 @@ JSBin](https://jsbin.com/ponaki/edit).
 style="width:2.82292in;height:2.80208in"
 alt="Small monster drawn in a canvas" />
 
-##### HTML code (declaration of the canvas):
+<h4>HTML code (declaration of the canvas):</h4>
+
+<details>
+  <summary>Source code extract!</summary>
 
 ```
 1.  <!DOCTYPE html>
@@ -7687,6 +7727,8 @@ alt="Small monster drawn in a canvas" />
 9.  </body>
 10. </html>
 ```
+
+</details>
 
 The canvas declaration is at* line 8*. Use attributes to give
 it a width and a height, but unless you add some CSS properties, you
@@ -7805,7 +7847,7 @@ using the default color (black) and wireframe and filled modes:
     always save the previous context  at the beginning of the function
     and restore it at the end of the function (*lines 27 and 50*).
 
-##### Animating the monster and including it in our game engine
+<h4>Animating the monster and including it in our game engine
 
 Ok, now that we know how to move the monster, let's integrate it into
 our game engine:
@@ -7945,9 +7987,9 @@ Next, let's see how to interact with it using the mouse or the keyboard.
 <h3 id="ch2-3-3">2.3.3 User interaction and event handling</h3>
 <!------------------------------------------------------------------------------------------------>
 
-##### Input & output: how do events work in Web apps & games?
+<h4>Input & output: how do events work in Web apps & games?
 
-##### HTML5 events
+<h4>HTML5 events
 
 There is no input or output in JavaScript. We treat *events* caused by
 user actions as inputs, and we manipulate the DOM structure as
@@ -7964,7 +8006,7 @@ to create *event handlers*.
 There are three ways to manage events in the DOM structure. You could
 attach an event inline in your HTML code like this:
 
-##### Method #1: declare an event handler in the HTML code
+<h4>Method #1: declare an event handler in the HTML code
 
 ```
 <div id="someDiv" onclick="alert('clicked!')"> content of the
@@ -7977,7 +8019,7 @@ be abandoned in the future). Mixing 'visual layer' (HTML) and 'logic
 layer' (JavaScript) in one place is really bad practice and causes a
 host of problems during development.
 
-##### Method #2: attach an event handler to an HTML element in JavaScript
+<h4>Method #2: attach an event handler to an HTML element in JavaScript
 
 ```
 document.getElementById('someDiv').onclick = function() {
@@ -7989,7 +8031,7 @@ This method is fine, but  you will not be able to attach
 multiple *listener* functions. If you need to do this, use the version
 shown below.
 
-##### Method #3: register a callback to the event listener with the addEventListener method (preferred  method)
+<h4>Method #3: register a callback to the event listener with the addEventListener method (preferred  method)
 
 ```
 document.getElementById('someDiv').addEventListener**('click', function() {
@@ -8001,7 +8043,7 @@ Note that the third parameter describes whether the *callback* has to be
 called during the captured phase. This is not important for now, just
 set it to false.
 
-##### Details of the DOM event are passed to the event listener function
+<h4>Details of the DOM event are passed to the event listener function
 
 When you create an *event listener* and attach it to an element, the
 listener will create an *event object* to describe what happened. This
@@ -8009,7 +8051,7 @@ object is provided as a parameter of the callback function:
 
 ```
 element.addEventListener('click', function(event) {
-   /** now you can use event object inside the callback**/
+   /** now you can use event object inside the callback **/
 }, false);
 ```
 
@@ -8025,7 +8067,7 @@ course) in the context of a game engine (in particular, how to manage
 multiple events at the same time), and also demonstrate how you can
 accept input from a game pad using the new Gamepad API.
 
-##### Further reading
+<h4>Further reading
 
 In the method #1 above, we mentioned that "Mixing 'visual layer' (HTML)
 and 'logic layer' (JavaScript) ... bad practice", and this is similarly
@@ -8043,7 +8085,7 @@ references useful:
 <h3 id="ch2-3-4">2.3.4 Adding key listeners</h3>
 <!------------------------------------------------------------------------------------------------>
 
-##### A few reminders
+<h4>A few reminders
 
 This has been something of a nightmare for years, as different browsers
 had different ways of handling key events and key codes ([read this if
@@ -8077,7 +8119,7 @@ style="width:5.66667in;height:7.61458in" />
 <img src="./images/image104.png"
 style="width:5.66667in;height:1.29167in" />
 
-##### Game requirements: managing multiple keypress / keyrelease events
+<h4>Game requirements: managing multiple keypress / keyrelease events
 
 In a game, we often need to check which keys are being used, at a very
 high frequency - typically from inside the game loop that is looping at
@@ -8093,7 +8135,7 @@ loop will have to take these three keys into account: move the ship
 left, release a new missile if the previous one is out of the screen or
 if it reached a target, launch a smart bomb if conditions are met, etc.
 
-##### Keep the list of pertinent keys in a JavaScript object
+<h4>Keep the list of pertinent keys in a JavaScript object
 
 The typical method used is: store the list of the keys (or mouse button
 or whatever game pad button...) that are up or down at a given time in a
@@ -8104,7 +8146,7 @@ We will update its content inside the different input event listeners,
 and later check its values inside the game loop to make the game react
 accordingly.
 
-##### Add this to our game framework:
+<h4>Add this to our game framework:
 
 So, these are the changes to our small game engine prototype (which is
 far from finished yet):
@@ -8131,7 +8173,7 @@ JSBin](https://jsbin.com/razeya/edit)
 <img src="./images/image105.jpeg" style="width:2in;height:2.0766in"
 alt="trembling monster with multiple key press management." />
 
-##### And here is the complete source code:
+<h4>And here is the complete source code:
 
 ```
 1.  // Inits
@@ -8251,7 +8293,7 @@ up + right should work in combination.
 <h3 id="ch2-3-5">2.3.5 Adding mouse listeners</h3>
 <!------------------------------------------------------------------------------------------------>
 
-##### A few reminders
+<h4>A few reminders
 
 <img src="./images/image106.jpeg" style="width:4in;height:2.73282in"
 alt="a schema of mouse internals" />
@@ -8340,7 +8382,7 @@ down) as part of the inputStates object, just as we do with the keyboard
 47. }
 ```
 
-##### Making an object follow the mouse cursor
+<h4>Making an object follow the mouse cursor
 
 <a href="https://jsbin.com/soduko/edit?js,output">Try this example at JsBin</a>
 
@@ -8851,7 +8893,7 @@ gamepads](https://github.com/luser/gamepadtest).
 
 #### Detecting button status and axes values (joysticks)
 
-##### Properties of the gamepad object
+<h4>Properties of the gamepad object
 
 The gamepad object returned in the event listener [has different
 properties](https://w3c.github.io/gamepad/#gamepad-interface):
@@ -8898,7 +8940,7 @@ the above image to open a large view in another window/tab.
     > 0.0 representing a button that is not pressed, and 1.0
     > representing a button that is fully depressed.
 
-##### Detecting whether a button is pressed
+<h4>Detecting whether a button is pressed
 
 Digital, on/off buttons evaluate to either one or zero (respectively).
 Whereas analog buttons will return a floating-point value between zero
@@ -8954,7 +8996,7 @@ the gamepad.buttons will return the same  states every time.
 10. }
 ```
 
-##### Detecting axes (joystick) values
+<h4>Detecting axes (joystick) values
 
 [Example on JSBin](https://jsbin.com/yaxika/edit)
 
@@ -8977,7 +9019,7 @@ Code for detecting the axes' values:
 11. }
 ```
 
-##### Detecting the direction (left, right, up, down, diagonals) and angle of the left joystick
+<h4>Detecting the direction (left, right, up, down, diagonals) and angle of the left joystick
 
 We could add an inputStates object similar to the one we used in the
 game framework, and check its values in the mainloop to decide whether
@@ -9582,7 +9624,7 @@ This technique is useful when:
 -   **Your application runs on different devices, and where 60 frames/s
     are definitely not possible.** **More generally, you want your
     animated objects to move at the same speed on screen, regardless of
-    the device that runs the game.**  
+    the device that runs the game.** 
       
     For example, imagine a game or an animation running on a smartphone
     and on a desktop computer with a powerful GPU. On the phone, you
@@ -10179,123 +10221,125 @@ Here is the [online example at JSBin](https://jsbin.com/bonutur/edit).
 
 **Try to change the parameter value of the call to: **
 
-1.  <sup>setFrameRateInFramesPerSecond(5); // try other values!</sup>
+```
+<sup>setFrameRateInFramesPerSecond(5); // try other values!</sup>
+```
 
 <img src="./images/image120.png" style="width:4in;height:2.0047in" />
 
 **Source code of the example:**
 
 ```
-351. <!DOCTYPE html>
-352. <html lang="en">
-353.  <head>
-354.  <meta charset=utf-8 />
-355.  <title>Set framerate using a high resolution timer</title>
-356.  </head>
-357.  <body>
-358.  <p>This example measures and sums deltas of time between
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ <meta charset=utf-8 />
+ <title>Set framerate using a high resolution timer</title>
+ </head>
+ <body>
+ <p>This example measures and sums deltas of time between
      consecutive frames of animation. It includes
      a <code>setFrameRateInFramesPerSecond</code> function you can
      use to reduce the number of frames per second of the main
      animation.</p>
-359.  
-360.  <canvas id="myCanvas" width="700" height="350">
-361.  </canvas>
-362.  <script>
-363.    var canvas = document.querySelector("#myCanvas");
-364.    var ctx = canvas.getContext("2d");
-365.    var width = canvas.width, height = canvas.height;
-366.    var lastX = width * Math.random();
-367.    var lastY = height * Math.random();
-368.    var hue = 0;
-369.  
-370.    // Michel Buffa: set the target frame rate. TRY TO CHANGE THIS VALUE AND SEE
-371.    // THE RESULT. Try 2 frames/s, 10 frames/s, 60 frames/s Normally there
-372.    // should be a limit of 60 frames/s in the browser's implementations.
-373.    setFrameRateInFramesPerSecond(60);
-374.  
-375.   // for time based animation. DelayInMS corresponds to the target framerate
-376.   var now, delta, delayInMS, totalTimeSinceLastRedraw = 0;
-377.  
-378.   // High resolution timer
-379.   var then = performance.now();
-380.  
-381.   // start the animation
-382.   requestAnimationFrame(mainloop);
-383.  
-384.   function setFrameRateInFramesPerSecond(frameRate) {
-385.     delayInMs = 1000 / frameRate;
-386.   }
-387.  
-388.   // each function that is going to be run as an animation should end by
-389.   // asking again for a new frame of animation
-390.   function mainloop(time) {
-391.     // Here we will only redraw something if the time we want between frames has
-392.     // elapsed
-393.     // Measure time with high resolution timer
-394.     now = time;
-395.  
-396.     // How long between the current frame and the previous one?
-397.     delta = now - then;
-398.     // TRY TO UNCOMMENT THIS LINE AND LOOK AT THE CONSOLE
-399.     // console.log("delay = " + delayInMs + " delta = " + delta + " total time = " +
-400.     // totalTimeSinceLastRedraw);
-401.  
-402.     // If the total time since the last redraw is > delay corresponding to the wanted
-403.     // framerate, then redraw, else add the delta time between the last call to line()
-404.     // by requestAnimFrame to the total time..
-405.     if (totalTimeSinceLastRedraw > delayInMs) {
-406.        // if the time between the last frame and now is > delay then we
-407.        // clear the canvas and redraw
-408.  
-409.        ctx.save();
-410.  
-411.        // Trick to make a blur effect: instead of clearing the canvas
-412.        // we draw a rectangle with a transparent color. Changing the 0.1
-413.        // for a smaller value will increase the blur...
-414.        ctx.fillStyle = "rgba(0,0,0,0.1)";
-415.        ctx.fillRect(0, 0, width, height);
-416.  
-417.        ctx.translate(width / 2, height / 2);
-418.        ctx.scale(0.9, 0.9);
-419.        ctx.translate(-width / 2, -height / 2);
-420.  
-421.        ctx.beginPath();
-422.        ctx.lineWidth = 5 + Math.random() * 10;
-423.        ctx.moveTo(lastX, lastY);
-424.        lastX = width * Math.random();
-425.        lastY = height * Math.random();
-426.  
-427.        ctx.bezierCurveTo(width * Math.random(),
-428.                          height * Math.random(),
-429.                          width * Math.random(),
-430.                          height * Math.random(),
-431.                          lastX, lastY);
-432.  
-433.        hue = hue + 10 * Math.random();
-434.        ctx.strokeStyle = "hsl(" + hue + ", 50%, 50%)";
-435.        ctx.shadowColor = "white";
-436.        ctx.shadowBlur = 10;
-437.        ctx.stroke();
-438.  
-439.        ctx.restore();
-440.  
-441.        // reset the total time since last redraw
-442.        totalTimeSinceLastRedraw = 0;
-443.     } else {
-444.        // sum the total time since last redraw
-445.        totalTimeSinceLastRedraw += delta;
-446.     }
-447.  
-448.     // Store time
-449.     then = now;
-450.  
-451.     // request new frame
-452.     requestAnimationFrame(mainloop);
-453.   }
-454.  </script>
-455.  </body>
-456. </html>
+ 
+ <canvas id="myCanvas" width="700" height="350">
+ </canvas>
+ <script>
+   var canvas = document.querySelector("#myCanvas");
+   var ctx = canvas.getContext("2d");
+   var width = canvas.width, height = canvas.height;
+   var lastX = width * Math.random();
+   var lastY = height * Math.random();
+   var hue = 0;
+ 
+   // Michel Buffa: set the target frame rate. TRY TO CHANGE THIS VALUE AND SEE
+   // THE RESULT. Try 2 frames/s, 10 frames/s, 60 frames/s Normally there
+   // should be a limit of 60 frames/s in the browser's implementations.
+   setFrameRateInFramesPerSecond(60);
+ 
+  // for time based animation. DelayInMS corresponds to the target framerate
+  var now, delta, delayInMS, totalTimeSinceLastRedraw = 0;
+ 
+  // High resolution timer
+  var then = performance.now();
+ 
+  // start the animation
+  requestAnimationFrame(mainloop);
+ 
+  function setFrameRateInFramesPerSecond(frameRate) {
+    delayInMs = 1000 / frameRate;
+  }
+ 
+  // each function that is going to be run as an animation should end by
+  // asking again for a new frame of animation
+  function mainloop(time) {
+    // Here we will only redraw something if the time we want between frames has
+    // elapsed
+    // Measure time with high resolution timer
+    now = time;
+ 
+    // How long between the current frame and the previous one?
+    delta = now - then;
+    // TRY TO UNCOMMENT THIS LINE AND LOOK AT THE CONSOLE
+    // console.log("delay = " + delayInMs + " delta = " + delta + " total time = " +
+    // totalTimeSinceLastRedraw);
+ 
+    // If the total time since the last redraw is > delay corresponding to the wanted
+    // framerate, then redraw, else add the delta time between the last call to line()
+    // by requestAnimFrame to the total time..
+    if (totalTimeSinceLastRedraw > delayInMs) {
+       // if the time between the last frame and now is > delay then we
+       // clear the canvas and redraw
+ 
+       ctx.save();
+ 
+       // Trick to make a blur effect: instead of clearing the canvas
+       // we draw a rectangle with a transparent color. Changing the 0.1
+       // for a smaller value will increase the blur...
+       ctx.fillStyle = "rgba(0,0,0,0.1)";
+       ctx.fillRect(0, 0, width, height);
+ 
+       ctx.translate(width / 2, height / 2);
+       ctx.scale(0.9, 0.9);
+       ctx.translate(-width / 2, -height / 2);
+ 
+       ctx.beginPath();
+       ctx.lineWidth = 5 + Math.random() * 10;
+       ctx.moveTo(lastX, lastY);
+       lastX = width * Math.random();
+       lastY = height * Math.random();
+ 
+       ctx.bezierCurveTo(width * Math.random(),
+                         height * Math.random(),
+                         width * Math.random(),
+                         height * Math.random(),
+                         lastX, lastY);
+ 
+       hue = hue + 10 * Math.random();
+       ctx.strokeStyle = "hsl(" + hue + ", 50%, 50%)";
+       ctx.shadowColor = "white";
+       ctx.shadowBlur = 10;
+       ctx.stroke();
+ 
+       ctx.restore();
+ 
+       // reset the total time since last redraw
+       totalTimeSinceLastRedraw = 0;
+    } else {
+       // sum the total time since last redraw
+       totalTimeSinceLastRedraw += delta;
+    }
+ 
+    // Store time
+    then = now;
+ 
+    // request new frame
+    requestAnimationFrame(mainloop);
+  }
+ </script>
+ </body>
+</html>
 ```
 
 ### Same technique with the bouncing rectangle
@@ -10854,7 +10898,7 @@ control an object that follows the mouse, or that tracks another object
 in order to attack it, angles would be more practical input to the
 computations required.
 
-## 2.5.2 Adding balls to the game framework
+<h3 id="ch2-5-2">2.5.2 Adding balls to the game framework</h3>
 
 This time, let's extract the source code used to create the balls, and
 include it in our game framework. We are also going to use time-based
@@ -11790,71 +11834,41 @@ animation framework.
 
 Here is how you would create and animate a sprite:
 
+```
 1.  **var robot;**
-
 2.   
-
 3.  window.onload = function() {
-
 4.     canvas = document.getElementById("canvas");
-
 5.     ctx = canvas.getContext("2d");
-
 6.  
-
 7.    // Load the spritesheet
-
 8.    spritesheet = new Image();
-
 9.    spritesheet.src = SPRITESHEET_URL;
-
 10. 
-
 11.   // Called when the spritesheet has been loaded
-
 12.   spritesheet.onload = function() {
-
 13.     ...
-
 14.     **robot = new Sprite();**
-
 15. **    // 1 is the posture number in the sprite sheet. We have**
-
 16. **    // only one with the robot.**
-
 17. **    robot.extractSprites(spritesheet, NB_POSTURES, 1,**
-
 18. **                         NB_FRAMES_PER_POSTURE,**
-
 19. **                         SPRITE_WIDTH, SPRITE_HEIGHT);**
-
 20. **    robot.setNbImagesPerSecond(20);**
-
 21. 
-
 22.     requestAnimationFrame(mainloop);
-
 23.  }; // onload
-
 24. };
-
 25.  
-
 26. function mainloop() {
-
 27.   // Clear the canvas
-
 28.   ctx.clearRect(0, 0, canvas.width, canvas.height);
-
 29.   **// draw sprite at 0, 0 in the small canvas**
-
 30. **  robot.draw(ctx, 0, 0, 1);**
-
 31. 
-
 32.   requestAnimationFrame(mainloop);
-
 33. }
+```
 
 [Try the example on JSBin that uses this framework
 first!](https://jsbin.com/rugosu/edit?js,output) Experiment by
@@ -11872,36 +11886,24 @@ to which it belongs, its position in the sprite sheet, and its size. It
 also has a draw method for drawing the sprite image at an xPos,
 yPos position, and at anappropriate size. 
 
+```
 1.  function SpriteImage(img, x, y, width, height) {
-
 2.     this.img = img; // the whole image that contains all sprites
-
 3.     this.x = x;     // x, y position of the sprite image in the whole
     > image
-
 4.     this.y = y;
-
 5.     this.width = width; // width and height of the sprite image
-
 6.     this.height = height;
-
 7.    
-
 8.     this.draw = function(ctx, xPos, yPos, scale) {
-
 9.        ctx.drawImage(this.img,
-
 10.         this.x, this.y, // x, y, width and height of img to extract
-
 11.         this.width, this.height,
-
 12.         xPos, yPos, // x, y, width and height of img to draw
-
 13.         this.width*scale, this.height*scale);
-
 14.  };
-
 15. }
+```
 
 We define the Sprite model. This is the one we used to create the small
 robot in the previous example.
@@ -11921,137 +11923,76 @@ robot in the previous example.
 
 **Here is the code of the Sprite model:**
 
+```
 1.  function Sprite() {
-
 2.    this.spriteArray = [];
-
 3.    this.currentFrame = 0;
-
 4.    this.delayBetweenFrames = 10;
-
 5.  
-
 6.    this.extractSprites = function(spritesheet,
-
 7.                                   nbPostures, postureToExtract,
-
 8.                                   nbFramesPerPosture,
-
 9.                                   spriteWidth, spriteHeight) {
-
 10.     // number of sprites per row in the spritesheet
-
 11.  
-    >   var nbSpritesPerRow = Math.floor(spritesheet.width / spriteWidth);
-
+   >   var nbSpritesPerRow = Math.floor(spritesheet.width / spriteWidth);
 12. 
-
 13.     // Extract each sprite
-
 14.     var startIndex = (postureToExtract -1) * nbFramesPerPosture;
-
 15.     var endIndex = startIndex + nbFramesPerPosture;
-
 16.     for(var index = startIndex; index < maxIndex; index++) {
-
 17.     // Computation of the x and y position that corresponds to the
     > sprite
-
 18.       // index
-
 19.       // x is the rest of index/nbSpritesPerRow * width of a sprite
-
 20.       var x = (index % nbSpritesPerRow) * spriteWidth;
-
 21.       // y is the divisor of index by nbSpritesPerRow * height of a
     > sprite
-
 22.       var y = Math.floor(index / nbSpritesPerRow) * spriteHeight;
-
 23. 
-
 24.       // build a spriteImage object
-
 25.    
     >   var s = new SpriteImage(spritesheet, x, y, spriteWidth, spriteHeight);
-
 26. 
-
 27.       this.spriteArray.push(s);
-
 28.     }
-
 29.   };
-
 30. 
-
 31.   this.then = performance.now();
-
 32.   this.totalTimeSinceLastRedraw = 0;
-
 33. 
-
 34.   this.draw = function(ctx, x, y) {
-
 35.     // Use time based animation to draw only a few images per second
-
 36.     var now = performance.now();
-
 37.     var delta = now - this.then;
-
 38. 
-
 39.     // Draw currentSpriteImage
-
 40.     var currentSpriteImage = this.spriteArray[this.currentFrame];
-
 41.     // x, y, scale. 1 = size unchanged
-
 42.     currentSpriteImage.draw(ctx, x, y, 1);
-
 43. 
-
 44.     // if the delay between images is elapsed, go to the next one
-
 45.     if (this.totalTimeSinceLastRedraw > this.delayBetweenFrames) {
-
 46.     // Go to the next sprite image
-
 47.       this.currentFrame++;
-
 48.       this.currentFrame %= this.spriteArray.length;
-
 49. 
-
 50.     // reset the total time since last image has been drawn
-
 51.       this.totalTimeSinceLastRedraw = 0;
-
 52.     } else {
-
 53.       // sum the total time since last redraw
-
 54.       this. totalTimeSinceLastRedraw += delta;
-
 55.     }
-
 56. 
-
 57.     this.then = now;
-
 58.   };
-
 59. 
-
 60.   this.setNbImagesPerSecond = function(nb) {
-
 61.     // delay in ms between images
-
 62.     this.delayBetweenFrames = 1000 / nb;
-
 63.   };
-
 64. }
+```
 
 ### Same example but with the walking woman sprite sheet
 
@@ -12064,29 +12005,20 @@ This time, we have changed the parameters of the sprites and sprite
 sheet. Now you can select the index of the posture to extract: the woman
 sprite sheet has 8 different postures, so you can call:
 
+```
 1.  womanDown.extractSprites(spritesheet, NB_POSTURES, **1**,
-
 2.                           NB_FRAMES_PER_POSTURE,
-
 3.                           SPRITE_WIDTH, SPRITE_HEIGHT);
-
 4.   
-
 5.  womanDiagonalBottomLeft.extractSprites(spritesheet, NB_POSTURES, **2**,
-
 6.                          NB_FRAMES_PER_POSTURE,
-
 7.                          SPRITE_WIDTH, SPRITE_HEIGHT);
-
 8.   
-
 9.  womanLeft.extractSprites(spritesheet, NB_POSTURES, **3**,
-
 10.                          NB_FRAMES_PER_POSTURE,
-
 11.                          SPRITE_WIDTH, SPRITE_HEIGHT);
-
 12. // etc...
+```
 
 ### Moving the sprites, stopping the sprites
 
@@ -12106,7 +12038,7 @@ to stop animating the woman when no key is pressed for moving her.
 -   Game development tutorial (5 May 2020): [Draw images and sprite
     animations](https://spicyyoghurt.com/tutorials/html5-javascript-game-development/images-and-sprite-animations)
 
-## 2.6.5 Adding sprites to the game framework
+<h3 id="ch2-6-5">2.6.5 Adding sprites to the game framework</h3>
 
 Let us use the animated woman example and take the sprite utility
 functions and some predefined values, such as the sprite sheet URL, the
@@ -12523,47 +12455,39 @@ Let's do this together!
 
 First, create a game.html file that contains the actual HTML code:
 
-game.html:
+<h4>game.html:</h4>
 
+<details>
+  <summary>game.html extract!</summary>
+
+```
 1.  <!DOCTYPE html>
-
 2.  <html lang="en">
-
 3.  <head>
-
 4.  <meta charset="utf-8">
-
 5.  <title>Nearly a real game</title>
-
 6.   **<!-- External JS libs -->**
-
 7.  <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/1.1.25/howler.min.js"></script>
-
 8.   **<!-- CSS files for your game -->**
-
 9.   <link rel="stylesheet" href="css/game.css">
-
 10. **<!-- Include here all game JS files-->**
-
 11. ** <script src="js/game.js"></script>**
-
 12. </head>
-
 13. <body>
-
 14. <canvas id="myCanvas" width="400" height="400"></canvas>
-
 15. </body>
-
 16. </html>
+```
+
+</details>
 
 Here is the game.css file (very simple):
 
+```
 1.  canvas {
-
 2.     border: 1px solid black;
-
 3.  }
+```
 
 Let's take the JavaScript code from the last JSBin example, save it to a
 file called game.js, and locate it in a subdirectory js under the
@@ -12584,35 +12508,30 @@ Put the Ball constructor function in a js/ball.js file, include it in
 the game.html file, and try the game: oops, it doesn't work! Let's open
 the console:
 
-Ball.js:
+<h4>Ball.js:</h4>
 
+<details>
+  <summary>Ball.js extract!</summary>
+
+```
 1.  // constructor function for balls
-
 2.  function Ball(x, y, angle, v, diameter) {
-
 3.     ...
-
 4.      this.draw = function () {
-
 5.         **ctx**.save();
-
 6.         ...
-
 7.      };
-
 8.      this.move = function () {
-
 9.        ...
-
 10.       this.x +=** calcDistanceToMove**(delta, incX);
-
 11.       this.y +=** calcDistanceToMove**(delta, incY);
-
 12.     };
-
 13. }
+```
 
-### Isolate the time based animation functions into a separate file
+</details>
+
+<h4>Isolate the time based animation functions into a separate file</h4>
 
 Hmmm... the calcDistanceToMove function is used here, but is defined in
 the game.js file, inside the GF object and will certainly raise an
@@ -12637,31 +12556,27 @@ add a ctx parameter to the draw method of ball.js. Don't forget to add
 it in game.js where ball.draw() is called. The call should be
 now ball.draw(**ctx**); instead of ball.draw() without any parameter.
 
-timeBasedAnim.js:
+<h4>timeBasedAnim.js:</h4>
 
+<details>
+  <summary>timeBasedAnim.js extract!</summary>
+
+```
 1.  var delta, oldTime = 0;
-
 2.   
-
 3.  function timer(currentTime) {
-
 4.     var delta = currentTime - oldTime;
-
 5.     oldTime = currentTime;
-
 6.     return delta;
-
 7.  }
-
 8.   
-
 9.  var calcDistanceToMove = function (delta, speed) {
-
 10.    //console.log("#delta = " + delta + " speed = " + speed);
-
 11.    return (speed * delta) / 1000;
-
 12. };
+```
+
+</details>
 
 ### Isolate the part that counts the number of frames per second
 
@@ -12672,74 +12587,47 @@ moved into the initFPS function we created and added into
 the fps.js file.
 
 fps.js:
+<details>
+  <summary>fps.js extract!</summary>
 
-1.  // vars for counting frames/s, used by the measureFPS function
-
+```
+1.  // vars for counting frames, used by the measureFPS function
 2.  var frameCount = 0;
-
 3.  var lastTime;
-
 4.  var fpsContainer;
-
 5.  var fps;
-
 6.   
-
 7.  var initFPSCounter = function() {
-
 8.     // adds a div for displaying the fps value
-
 9.     fpsContainer = document.createElement('div');
-
 10.    document.body.appendChild(fpsContainer);
-
 11. }
-
 12. 
-
 13. var measureFPS = function (newTime) {
-
 14.  
-
 15.    // test for the very first invocation
-
 16.    if (lastTime === undefined) {
-
 17.       lastTime = newTime;
-
 18.       return;
-
 19.    }
-
 20.  
-
 21.    //calculate the difference between last & current frame
-
 22.    var diffTime = newTime - lastTime;
-
 23.  
-
 24.    if (diffTime >= 1000) {
-
 25.       fps = frameCount;
-
 26.       frameCount = 0;
-
 27.       lastTime = newTime;
-
 28.    }
-
 29.  
-
 30.    //and display it in an element we appended to the
-
 31.    // document in the start() function
-
 32.    fpsContainer.innerHTML = 'FPS: ' + fps;
-
 33.    frameCount++;
-
 34. };
+```
+
+</details>
 
 At this stage, the structure looks like this:
 
@@ -13340,7 +13228,7 @@ downloading files.
 | **attribute**  | **type**     | **Explanation**                                                                                            |
 |----------------|--------------|------------------------------------------------------------------------------------------------------------|
 | onloadstart    | loadstart    | When the request starts.                                                                                   |
-| **onprogress** | **progress** | **While loading and sending data.**                                                                        |
+| **onprogress** | **progress** | **While loading and sending data.**                                                                       |
 | onabort        | abort        | When the request has been aborted, either by invoking the abort() method or navigating away from the page. |
 | onerror        | error        | When the request has failed.                                                                               |
 | onload         | load         | When the request has successfully completed.                                                               |
@@ -19057,7 +18945,7 @@ sandboxing](https://en.wikipedia.org/wiki/Sandbox_(computer_security)).
 > Browser developers have been using Web Components for a while, and now
 > it's available to every Web developer!
 
-### Another simple example
+<h4>Another simple example</h4>
 
 <details>
   <summary>HTML code!</summary>
@@ -19093,7 +18981,7 @@ alt="Shadow DOM simple example" />
 This example illustrates the three rules of the shadow DOM. Let's look
 at them again:
 
-#### <b>The three rules of Shadow DOM:</b>
+<h4><b>The three rules of Shadow DOM:</b></h4>
 
 1.  With Shadow DOM, elements are associated with a new kind of node: *a
     shadow root*.
@@ -19127,7 +19015,7 @@ external CSS will not apply inside the shadow root.
 This is an important feature: the content of a new "widget" that is
 hidden in a shadow root is protected from external CSS, scripts, etc.
 
-### An example that mixes templates and shadow DOM
+<h4>An example that mixes templates and shadow DOM</h4>
 
 HTML part:
 
@@ -19169,7 +19057,7 @@ French (and other languages) means "Instantiate" in English. We hope
 you'll translate, as appropriate; but if you seek definitions or use the
 word in web-searches, then the English spelling will help!
 
-### Internal CSS does not apply outside the template/shadow DOM
+<h4>Internal CSS does not apply outside the template/shadow DOM</h4>
 
 The CSS inside the template will not affect any other H1 elements on the
 page. This CSS rule (*lines 2-4* in the HTML part) will only apply to
@@ -19260,7 +19148,7 @@ the &lt;slot&gt;...&lt;/slot&gt; element, as shown below:
 
 </details>
 
-### <b>Explanations</b>:
+<h4><b>Explanations</b>:</h4>
 
 -   Look at *line 4*, this is the "injection point"'!
 
@@ -19270,12 +19158,12 @@ the &lt;slot&gt;...&lt;/slot&gt; element, as shown below:
     produced will contain "Injected Content" instead of <slot
     mname="my-text"></slot>.
 
-### See [the complete online example at JSBin](https://jsbin.com/jepucoz/edit?html,js,output):
+<h4>See [the complete online example at JSBin](https://jsbin.com/jepucoz/edit?html,js,output):</h4>
 
 <img src="./images/image234.jpeg" style="width:5in;height:2.17521in"
 alt="Content injection in HTML templates using slot elements" />
 
-### External resources
+<h4>External resources</h4>
 
 -   An MDN article on "[Using templates and
     slots](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_templates_and_slots)"
@@ -19296,13 +19184,13 @@ HTML Custom Elements is another API described as HTML Web components. It
 allows you to extend HTML by defining new elements, and to tell the
 browser how to render them.
 
-### Basic usage:
+<h4>Basic usage:</h4>
 
 ```
 customElements.define('my-widget', MyWidget);
 ```
 
-### This is done using JavaScript and there are some constraints:
+<h4>This is done using JavaScript and there are some constraints:</h4>
 
 1.  The element's new name should have a dash
     (ex: <my-calendar>, <app-list>, etc.)
@@ -19322,7 +19210,7 @@ new to you, please see earlier reference material.
 Here is an example which defines a new element named <my-widget>, that
 will render as an instance of a template with a shadow DOM:
 
-### HTML code for the use of the custom element:
+<h4>HTML code for the use of the custom element:</h4>
 
 ```
 1.  <body>
@@ -19360,7 +19248,7 @@ previous examples):
 
 </details>
 
-### JavaScript code:
+<h4>JavaScript code:</h4>
 
 <details>
   <summary>JavaScript code!</summary>
@@ -19396,7 +19284,7 @@ previous examples):
 
 </details>
 
-### <b>Explanations</b>: 
+<h4><b>Explanations</b>:</h4>
 
 -   *Line 5: *we use this particular selector for safety. It means
     "select the element only in the HTML of the document that is
@@ -19420,7 +19308,7 @@ previous examples):
     instance of the MyWidget class and render the shadow DOM of the Web
     Component.
 
-### Full example
+<h4>Full example</h4>
 
 Now, we can use the newly created element and inject content.  The
 template used here is the last one we studied in a previous lesson about
@@ -19430,7 +19318,7 @@ JSBin](https://jsbin.com/cacuvuf/edit?html,js,console,output): 
 <img src="./images/image235.jpeg" style="width:6.5in;height:2.7625in"
 alt="Custom element full example at JsBin" />
 
-### External resources
+<h4>External resources</h4>
 
 This lesson is only an introduction to custom elements. Here are a few
 pointers for learners who would like to see how a custom element can
@@ -19446,7 +19334,7 @@ inherit from another custom element.
 <h3 id="ch4-2-8">4.2.8 HTML Imports</h3>
 <!------------------------------------------------------------------------------------------------>
 
-### *** Important note ****
+<h4><b><i>Important note</i></b></h4>
 
 As of 2020, HTML imports have been dropped, and there is no clear
 replacing solution. While you can use polyfills to use existing
@@ -19485,7 +19373,7 @@ on Web Components talk a lot about a future "HTML module" that would do
 something similar to HTML imports, but this is not even in a
 specification yet...
 
-### Here is where we are:
+<h4>Here is where we are:</h4>
 
 -   <b>RECOMMENDED</b>: There is a polyfill for HTML imports that works
     very well. Just include it and your code that use HTML imports will
@@ -19808,7 +19696,7 @@ costs.
 Shortly we will see a "good version" of this example that uses Web
 Workers.
 
-### Thread safety problems? Not with Web Workers!
+<h4>Thread safety problems? Not with Web Workers!</h4>
 
 When programming with multiple threads, a common problem is "thread
 safety". This is related to the fact that several concurrent tasks may
@@ -19827,7 +19715,7 @@ through serialized objects. The separate threads* share different
 copies</i> so the problem with the four bytes variable, explained in the
 previous paragraph, cannot occur.
 
-### Different kinds of Web Workers
+<h4>Different kinds of Web Workers</h4>
 
 There are two different kinds of Web Workers described in the
 specification:
@@ -19855,7 +19743,7 @@ supported by major browser vendors, and a proper study would require a
 whole module's worth of material. We may cover this topic in a future
 version of this course when implementations are more stable/available.
 
-### External resources:
+<h4>External resources:</h4>
 
 -   [W3C specification about Web
     Workers](https://www.w3.org/TR/workers/)
@@ -19880,7 +19768,7 @@ version of this course when implementations are more stable/available.
 <h3 id="ch4-3-2">4.3.2 Use cases</h3>
 <!------------------------------------------------------------------------------------------------>
 
-### Use case #1: a "parent HTML5 page" creates workers from a script 
+<h4>Use case #1: a "parent HTML5 page" creates workers from a script</h4>
 
 The HTML5 Web Worker API provides the Worker JavaScript interface for
 loading and executing a script in the background, in a different thread
@@ -19893,7 +19781,7 @@ var worker = new Worker("worker0.js");
 More than one worker can be created/loaded by a parent page. This is
 parallel computing after all :-)
 
-### Use case #2: you manage a worker by communicating with it using "messages"
+<h4>Use case #2: you manage a worker by communicating with it using "messages"</h4>
 
 Messages can be strings or objects, as long as they can be serialized in
 JSON format (this is the case for most JavaScript objects, and is
@@ -19943,7 +19831,7 @@ worker.onmessage = function(event){
 };
 ```
 
-### Use case #3: a complete example
+<h4>Use case #3: a complete example</h4>
 
 The "Parent HTML page" of a simplistic example using a dedicated Web Worker:
 
@@ -19999,7 +19887,7 @@ The JavaScript code of the worker (worker0.js):
 
 </details>
 
-### Use case #4: handling errors
+<h4>Use case #4: handling errors</h4>
 
 The parent page can handle errors that may occur inside its workers, by
 listening for an onError event from a worker object:
@@ -20027,7 +19915,7 @@ remain linked to their <i>parent page</i> (the HTML5 page that created them).
 An implicit "communication channel" is opened between the Workers and
 the parent page, so that messages can be exchanged.
 
-### Example #1: compute prime numbers in the background while keeping the page user interface responsive
+<h4>Example #1: compute prime numbers in the background while keeping the page user interface responsive</h4>
 
 Let's look at [the first example, taken from the W3C
 specification](https://www.w3.org/TR/workers/#examples): "<i>The simplest
@@ -20119,7 +20007,7 @@ There are a few interesting things to note here:
     example, and you can verify that the animation is not affected by
     the computations in the background.
 
-### Try an improved version of the first example yourself
+<h4>Try an improved version of the first example yourself</h4>
 
 We can improve this example a little by testing whether the browser
 supports Web Workers, and by displaying some additional messages.
@@ -20211,7 +20099,7 @@ In this example, we just added a message that is sent to the "parent
 page" (<i>line 1</i>) and we use the standard JavaScript method setTimeout()
 to delay the beginning of the prime number computation by 3s.
 
-### Example #2: how to stop/kill a worker after a given amount of time
+<h4>Example #2: how to stop/kill a worker after a given amount of time</h4>
 
 So far, we have created and used a worker. Now we will see how to kill
 it!
@@ -20301,7 +20189,7 @@ worker after 10000ms.
 A Web worker can also kill itself by calling the close() method in the
 worker's JavaScript file:
 
-### <b>To sum up, there are 3 different ways to kill a Web Worker:</b>
+<h4><b>To sum up, there are 3 different ways to kill a Web Worker:</b></h4>
 
 1.  Close the tab/window of the parent. This will kill all workers that
     have been created by this parent tab/window.
@@ -20312,12 +20200,12 @@ worker's JavaScript file:
 3.  Call the close() method in a Worker's JavaScript file. This will
     kill the current Worker that is running this code.
 
-### A web worker can include external scripts
+<h4>A web worker can include external scripts</h4>
 
 External scripts can be loaded by workers using
 the importScripts() function.
 
-### worker.js:
+<h4>worker.js:</h4>
 
 ```
 importScripts('script1.js');
@@ -20348,7 +20236,7 @@ avoid such a pain, the Web Workers API does several things:
 2.  Only predefined thread-safe objects are available in workers, this
     is a subset of those usually available in standard JS scripts.
 
-### Objects available in Web Workers:
+<h4>Objects available in Web Workers:</h4>
 
 -   The navigator object
 
@@ -20366,7 +20254,7 @@ avoid such a pain, the Web Workers API does several things:
 -   [Spawning other Web
     Workers](https://www.html5rocks.com/en/tutorials/workers/basics/?redirect_from_locale=fr#toc-enviornment-subworkers)
 
-### Workers do NOT have access to:
+<h4>Workers do NOT have access to:</h4>
 
 -   The DOM (it's not thread-safe)
 
@@ -20378,7 +20266,7 @@ avoid such a pain, the Web Workers API does several things:
 
 ## WOW! This is a lot! So, please be careful!
 
-### This is well illustrated below:
+<h4>This is well illustrated below:</h4>
 
 <img src="./images/image242.png" style="width:5.20833in;height:3.39583in"
 alt="web worker scope" />
@@ -20395,7 +20283,7 @@ alt="web worker scope" />
     proposes a canvas
     proxy.](https://www.w3.org/TR/html51/semantics.html#proxying-canvases-to-workers) 
 
-### Debugging Web Workers
+<h4>Debugging Web Workers</h4>
 
 -   Like other multi-threaded applications, debugging Web Workers can be
     a tricky task, and having a good tool-kit makes this process much
@@ -20422,7 +20310,7 @@ alt="chrome debug web workers" />
 <h3 id="ch4-3-4">4.3.4 Demos</h3>
 <!------------------------------------------------------------------------------------------------>
 
-### Demo \#1
+<h4>Demo #1</h4>
 
 This is a variation of the prime number example (previous lecture) which
 shows that an interaction in the parent page is not affected by the
@@ -20438,7 +20326,7 @@ reacts instantly...
 <img src="./images/image244.png" style="width:5in;height:3.12767in"
 alt="Demo screenshot" />
 
-### Demo \#2
+<h4>Demo #2</h4>
 
 Do ray tracing using a variable number of Workers, and try
 it [online](https://nerget.com/rayjs-mt/rayjs.html) (if you've not heard
@@ -20454,7 +20342,7 @@ between workers and their creator, instead of computing in parallel.
 <img src="./images/image245.jpeg" style="width:4in;height:3.99165in"
 alt="Ray Tracer with web workers." />
 
-### Other demos
+<h4>Other demos</h4>
 
 [Try these other impressive demos at the MDN demo
 repository!](https://developer.mozilla.org/en-US/docs/Web/Demos_of_open_web_technologies#Web_APIs)
@@ -20466,7 +20354,7 @@ repository!](https://developer.mozilla.org/en-US/docs/Web/Demos_of_open_web_tech
 Here is the discussion forum for this part of the course. Please post
 your comments/observations/questions and share your creations.
 
-### Suggested topics of discussion:
+<h4>Suggested topics of discussion:</h4>
 
 -   Did you try the demos from the last lesson? Do you understand why
     using Web Workers can be a savior in some situations?
@@ -20476,7 +20364,7 @@ your comments/observations/questions and share your creations.
     benefiting from multi core processors, leading to greater
     performance). Please share any relevant articles in the forum!
 
-### Optional projects:
+<h4>Optional projects:</h4>
 
 -   Please write a small Web app. that uses Web Workers.
 
@@ -20573,7 +20461,7 @@ understanding of <i>direction</i> with our own view of 'the Earth'. Once we
 have a unified <i>coordinate system</i>, we apply rotations in the following
 order:
 
-### Rotate the device frame around its z axis by alpha degrees, with alpha in \[0, 360\]
+<h4>Rotate the device frame around its z axis by alpha degrees, with alpha in \[0, 360\]</h4>
 
 <table>
 <colgroup>
@@ -20600,7 +20488,7 @@ alt="rotation about z axis" /></td>
 </tbody>
 </table>
 
-### Rotate the device frame around its x axis by beta degrees, with beta in\[-180, 180\]
+<h4>Rotate the device frame around its x axis by beta degrees, with beta in\[-180, 180\]</h4>
 
 <table>
 <colgroup>
@@ -21529,4 +21417,4 @@ your comments/observations/questions and share your creations.
 
 <h5>the end...</h5>
 
-<h4>Last Updated: 9-30-2022 9:28am</h4>
+<h4>Last Updated: 10-03-2022 11:44am</h4>
