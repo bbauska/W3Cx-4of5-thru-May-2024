@@ -773,7 +773,7 @@ drop, the PHP is the same)
 [4.3.1 Introduction [467](#introduction-8)](#introduction-8)
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------- 02. script not reesponding (xx) -------------------------------->
+<!------------------------------- 02. script not reesponding (11) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image002.png"
@@ -990,7 +990,7 @@ JavaScript, to create your own HTML5 app and/or game.
 <h4>Web browsers</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------------- 03. which browser? (xx) ------------------------------------>
+<!----------------------------------- 03. which browser? (14) ------------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image003.jpeg?raw=true"
@@ -1054,7 +1054,7 @@ examples will actually use these.
 <h4>JS Bin</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------------ 04. js bin logo (xx) -------------------------------------->
+<!------------------------------------ 04. js bin logo (15) -------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image004.png"
@@ -1075,7 +1075,7 @@ or on YouTube. Keep in mind that it's always better to be logged in (it's free) 
 <h4>CodePen</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------------ 05. codepen logo (xx) ------------------------------------->
+<!------------------------------------ 05. codepen logo (15) ------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image005.png"
@@ -1104,16 +1104,14 @@ or similar tools, would be really appreciated.
 <h4>W3C Validators</h4>
 
 For over 20 years, the W3C has been developing and
-hosting <a href="https://w3c.github.io/developers/">[<b><u>free</u></b> and <b><u>open
-source</u></b> tools</a> used every day
-by <b>millions of Web developers and Web designers</b>. All the tools
-listed below are Web-based, and are available as downloadable sources or
-as free services on the <a href="https://w3c.github.io/developers/tools/">W3C Developers tools</a> site.
+hosting <a href="https://w3c.github.io/developers/">[free and open source tools]</a> used every day
+by millions of Web developers and Web designers. All the tools listed below are Web-based, and are 
+available as downloadable sources or as free services on the <a href="https://w3c.github.io/developers/tools/">W3C Developers tools</a> site.
 
 <h4>W3C Validator</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------------ 06. w3c validator (xx) ------------------------------------->
+<!------------------------------------ 06. w3c validator (16) ------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image006.png"
@@ -1131,7 +1129,7 @@ Cascading Style Sheets (CSS) and (X)HTML documents that use CSS
 stylesheets.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------------- 07. css validator (xx) ------------------------------------->
+<!----------------------------------- 07. css validator (16) ------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image007.png"
@@ -1173,7 +1171,7 @@ accessibility guidelines, the Mobile Web Best Practices, and a number of
 internationalization tips.
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------------ 08. w3c lookup (xx) --------------------------------------->
+<!------------------------------------ 08. w3c lookup (17) --------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image008.png?raw=true"
@@ -1223,7 +1221,7 @@ is a snapshot of what information is given by CanIUse when searching for
 "CSS3 colors".
 
 <!------------------------------------------------------------------------------------------------>
-<!----------- 09. Example of a CanIUse browser support table (using CSS3 colors) (xx) ------------>
+<!----------- 09. Example of a CanIUse browser support table (using CSS3 colors) (18) ------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image009.gif?raw=true"
@@ -1234,7 +1232,7 @@ is a snapshot of what information is given by CanIUse when searching for
 <h3>MDN Web Docs</h3>
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------------------------- 10. mdn web docs logo (xx) ---------------------------------->
+<!---------------------------------- 10. mdn web docs logo (18) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image010.png?raw=true"
@@ -1246,18 +1244,14 @@ To help developers make these decisions consciously rather than
 accidentally,
 
 <a href="https://developer.mozilla.org/">MDN Web Docs</a> provides browser
-compatibility tables in its documentation pages,
-
-so that when looking up a feature you’re considering for your project,
-you know exactly which browsers will support it.
+compatibility tables in its documentation pages, so that when looking up a feature 
+you’re considering for your project, you know exactly which browsers will support it.
 
 <h4>External resources:</h4>
 
--   <a href="https://hacks.mozilla.org/2018/02/mdn-browser-compatibility-data/">MDN browser compatibility data: Taking the guesswork out of web
-    compatibility</a>
+-   <a href="https://hacks.mozilla.org/2018/02/mdn-browser-compatibility-data/">MDN browser compatibility data: Taking the guesswork out of web compatibility</a>
 
--   <a href="https://hacks.mozilla.org/2019/09/caniuse-and-mdn-compat-data-collaboration/">Caniuse and MDN compatibility data
-    collaboration</a>
+-   <a href="https://hacks.mozilla.org/2019/09/caniuse-and-mdn-compat-data-collaboration/">Caniuse and MDN compatibility data collaboration</a>
 
 <h4>Help Build the Web Platform</h4>
 
@@ -1278,14 +1272,14 @@ hard to approach at first, but understanding at a deeper level how these
 technologies are built is a great way to build your expertise.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 11. github (the octocat) logo (##) ------------------------------->
+<!----------------------------- 11. github (the octocat) logo (19) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image011.png?raw=true"
    width="10%"
    alt="GitHub (the Octocat) logo." />
 </p>
-<!-- <img src="./images/image011.png" style="width:1in;height:0.82895in" -->
+<!-- style="width:1in;height:0.82895in" -->
 
 If you're looking to an easy way to dive into this standardization
 processes, check out which [issues in the W3C GitHub repositories have
@@ -1296,12 +1290,12 @@ see if you find anything where you think you would be ready to help.
 Shape the future
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------------- 12. w3c web incubator community group logo (##) ------------------------->
+<!---------------------- 12. w3c web incubator community group logo (19) ------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image012.png"
   style="width:2in;height:0.55411in"
-  alt="Logo of the W3C Web Incubator Community Group" />
+  alt="Logo of the W3C Web Incubator Community Group." />
 </p>
 
 Another approach is to go and bring feedback on ideas for future
@@ -1318,7 +1312,9 @@ Happy Web building!
 <!------------------------------ 13. w3c www consortium logo (19) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image013.png" style="width:3in;height:0.7612in" />
+  <img src="./images/image013.png" 
+  style="width:3in;height:0.7612in"
+  alt="W3C WWW consortium logo." />
 </p>
 
 <b>As steward of global Web standards, W3C's mission is to safeguard the
@@ -1338,12 +1334,17 @@ outlining the World Wide Web. Tim’s memo was about to revolutionize
 communication around the globe. He then created the first Web browser,
 server, and Web page. He wrote the first specifications for URLs, HTTP,
 and HTML.
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 14. tim berners-lee at his desk in cern, 1994 (20) ----------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image014.jpeg?raw=true"
+   style="width:1in;height:1in"
+   alt="Tim Berners-Lee at his desk in CERN, 1994." />
+</p>
 
-<img src="./images/image014.jpeg" style="width:1in;height:1in"
-alt="Tim Berners-Lee at his desk in CERN, 1994" />
-
-<i>Tim Berners-Lee at his desk in CERN, 1994</i>
-
+<p align="center"><i>Tim Berners-Lee at his desk in CERN, 1994</i></p>
+<p>
 In October 1994, Tim Berners-Lee founded the World Wide Web Consortium
 (W3C) at the Massachusetts Institute of Technology, Laboratory for
 Computer Science [MIT/LCS] in collaboration
@@ -1351,7 +1352,7 @@ with [CERN](https://home.cern/), where the Web originated (see
 information on the [original CERN Server](https://www.w3.org/Daemon/)),
 with support from DARPA and the [European
 Commission](https://ec.europa.eu/index_en.htm).
-
+</p>
 In April 1995, Inria became the first European W3C host, followed
 by [Keio University of Japan](https://www.keio.ac.jp/) (Shonan Fujisawa
 Campus) in Asia in 1996. In 2003, [ERCIM](https://www.ercim.eu/) took
@@ -1362,33 +1363,33 @@ announced Beihang University as the fourth Host.
 
 As of August 2020, W3C:
 
-Is a [member](https://www.w3.org/Consortium/Member/List)-driven
+-  Is a [member](https://www.w3.org/Consortium/Member/List)-driven
 organization composed of approx 430 companies, universities, start-ups,
 etc. from all over the world.
 
-Holds 46 [technical groups](https://www.w3.org/groups/),
+-  Holds 46 [technical groups](https://www.w3.org/groups/),
 including [Working Groups](https://www.w3.org/groups/wg/) and [Interest
 Groups](https://www.w3.org/groups/ig/) where technical specifications
 are discussed and developed.
 
-Published over 7,254 [published technical
+-  Published over 7,254 [published technical
 reports](https://www.w3.org/TR/), including 434 Web standards (or W3C
 Recommendations) - since January 1st,1995.
 
-Runs a [translation
+-  Runs a [translation
 program](https://www.w3.org/Consortium/Translation/) to foster the
 translation of its specifications: see the [translation
 matrix](https://www.w3.org/Consortium/Translation/matrix.html) currently
 listing 309 available translations of W3C recommendations.
 
-Hosts 338 [Community and Business
+-  Hosts 338 [Community and Business
 Groups](https://www.w3.org/community/groups/), where developers,
 designers, and anyone passionate about the Web have a place to hold
 discussions and publish ideas.
 
-Gathers over 13,129 active participants constituting the W3C community.
+-  Gathers over 13,129 active participants constituting the W3C community.
 
-Has a [technical staff](https://www.w3.org/People/) composed of 64
+-  Has a [technical staff](https://www.w3.org/People/) composed of 64
 people, spread on all five continents
 
 <h4>W3C's core values</h4>
@@ -1417,10 +1418,10 @@ through the course.  For now, just ensure that it's always there.
 of your source code, and its value is UTF-8.</b>
 
 ```
-1.  <head>
-2.  <meta charset="utf-8"/>
-3.  ...
-4.  </head>
+<head>
+<meta charset="utf-8"/>
+...
+</head>
 ```
 
 <h4>Example #2: primary language declaration</h4>
@@ -1494,8 +1495,7 @@ through the course, so come back and review this page at the end.
     people from diverse cultures, check for translatability and
     inappropriate cultural bias.
 
-You will find more quick tips on the <a href="https://www.w3.org/International/quicktips/">Internationalization quick
-tips</a> page. Remember that these tips do not constitute complete guidelines.
+You will find more quick tips on the <a href="https://www.w3.org/International/quicktips/">Internationalization quick tips</a> page. Remember that these tips do not constitute complete guidelines.
 
 Internationalization checker
 
@@ -1542,8 +1542,14 @@ width!):
 And here is how it renders in your current browser (please play the
 video and try to show/hide the subtitles/captions):
 
-<img src="./images/image015.png"
-style="width:4.90625in;height:2.79167in" />
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 15.  (##) ----------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image015.png?raw=true"
+  style="width:4.90625in;height:2.79167in" />
+   alt="." />
+</p>
 
 Notice that the support for multiple tracks may differs significantly
 from one browser to another, in particular if you are using old
@@ -1554,6 +1560,9 @@ versions. Here is a quick summary (as in May 2020).
     the default attribute set, then it is loaded by default. Otherwise,
     the default is off.
 
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 16.  (##) ----------------------->
+<!------------------------------------------------------------------------------------------------>
 <img src="./images/image016.png"
 style="width:4.90625in;height:2.79167in" />
 
@@ -1606,6 +1615,9 @@ WEBVTT
 
 </details>
 
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 17.  (##) ----------------------->
+<!------------------------------------------------------------------------------------------------>
 <img src="./images/image017.jpeg" style="width:2.02083in;height:4.83333in"
 alt="remote controller with subtitles button." />
 
@@ -1674,6 +1686,9 @@ We hope you will enjoy this first week and we wish you the best!
 Hi, today I've prepared for you a small example of a video that is
 associated with three different tracks.
 
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 18.  (##) ----------------------->
+<!------------------------------------------------------------------------------------------------>
 <img src="./images/image018.png" style="width:6.5in;height:6.36875in" />
 
 Two for subtitles, in English and in German, and one track for chapters.
@@ -1710,10 +1725,19 @@ activating them, and so on. Now, I would like to remind you the
 structure of a track. I'm just going to display the content of one of
 these tracks.
 
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 19.  (##) ----------------------->
+<!------------------------------------------------------------------------------------------------>
 <img src="./images/image019.png" style="width:5in;height:3.07853in" />
 
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 20.  (##) ----------------------->
+<!------------------------------------------------------------------------------------------------>
 <img src="./images/image020.png" style="width:5in;height:3.07853in" />
 
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 21.  (##) ----------------------->
+<!------------------------------------------------------------------------------------------------>
 <img src="./images/image021.png" style="width:5in;height:5.2094in" />
 
 The tracks are made of cues and what we call a cue is a kind of time
@@ -1730,6 +1754,9 @@ the exact time the video tells the words that are on the transcript. And
 we will see also how to choose the subtitle or caption track language
 for the video.
 
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 22.  (##) ----------------------->
+<!------------------------------------------------------------------------------------------------>
 <img src="./images/image022.png" style="width:5in;height:5.2094in" />
 
 This is finished for this small introduction video, I will just conclude
@@ -1743,6 +1770,9 @@ security constraints errors. And if your server is configured for
 accepting different origins, then you can add this attribute
 crossOrigin="anonymous" in your HTML document and it is going to work.
 
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 23.  (##) ----------------------->
+<!------------------------------------------------------------------------------------------------>
 <img src="./images/image023.png" style="width:5in;height:3.64476in" />
 
 The server here: mainline.i3s.unice.fr has been configured for allowing
@@ -1781,6 +1811,9 @@ width!):
 And here is how it renders in your current browser (please play the
 video and try to show/hide the subtitles/captions):
 
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 24.  (##) ----------------------->
+<!------------------------------------------------------------------------------------------------>
 <img src="./images/image024.png" style="width:4in;height:2.24412in" />
 
 Notice that the support for multiple tracks may differs significantly
@@ -1799,8 +1832,11 @@ Here is a quick summary:
     the default attribute set, then it is loaded by default. Otherwise,
     the default is off.
 
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 25. safari menu screenshot (##) ----------------------->
+<!------------------------------------------------------------------------------------------------>
     -   <img src="./images/image025.jpeg" style="width:4in;height:2.32697in"
-        > alt="screenshot of safari menu fr choosing subtitle track" />
+        > alt="Screenshot of Safari menu fr choosing subtitle track." />
 
 -   Chrome and Opera both provide a subtitle menu and load the text
     track set that matches the browser language. If none of the
@@ -1883,9 +1919,7 @@ For that, we will manipulate different properties of the HTML track
 element from JavaScript.
 
 The first thing I am going to do is to add a small div at the end of the
-document for
-
-displaying the different track statuses. I added a div here called
+document for displaying the different track statuses. I added a div here called
 trackStatusesDiv with a heading... I am going to add some CSS to
 visualize this area.
 
@@ -1898,13 +1932,13 @@ going to get them in a variable called htmlTracks. How can I get them?
 
 I'm going to stop the automatic refresh on JSBin for the moment.
 
-So, querySelectorAll is a function that will return a collection with
-all the tracks, an array with all the tracks, all the HTML elements. So
-there, I am going to call a function called displayTrackStatuses that I
-write here. I will first iterate on these tracks and display in the
-console the different values. We are doing a loop.
+So, <b>querySelectorAll</b> is a function that will return a collection with
+all the tracks, an array with all the tracks, all the HTML elements. 
+I am going to call a function called displayTrackStatuses that I write here. 
+I will first iterate on these tracks and display in the console the different 
+values. We are doing a loop.
 
-I will first just display something in the console.
+I will first display something in the console.
 
 I am going to add a current track, it will be easier.
 
@@ -1941,19 +1975,19 @@ I am going to copy and paste some code for just displaying this in a
 nicer way here.
 
 This is how we can display the different statuses and I can add a button
-that will call this just to refresh the different statuses. Let's add a
-button, we call it refresh, and when we click on it, we will call
-displayTrackStatuses. If I click here... just checking there is no
-error…it will refresh this thing. So now I am going to try this code
-with Safari; because you remember Safari has a menu for changing the
-different tracks. I prepared that already, so here I can start playing
-the same video that has Deutsch subtitles loaded by default, you can see
-that here. If I choose English subtitles now, and I refresh track
-statuses: you can see that the English subtitles are loaded now and the
-Deutsch subtitles are also available. So, we are going to use these
-different attributes for forcing some tracks to load programmatically
-from JavaScript and this will enable us to make a sort of menu for
-choosing the different tracks. I will explain that in a next video.
+that will call this just to refresh the different statuses. 
+
+Let's add a button, we call it refresh, and when we click on it, we will call
+displayTrackStatuses. 
+If I click here... just checking there is no error…it will refresh this thing. So now I am going to try this code with Safari; because you remember Safari has a menu for changing the
+different tracks. 
+
+I prepared that already, so here I can start playing the same video that has Deutsch subtitles loaded by default, you can see that here. 
+If I choose English subtitles now, and I refresh track statuses: you can see that the English subtitles are loaded now and the Deutsch subtitles are also available. 
+We are going to use these different attributes for forcing some tracks to load programmatically
+from JavaScript and this will enable us to make a sort of menu for choosing the different tracks. 
+
+I will explain that in a next video.
 
 <h4>The HTML track element</h4>
 
@@ -1991,6 +2025,9 @@ manipulate these elements as "HTML elements" - we will call them the
 
 <h4>[<span id="_Toc98696550" class="anchor"></span>Example at JSBin that displays the different elements we can get from an HTML track](https://jsbin.com/kuqevegapi/2/edit?html,css,output):</h4>
 
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 26/27. status of html track (##) ----------------------->
+<!------------------------------------------------------------------------------------------------>
 <img src="./images/image026.png" style="width:4in;height:2.23647in" />
 
 <img src="./images/image027.png" style="width:4in;height:3.93208in" />
@@ -2281,6 +2318,9 @@ video as soon as the track has finished loading.
 [Try the example at
 JSBin](https://jsbin.com/bubeye/1/edit?html,console,output)
 
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 28.  (##) ----------------------->
+<!------------------------------------------------------------------------------------------------>
 <img src="./images/image028.jpeg" style="width:5in;height:4.44178in" />
 
 Here is what we added to the HTML code:
@@ -2476,8 +2516,12 @@ properties and methods
     file. See the HTML5 course Part 1 about cue positioning.
 
 
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 29. webvtt with arrows (##) ----------------------->
+<!------------------------------------------------------------------------------------------------>
+
 <img src="./images/image029.jpeg" style="width:5in;height:2.01365in"
-alt="a webVtt file extract with arrows showing id, startTime, endTime and text" />
+alt="a webVtt file extract with arrows showing id, startTime, endTime and text." />
 
 <h4>Example that displays the content of a track</h4>
 
@@ -2485,6 +2529,9 @@ alt="a webVtt file extract with arrows showing id, startTime, endTime and text" 
 track](https://jsbin.com/teruhay/1/edit?html,css,js,output):
 
 
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 30.  (##) ----------------------->
+<!------------------------------------------------------------------------------------------------>
 <img src="./images/image030.png" style="width:4in;height:4.89057in" />
 
 We just changed the content of the readContent(track) method from the
@@ -3229,6 +3276,9 @@ in 2012...
 cues</u>](https://jsbin.com/vedelequso/edit?html,js,output) in the
 different tracks:
 
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 35.  (##) ----------------------->
+<!------------------------------------------------------------------------------------------------>
 <img src="./images/image035.png" style="width:5in;height:4.47489in" />
 
 This example, adapted from an example from (now offline) dev.opera.com,
@@ -3383,6 +3433,9 @@ between <i>"hidden"</i> and <i>"disabled"</i> is that hidden tracks can fire
 events (more on that at the end of the first example) whereas disabled
 tracks do not fire events.
 
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 36.  (##) ----------------------->
+<!------------------------------------------------------------------------------------------------>
 <img src="./images/image036.jpeg" style="width:5in;height:4.64476in"
 alt="Example that shows how to toggle track modes and listen to events" />
 
@@ -3591,6 +3644,9 @@ JSBin](https://jsbin.com/balowuq/1/edit?html,css,js,output): we added
 two buttons below the video to enable/disable subtitles/captions and let
 you choose which track you prefer. 
 
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 37.  (##) ----------------------->
+<!------------------------------------------------------------------------------------------------>
 <img src="./images/image037.jpeg" style="width:6.17708in;height:5.73958in"
 alt="Buttons for choosing the track/language under a standard video player" />
 
@@ -3724,6 +3780,9 @@ alt="Buttons for choosing the track/language under a standard video player" />
 
 Example #4: making a simple chapter navigation menu
 
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 38.  (##) ----------------------->
+<!------------------------------------------------------------------------------------------------>
 <img src="./images/image038.jpeg" style="width:4.57292in;height:2.08333in"
 alt="Simple chapter navigation" />
 
@@ -3857,6 +3916,9 @@ version includes the modifications we presented earlier - nothing more.
 Notice that we kept the existing buttons to display a clickable
 transcript:
 
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 38.  (##) ----------------------->
+<!------------------------------------------------------------------------------------------------>
 <img src="./images/image038.jpeg" style="width:5in;height:2.28152in"
 alt="Simple chapter navigation" />
 
@@ -3867,6 +3929,9 @@ except for the small changes we explained earlier.
 Chapter navigation, illustrated in the video player below, is fairly
 popular.
 
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 39.  (##) ----------------------->
+<!------------------------------------------------------------------------------------------------>
 <img src="./images/image039.jpeg" style="width:5in;height:2.76977in"
 alt="Example of video player that uses text based chapter navigation" />
 
@@ -3952,6 +4017,9 @@ Earlier we saw [an example that could display chapter markers as
 clickable text on the right of a
 video](https://jsbin.com/jiyodit/edit?html,css,js,output).
 
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 38.  (##) ----------------------->
+<!------------------------------------------------------------------------------------------------>
 <img src="./images/image038.jpeg" style="width:5in;height:2.28152in"
 alt="SImple chapter menu in plain text" />
 
@@ -3994,6 +4062,9 @@ example [this](https://trac.ffmpeg.org/wiki/Create%20a%20thumbnail%20image%20ev
 Here are the images which correspond to the seven chapters of the video
 from the previous example:
 
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 40-46.  (##) ----------------------->
+<!------------------------------------------------------------------------------------------------>
 <img src="./images/image040.jpeg" style="width:2.57292in;height:1.20833in"
 alt="chapter 1 thumbnail" /><img src="./images/image041.jpeg" style="width:2.51042in;height:1.19792in"
 alt="chapter 2 thumbnail" /><img src="./images/image042.jpeg" style="width:2.5625in;height:1.19792in"
@@ -4037,6 +4108,9 @@ Before explaining the code, we propose that you [try this example at
 JSBin that uses this new .vtt
 file](https://jsbin.com/pulefe/1/edit?html,css,js,output):
 
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 47.  (##) ----------------------->
+<!------------------------------------------------------------------------------------------------>
 <img src="./images/image047.jpeg" style="width:5in;height:5.72864in"
 alt="Video with nice chapter menu that uses thumbnail images" />
 
@@ -4259,6 +4333,9 @@ to style and position the thumbnails using CSS.
 A sample menu marker is shown below (it's also animated - hover your
 mouse over the thumbnail to see its animated shadow):
 
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 40.  (##) ----------------------->
+<!------------------------------------------------------------------------------------------------>
 <img src="./images/image040.jpeg" style="width:4in;height:1.8818in" />
 
 <h4>Introduction</h4>
@@ -4273,6 +4350,9 @@ code from earlier in this lesson.
 
 <a href="https://jsbin.com/zewemaj/edit?html,js,output">Try it at JSBin</a>
 
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 48.  (##) ----------------------->
+<!------------------------------------------------------------------------------------------------>
 <img src="./images/image048.jpeg" style="width:5in;height:6.18857in"
 alt="Chapter menu + clickable transcript" />
 
@@ -4305,6 +4385,9 @@ from an original demo by Sam Dutton, uses <a href="https://mainline.i3s.unice.f
 
 <h4> Below is the sound file. You can try to play it:</h4>
 
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 49.  (##) ----------------------->
+<!------------------------------------------------------------------------------------------------>
 <img src="./images/image049.jpeg" style="width:5in;height:4.91453in"
 alt="Click a button to play an animal sound" />
 
@@ -4538,6 +4621,9 @@ see "for development purpose only" messages during the execution of this
 demo. You'll need a valid Google API key in order to remove these
 messages.</p>
 
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 50.  (##) ----------------------->
+<!------------------------------------------------------------------------------------------------>
 <img src="./images/image050.jpeg" style="width:5in;height:4.46635in"
 alt="Video synced with google map and google street map" />
 
@@ -20543,6 +20629,9 @@ computations are completed and the page GUI is not reactive. Click
 the WITH WORKERS button: this will run the code that computes prime
 numbers in a Web Worker. Now, try to change the color of the button, it
 reacts instantly...
+<!------------------------------------------------------------------------------------------------>
+<!----------------- 244. demo screenshot (###) ------------------->
+<!------------------------------------------------------------------------------------------------>
 
 <img src="./images/image244.png" style="width:5in;height:3.12767in"
 alt="Demo screenshot" />
@@ -20559,7 +20648,9 @@ In this demo, you can select the number of Web Workers which will
 compute parts of the image (pixels). If you use too many Web Workers,
 the performance decreases because too much time is spent exchanging data
 between workers and their creator, instead of computing in parallel.
-
+<!------------------------------------------------------------------------------------------------>
+<!--------------------------- 245. ray tracer with web workers (###) ----------------------------->
+<!------------------------------------------------------------------------------------------------>
 <img src="./images/image245.jpeg" style="width:4in;height:3.99165in"
 alt="Ray Tracer with web workers." />
 
@@ -20683,6 +20774,9 @@ have a unified <i>coordinate system</i>, we apply rotations in the following
 order:
 
 <h4>Rotate the device frame around its z axis by alpha degrees, with alpha in \[0, 360\]</h4>
+<!------------------------------------------------------------------------------------------------>
+<!----------------- 247 / 248. start orientation & rotation about z axis (###) ------------------->
+<!------------------------------------------------------------------------------------------------>
 
 <table>
 <colgroup>
@@ -20711,6 +20805,9 @@ alt="rotation about z axis" /></td>
 
 <h4>Rotate the device frame around its x axis by beta degrees, with beta in\[-180, 180\]</h4>
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------- 247 / 249. start orientation & rotation about x axis (###) ------------------->
+<!------------------------------------------------------------------------------------------------>
 <table>
 <colgroup>
 <col style="width: 21%" />
@@ -20737,6 +20834,9 @@ alt="rotation about x axis" /></td>
 </table>
 
 <h4>Rotate the device frame around its y axis by gamma degrees, with gamma in \[-90, 90\]
+<!------------------------------------------------------------------------------------------------>
+<!----------------- 247 / 250. start orientation & rotation about y axis (###) ------------------->
+<!------------------------------------------------------------------------------------------------>
 
 <table>
 <colgroup>
@@ -20748,7 +20848,7 @@ alt="rotation about x axis" /></td>
 <th>Device in the initial position, with Earth (XYZ) and<br />
 body (xyz) frames aligned.</th>
 <th><img src="./images/image247.png"
-style="width:4.6875in;height:4.6875in" alt="start orientation" /></th>
+style="width:4.6875in;height:4.6875in" alt="Start orientation." /></th>
 </tr>
 </thead>
 <tbody>
@@ -20758,7 +20858,7 @@ with previous locations of x and z axes shown as x<sub>0</sub> and
 z<sub>0</sub>.</td>
 <td><img src="./images/image250.png"
 style="width:4.6875in;height:4.6875in"
-alt="rotation about y axis" /></td>
+alt="Rotation about y axis." /></td>
 </tr>
 </tbody>
 </table>
@@ -20991,7 +21091,7 @@ JsBin](https://jsbin.com/quboge/edit), or [test it in standalone
 mode](https://jsbin.com/quboge) (using a mobile device).
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------- 259. level tool using device orientation (###) ------------------------->
+<!----------------------- 259. level tool using device orientation (475) ------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image259.png?raw=true"
@@ -21116,30 +21216,30 @@ this [article]</a>):
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image261.png"
-   alt="Acceleration values 1."
-   width="65%" />
+  width="65%"
+  alt="Acceleration values 1." />
 </p>
 
 <p>A mobile phone rotated along the x-axis so the screen is perpendicular
 to its normal position would return:</p>
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------- 262. acceleration values 2 (xxx) ------------------------------->
+<!------------------------------ 262. acceleration values 2 (xxx) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image262.png"
-   alt="Acceleration values 2."
-   width="65%" />
+  width="65%"
+  alt="Acceleration values 2." />
 </p>
 
 <h4>Remember the coordinate system for a mobile phone:</h4>
 <!------------------------------------------------------------------------------------------------>
-<!------------------------- 263. telephone coordinates system (xxx) ------------------------------>
+<!-------------------------- 263. telephone coordinates system (xxx) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image263.png"
-   alt="Telephone coordinates system."
-   width="30%" />
+  width="30%"
+  alt="Telephone coordinates system." />
 </p>
 
 <h4>Common steps</h4>
@@ -21233,8 +21333,8 @@ later on)...
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image264.jpeg"
-   alt="Devicemotion API example."
-   width="30%" />
+  width="30%"
+  alt="Devicemotion API example." />
 </p>
 
 <h4>Code from this example:</h4>
@@ -21333,14 +21433,14 @@ it: <a href="https://jsbin.com/uyuqek/4/edit">https://jsbin.com/uyuqek/4/edit</
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image262.jpeg"
-   alt="Devicemotion API.  Uses jQuery mobile."
-   width="35%" />
+  width="35%"
+  alt="Devicemotion API.  Uses jQuery mobile." />
 </p>
 
 <h4>Code from the example:</h4>
 
 <details>
-  <summary>HTML code!</summary>
+  <summary>HTML source code!</summary>
 
 ```
 1.  <html>
@@ -21425,15 +21525,15 @@ it: <a href="https://jsbin.com/uyuqek/4/edit">https://jsbin.com/uyuqek/4/edit</
 <h4>Move a ball on the screen</h4>
 
 <a href="https://jsbin.com/eyahuv/2/edit">Try this example at JsBin</a>. If using a
-mobile device, <a href="https://jsbin.com/eyahuv/2"use this URL instead</a>!
+mobile device, <a href="https://jsbin.com/eyahuv/2">use this URL instead</a>!
 
 <!------------------------------------------------------------------------------------------------>
 <!--------------------------------- 263. moving balls (489) -------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image263.png"
-   alt="Moving Balls."
-   width="35%" />
+  width="35%"
+  alt="Moving Balls." />
 </p>
 <!---   style="width:3in;height:1.99379in" --->
 
@@ -21627,15 +21727,27 @@ your comments/observations/questions and share your creations.
     orientation API, so that it avoids the balls - see the last example
     from Module 2 of the course!</li>
 </ul>
-
-<!---
+<!--
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- xx.  (##) ----------------------->
+<!------------------------------------------------------------------------------------------------>
+-->
+<!--
+<p align="center" width="100%">
+<img src="./images/image014.jpeg?raw=true"
+   style="width:1in;height:1in"
+   width="15%"
+   alt="." />
+</p>
+-->
+<!--
 <p align="center" width="100%">
 <img src="./images/image.jpeg?raw=true"
    width="35%"
    alt="." />
 </p>
---->
+-->
 
 <h5>the end...</h5>
 
-<h4>Last Updated: 10-03-2022 11:44am</h4>
+<h4>Last Updated: 10-03-2022 3:49pm</h4>
