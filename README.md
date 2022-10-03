@@ -180,7 +180,7 @@ an HTML track: [35](#_Toc98696550)](#_Toc98696550)
 [Source code extract:
 [51](#source-code-extract-1)](#source-code-extract-1)
 
-[1.3 Advanced Features for <audio> and <video> Players
+[1.3 Advanced Features for &lt;audio&gt; and &lt;video&gt; Players
 [52](#advanced-features-for-audio-and-video-players)](#advanced-features-for-audio-and-video-players)
 
 [1.3.1 With a Clickable Transcript on the Side
@@ -716,7 +716,7 @@ drop, the PHP is the same)
 
 [4.2.4 Shadow DOM [443](#shadow-dom)](#shadow-dom)
 
-[Example using the Shadow DOM: the <video> element
+[Example using the Shadow DOM: the &lt;video&gt; element
 [447](#example-using-the-shadow-dom-the-video-element)](#example-using-the-shadow-dom-the-video-element)
 
 [Another simple example
@@ -1511,7 +1511,7 @@ they are and what to do about it.
 
 In the [W3Cx HTML5 Coding Essentials and Best
 Practices](https://www.edx.org/course/html5-coding-essentials-and-best-practices) course,
-we saw that &lt;video&gt; and <audio> elements can
+we saw that &lt;video&gt; and &lt;audio&gt; elements can
 have &lt;track&gt; elements. A &lt;track&gt; can have a label,
 a kind (subtitles, captions, chapters, metadata, etc.), a language
 (srclang attribute), a source URL (src attribute), etc.
@@ -1756,7 +1756,7 @@ This is all for this first video, I’ll see you in the next one!
 
 In the <a href="https://www.edx.org/course/html5-coding-essentials-and-best-practices">W3Cx HTML5 Coding Essentials and Best
 Practices</a> course,
-we saw that <video> and <audio> elements can
+we saw that &lt;video&gt; and &lt;audio&gt; elements can
 have &lt;track&gt; elements. A &lt;track&gt; can have a label,
 a kind (subtitles, captions, chapters, metadata, etc.), a language
 (srclang attribute), a source URL (src attribute), etc.
@@ -2231,7 +2231,7 @@ and methods are described later in this lesson.
 
 <b>Second method:</b> get TextTrack from the HTML video element.
 
-The <video> element (and <audio> element too) has
+The &lt;video&gt; element (and &lt;audio&gt; element too) has
 a TextTrack property accessible from JavaScript:
 
 ```
@@ -2721,7 +2721,7 @@ shows how to use enter and exit events on cues</a>:
 <h4>Source code extract:</h4>
 
 <details>
-  <summary>Source code!</summary>
+  <summary>Source code extract!</summary>
 
 ```
 1.  function readContent(track) {
@@ -2755,7 +2755,7 @@ shows how to use enter and exit events on cues</a>:
 </details>
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch1-3">1.3 Advanced Features for <audio> and <video> Players</h3>
+<h3 id="ch1-3">1.3 Advanced Features for &lt;audio&gt; and &lt;video&gt; Players</h3>
 <!------------------------------------------------------------------------------------------------>
 
 <!------------------------------------------------------------------------------------------------>
@@ -4295,7 +4295,7 @@ fly, programatically.
 The presented example shows how we can create "<b>sound sprites</b>": small
 sounds that are parts of a mp3 file, and that can be played separately.
 Each sound will be defined as a cue in a track associated with
-the <audio> element.
+the &lt;audio&gt; element.
 
 Let's create on the fly a WebVTT file with many cues, in order to cut a
 big sound file into segments and play them on demand
@@ -4848,7 +4848,7 @@ and &lt;video&gt; elements. 
 </ol>
 <p>You also learned that it's possible to write a custom player: to make
 your own controls and use the JavaScript API of
-the <audio> and <video> elements; to call play() and pause(); to
+the &lt;audio&gt; and &lt;video&gt; elements; to call play() and pause(); to
 read/write properties such as currentTime; to listen to events
 (ended, error, timeupdate, etc.); and to manage a playlist, etc.</p>
 
@@ -4913,7 +4913,7 @@ JSBin</a>.</b>
 alt="audio player with gain" />
 <p>
 This example is detailed in the next lesson. For the moment, all you
-need to know is that it routes the signal from an <audio> element
+need to know is that it routes the signal from an &lt;audio&gt; element
 using a special node that bridges the "streamed audio" world  to the Web
 Audio World, called a MediaElementSourceNode, then this node is
 connected to a GainNode which enables volume control. This node is then
@@ -4958,7 +4958,7 @@ destination if you just want to visualize some audio data, for example).
 The AudioDestination node above corresponds to the speakers. In this
 example, the signal goes from left to right: from
 the MediaElementSourceNode (we will see in the code that it's the audio
-stream from an <audio> element), to a Gain node (and by adjusting
+stream from an &lt;audio&gt; element), to a Gain node (and by adjusting
 the gain property we can set the volume of the sound that outputs from
 this node), then to the speakers.
 
@@ -5127,7 +5127,7 @@ filters... like an equalizer, and things like that...
 
 The MediaSourceElement node In the previous lesson, we encountered
 the MediaElementSource node that is used for routing the sound from
-a <video> or <audio> element stream. The above video shows how to
+a &lt;video&gt; or &lt;audio&gt; element stream. The above video shows how to
 make a simple example step by step, and how to setup FireFox for
 debugging Web Audio applications and visualize the audio graph.
 
@@ -5155,9 +5155,9 @@ var sourceNode = context.createMediaElementSource(mediaElement);
 sourceNode.connect(context.destination); // connect to the speakers
 ```
 
-<b>The MediaElementSource node  is built**
+<b>The MediaElementSource node  is built</b>
 using context.createMediaElementSource(elem), where elem is
-an <audio> or a <video> element.
+an &lt;audio&gt; or a &lt;video&gt; element.
 
 Then we connect this source Node to other nodes. If we connect it
 directly to context.destination, the sound goes to the speakers with no
@@ -5644,7 +5644,7 @@ the nodes.
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch1-5-4">1.5.4 Writing an Equalizer</h3>
 <!------------------------------------------------------------------------------------------------>
-Example #1: an audio equalizer with an <audio> element
+Example #1: an audio equalizer with an &lt;audio&gt; element
 
 [Example
 at JSBin,](https://jsbin.com/loquwih/edit?html,css,js,output) here is a
@@ -5781,10 +5781,10 @@ Chrome WebAudio Inspector extension):
 <img src="./images/image064.jpeg" style="width:5in;height:3.02403in"
 alt="audio graph of the previous example" />
 
-Example #2: equalizer with a <video> element
+Example #2: equalizer with a &lt;video&gt; element
 
 We cloned the previous example and simply changed
-the <audio>...</audio> part of the HTML code by:
+the &lt;audio&gt;...</audio> part of the HTML code by:
 
 ```
 <video id="player" width="320" height="240" controls crossOrigin="anonymous">
@@ -5941,7 +5941,7 @@ Step #1: build the audio graph with an analyser node at the end
 
 If we want to visualize the sound that is coming out of the speakers, we
 have to put an analyser node at almost the end of the sound graph.
-Example #1 shows a typical use: an <audio> element,
+Example #1 shows a typical use: an &lt;audio&gt; element,
 a MediaElementElementSource node connected to an Analyser node, and the
 analyser node connected to the speakers (audioContext.destination). The
 visualization is a graphic animation that
@@ -6082,7 +6082,7 @@ Below are other examples that draw waveforms.
 
 Example #2: video player with waveform visualization
 
-Using a <video> element is very similar to using an <audio> element.
+Using a &lt;video&gt; element is very similar to using an &lt;audio&gt; element.
 We have made no changes to the JavaScript code here; we Just
 changed "audio" to "video" in the HTML code. 
 
@@ -7295,18 +7295,18 @@ performed when the canvas is not visible, thus saving CPU resources.
 <img src="./images/image093.png" style="width:1in;height:1in"
 alt="a movie film icon" />
 
-The HTML5 <video> element was introduced in the HTML5 specification
+The HTML5 &lt;video&gt; element was introduced in the HTML5 specification
 for the purpose of playing *streamed* videos or movies, partially
 replacing the object element.  The JavaScript API is nearly the same
-as the one of the <audio> element and enables full control from
+as the one of the &lt;audio&gt; element and enables full control from
 JavaScript.
 
-By combining the capabilities of the <video> and <canvas> elements,
+By combining the capabilities of the &lt;video&gt; and <canvas> elements,
 it is possible to manipulate video data to incorporate a variety of
 visual effects  in real time, and conversely, to use images from videos
 as "animated textures" over graphic objects.
 
-<h4>Audio (streamed audio and real time sound effects): the <audio> element and the Web Audio API</h4>
+<h4>Audio (streamed audio and real time sound effects): the &lt;audio&gt; element and the Web Audio API</h4>
 
 <img src="./images/image094.png" style="width:2in;height:2.00966in"
 alt="a picture of a speaker" />
@@ -7316,7 +7316,7 @@ alt="a picture of a speaker" />
 &lt;audio&gt; is an HTML element that was introduced to give a consistent
 API for playing *streamed* sounds in browsers. File format support
 varies between browsers, but MP3 works in nearly all browsers today.
-Unfortunately, the <audio> element is only for streaming compressed
+Unfortunately, the &lt;audio&gt; element is only for streaming compressed
 audio, so it consumes CPU resources, and is not adapted for sound
 effects where you would like to change the playing speed or add real
 time effects such as reverberation or doppler. For this,  [the Web Audio
@@ -15610,7 +15610,7 @@ Drag and drop functionality will work through a file chooser in any
 modern browser, but the directory chooser will only work with Google
 Chrome).
 
-### Complete interactive example with source code
+<h4>Complete interactive example with source code</h4>
 
 Try it in your browser below (use all three functions: firstly using
 the file selector, secondly the directory selector, and finally to drag
@@ -15918,13 +15918,13 @@ MichaelJackson.jpg.....". We will leave this exercise up to you.
 Here is the discussion forum for this part of the course. Please either
 post your comments/observations/questions or share your creations.
 
-### Suggested topics of discussion:
+<h4>Suggested topics of discussion:</h4>
 
 -   Did you know that it was possible to gain control over the process
     of dragging a file out of a page, and dropping it onto the desktop
     (for example)?
 
-### Optional projects:
+<h4>Optional projects:</h4>
 
 -   If a user were to drag and drop the same file to a drop zone several
     times, this would be confusing. Try to modify some of the examples
@@ -15958,13 +15958,13 @@ implementing file uploads associated with a form.
 We have included PHP server-side code: this course focuses on HTML5 and
 front-end development - so, the PHP code is given "as is".
 
-### The problem
+<h4>The problem</h4>
 
 Imagine that we have a regular HTML5 form, but as well as the input
 fields for entering a name, address, age, etc., we also want to select
 and upload multiple files (which might include images). 
 
-### Serial approach: upload the files as soon as they are selected or dragged and dropped
+<h4>Serial approach: upload the files as soon as they are selected or dragged and dropped</h4>
 
 Let's design an XHR2/Ajax, a form with an <input type=file
 multiple> input field, and one or more <progress> elements for
@@ -15990,7 +15990,7 @@ been asynchronously uploaded with the rest of the form's values. This
 is easier to do than it sounds. Look at the provided PHP code provided
 with each of the examples.
 
-### Packaged approach: send all form content, including files, only when the form is submitted
+<h4>Packaged approach: send all form content, including files, only when the form is submitted</h4>
 
 -   This method enables us to send all of the form's content (regular
     input field values + files selected) at once, *using a single Ajax
@@ -16061,7 +16061,7 @@ We could have merged file selector + drag and drop, as we did in
 examples earlier in the course, but the code would have been longer and
 more difficult to follow.
 
-### Example #1: auto-loading of the files, regular form submission, benefits of the HTML5 form validation system
+<h4>Example #1: auto-loading of the files, regular form submission, benefits of the HTML5 form validation system</h4>
 
 Example using a file selector (<input type="file">):
 
@@ -16084,7 +16084,7 @@ Note that the full working source code of this example corresponds to
 "example 1" [in the zip archive that contains all
 examples](https://courses.edx.org/assets/courseware/v1/e694f9e43a0ef0139fb57f71fae0d0ed/asset-v1:W3Cx+HTML5.2x+2T2020a+type@asset+block/upload.zip).
 
-### Example #2: similar example but using drag and drop instead of a file selector
+<h4>Example #2: similar example but using drag and drop instead of a file selector</h4>
 
 Here is much the same code, but this time it uses drag and drop to
 collect the filenames, not an input field. [Try it at
@@ -16094,7 +16094,7 @@ source code - there are plenty of comments.
 <img src="./images/image192.png" style="width:6.5in;height:3.98264in"
 alt="example 2 of file uploads, uses drag&#39;n&#39;drop" />
 
-### And here is the PHP code for the server-side part of examples #1 and #2
+<h4>And here is the PHP code for the server-side part of examples #1 and #2</h4>
 
 <h3>This code is given "as is":</h3>
 
@@ -16157,7 +16157,7 @@ Let's use the previous two examples as a basis for two further examples:
 
 2.  one that uses drag and drop.
 
-### Example #3: uploading everything at once using a file selector
+<h4>Example #3: uploading everything at once using a file selector</h4>
 
 A file selector (<input type="file">).
 
@@ -16172,7 +16172,7 @@ the source code and comments for details.
 <img src="./images/image193.png" style="width:6.07292in;height:2.17708in"
 alt="Example 3 of file uploads" />
 
-### Example #4: uploading using drag and drop
+<h4>Example #4: uploading using drag and drop</h4>
 
 [Try the example at
 JSBin](https://jsbin.com/xonemow/edit?html,css,output) and look at
@@ -16181,7 +16181,7 @@ source code and comments.
 <img src="./images/image194.png" style="width:5.38542in;height:3.71875in"
 alt="Example 4: uses drag&#39;n&#39;drop of files" />
 
-### PHP code for the single-packaged examples (with and without drag and drop, the PHP is the same)
+<h4>PHP code for the single-packaged examples (with and without drag and drop, the PHP is the same)</h4>
 
 This code is given "as is". The principle is the same as with the
 examples given in the previous section, except that this time we do not
@@ -16241,7 +16241,7 @@ have to deal with a temporary "RecycleBin" directory.
 
 Here is the discussion forum for this part of the course.
 
-### Suggested topics of discussion:
+<h4>Suggested topics of discussion:</h4>
 
 -   The given examples come with PHP code. If you adapt them to work
     with another server side languages, please share!
@@ -16414,7 +16414,7 @@ alt="google drive uses indexedDB" />
 
 -   Google Drive uses IndexedDB extensively...
 
-### External resources
+<h4>External resources</h4>
 
 Much of this chapter either builds on or is an adaptation of articles
 posted on the Mozilla Developer Network (MDN) Web site
@@ -16538,7 +16538,7 @@ detail later on:
     be done in callback functions - and we mean *LOTS of callback
     functions*!
 
-### Detailed overview
+<h4>Detailed overview</h4>
 
 <b>IndexedDB databases store key-value pairs.</b> The values can be complex
 structured objects (hint: think in terms of JSON objects), and keys can
@@ -16571,7 +16571,7 @@ tables, cursors, and so on, but each is tied to a particular
 transaction. Thus, you cannot execute commands or open cursors outside a
 transaction.
 
-### Example of a transaction:
+<h4>Example of a transaction:</h4>
 
 <details>
   <summary>Transaction source code!</summary>
@@ -16701,7 +16701,7 @@ These definitions come from [the W3C
 specification](https://www.w3.org/TR/IndexedDB/#database-api). Please
 read this page to familiarize yourself with the terms.
 
-### Database
+<h4>Database</h4>
 
 -   Each [origin](https://www.w3.org/TR/IndexedDB/#dfn-origin) (you may
     consider as "each application") has an associated set
@@ -16724,7 +16724,7 @@ read this page to familiarize yourself with the terms.
     multiple [connections](https://www.w3.org/TR/IndexedDB/#dfn-connection) to
     a given database at any given time.
 
-### Object store
+<h4>Object store</h4>
 
 -   An object store is the mechanism by which data is stored in the
     database. 
@@ -16769,7 +16769,7 @@ read this page to familiarize yourself with the terms.
 
 Further details will be given in the next chapter "Using IndexedDB".
 
-### Version
+<h4>Version</h4>
 
 -   When a database is first created, its version is the integer 0. Each
     database has one version at a time; a database can't exist in
@@ -16786,7 +16786,7 @@ specification](https://w3c.github.io/IndexedDB/), which is only
 implemented in up-to-date browsers. Old browsers implemented the now
 deprecated and removed IDBDatabase.setVersion() method.
 
-### Transaction
+<h4>Transaction</h4>
 
 From the specification: "*A transaction is used to interact with the
 data in a database. Whenever data is read or written to the database,
@@ -16836,7 +16836,7 @@ active inside the onupgradeneeded event handler, allowing the creation
 of new object stores
 and [indexes](https://www.w3.org/TR/IndexedDB/#dfn-index).
 
-### Request
+<h4>Request</h4>
 
 The operation by which reading and writing on a database is done. Every
 request represents one read or one write operation. Requests are always
@@ -17137,7 +17137,7 @@ does not work correctly,
 
 but the database is really deleted.
 
-### Creating a database
+<h4>Creating a database</h4>
 
 [Our online example at JSBin](https://jsbin.com/govuci) shows how to
 create and populate an object store named "CustomerDB". This example
@@ -17192,7 +17192,7 @@ see a message on the console).
 Notice that the version number cannot be a float: "1.2" and "1.4" will
 automatically be rounded to "1".
 
-### JavaScript code from the example:
+<h4>JavaScript code from the example:</h4>
 
 <details>
   <summary>JavaScript code!</summary>
@@ -17265,7 +17265,7 @@ automatically be rounded to "1".
 
 </details>
 
-### <b>Explanations:</b>
+<h4><b>Explanations:</b></h4>
 
 All the "creation" process is done in the onupgradeneeded callback
 (*lines 26-50*):
@@ -17295,7 +17295,7 @@ work with data. The DOM event result attribute is the database itself,
 so it is wise to store it in a variable for later use: db=
 event.target.result;
 
-### Deleting a database
+<h4>Deleting a database</h4>
 
 You can delete a database simply by running this command: 
 
@@ -17342,8 +17342,10 @@ mode .
 Source code example for creating a transaction associated with the
 object store named "customers":
 
-1.  <b>var transaction = db.transaction(["customers"], "readwrite");</b> //
-    or "read"...
+```
+<b>var transaction = db.transaction(["customers"], "readwrite");</b> 
+   //or "read"...
+```
 
 Transactions, when created, must have a mode set that is
 either readonly, readwrite or versionchange (this last mode is only for
@@ -17510,7 +17512,7 @@ with the previous
 
 case when we got multiple results, this time it wasn't using an index.
 
-### Example #1: basic steps
+<h4>Example #1: basic steps</h4>
 
 [Online example at JSBin](https://jsbin.com/jukifo):
 
@@ -17617,7 +17619,7 @@ Here is the trace from the dev tools console:
 <img src="./images/image205.png" style="width:6.5in;height:1.23889in"
 alt="Trace from the devtools console" />
 
-### Example #2: adding a form and validating inputs
+<h4>Example #2: adding a form and validating inputs</h4>
 
 [Online example available at JSBin](https://jsbin.com/jayida):
 
@@ -17930,7 +17932,7 @@ The update occurs at *line 28*.
 
 There are several ways to retrieve data from a data store.
 
-### First method: getting data when we know its key
+<h4>First method: getting data when we know its key</h4>
 
 The simplest function from the API is the request.get(key) function. It
 retrieves an object when we know its key/keypath.
@@ -18070,15 +18072,15 @@ of the JavaScript code):
     DOM event has the request as its target we can use the event to get
     to the result property (*line 9*).
 
-### Second method: getting more than one piece of data
+<h4>Second method: getting more than one piece of data</h4>
 
-#### Getting all of the data from the datastore: using a cursor
+<h4>Getting all of the data from the datastore: using a cursor</h4>
 
 Using get() requires that you know which key you want to retrieve. If
 you want to step through all the values in your object store, or just
 between those in a certain range, then you must use *a cursor*.
 
-Here's what it looks like:
+<h4>Here's what it looks like:</h4>
 
 
 <details>
@@ -18386,7 +18388,7 @@ article](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Using_In
 23. };
 ```
 
-### Complete example
+<h4>Complete example</h4>
 
 Adapted from an example on gitHub, today no more available ([original
 URL](https://github.com/mdn/IDBKeyRange-example/blob/gh-pages/index.html)):
@@ -18407,7 +18409,7 @@ alt="IDBKeyRange in action" />
 Here is the discussion forum for this part of the course. Please post
 your comments/observations/questions and share your creations.
 
-### Suggested topics of discussion:
+<h4>Suggested topics of discussion:</h4>
 
 -   IndexedDB is certainly the most complex API presented in this
     course. However, using it is rather simple once you've climbed the
@@ -18417,7 +18419,7 @@ your comments/observations/questions and share your creations.
 -   If you found handy tools for using IndexedDB, or other external
     tutorials and examples, please share!
 
-### Optional projects:
+<h4>Optional projects:</h4>
 
 -   Start from the examples provided in the IndexedDB course and adapt
     them in order to manage a database of the HTML5 interactive examples
@@ -18482,7 +18484,7 @@ To sum up:
 > have a Web app that uses localStorage and IndexedDB to cache its
 > resources so that it can run in offline mode.
 
-### External resources
+<h4>External resources</h4>
 
 -   You might be interested by [the Cache
     API](https://developers.google.com/web/fundamentals/instant-and-offline/web-storage/cache-api) to
@@ -18642,7 +18644,7 @@ that was available on the customelements.io.
 The zip file from the video is available for download in the section
 below.
 
-### Example from the video
+<h4>Example from the video</h4>
 
 You can download an archive of the example mentioned in the video
 lecture
@@ -18661,7 +18663,7 @@ alt="running the example in an Apache Web Server" />
 
 Web components provide a standard way to build your own
 widgets/components using similar methods to those used by browser
-developers to construct the <video>, <audio>, and <input
+developers to construct the &lt;video&gt;, &lt;audio&gt;, and <input
 type="date"> elements, for example.
 
 Web components enable you* to use custom HTML elements in your HTML
@@ -18706,7 +18708,7 @@ alt="shadow root of the x-gif web component" />
 or at the DOM with the devtool's inspector will not reveal the source
 code (HTML/JavaScript/CSS) used for creating it.
 
-### Web components availability
+<h4>Web components availability</h4>
 
 There are already hundreds of Web components made by others that you can
 use. On the [webcomponents.org](https://www.webcomponents.org/) Web
@@ -18738,7 +18740,7 @@ project](https://www.polymer-project.org/) and Mozilla, with its [X-Tag
 library](https://x-tag.github.io/), also offer huge sets of
 components for creating rich UIs with a common look and feel.
 
-### Current support
+<h4>Current support</h4>
 
 #### Web components are built on four different APIS
 
@@ -18889,7 +18891,7 @@ Here is an example of code that defines a template:
 Note that it's ok to have the <b>src</b> attribute empty here, we will
 initialize it when the template is activated.
 
-### To use a template, clone its content!
+<h4>To use a template, clone its content!</h4>
 
 A template has "content" (the lines of code
 between &lt;template&gt; and &lt;/template&gt;), and to manipulate it we use the
@@ -18927,7 +18929,7 @@ A template is typically used like this:
 -   <i>Lines 5 and 6</i> clone the template's content and add it to
     the &lt;body&gt; of the document.
 
-### Example
+<h4>Example</h4>
 
 Here is [an online example at JSBin](https://jsbin.com/dozele/edit) that
 uses exactly the code presented:
@@ -19088,7 +19090,7 @@ find these references a helpful start:
     objects](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects)
 
 It is not obvious but the Shadow DOM API is already used by browsers'
-developers for <audio> or <video> elements, and also for the
+developers for &lt;audio&gt; or &lt;video&gt; elements, and also for the
 new <input type="date">, <input type="color"> elements, etc.
 
 <b>The three rules of Shadow DOM:</b>
@@ -19105,9 +19107,9 @@ new <input type="date">, <input type="color"> elements, etc.
 NB: Because other browsers do not offer the tool-set, all of the
 examples we discuss on this subject use Google Chrome or Chromium.
 
-### Example using the Shadow DOM: the <video> element
+<h4>Example using the Shadow DOM: the &lt;video&gt; element</h4>
 
-Let's have a look at a simple <video> element.
+Let's have a look at a simple &lt;video&gt; element.
 
 Open [this JSBin example](https://jsbin.com/mojoqaw/edit?html,output) in
 your browser, and fire up the devtools console (F12 on Windows/Linux,
@@ -19123,7 +19125,7 @@ access to the play button, etc.
 alt="devtools2" />
 
 Let's take a look behind the scenes, and see the Shadow DOM associated
-with the <video> element.
+with the &lt;video&gt; element.
 
 First, click on the Settings icon (three vertical dots) and select
 Settings in the drop down menu:
@@ -19150,12 +19152,12 @@ the different elements:
 alt="devtools5" />
 
 Chrome developers are already using the shadow DOM to define their own
-Web Components, such as <video> or <audio> elements! And they use
+Web Components, such as &lt;video&gt; or &lt;audio&gt; elements! And they use
 the Shadow DOM to hide the internal plumbing.
 
-Furthermore, there is a kind of "boundary" around the <video> element,
+Furthermore, there is a kind of "boundary" around the &lt;video&gt; element,
 so that external CSS cannot interfere. The content of
-the <video> element is *sandboxed* (protected from external CSS
+the &lt;video&gt; element is *sandboxed* (protected from external CSS
 selectors, for example, or cannot be accessed
 using document.querySelector(), nor inspected by default, using a DOM
 inspector). Find further reading on the [concept of
@@ -19624,7 +19626,7 @@ specification yet...
     2017, it's still not even in a specification. See [the
     discussion.](https://github.com/w3c/webcomponents/blob/gh-pages/proposals/HTML-Imports-and-ES-Modules.md)
 
-### If you want to know what HTML Imports were about...
+<h4>If you want to know what HTML Imports were about...
 
 HTML Imports is the simplest API from Web components :-)
 
@@ -19661,7 +19663,7 @@ JavaScript code to that file, and import my-widget.html into your
 document and use <my-widget>...</my-widget> from the last lesson
 directly!
 
-### External resource
+<h4>External resource
 
 -   MDN's documentation: [HTML
     Imports](https://developer.mozilla.org/en-US/docs/Web/Web_Components/HTML_Imports)
@@ -19684,7 +19686,7 @@ your Web Component, as a regular JavaScript file, using <script
 src="yourComponent.js"></script> or using the new EcmaScript import
 statement and import the file as a ES Module.
 
-### Here is an example :
+<h4>Here is an example :
 
 index.html (the host html page that imports and instantiates the Web
 Components) :
@@ -19709,7 +19711,7 @@ Components) :
 
 </details>
 
-### <b>Explanations</b>:
+<h4><b>Explanations</b>:
 
 -   *Line 6*: In this example, the Web Component is in a single
     JavaScript file (./mycomponent/index.js), that is imported as
@@ -19719,7 +19721,7 @@ Components) :
     adding it with its custom HTML tag (<my-components>). The
     components have one HTML attribute "name".
 
-### And here is the code of the Web Component (in ./mycomponent/index.js):
+<h4>And here is the code of the Web Component (in ./mycomponent/index.js):
 
 <details>
   <summary>Source code!</summary>
@@ -19758,7 +19760,7 @@ Components) :
 
 </details>
 
-### <b>Explanations</b>:
+<h4><b>Explanations</b>:
 
 -   *Line 1*: we call customElements.define and pass as the first
     parameter the name of the Web Component (here <my-component), and
@@ -19786,7 +19788,7 @@ Components) :
 Here is the discussion forum for this part of the course. Please post
 your comments/observations/questions and share your creations.
 
-### Suggested topics of discussion:
+<h4>Suggested topics of discussion:
 
 -   If you've followed the course, then you've visited
     the [webcomponents.org](https://www.webcomponents.org/) Web site and
@@ -19797,7 +19799,7 @@ your comments/observations/questions and share your creations.
 -   What Web component would you like to use and could not find out of
     the box?
 
-### Optional projects:
+<h4>Optional projects:
 
 -   Try-out [these WebAudio control widgets that look incredibly
     good](https://github.com/g200kg/webaudio-controls) (I used them
@@ -19834,12 +19836,12 @@ processor time. If you run an intensive CPU task, everything else
 is *blocked*, including the user interface. You have no doubt observed
 something like this during your Web browsing experiences:
 
-### With Internet Explorer:
+<h4>With Internet Explorer:
 
 # <img src="./images/image002.png" style="width:4.625in;height:2.04167in"
 alt="ScriptNotResponding1" />
 
-### Or maybe:
+<h4>Or maybe:
 
 <img src="./images/image238.jpeg"
 style="width:5.85417in;height:1.71875in" alt="script not responding2" />
@@ -19856,7 +19858,7 @@ concept of <i>multi-tasking* are new to you, please review [PC Mag's
 definition of foreground
 and background](https://www.pcmag.com/encyclopedia/term/foregroundbackground).
 
-### An example that does not use Web Workers
+<h4>An example that does not use Web Workers
 
 This example will block the user interface unless you close the
 tab. [Try it at JSBin](https://jsbin.com/qipegi/edit?html,output) but DO
@@ -20734,7 +20736,7 @@ alt="rotation about x axis" /></td>
 </tbody>
 </table>
 
-### Rotate the device frame around its y axis by gamma degrees, with gamma in \[-90, 90\]
+<h4>Rotate the device frame around its y axis by gamma degrees, with gamma in \[-90, 90\]
 
 <table>
 <colgroup>
@@ -21636,4 +21638,4 @@ your comments/observations/questions and share your creations.
 
 <h5>the end...</h5>
 
-<h4>Last Updated: 10-03-2022 1:12pm</h4>
+<h4>Last Updated: 10-03-2022 11:44am</h4>
