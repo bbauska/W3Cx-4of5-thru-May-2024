@@ -1693,10 +1693,10 @@ Hi, today I've prepared for you a small example of a video that is
 associated with three different tracks.
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------- 18. using html views of tracks - one video, three tracks (27) ----------------->
+<!---------------- 15. using html views of tracks - one video, three tracks (27) ----------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image018.png" 
+<img src="./images/image015.png" 
   style="width:6.5in;height:6.36875in" />
 </p>
 
@@ -1735,25 +1735,25 @@ structure of a track. I'm just going to display the content of one of
 these tracks.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 19. video tracks line by line (28) ------------------------------->
+<!----------------------------- 16. video tracks line by line (28) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image019.png"
+<img src="./images/image016.png"
   style="width:5in;height:3.07853in"
   alt="Line by line video tracks." />
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 20. using html views of tracks (28) ------------------------------>
+<!----------------------------- 17. using html views of tracks (28) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
-<img src="./images/image020.png" 
+<img src="./images/image017.png"
   style="width:5in;height:3.07853in"
   alt="Using HTML views of tracks." />
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 21. download, caption, language (29) ----------------------------->
+<!----------------------------- 18. download, caption, language (29) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
-<img src="./images/image021.png" 
-  style="width:5in;height:5.2094in" 
+<img src="./images/image018.png"
+  style="width:5in;height:5.2094in"
   alt="Download, Caption, Language."/>
 </p>
 
@@ -1772,10 +1772,10 @@ we will see also how to choose the subtitle or caption track language
 for the video.
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------------- 22. safari - 0 thru 10:58 - elephants dream (30) ------------------------>
+<!---------------------- 19. safari - 0 thru 10:58 - elephants dream (30) ------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image022.png" 
+<img src="./images/image019.png" 
   style="width:5in;height:5.2094in"
   alt="Safari display of elephants dream video." />
 </p>
@@ -1792,11 +1792,11 @@ accepting different origins, then you can add this attribute
 crossOrigin="anonymous" in your HTML document and it is going to work.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 23. subtitle tracks in german (31) ------------------------------->
+<!----------------------------- 20. subtitle tracks in german (31) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image023.png" 
-  style="width:5in;height:3.64476in" 
+<img src="./images/image020.png"
+  style="width:5in;height:3.64476in"
   alt="Elephants dream with German subtitles." />
 </p>
 
@@ -1836,11 +1836,11 @@ And here is how it renders in your current browser (please play the
 video and try to show/hide the subtitles/captions):
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 24. html track descriptions (31) -------------------------------->
+<!------------------------------ 21. html track descriptions (32) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image024.png" 
-  style="width:4in;height:2.24412in" 
+<img src="./images/image021.png"
+  style="width:4in;height:2.24412in"
   alt="HTML track descriptions; label, kind, lang, readyState." />
 </p>
 
@@ -1861,10 +1861,10 @@ written in April 2015, for further details.
     the default is off.
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 25. safari menu screenshot (##) ----------------------->
+<!--------------------- 22. safari menu screenshot (32) ----------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-  <mg src="./images/image025.jpeg"
+  <mg src="./images/image022.jpeg"
   style="width:4in;height:2.32697in"
   alt="Screenshot of Safari menu fr choosing subtitle track." />
 </p>
@@ -2057,14 +2057,14 @@ manipulate these elements as "HTML elements" - we will call them the
 <h4>[<span id="_Toc98696550" class="anchor"></span>Example at JSBin that displays the different elements we can get from an HTML track](https://jsbin.com/kuqevegapi/2/edit?html,css,output):</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 26/27. status of html track (##) ----------------------->
+<!--------------------- 23/24. status of html track (##) ----------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image026.png" 
+<img src="./images/image023.png" 
   style="width:4in;height:2.23647in" 
   alt="." />
 
-<img src="./images/image027.png" 
+<img src="./images/image024.png" 
   style="width:4in;height:3.93208in" 
   alt="." />
 </p>
@@ -2360,10 +2360,10 @@ video as soon as the track has finished loading.
 JSBin](https://jsbin.com/bubeye/1/edit?html,console,output)
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 28.  (##) ----------------------->
+<!--------------------------- 25. test if track has been loaded (42) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image028.jpeg" 
+<img src="./images/image025.jpeg" 
   style="width:5in;height:4.44178in" 
   alt="." />
 </p>
@@ -2563,10 +2563,10 @@ properties and methods
 
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------------------- 29. webvtt with arrows (45) ---------------------------------->
+<!--------------------------------- 26. webvtt with arrows (45) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image029.jpeg" 
+<img src="./images/image026.jpeg"
   style="width:5in;height:2.01365in"
   alt="A webVtt file extract with arrows showing id, startTime, endTime and text." />
 </p>
@@ -2578,10 +2578,10 @@ track](https://jsbin.com/teruhay/1/edit?html,css,js,output):
 
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------- 30. example that plays content of a track (46) ------------------------->
+<!----------------------- 27. example that plays content of a track (46) ------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image030.png" 
+<img src="./images/image027.png" 
   style="width:4in;height:4.89057in" 
   alt="Example video editor that plays content of a track." />
 </p>
@@ -2789,12 +2789,12 @@ Showing real examples of event listeners
 for cuechange events</a>:
 
 <!------------------------------------------------------------------------------------------------>
-<!---------- 31. example that displays cue contents with cuechange even listeners (50) ----------->
+<!---------- 28. example that displays cue contents with cuechange even listeners (50) ----------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image031.png?raw=true"
-   width="40%"
-   alt="Example that displays cue contents with cuechange even listeners." />
+<img src="./images/image028.jpeg?raw=true"
+  width="40%"
+  alt="Example that displays cue contents with cuechange even listeners." />
 </p>
 <!---- <img style="width:4in;height:4.42106in" ---->
 
@@ -2825,12 +2825,12 @@ for cuechange events</a>:
 shows how to use enter and exit events on cues</a>:
 
 <!------------------------------------------------------------------------------------------------>
-<!- 32. example that displays message in enter and exit cue listeners of the selected track (51) ->
+<!- 29. example that displays message in enter and exit cue listeners of the selected track (51) ->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image032.png?raw=true"
+<img src="./images/image029.jpeg?raw=true"
    width="40%"
-   alt="Example that displays message in enter and exit cue listeners of tjhe selected track." />
+   alt="Example that displays message in enter and exit cue listeners of the selected track." />
 </p>
 
 <h4>Source code extract:</h4>
@@ -3014,12 +3014,11 @@ corresponding location.
 
 We will learn how to do this using the track API.
 
-
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------- 33. debug video tracks (54) ------------------------------------>
+<!------------------------------- 30. debug video tracks (54) ------------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image033.png?raw=true"
+<img src="./images/image030.png?raw=true"
    width="60%"
    alt="edx video player to debug video tracks." />
 </p>
@@ -3065,12 +3064,12 @@ Some important things here:
 JSBin](https://jsbin.com/sodihux/1/edit?html,css,js,output):
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------ 34.  (xx) ---------------------------->
+<!------------ 31. use track api to extract content of webvtt in track element (55) -------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image034.png?raw=true"
-   width="60%"
-   alt="." />
+<img src="./images/image031.png?raw=true"
+  width="60%"
+  alt="Using track api to extract content of webvtt in track element." />
 </p>
 
 <!-- <h4>HTML code:</h4> -->
@@ -3083,7 +3082,7 @@ JSBin](https://jsbin.com/sodihux/1/edit?html,css,js,output):
 2.  <button disabled id="buttonEnglish"
 3.           onclick="loadTranscript('en');">
 4.      Display English transcript
-5.   </button>
+5.  </button>
 6.  <button disabled id="buttonDeutsch"
 7.           onclick="loadTranscript('de');">
 8.      Display Deutsch transcript
@@ -3365,12 +3364,12 @@ cues</u>](https://jsbin.com/vedelequso/edit?html,js,output) in the
 different tracks:
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 35.  (##) ----------------------->
+<!----------- 32. using track api to extract content of webvtt in track element (61) ------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image035.png" 
-  style="width:5in;height:4.47489in" 
-  alt="." />
+<img src="./images/image032.png"
+  style="width:5in;height:4.47489in"
+  alt="Using track api to extract content of webvtt in track element." />
 </p>
 
 This example, adapted from an example from (now offline) dev.opera.com,
@@ -3526,10 +3525,10 @@ events (more on that at the end of the first example) whereas disabled
 tracks do not fire events.
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 36.  (##) ----------------------->
+<!---------------------------- 33. mode property and cue events (64) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image036.jpeg" 
+<img src="./images/image033.jpeg" 
   style="width:5in;height:4.64476in"
   alt="Example that shows how to toggle track modes and listen to events" />
 </p>
