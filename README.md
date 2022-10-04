@@ -3032,11 +3032,11 @@ Some important things here:
     been loaded yet<i>.
 
 2.  When a track file is loaded, then we iterate on the different cues
-    and generate the transcript as a set of <li>...</li> elements.
-    One <li> per cue/sentence. 
+    and generate the transcript as a set of &lt;li&gt;...&lt;/li&gt; elements.
+    One &lt;li&gt; per cue/sentence.
 
-3.  We define the id attribute of the <li> to be the same as
-    the cue.id value. In this way, when we click on a <li> we can get
+3.  We define the id attribute of the &lt;li&gt; to be the same as
+    the cue.id value. In this way, when we click on a &lt;li&gt; we can get
     its id and find the corresponding cue start time, and make the video
     jump to that time location.
 
