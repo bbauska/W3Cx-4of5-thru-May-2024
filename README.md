@@ -3029,7 +3029,7 @@ Some important things here:
     they decide when and which track to load differs from one browser to
     another. So, when we click on a button to choose the track to
     display, we need t<i>o enforce the loading of the track, if it has not
-    been loaded yet<i>.
+    been loaded yet</i>.
 
 2.  When a track file is loaded, then we iterate on the different cues
     and generate the transcript as a set of &lt;li&gt;...&lt;/li&gt; elements.
@@ -3514,8 +3514,9 @@ tracks do not fire events.
 <!---------------------------- 33. mode property and cue events (64) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image033.jpeg" 
-  style="width:5in;height:4.64476in"
+<img src="./images/image033.jpeg"
+<!--  style="width:5in;height:4.64476in" -->
+  width="65%"
   alt="Example that shows how to toggle track modes and listen to events" />
 </p>
 
@@ -3725,10 +3726,10 @@ two buttons below the video to enable/disable subtitles/captions and let
 you choose which track you prefer. 
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 37.  (##) ----------------------->
+<!------------------------------- 34. choose track/language (68) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image037.jpeg"
+<img src="./images/image034.jpeg"
   style="width:6.17708in;height:5.73958in"
   alt="Buttons for choosing the track/language under a standard video player" />
 </p>
@@ -3851,11 +3852,10 @@ you choose which track you prefer. 
 
 -   If you are interested in building a complete custom video player,
     MDN offers an online tutorial with further information
-    about [styling and integrating a "CC"
-    button](https://developer.mozilla.org/en-US/Apps/Build/Audio_and_video_delivery/Adding_captions_and_subtitles_to_HTML5_video)
+    about [styling and integrating a "CC"  button](https://developer.mozilla.org/en-US/Apps/Build/Audio_and_video_delivery/Adding_captions_and_subtitles_to_HTML5_video).
 
 -   The MDN documentation on [Web Video Text Tracks
-    Format](https://developer.mozilla.org/fr/docs/Web/API/WebVTT_API) (WebVTT)
+    Format](https://developer.mozilla.org/fr/docs/Web/API/WebVTT_API) (WebVTT).
 
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch1-3-4">1.3.4 With a Simple Chapter Navigation Menu</h3>
@@ -3864,12 +3864,12 @@ you choose which track you prefer. 
 Example #4: making a simple chapter navigation menu
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 38.  (##) ----------------------->
+<!----------------------------- 35. simple chapter navigation (70) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image038.jpeg"
+<img src="./images/image035.jpeg"
   style="width:4.57292in;height:2.08333in"
-  alt="Simple chapter navigation" />
+  alt="Simple chapter navigation." />
 </p>
 
 We can use WebVTT files to define chapters. The syntax is exactly the
@@ -3914,9 +3914,9 @@ one of the enhanced video players presented during the HTML5 Part 1
 course, but as you will see in this lesson: making your own chapter
 navigation menu is not complicated.
 
-Let's start by examining the sample .vtt file
+Let's start by examining the sample .vtt file:
 
-[elephant-dream-chapters-en.vtt](https://mainline.i3s.unice.fr/mooc/elephants-dream-chapters-en.vtt):
+	[elephant-dream-chapters-en.vtt](https://mainline.i3s.unice.fr/mooc/elephants-dream-chapters-en.vtt):
 
 <details>
   <summary>WEBVTT code extract!</summary>
@@ -3967,8 +3967,8 @@ for subtitles/captions on the right of the
 video](https://jsbin.com/zeqoleq/1/edit?html,css,js,output). We need to
 modify it a little bit:
 
-1.  We add a "show English chapters" button with a click event listener
-    > similar to this :
+-  We add a "show English chapters" button with a click event listener
+   similar to this:
 
 ```
 <button disabled id="buttonEnglishChapters" <b>onclick="loadTranscript('en', 'chapters');"</b>>
@@ -3976,11 +3976,10 @@ modify it a little bit:
 </button>
 ```
 
-We modify the loadTranscript function from the previous example, so that it matches both the srclang and
- the kind attribute of the track.  
+-  We modify the loadTranscript function from the previous example, so that it matches both the srclang and
+   the kind attribute of the track.
 
-Here is a new version: in bold are the source code lines we
-modified.
+Here is a new version: in bold are the source code lines we modified.
 
 ```
 function loadTranscript(lang, kind) {
@@ -4003,10 +4002,10 @@ Notice that we kept the existing buttons to display a clickable
 transcript:
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 38.  (##) ----------------------->
+<!----------------------------- 36. simple chapter navigation (73) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image038.jpeg"
+<img src="./images/image036.jpeg"
   style="width:5in;height:2.28152in"
   alt="Simple chapter navigation" />
 </p>
@@ -4019,10 +4018,13 @@ Chapter navigation, illustrated in the video player below, is fairly
 popular.
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 39.  (##) ----------------------->
+<!--------------------------- 37. text-based chapter navigation (73) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
-<img src="./images/image039.jpeg" style="width:5in;height:2.76977in"
-alt="Example of video player that uses text based chapter navigation" />
+<p align="center" width="100%">
+<img src="./images/image037.jpeg" 
+  style="width:5in;height:2.76977in"
+  alt="Example of video player that uses text based chapter navigation" />
+</p>
 
 In addition to the clickable chapter list, this one displays an enhanced
 progress bar created using a canvas. The small squares are drawn
@@ -4106,10 +4108,11 @@ clickable text on the right of a
 video](https://jsbin.com/jiyodit/edit?html,css,js,output).
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 38.  (##) ----------------------->
+<!--------------------- 38.  (75) ----------------------->
 <!------------------------------------------------------------------------------------------------>
-<img src="./images/image038.jpeg" style="width:5in;height:2.28152in"
-alt="SImple chapter menu in plain text" />
+<img src="./images/image038.jpeg" 
+  style="width:5in;height:2.28152in"
+  alt="SImple chapter menu in plain text." />
 
 <h4> This example used only standard plain text content for the cues:</h4>
 
