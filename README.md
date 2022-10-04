@@ -1784,17 +1784,14 @@ This is all for this first video, I’ll see you in the next one!
 
 <h4>The Timed Text Track JavaScript API</h4>
 
-In the <a href="https://www.edx.org/course/html5-coding-essentials-and-best-practices">W3Cx HTML5 Coding Essentials and Best
-Practices</a> course,
-we saw that &lt;video&gt; and &lt;audio&gt; elements can
-have &lt;track&gt; elements. A &lt;track&gt; can have a label,
-a kind (subtitles, captions, chapters, metadata, etc.), a language
-(srclang attribute), a source URL (src attribute), etc.
+In the <a href="https://www.edx.org/course/html5-coding-essentials-and-best-practices">W3Cx HTML5 Coding Essentials and Best Practices</a> course, we saw that &lt;video&gt; and &lt;audio&gt; elements can
+have &lt;track&gt; elements. A &lt;track&gt; can have a label, a kind (subtitles, captions, chapters, metadata, etc.), a language (srclang attribute), a source URL (src attribute), etc.
 
-Here is a small example of a video with 3 different tracks
-("......" masks the real URL here, as it is too long to fit in this page
-width!):
+Here is a small example of a video with 3 different tracks ("......" masks the real URL here, as it is too long to fit in this page width!):
 
+<details>
+  <summary>Code extract!</summary>
+  
 ```
 <video id="myVideo" preload="metadata" controls crossOrigin="anonymous">
   <source src="https://...../elephants-dream-medium.mp4" type="video/mp4">
@@ -1807,6 +1804,8 @@ width!):
     src="https://...../elephants-dream-chapters-en.vtt">
 </video>
 ```
+
+</details>
 
 And here is how it renders in your current browser (please play the
 video and try to show/hide the subtitles/captions):
@@ -1994,7 +1993,7 @@ I will explain that in a next video.
 <h4>Let's go back to our example. Below is the HTML code:</h4>
 
 <details>
-  <summary>HTML code extract!</summary>
+  <summary>Code extract!</summary>
 
 ```
 1. <video id="myVideo" preload="metadata" controls crossOrigin="anonymous">
@@ -2068,8 +2067,6 @@ manipulate these elements as "HTML elements" - we will call them the
 28. + "<ul>" + label + kind + lang + readyState + "</ul>";
 29. }
 30. }
-<!-- -->
-23. 
 ```
 
 </details>
@@ -2248,18 +2245,23 @@ TextTrack object.
 
 <h4>Example source code:</h4>
 
+<details>
+  <summary>Code extract!</summary>
+
 ```
-1. // HTML tracks
-2. var htmlTracks = document.querySelectorAll("track");
-3. 
-4. 
-5. // The TextTrack object associated with the first HTML track
-6. var textTrack = htmlTracks[0].track;
-7. var kind = textTrack.kind;
-8. var label = textTrack.label;
-9. var lang = textTrack.language;
-10. // etc.
+// HTML tracks
+var htmlTracks = document.querySelectorAll("track");
+
+// The TextTrack object associated with the first HTML track
+var textTrack = htmlTracks[0].track;
+var kind = textTrack.kind;
+var label = textTrack.label;
+var lang = textTrack.language;
+
+// etc.
 ```
+
+</details>
 
 Note that once we get a TextTrack object, we can manipulate
 the kind, label, language attributes (be careful, it's not srclang,
@@ -3958,7 +3960,6 @@ Here is an example cue from a WebVTT file encoded as JSON instead of
 plain text. JSON is useful for describing "structured data"', and
 processing such data from JavaScript is easier than parsing plain text.
 
-
 <details>
   <summary>Code extract!</summary>
 
@@ -4024,7 +4025,6 @@ video](https://jsbin.com/jiyodit/edit?html,css,js,output).
 alt="SImple chapter menu in plain text" />
 
 <h4> This example used only standard plain text content for the cues:</h4>
-
 
 <details>
   <summary>Code extract!</summary>
@@ -6307,7 +6307,7 @@ The new visualization code:
 
 </details>
 
-**Explanations: **
+<b>Explanations:</b>
 
 -   *Line 6*: this is different to code which draws a waveform! We ask
     for byteFrequencyData (vs byteTimeDomainData earlier) and it returns
@@ -6406,7 +6406,7 @@ Source code from this example's the buildAudioGraph function:
 <h3 id="ch1-5-7">1.5.7 Volume Meters</h3>
 <!------------------------------------------------------------------------------------------------>
 
-**Important note:** the volume meter implementations below use rough
+<b>Important note:</b> the volume meter implementations below use rough
 approximations and cannot be taken as the most accurate way to compute
 an exact volume. See at the end of the page for some extra explanations,
 as well as links to better (and more complex) implementations. 
@@ -6668,14 +6668,14 @@ that were out of the scope for this course. Also, a student from this
 course named "SoundSpinning" proposed also another approximation that
 gives more stable results. Read below:
 
-*** *SoundSpinning*: "The only half close way I found for the meter
+<i>SoundSpinning</i>: "The only half close way I found for the meter
 levels is to use getFloatTimeDomainDatadata from the analyser, which
 seems to give a normalized array between -1 and 1. Then just plot the
 actual wave level values as we loop in the canvas rendering. This is
 still not great, since the canvas works at 60Hz while (most of the
 times) audio sampling is 44.1kHz, but it is closer. This also keeps the
 same levels no matter whatFFTsizeyou apply."  
-Here is a codepen with my proposed meters. ***
+Here is a codepen with my proposed meters.
 
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch1-5-8">1.5.8 Sound Samples Loaded in Memory</h3>
@@ -6787,8 +6787,8 @@ This node has different properties:
 
 <h4>Loading and decoding a sound sample</h4>
 
-**Before use, a sound sample must be loaded using Ajax, decoded, and set
-to the buffer property of an AudioBufferSourceNode.**
+<b>Before use, a sound sample must be loaded using Ajax, decoded, and set
+to the buffer property of an AudioBufferSourceNode.</b>
 
 [Try the example at
 JSBin](https://jsbin.com/botagas/edit?html,js,console,output):
@@ -6805,8 +6805,8 @@ button to make the noise.
 Notice in the code that each time we click on the button, we rebuild the
 audio graph.
 
-> **This is because AudioBufferSourceNodes can be used only once!   
-> **
+> <b>This is because AudioBufferSourceNodes can be used only once!   
+> </b>
 > But don't worry, Web Audio is optimized for handling thousands of
 > nodes...
 
@@ -6921,12 +6921,12 @@ audio graph.
     be called (*lines 55-61*). This function builds a simple audio
     graph: it creates an AudioBufferSourceNode (*line 57*), sets
     its buffer property with the decoded sample, connects this source to
-    the speakers (*line 59*) and plays the sound. **Source nodes can
+    the speakers (*line 59*) and plays the sound. <b>Source nodes can
     only be used once (a "fire and forget" philosophy), so to play the
     sound again, we have to rebuild a source node and connect that to
     the destination. This seems strange when you learn Web Audio, but
     don't worry - it's a very fast operation, even with hundreds of
-    nodes.**
+    nodes.</b>
 
 <h4>Loading and decoding multiple sounds: the BufferLoader utility</h4>
 
@@ -7601,15 +7601,15 @@ Source code extract:
 11. }
 ```
 
-Notice that calling requestAnimationFrame(mainloop) at *line 10*, asks
+Notice that calling requestAnimationFrame(mainloop) at <i>line 10</i>, asks
 the browser to call the mainloop function every 16.6 ms: this
 corresponds to 60 times per second (16.6 ms = 1/60 s).
 
-**This target may be hard to reach; the animation loop content may take
-longer than this, or the scheduler may be a bit early or late.**
+<b>This target may be hard to reach; the animation loop content may take
+longer than this, or the scheduler may be a bit early or late.</b>
 
-**Many "real action games" perform what we call *time-based
-animation***. For this, we need an accurate timer that will tell us the
+<b>Many "real action games" perform what we call <i>time-based
+animation</i></b>. For this, we need an accurate timer that will tell us the
 elapsed time between each animation frame. Depending on this time, we
 can compute the distances each object on the screen must achieve in
 order to move at a given speed, independently of the CPU or GPU of the
@@ -7711,8 +7711,8 @@ The principle is simple:
     drawn, then we have the *frame rate* - measured in number of frames
     per second. Remember, it should be around 60 fps!
 
-**Quick glossary:** the word *delta* is the name of a Greek
-letter (uppercase **Δ**, lowercase **δ** or **𝛿).** The upper-case
+<b>Quick glossary:</b> the word *delta* is the name of a Greek
+letter (uppercase <b>Δ</b>, lowercase <b>δ</b> or <b>𝛿).</b> The upper-case
 version is used in mathematics as an abbreviation for measuring
 the *change* in some object, over time - in our case, how quickly the
 mainloopis running. This dictates the maximum speed at which the game
@@ -7720,8 +7720,8 @@ display will be updated. This maximum speed could be referred to as
 the *rate of change*. We call what is displayed at a single
 point-in-time, a *frame*. Thus the *rate of change*  can be measured in
 frames per second (*fps*). Accordingly, our game's *delta,* determines
-the achievable frame rate - the **shorter** the *delta* (measured in
-mS), the **faster** the possible *rate of change* (in *fps*).
+the achievable frame rate - the <b>shorter</b> the *delta* (measured in
+mS), the <b>faster</b> the possible *rate of change* (in *fps*).
 
 Here is a screenshot of an example and the code we added to our game
 engine, for measuring FPS ([try it online at
@@ -9642,7 +9642,7 @@ the updateMonsterPosition() function:
 
 </details>
 
-**Explanations**:
+<b>Explanations</b>:
 
 -   In this function, we added two properties to
     the monster object: speedX and speedY which will correspond to the
@@ -9737,138 +9737,90 @@ the inputStates object we previously used with key events. Therefore,
 without changing any code in the updatePlayerPosition function, the
 monster moves by joystick command!
 
-## 2.4.1 Introduction
+<!------------------------------------------------------------------------------------------------>
+<h3 id="ch2-4-1">2.4.1 Introduction</h3>
+<!------------------------------------------------------------------------------------------------>
 
-Hi! This time I will talk to you about what is
+Hi! This time I will talk to you about what is called time-based animation. 
 
-called time-based animation. Here, we have got a simple example of a
-bouncing
-
-rectangle and the animation is done in an animationLoop that is called
-60 times per
-
-seconds using the requestAnimationFrame. We clear the rectangle that
-corresponds to
-
-the canvas area, and we add a fixed increment to the x position.
+Here, we have got a simple example of a bouncing rectangle and the animation 
+is done in an animationLoop that is called 60 times per seconds using the 
+requestAnimationFrame. 
+We clear the rectangle that corresponds to the canvas area, and we add a fixed increment to the x position.
 
 If x is just bounces on the side, we just reverse the speed.
 
 The speed is a fixed value of 3px per frame. What is happening if we run
-this application
+this application on a low end-smartphone or a Raspberry Pi, a low end-computer with a not
+very powerful GPU? 
 
-on a low end-smartphone or a Raspberry Pi, a low end-computer with a not
-very powerful
+We can simulate what would happen by just adding a big loop here to slow down artificially the animation.
 
-GPU? We can simulate what would happen by just
+This is what I have done here. Here I count up to 70 millions in the loop. 
 
-adding a big loop here to slow down artificially the animation.
+This takes time and slows down the animation. 
 
-This is what I have done here. Here I count up to 70 millions in the
-loop. So this takes
+The rectangle is just moving 3px every frame, but as the the frame rate drops down a lot, the actual speed on the screen of the rectangle is much slower than what I have got here.
 
-time and slows down the animation. The rectangle is just moving 3px
-every frame, but as the
+And here I added also a loop so this is a normal speed. 
 
-the frame rate drops down a lot, the actual speed on the screen of the
-rectangle is much slower
+What we can do in order not to have the speed going down?
 
-than what I have got here. And here I added also a loop so this is a
+We will compute the time between two consecutive frames.
 
-normal speed. What we can do in order not to have the speed
+So here I am using the date object from JavaScript to get the current time and I compute a delta that is a difference between the current time and the time at the previous animation. 
 
-going down? We will compute the time between two consecutive
+So the delta is the number of milliseconds elapsed since the last animation. 
 
-frames. So here I am using the date object from JavaScript
+And then we will compute the distance instead of using 3px per frame, the number of pixels we move the rectangle will increase if the time between frames increases. 
 
-to get the current time and I compute a delta that is a difference
-between the current time
+So we have got a function that is explained in the course that will compute the distance taking into account the time elapsed since the last frame and the speed we want to achieve in pixels per seconds, not in pixels per frames, but in pixels per seconds.
 
-and the time at the previous animation. So the delta is the number of
-milliseconds
+This time, we are adding the increment but it is adjusted at each frame of animation.
 
-elapsed since the last animation. And then we will compute the distance
-instead
-
-of using 3px per frame, the number of pixels we move the rectangle will
-increase if the
-
-time between frames increases. So we have got a function that is
-explained
-
-in the course that will compute the distance taking into account the
-time elapsed since
-
-the last frame and the speed we want to achieve in pixels per seconds,
-not in pixels per frames,
-
-but in pixels per seconds. This time, we are adding the increment but
-
-it is adjusted at each frame of animation. Here is an example that I
-slow down and if
-
-I change the time that this will take you can see that it goes from
-smooth to a bit
-
-jerky… to really jerky, but the speed on the screen is the same.
+Here is an example that I slow down and if I change the time that this will take you can see that it goes from smooth to a bit jerky… to really jerky, but the speed on the screen is the same.
 
 It takes the same time to bounce from on side to another.
 
-This is what is done in real games. I wanted to show you also another
-thing,
+This is what is done in real games. 
 
-Instead of using the date object from JavaScript that gives the time in
-milliseconds,
-
-but as we are animating at 60 times per seconds, having an high
-resolution timer that has
-
-a sub-millisecond accuracy is much better and was asked by game
+I wanted to show you also another thing, instead of using the date object from JavaScript that gives the time in
+milliseconds, but as we are animating at 60 times per seconds, having an high resolution timer that has a sub-millisecond accuracy is much better and was asked by game
 developers.
 
 The callback function that is called when you use requestAnimationFrame
-can have an
-
-extra parameter that we have not used until now.
+can have an extra parameter that we have not used until now.
 
 So you can add a parameter here that will be a high resolution time.
 
 And then you compute the delta using this time that is automatically
-passed to you by
+passed to you by the requestAnimationFrame API. 
 
-the requestAnimationFrame API. Here, I added this technique to the game
-framework.
+Here, I added this technique to the game framework.
 
 So, I am in the mainLoop from the last example we used with the game
-framework for moving
+framework for moving the small monster using the keys. 
 
-the small monster using the keys. I artificially slowed down the
-animation. So if I do this,
+I artificially slowed down the animation. So if I do this, I have got 8 frames per seconds, and you can see that the monster moves,
+but it jumps with larger steps between two consecutive frames.
 
-I have got 8 frames per seconds, and you can see that the monster moves,
-but it jumps with
-
-larger steps between two consecutive frames. If I remove this artificial
-part of the code
-
-that slows down the animation, I go up to 60 FPS and I have got a smooth
+If I remove this artificial part of the code that slows down the animation, I go up to 60 FPS and I have got a smooth
 animation.
 
 That means that this example will be usable on many different devices as
-the animation
+the animation will be adapted depending on the power of the device. 
 
-will be adapted depending on the power of the device. So this is
-time-based animation.
+So this is time-based animation.
 
 Let's study an important technique known as *"time-based animation"*,
 that is used by nearly all "real" video games.
 
 This technique is useful when:
 
--   **Your application runs on different devices, and where 60 frames/s
-    are definitely not possible.** **More generally, you want your
+-   <b>Your application runs on different devices, and where 60 frames/s
+    are definitely not possible.</b> <b>More generally, you want your
     animated objects to move at the same speed on screen, regardless of
-    the device that runs the game.** 
+    the device that runs the game.</b> 
       
     For example, imagine a game or an animation running on a smartphone
     and on a desktop computer with a powerful GPU. On the phone, you
@@ -9883,20 +9835,20 @@ This technique is useful when:
     phone. This will enable the car to race around the track in the same
     amount of (real) time as it does on a powerful desktop computer.  
       
-    **Solution**: you need to compute the amount of time that has
+    <b>Solution</b>: you need to compute the amount of time that has
     elapsed between the last frame that was drawn and the current one;
     and depending on this delta of time, adjust the distance the car
     must move across the screen. We will see several examples of this
     later.
 
--   **You want to perform some animations only a few times per
-    second.** For example, in sprite-based animation (drawing different
+-   <b>You want to perform some animations only a few times per
+    second.</b> For example, in sprite-based animation (drawing different
     images as a character moves, for example), you will not change the
     images of the animation 60 times/s, but only ten times per second.
     Mario will walk on the screen in a 60 fps animation, but his posture
     will not change every 1/60th of second.
 
--   **You may also want to accurately set the framerate**, leaving some
+-   <b>You may also want to accurately set the framerate</b>, leaving some
     CPU time for other tasks. Many games consoles limit
     the *frame-rate* to 1/30th of a second, in order to allow time for
     other sorts of computations (physics engine, artificial
@@ -10359,7 +10311,7 @@ difference.
 
 ### Method #3: using the optional timestamp parameter of the callback function of requestAnimationFrame
 
-> **This is the recommended method!**
+> <b>This is the recommended method!</b>
 
 There is an optional parameter that is passed to the callback function
 called by requestAnimationFrame: a timestamp!
@@ -10377,7 +10329,7 @@ timestamp parameter.
 
 [Online example at JSBin](https://jsbin.com/kuvumu/edit):
 
-**Source code of the example:**
+<b>Source code of the example:</b>
 <details>
   <summary>Source code!</summary>
 
@@ -10479,7 +10431,7 @@ compare the elapsed time between two executions of the animation loop:
 
 Here is the [online example at JSBin](https://jsbin.com/bonutur/edit).
 
-**Try to change the parameter value of the call to: **
+<b>Try to change the parameter value of the call to: </b>
 
 ```
 <sup>setFrameRateInFramesPerSecond(5); // try other values!</sup>
@@ -10487,7 +10439,7 @@ Here is the [online example at JSBin](https://jsbin.com/bonutur/edit).
 
 <img src="./images/image120.png" style="width:4in;height:2.0047in" />
 
-**Source code of the example:**
+<b>Source code of the example:</b>
 
 ```
 <!DOCTYPE html>
@@ -10609,7 +10561,7 @@ a high-resolution time with this [modified version on JSBin of the
 example with the rectangle that also uses this
 technique](https://jsbin.com/momeci/edit). 
 
-**Source code:**
+<b>Source code:</b>
 
 <details>
   <summary>Source code!</h4>
@@ -10731,7 +10683,9 @@ animation, but you would also have a call to setInterval(changeEyeColor,
 variable, eyeColor, every second, which will be taken into account
 within the drawMonster function, called 60 times/s from the mainloop.
 
+<!------------------------------------------------------------------------------------------------>
 <h3 id="ch-2-4-4">2.4.4 Adding time-based animation</h3>
+<!------------------------------------------------------------------------------------------------>
 
 To add time-based animation to our game engine, we will be using the
 technique discussed in the previous lesson. This technique is now widely
@@ -10828,7 +10782,9 @@ the updateMonsterPosition call:
 7.   }
 ```
 
+<!------------------------------------------------------------------------------------------------>
 <h3 id="ch2-5-1">2.5.1 Animating multiple objects</h3>
+<!------------------------------------------------------------------------------------------------>
 
 Hi, welcome! Let me show you how we can add many animated objects to the 
 game framework.
@@ -11063,7 +11019,7 @@ Here is the rest of the code from this example:
 
 </details>
 
-**Notice that:**
+<b>Notice that:</b>
 
 -   All the balls are stored in an array (*line 4*),
 
@@ -11180,7 +11136,9 @@ control an object that follows the mouse, or that tracks another object
 in order to attack it, angles would be more practical input to the
 computations required.
 
+<!------------------------------------------------------------------------------------------------>
 <h3 id="ch2-5-2">2.5.2 Adding balls to the game framework</h3>
+<!------------------------------------------------------------------------------------------------>
 
 This time, let's extract the source code used to create the balls, and
 include it in our game framework. We are also going to use time-based
@@ -11285,7 +11243,9 @@ Now, in order to turn this into a game, we need to create some
 interactions between the player (the monster) and the obstacles/enemies
 (balls, walls)... It's time to take a look at collision detection.
 
+<!------------------------------------------------------------------------------------------------>
 <h3 id="ch2-5-3">2.5.3 Collision detection</h3>
+<!------------------------------------------------------------------------------------------------>
 
 In this chapter, we explore some techniques for detecting collisions
 between objects. This includes moving and static objects. We first
@@ -11755,7 +11715,9 @@ physics modeling), we recommend [this tutorial, that is the first of a
 three-part series  about  video game
 physics](https://www.toptal.com/game/video-game-physics-part-i-an-introduction-to-rigid-body-dynamics).
 
+<!------------------------------------------------------------------------------------------------>
 <h3 id="ch2-5-4">2.5.4 Adding collision detection to the game framework</h3>
+<!------------------------------------------------------------------------------------------------>
 
 Our previous lesson enabled us to animate balls in the game framework
 ([this example](https://jsbin.com/tehuve/edit)).
@@ -12085,7 +12047,7 @@ sprites:
 
 </details>
 
-<h4>**Explanations**:
+<h4><b>Explanations</b>:</h4>
 
 -   *Lines 1-4*: characteristics of the sprite sheet. How many rows,
     i.e., how many sprites per row, etc.
@@ -12131,7 +12093,9 @@ alt="same example but with the robot spritesheet" />
 543. Now it's time to see how we can make a small sprite animation
      framework!
 
-## 2.6.4 A small sprite animation framework
+<!------------------------------------------------------------------------------------------------>
+<h3 id="ch2-6-4">2.6.4 A small sprite animation framework</h3>
+<!------------------------------------------------------------------------------------------------>
 
 Now that we have presented the principle of sprite extraction (sprites
 as sub-images of a single composite image), let's write a small sprite
@@ -12177,7 +12141,7 @@ Here is how you would create and animate a sprite:
 
 [Try the example on JSBin that uses this framework
 first!](https://jsbin.com/rugosu/edit?js,output) Experiment by
-editing *line 20*: **robot.setNbImagesPerSecond(20); **changing the
+editing *line 20*: <b>robot.setNbImagesPerSecond(20); </b>changing the
 value of the parameter and observing the result.
 
 <img src="./images/image150.jpeg" style="width:6.5in;height:4.27847in"
@@ -12226,7 +12190,7 @@ robot in the previous example.
 -   The number of different images to be drawn per second is a parameter
     of the sprite.
 
-**Here is the code of the Sprite model:**
+<b>Here is the code of the Sprite model:</b>
 
 ```
 1.  function Sprite() {
@@ -12343,7 +12307,9 @@ to stop animating the woman when no key is pressed for moving her.
 -   Game development tutorial (5 May 2020): [Draw images and sprite
     animations](https://spicyyoghurt.com/tutorials/html5-javascript-game-development/images-and-sprite-animations)
 
+<!------------------------------------------------------------------------------------------------>
 <h3 id="ch2-6-5">2.6.5 Adding sprites to the game framework</h3>
+<!------------------------------------------------------------------------------------------------>
 
 Let us use the animated woman example and take the sprite utility
 functions and some predefined values, such as the sprite sheet URL, the
@@ -12352,8 +12318,8 @@ of the examples that used the game framework (the last one from the time
 based animation lesson (to keep things simple, we did not use the ones
 with gamepad, etc)).
 
-**First, try this [example at
-JsBin](https://jsbin.com/mifeva/edit?js,console,output)**
+<b>First, try this [example at
+JsBin](https://jsbin.com/mifeva/edit?js,console,output)</b>
 
 <img src="./images/image153.jpeg" style="width:6.5in;height:3.03819in"
 alt="The woman sprite in the game framework, jsbin screenshot" />
@@ -12570,7 +12536,7 @@ Source code extract:
 8.  }
 ```
 
-<h4>Game states:menus, high score tables, etc.
+<h4>Game states:menus, high score tables, etc.</h4>
 
 In this example, let's make use of a global gameState variable for
 managing the life-cycle of the game. Usually, there is a main menu with
@@ -12587,12 +12553,16 @@ survive?
 [Try this JsBin](https://jsbin.com/yatopunuje/edit?html,js,output), then
 look at the source code. Start from the mainloop!
 
+```
 currentGameState = gameStates.gameOver:
+```
 
 <img src="./images/image155.jpeg" style="width:4.69792in;height:4.75in"
 alt="Game Over Screen, asking to press space to start again" />
 
+```
 currentGameState = gameStates.gamerunning:
+```
 
 <img src="./images/image156.jpeg"
 style="width:4.78125in;height:4.79167in"
@@ -12859,7 +12829,7 @@ a timeBasedAnim.js file!!
 Fix: extract the utility functions related to time-based animation and
 add a ctx parameter to the draw method of ball.js. Don't forget to add
 it in game.js where ball.draw() is called. The call should be
-now ball.draw(**ctx**); instead of ball.draw() without any parameter.
+now ball.draw(<b>ctx</b>); instead of ball.draw() without any parameter.
 
 <h4>timeBasedAnim.js:</h4>
 
@@ -12892,6 +12862,7 @@ moved into the initFPS function we created and added into
 the fps.js file.
 
 fps.js:
+
 <details>
   <summary>fps.js extract!</summary>
 
@@ -12948,82 +12919,56 @@ the getMousePos method into there. 
 
 ### listeners.js:
 
-544. function addListeners(inputStates, canvas) {
+<details>
+  <summary>fps.js extract!</summary>
 
-545.    //add the listener to the main, window object, and update the
-     states
+```
+function addListeners(inputStates, canvas) {
+   //add the listener to the main, window object, and update the states
+   window.addEventListener('keydown', function (event) {
+      if (event.keyCode === 37) {
+         inputStates.left = true;
+      } else if (event.keyCode === 38) {
+         inputStates.up = true;
+      } ...
+   }, false);
+ 
+   //if the key is released, change the states object
+   window.addEventListener('keyup', function (event) {
+      ...
+   }, false);
+ 
+   // Mouse event listeners
+   canvas.addEventListener('mousemove', function (evt) {
+      inputStates.mousePos = getMousePos(evt, canvas);
+   }, false);
+...
+}
+ 
+function getMousePos(evt, canvas) {
+   ...
+}
+```
 
-546.    window.addEventListener('keydown', function (event) {
-
-547.       if (event.keyCode === 37) {
-
-548.          inputStates.left = true;
-
-549.       } else if (event.keyCode === 38) {
-
-550.          inputStates.up = true;
-
-551.       } ...
-
-552.    }, false);
-
-553.  
-
-554.    //if the key is released, change the states object
-
-555.    window.addEventListener('keyup', function (event) {
-
-556.       ...
-
-557.    }, false);
-
-558.  
-
-559.    // Mouse event listeners
-
-560.    canvas.addEventListener('mousemove', function (evt) {
-
-561.       inputStates.mousePos = getMousePos(evt, canvas);
-
-562.    }, false);
-
-563. ...
-
-564. }
-
-565.  
-
-566. function getMousePos(evt, canvas) {
-
-567.    ...
-
-568. }
+</details>
 
 ### Isolate the collision tests
 
 Following the same idea, let's put these into a collisions.js file:
 
-569. // We can add the other collision functions seen in the
+```
+// We can add the other collision functions seen in the
+// course here...
 
-570. // course here...
-
-571. 
-
-572. // Collisions between rectangle and circle
-
-573. function circRectsOverlap(x0, y0, w0, h0, cx, cy, r) {
-
-574.    ...
-
-575. }
-
-576.  
-
-577. function testCollisionWithWalls(ball, w, h) {
-
-578.    ...
-
-579. }
+// Collisions between rectangle and circle
+function circRectsOverlap(x0, y0, w0, h0, cx, cy, r) {
+   ...
+}
+ 
+function testCollisionWithWalls(ball, w, h) {
+   ...
+}
+```
 
 We added the width and height of the canvas as parameters to
 the testCollisionWithWalls function to resolve dependencies. The other
@@ -13040,43 +12985,32 @@ alt="final game structure in files" />
 
 ### Final game.html file:
 
+<details>
+  <summary>fps.js extract!</summary>
+
+```
 1.  <!DOCTYPE html>
-
 2.  <html lang="en">
-
 3.  <head>
-
 4.  <meta charset="utf-8">
-
 5.  <title>Nearly a real game</title>
-
 6.  **<link rel="stylesheet" href="css/game.css">**
-
 7.  <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/1.1.25/howler.min.js"></script>
-
 8.  <!-- Include here all JS files -->
-
 9.  **<script src="js/game.js"></script>**
-
 10. **<script src="js/ball.js"></script>**
-
 11. **<script src="js/timeBasedAnim.js"></script>**
-
 12. **<script src="js/fps.js"></script>**
-
 13. **<script src="js/listeners.js"></script>**
-
 14. **<script src="js/collisions.js"></script>**
-
 15. </head>
-
 16. <body>
-
 17. <canvas id="myCanvas" width="400" height="400"></canvas>
-
 18. </body>
-
 19. </html>
+```
+
+</details>
 
 We could go further by defining a monster.js file, turning all the code
 related to the monster/player into a well-formed object, with draw and
@@ -13099,7 +13033,9 @@ playability, add sounds, better graphics, more levels, etc. We like to
 give points for style and flair, but most especially because we've been
 (pleasantly) surprised!
 
-## 2.7.3 Discussion and projects
+<!------------------------------------------------------------------------------------------------>
+<h3 id="ch2-7-3">2.7.3 Discussion and projects</h3>
+<!------------------------------------------------------------------------------------------------>
 
 Here is the discussion forum for this part of the course. Please either
 post your comments/observations/questions or share your creations.
@@ -13167,7 +13103,9 @@ alt="gameboy tetris in html5" />
 <img src="./images/image166.jpeg" style="width:4in;height:2.34815in"
 alt="a &quot;kill the ninja game&quot;" />
 
-## Module 3. HTML5 File Upload and Download
+<!------------------------------------------------------------------------------------------------>
+<h2 id="ch3">Module 3. HTML5 File Upload and Download</h2>
+<!------------------------------------------------------------------------------------------------>
 
 Hi. This week, we will talk about the new version of Ajax called XHR2
 for XMLHttpRequest Level 2 that plays an important role in today's
@@ -13202,7 +13140,7 @@ in the small game you have certainly wrote during week 2. Enjoy!
 We present below a short history of Ajax: an introduction to
 XMLHttpRequest level 2 (XHR2).
 
-**Wikipedia definition**: *"Ajax, short for Asynchronous JavaScript and
+<b>Wikipedia definition</b>: *"Ajax, short for Asynchronous JavaScript and
 XML), is a group of interrelated Web development techniques used on the
 client-side to create asynchronous Web applications. With Ajax, Web
 applications can send data to and retrieve from a server asynchronously
@@ -13408,7 +13346,7 @@ using XHR2.
 <img src="./images/image167.jpeg" style="width:5in;height:2.48451in"
 alt="Downloading file with Xhr2" />
 
-**Complete source code:**
+<b>Complete source code:</b>
 
 <details>
   <summary>Complete source code!</summary>
@@ -13499,7 +13437,7 @@ alt="Downloading file with Xhr2" />
 
 </details>
 
-**Explanations**: 
+<b>Explanations</b>: 
 
 -   *Line 12*: a click on this button will call
     the downloadSoundFile function, passing it the URL of a sample mp3
@@ -13530,10 +13468,10 @@ anything about how much data has been sent or received.
 The ProgressEvent interface adds 7 events relating to uploading or
 downloading files.
 
-| **attribute**  | **type**     | **Explanation**                                                                                            |
+| <b>attribute</b>  | <b>type</b>     | <b>Explanation</b>                                                                                            |
 |----------------|--------------|------------------------------------------------------------------------------------------------------------|
 | onloadstart    | loadstart    | When the request starts.                                                                                   |
-| **onprogress** | **progress** | **While loading and sending data.**                                                                       |
+| <b>onprogress</b> | <b>progress</b> | <b>While loading and sending data.</b>                                                                       |
 | onabort        | abort        | When the request has been aborted, either by invoking the abort() method or navigating away from the page. |
 | onerror        | error        | When the request has failed.                                                                               |
 | onload         | load         | When the request has successfully completed.                                                               |
@@ -13544,7 +13482,7 @@ The syntax for declaring progress event handlers is slightly different
 depending on the type of operation: a download (using the GET HTTP
 method), or an upload (using POST).
 
-**Syntax for download:**
+<b>Syntax for download:</b>
 
 ```
 1.  var xhr = new XMLHttpRequest();
@@ -13561,7 +13499,7 @@ method), or an upload (using POST).
 Note that an alternative syntax such as xhr.addEventListener('progress',
 callback, false) also works.
 
-**Syntax for upload:**
+<b>Syntax for upload:</b>
 
 ```
 1.  var xhr = new XMLHttpRequest();
@@ -13626,7 +13564,7 @@ does this for a download operation:
 
 </details>
 
-**Explanations**: by setting the value and max attributes of
+<b>Explanations</b>: by setting the value and max attributes of
 the <progress> element with the current number of bytes downloaded by
 the browser and the total size of the file (*lines 10-11*), it will
 reflect the actual proportions of the file downloaded/still to come.
@@ -13818,7 +13756,7 @@ style="width:3.96875in;height:2.21875in" alt="file upload example 1" />
 
 </details>
 
-### **Explanations**:
+### <b>Explanations</b>:
 
 -   *Line 18*: callback called when the user selects a file.
 
@@ -13960,7 +13898,9 @@ post your comments/observations/questions or share your creations.
     1), but this time with a progress bar. This could be useful for a
     game, or for a Web app that needs to load resources before starting.
 
-## 3.3.1 Introduction
+<!------------------------------------------------------------------------------------------------>
+<h3 id="ch3-3-1">3.3.1 Introduction</h3>
+<!------------------------------------------------------------------------------------------------>
 
 From [the W3C HTML 5.1
 specification](https://www.w3.org/TR/html51/editing.html#dnd): *"the
@@ -14353,16 +14293,16 @@ photographer (or painter?) of a picture, or any kind of information that
 does not be fit within the regular attributes of the <img> element,
 like alt.
 
-Suppose you coded: **<img src="photo.jpg" photographer="Michel
-Buffa" date="14July2020">**? It would **not** be valid!
+Suppose you coded: <b><img src="photo.jpg" photographer="Michel
+Buffa" date="14July2020"></b>? It would <b>not</b> be valid!
 
 However, with HTML5 we may add attributes that start with data- followed
 by any string literal (WITH NO UPPERCASE) and it will be treated as
 a storage area for private data. This can later be accessed in your
 JavaScript code.
 
-Valid HTML5 code: **<img src="photo.jpg" data-photographer="Michel
-Buffa" date="14July2020">**. You can set the data- attribute to any
+Valid HTML5 code: <b><img src="photo.jpg" data-photographer="Michel
+Buffa" date="14July2020"></b>. You can set the data- attribute to any
 value.
 
 The reason for this addition is that, in a bid to keep the HTML code
@@ -14375,9 +14315,9 @@ The specification says: "Custom data attributes are intended to store
 custom data private to the page or application, for which there are no
 more appropriate attributes or elements."
 
-**Data attributes are meant to be used by JavaScript and eventually by
+<b>Data attributes are meant to be used by JavaScript and eventually by
 CSS rules: embed initial values for some data, or use data- attributes
-instead of JavaScript variables for easier CSS mapping, etc.**
+instead of JavaScript variables for easier CSS mapping, etc.</b>
 
 ### JavaScript API: the dataset property
 
@@ -14573,13 +14513,13 @@ This is easy to do as the drag and drop API provides many events we can
 listen to, and can be used on the draggable elements as well as in the
 drop zones:
 
--   **dragstart**: this event, which we discussed in a previous
+-   <b>dragstart</b>: this event, which we discussed in a previous
     section, is used on draggable elements. We used it to get a value
     from the element that was dragged, and copied it onto the clipboard.
     It's a good time to add some visual feedback - for example, by
     adding a CSS class to the draggable object.
 
--   **dragend**: this event is launched when the drag has ended (on a
+-   <b>dragend</b>: this event is launched when the drag has ended (on a
     drop or if the user releases the mouse button outside a drop zone).
     In both cases, it is a best practice to reset the style of the
     draggable object to default.
@@ -14646,21 +14586,21 @@ JavaScript.
 
 ### Other events can also be handled:
 
--   **dragenter**: usually we bind this event to the drop zone. The
+-   <b>dragenter</b>: usually we bind this event to the drop zone. The
     event occurs when a dragged object enters a drop zone. So, we could
     change the look of the drop zone.
 
--   **dragleave**: this event is also used in relation to the drop zone.
+-   <b>dragleave</b>: this event is also used in relation to the drop zone.
     When a dragged element leaves the drop zone (maybe the user changed
     his mind?), we must set the look of the drop zone back to normal.
 
--   **dragover**: this event is also generally bound to elements that
+-   <b>dragover</b>: this event is also generally bound to elements that
     correspond to a drop zone. A best practice here is to prevent the
     propagation of the event, and also to prevent the default behavior
     of the browser (i.e. if we drop an image, the default behavior is to
     display its full size in a new page, etc.)
 
--   **drop**: also on the drop zone. This is when we actually process
+-   <b>drop</b>: also on the drop zone. This is when we actually process
     the drop (get the value from the clipboard, etc). It's also
     necessary to reset the look of the drop zone to default.
 
@@ -14894,12 +14834,12 @@ etc. had no effect with Chrome, for example). The values of "move",
 
 All possible values for dropEffect and effectAllowed:
 
--   **dataTransfer.effectAllowed** can be set to the following
+-   <b>dataTransfer.effectAllowed</b> can be set to the following
     values: none, copy, copyLink, copyMove, link, linkMove, move, all,
     and uninitialized.
 
--   **dataTransfer.dropEffect **can take on one of the following
-    values: **none**, **copy**, **link**, **move**.
+-   <b>dataTransfer.dropEffect </b>can take on one of the following
+    values: <b>none</b>, <b>copy</b>, <b>link</b>, <b>move</b>.
 
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch3-3-7">3.3.7 Drag and drop HTML elements</h3>
@@ -14933,6 +14873,9 @@ French)) in your browser below or [play with it at
 CodePen](https://codepen.io/w3devcampus/pen/xwxEZg):
 
 Code from the example:
+
+<details>
+  <summary>Code extract!</summary>
 
 ```
 1.  <html lang="en">
@@ -14982,6 +14925,8 @@ Code from the example:
 45. </html>
 ```
 
+</details>
+
 The trick here is to only work on the DOM directly. We used a variant of
 the event handler proposed by the DOM API. This time, we used handlers
 with two parameters (the first parameter, target, is the element that
@@ -15012,8 +14957,8 @@ one <img> from its initial position to another location in the page).
 style="width:5in;height:1.75374in" />
 ----------->
 
-**There is no need to add a dragstart handler on an element that
-contains text.** Any selected text is automatically added to the
+<b>There is no need to add a dragstart handler on an element that
+contains text.</b> Any selected text is automatically added to the
 clipboard with a name/key equal to "text/plain". Just add a drop event
 handler on the drop zone and fetch the data from the clipboard using
 "text/plain" as the access key:
@@ -15125,11 +15070,11 @@ but it's even simpler!
 
 The principle is the same as in the examples from the previous section
 (drag and drop basics), except that we do not need to worry about
-a dragstart handler. **Files will be dragged from the desktop, so the
-browser only has to copy their content from the clipboard** and make it
+a dragstart handler. <b>Files will be dragged from the desktop, so the
+browser only has to copy their content from the clipboard</b> and make it
 available in our JavaScript code.
 
-Indeed, **the main work will be done in the drop handler**, where we
+Indeed, <b>the main work will be done in the drop handler</b>, where we
 will use the *files property* of the *dataTransfer object* (aka the
 clipboard). This is where the browser will copy the files that have been
 dragged from the desktop. 
@@ -15201,7 +15146,7 @@ default behavior of the browser:
 4.  event.preventDefault();
 ```
 
-> **Best practice**: add these lines to the drop handler AND
+> <b>Best practice</b>: add these lines to the drop handler AND
 > to the dragOver handler attached to the drop zone!
 
 <h4>... like in this example:</h4>
@@ -16184,6 +16129,9 @@ alt="example 2 of file uploads, uses drag&#39;n&#39;drop" />
 
 <h3>This code is given "as is":</h3>
 
+<details>
+  <summary>PHP 'as is' source code!</summary>
+
 ```
 1.  <?php
 2.  
@@ -16221,6 +16169,8 @@ alt="example 2 of file uploads, uses drag&#39;n&#39;drop" />
 33. 
 34. ?>
 ```
+
+</details>
 
 <b>Explanations</b>:
 
@@ -16273,6 +16223,9 @@ This code is given "as is". The principle is the same as with the
 examples given in the previous section, except that this time we do not
 have to deal with a temporary "RecycleBin" directory.
 
+<details>
+  <summary>PHP 'as is' source code!</summary>
+
 ```
 1.  <?php
 2.  
@@ -16320,6 +16273,8 @@ have to deal with a temporary "RecycleBin" directory.
 44. 
 45. ?>
 ```
+
+</details>
 
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch3-5-5">3.5.5 Discussion</h3>
@@ -21750,4 +21705,4 @@ your comments/observations/questions and share your creations.
 
 <h5>the end...</h5>
 
-<h4>Last Updated: 10-03-2022 3:49pm</h4>
+<h4>Last Updated: 10-03-2022 4:51pm</h4>
