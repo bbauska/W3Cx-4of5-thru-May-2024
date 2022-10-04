@@ -129,7 +129,6 @@ courses, you <i>do NOT need to re-take that course</i>.
 <details>
   <summary>CONTENT Here!</summary>
 
-
 [Advanced HTML5 Multimedia [26](#module-1-1)](#module-1-1)
 
 [1.2.1 The Timed Text Track API
@@ -1537,18 +1536,19 @@ width!):
 10. </video>
 ```
 
+<hr>
 </details>
 
 And here is how it renders in your current browser (please play the
 video and try to show/hide the subtitles/captions):
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 15.  (##) ----------------------->
+<!------------------------------- 15. elephants dream video (23) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image015.png?raw=true"
   style="width:4.90625in;height:2.79167in" />
-  alt="." />
+  alt="Elephants dream video." />
 </p>
 
 Notice that the support for multiple tracks may differs significantly
@@ -1561,12 +1561,12 @@ versions. Here is a quick summary (as in May 2020).
     the default is off.
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 16.  (##) ----------------------->
+<!------------------------------------ 16. safari menu (24) -------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image016.png"
   style="width:4.90625in;height:2.79167in" 
-  alt="." />
+  alt="Safari Menu." />
 </p>
 
 -   Chrome and Opera both provide a subtitle menu and load the text
@@ -1619,10 +1619,13 @@ WEBVTT
 </details>
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 17.  (##) ----------------------->
+<!------------------------------------- 17. tv remote (25) --------------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<img src="./images/image017.jpeg" style="width:2.02083in;height:4.83333in"
-alt="remote controller with subtitles button." />
+<p align="center" width="100%">
+<img src="./images/image017.jpeg"
+  style="width:2.02083in;height:4.83333in"
+  alt="Remote controller with subtitles button." />
+</p>
 
 The different time segments are called "cues" and each cue has an id (1,
 2, 3 and 4 in the above example), a startTime and an endTime, and
@@ -1690,9 +1693,12 @@ Hi, today I've prepared for you a small example of a video that is
 associated with three different tracks.
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 18. one video, three tracks  (##) ----------------------->
+<!---------------- 18. using html views of tracks - one video, three tracks (27) ----------------->
 <!------------------------------------------------------------------------------------------------>
-<img src="./images/image018.png" style="width:6.5in;height:6.36875in" />
+<p align="center" width="100%">
+<img src="./images/image018.png" 
+  style="width:6.5in;height:6.36875in" />
+</p>
 
 Two for subtitles, in English and in German, and one track for chapters.
 
@@ -1729,26 +1735,26 @@ structure of a track. I'm just going to display the content of one of
 these tracks.
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 19.  (##) ----------------------->
+<!----------------------------- 19. video tracks line by line (28) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image019.png" 
+<img src="./images/image019.png"
   style="width:5in;height:3.07853in"
-  alt="." />
+  alt="Line by line video tracks." />
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 20.  (##) ----------------------->
+<!----------------------------- 20. using html views of tracks (28) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <img src="./images/image020.png" 
   style="width:5in;height:3.07853in"
-  alt="." />
+  alt="Using HTML views of tracks." />
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 21.  (##) ----------------------->
+<!----------------------------- 21. download, caption, language (29) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img src="./images/image021.png" 
   style="width:5in;height:5.2094in" 
-  alt="."/>
+  alt="Download, Caption, Language."/>
 </p>
 
 The tracks are made of cues and what we call a cue is a kind of time
@@ -1766,12 +1772,12 @@ we will see also how to choose the subtitle or caption track language
 for the video.
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 22.  (##) ----------------------->
+<!---------------------- 22. safari - 0 thru 10:58 - elephants dream (30) ------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image022.png" 
   style="width:5in;height:5.2094in"
-  alt="." />
+  alt="Safari display of elephants dream video." />
 </p>
 
 This is finished for this small introduction video, I will just conclude
@@ -1786,12 +1792,12 @@ accepting different origins, then you can add this attribute
 crossOrigin="anonymous" in your HTML document and it is going to work.
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 23.  (##) ----------------------->
+<!----------------------------- 23. subtitle tracks in german (31) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image023.png" 
   style="width:5in;height:3.64476in" 
-  alt="." />
+  alt="Elephants dream with German subtitles." />
 </p>
 
 The server here: mainline.i3s.unice.fr has been configured for allowing
@@ -1830,12 +1836,12 @@ And here is how it renders in your current browser (please play the
 video and try to show/hide the subtitles/captions):
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 24.  (##) ----------------------->
+<!------------------------------ 24. html track descriptions (31) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image024.png" 
   style="width:4in;height:2.24412in" 
-  alt="." />
+  alt="HTML track descriptions; label, kind, lang, readyState." />
 </p>
 
 Notice that the support for multiple tracks may differs significantly
@@ -1857,8 +1863,11 @@ Here is a quick summary:
 <!------------------------------------------------------------------------------------------------>
 <!--------------------- 25. safari menu screenshot (##) ----------------------->
 <!------------------------------------------------------------------------------------------------>
-    -   <img src="./images/image025.jpeg" style="width:4in;height:2.32697in"
-        > alt="Screenshot of Safari menu fr choosing subtitle track." />
+-   <p align="center" width="100%">
+	<img src="./images/image025.jpeg"
+	  style="width:4in;height:2.32697in"
+      alt="Screenshot of Safari menu fr choosing subtitle track." />
+	</p>
 
 -   Chrome and Opera both provide a subtitle menu and load the text
     track set that matches the browser language. If none of the
@@ -21734,4 +21743,4 @@ your comments/observations/questions and share your creations.
 
 <h5>the end...</h5>
 
-<h4>Last Updated: 10-03-2022 4:51pm</h4>
+<h4>Last Updated: 10-03-2022 10:01pm</h4>
