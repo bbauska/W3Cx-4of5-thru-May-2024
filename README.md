@@ -1548,7 +1548,7 @@ video and try to show/hide the subtitles/captions):
 <p align="center" width="100%">
 <img src="./images/image015.png?raw=true"
   style="width:4.90625in;height:2.79167in" />
-   alt="." />
+  alt="." />
 </p>
 
 Notice that the support for multiple tracks may differs significantly
@@ -1563,8 +1563,11 @@ versions. Here is a quick summary (as in May 2020).
 <!------------------------------------------------------------------------------------------------>
 <!--------------------- 16.  (##) ----------------------->
 <!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
 <img src="./images/image016.png"
-style="width:4.90625in;height:2.79167in" />
+  style="width:4.90625in;height:2.79167in" 
+  alt="." />
+</p>
 
 -   Chrome and Opera both provide a subtitle menu and load the text
     track set that matches the browser language. If none of the
@@ -1687,7 +1690,7 @@ Hi, today I've prepared for you a small example of a video that is
 associated with three different tracks.
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 18.  (##) ----------------------->
+<!--------------------- 18. one video, three tracks  (##) ----------------------->
 <!------------------------------------------------------------------------------------------------>
 <img src="./images/image018.png" style="width:6.5in;height:6.36875in" />
 
@@ -1728,17 +1731,25 @@ these tracks.
 <!------------------------------------------------------------------------------------------------>
 <!--------------------- 19.  (##) ----------------------->
 <!------------------------------------------------------------------------------------------------>
-<img src="./images/image019.png" style="width:5in;height:3.07853in" />
+<p align="center" width="100%">
+<img src="./images/image019.png" 
+  style="width:5in;height:3.07853in"
+  alt="." />
 
 <!------------------------------------------------------------------------------------------------>
 <!--------------------- 20.  (##) ----------------------->
 <!------------------------------------------------------------------------------------------------>
-<img src="./images/image020.png" style="width:5in;height:3.07853in" />
+<img src="./images/image020.png" 
+  style="width:5in;height:3.07853in"
+  alt="." />
 
 <!------------------------------------------------------------------------------------------------>
 <!--------------------- 21.  (##) ----------------------->
 <!------------------------------------------------------------------------------------------------>
-<img src="./images/image021.png" style="width:5in;height:5.2094in" />
+<img src="./images/image021.png" 
+  style="width:5in;height:5.2094in" 
+  alt="."/>
+</p>
 
 The tracks are made of cues and what we call a cue is a kind of time
 segment that is defined with a starting time and an ending time. And the
@@ -1757,7 +1768,11 @@ for the video.
 <!------------------------------------------------------------------------------------------------>
 <!--------------------- 22.  (##) ----------------------->
 <!------------------------------------------------------------------------------------------------>
-<img src="./images/image022.png" style="width:5in;height:5.2094in" />
+<p align="center" width="100%">
+<img src="./images/image022.png" 
+  style="width:5in;height:5.2094in"
+  alt="." />
+</p>
 
 This is finished for this small introduction video, I will just conclude
 by this thing here: explaining this crossOrigin="anonymous". 
@@ -1773,7 +1788,11 @@ crossOrigin="anonymous" in your HTML document and it is going to work.
 <!------------------------------------------------------------------------------------------------>
 <!--------------------- 23.  (##) ----------------------->
 <!------------------------------------------------------------------------------------------------>
-<img src="./images/image023.png" style="width:5in;height:3.64476in" />
+<p align="center" width="100%">
+<img src="./images/image023.png" 
+  style="width:5in;height:3.64476in" 
+  alt="." />
+</p>
 
 The server here: mainline.i3s.unice.fr has been configured for allowing
 external HTML pages to include the videos it hosts and the subtitles it
@@ -1813,7 +1832,11 @@ video and try to show/hide the subtitles/captions):
 <!------------------------------------------------------------------------------------------------>
 <!--------------------- 24.  (##) ----------------------->
 <!------------------------------------------------------------------------------------------------>
-<img src="./images/image024.png" style="width:4in;height:2.24412in" />
+<p align="center" width="100%">
+<img src="./images/image024.png" 
+  style="width:4in;height:2.24412in" 
+  alt="." />
+</p>
 
 Notice that the support for multiple tracks may differs significantly
 from one browser to another, in particular if you are using old
@@ -2027,9 +2050,15 @@ manipulate these elements as "HTML elements" - we will call them the
 <!------------------------------------------------------------------------------------------------>
 <!--------------------- 26/27. status of html track (##) ----------------------->
 <!------------------------------------------------------------------------------------------------>
-<img src="./images/image026.png" style="width:4in;height:2.23647in" />
+<p align="center" width="100%">
+<img src="./images/image026.png" 
+  style="width:4in;height:2.23647in" 
+  alt="." />
 
-<img src="./images/image027.png" style="width:4in;height:3.93208in" />
+<img src="./images/image027.png" 
+  style="width:4in;height:3.93208in" 
+  alt="." />
+</p>
 
 <h4>Here is the JavaScript source code:</h4>
 
@@ -2723,12 +2752,12 @@ for cuechange events</a>:
 <!---------- 31. example that displays cue contents with cuechange even listeners (xx) ----------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image031.jpeg?raw=true"
+<img src="./images/image031.png?raw=true"
    width="40%"
    alt="Example that displays cue contents with cuechange even listeners." />
 </p>
 <!----
-<img src="./images/image031.jpeg" style="width:4in;height:4.42106in"
+<img style="width:4in;height:4.42106in"
 alt="" />
 ---->
 
