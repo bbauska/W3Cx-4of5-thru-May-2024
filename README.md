@@ -1693,10 +1693,10 @@ Hi, today I've prepared for you a small example of a video that is
 associated with three different tracks.
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------- 15. using html views of tracks - one video, three tracks (27) ----------------->
+<!---------------- 18. using html views of tracks - one video, three tracks (28) ----------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image015.png" 
+<img src="./images/image018.png" 
   style="width:6.5in;height:6.36875in" />
 </p>
 
@@ -1735,27 +1735,22 @@ structure of a track. I'm just going to display the content of one of
 these tracks.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 16. video tracks line by line (28) ------------------------------->
-<!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image016.png"
-  style="width:5in;height:3.07853in"
-  alt="Line by line video tracks." />
-
-<!------------------------------------------------------------------------------------------------>
-<!----------------------------- 17. using html views of tracks (28) ------------------------------>
-<!------------------------------------------------------------------------------------------------>
-<img src="./images/image017.png"
-  style="width:5in;height:3.07853in"
-  alt="Using HTML views of tracks." />
-
-<!------------------------------------------------------------------------------------------------>
 <!----------------------------- 18. download, caption, language (29) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img src="./images/image018.png"
   style="width:5in;height:5.2094in"
   alt="Download, Caption, Language."/>
 </p>
+
+<!------------------------------------------------------------------------------------------------>
+<!---------------------- 19. safari - 0 thru 10:58 - elephants dream (30) ------------------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image019.png" 
+  style="width:5in;height:5.2094in"
+  alt="Safari display of elephants dream video." />
+</p>
+
 
 The tracks are made of cues and what we call a cue is a kind of time
 segment that is defined with a starting time and an ending time. And the
@@ -1772,12 +1767,12 @@ we will see also how to choose the subtitle or caption track language
 for the video.
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------------- 19. safari - 0 thru 10:58 - elephants dream (30) ------------------------>
+<!----------------------------- 20. subtitle tracks in german (31) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image019.png" 
-  style="width:5in;height:5.2094in"
-  alt="Safari display of elephants dream video." />
+<img src="./images/image020.png"
+  style="width:5in;height:3.64476in"
+  alt="Elephants dream with German subtitles." />
 </p>
 
 This is finished for this small introduction video, I will just conclude
@@ -1790,15 +1785,6 @@ location than the video file and the tracks files, you will have
 security constraints errors. And if your server is configured for
 accepting different origins, then you can add this attribute
 crossOrigin="anonymous" in your HTML document and it is going to work.
-
-<!------------------------------------------------------------------------------------------------>
-<!----------------------------- 20. subtitle tracks in german (31) ------------------------------->
-<!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image020.png"
-  style="width:5in;height:3.64476in"
-  alt="Elephants dream with German subtitles." />
-</p>
 
 The server here: mainline.i3s.unice.fr has been configured for allowing
 external HTML pages to include the videos it hosts and the subtitles it
@@ -21806,4 +21792,4 @@ your comments/observations/questions and share your creations.
 
 <h5>the end...</h5>
 
-<h4>Last Updated: 10-03-2022 10:01pm</h4>
+<h4>Last Updated: 10-04-2022 2:01am</h4>
