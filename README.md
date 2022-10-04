@@ -1853,7 +1853,7 @@ Current Browser
 Status"](http://www.iandevlin.com/blog/2015/04/html5/html5-video-captions-current-browser-status),
 written in April 2015, for further details.
 
-Here is a quick summary:
+<h4>Here is a quick summary:</h4>
 
 -   Safari provides a menu you can use to choose which subtitle/caption
     track to display. If one of the defined text tracks has
@@ -1863,11 +1863,11 @@ Here is a quick summary:
 <!------------------------------------------------------------------------------------------------>
 <!--------------------- 25. safari menu screenshot (##) ----------------------->
 <!------------------------------------------------------------------------------------------------>
--   <p align="center" width="100%">
-	<img src="./images/image025.jpeg"
-	  style="width:4in;height:2.32697in"
-      alt="Screenshot of Safari menu fr choosing subtitle track." />
-	</p>
+<p align="center" width="100%">
+  <mg src="./images/image025.jpeg"
+  style="width:4in;height:2.32697in"
+  alt="Screenshot of Safari menu fr choosing subtitle track." />
+</p>
 
 -   Chrome and Opera both provide a subtitle menu and load the text
     track set that matches the browser language. If none of the
@@ -2032,10 +2032,10 @@ I will explain that in a next video.
 2.   <source src="https://...../elephants-dream-medium.mp4" type="video/mp4">
 3.   <source src="https://...../elephants-dream-medium.webm" type="video/webm">
 4.     <track label="English subtitles" kind="subtitles" srclang="en"
->        src="https://...../elephants-dream-subtitles-en.vtt" >
+         src="https://...../elephants-dream-subtitles-en.vtt" >
 5.     <track label="Deutsch subtitles" kind="subtitles" srclang="de"
->        src="https://</b>.....<b>/elephants-dream-subtitles-de.vtt" default>
-6.      <track label="English chapters" kind="chapters" srclang="en"
+         src="https://</b>.....<b>/elephants-dream-subtitles-de.vtt" default>
+6.     <track label="English chapters" kind="chapters" srclang="en"
 7.       src="https://</b>.....<b>/elephants-dream-chapters-en.vtt">
 8. </video>
 9.  
@@ -2300,6 +2300,7 @@ var lang = textTrack.language;
 ```
 
 </details>
+<hr>
 
 Note that once we get a TextTrack object, we can manipulate
 the kind, label, language attributes (be careful, it's not srclang,
@@ -2361,7 +2362,11 @@ JSBin](https://jsbin.com/bubeye/1/edit?html,console,output)
 <!------------------------------------------------------------------------------------------------>
 <!--------------------- 28.  (##) ----------------------->
 <!------------------------------------------------------------------------------------------------>
-<img src="./images/image028.jpeg" style="width:5in;height:4.44178in" />
+<p align="center" width="100%">
+<img src="./images/image028.jpeg" 
+  style="width:5in;height:4.44178in" 
+  alt="." />
+</p>
 
 Here is what we added to the HTML code:
 
@@ -2382,6 +2387,7 @@ Here is what we added to the HTML code:
 ```
 
 </details>
+<hr>
 
 The buttons will call a function named forceLoadTrack(trackNumber) that
 takes as a parameter the number of the track to get (and force load if
@@ -2395,37 +2401,37 @@ example:
 
 ```
 1.  function readContent(track) {
-2.     console.log("reading content of loaded track...");
-3.     displayTrackStatuses(htmlTracks); // update document with new
-    track statuses
+2.    console.log("reading content of loaded track...");
+3.    displayTrackStatuses(htmlTracks); // update document with new
+      track statuses
 4.  }
 5.   
 6.  function getTrack(htmlTrack, callback) {
-7.     // TextTrack associated to the htmlTrack
-8.     var textTrack = htmlTrack.track;
+7.    // TextTrack associated to the htmlTrack
+8.    var textTrack = htmlTrack.track;
 9.  
-10.    if(htmlTrack.readyState === 2) {
-11.       console.log("text track already loaded");
-12.       // call the callback function, the track is available
-13.       callback(textTrack);
-14.    } else {
-15.       console.log("Forcing the text track to be loaded");
+10.   if(htmlTrack.readyState === 2) {
+11.     console.log("text track already loaded");
+12.     // call the callback function, the track is available
+13.     callback(textTrack);
+14.   } else {
+15.     console.log("Forcing the text track to be loaded");
 16.  
-17.       // this will force the track to be loaded
-18.       textTrack.mode = "hidden";  
-          // loading a track is asynchronous, we must use an event listener
-19.       htmlTrack.addEventListener('load', function(e) {
-20.          // the track is arrived, call the callback function
-21.          callback(textTrack);
+17.     // this will force the track to be loaded
+18.     textTrack.mode = "hidden";  
+        // loading a track is asynchronous, we must use an event listener
+19.     htmlTrack.addEventListener('load', function(e) {
+20.     // the track is arrived, call the callback function
+21.     callback(textTrack);
 22.       });
-23.    }
+23.     }
 24. }
 25. 
 26. function forceLoadTrack(n) {
-27.     // first parameter = track number,
-28.     // second = a callback function called when the track is loaded,
-29.     // that takes the loaded TextTrack as parameter
-30.     getTrack(htmlTracks[n], readContent);
+27.   // first parameter = track number,
+28.   // second = a callback function called when the track is loaded,
+29.   // that takes the loaded TextTrack as parameter
+30.   getTrack(htmlTracks[n], readContent);
 31. }
 ```
 
@@ -2557,11 +2563,13 @@ properties and methods
 
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 29. webvtt with arrows (##) ----------------------->
+<!--------------------------------- 29. webvtt with arrows (45) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
-
-<img src="./images/image029.jpeg" style="width:5in;height:2.01365in"
-alt="a webVtt file extract with arrows showing id, startTime, endTime and text." />
+<p align="center" width="100%">
+<img src="./images/image029.jpeg" 
+  style="width:5in;height:2.01365in"
+  alt="A webVtt file extract with arrows showing id, startTime, endTime and text." />
+</p>
 
 <h4>Example that displays the content of a track</h4>
 
@@ -2570,9 +2578,13 @@ track](https://jsbin.com/teruhay/1/edit?html,css,js,output):
 
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 30.  (##) ----------------------->
+<!----------------------- 30. example that plays content of a track (46) ------------------------->
 <!------------------------------------------------------------------------------------------------>
-<img src="./images/image030.png" style="width:4in;height:4.89057in" />
+<p align="center" width="100%">
+<img src="./images/image030.png" 
+  style="width:4in;height:4.89057in" 
+  alt="Example video editor that plays content of a track." />
+</p>
 
 We just changed the content of the readContent(track) method from the
 example in the previous lesson:
@@ -2624,35 +2636,46 @@ First, let's start by a small demonstration. If I play this video, the
 video is going on and I can listen to events like 'cuenter' and 'cueexit'.
 
 Each time a new cue is entered, we will display it here, and each time
-it is exited, we will display it here. We saw that we can display them
-in sync with the video now. Each time a cue is reached, it means that
-the current time entered a new time segment defined by the starting and
-ending time of a cue. Let's have a look again at one of the VTT files.
+it is exited, we will display it here. 
+
+We saw that we can display them in sync with the video now. 
+Each time a cue is reached, it means that the current time entered a new time 
+segment defined by the starting and ending time of a cue. 
+
+Let's have a look again at one of the VTT files.
+
 Each cue holds a start time and a end time so when the time enters the
-15th second, we've got a cueenter event and we can get this content and show it on the HTML page. When we go out of this time period, when
-we go further than 18 seconds, we exit this cue and we enter this cue.
-How are these events handled in the JavaScript code? Everything is done
-in the readContent method that we saw earlier. This time instead of
-iterating on different cues of the TextTrack, we will just, for each cue
+15th second, we've got a cueenter event and we can get this content and show it on the HTML page. 
+
+When we go out of this time period, when we go further than 18 seconds, we exit this cue and we enter this cue.
+
+How are these events handled in the JavaScript code? Everything is done in the readContent method that we saw earlier. 
+
+This time instead of iterating on different cues of the TextTrack, we will just, for each cue
 individualy, we will iterate on the cues and add a listener on that cue,
-an exist listener and an enter listener. So what do we do? We iterate in
-the cues called addCueListenners for the current cue. This method,
-addCueListeners, it will define two listeners: the cue enter listener
+an exist listener and an enter listener. 
+
+So what do we do? We iterate in the cues called addCueListenners for the current cue. 
+
+This method, <b>addCueListeners</b>, it will define two listeners: the cue enter listener
 and the cue exit event listener.
 
-On the cue enter listener we just create a string "entered cue id=" and
-"text=" that will correspond to the text displayed when a cue is just reached.
+On the cue enter listener we just create a string "entered cue id=" and "text=" that will correspond to the text displayed when a cue is just reached.
 
-We display the id and we display the text. The same thing is done when
-we exit. When we exit, we just display the id "exited cue id=". This is
-how we can have individual enter and exit listeners for each cue. It
-will enable us to highlight the current cue in a transcript while the
-video is playing. The only problem is that as of December 2015,
+We display the id and we display the text. 
 
-FireFox still does not recognize these sorts of listeners.
+The same thing is done when we exit. 
 
-The implementation is not done yet, so you can use a fallback. You can
-use a listener on the track that will listen to the 'cuechange' event.
+When we exit, we just display the id "exited cue id=". 
+This is how we can have individual enter and exit listeners for each cue. 
+
+It will enable us to highlight the current cue in a transcript while the video is playing. 
+
+The only problem is that as of December 2015, FireFox still does not recognize these sorts of listeners.
+
+The implementation is not done yet, so you can use a fallback. 
+You can use a listener on the track that will listen to the 'cuechange' event.
+
 If I just comment the function addCueListeners and I uncomment this
 piece of code that has a cueChange listener on the track itself, then
 instead of knowing that we entered of exited and individual cue, we can
@@ -2665,35 +2688,41 @@ got only one.
 
 Anyway, you can just work with the list of the cues. Here we just take
 the first active cue because we are assuming that the cues are not
-overlapping. I added a small test here because sometimes we've got some
-strange ghost cues that are active and not defined. I do not exactly
-what was the problem when I test it but I added this test here to avoid
-some error messages...
+overlapping. 
+
+I added a small test here because sometimes we've got some strange ghost 
+cues that are active and not defined. I do not exactly what was the problem 
+when I test it but I added this test here to avoid some error messages...
 
 We have got the first active cue and we just display it. We get the id,
-we get the text
-
-and this is all. In that case, if I run the application again, instead
+we get the text and this is all. In that case, if I run the application again, instead
 of having enter and exit, I will just have cue change events.
 
-It starts at 15 seconds. I had a small bug here, it is not this.id but
-cue.id.... we can start again. This is a fallback for FireFox if you
-want to display the cues in sync with the video. The next video will
-show how to display a transcript here with the current cue highlighted
+It starts at 15 seconds. 
+
+I had a small bug here, it is not this.id but cue.id.... we can start again. 
+
+This is a fallback for FireFox if you want to display the cues in sync with the video. 
+
+The next video will show how to display a transcript here with the current cue highlighted
 and you can click on them in order to jump to the right place in the
-video. After that I think we will have seen the most useful properties,
-methods, events you can use with tracks and cues...
+video. 
+
+After that I think we will have seen the most useful properties, methods, events you can use with tracks and cues...
 
 Instead of reading the whole content of a track at once, like in the
 previous example, it might be interesting to process the track content
-cue by cue, while the video is being played. For example, you choose
-which track you want - say, German subtitles - and you want to display
-the subtitles in sync with the video, below the video, with your own
-style and animations... Or you display the entire set of subtitles to
-the side of the video and you want to highlight the current one... For
-this, you can listen for different sorts of events.
+cue by cue, while the video is being played. 
 
-The two types of cue event are:
+For example, you choose which track you want - say, German subtitles - and you want to display
+the subtitles in sync with the video, below the video, with your own
+style and animations... 
+
+Or you display the entire set of subtitles to the side of the video and you want to highlight the current one... 
+
+For this, you can listen for different sorts of events.
+
+<h4>The two types of cue event are:</h4>
 
 1.  enter and exit events fired for cues.
 
@@ -2711,11 +2740,13 @@ track.addEventListener("cuechange", function(e) {
 ```
 
 In the above example, let's assume that we have no overlapping cues for
-the current time segment. The above code listens for cue change
-events: when the video is being played, the time counter increases. And
-when this time counter value reaches time segments defined by one or
-more cues, the callback is called. The list of cues that are in the
-current time segments are in this.activeCues; where this represents the
+the current time segment. 
+
+The above code listens for cue change events: when the video is being played, the time counter increases. 
+And when this time counter value reaches time segments defined by one or
+more cues, the callback is called. 
+
+The list of cues that are in the current time segments are in this.activeCues; where this represents the
 track that fired the event.
 
 In the following lessons, we show how to deal with overlapping cues
@@ -2758,22 +2789,19 @@ Showing real examples of event listeners
 for cuechange events</a>:
 
 <!------------------------------------------------------------------------------------------------>
-<!---------- 31. example that displays cue contents with cuechange even listeners (xx) ----------->
+<!---------- 31. example that displays cue contents with cuechange even listeners (50) ----------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image031.png?raw=true"
    width="40%"
    alt="Example that displays cue contents with cuechange even listeners." />
 </p>
-<!----
-<img style="width:4in;height:4.42106in"
-alt="" />
----->
+<!---- <img style="width:4in;height:4.42106in" ---->
 
 <h4>Source code extract:</h4>
 
 <details>
-  <summary>readContent code!</summary>
+  <summary>Function readContent code!</summary>
 
 ```
 1.  function readContent(track) {
@@ -2797,10 +2825,10 @@ alt="" />
 shows how to use enter and exit events on cues</a>:
 
 <!------------------------------------------------------------------------------------------------>
-<!- 32. example that displays message in enter and exit cue listeners of the selected track (xx) ->
+<!- 32. example that displays message in enter and exit cue listeners of the selected track (51) ->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image032.jpeg?raw=true"
+<img src="./images/image032.png?raw=true"
    width="40%"
    alt="Example that displays message in enter and exit cue listeners of tjhe selected track." />
 </p>
@@ -2808,7 +2836,7 @@ shows how to use enter and exit events on cues</a>:
 <h4>Source code extract:</h4>
 
 <details>
-  <summary>Source code extract!</summary>
+  <summary>Function readContent code extract!</summary>
 
 ```
 1.  function readContent(track) {
@@ -2857,47 +2885,57 @@ will read the content, add cue listeners in order to trigger events when
 the video is played and we will display them on the side this time, and
 there are hyperlinks you can click and if I click somewhere, the video
 starts at the corresponding location and you can see that the cues are
-highlighted in black as the video advances. There are not a lot of
-subtitles at this location but... you can see that the transcript is
+highlighted in black as the video advances. 
+
+There are not a lot of subtitles at this location but... you can see that the transcript is
 highlighted as the video is playing.
 
-What have we added to the previous example? The first thing is that we
-just defined a rectangular area here: it is just a div with an
-id="transcript", and we added some CSS here, for locating the video and
-the transcript on the same horizontal position, so that the video can
-grow and the transcript too. We use floating positions, I put
-‘float:left;’ for the transcript that is on the right because if I put
-'right' it will grow but it will be aligned on the right... and I prefer
-it on the left.
+What have we added to the previous example? 
 
-We can give a look at the CSS, there is nothing complicated and this can
-scroll because of the overflow:auto; rule we added to the div. When we
-click on the buttons here, we call a function called loadTranscript(),
+The first thing is that we just defined a rectangular area here: it is just a div with an
+id="transcript", and we added some CSS here, for locating the video and the transcript on 
+the same horizontal position, so that the video can grow and the transcript too. 
+
+We use floating positions, I put ‘float:left;’ for the transcript that is on the right because if I put
+'right' it will grow but it will be aligned on the right... and I prefer it on the left.
+
+We can give a look at the CSS, there is nothing complicated and this can 
+scroll because of the overflow:auto; rule we added to the div. 
+
+When we click on the buttons here, we call a function called loadTranscript(),
 instead of forceLoadTrack(0) and forceLoadTrack(1), this time we just
 ask for a particular language and, it's implicit, but we are also
-looking for track files that are not chapters. Let's have a look at this
-loadTranscript() function here. So the loadTranscript() function has a
-parameter that is the language. The first thing we do is that we clear the div, we
-are just setting the content to null and then we disable all the tracks:
-we set the mode of the all the tracks ‘disabled’ because when we click here and we can
-change the language of the transcript, we need to disable all track and
-enable just the one we are interested in. How can we locate the right
-track with the language? We just iterate on the tracks... this is the
-text tracks object... and we get the current track as an HTML element
-and as a TextTrack and using the TextTrack, we just check the language
-and the kind. And if the language is equal to the one we are looking
-for, and if the kind is different than chapters, then this is the track
-we would like. By forcing the mode to "showing", in case the track has
-not already been loaded, it will trigger (it will ask the browser) to
+looking for track files that are not chapters. 
+
+Let's have a look at this loadTranscript() function here. 
+So the loadTranscript() function has a parameter that is the language. 
+
+The first thing we do is that we clear the div, we are just setting the content to null and then we disable all the tracks:
+we set the mode of the all the tracks ‘disabled’ because when we click here and we can change the language of the transcript, we need to disable all track and
+enable just the one we are interested in. 
+
+How can we locate the right track with the language?
+
+We just iterate on the tracks... this is the text tracks object... and we get the current track as an HTML element
+and as a TextTrack and using the TextTrack, we just check the language and the kind. 
+
+And if the language is equal to the one we are looking for, and if the kind is different than chapters, then this is the track
+we would like. 
+
+By forcing the mode to "showing", in case the track has not already been loaded, it will trigger (it will ask the browser) to
 load the file.
 
 This is where we test if the file is already been loaded, it is exactly
-the same test we did in the previous example. If the track is already
-loaded, just display the cues in sync with the video and if the track
+the same test we did in the previous example. 
+
+If the track is already loaded, just display the cues in sync with the video and if the track
 has not been loaded, display the cues after the track has been loaded.
-This is the same function as the getContent we had, except that we
-renamed it. This takes the track as an HTML element and the TextTrack as
-parameters. Let's have a look at how it is done.
+
+This is the same function as the getContent we had, except that we renamed it. 
+
+This takes the track as an HTML element and the TextTrack as parameters. 
+
+Let's have a look at how it is done.
 
 "displayCuesAfterTrackLoaded" just waits for the load event to be
 triggered and then it called display the cues function that will display
@@ -2912,6 +2950,7 @@ The displayCues function is exactly the same as the readContent we had
 earlier.
 
 It gets the cue list for the given track, add listeners to the track.
+
 And instead of just displaying the plain text below the video as we did earlier, we will
 just make a nice format and we will add the id of the cue in the element we are creating.
 
@@ -2920,33 +2959,42 @@ one of the list items here.
 
 You can see that in the list item we use the CSS class called cues, just
 for the formatting, for putting them in blue and adding an underline when the
-mouse is over, and we use the id of the cue in the list item. So the id
-is 10, and we also created an onclick listener that calls the function
+mouse is over, and we use the id of the cue in the list item. 
+
+So the id is 10, and we also created an onclick listener that calls the function
 we will detail later, that is call jumpTo.
 
-And here is the starting time of the cue. What we did is that we created
-a list item with a given id and if we click on it, it has a click listener that will call the jumpTo with the time as the parameter. This is the trick, this onclick listener that will make the video jump to the right position.
+And here is the starting time of the cue. 
 
-How did we create that? We use classical techniques. We created a string
-called clickableTransText that is just an HTML list item with the id,
+What we did is that we created a list item with a given id and if we click on it, 
+it has a click listener that will call the jumpTo with the time as the parameter.
+
+This is the trick, this onclick listener that will make the video jump to the right position.
+
+How did we create that? We use classical techniques. 
+
+We created a string called <b>clickableTransText</b> that is just an HTML list item with the id,
 the onclick listener that is built with the start time of the cue and we
 just add this list item to the div.
 
-This function here, addToTranscriptDiv, just adds in the DOM the HTML
-fragment.
+This function here, <b>addToTranscriptDiv</b>, just adds in the DOM the HTML fragment.
 
-We can give a look at addToTranscriptDiv. It just does
-transcriptDiv.innerHTML += this text.
+We can give a look at <b>addToTranscriptDiv</b>. 
+
+It just does <b>transcriptDiv.innerHTML</b> += this text.
 
 The jumpTo method that makes the video jump... in order to jump to a
 particular time in the video we are just setting the currentTime
 property of the video element and we want it to start playing as soon as
-the jump is done. So video = document.querySelector("#myVideo") is just
-the video HTML element.
+the jump is done. 
+
+So video = document.querySelector("#myVideo") is just the video HTML element.
 
 I recommend to look slowly at the code, it is a bit longer because we
 added some formatting for the voices and so on, but it is not
-complicated. Take your time and look at how it's done....
+complicated. 
+
+Take your time and look at how it's done....
 
 Foreword about the set of five examples presented in this section: the
 code of the examples is larger than usual, but each example integrates
@@ -2956,33 +3004,39 @@ Example #1: create an accessible player with a clickable transcript of
 the video presentation.
 
 It might be interesting to read the content of a track before playing
-the video. This is what the edX video player does: it reads a single
-subtitle file and displays it as a transcript on the right. In the
-transcript, you can click on a sentence to make the video jump to the
-corresponding location. We will learn how to do this using the track
-API.
+the video. 
+
+This is what the edX video player does: it reads a single
+subtitle file and displays it as a transcript on the right. 
+
+In the transcript, you can click on a sentence to make the video jump to the
+corresponding location. 
+
+We will learn how to do this using the track API.
 
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------ 33.  (xx) ---------------------------->
+<!------------------------------- 33. debug video tracks (54) ------------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image033.png?raw=true"
    width="60%"
-   alt="." />
+   alt="edx video player to debug video tracks." />
 </p>
 
 Read the WebVTT file at once using the track API and make a clickable
-transcript
+transcript.
 
 Here we decided to code something similar, except that we will offer a
-choice of track/subtitle language. Our example offers English or German
-subtitles, and also another track that contains the chapter descriptions
-(more on that later). Using a button to select a language (track), the
-appropriate transcript is displayed on the right. Like the edX player,
-we can click on any sentence in order to force the video to jump to the
-corresponding location. While the video is playing, the current text is
-highlighted.
+choice of track/subtitle language. 
+
+Our example offers English or German subtitles, and also another track that contains the chapter descriptions
+(more on that later). 
+
+Using a button to select a language (track), the appropriate transcript is displayed on the right. Like the edX player,
+we can click on any sentence in order to force the video to jump to the corresponding location. 
+
+While the video is playing, the current text is highlighted.
 
 Some important things here:
 
@@ -3063,13 +3117,7 @@ JSBin](https://jsbin.com/sodihux/1/edit?html,css,js,output):
 <h4>CSS code:</h4>
 
 <details>
-<h4>
   <summary>CSS code extract!</summary>
-</h4>
-
-
-<details>
-  <summary>Code extract!</summary>
 
 ```
 1.  #all {
@@ -3319,7 +3367,11 @@ different tracks:
 <!------------------------------------------------------------------------------------------------>
 <!--------------------- 35.  (##) ----------------------->
 <!------------------------------------------------------------------------------------------------>
-<img src="./images/image035.png" style="width:5in;height:4.47489in" />
+<p align="center" width="100%">
+<img src="./images/image035.png" 
+  style="width:5in;height:4.47489in" 
+  alt="." />
+</p>
 
 This example, adapted from an example from (now offline) dev.opera.com,
 uses some JavaScript code that takes a WebVTT subtitle (or caption) file
@@ -3329,7 +3381,7 @@ element with an id of transcript.
 <h4>Extract from HTML code:</h4>
 
 <details>
-  <summary>HTML code extract!</summary>
+  <summary>HTML video code extract!</summary>
 
 ```
 1.  ...
@@ -3357,7 +3409,7 @@ element with an id of transcript.
 <h4>JavaScript code:</h4>
 
 <details>
-  <summary>JavaScript code extract!</summary>
+  <summary>Functions loadTranscript, loadTranscriptFile, getVoices, removeHTML extract!</summary>
 
 ```
 1.  // Transcript.js, by dev.opera.com
@@ -3476,8 +3528,11 @@ tracks do not fire events.
 <!------------------------------------------------------------------------------------------------>
 <!--------------------- 36.  (##) ----------------------->
 <!------------------------------------------------------------------------------------------------>
-<img src="./images/image036.jpeg" style="width:5in;height:4.64476in"
-alt="Example that shows how to toggle track modes and listen to events" />
+<p align="center" width="100%">
+<img src="./images/image036.jpeg" 
+  style="width:5in;height:4.64476in"
+  alt="Example that shows how to toggle track modes and listen to events" />
+</p>
 
 [Here is an example at
 JSBin](https://jsbin.com/bixoru/1/edit?html,css,js,output) that shows
@@ -3494,69 +3549,69 @@ captions and descriptions.
 <h4>Extract from HTML code:</h4>
 
 <details>
-  <summary>HTML code extract!</summary>
+  <summary>Video code extract!</summary>
 
 ```
-1. <html lang="en">
-2. ...
-3. <body onload="init();">
-4. ...
-5. <p>
-6. <video id="myVideo" preload="metadata"
-7. poster ="https://...../sintel.jpg"
-8. crossorigin="anonymous"
-9. controls="controls"
-10. width="640" height="272">
+1.  <html lang="en">
+2.  ...
+3.  <body onload="init();">
+4.    ...
+5.    <p>
+6.    <video id="myVideo" preload="metadata"
+7.      poster ="https://...../sintel.jpg"
+8.      crossorigin="anonymous"
+9.      controls="controls"
+10.     width="640" height="272">
 11. 
-12. <source src="https://...../sintel.mp4"
-13. type="video/mp4" />
-14. <source src="https://...../sintel.webm"
-15. type="video/webm" />
-16. <track src="https://...../sintel-captions.vtt"
-17. kind="captions"
-18. label="English Captions"
-19. <b>default</b>/>
-20. <track src="https://...../sintel-descriptions.vtt"
-21. kind="descriptions"
-22. label="Audio Descriptions" />
-23. <track src="https://...../sintel-chapters.vtt"
-24. kind="chapters"
-25. label="Chapter Markers" />
-26. <track src="https://...../sintel-thumbs.vtt"
-27. kind="metadata"
-28. label="Preview Thumbs" />
-29. </video>
-30. </p>
+12.     <source src="https://...../sintel.mp4"
+13.       type="video/mp4" />
+14.     <source src="https://...../sintel.webm"
+15.       type="video/webm" />
+16.     <track src="https://...../sintel-captions.vtt"
+17.       kind="captions"
+18.       label="English Captions"
+19.       <b>default</b>/>
+20.     <track src="https://...../sintel-descriptions.vtt"
+21.       kind="descriptions"
+22.       label="Audio Descriptions" />
+23.     <track src="https://...../sintel-chapters.vtt"
+24.       kind="chapters"
+25.       label="Chapter Markers" />
+26.     <track src="https://...../sintel-thumbs.vtt"
+27.       kind="metadata"
+28.       label="Preview Thumbs" />
+29.   </video>
+30.   </p>
 31. 
-32. <p>
-33. <div id="currentTrackStatuses"></div>
-34. <p>
-35. <p>
-36. <div id="subtitlesCaptions"></div>
-37. </p>
+32.   <p>
+33.   <div id="currentTrackStatuses"></div>
+34.   <p>
+35.   <p>
+36.   <div id="subtitlesCaptions"></div>
+37.   </p>
 38. 
-39. <p>
-40. <button onclick="clearSubtitlesCaptions();">
-41. Clear subtitles/captions log
-42. </button>
-43. </p>
+39.   <p>
+40.     <button onclick="clearSubtitlesCaptions();">
+41.       Clear subtitles/captions log
+42.     </button>
+43.   </p>
 44. 
-45. <p>Click one of these buttons to toggle the mode of each track:</p>
-46. <button onclick="toggleTrack(0);">
-47. Toggle english caption track mode
-48. </button>
-49. <br>
-50. <button onclick="toggleTrack(1);">
-51. Toggle audio description track mode
-52. </button>
-53. <br>
-54. <button onclick="toggleTrack(2);">
-55. Toggle chapter track mode
-56. </button>
-57. <br>
-58. <button onclick="toggleTrack(3);">
-59. Toggle preview thumbnail track modes
-60. </button>
+45.   <p>Click one of these buttons to toggle the mode of each track:</p>
+46.   <button onclick="toggleTrack(0);">
+47.     Toggle english caption track mode
+48.   </button>
+49.   <br>
+50.   <button onclick="toggleTrack(1);">
+51.     Toggle audio description track mode
+52.   </button>
+53.   <br>
+54.   <button onclick="toggleTrack(2);">
+55.     Toggle chapter track mode
+56.   </button>
+57.   <br>
+58.   <button onclick="toggleTrack(3);">
+59.     Toggle preview thumbnail track modes
+60.   </button>
 61. 
 62. </body>
 63. </html>
@@ -3567,7 +3622,7 @@ captions and descriptions.
 <h4>JavaScript code:</h4>
 
 <details>
-  <summary>JavaScript code extract!</summary>
+  <summary>Functions init, displayTrackStatus, appendToScrollableDiv, clearDiv, clearSubtitlesCaptions, toggleTrack, logCue extract!</summary>
 
 ```
 var tracks, video, statusDiv, subtitlesCaptionsDiv;
@@ -3687,8 +3742,11 @@ you choose which track you prefer. 
 <!------------------------------------------------------------------------------------------------>
 <!--------------------- 37.  (##) ----------------------->
 <!------------------------------------------------------------------------------------------------>
-<img src="./images/image037.jpeg" style="width:6.17708in;height:5.73958in"
-alt="Buttons for choosing the track/language under a standard video player" />
+<p align="center" width="100%">
+<img src="./images/image037.jpeg"
+  style="width:6.17708in;height:5.73958in"
+  alt="Buttons for choosing the track/language under a standard video player" />
+</p>
 
 <h4>HTML code:</h4>
 
@@ -3823,8 +3881,11 @@ Example #4: making a simple chapter navigation menu
 <!------------------------------------------------------------------------------------------------>
 <!--------------------- 38.  (##) ----------------------->
 <!------------------------------------------------------------------------------------------------>
-<img src="./images/image038.jpeg" style="width:4.57292in;height:2.08333in"
-alt="Simple chapter navigation" />
+<p align="center" width="100%">
+<img src="./images/image038.jpeg"
+  style="width:4.57292in;height:2.08333in"
+  alt="Simple chapter navigation" />
+</p>
 
 We can use WebVTT files to define chapters. The syntax is exactly the
 same as for subtitles/caption .vtt files. The only difference is in the
@@ -3925,9 +3986,9 @@ modify it a little bit:
     > similar to this :
 
 ```
- <button disabled id="buttonEnglishChapters" <b>onclick="loadTranscript('en', 'chapters');"</b>>
- Display English chapter markers
- </button>
+<button disabled id="buttonEnglishChapters" <b>onclick="loadTranscript('en', 'chapters');"</b>>
+  Display English chapter markers
+</button>
 ```
 
 We modify the loadTranscript function from the previous example, so that it matches both the srclang and
@@ -3959,8 +4020,11 @@ transcript:
 <!------------------------------------------------------------------------------------------------>
 <!--------------------- 38.  (##) ----------------------->
 <!------------------------------------------------------------------------------------------------>
-<img src="./images/image038.jpeg" style="width:5in;height:2.28152in"
-alt="Simple chapter navigation" />
+<p align="center" width="100%">
+<img src="./images/image038.jpeg"
+  style="width:5in;height:2.28152in"
+  alt="Simple chapter navigation" />
+</p>
 
 Look at the JavaScript and HTML tab of the JSBin example to see the
 source code. It's the same as in the clickable transcript example,
