@@ -1693,7 +1693,7 @@ Hi, today I've prepared for you a small example of a video that is
 associated with three different tracks.
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------- 18. using html views of tracks - one video, three tracks (28) ----------------->
+<!---------------- 18. using html views of tracks - one video, three tracks (27) ----------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image018.png" 
@@ -1735,22 +1735,31 @@ structure of a track. I'm just going to display the content of one of
 these tracks.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 18. download, caption, language (29) ----------------------------->
+<!----------------------------- 19. download, caption, language (28) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
-<img src="./images/image018.png"
+<p align="center" width="100%">
+<img src="./images/image019.png"
   style="width:5in;height:5.2094in"
   alt="Download, Caption, Language."/>
 </p>
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------------- 19. safari - 0 thru 10:58 - elephants dream (30) ------------------------>
+<!---------------------- 20. safari - 0 thru 10:58 - elephants dream (28) ------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image019.png" 
+<img src="./images/image020.png" 
   style="width:5in;height:5.2094in"
   alt="Safari display of elephants dream video." />
 </p>
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 21. webvtt track descriptions (29) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image021.png"
+  style="width:4in;height:2.24412in"
+  alt="HTML track descriptions; label, kind, lang, readyState." />
+</p>
 
 The tracks are made of cues and what we call a cue is a kind of time
 segment that is defined with a starting time and an ending time. And the
@@ -1767,13 +1776,14 @@ we will see also how to choose the subtitle or caption track language
 for the video.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 20. subtitle tracks in german (31) ------------------------------->
+<!------------------------------ 22. safari menu screenshot (30) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image020.png"
-  style="width:5in;height:3.64476in"
-  alt="Elephants dream with German subtitles." />
+  <mg src="./images/image022.jpeg"
+  style="width:4in;height:2.32697in"
+  alt="Screenshot of Safari menu fr choosing subtitle track." />
 </p>
+
 
 This is finished for this small introduction video, I will just conclude
 by this thing here: explaining this crossOrigin="anonymous". 
@@ -1785,6 +1795,15 @@ location than the video file and the tracks files, you will have
 security constraints errors. And if your server is configured for
 accepting different origins, then you can add this attribute
 crossOrigin="anonymous" in your HTML document and it is going to work.
+
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------------- 23. create origin (31) ------------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image023.png"
+  style="width:4in;height:2.24412in"
+  alt="Create origin function." />
+</p>
 
 The server here: mainline.i3s.unice.fr has been configured for allowing
 external HTML pages to include the videos it hosts and the subtitles it
@@ -1822,12 +1841,11 @@ And here is how it renders in your current browser (please play the
 video and try to show/hide the subtitles/captions):
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 21. html track descriptions (32) -------------------------------->
+<!-------------------------- 24. downloads, caption & pic-in-pic (32) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image021.png"
-  style="width:4in;height:2.24412in"
-  alt="HTML track descriptions; label, kind, lang, readyState." />
+<img src="./images/image024.png"
+  style="width:4in;height:3.93208in" 
+  alt="Downloads, Caption, and Picture-in-Picture." />
 </p>
 
 Notice that the support for multiple tracks may differs significantly
@@ -1847,12 +1865,12 @@ written in April 2015, for further details.
     the default is off.
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 22. safari menu screenshot (32) ----------------------->
+<!-------------------------- 25. safari menu - subtitles/captions (32) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-  <mg src="./images/image022.jpeg"
+  <mg src="./images/image025.jpeg"
   style="width:4in;height:2.32697in"
-  alt="Screenshot of Safari menu fr choosing subtitle track." />
+  alt="Safari Menu - subtitles/captions." />
 </p>
 
 -   Chrome and Opera both provide a subtitle menu and load the text
@@ -2049,11 +2067,6 @@ manipulate these elements as "HTML elements" - we will call them the
 <img src="./images/image023.png" 
   style="width:4in;height:2.23647in" 
   alt="." />
-
-<img src="./images/image024.png" 
-  style="width:4in;height:3.93208in" 
-  alt="." />
-</p>
 
 <h4>Here is the JavaScript source code:</h4>
 
@@ -21844,4 +21857,4 @@ your comments/observations/questions and share your creations.
 
 <h5>the end...</h5>
 
-<h4>Last Updated: 10-04-2022 2:01am</h4>
+<h4>Last Updated: 10-04-2022 3:49pm</h4>
