@@ -20348,9 +20348,15 @@ online](https://codepen.io/w3devcampus/project/editor/ZynNvX/) using
 CodePen. Note that we cannot run this example on JsBin as Workers need
 to be defined in a separate JavaScript file.
 
-<img src="./images/image240.jpeg"
-style="width:5.70833in;height:1.34375in"
-alt="Prime nulmber computation." />
+<!------------------------------------------------------------------------------------------------>
+<!---------------------------- 240. prime number computation (###) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image240.jpeg?raw=true"
+   width="65%"
+   alt="Prime number computation." />
+</p>
+<!--- style="width:5.70833in;height:1.34375in" --->
 
 <h4>The HTML5 page code from this example that uses a Web Worker:</h4>
 
@@ -20430,8 +20436,16 @@ supports Web Workers, and by displaying some additional messages.
 > file:// URL. <b>You need an HTTP web server that will serve the
 > files</b>. Here is what happens if you do not follow this constraint:
 
-<img src="./images/image241.jpeg" style="width:6.5in;height:1.67292in"
-alt="using file URL does not work for security reasons" />
+<!------------------------------------------------------------------------------------------------>
+<!---------------- 241. using file URL does not work for security reasons (###) ------------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image241.jpeg?raw=true"
+   width="65%"
+   alt="Using file URL does not work for security reasons." />
+</p>
+
+<!-- style="width:6.5in;height:1.67292in" --->
 
 This occurs with Opera, Chrome and Firefox. With Chrome, Safari or
 Chromium, you can run the browser using some command line options to
@@ -20678,12 +20692,19 @@ avoid such a pain, the Web Workers API does several things:
 
 -   The parent object
 
-## WOW! This is a lot! So, please be careful!
+<h4>WOW! This is a lot! So, please be careful!</h4>
 
 <h4>This is well illustrated below:</h4>
 
-<img src="./images/image242.png" style="width:5.20833in;height:3.39583in"
-alt="web worker scope" />
+<!------------------------------------------------------------------------------------------------>
+<!-------------------------------- 242. web workers scope (###) ---------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image242.png?raw=true"
+   width="65%"
+   alt="Web workers scope." />
+</p>
+<!-- style="width:5.20833in;height:3.39583in" --->
 
 <b>Note that:</b>
 
@@ -20714,8 +20735,15 @@ worker. In these windows, you can set breakpoints, inspect variables,
 log messages, etc. Here is a screenshot of a debugging session with the
 prime numbers example:
 
-<img src="./images/image243.jpeg" style="width:5in;height:3.11538in"
-alt="chrome debug web workers" />
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 243. chrome debug web workers (###) ------------------------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image243.jpeg?raw=true"
+   width="65%"
+   alt="Chrome debug web workers." />
+</p>
+<!-- style="width:1in;height:1in" --->
 
 -   <b>FireFox</b> has similar tools, see [Firefox developer
     tools](https://developer.mozilla.org/en-US/docs/Tools).
@@ -20737,11 +20765,15 @@ the WITH WORKERS button: this will run the code that computes prime
 numbers in a Web Worker. Now, try to change the color of the button, it
 reacts instantly...
 <!------------------------------------------------------------------------------------------------>
-<!----------------- 244. demo screenshot (###) ------------------->
+<!--------------------------------- 244. demo screenshot (###) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image244.png"
+  width="65%"
+  alt="Demo screenshot" />
+</p>
 
-<img src="./images/image244.png" style="width:5in;height:3.12767in"
-alt="Demo screenshot" />
+<!--- style="width:5in;height:3.12767in" --->
 
 <h4>Demo #2</h4>
 
@@ -20758,8 +20790,13 @@ between workers and their creator, instead of computing in parallel.
 <!------------------------------------------------------------------------------------------------>
 <!--------------------------- 245. ray tracer with web workers (###) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
-<img src="./images/image245.jpeg" style="width:4in;height:3.99165in"
-alt="Ray Tracer with web workers." />
+<p align="center" width="100%">
+<img src="./images/image245.jpeg?raw=true"
+  width="65%"
+  alt="Ray Tracer with web workers." />
+</p>
+
+<!--  style="width:4in;height:3.99165in" --->
 
 <h4>Other demos</h4>
 
