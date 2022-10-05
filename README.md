@@ -2127,16 +2127,16 @@ manipulate these elements as "HTML elements" - we will call them the
 -   We cannot access any HTML element before the page has been loaded.
     This is why we do all the work in the window.onload listener,
 
--   <i>Line 6</i> we get a pointer to the div with id=trackStatusesDiv, that
+-   <i>Line 7</i> we get a pointer to the div with id=trackStatusesDiv, that
     will be used to display track statuses,
 
 -   <i>Line 10</i>: we get all the track elements in the document. They are
     HTML track elements,
 
--   <i>Line 14</i>: we call a function that will build some HTML to
+-   <i>Line 16</i>: we call a function that will build some HTML to
     display the track status in the div we got from <i>line 7</i>.
 
--   <i>Lines 16-22</i>: we iterate on the HTML tracks, and for each track we
+-   <i>Lines 18-25</i>: we iterate on the HTML tracks, and for each track we
     get the label, the kind and the srclang attribute values. Notice,
     at <i>line 24</i>, the use of the readyState attribute, only used from
     JavaScript, that will give the current HTML track state. 
@@ -2376,7 +2376,7 @@ JSBin](https://jsbin.com/bubeye/1/edit?html,console,output)
 <p align="center" width="100%">
 <img src="./images/image025.jpeg" 
   style="width:5in;height:4.44178in" 
-  alt="." />
+  alt="Test if loaded track.  Load if not by setting mode to hidden." />
 </p>
 
 Here is what we added to the HTML code:
@@ -3539,10 +3539,10 @@ tracks do not fire events.
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image033.jpeg"
-<!--  style="width:5in;height:4.64476in" -->
   width="65%"
   alt="Example that shows how to toggle track modes and listen to events" />
 </p>
+<!--  style="width:5in;height:4.64476in" -->
 
 [Here is an example at
 JSBin](https://jsbin.com/bixoru/1/edit?html,css,js,output) that shows
@@ -3755,7 +3755,7 @@ you choose which track you prefer. 
 <p align="center" width="100%">
 <img src="./images/image034.jpeg"
   style="width:6.17708in;height:5.73958in"
-  alt="Buttons for choosing the track/language under a standard video player" />
+  alt="Buttons for choosing the track/language under a standard video player." />
 </p>
 
 <h4>HTML code:</h4>
@@ -4026,12 +4026,12 @@ Notice that we kept the existing buttons to display a clickable
 transcript:
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 36. simple chapter navigation (73) ------------------------------->
+<!----------------------------- 35. simple chapter navigation (73) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image036.jpeg"
-  style="width:5in;height:2.28152in"
-  alt="Simple chapter navigation" />
+<img src="./images/image035.jpeg"
+  style="width:4.57292in;height:2.08333in"
+  alt="Again, Simple chapter navigation." />
 </p>
 
 Look at the JavaScript and HTML tab of the JSBin example to see the
@@ -4042,12 +4042,12 @@ Chapter navigation, illustrated in the video player below, is fairly
 popular.
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------------- 37. text-based chapter navigation (73) ----------------------------->
+<!----------------------------- 36. simple chapter navigation (73) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image037.jpeg" 
-  style="width:5in;height:2.76977in"
-  alt="Example of video player that uses text based chapter navigation" />
+<img src="./images/image036.jpeg"
+  style="width:5in;height:2.28152in"
+  alt="Simple chapter navigation" />
 </p>
 
 In addition to the clickable chapter list, this one displays an enhanced
@@ -4132,11 +4132,13 @@ clickable text on the right of a
 video](https://jsbin.com/jiyodit/edit?html,css,js,output).
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 38.  (75) ----------------------->
+<!----------------------------- 35. simple chapter navigation (75) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<img src="./images/image038.jpeg" 
-  style="width:5in;height:2.28152in"
-  alt="SImple chapter menu in plain text." />
+<p align="center" width="100%">
+<img src="./images/image035.jpeg"
+  style="width:4.57292in;height:2.08333in"
+  alt="Again, 3rd time, Simple chapter navigation." />
+</p>
 
 <h4> This example used only standard plain text content for the cues:</h4>
 
@@ -21926,6 +21928,18 @@ your comments/observations/questions and share your creations.
    alt="." />
 </p>
 -->
+<!---
+<p align="center" width="100%">
+<img src="./images/image037.jpeg" 
+  style="width:5in;height:2.76977in"
+  alt="Example of video player that uses text based chapter navigation" />
+</p>
+--->
+<!--
+<img src="./images/image038.jpeg" 
+  style="width:5in;height:2.28152in"
+  alt="Simple chapter menu in plain text." />
+--->
 
 <h5>the end...</h5>
 
