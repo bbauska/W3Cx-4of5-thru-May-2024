@@ -19729,6 +19729,7 @@ template used here is the last one we studied in a previous lesson about
 HTML templates. Check [the full example online at
 JSBin](https://jsbin.com/cacuvuf/edit?html,js,console,output): 
 
+
 <img src="./images/image235.jpeg" style="width:6.5in;height:2.7625in"
 alt="Custom element full example at JsBin" />
 
@@ -20001,10 +20002,19 @@ your comments/observations/questions and share your creations.
     your audio player or other applications that would look cool with
     rotating knobs, switches, LEDs, etc.
 
--   <img src="./images/image236.png" style="width:5.48958in;height:2.61458in"
-    alt="web audio controls" /><img src="./images/image237.jpeg"
+<!------------------------------------------------------------------------------------------------>
+<!-------------------------------- 236. web audio controls (###) --------------------------------->
+<!----------------------- 237. guitar amp sim with web components (###) -------------------------->
+<!------------------------------------------------------------------------------------------------>
+
+-   <p align="center" width="100%">
+    <img src="./images/image236.png?raw=true"
+    width="65%"  <!-- style="width:5.48958in;height:2.61458in" -->
+    alt="Web audio controls" />
+	<img src="./images/image237.jpeg"
     style="width:5.19792in;height:2.52083in"
     alt="guitar amp sim with web components" />
+	</p>
 
 -   Try making your own Web component! For example: an enhanced audio
     player that uses Web Audio. 
@@ -20059,8 +20069,15 @@ NOT CLICK ON THE BUTTON unless you are prepared to kill your
 browser/tab, because this routine will consume 100% of CPU time,
 completely blocking the user interface: 
 
-<img src="./images/image239.jpeg" style="width:5.5in;height:1.84375in"
-alt="Examples that eats all the cpu" />
+<!------------------------------------------------------------------------------------------------>
+<!---------------------------- 239.  (###) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image239.jpeg?raw=true"
+   width="65%"
+   alt="Example that eats all the cpu." />
+</p>
+<!--- style="width:5.5in;height:1.84375in" --->
 
 <h4>Code from the example:</h4>
 
@@ -20697,10 +20714,10 @@ avoid such a pain, the Web Workers API does several things:
 <h4>This is well illustrated below:</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------------- 242. web workers scope (###) ---------------------------------->
+<!-------------------------------- 239. web workers scope (456) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image242.png?raw=true"
+<img src="./images/image239.png?raw=true"
    width="65%"
    alt="Web workers scope." />
 </p>
@@ -20736,10 +20753,10 @@ log messages, etc. Here is a screenshot of a debugging session with the
 prime numbers example:
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 243. chrome debug web workers (###) ------------------------------>
+<!----------------------------- 240. chrome debug web workers (457) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image243.jpeg?raw=true"
+<img src="./images/image240.jpeg?raw=true"
    width="65%"
    alt="Chrome debug web workers." />
 </p>
@@ -20765,12 +20782,12 @@ the WITH WORKERS button: this will run the code that computes prime
 numbers in a Web Worker. Now, try to change the color of the button, it
 reacts instantly...
 <!------------------------------------------------------------------------------------------------>
-<!--------------------------------- 244. demo screenshot (###) ----------------------------------->
+<!-------------------------------- 241. demo prime numbers (458) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image244.png"
+<img src="./images/image241.png"
   width="65%"
-  alt="Demo screenshot" />
+  alt="Demo prime numbers screenshot." />
 </p>
 
 <!--- style="width:5in;height:3.12767in" --->
@@ -20788,12 +20805,12 @@ compute parts of the image (pixels). If you use too many Web Workers,
 the performance decreases because too much time is spent exchanging data
 between workers and their creator, instead of computing in parallel.
 <!------------------------------------------------------------------------------------------------>
-<!--------------------------- 245. ray tracer with web workers (###) ----------------------------->
+<!--------------------------- 242. green blocks and ray tracer (459) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image245.jpeg?raw=true"
+<img src="./images/image242.jpeg?raw=true"
   width="65%"
-  alt="Ray Tracer with web workers." />
+  alt="Demo 2: Ray tracer with web workers." />
 </p>
 
 <!--  style="width:4in;height:3.99165in" --->
@@ -20836,14 +20853,14 @@ your comments/observations/questions and share your creations.
     in <i>parallel</i>, in the <i>background</i>.
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------- 246. ie10 web workers fountain demo (###) --------------------------->
+<!-------------------------- 243. ie10 web workers fountain demo (460) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image246.png?raw=true"
+<img src="./images/image243.png?raw=true"
    width="40%"
    alt="IE 10 Web Workers fountain demo." />
 </p>
-<!-- <img src="./images/image246.png" style="width:4in;height:2.55983in" -->
+<!-- style="width:4in;height:2.55983in" -->
 
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch4-4-1">4.4.1 The Orientation API</h3>
@@ -20919,7 +20936,7 @@ order:
 
 <h4>Rotate the device frame around its z axis by alpha degrees, with alpha in \[0, 360\]</h4>
 <!------------------------------------------------------------------------------------------------>
-<!----------------- 247 / 248. start orientation & rotation about z axis (###) ------------------->
+<!----------------- 244 / 245. start orientation & rotation about z axis (###) ------------------->
 <!------------------------------------------------------------------------------------------------>
 
 <table>
@@ -20950,7 +20967,7 @@ alt="rotation about z axis" /></td>
 <h4>Rotate the device frame around its x axis by beta degrees, with beta in\[-180, 180\]</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------- 247 / 249. start orientation & rotation about x axis (###) ------------------->
+<!----------------- 246 / 247. start orientation & rotation about x axis (###) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <table>
 <colgroup>
@@ -21034,12 +21051,12 @@ mode](https://jsbin.com/limugat) (without the JsBin editor) )
 
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------------- 251. orientation api 2 (###) ---------------------------------->
+<!----------------------------- 248. device orientation api 2 (468) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image251.png?raw=true"
-   width="40%"
-   alt="Orientation API 2." />
+<img src="./images/image248.png?raw=true"
+   width="65%"
+   alt="Device Orientation API 2." />
 </p>
 
 The above screenshot came from an iPad laying immobile on a desk.
@@ -21053,36 +21070,36 @@ with Math.round() at display time (see code).
 If we change the orientation of the device here are the results:
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------------- 252. orientation api 3 (###) ---------------------------------->
+<!-------------------------------- 249. orientation api 3 (469) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image252.png?raw=true"
-   width="40%"
+   width="65%"
    alt="Orientation API 3." />
 </p>
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------------- 253. orientation api 1 (###) ---------------------------------->
+<!-------------------------------- 250. orientation api 1 (469) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image253.png?raw=true"
-   width="35%"
+   width="65%"
    alt="Orientation API 1." />
 </p>
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------------- 254. orientation api 2 (###) ---------------------------------->
+<!-------------------------------- 251. orientation api 2 (470) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image254.png?raw=true"
-   width="40%"
+   width="65%"
    alt="Orientation API 2." />
 </p>
 
 <h4>Typical use / code from the above example:</h4>
 
 <details>
-  <summary>HTML code!</summary>
+  <summary>Device Orientation with HTML5 code!</summary>
 
 ```
 1.  ...
@@ -21128,10 +21145,10 @@ This is just a variation of the previous example, [try it at
 JsBin](https://jsbin.com/manobezoji/edit?html,js,output)
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------------------- 255. orientation api example 3 (###) ------------------------------>
+<!----------------------- 252. html logo orientation api example 3 (471) ------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image255.png?raw=true"
+<img src="./images/image252.png?raw=true"
    width="40%"
    alt="Orientation API example 3." />
 </p>
@@ -21141,31 +21158,31 @@ orientation. This is a good "visual feedback" for an orientation
 controlled game...
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------------- 256. logo 1 (###) ---------------------------------------->
+<!------------------------------------- 253. logo 1 (472) ---------------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image256.png?raw=true"
+<p align="left" width="50%">
+<img src="./images/image253.png?raw=true"
    width="30%"
-   alt="Logo 1." />
+   alt="Logo position 1." />
 </p>
 <!-- <img src="./images/image256.png" style="width:2.94792in;height:3.92708in" -->
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------------------- 257. logo 2 (###) --------------------------------------->
+<!-------------------------------------- 254. logo 2 (472) --------------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image257.png?raw=true"
+<p align="right" width="50%">
+<img src="./images/image254.png?raw=true"
    width="30%"
-   alt="Logo 2." />
+   alt="Logo position 2." />
 </p>
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------------- 258. logo 3 (###) ---------------------------------------->
+<!------------------------------------- 255. logo 3 (472) ---------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image258.png?raw=true"
+<img src="./images/image255.png?raw=true"
    width="29%"
-   alt="Logo 3." />
+   alt="Logo position 3." />
 </p>
 
 This example is also
@@ -21235,10 +21252,10 @@ JsBin](https://jsbin.com/quboge/edit), or [test it in standalone
 mode](https://jsbin.com/quboge) (using a mobile device).
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------- 259. level tool using device orientation (475) ------------------------->
+<!----------------------- 256. level tool using device orientation (474) ------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image259.png?raw=true"
+<img src="./images/image256.png?raw=true"
    width="50%"
    alt="Level tool using device orientation." />
 </p>
@@ -21260,10 +21277,10 @@ desktop browser:
 Click on the image to see the YouTube video:
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------------- 260. orientation api + websockets (###) ---------------------------->
+<!--------------------------- 257. orientation api + websockets (474) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image260.png?raw=true"
+<img src="./images/image257.png?raw=true"
    width="35%"
    alt="Orientation API + websockets." />
 </p>
@@ -21356,10 +21373,10 @@ data returned would be <a href="https://developers.google.com/web/fundamentals/n
 this [article]</a>):
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------- 261. acceleration values 1 (xxx) ------------------------------->
+<!------------------------------- 258. acceleration values 1 (476) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image261.png"
+<img src="./images/image258.png"
   width="65%"
   alt="Acceleration values 1." />
 </p>
@@ -21368,22 +21385,22 @@ this [article]</a>):
 to its normal position would return:</p>
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 262. acceleration values 2 (xxx) -------------------------------->
+<!------------------------------ 259. acceleration values 2 (476) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image262.png"
+<img src="./images/image259.png"
   width="65%"
   alt="Acceleration values 2." />
 </p>
 
 <h4>Remember the coordinate system for a mobile phone:</h4>
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------- 263. telephone coordinates system (xxx) ----------------------------->
+<!------------------------- 260. mobile phone coordinates system (476) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image263.png"
+<img src="./images/image260.jpeg"
   width="30%"
-  alt="Telephone coordinates system." />
+  alt="Mobile phone coordinates system." />
 </p>
 
 <h4>Common steps</h4>
@@ -21473,10 +21490,10 @@ later on)...
 <a href="https://jsbin.com/pasoboyucu/edit?html,js,output">Online example at JsBin</a>.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 264. devicemotion api example (xxx) ------------------------------>
+<!----------------------------- 261. devicemotion api example (480) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image264.jpeg"
+<img src="./images/image261.jpeg"
   width="30%"
   alt="Devicemotion API example." />
 </p>
@@ -21484,7 +21501,7 @@ later on)...
 <h4>Code from this example:</h4>
 
 <details>
-  <summary>HTML code!</summary>
+  <summary>Device Orientation with HTML5 code!</summary>
 
 ```
 1.  <!doctype html>
@@ -21573,7 +21590,7 @@ This example has been adapted and put on jsbin.com so that you can tweak
 it: <a href="https://jsbin.com/uyuqek/4/edit">https://jsbin.com/uyuqek/4/edit</a>
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------------------- 262. devicemotion api (481) ---------------------------------->
+<!--------------------------------- 262. devicemotion api (480) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image262.jpeg"
@@ -21584,7 +21601,7 @@ it: <a href="https://jsbin.com/uyuqek/4/edit">https://jsbin.com/uyuqek/4/edit</
 <h4>Code from the example:</h4>
 
 <details>
-  <summary>HTML source code!</summary>
+  <summary>Devicemotion API using JQuery mobile source code!</summary>
 
 ```
 1.  <html>
@@ -21672,18 +21689,18 @@ it: <a href="https://jsbin.com/uyuqek/4/edit">https://jsbin.com/uyuqek/4/edit</
 mobile device, <a href="https://jsbin.com/eyahuv/2">use this URL instead</a>!
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------------------- 263. moving balls (489) -------------------------------------->
+<!---------------------------- 263. move a ball on the screen (481) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image263.png"
   width="35%"
-  alt="Moving Balls." />
+  alt="Move a Ball on the Screen - last image." />
 </p>
 <!---   style="width:3in;height:1.99379in" --->
 
 
 <details>
-  <summary>Code from this example!</summary>
+  <summary>Device orientation source code!</summary>
 
 ```
 1.  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -21894,4 +21911,4 @@ your comments/observations/questions and share your creations.
 
 <h5>the end...</h5>
 
-<h4>Last Updated: 10-04-2022 3:49pm</h4>
+<h4>Last Updated: 10-05-2022 9:37am</h4>
