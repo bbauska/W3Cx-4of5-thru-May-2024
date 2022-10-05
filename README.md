@@ -4905,11 +4905,11 @@ alt="video synced with an iframe that shows external URLs and with a google map"
 </details>
 
 All the critical work is done by the cuechange event listener, <i>lines
-27-50*. We have only the one track, so we set its mode to "hidden"
-(<i>line 10*)  in order to be sure that it will be loaded, and that
+27-50</i>. We have only the one track, so we set its mode to "hidden"
+(<i>line 10</i>)  in order to be sure that it will be loaded, and that
 playing the video will fire cuechange events on it. The rest is just
 Google map code and classic DOM manipulation for updating HTML content
-(a span that will display the current URL, <i>line 42*).
+(a span that will display the current URL, <i>line 42</i>).
 
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch1-5-1">1.5.1 Introduction</h3>
@@ -5373,11 +5373,11 @@ Gain node
 Useful for setting volume... see the [Gain node's
 documentation](https://developer.mozilla.org/en-US/docs/Web/API/GainNode).
 
-Definition: "<i>The *GainNode* interface represents a change in volume. It
+Definition: "<b>The <i>GainNode</i> interface represents a change in volume. It
 is an AudioNode audio-processing module that causes a given gain to be
 applied to the input data before its propagation to the output.
-A <i>GainNode* always has exactly one input and one output, both with the
-same number of channels.*"
+A <i>GainNode</i> always has exactly one input and one output, both with the
+same number of channels.</b>"
 
 [Example at
 JSBin](https://jsbin.com/davebu/edit?html,js,console,output), or try it
@@ -5409,7 +5409,7 @@ in your browser:
 
 </details>
 
-The gain property (<i>line 13* in the above code) corresponds to the
+The gain property (<i>line 13</i> in the above code) corresponds to the
 multiplication we apply to the input signal volume. A value of 1 will
 keep the volume unchanged. A value < 1 will lower the volume (0 will
 mute the signal), and a value > 1 will increase the global volume, with
@@ -5422,10 +5422,10 @@ Stereo panner
 See the [Stereo Panner node's
 documentation](https://developer.mozilla.org/en-US/docs/Web/API/StereoPannerNode).
 
-Definition: <i>"The *StereoPannerNode* interface of the Web Audio API
+Definition: <b>"The <i>StereoPannerNode</i> interface of the Web Audio API
 represents a simple stereo panner node that can be used to pan an audio
-stream left or right. The <i>pan* property takes a value between -1 (full
-left pan) and 1 (full right pan)."*
+stream left or right. The <i>pan</i> property takes a value between -1 (full
+left pan) and 1 (full right pan).</b>
 
 [Example at JSBin,](https://jsbin.com/jarimu/edit?html,js,output) or try
 it in your browser:
@@ -5460,12 +5460,12 @@ it in your browser:
 
 <h4>Biquad filter</h4>
 
-Definition: "<i>The *BiquadFilterNode* interface represents a simple
+Definition: "<i>The BiquadFilterNode</i> interface represents a simple
 low-order filter, and is created using
-the <i>AudioContext.createBiquadFilter()* method. It is an AudioNode that
+the <i>AudioContext.createBiquadFilter()</i> method. It is an AudioNode that
 can represent different kinds of filters, tone control devices, and
-graphic equalizers. A <i>BiquadFilterNode* always has exactly one input
-and one output.*"
+graphic equalizers. A <i>BiquadFilterNode</i> always has exactly one input
+and one output."
 
 See also the Biquad Filter node's documentation.
 
@@ -5696,7 +5696,7 @@ alt="audio graph of the previous example" />
 
 </details>
 
-Note that at <i>line 6* we use the decoded impulse. We could not have done
+Note that at <i>line 6</i> we use the decoded impulse. We could not have done
 this before the impulse was loaded and decoded.
 
 The Dynamics Compressor node
@@ -5705,7 +5705,7 @@ Definition: "<i>The DynamicsCompressorNode interface provides a
 compression effect, which lowers the volume of the loudest parts of the
 signal in order to help prevent clipping and distortion that can occur
 when multiple sounds are played and multiplexed together at once. This
-is often used in musical production and game audio.*"
+is often used in musical production and game audio.</i>"
 
 It's usually a good idea to insert a compressor in your audio graph to
 give a louder, richer and fuller sound, and to prevent clipping. See
@@ -5825,10 +5825,10 @@ alt="Audio graph of the previous example" />
 
 There is nothing special here compared to the other examples in this
 section, except that we have used a new method disconnect (<i>line
-32* and <i>line 38*), which is available on all types of nodes
+32</i> and <i>line 38</i>), which is available on all types of nodes
 (except ctx.destination)  to modify the graph on the fly. When the
 button is clicked, we remove  or add a compressor in the audio graph
-(<i>lines 28-42*) and to achieve this, we disconnect and reconnect some of
+(<i>lines 28-42</i>) and to achieve this, we disconnect and reconnect some of
 the nodes.
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch1-5-4">1.5.4 Writing an Equalizer</h3>
@@ -5845,9 +5845,9 @@ alt="an audio player with an equalizer" />
 This example uses six BiquadFilter nodes with type="peaking".
 
 If you [read the description of this filter
-type](https://developer.mozilla.org/en-US/docs/Web/API/BiquadFilterNode): *"Frequencies
+type](https://developer.mozilla.org/en-US/docs/Web/API/BiquadFilterNode): <i>"Frequencies
 inside the range get a boost or an attenuation; frequencies outside it
-are unchanged." *This is exactly what we need to write a multi band
+are unchanged." </i>This is exactly what we need to write a multi band
 equalizer! We're going to use several sliders, each of which boosts one
 range of frequency values.
 
@@ -6174,7 +6174,7 @@ Essentials and Best Practices course (Module 4).
 
 </details>
 
-With the exception of <i>lines 8-12*, where we set the analyser options
+With the exception of <i>lines 8-12</i>, where we set the analyser options
 (explained later), we build the following graph (picture taken with the
 now discontinued FireFox WebAudio debugger, you should get similar
 results with the Chrome WebAudio Inspector extension):
@@ -6197,9 +6197,9 @@ set in this example:
 
 3.  dataArray = new Uint8Array(bufferLength);
 
--   <i>Line 2*: we set the size of the FFT,
+-   <i>Line 2</i>: we set the size of the FFT,
 
--   <i>Line 3*: this is the byte array that will contain the data we want
+-   <i>Line 3</i>: this is the byte array that will contain the data we want
     to visualize. Its length is equal to fftSize/2.
 
 When we build the graph, these parameters are set - effectively as
@@ -6260,7 +6260,7 @@ Here is the code that is run 60 times per second to draw the waveform:
 
 </details>
 
--   <i>Lines 9-10*: we ask for the time domain analysis data. The call
+-   <i>Lines 9-10</i>: we ask for the time domain analysis data. The call
     to getByteTimeDomainData(dataArray) will fill the array with values
     corresponding to the waveform to draw. The returned values are
     between 0 and 255. See the [specification for details about what
@@ -7440,9 +7440,9 @@ Here, we present some elements that are useful in writing games.
 <img src="./images/image092.jpeg" style="width:2in;height:2in"
 alt="the html5 canvas logo" />
 
-The &lt;canvas&gt; is a new HTML element described as "*a
+The &lt;canvas&gt; is a new HTML element described as "<i>a
 resolution-dependent bitmap canvas which can be used for rendering
-graphs, game graphics, or other visual images on the fly*." It's a
+graphs, game graphics, or other visual images on the fly</i>." It's a
 rectangle included in your page where you can draw using scripting with
 JavaScript. It can, for instance, be used to draw graphs, make photo
 compositions or do animations. This element comprises a drawable region
@@ -7805,26 +7805,26 @@ achieved by the code.
 
 The principle is simple:
 
-1.  Count the time elapsed by adding *deltas* in the mainloop.
+1.  Count the time elapsed by adding <i>deltas</i> in the mainloop.
 
-2.  If the sum of the *deltas* is greater or equal to 1000, then 1s has
+2.  If the sum of the <i>deltas</i> is greater or equal to 1000, then 1s has
     elapsed since we started counting.
 
-3.  If at the same time, we count the number of *frames* that have been
-    drawn, then we have the *frame rate* - measured in number of frames
+3.  If at the same time, we count the number of <i>frames</i> that have been
+    drawn, then we have the <i>frame rate</i> - measured in number of frames
     per second. Remember, it should be around 60 fps!
 
-<b>Quick glossary:</b> the word *delta* is the name of a Greek
+<b>Quick glossary:</b> the word *delta</i> is the name of a Greek
 letter (uppercase <b>Δ</b>, lowercase <b>δ</b> or <b>𝛿).</b> The upper-case
 version is used in mathematics as an abbreviation for measuring
-the *change* in some object, over time - in our case, how quickly the
+the *change</i> in some object, over time - in our case, how quickly the
 mainloopis running. This dictates the maximum speed at which the game
 display will be updated. This maximum speed could be referred to as
-the *rate of change*. We call what is displayed at a single
-point-in-time, a *frame*. Thus the *rate of change*  can be measured in
-frames per second (*fps*). Accordingly, our game's *delta,* determines
-the achievable frame rate - the <b>shorter</b> the *delta* (measured in
-mS), the <b>faster</b> the possible *rate of change* (in *fps*).
+the *rate of change</i>. We call what is displayed at a single
+point-in-time, a *frame</i>. Thus the *rate of change</i>  can be measured in
+frames per second (*fps</i>). Accordingly, our game's *delta,</i> determines
+the achievable frame rate - the <b>shorter</b> the *delta</i> (measured in
+mS), the <b>faster</b> the possible *rate of change</i> (in *fps</i>).
 
 Here is a screenshot of an example and the code we added to our game
 engine, for measuring FPS ([try it online at
@@ -7952,7 +7952,7 @@ alt="Screenshot of example with 4441 FPS displayed" />
 <h3 id="ch2-3-2">2.3.2 Introducing graphics</h3>
 <!------------------------------------------------------------------------------------------------>
 
-[*Note*: drawing within a canvas is studied in detail during the [W3C
+[<i>Note</i>: drawing within a canvas is studied in detail during the [W3C
 HTML5 Coding Essentials and Best Practices
 course](https://www.edx.org/course/html5-coding-essentials-and-best-practices),
 in module 3.]
@@ -7995,7 +7995,7 @@ alt="Small monster drawn in a canvas" />
 
 </details>
 
-The canvas declaration is at* line 8*. Use attributes to give
+The canvas declaration is at<i> line 8</i>. Use attributes to give
 it a width and a height, but unless you add some CSS properties, you
 will not see it on the screen because it's transparent!
 
@@ -8099,16 +8099,16 @@ using the default color (black) and wireframe and filled modes:
 
 -   ctx.strokeRect(x, y, width, height): same but in wireframe mode.
 
--   Note that we use (*line 30*) ctx.translate(x, y) to make it easier
+-   Note that we use (<i>line 30</i>) ctx.translate(x, y) to make it easier
     to move the monster around. So, all the drawing instructions are
     coded as if the monster was in (0, 0), at the top left corner of the
-    canvas (look at *line 33*). We draw the body outline with a
+    canvas (look at <i>line 33</i>). We draw the body outline with a
     rectangle starting from (0, 0). Calling context.translate "changes
     the coordinate system" by moving the "old (0, 0)" to (x, y) and
     keeping other coordinates in the same position relative to the
     origin.
 
--   *Line 19*: we call the drawMonster function with (10, 10) as
+-   <i>Line 19</i>: we call the drawMonster function with (10, 10) as
     parameters, which will cause the original coordinate system to be
     translated by (10, 10).
 
