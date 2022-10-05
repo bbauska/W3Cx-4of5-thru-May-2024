@@ -772,7 +772,7 @@ drop, the PHP is the same)
 [4.3.1 Introduction [467](#introduction-8)](#introduction-8)
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------- 02. script not reesponding (11) -------------------------------->
+<!------------------------------- 02. script not responding (11) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image002.png"
@@ -1342,21 +1342,20 @@ and HTML.
    alt="Tim Berners-Lee at his desk in CERN, 1994." />
 </p>
 
-<p align="center"><i>Tim Berners-Lee at his desk in CERN, 1994</i></p>
+<p align="center"><i><sub>Tim Berners-Lee at his desk in CERN, 1994</sub></i></p>
 <p>
 In October 1994, Tim Berners-Lee founded the World Wide Web Consortium
 (W3C) at the Massachusetts Institute of Technology, Laboratory for
 Computer Science [MIT/LCS] in collaboration
-with [CERN](https://home.cern/), where the Web originated (see
-information on the [original CERN Server](https://www.w3.org/Daemon/)),
-with support from DARPA and the [European
-Commission](https://ec.europa.eu/index_en.htm).
+with <a href="https://home.cern/">CERN</a>, where the Web originated (see
+information on the <a href="https://www.w3.org/Daemon/">original CERN Server</a>),
+with support from DARPA and the <a href="https://ec.europa.eu/index_en.htm">European
+Commission</a>.
 </p>
 In April 1995, Inria became the first European W3C host, followed
-by [Keio University of Japan](https://www.keio.ac.jp/) (Shonan Fujisawa
-Campus) in Asia in 1996. In 2003, [ERCIM](https://www.ercim.eu/) took
-over the role of European W3C Host from Inria. In 2013, W3C
-announced Beihang University as the fourth Host.
+by <a href="https://www.keio.ac.jp/">Keio University of Japan</a> (Shonan Fujisawa
+Campus) in Asia in 1996. In 2003, <a href="https://www.ercim.eu/">ERCIM</a> took
+over the role of European W3C Host from Inria. In 2013, W3C announced Beihang University as the fourth Host.
 
 <h4>A few figures</h4>
 
@@ -1693,6 +1692,15 @@ Hi, today I've prepared for you a small example of a video that is
 associated with three different tracks.
 
 <!------------------------------------------------------------------------------------------------>
+<!-------------------------- 20. simple three track video example (27) --------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image020.png"
+  style="width:6.5in;height:6.36875in"
+  alt="A simple three track video example."  />
+</p>
+
+<!------------------------------------------------------------------------------------------------>
 <!---------------- 18. using html views of tracks - one video, three tracks (27) ----------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
@@ -1735,28 +1743,28 @@ structure of a track. I'm just going to display the content of one of
 these tracks.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 19. download, caption, language (28) ----------------------------->
+<!----------------------------- 18. download, caption, language (28) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image019.png"
+<img src="./images/image018.png"
   style="width:5in;height:5.2094in"
   alt="Download, Caption, Language."/>
 </p>
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------------- 20. safari - 0 thru 10:58 - elephants dream (28) ------------------------>
+<!---------------------- 19. safari - 0 thru 10:58 - elephants dream (28) ------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image020.png" 
+<img src="./images/image019.png" 
   style="width:5in;height:5.2094in"
   alt="Safari display of elephants dream video." />
 </p>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 21. webvtt track descriptions (29) ------------------------------->
+<!----------------------------- 20. webvtt track descriptions (29) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image021.png"
+<img src="./images/image020.png"
   style="width:4in;height:2.24412in"
   alt="HTML track descriptions; label, kind, lang, readyState." />
 </p>
@@ -1776,7 +1784,7 @@ we will see also how to choose the subtitle or caption track language
 for the video.
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 22. safari menu screenshot (30) --------------------------------->
+<!------------------------------ 20. again, tracks and views (30) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
   <mg src="./images/image022.jpeg"
@@ -1797,12 +1805,12 @@ accepting different origins, then you can add this attribute
 crossOrigin="anonymous" in your HTML document and it is going to work.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------------- 23. create origin (31) ------------------------------------->
+<!----------------------------- 20. 3rd time, views and tracks (31) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image023.png"
+<img src="./images/image020.png"
   style="width:4in;height:2.24412in"
-  alt="Create origin function." />
+  alt="3rd time, Views and Tracks." />
 </p>
 
 The server here: mainline.i3s.unice.fr has been configured for allowing
@@ -1841,9 +1849,10 @@ And here is how it renders in your current browser (please play the
 video and try to show/hide the subtitles/captions):
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------- 24. downloads, caption & pic-in-pic (32) ---------------------------->
+<!-------------------------- 21. downloads, caption & pic-in-pic (32) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
-<img src="./images/image024.png"
+<p align="center" width="100%">
+<img src="./images/image021.png"
   style="width:4in;height:3.93208in" 
   alt="Downloads, Caption, and Picture-in-Picture." />
 </p>
@@ -1865,10 +1874,10 @@ written in April 2015, for further details.
     the default is off.
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------- 25. safari menu - subtitles/captions (32) --------------------------->
+<!-------------------------- 22. safari menu - subtitles/captions (32) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-  <mg src="./images/image025.jpeg"
+  <mg src="./images/image022.jpeg"
   style="width:4in;height:2.32697in"
   alt="Safari Menu - subtitles/captions." />
 </p>
@@ -2061,10 +2070,13 @@ manipulate these elements as "HTML elements" - we will call them the
 <h4>[<span id="_Toc98696550" class="anchor"></span>Example at JSBin that displays the different elements we can get from an HTML track](https://jsbin.com/kuqevegapi/2/edit?html,css,output):</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 23/24. status of html track (##) ----------------------->
+<!------------------------------ 23/24. status of html track (36) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image023.png" 
+  style="width:4in;height:2.23647in" 
+  alt="." />
+<img src="./images/image024.png" 
   style="width:4in;height:2.23647in" 
   alt="." />
 
@@ -2489,7 +2501,7 @@ TextTrack object has different properties and the most important one is called c
 cue inside the VTT file, and each cue corresponds to a time segment, has
 an id and a text content.
 
-If you do track.cues, you've got the list of the cues and you can
+If you do <em>track.cues</em>, you've got the list of the cues and you can
 iterate on them.
 
 For each cue, we are going to get its id: cue.id here. It corresponds to
@@ -2505,7 +2517,7 @@ clickable transcript. And when we will click on it, the video will jump
 to the corresponding position. This is exactly what the edX video player
 does, the one you are watching at right now.
 
-A TextTrack object has different properties and methods
+A <em>TextTrack object</em> has different properties and methods;
 
 -   kind: equivalent to the kind attribute of HTML track elements. Its
     value is either "subtitles", "caption", "descriptions", "chapters",
@@ -2541,15 +2553,15 @@ A TextTrack object has different properties and methods
     all browsers - a polyfill is given in the examples from the next
     lessons).
 
-A TextTrackCueList is a collection of cues, each of which has different
-properties and methods
+A <em>TextTrackCueList</em> is a collection of cues, each of which has different
+properties and methods;
 
 -   id: the cue id as written in the line that starts cues in the WebVTT
     file.
 
 -   startTime and endTime: define the time segment for the cue, in
     seconds, as a floating point value. It is not the formatted String
-    we have in the WebVTT file (see screenshot below),
+    we have in the WebVTT file (<i>see screenshot below</i>),
 
 -   text: the cue content.
 
@@ -2559,7 +2571,6 @@ properties and methods
 -   Others such as align, line, position, size, snapToLines, etc., that
     correspond to the position of the cue, as specified in the WebVTT
     file. See the HTML5 course Part 1 about cue positioning.
-
 
 <!------------------------------------------------------------------------------------------------>
 <!--------------------------------- 26. webvtt with arrows (45) ---------------------------------->
@@ -2585,7 +2596,7 @@ track](https://jsbin.com/teruhay/1/edit?html,css,js,output):
   alt="Example video editor that plays content of a track." />
 </p>
 
-We just changed the content of the readContent(track) method from the
+We just changed the content of the <em>readContent(track)</em> method from the
 example in the previous lesson:
 
 <details>
@@ -4166,15 +4177,15 @@ Here are the images which correspond to the seven chapters of the video
 from the previous example:
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 40-46.  (##) ----------------------->
+<!--------------------- 37-43.  (76) ----------------------->
 <!------------------------------------------------------------------------------------------------>
-<img src="./images/image040.jpeg" style="width:2.57292in;height:1.20833in"
-alt="chapter 1 thumbnail" /><img src="./images/image041.jpeg" style="width:2.51042in;height:1.19792in"
-alt="chapter 2 thumbnail" /><img src="./images/image042.jpeg" style="width:2.5625in;height:1.19792in"
-alt="chapter 3 thumbnail" /><img src="./images/image043.jpeg" style="width:2.54167in;height:1.19792in"
-alt="chapter 4 thumbnail" /><img src="./images/image044.jpeg" style="width:2.53125in;height:1.21875in"
-alt="chapter 5 thumbnails" /><img src="./images/image045.jpeg" style="width:2.5in;height:1.19792in"
-alt="chapter 6 thumbnail" /><img src="./images/image046.jpeg" style="width:2.54167in;height:1.21875in"
+<img src="./images/image037.jpeg" style="width:2.57292in;height:1.20833in"
+alt="chapter 1 thumbnail" /><img src="./images/image038.jpeg" style="width:2.51042in;height:1.19792in"
+alt="chapter 2 thumbnail" /><img src="./images/image039.jpeg" style="width:2.5625in;height:1.19792in"
+alt="chapter 3 thumbnail" /><img src="./images/image040.jpeg" style="width:2.54167in;height:1.19792in"
+alt="chapter 4 thumbnail" /><img src="./images/image041.jpeg" style="width:2.53125in;height:1.21875in"
+alt="chapter 5 thumbnails" /><img src="./images/image042.jpeg" style="width:2.5in;height:1.19792in"
+alt="chapter 6 thumbnail" /><img src="./images/image043.jpeg" style="width:2.54167in;height:1.21875in"
 alt="chapter 7 thumbnail" />
 
 To associate these images with its chapter description, we will use JSON
@@ -4212,10 +4223,13 @@ JSBin that uses this new .vtt
 file](https://jsbin.com/pulefe/1/edit?html,css,js,output):
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 47.  (##) ----------------------->
+<!--------------------- 44.  (77) ----------------------->
 <!------------------------------------------------------------------------------------------------>
-<img src="./images/image047.jpeg" style="width:5in;height:5.72864in"
-alt="Video with nice chapter menu that uses thumbnail images" />
+<p align="center" width="100%">
+<img src="./images/image044.jpeg" 
+  style="width:5in;height:5.72864in"
+  alt="Video with nice chapter menu that uses thumbnail images" />
+</p>
 
 <h4>HTML code:</h4>
 
@@ -4437,9 +4451,13 @@ A sample menu marker is shown below (it's also animated - hover your
 mouse over the thumbnail to see its animated shadow):
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 40.  (##) ----------------------->
+<!-------------------------------- 37. again, movie title (81) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<img src="./images/image040.jpeg" style="width:4in;height:1.8818in" />
+<p align="center" width="100%">
+<img src="./images/image037.jpeg"
+  style="width:4in;height:1.8818in"
+  alt="Screenshot of movie title 'the orange open movie...presents'. . .." />
+</p>
 
 <h4>Introduction</h4>
 
