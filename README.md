@@ -1554,9 +1554,9 @@ video and try to show/hide the subtitles/captions):
   alt="Elephants dream video." />
 </p>
 
-Notice that the support for multiple tracks may differs significantly
-from one browser to another, in particular if you are using old
-versions. Here is a quick summary (as in May 2020).
+Notice that the support for multiple tracks may differ significantly from one browser to another, in particular if you are using old versions.
+
+Here is a quick summary (as of May 2020).
 
 -   Safari provides a menu you can use to choose which subtitle/caption
     track to display. If one of the defined text tracks has
@@ -2047,7 +2047,11 @@ manipulate these elements as "HTML elements" - we will call them the
 
 <h4>Getting the status of an HTML track</h4>
 
-<h4>[<span id="_Toc98696550" class="anchor"></span>Example at JSBin that displays the different elements we can get from an HTML track](https://jsbin.com/kuqevegapi/2/edit?html,css,output):</h4>
+<h4><a href="https://jsbin.com/kuqevegapi/2/edit?html,css,output">Example at JSBin that displays the different elements we can get from an HTML track</a>:</h4>
+
+<!--
+[<span id="_Toc98696550" class="anchor"></span>Example at JSBin that displays the different elements we can get from an HTML track](https://jsbin.com/kuqevegapi/2/edit?html,css,output):</h4>
+-->
 
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 23/24. status of html track (36) -------------------------------->
@@ -2055,47 +2059,42 @@ manipulate these elements as "HTML elements" - we will call them the
 <p align="center" width="100%">
 <img src="./images/image023.png" 
   style="width:4in;height:2.23647in" 
-  alt="." />
+  alt="Elephant's dream." />
+<br />
 <img src="./images/image024.png" 
   style="width:4in;height:2.23647in" 
-  alt="." />
+  alt="Track description." />
+</p>
 
 <h4>Here is the JavaScript source code:</h4>
 
 <details>
-  <summary>Functions displayTrackStatuses code extract!</summary>
+  <summary>Function displayTrackStatuses code extract!</summary>
 
 ```
 1.  var video, htmlTracks;
 2.  var trackStatusesDiv;
-3.  
-4.  window.onload = function() {
-5.  // called when the page has been loaded
-6.  video = document.querySelector("#myVideo");
-7.  trackStatusesDiv = document.querySelector("#trackStatusesDiv");
-8.  
-9.  // Get the tracks as HTML elements
-10. htmlTracks = document.querySelectorAll("track");
-11. 
-12. // displays their statuses in a div under the video
-13. displayTrackStatuses(htmlTracks);
-14. };
-15. 
-16. function displayTrackStatuses(htmlTracks) {
-17. // displays track info
-18. for(var i = 0; i < htmlTracks.length; i++) {
-19. var currentHtmlTrack = htmlTracks[i];
-20. 
-21. var label = "<li>label = " + currentHtmlTrack.label + "</li>";
-22. var kind = "<li>kind = "   + currentHtmlTrack.kind + "</li>";
-23. var lang = "<li>lang = "   + currentHtmlTrack.srclang + "</li>";
-24. var readyState = "<li>readyState = " 
-25. + currentHtmlTrack.readyState + "</li>"
-26. 
-27. trackStatusesDiv.innerHTML += "<li><b>Track:" + i + ":</b></li>"
-28. + "<ul>" + label + kind + lang + readyState + "</ul>";
-29. }
-30. }
+3.  window.onload = function() {
+4.  // called when the page has been loaded
+5.  video = document.querySelector("#myVideo");
+6.  trackStatusesDiv = document.querySelector("#trackStatusesDiv");
+7.  // Get the tracks as HTML elements
+8.  htmlTracks = document.querySelectorAll("track");
+9.  // displays their statuses in a div under the video
+10. displayTrackStatuses(htmlTracks);
+11. };
+12. function displayTrackStatuses(htmlTracks) {
+13. // displays track info
+14. for(var i = 0; i < htmlTracks.length; i++) {
+15. var currentHtmlTrack = htmlTracks[i];
+16. var label = "<li>label = " + currentHtmlTrack.label + "</li>";
+17. var kind = "<li>kind = "   + currentHtmlTrack.kind + "</li>";
+18. var lang = "<li>lang = "   + currentHtmlTrack.srclang + "</li>";
+19. var readyState = "<li>readyState = " + currentHtmlTrack.readyState + "</li>"
+20. trackStatusesDiv.innerHTML += "<li><b>Track:" + i + ":</b></li>"
+21.    + "<ul>" + label + kind + lang + readyState + "</ul>";
+22. }
+23. }
 ```
 
 </details>
@@ -2107,18 +2106,18 @@ manipulate these elements as "HTML elements" - we will call them the
 -   We cannot access any HTML element before the page has been loaded.
     This is why we do all the work in the window.onload listener,
 
--   <i>Line 7</i> we get a pointer to the div with id=trackStatusesDiv, that
+-   <i>Line 6</i> we get a pointer to the div with id=trackStatusesDiv, that
     will be used to display track statuses,
 
--   <i>Line 10</i>: we get all the track elements in the document. They are
+-   <i>Line 8</i>: we get all the track elements in the document. They are
     HTML track elements,
 
--   <i>Line 16</i>: we call a function that will build some HTML to
+-   <i>Line 12</i>: we call a function that will build some HTML to
     display the track status in the div we got from <i>line 7</i>.
 
--   <i>Lines 18-25</i>: we iterate on the HTML tracks, and for each track we
+-   <i>Lines 14-19</i>: we iterate on the HTML tracks, and for each track we
     get the label, the kind and the srclang attribute values. Notice,
-    at <i>line 24</i>, the use of the readyState attribute, only used from
+    at <i>line 19</i>, the use of the readyState attribute, only used from
     JavaScript, that will give the current HTML track state. 
 
 You can see on the screenshot (or [from the JSBin
