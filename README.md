@@ -64,7 +64,7 @@
 >### 4.2.[<b>Web Components</b>](#ch4-2-1)
 >### 4.3.[<b>Web Workers</b>](#ch4-3-1)
 >### 4.4.[<b>The Orientation and Device Motion APIs</b>](#ch4-4-1)
->### 4.5. [<b>Where to from here?</b>](#ch4-5-1)
+>### 4.5.[<b>Where to from here?</b>](#ch4-5-1)
 
 <b>W3Cx-4of5-HTML5.2x – Apps and Games</b>
 <a href="https://github.com/bbauska/W3Cx-4of5-Apps-and-Games.git">HTML5.2x Apps and Games - git</a>
@@ -125,6 +125,8 @@ courses, you <i>do NOT need to re-take that course</i>.
 </ul>
 
 <h2>Contents</h2>
+
+<!------------------------------------------------------------------------------------------------>
 
 <details>
   <summary>CONTENT Here!</summary>
@@ -962,9 +964,11 @@ orientation API + CSS3 3D rotations
 
 </details>
 
+<!------------------------------------------------------------------------------------------------>
+
 <hr>
 
-Welcome!
+<h3>Welcome!</h3>
 
 This course is one of the courses composing the <a href="https://www.edx.org/professional-certificate/front-end-web-developer-9">"Front-End Web
 Developer”</a>
@@ -1110,11 +1114,11 @@ available as downloadable sources or as free services on the <a href="https://w
 <h4>W3C Validator</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------------ 06. w3c validator (16) ------------------------------------->
+<!------------------------------------ 06. w3c validator (16) ------------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image006.png"
-   width="10%"
+   width="15%"
    alt="W3C Validator." />
 </p>
 
@@ -1132,7 +1136,7 @@ stylesheets.
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image007.png"
-   width="10%"
+   width="15%"
    alt="Laptop showing unicorn validator." />
 </p>
 
@@ -1275,7 +1279,7 @@ technologies are built is a great way to build your expertise.
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image011.png?raw=true"
-   width="10%"
+   width="15%"
    alt="GitHub (the Octocat) logo." />
 </p>
 <!-- style="width:1in;height:0.82895in" -->
@@ -1495,7 +1499,7 @@ through the course, so come back and review this page at the end.
 
 You will find more quick tips on the <a href="https://www.w3.org/International/quicktips/">Internationalization quick tips</a> page. Remember that these tips do not constitute complete guidelines.
 
-Internationalization checker
+<h4>Internationalization checker</h4>
 
 When you start creating Web pages, you can also run them through the
 W3C's [Internationalization
@@ -1546,7 +1550,7 @@ video and try to show/hide the subtitles/captions):
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image015.png?raw=true"
-  style="width:4.90625in;height:2.79167in" />
+  style="width:4.90625in;height:2.79167in"
   alt="Elephants dream video." />
 </p>
 
@@ -1584,35 +1588,28 @@ enables us to manipulate &lt;track&gt; contents from JavaScript. Do you
 recall that text tracks are associated with WebVTT files? As a quick
 reminder, let's look at a WebVTT file:
 
-WEBVTT
+<h4>WEBVTT</h4>
 
 <details>
   <summary>WEBTT code extract!</summary>
 
 ```
-19. 
-<!-- -->
-1.  1
-2.  00:00:15.000 --> 00:00:18.000 align:start
-3.  <v Proog>On the left we can see...</v>
-<!-- -->
-20. 
-<!-- -->
-4.  2
-5.  00:00:18.167 --> 00:00:20.083 align:middle
-6.  <v Proog>On the right we can see the...</v>
-<!-- -->
-21. 
-<!-- -->
-7.  3
-8.  00:00:20.083 --> 00:00:22.000
-9.  <v Proog>...the <c.highlight>head-snarlers</c></v>
-<!-- -->
-22. 
-<!-- -->
-10. 4
-11. 00:00:22.000 --> 00:00:24.417 align:end
-12. <v Proog>Everything is safe. Perfectly safe.</v>
+1. 
+2.  1
+3.  00:00:15.000 --> 00:00:18.000 align:start
+4.  <v Proog>On the left we can see...</v>
+5. 
+6.  2
+7.  00:00:18.167 --> 00:00:20.083 align:middle
+8.  <v Proog>On the right we can see the...</v>
+9. 
+10. 3
+11. 00:00:20.083 --> 00:00:22.000
+12. <v Proog>...the <c.highlight>head-snarlers</c></v>
+13. 
+14. 4
+15. 00:00:22.000 --> 00:00:24.417 align:end
+16. <v Proog>Everything is safe. Perfectly safe.</v>
 ```
 
 </details>
@@ -1692,20 +1689,12 @@ Hi, today I've prepared for you a small example of a video that is
 associated with three different tracks.
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------- 20. simple three track video example (27) --------------------------->
+<!---------------- 20. using html views of tracks - one video, three tracks (27) ----------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image020.png"
   style="width:6.5in;height:6.36875in"
   alt="A simple three track video example."  />
-</p>
-
-<!------------------------------------------------------------------------------------------------>
-<!---------------- 18. using html views of tracks - one video, three tracks (27) ----------------->
-<!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image018.png" 
-  style="width:6.5in;height:6.36875in" />
 </p>
 
 Two for subtitles, in English and in German, and one track for chapters.
@@ -1758,15 +1747,6 @@ these tracks.
 <img src="./images/image019.png" 
   style="width:5in;height:5.2094in"
   alt="Safari display of elephants dream video." />
-</p>
-
-<!------------------------------------------------------------------------------------------------>
-<!----------------------------- 20. webvtt track descriptions (29) ------------------------------->
-<!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image020.png"
-  style="width:4in;height:2.24412in"
-  alt="HTML track descriptions; label, kind, lang, readyState." />
 </p>
 
 The tracks are made of cues and what we call a cue is a kind of time
@@ -21915,6 +21895,13 @@ your comments/observations/questions and share your creations.
 -->
 <!--
 <p align="center" width="100%">
+<img src="./images/image020.png"
+  style="width:6.5in;height:6.36875in"
+  alt="A simple three track video example."  />
+</p>
+--->
+<!--
+<p align="center" width="100%">
 <img src="./images/image014.jpeg?raw=true"
    style="width:1in;height:1in"
    width="15%"
@@ -21943,4 +21930,4 @@ your comments/observations/questions and share your creations.
 
 <h5>the end...</h5>
 
-<h4>Last Updated: 10-05-2022 12:12pm</h4>
+<h4>Last Updated: 10-06-2022 3:20pm</h4>
