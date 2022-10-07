@@ -4367,8 +4367,8 @@ of the video.
 -   <i>Lines 45-65</i>: the displayChapters(track) function will iterate over
     all of the cues within the chapter track passed as its parameter.
     For each cue, the JSON content is re-formatted back into a
-    JavaScript object (line 55) and the image filename and description
-    of the chapter/cue are extracted (lines 56-57). Then an HTML
+    JavaScript object (<i>line 55</i>) and the image filename and description
+    of the chapter/cue are extracted (<i>lines 56-57</i>). Then an HTML
     description for the chapter is built and added to the div element
     with id=chapterMenu. 
 	
@@ -5373,7 +5373,7 @@ debugging Web Audio applications and visualize the audio graph.
 
 <h4>Typical use:</h4>
 
-[Example at JSBin](https://jsbin.com/mifaqa/edit?html,js,output)
+<a href="https://jsbin.com/mifaqa/edit?html,js,output">Example at JSBin</a>
 
 <h4>HTML:</h4>
 
@@ -5618,9 +5618,9 @@ JSBin](https://jsbin.com/belide/edit?html,js,console,output), THIS
 EXAMPLE DOES NOT WORK IN YOUR BROWSER as the edX platforms disables Ajax
 loading in its HTML pages. Try it at JSBin!
 
-Reverb (Dry/Wet) 
+<h4>Reverb (Dry/Wet)</h4>
 
-[From Wikipedia](https://en.wikipedia.org/wiki/Convolution): a
+<a href="https://en.wikipedia.org/wiki/Convolution">From Wikipedia</a>: a
 convolution is a mathematical process which can be applied to an audio
 signal to achieve many interesting high-quality linear effects. Very
 often, the effect is used to simulate an acoustic space such as a
@@ -5636,20 +5636,20 @@ response can be represented as an audio file and can be recorded from a
 real acoustic space such as a cave, or can be synthetically generated
 through a wide variety of techniques. We can find many high quality
 impulses on the Web (for example @@TJS
-OK? [here](https://www.kvraudio.com/forum/viewtopic.php?p=2102159)). The
+OK? <a href="https://www.kvraudio.com/forum/viewtopic.php?p=2102159">here</a>). The
 impulse used in the example is the one recorded at the opera: La Scala
 Opera of Milan, in Italy. It's a .wav file.
 
-Try[ this demo](https://webaudioapi.com/samples/room-effects/) to see
+Try<a href="https://webaudioapi.com/samples/room-effects/"> this demo</a> to see
 the difference between different impulse files!
 
 <!------------------------------------------------------------------------------------------------>
 <!---------------------------------- 57. web audio api (106) ------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image060.jpeg" 
+<img src="./images/image057.jpeg"
   style="width:5in;height:1.92376in"
-  alt="screenshot of a webapp that enable to switch between different impulse files" />
+  alt="Screenshot of a webapp that enable you to switch between different impulse files." />
 </p>
 
 So before building the audio graph, we need to download the impulse. For
@@ -5664,41 +5664,40 @@ graph. So typical use is as follows:
   <summary>Source code extract!</summary>
 
 ```
-1.  var impulseURL = "https://mainline.i3s.unice.fr/mooc/Scala-Milan-Opera-Hall.wav";
-<!-- -->
-1.  var decodedImpulse;
-2.  ...
-3.  loadImpulse(impulseURL, function() {
-4.     // we only get here once the impulse has finished
-5.     // loading and is decoded
-6.     buildAudioGraphConvolver();
-7.  });
-8.   
-9.  ...
-10. function loadImpulse(url, callback) {
-11. 
-12.    ajaxRequest = new XMLHttpRequest();
-13.    ajaxRequest.open('GET', url, true);
-14.    ajaxRequest.responseType = 'arraybuffer'; // for binary transfer
-15.  
-16.    ajaxRequest.onload = function() {
-17.       // The impulse has been loaded
-18.       var impulseData = ajaxRequest.response;
-19.       // let's decode it.
-20.       audioContext.decodeAudioData(impulseData, function(buffer) {
-21.          // The impulse has been decoded
-22.          decodedImpulse = buffer;
-23.          // Let's call the callback function, we're done!
-24.          callback();
-25.      });
-26.    };
-27. 
-28.    ajaxRequest.onerror = function(e) {
-29.       console.log("Error with loading audio data" + e.err);
-30.    };
-31. 
-32.    ajaxRequest.send();
-33. }
+var impulseURL = "https://mainline.i3s.unice.fr/mooc/Scala-Milan-Opera-Hall.wav";
+var decodedImpulse;
+...
+loadImpulse(impulseURL, function() {
+   // we only get here once the impulse has finished
+   // loading and is decoded
+   buildAudioGraphConvolver();
+});
+ 
+...
+function loadImpulse(url, callback) {
+
+   ajaxRequest = new XMLHttpRequest();
+   ajaxRequest.open('GET', url, true);
+   ajaxRequest.responseType = 'arraybuffer'; // for binary transfer
+ 
+   ajaxRequest.onload = function() {
+      // The impulse has been loaded
+      var impulseData = ajaxRequest.response;
+      // let's decode it.
+      audioContext.decodeAudioData(impulseData, function(buffer) {
+         // The impulse has been decoded
+         decodedImpulse = buffer;
+         // Let's call the callback function, we're done!
+         callback();
+     });
+   };
+
+   ajaxRequest.onerror = function(e) {
+      console.log("Error with loading audio data" + e.err);
+   };
+
+   ajaxRequest.send();
+}
 ```
 
 </details>
@@ -5740,8 +5739,7 @@ with the Chrome WebAudio Inspector extension):
 2.    // create the nodes
 3.    var source = audioContext.createMediaElementSource(playerConvolver);
 4.    convolverNode = audioContext.createConvolver();
-5.    // Set the buffer property of the convolver node with the
-    decoded impulse
+5.    // Set the buffer property of the convolver node with the decoded impulse
 6.    convolverNode.buffer = decodedImpulse;
 7.  
 8.    convolverGain = audioContext.createGain();
@@ -5918,8 +5916,9 @@ screenshot:
 <!--------------------------- 60. audio player with equalizer (111) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image060.jpeg" style="width:3in;height:1.79534in"
-alt="An audio player with an equalizer." />
+  <img src="./images/image060.jpeg" 
+  style="width:3in;height:1.79534in"
+  alt="An audio player with an equalizer." />
 </p>
 
 This example uses six BiquadFilter nodes with type="peaking".
@@ -6076,7 +6075,7 @@ moving the sliders to change the sound!
 <!------------------------------ 62. video above equalizer (114) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image062.jpeg" 
+<img src="./images/image062.jpeg"
   style="width:3in;height:3.22115in"
   alt="Same example as previously but with a video above the equalizer." />
 </p>
@@ -6281,7 +6280,7 @@ results with the Chrome WebAudio Inspector extension):
 <!------------------ 64. audio graph with analyser node and properties (117) --------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image064.jpeg" 
+<img src="./images/image064.jpeg"
   style="width:5in;height:3.3563in"
   alt="Audio graph with analyser node and properties." />
 </p>
@@ -8737,10 +8736,12 @@ far from finished yet):
 [Here is the online example you can try at
 JSBin](https://jsbin.com/razeya/edit)
 
-<img src="./images/image105.jpeg" style="width:2in;height:2.0766in"
-alt="trembling monster with multiple key press management." />
+<img src="./images/image105.jpeg"
+  style="width:2in;height:2.0766in"
+  alt="Trembling monster with multiple key press management." />
+</p>
 
-<h4>And here is the complete source code:
+<h4>And here is the complete source code:</h4>
 
 <details>
   <summary>Code extract!</h4>
@@ -8865,10 +8866,16 @@ up + right should work in combination.
 <h3 id="ch2-3-5">2.3.5 Adding mouse listeners</h3>
 <!------------------------------------------------------------------------------------------------>
 
-<h4>A few reminders
+<h4>A few reminders</h4>
 
-<img src="./images/image106.jpeg" style="width:4in;height:2.73282in"
-alt="a schema of mouse internals" />
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 106. a schema of mouse internals (##) ----------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image106.jpeg"
+  style="width:4in;height:2.73282in"
+  alt="A schema of mouse internals." />
+</p>
 
 Working with mouse events requires detecting whether a mouse button is
 up or down, identifying that button, keeping track of mouse movement,
@@ -8891,8 +8898,14 @@ next example.
 Here is [an online example at JSBin](https://jsbin.com/metavu/edit) that
 covers all cases correctly.
 
-<img src="./images/image107.jpeg" style="width:3in;height:1.09515in"
-alt="screenshot of a JsBin example that shows the mouse position + button pressed" />
+<!------------------------------------------------------------------------------------------------>
+<!------------------- 107. jsbin example mouse position + button pressed (##) -------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image107.jpeg"
+  style="width:3in;height:1.09515in"
+  alt="Screenshot of a JsBin example that shows the mouse position + button pressed." />
+</p>
 
 Move the mouse over the canvas and press or release mouse buttons.
 Notice that we keep the state of the mouse (position, buttons up or
@@ -8902,7 +8915,7 @@ down) as part of the inputStates object, just as we do with the keyboard
 <h4>Below is the JavaScript source code for this small example:</h4>
 
 <details>
-  <summary>Code extract!</h4>
+  <summary>JavaScript code extract!</h4>
 
 ```
 1.  var canvas, ctx;
@@ -8963,8 +8976,14 @@ down) as part of the inputStates object, just as we do with the keyboard
 
 <a href="https://jsbin.com/soduko/edit?js,output">Try this example at JsBin</a>
 
-<img src="./images/image108.jpeg" style="width:2in;height:2.04192in"
-alt="A rectangle that follows the mouse cursor" />
+<!------------------------------------------------------------------------------------------------>
+<!---------------------- 108. a rectangle that follows mouse cursor (##) ------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image108.jpeg"
+  style="width:2in;height:2.04192in"
+  alt="A rectangle that follows the mouse cursor." />
+</p>
 
 <h4>Source code:</h4>
 
@@ -17299,7 +17318,7 @@ updated or deleted. There may be several indexes referencing the same
 object store, in which case changes to the object store cause all such
 indexes to update.
 
-An index contains *a unique flag*. When this flag is set to true, the
+An index contains <i>a unique flag</i>. When this flag is set to true, the
 index enforces the rule that no two records in the index may have the
 same key. If a user attempts to insert or modify a record in the index's
 referenced object store, such that an indexed attribute's value already
@@ -17343,7 +17362,7 @@ SQL databases.
 
 A key that is stored as part of the stored value. Example: the email of
 a person or a student number in an object representing a student in a
-student store. It is found using *a key path*. An in-line key could be
+student store. It is found using <i>a key path</i>. An in-line key could be
 generated using a generator. After the key has been generated, it can
 then be stored in the value using the key path, or it can also be used
 as a key.
@@ -17389,7 +17408,7 @@ the same time, but they just queue up and execute one after another.
 
 <h5>Cursor</h5>
 
-A mechanism for iterating over multiple records within a *key range*.
+A mechanism for iterating over multiple records within a <i>key range</i>.
 The cursor has a source defining which index or object store it is
 iterating. It has a position within the range, and retrieves records
 sequentially according to the value of their keys in either increasing
@@ -17578,7 +17597,7 @@ the example: it will call the createDB() JavaScript function that:
 2.  inserts two javascript objects (look at the console in your
     devtools - the Web app prints lots of traces in there, explaining
     what it does under the hood). Note that the social security number
-    is the "Primary key", called *a key path* in the IndexedDB
+    is the "Primary key", called <i>a key path</i> in the IndexedDB
     vocabulary (red arrow on the right of the screenshot).
 
 <b>Chrome DevTools (F12 or cmd-alt-i) shows the IndexedDB databases,
@@ -17685,21 +17704,21 @@ automatically be rounded to "1".
 <h4><b>Explanations:</b></h4>
 
 All the "creation" process is done in the onupgradeneeded callback
-(*lines 26-50*):
+(<i>lines 26-50</i>):
 
--   *Line 30*: get the database created in the result of the dom
+-   <i>Line 30</i>: get the database created in the result of the dom
     event: db = event.target.result;
 
--   *Line 35*: create an object store named "customers" with the primary
+-   <i>Line 35</i>: create an object store named "customers" with the primary
     key being the social security number ("ssn" property of the
     JavaScript objects we want to store in the object store): var
     objectStore = db.createObjectStore("customers", {keyPath: "ssn"});
 
--   *Lines 39 and 44*: create indexes on the "name" and "email"
+-   <i>Lines 39 and 44</i>: create indexes on the "name" and "email"
     properties of JavaScript objects: objectStore.createIndex("name",
     "name", {unique: false});
 
--   *Lines 48-50*: populate the database: objectStore.add(...).
+-   <i>Lines 48-50</i>: populate the database: objectStore.add(...).
 
 > Note that we did not create any transaction, as
 > the onupgradeneeded callback on a create database request is always in
@@ -18014,7 +18033,7 @@ Here is the complete source code of the addACustomer function:
 
 <b>Explanations:</b>
 
-In the code above, *lines 4, 19 and 22* show the main calls you have to
+In the code above, <i>lines 4, 19 and 22</i> show the main calls you have to
 perform in order to add a new object to the store:
 
 1.  Create a transaction.
@@ -18023,8 +18042,8 @@ perform in order to add a new object to the store:
 
 3.  Create an "add" request that will take part in the transaction.
 
-The different callbacks are in *lines 9 and 14* for the transaction, and
-in *lines 28 and 35* for the request.
+The different callbacks are in <i>lines 9 and 14</i> for the transaction, and
+in <i>lines 28 and 35</i> for the request.
 
 You may have several requests for the same transaction. Once all
 requests have finished, the transaction.oncomplete callback is called.
@@ -18250,7 +18269,7 @@ Code added in this example:
 
 </details>
 
-Notice that after the deletion of the Customer (*line 23*),
+Notice that after the deletion of the Customer (<i>line 23</i>),
 the request.onsuccess callback is called. And if you try to print the
 value of the event.target.result variable, it is "undefined".
 
@@ -18341,7 +18360,7 @@ Here is the new code added to our example:
 
 </details>
 
-The update occurs at *line 28*.
+The update occurs at <i>line 28</i>.
 
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch3-6-10">3.6.10 Getting data</h3>
@@ -18421,9 +18440,9 @@ Here is the code added to that example:
 
 </details>
 
-The search is inititated at *line 30*, and the callback in the case of
-success is request.onsuccess, *lines 32-38*. event.target with result as
-the retrieved object (*lines 33 to 36*).
+The search is inititated at <i>line 30</i>, and the callback in the case of
+success is request.onsuccess, <i>lines 32-38</i>. event.target with result as
+the retrieved object (<i>lines 33 to 36</i>).
 
 Well, this is a lot of code, isn't it? We can considerably abbreviate
 this function (though, admittedly it won't take care of all possible
@@ -18484,15 +18503,15 @@ of the JavaScript code):
 
 -   Since there's only one object store, you can avoid passing a list of
     object stores that you need in your transaction and just pass the
-    name as a string (*line 8*),
+    name as a string (<i>line 8</i>),
 
 -   We are only reading from the database, so we don't need a
     "readwrite" transaction. Calling transaction() with no mode
-    specified gives a "readonly" transaction (*line 8*),
+    specified gives a "readonly" transaction (<i>line 8</i>),
 
 -   We don't actually save the request object to a variable. Since the
     DOM event has the request as its target we can use the event to get
-    to the result property (*line 9*).
+    to the result property (<i>line 9</i>).
 
 <h4>Second method: getting more than one piece of data</h4>
 
@@ -18500,7 +18519,7 @@ of the JavaScript code):
 
 Using get() requires that you know which key you want to retrieve. If
 you want to step through all the values in your object store, or just
-between those in a certain range, then you must use *a cursor*.
+between those in a certain range, then you must use <i>a cursor</i>.
 
 <h4>Here's what it looks like:</h4>
 
@@ -18601,8 +18620,8 @@ the ssn uniquely identifies an individual. If you need to look up a
 customer by name, however, you'll need to iterate over every ssn in the
 database until you find the right one.
 
-Searching in this fashion would be very slow. So instead we use *an
-index*.
+Searching in this fashion would be very slow. So instead we use <i>an
+index</i>.
 
 Remember that we defined two indexes in our data store:
 
@@ -18640,8 +18659,8 @@ object store, and returns the first one it finds with a name equal to
 
 </details>
 
-The search by index occurs at *lines 11 and 13*: *line 11* creates an
-"index" object that corresponds to the "name" property. *Line 13* calls
+The search by index occurs at <i>lines 11 and 13</i>: <i>line 11</i> creates an
+"index" object that corresponds to the "name" property. <i>Line 13</i> calls
 the get() method on this index-object to retrieve all of
 the person-objects from the dataStore which have a name equal to "Bill".
 
@@ -18656,7 +18675,7 @@ store.
 
 <b>Retrieving more than one result when using an index</b>
 
-In order to get all the "Bills", once again we have to use *a cursor*.
+In order to get all the "Bills", once again we have to use <i>a cursor</i>.
 
 When we work with indexes, we can open two different types of cursors on
 indexes:
@@ -18890,7 +18909,7 @@ To sum up:
 <!-- -->
 
 -   <b>If you need a way to store simple strings or JSON objects, then
-    use localStorage/sessionStorage</b>. *Example*: store HTML form
+    use localStorage/sessionStorage</b>. <i>Example</i>: store HTML form
     content as you type, store a game's hi-scores, preferences of an
     application, etc.
 
@@ -19092,8 +19111,8 @@ widgets/components using similar methods to those used by browser
 developers to construct the &lt;video&gt;, &lt;audio&gt;, and <input
 type="date"> elements, for example.
 
-Web components enable you* to use custom HTML elements in your HTML
-documents*, that render as complex widgets: a better-looking calendar,
+Web components enable you<i> to use custom HTML elements in your HTML
+documents<i>, that render as complex widgets: a better-looking calendar,
 an input text with vocal recognition, a nice chart, etc.
 
 Let's start with an example! This code...:
@@ -19113,13 +19132,15 @@ site](https://geelen.github.io/x-gif/#/https://i.imgur.com/iKXH4E2.gif).
 If you look at the source of the demo page, you note the following at
 the top of the page:
 
-1.  <link rel="import" href="dist/x-gif.html">
+```
+<link rel="import" href="dist/x-gif.html">
+```
 
-It's called an "HTML import". If your browser supports *HTML imports*,
-you can now import *another HTML document, *that will come with its own
+It's called an "HTML import". If your browser supports <i>HTML imports</i>,
+you can now import <i>another HTML document, </i>that will come with its own
 HTML, CSS, and JavaScript code-base, into your HTML page . The code
 for the animated GIF player, rendered when the browser encounters
-the* custom HTML element* <x-gif>,  is located in the imported HTML
+the<i> custom HTML element</i> &lt;x-gif&gt;,  is located in the imported HTML
 file (and this HTML file can in turn include or define CSS and
 JavaScript content).
 
@@ -19127,10 +19148,16 @@ Even more impressive: if you use the devtools or the right click context
 menu to view the source of the page, you will not see the DOM of this
 animated GIF player:
 
-<img src="./images/image220.jpeg" style="width:5in;height:2.55502in"
-alt="shadow root of the x-gif web component" />
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 220. shadow root of the x-gif web component (###) ----------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image220.jpeg"
+  style="width:5in;height:2.55502in"
+  alt="Shadow root of the x-gif web component." />
+</p>
 
-...*and your document will still be valid.* Looking at the source code
+...<i>and your document will still be valid.</i> Looking at the source code
 or at the DOM with the devtool's inspector will not reveal the source
 code (HTML/JavaScript/CSS) used for creating it.
 
@@ -19143,28 +19170,37 @@ file that defines the components you want to use, and [maybe also a
 polyfill ](https://www.webcomponents.org/polyfills)if you want to use
 them with browsers that do not yet support Web Components.
 
-*Example*: let's go to the the [Web Components Web
+<i>Example</i>: let's go to the the [Web Components Web
 site](https://www.webcomponents.org/).
 
-<img src="./images/image221.png" style="width:4in;height:3.0906in"
-alt="The webcomponents.org home page" />
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 221. the webcomponents.org home page (###) ----------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image221.png"
+  style="width:4in;height:3.0906in"
+  alt="The webcomponents.org home page" />
+</p>
 
 We then search for Web components tagged with the "voice" tag and find
 input fields with voice recognition, and a text area that could vocalize
 the text:
 
-<img src="./images/image222.png" style="width:4in;height:2.10812in"
-alt="Results for a search on &quot;voice&quot;" />
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 222. results for a search on voice (###) ----------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image222.png"
+  style="width:4in;height:2.10812in"
+  alt="Results for a search on &quot;voice&quot;." />
+</p>
 
 Now, please try a [demonstration of this
 component](https://zenorocha.github.io/voice-elements)!
 
 As you see, re-using Web components is easy :-)
 
-Notice that Google, with its [Polymer
-project](https://www.polymer-project.org/) and Mozilla, with its [X-Tag
-library](https://x-tag.github.io/), also offer huge sets of
-components for creating rich UIs with a common look and feel.
+Notice that Google, with its <a href="https://www.polymer-project.org/">Polymer project</a> and Mozilla, with its <a href="https://x-tag.github.io/">X-Tag library</a>, also offer huge sets of components for creating rich UIs with a common look and feel.
 
 <h4>Current support</h4>
 
@@ -19176,7 +19212,7 @@ on top of 4 W3C specifications, </b>which are going to be detailed
 in subsequent lessons.
 
 The main W3C Web Components resource is
-on [GitHub](https://github.com/w3c/webcomponents):
+on <a href="https://github.com/w3c/webcomponents">GitHub</a>:
 
 1.  [The HTML Templates
     specification](https://www.w3.org/TR/html-templates/)
@@ -19360,12 +19396,18 @@ A template is typically used like this:
 Here is [an online example at JSBin](https://jsbin.com/dozele/edit) that
 uses exactly the code presented:
 
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 223. template use (###) ----------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
 <img src="./images/image223.jpeg"
-style="width:2.90625in;height:4.23958in" alt="template use" />
+  style="width:2.90625in;height:4.23958in"
+  alt="Template use." />
+</p>
 
 And here is the complete source code...
 
-The HTML part:
+<h4>The HTML part:</h4>
 
 ```
 1.  <template id="mytemplate">
@@ -19378,7 +19420,7 @@ The HTML part:
 8.  </body>
 ```
 
-The JavaScript part:
+<h4>The JavaScript part:</h4>
 
 ```
 1.  function instantiate() {
@@ -19456,15 +19498,13 @@ In another example in the course, we will talk about templates and
 shadow DOM.
 
 Instead of adding just text in the shadow DOM using textContent or
-innerHTML, we can
-
-clone a template. So in this example, I’ve got a template
-
+innerHTML, we can clone a template. So in this example, I’ve got a template 
 that contains a ‘H1’. This is a ‘shadowed H1’ and some CSS style defined
 in the template.
 
 When I create the root element for the shadow DOM, I can append the
 cloned code of the template. 
+
 In this case I have got a skeleton: the template.
 
 I instantiate it and I add it to the shadow DOM.
@@ -19476,31 +19516,20 @@ instantiated.
 And this template contains an ‘H1’ that is white on red.
 
 But look: I have got a global CSS that says that all ‘H1s’ must be
-green, and this one is
-
-not affected, it does not cross the boundaries of the Web component.
+green, and this one is not affected, it does not cross the boundaries of the Web component.
 
 The same thing is true for the style in the Web component, that says
-that all ‘H1s’ must be
-
-white on red, and it does not affect the ‘H1’ in the page.
+that all ‘H1s’ must be white on red, and it does not affect the ‘H1’ in the page.
 
 I added an ‘H1’ that is not associated with the shadow DOM and this one
-is impacted by
+is impacted by the normal CSS style that says that the color is green for each ‘H1’.
 
-the normal CSS style that says that the color is green for each ‘H1’.
-This one is green but
-
-not the once inside the shadow DOM. So it is good for encapsulation: you
-can protect
-
-your widget (your Web component) so that external CSS will not affect
+This one is green but not the once inside the shadow DOM. So it is good for encapsulation: you
+can protect your widget (your Web component) so that external CSS will not affect
 it.
 
 In the next lesson, we will see how we can allow some style to cross the
-boundaries,
-
-but under control. This is all for this video! Bye! Bye!
+boundaries, but under control. This is all for this video! Bye! Bye!
 
 The Shadow DOM API provides DOM encapsulation: it serves to hide what is
 not necessary to see!
@@ -19517,11 +19546,11 @@ find these references a helpful start:
 
 It is not obvious but the Shadow DOM API is already used by browsers'
 developers for &lt;audio&gt; or &lt;video&gt; elements, and also for the
-new <input type="date">, <input type="color"> elements, etc.
+new &lt;input type="date"&gt;, &lt;input type="color"> elements, etc.
 
 <b>The three rules of Shadow DOM:</b>
 
-1.  With Shadow DOM, elements are associated with a new kind of node: *a
+1.  With Shadow DOM, elements are associated with a new kind of node: <i>a
     shadow root</i>.
 
 2.  An element that has a shadow root associated with it is called <i>a
@@ -19547,8 +19576,14 @@ element. You will see the exact HTML code that is in this example, but
 you cannot see the elements that compose the control bar. You don't have
 access to the play button, etc.
 
-<img src="./images/image224.jpeg" style="width:6.5in;height:4.65556in"
-alt="devtools2" />
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 224. devtools 2 (###) ----------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image224.jpeg"
+  style="width:6.5in;height:4.65556in"
+  alt="Devtools2." />
+</p>
 
 Let's take a look behind the scenes, and see the Shadow DOM associated
 with the &lt;video&gt; element.
@@ -19556,26 +19591,50 @@ with the &lt;video&gt; element.
 First, click on the Settings icon (three vertical dots) and select
 Settings in the drop down menu:
 
-<img src="./images/image225.jpeg" style="width:6.5in;height:5.07431in"
-alt="shadow dom in devtools 1" />
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 225. shadow dom in devtools 1 (###) ----------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image225.jpeg"
+  style="width:6.5in;height:5.07431in"
+  alt="Shadow DOM in Devtools 1." />
+</p>
 
 Then scroll down until you see the "Show user agent shadow DOM" option
 and check it. Close the panel.
 
-<img src="./images/image226.jpeg" style="width:6.5in;height:3.54444in"
-alt="Show shadow dom option in devtoops" />
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 226. show shadow dom option in devtools (###) ----------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image226.jpeg"
+  style="width:6.5in;height:3.54444in"
+  alt="Show shadow DOM option in Devtools". />
+</p>
 
 Now, look for the video element again and within the DOM view you should
 see something new:
 
-<img src="./images/image227.jpeg" style="width:6.5in;height:1.95833in"
-alt="devtools4" />
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 227. devtools 4 (###) ----------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image227.jpeg" 
+  style="width:6.5in;height:1.95833in"
+  alt="devtools4" />
+</p>
 
 Open this shadow root by clicking on it, and move the mouse pointer over
 the different elements:
 
-<img src="./images/image228.jpeg" style="width:6.5in;height:4.66389in"
-alt="devtools5" />
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 228. devtools 5 (###) ----------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image228.jpeg"
+  style="width:6.5in;height:4.66389in"
+  alt="Devtools5." />
+</p>
 
 Chrome developers are already using the shadow DOM to define their own
 Web Components, such as &lt;video&gt; or &lt;audio&gt; elements! And they use
@@ -19622,8 +19681,14 @@ HTML element. In this example, the <div> defined at<i> line 1</i> is a
 shadow host, and it is associated with the shadow root which
 contains three words of text (<i>line 11</i>).
 
-<img src="./images/image229.jpeg" style="width:6.5in;height:1.79444in"
-alt="Shadow DOM simple example" />
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 229. shadow dom simple example (###) ----------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image229.jpeg" 
+  style="width:6.5in;height:1.79444in"
+  alt="Shadow DOM simple example." />
+</p>
 
 This example illustrates the three rules of the shadow DOM. Let's look
 at them again:
@@ -19646,8 +19711,14 @@ example, try to change the text of the div (<i>line 1</i>), and you will
 notice that nothing changes. Then modify the text at <i>line 11</i> and
 observe the result
 
-<img src="./images/image230.jpeg" style="width:6.5in;height:3.04583in"
-alt="Shadow DOM: the shadow root is rendered instead of the shadow host content" />
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 230. shadow dom (###) ----------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image230.jpeg"
+  style="width:6.5in;height:3.04583in"
+  alt="Shadow DOM: the shadow root is rendered instead of the shadow host content." />
+</p>
 
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch4-2-5">4.2.5 Shadow DOM: encapsulate code</h3>
@@ -19697,8 +19768,14 @@ The JavaScript part:
 
 [Online example at JSBin](https://jsbin.com/quguwa/edit?html,js,output):
 
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 231. shadow dom 3 (###) ----------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
 <img src="./images/image231.jpeg"
-style="width:5.52083in;height:1.63542in" alt="shadow dom 3" />
+  style="width:5.52083in;height:1.63542in" 
+  alt="Shadow DOM 3." />
+</p>
 
 Note that once again, the content shown is the shadow root + the styles
 applied. The styles applied are those defined <i>in the template's
