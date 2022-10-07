@@ -5644,11 +5644,13 @@ Try[ this demo](https://webaudioapi.com/samples/room-effects/) to see
 the difference between different impulse files!
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------- 57.  (1##) ---------------------------->
+<!---------------------------------- 57. web audio api (106) ------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image060.jpeg" style="width:5in;height:1.92376in"
-alt="screenshot of a webapp that enable to switch between different impulse files" />
+<img src="./images/image060.jpeg" 
+  style="width:5in;height:1.92376in"
+  alt="screenshot of a webapp that enable to switch between different impulse files" />
+</p>
 
 So before building the audio graph, we need to download the impulse. For
 this, we use an Ajax request (this will be detailed during Module 3),
@@ -5720,11 +5722,12 @@ discontinued FireFox WebAudio debugger, you should get similar results
 with the Chrome WebAudio Inspector extension):
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------- 58.  (1##) ---------------------------->
+<!----------------------------------- 58. audio graph (107) -------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image058.jpeg" style="width:5in;height:2.85737in"
-alt="audio graph of the previous example" />
+<img src="./images/image058.jpeg" 
+  style="width:5in;height:2.85737in"
+  alt="Audio graph." />
 </p>
 
 <h4>And here is the function which builds the graph:</h4>
@@ -5799,11 +5802,12 @@ discontinued FireFox WebAudio debugger, you should get similar results
 with the Chrome WebAudio Inspector extension):
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------- 59.  (1##) ---------------------------->
+<!------------------------- 59. example use of compressor node (109) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image059.jpeg" style="width:5in;height:3.11966in"
-alt="Audio graph of the previous example" />
+<img src="./images/image059.jpeg" 
+  style="width:5in;height:3.11966in"
+  alt="Example of use of a compressor node." />
 </p>
 
 <h4>Extract of the HTML code:</h4>
@@ -5911,11 +5915,11 @@ at JSBin,](https://jsbin.com/loquwih/edit?html,css,js,output) here is a
 screenshot:
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------- 60.  (1##) ---------------------------->
+<!--------------------------- 60. audio player with equalizer (111) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image060.jpeg" style="width:3in;height:1.79534in"
-alt="an audio player with an equalizer" />
+alt="An audio player with an equalizer." />
 </p>
 
 This example uses six BiquadFilter nodes with type="peaking".
@@ -6044,11 +6048,13 @@ FireFox WebAudio debugger, you should get similar results with the
 Chrome WebAudio Inspector extension):
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------- 61.  (1##) ---------------------------->
+<!--------------------------- 61. equalizer with video element (113) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image061.jpeg" style="width:5in;height:3.02403in"
-alt="audio graph of the previous example" />
+<img src="./images/image061.jpeg" 
+  style="width:5in;height:3.02403in"
+  alt="Audio graph of the previous example." />
+</p>
 
 Example #2: equalizer with a &lt;video&gt; element
 
@@ -6067,11 +6073,13 @@ moving the sliders to change the sound!
 [Example at JSBin](https://jsbin.com/kukupot/edit?html,css,js,output):
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------- 62.  (1##) ---------------------------->
+<!------------------------------ 62. video above equalizer (114) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image062.jpeg" style="width:3in;height:3.22115in"
-alt="same example as previously but with a video above the equalizer" />
+<img src="./images/image062.jpeg" 
+  style="width:3in;height:3.22115in"
+  alt="Same example as previously but with a video above the equalizer." />
+</p>
 
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch1-5-5">1.5.5 Waveforms</h3>
@@ -6177,11 +6185,13 @@ Example #1: audio player with waveform visualization
 [Example at JSBin](https://jsbin.com/sufatup/edit?html,js,output)
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------- 63.  (1##) ---------------------------->
+<!--------------------- 63. audio player with waveform visualization (116) ----------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image063.jpeg" style="width:3in;height:1.53543in"
-alt="Audio player with waveform visualization" />
+<img src="./images/image063.jpeg" 
+  style="width:3in;height:1.53543in"
+  alt="Audio player with waveform visualization." />
+</p>
 
 Do things in order!
 
@@ -6268,7 +6278,7 @@ now discontinued FireFox WebAudio debugger, you should get similar
 results with the Chrome WebAudio Inspector extension):
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------- 64.  (1##) ---------------------------->
+<!------------------ 64. audio graph with analyser node and properties (117) --------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image064.jpeg" 
@@ -6373,7 +6383,7 @@ changed "audio" to "video" in the HTML code. 
 JSBin](https://jsbin.com/fuyejuz/edit?html,js,console,output):
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------- 65.  (1##) ---------------------------->
+<!---------------- 65. video player with real time waveform visualization (119) ------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image065.jpeg" 
@@ -6391,7 +6401,7 @@ you should see the waveform changing.
 [Example at JSBin](https://jsbin.com/qijujuz/edit?html,js,output)
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------- 66.  (1##) ---------------------------->
+<!----------------------- 66. Video player + equalizer + waveform (120) -------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image066.jpeg" 
@@ -6402,7 +6412,7 @@ you should see the waveform changing.
 [Example at JSBin](https://jsbin.com/jafoboh/edit?js,console,output):
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------- 67.  (1##) ---------------------------->
+<!---------------- 67. video player + equalizer + waveform visualization (120) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image067.jpeg" 
@@ -6419,7 +6429,7 @@ you should see the waveform changing.
 [Example at JSBin](https://jsbin.com/wenuvub/edit?js,output):
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------- 68.  (1##) ---------------------------->
+<!----------------------------- 68. red bar frequency audio (121) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image068.jpeg" 
@@ -6427,7 +6437,7 @@ you should see the waveform changing.
   alt="Audio player with frequency visualisations with red bars." />
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------- 69.  (1##) ---------------------------->
+<!---------------------------- 69. frequency at fftsize = 64 (121) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image069.jpeg" 
@@ -6559,7 +6569,7 @@ different look for the visualization: please read the source code
 and try to understand how the drawing of the frequency is done.
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------- 70.  (1##) ---------------------------->
+<!-------------------------- 70. audio graph colored frequency (123) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image070.jpeg" 
@@ -6573,7 +6583,7 @@ graphic equalizer, a master volume (gain) and a stereo panner node just
 before the visualizer node:
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------- 71.  (1##) ---------------------------->
+<!---------------------------- 71. audio graph with equalizer (123) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image071.jpeg" 
@@ -6586,7 +6596,7 @@ discontinued FireFox WebAudio debugger, you should get similar results
 with the Chrome WebAudio Inspector extension):
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------- 72.  (1##) ---------------------------->
+<!------------------------- 72. audiograph description of fields (123) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image072.jpeg" 
@@ -6662,7 +6672,7 @@ Example #1: add a single volume meter to the audio player
 [Try it at JSBin](https://jsbin.com/kuciset/edit?html,css,js,output):
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------- 73.  (1##) ---------------------------->
+<!------------------------------ 73. animated volume meter (125) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image073.jpeg" 
@@ -6793,20 +6803,26 @@ analyser (<i>lines 46 and 47</i> of the example below)
 
 [Example at JSBin](https://jsbin.com/qezevew/edit?html,css,js,output):
 
-<img src="./images/image052.jpeg" style="width:3in;height:1.92453in"
-alt="Example with stereo volume meters" />
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------- 52. audio player balance (127) --------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image052.jpeg" 
+  style="width:3in;height:1.92453in"
+  alt="Example with stereo volume meters" />
+</p>
 
 This is the audio graph we've built (picture taken with the now
 discontinued FireFox WebAudio debugger, you should get similar results
 with the Chrome WebAudio Inspector extension):
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------- 74.  (1##) ---------------------------->
+<!----------------------------- 74. flowchart with webaudio (127) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image074.jpeg" 
   style="width:5in;height:2.02564in"
-  alt="Audiograph from previous example" />
+  alt="Audiograph flowchart with webaudio, from previous example." />
 </p>
 
 As you can see there are two routes: the one on top sends the output
@@ -6972,11 +6988,11 @@ discontinued FireFox WebAudio debugger, you should get similar results
 with the Chrome WebAudio Inspector extension):
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------- 75.  (1##) ---------------------------->
+<!----------------------- 75. webaudio graph from firefox debugger (130) ------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image075.jpeg?raw=true"
-  width="40%"
+  width="65%"
   alt="Screenshot with buttons that play sound samples many times with different pitch, volume, interval of times." />
 </p>
 <!-- <img src="./images/image078.jpeg" style="width:4in;height:3.27308in" -->
@@ -6992,7 +7008,7 @@ note from the corresponding instrument audio sample. This is all done
 with Web Audio and samples loaded in memory:
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------- 76.  (1##) ---------------------------->
+<!------------------------------- 76. remixer workstation (131) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image076.jpeg" 
@@ -7009,7 +7025,7 @@ GitHub](https://github.com/squallooo/MT5). The documentation is in the
 help menu.
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------- 77.  (1##) ---------------------------->
+<!------------------------------ 77. multitrack player mt5 (131) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image077.jpeg" 
@@ -7026,12 +7042,12 @@ fast the sound effects are played. Click as fast as you can!
 [Try the explosion demo at JSBin](https://jsbin.com/gefezu/edit):
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------- 78.  (1##) ---------------------------->
+<!---------------------------------- 78. scatter graph (132) ------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image078.png" 
   style="width:4in;height:4.26316in" 
-  alt="." />
+  alt="HowlerJS library creating scatter graph." />
 </p>
 
 <!------------------------------------------------------------------------------------------------>
@@ -7074,12 +7090,12 @@ to the buffer property of an AudioBufferSourceNode.</b>
 JSBin](https://jsbin.com/botagas/edit?html,js,console,output):
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------- 79.  (1##) ---------------------------->
+<!----------------------------- 79. load sound sample & play (133) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image079.jpeg" 
   style="width:4.4375in;height:2.07292in"
-  alt="example that loads and play a unique sound" />
+  alt="Example that loads and play a unique sound." />
 </p>
 
 In this example, as soon as the page is loaded, we send an Ajax request
@@ -7246,12 +7262,12 @@ have packaged the code into an object called the BufferedLoader.
 utility](https://jsbin.com/javoger/edit?html,js,console,output):
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------- 80.  (1##) ---------------------------->
+<!------------------------------- 80. bufferloader utility (136) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image080.jpeg" 
   style="width:5in;height:1.37255in"
-  alt="Example that loads two sounds and create two buttons for playing them" />
+  alt="Example that loads two sounds and create two buttons for playing them." />
 </p>
 
 <h4>HTML code:</h4>
@@ -7346,12 +7362,12 @@ with the Chrome WebAudio Inspector extension).
 JSBin](https://jsbin.com/zebokeg/edit?html,js,console,output):
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------- 81.  (1##) ---------------------------->
+<!----------------------------------- 81. audio graph (138) -------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image081.jpeg" 
   style="width:4in;height:2.85641in"
-  alt="Audio Graph used in the previous example source node -&gt; gain -&gt; compressor -&gt; destination" />
+  alt="Audio Graph used in the previous example source node -&gt; gain -&gt; compressor -&gt; destination." />
 </p>
 
 In this example, we added a function (borrowed and adapted from [this
@@ -7450,8 +7466,14 @@ Below, we have mixed the code from two previous examples:
 
 [This one at JSBin](https://jsbin.com/vejocav/edit?html,css,js,output):
 
-<img src="./images/image052.jpeg" style="width:2in;height:1.28302in"
-alt="audio player with volume meters and waveform" />
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------- 52. audio player balance (140) --------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image052.jpeg" 
+  style="width:2in;height:1.28302in"
+  alt="Audio player with volume meters and waveform." />
+</p>
 
 [And this one at
 JSBin](https://jsbin.com/nazega/edit?html,js,console,output) (picture
@@ -7459,24 +7481,24 @@ taken with the now discontinued FireFox WebAudio debugger, you should
 get similar results with the Chrome WebAudio Inspector extension):
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------- 82.  (1##) ---------------------------->
+<!---------------------------- 82. firefox webaudio debugger (140) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image082.jpeg" 
   style="width:5in;height:3.57051in"
-  alt="multiple sound samples played at different intervals and rates" />
+  alt="Multiple sound samples played at different intervals and rates." />
 </p>
 
 And here is the result ([try it at
 JSBin](https://jsbin.com/coraso/edit?html,js,console,output)):
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------- 83.  (1##) ---------------------------->
+<!------------------------ 83. sound samples and 2d visualization (141) -------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image083.jpeg" 
   style="width:5in;height:2.56836in"
-  alt="Sound samples and 2D visualization" />
+  alt="Sound samples and 2D visualization." />
 </p>
 
 Here is the audio graph of this example (picture taken with the now
@@ -7484,12 +7506,12 @@ discontinued FireFox WebAudio debugger, you should get similar results
 with the Chrome WebAudio Inspector extension):
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------- 84.  (1##) ---------------------------->
+<!---------------------------------- 84. webaudio graph (142) ------------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image084.jpeg" 
   style="width:5in;height:6.6266in"
-  alt="audio graph of the previous example" />
+  alt="WebAudio graph of the previous example." />
 </p>
 
 Look at the source code on JSBin, it's a quick merge of the two previous
@@ -7577,7 +7599,7 @@ was a game by Scott Porter, written using only standard Web technologies
 (HTML, JavaScript, and CSS) .
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------- 85.  (1##) ---------------------------->
+<!--------------------------------- 85. donkey kong 1998 (144) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image085.png" 
@@ -7609,7 +7631,7 @@ is still possible to play many games created with that library on his
 Web site.
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------- 86.  (1##) ---------------------------->
+<!--------------------------------- 86. mario dhtml game (145) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image086.png" 
@@ -7628,7 +7650,7 @@ dedicated to JavaScript
 games](https://web.archive.org/web/20090519005306/http:/www.javascriptgaming.com/).
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------- 87.  (1##) ---------------------------->
+<!---------------------------------- 87. free civ game (145) ------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image87.png" 
@@ -7651,7 +7673,7 @@ and[ Sarien.net](http://sarien.net/) by Martin Kool, an emulator of old
 Sierra games. 
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------- 88. html5 logo (1##) ---------------------------->
+<!------------------------------------ 88. html5 logo (146) -------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image088.png" 
@@ -7675,7 +7697,7 @@ Here, we present some elements that are useful in writing games.
 <h4>Drawing: the &lt;canvas&gt; element</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------- 89. the html5 canvas logo (1##) ---------------------------->
+<!------------------------------ 89. the html5 canvas logo (146) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image089.jpeg" 
@@ -7725,7 +7747,7 @@ performed when the canvas is not visible, thus saving CPU resources.
 <h4>Videos and animated textures: the &lt;video&gt; element</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------- 90. a movie film icon (1##) ---------------------------->
+<!-------------------------------- 90. a movie film icon (147) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image090.png" 
@@ -7747,7 +7769,7 @@ as "animated textures" over graphic objects.
 <h4>Audio (streamed audio and real time sound effects): the &lt;audio&gt; element and the Web Audio API</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------- 91. a picture of a speaker (1##) ---------------------------->
+<!------------------------------ 91. a picture of a speaker (148) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
   <img src="./images/image091.png" 
@@ -7778,7 +7800,7 @@ Edge supports it).
 <h4><b>Interacting</b>: dealing with keyboard and mouse events, the GamePad API</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------- 92. a picture of gamepad remote (1##) ---------------------------->
+<!--------------------------- 92. a picture of gamepad remote (148) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image092.png" 
@@ -7809,6 +7831,10 @@ as [socket.io](https://socket.io/), provide the means for sending
 messages to a server and receiving event-driven responses without having
 to poll the server for a reply. 
 
+<!------------------------------------------------------------------------------------------------>
+<!------------------------- 93. three clients and a server (149) ---------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
 <img src="./images/image093.gif" style="width:2in;height:2.28807in"
 alt="A graph showing several clients interacting with a websocket server." />
 
@@ -9188,144 +9214,93 @@ to direct movements every 1/60th second.
 
 Hi! In this lesson we will look at how we can manage such an input
 device! This is a Microsoft xbox 360 controller -a wired one- with an USB plug. And we
-will see how we can
+will see how we can use the gamepad API that is available on modern browsers... except a few
+ones... 
 
-use the gamepad API that is available on modern browsers... except a few
-ones... So, the first thing you can do is to add some even listeners for the gamepadconnect
+The first thing you can do is to add some even listeners for the gamepadconnect
 and gamepaddisconnected events.
 
-If I plug in the game pad (I’m using Google Chrome for this demo), I
-plug it in...
+If I plug in the game pad (I’m using Google Chrome for this demo), I plug it in...
 
-here we are! I need to press a button, for the gamepad to be detected.
+Here we are! I need to press a button, for the gamepad to be detected.
 If I just plug it in: it won't be detected. On FireFox, I tried too... and it has been
 detected as soon as I plugged it in. 
 
-Once it's plugged, you can get a property of the event that is called gamepad... and you can get the number of buttons,
-and the number of axes. 
+Once it's plugged, you can get a property of the event that is called gamepad... and you can get the number of buttons, and the number of axes. 
 
-Here, it says it's got 4 axes... the axes are for the joysticks... horizontal and vertical axes. We will see how to manage that in a minute. And it's
-got 17 buttons.
+Here, it says it's got 4 axes... the axes are for the joysticks... horizontal and vertical axes. We will see how to manage that in a minute. And it's got 17 buttons.
 
-We can also detect when we disconnect it. So... I just unpluged it and
-it's also detected...
+We can also detect when we disconnect it. So... I just unpluged it and it's also detected...
 
-But, in order to scan... in order to know in real time the state of the
-different buttons...
+But, in order to scan... in order to know in real time the state of the different buttons...
 
 and you've got some analogic buttons like these triggers... and you've
-got axes... they
+got axes... they are the joysticks here... and buttons... you need to scan at a very fast
+frequency the state of the gamepad. 
 
-are the joysticks here... and buttons... you need to scan at a very fast
-frequency the
+This is done in another example here, where I can press some buttons and you see that the buttons are detected. 
 
-state of the gamepad. This is done in another example here, where I can
-press some buttons
-
-and you see that the buttons are detected. And in case of an analogic
-button, I'm using
-
-a progress HTML element to draw/show the pressure... So, how do you
-manage these values?
+And in case of an analogic button, I'm using a progress HTML element to draw/show the pressure... So, how do you manage these values?
 
 You've got to have a mainloop that is very similar to the animation loop
-(or you can
+(or you can do this in the animation loop). And we call a method, a function called
+scanGamepads that will ask for the gamepad 60 times per second. Here we say "Navigator!
 
-do this in the animation loop). And we call a method, a function called
-scanGamepads that
+Hey browser! Give me all the gamepads you've got!" And you've got a gamepad array... if
+the gamepad is detected, it's non null and you can use it. In this example we use just one
+gamepad. 
 
-will ask for the gamepad 60 times per second. Here we say "Navigator!
-Hey browser! Give
+The first gamepad that is defined will be used for setting the "gamepad" global
+variable. This is the variable we check in the loop: "please, give me an updated status of the
+gamepad!", by calling the scanGamepad()... then we're going to check the buttons that
+are pressed... so how do we check the buttons? 
 
-me all the gamepads you've got!" And you've got a gamepad array... if
-the gamepad is detected,
+We get the number of buttons: 
+gamepad.buttons, 
+we do an iteration on them, we get the current button and check if its pressed or not. 
 
-it's non null and you can use it. In this example we use just one
-gamepad. So the first
-
-gamepad that is defined will be used for setting the "gamepad" global
-variable. This is the
-
-variable we check in the loop: "please, give me an updated status of the
-gamepad!", by
-
-calling the scanGamepad()... then we're going to check the buttons that
-are pressed... so
-
-how do we check the buttons? We get the number of buttons:
-gamepad.buttons, we do an iteration
-
-on them, we get the current button and check if its pressed or not. This
-is a boolean property: "pressed".
+This is a boolean property: "pressed".
 
 And in the case there is a "value" that is defined, it means it's for an
-analogic
+analogic buttons, like the triggers here... and the value will be between 0
+and 1. And this is what we draw here. 
 
-buttons, like the triggers here... and the value will be between 0
-and 1. And this is
+If you want to try another demo and look at the code for managing multiple gamepads, I added a link to this demo that has been done by people from Mozilla... 
 
-what we draw here. If you want to try another demo and look at
+If you plug a second gamepad (I’ve got only one here), it will display another row for checking the state of the second gamepad. 
 
-the code for managing multiple gamepads, I added a link to this demo
-that has been
-
-done by people from Mozilla... If you plug a second gamepad (I’ve got
-only one here),
-
-it will display another row for checking the state of the second
-gamepad. So... another
-
-thing that is interesting is to detect the joystick values here... you
-can see the progress
-
-bars moving. The joystick returns values between -1 and +1, 0 is the
+So... another thing that is interesting is to detect the joystick values here... you
+can see the progress bars moving. The joystick returns values between -1 and +1, 0 is the
 neutral position here.
 
 The way you detect that is that instead of doing an iteration on the
-buttons: you do
+buttons: you do an iteration on the axes... the checkAxes function proposed in the
+course will just iterate on the axes array you get from the gamepad object.
 
-an iteration on the axes... the checkAxes function proposed in the
-course will just
+gamepad.axes[i] here will returns the status... the value of the current axis. 
 
-iterate on the axes array you get from the gamepad object.
-gamepad.axes[i] here will
+So axes[0] means horizontal here, axes[1] means vertical for the left joystick, 
+axes[2] will mean left/right for the second joystick
 
-returns the status... the value of the current axis. So axes[0] means
-horizontal here, axes[1]
+and axes[3] for the up/down. 
 
-means vertical for the left joystick, axes[2] will mean left/right for
-the second joystick
+This is how we manage that. Look at the code, it's very simple.
 
-and axes[3] for the up/down. This is how we manage that. Look at the
-code, it's very
+And in the course you will see how we can make the small monster move using the gamepad. 
 
-simple. And in the course you will see how we can
+It's, I think, in the next lesson... I gave an example at the end, for moving the monster 
+with the gamepad. We just reused the functions I've shown. 
 
-make the small monster move using the gamepad. It's, I think, in the
-next lesson... I gave
+And here we can make the monster move using the gamepad as you can see... with the left joystick. 
 
-an example at the end, for moving the monster with the gamepad. We just
-reused the functions
-
-I've shown. And here we can make the monster move using the gamepad as
-you can see... with
-
-the left joystick. We just added scanGamepads() in the mailoop...
-updateGamepadStatus()...
+We just added scanGamepads() in the mailoop...updateGamepadStatus()...
 
 and updateGamepadStatus() will scan the gamepads, check the buttons, and
-check the axes 60 times
+check the axes 60 times per second... the rest of the code is the same as I presented earlier.
+So I hope you enjoyed this part of the course and that you will use a gamepad in the
+small game you are going to develop during this week. Bye! Bye!
 
-per second... the rest of the code is the same as I presented earlier.
-So I hope you
-
-enjoyed this part of the course and that you will use a gamepad in the
-small game you are
-
-going to develop during this week. Bye! Bye!
-
-Some games, mainly arcade/action games, are designed to be used with a
-gamepad:
+Some games, mainly arcade/action games, are designed to be used with a gamepad:
 
 <img src="./images/image110.png" style="width:5in;height:3.22951in" />
 
