@@ -4161,20 +4161,20 @@ from the previous example:
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 37-43. seven thumbnail images (76) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image037.jpeg" style="width:2.57292in;height:1.20833in" alt="chapter 1 thumbnail" />
-<img src="./images/image038.jpeg" style="width:2.51042in;height:1.19792in" alt="chapter 2 thumbnail" />
+<p align="left" width="100%">
+<img src="./images/image037.jpeg" style="width:2.57292in;height:1.20833in" alt="chapter 1 thumbnail." />
+<img src="./images/image038.jpeg" style="width:2.51042in;height:1.19792in" alt="chapter 2 thumbnail." />
+</p>
+<p align="left" width="100%">
+<img src="./images/image039.jpeg" style="width:2.5625in;height:1.19792in" alt="chapter 3 thumbnail." />
+<img src="./images/image040.jpeg" style="width:2.54167in;height:1.19792in" alt="chapter 4 thumbnail." />
+</p>
+<p align="left" width="100%">
+<img src="./images/image041.jpeg" style="width:2.53125in;height:1.21875in" alt="chapter 5 thumbnails." />
+<img src="./images/image042.jpeg" style="width:2.5in;height:1.19792in" alt="chapter 6 thumbnail." />
 </p>
 <p align="center" width="100%">
-<img src="./images/image039.jpeg" style="width:2.5625in;height:1.19792in" alt="chapter 3 thumbnail" />
-<img src="./images/image040.jpeg" style="width:2.54167in;height:1.19792in" alt="chapter 4 thumbnail" />
-</p>
-<p align="center" width="100%">
-<img src="./images/image041.jpeg" style="width:2.53125in;height:1.21875in" alt="chapter 5 thumbnails" />
-<img src="./images/image042.jpeg" style="width:2.5in;height:1.19792in" alt="chapter 6 thumbnail" />
-</p>
-<p align="center" width="100%">
-<img src="./images/image043.jpeg" style="width:2.54167in;height:1.21875in" alt="chapter 7 thumbnail" />
+<img src="./images/image043.jpeg" style="width:2.54167in;height:1.21875in" alt="chapter 7 thumbnail." />
 </p>
 
 To associate these images with its chapter description, we will use JSON
@@ -4212,12 +4212,12 @@ JSBin that uses this new .vtt
 file](https://jsbin.com/pulefe/1/edit?html,css,js,output):
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 44.  (77) ----------------------->
+<!--------------------------- 44. video with nice chapter menu (77) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image044.jpeg" 
   style="width:5in;height:5.72864in"
-  alt="Video with nice chapter menu that uses thumbnail images" />
+  alt="Video with nice chapter menu that uses thumbnail images." />
 </p>
 
 <h4>HTML code:</h4>
@@ -4466,7 +4466,7 @@ code from earlier in this lesson.
 <p align="center" width="100%">
 <img src="./images/image045.jpeg" 
   style="width:5in;height:6.18857in"
-  alt="Chapter menu + clickable transcript" />
+  alt="Chapter menu + clickable transcript." />
 </p>
 
 <!------------------------------------------------------------------------------------------------>
@@ -4504,7 +4504,7 @@ from an original demo by Sam Dutton, uses <a href="https://mainline.i3s.unice.f
 <p align="center" width="100%">
 <img src="./images/image046.jpeg" 
   style="width:5in;height:4.91453in"
-  alt="Click a button to play an animal sound" />
+  alt="Click a button to play an animal sound." />
 </p>
 
 <h4><b>Explanations:</b></h4>
