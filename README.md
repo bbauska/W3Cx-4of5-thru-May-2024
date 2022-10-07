@@ -5091,9 +5091,10 @@ animated waveform and volume meters that 'dance' with the music:
   alt="A fancy audio player with animated wave forms." />
 </p>
 
-</h4>Web Audio concepts</h4>
+<h4>Web Audio concepts</h4>
 
-<p>The audio context
+
+<h4>The audio context</h4>
 
 The canvas used a graphic context for drawing shapes and handling
 properties such as colors and line widths.
@@ -5166,19 +5167,19 @@ audio activity can be monitored by the tool. You can click on the
 WebAudio graph nodes to see their properties' values.
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 52.  (96) -------------------------------->
+<!-------------------------------- 52. web audio 'editor' (96) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image052.jpeg" 
   style="width:5in;height:2.34989in"
-  alt="WebAudio Inspector tab." />
+  alt="WebAudio 'editor' tab." />
 </p>
 
 Note that JSBin examples should be opened in standalone mode (not in
 editor mode).
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 53.  (97) -------------------------------->
+<!---------------------------------- 53. standalone mode (97) ------------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image053.jpeg" 
@@ -5296,7 +5297,7 @@ debugger was still included in FireFox, you should get similar results
 with the Chrome WebAudio Inspector extension).
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 54.  (99) -------------------------------->
+<!--------------------------- 54. audio graph of the vocodor app (99) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image054.jpeg" 
@@ -5545,10 +5546,10 @@ choose the type of filters and play with the different property values
 using sliders:
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------- 55. frequency responses for filters (10#) ---------------------------->
+<!------------------------- 56. frequency responses for filters (104) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image055.jpeg" 
+<img src="./images/image056.jpeg" 
   style="width:5in;height:5.08474in"
   alt="Frequency responses for various filters. Screenshot of a nice application that visualizes that." />
 </p>
@@ -5645,6 +5646,10 @@ Opera of Milan, in Italy. It's a .wav file.
 Try[ this demo](https://webaudioapi.com/samples/room-effects/) to see
 the difference between different impulse files!
 
+<!------------------------------------------------------------------------------------------------>
+<!------------------------- 57.  (1##) ---------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
 <img src="./images/image060.jpeg" style="width:5in;height:1.92376in"
 alt="screenshot of a webapp that enable to switch between different impulse files" />
 
@@ -5717,8 +5722,13 @@ The audio graph will look like this (picture taken with the now
 discontinued FireFox WebAudio debugger, you should get similar results
 with the Chrome WebAudio Inspector extension):
 
-<img src="./images/image061.jpeg" style="width:5in;height:2.85737in"
+<!------------------------------------------------------------------------------------------------>
+<!------------------------- 58.  (1##) ---------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image058.jpeg" style="width:5in;height:2.85737in"
 alt="audio graph of the previous example" />
+</p>
 
 <h4>And here is the function which builds the graph:</h4>
 
@@ -5791,8 +5801,13 @@ Audio graph with the compressor activated (picture taken with the now
 discontinued FireFox WebAudio debugger, you should get similar results
 with the Chrome WebAudio Inspector extension):
 
-<img src="./images/image062.jpeg" style="width:5in;height:3.11966in"
+<!------------------------------------------------------------------------------------------------>
+<!------------------------- 59.  (1##) ---------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image059.jpeg" style="width:5in;height:3.11966in"
 alt="Audio graph of the previous example" />
+</p>
 
 <h4>Extract of the HTML code:</h4>
 
@@ -5898,8 +5913,13 @@ Example #1: an audio equalizer with an &lt;audio&gt; element
 at JSBin,](https://jsbin.com/loquwih/edit?html,css,js,output) here is a
 screenshot:
 
-<img src="./images/image063.jpeg" style="width:3in;height:1.79534in"
+<!------------------------------------------------------------------------------------------------>
+<!------------------------- 60.  (1##) ---------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image060.jpeg" style="width:3in;height:1.79534in"
 alt="an audio player with an equalizer" />
+</p>
 
 This example uses six BiquadFilter nodes with type="peaking".
 
@@ -6026,7 +6046,11 @@ Here is the final audio graph (picture taken with the now discontinued
 FireFox WebAudio debugger, you should get similar results with the
 Chrome WebAudio Inspector extension):
 
-<img src="./images/image064.jpeg" style="width:5in;height:3.02403in"
+<!------------------------------------------------------------------------------------------------>
+<!------------------------- 61.  (1##) ---------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image061.jpeg" style="width:5in;height:3.02403in"
 alt="audio graph of the previous example" />
 
 Example #2: equalizer with a &lt;video&gt; element
@@ -6045,7 +6069,11 @@ moving the sliders to change the sound!
 
 [Example at JSBin](https://jsbin.com/kukupot/edit?html,css,js,output):
 
-<img src="./images/image065.jpeg" style="width:3in;height:3.22115in"
+<!------------------------------------------------------------------------------------------------>
+<!------------------------- 62.  (1##) ---------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image062.jpeg" style="width:3in;height:3.22115in"
 alt="same example as previously but with a video above the equalizer" />
 
 <!------------------------------------------------------------------------------------------------>
@@ -6151,7 +6179,11 @@ Example #1: audio player with waveform visualization
 
 [Example at JSBin](https://jsbin.com/sufatup/edit?html,js,output)
 
-<img src="./images/image066.jpeg" style="width:3in;height:1.53543in"
+<!------------------------------------------------------------------------------------------------>
+<!------------------------- 63.  (1##) ---------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image063.jpeg" style="width:3in;height:1.53543in"
 alt="Audio player with waveform visualization" />
 
 Do things in order!
@@ -6238,7 +6270,11 @@ With the exception of <i>lines 8-12</i>, where we set the analyser options
 now discontinued FireFox WebAudio debugger, you should get similar
 results with the Chrome WebAudio Inspector extension):
 
-<img src="./images/image067.jpeg" style="width:5in;height:3.3563in"
+<!------------------------------------------------------------------------------------------------>
+<!------------------------- 64.  (1##) ---------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image064.jpeg" style="width:5in;height:3.3563in"
 alt="Audio graph with analyser node and properties" />
 
 Step #2: write the animation loop
@@ -6337,8 +6373,13 @@ changed "audio" to "video" in the HTML code. 
 [Example at
 JSBin](https://jsbin.com/fuyejuz/edit?html,js,console,output):
 
-<img src="./images/image068.jpeg" style="width:3in;height:3.26685in"
+<!------------------------------------------------------------------------------------------------>
+<!------------------------- 65.  (1##) ---------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image065.jpeg" style="width:3in;height:3.26685in"
 alt="a video player with real time waveform visualization" />
+</p>
 
 Example #3: both previous examples, this time with the graphic
 equalizer
@@ -6349,13 +6390,23 @@ you should see the waveform changing.
 
 [Example at JSBin](https://jsbin.com/qijujuz/edit?html,js,output)
 
-<img src="./images/image069.jpeg" style="width:3in;height:2.5726in"
+<!------------------------------------------------------------------------------------------------>
+<!------------------------- 66.  (1##) ---------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image066.jpeg" style="width:3in;height:2.5726in"
 alt="audio player + equalizer + visualization" />
+</p>
 
 [Example at JSBin](https://jsbin.com/jafoboh/edit?js,console,output):
 
-<img src="./images/image070.jpeg" style="width:3in;height:4.04878in"
+<!------------------------------------------------------------------------------------------------>
+<!------------------------- 67.  (1##) ---------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image067.jpeg" style="width:3in;height:4.04878in"
 alt="Video player + equalizer + waveform visualization" />
+</p>
 
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch1-5-6">1.5.6 Frequencies</h3>
@@ -6365,9 +6416,20 @@ alt="Video player + equalizer + waveform visualization" />
 
 [Example at JSBin](https://jsbin.com/wenuvub/edit?js,output):
 
-<img src="./images/image071.jpeg" style="width:3in;height:1.63496in"
-alt="audio player with frequency visualisations with red bars" /><img src="./images/image072.jpeg" style="width:3in;height:1.57732in"
+<!------------------------------------------------------------------------------------------------>
+<!------------------------- 68.  (1##) ---------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image068.jpeg" style="width:3in;height:1.63496in"
+alt="audio player with frequency visualisations with red bars" />
+
+<!------------------------------------------------------------------------------------------------>
+<!------------------------- 69.  (1##) ---------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image069.jpeg" style="width:3in;height:1.57732in"
 alt="frequency viualisation this time fftsize = 64" />
+</p>
 
 This time, instead of a waveform we want to visualize an animated bar
 chart. Each bar will correspond to a frequency range and 'dance' in
@@ -6492,23 +6554,38 @@ JSBin](https://jsbin.com/muzifi/edit?html,css,js,output) with a
 different look for the visualization: please read the source code
 and try to understand how the drawing of the frequency is done.
 
-<img src="./images/image073.jpeg" style="width:3in;height:1.57105in"
+<!------------------------------------------------------------------------------------------------>
+<!------------------------- 70.  (1##) ---------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image070.jpeg" style="width:3in;height:1.57105in"
 alt="Same example as before but with symmetric and colored frequency visualisations" />
+</p>
 
 [Last example at
 JSBin](https://jsbin.com/fekorej/edit?html,js,output) with this time the
 graphic equalizer, a master volume (gain) and a stereo panner node just
 before the visualizer node:
 
-<img src="./images/image074.jpeg" style="width:3in;height:3.36034in"
+<!------------------------------------------------------------------------------------------------>
+<!------------------------- 71.  (1##) ---------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image071.jpeg" style="width:3in;height:3.36034in"
 alt="Previous example with a master volume (gain node) and the equalizer + a stereoPanner node" />
+</p>
 
 And here is the audio graph for this example (picture taken with the now
 discontinued FireFox WebAudio debugger, you should get similar results
 with the Chrome WebAudio Inspector extension):
 
-<img src="./images/image075.jpeg" style="width:6.5in;height:1.06667in"
+<!------------------------------------------------------------------------------------------------>
+<!------------------------- 72.  (1##) ---------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image072.jpeg" style="width:6.5in;height:1.06667in"
 alt="audio graph from above example" />
+</p>
 
 Source code from this example's the buildAudioGraph function:
 
@@ -6577,8 +6654,13 @@ Example #1: add a single volume meter to the audio player
 
 [Try it at JSBin](https://jsbin.com/kuciset/edit?html,css,js,output):
 
-<img src="./images/image076.jpeg" style="width:3in;height:1.77337in"
+<!------------------------------------------------------------------------------------------------>
+<!------------------------- 73.  (1##) ---------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image073.jpeg" style="width:3in;height:1.77337in"
 alt="Single volume meter that dances with the music" />
+</p>
 
 In order to have a "volume meter" which traces upward/downward with the
 intensity of the music, we will compute the average intensity of our
@@ -6710,8 +6792,13 @@ This is the audio graph we've built (picture taken with the now
 discontinued FireFox WebAudio debugger, you should get similar results
 with the Chrome WebAudio Inspector extension):
 
-<img src="./images/image077.jpeg" style="width:5in;height:2.02564in"
+<!------------------------------------------------------------------------------------------------>
+<!------------------------- 74.  (1##) ---------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image074.jpeg" style="width:5in;height:2.02564in"
 alt="Audiograph from previous example" />
+</p>
 
 As you can see there are two routes: the one on top sends the output
 signal to the speakers and uses an analyser node to animate the
@@ -6875,8 +6962,11 @@ Here is how the WebAudio graph looks like (picture taken with the now
 discontinued FireFox WebAudio debugger, you should get similar results
 with the Chrome WebAudio Inspector extension):
 
+<!------------------------------------------------------------------------------------------------>
+<!------------------------- 75.  (1##) ---------------------------->
+<!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image078.jpeg?raw=true"
+<img src="./images/image075.jpeg?raw=true"
   width="40%"
   alt="Screenshot with buttons that play sound samples many times with different pitch, volume, interval of times." />
 </p>
@@ -6892,8 +6982,13 @@ song (midi file) the app will play-along, selecting the same musical
 note from the corresponding instrument audio sample. This is all done
 with Web Audio and samples loaded in memory:
 
-<img src="./images/image079.jpeg" style="width:4in;height:3.87522in"
+<!------------------------------------------------------------------------------------------------>
+<!------------------------- 76.  (1##) ---------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image076.jpeg" style="width:4in;height:3.87522in"
 alt="The remixer DAW workstation, a typical screenshot of a DAW with tracks, mix table etc." />
+</p>
 
 The author of this course wrote a multitrack audio player: it loads
 different mp3 files corresponding to different instruments and play/loop
