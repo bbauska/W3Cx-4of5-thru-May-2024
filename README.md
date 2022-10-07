@@ -1531,7 +1531,7 @@ width!):
 2.    <source src="https://...../elephants-dream-medium.mp4" type="video/mp4">
 3.    <source src="https://...../elephants-dream-medium.webm" type="video/webm">
 4.      <track label="English    subtitles" kind="subtitles" srclang="en"
-5.        src="https://.....<b>/elephants-dream-subtitles-en.vtt">
+5.        src="https://...../elephants-dream-subtitles-en.vtt">
 6.      <track label="Deutsch subtitles" kind="subtitles" srclang="de"
 7.        src="https://...../elephants-dream-subtitles-de.vtt" default>
 8.      <track label="English chapters" kind="chapters" srclang="en"
@@ -2027,9 +2027,9 @@ I will explain that in a next video.
 4.     <track label="English subtitles" kind="subtitles" srclang="en"
          src="https://...../elephants-dream-subtitles-en.vtt" >
 5.     <track label="Deutsch subtitles" kind="subtitles" srclang="de"
-         src="https://</b>.....<b>/elephants-dream-subtitles-de.vtt" default>
+         src="https://</b>...../elephants-dream-subtitles-de.vtt" default>
 6.     <track label="English chapters" kind="chapters" srclang="en"
-7.       src="https://</b>.....<b>/elephants-dream-chapters-en.vtt">
+7.       src="https://</b>...../elephants-dream-chapters-en.vtt">
 8. </video>
 9.  
 10.<div id="trackStatusesDiv">
@@ -2091,7 +2091,7 @@ manipulate these elements as "HTML elements" - we will call them the
 17. var kind = "<li>kind = "   + currentHtmlTrack.kind + "</li>";
 18. var lang = "<li>lang = "   + currentHtmlTrack.srclang + "</li>";
 19. var readyState = "<li>readyState = " + currentHtmlTrack.readyState + "</li>"
-20. trackStatusesDiv.innerHTML += "<li><b>Track:" + i + ":</b></li>"
+20. trackStatusesDiv.innerHTML += "<li>Track:" + i + ":</b></li>"
 21.    + "<ul>" + label + kind + lang + readyState + "</ul>";
 22. }
 23. }
@@ -2797,7 +2797,7 @@ for cuechange events</a>:
 2.     console.log("adding cue change listener to loaded track...");
 3.     trackStatusesDiv.innerHTML = "";
 4.  
-5.     <b>// add a cue change listener to the TextTrack
+5.     // add a cue change listener to the TextTrack
 6.     track.addEventListener("cuechange", function(e) {
 7.        var cue = this.activeCues[0];
 8.        if(cue !== undefined)
@@ -2839,7 +2839,7 @@ shows how to use enter and exit events on cues</a>:
 9.     for(var i=0; i < cues.length; i++) {
 10.       // current cue
 11.       var cue = cues[i];   
-12.      <b> addCueListeners(cue);</b>
+12.       addCueListeners(cue);</b>
 13.  }
 14. 
 15. video.play();
@@ -3090,7 +3090,7 @@ JSBin](https://jsbin.com/sodihux/1/edit?html,css,js,output):
 21.             kind="subtitles"
 22.             srclang="de"
 23.             src="https://...../elephants-dream-subtitles-de.vtt"
-24.             <b>default</b>>
+24.             default</b>>
 25.      <track label="English chapters"
 26.             kind="chapters"
 27.             srclang="en"
@@ -3559,7 +3559,7 @@ captions and descriptions.
 16.     <track src="https://...../sintel-captions.vtt"
 17.       kind="captions"
 18.       label="English Captions"
-19.       <b>default</b>/>
+19.       default</b>/>
 20.     <track src="https://...../sintel-descriptions.vtt"
 21.       kind="descriptions"
 22.       label="Audio Descriptions" />
@@ -3755,7 +3755,7 @@ you choose which track you prefer. 
 10.              kind="subtitles"
 11.              srclang="en"
 12.              src="https://...../elephants-dream-subtitles-en.vtt"
-13.              <b>default</b>>
+13.              default</b>>
 14.      <track  label="Deutsch subtitles"
 15.              kind="subtitles"
 16.              srclang="de"
@@ -3975,7 +3975,7 @@ modify it a little bit:
 </ol>
 
 ```
-<button disabled id="buttonEnglishChapters" <b>onclick="loadTranscript('en', 'chapters');"</b>>
+<button disabled id="buttonEnglishChapters" onclick="loadTranscript('en', 'chapters');"</b>>
   Display English chapter markers
 </button>
 ```
@@ -4170,7 +4170,7 @@ from the previous example:
 <img src="./images/image041.jpeg" style="width:2.53125in;height:1.21875in" alt="Chapter 5 thumbnails." />
 <img src="./images/image042.jpeg" style="width:2.5in;height:1.19792in" alt="Chapter 6 thumbnail." />
 </p>
-<p align="center" width="80%">
+<p align="center" width="100%">
 <img src="./images/image043.jpeg" style="width:2.54167in;height:1.21875in" alt="Chapter 7 thumbnail." />
 </p>
 
@@ -4225,22 +4225,22 @@ file](https://jsbin.com/pulefe/1/edit?html,css,js,output):
 ```
 1.  ...
 2.  <video id="myVideo" preload="metadata" controls crossOrigin="anonymous">
-3.  <source src="https://...../elephants-dream-medium.mp4"
-4.           type="video/mp4">
-5.  <source src="https://...../elephants-dream-medium.webm"
-6.           type="video/webm">
-7.  <track label="English subtitles"
-8.          kind="subtitles"
-9.  srclang="en" src="https://...../elephants-dream-subtitles-en.vtt" >
-10. <track label="Deutsch subtitles"
-11.         kind="subtitles"
-12. srclang="de" src="https://...../elephants-dream-subtitles-de.vtt" default>
-13. <b><track label="English chapters"</b>
-14. <b>         kind="chapters"</b>
-15. <b>srclang="en" src="https://...../elephants-dream-chapters-en-JSON.vtt"></b>
+3.    <source src="https://...../elephants-dream-medium.mp4"
+4.      type="video/mp4">
+5.    <source src="https://...../elephants-dream-medium.webm"
+6.      type="video/webm">
+7.    <track label="English subtitles"
+8.      kind="subtitles"
+9.    srclang="en" src="https://...../elephants-dream-subtitles-en.vtt" >
+10.   <track label="Deutsch subtitles"
+11.     kind="subtitles"
+12.   srclang="de" src="https://...../elephants-dream-subtitles-de.vtt" default>
+13.   <track label="English chapters"
+14.     kind="chapters"
+15.   srclang="en" src="https://...../elephants-dream-chapters-en-JSON.vtt">
 16. </video>
 17. <h2>Chapter menu</h2>
-18. <b><div id="chapterMenu"></div></b>
+18. <div id="chapterMenu"></div>
 19.  ...
 ```
 
@@ -4277,8 +4277,8 @@ of the video.
 17.    // Get the tracks as JS TextTrack objects
 18.    tracks = video.textTracks;
 19. 
-20.    <b>// Build the chapter navigation menu for the given lang and kind</b>
-21. <b>   buildChapterMenu('en', 'chapters');</b>
+20.    // Build the chapter navigation menu for the given lang and kind</b>
+21.    buildChapterMenu('en', 'chapters');</b>
 22. };
 23.  
 24. function buildChapterMenu(lang, kind) {
@@ -4312,9 +4312,9 @@ of the video.
 52.    for(var i=0, len = cues.length; i < len; i++) {
 53.       var cue = cues[i];
 54.  
-55.      <b> var cueObject = JSON.parse(cue.text);</b>
-56. <b>      var description = cueObject.description;</b>
-57. <b>      var imageFileName = cueObject.image;</b>
+55.       var cueObject = JSON.parse(cue.text);</b>
+56.       var description = cueObject.description;</b>
+57.       var imageFileName = cueObject.image;</b>
 58.    var imageURL = "https://mainline.i3s.unice.fr/mooc/" + imageFileName;
 59. 
 60.       // Build the marker. It's a figure with an img and a figcaption inside.
@@ -4618,11 +4618,11 @@ addCue does <b>not</b> work with <i>HTMLTrackElement</i> Objects.
  var audio = newAudio("https://mainline.i3s.unice.fr/mooc/animalSounds.mp3");
  
     audio.addEventListener("loadedmetadata", function() {
-      <b>// When the audio file has its metadata loaded, we can add</b>
-<b>      // a new track to it, with mode = hidden. It will fire events</b>
-<b>      // even if it is hidden</b>
-      <b>var track = audio.addTextTrack("metadata", "sprite track", "en");</b>
-      <b>track.mode = "hidden";</b>
+      // When the audio file has its metadata loaded, we can add
+      // a new track to it, with mode = hidden. It will fire events
+      // even if it is hidden
+      var track = audio.addTextTrack("metadata", "sprite track", "en");</b>
+      track.mode = "hidden";</b>
  
       // for browsers that do not implement the getCueById() method
       if (typeof track.getCueById !== "function") {
@@ -4653,8 +4653,8 @@ addCue does <b>not</b> work with <i>HTMLTrackElement</i> Objects.
    for (var i = 0; i !== sounds.length; ++i) {
       // for each animal sound, create a cue with id, start and end time
       var sound = sounds[i];
-   <b>var cue = new VTTCue(sound.startTime, sound.endTime, sound.id); </b>
-      <b>cue.id = sound.id;
+   var cue = new VTTCue(sound.startTime, sound.endTime, sound.id); </b>
+      cue.id = sound.id;
       // add it to the track
       track.addCue(cue);
       // create a button and add it to the HTML document
@@ -4831,7 +4831,7 @@ alt="video synced with an iframe that shows external URLs and with a google map"
 20. </main>
 21.  
 22. <aside>
-23.        <b><iframe sandbox="allow-same-origin" id="myIframe" > </iframe>
+23.        <iframe sandbox="allow-same-origin" id="myIframe" > </iframe>
 24. </aside>
 25. <h3>Wikipedia URL: <span id="currentURL"> Non défini </span></h3>
 26.  
@@ -5390,7 +5390,7 @@ debugging Web Audio applications and visualize the audio graph.
 var ctx = window.AudioContext || window.webkitAudioContext;
 var context = new ctx();
 
-var mediaElement = document.querySelector('<b>#player');
+var mediaElement = document.querySelector('#player');
 var sourceNode = context.createMediaElementSource(mediaElement);
 sourceNode.connect(context.destination); // connect to the speakers
 ```
@@ -10015,13 +10015,13 @@ the updateMonsterPosition() function:
     number of pixels we will add to the x and y position of the monster
     at each new frame of animation.
 
--   We first set these to zero (*line 2*), then depending on the
+-   We first set these to zero (<i>line 2</i>), then depending on the
     keyboard input states, we set them to a value equal
     to monster.speed or -monster.speed modified by the keys that are
-    being pressed at the time (*lines 4-20*).
+    being pressed at the time (<i>lines 4-20</i>).
 
 -   Finally, we add speedX and speedY pixels to the x and/or y position
-    of the monster (*lines 36 and 37*).
+    of the monster (<i>lines 36 and 37</i>).
 
 -   When the function is called by the game loop,
     if speedX and/or speedY are non-zero they will change
@@ -14720,7 +14720,7 @@ are taken from data­-* attributes of the &lt;li&gt; element.
 ```
 1.  <li class="user" data-name="John Resig" data-city="Boston"
 2.      data-lang="js" data-food="Bacon">
-3.  <b>John says:</b> <span>Hello, how are you?</span>
+3.  John says:</b> <span>Hello, how are you?</span>
 4.  </li>
 ```
 
@@ -15405,7 +15405,7 @@ Complete source code from the example:
 23. </head>
 24. <body>
 25. <p id="text">
-26.     <b>Drag and drop a text selection from this paragraph</b>. Drag and drop any
+26.     Drag and drop a text selection from this paragraph</b>. Drag and drop any
 27.     part of this text to
 28.     the drop zone. Notice in the code: there is no need for a dragstart handler in case of
 29.     text selection:
@@ -16012,7 +16012,7 @@ type="file"/> looks like this:
 2.     function handleFileSelect(evt) {
 3.         var files = evt.target.files; // FileList object
 4.         // do something with files... why not call    readFilesAndDisplayPreview!
-5.         <b>readFilesAndDisplayPreview(files);</b>
+5.         readFilesAndDisplayPreview(files);</b>
 6.     }
 7.  
 8.        document.getElementById('files').addEventListener('change', handleFileSelect, false);
@@ -16081,8 +16081,8 @@ Complete source code:
 24.           background-color: green;
 25.       }
 26.  
-27. </style>
-28. <script>
+27.    </style>
+28.    <script>
 29.       function dragLeaveHandler(event) {
 30.          console.log("drag leave");
 31.          // Set style of drop zone to default
@@ -16134,7 +16134,7 @@ Complete source code:
 77.          }
 78.          console.log(files.length + ' file(s) have been dropped:n' + filenames);
 79. 
-80.          <b>readFilesAndDisplayPreview(files);</b>
+80.          readFilesAndDisplayPreview(files);
 81.       }
 82. 
 83.       function readFilesAndDisplayPreview(files) {
@@ -16162,11 +16162,11 @@ Complete source code:
 105.         }
 106.      }
 107. 
-108.      <b>function handleFileSelect(evt) {</b>
-109.         <b>var files = evt.target.files; // FileList object</b>
-110.         <b>// do something with files... why not call</b>
-111. <b>        // readFilesAndDisplayPreview!</b>
-112.        <b>readFilesAndDisplayPreview(files);</b>
+108.      function handleFileSelect(evt) {
+109.         var files = evt.target.files; // FileList object
+110.         // do something with files... why not call
+111.         // readFilesAndDisplayPreview!
+112.        readFilesAndDisplayPreview(files);
 113.      }
 114.   </script>
 115. </head>
@@ -16175,12 +16175,12 @@ Complete source code:
 118.   <p>Beware, the directory choser  may overload
 119.     your browser memory if there are too many big images in the
 120.     directory you choose.</p>
-121.   <b>Choose multiple files:</b> <b><input type="file" id="files" multiple</b>
-122.   <b>                             onchange="handleFileSelect(event)"/></b>
+121.   Choose multiple files: <input type="file" id="files" multiple
+122.                                onchange="handleFileSelect(event)"/>
 123.   </p>
-124.   <b><p>Choose a directory (Chrome only): <input type="file"</b>
-125.   <b>                                      id="dir" webkitdirectory</b>
-126.   <b>                                      onchange="handleFileSelect(event)"/></b>
+124.   <p>Choose a directory (Chrome only): <input type="file"
+125.                                         id="dir" webkitdirectory
+126.                                         onchange="handleFileSelect(event)"/>
 127.   </p>
 128.  
 129.   <h2>Drop your files here!</h2>
@@ -17289,8 +17289,8 @@ object store named "customers".
 1.  // Use the transaction to add data...
 2.  var objectStore = transaction.objectStore("customers");
 3.  for (var i in customerData) {
-4.      <b>var request = objectStore.add(customerData[i]);</b>
-5.      <b>request.onsuccess </b>= function(event) {
+4.      var request = objectStore.add(customerData[i]);
+5.      request.onsuccess = function(event) {
 6.          // event.target.result == customerData[i].ssn
 7.  };
 8.  }
@@ -17785,8 +17785,8 @@ Source code example for creating a transaction associated with the
 object store named "customers":
 
 ```
-<b>var transaction = db.transaction(["customers"], "readwrite");</b> 
-   //or "read"...
+var transaction = db.transaction(["customers"], "readwrite");
+  //or "read"...
 ```
 
 Transactions, when created, must have a mode set that is
@@ -17983,8 +17983,8 @@ We just added a single function into the example from the previous
 section - the function AddACustomer() that adds one customer:
 
 ```
-<b>{ ssn: "123-45-6789", name: "Michel Buffa", age: 47, email:</b> 
-<b>"buffa@i3s.unice.fr" }</b>
+{ ssn: "123-45-6789", name: "Michel Buffa", age: 47, email: 
+"buffa@i3s.unice.fr" }
 ```
 
 Here is the complete source code of the addACustomer function:
@@ -18118,7 +18118,7 @@ style="width:6.08333in;height:2.32292in" alt="insert error" />
 7.                 unique (we declared it as a "unique" index)<br>
 8.  </fieldset>
 9.  
-10. <button <b>onclick="addACustomer();"</b>>Add a new Customer</button>
+10. <button onclick="addACustomer();">Add a new Customer</button>
 ```
 
 <b>And here is the new version of the addACustomer() JavaScript
@@ -18259,7 +18259,7 @@ Code added in this example:
 20.    var objectStore = transaction.objectStore("customers");
 21. 
 22.    alert('removing customer ssn=444-44-4444');
-23.    <b>var request = objectStore.delete("444-44-4444");</b>
+23.    var request = objectStore.delete("444-44-4444");
 24. 
 25.    request.onsuccess = function(event) {
 26.       console.log("Customer removed.");
@@ -18350,7 +18350,7 @@ Here is the new code added to our example:
 25.    customerToUpdate.email = document.querySelector("#email").value;
 26.  
 27.    alert('updating customer ssn=' + customerToUpdate.ssn);
-28.    <b>var request = objectStore.put(customerToUpdate);</b>
+28.    var request = objectStore.put(customerToUpdate);
 29. 
 30.    request.onsuccess = function(event) {
 31.      console.log("Customer updated.");
@@ -18419,17 +18419,17 @@ Here is the code added to that example:
 20. 
 21.    // Init a customer object with just the ssn property initialized
 22.    // from the form
-23.    <b>var customerToSearch={};</b>
-24.    <b>customerToSearch.ssn = document.querySelector("#ssn").value;</b>
+23.    var customerToSearch={};
+24.    customerToSearch.ssn = document.querySelector("#ssn").value;
 25. 
 26.    alert('Looking for customer ssn=' + customerToSearch.ssn);
 27. 
 28.    // Look for the customer corresponding to the ssn in the object
 29.    // store
-30.    <b>var request = objectStore.get(customerToSearch.ssn);</b>
+30.    var request = objectStore.get(customerToSearch.ssn);
 31. 
 32.    request.onsuccess = function(event) {
-33.      <b>console.log("Customer found" + event.target.result.name);</b>
+33.      console.log("Customer found" + event.target.result.name);
 34.      document.querySelector("#name").value=event.target.result.name;
 35.      document.querySelector("#age").value = event.target.result.age;
 36.      document.querySelector("#email").value
@@ -18538,18 +18538,18 @@ between those in a certain range, then you must use *a cursor*.
 2.     var objectStore =   
 3.       db.transaction("customers").objectStore("customers");
 4.  
-5.     <b>objectStore.openCursor().onsuccess </b>= function(event) {
+5.     <b>objectStore.openCursor().onsuccess = function(event) {
 6.       // we enter this callback for each object in the store
 7.  
-8.       <b>// The result is the cursor itself</b>
-9.       <b>var cursor = event.target.result;</b>
+8.       <b>// The result is the cursor itself
+9.       <b>var cursor = event.target.result;
 10. 
 11.      if (cursor) {
-12.        alert("Name for SSN " +<b> cursor.key </b>+ " is " +
-13.               <b>cursor.value.name</b>);
+12.        alert("Name for SSN " +<b> cursor.key + " is " +
+13.               <b>cursor.value.name);
 14.        // Calling continue on the cursor will result in this callback
 15.        // being called again if there are other objects in the store
-16.        <b>cursor.continue();</b>
+16.        <b>cursor.continue();
 17.      } else {
 18.        alert("No more entries!");
 19.      }
@@ -18654,11 +18654,11 @@ object store, and returns the first one it finds with a name equal to
 8.     var objectStore =   
 9.        db.transaction("customers").objectStore("customers");
 10. 
-11.    <b>var index = objectStore.index("name");</b>
+11.    <b>var index = objectStore.index("name");
 12. 
-13.    <b>index.get("Bill").onsuccess </b>= function(event) {
-14.       alert("Bill's SSN is " + <b>event.target.result.ssn </b>+
-15.             " his email is " + <b>event.target.result.email</b>);
+13.    <b>index.get("Bill").onsuccess = function(event) {
+14.       alert("Bill's SSN is " + <b>event.target.result.ssn +
+15.             " his email is " + <b>event.target.result.email);
 16.    };
 17. }
 ```
@@ -18699,14 +18699,14 @@ Normal cursor:
   <summary>Normal cursor code!</summary>
 
 ```
-1.  <b>index.openCursor().onsuccess </b>= function(event) {
-2.    <b>var cursor = event.target.result;</b>
+1.  <b>index.openCursor().onsuccess = function(event) {
+2.    <b>var cursor = event.target.result;
 3.    if (cursor) {
-4.      // cursor.key is a name, like "Bill", and <b>cursor.value is  the</b>
-5.      // <b>whole object.</b>
-6.      alert("Name: " +<b> cursor.key </b>+ ", SSN: " +<b> cursor.value.ssn </b>+ ",
-7.             email: " +<b> cursor.value.email</b>);
-8.      <b>cursor.continue();</b>
+4.      // cursor.key is a name, like "Bill", and <b>cursor.value is  the
+5.      // <b>whole object.
+6.      alert("Name: " +<b> cursor.key + ", SSN: " +<b> cursor.value.ssn + ",
+7.             email: " +<b> cursor.value.email);
+8.      <b>cursor.continue();
 9.  }
 10. };
 ```
@@ -18719,13 +18719,13 @@ Key cursor:
   <summary>Key cursor code!</summary>
 
 ```
-1.  <b>index.openKeyCursor().onsuccess </b>= function(event) {
+1.  <b>index.openKeyCursor().onsuccess = function(event) {
 2.     var cursor = event.target.result;
 3.     if (cursor) {
-4.       // cursor.key is a name, like "Bill",<b> and cursor.value is the</b>
-5.  <b>     </b>//<b> SSN (the key)</b>.
+4.       // cursor.key is a name, like "Bill",<b> and cursor.value is the
+5.  <b>     //<b> SSN (the key).
 6.       // No way to directly get the rest of the stored object.
-7.       alert("Name: " + cursor.key + ", "SSN: " + <b>cursor.value</b>);
+7.       alert("Name: " + cursor.key + ", "SSN: " + <b>cursor.value);
 8.       cursor.continue();
 9.     }
 10. };
@@ -18769,12 +18769,12 @@ Source code extract from this example:
 8.    var objectStore =
 9.       db.transaction("customers").objectStore("customers");
 10. 
-11.   <b>var index = objectStore.index("name");</b>
+11.   <b>var index = objectStore.index("name");
 12. 
 13.   // Only match "Bill"
-14.   <b>var singleKeyRange = IDBKeyRange.only("Bill");</b>
+14.   <b>var singleKeyRange = IDBKeyRange.only("Bill");
 15. 
-16.   <b>index.openCursor(singleKeyRange).onsuccess </b>= function(event) {
+16.   <b>index.openCursor(singleKeyRange).onsuccess = function(event) {
 17. 
 18.     var cursor = event.target.result;
 19. 
@@ -19952,7 +19952,7 @@ previous examples):
 19.  
 20. try {
 21.   // Define the custom element to the browser
-22.   <b>customElements.define('my-widget', MyWidget);</b>
+22.   customElements.define('my-widget', MyWidget);
 23.   console.log("Element defined");
 24. } catch (error) {
 25.   console.log(error);
@@ -20100,7 +20100,7 @@ It is as simple as:
 
 ```
 1.  <head>
-2.     <b> <link rel="import" href="components/myComponents.html"></b>
+2.    <link rel="import" href="components/myComponents.html">
 3.  </head>
 4.  <body>
 5.    <my-widget>
@@ -20361,7 +20361,7 @@ completely blocking the user interface: 
 9.    <script>
 10.     function computePrime() {
 11.       var n = 1;
-12.       search: <b>while (true)</b> {
+12.       search: <b>while (true) {
 13.          n += 1;
 14.          for (var i = 2; i <= Math.sqrt(n); i += 1)
 15.          if (n % i == 0)
@@ -20652,8 +20652,8 @@ to be defined in a separate JavaScript file.
 6.  <body>
 7.    <p>The highest prime number discovered so far is: <output id="result"></output></p>
 8.    <script>
-9.      <b>var worker = new Worker('worker.js');</b>
-10.     <b>worker.onmessage = function (event)</b> {
+9.      <b>var worker = new Worker('worker.js');
+10.     <b>worker.onmessage = function (event) {
 11.       document.getElementById('result').textContent = event.data;
 12.     };
 13.   </script>
@@ -20686,7 +20686,7 @@ the code of the worker below to see how the message has been sent.
 5.      if (n % i == 0)
 6.      continue search;
 7.      // found a prime!
-8.     <b> postMessage(n);</b>
+8.     <b> postMessage(n);
 9.  }
 ```
 
@@ -20854,7 +20854,7 @@ worker.
 19. 
 20.     setTimeout(function(){
 21.        // After 10 seconds, we kill the worker
-22.       <b> worker.terminate();</b>
+22.       <b> worker.terminate();
 23. 
 24.        document.body.appendChild(document.createTextNode("Worker killed, 10 seconds elapsed !")
 25.     );}, 10000);
@@ -21377,13 +21377,13 @@ If we change the orientation of the device here are the results:
 9.  <script type="text/javascript">
 10.    if (window.DeviceOrientationEvent) {
 11.       console.log("DeviceOrientation is supported");
-12.       <b>window.addEventListener('deviceorientation', function(eventData) {</b>
+12.       <b>window.addEventListener('deviceorientation', function(eventData) {
 13.          // gamme is for left/right inclination
-14.          var LR =<b> eventData.gamma;</b>
+14.          var LR =<b> eventData.gamma;
 15.          // beta is for front/back inclination
-16.          var FB =<b> eventData.beta;</b>
+16.          var FB =<b> eventData.beta;
 17.          // alpha is for orientation
-18.          var DIR =<b> eventData.alpha;</b>
+18.          var DIR =<b> eventData.alpha;
 19.          // display values on screen
 20.          deviceOrientationHandler(LR, FB, DIR);
 21.       }, false);
