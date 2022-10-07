@@ -4161,15 +4161,15 @@ from the previous example:
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 37-43. seven thumbnail images (76) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="left" width="100%">
+<p align="center" width="100%">
 <img src="./images/image037.jpeg" style="width:2.57292in;height:1.20833in" alt="chapter 1 thumbnail" />
 <img src="./images/image038.jpeg" style="width:2.51042in;height:1.19792in" alt="chapter 2 thumbnail" />
 </p>
-<p align="left" width="100%">
+<p align="center" width="100%">
 <img src="./images/image039.jpeg" style="width:2.5625in;height:1.19792in" alt="chapter 3 thumbnail" />
 <img src="./images/image040.jpeg" style="width:2.54167in;height:1.19792in" alt="chapter 4 thumbnail" />
 </p>
-<p align="left" width="100%">
+<p align="center" width="100%">
 <img src="./images/image041.jpeg" style="width:2.53125in;height:1.21875in" alt="chapter 5 thumbnails" />
 <img src="./images/image042.jpeg" style="width:2.5in;height:1.19792in" alt="chapter 6 thumbnail" />
 </p>
@@ -4461,10 +4461,13 @@ code from earlier in this lesson.
 <a href="https://jsbin.com/zewemaj/edit?html,js,output">Try it at JSBin</a>
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 48.  (##) ----------------------->
+<!----------------- 45. combined techniques - chapter & clickable button (82) -------------------->
 <!------------------------------------------------------------------------------------------------>
-<img src="./images/image048.jpeg" style="width:5in;height:6.18857in"
-alt="Chapter menu + clickable transcript" />
+<p align="center" width="100%">
+<img src="./images/image045.jpeg" 
+  style="width:5in;height:6.18857in"
+  alt="Chapter menu + clickable transcript" />
+</p>
 
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch1-4-1">1.4.1 Creating Tracks on the Fly</h3>
@@ -4496,10 +4499,13 @@ from an original demo by Sam Dutton, uses <a href="https://mainline.i3s.unice.f
 <h4> Below is the sound file. You can try to play it:</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 49.  (##) ----------------------->
+<!------------------------- 46. click button to play animal sound (83) --------------------------->
 <!------------------------------------------------------------------------------------------------>
-<img src="./images/image049.jpeg" style="width:5in;height:4.91453in"
-alt="Click a button to play an animal sound" />
+<p align="center" width="100%">
+<img src="./images/image046.jpeg" 
+  style="width:5in;height:4.91453in"
+  alt="Click a button to play an animal sound" />
+</p>
 
 <h4><b>Explanations:</b></h4>
 
@@ -4510,29 +4516,29 @@ sounds in this audio file:
   <summary>JavaScript code extract!</summary>
 
 ```
-1.   var sounds = [
-1.      {
-2.         id: "purr",
-3.         startTime: 0.200,
-4.         endTime: 1.800
-5.      },
-6.      {
-7.         id: "meow",
-8.         startTime: 2.300,
-9.         endTime: 3.300
-10.     },
-11.     {
-12.        id: "bark",
-13.        startTime: 3.900,
-14.        endTime: 4.300
-15.     },
-16.     {
-17.        id: "baa",
-18.        startTime: 5.000,
-19.        endTime: 5.800
-20.     }
-21.     ...
-22. ];
+var sounds = [
+    {
+       id: "purr",
+       startTime: 0.200,
+       endTime: 1.800
+    },
+    {
+       id: "meow",
+       startTime: 2.300,
+       endTime: 3.300
+    },
+    {
+       id: "bark",
+       startTime: 3.900,
+       endTime: 4.300
+    },
+    {
+       id: "baa",
+       startTime: 5.000,
+       endTime: 5.800
+    }
+    ...
+];
 ```
 
 </details>
@@ -4710,13 +4716,13 @@ within a cuechange listener attached to a TextTrack:
   <summary>Code extract!</h4>
 
 ```
-1.  textTrack.oncuechange = function (){
-2.      // "this" is the textTrack that fired the event.
-3.      // Let's get the first active cue for this time segment
-4.      var cue = this.activeCues[0]; 
-5.      var obj = JSON.parse(cue.text);
-6.      // do something
-7.  }
+textTrack.oncuechange = function (){
+    // "this" is the textTrack that fired the event.
+    // Let's get the first active cue for this time segment
+    var cue = this.activeCues[0]; 
+    var obj = JSON.parse(cue.text);
+    // do something
+}
 ```
 
 </details>
@@ -4726,16 +4732,19 @@ Here is <a href="https://simpl.info/track/map/index.html">a very impressive dem
 containing the latitude and longitude of the camera used for filming the
 video, to synchronize two map views</a>: every time the active cue changes, the Google map and equivalent Google street view are updated. 
 
-WARNING: as this Google service is no longer free of charge, you might
+<b>WARNING:</b> as this Google service is no longer free of charge, you might
 see "for development purpose only" messages during the execution of this
 demo. You'll need a valid Google API key in order to remove these
 messages.</p>
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 50.  (##) ----------------------->
+<!----------------- 47. video synced with google map and google street map (87) ------------------>
 <!------------------------------------------------------------------------------------------------>
-<img src="./images/image050.jpeg" style="width:5in;height:4.46635in"
-alt="Video synced with google map and google street map" />
+<p align="center" width="100%">
+<img src="./images/image047.jpeg"
+  style="width:5in;height:4.46635in"
+  alt="Video synced with google map and google street map." />
+</p>
 
 <h4>Example of a cue content from this demonstration:</h4>
 
@@ -4793,7 +4802,7 @@ if (typeof track.getCueById !== "function") {
 
 <a href="https://jsbin.com/gucutiyoyu/2/edit?html,js,output">Try the example at JSBin</a>
 
-
+<p align="center" width="100%">
 <img src="./images/image051.jpeg" style="width:5in;height:5.55609in"
 alt="video synced with an iframe that shows external URLs and with a google map" />
 
@@ -5073,8 +5082,14 @@ Here's a screenshot from one example we will study: an audio player with
 animated waveform and volume meters that 'dance' with the music:
 </p>
 
-<img src="./images/image052.jpeg" style="width:3in;height:1.92453in"
-alt="A fancy audio player with multiple visualizations" />
+<!------------------------------------------------------------------------------------------------>
+<!----------------------- 49. audio player with animated wave forms (94) ------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+  <img src="./images/image049.jpeg" 
+  style="width:3in;height:1.92453in"
+  alt="A fancy audio player with animated wave forms." />
+</p>
 
 </h4>Web Audio concepts</h4>
 
@@ -5105,8 +5120,15 @@ The easiest way to understand this principle is to look <b><a href="https://jsbi
 JSBin</a>.</b>
 </p>
 
-<img src="./images/image053.jpeg" style="width:3in;height:0.73669in"
-alt="audio player with gain" />
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 50. audio player with gain (95) --------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image050.jpeg" 
+  style="width:3in;height:0.73669in"
+  alt="Audio player with gain." />
+</p>
+
 <p>
 This example is detailed in the next lesson. For the moment, all you
 need to know is that it routes the signal from an &lt;audio&gt; element
@@ -5126,8 +5148,14 @@ Google Chrome extension named "WebAudio Inspector" (or "Audion").  You
 can install it <a href="https://chrome.google.com/webstore/detail/web-audio-inspector/cmhomipkklckpomafalojobppmmidlgl">from the Chrome Web Store]</a>.
 </p>
 
-<img src="./images/image054.jpeg" style="width:5in;height:4.05556in"
-alt="Chrome WebAudio Inspector extension" />
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 51. web audio inspector app (96) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image051.jpeg" 
+  style="width:5in;height:4.05556in"
+  alt="Chrome WebAudio Inspector extension." />
+</p>
 
 Once installed, open a Web page that contains some WebAudio code ([this
 one for example](https://output.jsbin.com/gaduqojeke)), open the
@@ -5137,14 +5165,26 @@ open the Web Audio tab. Then reload the target webpage so that all Web
 audio activity can be monitored by the tool. You can click on the
 WebAudio graph nodes to see their properties' values.
 
-<img src="./images/image055.jpeg" style="width:5in;height:2.34989in"
-alt="WebAudio Inspector tab" />
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 52.  (96) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image052.jpeg" 
+  style="width:5in;height:2.34989in"
+  alt="WebAudio Inspector tab." />
+</p>
 
 Note that JSBin examples should be opened in standalone mode (not in
 editor mode).
 
-<img src="./images/image056.jpeg" style="width:5in;height:2.40492in"
-alt="How to go in JsBin standalone mode: click the black arrow on top right of the output tab" />
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 53.  (97) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image053.jpeg" 
+  style="width:5in;height:2.40492in"
+  alt="How to go in JsBin standalone mode: click the black arrow on top right of the output tab." />
+</p>
 
 Audio nodes are linked via their inputs and outputs, forming a chain
 that starts with one or more sources, goes through one or more nodes,
@@ -5255,8 +5295,14 @@ hundreds of nodes (the picture below has been taken while the WebAudio
 debugger was still included in FireFox, you should get similar results
 with the Chrome WebAudio Inspector extension).
 
-<img src="./images/image057.jpeg" style="width:5in;height:6.84402in"
-alt="audio graph of the vocoder app is made of hundreds of nodes" />
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 54.  (99) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image054.jpeg" 
+  style="width:5in;height:6.84402in"
+  alt="Audio graph of the vocoder app is made of hundreds of nodes." />
+</p>
 
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch1-5-2">1.5.2 Working with Streamed Content</h3>
@@ -5498,8 +5544,14 @@ filters](https://webaudioapi.com/samples/frequency-response/), you can
 choose the type of filters and play with the different property values
 using sliders:
 
-<img src="./images/image059.jpeg" style="width:5in;height:5.08474in"
-alt="Frequency responses for various filters. Screenshot of a nice application that visualizes that" />
+<!------------------------------------------------------------------------------------------------>
+<!------------------------- 55. frequency responses for filters (10#) ---------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image055.jpeg" 
+  style="width:5in;height:5.08474in"
+  alt="Frequency responses for various filters. Screenshot of a nice application that visualizes that." />
+</p>
 
 Multiple filters are often used together. We will make a multi band
 equalizer in a next lesson, and use six filters with type=peaking. 
