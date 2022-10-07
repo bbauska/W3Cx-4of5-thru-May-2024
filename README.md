@@ -4713,7 +4713,7 @@ content of a cue when the video reaches its start time. We do this
 within a cuechange listener attached to a TextTrack:
 
 <details>
-  <summary>Code extract!</h4>
+  <summary>Code extract!</summary>
 
 ```
 textTrack.oncuechange = function (){
@@ -5253,14 +5253,14 @@ example)
 25.   };
 26. };
 27.  
-28. <b>function buildAudioGraph() {</b>
+28. function buildAudioGraph() {
 29.   // create source and gain node
 30.   var gainMediaElementSource = audioContext.createMediaElementSource(player);
 31.   gainNode = audioContext.createGain();
 32. 
-33.   <b>// connect nodes together</b>
-34. <b>  gainMediaElementSource.connect(gainNode);</b>
-35. <b>  gainNode.connect(audioContext.destination);</b>
+33.   // connect nodes together
+34.  gainMediaElementSource.connect(gainNode);
+35.  gainNode.connect(audioContext.destination);
 36. }
 37.  
 ```
@@ -5457,7 +5457,7 @@ in your browser:
 10. gainNode.connect(audioContext.destination);
 11.  
 12. gainSlider.oninput = function(evt){
-13.    gainNode.gain.value = evt.target.value;
+13. gainNode.gain.value = evt.target.value;
 14. };
 ```
 
@@ -5739,10 +5739,10 @@ alt="audio graph of the previous example" />
 1.  function buildAudioGraphConvolver() {
 2.    // create the nodes
 3.    var source = audioContext.createMediaElementSource(playerConvolver);
-4.    <b>convolverNode = audioContext.createConvolver();</b>
-5.  <b>  // Set the buffer property of the convolver node with the
-    decoded impulse</b>
-6.  <b>  convolverNode.buffer = decodedImpulse;</b>
+4.    convolverNode = audioContext.createConvolver();
+5.    // Set the buffer property of the convolver node with the
+    decoded impulse
+6.    convolverNode.buffer = decodedImpulse;
 7.  
 8.    convolverGain = audioContext.createGain();
 9.    convolverGain.gain.value = 0;
@@ -5821,7 +5821,7 @@ alt="Audio graph of the previous example" />
 <br>
 <label for="gainSlider1">Gain</label>
 <input type="range" min="0" max="10" step="0.01"
-        <b>value="8"</b> id="gainSlider1" />
+        value="8" id="gainSlider1" />
 <button id="compressorButton">Turn compressor On</button>
 ```
 
@@ -6796,8 +6796,9 @@ with the Chrome WebAudio Inspector extension):
 <!------------------------- 74.  (1##) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image074.jpeg" style="width:5in;height:2.02564in"
-alt="Audiograph from previous example" />
+<img src="./images/image074.jpeg" 
+  style="width:5in;height:2.02564in"
+  alt="Audiograph from previous example" />
 </p>
 
 As you can see there are two routes: the one on top sends the output
@@ -6986,8 +6987,9 @@ with Web Audio and samples loaded in memory:
 <!------------------------- 76.  (1##) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image076.jpeg" style="width:4in;height:3.87522in"
-alt="The remixer DAW workstation, a typical screenshot of a DAW with tracks, mix table etc." />
+<img src="./images/image076.jpeg" 
+  style="width:4in;height:3.87522in"
+  alt="The remixer DAW workstation, a typical screenshot of a DAW with tracks, mix table etc." />
 </p>
 
 The author of this course wrote a multitrack audio player: it loads
@@ -6998,8 +7000,14 @@ them in sync.
 GitHub](https://github.com/squallooo/MT5). The documentation is in the
 help menu.
 
-<img src="./images/image080.jpeg" style="width:4in;height:3.87438in"
-alt="Screenshot of MT5 a multitrack player" />
+<!------------------------------------------------------------------------------------------------>
+<!------------------------- 77.  (1##) ---------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image077.jpeg" 
+  style="width:4in;height:3.87438in"
+  alt="Screenshot of MT5 a multitrack player" />
+</p>
 
 Try also this small demonstration that uses the [Howler.js
 library](https://goldfirestudios.com/blog/104/howler.js-Modern-Web-Audio-Javascript-Library) for
@@ -7009,7 +7017,14 @@ fast the sound effects are played. Click as fast as you can!
 
 [Try the explosion demo at JSBin](https://jsbin.com/gefezu/edit):
 
-<img src="./images/image081.png" style="width:4in;height:4.26316in" />
+<!------------------------------------------------------------------------------------------------>
+<!------------------------- 78.  (1##) ---------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image078.png" 
+  style="width:4in;height:4.26316in" 
+  alt="." />
+</p>
 
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch1-5-9">1.5.9 Load and play sound samples</h3>
@@ -7050,8 +7065,14 @@ to the buffer property of an AudioBufferSourceNode.</b>
 [Try the example at
 JSBin](https://jsbin.com/botagas/edit?html,js,console,output):
 
-<img src="./images/image082.jpeg" style="width:4.4375in;height:2.07292in"
-alt="example that loads and play a unique sound" />
+<!------------------------------------------------------------------------------------------------>
+<!------------------------- 79.  (1##) ---------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image079.jpeg" 
+  style="width:4.4375in;height:2.07292in"
+  alt="example that loads and play a unique sound" />
+</p>
 
 In this example, as soon as the page is loaded, we send an Ajax request
 to a remote server in order to get the file shoot2.mp3. When the file is
@@ -7216,8 +7237,14 @@ have packaged the code into an object called the BufferedLoader.
 [Example at JSBin that uses the BufferLoader
 utility](https://jsbin.com/javoger/edit?html,js,console,output):
 
-<img src="./images/image083.jpeg" style="width:5in;height:1.37255in"
-alt="Example that loads two sounds and create two buttons for playing them" />
+<!------------------------------------------------------------------------------------------------>
+<!------------------------- 80.  (1##) ---------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image080.jpeg" 
+  style="width:5in;height:1.37255in"
+  alt="Example that loads two sounds and create two buttons for playing them" />
+</p>
 
 <h4>HTML code:</h4>
 
@@ -7310,8 +7337,14 @@ with the Chrome WebAudio Inspector extension).
 [Example at
 JSBin](https://jsbin.com/zebokeg/edit?html,js,console,output):
 
-<img src="./images/image084.jpeg" style="width:4in;height:2.85641in"
-alt="Audio Graph used in the previous example source node -&gt; gain -&gt; compressor -&gt; destination" />
+<!------------------------------------------------------------------------------------------------>
+<!------------------------- 81.  (1##) ---------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image081.jpeg" 
+  style="width:4in;height:2.85641in"
+  alt="Audio Graph used in the previous example source node -&gt; gain -&gt; compressor -&gt; destination" />
+</p>
 
 In this example, we added a function (borrowed and adapted from [this
 article on
@@ -7417,21 +7450,39 @@ JSBin](https://jsbin.com/nazega/edit?html,js,console,output) (picture
 taken with the now discontinued FireFox WebAudio debugger, you should
 get similar results with the Chrome WebAudio Inspector extension):
 
-<img src="./images/image085.jpeg" style="width:5in;height:3.57051in"
-alt="multiple sound samples played at different intervals and rates" />
+<!------------------------------------------------------------------------------------------------>
+<!------------------------- 82.  (1##) ---------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image082.jpeg" 
+  style="width:5in;height:3.57051in"
+  alt="multiple sound samples played at different intervals and rates" />
+</p>
 
 And here is the result ([try it at
 JSBin](https://jsbin.com/coraso/edit?html,js,console,output)):
 
-<img src="./images/image086.jpeg" style="width:5in;height:2.56836in"
-alt="Sound samples and 2D visualization" />
+<!------------------------------------------------------------------------------------------------>
+<!------------------------- 83.  (1##) ---------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image083.jpeg" 
+  style="width:5in;height:2.56836in"
+  alt="Sound samples and 2D visualization" />
+</p>
 
 Here is the audio graph of this example (picture taken with the now
 discontinued FireFox WebAudio debugger, you should get similar results
 with the Chrome WebAudio Inspector extension):
 
-<img src="./images/image087.jpeg" style="width:5in;height:6.6266in"
-alt="audio graph of the previous example" />
+<!------------------------------------------------------------------------------------------------>
+<!------------------------- 84.  (1##) ---------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image084.jpeg" 
+  style="width:5in;height:6.6266in"
+  alt="audio graph of the previous example" />
+</p>
 
 Look at the source code on JSBin, it's a quick merge of the two previous
 examples.
@@ -7517,8 +7568,14 @@ true: back in 1998, Donkey Kong ran in a browser (screenshot below). It
 was a game by Scott Porter, written using only standard Web technologies
 (HTML, JavaScript, and CSS) .
 
-<img src="./images/image088.png" style="width:2.17708in;height:2.83333in"
-alt="A screenshot of a DHTML / Javascript Donkey Kong from 1998" />
+<!------------------------------------------------------------------------------------------------>
+<!------------------------- 85.  (1##) ---------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image085.png" 
+  style="width:2.17708in;height:2.83333in"
+  alt="A screenshot of a DHTML / Javascript Donkey Kong from 1998" />
+</p>
 
 Just a few years after the Web was born, JavaScript appeared -  a simple
 script language with C-like syntax for interacting and changing the
@@ -7543,8 +7600,14 @@ years, [Brent Silby](https://def-logic.com/) presented 'Game Lib 2'. It
 is still possible to play many games created with that library on his
 Web site.
 
-<img src="./images/image089.png" style="width:2in;height:1.63509in"
-alt="a mario DHTML game" />
+<!------------------------------------------------------------------------------------------------>
+<!------------------------- 86.  (1##) ---------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image086.png" 
+  style="width:2in;height:1.63509in"
+  alt="A mario DHTML game." />
+</p>
 
 The DHTML era was a time when JavaScript games were as good as those
 made in Flash. Developers made many DOM libraries that were useful for
@@ -7556,8 +7619,14 @@ polished browser games were also developed; Jacob Sidelin, creator of
 dedicated to JavaScript
 games](https://web.archive.org/web/20090519005306/http:/www.javascriptgaming.com/).
 
-<img src="./images/image90.png" style="width:2in;height:2.48341in"
-alt="free civ game" />
+<!------------------------------------------------------------------------------------------------>
+<!------------------------- 87.  (1##) ---------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image87.png" 
+  style="width:2in;height:2.48341in"
+  alt="Free civ game." />
+</p>
 
 And then came 2005: 'the year
 of [AJAX](https://en.wikipedia.org/wiki/Ajax_%28programming%29)'.
@@ -7573,8 +7642,14 @@ by Andreas Rosdal - a port of Sid Meier's Civilization,
 and[ Sarien.net](http://sarien.net/) by Martin Kool, an emulator of old
 Sierra games. 
 
-<img src="./images/image091.png" style="width:1in;height:1.32039in"
-alt="html5 logo" />
+<!------------------------------------------------------------------------------------------------>
+<!------------------------- 88. html5 logo (1##) ---------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image088.png" 
+  style="width:1in;height:1.32039in"
+  alt="HTML5 logo." />
+</P>
 
 And now we are entering a new era in the history of the Web: "HTML5"!
 
@@ -7591,8 +7666,14 @@ Here, we present some elements that are useful in writing games.
 
 <h4>Drawing: the &lt;canvas&gt; element</h4>
 
-<img src="./images/image092.jpeg" style="width:2in;height:2in"
-alt="the html5 canvas logo" />
+<!------------------------------------------------------------------------------------------------>
+<!------------------------- 89. the html5 canvas logo (1##) ---------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image089.jpeg" 
+  style="width:2in;height:2in"
+  alt="The HTML5 canvas logo." />
+</p>
 
 The &lt;canvas&gt; is a new HTML element described as "<i>a
 resolution-dependent bitmap canvas which can be used for rendering
