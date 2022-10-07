@@ -3009,7 +3009,7 @@ We will learn how to do this using the track API.
 <p align="center" width="100%">
 <img src="./images/image030.png?raw=true"
    width="60%"
-   alt="edx video player to debug video tracks." />
+   alt="Edx video player to debug video tracks." />
 </p>
 
 Read the WebVTT file at once using the track API and make a clickable
@@ -3919,10 +3919,9 @@ navigation menu is not complicated.
 
 Let's start by examining the sample .vtt file:
 
-	[elephant-dream-chapters-en.vtt](https://mainline.i3s.unice.fr/mooc/elephants-dream-chapters-en.vtt):
 
 <details>
-  <summary>WEBVTT code extract!</summary>
+  <summary>WEBVTT code elephant-dream-chapters-en.vtt extract!</summary>
 
 ```
 1.  WEBVTT
@@ -3970,8 +3969,10 @@ for subtitles/captions on the right of the
 video](https://jsbin.com/zeqoleq/1/edit?html,css,js,output). We need to
 modify it a little bit:
 
--  We add a "show English chapters" button with a click event listener
-   similar to this:
+<ol type="1">
+<li>We add a "show English chapters" button with a click event listener
+   similar to this:</li>
+</ol>
 
 ```
 <button disabled id="buttonEnglishChapters" <b>onclick="loadTranscript('en', 'chapters');"</b>>
@@ -3979,8 +3980,10 @@ modify it a little bit:
 </button>
 ```
 
--  We modify the loadTranscript function from the previous example, so that it matches both the srclang and
-   the kind attribute of the track.
+<ol type="2">
+<li>We modify the loadTranscript function from the previous example, so that it matches both the srclang and
+   the kind attribute of the track.</li>
+</ol>
 
 Here is a new version: in bold are the source code lines we modified.
 
@@ -4081,10 +4084,8 @@ done in previous examples, we can extract this text content using the
 
 ```
 1.  var videoElement = document.querySelector("#myvideo");
-2.  var textTracks = videoElement.textTracks; // one for each track
-    element
-3.  var textTrack = textTracks[0]; // corresponds to the first track
-    element
+2.  var textTracks = videoElement.textTracks; // one for each track element
+3.  var textTrack = textTracks[0]; // corresponds to the first track element
 4.  
 5.  var cues = textTrack.cues;
 6.  var cue = cues[0]; // first cue
@@ -4158,16 +4159,23 @@ Here are the images which correspond to the seven chapters of the video
 from the previous example:
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 37-43.  (76) ----------------------->
+<!----------------------------- 37-43. seven thumbnail images (76) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<img src="./images/image037.jpeg" style="width:2.57292in;height:1.20833in"
-alt="chapter 1 thumbnail" /><img src="./images/image038.jpeg" style="width:2.51042in;height:1.19792in"
-alt="chapter 2 thumbnail" /><img src="./images/image039.jpeg" style="width:2.5625in;height:1.19792in"
-alt="chapter 3 thumbnail" /><img src="./images/image040.jpeg" style="width:2.54167in;height:1.19792in"
-alt="chapter 4 thumbnail" /><img src="./images/image041.jpeg" style="width:2.53125in;height:1.21875in"
-alt="chapter 5 thumbnails" /><img src="./images/image042.jpeg" style="width:2.5in;height:1.19792in"
-alt="chapter 6 thumbnail" /><img src="./images/image043.jpeg" style="width:2.54167in;height:1.21875in"
-alt="chapter 7 thumbnail" />
+<p align="left" width="100%">
+<img src="./images/image037.jpeg" style="width:2.57292in;height:1.20833in" alt="chapter 1 thumbnail" />
+<img src="./images/image038.jpeg" style="width:2.51042in;height:1.19792in" alt="chapter 2 thumbnail" />
+</p>
+<p align="left" width="100%">
+<img src="./images/image039.jpeg" style="width:2.5625in;height:1.19792in" alt="chapter 3 thumbnail" />
+<img src="./images/image040.jpeg" style="width:2.54167in;height:1.19792in" alt="chapter 4 thumbnail" />
+</p>
+<p align="left" width="100%">
+<img src="./images/image041.jpeg" style="width:2.53125in;height:1.21875in" alt="chapter 5 thumbnails" />
+<img src="./images/image042.jpeg" style="width:2.5in;height:1.19792in" alt="chapter 6 thumbnail" />
+</p>
+<p align="center" width="100%">
+<img src="./images/image043.jpeg" style="width:2.54167in;height:1.21875in" alt="chapter 7 thumbnail" />
+</p>
 
 To associate these images with its chapter description, we will use JSON
 objects as cue contents:
@@ -21929,4 +21937,4 @@ your comments/observations/questions and share your creations.
 
 <h5>the end...</h5>
 
-<h4>Last Updated: 10-06-2022 3:20pm</h4>
+<h4>Last Updated: 10-06-2022 7:59pm</h4>
