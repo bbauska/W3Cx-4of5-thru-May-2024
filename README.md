@@ -3888,22 +3888,22 @@ of the previous examples (in bold in the example below):
 ```
 <video id="myVideo" preload="metadata" controls crossOrigin="anonymous">
   <source src=<https://...../elephants-dream-medium.mp4>
-  type="video/mp4">
+    type="video/mp4">
   <source src=<https://...../elephants-dream-medium.webm>
-  type="video/webm">
+    type="video/webm">
   <track label="English subtitles"
-  kind="subtitles"
-  srclang="en"
-  src="https://...../elephants-dream-subtitles-en.vtt" >
+    kind="subtitles"
+    srclang="en"
+    src="https://...../elephants-dream-subtitles-en.vtt" >
   <track label="Deutsch subtitles"
-  kind="subtitles"
-  srclang="de"
-  src=<https://...../elephants-dream-subtitles-de.vtt>
-  default>
+    kind="subtitles"
+    srclang="de"
+    src=<https://...../elephants-dream-subtitles-de.vtt>
+    default>
   <track label="English chapters"
-  kind="chapters"
-  srclang="en"
-  src="https://...../elephants-dream-chapters-en.vtt">
+    kind="chapters"
+    srclang="en"
+    src="https://...../elephants-dream-chapters-en.vtt">
 </video>
 ```
 
@@ -3980,12 +3980,11 @@ modify it a little bit:
 </button>
 ```
 
-<ol type="2">
-<li>We modify the loadTranscript function from the previous example, so that it matches both the srclang and
-   the kind attribute of the track.</li>
+<ol type="1">
+<li value="2">We modify the loadTranscript function from the previous example, so that it matches both the srclang and the kind attribute of the track.</li>
 </ol>
 
-Here is a new version: in bold are the source code lines we modified.
+Here is a new version:
 
 ```
 function loadTranscript(lang, kind) {
@@ -4000,12 +3999,11 @@ function loadTranscript(lang, kind) {
 }
 ```
 
-Simple approach: chapters as clickable text on the right of the video
+Simple approach: chapters as clickable text on the right of the video.
 
-[Try it on JSBin](https://jsbin.com/rifekik/edit?html,css,js); this
+<a href="https://jsbin.com/rifekik/edit?html,css,js">Try it on JSBin</a>; this
 version includes the modifications we presented earlier - nothing more.
-Notice that we kept the existing buttons to display a clickable
-transcript:
+Notice that we kept the existing buttons to display a clickable transcript:
 
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 35. simple chapter navigation (73) ------------------------------->
@@ -4044,7 +4042,7 @@ contents. This will be the topic of the next two lessons!
 <h3 id="ch1-3-5">1.3.5 With Thumbnails, Using JSON Cues</h3>
 <!------------------------------------------------------------------------------------------------>
 
-Example #5: create a chapter menu with image thumbnails
+Example #5: create a chapter menu with image thumbnails.
 
 Instead of using text (optionally using HTML for styling, multi lines,
 etc.), it is also possible to use JSON objects as cue values that can be
@@ -4052,11 +4050,11 @@ manipulated from JavaScript. JSON means "JavaScript Object Notation".
 It's an open standard for describing JavaScript objects as plain text.
 
 Here is an example cue from a WebVTT file encoded as JSON instead of
-plain text. JSON is useful for describing "structured data"', and
+plain text. JSON is useful for describing "structured data", and
 processing such data from JavaScript is easier than parsing plain text.
 
 <details>
-  <summary>Code extract!</summary>
+  <summary>WebVTT code extract!</summary>
 
 ```
 1.  WEBVTT
@@ -4073,14 +4071,14 @@ processing such data from JavaScript is easier than parsing plain text.
 
 </details>
 
-This JSON object (in bold green) is a JavaScript object encoded as a
+This JSON object is a JavaScript object encoded as a
 text string. If we listen for cue events or if we read a WebVTT file as
 done in previous examples, we can extract this text content using the
  cue.text property. For example:
 
 
 <details>
-  <summary>Code extract!</summary>
+  <summary>JS code extract!</summary>
 
 ```
 1.  var videoElement = document.querySelector("#myvideo");
@@ -4123,7 +4121,7 @@ video](https://jsbin.com/jiyodit/edit?html,css,js,output).
 <h4> This example used only standard plain text content for the cues:</h4>
 
 <details>
-  <summary>Code extract!</summary>
+  <summary>WebVTT code extract!</summary>
 
 ```
 1.  WEBVTT
@@ -4152,8 +4150,7 @@ correspond to each of the seven chapters:
     200x400 pixels.
 
 (For advanced users: it's possible to semi-automatize this process using
-the ffmepg command line tool, see for
-example [this](https://trac.ffmpeg.org/wiki/Create%20a%20thumbnail%20image%20every%20X%20seconds%20of%20the%20video) and [that](https://stackoverflow.com/questions/8679390/ffmpeg-extracting-20-images-from-a-video-of-variable-length)).
+the ffmepg command line tool, see for example; <a href="https://trac.ffmpeg.org/wiki/Create%20a%20thumbnail%20image%20every%20X%20seconds%20of%20the%20video">this</a> and <a href="https://stackoverflow.com/questions/8679390/ffmpeg-extracting-20-images-from-a-video-of-variable-length">that</a>).
 
 Here are the images which correspond to the seven chapters of the video
 from the previous example:
@@ -4161,15 +4158,15 @@ from the previous example:
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 37-43. seven thumbnail images (76) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="left" width="100%">
+<p align="left" width="50%">
 <img src="./images/image037.jpeg" style="width:2.57292in;height:1.20833in" alt="chapter 1 thumbnail." />
 <img src="./images/image038.jpeg" style="width:2.51042in;height:1.19792in" alt="chapter 2 thumbnail." />
 </p>
-<p align="left" width="100%">
+<p align="left" width="50%">
 <img src="./images/image039.jpeg" style="width:2.5625in;height:1.19792in" alt="chapter 3 thumbnail." />
 <img src="./images/image040.jpeg" style="width:2.54167in;height:1.19792in" alt="chapter 4 thumbnail." />
 </p>
-<p align="left" width="100%">
+<p align="left" width="50%">
 <img src="./images/image041.jpeg" style="width:2.53125in;height:1.21875in" alt="chapter 5 thumbnails." />
 <img src="./images/image042.jpeg" style="width:2.5in;height:1.19792in" alt="chapter 6 thumbnail." />
 </p>
@@ -6274,8 +6271,10 @@ results with the Chrome WebAudio Inspector extension):
 <!------------------------- 64.  (1##) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image064.jpeg" style="width:5in;height:3.3563in"
-alt="Audio graph with analyser node and properties" />
+<img src="./images/image064.jpeg" 
+  style="width:5in;height:3.3563in"
+  alt="Audio graph with analyser node and properties." />
+</p>
 
 Step #2: write the animation loop
 
@@ -6377,8 +6376,9 @@ JSBin](https://jsbin.com/fuyejuz/edit?html,js,console,output):
 <!------------------------- 65.  (1##) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image065.jpeg" style="width:3in;height:3.26685in"
-alt="a video player with real time waveform visualization" />
+<img src="./images/image065.jpeg" 
+  style="width:3in;height:3.26685in"
+  alt="A video player with real time waveform visualization." />
 </p>
 
 Example #3: both previous examples, this time with the graphic
@@ -6394,8 +6394,9 @@ you should see the waveform changing.
 <!------------------------- 66.  (1##) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image066.jpeg" style="width:3in;height:2.5726in"
-alt="audio player + equalizer + visualization" />
+<img src="./images/image066.jpeg" 
+  style="width:3in;height:2.5726in"
+  alt="Audio player + equalizer + visualization." />
 </p>
 
 [Example at JSBin](https://jsbin.com/jafoboh/edit?js,console,output):
@@ -6404,8 +6405,9 @@ alt="audio player + equalizer + visualization" />
 <!------------------------- 67.  (1##) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image067.jpeg" style="width:3in;height:4.04878in"
-alt="Video player + equalizer + waveform visualization" />
+<img src="./images/image067.jpeg" 
+  style="width:3in;height:4.04878in"
+  alt="Video player + equalizer + waveform visualization." />
 </p>
 
 <!------------------------------------------------------------------------------------------------>
@@ -6420,15 +6422,17 @@ alt="Video player + equalizer + waveform visualization" />
 <!------------------------- 68.  (1##) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image068.jpeg" style="width:3in;height:1.63496in"
-alt="audio player with frequency visualisations with red bars" />
+<img src="./images/image068.jpeg" 
+  style="width:3in;height:1.63496in"
+  alt="Audio player with frequency visualisations with red bars." />
 
 <!------------------------------------------------------------------------------------------------>
 <!------------------------- 69.  (1##) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image069.jpeg" style="width:3in;height:1.57732in"
-alt="frequency viualisation this time fftsize = 64" />
+<img src="./images/image069.jpeg" 
+  style="width:3in;height:1.57732in"
+  alt="Frequency viualization this time fftsize = 64." />
 </p>
 
 This time, instead of a waveform we want to visualize an animated bar
@@ -6558,8 +6562,9 @@ and try to understand how the drawing of the frequency is done.
 <!------------------------- 70.  (1##) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image070.jpeg" style="width:3in;height:1.57105in"
-alt="Same example as before but with symmetric and colored frequency visualisations" />
+<img src="./images/image070.jpeg" 
+  style="width:3in;height:1.57105in"
+  alt="Same example as before but with symmetric and colored frequency visualizations." />
 </p>
 
 [Last example at
@@ -6571,8 +6576,9 @@ before the visualizer node:
 <!------------------------- 71.  (1##) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image071.jpeg" style="width:3in;height:3.36034in"
-alt="Previous example with a master volume (gain node) and the equalizer + a stereoPanner node" />
+<img src="./images/image071.jpeg" 
+  style="width:3in;height:3.36034in"
+  alt="Previous example with a master volume (gain node) and the equalizer + a stereoPanner node." />
 </p>
 
 And here is the audio graph for this example (picture taken with the now
@@ -6583,8 +6589,9 @@ with the Chrome WebAudio Inspector extension):
 <!------------------------- 72.  (1##) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image072.jpeg" style="width:6.5in;height:1.06667in"
-alt="audio graph from above example" />
+<img src="./images/image072.jpeg" 
+  style="width:6.5in;height:1.06667in"
+  alt="Audio graph from above example." />
 </p>
 
 Source code from this example's the buildAudioGraph function:
@@ -6658,8 +6665,9 @@ Example #1: add a single volume meter to the audio player
 <!------------------------- 73.  (1##) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image073.jpeg" style="width:3in;height:1.77337in"
-alt="Single volume meter that dances with the music" />
+<img src="./images/image073.jpeg" 
+  style="width:3in;height:1.77337in"
+  alt="Single volume meter that dances with the music." />
 </p>
 
 In order to have a "volume meter" which traces upward/downward with the
@@ -7716,8 +7724,14 @@ performed when the canvas is not visible, thus saving CPU resources.
 
 <h4>Videos and animated textures: the &lt;video&gt; element</h4>
 
-<img src="./images/image093.png" style="width:1in;height:1in"
-alt="a movie film icon" />
+<!------------------------------------------------------------------------------------------------>
+<!------------------------- 90. a movie film icon (1##) ---------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image090.png" 
+  style="width:1in;height:1in"
+  alt="A movie film icon." />
+</p>
 
 The HTML5 &lt;video&gt; element was introduced in the HTML5 specification
 for the purpose of playing <i>streamed</i> videos or movies, partially
@@ -7732,8 +7746,14 @@ as "animated textures" over graphic objects.
 
 <h4>Audio (streamed audio and real time sound effects): the &lt;audio&gt; element and the Web Audio API</h4>
 
-<img src="./images/image094.png" style="width:2in;height:2.00966in"
-alt="a picture of a speaker" />
+<!------------------------------------------------------------------------------------------------>
+<!------------------------- 91. a picture of a speaker (1##) ---------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+  <img src="./images/image091.png" 
+  style="width:2in;height:2.00966in"
+  alt="A picture of a speaker." />
+</p>
 
 <h4>The &lt;audio&gt; element</h4>
 
@@ -7757,8 +7777,14 @@ Edge supports it).
 
 <h4><b>Interacting</b>: dealing with keyboard and mouse events, the GamePad API</h4>
 
-<img src="./images/image095.png" style="width:0.72917in;height:0.80208in"
-alt="a gamepad picture" />
+<!------------------------------------------------------------------------------------------------>
+<!------------------------- 92. a picture of gamepad remote (1##) ---------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image092.png" 
+  style="width:0.72917in;height:0.80208in"
+  alt="A picture of gamepad remote." />
+</p>
 
 User inputs will rely on several APIs, some of which are well
 established, such as the DOM API that is used for keyboard, touch or
@@ -7783,8 +7809,8 @@ as [socket.io](https://socket.io/), provide the means for sending
 messages to a server and receiving event-driven responses without having
 to poll the server for a reply. 
 
-<img src="./images/image096.gif" style="width:2in;height:2.28807in"
-alt="a graph showing several clients interacting with a websocket server" />
+<img src="./images/image093.gif" style="width:2in;height:2.28807in"
+alt="A graph showing several clients interacting with a websocket server." />
 
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch2-2-3">2.2.3 The "game loop"</h3>
@@ -9730,7 +9756,9 @@ necessary!*
 -   [Gamepad Controls for HTML5
     > Games](https://blog.teamtreehouse.com/gamepad-controls-html5-games)
 
-## 2.3.7 Move the monster!
+<!------------------------------------------------------------------------------------------------>
+<h3 id="ch2-3-7">2.3.7 Move the monster!</h3>
+<!------------------------------------------------------------------------------------------------>
 
 Hi, This time, I will show you in that video what
 
@@ -22165,4 +22193,4 @@ your comments/observations/questions and share your creations.
 
 <h5>the end...</h5>
 
-<h4>Last Updated: 10-06-2022 7:59pm</h4>
+<h4>Last Updated: 10-07-2022 6:31am</h4>
