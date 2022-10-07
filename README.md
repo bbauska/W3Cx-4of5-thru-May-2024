@@ -4156,22 +4156,22 @@ Here are the images which correspond to the seven chapters of the video
 from the previous example:
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 37-43. seven thumbnail images (76) ------------------------------->
+<!------------------------- 37-43. seven thumbnail chapter images (76) --------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="right" width="45%">
-<img src="./images/image037.jpeg" style="width:2.57292in;height:1.20833in" alt="chapter 1 thumbnail." />
-<img src="./images/image038.jpeg" style="width:2.51042in;height:1.19792in" alt="chapter 2 thumbnail." />
+<p align="left" width="80%">
+<img src="./images/image037.jpeg" style="width:2.57292in;height:1.20833in" alt="Chapter 1 thumbnail." />
+<img src="./images/image038.jpeg" style="width:2.51042in;height:1.19792in" alt="Chapter 2 thumbnail." />
 </p>
-<p align="right" width="45%">
-<img src="./images/image039.jpeg" style="width:2.5625in;height:1.19792in" alt="chapter 3 thumbnail." />
-<img src="./images/image040.jpeg" style="width:2.54167in;height:1.19792in" alt="chapter 4 thumbnail." />
+<p align="left" width="80%">
+<img src="./images/image039.jpeg" style="width:2.5625in;height:1.19792in" alt="Chapter 3 thumbnail." />
+<img src="./images/image040.jpeg" style="width:2.54167in;height:1.19792in" alt="Chapter 4 thumbnail." />
 </p>
-<p align="right" width="45%">
-<img src="./images/image041.jpeg" style="width:2.53125in;height:1.21875in" alt="chapter 5 thumbnails." />
-<img src="./images/image042.jpeg" style="width:2.5in;height:1.19792in" alt="chapter 6 thumbnail." />
+<p align="left" width="80%">
+<img src="./images/image041.jpeg" style="width:2.53125in;height:1.21875in" alt="Chapter 5 thumbnails." />
+<img src="./images/image042.jpeg" style="width:2.5in;height:1.19792in" alt="Chapter 6 thumbnail." />
 </p>
-<p align="center" width="90%">
-<img src="./images/image043.jpeg" style="width:2.54167in;height:1.21875in" alt="chapter 7 thumbnail." />
+<p align="center" width="80%">
+<img src="./images/image043.jpeg" style="width:2.54167in;height:1.21875in" alt="Chapter 7 thumbnail." />
 </p>
 
 To associate these images with its chapter description, we will use JSON
@@ -4180,7 +4180,7 @@ objects as cue contents:
 [elephants-dream-chapters-en-JSON.vtt](https://mainline.i3s.unice.fr/mooc/elephants-dream-chapters-en-JSON.vtt):
 
 <details>
-  <summary>WEBTT code extract!</summary>
+  <summary>WebVTT code extract!</summary>
 
 ```
 1.  WEBVTT
