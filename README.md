@@ -9335,7 +9335,7 @@ too, but we haven't tested the API with them. You may find someone who
 has managed but they've probably needed to install an operating
 system driver to make it work.
 
-### Detecting gamepads
+<h4>Detecting gamepads
 
 <h4>Events triggered when the gamepad is plugged in or unplugged
 
@@ -9723,179 +9723,108 @@ testing and calibration tool, and the "jstest-gtk" configuration and
 testing tool; and that was 'it' - no actual configuration was
 necessary!*
 
-### External resources
+<h4>External resources</h4>
 
 -   [THE BEST resource: this paper from smashingmagazine.com tells you
-    > everything about the GamePad
-    > API](https://www.smashingmagazine.com/2015/11/gamepad-api-in-web-games/).
-    > Very complete, explains how to set a dead zone, a keyboard
-    > fallback, etc.
+    everything about the GamePad
+    API](https://www.smashingmagazine.com/2015/11/gamepad-api-in-web-games/).
+    Very complete, explains how to set a dead zone, a keyboard
+    fallback, etc.
 
 -   [Good article about using the gamepad API on the Mozilla Developer
-    > Network site](https://hacks.mozilla.org/2013/12/the-gamepad-api/)
+    Network site](https://hacks.mozilla.org/2013/12/the-gamepad-api/)
 
 -   [An interesting article on the gamepad support, published on the
-    > HTML5 Rocks Web
-    > site](https://www.html5rocks.com/en/tutorials/doodles/gamepad/)
+    HTML5 Rocks Web
+    site](https://www.html5rocks.com/en/tutorials/doodles/gamepad/)
 
--   [gamepad.js ](https://github.com/neogeek/gamepad.js)is a Javascript
-    > library to enable the use of gamepads and joysticks in the
-    > browser. It smoothes over the differences between browsers,
-    > platforms, APIs, and a wide variety of gamepad/joystick devices.
+-   [gamepad.js ](https://github.com/neogeek/gamepad.js)is a Javascript 
+    library to enable the use of gamepads and joysticks in the
+    browser. It smoothes over the differences between browsers,
+    platforms, APIs, and a wide variety of gamepad/joystick devices.
 
--   [Another library we used in our team for controlling a mobile robot
-    > (good support from the
-    > authors)](https://github.com/kallaspriit/HTML5-JavaScript-Gamepad-Controller-Library)
+-   [Another library we used in our team for controlling a mobile robot (good support from the
+    authors)](https://github.com/kallaspriit/HTML5-JavaScript-Gamepad-Controller-Library)
 
--   [Gamepad Controls for HTML5
-    > Games](https://blog.teamtreehouse.com/gamepad-controls-html5-games)
+-   [Gamepad Controls for HTML5 Games](https://blog.teamtreehouse.com/gamepad-controls-html5-games)
 
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch2-3-7">2.3.7 Move the monster!</h3>
 <!------------------------------------------------------------------------------------------------>
 
-Hi, This time, I will show you in that video what
+Hi, This time, I will show you in that video what we have done so far.
 
-we have done so far. We started from one of the examples from the HTML5
-
-Part 1 course, the one that just use the canvas to draw small monster.
+We started from one of the examples from the HTML5 Part 1 course, the one that just use the canvas to draw small monster.
 
 So we have a canvas here, and in a function called when the page is
-loaded in the window.onload callback,
+loaded in the window.onload callback, we get the canvas, we get the context of the canvas and we called the
+draw monster function.
 
-we get the canvas, we get the context of the canvas and we called the
-draw monster
+Here we have got just a function that is called once after the page is loaded and this function just draws the monster using translate, stroke, fillRect and so on.
 
-function. Here we have got just a function that is called
+Then, in order to turn this into a small game framework and in order to draw the monster 60 times per seconds, we introduced what is called the black box model for creating JavaScript objects.
 
-once after the page is loaded and this function just draws the monster
-using translate, stroke,
+Instead of having functions, we have got objects. 
 
-fillRect and so on. Then, in order to turn this into a small game
+We create an object that is the game framework:
 
-framework and in order to draw the monster 60 times per seconds, we
-introduced what is
-
-called the black box model for creating JavaScript objects.
-
-Instead of having functions, we have got objects. We create an object
-that is the game framework:
-
-game = new GF() with capital letters, this is called a constructor
-function.
+game = new GF() with capital letters, this is called a constructor function.
 
 In JavaScript, when you start a function with capital letters, it means
-that it is meant
+that it is meant to be use with a new. 
 
-to be use with a new. Then we call just some parts of the game framework
+Then we call just some parts of the game framework that are exposed to an external user. 
 
-that are exposed to an external user. So here we can call game.start but
-we can
-
-not call anything. And in this way to design object, the internals of
-the game framework
-
-that are exposed are located in an object we return at the end of the
+Here we can call game.start but we can not call anything. And in this way to design object, the internals of
+the game framework that are exposed are located in an object we return at the end of the
 object.
 
-So in the end of the game framework constructor function, we do return
-start, this is the
+In the end of the game framework constructor function, we do return start, this is the name 
+of the property we will able to use from the outside, and start here is the name of an internal function.
 
-name of the property we will able to use from the outside, and start
-here is the name of
-
-an internal function. So game.start will call this start function
-
-inside the game framework. In this function we do the initialization
-
-so we will create a div for displaying the number of frame per seconds,
-we get the canvas,
-
-the context, and we call requestAnimationFrame(mainLoop) in order to
+So, game.start will call this start function inside the game framework. 
+In this function we do the initialization so we will create a div for displaying the number of frame per seconds, we get the canvas, the context, and we call requestAnimationFrame(mainLoop) in order to
 start the animation.
 
-The mainLoop is a private function inside the game framework because it
-is not exposed,
-
+The mainLoop is a private function inside the game framework because it is not exposed,
 we do not return its name here so it is a sort of private function.
 
-And what do we do in the mainLoop? We clear the canvas, we draw the
-monster and we call
+And what do we do in the mainLoop? We clear the canvas, we draw the monster and we call 
+again requestAnimationFrame(mainLoop). 
 
-again requestAnimationFrame(mainLoop). In addition, we also measure the
-frames per
+In addition, we also measure the frames per seconds taking into account the current time. 
 
-seconds taking into account the current time. So in order to measure the
-number of FPS,
+In order to measure the number of FPS, we pass the time and we compute deltas in this function here, that is
+also a private function that has been presented previously in the course.
 
-we pass the time and we compute deltas in this function here, that is
-also a private function
+This is a very small skeleton and then we can build on that by adding new methods, by
+adding new properties. 
 
-that has been presented previously in the course.
+The properties are the local variables that are usable only inside the game framework. 
+In the current lesson, we are adding user interaction like detecting the mouse buttons 
+that are pressed, the mouse position or the different keys that can be pressed. 
 
-So, this is a very small skeleton and then we can build on that by
-adding new methods, by
+You can notice that the diagonal movements are very smooth because we can manage different key presses at the same time and also I can press a key and a button and the monster will move faster.
 
-adding new properties. The properties are the local variables that are
-usable only inside
+Multiple events are managed using a global status variable, that we called inputStates, 
+and that is checked 60 times per seconds from inside the mainLoop. 
 
-the game framework. In the current lesson, we are adding user
-interaction
+The event listeners, the key event listeners and the mouse event listeners will just add
+properties to this variable. 
 
-like detecting the mouse buttons that are pressed, the mouse position or
-the different keys that
+Let me show you how it is done.
 
-can be pressed. You can notice that the diagonal movements
+It is done in the start method that is called when you want to initialize the game framework, we declare the event listener and in case we have got a keydown and if this key is the left arrow for example, we
+set the left property to the inputStates to left.
 
-are very smooth because we can manage different key presses at the same
-time and also I can
+And in the animation loop, we call a method called updateMonsterPosition that will check for this global inputStates and if the left key is pressed, we will display a message "left key pressed" and we will modify the speed of the monster. 
 
-press a key and a button and the monster will move faster.
+And this variable ‘speedX’ is taken into account to increment the x coordinate.
 
-So multiple events are managed using a global status variable, that we
-called inputStates,
-
-and that is checked 60 times per seconds from inside the mainLoop. So
-the event listeners,
-
-the key event listeners and the mouse event listeners will just add
-properties to this
-
-variable. Let me show you how it is done. It is done in the start method
-that is called
-
-when you want to initialize the game framework, we declare the event
-listener and in case
-
-we have got a keydown and if this key is the left arrow for example, we
-set the left property
-
-to the inputStates to left. And in the animation loop, we call a method
-called updateMonsterPosition
-
-that will check for this global inputStates and if the left key is
-pressed, we will display
-
-a message "left key pressed" and we will modify the speed of the
-monster. And this variable
-
-‘speedX’ is taken into account to increment the x coordinate.
-
-And this is how we can get a smooth animation because this
-updateMonsterPosition is called
-
-60 times per seconds. So if I keep a key pressed, it is not important
-
-if the key is repeated, if I have got several keys pressed, because the
-status of the left
-
-key in the inputStates will be unchanged and my monster will keep moving
-on the left.
+And this is how we can get a smooth animation because this updateMonsterPosition is called 60 times per seconds. If I keep a key pressed, it is not important if the key is repeated, if I have got several keys pressed, because the status of the left key in the inputStates will be unchanged and my monster will keep moving on the left.
 
 Take time to look at the code, read slowly the explanation in the page
-and I will meet
-
-you in the next video in which we will add enemies and obstacles and
+and I will meet you in the next video in which we will add enemies and obstacles and
 detect collisions.
 
 <h4>Make the monster move using the arrow keys, and to increase its speed by pressing a mouse button
@@ -9923,8 +9852,8 @@ Where monster.x and monster.y define the monster's
 current position and monster.speed corresponds to the number of pixels
 the monster will move between animation frames.
 
-*Note*: this is not the best way to animate objects in a game; we will
-look at a far better solution - *"time based animation" - *in another
+<i>Note</i>: this is not the best way to animate objects in a game; we will
+look at a far better solution - <i>"time based animation" - </i>in another
 lesson.
 
 <h4>We modified the game loop as follows:
@@ -10214,7 +10143,7 @@ This technique is useful when:
     other sorts of computations (physics engine, artificial
     intelligence, etc.)
 
-### How to measure time when we use requestAnimationFrame?
+<h4> How to measure time when we use requestAnimationFrame?
 
 Let's take a simple example with a small rectangle that moves from left
 to right. At each animation loop, we erase the canvas content, calculate
@@ -10235,7 +10164,7 @@ we did in the previous lessons, the browser tries to keep the frame-rate
 at 60 fps, meaning that the ideal time between frames will be 1/60
 second = 16.66 ms.
 
-### Example #1: no use of time-based animation
+<h4>Example #1: no use of time-based animation
 
 [Online example at JSBin](https://jsbin.com/dibuze/edit)
 
@@ -10350,7 +10279,7 @@ consequence of the extra time spent in the animation loop.
 Let's find out how to measuring time between frames to achieve a
 constant speed on screen, even when the frame rate changes.
 
-### Method #1: using the JavaScript Date object
+<h4>Method #1: using the JavaScript Date object
 
 Let's modify the example from the previous lesson slightly by adding
 a *time-based animation*.  Here we use the "standard JavaScript" way for
@@ -10558,7 +10487,7 @@ adapts itself!
 
 </details>
 
-### Method #2: using the new HTML5 high-resolution timer
+<h4>Method #2: using the new HTML5 high-resolution timer
 
 Since the beginning of HTML5, game developers, musicians, and
 others have asked for a sub-millisecond timer to be able to avoid some
@@ -10669,7 +10598,7 @@ Only two lines have changed but the accuracy is much higher, if you
 uncomment the console.log(...) calls in the main loop. You will see the
 difference.
 
-### Method #3: using the optional timestamp parameter of the callback function of requestAnimationFrame
+<h4>Method #3: using the optional timestamp parameter of the callback function of requestAnimationFrame
 
 > <b>This is the recommended method!</b>
 
@@ -10914,7 +10843,7 @@ Here is the [online example at JSBin](https://jsbin.com/bonutur/edit).
 </html>
 ```
 
-### Same technique with the bouncing rectangle
+<h4>Same technique with the bouncing rectangle
 
 See how we can set both the speed (in pixels/s) and the frame-rate using
 a high-resolution time with this [modified version on JSBin of the
@@ -11031,7 +10960,7 @@ technique](https://jsbin.com/momeci/edit). 
 
 </details>
 
-### Can we use setInterval?
+<h4>Can we use setInterval?
 
 It's quite possible to use setInterval(function, interval) if you do not
 need an accurate scheduling.
@@ -11837,7 +11766,7 @@ function rectsOverlap(x1, y1, w1, h1, x2, y2, w2, h2) {
 }
 ```
 
-<h4>Let's test this method
+<h4>Let's test this method</h4>
 
 [Try this example at JSBin](https://jsbin.com/fubima/edit): move the
 monster with the arrow keys and use the mouse to move "the player": this
@@ -12018,7 +11947,7 @@ alt="Circle and rectangle not in collision" /><img src="./images/image139.jpeg"
 style="width:2.10417in;height:2.19792in"
 alt="circle collides a rectangle" />
 
-<h4>[ADVANCED] Collision between balls (pool like)
+<h4>[ADVANCED] Collision between balls (pool like)</h4>
 
 -   Math and physics: please read [this external resource (for math), a
     great article that explains the physics of a pool
@@ -12067,7 +11996,7 @@ have also been expanded in the source code to make computations clearer.
 Note that this is not for beginners: advanced math and physics are
 involved!
 
-<h4>To go further... video game physics!
+<h4>To go further... video game physics!</h4>
 
 For the ones who are not afraid by some math and physics and would like
 to learn how to do collision detection in a more realistic way (using
@@ -12093,7 +12022,10 @@ the ball color to red.
 <img src="./images/image142.jpeg" style="width:3in;height:3.02853in"
 alt="Collision between balls and the monster" />
 
-<h4>Source code extract:
+<h4>Source code extract:</h4>
+
+<details>
+  <summary>Function code extract!</summary>
 
 ```
 1.  function updateBalls(delta) {
@@ -12122,7 +12054,9 @@ alt="Collision between balls and the monster" />
 24. }
 ```
 
-The only additions are: *lines 13-19* in the updateBalls function, and
+</details>
+
+The only additions are: <i>lines 13-19</i> in the updateBalls function, and
 the circRectsOverlap function!
 
 <!------------------------------------------------------------------------------------------------>
@@ -12170,7 +12104,7 @@ let's explain how to use "sprites" in JavaScript and canvas.
 
 There are different sorts of *sprite sheets*. See some examples below.
 
-<h4>Multiple postures on a single sprite sheet
+<h4>Multiple postures on a single sprite sheet</h4>
 
 A sprite sheet with different "sprite" sets that correspond to different
 "postures": this is the case for the walking woman we just saw in the
@@ -12202,7 +12136,7 @@ alt="sprite sheet for a robot jump" />
 Whereas the walking robot posture is made of 16 sprites, the jumping
 robot needs 26!
 
-<h4>Hybrid sprite sheets
+<h4>Hybrid sprite sheets</h4>
 
 You will also find sprite sheets that contain completely different sets
 of sprites (this one comes from [the famous Gridrunner IOS game by Jeff
@@ -12218,7 +12152,7 @@ how to support different layouts of sprite sheet.
 <h3 id="ch2-6-3">2.6.3 Sprite extraction and animation</h3>
 <!------------------------------------------------------------------------------------------------>
 
-<h4>Principle
+<h4>Principle</h4>
 
 Before doing anything interesting with the sprites, we need to:
 
@@ -12235,7 +12169,7 @@ Before doing anything interesting with the sprites, we need to:
 In this lesson, let's construct an interactive tool to present the
 principles of sprite extraction and animation.
 
-<h4>Example #1
+<h4>Example #1</h4>
 
 In this example, we'll move the slider to extract the sprite indicated
 by the slider value. See the red rectangle? This is the sprite image
@@ -12243,12 +12177,12 @@ currently selected! When you move the slider, the corresponding sprite
 is drawn in the small canvas. As you move the slider from one to the
 next, see how the animation is created? 
 
-<h4>[<span id="_Toc98696629" class="anchor"></span>Try it at JSBin](https://jsbin.com/yukacep/edit?html,js,output):
+[Try it at JSBin](https://jsbin.com/yukacep/edit?html,js,output):
 
 <img src="./images/image148.jpeg" style="width:5in;height:4.31036in"
 alt="Screenshot of the example: move a slider to select a subimage/sprite from the spritesheet" />
 
-<h4>HTML code:
+<h4>HTML code:</h4>
 
 ```
 1.  <html lang="en">
@@ -12407,7 +12341,7 @@ sprites:
 
 </details>
 
-<h4><b>Explanations</b>:</h4>
+<h4>Explanations:</h4>
 
 -   *Lines 1-4*: characteristics of the sprite sheet. How many rows,
     i.e., how many sprites per row, etc.
@@ -12440,7 +12374,7 @@ sprites:
     sheets. Adjust the global parameters in bold at* lines 1-5* and try
     the extractor.
 
-<h4>Example #2
+<h4>Example #2</h4>
 
 542. This is the same application with another sprite sheet.  
      We just changed these parameter values: try the same code but with
@@ -12507,7 +12441,7 @@ value of the parameter and observing the result.
 <img src="./images/image150.jpeg" style="width:6.5in;height:4.27847in"
 alt="Example of the sprite framework on JsBin. Screenshot" />
 
-<h4>The SpriteImage object and sprite models
+<h4>The SpriteImage object and sprite models</h4>
 
 In this small framework we use "SpriteImage ", a JS object we build to
  represent one sprite image. Its properties are: the global sprite sheet
@@ -12623,7 +12557,7 @@ robot in the previous example.
 64. }
 ```
 
-<h4>Same example but with the walking woman sprite sheet
+<h4>Same example but with the walking woman sprite sheet</h4>
 
 [Try this JsBin](http://jsbin.com/fekacu/edit?js,output)
 
@@ -12649,7 +12583,7 @@ sprite sheet has 8 different postures, so you can call:
 12. // etc...
 ```
 
-<h4>Moving the sprites, stopping the sprites
+<h4>Moving the sprites, stopping the sprites</h4>
 
 [Example at JsBin](https://jsbin.com/muwoje/edit?js,output)
 
@@ -12662,7 +12596,7 @@ time we created 8 woman sprites, one for each direction.
 Notice that we added a drawStopped method in the Sprite model in order
 to stop animating the woman when no key is pressed for moving her.
 
-<h4>External resource
+<h4>External resource</h4>
 
 -   Game development tutorial (5 May 2020): [Draw images and sprite
     animations](https://spicyyoghurt.com/tutorials/html5-javascript-game-development/images-and-sprite-animations)
@@ -12684,7 +12618,7 @@ JsBin](https://jsbin.com/mifeva/edit?js,console,output)</b>
 <img src="./images/image153.jpeg" style="width:6.5in;height:3.03819in"
 alt="The woman sprite in the game framework, jsbin screenshot" />
 
-<h4>How to add sprites to the game framework...
+<h4>How to add sprites to the game framework...</h4>
 
 1.  We declare a woman object, similar to the monster object, with x, y,
     speed, width properties. We add a direction property that
@@ -13086,7 +13020,7 @@ JavaScript files:
 
 Let's do this together!
 
-<h4>Start with a simple structure
+<h4>Start with a simple structure</h4>
 
 First, create a game.html file that contains the actual HTML code:
 
@@ -13137,7 +13071,7 @@ not work, open devtools, look at the console, fix the errors, try again,
 etc. You may have to do this several times when you split your files and
 encounter errors.
 
-<h4>Isolate the ball function constructor
+<h4>Isolate the ball function constructor</h4>
 
 Put the Ball constructor function in a js/ball.js file, include it in
 the game.html file, and try the game: oops, it doesn't work! Let's open
@@ -13213,7 +13147,7 @@ now ball.draw(<b>ctx</b>); instead of ball.draw() without any parameter.
 
 </details>
 
-<h4>Isolate the part that counts the number of frames per second
+<h4>Isolate the part that counts the number of frames per second</h4>
 
 We need to add a small initFPS function for creating the <div> that
 displays the FPS value... this function will be called from
@@ -13270,7 +13204,7 @@ At this stage, the structure looks like this:
 <img src="./images/image159.jpeg" style="width:1.625in;height:2.25in"
 alt="Game structure" />
 
-<h4>Let's continue and isolate the event listeners
+<h4>Let's continue and isolate the event listeners</h4>
 
 Now, consider the code that creates the listeners, can we move it from
 the GF.start() method into a listeners.js file? We'll have to pass the
@@ -13695,7 +13629,7 @@ new arrayBuffer type for the expected response (*line 5*):
 10. }
 ```
 
-<h4>Example: download a binary song file using XHR2 and responseType='arraybuffer', and play it using Web Audio
+<h4>Example: download a binary song file using XHR2 and responseType='arraybuffer', and play it using Web Audio</h4>
 
 [Try this example on
 JSBin](https://jsbin.com/mecakaz/edit?html,js,console,output):
@@ -13820,7 +13754,7 @@ alt="Downloading file with Xhr2" />
 style="width:4.41667in;height:0.79167in"
 alt="downloading progression using a progress element" />
 
-<h4>1 - Declare a progress event handler
+<h4>1 - Declare a progress event handler</h4>
 
 XHR2 now provides progress event attributes for monitoring data
 transfers. Previous implementations of XmlHttpRequest didn't tell us
@@ -13879,7 +13813,7 @@ use xhr.upload.onprogress.
 Note that an alternative syntax such
 as xhr.upload.addEventListener('progress', callback, false) also works.
 
-<h4>2 - Get progress values (how many bytes have been downloaded) and the total file size
+<h4>2 - Get progress values (how many bytes have been downloaded) and the total file size</h4>
 
 The event e passed to the onprogress callback has two pertinent
 properties:
@@ -14166,7 +14100,7 @@ Here is the code of such an event listener:
 4. };
 ```
 
-<h4>[Try the example on JSBin](https://jsbin.com/qedaja/edit?html,css,output):</h4>
+[Try the example on JSBin](https://jsbin.com/qedaja/edit?html,css,output):
 
 <h4>Code from this example (nearly the same as previous example's code):</h4>
 
@@ -14456,7 +14390,7 @@ Let's continue to develop the example. We show how to drag an element
 and detect a drop, receiving a value which corresponds to the dragged
 element. Then we change the page content accordingly.
 
-<h4>Step #1: in the dragstart handler, copy a value in the drag and drop clipboard for later use
+<h4>Step #1: in the dragstart handler, copy a value in the drag and drop clipboard for later use</h4>
 
 When a draggable <li> element is being dragged, in
 the dragstart handler [get the value of its data-value
@@ -14482,7 +14416,7 @@ data-value attribute (in our case "apples", "oranges" or "pears"):
 8.  }
 ```
 
-<h4>Step #2: define a "drop zone"
+<h4>Step #2: define a "drop zone"</h4>
 
 Any visible HTML element may become a "drop zone"; if we attach an event
 listener for the drop event. Note that most of the time, as events may
@@ -14502,7 +14436,7 @@ handled before the element is finally dropped. The ondragover handler is
 used to avoid propagating dragover events. This is done by returning
 the false value at <i>line 1</i>.
 
-<h4>Step #3: write a drop handler, fetch content from the clipboard, and do something with it
+<h4>Step #3: write a drop handler, fetch content from the clipboard, and do something with it</h4>
 
 <details>
   <summary>Code extract!</summary>
@@ -14542,7 +14476,7 @@ element that has been dropped (we get this from the clipboard at <i>lines
 style="width:3.90625in;height:3.22917in" alt="drag n drop fruits" />
 ----------->
 
-<h4>Try it in your browser below or [play with it at CodePen](https://codepen.io/w3devcampus/pen/YyzWKy?editors=110):</h4>
+Try it in your browser below or [play with it at CodePen](https://codepen.io/w3devcampus/pen/YyzWKy?editors=110):</h4>
 
 <h4>Source code:</h4>
 
@@ -15373,6 +15307,9 @@ CodePen](https://codepen.io/w3devcampus/pen/vNYXyR):
 
 Complete source code from the example:
 
+<details>
+  <summary>Code extract!</summary>
+
 ```
 1.  <html lang="en">
 2.  <head>
@@ -15419,6 +15356,8 @@ Complete source code from the example:
 43. </body>
 44. </html>
 ```
+
+</details>
 
 Here, we use a CSS trick to make the second paragraph non-selectable, by
 setting the user-selected property to none.
@@ -15485,6 +15424,9 @@ which have been dragged and dropped from the desktop to a drop zone
 associated with this handler with
 an ondrop=dropHandler(event); attribute:
 
+<details>
+  <summary>Code extract!</summary>
+
 ```
 1.  function dropHandler(event) {
 2.     // Do not propagate the event
@@ -15505,6 +15447,8 @@ an ondrop=dropHandler(event); attribute:
 17.    console.log(files.length + ' file(s) have been dropped:n' + filenames);
 18. }
 ```
+
+</details>
 
 At <i>lines 7-8</i>, we get the files that have been dropped.
 
@@ -15546,6 +15490,9 @@ default behavior of the browser:
 
 <h4>... like in this example:</h4>
 
+<details>
+  <summary>Code extract!</summary>
+
 ```
 1.  function dragOverHandler(event) {
 2.     // Do not propagate the event
@@ -15565,6 +15512,8 @@ default behavior of the browser:
 16.    ...
 17. }
 ```
+
+</details>
 
 <h4>External resources</h4>
 
@@ -18179,9 +18128,9 @@ etc.).
 Here is the short version:
 
 ```
-1.  var request = db.transaction(["customers"], "readwrite")
-2.  .objectStore("customers")
-3.  .add(newCustomer);
+var request = db.transaction(["customers"], "readwrite")
+  .objectStore("customers")
+  .add(newCustomer);
 ```
 
 The above code does not perform all the tests, but you may encounter
@@ -18280,9 +18229,9 @@ concatenating the different operations (getting the store from the db,
 getting the request, calling delete, etc.). Here is the short version:
 
 ```
-1.  var request = db.transaction(["customers"], "readwrite")
-2.  .objectStore("customers")
-3.  .delete("444-44-4444");
+var request = db.transaction(["customers"], "readwrite")
+  .objectStore("customers")
+  .delete("444-44-4444");
 ```
 
 <!------------------------------------------------------------------------------------------------>
