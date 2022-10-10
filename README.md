@@ -13464,7 +13464,7 @@ Some of them are based on the framework presented in the course.
 <p align="center" width="100%">
 <img src="./images/image166.jpeg"
   style="width:4in;height:2.34815in"
-  alt="A &quot;kill the ninja game&quot;" />
+  alt="A &quot;kill the ninja&quot; game." />
 </p>
 
 <!------------------------------------------------------------------------------------------------>
@@ -13521,7 +13521,7 @@ XmlHttpRequest level 2) and the [File
 API](https://www.w3.org/TR/FileAPI/) (seen in the W3Cx [HTML5 Coding
 Essentials and Best
 Practices](https://www.edx.org/course/html5-coding-essentials-and-best-practices) MOOC).
-Also, you will discover that the HTML5 <progress> element is of great
+Also, you will discover that the HTML5 &lt;progress&gt; element is of great
 use for monitoring the progress of file uploads (or downloads).
 
 We recommend reading [this article from
@@ -13649,9 +13649,7 @@ When we started the request, we added a xhr.onprogress callback here
 that gets in event sent by the browser, that has two properties.
 
 One is called "total", that is a total number of bytes in the files we
-are downloading,
-
-and "loaded" is the number of bytes we have actually downloaded.
+are downloading, and "loaded" is the number of bytes we have actually downloaded.
 
 And we can set these two properties directly to the "value" property of
 the progress element and to the "max" property.
@@ -13707,8 +13705,14 @@ JSBin](https://jsbin.com/mecakaz/edit?html,js,console,output):
 In this example, instead of reading the file from disk, we download it
 using XHR2.
 
-<img src="./images/image167.jpeg" style="width:5in;height:2.48451in"
-alt="Downloading file with Xhr2" />
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 167. download file using xhr2 (2##) ------------------------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image167.jpeg"
+  style="width:5in;height:2.48451in"
+  alt="Downloading file with Xhr2" />
+</p>
 
 <b>Complete source code:</b>
 
@@ -13820,9 +13824,14 @@ alt="Downloading file with Xhr2" />
 
 ### Monitoring uploads or downloads using a progress event
 
+<!------------------------------------------------------------------------------------------------>
+<!-------------------------------- 168. download progress (2##) ---------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
 <img src="./images/image168.jpeg"
-style="width:4.41667in;height:0.79167in"
-alt="downloading progression using a progress element" />
+  style="width:4.41667in;height:0.79167in"
+  alt="Downloading progression using a progress element." />
+</p>
 
 <h4>1 - Declare a progress event handler</h4>
 
@@ -13893,7 +13902,7 @@ properties:
 
 2.  total which contains the file's size (in bytes).
 
-Combining these with a <progress> element, makes it very easy to
+Combining these with a &lt;progress&gt; element, makes it very easy to
 render an animated *progress bar*. Here is a source code extract that
 does this for a download operation:
 
@@ -13929,7 +13938,7 @@ does this for a download operation:
 </details>
 
 <b>Explanations</b>: by setting the value and max attributes of
-the <progress> element with the current number of bytes downloaded by
+the &lt;progress&gt; element with the current number of bytes downloaded by
 the browser and the total size of the file (*lines 10-11*), it will
 reflect the actual proportions of the file downloaded/still to come.
 
@@ -13978,7 +13987,7 @@ style="width:5in;height:1.11271in"
 ---------->
 
 This is a variant of the previous example that uses the progress event
-and a <progress> HTML5 element to display an animated progression bar
+and a &lt;progress&gt; HTML5 element to display an animated progression bar
 while the download is going on.
 
 [Try it on JSBin](https://jsbin.com/nuxanaf/edit?html,output) - look at
@@ -14141,7 +14150,7 @@ Here is a more user-friendly example. It is basically the same, but this
 time, we'll monitor the progress of the upload using a method similar to
 that used for monitoring file downloads:
 
--   We use a <progress> element and its two attributes value and max.
+-   We use a &lt;progress&gt; element and its two attributes value and max.
 
 -   We also bind an event handler to the progress event that an
     XMLHttpRequest will trigger. The event has two
@@ -15999,7 +16008,7 @@ drag  and dropping them, like in the screenshot below (the interactive
 example is a bit further down the page):
 
 <img src="./images/image187.png" style="width:6.5in;height:6.36944in"
-alt="example of file chooser and dir chooser" />
+alt="Example of file and dir chooser." />
 
 In the above screenshot, which is derived from the example detailed
 later in this page, we selected some files using the first button (which
@@ -16223,17 +16232,17 @@ This time, let us mash-up a couple of examples. Let's combine the upload
 of files using XHR2, with progress monitoring (we worked on in the 3.2
 lectures) with one of our drag and drop examples. To achieve this, we
 re-use the method calleduploadAllFilesUsingAjax() and add
-a <progress> element to the drag and drop example.
+a &lt;progress&gt; element to the drag and drop example.
 
 [Try this interactive example at
 JSBin](https://jsbin.com/conigekoda/edit) (this example does not work on
 CodePen. We are using a fake remote server and it cancels the connection
 as soon as we try to connect):
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 188.  (01) -------------------------------->
+<!------------------------------ 188. drag 'n drop and progress element (01) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image188.jpeg?raw=true"
+<img src="./images/image188.png?raw=true"
    width="45%"
    alt="Example that uses drag&#39;n&#39;drop and a progress element for monitoring the ajax upload of the files." />
 </p>
@@ -16412,7 +16421,7 @@ and upload multiple files (which might include images). 
 <h4>Serial approach: upload the files as soon as they are selected or dragged and dropped</h4>
 
 Let's design an XHR2/Ajax, a form with an <input type=file
-multiple> input field, and one or more <progress> elements for
+multiple> input field, and one or more &lt;progress&gt; elements for
 monitoring file uploads. The form will also have input fields of
 different types.
 
@@ -22226,7 +22235,6 @@ your comments/observations/questions and share your creations.
 <!------------------------------------------------------------------------------------------------>
 <!--------------------- xx.  (##) ----------------------->
 <!------------------------------------------------------------------------------------------------>
--->
 <!--
 <p align="center" width="100%">
 <img src="./images/image020.png"
