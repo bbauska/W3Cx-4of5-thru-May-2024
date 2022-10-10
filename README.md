@@ -12851,16 +12851,27 @@ look at the source code. Start from the mainloop!
 currentGameState = gameStates.gameOver:
 ```
 
-<img src="./images/image155.jpeg" style="width:4.69792in;height:4.75in"
-alt="Game Over Screen, asking to press space to start again" />
+<!------------------------------------------------------------------------------------------------>
+<!------------- 155. Game Over Screen, asking to press space to start again. (2xx) --------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image155.jpeg"
+  style="width:4.69792in;height:4.75in"
+  alt="Game Over Screen, asking to press space to start again." />
+</p>
 
 ```
 currentGameState = gameStates.gamerunning:
 ```
 
+<!------------------------------------------------------------------------------------------------>
+<!------------- 156. Game Over Screen, asking to press space to start again. (2xx) --------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
 <img src="./images/image156.jpeg"
-style="width:4.78125in;height:4.79167in"
-alt="game running, showing score, time, level" />
+  style="width:4.78125in;height:4.79167in"
+  alt="Game Running, showing score, time, and level." />
+</p>
 
 Game state management in the JavaScript code:
 
@@ -13033,17 +13044,17 @@ First, create a game.html file that contains the actual HTML code:
 1.  <!DOCTYPE html>
 2.  <html lang="en">
 3.  <head>
-4.  <meta charset="utf-8">
-5.  <title>Nearly a real game</title>
-6.   <!-- External JS libs -->
-7.  <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/1.1.25/howler.min.js"></script>
-8.   <!-- CSS files for your game -->
-9.   <link rel="stylesheet" href="css/game.css">
-10. <!-- Include here all game JS files-->
-11.  <script src="js/game.js"></script>
+4.    <meta charset="utf-8">
+5.    <title>Nearly a real game</title>
+6.    <!-- External JS libs -->
+7.    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/1.1.25/howler.min.js"></script>
+8.    <!-- CSS files for your game -->
+9.    <link rel="stylesheet" href="css/game.css">
+10.   <!-- Include here all game JS files-->
+11.   <script src="js/game.js"></script>
 12. </head>
 13. <body>
-14. <canvas id="myCanvas" width="400" height="400"></canvas>
+14.   <canvas id="myCanvas" width="400" height="400"></canvas>
 15. </body>
 16. </html>
 ```
@@ -13063,8 +13074,14 @@ file called game.js, and locate it in a subdirectory js under the
 directory where the game.html file is located. Similarly, we'll keep the
 CSS file in a css subdirectory:
 
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------------ 157. game.html (280) -------------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
 <img src="./images/image157.jpeg"
-style="width:1.98958in;height:2.29167in" alt="first game structure" />
+  style="width:1.98958in;height:2.29167in"
+  alt="First game structure." />
+</p>
 
 Try the game: open the game.html file in your browser. If the game does
 not work, open devtools, look at the console, fix the errors, try again,
@@ -13110,8 +13127,14 @@ the draw method, otherwise it won't be recognized... 
 Just for fun, let's try the game without fixing this, and look at the
 devtools console:
 
-<img src="./images/image158.jpeg" style="width:6.08333in;height:5.375in"
-alt="error the function calcDistToMove not found in ball.js" />
+<!------------------------------------------------------------------------------------------------>
+<!------------------- 158. function calcdisktomove error not found in ball.js (2##) -------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image158.jpeg"
+  style="width:6.08333in;height:5.375in"
+  alt="Error the function calcDistToMove not found in ball.js." />
+</p>
 
 Aha! The calcDistanceToMove function is indeed used by the Ball
 constructor in ball.js at *line 2*7 (it moves the ball using time-based
@@ -13201,8 +13224,14 @@ fps.js:
 
 At this stage, the structure looks like this:
 
-<img src="./images/image159.jpeg" style="width:1.625in;height:2.25in"
-alt="Game structure" />
+<!------------------------------------------------------------------------------------------------>
+<!---------------------------------- 159. game structure (2##) ----------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image159.jpeg"
+  style="width:1.625in;height:2.25in"
+  alt="Game structure." />
+</p>
 
 <h4>Let's continue and isolate the event listeners</h4>
 
@@ -13273,9 +13302,14 @@ during the course, could be put into this file as well.
 
 After all that, we reach this tidy structure:
 
+<!------------------------------------------------------------------------------------------------>
+<!-------------------------- 160. final game structure in files (2##) ---------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
 <img src="./images/image160.jpeg"
-style="width:1.86458in;height:2.96875in"
-alt="final game structure in files" />
+  style="width:1.86458in;height:2.96875in"
+  alt="Final game structure in files." />
+</p>
 
 ### Final game.html file:
 
@@ -13359,7 +13393,9 @@ Some of them are based on the framework presented in the course.
     the course.
 
 <img src="./images/image161.jpeg" style="width:2in;height:1.80212in"
-alt="Main screen of the game called Wanted" /><img src="./images/image162.jpeg"
+alt="Main screen of the game called Wanted" />
+
+<img src="./images/image162.jpeg"
 style="width:2.64583in;height:2.65625in"
 alt="The game running, monster with black bombs and gold coins" />
 
@@ -22194,4 +22230,4 @@ your comments/observations/questions and share your creations.
 
 <h5>the end...</h5>
 
-<h4>Last Updated: 10-07-2022 6:31am</h4>
+<h4>Last Updated: 10-10-2022 3:20pm</h4>
