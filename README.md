@@ -13392,12 +13392,22 @@ Some of them are based on the framework presented in the course.
     game is fun and is an interesting variation on examples presented in
     the course.
 
-<img src="./images/image161.jpeg" style="width:2in;height:1.80212in"
-alt="Main screen of the game called Wanted" />
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 161. wanted game main screen (2##) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image161.jpeg"
+  style="width:2in;height:1.80212in"
+  alt="Main screen of the game &quot;Wanted&quot;." />
 
+<!------------------------------------------------------------------------------------------------>
+<!-------------------- 162. monster with black bombs and gold coins (2##) ------------------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
 <img src="./images/image162.jpeg"
-style="width:2.64583in;height:2.65625in"
-alt="The game running, monster with black bombs and gold coins" />
+  style="width:2.64583in;height:2.65625in"
+  alt="The game running, monster with black bombs and gold coins." />
+</p>
 
 -   Duck Hunt (by Benjamin Reale and Anthony Caron). [Get the whole game
     at this GitHub
@@ -13407,31 +13417,55 @@ alt="The game running, monster with black bombs and gold coins" />
     yourself](https://courses.edx.org/assets/courseware/v1/a48a111288de4f3583b4fd9ae352cc12/asset-v1:W3Cx+HTML5.2x+2T2020a+type@asset+block/DuckHuntSpriteAndSounds.zip) (500k).
     This one started with the game framework presented in the course.
 
-<img src="./images/image163.jpeg" style="width:4in;height:2.82873in"
-alt="Screenshot of the Duck hunt game" />
+<!------------------------------------------------------------------------------------------------>
+<!---------------------------- 163. duck hunt game screenshot (2##) ------------------------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image163.jpeg"
+  style="width:4in;height:2.82873in"
+  alt="Screenshot of the Duck hunt game" />
+</p>
 
 -   Shoot em up (by Max Chazarra) (sources [on the GitHub
     site](https://github.com/MaxChazarra/MIAGE-Jeu-JS/tree/5e78fa85d257b81116fd784460848172040b3b71)).
     This one started with the game framework presented in the course:
 
-<img src="./images/image164.jpeg" style="width:4in;height:3.88192in"
-alt="Screenshot of the shoot em up game" />
+<!------------------------------------------------------------------------------------------------>
+<!--------------------------- 164. shoot em up game screenshot (2##) ----------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image164.jpeg"
+  style="width:4in;height:3.88192in"
+  alt="Screenshot of the shoot em up game." />
+</p>
 
 -   Gameboy Tetris (written starting from the game framework presented
     in the course). [Download the
     sources](https://courses.edx.org/assets/courseware/v1/b3fc2d6c5c519aaa5986f58e064a6426/asset-v1:W3Cx+HTML5.2x+2T2020a+type@asset+block/Tetris.rar) (author
     Maxime Demetrio)
 
-<img src="./images/image165.jpeg" style="width:3.125in;height:2.83333in"
-alt="gameboy tetris in html5" />
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 165. gameboy tetris in html5 (2##) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image165.jpeg"
+  style="width:3.125in;height:2.83333in"
+  alt="Gameboy Tetris in HTML5." />
+</p>
 
 -   A small "kill the ninjas" game (by Tristan Poilvet). This game used
     the game framework presented in the course as a starting
     point. [Sources available
     here.](https://courses.edx.org/assets/courseware/v1/19ecac62725b07966804bb28031f0fba/asset-v1:W3Cx+HTML5.2x+2T2020a+type@asset+block/snna.zip)
 
-<img src="./images/image166.jpeg" style="width:4in;height:2.34815in"
-alt="a &quot;kill the ninja game&quot;" />
+<!------------------------------------------------------------------------------------------------>
+<!-------------------------------- 166. kill the ninja game (2##) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image166.jpeg"
+  style="width:4in;height:2.34815in"
+  alt="A &quot;kill the ninja game&quot;" />
+</p>
 
 <!------------------------------------------------------------------------------------------------>
 <h2 id="ch3">Module 3. HTML5 File Upload and Download</h2>
