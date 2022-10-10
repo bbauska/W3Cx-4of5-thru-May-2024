@@ -14388,7 +14388,7 @@ And avoid firing too many events by just stopping the propagation with an ondrag
 See you for the next video! I will explain how to give a nice visual feedback when we drag and drop things.
 
 In order to make any visible element *draggable*, add the draggable="true" attribute to any visible HTML5 element.
-Notice that some elements are draggable by default, such as <img> elements.
+Notice that some elements are draggable by default, such as &lt;img&gt; elements.
 
 In order to detect a drag, add an event listener for the dragstart event:
 
@@ -14678,7 +14678,7 @@ Microdata is a powerful way to add structured data into HTML code, but
 HTML5 has also added the possibility of adding arbitrary data to an HTML
 element. For example, adding an attribute to specify the name of the
 photographer (or painter?) of a picture, or any kind of information that
-does not be fit within the regular attributes of the <img> element,
+does not be fit within the regular attributes of the &lt;img&gt; element,
 like alt.
 
 Suppose you coded: <b><img src="photo.jpg" photographer="Michel
@@ -14689,8 +14689,8 @@ by any string literal (WITH NO UPPERCASE) and it will be treated as
 a storage area for private data. This can later be accessed in your
 JavaScript code.
 
-Valid HTML5 code: <b><img src="photo.jpg" data-photographer="Michel
-Buffa" date="14July2020"></b>. You can set the data- attribute to any
+Valid HTML5 code: <b>&lt;img src="photo.jpg" data-photographer="Michel
+Buffa" date="14July2020"&gt;</b>. You can set the data- attribute to any
 value.
 
 The reason for this addition is that, in a bid to keep the HTML code
@@ -15266,10 +15266,10 @@ through the dataTransfer property of the different events:
 3.  var data = event.dataTransfer.getData("Fruit");
 ```
 
-<h4><img> elements are all draggable by default!
+<h4>&lt;img&gt; elements are all draggable by default!
 
 Normally, to make an element draggable, you must add
-the draggable=true attribute. <img> elements are an exception: they
+the draggable=true attribute. &lt;img&gt; elements are an exception: they
 are draggable by default! The next example shows how to drag and drop an
 image from one location in the document to another.
 
@@ -15347,7 +15347,7 @@ tree to another (under the <div> defined at *line 38*, that is the
 drop zone). This occurs at *line 18* (get back the id from the
 clipboard), and *line 19* (make it a child of the div. Consequently, it
 is no longer a child of the <body>, and indeed we have "moved"
-one <img> from its initial position to another location in the page).
+one &lt;img&gt; from its initial position to another location in the page).
 
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch3-3-8">3.3.8 Drag and drop a text selection</h3>
@@ -15465,7 +15465,7 @@ post your comments/observations/questions or share your creations.
     preferred fruit" or "what is your preferred browser" to a form.
 
 -   Order a set of images by dragging and dropping them. A sort of
-    picture gallery, you drag one picture (an <img> element) from its
+    picture gallery, you drag one picture (an &lt;img&gt; element) from its
     current position and drop it at another location in the gallery (a
     grid). In the meantime, the other pictures will have to move to give
     some room for the picture you dropped.
@@ -15993,7 +15993,7 @@ zone) or play with it at CodePen:
 
 Above, we added the readFilesAndDisplayPreview() method detailed
 earlier. We called it at the end of the drop handler (*line 77*), and we
-added the <output> element as a container for the <img> elements
+added the <output> element as a container for the &lt;img&gt; elements
 (constructed by the JavaScript code *lines 94-96*) which will display
 the thumbnails (*line 114*).
 
