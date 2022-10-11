@@ -7411,7 +7411,7 @@ eventually creating random time intervals between them and random pitch
 variations:
 
 <details>
-  <summary>Source code extract!</summary>
+  <summary>Function playSampleRepeated code extract!</summary>
 
 ```
 1.  function playSampleRepeated(buffer, rounds, interval, random, random2) {
@@ -7831,18 +7831,26 @@ messages to a server and receiving event-driven responses without having
 to poll the server for a reply. 
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------- 93. three clients and a server (149) ---------------------------->
+<!---------------------------- 93. three clients and a server (149) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image093.gif" style="width:2in;height:2.28807in"
-alt="A graph showing several clients interacting with a websocket server." />
+<img src="./images/image093.gif" 
+  style="width:2in;height:2.28807in"
+  alt="A graph showing several clients interacting with a websocket server." />
+</p>
 
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch2-2-3">2.2.3 The "game loop"</h3>
 <!------------------------------------------------------------------------------------------------>
 
-<img src="./images/image094.png" style="width:2in;height:3.78182in"
-alt=" a game loop diagram" />
+<!------------------------------------------------------------------------------------------------>
+<!--------------------------------- 94. game loop diagram (150) ---------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image094.png" 
+  style="width:2in;height:3.78182in"
+  alt="A game loop diagram." />
+</p> 
 
 The "game loop" is the main component of any game. It separates the game
 logic and the visual layer from a user's input and actions.
@@ -7879,8 +7887,14 @@ argument.
 [Try an example at JSBin](https://jsbin.com/qopefu/edit) : open the
 HTML, JavaScript and output tabs to see the code.
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------- 95. add an asterisk every 200 milliseconds (151) ----------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
 <img src="./images/image095.png"
-style="width:6.03125in;height:2.86458in" />
+  style="width:6.03125in;height:2.86458in"
+  alt="Add an asterisk every 200 milliseconds" />
+</p>
 
 Source code extract:
 
@@ -7930,6 +7944,9 @@ thing as the previous example by adding a "*" to the document every
 
 Source code extract:
 
+<details>
+  <summary>Source code extract!</summary>
+
 ```
 1.  var addStarToTheBody = function(){
 2.      document.body.innerHTML += "*";
@@ -7940,6 +7957,8 @@ Source code extract:
 7.  // calls the function AFTER 200ms
 8.  setTimeout(addStarToTheBody, 200);
 ```
+
+</details>
 
 This example will work like the previous example. However, it is a
 definite improvement, because the timer waits for the function to finish
@@ -7976,6 +7995,9 @@ JSBin](https://jsbin.com/geqija/1/edit?html,js,output).
 
 Source code extract:
 
+<details>
+  <summary>Source code extract!</summary>
+
 ```
 1.  window.onload = function init() {
 2.     // called after the page is entirely loaded
@@ -7989,6 +8011,8 @@ Source code extract:
 10.    requestAnimationFrame(mainloop);
 11. }
 ```
+
+</details>
 
 Notice that calling requestAnimationFrame(mainloop) at <i>line 10</i>, asks
 the browser to call the mainloop function every 16.6 ms: this
@@ -8074,6 +8098,9 @@ have a real game yet, but we're improving our game engine :-)
 
 <h4>Source code extract:</h4>
 
+<details>
+  <summary>Source code extract!</summary>
+
 ```
 1.  var mainLoop = function(time){
 2.    // main function, called each frame
@@ -8083,6 +8110,8 @@ have a real game yet, but we're improving our game engine :-)
 6.    requestAnimationFrame(mainLoop);
 7.  };
 ```
+
+</details>
 
 <h4>Let's measure that animation's frame rate</h4>
 
@@ -8161,6 +8190,9 @@ Now we can call the measureFPS function from inside the animation loop,
 passing it the current time, given by the high resolution timer that
 comes with the requestAnimationFrame API:
 
+<details>
+  <summary>Source code extract!</summary>
+
 ```
 1.  var mainLoop = function(time){
 2.    // compute FPS, called each frame, uses the high resolution time parameter 
@@ -8172,8 +8204,13 @@ comes with the requestAnimationFrame API:
 8.  };
 ```
 
+</details>
+
 And the &lt;div&gt; element used to display FPS on the screen is created in
 this example by the start() function:
+
+<details>
+  <summary>Source code extract!</summary>
 
 ```
 1.  var start = function(){
@@ -8185,6 +8222,8 @@ this example by the start() function:
 7.  };
 ```
 
+</details>
+
 Hack:  achieving more than 60 fPS? It's possible but to be avoided
 except in hackers' circles!
 
@@ -8194,6 +8233,9 @@ even more than 60fps (this is the limit using requestAnimationFrame).
 My favorite hack uses the onerror callback on an &lt;img&gt; element like
 this:
 
+<details>
+  <summary>Source code extract!</summary>
+
 ```
 1.  function mainloop(){
 2.    var img = new Image;
@@ -8202,6 +8244,8 @@ this:
 5.    img.src = 'data:image/png,' + Math.random();
 6.  }
 ```
+
+</details>
 
 What we are doing here, is creating a new image on each frame and
 providing invalid data as a source of the image. The image cannot be
@@ -8317,7 +8361,7 @@ described in the HTML5 Part 1 course:
 Here is JavaScript code which implements those best practices:
 
 <details>
-  <summary>Code extract!</h4>
+  <summary>Code extract!</summary>
 
 ```
 1.  // useful to have them as global variables
@@ -8403,7 +8447,7 @@ using the default color (black) and wireframe and filled modes:
     always save the previous context  at the beginning of the function
     and restore it at the end of the function (*lines 27 and 50*).
 
-<h4>Animating the monster and including it in our game engine
+<h4>Animating the monster and including it in our game engine</h4>
 
 Ok, now that we know how to move the monster, let's integrate it into
 our game engine:
@@ -8427,13 +8471,19 @@ our game engine:
 [You can try this version online at
 JSBin](https://jsbin.com/xuruja/edit). 
 
-<img src="./images/image099.jpeg" style="width:2in;height:1.96516in"
-alt="Screenshot of a trembling monster in a 60 f/s animation" />
+<!------------------------------------------------------------------------------------------------>
+<!-------------------------------- 99. trembling monster (xx) ------------------------------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image099.jpeg"
+  style="width:2in;height:1.96516in"
+  alt="Screenshot of a trembling monster in a 60 f/s animation" />
+</p>
 
 <h4>HTML code:</h4>
 
 <details>
-  <summary>Code extract!</h4>
+  <summary>Code extract!</summary>
 
 ```
 1.  <!DOCTYPE html>
@@ -8453,7 +8503,7 @@ alt="Screenshot of a trembling monster in a 60 f/s animation" />
 <h4>JavaScript complete code:</h4>
 
 <details>
-  <summary>Code extract!</h4>
+  <summary>Code extract!</summary>
 
 ```
 1.  // Inits
@@ -8553,9 +8603,9 @@ Next, let's see how to interact with it using the mouse or the keyboard.
 <h3 id="ch2-3-3">2.3.3 User interaction and event handling</h3>
 <!------------------------------------------------------------------------------------------------>
 
-<h4>Input & output: how do events work in Web apps & games?
+<h4>Input & output: how do events work in Web apps & games?</h4>
 
-<h4>HTML5 events
+<h4>HTML5 events</h4>
 
 There is no input or output in JavaScript. We treat *events* caused by
 user actions as inputs, and we manipulate the DOM structure as
@@ -8567,12 +8617,12 @@ of such objects.
 In any case, the events are called DOM events, and we use the DOM APIs
 to create *event handlers*.
 
-<h4>How to listen to events
+<h4>How to listen to events</h4>
 
 There are three ways to manage events in the DOM structure. You could
 attach an event inline in your HTML code like this:
 
-<h4>Method #1: declare an event handler in the HTML code
+<h4>Method #1: declare an event handler in the HTML code</h4>
 
 ```
 <div id="someDiv" onclick="alert('clicked!')"> content of the
@@ -8651,7 +8701,7 @@ references useful:
 <h3 id="ch2-3-4">2.3.4 Adding key listeners</h3>
 <!------------------------------------------------------------------------------------------------>
 
-<h4>A few reminders
+<h4>A few reminders</h4>
 
 This has been something of a nightmare for years, as different browsers
 had different ways of handling key events and key codes ([read this if
@@ -8664,6 +8714,9 @@ After a keyboard-related event (eg keydown or keyup), the code of the
 key that fired the event will be passed to the listener function. It is
 possible to test which key has been pressed or released, like this:
 
+<details>
+  <summary>Source code extract!</summary>
+
 ```
 1.  window.addEventListener('keydown', function(event) {
 2.     if (event.keyCode === 37) {
@@ -8671,6 +8724,8 @@ possible to test which key has been pressed or released, like this:
 4.     }
 5.  }, false);
 ```
+
+</details>
 
 At *line 2, *the key code of *37* corresponds to the left arrow key.
 
@@ -8685,7 +8740,7 @@ style="width:5.66667in;height:7.61458in" />
 <img src="./images/image101.png"
 style="width:5.66667in;height:1.29167in" />
 
-<h4>Game requirements: managing multiple keypress / keyrelease events
+<h4>Game requirements: managing multiple keypress / keyrelease events</h4>
 
 In a game, we often need to check which keys are being used, at a very
 high frequency - typically from inside the game loop that is looping at
@@ -8701,7 +8756,7 @@ loop will have to take these three keys into account: move the ship
 left, release a new missile if the previous one is out of the screen or
 if it reached a target, launch a smart bomb if conditions are met, etc.
 
-<h4>Keep the list of pertinent keys in a JavaScript object
+<h4>Keep the list of pertinent keys in a JavaScript object</h4>
 
 The typical method used is: store the list of the keys (or mouse button
 or whatever game pad button...) that are up or down at a given time in a
@@ -8712,7 +8767,7 @@ We will update its content inside the different input event listeners,
 and later check its values inside the game loop to make the game react
 accordingly.
 
-<h4>Add this to our game framework:
+<h4>Add this to our game framework:</h4>
 
 So, these are the changes to our small game engine prototype (which is
 far from finished yet):
@@ -12188,6 +12243,9 @@ alt="Screenshot of the example: move a slider to select a subimage/sprite from t
 
 <h4>HTML code:</h4>
 
+<details>
+  <summary>HTML code!</summary>
+
 ```
 1.  <html lang="en">
 2.   <head>
@@ -12218,6 +12276,8 @@ alt="Screenshot of the example: move a slider to select a subimage/sprite from t
 23.  </body>
 24. </html>
 ```
+
+</details>
 
 Notice that we use an <input type="range"> to select the current
 sprite, and we have two canvases: a small one for displaying the
@@ -12401,6 +12461,9 @@ animation framework.
 
 Here is how you would create and animate a sprite:
 
+<details>
+  <summary>JavaScript source code!</summary>
+
 ```
 1.  var robot;
 2.   
@@ -12437,6 +12500,8 @@ Here is how you would create and animate a sprite:
 33. }
 ```
 
+</details>
+
 [Try the example on JSBin that uses this framework
 first!](https://jsbin.com/rugosu/edit?js,output) Experiment by
 editing *line 20*: <b>robot.setNbImagesPerSecond(20); </b>changing the
@@ -12453,6 +12518,9 @@ In this small framework we use "SpriteImage ", a JS object we build to
 to which it belongs, its position in the sprite sheet, and its size. It
 also has a draw method for drawing the sprite image at an xPos,
 yPos position, and at anappropriate size. 
+
+<details>
+  <summary>Function SpriteImage code!</summary>
 
 ```
 1.  function SpriteImage(img, x, y, width, height) {
@@ -12473,6 +12541,8 @@ yPos position, and at anappropriate size. 
 15. }
 ```
 
+</details>
+
 We define the Sprite model. This is the one we used to create the small
 robot in the previous example.
 
@@ -12490,6 +12560,9 @@ robot in the previous example.
     of the sprite.
 
 <b>Here is the code of the Sprite model:</b>
+
+<details>
+  <summary>Function Sprite source code!</summary>
 
 ```
 1.  function Sprite() {
@@ -12562,6 +12635,8 @@ robot in the previous example.
 64. }
 ```
 
+</details>
+
 <h4>Same example but with the walking woman sprite sheet</h4>
 
 [Try this JsBin](http://jsbin.com/fekacu/edit?js,output)
@@ -12572,6 +12647,9 @@ alt="Woman animated" />
 This time, we have changed the parameters of the sprites and sprite
 sheet. Now you can select the index of the posture to extract: the woman
 sprite sheet has 8 different postures, so you can call:
+
+<details>
+  <summary>JavaScript source code!</summary>
 
 ```
 1.  womanDown.extractSprites(spritesheet, NB_POSTURES, 1,
@@ -12587,6 +12665,8 @@ sprite sheet has 8 different postures, so you can call:
 11.                          SPRITE_WIDTH, SPRITE_HEIGHT);
 12. // etc...
 ```
+
+</details>
 
 <h4>Moving the sprites, stopping the sprites</h4>
 
@@ -12648,6 +12728,9 @@ alt="The woman sprite in the game framework, jsbin screenshot" />
     multiple resources asynchronously, as  discussed during Module 1.
 
 Source code extract:
+
+<details>
+  <summary>JavaScript source code extract!</summary>
 
 ```
 1.  // Inits
@@ -12758,6 +12841,8 @@ Source code extract:
 106.  
 ```
 
+</details>
+
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch2-7-1">2.7.1 Menus, high score tables, etc.</h3>
 <!------------------------------------------------------------------------------------------------>
@@ -12783,6 +12868,9 @@ the monster.
 alt="Eat the ball game" />
 
 Source code extract:
+
+<details>
+  <summary>JavaScript function updateBalls source code extract!</summary>
 
 ```
 1.  function updateBalls(delta) {
@@ -12822,7 +12910,10 @@ Source code extract:
 35.   }
 ```
 
-<!-- -->
+</details>
+
+<details>
+  <summary>JavaScript extract!</summary>
 
 ```
 1.    if(allBallDead) {
@@ -12834,6 +12925,8 @@ Source code extract:
 7.     }
 8.  }
 ```
+
+</details>
 
 <h4>Game states:menus, high score tables, etc.</h4>
 
@@ -12881,7 +12974,7 @@ currentGameState = gameStates.gamerunning:
 Game state management in the JavaScript code:
 
 <details>
-  <summary>JavaScript code!</summary>
+  <summary>JavaScript code extract!</summary>
 
 ```
 1.  ...
@@ -12959,7 +13052,7 @@ game, and the updateBalls function that determines when a player loses
 and changes the current game-state to GameOver:
 
 <details>
-  <summary>JavaScript code!</summary>
+  <summary>JavaScript extract code!</summary>
 
 ```
 1.  function startNewGame() {
@@ -13102,7 +13195,7 @@ the console:
 <h4>Ball.js:</h4>
 
 <details>
-  <summary>Ball.js extract!</summary>
+  <summary>Function Ball extract!</summary>
 
 ```
 1.  // constructor function for balls
@@ -13133,7 +13226,7 @@ Just for fun, let's try the game without fixing this, and look at the
 devtools console:
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------- 155. function calcdisktomove error not found in ball.js (2##) -------------->
+<!---------------- 155. function calcdisktomove error not found in ball.js (279) ----------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image155.jpeg"
@@ -13230,7 +13323,7 @@ fps.js:
 At this stage, the structure looks like this:
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------------------------- 156. game structure (2##) ----------------------------------->
+<!---------------------------------- 156. game structure (281) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image156.jpeg"
@@ -13308,7 +13401,7 @@ during the course, could be put into this file as well.
 After all that, we reach this tidy structure:
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------- 157. final game structure in files (2##) ---------------------------->
+<!-------------------------- 157. final game structure in files (283) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image157.jpeg"
@@ -13316,10 +13409,10 @@ After all that, we reach this tidy structure:
   alt="Final game structure in files." />
 </p>
 
-### Final game.html file:
+<h4>Final game.html file:</h4>
 
 <details>
-  <summary>fps.js extract!</summary>
+  <summary>Final game game.html!</summary>
 
 ```
 1.  <!DOCTYPE html>
@@ -20672,6 +20765,9 @@ The JavaScript code of the worker (worker0.js):
 The parent page can handle errors that may occur inside its workers, by
 listening for an onError event from a worker object:
 
+<details>
+  <summary>JavaScript source code!</summary>
+
 ```
 1.  var worker = new Worker('worker.js');
 2.  worker.onmessage = function (event) {
@@ -20683,6 +20779,8 @@ listening for an onError event from a worker object:
 8.  };
 9.  }
 ```
+
+</details>
 
 See also the section "how to debug Web Workers" on next page.
 
@@ -20764,6 +20862,9 @@ the code of the worker below to see how the message has been sent.
 
 <h4>The code of the worker (worker.js):</h4>
 
+<details>
+  <summary>JavaScript source code!</summary>
+
 ```
 1.  var n = 1;
 2.  search: while (true) {
@@ -20775,6 +20876,8 @@ the code of the worker below to see how the message has been sent.
 8.     <b> postMessage(n);
 9.  }
 ```
+
+</details>
 
 There are a few interesting things to note here:
 
@@ -22278,4 +22381,4 @@ your comments/observations/questions and share your creations.
 
 <h5>the end...</h5>
 
-<h4>Last Updated: 10-10-2022 3:20pm</h4>
+<h4>Last Updated: 10-11-2022 10:28am</h4>
