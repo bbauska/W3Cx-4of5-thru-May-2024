@@ -12074,7 +12074,7 @@ one-after-the-other, we obtain an animation effect.
 Here is an example of a *spritesheet*, where each line animates a woman
 walking in a particular direction:
 
-<img src="./images/image143.png" style="width:4in;height:4.71795in"
+<img src="./images/image140.png" style="width:4in;height:4.71795in"
 alt="sprite sheet of a woman walking, with different postures" />
 
 The first line corresponds to the direction we called "south", the
@@ -12094,7 +12094,7 @@ with the above sprite sheet.  Use the arrow keys and take a look! We
 accentuated the movement by changing the scale of the sprite as the
 woman moves up (further from us) or down (closer to us).
 
-<img src="./images/image144.jpeg" style="width:5in;height:5.21421in"
+<img src="./images/image141.jpeg" style="width:5in;height:5.21421in"
 alt="A woman animated using sprite. Screenshot of the JsBin example that explain how to run it in standalone mode" />
 
 We have not yet investigated how this works, nor have we built it into
@@ -12116,7 +12116,8 @@ or postures, each corresponding to a direction. In this example, each
 posture comprises exactly 13 sprites, aligned in a single row across the
 sprite sheet.
 
-<img src="./images/image143.png" style="width:3.5in;height:4.12821in"
+<!-- page 256 --->
+<img src="./images/image140.png" style="width:3.5in;height:4.12821in"
 alt="sprite sheet of a woman walking, with different postures" />
 
 ## One posture per sprite sheet
@@ -12124,7 +12125,7 @@ alt="sprite sheet of a woman walking, with different postures" />
 Some sprite sheets have a single sprite set, spreading over multiple
 lines; like this walking robot:
 
-<img src="./images/image145.png" style="width:3in;height:3in"
+<img src="./images/image142.png" style="width:3in;height:3in"
 alt="a sprite sheet with a walking robot (only the posture &quot;move to the right&quot; is in the sprite sheet)" />
 
 This is an example that you will see a lot around the Internet, in many
@@ -12133,7 +12134,7 @@ multiple sprite sheets: one for each posture.
 
 As another example, here is the "jumping robot" sprite sheet:
 
-<img src="./images/image146.png" style="width:3.5in;height:3.5in"
+<img src="./images/image143.png" style="width:3.5in;height:3.5in"
 alt="sprite sheet for a robot jump" />
 
 Whereas the walking robot posture is made of 16 sprites, the jumping
@@ -12145,7 +12146,7 @@ You will also find sprite sheets that contain completely different sets
 of sprites (this one comes from [the famous Gridrunner IOS game by Jeff
 Minter](https://www.youtube.com/watch?v=1tLNcj1ygFA)):
 
-<img src="./images/image147.png" style="width:3.5in;height:3.24984in"
+<img src="./images/image144.png" style="width:3.5in;height:3.24984in"
 alt="Gridrunner spritesheet" />
 
 So, when we think about writing a "sprite engine", we need to consider
@@ -12182,7 +12183,7 @@ next, see how the animation is created? 
 
 [Try it at JSBin](https://jsbin.com/yukacep/edit?html,js,output):
 
-<img src="./images/image148.jpeg" style="width:5in;height:4.31036in"
+<img src="./images/image145.jpeg" style="width:5in;height:4.31036in"
 alt="Screenshot of the example: move a slider to select a subimage/sprite from the spritesheet" />
 
 <h4>HTML code:</h4>
@@ -12384,7 +12385,7 @@ sprites:
      another sprite sheet (the one with the robot) - see [on
      JSBin.](https://jsbin.com/jeledoq/edit?html,js,output)
 
-<img src="./images/image149.jpeg" style="width:5in;height:3.03739in"
+<img src="./images/image146.jpeg" style="width:5in;height:3.03739in"
 alt="same example but with the robot spritesheet" />
 
 543. Now it's time to see how we can make a small sprite animation
@@ -12441,7 +12442,8 @@ first!](https://jsbin.com/rugosu/edit?js,output) Experiment by
 editing *line 20*: <b>robot.setNbImagesPerSecond(20); </b>changing the
 value of the parameter and observing the result.
 
-<img src="./images/image150.jpeg" style="width:6.5in;height:4.27847in"
+<!-- 264 -->
+<img src="./images/image147.jpeg" style="width:6.5in;height:4.27847in"
 alt="Example of the sprite framework on JsBin. Screenshot" />
 
 <h4>The SpriteImage object and sprite models</h4>
@@ -12564,7 +12566,7 @@ robot in the previous example.
 
 [Try this JsBin](http://jsbin.com/fekacu/edit?js,output)
 
-<img src="./images/image151.jpeg" style="width:5in;height:2.07853in"
+<img src="./images/image148.jpeg" style="width:5in;height:2.07853in"
 alt="Woman animated" />
 
 This time, we have changed the parameters of the sprites and sprite
@@ -12590,7 +12592,7 @@ sprite sheet has 8 different postures, so you can call:
 
 [Example at JsBin](https://jsbin.com/muwoje/edit?js,output)
 
-<img src="./images/image152.jpeg" style="width:5in;height:2.58547in"
+<img src="./images/image149.jpeg" style="width:5in;height:2.58547in"
 alt="Woman moving left and right, jsbin screenshot" />
 
 As usual, we used key listeners, an inputStates global object, and this
@@ -12618,7 +12620,7 @@ with gamepad, etc)).
 <b>First, try this [example at
 JsBin](https://jsbin.com/mifeva/edit?js,console,output)</b>
 
-<img src="./images/image153.jpeg" style="width:6.5in;height:3.03819in"
+<img src="./images/image150.jpeg" style="width:6.5in;height:3.03819in"
 alt="The woman sprite in the game framework, jsbin screenshot" />
 
 <h4>How to add sprites to the game framework...</h4>
@@ -12777,7 +12779,7 @@ the monster.
 
 [Try this jsBin!](https://jsbin.com/jixolu/edit?js,console,output)
 
-<img src="./images/image154.jpeg" style="width:3in;height:3.02821in"
+<img src="./images/image151.jpeg" style="width:3in;height:3.02821in"
 alt="Eat the ball game" />
 
 Source code extract:
@@ -12855,10 +12857,10 @@ currentGameState = gameStates.gameOver:
 ```
 
 <!------------------------------------------------------------------------------------------------>
-<!------------- 155. Game Over Screen, asking to press space to start again. (2xx) --------------->
+<!------------- 152. Game Over Screen, asking to press space to start again. (2xx) --------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image155.jpeg"
+<img src="./images/image152.jpeg"
   style="width:4.69792in;height:4.75in"
   alt="Game Over Screen, asking to press space to start again." />
 </p>
@@ -12868,10 +12870,10 @@ currentGameState = gameStates.gamerunning:
 ```
 
 <!------------------------------------------------------------------------------------------------>
-<!------------- 156. Game Over Screen, asking to press space to start again. (2xx) --------------->
+<!------------- 153. Game Over Screen, asking to press space to start again. (2xx) --------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image156.jpeg"
+<img src="./images/image153.jpeg"
   style="width:4.78125in;height:4.79167in"
   alt="Game Running, showing score, time, and level." />
 </p>
@@ -13078,10 +13080,10 @@ directory where the game.html file is located. Similarly, we'll keep the
 CSS file in a css subdirectory:
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------------ 157. game.html (280) -------------------------------------->
+<!------------------------------------ 154. game.html (280) -------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image157.jpeg"
+<img src="./images/image154.jpeg"
   style="width:1.98958in;height:2.29167in"
   alt="First game structure." />
 </p>
@@ -13131,10 +13133,10 @@ Just for fun, let's try the game without fixing this, and look at the
 devtools console:
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------- 158. function calcdisktomove error not found in ball.js (2##) -------------->
+<!------------------- 155. function calcdisktomove error not found in ball.js (2##) -------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image158.jpeg"
+<img src="./images/image155.jpeg"
   style="width:6.08333in;height:5.375in"
   alt="Error the function calcDistToMove not found in ball.js." />
 </p>
@@ -13228,10 +13230,10 @@ fps.js:
 At this stage, the structure looks like this:
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------------------------- 159. game structure (2##) ----------------------------------->
+<!---------------------------------- 156. game structure (2##) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image159.jpeg"
+<img src="./images/image156.jpeg"
   style="width:1.625in;height:2.25in"
   alt="Game structure." />
 </p>
@@ -13306,10 +13308,10 @@ during the course, could be put into this file as well.
 After all that, we reach this tidy structure:
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------- 160. final game structure in files (2##) ---------------------------->
+<!-------------------------- 157. final game structure in files (2##) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image160.jpeg"
+<img src="./images/image157.jpeg"
   style="width:1.86458in;height:2.96875in"
   alt="Final game structure in files." />
 </p>
@@ -13396,18 +13398,18 @@ Some of them are based on the framework presented in the course.
     the course.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 161. wanted game main screen (2##) ------------------------------->
+<!----------------------------- 158. wanted game main screen (2##) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image161.jpeg"
+<img src="./images/image158.jpeg"
   style="width:2in;height:1.80212in"
   alt="Main screen of the game &quot;Wanted&quot;." />
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------- 162. monster with black bombs and gold coins (2##) ------------------------>
+<!-------------------- 159. monster with black bombs and gold coins (2##) ------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image162.jpeg"
+<img src="./images/image159.jpeg"
   style="width:2.64583in;height:2.65625in"
   alt="The game running, monster with black bombs and gold coins." />
 </p>
@@ -13421,10 +13423,10 @@ Some of them are based on the framework presented in the course.
     This one started with the game framework presented in the course.
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------------------- 163. duck hunt game screenshot (2##) ------------------------------>
+<!---------------------------- 160. duck hunt game screenshot (2##) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image163.jpeg"
+<img src="./images/image160.jpeg"
   style="width:4in;height:2.82873in"
   alt="Screenshot of the Duck hunt game" />
 </p>
@@ -13434,10 +13436,10 @@ Some of them are based on the framework presented in the course.
     This one started with the game framework presented in the course:
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------------- 164. shoot em up game screenshot (2##) ----------------------------->
+<!--------------------------- 161. shoot em up game screenshot (2##) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image164.jpeg"
+<img src="./images/image161.jpeg"
   style="width:4in;height:3.88192in"
   alt="Screenshot of the shoot em up game." />
 </p>
@@ -13448,10 +13450,10 @@ Some of them are based on the framework presented in the course.
     Maxime Demetrio)
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 165. gameboy tetris in html5 (2##) ------------------------------->
+<!----------------------------- 162. gameboy tetris in html5 (2##) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image165.jpeg"
+<img src="./images/image162.jpeg"
   style="width:3.125in;height:2.83333in"
   alt="Gameboy Tetris in HTML5." />
 </p>
@@ -13462,10 +13464,10 @@ Some of them are based on the framework presented in the course.
     here.](https://courses.edx.org/assets/courseware/v1/19ecac62725b07966804bb28031f0fba/asset-v1:W3Cx+HTML5.2x+2T2020a+type@asset+block/snna.zip)
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------------- 166. kill the ninja game (2##) -------------------------------->
+<!-------------------------------- 163. kill the ninja game (2##) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image166.jpeg"
+<img src="./images/image163.jpeg"
   style="width:4in;height:2.34815in"
   alt="A &quot;kill the ninja&quot; game." />
 </p>
@@ -13709,10 +13711,10 @@ In this example, instead of reading the file from disk, we download it
 using XHR2.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 167. download file using xhr2 (2##) ------------------------------>
+<!----------------------------- 164. download file using xhr2 (2##) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image167.jpeg"
+<img src="./images/image164.jpeg"
   style="width:5in;height:2.48451in"
   alt="Downloading file with Xhr2" />
 </p>
@@ -13828,10 +13830,10 @@ using XHR2.
 ### Monitoring uploads or downloads using a progress event
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------------- 168. download progress (2##) ---------------------------------->
+<!-------------------------------- 165. download progress (2##) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image168.jpeg"
+<img src="./images/image165.jpeg"
   style="width:4.41667in;height:0.79167in"
   alt="Downloading progression using a progress element." />
 </p>
@@ -13949,10 +13951,10 @@ For example, with a file that is 10,000 bytes long, if the current
 number of bytes downloaded is 1000, then <progress value=1000
 max=10000> will look like this: 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 169 (##) -------------------------------->
+<!------------------------------ 166 (##) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image169.jpeg?raw=true"
+<img src="./images/image166.jpeg?raw=true"
    width="35%"
    alt="." />
 </p>
@@ -13964,10 +13966,10 @@ And a current download of 2000 bytes will define <progress value=2000
 max=10000> and will look like this:
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 170.  (##) -------------------------------->
+<!------------------------------ 167.  (##) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image170.jpeg?raw=true"
+<img src="./images/image167.jpeg?raw=true"
    width="35%"
    alt="Progress bar 20%." />
 </p>
@@ -13978,10 +13980,10 @@ style="width:2.66667in;height:0.5in"
 <h4>Complete example: monitoring the download of a song file</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 171.  (##) -------------------------------->
+<!------------------------------ 168.  (##) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image171.jpeg?raw=true"
+<img src="./images/image168.jpeg?raw=true"
    width="35%"
    alt="Monitoring download." />
 </p>
@@ -14077,10 +14079,10 @@ lecture.
 [Try the example on JSBin](https://jsbin.com/pidusap/edit):
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 172. file update example 1 (##) -------------------------------->
+<!------------------------------ 169. file update example 1 (##) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image172.jpeg?raw=true"
+<img src="./images/image169.jpeg?raw=true"
    width="35%"
    alt="File upload example 1." />
 </p>
@@ -14162,10 +14164,10 @@ that used for monitoring file downloads:
     bytes we need to upload (i.e., the file size).
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 173. file upload with progress bar (##) -------------------------------->
+<!------------------------------ 170. file upload with progress bar (##) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image173.jpeg?raw=true"
+<img src="./images/image170.jpeg?raw=true"
    width="35%"
    alt="File upload with progress bar." />
 </p>
@@ -14420,10 +14422,10 @@ CodePen](https://codepen.io/w3devcampus/pen/MaWKZb).
 
 <h4>Screenshot:</h4>
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 174.  (##) -------------------------------->
+<!------------------------------ 171.  (##) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image174.jpeg?raw=true"
+<img src="./images/image171.jpeg?raw=true"
    width="35%"
    alt="Drag 'n drop fruis." />
 </p>
@@ -14547,10 +14549,10 @@ element that has been dropped (we get this from the clipboard at <i>lines
 <h4>Complete example</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 175.  (##) -------------------------------->
+<!------------------------------ 172.  (##) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image175.jpeg?raw=true"
+<img src="./images/image172.jpeg?raw=true"
    width="35%"
    alt="Drag 'n drop fruits." />
 </p>
@@ -14718,7 +14720,7 @@ of any HTML element.
 Here is [an online at
 JsBin](https://jsbin.com/yowimebawo/edit?html,css,js,output) example: 
 
-<img src="./images/image176.png" style="width:5in;height:0.80556in"
+<img src="./images/image173.png" style="width:5in;height:0.80556in"
 alt="Data attribut example 1" />
 
 In this example, when you click on the sentence that starts with "John
@@ -14779,10 +14781,10 @@ the attr() CSS function.
 Try [the online example at JsBin](https://jsbin.com/alunuk/6/edit). 
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 177. using css attr() function (##) -------------------------------->
+<!------------------------------ 174. using css attr() function (##) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image177.jpeg?raw=true"
+<img src="./images/image174.png?raw=true"
    width="35%"
    alt="Using CSS attr() function." />
 </p>
@@ -14928,10 +14930,10 @@ further down the page (it includes, in addition, visual feedback on the
 drop zone):
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 178.  (##) -------------------------------->
+<!------------------------------ 175.  (##) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image178.jpeg?raw=true"
+<img src="./images/image175.jpeg?raw=true"
    width="35%"
    alt="Drag 'n drop colorful." />
 </p>
@@ -15135,10 +15137,10 @@ in the previous example, a "copy" cursor like the one below would be
 appropriate:
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 179.  (##) -------------------------------->
+<!------------------------------ 176.  (##) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image179.jpeg?raw=true"
+<img src="./images/image176.jpeg?raw=true"
    width="35%"
    alt="dropEffect." />
 </p>
@@ -15148,17 +15150,17 @@ style="width:2.39583in;height:0.78125in" alt="dropEffect" />
 
 If you are "moving" objects, this style of cursor would be appropriate:
 
-<img src="./images/image180.jpeg"
+<img src="./images/image177.jpeg"
 style="width:2.58333in;height:0.88542in" alt="drop effect #2" />
 
 And if you are making a "link" or a "shortcut", a cursor would be
 looking like this:
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 181.  (##) -------------------------------->
+<!------------------------------ 178.  (##) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image181.jpeg?raw=true"
+<img src="./images/image178.jpeg?raw=true"
    width="35%"
    alt="Drop effect #3." />
 </p>
@@ -15169,10 +15171,10 @@ style="width:2.65625in;height:0.9375in"
 Alternatively, you could use any custom image/icon you like:
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 182.  (##) -------------------------------->
+<!------------------------------ 179.  (##) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image182.jpeg?raw=true"
+<img src="./images/image179.jpeg?raw=true"
    width="35%"
    alt="Drop effect with image." />
 </p>
@@ -15357,10 +15359,10 @@ one &lt;img&gt; from its initial position to another location in the page).
 <!------------------------------------------------------------------------------------------------>
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 183.  (##) -------------------------------->
+<!------------------------------ 180.  (##) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image183.jpeg?raw=true"
+<img src="./images/image180.jpeg?raw=true"
    width="35%"
    alt="." />
 </p>
@@ -15665,7 +15667,7 @@ them. That's all. Bye, bye!
 
 <h4>Example: drag and drop files to a drop zone, display file details in a list</h4>
 
-<img src="./images/image184.jpeg"
+<img src="./images/image181.jpeg"
 style="width:4.64583in;height:3.89583in"
 alt="Example of drag&#39;n&#39;drop of a file" />
 
@@ -15804,7 +15806,7 @@ Click the "Choose files" button (an <input type="file"> element),
 select one or more images -- and you should see image thumbnails
 displayed in the open space beneath it:
 
-<img src="./images/image185.png" style="width:6.5in;height:1.83264in" />
+<img src="./images/image182.png" style="width:6.5in;height:1.83264in" />
 
 Source code extract (the part that reads the image file content and
 displays the thumbnails):
@@ -15862,7 +15864,7 @@ HTML of this example.
 
 <h4>Complete example of drag and drop + thumbnails of images
 
-<img src="./images/image186.jpeg" style="width:6.5in;height:4.05625in"
+<img src="./images/image183.jpeg" style="width:6.5in;height:4.05625in"
 alt="ilmage drag&#39;n&#39;drop with thumbnails" />
 
 Try it below in your browser (drag'n'drop image files into the drop
@@ -16010,7 +16012,7 @@ The example below allows files to be selected using a file chooser or by
 drag  and dropping them, like in the screenshot below (the interactive
 example is a bit further down the page):
 
-<img src="./images/image187.png" style="width:6.5in;height:6.36944in"
+<img src="./images/image184.png" style="width:6.5in;height:6.36944in"
 alt="Example of file and dir chooser." />
 
 In the above screenshot, which is derived from the example detailed
@@ -16242,10 +16244,10 @@ JSBin](https://jsbin.com/conigekoda/edit) (this example does not work on
 CodePen. We are using a fake remote server and it cancels the connection
 as soon as we try to connect):
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 188. drag 'n drop and progress element (01) -------------------------------->
+<!------------------------------ 185. drag 'n drop and progress element (01) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image188.png?raw=true"
+<img src="./images/image185.jpeg?raw=true"
    width="45%"
    alt="Example that uses drag&#39;n&#39;drop and a progress element for monitoring the ajax upload of the files." />
 </p>
@@ -16432,7 +16434,7 @@ An example of this kind of form is shown below: when the user drags and
 drops files, they will start being uploaded immediately. However,  the
 form will only be sent when all the fields are valid. 
 
-<img src="./images/image189.jpeg" style="width:6.5in;height:3.98264in"
+<img src="./images/image186.jpeg" style="width:6.5in;height:3.98264in"
 alt="uploading files using Xhr2, drag&#39;n&#39;drop and progress bar" />
 
 This approach is similar to Gmail's behavior when you compose a message
@@ -16456,7 +16458,7 @@ with each of the examples.
 -   or we may *use multiple Ajax requests*, which we don't start until
     the submit button has been clicked.
 
-<img src="./images/image190.jpeg"
+<img src="./images/image187.jpeg"
 style="width:6.29167in;height:2.32292in"
 alt="Second approach, send files only when the sublit button has been clicked" />
 
@@ -16522,7 +16524,7 @@ more difficult to follow.
 
 Example using a file selector (<input type="file">):
 
-<img src="./images/image191.png" style="width:4.85417in;height:1.79167in"
+<img src="./images/image188.png" style="width:4.85417in;height:1.79167in"
 alt="example 1 of file upload" />
 
 [Try the online example at
@@ -16548,7 +16550,7 @@ collect the filenames, not an input field. [Try it at
 JSBin](https://jsbin.com/qijoza/edit?html,css,js,output) and look at the
 source code - there are plenty of comments.
 
-<img src="./images/image192.png" style="width:6.5in;height:3.98264in"
+<img src="./images/image189.png" style="width:6.5in;height:3.98264in"
 alt="example 2 of file uploads, uses drag&#39;n&#39;drop" />
 
 <h4>And here is the PHP code for the server-side part of examples #1 and #2</h4>
@@ -16631,7 +16633,7 @@ You can [try this example at
 JSBin](https://jsbin.com/quzohi/edit?html,css,js,output), and look at
 the source code and comments for details.
 
-<img src="./images/image193.png" style="width:6.07292in;height:2.17708in"
+<img src="./images/image190.png" style="width:6.07292in;height:2.17708in"
 alt="Example 3 of file uploads" />
 
 <h4>Example #4: uploading using drag and drop</h4>
@@ -16640,7 +16642,7 @@ alt="Example 3 of file uploads" />
 JSBin](https://jsbin.com/xonemow/edit?html,css,output) and look at
 source code and comments.
 
-<img src="./images/image194.png" style="width:5.38542in;height:3.71875in"
+<img src="./images/image191.png" style="width:5.38542in;height:3.71875in"
 alt="Example 4: uses drag&#39;n&#39;drop of files" />
 
 <h4>PHP code for the single-packaged examples (with and without drag and drop, the PHP is the same)</h4>
@@ -16869,7 +16871,7 @@ in-order traversal of very large numbers of data records.
 
 <h4>Examples of applications where IndexedDB should be considered</h4>
 
-<img src="./images/image195.jpeg"
+<img src="./images/image192.jpeg"
 style="width:3.28125in;height:4.04167in"
 alt="google drive uses indexedDB" />
 
@@ -17634,12 +17636,12 @@ the example: it will call the createDB() JavaScript function that:
 <b>Chrome DevTools (F12 or cmd-alt-i) shows the IndexedDB databases,
 object stores and data:</b>
 
-<img src="./images/image196.png" style="width:6.5in;height:4.77847in" />
+<img src="./images/image193.png" style="width:6.5in;height:4.77847in" />
 
 Normally, when you create a database for the first time, the console
 should show this message:
 
-<img src="./images/image197.jpeg" style="width:6.5in;height:0.825in"
+<img src="./images/image194.jpeg" style="width:6.5in;height:0.825in"
 alt="Message displayed in console when the database is created the first time you run the example" />
 
 This message comes from the JavaScript request.onupgradeneeded callback.
@@ -17774,19 +17776,19 @@ CustomerDB database used in all examples of this course section by
 opening one of the JsBin examples , then opening the devtool console,
 then executing indexedDB.deleteDatabase("CustomerDB"); in the console:
 
-<img src="./images/image198.jpeg" style="width:6.5in;height:4.48889in"
+<img src="./images/image195.jpeg" style="width:6.5in;height:4.48889in"
 alt="deleting indexed DB part 1, open the devtool console" />
 
-<img src="./images/image199.jpeg" style="width:6.5in;height:3.34097in"
+<img src="./images/image196.jpeg" style="width:6.5in;height:3.34097in"
 alt="Run the command" />
 
-<img src="./images/image200.jpeg" style="width:6.5in;height:1.41319in"
+<img src="./images/image197.jpeg" style="width:6.5in;height:1.41319in"
 alt="Execute the command" />
 
-<img src="./images/image201.jpeg" style="width:6.5in;height:2.33264in"
+<img src="./images/image198.jpeg" style="width:6.5in;height:2.33264in"
 alt="Refresh IndexedDB display of objectStores" />
 
-<img src="./images/image202.jpeg" style="width:6.5in;height:1.84375in"
+<img src="./images/image199.jpeg" style="width:6.5in;height:1.84375in"
 alt="Final result: the objectStore has been deleted" />
 
 <!------------------------------------------------------------------------------------------------>
@@ -17990,7 +17992,7 @@ been added.
 <b>Be sure to click on the "create database" button before clicking the
 "insert new customer" button.</b>
 
-<img src="./images/image203.png" style="width:6.5in;height:2.81667in"
+<img src="./images/image200.png" style="width:6.5in;height:2.81667in"
 alt="example on JsBin for inserting data in IndexedDB" />
 
 The next screenshot shows the IndexedDB object store in Chrome dev.
@@ -17999,7 +18001,7 @@ database creates or opens the database, and clicking "Add a new
 Customer" button adds a customer named "Michel Buffa" into the object
 store:
 
-<img src="./images/image204.png" style="width:6.5in;height:3.53333in"
+<img src="./images/image201.png" style="width:6.5in;height:3.53333in"
 alt="Devtools show that a new customer named Michel Buffa has been inserted" />
 
 <b>Code from the example, explanations:</b>
@@ -18083,14 +18085,14 @@ datastore remains unchanged.
 
 Here is the trace from the dev tools console:
 
-<img src="./images/image205.png" style="width:6.5in;height:1.23889in"
+<img src="./images/image202.png" style="width:6.5in;height:1.23889in"
 alt="Trace from the devtools console" />
 
 <h4>Example #2: adding a form and validating inputs</h4>
 
 [Online example available at JSBin](https://jsbin.com/jayida):
 
-<img src="./images/image206.jpeg" style="width:6.5in;height:1.50278in"
+<img src="./images/image203.jpeg" style="width:6.5in;height:1.50278in"
 alt="a form has been added to the previous example, for creating a new customer" />
 
 You can try this example by following these steps:
@@ -18128,7 +18130,7 @@ message if:
 -   Try to insert the same customer twice, or different customers with
     the same ssn. An alert like this should pop up:
 
-<img src="./images/image207.jpeg"
+<img src="./images/image204.jpeg"
 style="width:6.08333in;height:2.32292in" alt="insert error" />
 
 <b>Here is the updated version of the HTML code of this example:</b>
@@ -18220,7 +18222,7 @@ such a way of coding (!).
 
 Also, note that it works if you try to insert empty data:
 
-<img src="./images/image208.jpeg" style="width:6.5in;height:2.68889in"
+<img src="./images/image205.jpeg" style="width:6.5in;height:2.68889in"
 alt="devtools show that inserting blank data works" />
 
 Indeed, entering an empty value for the keyPath or for indexes is a
@@ -18234,7 +18236,7 @@ add more JavaScript code. We will let you do this as an exercise.
 Let's move to the next [online example at
 JSBin](https://jsbin.com/bavifa):
 
-<img src="./images/image208.jpeg" style="width:6.5in;height:2.68889in"
+<img src="./images/image205.jpeg" style="width:6.5in;height:2.68889in"
 alt="devtools show that a customer has been removed once clicked on the remove customer button" />
 
 See the changes in Chrome dev. tools: refresh the view (right
@@ -18327,7 +18329,8 @@ update a customer!
 
 [Online example at JSBin](https://jsbin.com/zugowe):
 
-<img src="./images/image209.jpeg" style="width:6.5in;height:3.44306in"
+<!--- 389 --->
+<img src="./images/image206.jpeg" style="width:6.5in;height:3.44306in"
 alt="devtools show a customer being updated in IndexedDB" />
 
 The above screenshot shows how we added an empty customer with ssn="",
@@ -18339,7 +18342,7 @@ with ssn="" and click on the "update data about an existing customer"
 button. This updates the data in the object store, as shown in this
 screenshot:
 
-<img src="./images/image210.jpeg" style="width:6.5in;height:1.08194in"
+<img src="./images/image207.jpeg" style="width:6.5in;height:1.08194in"
 alt="devtools show updated customer" />
 
 Here is the new code added to our example:
@@ -18406,7 +18409,7 @@ retrieves an object when we know its key/keypath.
 
 [Online example at JSBin](https://jsbin.com/saquru):
 
-<img src="./images/image211.jpeg" style="width:6.5in;height:4.19028in"
+<img src="./images/image208.jpeg" style="width:6.5in;height:4.19028in"
 alt="Getting data from IndexedDB, first enter a ssn, then press the search button" />
 
 If the ssn exists in the object store, then the results are displayed in
