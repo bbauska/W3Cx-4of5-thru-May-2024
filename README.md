@@ -8255,13 +8255,19 @@ is the mainloop function itself, and so on.
 Funny right? Please [try this and check the number of FPS displayed with
 this JSBin example](https://jsbin.com/notupe/edit).
 
-<img src="./images/image097.jpeg" style="width:4in;height:2.26742in"
-alt="Screenshot of example with 4441 FPS displayed" />
+<!------------------------------------------------------------------------------------------------>
+<!---------------------------- 97. 4145 fps displayed canvas (157) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image097.jpeg"
+  style="width:4in;height:2.26742in"
+  alt="Screenshot of example with 4145 FPS displayed" />
+</p>
 
 <h4>Source code extract of this example:</h4>
 
 <details>
-  <summary>Code extract!</h4>
+  <summary>Code extract!</summary>
 
 ```
 1.  var mainLoop = function(){
@@ -8301,9 +8307,14 @@ course](https://www.edx.org/course/html5-coding-essentials-and-best-practices).
 How to draw a monster in a canvas: [you can try it online at
 JSBin](https://jsbin.com/ponaki/edit).
 
+<!------------------------------------------------------------------------------------------------>
+<!-------------------------------- 98. small monster drawn in a canvas (xx) ------------------------------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
 <img src="./images/image098.jpeg"
-style="width:2.82292in;height:2.80208in"
-alt="Small monster drawn in a canvas" />
+  style="width:2.82292in;height:2.80208in"
+  alt="Small monster drawn in a canvas" />
+</p>
 
 <h4>HTML code (declaration of the canvas):</h4>
 
