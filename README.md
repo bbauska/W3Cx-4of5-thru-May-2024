@@ -7841,7 +7841,7 @@ alt="A graph showing several clients interacting with a websocket server." />
 <h3 id="ch2-2-3">2.2.3 The "game loop"</h3>
 <!------------------------------------------------------------------------------------------------>
 
-<img src="./images/image097.png" style="width:2in;height:3.78182in"
+<img src="./images/image094.png" style="width:2in;height:3.78182in"
 alt=" a game loop diagram" />
 
 The "game loop" is the main component of any game. It separates the game
@@ -7879,7 +7879,7 @@ argument.
 [Try an example at JSBin](https://jsbin.com/qopefu/edit) : open the
 HTML, JavaScript and output tabs to see the code.
 
-<img src="./images/image098.png"
+<img src="./images/image095.png"
 style="width:6.03125in;height:2.86458in" />
 
 Source code extract:
@@ -8116,7 +8116,7 @@ Here is a screenshot of an example and the code we added to our game
 engine, for measuring FPS ([try it online at
 JSBin](https://jsbin.com/noqibu/edit)):
 
-<img src="./images/image099.jpeg" style="width:4in;height:1.87097in"
+<img src="./images/image096.jpeg" style="width:4in;height:1.87097in"
 alt="screenshot of the example that displays 60 frames/s" />
 
 <h4>Source code extract:</h4>
@@ -8211,7 +8211,7 @@ is the mainloop function itself, and so on.
 Funny right? Please [try this and check the number of FPS displayed with
 this JSBin example](https://jsbin.com/notupe/edit).
 
-<img src="./images/image100.jpeg" style="width:4in;height:2.26742in"
+<img src="./images/image097.jpeg" style="width:4in;height:2.26742in"
 alt="Screenshot of example with 4441 FPS displayed" />
 
 <h4>Source code extract of this example:</h4>
@@ -8257,7 +8257,7 @@ course](https://www.edx.org/course/html5-coding-essentials-and-best-practices).
 How to draw a monster in a canvas: [you can try it online at
 JSBin](https://jsbin.com/ponaki/edit).
 
-<img src="./images/image101.jpeg"
+<img src="./images/image098.jpeg"
 style="width:2.82292in;height:2.80208in"
 alt="Small monster drawn in a canvas" />
 
@@ -8427,7 +8427,7 @@ our game engine:
 [You can try this version online at
 JSBin](https://jsbin.com/xuruja/edit). 
 
-<img src="./images/image102.jpeg" style="width:2in;height:1.96516in"
+<img src="./images/image099.jpeg" style="width:2in;height:1.96516in"
 alt="Screenshot of a trembling monster in a 60 f/s animation" />
 
 <h4>HTML code:</h4>
@@ -8679,10 +8679,10 @@ example](http://www.asquare.net/javascript/tests/KeyCode.html), and here
 is a list of keyCodes (from [CSS
 Tricks](https://css-tricks.com/snippets/javascript/javascript-keycodes/)
 
-<img src="./images/image103.png"
+<img src="./images/image100.png"
 style="width:5.66667in;height:7.61458in" />
 
-<img src="./images/image104.png"
+<img src="./images/image101.png"
 style="width:5.66667in;height:1.29167in" />
 
 <h4>Game requirements: managing multiple keypress / keyrelease events
@@ -8736,7 +8736,7 @@ far from finished yet):
 [Here is the online example you can try at
 JSBin](https://jsbin.com/razeya/edit)
 
-<img src="./images/image105.jpeg"
+<img src="./images/image102.jpeg"
   style="width:2in;height:2.0766in"
   alt="Trembling monster with multiple key press management." />
 </p>
@@ -8869,10 +8869,10 @@ up + right should work in combination.
 <h4>A few reminders</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 106. a schema of mouse internals (##) ----------------------->
+<!--------------------- 103. a schema of mouse internals (##) ----------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image106.jpeg"
+<img src="./images/image103.jpeg"
   style="width:4in;height:2.73282in"
   alt="A schema of mouse internals." />
 </p>
@@ -8899,10 +8899,10 @@ Here is [an online example at JSBin](https://jsbin.com/metavu/edit) that
 covers all cases correctly.
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------- 107. jsbin example mouse position + button pressed (##) -------------------->
+<!------------------- 104. jsbin example mouse position + button pressed (##) -------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image107.jpeg"
+<img src="./images/image104.jpeg"
   style="width:3in;height:1.09515in"
   alt="Screenshot of a JsBin example that shows the mouse position + button pressed." />
 </p>
@@ -8977,10 +8977,10 @@ down) as part of the inputStates object, just as we do with the keyboard
 <a href="https://jsbin.com/soduko/edit?js,output">Try this example at JsBin</a>
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------------- 108. a rectangle that follows mouse cursor (##) ------------------------->
+<!---------------------- 105. a rectangle that follows mouse cursor (##) ------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image108.jpeg"
+<img src="./images/image105.jpeg"
   style="width:2in;height:2.04192in"
   alt="A rectangle that follows the mouse cursor." />
 </p>
@@ -9075,7 +9075,7 @@ the getMousePos() function, for example).
 [The new online version of the game engine can be tried at
 JSBin](https://jsbin.com/rizuyah/edit):
 
-<img src="./images/image109.jpeg" style="width:2in;height:2.03687in"
+<img src="./images/image106.jpeg" style="width:2in;height:2.03687in"
 alt="Screenshot of a JsBin example that shows message on mouse events" />
 
 Try pressing arrows and space keys, moving the mouse, and pressing the
@@ -9321,7 +9321,7 @@ small game you are going to develop during this week. Bye! Bye!
 
 Some games, mainly arcade/action games, are designed to be used with a gamepad:
 
-<img src="./images/image110.png" style="width:5in;height:3.22951in" />
+<img src="./images/image107.png" style="width:5in;height:3.22951in" />
 
 [The Gamepad API ](https://w3c.github.io/gamepad/)is currently
 supported by all major browsers (including Microsoft Edge), except
@@ -9372,7 +9372,7 @@ describes the connected device.
 
 </details>
 
-<img src="./images/image111.jpeg" style="width:5in;height:2.57425in"
+<img src="./images/image108.jpeg" style="width:5in;height:2.57425in"
 alt="Gamepad detected, message on the jsbin exmaple" />
 
 If a gamepad is disconnected (you unplug it),
@@ -9389,7 +9389,7 @@ their connected property set to false.
 6.  });
 ```
 
-<img src="./images/image112.jpeg"
+<img src="./images/image109.jpeg"
 style="width:3.92708in;height:1.41667in"
 alt="gamepad disconnected, screenshot from jsbin console" />
 
@@ -9479,7 +9479,7 @@ properties](https://w3c.github.io/gamepad/#gamepad-interface):
     > gamepads [use a standard default
     > layout](https://w3c.github.io/gamepad/#remapping).
 
-[<img src="./images/image113.jpeg" style="width:5in;height:2.60684in"
+[<img src="./images/image110.jpeg" style="width:5in;height:2.60684in"
 alt="standard gamepad layout" /><u>  
 </u>](https://courses.edx.org/assets/courseware/v1/5a634bfb4d73130fbd4edb3ec19f4d1f/asset-v1:W3Cx+HTML5.2x+2T2020a+type@asset+block/standardGPLayout.jpg)Click
 the above image to open a large view in another window/tab.
@@ -9515,7 +9515,7 @@ and one.
 a look at at this demo that does the same thing but with multiple
 gamepads.
 
-<img src="./images/image114.jpeg" style="width:6in;height:4.96603in"
+<img src="./images/image111.jpeg" style="width:6in;height:4.96603in"
 alt="button status detected, example on jsbin" />
 
 Code for checking if a button is pressed:
@@ -9575,7 +9575,7 @@ the gamepad.buttons will return the same  states every time.
 
 [Example on JSBin](https://jsbin.com/yaxika/edit)
 
-<img src="./images/image115.jpeg" style="width:5in;height:5.18999in"
+<img src="./images/image112.jpeg" style="width:5in;height:5.18999in"
 alt="axes detection in JsBin" />
 
 Code for detecting the axes' values:
@@ -9609,7 +9609,7 @@ manage this:
 
 [JSBin example](https://jsbin.com/vuxoqo/edit?js,output):
 
-<img src="./images/image116.jpeg" style="width:4in;height:1.98354in"
+<img src="./images/image113.jpeg" style="width:4in;height:1.98354in"
 alt="direction and angle detection for joystick" />
 
 Source code extract:
@@ -9970,7 +9970,7 @@ and added one new call in the game loop for updating the gamepad status:
 
 [Check the result on JSBin:](https://jsbin.com/yidohe/edit)
 
-<img src="./images/image117.jpeg" style="width:3.0625in;height:4.02083in"
+<img src="./images/image114.jpeg" style="width:3.0625in;height:4.02083in"
 alt="move the monster with the gamepad, jsbin screenshot" />
 
 The new updated mainloop:
@@ -10168,7 +10168,7 @@ second = 16.66 ms.
 
 [Online example at JSBin](https://jsbin.com/dibuze/edit)
 
-<img src="./images/image118.jpeg" style="width:2.75in;height:0.8125in"
+<img src="./images/image115.jpeg" style="width:2.75in;height:0.8125in"
 alt="image of a small rectangle in a canvas, moving from left to right" />
 
 <details>
@@ -10310,7 +10310,7 @@ to move the shape to achieve a given speed (in pixels/s).
 
 [Online example at JSBin](https://jsbin.com/riferi/edit):
 
-<img src="./images/image119.jpeg"
+<img src="./images/image116.jpeg"
 style="width:5.26042in;height:1.61458in"
 alt="Bouncing square with time bases animation" />
 
@@ -10726,7 +10726,7 @@ Here is the [online example at JSBin](https://jsbin.com/bonutur/edit).
 <sup>setFrameRateInFramesPerSecond(5); // try other values!</sup>
 ```
 
-<img src="./images/image120.png" style="width:4in;height:2.0047in" />
+<img src="./images/image117.png" style="width:4in;height:2.0047in" />
 
 <b>Source code of the example:</b>
 
@@ -10988,7 +10988,7 @@ speed in pixels/s and we use time-based animation. Try it and verify the
 smoothness of the animation; the FPS counter on a Mac Book Pro core i7
 shows 60 fps.
 
-<img src="./images/image121.jpeg"
+<img src="./images/image118.jpeg"
 style="width:3.51042in;height:3.66667in"
 alt="screenshot of the monster moving at 60 f/s" />
 
@@ -11000,7 +11000,7 @@ However, if you move the monster using the arrow keys, its speed on the
 screen is the same, excepting that it's not as smooth as in the previous
 version, which ran at 60 fps.
 
-<img src="./images/image122.jpeg"
+<img src="./images/image119.jpeg"
 style="width:3.48958in;height:3.58333in"
 alt="screenshot of example that runs at 37 f/s" />
 
@@ -11152,7 +11152,7 @@ will not use time-based animation in the first examples.
 
 [Online example at JSBin](https://jsbin.com/fikomik/edit?js,output):
 
-<img src="./images/image123.jpeg" style="width:3.1875in;height:3.22917in"
+<img src="./images/image120.jpeg" style="width:3.1875in;height:3.22917in"
 alt="Some circular balls that bounce agains vertical and horizontal borders of the canvas" />
 
 In this example, we define *a constructor function* for creating balls.
@@ -11443,7 +11443,7 @@ the parameters controlling the creation of the balls: number, speed,
 radius, etc. Also, try changing the monster's default speed. See the
 results.
 
-<img src="./images/image124.jpeg" style="width:4in;height:4.13077in"
+<img src="./images/image121.jpeg" style="width:4in;height:4.13077in"
 alt="Monster + balls in the game framework. On the screen we see the monster + a bunch of balls" />
 
 For this version, we copied and pasted some code from the previous
@@ -11543,7 +11543,7 @@ sketches of more complex algorithms.
 
 <h4>Circle collision test</h4>
 
-<img src="./images/image125.png" style="width:3in;height:2.47in"
+<img src="./images/image122.png" style="width:3in;height:2.47in"
 alt="two circles with distances between the centers drawn" />
 
 Collision between circles is easy. Imagine there are two circles:
@@ -11613,7 +11613,7 @@ monster with the arrow keys and use the mouse to move "the player": a
 small circle. Try to make collisions between the monster and the circle
 you control.
 
-<img src="./images/image126.jpeg" style="width:4in;height:3.97101in"
+<img src="./images/image123.jpeg" style="width:4in;height:3.97101in"
 alt="monster and small circle: collision, they are drawn in red and a &quot;collision&quot; message appears" />
 
 This online example uses the game framework (without time-based
@@ -11698,25 +11698,25 @@ left that contains the whole arm, then if there is a collision, test for
 the two sub-circles, etc... this recursive algorithm will not be covered
 in this course, but it's a classic optimization.
 
-<img src="./images/image127.png" style="width:4in;height:2.20258in"
+<img src="./images/image124.png" style="width:4in;height:2.20258in"
 alt="Image of an arm with a hierarchy of bounding circles: one for the whole arm, and two smaller for the forearm and the other part" />
 
 In 3D, you can use spheres instead of circles:
 
-<img src="./images/image128.png" style="width:4in;height:2.2583in"
+<img src="./images/image125.png" style="width:4in;height:2.2583in"
 alt="a 3D object (a lamp) with bounding spheres" />
 
 The famous game Gran Turismo 4 on the PlayStation 2 uses bounding
 spheres for detecting collisions between cars:
 
-<img src="./images/image129.png" style="width:3in;height:2.26531in"
+<img src="./images/image126.png" style="width:3in;height:2.26531in"
 alt="Grand turismo used collisions between bounding spheres: image of the game (a car on a road track)" />
 
 ### Rectangle (aligned along X and Y axis) detection test
 
 Let's look at a simple illustration:
 
-<img src="./images/image130.jpeg"
+<img src="./images/image127.jpeg"
 style="width:4.47917in;height:2.09375in"
 alt="two pictures: one with non intersected rectangles: the projection of horizontal sides of rectangles to the X axis do not intersect (then rectangles do not intersect), the other with both projections intersect (rectangles intersect)" />
 
@@ -11731,20 +11731,20 @@ alt="two pictures: one with non intersected rectangles: the projection of horizo
 1 - Only horizontal axis projections overlap: no collision between
 rectangles
 
-<img src="./images/image131.jpeg" style="width:3.53125in;height:2.875in"
+<img src="./images/image128.jpeg" style="width:3.53125in;height:2.875in"
 alt="Only horizontal axis overlap: no collision" />
 
 2 - Only vertical axis projections overlap: no collision between
 rectangles
 
-<img src="./images/image132.jpeg"
+<img src="./images/image129.jpeg"
 style="width:3.42708in;height:2.88542in"
 alt="Only vertical axis projections overlap: no collision" />
 
 3 - Horizontal and vertical axis projections overlap: collision
 detected!
 
-<img src="./images/image133.jpeg"
+<img src="./images/image130.jpeg"
 style="width:3.44792in;height:3.01042in"
 alt="the projections of axis overlap: collision detected" />
 
@@ -11774,9 +11774,11 @@ time a small rectangle. Try to make collisions between the monster and
 the circle you control. Notice that this time the collision detection is
 more accurate and can work with elongated shapes.
 
-<img src="./images/image134.jpeg"
+<img src="./images/image131.jpeg"
 style="width:2.39583in;height:1.90625in"
-alt="Player as a square is inside the monster bounding circle but not inside the bounding rectangle, as we use rect rect collision test: no collision detected" /><img src="./images/image135.jpeg" style="width:2.125in;height:1.90625in"
+alt="Player as a square is inside the monster bounding circle but not inside the bounding rectangle, as we use rect rect collision test: no collision detected" />
+
+<img src="./images/image132.jpeg" style="width:2.125in;height:1.90625in"
 alt="Same as previous picture but this time the player square is inside the monster bounding rectangle: collision detected" />
 
 Here is what we modified (in bold) in the code:
@@ -11884,7 +11886,7 @@ terms of computation. "Rectangle-rectangle" collisions are used in many
 shoot'em'ups ever made - you can play it using the MAME arcade game
 emulator):
 
-<img src="./images/image136.jpeg" style="width:5in;height:3.13408in"
+<img src="./images/image133.jpeg" style="width:5in;height:3.13408in"
 alt="screenshot of dodonpachi" />
 
 You could also try the free Genetos shoot'em up game (Windows only) that
@@ -11893,7 +11895,7 @@ here](https://tatsuya-koyama.com/works/games/genetos/)). Press the G key
 to see the bounding rectangles used for collision test. Here is a
 screenshot:
 
-<img src="./images/image137.jpeg" style="width:5in;height:3.77137in"
+<img src="./images/image134.jpeg" style="width:5in;height:3.77137in"
 alt="genetos screenshot" />
 
 These games run at 60 fps and can have hundreds of bullets moving at the
@@ -11942,8 +11944,9 @@ StackOverflow](https://stackoverflow.com/questions/401847/circle-rectangle-colli
 [Try this function in this example on
 JSBin](https://jsbin.com/acohiv/845/edit?html,output).
 
-<img src="./images/image138.jpeg" style="width:2.0625in;height:2.20833in"
-alt="Circle and rectangle not in collision" /><img src="./images/image139.jpeg"
+<img src="./images/image135.jpeg" style="width:2.0625in;height:2.20833in"
+alt="Circle and rectangle not in collision" />
+<img src="./images/image136.jpeg"
 style="width:2.10417in;height:2.19792in"
 alt="circle collides a rectangle" />
 
@@ -11958,8 +11961,8 @@ alt="circle collides a rectangle" />
     that does the same with a blurring
     effect](https://jsbin.com/nopefe/edit)
 
-<img src="./images/image140.jpeg" style="width:5in;height:2.01389in"
-alt="ball ball collision example" />
+<img src="./images/image137.jpeg" style="width:5in;height:2.01389in"
+alt="Ball ball collision example." />
 
 The principle behind collision resolution for pool balls is as follows.
 You have a situation where two balls are colliding, and you know their
@@ -11978,8 +11981,8 @@ components between the two balls (as we move from step 2 to step 3),
 then finally recombine the velocities for each ball to achieve the
 result (step 4):
 
-<img src="./images/image141.png" style="width:3in;height:2.48276in"
-alt="diagram with two balls, velocities, tengeantial and normal planes" />
+<img src="./images/image138.png" style="width:3in;height:2.48276in"
+alt="Diagram with two balls, velocities, tengeantial and normal planes." />
 
 The above picture has been borrowed from [this interesting article about
 how to implement in C# pool like collision
@@ -12019,8 +12022,8 @@ the ball color to red.
 
 [Try the example at JsBin!](https://jsbin.com/bohebe/edit?js,output)
 
-<img src="./images/image142.jpeg" style="width:3in;height:3.02853in"
-alt="Collision between balls and the monster" />
+<img src="./images/image139.jpeg" style="width:3in;height:3.02853in"
+alt="Collision between balls and the monster." />
 
 <h4>Source code extract:</h4>
 
