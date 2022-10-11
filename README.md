@@ -7760,7 +7760,7 @@ replacing the object element.  The JavaScript API is nearly the same
 as the one of the &lt;audio&gt; element and enables full control from
 JavaScript.
 
-By combining the capabilities of the &lt;video&gt; and <canvas> elements,
+By combining the capabilities of the &lt;video&gt; and &lt;canvas&gt; elements,
 it is possible to manipulate video data to incorporate a variety of
 visual effects  in real time, and conversely, to use images from videos
 as "animated textures" over graphic objects.
@@ -12279,7 +12279,7 @@ alt="Screenshot of the example: move a slider to select a subimage/sprite from t
 
 </details>
 
-Notice that we use an <input type="range"> to select the current
+Notice that we use an &lt;input type="range"&gt; to select the current
 sprite, and we have two canvases: a small one for displaying the
 currently-selected sprite, and a larger one that contains the sprite
 sheet and in which we draw a red square to highlight the selected
@@ -12412,7 +12412,7 @@ sprites:
 
 -   *Lines 11-39*: initializations that run just after the page has been
     loaded. We first get the canvas and contexts. Then we set the
-    minimum and maximum values of the slider (an <input type=range>)
+    minimum and maximum values of the slider (an &lt;input type=range>)
     at *lines 31-32*, and disable it at *line 34* (we cannot slide it
     before the sprite sheet image has been loaded). We display the
     current sprite number 0 in the <output> field to the right of the
@@ -14499,14 +14499,14 @@ In order to detect a drag, add an event listener for the dragstart event:
 5.  </ol>
 ```
 
-In the above code, we made all of the <li> elements draggable, and we
+In the above code, we made all of the &lt;li&gt; elements draggable, and we
 detect a dragstart event occurring to any item within the ordered
-list: <ol ondragstart="dragStarthandler(event)">.
+list: &lt;ol ondragstart="dragStarthandler(event)"&gt;.
 
 > When you put an ondragstart handler on an element, each of its
 > draggable children could fire the event! It's a sort of "inheritance
 > of handlers"... In the above example, the handler is declared at
-> the <ol> level, so any subordinate <li> element will fire the
+> the &lt;ol&gt; level, so any subordinate &lt;li&gt; element will fire the
 > event.
 
 Try the following interactive example in your browser (just click and
@@ -14569,7 +14569,7 @@ element. Then we change the page content accordingly.
 
 <h4>Step #1: in the dragstart handler, copy a value in the drag and drop clipboard for later use</h4>
 
-When a draggable <li> element is being dragged, in
+When a draggable &lt;li&gt; element is being dragged, in
 the dragstart handler [get the value of its data-value
 attribute](https://html5doctor.com/html5-custom-data-attributes/) and
 copy it to *the "drag and drop clipboard" *for later use.
@@ -14577,7 +14577,7 @@ copy it to *the "drag and drop clipboard" *for later use.
 When data is copied to this clipboard, a key/value pair must be given.
 The data copied to the clipboard is associated with this name.
 
-The variable event.target at *line 5* below is the <li> element that
+The variable event.target at *line 5* below is the &lt;li&gt; element that
 has been dragged, and event.target.dataset.value is the value of its
 data-value attribute (in our case "apples", "oranges" or "pears"):
 
@@ -14733,11 +14733,11 @@ Try it in your browser below or [play with it at CodePen](https://codepen.io/w3
 
 -   The dropHandler function is called (<i>line 15</i>), we get the
     object with a name/key equal to "Fruit" (<i>line 21</i>) from the
-    clipboard , we create a <li> element (<i>line 18</i>), and set its
+    clipboard , we create a &lt;li&gt; element (<i>line 18</i>), and set its
     value according to the value in that clipboard object (<i>lines
     23-31</i>),
 
--   Finally we add the <li> element to the <ol> list within the drop
+-   Finally we add the &lt;li&gt; element to the <ol> list within the drop
     zone <div>.
 
 Notice that we use some CSS to set aside some screen-space for the drop
@@ -15876,7 +15876,7 @@ Note that:
     raise many events within the parents of the drop zone element as
     well.
 
--   *Lines 73-74* create a <li> element. Its value is initialized with
+-   *Lines 73-74* create a &lt;li&gt; element. Its value is initialized with
     the file name of the current file in the collection, and added to
     the <ol> list.
 
@@ -15895,7 +15895,7 @@ reproduced the example here - please review the source code to refresh
 your memory (click on the JS tab or [look at the example at
 CodePen](https://codepen.io/w3devcampus/pen/ZbExbM)).
 
-Click the "Choose files" button (an <input type="file"> element),
+Click the "Choose files" button (an &lt;input type="file"> element),
 select one or more images -- and you should see image thumbnails
 displayed in the open space beneath it:
 
@@ -16099,7 +16099,7 @@ the thumbnails (*line 114*).
 <h3 id="ch3-4-4">3.4.4 Mixing drag and drop and input type=file</h3>
 <!------------------------------------------------------------------------------------------------>
 
-Let's go further and also add an <input type="file">
+Let's go further and also add an &lt;input type="file">
 
 The example below allows files to be selected using a file chooser or by
 drag  and dropping them, like in the screenshot below (the interactive
@@ -16110,8 +16110,8 @@ alt="Example of file and dir chooser." />
 
 In the above screenshot, which is derived from the example detailed
 later in this page, we selected some files using the first button (which
-is an <input type="file" multiple.../>),then we used the second button
-(which is an <input type="file" webkitdirectory>) to select a
+is an &lt;input type="file" multiple.../>),then we used the second button
+(which is an &lt;input type="file" webkitdirectory>) to select a
 directory that contained 11 files. We then dragged and dropped some
 other images to the drop zone. Each time, thumbnails were displayed.
 Both methods (file selector or drag and drop) produced the same result.
@@ -16121,7 +16121,7 @@ Both methods (file selector or drag and drop) produced the same result.
 If you look (again) at [the very first example that displayed
 thumbnails, without drag and
 drop)](https://codepen.io/w3devcampus/pen/ZbExbM), you will notice that
-the event handler we used to track the selected files using <input
+the event handler we used to track the selected files using &lt;input
 type="file"/> looks like this:
 
 <details>
@@ -16150,13 +16150,13 @@ the same parameters is also used by [the example that used drag and drop
 that we discussed on a previous page of this
 course.](https://codepen.io/w3devcampus/pen/XmWEMQ) 
 
-Let's mix both examples: add to our drag'n'drop example an <input
+Let's mix both examples: add to our drag'n'drop example an &lt;input
 type="file"> element, and the above handler. This will allow us to
 select files either with drag'n'drop or by using a file selector.
 
 Just for fun, we also added [an experimental "directory chooser" that is
 thus far only implemented by Google
-Chrome](https://www.youtube.com/watch?v=WaSP-rdQA_c) (notice, <input
+Chrome](https://www.youtube.com/watch?v=WaSP-rdQA_c) (notice, &lt;input
 type="file" webkitdirectory> is <b>not</b> in the HTML5 specification.
 Drag and drop functionality will work through a file chooser in any
 modern browser, but the directory chooser will only work with Google
@@ -16518,7 +16518,7 @@ and upload multiple files (which might include images). 
 
 <h4>Serial approach: upload the files as soon as they are selected or dragged and dropped</h4>
 
-Let's design an XHR2/Ajax, a form with an <input type=file
+Let's design an XHR2/Ajax, a form with an &lt;input type=file
 multiple> input field, and one or more &lt;progress&gt; elements for
 monitoring file uploads. The form will also have input fields of
 different types.
@@ -16585,7 +16585,7 @@ run out of the box with most WAMP, LAMP, and MAMP distributions (Apache
 
 Unzip the archive and follow the included READMEs. These examples
 propose <b>different implementations of the two approaches</b> presented in
-the previous lecture, and both with an <input type=file> and drag and
+the previous lecture, and both with an &lt;input type=file> and drag and
 drop.
 
 The HTML part of the examples is also using a technique, seen during the
@@ -16615,7 +16615,7 @@ more difficult to follow.
 
 <h4>Example #1: auto-loading of the files, regular form submission, benefits of the HTML5 form validation system</h4>
 
-Example using a file selector (<input type="file">):
+Example using a file selector (&lt;input type="file">):
 
 <img src="./images/image188.png" style="width:4.85417in;height:1.79167in"
 alt="example 1 of file upload" />
@@ -16716,7 +16716,7 @@ Let's use the previous two examples as a basis for two further examples:
 
 <h4>Example #3: uploading everything at once using a file selector</h4>
 
-A file selector (<input type="file">).
+A file selector (&lt;input type="file">).
 
 This time, we add the files to an HTML5 FormData object before sending
 XHR2 Ajax requests to the server (one for each file + one for the rest
@@ -18509,7 +18509,7 @@ If the ssn exists in the object store, then the results are displayed in
 the form itself (the code that gets the results and that updates the
 form is in the request.onsuccess callback).
 
-<img src="./images/image212.jpeg" style="width:6.5in;height:1.98333in"
+<img src="./images/image209.jpeg" style="width:6.5in;height:1.98333in"
 alt="Form updated with data retrieved" />
 
 Here is the code added to that example:
@@ -18685,7 +18685,7 @@ between those in a certain range, then you must use <i>a cursor</i>.
 It adds a button to our application. Clicking on it will display a set
 of alerts, each showing details of an object in the object store:
 
-<img src="./images/image213.jpeg" style="width:6.5in;height:1.88889in"
+<img src="./images/image210.jpeg" style="width:6.5in;height:1.88889in"
 alt="Screenshot with a &quot;list all customers button&quot; and an alert showing one of them" />
 
 The openCursor() function can take several (optional) arguments.
@@ -18793,7 +18793,7 @@ the person-objects from the dataStore which have a name equal to "Bill".
 
 [Online example you can try at JsBin](https://jsbin.com/gituxa)
 
-<img src="./images/image214.jpeg" style="width:6.5in;height:5.12639in"
+<img src="./images/image211.jpeg" style="width:6.5in;height:5.12639in"
 alt="retrieving data using an index. The screenshot shows a button &quot;look for all customers named Bill&quot;, and shows an alert with the result." />
 
 The above example retrieves only the first object that has a name/index
@@ -18859,7 +18859,7 @@ Can you see the difference? 
 You can try [an online example at JSBin that uses the above
 methods](https://jsbin.com/kubuwof):
 
-<img src="./images/image215.jpeg" style="width:6.5in;height:4.45625in"
+<img src="./images/image212.jpeg" style="width:6.5in;height:4.45625in"
 alt="getting data using index. The screenshot shows two buttons: one for getting one single data and one for getting all data, using indexes" />
 
 How to try this example:
@@ -18968,10 +18968,12 @@ URL](https://github.com/mdn/IDBKeyRange-example/blob/gh-pages/index.html)):
 Try [the online example at JsBin](https://jsbin.com/lawaju/edit) (enter
 "Gaming", "Batman" etc. as key range values):
 
-<img src="./images/image216.jpeg" style="width:6.5in;height:6.53819in"
+<!-- page 398 ---->
+<img src="./images/image213.jpeg" style="width:6.5in;height:6.53819in"
 alt="Example of use of IdbKeyRange" />
 
-<img src="./images/image217.jpeg" style="width:6.5in;height:5.99583in"
+<!-- page 399 ---->
+<img src="./images/image214.jpeg" style="width:6.5in;height:5.99583in"
 alt="IDBKeyRange in action" />
 
 <!------------------------------------------------------------------------------------------------>
@@ -19226,7 +19228,7 @@ You need to unarchive it in the Web server htdocs directory of your
 WAMP/MAMP/LAMP http distribution, for example. Then open
 the index.html file located in that directory.
 
-<img src="./images/image218.jpeg" style="width:5in;height:2.37393in"
+<img src="./images/image215.jpeg" style="width:5in;height:2.37393in"
 alt="running the example in an Apache Web Server" />
 
 <!------------------------------------------------------------------------------------------------>
@@ -19235,7 +19237,7 @@ alt="running the example in an Apache Web Server" />
 
 Web components provide a standard way to build your own
 widgets/components using similar methods to those used by browser
-developers to construct the &lt;video&gt;, &lt;audio&gt;, and <input
+developers to construct the &lt;video&gt;, &lt;audio&gt;, and &lt;input
 type="date"> elements, for example.
 
 Web components enable you<i> to use custom HTML elements in your HTML
@@ -19244,13 +19246,15 @@ an input text with vocal recognition, a nice chart, etc.
 
 Let's start with an example! This code...:
 
-1.  <x-gif src="https://i.imgur.com/iKXH4E2.gif" ping-pong></x-gif>
+```
+<x-gif src="https://i.imgur.com/iKXH4E2.gif" ping-pong></x-gif>
+```
 
 ... renders an animated GIF, and it loops forever in ping-pong mode: the
 order of the animation is reversed when the last image is reached and
 again when the animation goes back to the first image.
 
-<img src="./images/image219.jpeg" style="width:4in;height:2.93333in"
+<img src="./images/image216.jpeg" style="width:4in;height:2.93333in"
 alt="animated gif in a page" />
 
 Click on the image to run the animated GIF demo, or visit [this Web
@@ -19276,10 +19280,10 @@ menu to view the source of the page, you will not see the DOM of this
 animated GIF player:
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 220. shadow root of the x-gif web component (###) ----------------------->
+<!--------------------- 217. shadow root of the x-gif web component (###) ----------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image220.jpeg"
+<img src="./images/image217.jpeg"
   style="width:5in;height:2.55502in"
   alt="Shadow root of the x-gif web component." />
 </p>
@@ -19301,10 +19305,10 @@ them with browsers that do not yet support Web Components.
 site](https://www.webcomponents.org/).
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 221. the webcomponents.org home page (###) ----------------------->
+<!--------------------- 218. the webcomponents.org home page (###) ----------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image221.png"
+<img src="./images/image218.png"
   style="width:4in;height:3.0906in"
   alt="The webcomponents.org home page" />
 </p>
@@ -19314,10 +19318,10 @@ input fields with voice recognition, and a text area that could vocalize
 the text:
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 222. results for a search on voice (###) ----------------------->
+<!--------------------- 219. results for a search on voice (###) ----------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image222.png"
+<img src="./images/image219.png"
   style="width:4in;height:2.10812in"
   alt="Results for a search on &quot;voice&quot;." />
 </p>
@@ -19524,10 +19528,10 @@ Here is [an online example at JSBin](https://jsbin.com/dozele/edit) that
 uses exactly the code presented:
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 223. template use (###) ----------------------->
+<!--------------------- 220. template use (###) ----------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image223.jpeg"
+<img src="./images/image220.jpeg"
   style="width:2.90625in;height:4.23958in"
   alt="Template use." />
 </p>
@@ -19705,7 +19709,7 @@ access to the play button, etc.
 
 <!------------------------------------------------------------------------------------------------>
 <!--------------------- 224. devtools 2 (###) ----------------------->
-<!------------------------------------------------------------------------------------------------>
+<!---------------------------------------------image 21 - 23 ??? --------------------------------------------------->
 <p align="center" width="100%">
 <img src="./images/image224.jpeg"
   style="width:6.5in;height:4.65556in"
