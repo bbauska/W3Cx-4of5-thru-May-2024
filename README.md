@@ -8145,8 +8145,14 @@ Here is a screenshot of an example and the code we added to our game
 engine, for measuring FPS ([try it online at
 JSBin](https://jsbin.com/noqibu/edit)):
 
-<img src="./images/image096.jpeg" style="width:4in;height:1.87097in"
-alt="screenshot of the example that displays 60 frames/s" />
+<!------------------------------------------------------------------------------------------------>
+<!-------------------- 96. screenshiot of example that displays 60 fps (155) --------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image096.jpeg"
+  style="width:4in;height:1.87097in"
+  alt="screenshot of the example that displays 60 frames/s" />
+</p>
 
 <h4>Source code extract:</h4>
 
@@ -8308,7 +8314,7 @@ How to draw a monster in a canvas: [you can try it online at
 JSBin](https://jsbin.com/ponaki/edit).
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------------- 98. small monster drawn in a canvas (xx) ------------------------------------>
+<!------------------------- 98. small monster drawn in a canvas (158) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image098.jpeg"
@@ -8487,7 +8493,7 @@ JSBin](https://jsbin.com/xuruja/edit). 
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image099.jpeg"
-  style="width:2in;height:1.96516in"
+  style="width:2.82292in;height:2.80208in"
   alt="Screenshot of a trembling monster in a 60 f/s animation" />
 </p>
 
@@ -8746,7 +8752,7 @@ is a list of keyCodes (from [CSS
 Tricks](https://css-tricks.com/snippets/javascript/javascript-keycodes/)
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------------- 100/101. key codes (167) -------------------------------------->
+<!-------------------------------- 100/101. key codes (166) -------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image100.png"
@@ -8806,6 +8812,10 @@ far from finished yet):
 [Here is the online example you can try at
 JSBin](https://jsbin.com/razeya/edit)
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 102. up, right and space (168) ----------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
 <img src="./images/image102.jpeg"
   style="width:2in;height:2.0766in"
   alt="Trembling monster with multiple key press management." />
@@ -8939,7 +8949,7 @@ up + right should work in combination.
 <h4>A few reminders</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 103. a schema of mouse internals (##) ----------------------->
+<!--------------------------- 103. a schema of mouse internals (170) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image103.jpeg"
@@ -8969,7 +8979,7 @@ Here is [an online example at JSBin](https://jsbin.com/metavu/edit) that
 covers all cases correctly.
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------- 104. jsbin example mouse position + button pressed (##) -------------------->
+<!------------------- 104. jsbin example mouse position + button pressed (171) -------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image104.jpeg"
@@ -9047,7 +9057,7 @@ down) as part of the inputStates object, just as we do with the keyboard
 <a href="https://jsbin.com/soduko/edit?js,output">Try this example at JsBin</a>
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------------- 105. a rectangle that follows mouse cursor (##) ------------------------->
+<!---------------------- 105. a rectangle that follows mouse cursor (172) ------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image105.jpeg"
