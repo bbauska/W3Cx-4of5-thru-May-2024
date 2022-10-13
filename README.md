@@ -7466,10 +7466,10 @@ Below, we have mixed the code from two previous examples:
 [This one at JSBin](https://jsbin.com/vejocav/edit?html,css,js,output):
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------- 52. audio player balance (140) --------------------------------->
+<!------------------------------- 49. audio player balance (140) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image052.jpeg" 
+<img src="./images/image049.jpeg" 
   style="width:2in;height:1.28302in"
   alt="Audio player with volume meters and waveform." />
 </p>
@@ -7652,7 +7652,7 @@ games](https://web.archive.org/web/20090519005306/http:/www.javascriptgaming.com
 <!---------------------------------- 87. free civ game (145) ------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image87.png" 
+<img src="./images/image087.png" 
   style="width:2in;height:2.48341in"
   alt="Free civ game." />
 </p>
@@ -8483,7 +8483,7 @@ our game engine:
 JSBin](https://jsbin.com/xuruja/edit). 
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------------- 99. trembling monster (xx) ------------------------------------>
+<!-------------------------------- 99. trembling monster (161) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image099.jpeg"
@@ -8738,18 +8738,22 @@ possible to test which key has been pressed or released, like this:
 
 </details>
 
-At *line 2, *the key code of *37* corresponds to the left arrow key.
+At <i>line 2</i>, the key code of <i>37</i> corresponds to the left arrow key.
 
 You can try key codes [with this interactive
 example](http://www.asquare.net/javascript/tests/KeyCode.html), and here
 is a list of keyCodes (from [CSS
 Tricks](https://css-tricks.com/snippets/javascript/javascript-keycodes/)
 
+<!------------------------------------------------------------------------------------------------>
+<!-------------------------------- 100/101. key codes (167) -------------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
 <img src="./images/image100.png"
-style="width:5.66667in;height:7.61458in" />
-
+style="width:5.66667in;height:7.61458in"
 <img src="./images/image101.png"
 style="width:5.66667in;height:1.29167in" />
+</p>
 
 <h4>Game requirements: managing multiple keypress / keyrelease events</h4>
 
@@ -22396,4 +22400,4 @@ your comments/observations/questions and share your creations.
 
 <h5>the end...</h5>
 
-<h4>Last Updated: 10-11-2022 10:28am</h4>
+<h4>Last Updated: 10-12-2022 4:24pm</h4>
