@@ -8129,17 +8129,17 @@ The principle is simple:
     drawn, then we have the <i>frame rate</i> - measured in number of frames
     per second. Remember, it should be around 60 fps!
 
-<b>Quick glossary:</b> the word *delta</i> is the name of a Greek
+<b>Quick glossary:</b> the word <i>delta</i> is the name of a Greek
 letter (uppercase <b>Δ</b>, lowercase <b>δ</b> or <b>𝛿).</b> The upper-case
 version is used in mathematics as an abbreviation for measuring
-the *change</i> in some object, over time - in our case, how quickly the
+the <i>change</i> in some object, over time - in our case, how quickly the
 mainloopis running. This dictates the maximum speed at which the game
 display will be updated. This maximum speed could be referred to as
-the *rate of change</i>. We call what is displayed at a single
-point-in-time, a *frame</i>. Thus the *rate of change</i>  can be measured in
-frames per second (*fps</i>). Accordingly, our game's *delta,</i> determines
-the achievable frame rate - the <b>shorter</b> the *delta</i> (measured in
-mS), the <b>faster</b> the possible *rate of change</i> (in *fps</i>).
+the <i>rate of change</i>. We call what is displayed at a single
+point-in-time, a <i>frame</i>. Thus the <i>rate of change</i>  can be measured in
+frames per second (<i>fps</i>). Accordingly, our game's <i>delta,</i> determines
+the achievable frame rate - the <b>shorter</b> the <i>delta</i> (measured in
+mS), the <b>faster</b> the possible <i>rate of change</i> (in <i>fps</i>).
 
 Here is a screenshot of an example and the code we added to our game
 engine, for measuring FPS ([try it online at
@@ -8624,7 +8624,7 @@ Next, let's see how to interact with it using the mouse or the keyboard.
 
 <h4>HTML5 events</h4>
 
-There is no input or output in JavaScript. We treat *events* caused by
+There is no input or output in JavaScript. We treat <i>events</i> caused by
 user actions as inputs, and we manipulate the DOM structure as
 output. Usually in games, we will maintain state variables representing
 moving objects like the position and speed of an alien ship, and the
@@ -8632,7 +8632,7 @@ animation loop will refer to these variables in determining the movement
 of such objects.
 
 In any case, the events are called DOM events, and we use the DOM APIs
-to create *event handlers*.
+to create <i>event handlers</i>.
 
 <h4>How to listen to events</h4>
 
@@ -8647,7 +8647,7 @@ div </div>
 ```
 
 This method is very easy to use, but it is not the recommended way to
-handle events. Indeed, It works today but is *deprecated* (will probably
+handle events. Indeed, It works today but is <i>deprecated</i> (will probably
 be abandoned in the future). Mixing 'visual layer' (HTML) and 'logic
 layer' (JavaScript) in one place is really bad practice and causes a
 host of problems during development.
@@ -8661,7 +8661,7 @@ document.getElementById('someDiv').onclick = function() {
 ```
 
 This method is fine, but  you will not be able to attach
-multiple *listener* functions. If you need to do this, use the version
+multiple <i>listener</i> functions. If you need to do this, use the version
 shown below.
 
 <h4>Method #3: register a callback to the event listener with the addEventListener method (preferred  method)
@@ -8672,14 +8672,14 @@ document.getElementById('someDiv').addEventListener('click', function() {
 }, false);
 ```
 
-Note that the third parameter describes whether the *callback* has to be
+Note that the third parameter describes whether the <i>callback</i> has to be
 called during the captured phase. This is not important for now, just
 set it to false.
 
 <h4>Details of the DOM event are passed to the event listener function
 
-When you create an *event listener* and attach it to an element, the
-listener will create an *event object* to describe what happened. This
+When you create an <i>event listener</i> and attach it to an element, the
+listener will create an <i>event object</i> to describe what happened. This
 object is provided as a parameter of the callback function:
 
 ```
@@ -13295,7 +13295,7 @@ now ball.draw(<b>ctx</b>); instead of ball.draw() without any parameter.
 
 <h4>Isolate the part that counts the number of frames per second</h4>
 
-We need to add a small initFPS function for creating the <div> that
+We need to add a small initFPS function for creating the &lt;div&gt; that
 displays the FPS value... this function will be called from
 the GF.start() method. There was code in this start method that has been
 moved into the initFPS function we created and added into
@@ -14254,17 +14254,17 @@ style="width:3.96875in;height:2.21875in" alt="file upload example 1" />
 
 <h4><b>Explanations</b>:</h4>
 
--   *Line 18*: callback called when the user selects a file.
+-   <i>Line 18</i>: callback called when the user selects a file.
 
--   *Lines 19-20*: preparation of the XHR2 request.
+-   <i>Lines 19-20</i>: preparation of the XHR2 request.
 
--   *Lines 27-30*: a FormData object is created (this will contain the
+-   <i>Lines 27-30</i>: a FormData object is created (this will contain the
     (MIME) multipart form-data which will be sent by the POST request).
 
--   *Line 30:* the request is sent, with the FormData object passed as a
+-   <i>Line 30</i>: the request is sent, with the FormData object passed as a
     parameter (all data is sent).
 
--   *Line 23*: when the file is completely uploaded, the onload listener
+-   <i>Line 23</i>: when the file is completely uploaded, the onload listener
     is called and an alert message is displayed.
 
 <h4>Monitor the upload progress</h4>
@@ -14282,11 +14282,11 @@ that used for monitoring file downloads:
     bytes we need to upload (i.e., the file size).
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 170. file upload with progress bar (##) -------------------------------->
+<!-------------------------- 170. file upload with progress bar (287) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image170.jpeg?raw=true"
-   width="35%"
+   width="55%"
    alt="File upload with progress bar." />
 </p>
 <!------------
@@ -14510,7 +14510,7 @@ And avoid firing too many events by just stopping the propagation with an ondrag
 
 See you for the next video! I will explain how to give a nice visual feedback when we drag and drop things.
 
-In order to make any visible element *draggable*, add the draggable="true" attribute to any visible HTML5 element.
+In order to make any visible element <i>draggable*, add the draggable="true" attribute to any visible HTML5 element.
 Notice that some elements are draggable by default, such as &lt;img&gt; elements.
 
 In order to detect a drag, add an event listener for the dragstart event:
@@ -14540,12 +14540,12 @@ CodePen](https://codepen.io/w3devcampus/pen/MaWKZb).
 
 <h4>Screenshot:</h4>
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 171.  (##) -------------------------------->
+<!--------------------------- 171. drag and drop list example (292) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image171.jpeg?raw=true"
-   width="35%"
-   alt="Drag 'n drop fruis." />
+   width="65%"
+   alt="Drag 'n drop fruits." />
 </p>
 <!-----------
 style="width:5in;height:1.60844in"
@@ -14597,12 +14597,12 @@ element. Then we change the page content accordingly.
 When a draggable &lt;li&gt; element is being dragged, in
 the dragstart handler [get the value of its data-value
 attribute](https://html5doctor.com/html5-custom-data-attributes/) and
-copy it to *the "drag and drop clipboard" *for later use.
+copy it to <i>the "drag and drop clipboard" </i>for later use.
 
 When data is copied to this clipboard, a key/value pair must be given.
 The data copied to the clipboard is associated with this name.
 
-The variable event.target at *line 5* below is the &lt;li&gt; element that
+The variable event.target at <i>line 5</i> below is the &lt;li&gt; element that
 has been dragged, and event.target.dataset.value is the value of its
 data-value attribute (in our case "apples", "oranges" or "pears"):
 
@@ -14667,11 +14667,11 @@ element that has been dropped (we get this from the clipboard at <i>lines
 <h4>Complete example</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 172.  (##) -------------------------------->
+<!------------------------------- 172. drag 'n drop fruite (294) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image172.jpeg?raw=true"
-   width="35%"
+   width="65%"
    alt="Drag 'n drop fruits." />
 </p>
 <!---------
@@ -14749,7 +14749,7 @@ Try it in your browser below or [play with it at CodePen](https://codepen.io/w3
     dragged-element's data-value attribute to the drag and
     drop clipboard with a name/key equal to "Fruit" (<i>line 11</i>),
 
--   When a drop occurs in the "drop zone" (the <div> at <i>line 44</i>),
+-   When a drop occurs in the "drop zone" (the &lt;div&gt; at <i>line 44</i>),
     the dropHandler(event) function is called. This always occurs after
     a call to the dragstart handler. In other words: when we enter
     the drop handler, there must always be something on the clipboard!
@@ -14762,8 +14762,8 @@ Try it in your browser below or [play with it at CodePen](https://codepen.io/w3
     value according to the value in that clipboard object (<i>lines
     23-31</i>),
 
--   Finally we add the &lt;li&gt; element to the <ol> list within the drop
-    zone <div>.
+-   Finally we add the &lt;li&gt; element to the &lt;ol&gt; list within the drop
+    zone &lt;div&gt;.
 
 Notice that we use some CSS to set aside some screen-space for the drop
 zone (not presented in the source code above, but available in the
@@ -14835,11 +14835,20 @@ instead of JavaScript variables for easier CSS mapping, etc.</b>
 Data attributes can be created and accessed using the dataset property
 of any HTML element.
 
-Here is [an online at
-JsBin](https://jsbin.com/yowimebawo/edit?html,css,js,output) example: 
+Here is <a href="https://jsbin.com/yowimebawo/edit?html,css,js,output">an online at
+JsBin</a> example:
 
-<img src="./images/image173.png" style="width:5in;height:0.80556in"
-alt="Data attribut example 1" />
+<!------------------------------------------------------------------------------------------------>
+<!---------------------------- 173. using css attr() function (297) ------------------------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image173.png?raw=true"
+   width="35%"
+   alt="Data attribute using dataset property." />
+</p>
+<!--
+style="width:5in;height:0.80556in"
+--->
 
 In this example, when you click on the sentence that starts with "John
 Says", the end of the sentence changes, and the values displayed
@@ -14850,7 +14859,7 @@ are taken from data­-* attributes of the &lt;li&gt; element.
 ```
 1.  <li class="user" data-name="John Resig" data-city="Boston"
 2.      data-lang="js" data-food="Bacon">
-3.  John says:</b> <span>Hello, how are you?</span>
+3.  John says: <span>Hello, how are you?</span>
 4.  </li>
 ```
 
@@ -14893,13 +14902,12 @@ either user.dataset.city, user.dataset.food, or user.dataset.lang.
 <h4>Using CSS pseudo elements ::before and ::after with the attr() function to display the value of data-* attributes</h4>
 
 This example shows how data-* attributes can be added on the fly by
-JavaScript code and accessed from a CSS rule using
-the attr() CSS function.
+JavaScript code and accessed from a CSS rule using the attr() CSS function.
 
 Try [the online example at JsBin](https://jsbin.com/alunuk/6/edit). 
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 174. using css attr() function (##) -------------------------------->
+<!---------------------------- 174. using css attr() function (298) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image174.png?raw=true"
@@ -15048,12 +15056,12 @@ further down the page (it includes, in addition, visual feedback on the
 drop zone):
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 175.  (##) -------------------------------->
+<!-------------------------------- 175. css drag operation (301) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image175.jpeg?raw=true"
-   width="35%"
-   alt="Drag 'n drop colorful." />
+   width="65%"
+   alt="Drag 'n drop css style and operation." />
 </p>
 <!----------
 style="width:5in;height:2.57746in"
@@ -15101,7 +15109,7 @@ style="width:5in;height:2.57746in"
 
 </details>
 
-Notice at *lines 12 and 24* the use of the classlist property that has
+Notice at <i>lines 12 and 24</i> the use of the classlist property that has
 been introduced with HTML5 in order to allow CSS class manipulation from
 JavaScript.
 
@@ -15255,12 +15263,12 @@ in the previous example, a "copy" cursor like the one below would be
 appropriate:
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 176.  (##) -------------------------------->
+<!-------------------------------- 176. copy curosr image (304) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image176.jpeg?raw=true"
-   width="35%"
-   alt="dropEffect." />
+   width="25%"
+   alt="Copy cursor." />
 </p>
 <!------------
 style="width:2.39583in;height:0.78125in" alt="dropEffect" />
@@ -15268,19 +15276,29 @@ style="width:2.39583in;height:0.78125in" alt="dropEffect" />
 
 If you are "moving" objects, this style of cursor would be appropriate:
 
+<!------------------------------------------------------------------------------------------------>
+<!-------------------------------- 177. moving object image (304) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image177.jpeg?raw=true"
+   width="25%"
+   alt="Moving object cursor image." />
+</p>
+<!--
 <img src="./images/image177.jpeg"
 style="width:2.58333in;height:0.88542in" alt="drop effect #2" />
+--->
 
 And if you are making a "link" or a "shortcut", a cursor would be
 looking like this:
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 178.  (##) -------------------------------->
+<!------------------------------ 178. link or shortcut image (305) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image178.jpeg?raw=true"
-   width="35%"
-   alt="Drop effect #3." />
+   width="25%"
+   alt="Link or shortcut, cursor image." />
 </p>
 <!------------
 style="width:2.65625in;height:0.9375in"
@@ -15289,11 +15307,11 @@ style="width:2.65625in;height:0.9375in"
 Alternatively, you could use any custom image/icon you like:
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 179.  (##) -------------------------------->
+<!------------------ 179. dropeffect & effectallowed custom image icons (305) -------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image179.jpeg?raw=true"
-   width="35%"
+   width="65%"
    alt="Drop effect with image." />
 </p>
 <!------------
@@ -15466,7 +15484,7 @@ the dragstart handler we copy just the id of the element in the DOM
 (*line 15*).
 
 In the drop handler, we just move the element from one part of the DOM
-tree to another (under the <div> defined at *line 38*, that is the
+tree to another (under the &lt;div&gt; defined at *line 38*, that is the
 drop zone). This occurs at *line 18* (get back the id from the
 clipboard), and *line 19* (make it a child of the div. Consequently, it
 is no longer a child of the <body>, and indeed we have "moved"
@@ -15477,12 +15495,12 @@ one &lt;img&gt; from its initial position to another location in the page).
 <!------------------------------------------------------------------------------------------------>
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 180.  (##) -------------------------------->
+<!-------------------------- 180. drag and drop text selection (309) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image180.jpeg?raw=true"
-   width="35%"
-   alt="." />
+<img src="./images/image180.png?raw=true"
+   width="65%"
+   alt="Drag and drop a text selection." />
 </p>
 <!----------
 style="width:5in;height:1.75374in" />
@@ -15785,9 +15803,18 @@ them. That's all. Bye, bye!
 
 <h4>Example: drag and drop files to a drop zone, display file details in a list</h4>
 
-<img src="./images/image181.jpeg"
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 181. drag and drop example (315) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image181.jpeg?raw=true"
+   width="65%"
+   alt="Example of Drag and drop a file." />
+</p>
+<!--
 style="width:4.64583in;height:3.89583in"
 alt="Example of drag&#39;n&#39;drop of a file" />
+-->
 
 Try the example below directly in your browser (just drag and drop
 files to the greyish drop zone), or [play with it at
@@ -15901,9 +15928,9 @@ Note that:
     raise many events within the parents of the drop zone element as
     well.
 
--   *Lines 73-74* create a &lt;li&gt; element. Its value is initialized with
+-   <i>Lines 73-74</i> create a &lt;li&gt; element. Its value is initialized with
     the file name of the current file in the collection, and added to
-    the <ol> list.
+    the &lt;ol&gt; list.
 
 In principle, this example is very similar to the "fruit" examples we
 worked through earlier, except that this time we're working with
@@ -15920,12 +15947,22 @@ reproduced the example here - please review the source code to refresh
 your memory (click on the JS tab or [look at the example at
 CodePen](https://codepen.io/w3devcampus/pen/ZbExbM)).
 
-Click the "Choose files" button (an &lt;input type="file"> element),
+Click the "Choose files" button (an &lt;input type="file"&gt; element),
 select one or more images -- and you should see image thumbnails
 displayed in the open space beneath it:
 
-<img src="./images/image182.png" style="width:6.5in;height:1.83264in" />
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 182.  (3xx) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image182.png"
+  width="65%"
+  alt="" />
+</p>
 
+<!---  
+style="width:6.5in;height:1.83264in" />
+--->
 Source code extract (the part that reads the image file content and
 displays the thumbnails):
 
@@ -15977,13 +16014,23 @@ initialized with the dataURL of the image file, into the HTML list with
 an id of "list".
 
 So, let's add this method to our code example, to display file details
-once dropped, and also add an <output id="list"></output> to the
+once dropped, and also add an &lt;output id="list"&gt;&lt;/output&gt; to the
 HTML of this example.
 
 <h4>Complete example of drag and drop + thumbnails of images
 
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 183.  (3xx) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image183.jpeg"
+  width="65%"
+  alt="Image drag and drop with thumbnails." />
+</p>
+<!---
 <img src="./images/image183.jpeg" style="width:6.5in;height:4.05625in"
 alt="ilmage drag&#39;n&#39;drop with thumbnails" />
+--->
 
 Try it below in your browser (drag'n'drop image files into the drop
 zone) or play with it at CodePen:
@@ -16118,7 +16165,7 @@ Above, we added the readFilesAndDisplayPreview() method detailed
 earlier. We called it at the end of the drop handler (*line 77*), and we
 added the <output> element as a container for the &lt;img&gt; elements
 (constructed by the JavaScript code *lines 94-96*) which will display
-the thumbnails (*line 114*).
+the thumbnails (<i>line 114</i>).
 
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch3-4-4">3.4.4 Mixing drag and drop and input type=file</h3>
@@ -16130,8 +16177,18 @@ The example below allows files to be selected using a file chooser or by
 drag  and dropping them, like in the screenshot below (the interactive
 example is a bit further down the page):
 
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 184.  (3xx) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image184.png"
+  width="65%"
+  alt="Example of file and directory chooser." />
+</p>
+<!---
 <img src="./images/image184.png" style="width:6.5in;height:6.36944in"
 alt="Example of file and dir chooser." />
+--->
 
 In the above screenshot, which is derived from the example detailed
 later in this page, we selected some files using the first button (which
@@ -16141,13 +16198,13 @@ directory that contained 11 files. We then dragged and dropped some
 other images to the drop zone. Each time, thumbnails were displayed.
 Both methods (file selector or drag and drop) produced the same result.
 
-<h4>Idea: reuse the same code for reading image files and displaying thumbnails
+<h4>Idea: reuse the same code for reading image files and displaying thumbnails</h4>
 
 If you look (again) at [the very first example that displayed
 thumbnails, without drag and
 drop)](https://codepen.io/w3devcampus/pen/ZbExbM), you will notice that
 the event handler we used to track the selected files using &lt;input
-type="file"/> looks like this:
+type="file"/&gt; looks like this:
 
 <details>
   <summary>Source code!</summary>
@@ -16170,7 +16227,7 @@ type="file"/> looks like this:
 
 </details>
 
-It calls readFilesAndDisplayPreview()at *line 5*! The same function with
+It calls readFilesAndDisplayPreview()at <i>line 5</i>! The same function with
 the same parameters is also used by [the example that used drag and drop
 that we discussed on a previous page of this
 course.](https://codepen.io/w3devcampus/pen/XmWEMQ) 
@@ -16361,8 +16418,9 @@ a &lt;progress&gt; element to the drag and drop example.
 JSBin](https://jsbin.com/conigekoda/edit) (this example does not work on
 CodePen. We are using a fake remote server and it cancels the connection
 as soon as we try to connect):
+
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 185. drag 'n drop and progress element (01) -------------------------------->
+<!------------------------ 185. drag 'n drop and progress element (3xx) -------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image185.jpeg?raw=true"
@@ -16479,10 +16537,10 @@ as soon as we try to connect):
 
 We have highlighted the interesting parts in the example!
 
-We build *(line 75)* an object of type FormData (this comes from the
+We build (<i>line 75</i>) an object of type FormData (this comes from the
 standard JavaScript DOM API level 2), we fill this object with the file
-contents (*line 77*), then we send the Ajax request (*line 81*), and
-monitor the upload progress (*lines 66-69*).
+contents (<i>line 77</i>), then we send the Ajax request (<i>line 81</i>), and
+monitor the upload progress (<i>lines 66-69</i>).
 
 Instead of uploading all the files at once, it might be interesting to
 upload one file at a time with visual feedback, such as: "uploading file
@@ -16527,7 +16585,7 @@ AND monitor the file upload progress with a progress bar.
 
 Many solutions proposed on the Web rely on jQuery plugins. However,
 coding such a behavior using only HTML5 APIs is easy AND faster AND has
-a lower *page weight*, as we will see.
+a lower <i>page weight</i>, as we will see.
 
 This part of the course will describe different approaches for
 implementing file uploads associated with a form.
@@ -16552,8 +16610,18 @@ An example of this kind of form is shown below: when the user drags and
 drops files, they will start being uploaded immediately. However,  the
 form will only be sent when all the fields are valid. 
 
+<!------------------------------------------------------------------------------------------------>
+<!-------------------------- 186. uploading files using xhr2 (3xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image186.jpeg"
+  width="65%"
+  alt="Uploading files using Xhr2, drag 'n drop with progress bar." />
+</p>
+<!---
 <img src="./images/image186.jpeg" style="width:6.5in;height:3.98264in"
 alt="uploading files using Xhr2, drag&#39;n&#39;drop and progress bar" />
+--->
 
 This approach is similar to Gmail's behavior when you compose a message
 and add an attachment. The attachments are uploaded as soon as they are
@@ -16576,16 +16644,23 @@ with each of the examples.
 -   or we may *use multiple Ajax requests*, which we don't start until
     the submit button has been clicked.
 
+<!------------------------------------------------------------------------------------------------>
+<!--------------------------------- 187. second approach (333) ----------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image187.jpeg"
+  width="65%"
+  alt="2nd approach, send only when the sublet button has been clicked." />
+</p>
 <img src="./images/image187.jpeg"
 style="width:6.29167in;height:2.32292in"
 alt="Second approach, send files only when the sublit button has been clicked" />
 
 The difference between this and the first approach is that we are
-sending everything *at the same time* using Ajax/JavaScript: the regular
+sending everything <i>at the same time</i> using Ajax/JavaScript: the regular
 input field content and the selected files.
 
-The next page provides the source code of several examples, as well as
-the server-side PHP code.
+The next page provides the source code of several examples, as well as the server-side PHP code.
 
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch3-5-2">3.5.2 Installation guide</h3>
@@ -16640,10 +16715,20 @@ more difficult to follow.
 
 <h4>Example #1: auto-loading of the files, regular form submission, benefits of the HTML5 form validation system</h4>
 
-Example using a file selector (&lt;input type="file">):
+Example using a file selector (&lt;input type="file"&gt;):
 
+<!------------------------------------------------------------------------------------------------>
+<!---------------------------- 188. example 1 auto file upload (334) ----------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image188.png"
+  width="55%"
+  alt="Example 1 of file upload." />
+</p>
+<!---
 <img src="./images/image188.png" style="width:4.85417in;height:1.79167in"
-alt="example 1 of file upload" />
+alt="example 1 of file upload." />
+--->
 
 [Try the online example at
 JSBin](https://jsbin.com/rozanow/edit?html,css,js,output) (this one does
@@ -16668,8 +16753,18 @@ collect the filenames, not an input field. [Try it at
 JSBin](https://jsbin.com/qijoza/edit?html,css,js,output) and look at the
 source code - there are plenty of comments.
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 189. example 2 of file upload (335) ------------------------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image189.png"
+  width="65%"
+  alt="Example 2 of file uploads using drag 'n drop." />
+</p>
+<!---
 <img src="./images/image189.png" style="width:6.5in;height:3.98264in"
 alt="example 2 of file uploads, uses drag&#39;n&#39;drop" />
+--->
 
 <h4>And here is the PHP code for the server-side part of examples #1 and #2</h4>
 
@@ -16741,7 +16836,7 @@ Let's use the previous two examples as a basis for two further examples:
 
 <h4>Example #3: uploading everything at once using a file selector</h4>
 
-A file selector (&lt;input type="file">).
+A file selector (&lt;input type="file"&gt;).
 
 This time, we add the files to an HTML5 FormData object before sending
 XHR2 Ajax requests to the server (one for each file + one for the rest
@@ -16751,8 +16846,18 @@ You can [try this example at
 JSBin](https://jsbin.com/quzohi/edit?html,css,js,output), and look at
 the source code and comments for details.
 
+<!------------------------------------------------------------------------------------------------>
+<!---------------------------- 190. example 3 of file uploads (337) ------------------------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image190.png"
+  width="65%"
+  alt="Example 3 of file uploads." />
+</p>
+<!---
 <img src="./images/image190.png" style="width:6.07292in;height:2.17708in"
 alt="Example 3 of file uploads" />
+--->
 
 <h4>Example #4: uploading using drag and drop</h4>
 
@@ -16760,8 +16865,18 @@ alt="Example 3 of file uploads" />
 JSBin](https://jsbin.com/xonemow/edit?html,css,output) and look at
 source code and comments.
 
+<!------------------------------------------------------------------------------------------------>
+<!------------------------ 191. example 4 using drag n drop files (337) -------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image191.png"
+  width="65%"
+  alt="Example 4 using drag 'n drop files." />
+</p>
+<!---
 <img src="./images/image191.png" style="width:5.38542in;height:3.71875in"
 alt="Example 4: uses drag&#39;n&#39;drop of files" />
+--->
 
 <h4>PHP code for the single-packaged examples (with and without drag and drop, the PHP is the same)</h4>
 
@@ -16878,24 +16993,20 @@ If the lastName is an index, the retrieval will be very very fast.
 And also, remember that in the JavaScript world, all operations are
 asynchronous.
 
-So we will see in the next video that we will that we use callbacks
-everywhere.
+We will see in the next video that we will that we use callbacks everywhere.
 
 You open a video, you will need to check that it has been correctly
 opened in a callback.
 
-You insert data, you will need to check in a callback that the insert
-has been performed correctly.
+You insert data, you will need to check in a callback that the insert has been performed correctly.
 
-So databases, when you store objects inside are called ‘object stores’, they have a name and they are attached to a
-domain.
+Databases, when you store objects inside are called ‘object stores’, they have a name and they are attached to a domain.
 
 You can imagine they are attached to a Web app.
 
-So let's look at some examples. The first very popular example is Google
-Drive.
+Let's look at some examples. The first very popular example is Google Drive.
 
-So Google Drive stores lots of documents, spreadsheets, presentations…
+Google Drive stores lots of documents, spreadsheets, presentations…
 and if you are offline, it works! So I just open the dev tools and you can see
 that Google Drive relies a lot on IndexedDB. So we've got different data
 stores here and the different data stores will hold, for example, the synced documents
@@ -16919,31 +17030,22 @@ And we are synchronizing this database that is located in the browser
 with a MongoDB database that is located on the server side and that holds also JavaScript
 objects.
 
-So having the same representation for data -JavaScript objects-, is
-really comfortable.
+Having the same representation for data -JavaScript objects-, is really comfortable.
 
-So in the course, you will see a lot of small examples that we prepared
+In the course, you will see a lot of small examples that we prepared
 on JSBin, and each of these examples show an individual operation, a very core operation
 like creating a Customer database.
 
-So if I click on the "create CustomerDB database" (button), and if I open the devtools console, and I go to IndexedDB, I can see
-that the CustomerDB database I created appeared here, and I can see that the objects are
-stored: people with an age, email, name and a social security number. So you will see examples for
-creating a database, for working with data, for inserting data, removing data, modifying
-data, getting data and so on. And each of these small examples will provide very useful code that you can reuse in your own examples.
+If I click on the "create CustomerDB database" (button), and if I open the devtools console, and I go to IndexedDB, I can see that the CustomerDB database I created appeared here, and I can see that the objects are stored: people with an age, email, name and a social security number. 
+You will see examples for creating a database, for working with data, for inserting data, removing data, modifying data, getting data and so on. 
+And each of these small examples will provide very useful code that you can reuse in your own examples.
 
-In the course, you will also find more complete examples like this one
-that shows how you can make requests to collect just some subset of data using what we called
-‘bounds’.
+In the course, you will also find more complete examples like this one that shows how you can make requests to collect just some subset of data using what we called ‘bounds’.
 
-So, for example, if you want to get just one single result, you can
-interactively try this
+For example, if you want to get just one single result, you can interactively try this
+application, or if you want all the data running from ‘Batman’ to ‘Curry’, you can also try this…
 
-application, or if you want all the data running from ‘Batman’ to
-‘Curry’, you can also try this…
-
-These examples should be good starting points for writing big scale
-application.
+These examples should be good starting points for writing big scale application.
 
 In the next video, we will complete the presentation of the main
 concepts, so see you there, bye!
@@ -16989,9 +17091,18 @@ in-order traversal of very large numbers of data records.
 
 <h4>Examples of applications where IndexedDB should be considered</h4>
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 192. google drive and indexdb (3xx) ------------------------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
 <img src="./images/image192.jpeg"
+  width="35%"
+  alt="Google Drive using indexDB." />
+</p>
+<!---
 style="width:3.28125in;height:4.04167in"
 alt="google drive uses indexedDB" />
+--->
 
 -   A catalog of DVDs in a lending library.
 
@@ -17075,19 +17186,15 @@ to them…
 
 … but not all objects must share the same schema like what you have got
 in relational tables in a relational databases. Another concept we find
-in most databases
+in most databases is the concept of ‘indexes’. 
+You can specify that a property of your object you store in a database is an index. 
+In that case, the retrieval of data using this index will be much faster. 
 
-is the concept of ‘indexes’. You can specify that a property of your
-object you store in a database is an index. In that case, the retrieval
-of data using this index will be much faster. And indexes, contrarily to
-KeyPath, can be unique or non unique. For example if my object has a
-lastName,
+And indexes, contrarily to KeyPath, can be unique or non unique. 
 
-I can have several objects with lastName being Buffa, my family name,
-and I can send a request
-
-to the database asking for all the people whose lastName is equal to
-Buffa.
+For example if my object has a lastName, I can have several objects with 
+lastName being Buffa, my family name, and I can send a request to the database 
+asking for all the people whose lastName is equal to Buffa.
 
 And in that case, the retrieval will be much faster than if lastName was
 not an index.
@@ -17117,13 +17224,13 @@ detail later on:
     transactions](https://en.wikipedia.org/wiki/Database_transaction).
 
 -   IndexedDB follows [a same-origin
-    policy](https://www.w3.org/Security/wiki/Same_Origin_Policy). So
-    while you can access stored data within a domain, you cannot access
-    data across different domains.
+    policy](https://www.w3.org/Security/wiki/Same_Origin_Policy). While you 
+	can access stored data within a domain, you cannot access data across 
+	different domains.
 
 -   It makes extensive use of an asynchronous API: most processing will
-    be done in callback functions - and we mean *LOTS of callback
-    functions*!
+    be done in callback functions - and we mean <i>LOTS of callback
+    functions</i>!
 
 <h4>Detailed overview</h4>
 
@@ -17193,7 +17300,7 @@ transaction.
 Transactions have a well-defined lifetime. Attempting to use a
 transaction after it has completed throws an exception.
 
-*Transactions auto-commit, and cannot be committed manually.*
+<i>Transactions auto-commit, and cannot be committed manually.</i>
 
 This transaction model is really useful when you consider what might
 happen if a user opened two instances of your web app in two different
@@ -17265,10 +17372,10 @@ The concept of "same origin" is defined by the combination of all three
 components mentioned earlier (domain, protocol, port). For example, an
 app in a page with the URL https://www.example.com/app/, and a second
 app at https://www.example.com/dir/, may both access the same IndexedDB
-database because they have the *same origin* (https, example.com, and
+database because they have the <i>same origin</i> (https, example.com, and
 80). Whereas apps at https://www.example.com:8080/dir/ (different
 port) or https://www.example.com/dir/ (different protocol), do not
-satisfy the *same origin* criteria (port or protocol differ
+satisfy the <i>same origin</i> criteria (port or protocol differ
 from https://www.example.com)
 
 See this article from MDN about [the same-origin
@@ -17293,11 +17400,11 @@ read this page to familiarize yourself with the terms.
 -   Each [origin](https://www.w3.org/TR/IndexedDB/#dfn-origin) (you may
     consider as "each application") has an associated set
     of [databases](https://www.w3.org/TR/IndexedDB/#dfn-database).
-    A *database* comprises one or more [object
+    A <i>database</i> comprises one or more [object
     stores](https://www.w3.org/TR/IndexedDB/#dfn-object-store) which
     hold the data stored in the database.
 
--   Every database has a *name* that identifies it within a specific
+-   Every database has a <i>name</i> that identifies it within a specific
     origin. The name can be any string value, including the empty
     string, and stays constant for the lifetime of the database.
 
@@ -17307,7 +17414,7 @@ read this page to familiarize yourself with the terms.
     not specified otherwise.  Each database can only have one version at
     any given time. A database can't exist in multiple versions at once.
 
--   The act of opening a database creates *a connection*. There may be
+-   The act of opening a database creates <i>a connection</i>. There may be
     multiple [connections](https://www.w3.org/TR/IndexedDB/#dfn-connection) to
     a given database at any given time.
 
@@ -17316,13 +17423,13 @@ read this page to familiarize yourself with the terms.
 -   An object store is the mechanism by which data is stored in the
     database. 
 
--   Every object store has *a name*. The name is unique within the
+-   Every object store has <i>a name</i>. The name is unique within the
     database to which it belongs.
 
 -   The object store persistently holds records (JavaScript objects),
     which are key-value pairs. One of these keys is  a kind of "primary
     key" in the SQL database sense. This "key" is a property that every
-    object in the datastore *must* contain. Values in the object store
+    object in the datastore <i>must</i> contain. Values in the object store
     are structured, but this structure may vary between objects (i.e.,
     if we store persons in a database, and use the email as "the key all
     objects must define", some may have first name and last name, others
@@ -17332,12 +17439,12 @@ read this page to familiarize yourself with the terms.
     to [keys](https://developer.mozilla.org/en-US/docs/IndexedDB/Basic_Concepts_Behind_IndexedDB#gloss_key), in
     ascending order.
 
--   Optionally, an object store may also have a* [key
-    generator](https://www.w3.org/TR/IndexedDB/#dfn-key-generator) *and
-    a [*key
-    path*](https://www.w3.org/TR/IndexedDB/#dfn-object-store-key-path).
+-   Optionally, an object store may also have a<i> [key
+    generator](https://www.w3.org/TR/IndexedDB/#dfn-key-generator) </i>and
+    a [<i>key
+    path</i>](https://www.w3.org/TR/IndexedDB/#dfn-object-store-key-path).
     If the object store has a key path, it is said to use in-line keys.
-    Otherwise, it is said to use *out-of-line* keys.
+    Otherwise, it is said to use <i>out-of-line</i> keys.
 
 -   The object store can derive [the
     key](https://www.w3.org/TR/IndexedDB/#key-construct) from one of
@@ -17378,9 +17485,9 @@ deprecated and removed IDBDatabase.setVersion() method.
 From the specification: "*A transaction is used to interact with the
 data in a database. Whenever data is read or written to the database,
 this is done by using [a
-transaction](https://www.w3.org/TR/IndexedDB/#dfn-transaction).*
+transaction](https://www.w3.org/TR/IndexedDB/#dfn-transaction).
 
-*All transactions are created through [a
+All transactions are created through [a
 connection](https://www.w3.org/TR/IndexedDB/#dfn-connection), which is
 the transaction's connection. The transaction has [a
 mode](https://www.w3.org/TR/IndexedDB/#dfn-mode) (read, readwrite or versionchange)
@@ -17447,7 +17554,7 @@ It is sometimes useful to
 retrieve [records](https://www.w3.org/TR/IndexedDB/#dfn-record) from an
 object store through means other than their key.
 
-An *index* allows the user to look up records in an object store using
+An <i>index</i> allows the user to look up records in an object store using
 the properties of the values in the object store's records. Indexes are
 a common concept in databases. Indexes can speed up object retrieval and
 allow multi-criteria searches. For example, if you store persons in your
@@ -17456,12 +17563,12 @@ then searching for some person using his/her email address will be much
 faster.
 
 An index is a specialized persistent key-value storage and has
-a *referenced* object store. For example, with our "persons" object
+a <i>referenced</i> object store. For example, with our "persons" object
 store, that is the referenced data store. Then, a reference store may
 have an index store associated with it, that contains indexes which map
 email values to key values in the reference store (for example).
 
-An index is *a list of records* which holds the data stored in the
+An index is <i>a list of records</i> which holds the data stored in the
 index. The records in an index are automatically populated whenever
 records in [the referenced object
 store](https://www.w3.org/TR/IndexedDB/#dfn-referenced) are inserted,
@@ -19266,7 +19373,7 @@ developers to construct the &lt;video&gt;, &lt;audio&gt;, and &lt;input
 type="date"> elements, for example.
 
 Web components enable you<i> to use custom HTML elements in your HTML
-documents<i>, that render as complex widgets: a better-looking calendar,
+documents</i>, that render as complex widgets: a better-looking calendar,
 an input text with vocal recognition, a nice chart, etc.
 
 Let's start with an example! This code...:
@@ -19833,7 +19940,7 @@ Let's have a look at a very simple example:
 </details>
 
 <i>Lines 8 and 11</i> show how to associate a shadow root with an existing
-HTML element. In this example, the <div> defined at<i> line 1</i> is a
+HTML element. In this example, the &lt;div&gt; defined at<i> line 1</i> is a
 shadow host, and it is associated with the shadow root which
 contains three words of text (<i>line 11</i>).
 
