@@ -980,12 +980,12 @@ JavaScript, to create your own HTML5 app and/or game.
 
 <h3>During this course, you will notably learn:</h3>
 <ul>
-<li>Advanced multimedia features with the Track and Audio APIs</li>
-<li>HTML5 games techniques</li>
-<li>More APIs, including Web Workers and Service Workers</li>
-<li>Web components</li>
-<li>Persistence techniques for data storage including IndexedDB, File
-    System API and Drag and Drop</li>
+  <li>Advanced multimedia features with the Track and Audio APIs</li>
+  <li>HTML5 games techniques</li>
+  <li>More APIs, including Web Workers and Service Workers</li>
+  <li>Web components</li>
+  <li>Persistence techniques for data storage including IndexedDB, File
+      System API and Drag and Drop</li>
 </ul>
 
 <h3>Web Browsers and Editors</h3>
@@ -3970,8 +3970,8 @@ video](https://jsbin.com/zeqoleq/1/edit?html,css,js,output). We need to
 modify it a little bit:
 
 <ol type="1">
-<li>We add a "show English chapters" button with a click event listener
-   similar to this:</li>
+  <li>We add a "show English chapters" button with a click event listener
+     similar to this:</li>
 </ol>
 
 ```
@@ -3981,7 +3981,7 @@ modify it a little bit:
 ```
 
 <ol type="1">
-<li value="2">We modify the loadTranscript function from the previous example, so that it matches both the srclang and the kind attribute of the track.</li>
+  <li value="2">We modify the loadTranscript function from the previous example, so that it matches both the srclang and the kind attribute of the track.</li>
 </ol>
 
 Here is a new version:
@@ -5043,10 +5043,10 @@ and &lt;video&gt; elements. 
 
 <h4>Under the hood, this HTML code:</h4>
 <ol type="1">
-<li>initiates a network request to stream the content,</li>
-<li>deals with decoding/streaming/buffering the incoming data,</li>
-<li>renders audio controls,</li>
-<li>updates the progress indicator, time, etc.</li>
+  <li>initiates a network request to stream the content,</li>
+  <li>deals with decoding/streaming/buffering the incoming data,</li>
+  <li>renders audio controls,</li>
+  <li>updates the progress indicator, time, etc.</li>
 </ol>
 <p>You also learned that it's possible to write a custom player: to make
 your own controls and use the JavaScript API of
@@ -5056,12 +5056,12 @@ read/write properties such as currentTime; to listen to events
 
 <h4>However, there are many things we still cannot do, including:</h4>
 <ul>
-<li>Play multiple sounds or music in perfect sync,</li>
-<li>Play non-streamed sounds (this is a requirement for games: sounds
+  <li>Play multiple sounds or music in perfect sync,</li>
+  <li>Play non-streamed sounds (this is a requirement for games: sounds
     must be loaded in memory),</li>
-<li>Output directly to the speakers; adding special effects, equalizer,
+  <li>Output directly to the speakers; adding special effects, equalizer,
     stereo balancing, reverb, etc.</li>
-<li>Any fancy visualizations that dance with the music (e.g. waveforms
+  <li>Any fancy visualizations that dance with the music (e.g. waveforms
     and frequencies).</li>
 </ul>
 
@@ -14492,8 +14492,7 @@ we initialize, we set the text content of the list item, with the value
 corresponding to the value we got back from the clipboard.
 
 And then, we just add to do drop zone...
-(#droppedFruits)...appendChild() the list item. Let's look at how the drop zone was defined: the drop zone in that
-example is a div. We've got an ondrop listener, that calls the drop callback we just saw.
+(#droppedFruits)...appendChild() the list item. Let's look at how the drop zone was defined: the drop zone in that example is a div. We've got an ondrop listener, that calls the drop callback we just saw.
 
 And we also added an ondragover="return false" listener. This will avoid
 the propagation of the event, because when we drag over the drop zone, each
@@ -14501,8 +14500,8 @@ mouse movement will fire a lot of dagover events and this can slow down
 the browser... so in that case we just returned false for performance
 reasons.
 
-So, when I drop it, I'm in the drop handler, I get back "Apples », I creates a list item, I set the list item content with
-"Apples", and I append the list item to the drop, to the div.
+When I drop it, I'm in the drop handler, I get back "Apples », I creates a list item, I set the list item content with "Apples", and I append the list item to the drop, to the div.
+
 That's all for this video! You understood the main steps for doing drag and drop:
 detect a drag, copy some data in the clipboard, detect a drop, get back the data and do something.
 
@@ -14510,17 +14509,16 @@ And avoid firing too many events by just stopping the propagation with an ondrag
 
 See you for the next video! I will explain how to give a nice visual feedback when we drag and drop things.
 
-In order to make any visible element <i>draggable*, add the draggable="true" attribute to any visible HTML5 element.
+In order to make any visible element <i>draggable</i>, add the draggable="true" attribute to any visible HTML5 element.
 Notice that some elements are draggable by default, such as &lt;img&gt; elements.
 
 In order to detect a drag, add an event listener for the dragstart event:
 
 ```
 1.  <ol ondragstart="dragStartHandler(event)">
-2.     <li draggable="true" data-value="fruit-apple">Apples</li>
-3.   
-    <li draggable="true" data-value="fruit-orange">Oranges</li>
-4.     <li draggable="true" data-value="fruit-pear">Pears</li>
+2.    <li draggable="true" data-value="fruit-apple">Apples</li>
+3.    <li draggable="true" data-value="fruit-orange">Oranges</li>
+4.    <li draggable="true" data-value="fruit-pear">Pears</li>
 5.  </ol>
 ```
 
@@ -14560,22 +14558,22 @@ style="width:5in;height:1.60844in"
 1.  <!DOCTYPE html>
 2.  <html lang="en">
 3.  <head>
-4.     <script>
-5.       function dragStartHandler(event) {
-6.           alert('dragstart event, target:
-   ' + event.target.innerHTML);
-7.       }
-8.     </script>
+4.    <script>
+5.      function dragStartHandler(event) {
+6.        alert('dragstart event, target:
+            ' + event.target.innerHTML);
+7.      }
+8.    </script>
 9.  </head>
 10. <body>
 11.   <p>What fruits do you like? Try to drag an element!</p>
 12.   <ol ondragstart="dragStartHandler(event)">
-13.       <li draggable="true" data-value="fruit-apple">Apples</li>
-14.       <li draggable="true" data-value="fruit-orange">Oranges</li>
-15.       <li draggable="true" data-value="fruit-pear">Pears</li>
+13.     <li draggable="true" data-value="fruit-apple">Apples</li>
+14.     <li draggable="true" data-value="fruit-orange">Oranges</li>
+15.     <li draggable="true" data-value="fruit-pear">Pears</li>
 16.   </ol>
-17. <p>Drop your favorite fruits below:</p>
-18.  <body>
+17.   <p>Drop your favorite fruits below:</p>
+18. <body>
 19. <html>
 ```
 
@@ -14607,15 +14605,15 @@ has been dragged, and event.target.dataset.value is the value of its
 data-value attribute (in our case "apples", "oranges" or "pears"):
 
 ```
-1.  function dragStartHandler(event) {
-2.      console.log('dragstart event, target:
-    ' + event.target.innerHTML);
+1. function dragStartHandler(event) {
+2.   console.log('dragstart event, target:
+     ' + event.target.innerHTML);
 3.  
-4.      // Copy to the drag'n'drop clipboard the value of the
-5.      // data* attribute of the target,
-6.      // with a type "Fruit".
+4.   // Copy to the drag'n'drop clipboard the value of the
+5.   // data* attribute of the target,
+6.   // with a type "Fruit".
 7.   event.dataTransfer.setData("Fruit", event.target.dataset.value);
-8.  }
+8. }
 ```
 
 <h4>Step #2: define a "drop zone"</h4>
@@ -14626,10 +14624,10 @@ be propagated, we will also listen for dragover or dragend events and
 stop their propagation. More on this later...
 
 ```
-1.  <div ondragover="return false" ondrop="dropHandler(event);">
-2.  Drop your favorite fruits below:
-3.  <ol id="droppedFruits"></ol>
-4.  </div>
+1. <div ondragover="return false" ondrop="dropHandler(event);">
+2.   Drop your favorite fruits below:
+3.   <ol id="droppedFruits"></ol>
+4. </div>
 ```
 
 Whenever the mouse is moving above a (any) drop zone, dragover events
@@ -14644,17 +14642,17 @@ the false value at <i>line 1</i>.
   <summary>Code extract!</summary>
 
 ```
-1.  function dropHandler(event) {
-2.     console.log('drop event, target: ' + event.target.innerHTML);
+1. function dropHandler(event) {
+2.   console.log('drop event, target: ' + event.target.innerHTML);
 3.  
-4.     ...
+4.   ...
 5.  
-6.     // get the data from the drag'n'drop clipboard,GET
-7.     // with a type="Fruit"
-8.     var data = event.dataTransfer.getData("Fruit");
+6.   // get the data from the drag'n'drop clipboard,GET
+7.   // with a type="Fruit"
+8.   var data = event.dataTransfer.getData("Fruit");
 9.  
-10.    // do something with the data
-11.    ...
+10.  // do something with the data
+11.  ...
 12. }
 ```
 
@@ -14804,8 +14802,9 @@ photographer (or painter?) of a picture, or any kind of information that
 does not be fit within the regular attributes of the &lt;img&gt; element,
 like alt.
 
-Suppose you coded: <b><img src="photo.jpg" photographer="Michel
-Buffa" date="14July2020"></b>? It would <b>not</b> be valid!
+Suppose you coded: <b>&lt;img src="photo.jpg" photographer="Michel
+Buffa" date="14July2020"&gt;</b>?
+It would <b>not</b> be valid!
 
 However, with HTML5 we may add attributes that start with data- followed
 by any string literal (WITH NO UPPERCASE) and it will be treated as
@@ -14818,7 +14817,7 @@ value.
 
 The reason for this addition is that, in a bid to keep the HTML code
 valid, some classic attributes like alt, rel and title have often been
-misused for storing arbitrary data. The data-*attributes of HTML5 are
+misused for storing arbitrary data. The data-* attributes of HTML5 are
 an "official" way to add arbitrary data to HTML elements that is also
 valid HTML code.
 
@@ -14843,8 +14842,8 @@ JsBin</a> example:
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image173.png?raw=true"
-   width="35%"
-   alt="Data attribute using dataset property." />
+  width="65%"
+  alt="Data attribute using dataset property." />
 </p>
 <!--
 style="width:5in;height:0.80556in"
@@ -14863,12 +14862,12 @@ are taken from data­-* attributes of the &lt;li&gt; element.
 4.  </li>
 ```
 
-We just defined four data‐ attributes. 
+We just defined four data attributes. 
 
 <h4>JavaScript code from the example:</h4>
 
 <details>
-  <summary>Code extract!</summary>
+  <summary>JavaScript code extract!</summary>
 
 ```
 1.  <script>
@@ -15006,15 +15005,14 @@ This is how, when I enter the drop zone, the div becomes green. And when
 I leave (this is a ‘dragleave’ handler), that will remove the class. And
 the same with the the dragstart handler.
 
-When I start
+When I start to drag an element, I add the class here. 
 
-to drag an element, I add the class here. And I exaggerate the opacity,
+And I exaggerate the opacity, the transparency, by setting a higher value 
+for the opacity. Because when you drag and drop elements, they are a bit lighter than normal, and
+here we accentuate this effect. 
 
-the transparency, by setting a higher value for the opacity. Because
-when you drag and drop elements, they are a bit lighter than normal, and
-here we accentuate this effect. We can go further by using some
-properties called the "dropEffect" and the "allowEffect" properties. So
-in that case, when we start moving here, we can change the cursor and
+We can go further by using some properties called the "dropEffect" and the "allowEffect" properties. 
+In that case, when we start moving here, we can change the cursor and
 the "+" sign that you see here, can be also customized by setting the
 dropEffect property in the ‘dropenter listener’. Let's look at how we
 can do that: in the ‘dragstart’ listener, here... in the
@@ -15076,34 +15074,34 @@ style="width:5in;height:2.57746in"
 1.  ...
 2.  <style>
 3.    .dragged {
-4.       border: 2px dashed #000;
-5.       background-color: green;
+4.      border: 2px dashed #000;
+5.      background-color: green;
 6.    }
 7.  </style>
 8.  <script>
 9.    function dragStartHandler(event) {
-10.      // Change CSS class for visual feedback
-11.      event.target.style.opacity = '0.4';
-12.      event.target.classList.add('dragged');
+10.     // Change CSS class for visual feedback
+11.     event.target.style.opacity = '0.4';
+12.     event.target.classList.add('dragged');
 13. 
-14.      console.log('dragstart event, target: ' + event.target);
-15.      // Copy to the drag'n'drop clipboard the value of the data* attribute of the target,
-16.      // with a type "Fruits".
-17.      event.dataTransfer.setData("Fruit", event.target.dataset.value);
+14.     console.log('dragstart event, target: ' + event.target);
+15.     // Copy to the drag'n'drop clipboard the value of the data* attribute of the target,
+16.     // with a type "Fruits".
+17.     event.dataTransfer.setData("Fruit", event.target.dataset.value);
 18.   }
 19. 
 20.   function dragEndHandler(event) {
-21.      console.log("drag end");
-22.      // Set draggable object to default style
-23.      event.target.style.opacity = '1';
-24.      event.target.classList.remove('dragged');
+21.     console.log("drag end");
+22.     // Set draggable object to default style
+23.     event.target.style.opacity = '1';
+24.     event.target.classList.remove('dragged');
 25.   }
 26. </script>
 27. ...
 28. <ol ondragstart="dragStartHandler(event)" ondragend="dragEndHandler(event)" >
-29.     <li draggable="true" data-value="fruit-apple">Apples</li>
-30.     <li draggable="true" data-value="fruit-orange">Oranges</li>
-31.     <li draggable="true" data-value="fruit-pear">Pears</li>
+29.   <li draggable="true" data-value="fruit-apple">Apples</li>
+30.   <li draggable="true" data-value="fruit-orange">Oranges</li>
+31.   <li draggable="true" data-value="fruit-pear">Pears</li>
 32. </ol>
 ```
 
@@ -15151,100 +15149,100 @@ into a single HTML page):
 1.  <!DOCTYPE html>
 2.  <html>
 3.  <head>
-4.     <style>
-5.       div {
-6.          height: 150px;
-7.          width: 150px;
-8.          float: left;
-9.          border: 2px solid #666666;
-10.         background-color: #ccc;
-11.         margin-right: 5px;
-12.         border-radius: 10px;
-13.         box-shadow: inset 0 0 3px #000;
-14.         text-align: center;
-15.         cursor: move;
-16.      }
+4.    <style>
+5.      div {
+6.        height: 150px;
+7.        width: 150px;
+8.        float: left;
+9.        border: 2px solid #666666;
+10.       background-color: #ccc;
+11.       margin-right: 5px;
+12.       border-radius: 10px;
+13.       box-shadow: inset 0 0 3px #000;
+14.       text-align: center;
+15.       cursor: move;
+16.     }
 17. 
-18.      .dragged {
-19.         border: 2px dashed #000;
-20.         background-color: green;
-21.      }
+18.     .dragged {
+19.       border: 2px dashed #000;
+20.       background-color: green;
+21.     }
 22. 
-23.      .draggedOver {
-24.         border: 2px dashed #000;
-25.         background-color: green;
-26.      }
+23.     .draggedOver {
+24.       border: 2px dashed #000;
+25.       background-color: green;
+26.     }
 27. </style>
 28. <script>
-29.      function dragStartHandler(event) {
-30.         // Change css class for visual feedback
-31.         event.target.style.opacity = '0.4';
-32.         event.target.classList.add('dragged');
+29.     function dragStartHandler(event) {
+30.       // Change css class for visual feedback
+31.       event.target.style.opacity = '0.4';
+32.       event.target.classList.add('dragged');
 33. 
-34.         console.log('dragstart event, target: ' + event.target.innerHTML);
-35.         // Copy in the drag'n'drop clipboard the value of the data* attribute of the target,
-36.         // with a type "Fruits".
-37.            event.dataTransfer.setData("Fruit", event.target.dataset.value);
-38.      }
+34.       console.log('dragstart event, target: ' + event.target.innerHTML);
+35.       // Copy in the drag'n'drop clipboard the value of the data* attribute of the target,
+36.       // with a type "Fruits".
+37.          event.dataTransfer.setData("Fruit", event.target.dataset.value);
+38.     }
 39. 
-40.      function dragEndHandler(event) {
-41.         console.log("drag end");
-42.         event.target.style.opacity = '1';
-43.         event.target.classList.remove('dragged');
-44.      }
+40.     function dragEndHandler(event) {
+41.       console.log("drag end");
+42.       event.target.style.opacity = '1';
+43.       event.target.classList.remove('dragged');
+44.     }
 45. 
-46.      function dragLeaveHandler(event) {
-47.         console.log("drag leave");
-48.         event.target.classList.remove('draggedOver');
-49.      }
+46.     function dragLeaveHandler(event) {
+47.       console.log("drag leave");
+48.       event.target.classList.remove('draggedOver');
+49.     }
 50. 
-51.      function dragEnterHandler(event) {
-52.         console.log("Drag enter");
-53.         event.target.classList.add('draggedOver');
-54.      }
+51.     function dragEnterHandler(event) {
+52.       console.log("Drag enter");
+53.       event.target.classList.add('draggedOver');
+54.     }
 55. 
-56.      function dragOverHandler(event) {
-57.         //console.log("Drag over a droppable zone");
-58.         event.preventDefault(); // Necessary. Allows us to drop.
-59.      }
+56.     function dragOverHandler(event) {
+57.       //console.log("Drag over a droppable zone");
+58.       event.preventDefault(); // Necessary. Allows us to drop.
+59.     }
 60. 
-61.      function dropHandler(event) {
-62.         console.log('drop event, target: ' + event.target);
-63.         // reset the visual look of the drop zone to default
-64.         event.target.classList.remove('draggedOver');
+61.     function dropHandler(event) {
+62.       console.log('drop event, target: ' + event.target);
+63.       // reset the visual look of the drop zone to default
+64.       event.target.classList.remove('draggedOver');
 65. 
-66.         var li = document.createElement('li');
-67.         // get the data from the drag'n'drop clipboard, with a type="Fruit"
-68.         var data = event.dataTransfer.getData("Fruit");
+66.       var li = document.createElement('li');
+67.       // get the data from the drag'n'drop clipboard, with a type="Fruit"
+68.       var data = event.dataTransfer.getData("Fruit");
 69. 
-70.         if (data == 'fruit-apple') {
-71.             li.textContent = 'Apples';
-72.         } else if (data == 'fruit-orange') {
-73.             li.textContent = 'Oranges';
-74.         } else if (data == 'fruit-pear') {
-75.             li.textContent = 'Pears';
-76.         } else {
-77.             li.textContent = 'Unknown Fruit';
-78.      }
-79.      // add the dropped data as a child of the list.
-80.      document.querySelector("#droppedFruits").appendChild(li);
-81.    }
+70.       if (data == 'fruit-apple') {
+71.           li.textContent = 'Apples';
+72.       } else if (data == 'fruit-orange') {
+73.           li.textContent = 'Oranges';
+74.       } else if (data == 'fruit-pear') {
+75.           li.textContent = 'Pears';
+76.       } else {
+77.           li.textContent = 'Unknown Fruit';
+78.     }
+79.     // add the dropped data as a child of the list.
+80.     document.querySelector("#droppedFruits").appendChild(li);
+81.   }
 82.   </script>
 83. </head>
 84. <body>
-85. <p>What fruits do you like? Try to drag an element!</p>
-86. <ol ondragstart="dragStartHandler(event)" ondragend="dragEndHandler(event)" >
-87.     <li draggable="true" data-value="fruit-apple">Apples</li>
-88.     <li draggable="true" data-value="fruit-orange">Oranges</li>
-89.     <li draggable="true" data-value="fruit-pear">Pears</li>
-90. </ol>
-91. <div id="droppableZone" ondragenter="dragEnterHandler(event)" ondrop="dropHandler(event)"
-92.          ondragover="dragOverHandler(event)" ondragleave="dragLeaveHandler(event)">
-93.       Drop your favorite fruits below:
-94.       <ol id="droppedFruits"></ol>
-95.  </div>
-96. <body>
-97. <html>
+85.   <p>What fruits do you like? Try to drag an element!</p>
+86.   <ol ondragstart="dragStartHandler(event)" ondragend="dragEndHandler(event)" >
+87.     <li draggable="true" data-value="fruit-apple">Apples</li>
+88.     <li draggable="true" data-value="fruit-orange">Oranges</li>
+89.     <li draggable="true" data-value="fruit-pear">Pears</li>
+90.   </ol>
+91.     <div id="droppableZone" ondragenter="dragEnterHandler(event)" ondrop="dropHandler(event)"
+92.       ondragover="dragOverHandler(event)" ondragleave="dragLeaveHandler(event)">
+93.       Drop your favorite fruits below:
+94.       <ol id="droppedFruits"></ol>
+95.     </div>
+96. </body>
+97. </html>
 ```
 
 </details>
@@ -15263,7 +15261,7 @@ in the previous example, a "copy" cursor like the one below would be
 appropriate:
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------------- 176. copy curosr image (304) ---------------------------------->
+<!-------------------------------- 176. copy cursor image (304) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image176.jpeg?raw=true"
