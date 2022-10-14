@@ -2427,7 +2427,7 @@ example:
 
 </details>
 
-Explanations:
+<h4>Explanations:</h4>
 
 -   <i>Lines 26-31</i>: the function called when a button has been clicked.
     This function in turn calls the getTrack(trackNumber,
@@ -4350,7 +4350,7 @@ of the video.
 
 </details>
 
-<h4><b>Explanations:</b></h4>
+<h4>Explanations:</h4>
 
 -   <i>Lines  4-18</i>: when the page is loaded, we assemble all of the track
     HTML elements and their corresponding TextTrack objects.
@@ -4504,7 +4504,7 @@ from an original demo by Sam Dutton, uses <a href="https://mainline.i3s.unice.f
   alt="Click a button to play an animal sound." />
 </p>
 
-<h4><b>Explanations:</b></h4>
+<h4>Explanations:</h4>
 
 The demo uses a JavaScript array for defining the different animal
 sounds in this audio file:
@@ -6544,7 +6544,7 @@ The new visualization code:
 
 </details>
 
-<b>Explanations:</b>
+<h4>Explanations:</h4>
 
 -   <i>Line 6</i>: this is different to code which draws a waveform! We ask
     for byteFrequencyData (vs byteTimeDomainData earlier) and it returns
@@ -8790,7 +8790,7 @@ accordingly.
 
 <h4>Add this to our game framework:</h4>
 
-So, these are the changes to our small game engine prototype (which is
+These are the changes to our small game engine prototype (which is
 far from finished yet):
 
 1.  We add an empty inputStates object as a global property of the game
@@ -8813,7 +8813,7 @@ far from finished yet):
 JSBin](https://jsbin.com/razeya/edit)
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 102. up, right and space (168) ----------------------------------->
+<!------------------------- 102. monstor up, right and space (168) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image102.jpeg"
@@ -8824,7 +8824,7 @@ JSBin](https://jsbin.com/razeya/edit)
 <h4>And here is the complete source code:</h4>
 
 <details>
-  <summary>Code extract!</h4>
+  <summary>Code extract!</summary>
 
 ```
 1.  // Inits
@@ -8979,7 +8979,7 @@ Here is [an online example at JSBin](https://jsbin.com/metavu/edit) that
 covers all cases correctly.
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------- 104. jsbin example mouse position + button pressed (171) -------------------->
+<!------------------ 104. jsbin example mouse position + button pressed (171) -------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image104.jpeg"
@@ -9017,8 +9017,7 @@ down) as part of the inputStates object, just as we do with the keyboard
 15.       inputStates.mousedown = true;
 16.       inputStates.mouseButton = evt.button;
 17.       var message = "Mouse button " + evt.button + " down at position: " + 
-18.                    
-    inputStates.mousePos.x + ',' + inputStates.mousePos.y;
+18.                     inputStates.mousePos.x + ',' + inputStates.mousePos.y;
 19.       writeMessage(canvas, message);
 20.    }, false);
 21. 
@@ -9052,7 +9051,7 @@ down) as part of the inputStates object, just as we do with the keyboard
 
 </details>
 
-<h4>Making an object follow the mouse cursor
+<h4>Making an object follow the mouse cursor</h4>
 
 <a href="https://jsbin.com/soduko/edit?js,output">Try this example at JsBin</a>
 
@@ -9155,8 +9154,18 @@ the getMousePos() function, for example).
 [The new online version of the game engine can be tried at
 JSBin](https://jsbin.com/rizuyah/edit):
 
-<img src="./images/image106.jpeg" style="width:2in;height:2.03687in"
+<!------------------------------------------------------------------------------------------------>
+<!------------------------- 106. message on mouse event listener (174) --------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image106.jpeg"
+  width="35%"
+  alt="Message on mouse event listener." />
+</p>
+<!---
+style="width:2in;height:2.04192in"
 alt="Screenshot of a JsBin example that shows message on mouse events" />
+--->
 
 Try pressing arrows and space keys, moving the mouse, and pressing the
 buttons, all at the same time. You'll see that the game framework
@@ -9285,9 +9294,7 @@ to direct movements every 1/60th second.
 113.    canvas.addEventListener('mousedown', function (evt) {
 114.      inputStates.mousedown = true;
 115.      inputStates.mouseButton = evt.button;
-
 116.    }, false);
-
 117. 
 118.    canvas.addEventListener('mouseup', function (evt) {
 119.      inputStates.mousedown = false;
@@ -9368,7 +9375,7 @@ If you want to try another demo and look at the code for managing multiple gamep
 
 If you plug a second gamepad (I’ve got only one here), it will display another row for checking the state of the second gamepad. 
 
-So... another thing that is interesting is to detect the joystick values here... you
+Another thing that is interesting is to detect the joystick values here... you
 can see the progress bars moving. The joystick returns values between -1 and +1, 0 is the
 neutral position here.
 
@@ -9376,12 +9383,10 @@ The way you detect that is that instead of doing an iteration on the
 buttons: you do an iteration on the axes... the checkAxes function proposed in the
 course will just iterate on the axes array you get from the gamepad object.
 
-gamepad.axes[i] here will returns the status... the value of the current axis. 
+gamepad.axes[i] here will returns the status... the value of the current axis.
 
-So axes[0] means horizontal here, axes[1] means vertical for the left joystick, 
-axes[2] will mean left/right for the second joystick
-
-and axes[3] for the up/down. 
+axes[0] means horizontal here, axes[1] means vertical for the left joystick,
+axes[2] will mean left/right for the second joystick and axes[3] for the up/down.
 
 This is how we manage that. Look at the code, it's very simple.
 
@@ -9415,9 +9420,9 @@ too, but we haven't tested the API with them. You may find someone who
 has managed but they've probably needed to install an operating
 system driver to make it work.
 
-<h4>Detecting gamepads
+<h4>Detecting gamepads</h4>
 
-<h4>Events triggered when the gamepad is plugged in or unplugged
+<h4>Events triggered when the gamepad is plugged in or unplugged</h4>
 
 Let's start with a 'discovery' script to check that the GamePad is
 connected, and to see the range of facilities it can offer to
@@ -9452,8 +9457,18 @@ describes the connected device.
 
 </details>
 
-<img src="./images/image108.jpeg" style="width:5in;height:2.57425in"
+<!------------------------------------------------------------------------------------------------>
+<!-------------------- 108. gamepad detected, message on jsbin example (180) --------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image108.jpeg"
+  width="35%"
+  alt="Message on mouse event listener." />
+</p>
+<!---
+style="width:5in;height:2.57425in"
 alt="Gamepad detected, message on the jsbin exmaple" />
+--->
 
 If a gamepad is disconnected (you unplug it),
 a [gamepaddisconnected](https://w3c.github.io/gamepad/#event-gamepaddisconnected) event
@@ -9469,9 +9484,18 @@ their connected property set to false.
 6.  });
 ```
 
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------- 109. disconnect game pad (180) --------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
 <img src="./images/image109.jpeg"
+  width="35%"
+  alt="Game pad disconnected." />
+</p>
+<!---
 style="width:3.92708in;height:1.41667in"
 alt="gamepad disconnected, screenshot from jsbin console" />
+--->
 
 <h4>Scanning for gamepads
 
@@ -9559,10 +9583,20 @@ properties](https://w3c.github.io/gamepad/#gamepad-interface):
     > gamepads [use a standard default
     > layout](https://w3c.github.io/gamepad/#remapping).
 
+<!------------------------------------------------------------------------------------------------>
+<!------------------------ 110. standard default layout - gamepad (182) -------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image110.jpeg"
+  width="35%"
+  alt="Standard default layout of a gamepad." />
+</p>
+<!---
 [<img src="./images/image110.jpeg" style="width:5in;height:2.60684in"
 alt="standard gamepad layout" /><u>  
 </u>](https://courses.edx.org/assets/courseware/v1/5a634bfb4d73130fbd4edb3ec19f4d1f/asset-v1:W3Cx+HTML5.2x+2T2020a+type@asset+block/standardGPLayout.jpg)Click
 the above image to open a large view in another window/tab.
+--->
 
 -   axes: an array of floating point values containing the state of each
     > axis on the device. Usually these represent the analog sticks,
@@ -9595,8 +9629,18 @@ and one.
 a look at at this demo that does the same thing but with multiple
 gamepads.
 
-<img src="./images/image111.jpeg" style="width:6in;height:4.96603in"
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 111. button status detected, example on jsbin (184) ---------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image111.jpeg"
+  width="65%"
+  alt="Button status detected." />
+</p>
+<!---
+style="width:6in;height:4.96603in"
 alt="button status detected, example on jsbin" />
+--->
 
 Code for checking if a button is pressed:
 
@@ -9625,7 +9669,7 @@ Code for checking if a button is pressed:
 
 </details>
 
-In *line 11*, notice how we detect whether the current button is an
+In <i>line 11</i>, notice how we detect whether the current button is an
 analog trigger (L2 or R2 on Xbox360 or PS2/PS3 gamepads). 
 
 Next, we'll integrate it into the mainloop code. Note that we also need
@@ -9651,12 +9695,22 @@ the gamepad.buttons will return the same  states every time.
 
 </details>
 
-<h4>Detecting axes (joystick) values
+<h4>Detecting axes (joystick) values</h4>
 
 [Example on JSBin](https://jsbin.com/yaxika/edit)
 
-<img src="./images/image112.jpeg" style="width:5in;height:5.18999in"
+<!------------------------------------------------------------------------------------------------>
+<!---------------------------------- 112. axes detection (185) ----------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image112.jpeg"
+  width="65%"
+  alt="Axes detection in JSBin." />
+</p>
+<!---
+style="width:5in;height:5.18999in"
 alt="axes detection in JsBin" />
+--->
 
 Code for detecting the axes' values:
 
@@ -9679,7 +9733,7 @@ Code for detecting the axes' values:
 
 </details>
 
-<h4>Detecting the direction (left, right, up, down, diagonals) and angle of the left joystick
+<h4>Detecting the direction (left, right, up, down, diagonals) and angle of the left joystick</h4>
 
 We could add an inputStates object similar to the one we used in the
 game framework, and check its values in the mainloop to decide whether
@@ -9689,8 +9743,18 @@ manage this:
 
 [JSBin example](https://jsbin.com/vuxoqo/edit?js,output):
 
+<!------------------------------------------------------------------------------------------------>
+<!------------------- 113. direction and angle detection with joystick (186) --------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image113.jpeg"
+  width="35%"
+  alt="Direction and angle detection with joystick." />
+</p>
+<!---
 <img src="./images/image113.jpeg" style="width:4in;height:1.98354in"
 alt="direction and angle detection for joystick" />
+--->
 
 Source code extract:
 
@@ -9785,23 +9849,23 @@ Source code extract:
 
 </details>
 
-<h4>Other gamepads and joysticks tested
+<h4>Other gamepads and joysticks tested</h4>
 
-<h4>Logitech Attack 3 Joystick on Linux
+<h4>Logitech Attack 3 Joystick on Linux</h4>
 
-*Hi (=dn reports): Have successfully installed a Logitech Attack
+<i>Hi (=dn reports): Have successfully installed a Logitech Attack
 3 joy-stick on my Thinkpad running Linux Mint 17.1. It runs all of the
 code presented here correctly, reporting 11 buttons and 3 axes (the
 knurled rotating knob (closest to my pen) is described as a 'throttle'
-or 'accelerator')).*
+or 'accelerator')).</i>
 
-*Traditionally Linux has been described as 'for work only' or 'no
+<i>Traditionally Linux has been described as 'for work only' or 'no
 games', so it was a pleasant surprise to see how easy things were - no
 "driver" to install (it seems important to uninstall any existing
 connection between a device and the x-server), installed "joystick"
 testing and calibration tool, and the "jstest-gtk" configuration and
 testing tool; and that was 'it' - no actual configuration was
-necessary!*
+necessary!</i>
 
 <h4>External resources</h4>
 
@@ -9836,7 +9900,7 @@ Hi, This time, I will show you in that video what we have done so far.
 
 We started from one of the examples from the HTML5 Part 1 course, the one that just use the canvas to draw small monster.
 
-So we have a canvas here, and in a function called when the page is
+We have a canvas here, and in a function called when the page is
 loaded in the window.onload callback, we get the canvas, we get the context of the canvas and we called the
 draw monster function.
 
@@ -9917,7 +9981,7 @@ at the same time will make it move diagonally.
 [Check this online example at JSBin](https://jsbin.com/yebufu/edit):
 we've changed very few lines of code from the previous evolution!
 
-<h4>Add a JavaScript object to describe the monster
+<h4>Add a JavaScript object to describe the monster</h4>
 
 ```
 1.  // The monster!
@@ -10011,7 +10075,7 @@ the updateMonsterPosition() function:
 
 </details>
 
-<b>Explanations</b>:
+<h4>Explanations:</h4>
 
 -   In this function, we added two properties to
     the monster object: speedX and speedY which will correspond to the
@@ -12174,8 +12238,18 @@ with the above sprite sheet.  Use the arrow keys and take a look! We
 accentuated the movement by changing the scale of the sprite as the
 woman moves up (further from us) or down (closer to us).
 
-<img src="./images/image141.jpeg" style="width:5in;height:5.21421in"
-alt="A woman animated using sprite. Screenshot of the JsBin example that explain how to run it in standalone mode" />
+<!------------------------------------------------------------------------------------------------>
+<!--------------------------- 141. animated woman using sprite (xxx) ----------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image141.jpeg"
+  width="65%"
+  alt="A woman animated using sprite. Screenshot of the JsBin example that explains how to run it in standalone mode." />
+</p>
+<!---
+style="width:5in;height:5.21421in"
+alt="" />
+--->
 
 We have not yet investigated how this works, nor have we built it into
 the small game engine we started to build in earlier chapters. First,
@@ -12197,16 +12271,34 @@ posture comprises exactly 13 sprites, aligned in a single row across the
 sprite sheet.
 
 <!-- page 256 --->
+<!------------------------------------------------------------------------------------------------>
+<!--------------------------- 140. woman walking using sprite (256) ------------------------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image140.png"
+  width="35%"
+  alt="A sprite sheet of a woman walking, with different postures." />
+</p>
+<!---
 <img src="./images/image140.png" style="width:3.5in;height:4.12821in"
-alt="sprite sheet of a woman walking, with different postures" />
+--->
 
-## One posture per sprite sheet
+<h4>One posture per sprite sheet</h4>
 
 Some sprite sheets have a single sprite set, spreading over multiple
 lines; like this walking robot:
 
-<img src="./images/image142.png" style="width:3in;height:3in"
-alt="a sprite sheet with a walking robot (only the posture &quot;move to the right&quot; is in the sprite sheet)" />
+<!------------------------------------------------------------------------------------------------>
+<!--------------------------- 142. walking robot using sprite (xxx) ------------------------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image142.png"
+  width="35%"
+  alt="A sprite sheet with a walking robot (only the posture &quot;move to the right&quot; is in the sprite sheet)." />
+</p>
+<!---
+style="width:3in;height:3in"
+--->
 
 This is an example that you will see a lot around the Internet, in many
 sprite sheets. For the full animation of the robot, we will need
@@ -13928,27 +14020,27 @@ using XHR2.
 
 </details>
 
-<b>Explanations</b>: 
+<h4>Explanations</h4>:
 
--   *Line 12*: a click on this button will call
+-   <i>Line 12</i>: a click on this button will call
     the downloadSoundFile function, passing it the URL of a sample mp3
     file.
 
--   *Lines 58-73*: this function sends the Ajax request, and when the
-    file has arrived, the xhr.onload callback is called (*line 63*).
+-   <i>Lines 58-73</i>: this function sends the Ajax request, and when the
+    file has arrived, the xhr.onload callback is called (<i>line 63</i>).
 
--   *Lines 39-55*: The initSound function decodes the mp3 into memory
+-   <i>Lines 39-55</i>: The initSound function decodes the mp3 into memory
     using the WebAudio API, and enables the play and stop buttons.
 
--   When the play button is enabled and clicked (*line 15*) it calls
+-   When the play button is enabled and clicked (<i>line 15</i>) it calls
     the playSound function. This builds a minimal Web Audio graph with
-    a BufferSource node that contains the decoded sound (*lines 31-32*),
-    connects it to the speakers (*line 35*), and then plays it.
+    a BufferSource node that contains the decoded sound (<i>lines 31-32</i>),
+    connects it to the speakers (<i>line 35</i>), and then plays it.
 
-### Monitoring uploads or downloads using a progress event
+<h4>Monitoring uploads or downloads using a progress event</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------------- 165. download progress (2##) ---------------------------------->
+<!-------------------------------- 165. download progress (281) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image165.jpeg"
