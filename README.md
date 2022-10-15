@@ -17961,19 +17961,34 @@ the example: it will call the createDB() JavaScript function that:
 <b>Chrome DevTools (F12 or cmd-alt-i) shows the IndexedDB databases,
 object stores and data:</b>
 
-<img src="./images/image193.png" style="width:6.5in;height:4.77847in" />
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 193.  (##) ----------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image193.png"
+  style="width:6.5in;height:4.77847in"
+  alt="." />
+</p>
 
 Normally, when you create a database for the first time, the console
 should show this message:
 
-<img src="./images/image194.jpeg" style="width:6.5in;height:0.825in"
-alt="Message displayed in console when the database is created the first time you run the example" />
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 194.  (##) ----------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image194.jpeg"
+  style="width:6.5in;height:0.825in"
+  alt="Message displayed in console when the database is created the first time you run the example." />
+</p>
 
 This message comes from the JavaScript request.onupgradeneeded callback.
 Indeed, the first time we open the database we ask for a specific
 version (in this example: version 2) with:
 
+```
 1.  var request = indexedDB.open(dbName, 2);
+```
 
 ...and if there is no version "2" of the database, then we enter
 the onupgradeneeded callback where we actually create the database.
@@ -18101,20 +18116,26 @@ CustomerDB database used in all examples of this course section by
 opening one of the JsBin examples , then opening the devtool console,
 then executing indexedDB.deleteDatabase("CustomerDB"); in the console:
 
-<img src="./images/image195.jpeg" style="width:6.5in;height:4.48889in"
-alt="deleting indexed DB part 1, open the devtool console" />
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 195.  (##) ----------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image195.jpeg"
+  style="width:6.5in;height:4.48889in"
+  alt="Deleting indexed DB part 1, open the devtool console." />
+</p>
 
 <img src="./images/image196.jpeg" style="width:6.5in;height:3.34097in"
-alt="Run the command" />
+alt="Run the command." />
 
 <img src="./images/image197.jpeg" style="width:6.5in;height:1.41319in"
-alt="Execute the command" />
+alt="Execute the command." />
 
 <img src="./images/image198.jpeg" style="width:6.5in;height:2.33264in"
-alt="Refresh IndexedDB display of objectStores" />
+alt="Refresh IndexedDB display of objectStores." />
 
 <img src="./images/image199.jpeg" style="width:6.5in;height:1.84375in"
-alt="Final result: the objectStore has been deleted" />
+alt="Final result: the objectStore has been deleted." />
 
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch3-6-6">3.6.6 Working with data</h3>
@@ -18317,8 +18338,14 @@ been added.
 <b>Be sure to click on the "create database" button before clicking the
 "insert new customer" button.</b>
 
-<img src="./images/image200.png" style="width:6.5in;height:2.81667in"
-alt="example on JsBin for inserting data in IndexedDB" />
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 200.  (##) ----------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image200.png"
+  style="width:6.5in;height:2.81667in"
+  alt="Example on JsBin for inserting data in IndexedDB." />
+</p>
 
 The next screenshot shows the IndexedDB object store in Chrome dev.
 tools (use the "Resources" tab). Clicking the "Create CustomerDB"
@@ -18326,8 +18353,14 @@ database creates or opens the database, and clicking "Add a new
 Customer" button adds a customer named "Michel Buffa" into the object
 store:
 
-<img src="./images/image201.png" style="width:6.5in;height:3.53333in"
-alt="Devtools show that a new customer named Michel Buffa has been inserted" />
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 201.  (##) ----------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image201.png"
+  style="width:6.5in;height:3.53333in"
+  alt="Devtools show that a new customer named Michel Buffa has been inserted." />
+</p>
 
 <b>Code from the example, explanations:</b>
 
@@ -18410,15 +18443,27 @@ datastore remains unchanged.
 
 Here is the trace from the dev tools console:
 
-<img src="./images/image202.png" style="width:6.5in;height:1.23889in"
-alt="Trace from the devtools console" />
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 202.  (##) ----------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image202.png"
+  style="width:6.5in;height:1.23889in"
+  alt="Trace from the devtools console." />
+</p>
 
 <h4>Example #2: adding a form and validating inputs</h4>
 
 [Online example available at JSBin](https://jsbin.com/jayida):
 
-<img src="./images/image203.jpeg" style="width:6.5in;height:1.50278in"
-alt="a form has been added to the previous example, for creating a new customer" />
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 203.  (##) ----------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image203.jpeg"
+  style="width:6.5in;height:1.50278in"
+  alt="A form has been added to the previous example, for creating a new customer." />
+</p>
 
 You can try this example by following these steps:
 
@@ -18455,8 +18500,14 @@ message if:
 -   Try to insert the same customer twice, or different customers with
     the same ssn. An alert like this should pop up:
 
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 204.  (##) ----------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
 <img src="./images/image204.jpeg"
-style="width:6.08333in;height:2.32292in" alt="insert error" />
+  style="width:6.08333in;height:2.32292in"
+  alt="Insert error." />
+</p>
 
 <b>Here is the updated version of the HTML code of this example:</b>
 
@@ -18547,8 +18598,14 @@ such a way of coding (!).
 
 Also, note that it works if you try to insert empty data:
 
-<img src="./images/image205.jpeg" style="width:6.5in;height:2.68889in"
-alt="devtools show that inserting blank data works" />
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 205.  (##) ----------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image205.jpeg"
+  style="width:6.5in;height:2.68889in"
+  alt="Devtools show that inserting blank data works." />
+</p>
 
 Indeed, entering an empty value for the keyPath or for indexes is a
 valid value (in the IndexedDB sense). In order to avoid this, you should
@@ -18561,8 +18618,14 @@ add more JavaScript code. We will let you do this as an exercise.
 Let's move to the next [online example at
 JSBin](https://jsbin.com/bavifa):
 
-<img src="./images/image205.jpeg" style="width:6.5in;height:2.68889in"
-alt="devtools show that a customer has been removed once clicked on the remove customer button" />
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 205.  (##) ----------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image205.jpeg"
+  style="width:6.5in;height:2.68889in"
+  alt="Devtools show that a customer has been removed once clicked on the remove customer button." />
+</p>
 
 See the changes in Chrome dev. tools: refresh the view (right
 click/refresh) or press F12 or cmd-alt-i twice. There is a bug in the
@@ -18655,8 +18718,14 @@ update a customer!
 [Online example at JSBin](https://jsbin.com/zugowe):
 
 <!--- 389 --->
-<img src="./images/image206.jpeg" style="width:6.5in;height:3.44306in"
-alt="devtools show a customer being updated in IndexedDB" />
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 206.  (##) ----------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image206.jpeg"
+  style="width:6.5in;height:3.44306in"
+  alt="Devtools show a customer being updated in IndexedDB." />
+</p>
 
 The above screenshot shows how we added an empty customer with ssn="",
 (we just clicked on the open database button, then on the "add a new
@@ -18667,8 +18736,14 @@ with ssn="" and click on the "update data about an existing customer"
 button. This updates the data in the object store, as shown in this
 screenshot:
 
-<img src="./images/image207.jpeg" style="width:6.5in;height:1.08194in"
-alt="devtools show updated customer" />
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 207.  (##) ----------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image207.jpeg"
+  style="width:6.5in;height:1.08194in"
+  alt="Devtools show updated customer." />
+</p>
 
 Here is the new code added to our example:
 
@@ -18734,15 +18809,27 @@ retrieves an object when we know its key/keypath.
 
 [Online example at JSBin](https://jsbin.com/saquru):
 
-<img src="./images/image208.jpeg" style="width:6.5in;height:4.19028in"
-alt="Getting data from IndexedDB, first enter a ssn, then press the search button" />
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 208.  (##) ----------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image208.jpeg"
+  style="width:6.5in;height:4.19028in"
+  alt="Getting data from IndexedDB, first enter a ssn, then press the search button." />
+</p>
 
 If the ssn exists in the object store, then the results are displayed in
 the form itself (the code that gets the results and that updates the
 form is in the request.onsuccess callback).
 
-<img src="./images/image209.jpeg" style="width:6.5in;height:1.98333in"
-alt="Form updated with data retrieved" />
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 209.  (##) ----------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image209.jpeg"
+  style="width:6.5in;height:1.98333in"
+  alt="Form updated with data retrieved." />
+</p>
 
 Here is the code added to that example:
 
@@ -18917,8 +19004,14 @@ between those in a certain range, then you must use <i>a cursor</i>.
 It adds a button to our application. Clicking on it will display a set
 of alerts, each showing details of an object in the object store:
 
-<img src="./images/image210.jpeg" style="width:6.5in;height:1.88889in"
-alt="Screenshot with a &quot;list all customers button&quot; and an alert showing one of them" />
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 210.  (##) ----------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image210.jpeg"
+  style="width:6.5in;height:1.88889in"
+  alt="Screenshot with a &quot;list all customers button&quot; and an alert showing one of them." />
+</p>
 
 The openCursor() function can take several (optional) arguments.
 
@@ -19025,8 +19118,14 @@ the person-objects from the dataStore which have a name equal to "Bill".
 
 [Online example you can try at JsBin](https://jsbin.com/gituxa)
 
-<img src="./images/image211.jpeg" style="width:6.5in;height:5.12639in"
-alt="retrieving data using an index. The screenshot shows a button &quot;look for all customers named Bill&quot;, and shows an alert with the result." />
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 211.  (##) ----------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image211.jpeg"
+  style="width:6.5in;height:5.12639in"
+  alt="Retrieving data using an index. The screenshot shows a button &quot;look for all customers named Bill&quot;, and shows an alert with the result." />
+</p>
 
 The above example retrieves only the first object that has a name/index
 with the value="Bill". Notice that there are two "Bill"s in the object
@@ -19091,8 +19190,14 @@ Can you see the difference? 
 You can try [an online example at JSBin that uses the above
 methods](https://jsbin.com/kubuwof):
 
-<img src="./images/image212.jpeg" style="width:6.5in;height:4.45625in"
-alt="getting data using index. The screenshot shows two buttons: one for getting one single data and one for getting all data, using indexes" />
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 212.  (##) ----------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image212.jpeg"
+  style="width:6.5in;height:4.45625in"
+  alt="Getting data using index. The screenshot shows two buttons: one for getting one single data and one for getting all data, using indexes." />
+</p>
 
 How to try this example:
 
@@ -19201,12 +19306,24 @@ Try [the online example at JsBin](https://jsbin.com/lawaju/edit) (enter
 "Gaming", "Batman" etc. as key range values):
 
 <!-- page 398 ---->
-<img src="./images/image213.jpeg" style="width:6.5in;height:6.53819in"
-alt="Example of use of IdbKeyRange" />
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 213.  (##) ----------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image213.jpeg"
+  style="width:6.5in;height:6.53819in"
+  alt="Example of use of IdbKeyRange." />
+</p>
 
 <!-- page 399 ---->
-<img src="./images/image214.jpeg" style="width:6.5in;height:5.99583in"
-alt="IDBKeyRange in action" />
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 214.  (##) ----------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image214.jpeg"
+  style="width:6.5in;height:5.99583in"
+  alt="IDBKeyRange in action." />
+</p>
 
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch3-6-12">3.6.12 Discussion and projects</h3>
@@ -19460,8 +19577,14 @@ You need to unarchive it in the Web server htdocs directory of your
 WAMP/MAMP/LAMP http distribution, for example. Then open
 the index.html file located in that directory.
 
-<img src="./images/image215.jpeg" style="width:5in;height:2.37393in"
-alt="running the example in an Apache Web Server" />
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 215.  (##) ----------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image215.jpeg"
+  style="width:5in;height:2.37393in"
+  alt="Running the example in an Apache Web Server." />
+</p>
 
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch4-2-2">4.2.2 Introduction</h3>
@@ -19486,8 +19609,14 @@ Let's start with an example! This code...:
 order of the animation is reversed when the last image is reached and
 again when the animation goes back to the first image.
 
-<img src="./images/image216.jpeg" style="width:4in;height:2.93333in"
-alt="animated gif in a page" />
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 216.  (##) ----------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image216.jpeg"
+  style="width:4in;height:2.93333in"
+  alt="Animated gif in a page." />
+</p>
 
 Click on the image to run the animated GIF demo, or visit [this Web
 site](https://geelen.github.io/x-gif/#/https://i.imgur.com/iKXH4E2.gif).
@@ -20188,8 +20317,14 @@ We added a new H1 at <i>line 11</i>. 
 
 And here is the result:
 
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 232.  (##) ----------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
 <img src="./images/image232.jpeg"
-style="width:5.55208in;height:2.91667in" alt="shadow dom 4" />
+  style="width:5.55208in;height:2.91667in"
+  alt="Shadow DOM 4." />
+</p>
 
 The second H1 is not affected by the CSS defined in the template used by
 the first H1. Try to add this CSS rule to this example :
@@ -20202,8 +20337,14 @@ the first H1. Try to add this CSS rule to this example :
 
 And you should see something like that:
 
-<img src="./images/image233.jpeg" style="width:4.53125in;height:2.9375in"
-alt="The global CSS rule will affect the H1 in the body of the document, not the one in the shadow DOM." />
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 233.  (##) ----------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image233.jpeg"
+  style="width:4.53125in;height:2.9375in"
+  alt="The global CSS rule will affect the H1 in the body of the document, not the one in the shadow DOM." />
+</p>
 
 In which the "regular" CSS rule changed the color of the H1 located in
 the body of the document, not the color of the H1 encapsulated in the
@@ -20252,8 +20393,14 @@ the &lt;slot&gt;...&lt;/slot&gt; element, as shown below:
 
 <h4>See [the complete online example at JSBin](https://jsbin.com/jepucoz/edit?html,js,output):</h4>
 
-<img src="./images/image234.jpeg" style="width:5in;height:2.17521in"
-alt="Content injection in HTML templates using slot elements" />
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 234.  (##) ----------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image234.jpeg"
+  style="width:5in;height:2.17521in"
+  alt="Content injection in HTML templates using slot elements." />
+</p>
 
 <h4>External resources</h4>
 
@@ -20407,9 +20554,14 @@ template used here is the last one we studied in a previous lesson about
 HTML templates. Check [the full example online at
 JSBin](https://jsbin.com/cacuvuf/edit?html,js,console,output): 
 
-
-<img src="./images/image235.jpeg" style="width:6.5in;height:2.7625in"
-alt="Custom element full example at JsBin" />
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 235.  (##) ----------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image235.jpeg"
+  style="width:6.5in;height:2.7625in"
+  alt="Custom element full example at JsBin." />
+</p>
 
 <h4>External resources</h4>
 
@@ -20719,13 +20871,27 @@ something like this during your Web browsing experiences:
 
 <h4>With Internet Explorer:</h4>
 
-<img src="./images/image002.png" style="width:4.625in;height:2.04167in"
-alt="ScriptNotResponding1" />
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 2.  (##) ----------------------->
+<!------------------------------------------------------------------------------------------------>
+<!--
+<p align="center" width="100%">
+<img src="./images/image002.png"
+  style="width:4.625in;height:2.04167in"
+  alt="Script not responding2." />
+</p>
 
 <h4>Or maybe:</h4>
 
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 238.  (##) ----------------------->
+<!------------------------------------------------------------------------------------------------>
+<!--
+<p align="center" width="100%">
 <img src="./images/image238.jpeg"
-style="width:5.85417in;height:1.71875in" alt="script not responding2" />
+  style="width:5.85417in;height:1.71875in" 
+  alt="Script not responding2." />
+</p>
 
 A solution for this problem, offered by HTML5, is to run certain
 CPU-intensive tasks in separate threads from the one managing the
@@ -22615,4 +22781,4 @@ your comments/observations/questions and share your creations.
 
 <h5>the end...</h5>
 
-<h4>Last Updated: 10-12-2022 4:24pm</h4>
+<h4>Last Updated: 10-15-2022 2:55am</h4>
