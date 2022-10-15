@@ -8308,7 +8308,7 @@ Let's do this by including into our framework the same "monster" we used
 during the [W3C HTML5 Coding Essentials and Best Practices
 course](https://www.edx.org/course/html5-coding-essentials-and-best-practices).
 
-### HTML5 canvas basic usage: drawing a monster
+<h4>HTML5 canvas basic usage: drawing a monster</h4>
 
 How to draw a monster in a canvas: [you can try it online at
 JSBin](https://jsbin.com/ponaki/edit).
@@ -10394,7 +10394,7 @@ rectangle will be moved 25 times on the smartphone compared with 60
 times on the computer! Since we move the rectangle the same number of
 pixels each time, the rectangle moves faster on the computer!
 
-## Example #2: simulating a low-end device
+<h4>Example #2: simulating a low-end device</h4>
 
 Here is the same example to which we have added a loop that wastes time
 right in the middle of the animation loop. It will artificially extend
@@ -11292,7 +11292,7 @@ Let's study a simple example: animating a few balls and detecting
 collisions with the surrounding walls. For the sake of simplicity, we
 will not use time-based animation in the first examples.
 
-### Animating multiple balls which bounce off horizontal and vertical walls
+<h4>Animating multiple balls which bounce off horizontal and vertical walls</h4>
 
 [Online example at JSBin](https://jsbin.com/fikomik/edit?js,output):
 
@@ -11474,7 +11474,7 @@ Here is the rest of the code from this example:
     is no longer against the wall (otherwise it will collide again
     during the next animation loop execution).
 
-### Similar example but with the ball direction as an angle, and a single velocity variable
+<h4>Similar example but with the ball direction as an angle, and a single velocity variable</h4>
 
 [Try this example at JSBin](https://jsbin.com/begaci/edit): it behaves
 in the same way as the previous example.
@@ -11633,7 +11633,7 @@ we call an updateBalls function to do the same  for the balls: draw and
 update their position.
 
 <details>
-  <summary>Code extract!</h4>
+  <summary>Code extract!</summary>
 
 ```
 1.  function updateMonsterPosition(delta) {
@@ -11713,7 +11713,7 @@ definition, equal to their respective radii. So:
 Let's implement this as a JavaScript function step-by-step:
 
 <details>
-  <summary>Code extract!</h4>
+  <summary>Code extract!</summary>
 
 ```
 1.  function circleCollideNonOptimised(x1, y1, r1, x2, y2, r2) {
@@ -11736,7 +11736,7 @@ root:
 (x2-x1)^2 + (y1-y2)^2 <= (r1+r2)^2
 ```
 
-### Which yields:
+<h4>Which yields:</h4>
 
 ```
 1.  function circleCollide(x1, y1, r1, x2, y2, r2) {
@@ -11750,7 +11750,7 @@ This technique is attractive because a "bounding circle" can often be
 used with graphic objects of other shapes, providing they are not too
 elongated horizontally or vertically.
 
-### Let's test this idea
+<h4>Let's test this idea</h4>
 
 [Try this example at JSBin](https://jsbin.com/ciyiko/edit): move the
 monster with the arrow keys and use the mouse to move "the player": a
@@ -11765,6 +11765,9 @@ animation in this one). We just added a "player" (for the moment, a
 circle that follows the mouse cursor), and a "monster". We created two
 JavaScript objects for describing the monster and the player, and these
 objects both have a boundingCircleRadius property:
+
+<details>
+  <summary>JavaScript code extract!</summary>
 
 ```
 // The monster!
@@ -11784,7 +11787,12 @@ var player = {
 };
 ```
 
-### The collision test occurs in the main loop:
+</details>
+
+<h4>The collision test occurs in the main loop:</h4>
+
+<details>
+  <summary>JavaScript code extract!</summary>
 
 ```
 var mainLoop = function(time){
@@ -11832,7 +11840,9 @@ function circleCollide(x1, y1, r1, x2, y2, r2) {
 }
 ```
 
-### [Advanced technique] Use several bounding circles for complex shapes, recompute bounding circles when the shape changes over time (animated objects)
+</details>
+
+<h4>[Advanced technique] Use several bounding circles for complex shapes, recompute bounding circles when the shape changes over time (animated objects)</h4>
 
 This is an advanced technique: you can use a list of bounding circles or
 better still, a hierarchy of bounding circles in order to reduce the
@@ -11856,7 +11866,7 @@ spheres for detecting collisions between cars:
 <img src="./images/image126.png" style="width:3in;height:2.26531in"
 alt="Grand turismo used collisions between bounding spheres: image of the game (a car on a road track)" />
 
-### Rectangle (aligned along X and Y axis) detection test
+<h4>Rectangle (aligned along X and Y axis) detection test</h4>
 
 Let's look at a simple illustration:
 
@@ -11864,13 +11874,13 @@ Let's look at a simple illustration:
 style="width:4.47917in;height:2.09375in"
 alt="two pictures: one with non intersected rectangles: the projection of horizontal sides of rectangles to the X axis do not intersect (then rectangles do not intersect), the other with both projections intersect (rectangles intersect)" />
 
-### From this:
+<h4>From this:</h4>
 
 > To detect a collision between two aligned rectangles, we project the
 > horizontal and vertical axis of the rectangles over the X and Y axis.
 > If both projections overlap, there is a collision!
 
-### [<span id="_Toc98696616" class="anchor"></span>Try this online demonstration of rectangle - rectangle detection](https://silentmatt.com/rectangle-intersection/)
+<h4>[&lt;span id="_Toc98696616" class="anchor"&gt;&lt;/span&gt;Try this online demonstration of rectangle - rectangle detection](https://silentmatt.com/rectangle-intersection/)</h4>
 
 1 - Only horizontal axis projections overlap: no collision between
 rectangles
@@ -11928,7 +11938,7 @@ alt="Same as previous picture but this time the player square is inside the mons
 Here is what we modified (in bold) in the code:
 
 <details>
-  <summary>Code extract!</h4>
+  <summary>JavaScript code extract!</summary>
 
 ```
 1.  ...
@@ -12048,7 +12058,7 @@ enemy, AND did an enemy bullet (for one of the many enemies) hit the
 player? These examples demonstrate the efficiency of such collision test
 techniques.
 
-### Other collision tests
+<h4>Other collision tests</h4>
 
 In this section, we only give sketches and examples of more
 sophisticated collision tests. For further explanation, please follow
@@ -12066,7 +12076,7 @@ We propose this function (implemented after reading [this Thread at
 StackOverflow](https://stackoverflow.com/questions/401847/circle-rectangle-collision-detection-intersection)):
 
 <details>
-  <summary>Code extract!</h4>
+  <summary>JavaScript code extract!</summary>
 
 ```
 1.  // Collisions between rectangle and circle
@@ -12172,31 +12182,31 @@ alt="Collision between balls and the monster." />
 <h4>Source code extract:</h4>
 
 <details>
-  <summary>Function code extract!</summary>
+  <summary>JavaScript code extract!</summary>
 
 ```
 1.  function updateBalls(delta) {
-2.     // for each ball in the array
-3.     for(var i=0; i < ballArray.length; i++) {
-4.       var ball = ballArray[i];
+2.    // for each ball in the array
+3.    for(var i=0; i < ballArray.length; i++) {
+4.      var ball = ballArray[i];
 5.  
-6.       // 1) move the ball
-7.       ball.move();
+6.      // 1) move the ball
+7.      ball.move();
 8.  
-9.       // 2) test if the ball collides with a wall
-10.      testCollisionWithWalls(ball);
+9.      // 2) test if the ball collides with a wall
+10.     testCollisionWithWalls(ball);
 11.  
-12.      // 3) Test if the monster collides
-13.      if(circRectsOverlap(monster.x, monster.y,
-14.                          monster.width, monster.height,
+12.     // 3) Test if the monster collides
+13.     if(circRectsOverlap(monster.x, monster.y,
+14.                         monster.width, monster.height,
 15.                         ball.x, ball.y, ball.radius)) {
 16. 
-17.         //change the color of the ball
-18.         ball.color = 'red';
-19.      }
+17.     //change the color of the ball
+18.     ball.color = 'red';
+19.     }
 20. 
-21.      // 3) draw the ball
-22.      ball.draw();
+21.     // 3) draw the ball
+22.     ball.draw();
 23.   }
 24. }
 ```
@@ -12361,7 +12371,7 @@ alt="Screenshot of the example: move a slider to select a subimage/sprite from t
 <h4>HTML code:</h4>
 
 <details>
-  <summary>HTML code!</summary>
+  <summary>HTML code extract!</summary>
 
 ```
 1.  <html lang="en">
@@ -12407,7 +12417,7 @@ the details, just look at the part in bold which extracts the individual
 sprites:
 
 <details>
-  <summary>JavaScript source code!</summary>
+  <summary>JavaScript source code extract!</summary>
 
 ```
 1.  var SPRITE_WIDTH = 48;   // Characteristics of the sprites and
@@ -12579,7 +12589,7 @@ animation framework.
 Here is how you would create and animate a sprite:
 
 <details>
-  <summary>JavaScript source code!</summary>
+  <summary>JavaScript source code extract!</summary>
 
 ```
 1.  var robot;
@@ -13030,17 +13040,17 @@ Source code extract:
 </details>
 
 <details>
-  <summary>JavaScript extract!</summary>
+  <summary>JavaScript code extract!</summary>
 
 ```
-1.    if(allBallDead) {
-2.       // reset all balls, create more balls each time
-3.       // as a way of increasing the difficulty
-4.       // in a real game: change the level, play nice music!
-5.       nbBalls++;
-6.       createBalls(nbBalls);
-7.     }
-8.  }
+1. if(allBallDead) {
+2.   // reset all balls, create more balls each time
+3.   // as a way of increasing the difficulty
+4.   // in a real game: change the level, play nice music!
+5.   nbBalls++;
+6.   createBalls(nbBalls);
+7.   }
+8. }
 ```
 
 </details>
@@ -13366,7 +13376,7 @@ now ball.draw(<b>ctx</b>); instead of ball.draw() without any parameter.
 <h4>timeBasedAnim.js:</h4>
 
 <details>
-  <summary>timeBasedAnim.js extract!</summary>
+  <summary>JavaScript code extract!</summary>
 
 ```
 1.  var delta, oldTime = 0;
@@ -13455,10 +13465,10 @@ the GF.start() method into a listeners.js file? We'll have to pass the
 canvas as an extra parameter (to resolve a dependency) and we also move
 the getMousePos method into there. 
 
-### listeners.js:
+<h4>listeners.js:</h4>
 
 <details>
-  <summary>fps.js extract!</summary>
+  <summary>JavaScript code extract!</summary>
 
 ```
 function addListeners(inputStates, canvas) {
@@ -13490,7 +13500,7 @@ function getMousePos(evt, canvas) {
 
 </details>
 
-### Isolate the collision tests
+<h4>Isolate the collision tests</h4>
 
 Following the same idea, let's put these into a collisions.js file:
 
@@ -13513,7 +13523,7 @@ the testCollisionWithWalls function to resolve dependencies. The other
 collision functions (circle-circle and rectangle-rectangle) presented
 during the course, could be put into this file as well.
 
-### Final downloadable version and conclusion
+<h4>Final downloadable version and conclusion</h4>
 
 After all that, we reach this tidy structure:
 
@@ -13583,7 +13593,7 @@ give points for style and flair, but most especially because we've been
 Here is the discussion forum for this part of the course. Please either
 post your comments/observations/questions or share your creations.
 
-### Suggested topics of discussion:
+<h4>Suggested topics of discussion:</h4>
 
 -   What additional content would you like to see in this part of the
     course?
@@ -13592,7 +13602,7 @@ post your comments/observations/questions or share your creations.
     during Week 1? This is very useful for simulating explosions or
     bullet impacts...
 
-### Optional projects: create your own game!
+<h4>Optional projects: create your own game!</h4>
 
 Try to make your own game, either by modifying/completing the given
 example (change the scenario, add levels, colors, sound effects,
@@ -13879,7 +13889,7 @@ You can put vertically this bar using CSS, change the style.
 
 Refer to the HTML5 Part 1 course for that.
 
-### Ajax and binary files - downloading files and monitoring progress
+<h4>Ajax and binary files - downloading files and monitoring progress</h4>
 
 HTTP is a text based protocol, so when you upload/download images,
 videos or any binary file, they must first be text encoded for
@@ -15710,7 +15720,7 @@ the browser and the desktop. The process shares similarities with the
 methods for *dragging and dropping elements* within an HTML document,
 but it's even simpler!
 
-### Drag and drop files from the desktop to the browser: the files property of the clipboard
+<h4>Drag and drop files from the desktop to the browser: the files property of the clipboard</h4>
 
 The principle is the same as in the examples from the previous section
 (drag and drop basics), except that we do not need to worry about
@@ -19242,7 +19252,7 @@ your comments/observations/questions and share your creations.
     also provide a search form for retrieving all the examples from a
     given chapter. 
 
-## Conclusion
+<h4>Conclusion</h4>
 
 The two W3Cx courses, [HTML5 Coding Essentials and Best
 Practices](https://www.edx.org/course/html5-coding-essentials-and-best-practices) and
@@ -19294,7 +19304,7 @@ To sum up:
     presented in this chapter of the
     course](https://web.dev/storage-for-the-web/).
 
-## Module 4. Web Components and other HTML5 APIs
+<h3 id="ch4">Module 4. Web Components and other HTML5 APIs</h3>
 
 Hi! This is the final week of the course! And this time we will look at
 what the future holds by presenting you the Web components. This is a
@@ -20709,7 +20719,7 @@ something like this during your Web browsing experiences:
 
 <h4>With Internet Explorer:</h4>
 
-# <img src="./images/image002.png" style="width:4.625in;height:2.04167in"
+<img src="./images/image002.png" style="width:4.625in;height:2.04167in"
 alt="ScriptNotResponding1" />
 
 <h4>Or maybe:</h4>
@@ -21392,7 +21402,7 @@ avoid such a pain, the Web Workers API does several things:
 <h4>This is well illustrated below:</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------------- 239. web workers scope (456) ---------------------------------->
+<!-------------------------------- 239. web workers scope (430) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image239.png?raw=true"
@@ -21431,7 +21441,7 @@ log messages, etc. Here is a screenshot of a debugging session with the
 prime numbers example:
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 240. chrome debug web workers (457) ------------------------------>
+<!----------------------------- 240. chrome debug web workers (431) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image240.jpeg?raw=true"
@@ -21460,7 +21470,7 @@ the WITH WORKERS button: this will run the code that computes prime
 numbers in a Web Worker. Now, try to change the color of the button, it
 reacts instantly...
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------------- 241. demo prime numbers (458) --------------------------------->
+<!-------------------------------- 241. demo prime numbers (432) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image241.png"
@@ -21483,7 +21493,7 @@ compute parts of the image (pixels). If you use too many Web Workers,
 the performance decreases because too much time is spent exchanging data
 between workers and their creator, instead of computing in parallel.
 <!------------------------------------------------------------------------------------------------>
-<!--------------------------- 242. green blocks and ray tracer (459) ----------------------------->
+<!--------------------------- 242. green blocks and ray tracer (433) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image242.jpeg?raw=true"
@@ -21531,7 +21541,7 @@ your comments/observations/questions and share your creations.
     in <i>parallel</i>, in the <i>background</i>.
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------- 243. ie10 web workers fountain demo (460) --------------------------->
+<!-------------------------- 243. ie10 web workers fountain demo (434) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image243.png?raw=true"
@@ -21729,7 +21739,7 @@ mode](https://jsbin.com/limugat) (without the JsBin editor) )
 
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 248. device orientation api 2 (468) ------------------------------>
+<!----------------------------- 248. device orientation api 2 (442) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image248.png?raw=true"
@@ -21748,7 +21758,7 @@ with Math.round() at display time (see code).
 If we change the orientation of the device here are the results:
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------------- 249. orientation api 3 (469) ---------------------------------->
+<!-------------------------------- 249. orientation api 3 (443) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image252.png?raw=true"
@@ -21757,7 +21767,7 @@ If we change the orientation of the device here are the results:
 </p>
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------------- 250. orientation api 1 (469) ---------------------------------->
+<!-------------------------------- 250. orientation api 1 (444) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image253.png?raw=true"
@@ -21823,7 +21833,7 @@ This is just a variation of the previous example, [try it at
 JsBin](https://jsbin.com/manobezoji/edit?html,js,output)
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------- 252. html logo orientation api example 3 (471) ------------------------->
+<!----------------------- 252. html logo orientation api example 3 (445) ------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image252.png?raw=true"
@@ -21836,17 +21846,15 @@ orientation. This is a good "visual feedback" for an orientation
 controlled game...
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------------- 253. logo 1 (472) ---------------------------------------->
+<!------------------------------ 253. side-by-side logo 1 (446) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="left" width="50%">
 <img src="./images/image253.png?raw=true"
    width="30%"
    alt="Logo position 1." />
-</p>
 <!-- <img src="./images/image256.png" style="width:2.94792in;height:3.92708in" -->
-
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------------------- 254. logo 2 (472) --------------------------------------->
+<!----------------------------- 254. side by side logo 2 (446) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="right" width="50%">
 <img src="./images/image254.png?raw=true"
@@ -21855,7 +21863,7 @@ controlled game...
 </p>
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------------- 255. logo 3 (472) ---------------------------------------->
+<!------------------------- 255. logo 3, centered beneath 1 & 2 (446) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image255.png?raw=true"
@@ -21930,7 +21938,7 @@ JsBin](https://jsbin.com/quboge/edit), or [test it in standalone
 mode](https://jsbin.com/quboge) (using a mobile device).
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------- 256. level tool using device orientation (474) ------------------------->
+<!----------------------- 256. level tool using device orientation (448) ------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image256.png?raw=true"
@@ -21955,7 +21963,7 @@ desktop browser:
 Click on the image to see the YouTube video:
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------------- 257. orientation api + websockets (474) ---------------------------->
+<!--------------------------- 257. orientation api + websockets (448) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image257.png?raw=true"
@@ -22051,7 +22059,7 @@ data returned would be <a href="https://developers.google.com/web/fundamentals/n
 this [article]</a>):
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------- 258. acceleration values 1 (476) ------------------------------->
+<!------------------------------- 258. acceleration values 1 (450) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image258.png"
@@ -22063,7 +22071,7 @@ this [article]</a>):
 to its normal position would return:</p>
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 259. acceleration values 2 (476) -------------------------------->
+<!------------------------------ 259. acceleration values 2 (450) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image259.png"
@@ -22073,7 +22081,7 @@ to its normal position would return:</p>
 
 <h4>Remember the coordinate system for a mobile phone:</h4>
 <!------------------------------------------------------------------------------------------------>
-<!------------------------- 260. mobile phone coordinates system (476) --------------------------->
+<!------------------------- 260. mobile phone coordinates system (450) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image260.jpeg"
@@ -22168,7 +22176,7 @@ later on)...
 <a href="https://jsbin.com/pasoboyucu/edit?html,js,output">Online example at JsBin</a>.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 261. devicemotion api example (480) ------------------------------>
+<!----------------------------- 261. devicemotion api example (452) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image261.jpeg"
@@ -22268,7 +22276,7 @@ This example has been adapted and put on jsbin.com so that you can tweak
 it: <a href="https://jsbin.com/uyuqek/4/edit">https://jsbin.com/uyuqek/4/edit</a>
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------------------- 262. devicemotion api (480) ---------------------------------->
+<!--------------------------------- 262. devicemotion api (454) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image262.jpeg"
@@ -22367,7 +22375,7 @@ it: <a href="https://jsbin.com/uyuqek/4/edit">https://jsbin.com/uyuqek/4/edit</
 mobile device, <a href="https://jsbin.com/eyahuv/2">use this URL instead</a>!
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------------------- 263. move a ball on the screen (481) ------------------------------>
+<!---------------------- 263. move a ball on the screen - last image (455) ----------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image263.png"
