@@ -21,26 +21,30 @@
    alt="W3Cx HTML 5.2x logo" />
 </p>
 
+<!---
 ## [Table of contents](#table-of-contents)
 
 ## [<b>About W3C and the Web</b>](#cha)
 >### - [<b>About W3C and the Web</b>](#cha-1)
 >### - [<b>Why accessibility is important</b>](#cha-2)
 >### - [<b>Why internationalization is important</b>](#cha-3)
-
+--->
+<!---
 ## [<b>Course information</b>](#chb)
 >### * [<b>Welcome to "HTML5.2x - Apps and Games"</b>](#chb-1)
 >### * [<b>Course outline, grading and due dates</b>](#chb-2)
 >### * [<b>Course practical information</b>](#chb-3)
 >### * [<b>Course tools</b>](#chb-4)
-
+--->
+<!---
 ## [<b>Module 1: Advanced HTML5 Multimedia</b>](#ch1)
 >### 1.1. [<b>Video introduction - Module 1</b>](#ch1-1-1)
 >### 1.2. [<b>The Timed Text Track API</b>](#ch1-2-1)
 >### 1.3. [<b>Advanced features for audio and video players</b>](ch1-3-1)
 >### 1.4. [<b>Creating tracks on the fly, syncing HTML content with a video</b>](#ch1-4-1)
 >### 1.5. [<b>The Web Audio API</b>](#ch1-5-1)
-
+--->
+<!---
 ## [<b>Module 2: Game programming with HTML5</b>](#ch2)
 >### 2.1. [<b>Video introduction - Module 2</b>](#ch2-1-1)
 >### 2.2. [<b>Basic concepts of HTML5 game development</b>](#ch2-2-1)
@@ -49,7 +53,8 @@
 >### 2.5. [<b>Animating multiple objects, collision detection</b>](#ch2-5-1)
 >### 2.6. [<b>Sprite-based animation</b>](#ch2-6-1)
 >### 2.7. [<b>Game states</b>](#ch2-7-1)
-
+--->
+<!---
 ## [<b>Module 3: HTML5 file upload and download</b>](#ch3)
 >### 3.1. [<b>Video introduction</b>](#ch3-1-1)
 >### 3.2. [<b>File API and Ajax / XHR2 requests</b>](#ch3-2-1)
@@ -58,13 +63,15 @@
 >### 3.5. [<b>Forms and files</b>](#ch3-5-1)
 >### 3.6. [<b>IndexedDB</b>](#ch3-6-1)
 >### 3.7. [<b>Conclusion on client-side persistence</b>](#ch3-7-1)
-
+--->
+<!---
 ## [<b>Module 4: Web components and other HTML5 APIs</b>](#ch4)
 >### 4.1.[<b>Video introduction</b>](#ch4-1-1)
 >### 4.2.[<b>Web Components</b>](#ch4-2-1)
 >### 4.3.[<b>Web Workers</b>](#ch4-3-1)
 >### 4.4.[<b>The Orientation and Device Motion APIs</b>](#ch4-4-1)
 >### 4.5.[<b>Where to from here?</b>](#ch4-5-1)
+--->
 
 <b>W3Cx-4of5-HTML5.2x – Apps and Games</b>
 <a href="https://github.com/bbauska/W3Cx-4of5-Apps-and-Games.git">HTML5.2x Apps and Games - git</a>
@@ -124,7 +131,7 @@ courses, you <i>do NOT need to re-take that course</i>.
     in edX Help Center</a></b>.</li>
 </ul>
 
-<h2>Contents</h2>
+<h2>Detailed Contents</h2>
 
 <!------------------------------------------------------------------------------------------------>
 
@@ -964,7 +971,7 @@ orientation API + CSS3 3D rotations
 
 </details>
 
-<!------------------------------------------------------------------------------------------------>
+<!----------------------- end Detailed contents -------------------------------------------------->
 
 <hr>
 
@@ -1522,9 +1529,8 @@ Here is a small example of a video with 3 different tracks
 ("......" masks the real URL here, as it is too long to fit in this page
 width!):
 
-
 <details>
-  <summary>Code extract!</summary>
+  <summary>Video code extract!</summary>
 
 ```
 1.  <video id="myVideo" preload="metadata" controls crossOrigin="anonymous">
@@ -5524,7 +5530,9 @@ See also the Biquad Filter node's documentation.
 try it in your browser, with a lowpass filter, only the frequency slider
 will have a noticeable effect:
 
+<!---
 Frequency  Detune  Q  Type        ![](./images/image058.wmf)
+--->
 
 The most useful slider is the frequency slider (that changes
 the frequency value property of the node). The meaning of the
@@ -9164,7 +9172,6 @@ JSBin](https://jsbin.com/rizuyah/edit):
 </p>
 <!---
 style="width:2in;height:2.04192in"
-alt="Screenshot of a JsBin example that shows message on mouse events" />
 --->
 
 Try pressing arrows and space keys, moving the mouse, and pressing the
@@ -9406,7 +9413,14 @@ small game you are going to develop during this week. Bye! Bye!
 
 Some games, mainly arcade/action games, are designed to be used with a gamepad:
 
-<img src="./images/image107.png" style="width:5in;height:3.22951in" />
+<!------------------------------------------------------------------------------------------------>
+<!------------------------- 107.  (1xx) --------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image107.png"
+  style="width:5in;height:3.22951in"
+  alt="" />
+</p>
 
 [The Gamepad API ](https://w3c.github.io/gamepad/)is currently
 supported by all major browsers (including Microsoft Edge), except
@@ -9467,7 +9481,6 @@ describes the connected device.
 </p>
 <!---
 style="width:5in;height:2.57425in"
-alt="Gamepad detected, message on the jsbin exmaple" />
 --->
 
 If a gamepad is disconnected (you unplug it),
@@ -9494,7 +9507,6 @@ their connected property set to false.
 </p>
 <!---
 style="width:3.92708in;height:1.41667in"
-alt="gamepad disconnected, screenshot from jsbin console" />
 --->
 
 <h4>Scanning for gamepads
@@ -9592,8 +9604,7 @@ properties](https://w3c.github.io/gamepad/#gamepad-interface):
   alt="Standard default layout of a gamepad." />
 </p>
 <!---
-[<img src="./images/image110.jpeg" style="width:5in;height:2.60684in"
-alt="standard gamepad layout" /><u>  
+style="width:5in;height:2.60684in"
 </u>](https://courses.edx.org/assets/courseware/v1/5a634bfb4d73130fbd4edb3ec19f4d1f/asset-v1:W3Cx+HTML5.2x+2T2020a+type@asset+block/standardGPLayout.jpg)Click
 the above image to open a large view in another window/tab.
 --->
@@ -9639,7 +9650,6 @@ gamepads.
 </p>
 <!---
 style="width:6in;height:4.96603in"
-alt="button status detected, example on jsbin" />
 --->
 
 Code for checking if a button is pressed:
@@ -9709,7 +9719,6 @@ the gamepad.buttons will return the same  states every time.
 </p>
 <!---
 style="width:5in;height:5.18999in"
-alt="axes detection in JsBin" />
 --->
 
 Code for detecting the axes' values:
@@ -9752,8 +9761,7 @@ manage this:
   alt="Direction and angle detection with joystick." />
 </p>
 <!---
-<img src="./images/image113.jpeg" style="width:4in;height:1.98354in"
-alt="direction and angle detection for joystick" />
+style="width:4in;height:1.98354in"
 --->
 
 Source code extract:
@@ -10114,8 +10122,14 @@ and added one new call in the game loop for updating the gamepad status:
 
 [Check the result on JSBin:](https://jsbin.com/yidohe/edit)
 
-<img src="./images/image114.jpeg" style="width:3.0625in;height:4.02083in"
-alt="move the monster with the gamepad, jsbin screenshot" />
+<!------------------------------------------------------------------------------------------------>
+<!---------------------------- 114. move monster with gamepad (1xx) ------------------------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image114.jpeg"
+  style="width:3.0625in;height:4.02083in"
+  alt="Move the monster with the gamepad, jsbin screenshot." />
+</p>
 
 The new updated mainloop:
 
@@ -12176,8 +12190,14 @@ the ball color to red.
 
 [Try the example at JsBin!](https://jsbin.com/bohebe/edit?js,output)
 
-<img src="./images/image139.jpeg" style="width:3in;height:3.02853in"
-alt="Collision between balls and the monster." />
+<!------------------------------------------------------------------------------------------------>
+<!----------------------- 139. collision between balls and monster (xxx) ------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image139.jpeg"
+  style="width:3in;height:3.02853in"
+  alt="Collision between balls and the monster." />
+</p>
 
 <h4>Source code extract:</h4>
 
@@ -12228,8 +12248,14 @@ one-after-the-other, we obtain an animation effect.
 Here is an example of a *spritesheet*, where each line animates a woman
 walking in a particular direction:
 
-<img src="./images/image140.png" style="width:4in;height:4.71795in"
-alt="sprite sheet of a woman walking, with different postures" />
+<!------------------------------------------------------------------------------------------------>
+<!-------------------------- 140. sprite sheet of woman walking (xxx) ---------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image140.png"
+  style="width:4in;height:4.71795in"
+  alt="sprite sheet of a woman walking, with different postures." />
+</p>
 
 The first line corresponds to the direction we called "south", the
 second "south west", the third "west", etc. The 8 lines cover movement
@@ -12316,6 +12342,10 @@ multiple sprite sheets: one for each posture.
 
 As another example, here is the "jumping robot" sprite sheet:
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 147. example sprite framework (264) ------------------------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
 <img src="./images/image143.png" style="width:3.5in;height:3.5in"
 alt="sprite sheet for a robot jump" />
 
@@ -12328,8 +12358,14 @@ You will also find sprite sheets that contain completely different sets
 of sprites (this one comes from [the famous Gridrunner IOS game by Jeff
 Minter](https://www.youtube.com/watch?v=1tLNcj1ygFA)):
 
-<img src="./images/image144.png" style="width:3.5in;height:3.24984in"
-alt="Gridrunner spritesheet" />
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 144. gridrunner sprite sheet (2xx) ------------------------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image144.png"
+  style="width:3.5in;height:3.24984in"
+  alt="Gridrunner spritesheet." />
+</p>
 
 So, when we think about writing a "sprite engine", we need to consider
 how to support different layouts of sprite sheet.
@@ -12365,8 +12401,14 @@ next, see how the animation is created? 
 
 [Try it at JSBin](https://jsbin.com/yukacep/edit?html,js,output):
 
-<img src="./images/image145.jpeg" style="width:5in;height:4.31036in"
-alt="Screenshot of the example: move a slider to select a subimage/sprite from the spritesheet" />
+<!------------------------------------------------------------------------------------------------>
+<!--------------------------- 145. move slider to select sprite (2xx) ---------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image145.jpeg"
+  style="width:5in;height:4.31036in"
+  alt="Screenshot of the example: move a slider to select a subimage/sprite from the spritesheet." />
+</p>
 
 <h4>HTML code:</h4>
 
@@ -12572,8 +12614,14 @@ sprites:
      another sprite sheet (the one with the robot) - see [on
      JSBin.](https://jsbin.com/jeledoq/edit?html,js,output)
 
-<img src="./images/image146.jpeg" style="width:5in;height:3.03739in"
-alt="same example but with the robot spritesheet" />
+<!------------------------------------------------------------------------------------------------>
+<!-------------------------------- 146. robot sprite sheet (2xx) --------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image146.jpeg"
+  style="width:5in;height:3.03739in"
+  alt="Same example but with the robot spritesheet." />
+</p>
 
 543. Now it's time to see how we can make a small sprite animation
      framework!
@@ -12634,9 +12682,14 @@ first!](https://jsbin.com/rugosu/edit?js,output) Experiment by
 editing *line 20*: <b>robot.setNbImagesPerSecond(20); </b>changing the
 value of the parameter and observing the result.
 
-<!-- 264 -->
-<img src="./images/image147.jpeg" style="width:6.5in;height:4.27847in"
-alt="Example of the sprite framework on JsBin. Screenshot" />
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 147. example sprite framework (264) ------------------------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image147.jpeg"
+  style="width:6.5in;height:4.27847in"
+  alt="Example of the sprite framework on JsBin. Screenshot." />
+</p>
 
 <h4>The SpriteImage object and sprite models</h4>
 
@@ -12768,8 +12821,14 @@ robot in the previous example.
 
 [Try this JsBin](http://jsbin.com/fekacu/edit?js,output)
 
-<img src="./images/image148.jpeg" style="width:5in;height:2.07853in"
-alt="Woman animated" />
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 148. example woman animated (2xx) ------------------------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image148.jpeg"
+  style="width:5in;height:2.07853in"
+  alt="Woman animated." />
+</p>
 
 This time, we have changed the parameters of the sprites and sprite
 sheet. Now you can select the index of the posture to extract: the woman
@@ -12799,8 +12858,14 @@ sprite sheet has 8 different postures, so you can call:
 
 [Example at JsBin](https://jsbin.com/muwoje/edit?js,output)
 
-<img src="./images/image149.jpeg" style="width:5in;height:2.58547in"
-alt="Woman moving left and right, jsbin screenshot" />
+<!------------------------------------------------------------------------------------------------>
+<!--------------------------- 149. woman moving left and right (xxx) ----------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image149.jpeg"
+  style="width:5in;height:2.58547in"
+  alt="Woman moving left and right, jsbin screenshot" />
+</p>
 
 As usual, we used key listeners, an inputStates global object, and this
 time we created 8 woman sprites, one for each direction.
@@ -12827,8 +12892,14 @@ with gamepad, etc)).
 <b>First, try this [example at
 JsBin](https://jsbin.com/mifeva/edit?js,console,output)</b>
 
-<img src="./images/image150.jpeg" style="width:6.5in;height:3.03819in"
-alt="The woman sprite in the game framework, jsbin screenshot" />
+<!------------------------------------------------------------------------------------------------>
+<!----------------------- 150. woman sprite in the game framework (xxx) -------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image150.jpeg"
+  style="width:6.5in;height:3.03819in"
+  alt="The woman sprite in the game framework, jsbin screenshot." />
+</p>
 
 <h4>How to add sprites to the game framework...</h4>
 
@@ -12991,8 +13062,15 @@ the monster.
 
 [Try this jsBin!](https://jsbin.com/jixolu/edit?js,console,output)
 
-<img src="./images/image151.jpeg" style="width:3in;height:3.02821in"
-alt="Eat the ball game" />
+
+<!------------------------------------------------------------------------------------------------>
+<!-------------------------------- 151. eat the ball game (xxx) ---------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image151.jpeg"
+  style="width:3in;height:3.02821in"
+  alt="Eat the ball game." />
+</p>
 
 Source code extract:
 
@@ -22781,4 +22859,4 @@ your comments/observations/questions and share your creations.
 
 <h5>the end...</h5>
 
-<h4>Last Updated: 10-15-2022 2:55am</h4>
+<h4>Last Updated: 10-17-2022 4:17pm</h4>
