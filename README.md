@@ -17952,50 +17952,30 @@ called "name", that will not be necessarily unique, and we will have a property 
 that will be unique.
 
 Just after creating it, we are populating the objectstore with some test
-data. Here we
+data. Here we are iterating on the customerData object, that has been defined here.
 
-are iterating on the customerData object, that has been defined here.
-It's an array,
+It's an array, that contains two persons (two customers) inside: one is "Bill", age 35,
+with an email and a unique ID that is its social security number. 
 
-that contains two persons (two customers) inside: one is "Bill", age 35,
-with an email and a
+Let's try this one: it comes from the example called "creating and deleting a database". 
 
-unique ID that is its social security number. Let's try this one: it
-comes from
+I open the devtools, and I look at "Resources" (tab). I open the "IndexedDB" (item). 
 
-the example called "creating and deleting a database". I open it, I open
-the devtools,
+You can see that the datastore and the database are not present here. 
 
-and I look at "Resources" (tab). I open the "IndexedDB" (item). You can
-see that the
+I click on the "create customer database" … this will run the code I just explained. 
 
-datastore and the database are not present here. I click on the "create
-customer database" …
+And if I refresh the IndexedDB, I can see that the database called "CustomerDB" has been created, with
+inside an object store called "customers", that contains two persons (two customers), and I can see
+here the indexes. I can open also the objects. 
 
-this will run the code I just explained. And if I refresh the IndexedDB,
+If I want to delete the database, I can do it in my own program, or I can do it in the console. 
 
-I can see that the database called "CustomerDB" has been created, with
-inside
+I run IndexedDB.deleteDatabase(...), and I indicate the database - "customerDB" - . 
 
-an object store called "customers", that contains two persons (two
-customers), and I can see
-
-here the indexes. I can open also the objects. If I want to delete the
-database, I can do
-
-it in my own program, or I can do it in the console. I run
-IndexedDB.deleteDatabase(...),
-
-and I indicate the database - "customerDB" - . If I go back to the
-"Resources" tab, and
-
-refresh the databases, heu.. if I refresh IndexedDB (databases)
--sorry-... normally,
-
-ok I run it again... normally, it disappears... sometimes the refresh
-does not work correctly,
-
-but the database is really deleted.
+If I go back to the "Resources" tab, and refresh the databases, .. if I refresh IndexedDB (databases)
+-sorry-... normally, ok I run it again... normally, it disappears... sometimes the refresh
+does not work correctly, but the database is really deleted.
 
 <h4>Creating a database</h4>
 
