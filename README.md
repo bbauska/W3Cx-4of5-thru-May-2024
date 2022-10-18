@@ -9004,7 +9004,7 @@ down) as part of the inputStates object, just as we do with the keyboard
 <h4>Below is the JavaScript source code for this small example:</h4>
 
 <details>
-  <summary>JavaScript code extract!</h4>
+  <summary>JavaScript code extract!</summary>
 
 ```
 1.  var canvas, ctx;
@@ -9076,7 +9076,7 @@ down) as part of the inputStates object, just as we do with the keyboard
 <h4>Source code:</h4>
 
 <details>
-  <summary>Code extract!</h4>
+  <summary>Code extract!</summary>
 
 ```
 1.  var canvas, ctx, width, height;
@@ -9184,7 +9184,7 @@ to direct movements every 1/60th second.
 <h4>JavaScript source code:</h4>
 
 <details>
-  <summary>Code extract!</h4>
+  <summary>Code extract!</summary>
 
 ```
 1.  // Inits
@@ -9453,7 +9453,7 @@ describes the connected device.
 [Example on JSBin](https://jsbin.com/kiduwu/edit?console,output)
 
 <details>
-  <summary>Code extract!</h4>
+  <summary>Code extract!</summary>
 
 ```
 1.  window.addEventListener("gamepadconnected", function(e) {
@@ -9525,7 +9525,7 @@ when the system detects that a gamepad has been unplugged.
 Here is the code to use to scan for a gamepad:
 
 <details>
-  <summary>Code extract!</h4>
+  <summary>Code extract!</summary>
 
 ```
 1.  var gamepad;
@@ -9656,7 +9656,7 @@ style="width:6in;height:4.96603in"
 Code for checking if a button is pressed:
 
 <details>
-  <summary>Code extract!</h4>
+  <summary>Code extract!</summary>
 
 ```
 1.  function checkButtons(gamepad) {
@@ -9689,7 +9689,7 @@ to call the scangamepads function from the loop, to generate fresh
 the gamepad.buttons will return the same  states every time.
 
 <details>
-  <summary>Code extract!</h4>
+  <summary>Code extract!</summary>
 
 ```
 1.  function mainloop() {
@@ -9725,7 +9725,7 @@ style="width:5in;height:5.18999in"
 Code for detecting the axes' values:
 
 <details>
-  <summary>Code extract!</h4>
+  <summary>Code extract!</summary>
 
 ```
 1.  // detect axis (joystick states)
@@ -9768,7 +9768,7 @@ style="width:4in;height:1.98354in"
 Source code extract:
 
 <details>
-  <summary>Code extract!</h4>
+  <summary>Code extract!</summary>
 
 ```
 1.  var inputStates = {};
@@ -10012,7 +10012,7 @@ lesson.
 <h4>We modified the game loop as follows:</h4>
 
 <details>
-  <summary>Code extract!</h4>
+  <summary>Code extract!</summary>
 
 ```
 1.  var mainLoop = function(time){
@@ -10039,7 +10039,7 @@ We moved all the parts that check the input states in
 the updateMonsterPosition() function:
 
 <details>
-  <summary>Code extract!</h4>
+  <summary>Code extract!</summary>
 
 ```
 1.  function updateMonsterPosition() {
@@ -10135,7 +10135,7 @@ and added one new call in the game loop for updating the gamepad status:
 The new updated mainloop:
 
 <details>
-  <summary>Code extract!</h4>
+  <summary>Code extract!</summary>
 
 ```
 1.  var mainLoop = function(time){
@@ -10165,7 +10165,7 @@ And here is the updateGamePadStatus function (the inner function calls
 are to gamepad utility functions detailed in the previous lesson):
 
 <details>
-  <summary>Code extract!</h4>
+  <summary>Code extract!</summary>
 
 ```
 1.  function updateGamePadStatus() {
@@ -10337,7 +10337,7 @@ second = 16.66 ms.
 </p>
 
 <details>
-  <summary>Code extract!</h4>
+  <summary>Code extract!</summary>
 
 ```
 1.  <!DOCTYPE html>
@@ -10487,7 +10487,7 @@ to move the shape to achieve a given speed (in pixels/s).
 Source code from the example:
 
 <details>
-  <summary>Code extract!</h4>
+  <summary>Code extract!</summary>
 
 ```
 1.  <!DOCTYPE html>
@@ -10612,7 +10612,7 @@ of the square is the same as in the previous example: the animation
 adapts itself!
 
 <details>
-  <summary>Code extract!</h4>
+  <summary>Code extract!</summary>
 
 ```
 1.  function animationLoop() {
@@ -10707,6 +10707,9 @@ timer](https://jsbin.com/wecaho/edit).
 
 Source code of the example:
 
+<details>
+  <summary>Code extract!</summary>
+
 ```
 1.  ...
 2.  <script>
@@ -10764,6 +10767,8 @@ Source code of the example:
 54.  </script>
 ```
 
+</details>
+
 Only two lines have changed but the accuracy is much higher, if you
 uncomment the console.log(...) calls in the main loop. You will see the
 difference.
@@ -10788,7 +10793,8 @@ timestamp parameter.
 
 [Online example at JSBin](https://jsbin.com/kuvumu/edit):
 
-<b>Source code of the example:</b>
+<h4>Source code of the example:</h4>
+
 <details>
   <summary>Source code!</summary>
 
@@ -10907,6 +10913,9 @@ Here is the [online example at JSBin](https://jsbin.com/bonutur/edit).
 
 <b>Source code of the example:</b>
 
+<details>
+  <summary>Code extract!</summary>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -11020,6 +11029,8 @@ Here is the [online example at JSBin](https://jsbin.com/bonutur/edit).
 </html>
 ```
 
+</details>
+
 <h4>Same technique with the bouncing rectangle</h4>
 
 See how we can set both the speed (in pixels/s) and the frame-rate using
@@ -11030,7 +11041,7 @@ technique](https://jsbin.com/momeci/edit). 
 <b>Source code:</b>
 
 <details>
-  <summary>Source code!</h4>
+  <summary>Source code!</summary>
 
 ```
 1.  <!DOCTYPE html>
@@ -11213,7 +11224,7 @@ Notice that here we pass the delta as a parameter to
 the updateMonsterPosition call:
 
 <details>
-  <summary>Code extract!</h4>
+  <summary>Code extract!</summary>
 
 ```
 1.  function timer(currentTime) {
@@ -11363,7 +11374,7 @@ variable for adjusting the size of the balls: the radius.
 Here is the constructor function for building balls:
 
 <details>
-  <summary>Code extract!</h4>
+  <summary>Code extract!</summary>
 
 ```
 1.  // Constructor function for balls
@@ -11418,7 +11429,7 @@ to handle large quantities.
 Here is the rest of the code from this example:
 
 <details>
-  <summary>Code extract!</h4>
+  <summary>Code extract!</summary>
 
 ```
 1.  var canvas, ctx, width, height;
@@ -11533,7 +11544,7 @@ angles after they rebound from the walls. The changes are highlighted in
 bold:
 
 <details>
-  <summary>Code extract!</h4>
+  <summary>Code extract!</summary>
 
 ```
 1.  var canvas, ctx, width, height;
@@ -11654,7 +11665,7 @@ jsbin.com is a good playground to try-out and test things...
 The new mainLoop :
 
 <details>
-  <summary>Code extract!</h4>
+  <summary>Code extract!</summary>
 
 ```
 1.  var mainLoop = function(time){
@@ -12442,7 +12453,7 @@ As another example, here is the "jumping robot" sprite sheet:
 <p align="center" width="100%">
 <img src="./images/image143.png" 
   style="width:3.5in;height:3.5in"
-  alt="sprite sheet for a robot jump" />
+  alt="Sprite sheet for a robot jump." />
 </p>
 
 Whereas the walking robot posture is made of 16 sprites, the jumping
@@ -15195,7 +15206,7 @@ style="width:3.17708in;height:0.85417in"
 <h4>HTML code from this example:</h4>
 
 ```
-1.  <input type="range" min="0" max="100" value="25">
+<input type="range" min="0" max="100" value="25">
 ```
 
 This is just one of the new input types introduced by HTML5.
@@ -20318,7 +20329,7 @@ hidden in a shadow root is protected from external CSS, scripts, etc.
 
 <h4>An example that mixes templates and shadow DOM</h4>
 
-HTML part:
+<h4>HTML part:</h4>
 
 ```
 1.  <template id="mytemplate">
@@ -20523,7 +20534,7 @@ customElements.define('my-widget', MyWidget);
 <h4>This is done using JavaScript and there are some constraints:</h4>
 
 1.  The element's new name should have a dash
-    (ex: <my-calendar>, <app-list>, etc.)
+    (ex: &lt;my-calendar&gt;, &lt;app-list&gt;, etc.)
 
 2.  The second parameter is a JavaScript class object that defines the
     behavior of the element. See further examples.
@@ -20532,7 +20543,9 @@ Optionally, a third parameter can be used: a JavaScript object
 containing an extends property, which specifies the built-in element
 your element inherits from if any:
 
+```
 1.  customElements.define('my-widget', MyWidget, { extends: 'p' });
+```
 
 "Inheritance" is another aspect of object-oriented programming. If it is
 new to you, please see earlier reference material.
@@ -20756,6 +20769,9 @@ imported:
 
 It is as simple as:
 
+<details>
+  <summary>JavaScript code!</summary>
+
 ```
 1.  <head>
 2.    <link rel="import" href="components/myComponents.html">
@@ -20767,6 +20783,8 @@ It is as simple as:
 8.    </my-widget>
 9.  </body>
 ```
+
+</details>
 
 Look at <i>line 2</i>: this is where the importation of the HTML, CSS and JS
 code of new "components" is done. The HTML+JS+CSS code that defines
@@ -20963,7 +20981,7 @@ something like this during your Web browsing experiences:
 <h4>With Internet Explorer:</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 2.  (##) ----------------------->
+<!--------------------- 2xx.  (##) ----------------------->
 <!------------------------------------------------------------------------------------------------>
 <!--
 <p align="center" width="100%">
