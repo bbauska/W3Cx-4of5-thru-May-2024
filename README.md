@@ -9428,7 +9428,7 @@ Internet Explorer - see the [up to date version of this feature's
 compatbility table](https://caniuse.com/#feat=gamepad). Note that the
 API is still a draft and may change in the future. We recommend using a
 Wired Xbox 360 Controller or a PS2 controller, both of which
-should work *out of the box* on Windows XP, Windows Vista, Windows, and
+should work <i>out of the box</i> on Windows XP, Windows Vista, Windows, and
 Linux desktop distributions. Wireless controllers are supposed to work
 too, but we haven't tested the API with them. You may find someone who
 has managed but they've probably needed to install an operating
@@ -10123,7 +10123,7 @@ and added one new call in the game loop for updating the gamepad status:
 [Check the result on JSBin:](https://jsbin.com/yidohe/edit)
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------------------- 114. move monster with gamepad (1xx) ------------------------------>
+<!---------------------------- 114. move monster with gamepad (193) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image114.jpeg"
@@ -10297,7 +10297,7 @@ This technique is useful when:
 
 -   <b>You may also want to accurately set the framerate</b>, leaving some
     CPU time for other tasks. Many games consoles limit
-    the *frame-rate* to 1/30th of a second, in order to allow time for
+    the <i>frame-rate</i> to 1/30th of a second, in order to allow time for
     other sorts of computations (physics engine, artificial
     intelligence, etc.)
 
@@ -10326,8 +10326,14 @@ second = 16.66 ms.
 
 [Online example at JSBin](https://jsbin.com/dibuze/edit)
 
-<img src="./images/image115.jpeg" style="width:2.75in;height:0.8125in"
-alt="image of a small rectangle in a canvas, moving from left to right" />
+<!------------------------------------------------------------------------------------------------>
+<!------------------ 115. small rectangle in canvas, moving left to right (197) ------------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image115.jpeg"
+  style="width:2.75in;height:0.8125in"
+  alt="Image of a small rectangle in a canvas, moving from left to right." />
+</p>
 
 <details>
   <summary>Code extract!</h4>
@@ -10440,7 +10446,7 @@ constant speed on screen, even when the frame rate changes.
 <h4>Method #1: using the JavaScript Date object</h4>
 
 Let's modify the example from the previous lesson slightly by adding
-a *time-based animation*.  Here we use the "standard JavaScript" way for
+a <i>time-based animation</i>.  Here we use the "standard JavaScript" way for
 measuring time, using JavaScript's Date object:
 
 ```
@@ -10468,9 +10474,14 @@ to move the shape to achieve a given speed (in pixels/s).
 
 [Online example at JSBin](https://jsbin.com/riferi/edit):
 
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 116. bouncing square with time bases animation (197) --------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
 <img src="./images/image116.jpeg"
-style="width:5.26042in;height:1.61458in"
-alt="Bouncing square with time bases animation" />
+  style="width:5.26042in;height:1.61458in"
+  alt="Bouncing square with time bases animation" />
+</p>
 
 Source code from the example:
 
@@ -10571,9 +10582,9 @@ Source code from the example:
 
 In this example, we only added a few lines of code for measuring the
 time and computing the time elapsed between two consecutive frames
-(see *line 38*). Normally, requestAnimationFrame(callback) tries to call
+(see <i>line 38</i>). Normally, requestAnimationFrame(callback) tries to call
 the callback function every 16.66 ms (this corresponds to 60
-frames/s)... *but this is never exactly the case*. If you do
+frames/s)... <i>but this is never exactly the case</i>. If you do
 a console.log(delta)in the animation loop, you will see that even on a
 very powerful computer, the delta is "very close" to 16.6666 ms, but 99%
 of the time it will be slightly different.
@@ -10585,7 +10596,7 @@ Try this example on a smartphone, use
 this [link](https://jsbin.com/jeribi) to run the JSBin example in
 stand-alone mode. Normally you should see no difference in speed, but it
 may look a bit jerky on a low-end smartphone or on a slow
-computer. *This is the correct behavior.*
+computer. <i>This is the correct behavior.</i>
 
 Or you can try the next example that simulates a complex animation loop
 that takes a long time to draw each frame...
@@ -10884,7 +10895,14 @@ Here is the [online example at JSBin](https://jsbin.com/bonutur/edit).
 <sup>setFrameRateInFramesPerSecond(5); // try other values!</sup>
 ```
 
-<img src="./images/image117.png" style="width:4in;height:2.0047in" />
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 117.  (208) --------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image117.png"
+  style="width:4in;height:2.0047in"
+  alt="." />
+</p>
 
 <b>Source code of the example:</b>
 
@@ -11146,9 +11164,14 @@ speed in pixels/s and we use time-based animation. Try it and verify the
 smoothness of the animation; the FPS counter on a Mac Book Pro core i7
 shows 60 fps.
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 118. monster moving at 60 f/s (xxx) ------------------------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
 <img src="./images/image118.jpeg"
-style="width:3.51042in;height:3.66667in"
-alt="screenshot of the monster moving at 60 f/s" />
+  style="width:3.51042in;height:3.66667in"
+  alt="Screenshot of the monster moving at 60 f/s." />
+</p>
 
 [Now try this slightly modified
 version](https://jsbin.com/gazatuquya/edit?html,js,output) in which we
@@ -11158,9 +11181,14 @@ However, if you move the monster using the arrow keys, its speed on the
 screen is the same, excepting that it's not as smooth as in the previous
 version, which ran at 60 fps.
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 119.  (xxx) ------------------------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
 <img src="./images/image119.jpeg"
-style="width:3.48958in;height:3.58333in"
-alt="screenshot of example that runs at 37 f/s" />
+  style="width:3.48958in;height:3.58333in"
+  alt="Screenshot of example that runs at 37 f/s." />
+</p>
 
 Here are the parts we changed:
 
@@ -11257,15 +11285,17 @@ create many balls using the new operator and passing different
 parameters.
 
 Let's have a look at a function that will build a certain amount of
-balls with different
+balls with different parameters. 
 
-parameters. We called it createBalls: it takes as parameters a number of
-balls and will, in a loop, create new balls. The new ball here will
-create a ball with a random x position, a random y position, a random
+We called it createBalls: it takes as parameters a number of
+balls and will, in a loop, create new balls. 
+
+The new ball here will create a ball with a random x position, a random y position, a random
 angle between 0 and 2*PI, and a random speed and a given size. So I can
 change the size here, I can use another size so the reduce is a fixe
-parameter here. Every ball is added to an array, so we have got a
-variable called ballArray that contains all the balls.
+parameter here. 
+
+Every ball is added to an array, so we have got a variable called ballArray that contains all the balls.
 
 At the initialization, when the page is loaded we call this createBalls
 function that will fill the ball array. The mainLoop is called 60 times
@@ -11295,9 +11325,7 @@ keys. If I press some keys the monster moves. So we call updateBalls
 that will move all the balls and draw all the balls.
 
 What we have is that we got the last example with the moving monster
-plus a set
-
-of enemies that are animated.
+plus a set of enemies that are animated.
 
 In this section, we will see how we can animate and control not only the
 player but also other objects on the screen.
@@ -11310,10 +11338,16 @@ will not use time-based animation in the first examples.
 
 [Online example at JSBin](https://jsbin.com/fikomik/edit?js,output):
 
-<img src="./images/image120.jpeg" style="width:3.1875in;height:3.22917in"
-alt="Some circular balls that bounce agains vertical and horizontal borders of the canvas" />
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 120.  (xxx) ------------------------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image120.jpeg"
+  style="width:3.1875in;height:3.22917in"
+  alt="Some circular balls that bounce agains vertical and horizontal borders of the canvas." />
+</p>
 
-In this example, we define *a constructor function* for creating balls.
+In this example, we define <i>a constructor function</i> for creating balls.
 This is a way to design JavaScript "pseudo classes" as found in other
 object-oriented languages like Java, C# etc. It's useful when you plan
 to create many objects of the same class. Using this we could animate
@@ -11601,8 +11635,14 @@ the parameters controlling the creation of the balls: number, speed,
 radius, etc. Also, try changing the monster's default speed. See the
 results.
 
-<img src="./images/image121.jpeg" style="width:4in;height:4.13077in"
-alt="Monster + balls in the game framework. On the screen we see the monster + a bunch of balls" />
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 121.  (xxx) ------------------------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image121.jpeg"
+  style="width:4in;height:4.13077in"
+  alt="Monster + balls in the game framework. On the screen we see the monster + a bunch of balls." />
+</p>
 
 For this version, we copied and pasted some code from the previous
 example and we also modified the mainLoop to make it more readable. In a
@@ -11701,8 +11741,14 @@ sketches of more complex algorithms.
 
 <h4>Circle collision test</h4>
 
-<img src="./images/image122.png" style="width:3in;height:2.47in"
-alt="two circles with distances between the centers drawn" />
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 122.  (xxx) ------------------------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image122.png"
+  style="width:3in;height:2.47in"
+  alt="Two circles with distances between the centers drawn." />
+</p>
 
 Collision between circles is easy. Imagine there are two circles:
 
@@ -11771,8 +11817,14 @@ monster with the arrow keys and use the mouse to move "the player": a
 small circle. Try to make collisions between the monster and the circle
 you control.
 
-<img src="./images/image123.jpeg" style="width:4in;height:3.97101in"
-alt="monster and small circle: collision, they are drawn in red and a &quot;collision&quot; message appears" />
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 123.  (xxx) ------------------------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image123.jpeg"
+  style="width:4in;height:3.97101in"
+  alt="Monster and small circle: collision, they are drawn in red and a &quot;collision&quot; message appears." />
+</p>
 
 This online example uses the game framework (without time-based
 animation in this one). We just added a "player" (for the moment, a
@@ -11871,22 +11923,39 @@ alt="Image of an arm with a hierarchy of bounding circles: one for the whole arm
 
 In 3D, you can use spheres instead of circles:
 
-<img src="./images/image125.png" style="width:4in;height:2.2583in"
-alt="a 3D object (a lamp) with bounding spheres" />
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 125.  (xxx) ------------------------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image125.png"
+  style="width:4in;height:2.2583in"
+  alt="A 3D object (a lamp) with bounding spheres." />
+</p>
 
 The famous game Gran Turismo 4 on the PlayStation 2 uses bounding
 spheres for detecting collisions between cars:
 
-<img src="./images/image126.png" style="width:3in;height:2.26531in"
-alt="Grand turismo used collisions between bounding spheres: image of the game (a car on a road track)" />
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 126.  (xxx) ------------------------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image126.png"
+  style="width:3in;height:2.26531in"
+  alt="Grand turismo used collisions between bounding spheres: image of the game (a car on a road track)." />
+</p>
 
 <h4>Rectangle (aligned along X and Y axis) detection test</h4>
 
 Let's look at a simple illustration:
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 127.  (xxx) ------------------------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
 <img src="./images/image127.jpeg"
-style="width:4.47917in;height:2.09375in"
-alt="two pictures: one with non intersected rectangles: the projection of horizontal sides of rectangles to the X axis do not intersect (then rectangles do not intersect), the other with both projections intersect (rectangles intersect)" />
+  style="width:4.47917in;height:2.09375in"
+  alt="two pictures: one with non intersected rectangles: the projection of horizontal sides of rectangles to the X axis do not intersect (then rectangles do not intersect), the other with both projections intersect (rectangles intersect)." />
+</p>
 
 <h4>From this:</h4>
 
@@ -11899,22 +11968,38 @@ alt="two pictures: one with non intersected rectangles: the projection of horizo
 1 - Only horizontal axis projections overlap: no collision between
 rectangles
 
-<img src="./images/image128.jpeg" style="width:3.53125in;height:2.875in"
-alt="Only horizontal axis overlap: no collision" />
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 128.  (xxx) ------------------------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image128.jpeg"
+  style="width:3.53125in;height:2.875in"
+  alt="Only horizontal axis overlap: no collision." />
+</p>
 
 2 - Only vertical axis projections overlap: no collision between
 rectangles
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 129.  (xxx) ------------------------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
 <img src="./images/image129.jpeg"
-style="width:3.42708in;height:2.88542in"
-alt="Only vertical axis projections overlap: no collision" />
+  style="width:3.42708in;height:2.88542in"
+  alt="Only vertical axis projections overlap: no collision." />
+</p>
 
 3 - Horizontal and vertical axis projections overlap: collision
 detected!
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 130.  (xxx) ------------------------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
 <img src="./images/image130.jpeg"
-style="width:3.44792in;height:3.01042in"
-alt="the projections of axis overlap: collision detected" />
+  style="width:3.44792in;height:3.01042in"
+  alt="The projections of axis overlap: collision detected." />
+</p>
 
 Here is a JavaScript implementation of a rectangle - rectangle (aligned)
 collision test:
@@ -11942,12 +12027,19 @@ time a small rectangle. Try to make collisions between the monster and
 the circle you control. Notice that this time the collision detection is
 more accurate and can work with elongated shapes.
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 131.  (xxx) ------------------------------>
+<!------------------------------------------------------------------------------------------------>
 <img src="./images/image131.jpeg"
-style="width:2.39583in;height:1.90625in"
-alt="Player as a square is inside the monster bounding circle but not inside the bounding rectangle, as we use rect rect collision test: no collision detected" />
-
-<img src="./images/image132.jpeg" style="width:2.125in;height:1.90625in"
-alt="Same as previous picture but this time the player square is inside the monster bounding rectangle: collision detected" />
+  style="width:2.39583in;height:1.90625in"
+  alt="Player as a square is inside the monster bounding circle but not inside the bounding rectangle, as we use rect rect collision test: no collision detected." />
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 132.  (xxx) ------------------------------>
+<!------------------------------------------------------------------------------------------------>
+<img src="./images/image132.jpeg"
+  style="width:2.125in;height:1.90625in"
+  alt="Same as previous picture but this time the player square is inside the monster bounding rectangle: collision detected." />
+</p>
 
 Here is what we modified (in bold) in the code:
 
@@ -12048,11 +12140,12 @@ Here is what we modified (in bold) in the code:
 
 <h4>Many real games use aligned rectangle collision tests</h4>
 
-Testing "circle-circle" or "rectangle-rectangle collisions is *cheap* in
+Testing "circle-circle" or "rectangle-rectangle collisions is <i>cheap</i> in
 terms of computation. "Rectangle-rectangle" collisions are used in many
 2D games, such as Dodonpachi (one of the most famous and enjoyable
 shoot'em'ups ever made - you can play it using the MAME arcade game
 emulator):
+
 
 <img src="./images/image133.jpeg" style="width:5in;height:3.13408in"
 alt="screenshot of dodonpachi" />
@@ -12245,7 +12338,7 @@ In this lesson, we learn how to animate images - which are known as
 frames. By drawing different component images, rapidly,
 one-after-the-other, we obtain an animation effect.
 
-Here is an example of a *spritesheet*, where each line animates a woman
+Here is an example of a <i>spritesheet</i>, where each line animates a woman
 walking in a particular direction:
 
 <!------------------------------------------------------------------------------------------------>
@@ -12295,7 +12388,7 @@ let's explain how to use "sprites" in JavaScript and canvas.
 <h3 id="ch2-6-2">2.6.2 Different sorts of sprite sheets</h3>
 <!------------------------------------------------------------------------------------------------>
 
-There are different sorts of *sprite sheets*. See some examples below.
+There are different sorts of <i>sprite sheets</i>. See some examples below.
 
 <h4>Multiple postures on a single sprite sheet</h4>
 
@@ -12578,27 +12671,27 @@ sprites:
 
 <h4>Explanations:</h4>
 
--   *Lines 1-4*: characteristics of the sprite sheet. How many rows,
+-   <i>Lines 1-4</i>: characteristics of the sprite sheet. How many rows,
     i.e., how many sprites per row, etc.
 
--   *Lines 11-39*: initializations that run just after the page has been
+-   <i>Lines 11-39</i>: initializations that run just after the page has been
     loaded. We first get the canvas and contexts. Then we set the
     minimum and maximum values of the slider (an &lt;input type=range>)
-    at *lines 31-32*, and disable it at *line 34* (we cannot slide it
+    at <i>lines 31-32</i>, and disable it at <i>line 34</i> (we cannot slide it
     before the sprite sheet image has been loaded). We display the
     current sprite number 0 in the <output> field to the right of the
-    slider (*line 35*).  Finally, *in lines 37-39*, we load the sprite
+    slider (<i>line 35</i>).  Finally, in <i>lines 37-39</i>, we load the sprite
     sheet image.
 
--   *Lines 42-58*: this callback is run once the sprite sheet image has
+-   <i>Lines 42-58</i>: this callback is run once the sprite sheet image has
     been loaded. We enable the slider, set the big canvas to the size of
-    the loaded image, and then draw it (*line 51*). We also draw the
+    the loaded image, and then draw it (<i>line 51</i>). We also draw the
     first sprite from the sprite sheet in the small canvas and draw a
     red wireframe rectangle around the first sprite in the sprite sheet
-    (*lines 52-58*).
+    (<i>lines 52-58</i>).
 
--   *Lines 61-87*: the input listener callback, called each time the
-    slider moves. *Lines 65-68* are the most important ones here: we
+-   <i>Lines 61-87</i>: the input listener callback, called each time the
+    slider moves. <i>Lines 65-68</i> are the most important ones here: we
     compute the x and y position of the sprite selected with the slider.
     We take into account the number of sprites per posture, the number
     of rows, and the dimensions of each sprite. Then, as in the previous
@@ -12606,7 +12699,7 @@ sprites:
     the current sprite with a red rectangle in the sprite sheet.
 
 -   The code is generic enough to work with different kinds of sprite
-    sheets. Adjust the global parameters in bold at* lines 1-5* and try
+    sheets. Adjust the global parameters in bold at <i>lines 1-5</i> and try
     the extractor.
 
 <h4>Example #2</h4>
@@ -12681,7 +12774,7 @@ Here is how you would create and animate a sprite:
 
 [Try the example on JSBin that uses this framework
 first!](https://jsbin.com/rugosu/edit?js,output) Experiment by
-editing *line 20*: <b>robot.setNbImagesPerSecond(20); </b>changing the
+editing <i>>line 20</i>: <b>robot.setNbImagesPerSecond(20); </b>changing the
 value of the parameter and observing the result.
 
 <!------------------------------------------------------------------------------------------------>
@@ -13442,7 +13535,7 @@ devtools console:
 </p>
 
 Aha! The calcDistanceToMove function is indeed used by the Ball
-constructor in ball.js at *line 2*7 (it moves the ball using time-based
+constructor in ball.js at <i>line 27</i> (it moves the ball using time-based
 animation). If you look carefully, you will see that it's also used for
 moving the monster, etc. In fact, there are parts in the game framework
 related to time-based animation. Let's move them all into
@@ -13658,8 +13751,8 @@ Our intent this week was to show you the primary techniques/approaches
 for dealing with animation, interactions, collisions, managing with game
 states, etc. 
 
-The quizzes for this week are not so important. *We're keen to see you
-write your own game*! You are welcome to freely re-use the examples
+The quizzes for this week are not so important. <i>We're keen to see you
+write your own game</i>! You are welcome to freely re-use the examples
 presented in the lessons and modify them, improve the code structure,
 playability, add sounds, better graphics, more levels, etc. We like to
 give points for style and flair, but most especially because we've been
@@ -13852,8 +13945,7 @@ compatibility table](https://caniuse.com/#feat=xhr2).
 <h3 id="ch3-2-2">3.2.2 Ajax/XHR2 and binary files</h3>
 <!------------------------------------------------------------------------------------------------>
 
-Hi everyone! In this lesson, I will present you how we can manage file
-
+Hi everyone! In this lesson, I will present you how we can manage file 
 uploads and file downloads with nice visualization of the progression.
 
 In this example, I'm downloading directly binary files into the browser
@@ -13978,7 +14070,7 @@ browser. For a long time, when using Ajax, these binary files had to be
 decoded "by hand", using JavaScript code. Not recommended!
 
 We won't go into too much detail here, but  all browsers (> 2012)
-support *XHR2*. XHR2 adds the option to directly download binary
+support <i>XHR2</i>. XHR2 adds the option to directly download binary
 data. With XHR2, you can ask the browser to encode/decode the file you
 send/receive, natively. To do this, when you use XMLHttpRequest to send
 or receive a file, you must set the xhr.responseType as arrayBuffer.
@@ -13986,8 +14078,8 @@ or receive a file, you must set the xhr.responseType as arrayBuffer.
 Below is a function that loads a sound sample using XMLHttpRequest level
 2.
 
-*Note*: 1) the simple and concise syntax, and 2) the use of the
-new arrayBuffer type for the expected response (*line 5*):
+<i>Note</i>: 1) the simple and concise syntax, and 2) the use of the
+new arrayBuffer type for the expected response (<i>line 5</i>):
 
 ```
 1.  // Load a binary file from a URL as an ArrayBuffer.
@@ -14208,7 +14300,7 @@ properties:
 2.  total which contains the file's size (in bytes).
 
 Combining these with a &lt;progress&gt; element, makes it very easy to
-render an animated *progress bar*. Here is a source code extract that
+render an animated <i>progress bar*. Here is a source code extract that
 does this for a download operation:
 
 <h4>HTML</h4>
@@ -14255,8 +14347,8 @@ max=10000> will look like this: 
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image166.jpeg?raw=true"
-   width="35%"
-   alt="." />
+  width="35%"
+  alt="." />
 </p>
 <!-------
 style="width:2.66667in;height:0.57292in" alt="progress bar 10%" />
@@ -14270,8 +14362,8 @@ max=10000> and will look like this:
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image167.jpeg?raw=true"
-   width="35%"
-   alt="Progress bar 20%." />
+  width="35%"
+  alt="Progress bar 20%." />
 </p>
 <!---------
 style="width:2.66667in;height:0.5in"
@@ -14284,8 +14376,8 @@ style="width:2.66667in;height:0.5in"
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image168.jpeg?raw=true"
-   width="35%"
-   alt="Monitoring download." />
+  width="35%"
+  alt="Monitoring download." />
 </p>
 <!---------
 style="width:5in;height:1.11271in"
@@ -15092,8 +15184,8 @@ Try [the online example at JsBin](https://jsbin.com/alunuk/6/edit). 
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image174.png?raw=true"
-   width="35%"
-   alt="Using CSS attr() function." />
+  width="35%"
+  alt="Using CSS attr() function." />
 </p>
 <!------------
 style="width:3.17708in;height:0.85417in"
@@ -15240,8 +15332,8 @@ drop zone):
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image175.jpeg?raw=true"
-   width="65%"
-   alt="Drag 'n drop css style and operation." />
+  width="65%"
+  alt="Drag 'n drop css style and operation." />
 </p>
 <!----------
 style="width:5in;height:2.57746in"
@@ -15447,8 +15539,8 @@ appropriate:
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image176.jpeg?raw=true"
-   width="25%"
-   alt="Copy cursor." />
+  width="25%"
+  alt="Copy cursor." />
 </p>
 <!------------
 style="width:2.39583in;height:0.78125in" alt="dropEffect" />
@@ -15465,8 +15557,7 @@ If you are "moving" objects, this style of cursor would be appropriate:
    alt="Moving object cursor image." />
 </p>
 <!--
-<img src="./images/image177.jpeg"
-style="width:2.58333in;height:0.88542in" alt="drop effect #2" />
+style="width:2.58333in;height:0.88542in"
 --->
 
 And if you are making a "link" or a "shortcut", a cursor would be
@@ -15664,9 +15755,9 @@ the dragstart handler we copy just the id of the element in the DOM
 (*line 15*).
 
 In the drop handler, we just move the element from one part of the DOM
-tree to another (under the &lt;div&gt; defined at *line 38*, that is the
-drop zone). This occurs at *line 18* (get back the id from the
-clipboard), and *line 19* (make it a child of the div. Consequently, it
+tree to another (under the &lt;div&gt; defined at <i>line 38*, that is the
+drop zone). This occurs at <i>line 18<i> (get back the id from the
+clipboard), and <i>line 19<i> (make it a child of the div. Consequently, it
 is no longer a child of the <body>, and indeed we have "moved"
 one &lt;img&gt; from its initial position to another location in the page).
 
@@ -15795,9 +15886,9 @@ post your comments/observations/questions or share your creations.
 <h3 id="ch3-4-1">3.4.1 Introduction</h3>
 <!------------------------------------------------------------------------------------------------>
 
-In these lectures, we will learn how to *drag and drop files* between
+In these lectures, we will learn how to <i>drag and drop files<i> between
 the browser and the desktop. The process shares similarities with the
-methods for *dragging and dropping elements* within an HTML document,
+methods for <i>dragging and dropping elements<i> within an HTML document,
 but it's even simpler!
 
 <h4>Drag and drop files from the desktop to the browser: the files property of the clipboard</h4>
@@ -15809,17 +15900,17 @@ browser only has to copy their content from the clipboard</b> and make it
 available in our JavaScript code.
 
 Indeed, <b>the main work will be done in the drop handler</b>, where we
-will use the *files property* of the *dataTransfer object* (aka the
+will use the <i>files property<i> of the <i>dataTransfer object<i> (aka the
 clipboard). This is where the browser will copy the files that have been
 dragged from the desktop. 
 
-This *files object* is the same one we saw in the chapter about the File
+This <i>files object<i> is the same one we saw in the chapter about the File
 API in the "HTML5 part 1" course: it is a collection
-of *file objects* >(sort of file descriptors). From each file object,
+of <i>file objects<i> >(sort of file descriptors). From each file object,
 we will be able to extract the name of the file, its type, size, last
 modification date, read it, etc.
 
-In this source code extract we have a *drop* handler that works on files
+In this source code extract we have a <i>drop<i> handler that works on files
 which have been dragged and dropped from the desktop to a drop zone
 associated with this handler with
 an ondrop=dropHandler(event); attribute:
@@ -16114,7 +16205,7 @@ Note that:
 
 In principle, this example is very similar to the "fruit" examples we
 worked through earlier, except that this time we're working with
-files. *And when we work with files, it is important to prevent the
+files. <i>And when we work with files, it is important to prevent the
 browser's default behavior.*
 
 <!------------------------------------------------------------------------------------------------>
@@ -16182,8 +16273,8 @@ displays the thumbnails):
 </details>
 
 At <i>line7</i>, there is a test that will avoid processing non image files.
-The "!" is the NOT operator in JavaScript. The call to continue at *line
-8* will make the for loop go to its end and process the next file. See
+The "!" is the NOT operator in JavaScript. The call to continue at <i>line
+8<i> will make the for loop go to its end and process the next file. See
 the HTML5 part 1 course about the file API for more details (each file
 has a name, type, lastModificationDate and size attribute. The call
 to match(...) here is a standard way in JavaScript to match a string
@@ -16343,7 +16434,7 @@ zone) or play with it at CodePen:
 Above, we added the readFilesAndDisplayPreview() method detailed
 earlier. We called it at the end of the drop handler (*line 77*), and we
 added the <output> element as a container for the &lt;img&gt; elements
-(constructed by the JavaScript code *lines 94-96*) which will display
+(constructed by the JavaScript code <i>lines 94-96*) which will display
 the thumbnails (<i>line 114</i>).
 
 <!------------------------------------------------------------------------------------------------>
@@ -16815,10 +16906,10 @@ with each of the examples.
 <h4>Packaged approach: send all form content, including files, only when the form is submitted</h4>
 
 -   This method enables us to send all of the form's content (regular
-    input field values + files selected) at once, *using a single Ajax
-    request* (we will need only one progress bar),
+    input field values + files selected) at once, <i>using a single Ajax
+    request<i> (we will need only one progress bar),
 
--   or we may *use multiple Ajax requests*, which we don't start until
+-   or we may <i>use multiple Ajax requests</i>, which we don't start until
     the submit button has been clicked.
 
 <!------------------------------------------------------------------------------------------------>
@@ -17227,8 +17318,8 @@ IndexedDB is presented as an alternative to the WebSQL Database, which
 the W3C deprecated on November 18, 2010 (while still available in some
 browsers, it is no longer in the HTML5 specification). Both are
 solutions for storage, but they do not offer the same functionalities.
-WebSQL Database is *a relational database access system*,
-whereas </b>IndexedDB is *an indexed table system</b>*.
+WebSQL Database is <i>a relational database access system</i>,
+whereas <b>IndexedDB is <i>an indexed table system</i></b>.
 
 From [the W3C specification about
 IndexedDB](https://www.w3.org/TR/IndexedDB/): "*User agents (apps
@@ -17242,7 +17333,7 @@ key*". 
 
 The W3C specification provides a concrete API to perform advanced
 key-value data management that is at the heart of most sophisticated
-query processors. It does so by using *transactional databases* to store
+query processors. It does so by using <i>transactional databases</i> to store
 keys and their corresponding values (one or more per key), and providing
 a means of traversing keys in a deterministic order. This is often
 implemented through the use of persistent B-tree data structures which
@@ -22743,41 +22834,8 @@ your comments/observations/questions and share your creations.
 <!------------------------------------------------------------------------------------------------>
 <!--------------------- xx.  (##) ----------------------->
 <!------------------------------------------------------------------------------------------------>
-<!--
-<p align="center" width="100%">
-<img src="./images/image020.png"
-  style="width:6.5in;height:6.36875in"
-  alt="A simple three track video example."  />
-</p>
---->
-<!--
-<p align="center" width="100%">
-<img src="./images/image014.jpeg?raw=true"
-   style="width:1in;height:1in"
-   width="15%"
-   alt="." />
-</p>
 -->
-<!--
-<p align="center" width="100%">
-<img src="./images/image.jpeg?raw=true"
-   width="35%"
-   alt="." />
-</p>
--->
-<!---
-<p align="center" width="100%">
-<img src="./images/image037.jpeg" 
-  style="width:5in;height:2.76977in"
-  alt="Example of video player that uses text based chapter navigation" />
-</p>
---->
-<!--
-<img src="./images/image038.jpeg" 
-  style="width:5in;height:2.28152in"
-  alt="Simple chapter menu in plain text." />
---->
 
 <h5>the end...</h5>
 
-<h4>Last Updated: 10-17-2022 4:17pm</h4>
+<h4>Last Updated: 10-18-2022 1:19am</h4>
