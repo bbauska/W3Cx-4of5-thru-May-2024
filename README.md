@@ -8764,9 +8764,10 @@ Tricks](https://css-tricks.com/snippets/javascript/javascript-keycodes/)
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image100.png"
-style="width:5.66667in;height:7.61458in"
+  style="width:5.66667in;height:7.61458in"
+  alt="." />
 <img src="./images/image101.png"
-style="width:5.66667in;height:1.29167in" />
+  style="width:5.66667in;height:1.29167in" />
 </p>
 
 <h4>Game requirements: managing multiple keypress / keyrelease events</h4>
@@ -9414,12 +9415,12 @@ small game you are going to develop during this week. Bye! Bye!
 Some games, mainly arcade/action games, are designed to be used with a gamepad:
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------- 107.  (1xx) --------------------------->
+<!------------------------- 107. gamepad (174) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image107.png"
   style="width:5in;height:3.22951in"
-  alt="" />
+  alt="Gamepad." />
 </p>
 
 [The Gamepad API ](https://w3c.github.io/gamepad/)is currently
@@ -10480,7 +10481,7 @@ to move the shape to achieve a given speed (in pixels/s).
 <p align="center" width="100%">
 <img src="./images/image116.jpeg"
   style="width:5.26042in;height:1.61458in"
-  alt="Bouncing square with time bases animation" />
+  alt="Bouncing square with time bases animation." />
 </p>
 
 Source code from the example:
@@ -10896,12 +10897,12 @@ Here is the [online example at JSBin](https://jsbin.com/bonutur/edit).
 ```
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 117.  (208) --------------------->
+<!--------------------------- 117. setframerateinframespersecond (208) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image117.png"
   style="width:4in;height:2.0047in"
-  alt="." />
+  alt="setFrameRateInFramesPerSecond." />
 </p>
 
 <b>Source code of the example:</b>
@@ -11165,7 +11166,7 @@ smoothness of the animation; the FPS counter on a Mac Book Pro core i7
 shows 60 fps.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 118. monster moving at 60 f/s (xxx) ------------------------------>
+<!----------------------------- 118. monster moving at 60 f/s (214) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image118.jpeg"
@@ -11182,7 +11183,7 @@ screen is the same, excepting that it's not as smooth as in the previous
 version, which ran at 60 fps.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 119.  (xxx) ------------------------------>
+<!----------------------------- 119. monster moving at 37 f/s (215) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image119.jpeg"
@@ -11339,12 +11340,12 @@ will not use time-based animation in the first examples.
 [Online example at JSBin](https://jsbin.com/fikomik/edit?js,output):
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 120.  (xxx) ------------------------------>
+<!-------------- 120. animating multiple balls bounce off walls (218) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image120.jpeg"
   style="width:3.1875in;height:3.22917in"
-  alt="Some circular balls that bounce agains vertical and horizontal borders of the canvas." />
+  alt="Animating multiple balls which bounce off horizontal and vertical walls." />
 </p>
 
 In this example, we define <i>a constructor function</i> for creating balls.
