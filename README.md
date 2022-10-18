@@ -12346,8 +12346,10 @@ As another example, here is the "jumping robot" sprite sheet:
 <!----------------------------- 147. example sprite framework (264) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image143.png" style="width:3.5in;height:3.5in"
-alt="sprite sheet for a robot jump" />
+<img src="./images/image143.png" 
+  style="width:3.5in;height:3.5in"
+  alt="sprite sheet for a robot jump" />
+</p>
 
 Whereas the walking robot posture is made of 16 sprites, the jumping
 robot needs 26!
@@ -13478,10 +13480,9 @@ now ball.draw(<b>ctx</b>); instead of ball.draw() without any parameter.
 We need to add a small initFPS function for creating the &lt;div&gt; that
 displays the FPS value... this function will be called from
 the GF.start() method. There was code in this start method that has been
-moved into the initFPS function we created and added into
-the fps.js file.
+moved into the initFPS function we created and added into the fps.js file.
 
-fps.js:
+<h4>fps.js</h4>
 
 <details>
   <summary>fps.js extract!</summary>
@@ -13702,6 +13703,7 @@ Some of them are based on the framework presented in the course.
 <img src="./images/image158.jpeg"
   style="width:2in;height:1.80212in"
   alt="Main screen of the game &quot;Wanted&quot;." />
+</p>
 
 <!------------------------------------------------------------------------------------------------>
 <!-------------------- 159. monster with black bombs and gold coins (2##) ------------------------>
@@ -13785,9 +13787,9 @@ You will learn how to download and upload files using XHR2, monitoring
 the upload/download progress, etc.
 
 The course will provide full examples of HTML5 forms that handle files
+with client and server side code provided. 
 
-with client and server side code provided. Drag’n’drop will be covered
-as well, between elements inside an HTML document but also with files
+Drag’n’drop will be covered as well, between elements inside an HTML document but also with files
 from and to the desktop.
 
 The second part of the week will show you how to use IndexedDB, a
@@ -13873,7 +13875,7 @@ Let's start with a very simple example.
 
 Here I will download a song that is located on one of my servers here...
 
-mainline.i3s.unice.fr
+> mainline.i3s.unice.fr
 
 When I will click on the download (button) and play the example song, it
 will start the download.
@@ -14009,7 +14011,7 @@ In this example, instead of reading the file from disk, we download it
 using XHR2.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 164. download file using xhr2 (2##) ------------------------------>
+<!----------------------------- 164. download file using xhr2 (277) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image164.jpeg"
@@ -14025,48 +14027,48 @@ using XHR2.
 ```
 1.  <!DOCTYPE html>
 2.  <html lang="en">
-3.   <head>
-4.     <title>XHR2 and binary files + Web Audio API</title>
-5.   </head>
+3.  <head>
+4.    <title>XHR2 and binary files + Web Audio API</title>
+5.  </head>
 6.  <body>
-7.  <p>Example of using XHR2 and <code>xhr.responseType =
-    'arraybuffer';</code> to download a binary sound file
-8.  and start playing it on user-click using the Web Audio API.</p>
+7.    <p>Example of using XHR2 and <code>xhr.responseType =
+        'arraybuffer';</code> to download a binary sound file
+8.      and start playing it on user-click using the Web Audio API.</p>
 9.  
-10. <p>
-11. <h2>Load file using Ajax/XHR2 and the arrayBuffer response
-    type</h2>
-12. <button onclick="downloadSoundFile('https://myserver.com/song.mp3');">
-13.      Download and play example song.
-14.  </button>
-15. <button onclick="playSound()" disabled>Start</button>
-16. <button onclick="stopSound()" disabled>Stop</button>
-17. <script>
-18.   // WebAudio context
-19.   var context = new window.AudioContext();
-20.   var source = null;
-21.   var audioBuffer = null;
+10.   <p>
+11.   <h2>Load file using Ajax/XHR2 and the arrayBuffer response
+        type</h2>
+12.   <button onclick="downloadSoundFile('https://myserver.com/song.mp3');">
+13.     Download and play example song.
+14.   </button>
+15.   <button onclick="playSound()" disabled>Start</button>
+16.   <button onclick="stopSound()" disabled>Stop</button>
+17.   <script>
+18.     // WebAudio context
+19.     var context = new window.AudioContext();
+20.     var source = null;
+21.     var audioBuffer = null;
 22.  
-23.   function stopSound() {
-24.     if (source) {
-25.        source.stop();
-26.     }
-27.   }
+23.     function stopSound() {
+24.       if (source) {
+25.         source.stop();
+26.       }
+27.    }
 28.  
-29.   function playSound() {
-30.     // Build a source node for the audio graph
-31.     source = context.createBufferSource();
-32.     source.buffer = audioBuffer;
-33.     source.loop = false;
-34.     // connect to the speakers
-35.     source.connect(context.destination);
-36.     source.start(0); // Play immediately.
-37.   }
+29.     function playSound() {
+30.       // Build a source node for the audio graph
+31.       source = context.createBufferSource();
+32.       source.buffer = audioBuffer;
+33.       source.loop = false;
+34.       // connect to the speakers
+35.       source.connect(context.destination);
+36.       source.start(0); // Play immediately.
+37.     }
 38.  
-39.   function initSound(audioFile) {
-40.     // The audio file may be an mp3 - we must decode it before
-    playing it from memory
-41.     context.decodeAudioData(audioFile, function(buffer) {
+39.     function initSound(audioFile) {
+40.       // The audio file may be an mp3 - we must decode it before
+          playing it from memory
+41.       context.decodeAudioData(audioFile, function(buffer) {
 42.       console.log("Song decoded!");
 43.       // audioBuffer the decoded audio file we're going to work with
 44.       audioBuffer = buffer;
@@ -14077,31 +14079,31 @@ using XHR2.
 49.       buttons[1].disabled = false; // play
 50.       buttons[2].disabled = false; // stop
 51.       alert("Binary file has been loaded and decoded, use play /
-    stop buttons!")
-52.     }, function(e) {
+            stop buttons!")
+52.       }, function(e) {
 53.        console.log('Error decoding file', e);
-54.     });
-55.   }
+54.       });
+55.     }
 56.  
-57.   // Load a binary file from a URL as an ArrayBuffer.
-58.   function downloadSoundFile(url) {
-59.     var xhr = new XMLHttpRequest();
-60.     xhr.open('GET', url, true);
+57.     // Load a binary file from a URL as an ArrayBuffer.
+58.     function downloadSoundFile(url) {
+59.       var xhr = new XMLHttpRequest();
+60.       xhr.open('GET', url, true);
 61.  
-62.     xhr.responseType = 'arraybuffer'; // THIS IS NEW WITH HTML5!
-63.     xhr.onload = function(e) {
-64.        console.log("Song downloaded, decoding...");
-65.        initSound(this.response); // this.response is an ArrayBuffer.
-66.     };
+62.       xhr.responseType = 'arraybuffer'; // THIS IS NEW WITH HTML5!
+63.       xhr.onload = function(e) {
+64.         console.log("Song downloaded, decoding...");
+65.         initSound(this.response); // this.response is an ArrayBuffer.
+66.       };
 67.     xhr.onerror = function(e) {
 68.       console.log("error downloading file");
 69.     }
 70.  
 71.     xhr.send();
-72.        console.log("Ajax request sent... wait until it downloads
-    completely");
-73.   }
-74. </script>
+72.       console.log("Ajax request sent... wait until it downloads
+          completely");
+73.     }
+74.   </script>
 75. </body>
 76. </html>
 ```
