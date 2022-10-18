@@ -8660,7 +8660,7 @@ be abandoned in the future). Mixing 'visual layer' (HTML) and 'logic
 layer' (JavaScript) in one place is really bad practice and causes a
 host of problems during development.
 
-<h4>Method #2: attach an event handler to an HTML element in JavaScript
+<h4>Method #2: attach an event handler to an HTML element in JavaScript</h4>
 
 ```
 document.getElementById('someDiv').onclick = function() {
@@ -8672,7 +8672,7 @@ This method is fine, but  you will not be able to attach
 multiple <i>listener</i> functions. If you need to do this, use the version
 shown below.
 
-<h4>Method #3: register a callback to the event listener with the addEventListener method (preferred  method)
+<h4>Method #3: register a callback to the event listener with the addEventListener method (preferred  method)</h4>
 
 ```
 document.getElementById('someDiv').addEventListener('click', function() {
@@ -8684,7 +8684,7 @@ Note that the third parameter describes whether the <i>callback</i> has to be
 called during the captured phase. This is not important for now, just
 set it to false.
 
-<h4>Details of the DOM event are passed to the event listener function
+<h4>Details of the DOM event are passed to the event listener function</h4>
 
 When you create an <i>event listener</i> and attach it to an element, the
 listener will create an <i>event object</i> to describe what happened. This
@@ -8708,7 +8708,7 @@ course) in the context of a game engine (in particular, how to manage
 multiple events at the same time), and also demonstrate how you can
 accept input from a game pad using the new Gamepad API.
 
-<h4>Further reading
+<h4>Further reading</h4>
 
 In the method #1 above, we mentioned that "Mixing 'visual layer' (HTML)
 and 'logic layer' (JavaScript) ... bad practice", and this is similarly
@@ -9509,7 +9509,7 @@ their connected property set to false.
 style="width:3.92708in;height:1.41667in"
 --->
 
-<h4>Scanning for gamepads
+<h4>Scanning for gamepads</h4>
 
 If you reload the page, and if the gamepad has already been detected by
 the browser, it will not fire the gamepadconnected event again. This can
@@ -9572,9 +9572,9 @@ To keep things simple, the above code works with a single gamepad
 - [here's a good example of managing multiple
 gamepads](https://github.com/luser/gamepadtest).
 
-<h4>Detecting button status and axes values (joysticks)
+<h4>Detecting button status and axes values (joysticks)</h4>
 
-<h4>Properties of the gamepad object
+<h4>Properties of the gamepad object</h4>
 
 The gamepad object returned in the event listener [has different
 properties](https://w3c.github.io/gamepad/#gamepad-interface):
@@ -9630,7 +9630,7 @@ the above image to open a large view in another window/tab.
     > 0.0 representing a button that is not pressed, and 1.0
     > representing a button that is fully depressed.
 
-<h4>Detecting whether a button is pressed
+<h4>Detecting whether a button is pressed</h4>
 
 Digital, on/off buttons evaluate to either one or zero (respectively).
 Whereas analog buttons will return a floating-point value between zero
@@ -9979,7 +9979,7 @@ Take time to look at the code, read slowly the explanation in the page
 and I will meet you in the next video in which we will add enemies and obstacles and
 detect collisions.
 
-<h4>Make the monster move using the arrow keys, and to increase its speed by pressing a mouse button
+<h4>Make the monster move using the arrow keys, and to increase its speed by pressing a mouse button</h4>
 
 To conclude this topic about events, we will use the arrow keys to move
 our favorite monster up/down/left/right, and make it accelerate when we
@@ -10008,7 +10008,7 @@ the monster will move between animation frames.
 look at a far better solution - <i>"time based animation" - </i>in another
 lesson.
 
-<h4>We modified the game loop as follows:
+<h4>We modified the game loop as follows:</h4>
 
 <details>
   <summary>Code extract!</h4>
@@ -10113,7 +10113,7 @@ same time. In this situation, the monster will take a diagonal direction
 and accelerate. This is why it is important to keep all the input states
 up-to-date, and not to handle single events individually.
 
-<h4>Gamepad enhancements
+<h4>Gamepad enhancements</h4>
 
 Let's add the gamepad utility functions from the previous lesson (we
 tidied them a bit too, removing the code for displaying the progress
@@ -10301,7 +10301,7 @@ This technique is useful when:
     other sorts of computations (physics engine, artificial
     intelligence, etc.)
 
-<h4> How to measure time when we use requestAnimationFrame?
+<h4> How to measure time when we use requestAnimationFrame?</h4>
 
 Let's take a simple example with a small rectangle that moves from left
 to right. At each animation loop, we erase the canvas content, calculate
@@ -10322,7 +10322,7 @@ we did in the previous lessons, the browser tries to keep the frame-rate
 at 60 fps, meaning that the ideal time between frames will be 1/60
 second = 16.66 ms.
 
-<h4>Example #1: no use of time-based animation
+<h4>Example #1: no use of time-based animation</h4>
 
 [Online example at JSBin](https://jsbin.com/dibuze/edit)
 
@@ -10437,7 +10437,7 @@ consequence of the extra time spent in the animation loop.
 Let's find out how to measuring time between frames to achieve a
 constant speed on screen, even when the frame rate changes.
 
-<h4>Method #1: using the JavaScript Date object
+<h4>Method #1: using the JavaScript Date object</h4>
 
 Let's modify the example from the previous lesson slightly by adding
 a *time-based animation*.  Here we use the "standard JavaScript" way for
@@ -10464,7 +10464,7 @@ consecutive loops.
 We then apply some simple math to compute the number of pixels we need
 to move the shape to achieve a given speed (in pixels/s).
 
-<h4>Example #1: using time based animation: the bouncing square
+<h4>Example #1: using time based animation: the bouncing square</h4>
 
 [Online example at JSBin](https://jsbin.com/riferi/edit):
 
@@ -10591,7 +10591,7 @@ Or you can try the next example that simulates a complex animation loop
 that takes a long time to draw each frame...
 
 <h4>Example #2: using a simulation that spends a lot of time in the animation loop, to compare with the previous example
-
+</h4>
 [Try it on JsBin](https://jsbin.com/jeribi/edit):
 
 We added a long loop in the middle of the animation loop. This time, the
@@ -10645,7 +10645,7 @@ adapts itself!
 
 </details>
 
-<h4>Method #2: using the new HTML5 high-resolution timer
+<h4>Method #2: using the new HTML5 high-resolution timer</h4>
 
 Since the beginning of HTML5, game developers, musicians, and
 others have asked for a sub-millisecond timer to be able to avoid some
@@ -10756,7 +10756,7 @@ Only two lines have changed but the accuracy is much higher, if you
 uncomment the console.log(...) calls in the main loop. You will see the
 difference.
 
-<h4>Method #3: using the optional timestamp parameter of the callback function of requestAnimationFrame
+<h4>Method #3: using the optional timestamp parameter of the callback function of requestAnimationFrame</h4>
 
 > <b>This is the recommended method!</b>
 
@@ -11001,7 +11001,7 @@ Here is the [online example at JSBin](https://jsbin.com/bonutur/edit).
 </html>
 ```
 
-<h4>Same technique with the bouncing rectangle
+<h4>Same technique with the bouncing rectangle</h4>
 
 See how we can set both the speed (in pixels/s) and the frame-rate using
 a high-resolution time with this [modified version on JSBin of the
@@ -11118,7 +11118,7 @@ technique](https://jsbin.com/momeci/edit). 
 
 </details>
 
-<h4>Can we use setInterval?
+<h4>Can we use setInterval?</h4>
 
 It's quite possible to use setInterval(function, interval) if you do not
 need an accurate scheduling.
@@ -16198,7 +16198,7 @@ HTML of this example.
 <h4>Complete example of drag and drop + thumbnails of images
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 183.  (3xx) -------------------------------->
+<!------------------------ 183. image drag n drop with thumbnails (317) -------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image183.jpeg"
@@ -16206,8 +16206,7 @@ HTML of this example.
   alt="Image drag and drop with thumbnails." />
 </p>
 <!---
-<img src="./images/image183.jpeg" style="width:6.5in;height:4.05625in"
-alt="ilmage drag&#39;n&#39;drop with thumbnails" />
+style="width:6.5in;height:4.05625in"
 --->
 
 Try it below in your browser (drag'n'drop image files into the drop
@@ -16352,11 +16351,11 @@ the thumbnails (<i>line 114</i>).
 Let's go further and also add an &lt;input type="file">
 
 The example below allows files to be selected using a file chooser or by
-drag  and dropping them, like in the screenshot below (the interactive
+drag and dropping them, like in the screenshot below (the interactive
 example is a bit further down the page):
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 184.  (3xx) -------------------------------->
+<!--------------------------- 184. file and directory chooser (321) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image184.png"
@@ -16364,8 +16363,7 @@ example is a bit further down the page):
   alt="Example of file and directory chooser." />
 </p>
 <!---
-<img src="./images/image184.png" style="width:6.5in;height:6.36944in"
-alt="Example of file and dir chooser." />
+style="width:6.5in;height:6.36944in"
 --->
 
 In the above screenshot, which is derived from the example detailed
@@ -16598,7 +16596,7 @@ CodePen. We are using a fake remote server and it cancels the connection
 as soon as we try to connect):
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------ 185. drag 'n drop and progress element (3xx) -------------------------->
+<!------------------------ 185. drag 'n drop and progress element (326) -------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image185.jpeg?raw=true"
@@ -16789,7 +16787,7 @@ drops files, they will start being uploaded immediately. However,  the
 form will only be sent when all the fields are valid. 
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------- 186. uploading files using xhr2 (3xx) ------------------------------->
+<!-------------------------- 186. uploading files using xhr2 (330) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image186.jpeg"
@@ -16797,8 +16795,7 @@ form will only be sent when all the fields are valid. 
   alt="Uploading files using Xhr2, drag 'n drop with progress bar." />
 </p>
 <!---
-<img src="./images/image186.jpeg" style="width:6.5in;height:3.98264in"
-alt="uploading files using Xhr2, drag&#39;n&#39;drop and progress bar" />
+style="width:6.5in;height:3.98264in"
 --->
 
 This approach is similar to Gmail's behavior when you compose a message
@@ -16823,16 +16820,16 @@ with each of the examples.
     the submit button has been clicked.
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------------------- 187. second approach (333) ----------------------------------->
+<!--------------------------------- 187. second approach (331) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image187.jpeg"
   width="65%"
   alt="2nd approach, send only when the sublet button has been clicked." />
 </p>
-<img src="./images/image187.jpeg"
+<!---
 style="width:6.29167in;height:2.32292in"
-alt="Second approach, send files only when the sublit button has been clicked" />
+--->
 
 The difference between this and the first approach is that we are
 sending everything <i>at the same time</i> using Ajax/JavaScript: the regular
@@ -16896,7 +16893,7 @@ more difficult to follow.
 Example using a file selector (&lt;input type="file"&gt;):
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------------------- 188. example 1 auto file upload (334) ----------------------------->
+<!---------------------------- 188. example 1 auto file upload (332) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image188.png"
@@ -16904,8 +16901,7 @@ Example using a file selector (&lt;input type="file"&gt;):
   alt="Example 1 of file upload." />
 </p>
 <!---
-<img src="./images/image188.png" style="width:4.85417in;height:1.79167in"
-alt="example 1 of file upload." />
+style="width:4.85417in;height:1.79167in"
 --->
 
 [Try the online example at
@@ -16932,7 +16928,7 @@ JSBin](https://jsbin.com/qijoza/edit?html,css,js,output) and look at the
 source code - there are plenty of comments.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 189. example 2 of file upload (335) ------------------------------>
+<!----------------------------- 189. example 2 of file upload (333) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image189.png"
@@ -16940,8 +16936,7 @@ source code - there are plenty of comments.
   alt="Example 2 of file uploads using drag 'n drop." />
 </p>
 <!---
-<img src="./images/image189.png" style="width:6.5in;height:3.98264in"
-alt="example 2 of file uploads, uses drag&#39;n&#39;drop" />
+style="width:6.5in;height:3.98264in"
 --->
 
 <h4>And here is the PHP code for the server-side part of examples #1 and #2</h4>
@@ -17025,7 +17020,7 @@ JSBin](https://jsbin.com/quzohi/edit?html,css,js,output), and look at
 the source code and comments for details.
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------------------- 190. example 3 of file uploads (337) ------------------------------>
+<!---------------------------- 190. example 3 of file uploads (335) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image190.png"
@@ -17033,8 +17028,7 @@ the source code and comments for details.
   alt="Example 3 of file uploads." />
 </p>
 <!---
-<img src="./images/image190.png" style="width:6.07292in;height:2.17708in"
-alt="Example 3 of file uploads" />
+style="width:6.07292in;height:2.17708in"
 --->
 
 <h4>Example #4: uploading using drag and drop</h4>
@@ -17044,7 +17038,7 @@ JSBin](https://jsbin.com/xonemow/edit?html,css,output) and look at
 source code and comments.
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------ 191. example 4 using drag n drop files (337) -------------------------->
+<!------------------------ 191. example 4 using drag n drop files (335) -------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image191.png"
@@ -17052,8 +17046,7 @@ source code and comments.
   alt="Example 4 using drag 'n drop files." />
 </p>
 <!---
-<img src="./images/image191.png" style="width:5.38542in;height:3.71875in"
-alt="Example 4: uses drag&#39;n&#39;drop of files" />
+style="width:5.38542in;height:3.71875in"
 --->
 
 <h4>PHP code for the single-packaged examples (with and without drag and drop, the PHP is the same)</h4>
@@ -17270,17 +17263,13 @@ in-order traversal of very large numbers of data records.
 <h4>Examples of applications where IndexedDB should be considered</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 192. google drive and indexdb (3xx) ------------------------------>
+<!----------------------------- 192. google drive and indexdb (339) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image192.jpeg"
-  width="35%"
+  style="width:3.28125in;height:4.04167in"
   alt="Google Drive using indexDB." />
 </p>
-<!---
-style="width:3.28125in;height:4.04167in"
-alt="google drive uses indexedDB" />
---->
 
 -   A catalog of DVDs in a lending library.
 
@@ -17320,9 +17309,7 @@ A transactional database ensures that concurrent access to data would
 not compromise this data.
 
 It uses a locking system, that means that when an instance of your Web
-application is modifying
-
-some data and another instance or another application on the same domain
+application is modifying some data and another instance or another application on the same domain
 is reading this data, there won't be anything wrong regarding to this
 data.
 
@@ -17906,15 +17893,13 @@ these!
 Hi! Let's look now at some pieces of code and examples that will explain
 how to really program an IndexedDB application.
 
-So… one of the first thing is that you need to create or to open an existing database before working with data.
+One of the first thing is that you need to create or to open an existing database before working with data.
 
 All operations are asynchronous and, if you want to open a database, you
 use IndexedDB.open(…).
 
 You specify the name of the database and the version. Each database is
-versioned... and
-
-if the "CustomerDB" database -from this example- exists with a version
+versioned... and if the "CustomerDB" database -from this example- exists with a version
 "2", it will just open it. If it exists, but with a previous, lower version, it will
 be "upgraded".
 
@@ -17926,8 +17911,9 @@ The "onsuccess" listener is called when the database has been opened.
 only if we are creating a new version of the database. It's the case when the database does not
 exist.
 
-So the database has a version, and the first version is "0". You can
-have the same database that exists in different versions at a time, but the very common way is to
+The database has a version, and the first version is "0". 
+
+You can have the same database that exists in different versions at a time, but the very common way is to
 define the two listeners I talked about, and create the database and the schema in the "onupgradeneeded" event
 listener.
 
@@ -18040,19 +18026,19 @@ the example: it will call the createDB() JavaScript function that:
 object stores and data:</b>
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 193.  (##) ----------------------->
+<!--------------------------- 193. chrome devtools and indexdb (354) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image193.png"
   style="width:6.5in;height:4.77847in"
-  alt="." />
+  alt="DevTools showing the IndexDB, object stores and data." />
 </p>
 
 Normally, when you create a database for the first time, the console
 should show this message:
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 194.  (##) ----------------------->
+<!--------------------------- 194. create database first time (354) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image194.jpeg"
@@ -18065,7 +18051,7 @@ Indeed, the first time we open the database we ask for a specific
 version (in this example: version 2) with:
 
 ```
-1.  var request = indexedDB.open(dbName, 2);
+var request = indexedDB.open(dbName, 2);
 ```
 
 ...and if there is no version "2" of the database, then we enter
@@ -18195,25 +18181,30 @@ opening one of the JsBin examples , then opening the devtool console,
 then executing indexedDB.deleteDatabase("CustomerDB"); in the console:
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 195.  (##) ----------------------->
+<!-------------------- 195-199. steps to delete an indexed record (357-358) ---------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image195.jpeg"
   style="width:6.5in;height:4.48889in"
-  alt="Deleting indexed DB part 1, open the devtool console." />
+  alt="Open the devtool console." />
 </p>
 
-<img src="./images/image196.jpeg" style="width:6.5in;height:3.34097in"
-alt="Run the command." />
+<img src="./images/image196.jpeg"
+  style="width:6.5in;height:3.34097in"
+  alt="Type CustomerDB." />
 
-<img src="./images/image197.jpeg" style="width:6.5in;height:1.41319in"
-alt="Execute the command." />
+<img src="./images/image197.jpeg"
+  style="width:6.5in;height:1.41319in"
+  alt="Check if delete occurred." />
 
-<img src="./images/image198.jpeg" style="width:6.5in;height:2.33264in"
-alt="Refresh IndexedDB display of objectStores." />
+<img src="./images/image198.jpeg"
+  style="width:6.5in;height:2.33264in"
+  alt="Right click and Refresh IndexedDB display of objectStores." />
 
-<img src="./images/image199.jpeg" style="width:6.5in;height:1.84375in"
-alt="Final result: the objectStore has been deleted." />
+<img src="./images/image199.jpeg"
+  style="width:6.5in;height:1.84375in"
+  alt="Final result: the objectStore has been deleted." />
+</p>
 
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch3-6-6">3.6.6 Working with data</h3>
@@ -18256,28 +18247,21 @@ also be shown at the end of this section.
 <h3 id="ch3-6-7">3.6.7 Inserting data</h3>
 <!------------------------------------------------------------------------------------------------>
 
-So, about inserting data… Here this is what we did during the creation
-of the database.
+Here this is what we did during the creation of the database.
 
-We used objectStore.add(...). This is a particular case because when we
-are creating the database,
+We used objectStore.add(...) in this is a particular case because when we are creating the database,
+nobody can do the same operation at the same time. 
 
-nobody can do the same operation at the same time. So we don't need to
-protect the insertion
+We don't need to protect the insertion of the data by a transaction. 
 
-of the data by a transaction. But usually, when you insert data, you
-need
+But usually, when you insert data, you need to create a transaction. 
 
-to create a transaction. This is what is done here: we create a
-transaction on the dataStore
+This is what is done here: we create a transaction on the dataStore called "customers », and we are indicating that we are going to read data, and also write data. 
 
-called "customers », and we are indicating that we are going to read
-data, and also write
+You need to have listeners -callbacks- in case there is an error during the creation
+of the transaction. 
 
-data. You need to have listeners -callbacks- in case there is an error
-during the creation
-
-of the transaction. Then, if everything went ok, and using this object
+Then, if everything went ok, and using this object
 store transaction,
 
 you will add data. The fact that we are using the transaction here,
