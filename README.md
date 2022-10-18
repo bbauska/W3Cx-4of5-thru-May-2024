@@ -18264,132 +18264,87 @@ You need to have listeners -callbacks- in case there is an error during the crea
 of the transaction. 
 
 Then, if everything went ok, and using this object
-store transaction,
+store transaction, you will add data. 
 
-you will add data. The fact that we are using the transaction here,
-means that if somebody
-
+The fact that we are using the transaction here, means that if somebody
 is trying to access the same data (at the same time), somebody will have
-to wait until
+to wait until the other one finished its operation. 
 
-the other one finished its operation. In case of success, you need to
-make callbacks,
+In case of success, you need to make callbacks, on the request this time - 
+on the add request. 
 
-on the request this time - on the add request. We can display "ok,
-customer with the social
+We can display "ok, customer with the social serial (security) number has been added", or we display an error.
 
-serial (security) number has been added", or we display an error.
-
-Here, I shortened the error messages. In the course Web page the code is
-more complete.
+Here, I shortened the error messages. In the course Web page the code is more complete.
 
 Here, the code is rather long… it takes 20 lines of code, but you
-shorten this by
+shorten this by using the "." operator and with chaining requests (operations). 
 
-using the "." operator and with chaining requests (operations). You
-create a transaction on the database,
+You create a transaction on the database, then you create the same transaction 
+on the object store, and you add, with a request, a new customer.
 
-then you create the same transaction on the object store, and you add,
-with a request, a new customer.
+This is much more concise, much shorter, but you cannot spot with a lot of precision, the errors that can come. 
 
-This is much more concise, much shorter, but you cannot spot
+Is it an error during this operation? 
 
-with a lot of precision, the errors that can come. Is it an error during
+During the transaction? When you try to open the database in read / write mode?
 
-this operation? During the transaction? When you try to open the
-database in read / write
-
-mode? You don't know!
+You don't know!
 
 Deleting data is really similar. So, the only thing that changes is the
-name here,
+name here, of the operation you do on the request transaction.
 
-of the operation you do on the request transaction. So, if you do a
-"delete", and specify the
+If you do a "delete", and specify the KeyPath of the data you want to delete, then it will delete the object
+with social serial (security) number 444., blah blah blah…
 
-KeyPath of the data you want to delete, then it will delete the object
-with social serial
-
-(security) number 444., blah blah blah…
-
-For modifying data it's the same thing: you use the "put" method on
-
-the transaction, but this time you need to indicate an object -a
-JavaScript object- whose
-
-social security number -whose KeyPath- is valid: if this object exists
-in the database
-
-(datastore), we will update the new age for this customer.
+For modifying data it's the same thing: you use the "put" method on the transaction, but this time you need to indicate an object -a JavaScript object- whose social security number -whose KeyPath- is valid: if this object exists
+in the database (datastore), we will update the new age for this customer.
 
 Looking for data: you can look for a given data using "get" on the
-transaction. In the
+transaction.
 
-request, you specify the KeyPath… and in case of success the result (the
-event.target.result)
-
-that is passed to the callback, to the "onsuccess" callback, will be the
+In the request, you specify the KeyPath… and in case of success the result (the
+event.target.result) that is passed to the callback, to the "onsuccess" callback, will be the
 complete object whose key (KeyPath) is 1234 blah blah blah.
 
 Getting more than one piece of data will be performed using a concept
 called "cursors".
 
 If we are looking for more than one result… in this example, we are
-looking for multiple
+looking for multiple results, then instead of having an "onsuccess" callback, you've got an
+objectStore.openCursor().onsuccess.
 
-results, then instead of having an "onsuccess" callback, you've got an
-objectStore.openCursor().onsuccess
+In that case, what you've got as a result is a "cursor". 
 
-And in that case, what you've got as a result is a "cursor". A cursor is
-like
+A cursor is like a pointer on a collection of results, and by calling cursor.continue(),
+you will go from one result to the next one. 
 
-a pointer on a collection of results, and by calling cursor.continue(),
-you will go
+And the cursor itself is the object, the "current" object.
 
-from one result to the next one. And the cursor itself is the object,
-the "current" object.
+If we're getting a collection, then the current cursor.key, the
+current cursor.value.name, the current cursor.value.age, will be the values from the data you
+retrieved, and by calling cursor.continue(), you go to the next result.
 
-So, if we're getting a collection, then the current cursor.key, the
-current cursor.value.name,
-
-the current cursor.value.age, will be the values from the data you
-retrieved, and by calling
-
-cursor.continue(), you go to the next result. When the cursor is "null"
-then there is no
-
-more entries and you finish processing all your results.
+When the cursor is "null" then there is no more entries and you finish processing all your results.
 
 You can also use indexes. Instead of using the "get" method, you first
-indicate which
+indicate which index you are going to use for getting data, on the objectStore
+transaction you call a method called "index(…) », and you pass as a parameter the index name.
 
-index you are going to use for getting data, on the objectStore
-transaction you call a
+Then, on the index itself, you do a "get(...)". In that case it means "please, look
+for data whose name is equal to Bill, and the name is an index!". 
 
-method called "index(…) », and you pass as a parameter the index name.
-Then, on the
-
-index itself, you do a "get(...)". In that case it means "please, look
-for data whose
-
-name is equal to Bill, and the name is an index!". In that case, in the
-callback, the
-
-event.target.result is the resulting data you've just looked for.
+In that case, in the callback, the event.target.result is the resulting data you've just looked for.
 
 You can also look for more than one result. In that case, you do just
 "index.openCursor().onsuccess"…
 
-instead of "index.onsuccess" and you will get a collection of data. The
-cursor will
+instead of "index.onsuccess" and you will get a collection of data. 
 
-point to the current data (in the collection). Then you iterate using
-cursor.continue(),
+The cursor will point to the current data (in the collection). 
 
-on the collection of results, exactly the same way we explained earlier
-with the previous
-
-case when we got multiple results, this time it wasn't using an index.
+Then you iterate using cursor.continue(), on the collection of results, exactly the same way we explained earlier
+with the previous case when we got multiple results, this time it wasn't using an index.
 
 <h4>Example #1: basic steps</h4>
 
@@ -18403,7 +18358,7 @@ been added.
 "insert new customer" button.</b>
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 200.  (##) ----------------------->
+<!--------------------------- 200. create database, add customer (362) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image200.png"
@@ -18418,7 +18373,7 @@ Customer" button adds a customer named "Michel Buffa" into the object
 store:
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 201.  (##) ----------------------->
+<!------------------------ 201. indexdb object store in devtools (363) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image201.png"
@@ -18508,7 +18463,7 @@ datastore remains unchanged.
 Here is the trace from the dev tools console:
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 202.  (##) ----------------------->
+<!------------------------- 202. trace from the devtools console (365) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image202.png"
@@ -18521,7 +18476,7 @@ Here is the trace from the dev tools console:
 [Online example available at JSBin](https://jsbin.com/jayida):
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 203.  (##) ----------------------->
+<!--------------------- 203. adding a form and validating inputs (365) ----------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image203.jpeg"
@@ -18565,7 +18520,7 @@ message if:
     the same ssn. An alert like this should pop up:
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 204.  (##) ----------------------->
+<!--------------------------------- 204. request.onerror (366) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image204.jpeg"
@@ -18663,7 +18618,7 @@ such a way of coding (!).
 Also, note that it works if you try to insert empty data:
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 205.  (##) ----------------------->
+<!----------------------------- 205. insert blank data works (368) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image205.jpeg"
@@ -18683,7 +18638,7 @@ Let's move to the next [online example at
 JSBin](https://jsbin.com/bavifa):
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 205.  (##) ----------------------->
+<!-------------------------- 205. insert blank data works, again (368) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image205.jpeg"
@@ -18783,7 +18738,7 @@ update a customer!
 
 <!--- 389 --->
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 206.  (##) ----------------------->
+<!---------------------------- 206. customer update in indexdb (370) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image206.jpeg"
@@ -18801,7 +18756,7 @@ button. This updates the data in the object store, as shown in this
 screenshot:
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 207.  (##) ----------------------->
+<!---------------------------- 207. update object with ssn="" (371) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image207.jpeg"
@@ -18874,7 +18829,7 @@ retrieves an object when we know its key/keypath.
 [Online example at JSBin](https://jsbin.com/saquru):
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 208.  (##) ----------------------->
+<!---------------------- 208. request.get(key) to retrieve objects (372) ------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image208.jpeg"
@@ -18887,7 +18842,7 @@ the form itself (the code that gets the results and that updates the
 form is in the request.onsuccess callback).
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 209.  (##) ----------------------->
+<!-------------------------- 209. if valid key, form is updated (373) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image209.jpeg"
@@ -19069,7 +19024,7 @@ It adds a button to our application. Clicking on it will display a set
 of alerts, each showing details of an object in the object store:
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 210.  (##) ----------------------->
+<!---------------------- 210. alert showing objects in object store (376) ------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image210.jpeg"
@@ -19183,7 +19138,7 @@ the person-objects from the dataStore which have a name equal to "Bill".
 [Online example you can try at JsBin](https://jsbin.com/gituxa)
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 211.  (##) ----------------------->
+<!--------------------- 211. select first object matching user entry (378) ----------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image211.jpeg"
@@ -19255,7 +19210,7 @@ You can try [an online example at JSBin that uses the above
 methods](https://jsbin.com/kubuwof):
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 212.  (##) ----------------------->
+<!-------------------------- 212. one or all data using buttons (380) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image212.jpeg"
@@ -19371,7 +19326,7 @@ Try [the online example at JsBin](https://jsbin.com/lawaju/edit) (enter
 
 <!-- page 398 ---->
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 213.  (##) ----------------------->
+<!--------------------- 213.  (382) ----------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image213.jpeg"
@@ -19381,7 +19336,7 @@ Try [the online example at JsBin](https://jsbin.com/lawaju/edit) (enter
 
 <!-- page 399 ---->
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 214.  (##) ----------------------->
+<!--------------------- 214.  (383) ----------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image214.jpeg"
@@ -19642,7 +19597,7 @@ WAMP/MAMP/LAMP http distribution, for example. Then open
 the index.html file located in that directory.
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 215.  (##) ----------------------->
+<!--------------------- 215.  (388) ----------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image215.jpeg"
@@ -19674,7 +19629,7 @@ order of the animation is reversed when the last image is reached and
 again when the animation goes back to the first image.
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 216.  (##) ----------------------->
+<!--------------------- 216.  (389) ----------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image216.jpeg"
@@ -19705,7 +19660,7 @@ menu to view the source of the page, you will not see the DOM of this
 animated GIF player:
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 217. shadow root of the x-gif web component (###) ----------------------->
+<!--------------------- 217. shadow root of the x-gif web component (389) ------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image217.jpeg"
@@ -19730,7 +19685,7 @@ them with browsers that do not yet support Web Components.
 site](https://www.webcomponents.org/).
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 218. the webcomponents.org home page (###) ----------------------->
+<!------------------------- 218. the webcomponents.org home page (390) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image218.png"
@@ -19743,7 +19698,7 @@ input fields with voice recognition, and a text area that could vocalize
 the text:
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 219. results for a search on voice (###) ----------------------->
+<!-------------------------- 219. results for a search on voice (390) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image219.png"
@@ -19953,12 +19908,12 @@ Here is [an online example at JSBin](https://jsbin.com/dozele/edit) that
 uses exactly the code presented:
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 220. template use (###) ----------------------->
+<!---------------------------- 220. instantiate the template (395) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image220.jpeg"
   style="width:2.90625in;height:4.23958in"
-  alt="Template use." />
+  alt="Instantiate Template." />
 </p>
 
 And here is the complete source code...
@@ -20133,7 +20088,7 @@ you cannot see the elements that compose the control bar. You don't have
 access to the play button, etc.
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 224. devtools 2 (###) ----------------------->
+<!--------------------- 224. devtools 2 (398) ----------------------->
 <!---------------------------------------------image 21 - 23 ??? --------------------------------------------------->
 <p align="center" width="100%">
 <img src="./images/image224.jpeg"
