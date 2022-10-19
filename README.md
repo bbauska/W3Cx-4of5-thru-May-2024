@@ -21,30 +21,26 @@
    alt="W3Cx HTML 5.2x logo" />
 </p>
 
-<!---
 ## [Table of contents](#table-of-contents)
 
 ## [<b>About W3C and the Web</b>](#cha)
 >### - [<b>About W3C and the Web</b>](#cha-1)
 >### - [<b>Why accessibility is important</b>](#cha-2)
 >### - [<b>Why internationalization is important</b>](#cha-3)
---->
-<!---
+
 ## [<b>Course information</b>](#chb)
 >### * [<b>Welcome to "HTML5.2x - Apps and Games"</b>](#chb-1)
 >### * [<b>Course outline, grading and due dates</b>](#chb-2)
 >### * [<b>Course practical information</b>](#chb-3)
 >### * [<b>Course tools</b>](#chb-4)
---->
-<!---
+
 ## [<b>Module 1: Advanced HTML5 Multimedia</b>](#ch1)
 >### 1.1. [<b>Video introduction - Module 1</b>](#ch1-1-1)
 >### 1.2. [<b>The Timed Text Track API</b>](#ch1-2-1)
 >### 1.3. [<b>Advanced features for audio and video players</b>](ch1-3-1)
 >### 1.4. [<b>Creating tracks on the fly, syncing HTML content with a video</b>](#ch1-4-1)
 >### 1.5. [<b>The Web Audio API</b>](#ch1-5-1)
---->
-<!---
+
 ## [<b>Module 2: Game programming with HTML5</b>](#ch2)
 >### 2.1. [<b>Video introduction - Module 2</b>](#ch2-1-1)
 >### 2.2. [<b>Basic concepts of HTML5 game development</b>](#ch2-2-1)
@@ -53,8 +49,7 @@
 >### 2.5. [<b>Animating multiple objects, collision detection</b>](#ch2-5-1)
 >### 2.6. [<b>Sprite-based animation</b>](#ch2-6-1)
 >### 2.7. [<b>Game states</b>](#ch2-7-1)
---->
-<!---
+
 ## [<b>Module 3: HTML5 file upload and download</b>](#ch3)
 >### 3.1. [<b>Video introduction</b>](#ch3-1-1)
 >### 3.2. [<b>File API and Ajax / XHR2 requests</b>](#ch3-2-1)
@@ -63,15 +58,13 @@
 >### 3.5. [<b>Forms and files</b>](#ch3-5-1)
 >### 3.6. [<b>IndexedDB</b>](#ch3-6-1)
 >### 3.7. [<b>Conclusion on client-side persistence</b>](#ch3-7-1)
---->
-<!---
+
 ## [<b>Module 4: Web components and other HTML5 APIs</b>](#ch4)
 >### 4.1.[<b>Video introduction</b>](#ch4-1-1)
 >### 4.2.[<b>Web Components</b>](#ch4-2-1)
 >### 4.3.[<b>Web Workers</b>](#ch4-3-1)
 >### 4.4.[<b>The Orientation and Device Motion APIs</b>](#ch4-4-1)
 >### 4.5.[<b>Where to from here?</b>](#ch4-5-1)
---->
 
 <b>W3Cx-4of5-HTML5.2x – Apps and Games</b>
 <a href="https://github.com/bbauska/W3Cx-4of5-Apps-and-Games.git">HTML5.2x Apps and Games - git</a>
