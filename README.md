@@ -8463,7 +8463,7 @@ using the default color (black) and wireframe and filled modes:
 -   And if we change the coordinate system (this is what the call
     to ctx.translate(...) does) in a function, it is a best practice to
     always save the previous context  at the beginning of the function
-    and restore it at the end of the function (*lines 27 and 50*).
+    and restore it at the end of the function (<i>lines 27 and 50</i>).
 
 <h4>Animating the monster and including it in our game engine</h4>
 
@@ -8596,7 +8596,7 @@ JSBin](https://jsbin.com/xuruja/edit). 
 <h4>Explanations:</h4>
 
 -   Note that we now start the game engine in a window.onload callback
-    (*line 2*), so only after the page has been loaded.
+    (<i>line 2</i>), so only after the page has been loaded.
 
 -   We also moved 99% of the init() method from the previous example
     into the start() method of the game engine, and added the canvas,
@@ -8609,7 +8609,7 @@ JSBin](https://jsbin.com/xuruja/edit). 
     and 10, in successive frames of the animation.
 
 -   And we clear the previous canvas content before drawing the current
-    frame (*line 35*).
+    frame (<i>line 35</i>).
 
 If you try the example, you will see a trembling monster. The canvas is
 cleared and the monster drawn in random positions, at around 60 times
@@ -9556,8 +9556,8 @@ buttons, axes, etc. If we want to check the current button and joystick
 statuses, we must poll the browser at a high frequency  and call for an
 updated snapshot.
 
-From the specification: *"getGamepads retrieves a snapshot of the data
-for the currently connected and interacted with gamepads."*
+From the specification: <i>"getGamepads retrieves a snapshot of the data
+for the currently connected and interacted with gamepads."</i>
 
 This code will be integrated (as well as the event listeners presented
 earlier) in the next JSBin examples.
@@ -10253,7 +10253,7 @@ the animation will be adapted depending on the power of the device.
 
 So this is time-based animation.
 
-Let's study an important technique known as *"time-based animation"*,
+Let's study an important technique known as <i>"time-based animation"</i>,
 that is used by nearly all "real" video games.
 
 This technique is useful when:
@@ -10670,7 +10670,7 @@ integer value!
 
 From [this article that explains the High Resolution Time
 API](https://www.sitepoint.com/discovering-the-high-resolution-time-api/):
- "*The only method exposed is now(), which returns a DOMHighResTimeStamp
+ "<i>The only method exposed is now(), which returns a DOMHighResTimeStamp
 representing the current time in milliseconds. The timestamp is very
 accurate, with precision to a thousandth of a millisecond. Please note
 that while Date.now() returns the number of milliseconds elapsed since 1
@@ -10680,7 +10680,7 @@ performance.timing.navigationStart(), the start of navigation of the
 document, to the performance.now() call. Another important difference
 between Date.now() and performance.now() is that the latter is
 monotonically increasing, so the difference between two calls will never
-be negative.*"
+be negative.</i>"
 
 To sum up:
 
@@ -11507,20 +11507,20 @@ Here is the rest of the code from this example:
 
 <b>Notice that:</b>
 
--   All the balls are stored in an array (*line 4*),
+-   All the balls are stored in an array (<i>line 4</i>),
 
 -   We wrote a createBalls(nb) function that creates a given number of
     balls (and stores them in the array) with random values for position
-    and speed (*lines 18-32*)
+    and speed (<i>lines 18-32</i>)
 
 -   In the mainLoop, we iterate on the array of balls and for each ball
     we: 1) move it, 2) test if it collides with the boundaries of the
     canvas (in the function testCollisionWithWalls), and 3) we draw the
-    balls (*lines 38-50*). The order of these steps is not critical and
+    balls (<i>lines 38-50</i>). The order of these steps is not critical and
     may be changed.
 
--   The function that tests collisions is straightforward (*lines
-    55-76*).  We did not use "if... else if" since a ball may sometimes
+-   The function that tests collisions is straightforward (<i>lines
+    55-76</i>).  We did not use "if... else if" since a ball may sometimes
     touch two walls at once (in the corners). In that rare case, we need
     to invert both the horizontal and vertical speeds. When a ball
     collides with a wall, we need to replace it in a position where it
@@ -13907,7 +13907,7 @@ in the small game you have certainly wrote during week 2. Enjoy!
 We present below a short history of Ajax: an introduction to
 XMLHttpRequest level 2 (XHR2).
 
-<b>Wikipedia definition</b>: *"Ajax, short for Asynchronous JavaScript and
+<b>Wikipedia definition</b>: <i>"Ajax, short for Asynchronous JavaScript and
 XML), is a group of interrelated Web development techniques used on the
 client-side to create asynchronous Web applications. With Ajax, Web
 applications can send data to and retrieve from a server asynchronously
@@ -13915,7 +13915,7 @@ applications can send data to and retrieve from a server asynchronously
 the existing page. Data can be retrieved using
 the XMLHttpRequest object. Despite the name, the use of XML is not
 required (JSON is often used), and the requests do not need to be
-asynchronous."*
+asynchronous."</i>
 
 Ajax appeared around 2005 with Google Maps, and is now widely used. We
 are not going to teach you Ajax programming, but instead focus on the
@@ -14305,7 +14305,7 @@ properties:
 2.  total which contains the file's size (in bytes).
 
 Combining these with a &lt;progress&gt; element, makes it very easy to
-render an animated <i>progress bar*. Here is a source code extract that
+render an animated <i>progress bar</i>. Here is a source code extract that
 does this for a download operation:
 
 <h4>HTML</h4>
@@ -14315,7 +14315,6 @@ does this for a download operation:
 ```
 
 <h4>Script:</h4>
-
 
 <details>
   <summary>JavaScript code!</summary>
@@ -14341,7 +14340,7 @@ does this for a download operation:
 
 <b>Explanations</b>: by setting the value and max attributes of
 the &lt;progress&gt; element with the current number of bytes downloaded by
-the browser and the total size of the file (*lines 10-11*), it will
+the browser and the total size of the file (<i>lines 10-11</i>), it will
 reflect the actual proportions of the file downloaded/still to come.
 
 For example, with a file that is 10,000 bytes long, if the current
@@ -14678,9 +14677,9 @@ post your comments/observations/questions or share your creations.
 <!------------------------------------------------------------------------------------------------>
 
 From [the W3C HTML 5.1
-specification](https://www.w3.org/TR/html51/editing.html#dnd): *"the
+specification](https://www.w3.org/TR/html51/editing.html#dnd): <i>"the
 drag and drop API defines an event-based drag-and-drop mechanism, it
-does not define exactly what a drag-and-drop operation actually is"*.
+does not define exactly what a drag-and-drop operation actually is"</i>.
 
 We decided to present this API in a section about HTML5 client-side
 persistence, as it is very often used for dragging and dropping files.
@@ -15757,13 +15756,13 @@ the event handler proposed by the DOM API. This time, we used handlers
 with two parameters (the first parameter, target, is the element that
 triggered the event, and the second parameter is the event itself). In
 the dragstart handler we copy just the id of the element in the DOM
-(*line 15*).
+(<i>line 15</i>).
 
 In the drop handler, we just move the element from one part of the DOM
-tree to another (under the &lt;div&gt; defined at <i>line 38*, that is the
-drop zone). This occurs at <i>line 18<i> (get back the id from the
-clipboard), and <i>line 19<i> (make it a child of the div. Consequently, it
-is no longer a child of the <body>, and indeed we have "moved"
+tree to another (under the &lt;div&gt; defined at <i>line 38</i>, that is the
+drop zone). This occurs at <i>line 18</i> (get back the id from the
+clipboard), and <i>line 19</i> (make it a child of the div. Consequently, it
+is no longer a child of the &lt;body&gt;, and indeed we have "moved"
 one &lt;img&gt; from its initial position to another location in the page).
 
 <!------------------------------------------------------------------------------------------------>
@@ -16211,7 +16210,7 @@ Note that:
 In principle, this example is very similar to the "fruit" examples we
 worked through earlier, except that this time we're working with
 files. <i>And when we work with files, it is important to prevent the
-browser's default behavior.*
+browser's default behavior.
 
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch3-4-3">3.4.3 Images with thumbnails</h3>
@@ -16437,9 +16436,9 @@ zone) or play with it at CodePen:
 </details>
 
 Above, we added the readFilesAndDisplayPreview() method detailed
-earlier. We called it at the end of the drop handler (*line 77*), and we
+earlier. We called it at the end of the drop handler (<i>line 77</i>), and we
 added the <output> element as a container for the &lt;img&gt; elements
-(constructed by the JavaScript code <i>lines 94-96*) which will display
+(constructed by the JavaScript code <i>lines 94-96</i>) which will display
 the thumbnails (<i>line 114</i>).
 
 <!------------------------------------------------------------------------------------------------>
@@ -17327,14 +17326,14 @@ WebSQL Database is <i>a relational database access system</i>,
 whereas <b>IndexedDB is <i>an indexed table system</i></b>.
 
 From [the W3C specification about
-IndexedDB](https://www.w3.org/TR/IndexedDB/): "*User agents (apps
+IndexedDB](https://www.w3.org/TR/IndexedDB/): "<i>User agents (apps
 running in browsers) may need to store large numbers of objects locally
 in order to satisfy off-line data requirements of Web applications.
 Where WebStorage (as seen in the HTML5 part 1 course -localStorage and
 sessionStorage) is useful for storing pairs of keys and their
 corresponding values, IndexedDB provides in-order retrieval of keys,
 efficient searching of values, and the storage of duplicate values for a
-key*". 
+key</i>".
 
 The W3C specification provides a concrete API to perform advanced
 key-value data management that is at the heart of most sophisticated
@@ -17745,7 +17744,7 @@ deprecated and removed IDBDatabase.setVersion() method.
 
 <h4>Transaction</h4>
 
-From the specification: "*A transaction is used to interact with the
+From the specification: <i>"A transaction is used to interact with the
 data in a database. Whenever data is read or written to the database,
 this is done by using [a
 transaction](https://www.w3.org/TR/IndexedDB/#dfn-transaction).
@@ -17758,23 +17757,22 @@ that determines which types of interactions can be performed upon that
 transaction. The mode is set when the transaction is created and remains
 fixed for the life of the transaction. The transaction also has a scope
 that determines the object stores with which the transaction may
-interact*."
+interact.</i>"
 
 A transaction in IndexedDB is similar to a transaction in a SQL
-database. It defines: "*An atomic and durable set of data-access and
-data-modification operations*". Either all operations succeed or all
+database. It defines: "<i>An atomic and durable set of data-access and
+data-modification operations</i>". Either all operations succeed or all
 fail. 
 
 A database connection can have several active transactions associated
 with it at a time, but these write transactions cannot have
-overlapping [scopes](https://developer.mozilla.org/en-US/docs/IndexedDB/Basic_Concepts_Behind_IndexedDB#scope) (*they
-cannot work on the same data at the same time*). The scope of a
+overlapping [scopes](https://developer.mozilla.org/en-US/docs/IndexedDB/Basic_Concepts_Behind_IndexedDB#scope) (<i>they cannot work on the same data at the same time</i>). The scope of a
 transaction, which is defined at creation time, determines which
 concurrent transactions can read or write the same data (multiple reads
 can occur, while writes will be sequential, only one at a time), and
 remains constant for the lifetime of the transaction.
 
-So, for example, if a database connection already has a writing
+For example, if a database connection already has a writing
 transaction with a scope that covers only the flyingMonkey object store,
 you can start a second transaction with a scope of
 the unicornCentaur and unicornPegasus object stores. As for reading
