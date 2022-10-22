@@ -16277,7 +16277,7 @@ displays the thumbnails):
 
 At <i>line7</i>, there is a test that will avoid processing non image files.
 The "!" is the NOT operator in JavaScript. The call to continue at <i>line
-8<i> will make the for loop go to its end and process the next file. See
+8</i> will make the for loop go to its end and process the next file. See
 the HTML5 part 1 course about the file API for more details (each file
 has a name, type, lastModificationDate and size attribute. The call
 to match(...) here is a standard way in JavaScript to match a string
