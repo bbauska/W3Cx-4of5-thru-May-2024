@@ -16209,7 +16209,7 @@ Note that:
 In principle, this example is very similar to the "fruit" examples we
 worked through earlier, except that this time we're working with
 files. <i>And when we work with files, it is important to prevent the
-browser's default behavior.
+browser's default behavior</i>.
 
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch3-4-3">3.4.3 Images with thumbnails</h3>
@@ -16501,16 +16501,14 @@ type="file"/&gt; looks like this:
 
 It calls readFilesAndDisplayPreview()at <i>line 5</i>! The same function with
 the same parameters is also used by [the example that used drag and drop
-that we discussed on a previous page of this
-course.](https://codepen.io/w3devcampus/pen/XmWEMQ) 
+that we discussed on a previous page of this course.](https://codepen.io/w3devcampus/pen/XmWEMQ)
 
 Let's mix both examples: add to our drag'n'drop example an &lt;input
-type="file"> element, and the above handler. This will allow us to
+type="file"&gt; element, and the above handler. This will allow us to
 select files either with drag'n'drop or by using a file selector.
 
 Just for fun, we also added [an experimental "directory chooser" that is
-thus far only implemented by Google
-Chrome](https://www.youtube.com/watch?v=WaSP-rdQA_c) (notice, &lt;input
+thus far only implemented by Google Chrome](https://www.youtube.com/watch?v=WaSP-rdQA_c) (notice, &lt;input
 type="file" webkitdirectory> is <b>not</b> in the HTML5 specification.
 Drag and drop functionality will work through a file chooser in any
 modern browser, but the directory chooser will only work with Google
@@ -16523,7 +16521,7 @@ the file selector, secondly the directory selector, and finally to drag
 and drop image files into the drop zone), or [play with it at
 CodePen](https://codepen.io/w3devcampus/pen/BoavPb):
 
-Complete source code:
+<h4>Complete source code:</h4>
 
 <details>
   <summary>Complete source code!</summary>
@@ -16696,8 +16694,8 @@ as soon as we try to connect):
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image185.jpeg?raw=true"
-   width="45%"
-   alt="Example that uses drag&#39;n&#39;drop and a progress element for monitoring the ajax upload of the files." />
+  width="45%"
+  alt="Example that uses drag&#39;n&#39;drop and a progress element for monitoring the ajax upload of the files." />
 </p>
 
 <h4>Source code extract (we omitted the CSS):</h4>
@@ -16874,7 +16872,7 @@ and upload multiple files (which might include images). 
 <h4>Serial approach: upload the files as soon as they are selected or dragged and dropped</h4>
 
 Let's design an XHR2/Ajax, a form with an &lt;input type=file
-multiple> input field, and one or more &lt;progress&gt; elements for
+multiple&gt; input field, and one or more &lt;progress&gt; elements for
 monitoring file uploads. The form will also have input fields of
 different types.
 
@@ -17247,18 +17245,16 @@ In our case, we will store directly JavaScript objects.
 Here is an example; in this case, you've got a person defined by two
 properties:
 
-firstName and lastName. It is designed to work with huge amount of
+firstName and lastName. It is designed to work with huge amount of data 
+with also very good performances. 
 
-data with also very good performances. You can use indexes. So an index
-system allows you to specify that some properties will be ‘indexes’ and this will make
-requests on these properties much faster. For example, if I've got 100 000 people in my
-database, and I am looking for all the people with the last name equal
-to ‘Buffa’.
+You can use indexes. An index system allows you to specify that some properties will be ‘indexes’ and this will make requests on these properties much faster.
+
+For example, if I've got 100 000 people in my database, and I am looking for all the people with the last name equal to ‘Buffa’.
 
 If the lastName is an index, the retrieval will be very very fast.
 
-And also, remember that in the JavaScript world, all operations are
-asynchronous.
+And also, remember that in the JavaScript world, all operations are asynchronous.
 
 We will see in the next video that we will that we use callbacks everywhere.
 
@@ -17284,14 +17280,9 @@ here that are typical of JavaScript objects, and you have got properties like th
 viewMode and so on.
 
 Another example is a guitar pedalboard I wrote for processing in real
-time the sound of the guitar. You can see that we have got different categories…
+time the sound of the guitar.
 
-and we can select different presets, and each preset is attached with
-some values or a position…
-
-and if I reload the application it remembers exactly the settings
-because every time I am doing an action, I am storing the current state in an IndexedDB
-database, here... and I am storing directly JavaScript object with the preset values and so on.
+You can see that we have got different categories…and we can select different presets, and each preset is attached with some values or a position…and if I reload the application it remembers exactly the settings because every time I am doing an action, I am storing the current state in an IndexedDB database, here... and I am storing directly JavaScript object with the preset values and so on.
 
 And we are synchronizing this database that is located in the browser
 with a MongoDB database that is located on the server side and that holds also JavaScript
@@ -17299,12 +17290,12 @@ objects.
 
 Having the same representation for data -JavaScript objects-, is really comfortable.
 
-In the course, you will see a lot of small examples that we prepared
-on JSBin, and each of these examples show an individual operation, a very core operation
-like creating a Customer database.
+In the course, you will see a lot of small examples that we prepared on JSBin, and each of these examples show an individual operation, a very core operation like creating a Customer database.
 
 If I click on the "create CustomerDB database" (button), and if I open the devtools console, and I go to IndexedDB, I can see that the CustomerDB database I created appeared here, and I can see that the objects are stored: people with an age, email, name and a social security number. 
+
 You will see examples for creating a database, for working with data, for inserting data, removing data, modifying data, getting data and so on. 
+
 And each of these small examples will provide very useful code that you can reuse in your own examples.
 
 In the course, you will also find more complete examples like this one that shows how you can make requests to collect just some subset of data using what we called ‘bounds’.
@@ -17314,20 +17305,22 @@ application, or if you want all the data running from ‘Batman’ to ‘Curry�
 
 These examples should be good starting points for writing big scale application.
 
-In the next video, we will complete the presentation of the main
-concepts, so see you there, bye!
+In the next video, we will complete the presentation of the main concepts, so see you there, bye!
 
 IndexedDB is presented as an alternative to the WebSQL Database, which
 the W3C deprecated on November 18, 2010 (while still available in some
-browsers, it is no longer in the HTML5 specification). Both are
-solutions for storage, but they do not offer the same functionalities.
+browsers, it is no longer in the HTML5 specification).
+
+Both are solutions for storage, but they do not offer the same functionalities.
+
 WebSQL Database is <i>a relational database access system</i>,
 whereas <b>IndexedDB is <i>an indexed table system</i></b>.
 
-From [the W3C specification about
+From [the W3C specification about 
 IndexedDB](https://www.w3.org/TR/IndexedDB/): "<i>User agents (apps
 running in browsers) may need to store large numbers of objects locally
 in order to satisfy off-line data requirements of Web applications.
+
 Where WebStorage (as seen in the HTML5 part 1 course -localStorage and
 sessionStorage) is useful for storing pairs of keys and their
 corresponding values, IndexedDB provides in-order retrieval of keys,
@@ -17336,12 +17329,13 @@ key</i>".
 
 The W3C specification provides a concrete API to perform advanced
 key-value data management that is at the heart of most sophisticated
-query processors. It does so by using <i>transactional databases</i> to store
-keys and their corresponding values (one or more per key), and providing
-a means of traversing keys in a deterministic order. This is often
-implemented through the use of persistent B-tree data structures which
-are considered efficient for insertion and deletion, as well as for
-in-order traversal of very large numbers of data records.
+query processors. 
+
+It does so by using <i>transactional databases</i> to store keys and their 
+corresponding values (one or more per key), and providing a means of traversing keys in a deterministic order.
+
+This is often implemented through the use of persistent B-tree data structures which
+are considered efficient for insertion and deletion, as well as for in-order traversal of very large numbers of data records.
 
 <b>To sum up:</b>
 
@@ -17504,15 +17498,13 @@ results.
 Example of data (we reuse a sample from this MDN tutorial: "[Using
 IndexedDB](https://developer.mozilla.org/en-US/docs/IndexedDB/Using_IndexedDB))":
 
+```
 // This is what our customer data looks like.
-
 const customerData = [
-
 { ssn: "444-44-4444", name: "Bill", age: 35, email: "bill@company.com" },
-
 { ssn: "555-55-5555", name: "Donna", age: 32, email: "donna@home.org" }
-
 ];
+```
 
 Where customerData is an array of  "customers", each customer having
 several properties: ssn for the social security number, a name,
@@ -17565,79 +17557,92 @@ transaction after it has completed throws an exception.
 
 This transaction model is really useful when you consider what might
 happen if a user opened two instances of your web app in two different
-tabs simultaneously. Without transactional operations, the two instances
-might stomp all over each others' modifications. 
+tabs simultaneously. 
+
+Without transactional operations, the two instances might stomp all over each others' modifications. 
 
 <b>The IndexedDB API is mostly asynchronous.</b> The API doesn't give you
 data by returning values; instead, you have to pass a callback function.
-You don't "store" a value in the database, or "retrieve" a value out of
-the database through synchronous means. Instead, you "request" that a
-database operation happens. You are notified by a DOM event when the
-operation finishes, and the type of event lets you know if the operation
-succeeded or failed. This may sound a little complicated at first, but
-there are some sanity measures baked-in. After all, you are a JavaScript
-programmer, aren't you? ;-)
 
-So, please review the previous code extracts noting: transaction.
+You don't "store" a value in the database, or "retrieve" a value out of
+the database through synchronous means. 
+
+Instead, you "request" that a database operation happens.
+
+You are notified by a DOM event when the operation finishes, and the type of event lets you know if the operation succeeded or failed.
+
+This may sound a little complicated at first, but there are some sanity measures baked-in. 
+
+After all, you are a JavaScript programmer, aren't you? ;-)
+
+Please review the previous code extracts noting: transaction.
 oncomplete, transaction. onerror, request. onsuccess, etc.
 
-<b>IndexedDB uses requests all over the place.</b> Requests are objects
-that receive the success or failure DOM events mentioned previously.
-They have onsuccess and onerror properties, and you can
-call addEventListener() and removeEventListener() on them. They also
-have readyState, result, and errorCode properties which advise the
-status of a request.
+<b>IndexedDB uses requests all over the place.</b> 
 
-The result property is particularly magical, as it can be many different
-things, depending on how the request was generated (for example,
-an IDBCursor instance, or the key for a value that you just inserted
-into the database). We will see this in detail during a future lecture:
-"Using IndexedDB".
+Requests are objects that receive the success or failure DOM events mentioned previously.
+
+They have onsuccess and onerror properties, and you can call addEventListener() and  removeEventListener() on them.
+
+They also have readyState, result, and errorCode properties which advise the status of a request.
+
+The result property is particularly magical, as it can be many different things, depending on how the request was generated (for example, an IDBCursor instance, or the key for a value that you just inserted into the database).
+
+We will see this in detail during a future lecture: "Using IndexedDB".
 
 <b>IndexedDB uses DOM events to notify you when results are
-available.</b> DOM events always have a type property (in IndexedDB, it is
-most commonly set to "success" or "error"). DOM events also have
-a target property that shows where the event is headed. In most cases,
-the target of an event is the IDBRequest object that was generated as a
-result of doing some database operation. Success events don't bubble up
-and they can't be cancelled. Error events, on the other hand, do bubble,
-and can be cancelled. This is quite important, as error events abort the
-transaction, unless they are cancelled.
+available.</b> 
 
-<b>IndexedDB is object-oriented</b>. IndexedDB is not a relational
-database, which has tables with collections of rows and columns. This
-important and fundamental difference affects the way you design and
-build your applications. IndexedDB is an Object Store!
+DOM events always have a type property (in IndexedDB, it is most commonly set to "success" or "error").
 
-In a traditional relational data store, you would have a table that
-stores a collection of rows of data and columns of named types of data.
-IndexedDB, on the other hand, requires you to create an object store for
-a type of data and simply persist JavaScript objects to that store. Each
-object store can have a collection of indexes (corresponding to the
-properties of the JavaScript object you store in the store) that enable
-efficient querying and iteration.
+DOM events also have a target property that shows where the event is headed.
 
-<b>IndexedDB does not use Structured Query Language (SQL).</b> It phrases a
-query in terms of an index, that produces a cursor, which you use to
-iterate through the result set. If you are not familiar with NoSQL
-systems, read [the Wikipedia article on
-NoSQL](https://en.wikipedia.org/wiki/NoSQL).
+In most cases, the target of an event is the IDBRequest object that was generated as a
+result of doing some database operation. 
 
-<b>IndexedDB adheres to a same-origin policy.</b> An origin consists of the
-domain, the application layer protocol, and the port of a URL of the
-document where the script is being executed. Each origin has its own
-associated set of databases. Every database has a name that identifies
-it within an origin. Think of it as: "an application + a Database".
+Success events don't bubble up and they can't be cancelled. 
 
-The concept of "same origin" is defined by the combination of all three
-components mentioned earlier (domain, protocol, port). For example, an
-app in a page with the URL https://www.example.com/app/, and a second
-app at https://www.example.com/dir/, may both access the same IndexedDB
-database because they have the <i>same origin</i> (https, example.com, and
-80). Whereas apps at https://www.example.com:8080/dir/ (different
-port) or https://www.example.com/dir/ (different protocol), do not
-satisfy the <i>same origin</i> criteria (port or protocol differ
-from https://www.example.com)
+Error events, on the other hand, do bubble, and can be cancelled. 
+
+This is quite important, as error events abort the transaction, unless they are cancelled.
+
+<b>IndexedDB is object-oriented</b>.
+
+IndexedDB is not a relational database, which has tables with collections of rows and columns. 
+
+This important and fundamental difference affects the way you design and build your applications.
+
+IndexedDB is an Object Store!
+
+In a traditional relational data store, you would have a table that stores a collection of rows of data and columns of named types of data.
+
+IndexedDB, on the other hand, requires you to create an object store for a type of data and simply persist JavaScript objects to that store. 
+
+Each object store can have a collection of indexes (corresponding to the properties of the JavaScript object you store in the store) that enable efficient querying and iteration.
+
+<b>IndexedDB does not use Structured Query Language (SQL).</b>
+
+It phrases a query in terms of an index, that produces a cursor, which you use to iterate through the result set.
+
+If you are not familiar with NoSQL systems, read [the Wikipedia article on NoSQL](https://en.wikipedia.org/wiki/NoSQL).
+
+<b>IndexedDB adheres to a same-origin policy.</b>
+
+An origin consists of the domain, the application layer protocol, and the port of a URL of the
+document where the script is being executed. 
+
+Each origin has its own associated set of databases.
+
+Every database has a name that identifies it within an origin. 
+
+Think of it as: "an application + a Database".
+
+The concept of "same origin" is defined by the combination of all three components mentioned earlier (domain, protocol, port).
+
+For example, an app in a page with the URL https://www.example.com/app/, and a second
+app at https://www.example.com/dir/, may both access the same IndexedDB database because they have the <i>same origin</i> (https, example.com, and 80).
+
+Whereas apps at https://www.example.com:8080/dir/ (different port) or https://www.example.com/dir/ (different protocol), do not satisfy the <i>same origin</i> criteria (port or protocol differ from https://www.example.com)
 
 See this article from MDN about [the same-origin
 policy](https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy) for
