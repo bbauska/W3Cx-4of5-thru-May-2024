@@ -19400,19 +19400,17 @@ URL](https://github.com/mdn/IDBKeyRange-example/blob/gh-pages/index.html)):
 Try [the online example at JsBin](https://jsbin.com/lawaju/edit) (enter
 "Gaming", "Batman" etc. as key range values):
 
-<!-- page 398 ---->
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 213.  (382) ----------------------->
+<!------------------------------ 213. example of idbkeyrange (380) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image213.jpeg"
   style="width:6.5in;height:6.53819in"
-  alt="Example of use of IdbKeyRange." />
+  alt="Example of use of IDBKeyRange." />
 </p>
 
-<!-- page 399 ---->
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 214.  (383) ----------------------->
+<!------------------------------ 214. idbkeyrange in action (381) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image214.jpeg"
@@ -19673,7 +19671,7 @@ WAMP/MAMP/LAMP http distribution, for example. Then open
 the index.html file located in that directory.
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 215.  (388) ----------------------->
+<!---------------------- 215. running example on apache web server (386) ------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image215.jpeg"
@@ -19705,7 +19703,7 @@ order of the animation is reversed when the last image is reached and
 again when the animation goes back to the first image.
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 216.  (389) ----------------------->
+<!------------------------------ 216. animated gif in a page (387) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image216.jpeg"
@@ -19736,7 +19734,7 @@ menu to view the source of the page, you will not see the DOM of this
 animated GIF player:
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 217. shadow root of the x-gif web component (389) ------------------------>
+<!--------------------- 217. shadow root of the x-gif web component (387) ------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image217.jpeg"
@@ -19761,7 +19759,7 @@ them with browsers that do not yet support Web Components.
 site](https://www.webcomponents.org/).
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------- 218. the webcomponents.org home page (390) --------------------------->
+<!------------------------- 218. the webcomponents.org home page (388) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image218.png"
@@ -19774,7 +19772,7 @@ input fields with voice recognition, and a text area that could vocalize
 the text:
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------- 219. results for a search on voice (390) ---------------------------->
+<!-------------------------- 219. results for a search on voice (388) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image219.png"
@@ -19984,7 +19982,7 @@ Here is [an online example at JSBin](https://jsbin.com/dozele/edit) that
 uses exactly the code presented:
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------------------- 220. instantiate the template (395) ------------------------------->
+<!---------------------------- 220. instantiate the template (393) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image220.jpeg"
@@ -20052,10 +20050,8 @@ I can see how the Web component is made.
 I  can see its internals. I can look at the play button for example.
 
 The shadow DOM is a way to hide HTML code from the end user. If you do
-‘view source’,
-
-you will not see how a Web Component is made, except if you set the
-correct debugging settings option.
+‘view source’, you will not see how a Web Component is made, except if you 
+set the correct debugging settings option.
 
 More than that, the Web component may include some CSS files and the CSS 
 of the Web component will only apply to its own elements.
@@ -20164,10 +20160,10 @@ you cannot see the elements that compose the control bar. You don't have
 access to the play button, etc.
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 224. devtools 2 (398) ----------------------->
-<!---------------------------------------------image 21 - 23 ??? --------------------------------------------------->
+<!----------------------------------- 221. devtools 2 (396) -------------------------------------->
+<!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image224.jpeg"
+<img src="./images/image221.jpeg"
   style="width:6.5in;height:4.65556in"
   alt="Devtools2." />
 </p>
@@ -20179,10 +20175,10 @@ First, click on the Settings icon (three vertical dots) and select
 Settings in the drop down menu:
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 225. shadow dom in devtools 1 (###) ----------------------->
+<!---------------------------- 222. shadow dom in devtools 1 (397) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image225.jpeg"
+<img src="./images/image222.jpeg"
   style="width:6.5in;height:5.07431in"
   alt="Shadow DOM in Devtools 1." />
 </p>
@@ -20191,10 +20187,10 @@ Then scroll down until you see the "Show user agent shadow DOM" option
 and check it. Close the panel.
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 226. show shadow dom option in devtools (###) ----------------------->
+<!----------------------- 223. show shadow dom option in devtools (398) -------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image226.jpeg"
+<img src="./images/image223.jpeg"
   style="width:6.5in;height:3.54444in"
   alt="Show shadow DOM option in Devtools". />
 </p>
@@ -20203,10 +20199,10 @@ Now, look for the video element again and within the DOM view you should
 see something new:
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 227. devtools 4 (###) ----------------------->
+<!------------------------------------ 224. devtools 4 (398) ------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image227.jpeg" 
+<img src="./images/image224.jpeg" 
   style="width:6.5in;height:1.95833in"
   alt="devtools4" />
 </p>
@@ -20215,10 +20211,10 @@ Open this shadow root by clicking on it, and move the mouse pointer over
 the different elements:
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 228. devtools 5 (###) ----------------------->
+<!------------------------------------ 225. devtools 5 (399) ------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image228.jpeg"
+<img src="./images/image225.jpeg"
   style="width:6.5in;height:4.66389in"
   alt="Devtools5." />
 </p>
@@ -20269,10 +20265,10 @@ shadow host, and it is associated with the shadow root which
 contains three words of text (<i>line 11</i>).
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 229. shadow dom simple example (###) ----------------------->
+<!---------------------------- 226. shadow dom simple example (400) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image229.jpeg" 
+<img src="./images/image226.jpeg" 
   style="width:6.5in;height:1.79444in"
   alt="Shadow DOM simple example." />
 </p>
@@ -20299,10 +20295,10 @@ notice that nothing changes. Then modify the text at <i>line 11</i> and
 observe the result
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 230. shadow dom (###) ----------------------->
+<!------------------------------------ 227. shadow dom (401) ------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image230.jpeg"
+<img src="./images/image227.jpeg"
   style="width:6.5in;height:3.04583in"
   alt="Shadow DOM: the shadow root is rendered instead of the shadow host content." />
 </p>
@@ -20356,7 +20352,7 @@ The JavaScript part:
 [Online example at JSBin](https://jsbin.com/quguwa/edit?html,js,output):
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 231. shadow dom 3 (###) ----------------------->
+<!----------------------------------- 231. shadow dom 3 (###) ------------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image231.jpeg"
@@ -20413,7 +20409,7 @@ We added a new H1 at <i>line 11</i>. 
 And here is the result:
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 232.  (##) ----------------------->
+<!----------------------------------- 232. shadow dom 4 (###) ------------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image232.jpeg"
@@ -20433,7 +20429,7 @@ the first H1. Try to add this CSS rule to this example :
 And you should see something like that:
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 233.  (##) ----------------------->
+<!---------------------------------- 233. global css rule (###) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image233.jpeg"
@@ -20489,7 +20485,7 @@ the &lt;slot&gt;...&lt;/slot&gt; element, as shown below:
 <h4>See [the complete online example at JSBin](https://jsbin.com/jepucoz/edit?html,js,output):</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 234.  (##) ----------------------->
+<!------------------ 234. content injection in html using slot elements (###) -------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image234.jpeg"
@@ -20652,7 +20648,7 @@ HTML templates. Check [the full example online at
 JSBin](https://jsbin.com/cacuvuf/edit?html,js,console,output): 
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 235.  (##) ----------------------->
+<!--------------------------- 235. custom element full example (###) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image235.jpeg"
@@ -20974,7 +20970,7 @@ something like this during your Web browsing experiences:
 <h4>With Internet Explorer:</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 2xx.  (##) ----------------------->
+<!------------------------------- 2. script not responding (###) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <!--
 <p align="center" width="100%">
@@ -20986,7 +20982,7 @@ something like this during your Web browsing experiences:
 <h4>Or maybe:</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 238.  (##) ----------------------->
+<!----------------------------- 238. script not responding 2 (###) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <!--
 <p align="center" width="100%">
@@ -21016,7 +21012,7 @@ browser/tab, because this routine will consume 100% of CPU time,
 completely blocking the user interface: 
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------------------- 239.  (###) ------------------------------->
+<!-------------------------- 239.  example that eats all the cpu (###) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image239.jpeg?raw=true"
@@ -21321,8 +21317,8 @@ to be defined in a separate JavaScript file.
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image240.jpeg?raw=true"
-   width="65%"
-   alt="Prime number computation." />
+  width="65%"
+  alt="Prime number computation." />
 </p>
 <!--- style="width:5.70833in;height:1.34375in" --->
 
@@ -21410,14 +21406,13 @@ supports Web Workers, and by displaying some additional messages.
 > files</b>. Here is what happens if you do not follow this constraint:
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------- 241. using file URL does not work for security reasons (###) ------------------>
+<!---------------- 241. using file url does not work for security reasons (###) ------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image241.jpeg?raw=true"
-   width="65%"
-   alt="Using file URL does not work for security reasons." />
+  width="65%"
+  alt="Using file URL does not work for security reasons." />
 </p>
-
 <!-- style="width:6.5in;height:1.67292in" --->
 
 This occurs with Opera, Chrome and Firefox. With Chrome, Safari or
@@ -21453,8 +21448,7 @@ example: [WebWorkersExample1.zip](https://courses.edx.org/assets/courseware/v1/
 10.        // web workers supported by the browser
 11.        var worker=new Worker("worker1.js");
 12.        worker.onmessage=function(event){
-13.          
-    document.getElementById('result').textContent = event.data;
+13.          document.getElementById('result').textContent = event.data;
 14.        };
 15.     }else{
 16.        // the browser does not support web workers
@@ -22850,4 +22844,4 @@ your comments/observations/questions and share your creations.
 
 <h5>the end...</h5>
 
-<h4>Last Updated: 10-18-2022 1:19am</h4>
+<h4>Last Updated: 10-21-2022 11:40pm</h4>
