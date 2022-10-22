@@ -15890,9 +15890,9 @@ post your comments/observations/questions or share your creations.
 <h3 id="ch3-4-1">3.4.1 Introduction</h3>
 <!------------------------------------------------------------------------------------------------>
 
-In these lectures, we will learn how to <i>drag and drop files<i> between
+In these lectures, we will learn how to <i>drag and drop files</i> between
 the browser and the desktop. The process shares similarities with the
-methods for <i>dragging and dropping elements<i> within an HTML document,
+methods for <i>dragging and dropping elements</i> within an HTML document,
 but it's even simpler!
 
 <h4>Drag and drop files from the desktop to the browser: the files property of the clipboard</h4>
@@ -15904,20 +15904,19 @@ browser only has to copy their content from the clipboard</b> and make it
 available in our JavaScript code.
 
 Indeed, <b>the main work will be done in the drop handler</b>, where we
-will use the <i>files property<i> of the <i>dataTransfer object<i> (aka the
+will use the <i>files property</i> of the <i>dataTransfer object</i> (aka the
 clipboard). This is where the browser will copy the files that have been
 dragged from the desktop. 
 
-This <i>files object<i> is the same one we saw in the chapter about the File
+This <i>files object</i> is the same one we saw in the chapter about the File
 API in the "HTML5 part 1" course: it is a collection
-of <i>file objects<i> >(sort of file descriptors). From each file object,
+of <i>file objects</i> (sort of file descriptors). From each file object,
 we will be able to extract the name of the file, its type, size, last
 modification date, read it, etc.
 
-In this source code extract we have a <i>drop<i> handler that works on files
+In this source code extract we have a <i>drop</i> handler that works on files
 which have been dragged and dropped from the desktop to a drop zone
-associated with this handler with
-an ondrop=dropHandler(event); attribute:
+associated with this handler with an ondrop=dropHandler(event); attribute:
 
 <details>
   <summary>Code extract!</summary>
@@ -16911,7 +16910,7 @@ with each of the examples.
 
 -   This method enables us to send all of the form's content (regular
     input field values + files selected) at once, <i>using a single Ajax
-    request<i> (we will need only one progress bar),
+    request</i> (we will need only one progress bar),
 
 -   or we may <i>use multiple Ajax requests</i>, which we don't start until
     the submit button has been clicked.
