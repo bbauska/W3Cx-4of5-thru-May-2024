@@ -10896,7 +10896,7 @@ Here is the [online example at JSBin](https://jsbin.com/bonutur/edit).
 ```
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------------- 117. setframerateinframespersecond (208) --------------------------->
+<!--------------------------- 117. setframerateinframespersecond (207) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image117.png"
@@ -10904,7 +10904,7 @@ Here is the [online example at JSBin](https://jsbin.com/bonutur/edit).
   alt="setFrameRateInFramesPerSecond." />
 </p>
 
-<b>Source code of the example:</b>
+<h4>Source code of the example:</h4>
 
 <details>
   <summary>Code extract!</summary>
@@ -10912,31 +10912,31 @@ Here is the [online example at JSBin](https://jsbin.com/bonutur/edit).
 ```
 <!DOCTYPE html>
 <html lang="en">
- <head>
- <meta charset=utf-8 />
- <title>Set framerate using a high resolution timer</title>
- </head>
- <body>
- <p>This example measures and sums deltas of time between
+  <head>
+  <meta charset=utf-8 />
+  <title>Set framerate using a high resolution timer</title>
+  </head>
+  <body>
+  <p>This example measures and sums deltas of time between
      consecutive frames of animation. It includes
      a <code>setFrameRateInFramesPerSecond</code> function you can
      use to reduce the number of frames per second of the main
      animation.</p>
  
- <canvas id="myCanvas" width="700" height="350">
- </canvas>
- <script>
-   var canvas = document.querySelector("#myCanvas");
-   var ctx = canvas.getContext("2d");
-   var width = canvas.width, height = canvas.height;
-   var lastX = width * Math.random();
-   var lastY = height * Math.random();
-   var hue = 0;
+  <canvas id="myCanvas" width="700" height="350">
+  </canvas>
+  <script>
+    var canvas = document.querySelector("#myCanvas");
+    var ctx = canvas.getContext("2d");
+    var width = canvas.width, height = canvas.height;
+    var lastX = width * Math.random();
+    var lastY = height * Math.random();
+    var hue = 0;
  
-   // Michel Buffa: set the target frame rate. TRY TO CHANGE THIS VALUE AND SEE
-   // THE RESULT. Try 2 frames/s, 10 frames/s, 60 frames/s Normally there
-   // should be a limit of 60 frames/s in the browser's implementations.
-   setFrameRateInFramesPerSecond(60);
+    // Michel Buffa: set the target frame rate. TRY TO CHANGE THIS VALUE AND SEE
+    // THE RESULT. Try 2 frames/s, 10 frames/s, 60 frames/s Normally there
+    // should be a limit of 60 frames/s in the browser's implementations.
+    setFrameRateInFramesPerSecond(60);
  
   // for time based animation. DelayInMS corresponds to the target framerate
   var now, delta, delayInMS, totalTimeSinceLastRedraw = 0;
@@ -10969,56 +10969,56 @@ Here is the [online example at JSBin](https://jsbin.com/bonutur/edit).
     // framerate, then redraw, else add the delta time between the last call to line()
     // by requestAnimFrame to the total time..
     if (totalTimeSinceLastRedraw > delayInMs) {
-       // if the time between the last frame and now is > delay then we
-       // clear the canvas and redraw
+      // if the time between the last frame and now is > delay then we
+      // clear the canvas and redraw
  
-       ctx.save();
+      ctx.save();
  
-       // Trick to make a blur effect: instead of clearing the canvas
-       // we draw a rectangle with a transparent color. Changing the 0.1
-       // for a smaller value will increase the blur...
-       ctx.fillStyle = "rgba(0,0,0,0.1)";
-       ctx.fillRect(0, 0, width, height);
+      // Trick to make a blur effect: instead of clearing the canvas
+      // we draw a rectangle with a transparent color. Changing the 0.1
+      // for a smaller value will increase the blur...
+      ctx.fillStyle = "rgba(0,0,0,0.1)";
+      ctx.fillRect(0, 0, width, height);
  
-       ctx.translate(width / 2, height / 2);
-       ctx.scale(0.9, 0.9);
-       ctx.translate(-width / 2, -height / 2);
+      ctx.translate(width / 2, height / 2);
+      ctx.scale(0.9, 0.9);
+      ctx.translate(-width / 2, -height / 2);
  
-       ctx.beginPath();
-       ctx.lineWidth = 5 + Math.random() * 10;
-       ctx.moveTo(lastX, lastY);
-       lastX = width * Math.random();
-       lastY = height * Math.random();
+      ctx.beginPath();
+      ctx.lineWidth = 5 + Math.random() * 10;
+      ctx.moveTo(lastX, lastY);
+      lastX = width * Math.random();
+      lastY = height * Math.random();
  
-       ctx.bezierCurveTo(width * Math.random(),
-                         height * Math.random(),
-                         width * Math.random(),
-                         height * Math.random(),
-                         lastX, lastY);
+      ctx.bezierCurveTo(width * Math.random(),
+                        height * Math.random(),
+                        width * Math.random(),
+                        height * Math.random(),
+                        lastX, lastY);
  
-       hue = hue + 10 * Math.random();
-       ctx.strokeStyle = "hsl(" + hue + ", 50%, 50%)";
-       ctx.shadowColor = "white";
-       ctx.shadowBlur = 10;
-       ctx.stroke();
+      hue = hue + 10 * Math.random();
+      ctx.strokeStyle = "hsl(" + hue + ", 50%, 50%)";
+      ctx.shadowColor = "white";
+      ctx.shadowBlur = 10;
+      ctx.stroke();
  
-       ctx.restore();
+      ctx.restore();
  
-       // reset the total time since last redraw
-       totalTimeSinceLastRedraw = 0;
-    } else {
-       // sum the total time since last redraw
-       totalTimeSinceLastRedraw += delta;
-    }
- 
-    // Store time
-    then = now;
- 
-    // request new frame
-    requestAnimationFrame(mainloop);
+      // reset the total time since last redraw
+      totalTimeSinceLastRedraw = 0;
+  } else {
+     // sum the total time since last redraw
+     totalTimeSinceLastRedraw += delta;
   }
- </script>
- </body>
+ 
+  // Store time
+  then = now;
+ 
+  // request new frame
+  requestAnimationFrame(mainloop);
+  }
+  </script>
+</body>
 </html>
 ```
 
@@ -11031,7 +11031,7 @@ a high-resolution time with this [modified version on JSBin of the
 example with the rectangle that also uses this
 technique](https://jsbin.com/momeci/edit). 
 
-<b>Source code:</b>
+<h4>Source code:</h4>
 
 <details>
   <summary>Source code!</summary>
@@ -11170,7 +11170,7 @@ smoothness of the animation; the FPS counter on a Mac Book Pro core i7
 shows 60 fps.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 118. monster moving at 60 f/s (214) ------------------------------>
+<!----------------------------- 118. monster moving at 60 f/s (213) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image118.jpeg"
@@ -11187,7 +11187,7 @@ screen is the same, excepting that it's not as smooth as in the previous
 version, which ran at 60 fps.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 119. monster moving at 37 f/s (215) ------------------------------>
+<!----------------------------- 119. monster moving at 37 f/s (214) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image119.jpeg"
@@ -11344,7 +11344,7 @@ will not use time-based animation in the first examples.
 [Online example at JSBin](https://jsbin.com/fikomik/edit?js,output):
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------- 120. animating multiple balls bounce off walls (218) ---------------------------->
+<!-------------- 120. animating multiple balls bounce off walls (217) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image120.jpeg"
@@ -11641,7 +11641,7 @@ radius, etc. Also, try changing the monster's default speed. See the
 results.
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------------------- 121. monster + balls (xxx) ----------------------------------->
+<!--------------------------------- 121. monster + balls (222) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image121.jpeg"
@@ -11655,7 +11655,7 @@ next lesson, we will split the game engine into different files and
 clean the code-base to make it more manageable. But for the moment,
 jsbin.com is a good playground to try-out and test things...
 
-The new mainLoop :
+<h4>The new mainLoop:</h4>
 
 <details>
   <summary>Code extract!</summary>
@@ -11747,7 +11747,7 @@ sketches of more complex algorithms.
 <h4>Circle collision test</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 122. two circles with distance between the centers drawn (xxx) ----------------->
+<!--------------- 122. two circles with distance between the centers drawn (224) ----------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image122.png"
@@ -11821,7 +11821,7 @@ small circle. Try to make collisions between the monster and the circle
 you control.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 123. monster and small circle (xxx) ------------------------------>
+<!----------------------------- 123. monster and small circle (225) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image123.jpeg"
@@ -11922,7 +11922,7 @@ the two sub-circles, etc... this recursive algorithm will not be covered
 in this course, but it's a classic optimization.
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------------- 124. image of an arm with bounding circles (xxx) ------------------------>
+<!---------------------- 124. image of an arm with bounding circles (227) ------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image124.png"
@@ -11933,7 +11933,7 @@ in this course, but it's a classic optimization.
 In 3D, you can use spheres instead of circles:
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------ 125. a 3d object with bounding spheres (xxx) -------------------------->
+<!------------------------ 125. a 3d object with bounding spheres (228) -------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image125.png"
@@ -11945,7 +11945,7 @@ The famous game Gran Turismo 4 on the PlayStation 2 uses bounding
 spheres for detecting collisions between cars:
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------- 126. grand turismo used collisions (xxx) ---------------------------->
+<!-------------------------- 126. grand turismo used collisions (228) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image126.png"
@@ -11958,7 +11958,7 @@ spheres for detecting collisions between cars:
 Let's look at a simple illustration:
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 127. two pictures (xxx) ------------------------------>
+<!----------------------------- 127. two pictures (228) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image127.jpeg"
@@ -11978,7 +11978,7 @@ Let's look at a simple illustration:
 rectangles
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------- 128. only horizontal axis overlap: no collision (xxx) --------------------->
+<!-------------------- 128. only horizontal axis overlap: no collision (229) --------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image128.jpeg"
@@ -11990,7 +11990,7 @@ rectangles
 rectangles
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------- 129. only vertical axis projection overlap: collision (xxx) ------------------>
+<!----------------- 129. only vertical axis projection overlap: collision (230) ------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image129.jpeg"
@@ -12002,7 +12002,7 @@ rectangles
 detected!
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------ 130. projection of axis overlap: collision detected (xxx) ------------------->
+<!------------------ 130. projection of axis overlap: collision detected (230) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image130.jpeg"
@@ -12042,13 +12042,13 @@ the circle you control. Notice that this time the collision detection is
 more accurate and can work with elongated shapes.
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------ 131. player as a square inside monster (xxx) -------------------------->
+<!------------------------ 131. player as a square inside monster (231) -------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img src="./images/image131.jpeg"
   style="width:2.39583in;height:1.90625in"
   alt="Player as a square is inside the monster bounding circle but not inside the bounding rectangle, as we use rect rect collision test: no collision detected." />
 <!------------------------------------------------------------------------------------------------>
-<!----------------- 132. same as previous pic with player inside monster (xxx) ------------------->
+<!----------------- 132. same as previous pic with player inside monster (231) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <img src="./images/image132.jpeg"
   style="width:2.125in;height:1.90625in"
@@ -12147,7 +12147,7 @@ shoot'em'ups ever made - you can play it using the MAME arcade game
 emulator):
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 133. dodonpachi screenshot (xxx) -------------------------------->
+<!------------------------------ 133. dodonpachi screenshot (233) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img src="./images/image133.jpeg"
   style="width:5in;height:3.13408in"
@@ -12161,7 +12161,7 @@ to see the bounding rectangles used for collision test. Here is a
 screenshot:
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------------- 134. genetos screenshot (xxx) --------------------------------->
+<!-------------------------------- 134. genetos screenshot (233) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image134.jpeg"
@@ -12216,7 +12216,7 @@ StackOverflow](https://stackoverflow.com/questions/401847/circle-rectangle-colli
 JSBin](https://jsbin.com/acohiv/845/edit?html,output).
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------- 135/136. circle and rectangle not in collision (xxx) ---------------------->
+<!-------------------- 135/136. circle and rectangle not in collision (234) ---------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image135.jpeg"
@@ -12238,7 +12238,7 @@ JSBin](https://jsbin.com/acohiv/845/edit?html,output).
     effect](https://jsbin.com/nopefe/edit)
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------------- 137. ball ball collision example (xxx) ----------------------------->
+<!--------------------------- 137. ball ball collision example (235) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image137.jpeg"
@@ -12264,7 +12264,7 @@ then finally recombine the velocities for each ball to achieve the
 result (step 4):
 
 <!------------------------------------------------------------------------------------------------>
-<!-------- 138. diagram with two balls, velocities, tengeantial and normal planes (xxx) ---------->
+<!-------- 138. diagram with two balls, velocities, tengeantial and normal planes (236) ---------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image138.png"
@@ -12311,7 +12311,7 @@ the ball color to red.
 [Try the example at JsBin!](https://jsbin.com/bohebe/edit?js,output)
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------- 139. collision between balls and monster (xxx) ------------------------->
+<!----------------------- 139. collision between balls and monster (237) ------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image139.jpeg"
@@ -12369,7 +12369,7 @@ Here is an example of a <i>spritesheet</i>, where each line animates a woman
 walking in a particular direction:
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------- 140. sprite sheet of woman walking (xxx) ---------------------------->
+<!-------------------------- 140. sprite sheet of woman walking (238) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image140.png"
@@ -12395,7 +12395,7 @@ accentuated the movement by changing the scale of the sprite as the
 woman moves up (further from us) or down (closer to us).
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------------- 141. animated woman using sprite (xxx) ----------------------------->
+<!--------------------------- 141. animated woman using sprite (239) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image141.jpeg"
@@ -12428,7 +12428,7 @@ sprite sheet.
 
 <!-- page 256 --->
 <!------------------------------------------------------------------------------------------------>
-<!--------------------------- 140. woman walking using sprite (256) ------------------------------>
+<!--------------------------- 140. woman walking using sprite (240) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image140.png"
@@ -12445,7 +12445,7 @@ Some sprite sheets have a single sprite set, spreading over multiple
 lines; like this walking robot:
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------------- 142. walking robot using sprite (xxx) ------------------------------>
+<!--------------------------- 142. walking robot using sprite (241) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image142.png"
@@ -12463,7 +12463,7 @@ multiple sprite sheets: one for each posture.
 As another example, here is the "jumping robot" sprite sheet:
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 147. example sprite framework (264) ------------------------------>
+<!----------------------------- 147. example sprite framework (241) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image143.png" 
@@ -12481,7 +12481,7 @@ of sprites (this one comes from [the famous Gridrunner IOS game by Jeff
 Minter](https://www.youtube.com/watch?v=1tLNcj1ygFA)):
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 144. gridrunner sprite sheet (2xx) ------------------------------>
+<!------------------------------ 144. gridrunner sprite sheet (242) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image144.png"
@@ -12524,7 +12524,7 @@ next, see how the animation is created? 
 [Try it at JSBin](https://jsbin.com/yukacep/edit?html,js,output):
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------------- 145. move slider to select sprite (2xx) ---------------------------->
+<!--------------------------- 145. move slider to select sprite (243) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image145.jpeg"
@@ -12732,7 +12732,7 @@ sprites:
      JSBin.](https://jsbin.com/jeledoq/edit?html,js,output)
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------------- 146. robot sprite sheet (2xx) --------------------------------->
+<!-------------------------------- 146. robot sprite sheet (247) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image146.jpeg"
@@ -12800,7 +12800,7 @@ editing <i>>line 20</i>: <b>robot.setNbImagesPerSecond(20); </b>changing the
 value of the parameter and observing the result.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 147. example sprite framework (264) ------------------------------>
+<!----------------------------- 147. example sprite framework (248) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image147.jpeg"
@@ -12939,7 +12939,7 @@ robot in the previous example.
 [Try this JsBin](http://jsbin.com/fekacu/edit?js,output)
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 148. example woman animated (2xx) ------------------------------>
+<!----------------------------- 148. example woman animated (251) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image148.jpeg"
