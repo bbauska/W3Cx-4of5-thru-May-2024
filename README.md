@@ -8,7 +8,7 @@
 <p align="center" width="100%">
 <img src="./images/w3cx-logo.jpg?raw=true"
    width="35%"
-   alt="W3C logo" />
+   alt="W3C logo." />
 </p>
 
 <h3 align="center">W3Cx-4of5-HTML5.2x - Apps and Games</h3>
@@ -18,7 +18,7 @@
 <p align="center" width="100%">
 <img src="./images/image001.png?raw=true"
    width="65%"
-   alt="W3Cx HTML 5.2x logo" />
+   alt="W3Cx HTML 5.2x logo." />
 </p>
 
 ## [Table of contents](#table-of-contents)
@@ -1224,7 +1224,7 @@ is a snapshot of what information is given by CanIUse when searching for
 "CSS3 colors".
 
 <!------------------------------------------------------------------------------------------------>
-<!----------- 09. Example of a CanIUse browser support table (using CSS3 colors) (18) ------------>
+<!----------- 09. example of a caniuse browser support table (using css3 colors) (18) ------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image009.gif?raw=true"
@@ -1240,7 +1240,7 @@ is a snapshot of what information is given by CanIUse when searching for
 <p align="center" width="100%">
 <img src="./images/image010.png?raw=true"
    width="30%"
-   alt="MDN Web Docs logo" />
+   alt="MDN Web Docs logo." />
 </p>
 
 To help developers make these decisions consciously rather than
@@ -1290,7 +1290,7 @@ been marked as "good first
 issue"](https://github.com/search?q=org%3Aw3c+label%3A%22good+first+issue%22+state%3Aopen&type=Issues) and
 see if you find anything where you think you would be ready to help.
 
-Shape the future
+<h4>Shape the future</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!---------------------- 12. w3c web incubator community group logo (19) ------------------------->
@@ -1309,7 +1309,7 @@ consideration.
 
 Happy Web building!
 
-<h4>What is W3C?
+<h4>What is W3C?</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 13. w3c www consortium logo (19) -------------------------------->
@@ -1328,7 +1328,7 @@ W3C's primary activity is to develop protocols and guidelines that
 ensure long-term growth for the Web. The widely adopted Web standards
 define key parts of what actually makes the World Wide Web work.
 
-A few history bits
+<h4>A few history bits</h4>
 
 In March 1989, while at CERN, <a href="https://www.w3.org/People/Berners-Lee/">Sir Tim
 Berners-Lee</a> wrote “<a href="https://www.w3.org/History/1989/proposal.html">Information
@@ -1342,7 +1342,7 @@ and HTML.
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image014.jpeg?raw=true"
-   style="width:1in;height:1in"
+   style="width:2in;height:2in"
    alt="Tim Berners-Lee at his desk in CERN, 1994." />
 </p>
 
@@ -6995,7 +6995,7 @@ with the Chrome WebAudio Inspector extension):
   width="65%"
   alt="Screenshot with buttons that play sound samples many times with different pitch, volume, interval of times." />
 </p>
-<!-- <img src="./images/image078.jpeg" style="width:4in;height:3.27308in" -->
+<!-- style="width:4in;height:3.27308in" -->
 
 Music applications such as Digital Audio Workstations (GarageBand-like
 apps) will need to play/record/loop music tracks in memory.
@@ -8152,7 +8152,7 @@ JSBin](https://jsbin.com/noqibu/edit)):
 <p align="center" width="100%">
 <img src="./images/image096.jpeg"
   style="width:4in;height:1.87097in"
-  alt="screenshot of the example that displays 60 frames/s" />
+  alt="Screenshot of the example that displays 60 frames/s." />
 </p>
 
 <h4>Source code extract:</h4>
@@ -8268,7 +8268,7 @@ this JSBin example](https://jsbin.com/notupe/edit).
 <p align="center" width="100%">
 <img src="./images/image097.jpeg"
   style="width:4in;height:2.26742in"
-  alt="Screenshot of example with 4145 FPS displayed" />
+  alt="Screenshot of example with 4145 FPS displayed." />
 </p>
 
 <h4>Source code extract of this example:</h4>
@@ -8320,7 +8320,7 @@ JSBin](https://jsbin.com/ponaki/edit).
 <p align="center" width="100%">
 <img src="./images/image098.jpeg"
   style="width:2.82292in;height:2.80208in"
-  alt="Small monster drawn in a canvas" />
+  alt="Small monster drawn in a canvas." />
 </p>
 
 <h4>HTML code (declaration of the canvas):</h4>
@@ -8495,7 +8495,7 @@ JSBin](https://jsbin.com/xuruja/edit). 
 <p align="center" width="100%">
 <img src="./images/image099.jpeg"
   style="width:2.82292in;height:2.80208in"
-  alt="Screenshot of a trembling monster in a 60 f/s animation" />
+  alt="Screenshot of a trembling monster in a 60 f/s animation." />
 </p>
 
 <h4>HTML code:</h4>
@@ -9408,7 +9408,7 @@ small game you are going to develop during this week. Bye! Bye!
 Some games, mainly arcade/action games, are designed to be used with a gamepad:
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------- 107. gamepad (174) --------------------------->
+<!------------------------------------- 107. gamepad (174) --------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image107.png"
@@ -10117,7 +10117,7 @@ and added one new call in the game loop for updating the gamepad status:
 [Check the result on JSBin:](https://jsbin.com/yidohe/edit)
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------------------- 114. move monster with gamepad (193) ------------------------------>
+<!---------------------------- 114. move monster with gamepad (192) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image114.jpeg"
@@ -10321,7 +10321,7 @@ second = 16.66 ms.
 [Online example at JSBin](https://jsbin.com/dibuze/edit)
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------ 115. small rectangle in canvas, moving left to right (197) ------------------>
+<!------------------ 115. small rectangle in canvas, moving left to right (196) ------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image115.jpeg"
@@ -10469,7 +10469,7 @@ to move the shape to achieve a given speed (in pixels/s).
 [Online example at JSBin](https://jsbin.com/riferi/edit):
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 116. bouncing square with time bases animation (197) --------------------->
+<!--------------------- 116. bouncing square with time bases animation (199) --------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image116.jpeg"
@@ -11641,7 +11641,7 @@ radius, etc. Also, try changing the monster's default speed. See the
 results.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 121.  (xxx) ------------------------------>
+<!--------------------------------- 121. monster + balls (xxx) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image121.jpeg"
@@ -11747,7 +11747,7 @@ sketches of more complex algorithms.
 <h4>Circle collision test</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 122.  (xxx) ------------------------------>
+<!--------------- 122. two circles with distance between the centers drawn (xxx) ----------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image122.png"
@@ -11785,9 +11785,7 @@ Let's implement this as a JavaScript function step-by-step:
 2.  var dx = x1 - x2;
 3.  var dy = y1 - y2;
 4.  var distance = Math.sqrt(dx * dx + dy * dy);
-<!-- -->
 457. 
-<!-- -->
 5.  return (distance < r1 + r2);
 6.  }
 ```
@@ -11823,7 +11821,7 @@ small circle. Try to make collisions between the monster and the circle
 you control.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 123.  (xxx) ------------------------------>
+<!----------------------------- 123. monster and small circle (xxx) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image123.jpeg"
@@ -11923,13 +11921,19 @@ left that contains the whole arm, then if there is a collision, test for
 the two sub-circles, etc... this recursive algorithm will not be covered
 in this course, but it's a classic optimization.
 
-<img src="./images/image124.png" style="width:4in;height:2.20258in"
-alt="Image of an arm with a hierarchy of bounding circles: one for the whole arm, and two smaller for the forearm and the other part" />
+<!------------------------------------------------------------------------------------------------>
+<!---------------------- 124. image of an arm with bounding circles (xxx) ------------------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image124.png"
+  style="width:4in;height:2.20258in"
+  alt="Image of an arm with a hierarchy of bounding circles: one for the whole arm, and two smaller for the forearm and the other part." />
+</p>
 
 In 3D, you can use spheres instead of circles:
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 125.  (xxx) ------------------------------>
+<!------------------------ 125. a 3d object with bounding spheres (xxx) -------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image125.png"
@@ -11941,7 +11945,7 @@ The famous game Gran Turismo 4 on the PlayStation 2 uses bounding
 spheres for detecting collisions between cars:
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 126.  (xxx) ------------------------------>
+<!-------------------------- 126. grand turismo used collisions (xxx) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image126.png"
@@ -11954,12 +11958,12 @@ spheres for detecting collisions between cars:
 Let's look at a simple illustration:
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 127.  (xxx) ------------------------------>
+<!----------------------------- 127. two pictures (xxx) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image127.jpeg"
   style="width:4.47917in;height:2.09375in"
-  alt="two pictures: one with non intersected rectangles: the projection of horizontal sides of rectangles to the X axis do not intersect (then rectangles do not intersect), the other with both projections intersect (rectangles intersect)." />
+  alt="Two pictures: one with non intersected rectangles: the projection of horizontal sides of rectangles to the X axis do not intersect (then rectangles do not intersect), the other with both projections intersect (rectangles intersect)." />
 </p>
 
 <h4>From this:</h4>
@@ -11974,7 +11978,7 @@ Let's look at a simple illustration:
 rectangles
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 128.  (xxx) ------------------------------>
+<!-------------------- 128. only horizontal axis overlap: no collision (xxx) --------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image128.jpeg"
@@ -11986,7 +11990,7 @@ rectangles
 rectangles
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 129.  (xxx) ------------------------------>
+<!----------------- 129. only vertical axis projection overlap: collision (xxx) ------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image129.jpeg"
@@ -11998,7 +12002,7 @@ rectangles
 detected!
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 130.  (xxx) ------------------------------>
+<!------------------ 130. projection of axis overlap: collision detected (xxx) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image130.jpeg"
@@ -12008,6 +12012,9 @@ detected!
 
 Here is a JavaScript implementation of a rectangle - rectangle (aligned)
 collision test:
+
+<details>
+  <summary>JavaScript code extract!</summary>
 
 ```
 // Collisions between aligned rectangles
@@ -12024,6 +12031,8 @@ function rectsOverlap(x1, y1, w1, h1, x2, y2, w2, h2) {
 }
 ```
 
+</details>
+
 <h4>Let's test this method</h4>
 
 [Try this example at JSBin](https://jsbin.com/fubima/edit): move the
@@ -12033,20 +12042,20 @@ the circle you control. Notice that this time the collision detection is
 more accurate and can work with elongated shapes.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 131.  (xxx) ------------------------------>
+<!------------------------ 131. player as a square inside monster (xxx) -------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img src="./images/image131.jpeg"
   style="width:2.39583in;height:1.90625in"
   alt="Player as a square is inside the monster bounding circle but not inside the bounding rectangle, as we use rect rect collision test: no collision detected." />
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 132.  (xxx) ------------------------------>
+<!----------------- 132. same as previous pic with player inside monster (xxx) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <img src="./images/image132.jpeg"
   style="width:2.125in;height:1.90625in"
   alt="Same as previous picture but this time the player square is inside the monster bounding rectangle: collision detected." />
 </p>
 
-Here is what we modified (in bold) in the code:
+Here is what we modified:
 
 <details>
   <summary>JavaScript code extract!</summary>
@@ -12078,7 +12087,6 @@ Here is what we modified (in bold) in the code:
 24. player.x = inputStates.mousePos.x;
 25. player.y = inputStates.mousePos.y;
 26. 
-<!-- -->
 535. 1.  // draws a rectangle centered on the mouse position
      2.  // we draw it as a square.
      3.  // We remove size/2 to the x and y position at drawing time in
@@ -12086,12 +12094,9 @@ Here is what we modified (in bold) in the code:
      5.  // the 0, 0 of a rectangle is at its top left corner)
      6.  var size = player.boundingCircleRadius;
      7.  ctx.fillRect(player.x - size / 2, player.y - size / 2, size, size);
-<!-- -->
 27. }
 28. }
-<!-- -->
 536. 
-<!-- -->
 29. function checkCollisions() {
 30. // Bounding rect position and size for the player. We need to
    translate
@@ -12102,9 +12107,7 @@ Here is what we modified (in bold) in the code:
 35. // Same with the monster bounding rect
 36. var monsterXBoundingRect = monster.x - monster.width / 2;
 37. var monsterYBoundingRect = monster.y - monster.height / 2;
-<!-- -->
 537. 
-<!-- -->
 38. if (rectsOverlap(playerXBoundingRect, playerYBoundingRect,
     playerSize, playerSize,
     monsterXBoundingRect, monsterYBoundingRect,
@@ -12117,24 +12120,16 @@ Here is what we modified (in bold) in the code:
     ctx.strokeStyle = ctx.fillStyle = 'black';
 40. }
 41. }
-<!-- -->
 538. 
-<!-- -->
 42. // Collisions between aligned rectangles
 43. function rectsOverlap(x1, y1, w1, h1, x2, y2, w2, h2) {
-<!-- -->
 539. 
-<!-- -->
 44. if ((x1 > (x2 + w2)) || ((x1 + w1) < x2))
     return false; // No horizontal axis projection overlap
-<!-- -->
 540. 
-<!-- -->
 45. if ((y1 > (y2 + h2)) || ((y1 + h1) < y2))
     return false; // No vertical axis projection overlap
-<!-- -->
 541. 
-<!-- -->
 46. return true; // If previous tests failed, then both axis
    projections
     // overlap and the rectangles intersect
@@ -12151,9 +12146,13 @@ terms of computation. "Rectangle-rectangle" collisions are used in many
 shoot'em'ups ever made - you can play it using the MAME arcade game
 emulator):
 
-
-<img src="./images/image133.jpeg" style="width:5in;height:3.13408in"
-alt="screenshot of dodonpachi" />
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 133. dodonpachi screenshot (xxx) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<img src="./images/image133.jpeg"
+  style="width:5in;height:3.13408in"
+  alt="Screenshot of dodonpachi." />
+</p>
 
 You could also try the free Genetos shoot'em up game (Windows only) that
 retraces the history of the genre over its different levels ([download
@@ -12161,8 +12160,14 @@ here](https://tatsuya-koyama.com/works/games/genetos/)). Press the G key
 to see the bounding rectangles used for collision test. Here is a
 screenshot:
 
-<img src="./images/image134.jpeg" style="width:5in;height:3.77137in"
-alt="genetos screenshot" />
+<!------------------------------------------------------------------------------------------------>
+<!-------------------------------- 134. genetos screenshot (xxx) --------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image134.jpeg"
+  style="width:5in;height:3.77137in"
+  alt="Genetos screenshot." />
+</p>
 
 These games run at 60 fps and can have hundreds of bullets moving at the
 same time. Collisions have to be tested: did the player's bullets hit an
@@ -12210,11 +12215,16 @@ StackOverflow](https://stackoverflow.com/questions/401847/circle-rectangle-colli
 [Try this function in this example on
 JSBin](https://jsbin.com/acohiv/845/edit?html,output).
 
-<img src="./images/image135.jpeg" style="width:2.0625in;height:2.20833in"
-alt="Circle and rectangle not in collision" />
+<!------------------------------------------------------------------------------------------------>
+<!-------------------- 135/136. circle and rectangle not in collision (xxx) ---------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image135.jpeg"
+  style="width:2.0625in;height:2.20833in"
+  alt="Circle and rectangle not in collision." />
 <img src="./images/image136.jpeg"
-style="width:2.10417in;height:2.19792in"
-alt="circle collides a rectangle" />
+  style="width:2.10417in;height:2.19792in"
+  alt="Circle collides a rectangle." />
 
 <h4>[ADVANCED] Collision between balls (pool like)</h4>
 
@@ -12227,8 +12237,14 @@ alt="circle collides a rectangle" />
     that does the same with a blurring
     effect](https://jsbin.com/nopefe/edit)
 
-<img src="./images/image137.jpeg" style="width:5in;height:2.01389in"
-alt="Ball ball collision example." />
+<!------------------------------------------------------------------------------------------------>
+<!--------------------------- 137. ball ball collision example (xxx) ----------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image137.jpeg"
+  style="width:5in;height:2.01389in"
+  alt="Ball ball collision example." />
+</p>
 
 The principle behind collision resolution for pool balls is as follows.
 You have a situation where two balls are colliding, and you know their
@@ -12247,8 +12263,14 @@ components between the two balls (as we move from step 2 to step 3),
 then finally recombine the velocities for each ball to achieve the
 result (step 4):
 
-<img src="./images/image138.png" style="width:3in;height:2.48276in"
-alt="Diagram with two balls, velocities, tengeantial and normal planes." />
+<!------------------------------------------------------------------------------------------------>
+<!-------- 138. diagram with two balls, velocities, tengeantial and normal planes (xxx) ---------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image138.png"
+  style="width:3in;height:2.48276in"
+  alt="Diagram with two balls, velocities, tengeantial and normal planes." />
+</p>
 
 The above picture has been borrowed from [this interesting article about
 how to implement in C# pool like collision
@@ -12619,10 +12641,8 @@ sprites:
 52.      // Draw the first sprite in the big canvas, corresponding to
    > sprite 0
 53.      // wireframe rectangle in the sprite sheet
-54.    
-   >  drawWireFrameRect(ctx2, 0 , 0, SPRITE_WIDTH, SPRITE_HEIGHT, 'red', 3);
-55.    
-   >      // small canvas, draw sub image corresponding to sprite 0
+54.    >  drawWireFrameRect(ctx2, 0 , 0, SPRITE_WIDTH, SPRITE_HEIGHT, 'red', 3);
+55.    >      // small canvas, draw sub image corresponding to sprite 0
 56.      ctx1.drawImage(spritesheet, 0, 0, SPRITE_WIDTH, SPRITE_HEIGHT,
 57.                                  0, 0, SPRITE_WIDTH, SPRITE_HEIGHT);
 58.    };
@@ -12637,8 +12657,7 @@ sprites:
     > the sprite
 66.      // number index as selected by the slider
 67.      var x = index * SPRITE_WIDTH % spritesheet.width;
-68.    
-    >  var y = Math.floor(index / NB_FRAMES_PER_POSTURE) * SPRITE_HEIGHT;
+68.    >  var y = Math.floor(index / NB_FRAMES_PER_POSTURE) * SPRITE_HEIGHT;
 69. 
 70.      // Update fields
 71.      xField.value = x;
@@ -12646,11 +12665,9 @@ sprites:
 73. 
 74.      // Clear big canvas, draw wireframe rect at x, y, redraw
     > stylesheet
-75.    
-    >  ctx2.clearRect(0, 0, canvasSpriteSheet.width, canvasSpriteSheet.height);
+75.    >  ctx2.clearRect(0, 0, canvasSpriteSheet.width, canvasSpriteSheet.height);
 76.      ctx2.drawImage(spritesheet, 0, 0);
-77.    
-    >  drawWireFrameRect(ctx2, x , y, SPRITE_WIDTH, SPRITE_HEIGHT, 'red', 3);
+77.    >  drawWireFrameRect(ctx2, x , y, SPRITE_WIDTH, SPRITE_HEIGHT, 'red', 3);
 78.  
 79.      // Draw the current sprite in the small canvas
 80.      ctx1.clearRect(0, 0, SPRITE_WIDTH, SPRITE_HEIGHT);
@@ -14259,6 +14276,9 @@ method), or an upload (using POST).
 
 <b>Syntax for download:</b>
 
+<details>
+  <summary>Download syntax for declaring progress!</summary>
+
 ```
 1.  var xhr = new XMLHttpRequest();
 2.  xhr.open('GET', url, true);
@@ -14271,10 +14291,15 @@ method), or an upload (using POST).
 7.  xhr.send();
 ```
 
+</details>
+
 Note that an alternative syntax such as xhr.addEventListener('progress',
 callback, false) also works.
 
 <b>Syntax for upload:</b>
+
+<details>
+  <summary>Upload syntax for declaring progress!</summary>
 
 ```
 1.  var xhr = new XMLHttpRequest();
@@ -14286,6 +14311,8 @@ callback, false) also works.
 7.   
 8.  xhr.send();
 ```
+
+</details>
 
 Notice that the only difference is the "upload" added after the name of
 the request object: with GET we use xhr.onprogress and with POST we
@@ -14344,15 +14371,16 @@ the browser and the total size of the file (<i>lines 10-11</i>), it will
 reflect the actual proportions of the file downloaded/still to come.
 
 For example, with a file that is 10,000 bytes long, if the current
-number of bytes downloaded is 1000, then <progress value=1000
-max=10000> will look like this: 
+number of bytes downloaded is 1000, then &lt;progress value=1000
+max=10000&gt; will look like this:
+
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 166 (##) -------------------------------->
+<!-------------------------- 166. progress value 1000, max 10000 (##) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image166.jpeg?raw=true"
   width="35%"
-  alt="." />
+  alt="Progress bar at 10 percent, 1000/10000." />
 </p>
 <!-------
 style="width:2.66667in;height:0.57292in" alt="progress bar 10%" />
@@ -14362,12 +14390,12 @@ And a current download of 2000 bytes will define <progress value=2000
 max=10000> and will look like this:
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 167.  (##) -------------------------------->
+<!---------------------------- 167. progress bar at 20 percent (###) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image167.jpeg?raw=true"
   width="35%"
-  alt="Progress bar 20%." />
+  alt="Progress bar 20 percent, 2000/10000." />
 </p>
 <!---------
 style="width:2.66667in;height:0.5in"
@@ -14376,12 +14404,12 @@ style="width:2.66667in;height:0.5in"
 <h4>Complete example: monitoring the download of a song file</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 168.  (##) -------------------------------->
+<!----------------------- 168. monitoring download of a song file (###) -------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image168.jpeg?raw=true"
   width="35%"
-  alt="Monitoring download." />
+  alt="Monitoring download of a song file." />
 </p>
 <!---------
 style="width:5in;height:1.11271in"
@@ -15363,7 +15391,7 @@ style="width:5in;height:2.57746in"
 12.     event.target.classList.add('dragged');
 13. 
 14.     console.log('dragstart event, target: ' + event.target);
-15.     // Copy to the drag'n'drop clipboard the value of the data* attribute of the target,
+15.     // Copy to the drag'n'drop clipboard the value of the data attribute of the target,
 16.     // with a type "Fruits".
 17.     event.dataTransfer.setData("Fruit", event.target.dataset.value);
 18.   }
@@ -15458,7 +15486,7 @@ into a single HTML page):
 32.       event.target.classList.add('dragged');
 33. 
 34.       console.log('dragstart event, target: ' + event.target.innerHTML);
-35.       // Copy in the drag'n'drop clipboard the value of the data* attribute of the target,
+35.       // Copy in the drag'n'drop clipboard the value of the data attribute of the target,
 36.       // with a type "Fruits".
 37.          event.dataTransfer.setData("Fruit", event.target.dataset.value);
 38.     }
@@ -16250,7 +16278,7 @@ displays the thumbnails):
 4.     for (var i = 0, f; f = files[i]; i++) {
 5.  
 6.       // Only process image files.
-7.       if (!f.type.match('image.*')) {
+7.       if (!f.type.match('image.')) {
 8.          continue;
 9.       }
 10. 
@@ -16398,7 +16426,7 @@ zone) or play with it at CodePen:
 82.           for (var i = 0, f; f = files[i]; i++) {
 83. 
 84.           // Only process image files.
-85.           if (!f.type.match('image.*')) {
+85.           if (!f.type.match('image.')) {
 86.              continue;
 87.           }
 88. 
@@ -16615,7 +16643,7 @@ CodePen](https://codepen.io/w3devcampus/pen/BoavPb):
 86.          for (var i = 0, f; f = files[i]; i++) {
 87. 
 88.             // Only process image files.
-89.             if (!f.type.match('image.*')) {
+89.             if (!f.type.match('image.')) {
 90.                continue;
 91.             }
 92. 
@@ -19456,8 +19484,6 @@ your comments/observations/questions and share your creations.
     -   eventually, a screenshot for the example (URL, or if you are a
         bit of a geek, image content).
 
-<!-- -->
-
 -   Produce an HTML page which contains your application. When loaded,
     it must populate the indexedDB database with at least 10 different
     examples, and display them in a table or in a list. The GUI must
@@ -19507,9 +19533,7 @@ To sum up:
 -   You might be interested by [the Cache
     API](https://developers.google.com/web/fundamentals/instant-and-offline/web-storage/cache-api) to
     make your application data available offline (in other terms: making
-    your Web page or your Web app. available offline). 
-
-<!-- -->
+    your Web page or your Web app. available offline).
 
 -   Read also [this article that covers all different options for
     storing data in the browser and gives another look at what has been
