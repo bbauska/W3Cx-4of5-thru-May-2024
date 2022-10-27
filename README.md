@@ -59,12 +59,11 @@
 >### 3.6. [<b>IndexedDB</b>](#ch3-6-1)
 >### 3.7. [<b>Conclusion on client-side persistence</b>](#ch3-7-1)
 
-## [<b>Module 4: Web components and other HTML5 APIs</b>](#ch4)
->### 4.1.[<b>Video introduction</b>](#ch4-1-1)
->### 4.2.[<b>Web Components</b>](#ch4-2-1)
->### 4.3.[<b>Web Workers</b>](#ch4-3-1)
->### 4.4.[<b>The Orientation and Device Motion APIs</b>](#ch4-4-1)
->### 4.5.[<b>Where to from here?</b>](#ch4-5-1)
+## [<b>Module 4: Web components and other HTML5 APIs</b>](#ch4-1-1)
+>### 4.2.[<b>Web Components</b>](#ch4-1-1)
+>### 4.3.[<b>Web Workers</b>](#ch4-2-1)
+>### 4.4.[<b>The Orientation and Device Motion APIs</b>](#ch4-3-1)
+>### 4.5.[<b>Where to from here?</b>](#ch4-4-1)
 
 <b>W3Cx-4of5-HTML5.2x – Apps and Games</b>
 <a href="https://github.com/bbauska/W3Cx-4of5-Apps-and-Games.git">HTML5.2x Apps and Games - git</a>
@@ -13644,7 +13643,7 @@ moved into the initFPS function we created and added into the fps.js file.
 At this stage, the structure looks like this:
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------------------------- 156. game structure (281) ----------------------------------->
+<!---------------------------------- 156. game structure (266) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image156.jpeg"
@@ -13722,7 +13721,7 @@ during the course, could be put into this file as well.
 After all that, we reach this tidy structure:
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------- 157. final game structure in files (283) ---------------------------->
+<!-------------------------- 157. final game structure in files (268) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image157.jpeg"
@@ -13812,7 +13811,7 @@ Some of them are based on the framework presented in the course.
     the course.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 158. wanted game main screen (2##) ------------------------------->
+<!----------------------------- 158. wanted game main screen (269) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image158.jpeg"
@@ -13821,7 +13820,7 @@ Some of them are based on the framework presented in the course.
 </p>
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------- 159. monster with black bombs and gold coins (2##) ------------------------>
+<!-------------------- 159. monster with black bombs and gold coins (269) ------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image159.jpeg"
@@ -13838,7 +13837,7 @@ Some of them are based on the framework presented in the course.
     This one started with the game framework presented in the course.
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------------------- 160. duck hunt game screenshot (2##) ------------------------------>
+<!---------------------------- 160. duck hunt game screenshot (270) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image160.jpeg"
@@ -13851,7 +13850,7 @@ Some of them are based on the framework presented in the course.
     This one started with the game framework presented in the course:
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------------- 161. shoot em up game screenshot (2##) ----------------------------->
+<!--------------------------- 161. shoot em up game screenshot (270) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image161.jpeg"
@@ -13865,7 +13864,7 @@ Some of them are based on the framework presented in the course.
     Maxime Demetrio)
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 162. gameboy tetris in html5 (2##) ------------------------------->
+<!----------------------------- 162. gameboy tetris in html5 (271) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image162.jpeg"
@@ -13879,7 +13878,7 @@ Some of them are based on the framework presented in the course.
     here.](https://courses.edx.org/assets/courseware/v1/19ecac62725b07966804bb28031f0fba/asset-v1:W3Cx+HTML5.2x+2T2020a+type@asset+block/snna.zip)
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------------- 163. kill the ninja game (2##) -------------------------------->
+<!-------------------------------- 163. kill the ninja game (271) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image163.jpeg"
@@ -14375,7 +14374,7 @@ number of bytes downloaded is 1000, then &lt;progress value=1000
 max=10000&gt; will look like this:
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------- 166. progress value 1000, max 10000 (##) ---------------------------->
+<!-------------------------- 166. progress value 1000, max 10000 (280) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image166.jpeg?raw=true"
@@ -14390,7 +14389,7 @@ And a current download of 2000 bytes will define <progress value=2000
 max=10000> and will look like this:
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------------------- 167. progress bar at 20 percent (###) ----------------------------->
+<!---------------------------- 167. progress bar at 20 percent (280) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image167.jpeg?raw=true"
@@ -14404,7 +14403,7 @@ style="width:2.66667in;height:0.5in"
 <h4>Complete example: monitoring the download of a song file</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------- 168. monitoring download of a song file (###) -------------------------->
+<!----------------------- 168. monitoring download of a song file (280) -------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image168.jpeg?raw=true"
@@ -14503,7 +14502,7 @@ lecture.
 [Try the example on JSBin](https://jsbin.com/pidusap/edit):
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 169. file update example 1 (##) -------------------------------->
+<!------------------------------ 169. file update example 1 (282) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image169.jpeg?raw=true"
@@ -14588,7 +14587,7 @@ that used for monitoring file downloads:
     bytes we need to upload (i.e., the file size).
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------- 170. file upload with progress bar (287) ---------------------------->
+<!-------------------------- 170. file upload with progress bar (283) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image170.jpeg?raw=true"
@@ -19540,7 +19539,7 @@ To sum up:
     presented in this chapter of the
     course](https://web.dev/storage-for-the-web/).
 
-<h3 id="ch4">Module 4. Web Components and other HTML5 APIs</h3>
+<h3 id="ch4-1-1">Module 4. Web Components and other HTML5 APIs</h3>
 
 Hi! This is the final week of the course! And this time we will look at
 what the future holds by presenting you the Web components. This is a
@@ -20378,7 +20377,7 @@ The JavaScript part:
 [Online example at JSBin](https://jsbin.com/quguwa/edit?html,js,output):
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------------- 231. shadow dom 3 (###) ------------------------------------>
+<!----------------------------------- 231. shadow dom 3 (402) ------------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image231.jpeg"
@@ -20435,7 +20434,7 @@ We added a new H1 at <i>line 11</i>. 
 And here is the result:
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------------- 232. shadow dom 4 (###) ------------------------------------>
+<!----------------------------------- 232. shadow dom 4 (403) ------------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image232.jpeg"
@@ -20455,7 +20454,7 @@ the first H1. Try to add this CSS rule to this example :
 And you should see something like that:
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------------------------- 233. global css rule (###) ---------------------------------->
+<!---------------------------------- 233. global css rule (403) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image233.jpeg"
@@ -20511,7 +20510,7 @@ the &lt;slot&gt;...&lt;/slot&gt; element, as shown below:
 <h4>See [the complete online example at JSBin](https://jsbin.com/jepucoz/edit?html,js,output):</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------ 234. content injection in html using slot elements (###) -------------------->
+<!------------------ 234. content injection in html using slot elements (404) -------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image234.jpeg"
@@ -20674,7 +20673,7 @@ HTML templates. Check [the full example online at
 JSBin](https://jsbin.com/cacuvuf/edit?html,js,console,output): 
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------------- 235. custom element full example (###) ----------------------------->
+<!--------------------------- 235. custom element full example (407) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image235.jpeg"
@@ -20957,8 +20956,8 @@ your comments/observations/questions and share your creations.
     rotating knobs, switches, LEDs, etc.
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------------- 236. web audio controls (###) --------------------------------->
-<!----------------------- 237. guitar amp sim with web components (###) -------------------------->
+<!-------------------------------- 236. web audio controls (412) --------------------------------->
+<!----------------------- 237. guitar amp sim with web components (412) -------------------------->
 <!------------------------------------------------------------------------------------------------>
 
 -   <p align="center" width="100%">
@@ -20996,7 +20995,7 @@ something like this during your Web browsing experiences:
 <h4>With Internet Explorer:</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------- 2. script not responding (###) --------------------------------->
+<!------------------------------- 2. script not responding (413) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <!--
 <p align="center" width="100%">
@@ -21008,7 +21007,7 @@ something like this during your Web browsing experiences:
 <h4>Or maybe:</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 238. script not responding 2 (###) ------------------------------->
+<!----------------------------- 238. script not responding 2 (413) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <!--
 <p align="center" width="100%">
@@ -21038,7 +21037,7 @@ browser/tab, because this routine will consume 100% of CPU time,
 completely blocking the user interface: 
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------- 239.  example that eats all the cpu (###) --------------------------->
+<!-------------------------- 239.  example that eats all the cpu (414) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image239.jpeg?raw=true"
@@ -21339,7 +21338,7 @@ CodePen. Note that we cannot run this example on JsBin as Workers need
 to be defined in a separate JavaScript file.
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------------------- 240. prime number computation (###) ------------------------------->
+<!---------------------------- 240. prime number computation (419) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image240.jpeg?raw=true"
@@ -21432,7 +21431,7 @@ supports Web Workers, and by displaying some additional messages.
 > files</b>. Here is what happens if you do not follow this constraint:
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------- 241. using file url does not work for security reasons (###) ------------------>
+<!---------------- 241. using file url does not work for security reasons (420) ------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image241.jpeg?raw=true"
@@ -21690,7 +21689,7 @@ avoid such a pain, the Web Workers API does several things:
 <h4>This is well illustrated below:</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------------- 239. web workers scope (430) ---------------------------------->
+<!-------------------------------- 239. web workers scope (424) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image239.png?raw=true"
@@ -21829,7 +21828,7 @@ your comments/observations/questions and share your creations.
     in <i>parallel</i>, in the <i>background</i>.
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------- 243. ie10 web workers fountain demo (434) --------------------------->
+<!-------------------------- 243. ie10 web workers fountain demo (428) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image243.png?raw=true"
@@ -21912,7 +21911,7 @@ order:
 
 <h4>Rotate the device frame around its z axis by alpha degrees, with alpha in \[0, 360\]</h4>
 <!------------------------------------------------------------------------------------------------>
-<!----------------- 244 / 245. start orientation & rotation about z axis (###) ------------------->
+<!----------------- 244 / 245. start orientation & rotation about z axis (430) ------------------->
 <!------------------------------------------------------------------------------------------------>
 
 <table>
@@ -21943,7 +21942,7 @@ alt="rotation about z axis" /></td>
 <h4>Rotate the device frame around its x axis by beta degrees, with beta in\[-180, 180\]</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------- 246 / 247. start orientation & rotation about x axis (###) ------------------->
+<!----------------- 246 / 247. start orientation & rotation about x axis (433) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <table>
 <colgroup>
@@ -21972,7 +21971,7 @@ alt="rotation about x axis" /></td>
 
 <h4>Rotate the device frame around its y axis by gamma degrees, with gamma in \[-90, 90\]
 <!------------------------------------------------------------------------------------------------>
-<!----------------- 247 / 250. start orientation & rotation about y axis (###) ------------------->
+<!----------------- 247 / 250. start orientation & rotation about y axis (434) ------------------->
 <!------------------------------------------------------------------------------------------------>
 
 <table>
