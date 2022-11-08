@@ -6045,8 +6045,8 @@ this page. We’ve set the FFT size to a lower value, and rewritten the
 animation loop to plot frequency bars instead of a waveform:</p>
 <details>
 <summary>
-Code extract!
-</h4>
+Code extract!</summary>
+
 <pre><code>1.  function buildAudioGraph() {
 2.    ...
 3.    // Create an analyser node
@@ -6065,9 +6065,11 @@ JSBin example! Apart from the lines in bold, this function is exactly
 the same as in the first example.</p>
 <p>The new visualization code:</p>
 <details>
+
 <summary>
 Code extract!
-</h4>
+</summary>
+
 <pre><code>1.  function visualize() {
 2.    // clear the canvas
 3.    canvasContext.clearRect(0, 0, width, height);
@@ -6157,7 +6159,8 @@ results with the Chrome WebAudio Inspector extension):</p>
 <details>
 <summary>
 Code extract!
-</h4>
+</summary>
+
 <pre><code>1.  function buildAudioGraph() {
 2.     var mediaElement = document.getElementById(&#39;player&#39;);
 3.        var sourceNode = audioContext.createMediaElementSource(mediaElement);
@@ -6232,7 +6235,7 @@ rectangle.</p>
 <details>
 <summary>
 Code extract!
-</h4>
+</summary>
 <pre><code>1.  function drawVolumeMeter() {
 2.    canvasContext.save();
 3.  
@@ -6271,7 +6274,8 @@ average value which we will draw as the volume meter.</p>
 <details>
 <summary>
 Code extract!
-</h4>
+</summary>
+
 <pre><code>1.  // create a vertical gradient of the height of the canvas
 2.  gradient = canvasContext.createLinearGradient(0,0,0, height);
 3.  gradient.addColorStop(1,&#39;#000000&#39;);
@@ -6285,7 +6289,8 @@ separate function):</p>
 <details>
 <summary>
 Code extract!
-</h4>
+</summary>
+
 <pre><code>1.  function visualize() {
 2.  
 3.    clearCanvas();
@@ -8314,7 +8319,7 @@ Below is the JavaScript source code for this small example:
 <details>
 <summary>
 JavaScript code extract!
-</h4>
+</summary>
 <pre><code>1.  var canvas, ctx;
 2.  var inputStates = {};
 3.  
@@ -8384,7 +8389,7 @@ Source code:
 <details>
 <summary>
 Code extract!
-</h4>
+</summary>
 <pre><code>1.  var canvas, ctx, width, height;
 2.  var rect = {x:40, y:40, rayon: 30, width:80, height:80, v:1};
 3.  var mousepos = {x:0, y:0};
@@ -8489,7 +8494,7 @@ JavaScript source code:
 <details>
 <summary>
 Code extract!
-</h4>
+</summary>
 <pre><code>1.  // Inits
 2.  window.onload = function init() {
 3.    var game = new GF();
@@ -8740,7 +8745,7 @@ JSBin</a></p>
 <details>
 <summary>
 Code extract!
-</h4>
+<</summary>
 <pre><code>1.  window.addEventListener(&quot;gamepadconnected&quot;, function(e) {
 2.     var gamepad = e.gamepad;
 3.     var index = gamepad.index;
@@ -8802,7 +8807,7 @@ special when the system detects that a gamepad has been unplugged.</p>
 <details>
 <summary>
 Code extract!
-</h4>
+</summary>
 <pre><code>1.  var gamepad;
 2.   
 3.  function mainloop() {
@@ -8919,7 +8924,7 @@ alt="button status detected, example on jsbin" />
 <details>
 <summary>
 Code extract!
-</h4>
+</summary>
 <pre><code>1.  function checkButtons(gamepad) {
 2.     for (var i = 0; i &lt; gamepad.buttons.length; i++) {
 3.        // do nothing is the gamepad is not ok
@@ -8947,7 +8952,7 @@ the gamepad.buttons will return the same  states every time.</p>
 <details>
 <summary>
 Code extract!
-</h4>
+</summary>
 <pre><code>1.  function mainloop() {
 2.     // clear, draw objects, etc...
 3.     ...
@@ -8979,7 +8984,7 @@ alt="axes detection in JsBin" />
 <details>
 <summary>
 Code extract!
-</h4>
+</summary>
 <pre><code>1.  // detect axis (joystick states)
 2.  function checkAxes(gamepad) {
 3.     if(gamepad === undefined) return;
@@ -9019,7 +9024,7 @@ alt="direction and angle detection for joystick" />
 <details>
 <summary>
 Code extract!
-</h4>
+</summary>
 <pre><code>1.  var inputStates = {};
 2.  ...
 3.  function mainloop() {
@@ -9261,7 +9266,7 @@ we will look at a far better solution - <i>“time based animation”
 <details>
 <summary>
 Code extract!
-</h4>
+</summary>
 <pre><code>1.  var mainLoop = function(time){
 2.    // Main function, called each frame
 3.    measureFPS(time);
@@ -9353,8 +9358,7 @@ the same time. In this situation, the monster will take a diagonal
 direction and accelerate. This is why it is important to keep all the
 input states up-to-date, and not to handle single events
 individually.</p>
-<h4>
-<p>Gamepad enhancements</p>
+<h4>Gamepad enhancements</h4>
 <p>Let’s add the gamepad utility functions from the previous lesson (we
 tidied them a bit too, removing the code for displaying the progress
 bars, buttons, etc.), added a gamepad property to the game framework,
@@ -9368,7 +9372,7 @@ alt="move the monster with the gamepad, jsbin screenshot" /></p>
 <details>
 <summary>
 Code extract!
-</h4>
+</summary>
 <pre><code>1.  var mainLoop = function(time){
 2.     //main function, called each frame
 3.     measureFPS(time);
@@ -9395,7 +9399,7 @@ lesson):</p>
 <details>
 <summary>
 Code extract!
-</h4>
+</summary>
 <pre><code>1.  function updateGamePadStatus() {
 2.    // get new snapshot of the gamepad properties
 3.    scangamepads();
@@ -9654,6 +9658,7 @@ consecutive loops.</p>
 need to move the shape to achieve a given speed (in pixels/s).</p>
 <h4>
 <p>Example #1: using time based animation: the bouncing square</p>
+</h4>
 <p><a href="https://jsbin.com/riferi/edit">Online example at
 JSBin</a>:</p>
 <p><img src="./images/image116.jpeg"
@@ -9663,7 +9668,7 @@ alt="Bouncing square with time bases animation" /></p>
 <details>
 <summary>
 Code extract!
-</h4>
+</summary>
 <pre><code>1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.  &lt;head&gt;
@@ -9780,7 +9785,7 @@ animation adapts itself!</p>
 <details>
 <summary>
 Code extract!
-</h4>
+</summary>
 <pre><code>1.  function animationLoop() {
 2.     // Measure time
 3.    now = new Date().getTime();
@@ -9938,7 +9943,7 @@ JSBin</a>:</p>
 <b>Source code of the example:</b>
 <details>
 <summary>
-Source code!
+Code extract!
 </summary>
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
@@ -10157,8 +10162,8 @@ example with the rectangle that also uses this technique</a>. </p>
 <p><b>Source code:</b></p>
 <details>
 <summary>
-Source code!
-</h4>
+HTML code extract!
+</summary>
 <pre><code>1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.  &lt;head&gt;
@@ -10320,7 +10325,7 @@ the updateMonsterPosition call:</p>
 <details>
 <summary>
 Code extract!
-</h4>
+</summary>
 <pre><code>1.  function timer(currentTime) {
 2.     var delta = currentTime - oldTime;
 3.     oldTime = currentTime;
@@ -10440,7 +10445,7 @@ variable for adjusting the size of the balls: the radius.</p>
 <details>
 <summary>
 Code extract!
-</h4>
+</summary>
 <pre><code>1.  // Constructor function for balls
 2.  function Ball(x, y, vx, vy, diameter) {
 3.    // property of each ball: a x and y position, speeds, radius
@@ -10482,7 +10487,7 @@ easier to handle large quantities.</p>
 <details>
 <summary>
 Code extract!
-</h4>
+</summary>
 <pre><code>1.  var canvas, ctx, width, height;
 2.  
 3.  // array of balls to animate
@@ -10591,7 +10596,7 @@ highlighted in bold:</p>
 <details>
 <summary>
 Code extract!
-</h4>
+</summary>
 <pre><code>1.  var canvas, ctx, width, height;
 2.  
 3.  // Array of balls to animate
@@ -10698,7 +10703,7 @@ jsbin.com is a good playground to try-out and test things…</p>
 <details>
 <summary>
 Code extract!
-</h4>
+</summary>
 <pre><code>1.  var mainLoop = function(time){
 2.    //main function, called each frame
 3.    measureFPS(time);
