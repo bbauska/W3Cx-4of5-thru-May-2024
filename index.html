@@ -8,37 +8,49 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-background: linear-gradient(60deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%);
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-}
+  img.displayed {
+    display: block;
+	margin: 0 auto;	}
+	p.em1 {
+	  margin-left: 1em; }
+	p.em2 {
+	  margin-left: 2em; }
+	p.em3 {
+	  margin-left: 3em; }
+	p.em4 {
+	  margin-left: 4em; }
 
-#myBtn {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 99;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  background-color: red;
-  color: white;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 4px;
-}
+  background: linear-gradient(60deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%);
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+  }
 
-#myBtn:hover {
-  background-color: #555;
-}
-    code{white-space: pre-wrap;}
-    span.smallcaps{font-variant: small-caps;}
-    span.underline{text-decoration: underline;}
-    div.column{display: inline-block; vertical-align: top; width: 50%;}
-    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+
+  #myBtn:hover {
+    background-color: #555;
+  }
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
 </style>
 </head>
@@ -19561,11 +19573,11 @@ constraint:</p>
 <!------------------------------------------------------------------------------------------------>
 <!---------------- 241. using file URL does not work for security reasons (420) ------------------>
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image241.png?raw=true"
-  style="width:65%;"
-  alt="Using file URL does not work for security reasons." />
-</p>
+<img class="displayed"
+  src="./images/image241.png?raw=true"
+  alt="Using file URL does not work for security reasons."
+  style="width:65%;" />
+
 <!-- style="width:6.5in;height:1.67292in" --->
 <p>This occurs with Opera, Chrome and Firefox. With Chrome, Safari or
 Chromium, you can run the browser using some command line options to
@@ -19578,14 +19590,12 @@ worker.js code for displaying a message and have it wait 3 seconds
 before starting the computation of prime numbers.</p>
 <p>You can download this example: <a
 href="https://courses.edx.org/assets/courseware/v1/4af4dd2326f40b5d5d55aa15bbb12d70/asset-v1:W3Cx+HTML5.2x+2T2020a+type@asset+block/WebWorkersExample1.zip" target="_blank" rel="noopener noreferrer">WebWorkersExample1.zip</a></p>
-<h4>
-HTML code:
-</h4>
+<h4>HTML code:</h4>
 <details>
-<summary>
-HTML code!
-</summary>
-<pre><code>1.  &lt;!DOCTYPE HTML&gt;
+  <summary>HTML code!</summary>
+
+<pre><code>
+1.  &lt;!DOCTYPE HTML&gt;
 2.  &lt;html&gt;
 3.  &lt;head&gt;
 4.  &lt;title&gt;Worker example: One-core computation&lt;/title&gt;
@@ -19607,18 +19617,20 @@ HTML code!
 18.     }
 19. &lt;/script&gt;
 20. &lt;/body&gt;
-21. &lt;/html&gt;</code></pre>
+21. &lt;/html&gt;
+</code></pre>
+
 </details>
-<p><i>Line 9</i> shows how to test if the browser can run JavaScript
-code that uses the HTML5 Web Workers API.</p>
-<h4>
-Here is the worker1.js code:
-</h4>
+
+<p><i>Line 9</i> shows how to test if the browser can run JavaScript code that uses the HTML5 Web Workers API.</p>
+
+<h4>Here is the worker1.js code:</h4>
+
 <details>
-<summary>
-JavaScript code!
-</summary>
-<pre><code>1.  postMessage(&quot;Hey, in 3s, I&#39;ll start to compute prime numbers...&quot;);
+  <summary>JavaScript code!</summary>
+
+<pre><code>
+1.  postMessage(&quot;Hey, in 3s, I&#39;ll start to compute prime numbers...&quot;);
 2.  
 3.  setTimeout(function() {
 4.      // The setTimeout is just useful for displaying the message in
@@ -19633,15 +19645,18 @@ JavaScript code!
 12.        // found a prime!
 13.        postMessage(n);
 14.      }
-15. }, 3000);</code></pre>
+15. }, 3000);
+</code></pre>
+
 </details>
+
 <p>In this example, we just added a message that is sent to the “parent
 page” (<i>line 1</i>) and we use the standard JavaScript
 method setTimeout() to delay the beginning of the prime number
 computation by 3s.</p>
-<h4>
-Example #2: how to stop/kill a worker after a given amount of time
-</h4>
+
+<h4>Example #2: how to stop/kill a worker after a given amount of time</h4>
+
 <p>So far, we have created and used a worker. Now we will see how to
 kill it!</p>
 <p>A worker is a thread, and a thread uses resources. If you no longer
@@ -19657,13 +19672,12 @@ the tab/page/browser.</p>
 any worker, to end its life. After a worker has been killed, it is not
 possible to undo its termination. The only option is to create a new
 worker.</p>
-<h4>
-HTML code:
-</h4>
+
+<h4>HTML code:</h4>
+
 <details>
-<summary>
-HTML code!
-</summary>
+  <summary>HTML code!</summary>
+
 <pre><code>1.  &lt;!DOCTYPE HTML/image0&gt;
 2.  &lt;html&gt;
 3.  &lt;head&gt;
@@ -19691,18 +19705,20 @@ HTML code!
 25.     );}, 10000);
 26. &lt;/script&gt;
 27. &lt;/body&gt;
-28. &lt;/html&gt;</code></pre>
+28. &lt;/html&gt;
+</code></pre>
+
 </details>
-<p>Notice at <i>line 22</i> the call to worker.terminate(), that kills
-the worker after 10000ms.</p>
-<h4>
-worker2.js is the same as in the last example:
-</h4>
+
+<p>Notice at <i>line 22</i> the call to worker.terminate(), that kills the worker after 10000ms.</p>
+
+<h4>worker2.js is the same as in the last example:</h4>
+
 <details>
-<summary>
-JavaScript code!
-</summary>
-<pre><code>1.  postMessage(&quot;Hey, in 3s, I&#39;ll start to compute prime numbers...&quot;);
+  <summary>JavaScript code!</summary>
+  
+<pre><code>
+1.  postMessage(&quot;Hey, in 3s, I&#39;ll start to compute prime numbers...&quot;);
 2.  
 3.  setTimeout(function() {
 4.       // The setTimeout is just useful for displaying the message in
@@ -19717,24 +19733,24 @@ JavaScript code!
 12.          // found a prime!
 13.          postMessage(n);
 14.      }
-15. }, 3000);</code></pre>
+15. }, 3000);
+</code></pre>
+
 </details>
+
 <p>A Web worker can also kill itself by calling the close() method in
 the worker’s JavaScript file:</p>
-<h4>
-<b>To sum up, there are 3 different ways to kill a Web Worker:</b>
-</h4>
+
+<h4><b>To sum up, there are 3 different ways to kill a Web Worker:</b></h4>
+
 <ol type="1">
-<li><p>Close the tab/window of the parent. This will kill all workers
-that have been created by this parent tab/window.</p></li>
-<li><p>In the parent’s JavaScript file: call the terminate() method on a
-worker instance. Example: worker.terminate();</p></li>
-<li><p>Call the close() method in a Worker’s JavaScript file. This will
-kill the current Worker that is running this code.</p></li>
+  <li><p>Close the tab/window of the parent. This will kill all workers that have been created by this parent tab/window.</p></li>
+  <li><p>In the parent’s JavaScript file: call the terminate() method on a worker instance. Example: worker.terminate();</p></li>
+  <li><p>Call the close() method in a Worker’s JavaScript file. This will kill the current Worker that is running this code.</p></li>
 </ol>
-<h4>
-A web worker can include external scripts
-</h4>
+
+<h4>A web worker can include external scripts</h4>
+
 <p>External scripts can be loaded by workers using
 the importScripts() function.</p>
 <h4>
@@ -19802,63 +19818,45 @@ This is well illustrated below:
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------------- 239. web workers scope (424) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image239.png?raw=true"
-  style="width:65%;"
-  alt="Web workers scope." />
-</p>
+<img class="displayed"
+  src="./images/image239.png?raw=true"
+  alt="Web workers scope."
+  style="width:65%;" />
+
 <!-- style="width:5.20833in;height:3.39583in" --->
 <p><b>Note that:</b></p>
+
 <ol type="1">
-<li><p>Chrome has already implemented a new way for transferring objects
-from/to Web Workers by reference, in addition to the standard “by copy”
-method. This is<a
-href="https://www.w3.org/TR/html51/infrastructure.html#transferable-objects" target="_blank" rel="noopener noreferrer"> in
-the HTML 5.1 draft specification from the W3C</a> - look for
-“transferable” objects! </p></li>
-<li><p>The canvas is not usable from Web Workers, however, <a
-href="https://www.w3.org/TR/html51/semantics.html#proxying-canvases-to-workers" target="_blank" rel="noopener noreferrer">HTML
-5.1 proposes a canvas proxy.</a> </p></li>
+  <li><p>Chrome has already implemented a new way for transferring objects from/to Web Workers by reference, in addition to the standard “by copy” method. This is<a href="https://www.w3.org/TR/html51/infrastructure.html#transferable-objects" target="_blank" rel="noopener noreferrer"> in the HTML 5.1 draft specification from the W3C</a> - look for “transferable” objects! </p></li>
+  <li><p>The canvas is not usable from Web Workers, however, <a href "https://www.w3.org/TR/html51/semantics.html#proxying-canvases-to-workers" target="_blank" rel="noopener noreferrer">HTML 5.1 proposes a canvas proxy.</a> </p></li>
 </ol>
-<h4>
-Debugging Web Workers
-</h4>
+
+<h4>Debugging Web Workers</h4>
+
 <ul>
-<li><p>Like other multi-threaded applications, debugging Web Workers can
-be a tricky task, and having a good tool-kit makes this process much
-easier.</p></li>
-<li><p><b>Chrome</b> provides tools for debugging Web Workers. See <a
-href="https://developers.google.com/web/tools/chrome-devtools/javascript/background-services" target="_blank" rel="noopener noreferrer">Debug
-Background Services With Chrome DevTools</a>.</p></li>
+  <li><p>Like other multi-threaded applications, debugging Web Workers can be a tricky task, and having a good tool-kit makes this process much easier.</p></li>
+  <li><p><b>Chrome</b> provides tools for debugging Web Workers. See <a href ="https://developers.google.com/web/tools/chrome-devtools/javascript/background-services" target="_blank" rel="noopener noreferrer">Debug Background Services With Chrome DevTools</a>.</p></li>
 </ul>
-<p>When you open a page with Web Workers, open the Chrome Dev Tools
-(F12), look on the right at the Workers tab, check the radio box and
-reload the page. This will pop-up a small window for tracing the
-execution of each worker. In these windows, you can set breakpoints,
-inspect variables, log messages, etc. Here is a screenshot of a
-debugging session with the prime numbers example:</p>
+
+<p>When you open a page with Web Workers, open the Chrome Dev Tools (F12), look on the right at the Workers tab, check the radio box and reload the page. This will pop-up a small window for tracing the execution of each worker. In these windows, you can set breakpoints, inspect variables, log messages, etc. Here is a screenshot of a debugging session with the prime numbers example:</p> 
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 240. chrome debug web workers (425) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image240.jpeg?raw=true"
-  style="width:65%;"
-  alt="Chrome debug web workers." />
-</p>
+<img class="displayed"
+  src="./images/image240.jpeg?raw=true"
+  alt="Chrome debug web workers."
+  style="width:65%;" />
+
+
 <!-- style="width:1in;height:1in" --->
+
 <ul>
-<li><b>FireFox</b> has similar tools, see <a
-href="https://developer.mozilla.org/en-US/docs/Tools" target="_blank" rel="noopener noreferrer">Firefox developer
-tools</a>.</li>
+  <li><b>FireFox</b> has similar tools, see <a href="https://developer.mozilla.org/en-US/docs/Tools" target="_blank" rel="noopener noreferrer">Firefox developer tools</a>.</li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch4-3-4">
-4.3.4 Demos
-</h3>
+<h3 id="ch4-3-4">4.3.4 Demos</h3>
 <!------------------------------------------------------------------------------------------------>
-<h4>
-Demo #1
-</h4>
+<h4>Demo #1</h4>
 This is a variation of the prime number example (previous lecture) which
 shows that an interaction in the parent page is not affected by the
 background computation of prime numbers. Try it <a
@@ -19872,21 +19870,16 @@ reacts instantly…
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------------- 241. demo prime numbers (426) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image241.png"
-  style="width:65%;"
-  alt="Demo prime numbers screenshot." />
-</p>
+<img class="displayed"
+  src="./images/image241.png?raw=true"
+  alt="Demo prime numbers screenshot."
+  style="width:65%;" />
+
 <!--- style="width:5in;height:3.12767in" --->
-<h4>
-Demo #2
-</h4>
-<p>Do ray tracing using a variable number of Workers, and try it <a
-href="https://nerget.com/rayjs-mt/rayjs.html" target="_blank" rel="noopener noreferrer">online</a> (if you’ve not
-heard of it before, <a
-href="https://www.cs.unc.edu/~rademach/xroads-RT/RTarticle.html" target="_blank" rel="noopener noreferrer">here’s
-an explanation</a> that tells you more than you will ever want to know
-about ray tracing!)</p>
+<h4>Demo #2</h4>
+
+<p>Do ray tracing using a variable number of Workers, and try it <a href="https://nerget.com/rayjs-mt/rayjs.html" target="_blank" rel="noopener noreferrer">online</a> (if you’ve not heard of it before, <a href="https://www.cs.unc.edu/~rademach/xroads-RT/RTarticle.html" target="_blank" rel="noopener noreferrer">here’s
+an explanation</a> that tells you more than you will ever want to know about ray tracing!)</p>
 In this demo, you can select the number of Web Workers which will
 compute parts of the image (pixels). If you use too many Web Workers,
 the performance decreases because too much time is spent exchanging data
@@ -19894,66 +19887,48 @@ between workers and their creator, instead of computing in parallel.
 <!------------------------------------------------------------------------------------------------>
 <!--------------------------- 242. green blocks and ray tracer (427) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image242.jpeg?raw=true"
-  style="width:65%;"
-  alt="Demo 2: Ray tracer with web workers." />
-</p>
+<img class="displayed"
+  src="./images/image242.jpeg?raw=true"
+  alt="Demo 2: Ray tracer with web workers."
+  style="width:65%;" />
+
 <!--  style="width:4in;height:3.99165in" --->
-<h4>
-Other demos
-</h4>
+
+<h4>Other demos</h4>
+
 <p><a
 href="https://developer.mozilla.org/en-US/docs/Web/Demos_of_open_web_technologies#Web_APIs" target="_blank" rel="noopener noreferrer">Try
 these other impressive demos at the MDN demo repository!</a></p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch4-3-5">
-4.3.5 Discussion and projects
-</h3>
+<h3 id="ch4-3-5">4.3.5 Discussion and projects</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>Here is the discussion forum for this part of the course. Please post
 your comments/observations/questions and share your creations.</p>
-<h4>
-Suggested topics of discussion:
-</h4>
+
+<h4>Suggested topics of discussion:</h4>
+
 <ul>
-<li><p>Did you try the demos from the last lesson? Do you understand why
-using Web Workers can be a savior in some situations?</p></li>
-<li><p>Can you find some explanations on the Web about multi core
-architectures and Web Workers (e.g., about threads/workers benefiting
-from multi core processors, leading to greater performance). Please
-share any relevant articles in the forum!</p></li>
+  <li><p>Did you try the demos from the last lesson? Do you understand why using Web Workers can be a savior in some situations?</p></li>
+  <li><p>Can you find some explanations on the Web about multi core architectures and Web Workers (e.g., about threads/workers benefiting from multi core processors, leading to greater performance). Please share any relevant articles in the forum!</p></li>
 </ul>
-<h4>
-Optional projects:
-</h4>
+
+<h4>Optional projects:</h4>
+
 <ul>
-<li><p>Please write a small Web app. that uses Web Workers.</p></li>
-<li><p>There is a wonderful demonstration of a <a
-href="https://testdrive-archive.azurewebsites.net/Graphics/WorkerFountains/Default.html" target="_blank" rel="noopener noreferrer">fountain
-animation</a> using <i>particles</i>, made by Microsoft. Can you write
-something similar, but perhaps with fewer options? The idea was the
-following: compute <i>particle movements</i> in separate <i>workers</i>,
-and when a new array of <i>particles</i> is ready to be drawn, post it
-from the Web Worker. The main page has a mainloop for animating at 60
-frames per second. When a new set of <i>particles</i> is ready (posted
-by a <i>Worker</i>), it is drawn and animated. The demo had up to
-10 <i>workers</i> operating in <i>parallel</i>, in
-the <i>background</i>.</p></li>
+  <li><p>Please write a small Web app. that uses Web Workers.</p></li>
+  <li><p>There is a wonderful demonstration of a <a href="https://testdrive-archive.azurewebsites.net/Graphics/WorkerFountains/Default.html" target="_blank" rel="noopener noreferrer">fountain animation</a> using <i>particles</i>, made by Microsoft. Can you write something similar, but perhaps with fewer options? The idea was the following: compute <i>particle movements</i> in separate <i>workers</i>, and when a new array of <i>particles</i> is ready to be drawn, post it from the Web Worker. The main page has a mainloop for animating at 60 frames per second. When a new set of <i>particles</i> is ready (posted by a <i>Worker</i>), it is drawn and animated. The demo had up to 10 <i>workers</i> operating in <i>parallel</i>, in the <i>background</i>.</p></li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------- 243. ie10 web workers fountain demo (428) --------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image243.png?raw=true"
-  style="width:40%;"
-  alt="IE 10 Web Workers fountain demo." />
-</p>
+<img class="displayed"
+  src="./images/image243.png?raw=true"
+  alt="IE 10 Web Workers fountain demo."
+  style="width:40%;" />
+
 <!-- style="width:4in;height:2.55983in" -->
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch4-4-1">
-4.4.1 The Orientation API
-</h3>
+<h3 id="ch4-4-1">4.4.1 The Orientation API</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>This section covers
 the <a href="https://www.w3.org/TR/screen-orientation/" target="_blank" rel="noopener noreferrer">HTML5
@@ -19967,9 +19942,9 @@ Chrome/Safari and Mozilla support this API, but Opera mobile doesn’t
 devtools of a desktop browser to fake the orientation values (see the
 support table below, the columns for desktop versions of browsers are
 about the support for this emulation mode).</p>
-<h4>
-External resources:
-</h4>
+
+<h4>External resources:</h4>
+
 <ul>
 <li><p>The W3C specification: <a
 href="https://www.w3.org/TR/screen-orientation/" target="_blank" rel="noopener noreferrer">The Screen Orientation
@@ -19987,9 +19962,7 @@ href="https://developer.mozilla.org/en-US/docs/Web/API/Detecting_device_orientat
 MDN</p></li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch4-4-2">
-4.4.2 The coordinate system
-</h3>
+<h3 id="ch4-4-2">4.4.2 The coordinate system</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>Transformations between the Earth coordinate frame and the device
 coordinate frame uses the following system of rotations.</p>
@@ -20133,37 +20106,28 @@ alt="Rotation about y axis." />
 </tbody>
 </table>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch4-4-3">
-4.4.3 Get different angles
-</h3>
+<h3 id="ch4-4-3">4.4.3 Get different angles</h3>
 <!------------------------------------------------------------------------------------------------>
-<h4>
-Typical use using the JavaScript HTML5 orientation API
-</h4>
+<h4>Typical use using the JavaScript HTML5 orientation API</h4>
+
 <p>The use of this API is very straightforward:</p>
+
 <ol type="1">
-<li><p>Test if your browser supports the orientation API
-(window.DeviceOrientationEvent is not null),</p></li>
-<li><p>Define a listener for the ‘deviceorientation’ event as
-follows: window.addEventListener(‘deviceorientation’, callback,
-false); with the callback function accepting the event object as its
-single input parameter,</p></li>
-<li><p>Extract the angles from the event (use its
-properties: alpha, beta, gamma).</p></li>
-<li><p><a href="https://jsbin.com/limugat/edit" target="_blank" rel="noopener noreferrer">Here’s an example on
-JsBin</a>. Try it with  a smartphone, a tablet, or a device with an
-accelerometer: </p></li>
+  <li><p>Test if your browser supports the orientation API (window.DeviceOrientationEvent is not null),</p></li>
+  <li><p>Define a listener for the ‘deviceorientation’ event as follows: window.addEventListener(‘deviceorientation’, callback, false); with the callback function accepting the event object as its single input parameter,</p></li>
+  <li><p>Extract the angles from the event (use its properties: alpha, beta, gamma).</p></li>
+  <li><p><a href="https://jsbin.com/limugat/edit" target="_blank" rel="noopener noreferrer">Here’s an example on JsBin</a>. Try it with  a smartphone, a tablet, or a device with an accelerometer: </p></li>
 </ol>
 <p>(If using a mobile device,  <a href="https://jsbin.com/limugat" target="_blank" rel="noopener noreferrer">open
 the page in standalone mode</a> (without the JsBin editor) )</p>
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 248. device orientation api 2 (436) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image248.png?raw=true"
-  style="width:65%;"
-  alt="Device Orientation API 2." />
-</p>
+<img class="displayed"
+  src="./images/image248.png?raw=true"
+  alt="Device Orientation API 2."
+  style="width:65%;" />
+
 <p>The above screenshot came from an iPad laying immobile on a desk.
 Theoretically, all the angle values will be zero when the device is laid
 flat, providing it has not been moved since the page loaded. However,
@@ -20175,35 +20139,34 @@ with Math.round() at display time (see code).</p>
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------------- 249. orientation api 3 (437) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image252.png?raw=true"
-  style="width:65%;"
-  alt="Orientation API 3." />
-</p>
+<img class="displayed"
+  src="./images/image249.png?raw=true"
+  alt="Orientation API 3."
+  style="width:65%;" />
+
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------------- 250. orientation api 1 (437) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image253.png?raw=true"
-  style="width:65%;"
-  alt="Orientation API 1." />
-</p>
+<img class="displayed"
+  src="./images/image250.png?raw=true"
+  alt="Orientation API 1."
+  style="width:65%;" />
+
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------------- 251. orientation api 2 (438) ---------------------------------->
+<!-------------------------------- 254. orientation api 2 (438) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image254.png?raw=true"
-  style="width:65%;"
-  alt="Orientation API 2." />
-</p>
-<h4>
-Typical use / code from the above example:
-</h4>
+<img class="displayed"
+  src="./images/image254.jpeg?raw=true"
+  alt="Orientation API 2."
+  style="width:65%;" />
+
+<h4>Typical use / code from the above example:</h4>
+
 <details>
-<summary>
-Device Orientation with HTML5 code!
-</summary>
-<pre><code>1.  ...
+  <summary>Device Orientation with HTML5 code!</summary>
+
+<pre><code>
+1.  ...
 2.  &lt;h2&gt;Device Orientation with HTML5&lt;/h2&gt;
 3.  You need to be on a mobile device or use a laptop with
     accelerometer/orientation
@@ -20235,60 +20198,61 @@ Device Orientation with HTML5 code!
 29.    document.querySelector(&quot;#DIR&quot;).innerHTML = &quot;alpha :    &quot; + Math.round(DIR);
 30. }
 31. &lt;/script&gt;
-32.  ...</code></pre>
+32.  ...
+</code></pre>
+
 </details>
-<h4>
-Another example that shows how to orient the HTML5 logo using the
-orientation API + CSS3 3D rotations
-</h4>
+
+<h4>Another example that shows how to orient the HTML5 logo using the orientation API + CSS3 3D rotations</h4>
+
 <p>This is just a variation of the previous example, <a
 href="https://jsbin.com/manobezoji/edit?html,js,output" target="_blank" rel="noopener noreferrer">try it at
 JsBin</a></p>
 <!------------------------------------------------------------------------------------------------>
 <!----------------------- 252. html logo orientation api example 3 (439) ------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image252.png?raw=true"
-  style="width:40%;"
-  alt="Orientation API example 3." />
-</p>
+<img class="displayed"
+  src="./images/image252.png?raw=true"
+  alt="Orientation API example 3."
+  style="width:40%;" />
+
 <p>Results on the iPad: the logo rotates when we change the iPad’s
 orientation. This is a good “visual feedback” for an orientation
 controlled game…</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 253. side-by-side logo 1 (440) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="left" width="50%">
-<img src="./images/image253.png?raw=true"
-  style="width:30%;"
-  alt="Logo position 1." />
+<img class="displayed"
+  src="./images/image256.png?raw=true"
+  alt="Logo position 1."
+  style="width:39%;" />
+
 <!-- <img src="./images/image256.png" style="width:2.94792in;height:3.92708in" -->
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 254. side by side logo 2 (440) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="right" width="50%">
-<img src="./images/image254.png?raw=true"
-  style="width:30%;"
-  alt="Logo position 2." />
-</p>
+<img class="displayed"
+  src="./images/image254.png?raw=true"
+  alt="Logo position 2."
+  style="width:30%;" />
+
 <!------------------------------------------------------------------------------------------------>
 <!------------------------- 255. logo 3, centered beneath 1 & 2 (440) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image255.png?raw=true"
-  style="width:29%;"
-  alt="Logo position 3." />
-</p>
+<img class="displayed"
+  src="./images/image255.png?raw=true"
+  alt="Logo position 3."
+  style="width:29%;" />
+
 <p>This example is also on <a
 href="https://www.youtube.com/watch?v=OrNLhOAGSdE" target="_blank" rel="noopener noreferrer">video</a>.</p>
-<h4>
-Code from the example:
-</h4>
+
+<h4>Code from the example:</h4>
 <details>
-<summary>
-HTML code!
-</summary>
-<pre><code>1.  ...
+  <summary>HTML code!</summary>
+
+<pre><code>
+1.  ...
 2.  &lt;h2&gt;Device Orientation with HTML5&lt;/h2&gt;
 3.  You need to be on a mobile device or use a laptop with
     accelerometer/orientation
@@ -20329,11 +20293,13 @@ HTML code!
 37.       document.querySelector(&quot;#DIR&quot;).innerHTML = &quot;alpha :    &quot; + Math.round(DIR);
 38. }
 39. &lt;/script&gt;
-40.  ...</code></pre>
+40.  ...
+</code></pre>
+
 </details>
-<h4>
-A simple level tool using device orientation
-</h4>
+
+<h4>A simple level tool using device orientation</h4>
+
 <p>This example works in Firefox, Chrome, and IOS Safari. Created by <a
 href="https://twitter.com/derekanderson" target="_blank" rel="noopener noreferrer">Derek Anderson</a> @<a
 href="https://imagesupstream.com/" target="_blank" rel="noopener noreferrer">Media Upstream</a>. Original source
@@ -20346,14 +20312,13 @@ mobile device).</p>
 <!------------------------------------------------------------------------------------------------>
 <!----------------------- 256. level tool using device orientation (442) ------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image256.png?raw=true"
-  style="width:50%;"
-  alt="Level tool using device orientation." />
-</p>
-<h4>
-Other interesting uses: mix orientation API and WebSockets
-</h4>
+<img class="displayed"
+  src="./images/image256.png?raw=true"
+  alt="Level tool using device orientation."
+  style="width:50%;" />
+  
+<h4>Other interesting uses: mix orientation API and WebSockets</h4>
+
 <p>You can imagine the above example that sends the current orientation
 of the device to a server using WebSockets. The server in turn updates
 the logo and position on a PC screen. If multiple devices connect, they
@@ -20368,15 +20333,13 @@ desktop browser:</p>
 <!------------------------------------------------------------------------------------------------>
 <!--------------------------- 257. orientation api + websockets (442) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image257.png?raw=true"
-  style="width:30%;"
-  alt="Orientation API + websockets." />
-</p>
+<img class="displayed"
+  src="./images/image257.png?raw=true"
+  alt="Orientation API + websockets."
+  style="width:30%;" />
+
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch4-4-4">
-4.4.4 The Device Motion API
-</h3>
+<h3 id="ch4-4-4">4.4.4 The Device Motion API</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>This section presents the Device Motion API which is used in a
 similar manner to the device orientation API discussed earlier.</p>
@@ -20394,10 +20357,11 @@ gesture to clear a web form.</p></li>
 <li><p><b>Mapping</b>: a mapping Web application uses the device’s
 orientation to correctly align the map with reality.</p></li>
 </ul>
-<h4>
-Basic usage
-</h4>
-<pre><code>1. function handleMotionEvent(event) {
+
+<h4>Basic usage</h4>
+
+<pre><code>
+1. function handleMotionEvent(event) {
 2. 
 3.    var x = event.accelerationIncludingGravity.x;
 4.    var y = event.accelerationIncludingGravity.y;
@@ -20406,10 +20370,11 @@ Basic usage
 7.    // Process ...
 8. }
 9. 
-10. window.addEventListener(&quot;devicemotion&quot;, handleMotionEvent, true);</code></pre>
-<h4>
-Basics about acceleration
-</h4>
+10. window.addEventListener(&quot;devicemotion&quot;, handleMotionEvent, true);
+</code></pre>
+
+<h4>Basics about acceleration</h4>
+
 <p>The deviceMotion API is rather straightforward and is very similar to
 the orientation API except that it returns more than just
 the <i>rotation</i> information, it also
@@ -20417,10 +20382,11 @@ returns <a href="https://en.wikipedia.org/wiki/Acceleration)information" target
 reflecting the device’s actual movement.</p>
 <p>The <i>acceleration</i> is in three parts:</p>
 <ol type="1">
-<li><p>along the X axis</p></li>
-<li><p>along the Y axis</p></li>
-<li><p>along the Z axis</p></li>
+  <li><p>along the X axis</p></li>
+  <li><p>along the Y axis</p></li>
+  <li><p>along the Z axis</p></li>
 </ol>
+
 <p>Each value is measured in <a
 href="https://en.wikipedia.org/wiki/Metre_per_second_per_second" target="_blank" rel="noopener noreferrer">meters
 per second squared</a> (m/s<sup>2</sup>) - multiply by 3.281 if you’d
@@ -20444,50 +20410,42 @@ devices, so far, are equipped with a gyroscope.</p>
 <p>The <i>device motion</i> <i>event</i> is a superset of the <i>device
 orientation event</i>; it returns <i>rotation</i> as well
 as <i>acceleration</i> information from the device. </p>
-<h4>
-Example of acceleration values
-</h4>
+
+<h4>Example of acceleration values</h4>
+
 <p>If a laptop is in its normal position with the screen facing up, the
-data returned would be
-<a href="https://developers.google.com/web/fundamentals/native-hardware/device-orientation/" target="_blank" rel="noopener noreferrer">(info
-taken from this [article]</a>):</p>
+data returned would be <a href="https://developers.google.com/web/fundamentals/native-hardware/device-orientation/" target="_blank" rel="noopener noreferrer">(info taken from this [article]</a>):</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 258. acceleration values 1 (444) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image258.png"
-  style="width:65%;"
-  alt="Acceleration values 1." />
-</p>
-<p>
-A mobile phone rotated along the x-axis so the screen is perpendicular
-to its normal position would return:
-</p>
+<img class="displayed"
+  src="./images/image258.png?raw=true"
+  alt="Acceleration value 1."
+  style="width:65%;" />
+
+<p>A mobile phone rotated along the x-axis so the screen is perpendicular
+to its normal position would return:</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 259. acceleration values 2 (444) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image259.png"
-  style="width:65%;"
-  alt="Acceleration values 2." />
-</p>
-<h4>
-Remember the coordinate system for a mobile phone:
-</h4>
+<img class="displayed"
+  src="./images/image259.png?raw=true"
+  alt="Acceleration values 2."
+  style="width:65%;" />
+
+<h4>Remember the coordinate system for a mobile phone:</h4>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------- 260. mobile phone coordinates system (444) --------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image260.jpeg"
-  style="width:30%;"
-  alt="Mobile phone coordinates system." />
-</p>
-<h4>
-Common steps
-</h4>
-<h4>
-The principles are the same as for the orientation API:
-</h4>
+<img class="displayed"
+  src="./images/image260.jpeg?raw=true"
+  alt="Mobile phone coordinates system."
+  style="width:30%;" />
+
+<h4>Common steps</h4>
+
+<h4>The principles are the same as for the orientation API:</h4>
+
 <ol type="1">
 <li>Test if the API is supported by the browser,</li>
 <li>Add a listener for ‘devicemotion’ events,</li>
@@ -20495,27 +20453,32 @@ The principles are the same as for the orientation API:
 to the listener,</li>
 <li>Process the data.</li>
 </ol>
-<h4>
-Common processing with acceleration values
-</h4>
+
+<h4>Common processing with acceleration values</h4>
+
 <p>Test the value of the acceleration.z property: If &gt; 0 then the
 device is facing up, otherwise it is facing down. This would be useful
 if you wanted to
 play <a href="https://en.wikipedia.org/wiki/Coin_flipping" target="_blank" rel="noopener noreferrer">heads or
 tails</a> with your phone ;-)</p>
-<pre><code>1.  // For example, if acceleration.z is &gt; 0 then the phone is facing up
+
+<pre><code>
+1.  // For example, if acceleration.z is &gt; 0 then the phone is facing up
 2.  var facingUp = -1;
 3.  if (acceleration.z &gt; 0) {
 4.     facingUp = +1;
-5.  }</code></pre>
+5.  }
+</code></pre>
+
 <p>Compute the angle corresponding to the Left / Right and Front / Back
 tilts. This example uses the accelerationIncludingGravity property of
 the event.</p>
+
 <details>
-<summary>
-HTML code!
-</summary>
-<pre><code>1.  function deviceMotionHandler(eventData) {
+  <summary>HTML code!</summary>
+
+<pre><code>
+1.  function deviceMotionHandler(eventData) {
 2.     // Grab the acceleration including gravity from the results
 3.     var acceleration = eventData.accelerationIncludingGravity;
 4.  
@@ -20528,11 +20491,16 @@ HTML code!
 11.    var tiltFB = Math.round(((acceleration.y + 9.81) / 9.81) * 90 * facingUp);
 12. 
 13.    // ... do something
-14. }</code></pre>
+14. }
+</code></pre>
+
 </details>
+
 <p>Compute the vertical (direction of the sky) - this extract comes from
 a complete example further down this page…</p>
-<pre><code>1.  ...
+
+<pre><code>
+1.  ...
 2.  var angle = Math.atan2(accel.y,accel.x);
 3.  
 4.  var canvas = document.getElementById(&#39;myCanvas&#39;);
@@ -20541,40 +20509,43 @@ a complete example further down this page…</p>
 7.  ctx.moveTo(50,50);
 8.  // Draw sky direction in the canvas
 9.  ctx.lineTo(50-50*Math.cos(angle),50+50*Math.sin(angle));
-10. ctx.stroke();</code></pre>
+10. ctx.stroke();
+</code></pre>
+
 <p>Use acceleration values to move a ball on the screen of a tablet when
 the tablet is tilted front / back or left / right (complete example
 later on)…</p>
-<pre><code>1.  ...
+
+<pre><code>
+1.  ...
 2.  
 3.  ball.x += acceleration.x;
 4.  ball.y += acceleration.y;
 5.  
-6.  ...</code></pre>
-<h4>
-Complete examples
-</h4>
-<h4>
-Move the HTML5 logo
-</h4>
+6.  ...
+</code></pre>
+
+<h4>Complete examples</h4>
+
+<h4>Move the HTML5 logo</h4>
+
 <p><a href="https://jsbin.com/pasoboyucu/edit?html,js,output" target="_blank" rel="noopener noreferrer">Online
 example at JsBin</a>.</p>
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 261. devicemotion api example (446) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image261.jpeg"
-  style="width:30%;"
-  alt="Devicemotion API example." />
-</p>
-<h4>
-Code from this example:
-</h4>
+<img class="displayed"
+  src="./images/image261.jpeg?raw=true"
+  alt="Devicemotion API example."
+  style="width:30%;" />
+
+<h4>Code from this example:</h4>
+
 <details>
-<summary>
-Device Orientation with HTML5 code!
-</summary>
-<pre><code>1.  &lt;!doctype html&gt;
+  <summary>Device Orientation with HTML5 code!</summary>
+
+<pre><code>
+1.  &lt;!doctype html&gt;
 2.  &lt;html&gt;
 3.  
 4.     &lt;head&gt;&lt;/head&gt;
@@ -20644,11 +20615,13 @@ Device Orientation with HTML5 code!
 68.    &lt;/script&gt;
 69.   &lt;/body&gt;
 70. 
-71. &lt;/html&gt;</code></pre>
+71. &lt;/html&gt;
+</code></pre>
+
 </details>
-<h4>
-Interesting example that uses jQuery mobile
-</h4>
+
+<h4>Interesting example that uses jQuery mobile</h4>
+
 <p>This example shows how the X and Y acceleration values can be used
 for indicating the sky’s direction (vertical), and how the Z
 acceleration is, in fact, an indicator for the face up / face down
@@ -20659,19 +20632,18 @@ it: <a href="https://jsbin.com/uyuqek/4/edit" target="_blank" rel="noopener nor
 <!------------------------------------------------------------------------------------------------>
 <!--------------------------------- 262. devicemotion api (448) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image262.jpeg"
-  style="width:35%;"
-  alt="Devicemotion API.  Uses jQuery mobile." />
-</p>
-<h4>
-Code from the example:
-</h4>
+<img class="displayed"
+  src="./images/image262.jpeg?raw=true"
+  alt="Devicemotion API.  Uses JQuery mobile."
+  style="width:35%;" />
+
+<h4>Code from the example:</h4>
+
 <details>
-<summary>
-Devicemotion API using JQuery mobile source code!
-</summary>
-<pre><code>1.  &lt;html&gt;
+  <summary>Devicemotion API using JQuery mobile source code!</summary>
+
+<pre><code>
+1.  &lt;html&gt;
 2.     &lt;head&gt;
 3.  
 4.       &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
@@ -20757,11 +20729,11 @@ JsBin</a>. If using a mobile device, <a href="https://jsbin.com/eyahuv/2" targe
 <!------------------------------------------------------------------------------------------------>
 <!---------------------- 263. move a ball on the screen - last image (450) ----------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image263.png"
-  style="width:35%;"
-  alt="Move a Ball on the Screen - last image." />
-</p>
+<img class="displayed"
+  src="./images/image263.png?raw=true"
+  alt="Move a ball on the screen - last image."
+  style="width:35%;" />
+
 <!---   style="width:3in;height:1.99379in" --->
 
 <details>
@@ -20945,45 +20917,13 @@ spec: 
 <!------------------------------------------------------------------------------------------------>
 <!--------------------- xx.  (##) ----------------------->
 <!------------------------------------------------------------------------------------------------>
-<!--
-<p align="center" width="100%">
-<img src="./images/image020.png"
-  style="width:6.5in;height:6.36875in"
-  alt="A simple three track video example."  />
-</p>
---->
-<!--
-<p align="center" width="100%">
-<img src="./images/image014.jpeg?raw=true"
-   style="width:1in;height:1in"
-   width="15%"
-   alt="." />
-</p>
--->
-<!--
-<p align="center" width="100%">
-<img src="./images/image.jpeg?raw=true"
-   width="35%"
-   alt="." />a
-</p>
--->
+<h5>the end…</h5>
+<h4>Last Updated: 1-16-2022 10:39pm</h4>
 <!---
-<p align="center" width="100%">
-<img src="./images/image037.jpeg" 
-  style="width:5in;height:2.76977in"
-  alt="Example of video player that uses text based chapter navigation" />
-</p>
+<img class="displayed"
+  src="./images/image0.jpeg?raw=true"
+  alt="Image of the bla bla goes here."
+  style="width:xx%;" />
 --->
-<!--
-<img src="./images/image038.jpeg" 
-  style="width:5in;height:2.28152in"
-  alt="Simple chapter menu in plain text." />
---->
-<h5>
-the end…
-</h5>
-<h4>
-Last Updated: 1-14-2022 8:30pm
-</h4>
 </body>
 </html>
