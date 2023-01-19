@@ -8277,13 +8277,9 @@ possible to simultaneously press the up and down arrow keys, or left and
 right arrow keys, because they are mutually exclusive. However space +
 up + right should work in combination.</p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch2-3-5">
-2.3.5 Adding mouse listeners
-</h3>
+<h3 id="ch2-3-5">2.3.5 Adding mouse listeners</h3>
 <!------------------------------------------------------------------------------------------------>
-<h4>
-A few reminders
-</h4>
+<h4>A few reminders</h4>
 <!------------------------------------------------------------------------------------------------>
 <!--------------------------- 103. a schema of mouse internals (170) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -8319,14 +8315,14 @@ JSBin</a> that covers all cases correctly.</p>
 Notice that we keep the state of the mouse (position, buttons up or
 down) as part of the inputStates object, just as we do with the keyboard
 (per previous lesson).</p>
-<h4>
-Below is the JavaScript source code for this small example:
-</h4>
+
+<h4>Below is the JavaScript source code for this small example:</h4>
+
 <details>
-<summary>
-JavaScript code extract!
-</summary>
-<pre><code>1.  var canvas, ctx;
+  <summary>JavaScript code extract!</summary>
+
+<pre><code>
+1.  var canvas, ctx;
 2.  var inputStates = {};
 3.  
 4.  window.onload = function init() {
@@ -8374,11 +8370,13 @@ JavaScript code extract!
 44.      x: evt.clientX - rect.left,
 45.      y: evt.clientY - rect.top
 46.   };
-47. }</code></pre>
+47. }
+</code></pre>
+
 </details>
-<h4>
-Making an object follow the mouse cursor
-</h4>
+
+<h4>Making an object follow the mouse cursor</h4>
+
 <p><a href="https://jsbin.com/soduko/edit?js,output" target="_blank" rel="noopener noreferrer">Try this example at
 JsBin</a></p>
 <!------------------------------------------------------------------------------------------------>
@@ -8389,14 +8387,14 @@ JsBin</a></p>
   style="width:2in;height:2.04192in"
   alt="A rectangle that follows the mouse cursor." />
 </p>
-<h4>
-Source code:
-</h4>
+
+<h4>Source code:</h4>
+
 <details>
-<summary>
-Code extract!
-</summary>
-<pre><code>1.  var canvas, ctx, width, height;
+  <summary>Code extract!</summary>
+
+<pre><code>
+1.  var canvas, ctx, width, height;
 2.  var rect = {x:40, y:40, rayon: 30, width:80, height:80, v:1};
 3.  var mousepos = {x:0, y:0};
 4.   
@@ -8454,11 +8452,13 @@ Code extract!
 56.       x: evt.clientX - rect.left,
 57.       y: evt.clientY - rect.top
 58.    };
-59. }</code></pre>
+59. }
+</code></pre>
+
 </details>
-<h4>
-Explanations:
-</h4>
+
+<h4>Explanations:</h4>
+
 <ul>
 <li><p><i>Line 25</i> calculates the <i>angle</i> between mouse cursor
 and the rectangle,</p></li>
@@ -8469,9 +8469,9 @@ cursor,</p></li>
 rectangle, <i>rotate</i> it, and recenter the <i>rotational point</i> to
 the center of the rectangle (in its new position).</p></li>
 </ul>
-<h4>
-Adding mouse listeners to the game framework
-</h4>
+
+<h4>Adding mouse listeners to the game framework</h4>
+
 <p>Now we will include these listeners into our game framework. Notice
 that we changed some parameters (no need to pass the canvas as a
 parameter of the getMousePos() function, for example).</p>
@@ -8500,6 +8500,7 @@ named inputStates is updated by keyboard and mouse events, and consulted
 to direct movements every 1/60th second.</p>
 
 <h4>JavaScript source code:</h4>
+
 <details>
   <summary>Code extract!</summary>
 
@@ -8721,12 +8722,16 @@ and that you will use a gamepad in the small game you are going to
 develop during this week. Bye! Bye!</p>
 <p>Some games, mainly arcade/action games, are designed to be used with
 a gamepad:</p>
-<p><img src="./images/image107.png" style="width:5in;height:3.22951in" /></p>
+<!------------------------------------------------------------------------------------------------>
+<!--------------------------- 107.  (1##) ----------------------------->
+<!------------------------------------------------------------------------------------------------>
+<img src="./images/image107.png" style="width:5in;height:3.22951in" />
+
 <p><a href="https://w3c.github.io/gamepad/" target="_blank" rel="noopener noreferrer">The Gamepad API </a>is
 currently supported by all major browsers (including Microsoft Edge),
 except Internet Explorer - see the <a
 href="https://caniuse.com/#feat=gamepad" target="_blank" rel="noopener noreferrer">up to date version of this
-feature’s compatbility table</a>. Note that the API is still a draft and
+feature’s compatibility table</a>. Note that the API is still a draft and
 may change in the future. We recommend using a Wired Xbox 360 Controller
 or a PS2 controller, both of which should work <em>out of the
 box</em> on Windows XP, Windows Vista, Windows, and Linux desktop
@@ -8734,21 +8739,16 @@ distributions. Wireless controllers are supposed to work too, but we
 haven’t tested the API with them. You may find someone who has managed
 but they’ve probably needed to install an operating system driver to
 make it work.</p>
-<h4>
-Detecting gamepads
-</h4>
-<h4>
-Events triggered when the gamepad is plugged in or unplugged
-</h4>
+
+<h4>Detecting gamepads</h4>
+
+<h4>Events triggered when the gamepad is plugged in or unplugged</h4>
+
 <p>Let’s start with a ‘discovery’ script to check that the GamePad is
 connected, and to see the range of facilities it can offer to
 JavaScript.</p>
 <p>If the user interacts with a controller (presses a button, moves a
-stick) a <a
-href="https://w3c.github.io/gamepad/#event-gamepadconnected" target="_blank" rel="noopener noreferrer">gamepadconnected</a> event
-will be sent to the page. NB the page must be visible! The event object
-passed to the gamepadconnected listener has a gamepad property which
-describes the connected device.</p>
+stick) a <a href="https://w3c.github.io/gamepad/#event-gamepadconnected" target="_blank" rel="noopener noreferrer">gamepadconnected</a> event will be sent to the page. NB the page must be visible! The event object passed to the gamepadconnected listener has a gamepad property which describes the connected device.</p>
 <p><a href="https://jsbin.com/kiduwu/edit?console,output" target="_blank" rel="noopener noreferrer">Example on
 JSBin</a></p>
 
@@ -8775,46 +8775,31 @@ JSBin</a></p>
 <!-------------------- 108. gamepad detected, message on jsbin example (180) --------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
-  src="./images/image0.jpeg?raw=true"
-  alt="Image of the bla bla goes here."
-  style="width:xx%;" />
-<p align="center" width="100%">
-<img src="./images/image108.jpeg"
-  style="width:35%;"
-  alt="Message on mouse event listener." />
-</p>
-<!---
-style="width:5in;height:2.57425in"
-alt="Gamepad detected, message on the jsbin exmaple" />
---->
-<p>If a gamepad is disconnected (you unplug it), a <a
-href="https://w3c.github.io/gamepad/#event-gamepaddisconnected" target="_blank" rel="noopener noreferrer">gamepaddisconnected</a> event
-is fired. Any references to the gamepad object will have
-their connected property set to false.</p>
-<pre><code>1.  window.addEventListener(&quot;gamepaddisconnected&quot;, function(e) {
+  src="./images/image108.jpeg?raw=true"
+  alt="Message on mouse event listener."
+  style="width:35%;" />
+
+<p>If a gamepad is disconnected (you unplug it), a <a href="https://w3c.github.io/gamepad/#event-gamepaddisconnected" target="_blank" rel="noopener noreferrer">gamepaddisconnected</a> event is fired. Any references to the gamepad object will have their connected property set to false.</p>
+
+<pre><code>
+1.  window.addEventListener(&quot;gamepaddisconnected&quot;, function(e) {
 2.     var gamepad = e.gamepad;
 3.     var index = gamepad.index;
 4.  
 5.     console.log(&quot;Gamepad No &quot; + index + &quot; has been disconnected&quot;);
-6.  });</code></pre>
+6.  });
+</code></pre>
+
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------- 109. disconnect game pad (180) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
-  src="./images/image0.jpeg?raw=true"
-  alt="Image of the bla bla goes here."
-  style="width:xx%;" />
-<p align="center" width="100%">
-<img src="./images/image109.jpeg"
-  style="width:35%;"
-  alt="Game pad disconnected." />
-</p>
-<!---
-style="width:3.92708in;height:1.41667in"
-alt="gamepad disconnected, screenshot from jsbin console" />
---->
-<h4>
-<p>Scanning for gamepads</p>
+  src="./images/image109.jpeg?raw=true"
+  alt="Game pad disconnected."
+  style="width:35%;" />
+
+<h4>Scanning for gamepads</h4>
+
 <p>If you reload the page, and if the gamepad has already been detected
 by the browser, it will not fire the gamepadconnected event again. This
 can be problematic if you use a global variable for managing the
@@ -8824,6 +8809,7 @@ fired, these variables will stay undefined…</p>
 You should still use that event listener if you want to do something
 special when the system detects that a gamepad has been unplugged.</p>
 <p>Here is the code to use to scan for a gamepad:</p>
+
 <details>
   <summary>Code extract!</summary>
 
@@ -8869,94 +8855,54 @@ presented earlier) in the next JSBin examples.</p>
 <p>To keep things simple, the above code works with a single gamepad
 - <a href="https://github.com/luser/gamepadtest" target="_blank" rel="noopener noreferrer">here’s a good example
 of managing multiple gamepads</a>.</p>
-<h4>
-<p>Detecting button status and axes values (joysticks)</p>
-<h4>
+
+<h4>Detecting button status and axes values (joysticks)</h4>
+
 <p>Properties of the gamepad object</p>
 <p>The gamepad object returned in the event listener <a
 href="https://w3c.github.io/gamepad/#gamepad-interface" target="_blank" rel="noopener noreferrer">has different
 properties</a>:</p>
+
 <ul>
-<li><p>id: a string indicating the id of the gamepad. Useful with &gt;
-the mapping property below.</p></li>
-<li><p>index: an integer used to distinguish multiple controllers
-(gamepad &gt; 1, gamepad 2, etc.).</p></li>
-<li><p>connected: true if the controller is still connected, false if it
-&gt; has been disconnected.</p></li>
-<li><p>mapping: not implemented yet by most browsers. It will allow the
-&gt; controllers of the gamepad to be remapped. A layout map is &gt;
-associated with the id of the gamepad. By default, and before they &gt;
-implement support for different mapping, all connected &gt; gamepads <a
-href="https://w3c.github.io/gamepad/#remapping" target="_blank" rel="noopener noreferrer">use a standard default
-&gt; layout</a>.</p></li>
+  <li>id: a string indicating the id of the gamepad. Useful with &gt; the mapping property below.</li>
+  <li>index: an integer used to distinguish multiple controllers (gamepad &gt; 1, gamepad 2, etc.).</li>
+  <li>connected: true if the controller is still connected, false if it &gt; has been disconnected.</li>
+  <li>mapping: not implemented yet by most browsers. It will allow the &gt; controllers of the gamepad to be remapped. A layout map is &gt; associated with the id of the gamepad. By default, and before they &gt; implement support for different mapping, all connected &gt; gamepads <a href="https://w3c.github.io/gamepad/#remapping" target="_blank" rel="noopener noreferrer">use a standard default &gt; layout</a>.</li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------ 110. standard default layout - gamepad (182) -------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
-  src="./images/image0.jpeg?raw=true"
-  alt="Image of the bla bla goes here."
-  style="width:xx%;" />
-<p align="center" width="100%">
-<img src="./images/image110.jpeg"
-  style="width:35%;"
-  alt="Standard default layout of a gamepad." />
-</p>
-<!---
-[<img src="./images/image110.jpeg" style="width:5in;height:2.60684in"
-alt="standard gamepad layout" /><u>  
-</u>](https://courses.edx.org/assets/courseware/v1/5a634bfb4d73130fbd4edb3ec19f4d1f/asset-v1:W3Cx+HTML5.2x+2T2020a+type@asset+block/standardGPLayout.jpg)Click
-the above image to open a large view in another window/tab.
---->
+  src="./images/image110.jpeg?raw=true"
+  alt="Standard default layout of a gamepad."
+  style="width:35%;" />
+
 <ul>
-<li><p>axes: an array of floating point values containing the state of
-each &gt; axis on the device. Usually these represent the analog sticks,
-&gt; with a pair of axes giving the position of the stick in its X and
-&gt; Y axes. Each axis is normalized to the range of -1.0…1.0, with &gt;
--1.0 representing the up or left-most position of the axis, and &gt; 1.0
-representing the down or right-most position of the axis.</p></li>
-<li><p>buttons: an array &gt; of <a
-href="https://w3c.github.io/gamepad/#idl-def-GamepadButton" target="_blank" rel="noopener noreferrer">GamepadButton</a> objects
-&gt; containing the state of each button on the device. Each &gt;
-GamepadButton has a pressed and a value property.</p></li>
-<li><p>The pressed property is a Boolean property indicating whether the
-&gt; button is currently pressed (true) or unpressed (false).</p></li>
-<li><p>The value property is a floating point value used to enable &gt;
-representing analog buttons, such as the triggers, on many modern &gt;
-gamepads. The values are normalized to the range 0.0…1.0, with &gt; 0.0
-representing a button that is not pressed, and 1.0 &gt; representing a
-button that is fully depressed.</p></li>
+  <li>axes: an array of floating point values containing the state of each &gt; axis on the device. Usually these represent the analog sticks, &gt; with a pair of axes giving the position of the stick in its X and &gt; Y axes. Each axis is normalized to the range of -1.0…1.0, with &gt; -1.0 representing the up or left-most position of the axis, and &gt; 1.0 representing the down or right-most position of the axis.</li>
+  <li>buttons: an array &gt; of <a href="https://w3c.github.io/gamepad/#idl-def-GamepadButton" target="_blank" rel="noopener noreferrer">GamepadButton</a> objects &gt; containing the state of each button on the device. Each &gt; GamepadButton has a pressed and a value property.</li>
+  <li>The pressed property is a Boolean property indicating whether the &gt; button is currently pressed (true) or unpressed (false).</li>
+  <li>The value property is a floating point value used to enable &gt; representing analog buttons, such as the triggers, on many modern &gt; gamepads. The values are normalized to the range 0.0…1.0, with &gt; 0.0 representing a button that is not pressed, and 1.0 &gt; representing a button that is fully depressed.</li>
 </ul>
-<h4>
-<p>Detecting whether a button is pressed</p>
-<p>Digital, on/off buttons evaluate to either one or zero
-(respectively). Whereas analog buttons will return a floating-point
-value between zero and one.</p>
-<p><a href="https://jsbin.com/heriqej/edit" target="_blank" rel="noopener noreferrer">Example on JSBin</a>. You
-might also give a look at at this demo that does the same thing but with
-multiple gamepads.</p>
+
+<h4>Detecting whether a button is pressed</h4>
+
+<p>Digital, on/off buttons evaluate to either one or zero (respectively). Whereas analog buttons will return a floating-point value between zero and one.</p>
+<p><a href="https://jsbin.com/heriqej/edit" target="_blank" rel="noopener noreferrer">Example on JSBin</a>. You might also give a look at at this demo that does the same thing but with multiple gamepads.</p>
 <!------------------------------------------------------------------------------------------------>
 <!--------------------- 111. button status detected, example on jsbin (184) ---------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
-  src="./images/image0.jpeg?raw=true"
-  alt="Image of the bla bla goes here."
-  style="width:xx%;" />
-<p align="center" width="100%">
-<img src="./images/image111.jpeg"
-  style="width:65%;"
-  alt="Button status detected." />
-</p>
-<!---
-style="width:6in;height:4.96603in"
-alt="button status detected, example on jsbin" />
---->
+  src="./images/image111.jpeg?raw=true"
+  alt="Button status detected."
+  style="width:65%;" />
+
 <p>Code for checking if a button is pressed:</p>
+
 <details>
-<summary>
-Code extract!
-</summary>
-<pre><code>1.  function checkButtons(gamepad) {
+  <summary>Code extract!</summary>
+
+<pre><code>
+1.  function checkButtons(gamepad) {
 2.     for (var i = 0; i &lt; gamepad.buttons.length; i++) {
 3.        // do nothing is the gamepad is not ok
 4.        if(gamepad === undefined) return;
@@ -8967,13 +8913,15 @@ Code extract!
 9.        if(b.pressed) {
 10.          console.log(&quot;Button &quot; + i + &quot; is pressed.&quot;);
 11.          if(b.value !== undefined)
-12.              // analog trigger L2 or R2, value is a float in [0,
-    1]
+12.              // analog trigger L2 or R2, value is a float in [0, 1]
 13.              console.log(&quot;Its value:&quot; + b.val);
 14.       }
 15.    }
-16. }</code></pre>
+16. }
+</code></pre>
+
 </details>
+
 <p>In <i>line 11</i>, notice how we detect whether the current button is
 an analog trigger (L2 or R2 on Xbox360 or PS2/PS3 gamepads). </p>
 <p>Next, we’ll integrate it into the mainloop code. Note that we also
@@ -16606,9 +16554,7 @@ href="https://stackoverflow.com/questions/9846013/how-to-view-indexeddb-content-
 to view IndexedDB content in Firefox</a></p></li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-6-5">
-3.6.5 Creating and deleting a database
-</h3>
+<h3 id="ch3-6-5">3.6.5 Creating and deleting a database</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>Hi! Let’s look now at some pieces of code and examples that will
 explain how to really program an IndexedDB application.</p>
@@ -16690,9 +16636,9 @@ IndexedDB.deleteDatabase(…),</p>
 <p>ok I run it again… normally, it disappears… sometimes the refresh
 does not work correctly,</p>
 <p>but the database is really deleted.</p>
-<h4>
-Creating a database
-</h4>
+
+<h4>Creating a database</h4>
+
 <p><a href="https://jsbin.com/govuci" target="_blank" rel="noopener noreferrer">Our online example at
 JSBin</a> shows how to create and populate an object store named
 “CustomerDB”. This example should work on both mobile and desktop
@@ -16706,6 +16652,7 @@ JSBin.</p>
 <p>Then, click the “Create CustomerDB” button in the HTML user interface
 of the example: it will call the createDB() JavaScript function
 that:</p>
+
 <ol type="1">
 <li><p>creates a new IndexedDB database and an object store in it
 (“customersDB”), and</p></li>
@@ -16735,6 +16682,7 @@ should show this message:</p>
   style="width:6.5in;height:0.825in"
   alt="Message displayed in console when the database is created the first time you run the example." />
 </p>
+
 <p>This message comes from the
 JavaScript request.onupgradeneeded callback. Indeed, the first time we
 open the database we ask for a specific version (in this example:
@@ -17022,7 +16970,7 @@ have been added.</p>
 <p><b>Be sure to click on the “create database” button before clicking
 the “insert new customer” button.</b></p>
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 200.  (##) ----------------------->
+<!--------------------- 200. inserting data to indexdb example (##) ----------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image200.png"
@@ -17035,24 +16983,30 @@ database creates or opens the database, and clicking “Add a new
 Customer” button adds a customer named “Michel Buffa” into the object
 store:</p>
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 201.  (##) ----------------------->
+<!--------------------- 201. devtools showing new customer inserted (##) ----------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image201.png"
   style="width:6.5in;height:3.53333in"
   alt="Devtools show that a new customer named Michel Buffa has been inserted." />
 </p>
+
 <p><b>Code from the example, explanations:</b></p>
 <p>We just added a single function into the example from the previous
 section - the function AddACustomer() that adds one customer:</p>
-<pre><code>{ ssn: &quot;123-45-6789&quot;, name: &quot;Michel Buffa&quot;, age: 47, email: 
-&quot;buffa@i3s.unice.fr&quot; }</code></pre>
+
+<pre><code>
+{ ssn: &quot;123-45-6789&quot;, name: &quot;Michel Buffa&quot;, age: 47, email: 
+&quot;buffa@i3s.unice.fr&quot; }
+</code></pre>
+
 <p>Here is the complete source code of the addACustomer function:</p>
+
 <details>
-<summary>
-function addACustomer code!
-</summary>
-<pre><code>1.  function addACustomer() {
+  <summary>function addACustomer code!</summary>
+  
+<pre><code>
+1.  function addACustomer() {
 2.     // 1 - get a transaction on the &quot;customers&quot; object store
 3.     // in readwrite, as we are going to insert a new object
 4.     var transaction = db.transaction([&quot;customers&quot;], &quot;readwrite&quot;);
@@ -17091,8 +17045,11 @@ function addACustomer code!
 36.        console.log(&quot;request.onerror, could not insert customer,
 37.                     errcode = &quot; + event.target.error.name);
 38.    };
-39. }</code></pre>
+39. }
+</code></pre>
+
 </details>
+
 <p><b>Explanations:</b></p>
 <p>In the code above, <i>lines 4, 19 and 22</i> show the main calls you
 have to perform in order to add a new object to the store:</p>
@@ -17117,9 +17074,9 @@ datastore remains unchanged.</p>
   style="width:6.5in;height:1.23889in"
   alt="Trace from the devtools console." />
 </p>
-<h4>
-Example #2: adding a form and validating inputs
-</h4>
+
+<h4>Example #2: adding a form and validating inputs</h4>
+
 <p><a href="https://jsbin.com/jayida" target="_blank" rel="noopener noreferrer">Online example available at
 JSBin</a>:</p>
 <!------------------------------------------------------------------------------------------------>
@@ -17130,7 +17087,9 @@ JSBin</a>:</p>
   style="width:6.5in;height:1.50278in"
   alt="A form has been added to the previous example, for creating a new customer." />
 </p>
+
 <p>You can try this example by following these steps:</p>
+
 <ol type="1">
 <li><p>Press first the “Create database” button</p></li>
 <li><p>then add a new customer using the form</p></li>
@@ -17168,6 +17127,7 @@ with the same ssn. An alert like this should pop up:</p></li>
   style="width:6.08333in;height:2.32292in"
   alt="Insert error." />
 </p>
+
 <p><b>Here is the updated version of the HTML code of this
 example:</b></p>
 <pre><code>1.  &lt;fieldset&gt;
@@ -17182,11 +17142,12 @@ example:</b></p>
 10. &lt;button onclick=&quot;addACustomer();&quot;&gt;Add a new Customer&lt;/button&gt;</code></pre>
 <p><b>And here is the new version of the addACustomer() JavaScript
 function:</b></p>
+
 <details>
-<summary>
-function addACustomer extract!
-</summary>
-<pre><code>1.  function addACustomer() {
+  <summary>function addACustomer extract!</summary>
+
+<pre><code>
+1.  function addACustomer() {
 2.     if(db === null) {
 3.        alert(&#39;Database must be opened, please click the Create
 4.               CustomerDB Database first&#39;);
@@ -17229,8 +17190,11 @@ function addACustomer extract!
 39.            &quot;. Certainly either the ssn or the email is already
 40.            present in the Database&quot;);
 41.   };
-42. }</code></pre>
+42. }
+</code></pre>
+
 </details>
+
 <p>It is also possible to shorten the code of the above function by
 chaining the different operations using the “.” operator (getting a
 transaction from the db, opening the store, adding a new customer,
@@ -17254,9 +17218,7 @@ such a way of coding (!).</p>
 valid value (in the IndexedDB sense). In order to avoid this, you should
 add more JavaScript code. We will let you do this as an exercise.</p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-6-8">
-3.6.8 Removing data
-</h3>
+<h3 id="ch3-6-8">3.6.8 Removing data</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>Let’s move to the next <a href="https://jsbin.com/bavifa" target="_blank" rel="noopener noreferrer">online
 example at JSBin</a>:</p>
@@ -17268,6 +17230,7 @@ example at JSBin</a>:</p>
   style="width:6.5in;height:2.68889in"
   alt="Devtools show that a customer has been removed once clicked on the remove customer button." />
 </p>
+
 <p>See the changes in Chrome dev. tools: refresh the view (right
 click/refresh) or press F12 or cmd-alt-i twice. There is a bug in the
 refresh feature with some versions of Google Chrome.</p>
@@ -17285,11 +17248,12 @@ ssn=444-44-4444(Bill)” button. Refresh the display of the database. The
 ‘Bill’ object should have disappeared!</p></li>
 </ol>
 <p>Code added in this example:</p>
+
 <details>
-<summary>
-function removeACustomer code!
-</summary>
-<pre><code>1.  function removeACustomer() {
+  <summary>function removeACustomer code!</summary>
+
+<pre><code>
+1.  function removeACustomer() {
 2.     if(db === null) {
 3.        alert(&#39;Database must be opened first, please click the
 4.               Create CustomerDB Database first&#39;);
@@ -17322,8 +17286,11 @@ function removeACustomer code!
 31.             = &quot; + event.target.error.name + &quot;. The ssn does not
 32.             exist in the Database&quot;);
 33.    };
-34. }</code></pre>
+34. }
+</code></pre>
+
 </details>
+
 <p>Notice that after the deletion of the Customer (<i>line 23</i>),
 the request.onsuccess callback is called. And if you try to print the
 value of the event.target.result variable, it is “undefined”.</p>
@@ -17332,9 +17299,13 @@ value of the event.target.result variable, it is “undefined”.</p>
 by concatenating the different operations (getting the store from the
 db, getting the request, calling delete, etc.). Here is the short
 version:</p>
-<pre><code>var request = db.transaction([&quot;customers&quot;], &quot;readwrite&quot;)
+
+<pre><code>
+var request = db.transaction([&quot;customers&quot;], &quot;readwrite&quot;)
   .objectStore(&quot;customers&quot;)
-  .delete(&quot;444-44-4444&quot;);</code></pre>
+  .delete(&quot;444-44-4444&quot;);
+</code></pre>
+
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch3-6-9">
 3.6.9 Modifying data
@@ -17354,6 +17325,7 @@ update a customer!</p>
   style="width:6.5in;height:3.44306in"
   alt="Devtools show a customer being updated in IndexedDB." />
 </p>
+
 <p>The above screenshot shows how we added an empty customer
 with ssn=““, (we just clicked on the open database button, then on
 the”add a new customer button” with an empty form).</p>
@@ -17447,11 +17419,12 @@ form is in the request.onsuccess callback).</p>
   alt="Form updated with data retrieved." />
 </p>
 <p>Here is the code added to that example:</p>
+
 <details>
-<summary>
-function searchACustomer code!
-</summary>
-<pre><code>1.  function searchACustomer() {
+  <summary>function searchACustomer code!</summary>
+
+<pre><code>
+1.  function searchACustomer() {
 2.     if(db === null) {
 3.       alert(&#39;Database must be opened first, please click the Create
 4.              CustomerDB Database first&#39;);
@@ -17495,19 +17468,23 @@ function searchACustomer code!
                 event.target.error.name + &quot;.
 42.             The ssn is not in the Database&quot;);
 43.   };
-44. }</code></pre>
+44. }
+</code></pre>
+
 </details>
+
 <p>The search is inititated at <i>line 30</i>, and the callback in the
 case of success is request.onsuccess, <i>lines 32-38</i>. event.target
 with result as the retrieved object (<i>lines 33 to 36</i>).</p>
 <p>Well, this is a lot of code, isn’t it? We can considerably abbreviate
 this function (though, admittedly it won’t take care of all possible
 errors). Here is the shortened version:</p>
+
 <details>
-<summary>
-function searchACustomerShort extract!
-</summary>
-<pre><code>1.  function searchACustomerShort() {
+  <summary>function searchACustomerShort extract!</summary>
+
+<pre><code>
+1.  function searchACustomerShort() {
 2.    db.transaction(&quot;customers&quot;).objectStore(&quot;customers&quot;)
 3.  .get(document.querySelector(&quot;#ssn&quot;).value).onsuccess =   
 4.     function(event) {
@@ -17518,17 +17495,21 @@ function searchACustomerShort extract!
 9.        document.querySelector(&quot;#email&quot;).value =
 10.                                           event.target.result.email;
 11.   }; // end of onsuccess callback
-12. }</code></pre>
+12. }
+</code></pre>
+
 </details>
+
 <p>You can try it on JSBin: this <a
 href="https://jsbin.com/rifate" target="_blank" rel="noopener noreferrer">version of the online example using this
 shortened version</a> (the function is at the end of the JavaScript
 code):</p>
+
 <details>
-<summary>
-function searchACustomerShort code!
-</summary>
-<pre><code>1.  function searchACustomerShort() {
+  <summary>function searchACustomerShort code!</summary>
+
+<pre><code>
+1.  function searchACustomerShort() {
 2.     if(db === null) {
 3.        alert(&#39;Database must be opened first, please click the Create
 4.               CustomerDB Database first&#39;);
@@ -17546,8 +17527,11 @@ function searchACustomerShort code!
 16.           document.querySelector(&quot;#email&quot;).value =
 17.                                      event.target.result.email;
 18.        };
-19. }</code></pre>
+19. }
+</code></pre>
+
 </details>
+
 <p><b>Explanations:</b></p>
 <ul>
 <li><p>Since there’s only one object store, you can avoid passing a list
@@ -17560,23 +17544,22 @@ gives a “readonly” transaction (<i>line 8</i>),</p></li>
 the DOM event has the request as its target we can use the event to get
 to the result property (<i>line 9</i>).</p></li>
 </ul>
-<h4>
-Second method: getting more than one piece of data
-</h4>
-<h4>
-Getting all of the data from the datastore: using a cursor
-</h4>
+
+<h4>Second method: getting more than one piece of data</h4>
+
+<h4>Getting all of the data from the datastore: using a cursor</h4>
+
 <p>Using get() requires that you know which key you want to retrieve. If
 you want to step through all the values in your object store, or just
 between those in a certain range, then you must use <i>a cursor</i>.</p>
-<h4>
-Here’s what it looks like:
-</h4>
+
+<h4>Here’s what it looks like:</h4>
+
 <details>
-<summary>
-function listAllCustomers code!
-</summary>
-<pre><code>1.  function listAllCustomers() {
+  <summary>function listAllCustomers code!</summary>
+
+<pre><code>
+1.  function listAllCustomers() {
 2.     var objectStore =   
 3.       db.transaction(&quot;customers&quot;).objectStore(&quot;customers&quot;);
 4.  
@@ -17596,8 +17579,11 @@ function listAllCustomers code!
 18.        alert(&quot;No more entries!&quot;);
 19.      }
 20.   }; // end of onsuccess...
-21. } // end of listAllCustomers()</code></pre>
+21. } // end of listAllCustomers()
+</code></pre>
+
 </details>
+
 <p><a href="https://jsbin.com/xetumu" target="_blank" rel="noopener noreferrer">You can try this example on
 JSBin</a>.</p>
 <p>It adds a button to our application. Clicking on it will display a
@@ -17611,7 +17597,9 @@ store:</p>
   style="width:6.5in;height:1.88889in"
   alt="Screenshot with a &quot;list all customers button&quot; and an alert showing one of them." />
 </p>
+
 <p>The openCursor() function can take several (optional) arguments.</p>
+
 <ul>
 <li><p>First, you can limit the range of items that are retrieved by
 using a key range object - we’ll get to that in a minute.</p></li>
@@ -17630,11 +17618,12 @@ that matched your openCursor() request) you still get
 a success callback, but the result property is undefined.</p>
 <p>One common pattern with cursors is to retrieve all objects in an
 object store and add them to an array, like this:</p>
+
 <details>
-<summary>
-function ListAllCustomersArray!
-</summary>
-<pre><code>1.  function listAllCustomersArray() {
+  <summary>function ListAllCustomersArray!</summary>
+  
+<pre><code>
+1.  function listAllCustomersArray() {
 2.    var objectStore =   
 3.        db.transaction(&quot;customers&quot;).objectStore(&quot;customers&quot;);
 4.  
@@ -17673,11 +17662,12 @@ index</i>.</p>
 <p>Here is a function that examines by name the person-objects in the
 object store, and returns the first one it finds with a name equal to
 “Bill”:</p>
+
 <details>
-<summary>
-function getCustomerByName!
-</summary>
-<pre><code>1.  function getCustomerByName() {
+  <summary>function getCustomerByName!</summary>
+  
+<pre><code>
+1.  function getCustomerByName() {
 2.     if(db === null) {
 3.       alert(&#39;Database must be opened first, please click the Create
 4.              CustomerDB Database first&#39;);
@@ -17693,8 +17683,11 @@ function getCustomerByName!
 14.       alert(&quot;Bill&#39;s SSN is &quot; + &lt;b&gt;event.target.result.ssn +
 15.             &quot; his email is &quot; + &lt;b&gt;event.target.result.email);
 16.    };
-17. }</code></pre>
+17. }
+</code></pre>
+
 </details>
+
 <p>The search by index occurs at <i>lines 11 and 13</i>: <i>line
 11</i> creates an “index” object that corresponds to the “name”
 property. <i>Line 13</i> calls the get() method on this index-object to
@@ -17722,11 +17715,12 @@ on indexes:</p>
 A key cursor which maps the index property to the key used to store the object in the object store.</code></pre>
 <p>The differences are illustrated below.</p>
 <p>Normal cursor:</p>
+
 <details>
-<summary>
-Normal cursor code!
-</summary>
-<pre><code>1.  &lt;b&gt;index.openCursor().onsuccess = function(event) {
+  <summary>Normal cursor code!</summary>
+  
+<pre><code>
+1.  &lt;b&gt;index.openCursor().onsuccess = function(event) {
 2.    &lt;b&gt;var cursor = event.target.result;
 3.    if (cursor) {
 4.      // cursor.key is a name, like &quot;Bill&quot;, and &lt;b&gt;cursor.value is  the
@@ -17735,14 +17729,18 @@ Normal cursor code!
 7.             email: &quot; +&lt;b&gt; cursor.value.email);
 8.      &lt;b&gt;cursor.continue();
 9.  }
-10. };</code></pre>
+10. };
+</code></pre>
+
 </details>
+
 <p>Key cursor:</p>
+
 <details>
-<summary>
-Key cursor code!
-</summary>
-<pre><code>1.  &lt;b&gt;index.openKeyCursor().onsuccess = function(event) {
+  <summary>Key cursor code!</summary>
+  
+<pre><code>
+1.  &lt;b&gt;index.openKeyCursor().onsuccess = function(event) {
 2.     var cursor = event.target.result;
 3.     if (cursor) {
 4.       // cursor.key is a name, like &quot;Bill&quot;,&lt;b&gt; and cursor.value is the
@@ -17751,8 +17749,11 @@ Key cursor code!
 7.       alert(&quot;Name: &quot; + cursor.key + &quot;, &quot;SSN: &quot; + &lt;b&gt;cursor.value);
 8.       cursor.continue();
 9.     }
-10. };</code></pre>
+10. };
+</code></pre>
+
 </details>
+
 <p>Can you see the difference? </p>
 <p>You can try <a href="https://jsbin.com/kubuwof" target="_blank" rel="noopener noreferrer">an online example at
 JSBin that uses the above methods</a>:</p>
@@ -17775,11 +17776,12 @@ case, add two customers with a name equal to “Bill”, then press the last
 button again.</p></li>
 </ol>
 <p>Source code extract from this example:</p>
+
 <details>
-<summary>
-function getAllCustomersByName!
-</summary>
-<pre><code>1.  function getAllCustomersByName() {
+  <summary>function getAllCustomersByName!</summary>
+
+<pre><code>
+1.  function getAllCustomersByName() {
 2.    if(db === null) {
 3.      alert(&#39;Database must be opened first, please click the Create
 4.             CustomerDB Database first&#39;);
@@ -17806,12 +17808,13 @@ function getAllCustomersByName!
 25.       cursor.continue();
 26.    }
 27. };
-28. }</code></pre>
+28. }
+</code></pre>
+
 </details>
+
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-6-11">
-3.6.11 Limiting the range of values in a cursor
-</h3>
+<h3 id="ch3-6-11">3.6.11 Limiting the range of values in a cursor</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>How to specify the range and direction of cursors with IndexedDB?</p>
 <p>It is possible to use a special object called IDBKeyRange, for
@@ -17824,11 +17827,12 @@ given value(s)). </p>
 <p>Let’s look at some examples (<a
 href="https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Using_IndexedDB#Specifying_the_range_and_direction_of_cursors" target="_blank" rel="noopener noreferrer">adapted
 from this MDN article</a>):</p>
+
 <details>
-<summary>
-Code extract!
-</summary>
-<pre><code>1.  // Only match &quot;Donna&quot;
+  <summary>Code extract!</summary>
+
+<pre><code>
+1.  // Only match &quot;Donna&quot;
 2.  var singleKeyRange = IDBKeyRange.only(&quot;Donna&quot;);
 3.   
 4.  // Match anything past &quot;Bill&quot;, including &quot;Bill&quot;
@@ -17850,7 +17854,9 @@ Code extract!
 20.         // Do something with the matches.
 21.         cursor.continue();
 22.     }
-23. };</code></pre>
+23. }
+</code></pre>
+
 </details>
 <h4>
 Complete example
@@ -17879,15 +17885,13 @@ JsBin</a> (enter “Gaming”, “Batman” etc. as key range values):</p>
   alt="IDBKeyRange in action." />
 </p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-6-12">
-3.6.12 Discussion and projects
-</h3>
+<h3 id="ch3-6-12">3.6.12 Discussion and projects</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>Here is the discussion forum for this part of the course. Please post
 your comments/observations/questions and share your creations.</p>
-<h4>
-Suggested topics of discussion:
-</h4>
+
+<h4>Suggested topics of discussion:</h4>
+
 <ul>
 <li><p>IndexedDB is certainly the most complex API presented in this
 course. However, using it is rather simple once you’ve climbed the
@@ -17896,9 +17900,9 @@ tell your feelings in the forum?</p></li>
 <li><p>If you found handy tools for using IndexedDB, or other external
 tutorials and examples, please share!</p></li>
 </ul>
-<h4>
-Optional projects:
-</h4>
+
+<h4>Optional projects:</h4>
+
 <ul>
 <li><p>Start from the examples provided in the IndexedDB course and
 adapt them in order to manage a database of the HTML5 interactive
@@ -17914,7 +17918,7 @@ and,</p></li>
 bit of a geek, image content).</p></li>
 </ul></li>
 </ul>
-<!-- -->
+
 <ul>
 <li>Produce an HTML page which contains your application. When loaded,
 it must populate the indexedDB database with at least 10 different
@@ -17938,7 +17942,7 @@ protect data against concurrent access, etc.), or do some searches on a
 large amount of data, if you need indexes, etc., <b>then use
 IndexedDB</b></li>
 </ul>
-<!-- -->
+
 <ul>
 <li><p><b>If you need a way to store simple strings or JSON objects,
 then use localStorage/sessionStorage</b>. <i>Example</i>: store HTML
@@ -17955,14 +17959,14 @@ vendors.</p></li>
 please! There was once a WebSQL API, but it disappeared
 rapidly.</p></li>
 </ul>
+
 <blockquote>
 <p><b>Note that the above points may be used in any combination</b>: you
 may have a Web app that uses localStorage and IndexedDB to cache its
 resources so that it can run in offline mode.</p>
 </blockquote>
-<h4>
-External resources
-</h4>
+
+<h4>External resources</h4>
 <ul>
 <li>You might be interested by <a
 href="https://developers.google.com/web/fundamentals/instant-and-offline/web-storage/cache-api">the
@@ -17976,9 +17980,10 @@ article that covers all different options for storing data in the
 browser and gives another look at what has been presented in this
 chapter of the course</a>.</li>
 </ul>
-<h3 id="ch4">
-Module 4. Web Components and other HTML5 APIs
-</h3>
+
+<!------------------------------------------------------------------------------------------------>
+<h3 id="ch4">Module 4. Web Components and other HTML5 APIs</h3>
+<!------------------------------------------------------------------------------------------------>
 <p>Hi! This is the final week of the course! And this time we will look
 at what the future holds by presenting you the Web components. This is a
 set of specifications that will allow you for the creation of reusable
@@ -18010,9 +18015,7 @@ interacting with the students is really what makes me happy. I hope you
 enjoyed the course and see you maybe for a next one on W3Cx.
 Bye-bye!</p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch4-2-1">
-4.2.1 Web components in video
-</h3>
+<h3 id="ch4-2-1">4.2.1 Web components in video</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>Hi! Today, I am going to talk about Web components, that are reusable
 widgets.</p>
@@ -18089,9 +18092,9 @@ The search field from webcomponents.org is equivalent to the search
 field that was available on the customelements.io.</p>
 <p>The zip file from the video is available for download in the section
 below.</p>
-<h4>
-Example from the video
-</h4>
+
+<h4>Example from the video</h4>
+
 <p>You can download an archive of the example mentioned in the video
 lecture from: <a
 href="https://courses.edx.org/assets/courseware/v1/3d550fbef1593961559d28aa6e373d97/asset-v1:W3Cx+HTML5.2x+2T2020a+type@asset+block/VideoUsingWebComponents2020.zip" target="_blank" rel="noopener noreferrer">VideoUsingWebComponents2020.zip</a></p>
@@ -18107,9 +18110,7 @@ the index.html file located in that directory.</p>
   alt="Running the example in an Apache Web Server." />
 </p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch4-2-2">
-4.2.2 Introduction
-</h3>
+<h3 id="ch4-2-2">4.2.2 Introduction</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>Web components provide a standard way to build your own
 widgets/components using similar methods to those used by browser
@@ -18136,7 +18137,11 @@ href="https://geelen.github.io/x-gif/#/https://i.imgur.com/iKXH4E2.gif" target="
 Web site</a>.</p>
 <p>If you look at the source of the demo page, you note the following at
 the top of the page:</p>
-<pre><code>&lt;link rel=&quot;import&quot; href=&quot;dist/x-gif.html&quot;&gt;</code></pre>
+
+<pre><code>
+&lt;link rel=&quot;import&quot; href=&quot;dist/x-gif.html&quot;&gt;
+</code></pre>
+
 <p>It’s called an “HTML import”. If your browser supports <i>HTML
 imports</i>, you can now import <i>another HTML document, </i>that will
 come with its own HTML, CSS, and JavaScript code-base, into your HTML
@@ -18158,9 +18163,8 @@ this animated GIF player:</p>
 <p>…<i>and your document will still be valid.</i> Looking at the source
 code or at the DOM with the devtool’s inspector will not reveal the
 source code (HTML/JavaScript/CSS) used for creating it.</p>
-<h4>
-Web components availability
-</h4>
+
+<h4>Web components availability</h4>
 <p>There are already hundreds of Web components made by others that you
 can use. On the <a
 href="https://www.webcomponents.org/" target="_blank" rel="noopener noreferrer">webcomponents.org</a> Web site,
@@ -18252,9 +18256,7 @@ on.</p></li>
 JavaScript imports (see <a
 href="https://github.com/w3c/webcomponents/blob/gh-pages/proposals/HTML-Imports-and-ES-Modules.md" target="_blank" rel="noopener noreferrer">discussions</a>).</p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch4-2-3">
-4.2.3 HTML templates
-</h3>
+<h3 id="ch4-2-3">4.2.3 HTML templates</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>Hi! In this lesson, I am going to talk about the template API. You
 must know that Web components are what we call ‘an umbrella API’ that is
@@ -18320,15 +18322,19 @@ styles) that can be reused.</p>
 JavaScript will not be executed, images will not be loaded, videos will
 not be played, etc.) until the template is used.</p>
 <p>Here is an example of code that defines a template:</p>
-<pre><code>1.  &lt;template id=&quot;mytemplate&quot;&gt;
+
+<pre><code>
+1.  &lt;template id=&quot;mytemplate&quot;&gt;
 2.     &lt;img src=&quot;&quot; alt=&quot;great image&quot;&gt;
 3.     &lt;div class=&quot;comment&quot;&gt;&lt;/div&gt;
-4.  &lt;/template&gt;</code></pre>
+4.  &lt;/template&gt;
+</code></pre>
+
 <p>Note that it’s ok to have the <b>src</b> attribute empty here, we
 will initialize it when the template is activated.</p>
-<h4>
-To use a template, clone its content!
-</h4>
+
+<h4>To use a template, clone its content!</h4>
+
 <p>A template has “content” (the lines of code
 between &lt;template&gt; and &lt;/template&gt;), and to manipulate it we
 use the DOM API and the content attribute of the DOM node that
@@ -18338,16 +18344,18 @@ example below).</p>
 the document.importNode(templateContent, true) method, where the node is
 the template’s content and true means “deep copy” the content.</p>
 <p>A template is typically used like this:</p>
-<pre><code>1.  var t = document.querySelector(&#39;#mytemplate&#39;);
+
+<pre><code>
+1.  var t = document.querySelector(&#39;#mytemplate&#39;);
 2.  // Populate the src at runtime.
 3.  t.content.querySelector(&#39;img&#39;).src = &#39;https://webcomponents.github.io/img/logo.svg&#39;;
 4.  
 5.  // Clone the template, sort of &quot;instantiation&quot;!
 6.  var clone = document.importNode(t.content, true);
-7.  document.body.appendChild(clone);</code></pre>
-<h4>
-Explanations
-</h4>
+7.  document.body.appendChild(clone);
+</code></pre>
+
+<h4>Explanations</h4>
 <p>:</p>
 <ul>
 <li><p>In this example, <i>line 1</i> assigns the DOM node corresponding
@@ -18361,9 +18369,9 @@ template’s content.</p></li>
 <li><p><i>Lines 5 and 6</i> clone the template’s content and add it to
 the &lt;body&gt; of the document.</p></li>
 </ul>
-<h4>
-Example
-</h4>
+
+<h4>Example</h4>
+
 <p>Here is <a href="https://jsbin.com/dozele/edit" target="_blank" rel="noopener noreferrer">an online example at
 JSBin</a> that uses exactly the code presented:</p>
 <!------------------------------------------------------------------------------------------------>
@@ -18375,21 +18383,24 @@ JSBin</a> that uses exactly the code presented:</p>
   alt="Template use." />
 </p>
 <p>And here is the complete source code…</p>
-<h4>
-The HTML part:
-</h4>
-<pre><code>1.  &lt;template id=&quot;mytemplate&quot;&gt;
+
+<h4>The HTML part:</h4>
+
+<pre><code>
+1.  &lt;template id=&quot;mytemplate&quot;&gt;
 2.     &lt;img src=&quot;&quot; alt=&quot;great image&quot;&gt;
 3.     &lt;div class=&quot;comment&quot;&gt;hello&lt;/div&gt;
 4.  &lt;/template&gt;
 5.  
 6.  &lt;body&gt;
 7.     &lt;button onclick=&quot;instantiate()&quot;&gt;Instantiate the template&lt;/button&gt;&lt;br&gt;
-8.  &lt;/body&gt;</code></pre>
-<h4>
-The JavaScript part:
-</h4>
-<pre><code>1.  function instantiate() {
+8.  &lt;/body&gt;
+</code></pre>
+
+<h4>The JavaScript part:</h4>
+
+<pre><code>
+1.  function instantiate() {
 2.     var t = document.querySelector(&#39;#mytemplate&#39;);
 3.     // Populate the src at runtime.
 4.     t.content.querySelector(&#39;img&#39;).src =
@@ -18397,11 +18408,11 @@ The JavaScript part:
 6.  
 7.     var clone = document.importNode(t.content, true);
 8.     document.body.appendChild(clone);
-9.  }</code></pre>
+9.  }
+</code></pre>
+
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch4-2-4">
-4.2.4 Shadow DOM
-</h3>
+<h3 id="ch4-2-4">4.2.4 Shadow DOM</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>Hello! Let’s talk about the shadow DOM. What is the</p>
 <p>Shadow DOM? Let’s first look at a video. You know the video element,
@@ -18581,11 +18592,12 @@ now it’s available to every Web developer!</p>
 Another simple example
 </h4>
 <p>Let’s have a look at a very simple example:</p>
+
 <details>
-<summary>
-Code extract!
-</summary>
-<pre><code>1.  &lt;div&gt;Hello this is not rendered!&lt;/div&gt;
+  <summary>Code extract!</summary>
+
+<pre><code>
+1.  &lt;div&gt;Hello this is not rendered!&lt;/div&gt;
 2.  &lt;script&gt;
 3.      // the div is the Shadow Host. Its content will not be rendered
 4.      var host = document.querySelector(&#39;div&#39;);
@@ -18597,8 +18609,11 @@ Code extract!
 10.     // insert something into the shadow DOM, this will be rendered
 11.     shadowRoot.innerHTML = &#39;&lt;h1&gt;Hello Shadow DOM&lt;/h1&gt;&#39;; // Could
     also use appendChild().
-12. &lt;/script&gt;</code></pre>
+12. &lt;/script&gt;
+</code></pre>
+
 </details>
+
 <p><i>Lines 8 and 11</i> show how to associate a shadow root with an
 existing HTML element. In this example, the &lt;div&gt; defined
 at<i> line 1</i> is a shadow host, and it is associated with the shadow
@@ -18613,9 +18628,9 @@ root which contains three words of text (<i>line 11</i>).</p>
 </p>
 <p>This example illustrates the three rules of the shadow DOM. Let’s
 look at them again:</p>
-<h4>
-<b>The three rules of Shadow DOM:</b>
-</h4>
+
+<h4>The three rules of Shadow DOM:</h4>
+
 <ol type="1">
 <li><p>With Shadow DOM, elements are associated with a new kind of
 node: <i>a shadow root</i>.</p></li>
@@ -18639,9 +18654,7 @@ Then modify the text at <i>line 11</i> and observe the result</p>
   alt="Shadow DOM: the shadow root is rendered instead of the shadow host content." />
 </p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch4-2-5">
-4.2.5 Shadow DOM: encapsulate code
-</h3>
+<h3 id="ch4-2-5">4.2.5 Shadow DOM: encapsulate code</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>By mixing templates and the shadow DOM, it is possible to hide a
 template’s content by embedding it in the shadow root. In this scenario,
@@ -18651,22 +18664,26 @@ external CSS will not apply inside the shadow root.</p>
 <p>This is an important feature: the content of a new “widget” that is
 hidden in a shadow root is protected from external CSS, scripts,
 etc.</p>
-<h4>
-An example that mixes templates and shadow DOM
-</h4>
+
+<h4>An example that mixes templates and shadow DOM</h4>
 <p>HTML part:</p>
-<pre><code>1.  &lt;template id=&quot;mytemplate&quot;&gt;
+
+<pre><code>
+1.  &lt;template id=&quot;mytemplate&quot;&gt;
 2.     &lt;style&gt;
 3.       h1 {color:white; background:red}
 4.     &lt;/style&gt;
 5.     &lt;h1&gt;This is a shadowed H1&lt;/h1&gt;
-6.  &lt;/template&gt;</code></pre>
+6.  &lt;/template&gt;
+</code></pre>
+
 <p>The JavaScript part:</p>
+
 <details>
-<summary>
-Code extract!
-</summary>
-<pre><code>1.  // Instanciate the template
+  <summary>Code extract!</summary>
+
+<pre><code>
+1.  // Instanciate the template
 2.  var t = document.querySelector(&#39;#mytemplate&#39;);
 3.   
 4.  // Create a root node under our H1 title
@@ -18675,8 +18692,11 @@ Code extract!
 7.  const shadowRoot = host.attachShadow({mode: &#39;open&#39;});
 8.  
 9.  // insert something into the shadow DOM, this will be rendered
-10. shadowRoot.appendChild(document.importNode(t.content, true));</code></pre>
+10. shadowRoot.appendChild(document.importNode(t.content, true));
+</code></pre>
+
 </details>
+
 <p><a href="https://jsbin.com/quguwa/edit?html,js,output" target="_blank" rel="noopener noreferrer">Online example
 at JSBin</a>:</p>
 <!------------------------------------------------------------------------------------------------>
@@ -18710,11 +18730,12 @@ elements and makes them white on red); whereas the other is located in
 the body of the document and is not affected by the CSS within the Web
 Component.</p>
 <p>The HTML part:</p>
+
 <details>
-<summary>
-HTML code!
-</summary>
-<pre><code>1.  &lt;template id=&quot;mytemplate&quot;&gt;
+  <summary>HTML code!</summary>
+
+<pre><code>
+1.  &lt;template id=&quot;mytemplate&quot;&gt;
 2.     &lt;style&gt;
 3.       h1 {color:white; background:red}
 4.     &lt;/style&gt;
@@ -18725,8 +18746,11 @@ HTML code!
 9.     &lt;h1 id=&quot;withShadowDom&quot;&gt;This is a text header&lt;/h1&gt;
 10. 
 11.    &lt;h1&gt;Normal header with no shadow DOM associated.&lt;/h1&gt;
-12. &lt;/body&gt;</code></pre>
+12. &lt;/body&gt;
+</code></pre>
+
 </details>
+
 <p>We added a new H1 at <i>line 11</i>. </p>
 <p>And here is the result:</p>
 <!------------------------------------------------------------------------------------------------>
@@ -18739,9 +18763,13 @@ HTML code!
 </p>
 <p>The second H1 is not affected by the CSS defined in the template used
 by the first H1. Try to add this CSS rule to this example :</p>
-<pre><code>1.  h1 {
+
+<pre><code>
+1.  h1 {
 2.      color:green;
-3.  }</code></pre>
+3.  }
+</code></pre>
+
 <p>And you should see something like that:</p>
 <!------------------------------------------------------------------------------------------------>
 <!---------------------------- 233. global css and shadow dom (###) ------------------------------>
@@ -18755,20 +18783,19 @@ by the first H1. Try to add this CSS rule to this example :</p>
 in the body of the document, not the color of the H1 encapsulated in the
 Shadow DOM.</p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch4-2-6">
-4.2.6 Shadow DOM: insert content
-</h3>
+<h3 id="ch4-2-6">4.2.6 Shadow DOM: insert content</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>Let’s see how to insert content from the host element within the
 Shadow DOM using slots.</p>
 <p>It is possible to define a part of the template into which external
 HTML content will be “injected”. For this, we use
 the &lt;slot&gt;…&lt;/slot&gt; element, as shown below:</p>
+
 <details>
-<summary>
-HTML code!
-</summary>
-<pre><code>1.  &lt;template id=&quot;mytemplate&quot;&gt;
+  <summary>HTML code!</summary>
+
+<pre><code>
+1.  &lt;template id=&quot;mytemplate&quot;&gt;
 2.      &lt;h1 part=&#39;heading&#39;&gt;This is a shadowed H1&lt;/h1&gt;
 3.      &lt;p part=&quot;paragraph&quot;&gt;
 4.          &lt;slot name=&quot;my-text&quot;&gt;My default text&lt;/slot&gt;
@@ -18779,23 +18806,20 @@ HTML code!
 9.  &lt;h1 id=&quot;myWidget&quot;&gt;
 10.     &lt;span slot=&quot;my-text&quot;&gt;Injected content using slot elem&lt;/span&gt;
 11. &lt;/h1&gt;
-12. &lt;/body&gt;</code></pre>
+12. &lt;/body&gt;
+</code></pre>
+
 </details>
-<h4>
-<b>Explanations</b>:
-</h4>
+
+<h4>Explanations:</h4>
+
 <ul>
-<li><p>Look at <i>line 4</i>, this is the “injection point”’!</p></li>
-<li><p>And <i>line 10</i> is the content which will be injected into the
-template code. So, when the classic template instantiation and its
-addition to a shadow host node in the page is done, the HTML produced
-will contain “Injected Content” instead of <slot
-mname="my-text"></slot>.</p></li>
+  <li>Look at <i>line 4</i>, this is the “injection point”’!</li>
+  <li>And <i>line 10</i> is the content which will be injected into the template code. So, when the classic template instantiation and its addition to a shadow host node in the page is done, the HTML produced will contain “Injected Content” instead of <slot name="my-text"></slot>.</li>
 </ul>
-<h4>
-See <a href="https://jsbin.com/jepucoz/edit?html,js,output" target="_blank" rel="noopener noreferrer">the complete
-online example at JSBin</a>:
-</h4>
+
+<h4>See <a href="https://jsbin.com/jepucoz/edit?html,js,output" target="_blank" rel="noopener noreferrer">the complete
+online example at JSBin</a>:</h4>
 <!------------------------------------------------------------------------------------------------>
 <!-------------- 234. content injection in html templates using slot element (###) --------------->
 <!------------------------------------------------------------------------------------------------>
@@ -18804,36 +18828,29 @@ online example at JSBin</a>:
   style="width:5in;height:2.17521in"
   alt="Content injection in HTML templates using slot elements." />
 </p>
-<h4>
-External resources
-</h4>
+<h4>External resources</h4>
+
 <ul>
-<li><p>An MDN article on “<a
-href="https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_templates_and_slots" target="_blank" rel="noopener noreferrer">Using
-templates and slots</a>”</p></li>
-<li><p>Medium articles:</p></li>
-<li><p>“<a
-href="https://medium.com/better-programming/2020-008-add-flexibility-to-web-components-with-slots-c07ce2620952" target="_blank" rel="noopener noreferrer">Add
-Flexibility to Web Components With Slots</a>”</p></li>
-<li><p>“<a
-href="https://levelup.gitconnected.com/creating-web-components-templates-and-slots-bd6905a7092a" target="_blank" rel="noopener noreferrer">Creating
-Web Components — Templates and Slots</a>”</p></li>
+  <li><p>An MDN article on “<a href="https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_templates_and_slots" target="_blank" rel="noopener noreferrer">Using templates and slots</a>”</p></li>
+  <li><p>Medium articles:</p></li>
+  <li><p>“<a href="https://medium.com/better-programming/2020-008-add-flexibility-to-web-components-with-slots-c07ce2620952" target="_blank" rel="noopener noreferrer">Add Flexibility to Web Components With Slots</a>”</p></li>
+  <li><p>“<a href="https://levelup.gitconnected.com/creating-web-components-templates-and-slots-bd6905a7092a" target="_blank" rel="noopener noreferrer">Creating Web Components — Templates and Slots</a>”</p></li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch4-2-7">
-4.2.7 HTML Custom elements
-</h3>
+<h3 id="ch4-2-7">4.2.7 HTML Custom elements</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>HTML Custom Elements is another API described as HTML Web components.
 It allows you to extend HTML by defining new elements, and to tell the
 browser how to render them.</p>
-<h4>
-Basic usage:
-</h4>
-<pre><code>customElements.define(&#39;my-widget&#39;, MyWidget);</code></pre>
-<h4>
-This is done using JavaScript and there are some constraints:
-</h4>
+
+<h4>Basic usage:</h4>
+
+<pre><code>
+customElements.define(&#39;my-widget&#39;, MyWidget);
+</code></pre>
+
+<h4>This is done using JavaScript and there are some constraints:</h4>
+
 <ol type="1">
 <li><p>The element’s new name should have a dash
 (ex: <my-calendar>, <app-list>, etc.)</p></li>
@@ -18851,15 +18868,18 @@ is new to you, please see earlier reference material.</p>
 <p>Here is an example which defines a new element
 named <my-widget>, that will render as an instance of a template with a
 shadow DOM:</p>
-<h4>
-HTML code for the use of the custom element:
-</h4>
-<pre><code>1.  &lt;body&gt;
+
+<h4>HTML code for the use of the custom element:</h4>
+
+<pre><code>
+1.  &lt;body&gt;
 2.  &lt;my-widget&gt;
 3.     &lt;span slot=&quot;my-title&quot;&gt;Title injected&lt;/span&gt;
 4.     &lt;span slot=&quot;my-paragraph&quot;&gt;Paragraph injected&lt;/span&gt;
 5.  &lt;/my-widget&gt;
-6.  &lt;/body&gt;</code></pre>
+6.  &lt;/body&gt;
+</code></pre>
+
 <p>Look at <i>lines 2 </i>and<i> 5</i>…</p>
 <p>HTML code for the declaration of the template (the same as in one of
 the previous examples):</p>
