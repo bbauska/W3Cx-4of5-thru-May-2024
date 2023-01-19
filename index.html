@@ -2885,11 +2885,12 @@ this example at JSBin</a>:</p>
   alt="Using track api to extract content of webvtt in track element." />
 </p>
 <!-- <h4>HTML code:</h4> -->
+
 <details>
-<summary>
-HTML code!
-</summary>
-<pre><code>1.  &lt;section id=&quot;all&quot;&gt;
+  <summary>HTML code!</summary>
+
+<pre><code>
+1.  &lt;section id=&quot;all&quot;&gt;
 2.  &lt;button disabled id=&quot;buttonEnglish&quot;
 3.           onclick=&quot;loadTranscript(&#39;en&#39;);&quot;&gt;
 4.      Display English transcript
@@ -2921,14 +2922,13 @@ HTML code!
 30. &lt;div id=&quot;transcript&quot;&gt;&lt;/div&gt;
 31. &lt;/section&gt;</code></pre>
 </details>
-<h4>
-CSS code:
-</h4>
+<h4>CSS code:</h4>
+
 <details>
-<summary>
-CSS code extract!
-</summary>
-<pre><code>1.  #all {
+  <summary>CSS code extract!</summary>
+
+<pre><code>
+1.  #all {
 2.     background-color: lightgrey;
 3.     border-radius:10px;
 4.     padding: 20px;
@@ -2970,16 +2970,17 @@ CSS code extract!
 40.    margin: 0;
 41.    font-size: 14px;
 42.    list-style: none;
-43. }</code></pre>
+43. }
+</code></pre>
+
 </details>
-<h4>
-JavaScript code:
-</h4>
+
+<h4>JavaScript code:</h4>
 <details>
-<summary>
-JavaScript code extract!
-</summary>
-<pre><code>1.  var video, transcriptDiv;
+  <summary>JavaScript code extract!</summary>
+
+<pre><code>
+1.  var video, transcriptDiv;
 2.  // TextTracks, html tracks, urls of tracks
 3.  var tracks, trackElems, tracksURLs = []; 
 4.  var buttonEnglish, buttonDeutsch;
@@ -3176,14 +3177,14 @@ different tracks:</p>
 dev.opera.com, uses some JavaScript code that takes a WebVTT subtitle
 (or caption) file as an argument, parses it, and displays the text
 on screen, in an element with an id of transcript.</p>
-<h4>
-Extract from HTML code:
-</h4>
+
+<h4>Extract from HTML code:</h4>
+
 <details>
-<summary>
-HTML video code extract!
-</summary>
-<pre><code>1.  ...
+  <summary>HTML video code extract!</summary>
+
+<pre><code>
+1.  ...
 2.  &lt;video preload=&quot;metadata&quot; controls &gt;
 3.   &lt;source src=&quot;https://..../elephants-dream-medium.mp4&quot; type=&quot;video/mp4&quot;&gt;
 4.   &lt;source src=&quot;https://..../elephants-dream-medium.webm&quot; type=&quot;video/webm&quot;&gt;
@@ -3200,17 +3201,18 @@ HTML video code extract!
 15.    &lt;button onclick=&quot;loadTranscript(&#39;de&#39;);&quot;&gt;Deutsch&lt;/button&gt;
 16.     &lt;/div&gt;
 17.     &lt;div id=&quot;transcript&quot;&gt;&lt;/div&gt;
-18. ...</code></pre>
+18. ...
+</code></pre>
+
 </details>
-<h4>
-JavaScript code:
-</h4>
+
+<h4>JavaScript code:</h4>
+
 <details>
-<summary>
-Functions loadTranscript, loadTranscriptFile, getVoices, removeHTML
-extract!
-</summary>
-<pre><code>1.  // Transcript.js, by dev.opera.com
+  <summary>Functions loadTranscript, loadTranscriptFile, getVoices, removeHTML extract!</summary>
+
+<pre><code>
+1.  // Transcript.js, by dev.opera.com
 2.  function loadTranscript(lang) {
 3.     var url = &quot;https://mainline.i3s.unice.fr/mooc/&quot; +
 4.         &#39;elephants-dream-subtitles-&#39; + lang + &#39;.vtt&#39;;
@@ -3304,12 +3306,12 @@ extract!
 92.   var div = document.createElement(&#39;div&#39;);
 93.   div.innerHTML = text;
 94.   return div.textContent || div.innerText || &#39;&#39;;
-95. }</code></pre>
+95. }
+</code></pre>
+
 </details>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch1-3-2">
-1.3.2 Captions, Descriptions, Chapters and Metadata
-</h3>
+<h3 id="ch1-3-2">1.3.2 Captions, Descriptions, Chapters and Metadata</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>Example #2: showing video description while playing, listening to
 events, changing the mode of a track.</p>
@@ -3322,11 +3324,11 @@ disabled tracks do not fire events.</p>
 <!------------------------------------------------------------------------------------------------>
 <!---------------------------- 33. mode property and cue events (64) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image033.jpeg"
-  style="width:65%;"
-  alt="Example that shows how to toggle track modes and listen to events." />
-</p>
+<img class="displayed"
+  src="./images/image033.jpeg?raw=true"
+  alt="Example that shows how to toggle track modes and listen to events."
+  style="width:65%;" />
+
 <!--  style="width:5in;height:4.64476in" -->
 <p><a href="https://jsbin.com/bixoru/1/edit?html,css,js,output" target="_blank" rel="noopener noreferrer">Here is
 an example at JSBin</a> that shows the use of the <i>mode</i> property,
@@ -3338,14 +3340,14 @@ have the content of their cues displayed in real time in a small area
 below the video.</p>
 <p>In the screen-capture below, we have a WebVTT file displaying a
 scene’s captions and descriptions.</p>
-<h4>
-Extract from HTML code:
-</h4>
+
+<h4>Extract from HTML code:</h4>
+
 <details>
-<summary>
-Video code extract!
-</summary>
-<pre><code>1.  &lt;html lang=&quot;en&quot;&gt;
+  <summary>Video code extract!</summary>
+
+<pre><code>
+1.  &lt;html lang=&quot;en&quot;&gt;
 2.  ...
 3.  &lt;body onload=&quot;init();&quot;&gt;
 4.    ...
@@ -3407,17 +3409,21 @@ Video code extract!
 60.   &lt;/button&gt;
 61. 
 62. &lt;/body&gt;
-63. &lt;/html&gt;</code></pre>
+63. &lt;/html&gt;
+</code></pre>
+
 </details>
-<h4>
-JavaScript code:
-</h4>
+
+<h4>JavaScript code:</h4>
+
 <details>
-<summary>
-Functions init, displayTrackStatus, appendToScrollableDiv, clearDiv,
-clearSubtitlesCaptions, toggleTrack, logCue extract!
-</summary>
-<pre><code>var tracks, video, statusDiv, subtitlesCaptionsDiv;
+  <summary>
+  Functions init, displayTrackStatus, appendToScrollableDiv, clearDiv,
+  clearSubtitlesCaptions, toggleTrack, logCue extract!
+  </summary>
+
+<pre><code>
+var tracks, video, statusDiv, subtitlesCaptionsDiv;
  
 function init() {
    video = document.querySelector(&quot;#myVideo&quot;);
@@ -3507,12 +3513,13 @@ function logCue() {
       appendToScrollableDiv(subtitlesCaptionsDiv, &quot;Active &quot;
                                           + this.kind + &quot; changed to: &quot; + t);
    }
-}</code></pre>
+}
+</code></pre>
+
 </details>
+
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch1-3-3">
-1.3.3 With Buttons for Choosing the Subtitle Language
-</h3>
+<h3 id="ch1-3-3">1.3.3 With Buttons for Choosing the Subtitle Language</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>Example #3: adding buttons for choosing the subtitle/caption
 track</p>
@@ -3529,19 +3536,18 @@ prefer. </p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------- 34. choose track/language (68) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image034.jpeg"
-  style="width:6.17708in;height:5.73958in"
-  alt="Buttons for choosing the track/language under a standard video player." />
-</p>
-<h4>
-HTML code:
-</h4>
+<img class="displayed"
+  src="./images/image034.jpeg?raw=true"
+  alt="Buttons for choosing the track/language under a standard video player."
+  style="width:75%;" />
+
+<h4>HTML code:</h4>
+
 <details>
-<summary>
-HTML code extract!
-</summary>
-<pre><code>1.  ...
+  <summary>HTML code extract!</summary>
+
+<pre><code>
+1.  ...
 2.  &lt;body onload=&quot;init()&quot;&gt;
 3.   ...
 4.  &lt;video id=&quot;myVideo&quot; preload=&quot;metadata&quot; controls crossOrigin=&quot;anonymous&quot; &gt;
@@ -3566,16 +3572,18 @@ HTML code extract!
 23. &lt;h3&gt;Current track: &lt;span id=&quot;currentLang&quot;&gt;&lt;/span&gt;&lt;/h3&gt;
 24. &lt;div id=&quot;langButtonDiv&quot;&gt;&lt;/div&gt;
 25. &lt;/section&gt;
-26. ...</code></pre>
+26. ...
+</code></pre>
+
 </details>
-<h4>
-JavaScript code:
-</h4>
+
+<h4>JavaScript code:</h4>
+
 <details>
-<summary>
-JavaScript code extract!
-</summary>
-<pre><code>1.  var langButtonDiv, currentLangSpan, video;
+  <summary>JavaScript code extract!</summary>
+
+<pre><code>
+1.  var langButtonDiv, currentLangSpan, video;
 2.   
 3.  function init() {
 4.     langButtonDiv = document.querySelector(&quot;#langButtonDiv&quot;);
@@ -3642,46 +3650,40 @@ JavaScript code extract!
 65.   // Add the button to a div at the end of the HTML document
 66.   langButtonDiv.appendChild(b);
 67. }
-68. </code></pre>
+68. 
+</code></pre>
+
 </details>
-<h4>
-External resources
-</h4>
+
+<h4>External resources</h4>
 <ul>
-<li><p>If you are interested in building a complete custom video player,
-MDN offers an online tutorial with further information about <a
-href="https://developer.mozilla.org/en-US/Apps/Build/Audio_and_video_delivery/Adding_captions_and_subtitles_to_HTML5_video">styling
-and integrating a “CC” button</a>.</p></li>
-<li><p>The MDN documentation on <a
-href="https://developer.mozilla.org/fr/docs/Web/API/WebVTT_API">Web
-Video Text Tracks Format</a> (WebVTT).</p></li>
+  <li><p>If you are interested in building a complete custom video player, MDN offers an online tutorial with further information about <a href="https://developer.mozilla.org/en-US/Apps/Build/Audio_and_video_delivery/Adding_captions_and_subtitles_to_HTML5_video">styling and integrating a “CC” button</a>.</p></li>
+  <li><p>The MDN documentation on <a href="https://developer.mozilla.org/fr/docs/Web/API/WebVTT_API">Web Video Text Tracks Format</a> (WebVTT).</p></li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch1-3-4">
-1.3.4 With a Simple Chapter Navigation Menu
-</h3>
+<h3 id="ch1-3-4">1.3.4 With a Simple Chapter Navigation Menu</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>Example #4: making a simple chapter navigation menu</p>
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 35. simple chapter navigation (70) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image035.jpeg"
-  style="width:4.57292in;height:2.08333in"
-  alt="Simple chapter navigation." />
-</p>
+<img class="displayed"
+  src="./images/image035.jpeg?raw=true"
+  alt="Simple chapter navigation."
+  style="width:xx%;" />
+
 <p>We can use WebVTT files to define chapters. The syntax is exactly the
 same as for subtitles/caption .vtt files. The only difference is in the
 declaration of the track. Here is how we declared a chapter track in one
 of the previous examples (in bold in the example below):</p>
-<h4>
-HTML code:
-</h4>
+
+<h4>HTML code:</h4>
+
 <details>
-<summary>
-HTML code extract!
-</summary>
-<pre><code>&lt;video id=&quot;myVideo&quot; preload=&quot;metadata&quot; controls crossOrigin=&quot;anonymous&quot;&gt;
+  <summary>HTML code extract!</summary>
+
+<pre><code>
+&lt;video id=&quot;myVideo&quot; preload=&quot;metadata&quot; controls crossOrigin=&quot;anonymous&quot;&gt;
   &lt;source src=&lt;https://...../elephants-dream-medium.mp4&gt;
     type=&quot;video/mp4&quot;&gt;
   &lt;source src=&lt;https://...../elephants-dream-medium.webm&gt;
@@ -3699,8 +3701,11 @@ HTML code extract!
     kind=&quot;chapters&quot;
     srclang=&quot;en&quot;
     src=&quot;https://...../elephants-dream-chapters-en.vtt&quot;&gt;
-&lt;/video&gt;</code></pre>
+&lt;/video&gt;
+</code></pre>
+
 </details>
+
 <p>If we try this code in an HTML document, nothing special happens. No
 magic menu, no extra button!</p>
 <p>Currently, no browser takes chapter tracks into account. You could
@@ -3708,11 +3713,12 @@ use one of the enhanced video players presented during the HTML5 Part 1
 course, but as you will see in this lesson: making your own chapter
 navigation menu is not complicated.</p>
 <p>Let’s start by examining the sample .vtt file:</p>
+
 <details>
-<summary>
-WEBVTT code elephant-dream-chapters-en.vtt extract!
-</summary>
-<pre><code>1.  WEBVTT
+  <summary>WEBVTT code elephant-dream-chapters-en.vtt extract!</summary>
+
+<pre><code>
+1.  WEBVTT
 2.  
 3.  chapter-1
 4.  00:00:00.000 --&gt; 00:00:26.000
@@ -3740,8 +3746,11 @@ WEBVTT code elephant-dream-chapters-en.vtt extract!
 26. 
 27. chapter-7
 28. 00:08:13.000 --&gt; 00:09:07.500
-29. The Colossus of Rhodes</code></pre>
+29. The Colossus of Rhodes
+</code></pre>
+
 </details>
+
 <p>There are 7 cues (one for each chapter). Each cue id is the word
 “chapter-” followed by the chapter number, then we have the start and
 end time of the cue/chapter, and the cue content. In this case: the
@@ -3758,9 +3767,13 @@ We add a “show English chapters” button with a click event listener
 similar to this:
 </li>
 </ol>
-<pre><code>&lt;button disabled id=&quot;buttonEnglishChapters&quot; onclick=&quot;loadTranscript(&#39;en&#39;, &#39;chapters&#39;);&quot;&lt;/b&gt;&gt;
+
+<pre><code>
+&lt;button disabled id=&quot;buttonEnglishChapters&quot; onclick=&quot;loadTranscript(&#39;en&#39;, &#39;chapters&#39;);&quot;&lt;/b&gt;&gt;
   Display English chapter markers
-&lt;/button&gt;</code></pre>
+&lt;/button&gt;
+</code></pre>
+
 <ol type="1">
 <li value="2">
 We modify the loadTranscript function from the previous example, so that
@@ -3768,7 +3781,9 @@ it matches both the srclang and the kind attribute of the track.
 </li>
 </ol>
 <p>Here is a new version:</p>
-<pre><code>function loadTranscript(lang, kind) {
+
+<pre><code>
+function loadTranscript(lang, kind) {
   ...
   // Locate the track with lang and kind that match the parameters
   for(var i = 0; i &lt; tracks.length; i++) {
@@ -3777,7 +3792,9 @@ it matches both the srclang and the kind attribute of the track.
     // display it contents...
     }
   }
-}</code></pre>
+}
+</code></pre>
+
 <p>Simple approach: chapters as clickable text on the right of the
 video.</p>
 <p><a href="https://jsbin.com/rifekik/edit?html,css,js" target="_blank" rel="noopener noreferrer">Try it on
@@ -3787,11 +3804,11 @@ clickable transcript:</p>
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 35. simple chapter navigation (73) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image035.jpeg"
-  style="width:4.57292in;height:2.08333in"
-  alt="Again, Simple chapter navigation." />
-</p>
+<img class="displayed"
+  src="./images/image035.jpeg?raw=true"
+  alt="Again, Simple chapter navigation."
+  style="width:55%;" />
+
 <p>Look at the JavaScript and HTML tab of the JSBin example to see the
 source code. It’s the same as in the clickable transcript example,
 except for the small changes we explained earlier.</p>
@@ -3800,11 +3817,11 @@ popular.</p>
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 36. simple chapter navigation (73) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image036.jpeg"
-  style="width:5in;height:2.28152in"
-  alt="Simple chapter navigation" />
-</p>
+<img class="displayed"
+  src="./images/image036.jpeg?raw=true"
+  alt="Simple chapter navigation"
+  style="width:65%;" />
+
 <p>In addition to the clickable chapter list, this one displays an
 enhanced progress bar created using a canvas. The small squares are
 drawn corresponding to the chapter cues’ start and end times. You could
@@ -3813,9 +3830,7 @@ indicator.</p>
 <p>However, we will see how we can do better by using JSON objects as
 cue contents. This will be the topic of the next two lessons!</p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch1-3-5">
-1.3.5 With Thumbnails, Using JSON Cues
-</h3>
+<h3 id="ch1-3-5">1.3.5 With Thumbnails, Using JSON Cues</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>Example #5: create a chapter menu with image thumbnails.</p>
 <p>Instead of using text (optionally using HTML for styling, multi
@@ -3827,11 +3842,12 @@ plain text.</p>
 plain text. JSON is useful for describing “structured data”, and
 processing such data from JavaScript is easier than parsing plain
 text.</p>
+
 <details>
-<summary>
-WebVTT code extract!
-</summary>
-<pre><code>1.  WEBVTT
+  <summary>WebVTT code extract!</summary>
+
+<pre><code>
+1.  WEBVTT
 2.  Wikipedia
 3.  00:01:15.200 --&gt; 00:02:18.800
 4.  {
@@ -3840,17 +3856,21 @@ WebVTT code extract!
 7.  &quot;src&quot;: &quot;https://upload.wikimedia.org/...../120px-Wikipedia-logo-
 8.  v2.svg.png&quot;,
 9.  &quot;href&quot;: &quot;https://en.wikipedia.org/wiki/Wikipedia&quot;
-10. }</code></pre>
+10. }
+</code></pre>
+
 </details>
+
 <p>This JSON object is a JavaScript object encoded as a text string. If
 we listen for cue events or if we read a WebVTT file as done in previous
 examples, we can extract this text content using the  cue.text property.
 For example:</p>
+
 <details>
-<summary>
-JS code extract!
-</summary>
-<pre><code>1.  var videoElement = document.querySelector(&quot;#myvideo&quot;);
+  <summary>JS code extract!</summary>
+
+<pre><code>
+1.  var videoElement = document.querySelector(&quot;#myvideo&quot;);
 2.  var textTracks = videoElement.textTracks; // one for each track element
 3.  var textTrack = textTracks[0]; // corresponds to the first track element
 4.  
@@ -3863,8 +3883,11 @@ JS code extract!
 11. 
 12. var title = obj.title; // &quot;State of Wikipedia&quot;
 13. var description = obj.description; // Jimmy Wales talking...
-14. etc...</code></pre>
+14. etc...
+</code></pre>
+
 </details>
+
 <p>This is a powerful way of embedding metadata, especially when used in
 conjunction with listening for cue and track events.</p>
 <p>Improved approach: make a nicer chapter menu by embedding a richer
@@ -3876,19 +3899,18 @@ video</a>.</p>
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 35. simple chapter navigation (75) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image035.jpeg"
-  style="width:4.57292in;height:2.08333in"
-  alt="Again, 3rd time, Simple chapter navigation." />
-</p>
-<h4>
-This example used only standard plain text content for the cues:
-</h4>
+<img class="displayed"
+  src="./images/image035.jpeg?raw=true"
+  alt="Again, 3rd time, Simple chapter navigation."
+  style="width:55%;" />
+
+<h4>This example used only standard plain text content for the cues:</h4>
+
 <details>
-<summary>
-WebVTT code extract!
-</summary>
-<pre><code>1.  WEBVTT
+  <summary>WebVTT code extract!</summary>
+
+<pre><code>
+1.  WEBVTT
 2.  
 3.  chapter-1
 4.  00:00:00.000 --&gt; 00:00:26.000
@@ -3897,8 +3919,11 @@ WebVTT code extract!
 7.  chapter-2
 8.  00:00:28.206 --&gt; 00:01:02.000
 9.  Watch out!
-10. ...</code></pre>
+10. ...
+</code></pre>
+
 </details>
+
 <p>We used this example to manually capture the images from the video
 that correspond to each of the seven chapters:</p>
 <ul>
@@ -3936,11 +3961,12 @@ video from the previous example:</p>
 JSON objects as cue contents:</p>
 <p><a
 href="https://mainline.i3s.unice.fr/mooc/elephants-dream-chapters-en-JSON.vtt">elephants-dream-chapters-en-JSON.vtt</a>:</p>
+
 <details>
-<summary>
-WebVTT code extract!
-</summary>
-<pre><code>1.  WEBVTT
+  <summary>WebVTT code extract!</summary>
+
+<pre><code>
+1.  WEBVTT
 2.   
 3.  chapter-1
 4.  00:00:00.000 --&gt; 00:00:26.000
@@ -3956,27 +3982,29 @@ WebVTT code extract!
 14. &quot;description&quot;: &quot;Watch out!&quot;,
 15. &quot;image&quot;: &quot;watchOut.jpg&quot;
 16. }
-17. ...</code></pre>
+17. ...
+</code></pre>
+
 </details>
+
 <p>Before explaining the code, we propose that you <a
 href="https://jsbin.com/pulefe/1/edit?html,css,js,output">try this
 example at JSBin that uses this new .vtt file</a>:</p>
 <!------------------------------------------------------------------------------------------------>
 <!--------------------------- 44. video with nice chapter menu (77) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image044.jpeg" 
-  style="width:5in;height:5.72864in"
-  alt="Video with nice chapter menu that uses thumbnail images." />
-</p>
-<h4>
-HTML code:
-</h4>
+<img class="displayed"
+  src="./images/image044.jpeg?raw=true"
+  alt="Video with nice chapter menu that uses thumbnail images."
+  style="width:65%;" />
+
+<h4>HTML code:</h4>
+
 <details>
-<summary>
-HTML code extract!
-</summary>
-<pre><code>1.  ...
+  <summary>HTML code extract!</summary>
+
+<pre><code>
+1.  ...
 2.  &lt;video id=&quot;myVideo&quot; preload=&quot;metadata&quot; controls crossOrigin=&quot;anonymous&quot;&gt;
 3.    &lt;source src=&quot;https://...../elephants-dream-medium.mp4&quot;
 4.      type=&quot;video/mp4&quot;&gt;
@@ -3994,21 +4022,24 @@ HTML code extract!
 16. &lt;/video&gt;
 17. &lt;h2&gt;Chapter menu&lt;/h2&gt;
 18. &lt;div id=&quot;chapterMenu&quot;&gt;&lt;/div&gt;
-19.  ...</code></pre>
+19.  ...
+</code></pre>
+
 </details>
+
 <p>It’s the same code we had in the first example, except that this time
 we use a new WebVTT file that uses JSON cues to describe each chapter.
 For the sake of simplicity, we also removed the buttons and all the code
 for displaying a clickable transcript of the subtitles/captions on the
 right of the video.</p>
-<h4>
-JavaScript code:
-</h4>
+
+<h4>JavaScript code:</h4>
+
 <details>
-<summary>
-JavaScript code extract!
-</summary>
-<pre><code>1.  var video, chapterMenuDiv;
+  <summary>JavaScript code extract!</summary>
+
+<pre><code>
+1.  var video, chapterMenuDiv;
 2.  var tracks, trackElems, tracksURLs = [];
 3.   
 4.  window.onload = function() {
@@ -4095,11 +4126,12 @@ JavaScript code extract!
 85.   video.currentTime = time;
 86.   video.play();
 87. }
-88.  </code></pre>
+88.  
+</code></pre>
+
 </details>
-<h4>
-Explanations:
-</h4>
+
+<h4>Explanations:</h4>
 <ul>
 <li><p><i>Lines  4-18</i>: when the page is loaded, we assemble all of
 the track HTML elements and their corresponding TextTrack
@@ -4119,29 +4151,32 @@ description of the chapter/cue are extracted (<i>lines 56-57</i>). Then
 an HTML description for the chapter is built and added to the div
 element with id=chapterMenu.</p></li>
 </ul>
-<h4>
-Here is the HTML code for one menu marker:
-</h4>
-<pre><code>&lt;figure class=&quot;img&quot;&gt;
+
+<h4>Here is the HTML code for one menu marker:</h4>
+
+<pre><code>
+&lt;figure class=&quot;img&quot;&gt;
     &gt;  &lt;img onclick=&quot;jumpTo(0);&quot; class=&quot;thumb&quot; src=&quot;https://...../introduction.jpg&quot;&gt;
    &lt;figcaption class=&quot;desc&quot;&gt;
       Introduction
    &lt;/figcaption&gt;
-&lt;/figure&gt;</code></pre>
+&lt;/figure&gt;
+</code></pre>
+
 <p>Notice that we add a click listener to each thumbnail image. Clicking
 a chapter thumbnail will cause the video to jump to the chapter time
 location (the example above is for the first chapter with start time =
 0).</p>
 <p>We also added CSS classes “img”, “thumb” and “desc”, which make
 it easy to style and position the thumbnails using CSS.</p>
-<h4>
-CSS source code extract:
-</h4>
+
+<h4>CSS source code extract:</h4>
+
 <details>
-<summary>
-CSS code extract!
-</summary>
-<pre><code>1.  #chapterMenuSection {
+  <summary>CSS code extract!</summary>
+
+<pre><code>
+1.  #chapterMenuSection {
 2.     background-color: lightgrey;
 3.     border-radius:10px;
 4.     padding: 20px;
@@ -4172,21 +4207,23 @@ CSS code extract!
 29.  
 30. .thumb:hover {
 31.   box-shadow: 5px 5px 5px black;
-32. }</code></pre>
+32. }
+</code></pre>
+
 </details>
+
 <p>A sample menu marker is shown below (it’s also animated - hover your
 mouse over the thumbnail to see its animated shadow):</p>
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------------- 37. again, movie title (81) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image037.jpeg"
-  style="width:4in;height:1.8818in"
-  alt="Screenshot of movie title 'the orange open movie...presents'. . .." />
-</p>
-<h4>
-Introduction
-</h4>
+<img class="displayed"
+  src="./images/image037.jpeg?raw=true"
+  alt="Screenshot of movie title 'the orange open movie...presents'. . .."
+  style="width:50%;" />
+
+<h4>Introduction</h4>
+
 <p>Combining techniques: a clickable transcript and a chapter menu</p>
 <p>This example is the same as the previous one except that we have kept
 the features that we saw previously: the buttons for displaying a
@@ -4198,15 +4235,12 @@ JSBin</a></p>
 <!------------------------------------------------------------------------------------------------>
 <!----------------- 45. combined techniques - chapter & clickable button (82) -------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image045.jpeg" 
-  style="width:5in;height:6.18857in"
-  alt="Chapter menu + clickable transcript." />
-</p>
+<img class="displayed"
+  src="./images/image045.jpeg?raw=true"
+  alt="Chapter menu + clickable transcript."
+  style="width:65%;" />
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch1-4-1">
-1.4.1 Creating Tracks on the Fly
-</h3>
+<h3 id="ch1-4-1">1.4.1 Creating Tracks on the Fly</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>In this lesson, we are going to show:</p>
 <ul>
