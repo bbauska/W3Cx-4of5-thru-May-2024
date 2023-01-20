@@ -2649,14 +2649,13 @@ example at JSBin that shows how to listen for cuechange events</a>:</p>
   alt="Example that displays cue contents with cuechange even listeners." />
 </p>
 <!---- <img style="width:4in;height:4.42106in" ---->
-<h4>
-Source code extract:
-</h4>
+<h4>Source code extract:</h4>
+
 <details>
-<summary>
-Function readContent code!
-</summary>
-<pre><code>1.  function readContent(track) {
+  <summary>Function readContent code!</summary>
+
+<pre><code>
+1.  function readContent(track) {
 2.     console.log(&quot;adding cue change listener to loaded track...&quot;);
 3.     trackStatusesDiv.innerHTML = &quot;&quot;;
 4.  
@@ -2668,8 +2667,11 @@ Function readContent code!
 10.    });
 11. 
 12.    video.play();
-13. }</code></pre>
+13. }
+</code></pre>
+
 </details>
+
 <p><a href="https://jsbin.com/xawajoh/1/edit?html,css,js,output" target="_blank" rel="noopener noreferrer">And
 here is another modified version of this example at JSBin, that shows
 how to use enter and exit events on cues</a>:</p>
@@ -2681,14 +2683,14 @@ how to use enter and exit events on cues</a>:</p>
   style="width:40%;"
   alt="Example that displays message in enter and exit cue listeners of the selected track." />
 </p>
-<h4>
-Source code extract:
-</h4>
+
+<h4>Source code extract:</h4>
+
 <details>
-<summary>
-Functions readContent &amp; addCueListeners code extract!
-</summary>
-<pre><code>1.  function readContent(track) {
+  <summary>Functions readContent &amp; addCueListeners code extract!</summary>
+
+<pre><code>
+1.  function readContent(track) {
 2.     console.log(&quot;adding enter and exit listeners to all cues of this &gt; track&quot;);
 3.  
 4.     trackStatusesDiv.innerHTML = &quot;&quot;;
@@ -2713,17 +2715,15 @@ Functions readContent &amp; addCueListeners code extract!
 23.    cue.onexit = function(){
 24.       trackStatusesDiv.innerHTML += &#39;exited cue &gt; id=&#39; + this.id + &quot;&lt;br&gt;&quot;;
 25.    };
-26. } // end of addCueListeners...</code></pre>
+26. } // end of addCueListeners...
+</code></pre>
+
 </details>
+
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch1-3">
-1.3 Advanced Features for &lt;audio&gt; and &lt;video&gt; Players
-</h3>
+<h3 id="ch1-3">1.3 Advanced Features for &lt;audio&gt; and &lt;video&gt; Players</h3>
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------------------------------------------------------------------------>
-<h3 id="ch1-3-1">
-1.3.1 With a Clickable Transcript on the Side
-</h3>
+<h3 id="ch1-3-1">1.3.1 With a Clickable Transcript on the Side</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>Hi! This time, we will just go a little bit further than in the
 previous examples.</p>
@@ -2843,6 +2843,7 @@ to the corresponding location.</p>
   style="width:60%;"
   alt="Edx video player to debug video tracks." />
 </p>
+
 <p>Read the WebVTT file at once using the track API and make a clickable
 transcript.</p>
 <p>Here we decided to code something similar, except that we will offer
@@ -15694,26 +15695,19 @@ comments.</p>
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 189. example 2 of file upload (335) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image189.png"
-  style="width:65%;"
-  alt="Example 2 of file uploads using drag 'n drop." />
-</p>
-<!---
-<img src="./images/image189.png" style="width:6.5in;height:3.98264in"
-alt="example 2 of file uploads, uses drag&#39;n&#39;drop" />
---->
-<h4>
-And here is the PHP code for the server-side part of examples #1 and #2
-</h4>
-<h3>
-This code is given “as is”:
-</h3>
+<img class="displayed"
+  src="./images/image189.png?raw=true"
+  alt="Example 2 of file uploads using drag 'n drop."
+  style="width:65%;" />
+
+<h4>And here is the PHP code for the server-side part of examples #1 and #2</h4>
+
+<h3>This code is given “as is”:</h3>
 <details>
-<summary>
-PHP ‘as is’ source code!
-</summary>
-<pre><code>1.  &lt;?php
+  <summary>PHP ‘as is’ source code!</summary>
+
+<pre><code>
+1.  &lt;?php
 2.  
 3.  if (isset($_POST[&#39;givenname&#39;]) &amp;&amp; isset($_POST[&#39;familyname&#39;])) {
 4.     echo $_POST[&#39;givenname&#39;].&#39; &#39;.$_POST[&#39;familyname&#39;].&#39; uploaded file(s).&lt;br /&gt;&#39;;
@@ -15747,8 +15741,11 @@ PHP ‘as is’ source code!
 31.   exit();
 32. }
 33. 
-34. ?&gt;</code></pre>
+34. ?&gt;
+</code></pre>
+
 </details>
+
 <p><b>Explanations</b>:</p>
 <ul>
 <li><p>When files are first uploaded, they are stored in a directory
@@ -15760,19 +15757,16 @@ moved to that directory. If it does not already exist, the directory
 will be created  (<i>lines 7-20</i>).</p></li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-5-4">
-3.5.4 Package approach
-</h3>
+<h3 id="ch3-5-4">3.5.4 Package approach</h3>
 <!------------------------------------------------------------------------------------------------>
-<p>Let’s use the previous two examples as a basis for two further
-examples:</p>
+<p>Let’s use the previous two examples as a basis for two further examples:</p>
 <ol type="1">
-<li><p>one that uses only a file selector,</p></li>
-<li><p>one that uses drag and drop.</p></li>
+  <li><p>one that uses only a file selector,</p></li>
+  <li><p>one that uses drag and drop.</p></li>
 </ol>
-<h4>
-Example #3: uploading everything at once using a file selector
-</h4>
+
+<h4>Example #3: uploading everything at once using a file selector</h4>
+
 <p>A file selector (&lt;input type=“file”&gt;).</p>
 <p>This time, we add the files to an HTML5 FormData object before
 sending XHR2 Ajax requests to the server (one for each file + one for
@@ -15784,44 +15778,34 @@ at JSBin</a>, and look at the source code and comments for details.</p>
 <!------------------------------------------------------------------------------------------------>
 <!---------------------------- 190. example 3 of file uploads (337) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image190.png"
-  style="width:65%;"
-  alt="Example 3 of file uploads." />
-</p>
-<!---
-<img src="./images/image190.png" style="width:6.07292in;height:2.17708in"
-alt="Example 3 of file uploads" />
---->
-<h4>
-Example #4: uploading using drag and drop
-</h4>
+<img class="displayed"
+  src="./images/image190.png?raw=true"
+  alt="Example 3 of file uploads."
+  style="width:65%;" />
+
+<h4>Example #4: uploading using drag and drop</h4>
+
 <p><a href="https://jsbin.com/xonemow/edit?html,css,output" target="_blank" rel="noopener noreferrer">Try the
 example at JSBin</a> and look at source code and comments.</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------ 191. example 4 using drag n drop files (337) -------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image191.png"
-  style="width:65%;"
-  alt="Example 4 using drag 'n drop files." />
-</p>
-<!---
-<img src="./images/image191.png" style="width:5.38542in;height:3.71875in"
-alt="Example 4: uses drag&#39;n&#39;drop of files" />
---->
-<h4>
-PHP code for the single-packaged examples (with and without drag and
-drop, the PHP is the same)
-</h4>
+<img class="displayed"
+  src="./images/image191.png?raw=true"
+  alt="Example 4 using drag 'n drop files."
+  style="width:65%;" />
+
+<h4>PHP code for the single-packaged examples (with and without drag and drop, the PHP is the same)</h4>
+
 <p>This code is given “as is”. The principle is the same as with the
 examples given in the previous section, except that this time we do not
 have to deal with a temporary “RecycleBin” directory.</p>
+
 <details>
-<summary>
-PHP ‘as is’ source code!
-</summary>
-<pre><code>1.  &lt;?php
+  <summary>PHP ‘as is’ source code!</summary>
+
+<pre><code>
+1.  &lt;?php
 2.  
 3.  if (isset($_POST[&#39;givenname&#39;]) &amp;&amp; isset($_POST[&#39;familyname&#39;])) {
 4.      echo $_POST[&#39;givenname&#39;] . &#39; &#39; . $_POST[&#39;familyname&#39;] . &#39; try to upload
@@ -15865,17 +15849,17 @@ PHP ‘as is’ source code!
 42.    }
 43. }
 44. 
-45. ?&gt;</code></pre>
+45. ?&gt;
+</code></pre>
+
 </details>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-5-5">
-3.5.5 Discussion
-</h3>
+<h3 id="ch3-5-5">3.5.5 Discussion</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>Here is the discussion forum for this part of the course.</p>
-<h4>
-Suggested topics of discussion:
-</h4>
+
+<h4>Suggested topics of discussion:</h4>
+
 <ul>
 <li><p>The given examples come with PHP code. If you adapt them to work
 with another server side languages, please share!</p></li>
@@ -15885,9 +15869,7 @@ upload, etc. The examples are given “as is”… if you improve them, as
 usual, share them in the forum!</p></li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-6-1">
-3.6.1 Concepts (part 1)
-</h3>
+<h3 id="ch3-6-1">3.6.1 Concepts (part 1)</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>Hello everyone! Today I will talk about IndexedDB.</p>
 <p>In this first video, we will present the main concepts of this
@@ -16002,30 +15984,24 @@ offline.</b></p></li>
 <li><p><b>IndexedDB is transactional: it manages concurrent access to
 data.</b></p></li>
 </ol>
-<h4>
-Examples of applications where IndexedDB should be considered
-</h4>
+<h4>Examples of applications where IndexedDB should be considered</h4>
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 192. google drive and indexdb (3xx) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image192.jpeg"
-  style="width:35%;"
-  alt="Google Drive using indexDB." />
-</p>
-<!---
-style="width:3.28125in;height:4.04167in"
-alt="google drive uses indexedDB" />
---->
+<img class="displayed"
+  src="./images/image192.jpeg?raw=true"
+  alt="Google drive using indexDB."
+  style="width:35%;" />
+
 <ul>
-<li><p>A catalog of DVDs in a lending library.</p></li>
-<li><p>Mail clients, to-do lists, notepads.</p></li>
-<li><p>Data for games: high-scores, level definitions, etc.</p></li>
-<li><p>Google Drive uses IndexedDB extensively…</p></li>
+  <li><p>A catalog of DVDs in a lending library.</p></li>
+  <li><p>Mail clients, to-do lists, notepads.</p></li>
+  <li><p>Data for games: high-scores, level definitions, etc.</p></li>
+  <li><p>Google Drive uses IndexedDB extensively…</p></li>
 </ul>
-<h4>
-External resources
-</h4>
+
+<h4>External resources</h4>
+
 <p>Much of this chapter either builds on or is an adaptation of articles
 posted on the Mozilla Developer Network (MDN) Web site (IndexedDB, <a
 href="https://developer.mozilla.org/en-US/docs/IndexedDB/Basic_Concepts_Behind_IndexedDB" target="_blank" rel="noopener noreferrer">Basic
@@ -16044,9 +16020,7 @@ Started with Persistent Offline Storage with IndexedDB</a></p></li>
 <p><a href="https://caniuse.com/#search=indexed" target="_blank" rel="noopener noreferrer">Current support is
 excellent</a> both on mobile and desktop browsers.</p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-6-2">
-3.6.2 Concepts (part 2)
-</h3>
+<h3 id="ch3-6-2">3.6.2 Concepts (part 2)</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>Among the concepts used by IndexedDB is the concept of
 transactions.</p>
@@ -16125,9 +16099,9 @@ access data across different domains.</p></li>
 will be done in callback functions - and we mean <i>LOTS of callback
 functions</i>!</p></li>
 </ul>
-<h4>
-Detailed overview
-</h4>
+
+<h4>Detailed overview</h4>
+
 <p><b>IndexedDB databases store key-value pairs.</b> The values can be
 complex structured objects (hint: think in terms of JSON objects), and
 keys can be properties of those objects. You can create indexes that use
@@ -16148,14 +16122,14 @@ context of a transaction</a>. The IndexedDB API provides lots of objects
 that represent indexes, tables, cursors, and so on, but each is tied to
 a particular transaction. Thus, you cannot execute commands or open
 cursors outside a transaction.</p>
-<h4>
-Example of a transaction:
-</h4>
+
+<h4>Example of a transaction:</h4>
+
 <details>
-<summary>
-Transaction source code!
-</summary>
-<pre><code>1.  // Open a transaction for reading and writing on the DB &quot;customer&quot;
+  <summary>Transaction source code!</summary>
+
+<pre><code>
+1.  // Open a transaction for reading and writing on the DB &quot;customer&quot;
 2.  var transaction = db.transaction([&quot;customers&quot;], &quot;readwrite&quot;);
 3.  
 4.  // Do something when all the data is added to the database.
@@ -16176,8 +16150,11 @@ Transaction source code!
 19.    request.onsuccess = function(event) {
 20.       // event.target.result == customerData[i].ssn
 21. };
-22. }</code></pre>
+22. }
+</code></pre>
+
 </details>
+
 <p>Transactions have a well-defined lifetime. Attempting to use a
 transaction after it has completed throws an exception.</p>
 <p><i>Transactions auto-commit, and cannot be committed
@@ -16251,9 +16228,7 @@ from https://www.example.com)</p>
 href="https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy" target="_blank" rel="noopener noreferrer">the
 same-origin policy</a> for further details and examples.</p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-6-3">
-3.6.3 Definitions
-</h3>
+<h3 id="ch3-6-3">3.6.3 Definitions</h3>
 <!------------------------------------------------------------------------------------------------>
 <blockquote>
 <p>This chapter can be read as is, but it is primarily given as a
@@ -21067,7 +21042,7 @@ spec: 
 --->
 <h5>the end…</h5>
 <br>
-<h6>Last Updated: 1-18-2022 8:48pm</h6>
+<h6>Last Updated: 1-19-2022 9:27pm</h6>
 <!---
 <img class="displayed"
   src="./images/image0.jpeg?raw=true"
