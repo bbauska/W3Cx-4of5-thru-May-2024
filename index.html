@@ -1649,7 +1649,7 @@ an id (1, 2, 3 and 4 in the above example), a startTime and an endTime,
 and a text content that can contain HTML tags for styling (&lt;b&gt;,
 etc…) or be associated with a “voice” as in the above example. In this
 case, the text content is wrapped
-inside &lt;v <i>name_of_speaker</i>&gt;…</v> elements.</p>
+inside &lt;v <i>name_of_speaker</i>&gt;…&lt;/v&gt; elements.</p>
 <p>It’s now time to look at the JavaScript API for manipulating tracks,
 cues, and events associated with their life cycle. In the following
 lessons, we will look at different examples which use this API to
@@ -1697,11 +1697,11 @@ associated with three different tracks.</p>
 <!------------------------------------------------------------------------------------------------>
 <!---------------- 20. using html views of tracks - one video, three tracks (27) ----------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image020.png"
-  style="width:6.5in;height:6.36875in"
-  alt="A simple three track video example."  />
-</p>
+<img class="displayed"
+  src="./images/image020.png?raw=true"
+  alt="A simple three track video example."
+  style="width:65%" />
+
 <p>Two for subtitles, in English and in German, and one track for
 chapters.</p>
 <p>First, before going further, let’s look at how this is rendered in
@@ -11436,7 +11436,9 @@ Source code extract:
 <summary>
 JavaScript code extract!
 </summary>
-<pre><code>1.  function updateBalls(delta) {
+
+<pre><code>
+1.  function updateBalls(delta) {
 2.    // for each ball in the array
 3.    for(var i=0; i &lt; ballArray.length; i++) {
 4.      var ball = ballArray[i];
@@ -11459,14 +11461,15 @@ JavaScript code extract!
 21.     // 3) draw the ball
 22.     ball.draw();
 23.   }
-24. }</code></pre>
+24. }
+</code></pre>
+
 </details>
+
 <p>The only additions are: <i>lines 13-19</i> in the updateBalls
 function, and the circRectsOverlap function!</p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch2-6-1">
-2.6.1 Introduction
-</h3>
+<h3 id="ch2-6-1">2.6.1 Introduction</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>In this lesson, we learn how to animate images - which are known as
 “sprites”. This technique uses components from a collection of animation
@@ -11474,8 +11477,15 @@ frames. By drawing different component images, rapidly,
 one-after-the-other, we obtain an animation effect.</p>
 <p>Here is an example of a <em>spritesheet</em>, where each
 line animates a woman walking in a particular direction:</p>
-<p><img src="./images/image140.png" style="width:4in;height:4.71795in"
-alt="sprite sheet of a woman walking, with different postures" /></p>
+
+<!------------------------------------------------------------------------------------------------>
+<!----------------- 140. sprite sheet of a woman walking, with different postures ---------------->
+<!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image140.png?raw=true"
+  alt="sprite sheet of a woman walking, with different postures"
+  style="width:40%;" />
+
 <p>The first line corresponds to the direction we called “south”, the
 second “south west”, the third “west”, etc. The 8 lines cover movement
 in all eight cardinal directions.</p>
@@ -11494,28 +11504,21 @@ or down (closer to us).</p>
 <!------------------------------------------------------------------------------------------------>
 <!--------------------------- 141. animated woman using sprite (xxx) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image141.jpeg"
-  style="width:65%;"
-  alt="A woman animated using sprite. Screenshot of the JsBin example that explains how to run it in standalone mode." />
-</p>
-<!---
-style="width:5in;height:5.21421in"
-alt="" />
---->
+<img class="displayed"
+  src="./images/image141.jpeg?raw=true"
+  alt="A woman animated using sprite. Screenshot of the JsBin example that explains how to run it in standalone mode."
+  style="width:65%;" />
+
 <p>We have not yet investigated how this works, nor have we built it
 into the small game engine we started to build in earlier chapters.
 First, let’s explain how to use “sprites” in JavaScript and canvas.</p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch2-6-2">
-2.6.2 Different sorts of sprite sheets
-</h3>
+<h3 id="ch2-6-2">2.6.2 Different sorts of sprite sheets</h3>
 <!------------------------------------------------------------------------------------------------>
-<p>There are different sorts of <em>sprite sheets</em>. See some
-examples below.</p>
-<h4>
-Multiple postures on a single sprite sheet
-</h4>
+<p>There are different sorts of <em>sprite sheets</em>. See some examples below.</p>
+
+<h4>Multiple postures on a single sprite sheet</h4>
+
 <p>A sprite sheet with different “sprite” sets that correspond to
 different “postures”: this is the case for the walking woman we just saw
 in the previous lesson. This sprite sheet contains 8 different sets of
@@ -11570,9 +11573,7 @@ alt="Gridrunner spritesheet" /></p>
 <p>So, when we think about writing a “sprite engine”, we need to
 consider how to support different layouts of sprite sheet.</p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch2-6-3">
-2.6.3 Sprite extraction and animation
-</h3>
+<h3 id="ch2-6-3">2.6.3 Sprite extraction and animation</h3>
 <!------------------------------------------------------------------------------------------------>
 <h4>
 Principle
