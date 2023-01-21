@@ -4265,9 +4265,8 @@ a big sound file into segments and play them on demand</p>
 demonstration</a>, adapted from an original demo by Sam Dutton,
 uses <a href="https://mainline.i3s.unice.fr/mooc/animalSounds.mp3" target="_blank" rel="noopener noreferrer">a
 single mp3 file that contains recorded animal sounds</a>.</p>
-<h4>
-Below is the sound file. You can try to play it:
-</h4>
+
+<h4>Below is the sound file. You can try to play it:</h4>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------- 46. click button to play animal sound (83) --------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -4276,16 +4275,17 @@ Below is the sound file. You can try to play it:
   style="width:5in;height:4.91453in"
   alt="Click a button to play an animal sound." />
 </p>
-<h4>
-Explanations:
-</h4>
+
+<h4>Explanations:</h4>
+
 <p>The demo uses a JavaScript array for defining the different animal
 sounds in this audio file:</p>
+
 <details>
-<summary>
-JavaScript code extract!
-</summary>
-<pre><code>var sounds = [
+  <summary>JavaScript code extract!</summary>
+
+<pre><code>
+var sounds = [
     {
        id: &quot;purr&quot;,
        startTime: 0.200,
@@ -4307,8 +4307,11 @@ JavaScript code extract!
        endTime: 5.800
     }
     ...
-];</code></pre>
+];
+</code></pre>
+
 </details>
+
 <p>The idea is to create a track on the fly, then add cues within this
 track. Each cue will be created with the id, the start and end
 time taken from the above JavaScript object. In the end, we will have a
@@ -4322,11 +4325,12 @@ end time properties of the cue are accessed and the sound is played
 available on all browsers yet. A simple polyfill is used in the examples
 presented. If the getCueById method is not implemented (this is the case
 in some browsers), it’s easy to use this small polyfill:</p>
+
 <details>
-<summary>
-Code extract!
-</summary>
-<pre><code>1.   // for browsers that do not implement the getCueById() method
+  <summary>Code extract!</summary>
+
+<pre><code>
+1.   // for browsers that do not implement the getCueById() method
 2.  
 3.   // let&#39;s assume we&#39;re adding the getCueById function to a TextTrack object
 4.   //named &quot;track&quot;
@@ -4339,11 +4343,13 @@ Code extract!
 11.        }
 12.      }
 13.   };
-14.  }</code></pre>
+14.  }
+</code></pre>
+
 </details>
-<h4>
-Techniques
-</h4>
+
+<h4>Techniques</h4>
+
 <p>To add a TextTrack to a track element, use
 the <a href="https://www.w3.org/TR/html5/embedded-content-0.html#text-track-api" target="_blank" rel="noopener noreferrer">addTextTrack method</a> (of the
 audio or video element). The function’s signature is
@@ -4365,13 +4371,12 @@ object’s addCue method, eg track.addCue(cue). The argument is a <i>cue
 instance</i> - as above. Note that the track <b>must</b> be a
 <i>TextTrack</i> object because addCue does <b>not</b> work with
 <i>HTMLTrackElement</i> Objects.</p>
-<h4>
-HTML source code extract:
-</h4>
+
+<h4>HTML source code extract:</h4>
+
 <details>
-<summary>
-Code extract!
-</summary>
+  <summary>Code extract!</summary>
+
 <pre><code>...
 &lt;h1&gt;Playing audio sprites with the track element&lt;/h1&gt;
  &lt;p&gt;A demo by Sam Dutton, adapted for JsBin by M.Buffa&lt;/p&gt;
@@ -4455,12 +4460,12 @@ Code extract!
      });
   }
  });
-};</code></pre>
+};
+</code></pre>
+
 </details>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch1-4-2">
-1.4.2 Update the Document in Sync with a Media Playing
-</h3>
+<h3 id="ch1-4-2">1.4.2 Update the Document in Sync with a Media Playing</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>Mixing JSON cue content with track and cue events, makes the
 synchronization of elements in the HTML document (while the video is
@@ -4469,29 +4474,30 @@ playing) much easier.</p>
 <p>Here is a small code extract that shows how we can capture the JSON
 content of a cue when the video reaches its start time. We do this
 within a cuechange listener attached to a TextTrack:</p>
+
 <details>
-<summary>
-Code extract!
-</summary>
-<pre><code>textTrack.oncuechange = function (){
+  <summary>Code extract!</summary>
+
+<pre><code>
+textTrack.oncuechange = function (){
     // &quot;this&quot; is the textTrack that fired the event.
     // Let&#39;s get the first active cue for this time segment
     var cue = this.activeCues[0]; 
     var obj = JSON.parse(cue.text);
     // do something
-}</code></pre>
+}
+</code></pre>
+
 </details>
-<p>
+
 <p>Here is <a href="https://simpl.info/track/map/index.html" target="_blank" rel="noopener noreferrer">a very
 impressive demo by Sam Dutton that uses JSON cues containing the
 latitude and longitude of the camera used for filming the video, to
 synchronize two map views</a>: every time the active cue changes, the
 Google map and equivalent Google street view are updated. </p>
-<b>WARNING:</b> as this Google service is no longer free of charge, you
+<p><b>WARNING:</b> as this Google service is no longer free of charge, you
 might see “for development purpose only” messages during the execution
-of this demo. You’ll need a valid Google API key in order to remove
-these messages.
-</p>
+of this demo. You’ll need a valid Google API key in order to remove these messages.</p>
 <!------------------------------------------------------------------------------------------------>
 <!----------------- 47. video synced with google map and google street map (87) ------------------>
 <!------------------------------------------------------------------------------------------------>
@@ -4500,41 +4506,47 @@ these messages.
   style="width:5in;height:4.46635in"
   alt="Video synced with google map and google street map." />
 </p>
-<h4>
-Example of a cue content from this demonstration:
-</h4>
-<pre><code>{&quot;lat&quot;:37.4219276, &quot;lng&quot;:-122.088218, &quot;t&quot;:1331363000}</code></pre>
-<h4>
-Cue events and cue content:
-</h4>
-<p>
-We can acquire a cue DOM object using the techniques we have seen
-previously, or by using the new HTML5 TextTrack getCueById() method.
-</p>
-<pre><code>var videoElement = document.querySelector(&quot;#myvideo&quot;);
+
+<h4>Example of a cue content from this demonstration:</h4>
+
+<pre><code>
+{&quot;lat&quot;:37.4219276, &quot;lng&quot;:-122.088218, &quot;t&quot;:1331363000}
+</code></pre>
+
+<h4>Cue events and cue content:</h4>
+<p>We can acquire a cue DOM object using the techniques we have seen
+previously, or by using the new HTML5 TextTrack getCueById() method.</p>
+
+<pre><code>
+var videoElement = document.querySelector(&quot;#myvideo&quot;);
 var textTracks = videoElement.textTracks; // one for each track element
 var textTrack = textTracks[0]; // corresponds to the first track element
 
 // Get a cue with ID=&quot;wikipedia&quot;
-var cue = textTrack.getCueById(&quot;Wikipedia&quot;);</code></pre>
-<h4>
-And once we have a cue object, it is possible to add event listeners to
-it:
-</h4>
-<pre><code>cue.onenter = function(){
+var cue = textTrack.getCueById(&quot;Wikipedia&quot;);
+</code></pre>
+
+<h4>And once we have a cue object, it is possible to add event listeners to it:</h4>
+
+<pre><code>
+cue.onenter = function(){
    // display something, play a sound, update any DOM element...
 };
 
 cue.onexit = function(){
    // do something else
-};</code></pre>
+};
+</code></pre>
+
 <p>
 If the getCueById method is not implemented (this is the case in some
 browsers), we use the @<span class="citation"
 data-cites="polyfill">@polyfill</span> presented in the previous
 section:
 </p>
-<pre><code>// for browsers that do not implement the getCueById() method
+
+<pre><code>
+// for browsers that do not implement the getCueById() method
 
 // let&#39;s assume we&#39;re adding the getCueById function to a TextTrack object
 //named &quot;track&quot;
@@ -4547,24 +4559,25 @@ if (typeof track.getCueById !== &quot;function&quot;) {
       }
     }
  };
-}</code></pre>
-<h4>
-Example that displays a wikipedia page and a google map while a video is
-playing
-</h4>
+}
+</code></pre>
+
+<h4>Example that displays a wikipedia page and a google map while a video is playing</h4>
+
 <p><a href="https://jsbin.com/gucutiyoyu/2/edit?html,js,output" target="_blank" rel="noopener noreferrer">Try the
 example at JSBin</a></p>
+
 <p align="center" width="100%">
 <p><img src="./images/image051.jpeg" style="width:5in;height:5.55609in"
 alt="video synced with an iframe that shows external URLs and with a google map" /></p>
-<h4>
-HTML code extract:
-</h4>
+
+<h4>HTML code extract:</h4>
+
 <details>
-<summary>
-HTML source code!
-</summary>
-<pre><code>1.  &lt;!DOCTYPE html&gt;
+  <summary>HTML source code!</summary>
+
+<pre><code>
+1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.  &lt;head&gt;
 4.  &lt;meta charset=&quot;utf-8&quot;&gt;
@@ -4591,16 +4604,18 @@ HTML source code!
 25. &lt;h3&gt;Wikipedia URL: &lt;span id=&quot;currentURL&quot;&gt; Non défini &lt;/span&gt;&lt;/h3&gt;
 26.  
 27. &lt;script src=&quot;https://maps.google.com/maps/api/js?sensor=false&quot;&gt;&lt;/script&gt;
-28. ...</code></pre>
+28. ...
+</code></pre>
+
 </details>
-<h4>
-JavaScript code:
-</h4>
+
+<h4>JavaScript code:</h4>
+
 <details>
-<summary>
-JavaScript source code extract!
-</summary>
-<pre><code>1.  window.onload = function() {
+  <summary>JavaScript source code extract!</summary>
+
+<pre><code>
+1.  window.onload = function() {
 2.      var videoElement = document.querySelector(&quot;#myVideo&quot;);
 3.      var myIFrame = document.querySelector(&quot;#myIframe&quot;);
 4.      var currentURLSpan = document.querySelector(&quot;#currentURL&quot;);
@@ -4665,8 +4680,11 @@ JavaScript source code extract!
 63.       // center map on longitude and latitude
 64.       map.panTo(latlng);
 65.    }
-66. };</code></pre>
+66. };
+</code></pre>
+
 </details>
+
 <p>All the critical work is done by the cuechange event
 listener, <i>lines 27-50</i>. We have only the one track, so we set its
 mode to “hidden” (<i>line 10</i>)  in order to be sure that it will be
@@ -4675,9 +4693,7 @@ rest is just Google map code and classic DOM manipulation for updating
 HTML content (a span that will display the current URL, <i>line
 42</i>).</p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch1-5-1">
-1.5.1 Introduction
-</h3>
+<h3 id="ch1-5-1">1.5.1 Introduction</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>Welcome to the WebAudio API lesson! I personnally love this API,
 playing with it is a lot of fun as you will discover! I hope you will
@@ -4767,16 +4783,18 @@ learn step by step how to do such an application.</p>
 <p>In Module 2 of the HTML5 Coding Essentials course, you learned how to
 add an audio or video player to an HTML document, using the
 &lt;audio&gt; and &lt;video&gt; elements. </p>
-<h4>
-For example:
-</h4>
-<pre><code>&lt;audio src=&quot;https://mainline.i3s.unice.fr/mooc/LaSueur.mp3&quot; controls&gt;</code></pre>
+
+<h4>For example:</h4>
+
+<pre><code>
+&lt;audio src=&quot;https://mainline.i3s.unice.fr/mooc/LaSueur.mp3&quot; controls&gt;
+</code></pre>
+
 <p>
 … render like this in your document:
 </p>
-<h4>
-Under the hood, this HTML code:
-</h4>
+
+<h4>Under the hood, this HTML code:</h4>
 <ol type="1">
 <li>
 initiates a network request to stream the content,
@@ -4874,7 +4892,7 @@ example at JSBin</a>.</b>
   style="width:3in;height:0.73669in"
   alt="Audio player with gain." />
 </p>
-<p>
+
 <p>This example is detailed in the next lesson. For the moment, all you
 need to know is that it routes the signal from an &lt;audio&gt; element
 using a special node that bridges the “streamed audio” world  to the Web
@@ -4887,11 +4905,10 @@ one (@<span class="citation" data-cites="as">@as</span> at November
 debugging:</p>
 <p>Use the Audio Chrome extension to see the WebAudio graph
 in devtools</p>
-For a long time, FireFox had a very good WebAudio debugger built in its
+<p>For a long time, FireFox had a very good WebAudio debugger built in its
 devtools, but it has been discontinued in 2019. Meanwhile you can use a
 Google Chrome extension named “WebAudio Inspector” (or “Audion”).  You
-can install
-it <a href="https://chrome.google.com/webstore/detail/web-audio-inspector/cmhomipkklckpomafalojobppmmidlgl" target="_blank" rel="noopener noreferrer">from
+can install it <a href="https://chrome.google.com/webstore/detail/web-audio-inspector/cmhomipkklckpomafalojobppmmidlgl" target="_blank" rel="noopener noreferrer">from
 the Chrome Web Store]</a>.
 </p>
 <!------------------------------------------------------------------------------------------------>
@@ -4941,30 +4958,32 @@ the gain property we can set the volume of the sound that outputs from
 this node), then to the speakers.</p>
 <p>Typical code to build an audio routing graph (the one used in the
 above example)</p>
-<h4>
-HTML code extract:
-</h4>
+
+<h4>HTML code extract:</h4>
+
 <details>
-<summary>
-HTML source code extract!
-</summary>
-<pre><code>1.  &lt;audio src=&quot;https://mainline.i3s.unice.fr/mooc/drums.mp3&quot;
+  <summary>HTML source code extract!</summary>
+
+<pre><code>
+1.  &lt;audio src=&quot;https://mainline.i3s.unice.fr/mooc/drums.mp3&quot;
 2.          id=&quot;gainExample&quot;
 3.          controls loop
 4.          crossorigin=&quot;anonymous&quot;&gt;
 5.  &lt;/audio&gt;
 6.  &lt;br&gt;
 7.  &lt;label for=&quot;gainSlider&quot;&gt;Gain&lt;/label&gt;
-8.  &lt;input type=&quot;range&quot; min=&quot;0&quot; max=&quot;1&quot; step=&quot;0.01&quot; value=&quot;1&quot; id=&quot;gainSlider&quot; /&gt;</code></pre>
+8.  &lt;input type=&quot;range&quot; min=&quot;0&quot; max=&quot;1&quot; step=&quot;0.01&quot; value=&quot;1&quot; id=&quot;gainSlider&quot; /&gt;
+</code></pre>
+
 </details>
-<h4>
-JavaScript source code:
-</h4>
+
+<h4>JavaScript source code:</h4>
+
 <details>
-<summary>
-JavaScript source code!
-</summary>
-<pre><code>1.  // This line is a trick to initialize the AudioContext
+  <summary>JavaScript source code!</summary>
+
+<pre><code>
+1.  // This line is a trick to initialize the AudioContext
 2.  // that will work on all recent browsers
 3.  var ctx = window.AudioContext || window.webkitAudioContext;
 4.  var audioContext;
@@ -5000,14 +5019,14 @@ JavaScript source code!
 34.  gainMediaElementSource.connect(gainNode);
 35.  gainNode.connect(audioContext.destination);
 36. }
-37.  </code></pre>
+37.  
+</code></pre>
 </details>
-<h4>
-Explanations:
-</h4>
-<h4>
-Here we applied a commonly used technique:
-</h4>
+
+<h4>Explanations:</h4>
+
+<h4>Here we applied a commonly used technique:</h4>
+
 <ul>
 <li><p>As soon as the page is loaded: initialize the audio context
 (<i>line 11</i>). Here we use a trick so that the code works on all
@@ -5021,9 +5040,9 @@ of audioContext.destination for the speakers (<i>line 35</i>). This is a
 built-in node. Also, the MediaElementSource node “gainexample” which is
 the HTML’s audio element.</p></li>
 </ul>
-<h4>
-Example of bigger graphs
-</h4>
+
+<h4>Example of bigger graphs</h4>
+
 <p>Web Audio nodes are implemented natively in the browser. The Web
 Audio framework has been designed to handle a very large number of
 nodes. It’s common to encounter applications with several dozens of
@@ -5095,27 +5114,31 @@ the MediaElementSource node that is used for routing the sound from
 a &lt;video&gt; or &lt;audio&gt; element stream. The above video shows
 how to make a simple example step by step, and how to setup FireFox for
 debugging Web Audio applications and visualize the audio graph.</p>
-<h4>
-Typical use:
-</h4>
+
+<h4>Typical use:</h4>
 <p><a href="https://jsbin.com/mifaqa/edit?html,js,output" target="_blank" rel="noopener noreferrer">Example at
 JSBin</a></p>
-<h4>
-HTML:
-</h4>
-<pre><code>&lt;audio id=&quot;player&quot; controls crossorigin=&quot;anonymous&quot; loop&gt;
+
+<h4>HTML:</h4>
+
+<pre><code>
+&lt;audio id=&quot;player&quot; controls crossorigin=&quot;anonymous&quot; loop&gt;
    &lt;source src=&quot;https://mainline.i3s.unice.fr/mooc/guitarRiff1.mp3&quot;&gt;
    Your browser does not support the audio tag.
-&lt;/audio&gt;</code></pre>
-<h4>
-JavaScript:
-</h4>
-<pre><code>var ctx = window.AudioContext || window.webkitAudioContext;
+&lt;/audio&gt;
+</code></pre>
+
+<h4>JavaScript:</h4>
+
+<pre><code>
+var ctx = window.AudioContext || window.webkitAudioContext;
 var context = new ctx();
 
 var mediaElement = document.querySelector(&#39;#player&#39;);
 var sourceNode = context.createMediaElementSource(mediaElement);
-sourceNode.connect(context.destination); // connect to the speakers</code></pre>
+sourceNode.connect(context.destination); // connect to the speakers
+</code></pre>
+
 <p><b>The MediaElementSource node  is built</b>
 using context.createMediaElementSource(elem), where elem is
 an &lt;audio&gt; or a &lt;video&gt; element.</p>
@@ -5127,9 +5150,7 @@ useful with streamed audio and with the MediaElementSource node. Adding
 them in the audio graph will enable us to change the sound in many
 different ways.</p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch1-5-3">
-1.5.3 Most Useful Filter Nodes
-</h3>
+<h3 id="ch1-5-3">1.5.3 Most Useful Filter Nodes</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>All definitions come from the <a
 href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API">Mozilla
@@ -5149,17 +5170,16 @@ both with the same number of channels.</b>”</p>
 <p><a
 href="https://jsbin.com/davebu/edit?html,js,console,output">Example at
 JSBin</a>, or try it in your browser:</p>
-<h4>
-Gain Node
-</h4>
-<h4>
-Source code extract:
-</h4>
+
+<h4>Gain Node</h4>
+
+<h4>Source code extract:</h4>
+
 <details>
-<summary>
-Source code extract!
-</summary>
-<pre><code>1.  /* Gain Node */
+  <summary>Source code extract!</summary>
+
+<pre><code>
+1.  /* Gain Node */
 2.   
 3.  var gainExample = document.querySelector(&#39;#gainExample&#39;);
 4.  var gainSlider = document.querySelector(&#39;#gainSlider&#39;);
@@ -5172,8 +5192,10 @@ Source code extract!
 11.  
 12. gainSlider.oninput = function(evt){
 13. gainNode.gain.value = evt.target.value;
-14. };</code></pre>
+14. };
+</code></pre>
 </details>
+
 <p>The gain property (<i>line 13</i> in the above code) corresponds to
 the multiplication we apply to the input signal volume. A value of 1
 will keep the volume unchanged. A value &lt; 1 will lower the volume (0
@@ -5191,17 +5213,16 @@ an audio stream left or right. The <i>pan</i> property takes a value
 between -1 (full left pan) and 1 (full right pan).</b></p>
 <p><a href="https://jsbin.com/jarimu/edit?html,js,output" target="_blank" rel="noopener noreferrer">Example at
 JSBin,</a> or try it in your browser:</p>
-<h4>
-Balance
-</h4>
-<h4>
-Source code extract:
-</h4>
+
+<h4>Balance</h4>
+
+<h4>Source code extract:</h4>
+
 <details>
-<summary>
-Source code extract!
-</summary>
-<pre><code>1.  // the audio element
+  <summary>Source code extract!</summary>
+
+<pre><code>
+1.  // the audio element
 2.  playerPanner = document.querySelector(&#39;#pannerPlayer&#39;);
 3.  pannerSlider = document.querySelector(&#39;#pannerSlider&#39;);
 4.   
@@ -5216,11 +5237,12 @@ Source code extract!
 13. // input listener on the gain slider
 14. pannerSlider.oninput = function(evt){
 15.   pannerNode.pan.value = evt.target.value;
-16. };</code></pre>
+16. };
+</code></pre>
+
 </details>
-<h4>
-Biquad filter
-</h4>
+
+<h4>Biquad filter</h4>
 <p>Definition: “<i>The BiquadFilterNode</i> interface represents a
 simple low-order filter, and is created using
 the <i>AudioContext.createBiquadFilter()</i> method. It is an AudioNode
@@ -5255,16 +5277,17 @@ different property values using sliders:</p>
   style="width:5in;height:5.08474in"
   alt="Frequency responses for various filters. Screenshot of a nice application that visualizes that." />
 </p>
+
 <p>Multiple filters are often used together. We will make a multi band
 equalizer in a next lesson, and use six filters with type=peaking. </p>
-<h4>
-Source code extract:
-</h4>
+
+<h4>Source code extract:</h4>
+
 <details>
-<summary>
-Source code extract!
-</summary>
-<pre><code>1.  var ctx = window.AudioContext || window.webkitAudioContext;
+  <summary>Source code extract!</summary>
+
+<pre><code>
+1.  var ctx = window.AudioContext || window.webkitAudioContext;
 2.  var audioContext = new ctx();
 3.   
 4.  /* BiquadFilterNode */
@@ -5303,8 +5326,11 @@ Source code extract!
 37.  
 38. biquadFilterTypeSelector.onchange = function(evt){
 39.     filterNode.type = evt.target.value;
-40. };</code></pre>
+40. };
+</code></pre>
+
 </details>
+
 <p>Convolver node: useful for convolution effects such as
 reverberation</p>
 <p>Definition: “The <i>ConvolverNode</i> interface is an AudioNode that
@@ -5316,9 +5342,9 @@ input and one output.”</p>
 href="https://jsbin.com/belide/edit?html,js,console,output" target="_blank" rel="noopener noreferrer">Example at
 JSBin</a>, THIS EXAMPLE DOES NOT WORK IN YOUR BROWSER as the edX
 platforms disables Ajax loading in its HTML pages. Try it at JSBin!</p>
-<h4>
-Reverb (Dry/Wet)
-</h4>
+
+<h4>Reverb (Dry/Wet)</h4>
+
 <p><a href="https://en.wikipedia.org/wiki/Convolution" target="_blank" rel="noopener noreferrer">From
 Wikipedia</a>: a convolution is a mathematical process which can be
 applied to an audio signal to achieve many interesting high-quality
@@ -5348,6 +5374,7 @@ demo</a> to see the difference between different impulse files!</p>
   style="width:5in;height:1.92376in"
   alt="Screenshot of a webapp that enable you to switch between different impulse files." />
 </p>
+
 <p>So before building the audio graph, we need to download the impulse.
 For this, we use an Ajax request (this will be detailed during Module
 3), but for the moment, just take this function as it is… The Web Audio
@@ -5355,11 +5382,12 @@ API requires that impulse files should be decoded in memory before use.
 Accordingly, once the requested file has downloaded, we call the
 decodeAudioData method. Once the impulse is decoded, we can build the
 graph. So typical use is as follows:</p>
+
 <details>
-<summary>
-Source code extract!
-</summary>
-<pre><code>var impulseURL = &quot;https://mainline.i3s.unice.fr/mooc/Scala-Milan-Opera-Hall.wav&quot;;
+  <summary>Source code extract!</summary>
+
+<pre><code>
+var impulseURL = &quot;https://mainline.i3s.unice.fr/mooc/Scala-Milan-Opera-Hall.wav&quot;;
 var decodedImpulse;
 ...
 loadImpulse(impulseURL, function() {
@@ -5392,8 +5420,11 @@ function loadImpulse(url, callback) {
    };
 
    ajaxRequest.send();
-}</code></pre>
+}
+</code></pre>
+
 </details>
+
 <p>Now let’s consider the function which builds the graph. In order to
 set the quantity of reverb we would like to apply, we need two separate
 routes for the signal:</p>
@@ -5418,14 +5449,13 @@ with the Chrome WebAudio Inspector extension):</p>
   style="width:5in;height:2.85737in"
   alt="Audio graph." />
 </p>
-<h4>
-And here is the function which builds the graph:
-</h4>
+<h4>And here is the function which builds the graph:</h4>
+
 <details>
-<summary>
-Source code extract!
-</summary>
-<pre><code>1.  function buildAudioGraphConvolver() {
+  <summary>Source code extract!</summary>
+
+<pre><code>
+1.  function buildAudioGraphConvolver() {
 2.    // create the nodes
 3.    var source = audioContext.createMediaElementSource(playerConvolver);
 4.    convolverNode = audioContext.createConvolver();
@@ -5448,8 +5478,11 @@ Source code extract!
 21.   source.connect(convolverNode);
 22.   convolverNode.connect(convolverGain);
 23.   convolverGain.connect(audioContext.destination);
-24. }</code></pre>
+24. }
+</code></pre>
+
 </details>
+
 <p>Note that at <i>line 6</i> we use the decoded impulse. We could not
 have done this before the impulse was loaded and decoded.</p>
 <p>The Dynamics Compressor node</p>
@@ -5486,14 +5519,14 @@ with the Chrome WebAudio Inspector extension):</p>
   style="width:5in;height:3.11966in"
   alt="Example of use of a compressor node." />
 </p>
-<h4>
-Extract of the HTML code:
-</h4>
+
+<h4>Extract of the HTML code:</h4>
+
 <details>
-<summary>
-Source code extract!
-</summary>
-<pre><code>&lt;audio src=&quot;https://mainline.i3s.unice.fr/mooc/guitarRiff1.mp3&quot;
+  <summary>Source code extract!</summary>
+
+<pre><code>
+&lt;audio src=&quot;https://mainline.i3s.unice.fr/mooc/guitarRiff1.mp3&quot;
         id=&quot;compressorExample&quot; controls loop
         crossorigin=&quot;anonymous&quot;&gt;&lt;/audio&gt;
 &lt;br&gt;
@@ -5502,14 +5535,14 @@ Source code extract!
         value=&quot;8&quot; id=&quot;gainSlider1&quot; /&gt;
 &lt;button id=&quot;compressorButton&quot;&gt;Turn compressor On&lt;/button&gt;</code></pre>
 </details>
-<h4>
-JavaScript source code:
-</h4>
+
+<h4>JavaScript source code:</h4>
+
 <details>
-<summary>
-JavaScript source code!
-</summary>
-<pre><code>1.  // This line is a trick to initialize the AudioContext
+  <summary>JavaScript source code!</summary>
+
+<pre><code>
+1.  // This line is a trick to initialize the AudioContext
 2.  // that will work on all recent browsers
 3.  var ctx = window.AudioContext || window.webkitAudioContext;
 4.  var audioContext;
@@ -5566,11 +5599,12 @@ JavaScript source code!
 55.    compressorNode = audioContext.createDynamicsCompressor(); //  connect nodes together
 56.    gainMediaElementSource.connect(gainNode1);
 57.    gainNode1.connect(audioContext.destination);
-58. }</code></pre>
+58. }
+</code></pre>
+
 </details>
-<h4>
-Explanations:
-</h4>
+
+<h4>Explanations:</h4>
 There is nothing special here compared to the other examples in this
 section, except that we have used a new method disconnect (<i>line
 32</i> and <i>line 38</i>), which is available on all types of nodes
@@ -5579,9 +5613,7 @@ button is clicked, we remove  or add a compressor in the audio graph
 (<i>lines 28-42</i>) and to achieve this, we disconnect and reconnect
 some of the nodes.
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch1-5-4">
-1.5.4 Writing an Equalizer
-</h3>
+<h3 id="ch1-5-4">1.5.4 Writing an Equalizer</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>Example #1: an audio equalizer with an &lt;audio&gt; element</p>
 <p><a href="https://jsbin.com/loquwih/edit?html,css,js,output" target="_blank" rel="noopener noreferrer">Example
@@ -5616,14 +5648,14 @@ corresponding filter.</p></li>
 The greater the Q value, the smaller the frequency band. We’ll ignore it
 for the purposes of this example.</p></li>
 </ul>
-<h4>
-HTML code extract:
-</h4>
+
+<h4>HTML code extract:</h4>
+
 <details>
-<summary>
-HTML source code extract!
-</summary>
-<pre><code>1.  &lt;h2&gt;Equalizer made with the Web Audio API&lt;/h2&gt;
+  <summary>HTML source code extract!</summary>
+
+<pre><code>
+1.  &lt;h2&gt;Equalizer made with the Web Audio API&lt;/h2&gt;
 2.   
 3.  &lt;div class=&quot;eq&quot;&gt;
 4.    &lt;audio id=&quot;player&quot; controls crossorigin=&quot;anonymous&quot; loop&gt;
@@ -5658,16 +5690,18 @@ HTML source code extract!
 33.     &lt;output id=&quot;gain2&quot;&gt;0 dB&lt;/output&gt;
 34.   &lt;/div&gt;
 35. ...
-36. &lt;/div&gt;</code></pre>
+36. &lt;/div&gt;
+</code></pre>
+
 </details>
-<h4>
-JavaScript code:
-</h4>
+
+<h4>JavaScript code:</h4>
+
 <details>
-<summary>
-JavaScript source code!
-</summary>
-<pre><code>1.  //Builds an equalizer with multiple biquad filters
+  <summary>JavaScript source code!</summary>
+
+<pre><code>
+1.  //Builds an equalizer with multiple biquad filters
 2.   
 3.  var ctx = window.AudioContext || window.webkitAudioContext;
 4.  var context = new ctx();
@@ -5706,8 +5740,11 @@ JavaScript source code!
 37.   // Updates output labels
 38.   var output = document.querySelector(&quot;#gain&quot;+nbFilter);
 39.   output.value = value + &quot; dB&quot;;
-40. }</code></pre>
+40. }
+</code></pre>
+
 </details>
+
 <p>Here is the final audio graph (picture taken with the now
 discontinued FireFox WebAudio debugger, you should get similar results
 with the Chrome WebAudio Inspector extension):</p>
@@ -5738,9 +5775,7 @@ at JSBin</a>:</p>
   alt="Same example as previously but with a video above the equalizer." />
 </p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch1-5-5">
-1.5.5 Waveforms
-</h3>
+<h3 id="ch1-5-5">1.5.5 Waveforms</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>Hi, Today I will show you how to write a waveform that will danse
 with the music. I prepared a small skeleton that is just composed of an
@@ -21129,7 +21164,7 @@ spec: 
 --->
 <h5>the end…</h5>
 <br>
-<h6>Last Updated: 1-20-2022 9:27pm</h6>
+<h6>Last Updated: 1-19-2022 9:27pm</h6>
 <!---
 <img class="displayed"
   src="./images/image0.jpeg?raw=true"
