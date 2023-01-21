@@ -11557,27 +11557,38 @@ style="width:3in;height:3in"
 many sprite sheets. For the full animation of the robot, we will need
 multiple sprite sheets: one for each posture.</p>
 <p>As another example, here is the “jumping robot” sprite sheet:</p>
-<p><img src="./images/image143.png" style="width:3.5in;height:3.5in"
-alt="sprite sheet for a robot jump" /></p>
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 143.  (##) ----------------------->
+<!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image143.png?raw=true"
+  alt="Sprite sheet for a robot jump."
+  style="width:35%;" />
+
 <p>Whereas the walking robot posture is made of 16 sprites, the jumping
 robot needs 26!</p>
-<h4>
-Hybrid sprite sheets
-</h4>
+
+<h4>Hybrid sprite sheets</h4>
+
 <p>You will also find sprite sheets that contain completely different
 sets of sprites (this one comes from <a
 href="https://www.youtube.com/watch?v=1tLNcj1ygFA" target="_blank" rel="noopener noreferrer">the famous Gridrunner
 IOS game by Jeff Minter</a>):</p>
-<p><img src="./images/image144.png" style="width:3.5in;height:3.24984in"
-alt="Gridrunner spritesheet" /></p>
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 144. gridiron sprintsheet (###) ----------------------->
+<!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image144.png?raw=true"
+  alt="Gridrunner spritesheet."
+  style="width:35%;" />
+
 <p>So, when we think about writing a “sprite engine”, we need to
 consider how to support different layouts of sprite sheet.</p>
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch2-6-3">2.6.3 Sprite extraction and animation</h3>
 <!------------------------------------------------------------------------------------------------>
-<h4>
-Principle
-</h4>
+<h4>Principle</h4>
+
 <p>Before doing anything interesting with the sprites, we need to:</p>
 <ol type="1">
 <li><p>Load the sprite sheet(s),</p></li>
@@ -11590,9 +11601,9 @@ realistic “delay” between each change of sprite image.</p></li>
 </ol>
 <p>In this lesson, let’s construct an interactive tool to present the
 principles of sprite extraction and animation.</p>
-<h4>
-Example #1
-</h4>
+
+<h4>Example #1</h4>
+
 <p>In this example, we’ll move the slider to extract the sprite
 indicated by the slider value. See the red rectangle? This is the sprite
 image currently selected! When you move the slider, the corresponding
@@ -11602,14 +11613,14 @@ the next, see how the animation is created? </p>
 JSBin</a>:</p>
 <p><img src="./images/image145.jpeg" style="width:5in;height:4.31036in"
 alt="Screenshot of the example: move a slider to select a subimage/sprite from the spritesheet" /></p>
-<h4>
-HTML code:
-</h4>
+
+<h4>HTML code:</h4>
+
 <details>
-<summary>
-HTML code extract!
-</summary>
-<pre><code>1.  &lt;html lang=&quot;en&quot;&gt;
+  <summary>HTML code extract!</summary>
+  
+<pre><code>
+1.  &lt;html lang=&quot;en&quot;&gt;
 2.   &lt;head&gt;
 3.   &lt;title&gt;Extract and draw sprite&lt;/title&gt;
 4.   &lt;style&gt;
@@ -11636,8 +11647,11 @@ HTML code extract!
 21.  &lt;/p&gt;
 22.    &lt;canvas id=&quot;spritesheet&quot;&gt;&lt;/canvas&gt;
 23.  &lt;/body&gt;
-24. &lt;/html&gt;</code></pre>
+24. &lt;/html&gt;
+</code></pre>
+
 </details>
+
 <p>Notice that we use an &lt;input type=“range”&gt; to select the
 current sprite, and we have two canvases: a small one for displaying the
 currently-selected sprite, and a larger one that contains the sprite
@@ -11646,11 +11660,12 @@ sprite.</p>
 <p>Here’s an extract from the JavaScript. You don’t have to understand
 all the details, just look at the part in bold which extracts the
 individual sprites:</p>
+
 <details>
-<summary>
-JavaScript source code extract!
-</summary>
-<pre><code>1.  var SPRITE_WIDTH = 48;   // Characteristics of the sprites and
+  <summary>JavaScript source code extract!</summary>
+  
+<pre><code>
+1.  var SPRITE_WIDTH = 48;   // Characteristics of the sprites and
     &gt; spritesheet
 2.  var SPRITE_HEIGHT = 92;
 3.  var NB_ROWS = 8;
@@ -11704,41 +11719,32 @@ JavaScript source code extract!
 49. 
 50.      // Draw the whole spritesheet
 51.      ctx2.drawImage(spritesheet, 0, 0);
-52.      // Draw the first sprite in the big canvas, corresponding to
-   &gt; sprite 0
+52.      // Draw the first sprite in the big canvas, corresponding to &gt; sprite 0
 53.      // wireframe rectangle in the sprite sheet
-54.    
-   &gt;  drawWireFrameRect(ctx2, 0 , 0, SPRITE_WIDTH, SPRITE_HEIGHT, &#39;red&#39;, 3);
-55.    
-   &gt;      // small canvas, draw sub image corresponding to sprite 0
+54.     &gt;  drawWireFrameRect(ctx2, 0 , 0, SPRITE_WIDTH, SPRITE_HEIGHT, &#39;red&#39;, 3);
+55.     &gt;      // small canvas, draw sub image corresponding to sprite 0
 56.      ctx1.drawImage(spritesheet, 0, 0, SPRITE_WIDTH, SPRITE_HEIGHT,
 57.                                  0, 0, SPRITE_WIDTH, SPRITE_HEIGHT);
 58.    };
 59. 
 60.    // input listener on the slider
 61.    spriteSelect.oninput = function(evt) {
-62.      // Current sprite number from 0 to NB_FRAMES_PER_POSTURE *
-    &gt; NB_ROWS
+62.      // Current sprite number from 0 to NB_FRAMES_PER_POSTURE * &gt; NB_ROWS
 63.      var index = spriteSelect.value;
 64. 
-65.      // Computation of the x and y position that corresponds to
-    &gt; the sprite
+65.      // Computation of the x and y position that corresponds to &gt; the sprite
 66.      // number index as selected by the slider
 67.      var x = index * SPRITE_WIDTH % spritesheet.width;
-68.    
-    &gt;  var y = Math.floor(index / NB_FRAMES_PER_POSTURE) * SPRITE_HEIGHT;
+68.    &gt;  var y = Math.floor(index / NB_FRAMES_PER_POSTURE) * SPRITE_HEIGHT;
 69. 
 70.      // Update fields
 71.      xField.value = x;
 72.      yField.value = y;
 73. 
-74.      // Clear big canvas, draw wireframe rect at x, y, redraw
-    &gt; stylesheet
-75.    
-    &gt;  ctx2.clearRect(0, 0, canvasSpriteSheet.width, canvasSpriteSheet.height);
+74.      // Clear big canvas, draw wireframe rect at x, y, redraw &gt; stylesheet
+75.    &gt;  ctx2.clearRect(0, 0, canvasSpriteSheet.width, canvasSpriteSheet.height);
 76.      ctx2.drawImage(spritesheet, 0, 0);
-77.    
-    &gt;  drawWireFrameRect(ctx2, x , y, SPRITE_WIDTH, SPRITE_HEIGHT, &#39;red&#39;, 3);
+77.    &gt;  drawWireFrameRect(ctx2, x , y, SPRITE_WIDTH, SPRITE_HEIGHT, &#39;red&#39;, 3);
 78.  
 79.      // Draw the current sprite in the small canvas
 80.      ctx1.clearRect(0, 0, SPRITE_WIDTH, SPRITE_HEIGHT);
@@ -11757,11 +11763,12 @@ JavaScript source code extract!
 93.   ctx.strokeRect(x , y, w, h);
 94.   ctx.restore();
 95. }
-96.  </code></pre>
+96.  
+</code></pre>
+
 </details>
-<h4>
-Explanations:
-</h4>
+
+<h4>Explanations:</h4>
 <ul>
 <li><p><em>Lines 1-4</em>: characteristics of the sprite sheet. How many
 rows, i.e., how many sprites per row, etc.</p></li>
@@ -11793,35 +11800,40 @@ sheet.</p></li>
 sheets. Adjust the global parameters in bold at<em> lines 1-5</em> and
 try the extractor.</p></li>
 </ul>
-<h4>
-Example #2
-</h4>
+<h4>Example #2</h4>
+
 <ol start="542" type="1">
 <li>This is the same application with another sprite sheet.<br />
 We just changed these parameter values: try the same code but with
 another sprite sheet (the one with the robot) - see <a
 href="https://jsbin.com/jeledoq/edit?html,js,output" target="_blank" rel="noopener noreferrer">on JSBin.</a></li>
 </ol>
-<p><img src="./images/image146.jpeg" style="width:5in;height:3.03739in"
-alt="same example but with the robot spritesheet" /></p>
+
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 146.  (###) ----------------------->
+<!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image146.jpeg?raw=true"
+  alt="Same example but with the robot spritesheet."
+  style="width:50%;" />
+
 <ol start="543" type="1">
 <li>Now it’s time to see how we can make a small sprite animation
 framework!</li>
 </ol>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch2-6-4">
-2.6.4 A small sprite animation framework
-</h3>
+<h3 id="ch2-6-4">2.6.4 A small sprite animation framework</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>Now that we have presented the principle of sprite extraction
 (sprites as sub-images of a single composite image), let’s write a small
 sprite animation framework.</p>
 <p>Here is how you would create and animate a sprite:</p>
+
 <details>
-<summary>
-JavaScript source code extract!
-</summary>
-<pre><code>1.  var robot;
+  <summary>JavaScript source code extract!</summary>
+  
+<pre><code>
+1.  var robot;
 2.   
 3.  window.onload = function() {
 4.     canvas = document.getElementById(&quot;canvas&quot;);
@@ -11853,28 +11865,37 @@ JavaScript source code extract!
 30.   robot.draw(ctx, 0, 0, 1);
 31. 
 32.   requestAnimationFrame(mainloop);
-33. }</code></pre>
+33. }
+</code></pre>
+
 </details>
+
 <p><a href="https://jsbin.com/rugosu/edit?js,output" target="_blank" rel="noopener noreferrer">Try the example on
 JSBin that uses this framework first!</a> Experiment by editing <em>line
 20</em>: <b>robot.setNbImagesPerSecond(20); </b>changing the value of
 the parameter and observing the result.</p>
 <!-- 264 -->
-<p><img src="./images/image147.jpeg" style="width:6.5in;height:4.27847in"
-alt="Example of the sprite framework on JsBin. Screenshot" /></p>
-<h4>
-The SpriteImage object and sprite models
-</h4>
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 147.  (###) ----------------------->
+<!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image147.jpeg?raw=true"
+  alt="Example of the sprite framework on JsBin. Screenshot."
+  style="width:65%;" />
+
+<h4>The SpriteImage object and sprite models</h4>
+
 <p>In this small framework we use “SpriteImage ”, a JS object we build
 to  represent one sprite image. Its properties are: the global sprite
 sheet to which it belongs, its position in the sprite sheet, and its
 size. It also has a draw method for drawing the sprite image at an xPos,
 yPos position, and at anappropriate size. </p>
+
 <details>
-<summary>
-Function SpriteImage code!
-</summary>
-<pre><code>1.  function SpriteImage(img, x, y, width, height) {
+  <summary>Function SpriteImage code!</summary>
+  
+<pre><code>
+1.  function SpriteImage(img, x, y, width, height) {
 2.     this.img = img; // the whole image that contains all sprites
 3.     this.x = x;     // x, y position of the sprite image in the whole
     &gt; image
@@ -11889,8 +11910,11 @@ Function SpriteImage code!
 12.         xPos, yPos, // x, y, width and height of img to draw
 13.         this.width*scale, this.height*scale);
 14.  };
-15. }</code></pre>
+15. }
+</code></pre>
+
 </details>
+
 <p>We define the Sprite model. This is the one we used to create the
 small robot in the previous example.</p>
 <ul>
@@ -11905,11 +11929,12 @@ drawn.</p></li>
 parameter of the sprite.</p></li>
 </ul>
 <p><b>Here is the code of the Sprite model:</b></p>
+
 <details>
-<summary>
-Function Sprite source code!
-</summary>
-<pre><code>1.  function Sprite() {
+  <summary>Function Sprite source code!</summary>
+  
+<pre><code>
+1.  function Sprite() {
 2.    this.spriteArray = [];
 3.    this.currentFrame = 0;
 4.    this.delayBetweenFrames = 10;
@@ -11976,23 +12001,33 @@ Function Sprite source code!
 61.     // delay in ms between images
 62.     this.delayBetweenFrames = 1000 / nb;
 63.   };
-64. }</code></pre>
+64. }
+</code></pre>
+
 </details>
-<h4>
-Same example but with the walking woman sprite sheet
-</h4>
+
+<h4>Same example but with the walking woman sprite sheet</h4>
+
 <p><a href="http://jsbin.com/fekacu/edit?js,output" target="_blank" rel="noopener noreferrer">Try this
 JsBin</a></p>
-<p><img src="./images/image148.jpeg" style="width:5in;height:2.07853in"
-alt="Woman animated" /></p>
+
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 148.  (###) ----------------------->
+<!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image148.jpeg?raw=true"
+  alt="Woman animated."
+  style="width:50%;" />
+
 <p>This time, we have changed the parameters of the sprites and sprite
 sheet. Now you can select the index of the posture to extract: the woman
 sprite sheet has 8 different postures, so you can call:</p>
+
 <details>
-<summary>
-JavaScript source code!
-</summary>
-<pre><code>1.  womanDown.extractSprites(spritesheet, NB_POSTURES, 1,
+  <summary>JavaScript source code!</summary>
+  
+<pre><code>
+1.  womanDown.extractSprites(spritesheet, NB_POSTURES, 1,
 2.                           NB_FRAMES_PER_POSTURE,
 3.                           SPRITE_WIDTH, SPRITE_HEIGHT);
 4.   
@@ -12003,13 +12038,16 @@ JavaScript source code!
 9.  womanLeft.extractSprites(spritesheet, NB_POSTURES, 3,
 10.                          NB_FRAMES_PER_POSTURE,
 11.                          SPRITE_WIDTH, SPRITE_HEIGHT);
-12. // etc...</code></pre>
+12. // etc...
+</code></pre>
+
 </details>
-<h4>
-Moving the sprites, stopping the sprites
-</h4>
+
+<h4>Moving the sprites, stopping the sprites</h4>
+
 <p><a href="https://jsbin.com/muwoje/edit?js,output" target="_blank" rel="noopener noreferrer">Example at
 JsBin</a></p>
+
 <p><img src="./images/image149.jpeg" style="width:5in;height:2.58547in"
 alt="Woman moving left and right, jsbin screenshot" /></p>
 <p>As usual, we used key listeners, an inputStates global object, and
@@ -21165,7 +21203,7 @@ spec: 
 --->
 <h5>the end…</h5>
 <br>
-<h6>Last Updated: 1-19-2022 9:27pm</h6>
+<h6>Last Updated: 1-21-2022 7:03am</h6>
 <!---
 <img class="displayed"
   src="./images/image0.jpeg?raw=true"
