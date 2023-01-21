@@ -7455,10 +7455,10 @@ href="https://jsbin.com/geqija/1/edit?html,js,output" target="_blank" rel="noope
 JSBin</a>.</p>
 <p>Source code extract:</p>
 <details>
-<summary>
-Source code extract!
-</summary>
-<pre><code>1.  window.onload = function init() {
+  <summary>Source code extract!</summary>
+
+<pre><code>
+1.  window.onload = function init() {
 2.     // called after the page is entirely loaded
 3.     requestAnimationFrame(mainloop);
 4.  };
@@ -7468,8 +7468,11 @@ Source code extract!
 8.  
 9.     // call back itself every 60th of second
 10.    requestAnimationFrame(mainloop);
-11. }</code></pre>
+11. }
+</code></pre>
+
 </details>
+
 <p>Notice that calling requestAnimationFrame(mainloop) at <i>line
 10</i>, asks the browser to call the mainloop function every 16.6 ms:
 this corresponds to 60 times per second (16.6 ms = 1/60 s).</p>
@@ -7486,9 +7489,7 @@ computer or mobile device that is running the game. </p>
 exactly that: it gives a high resolution time.</p>
 <p>We will cover this in more detail, later in the course.</p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch2-3-1">
-2.3.1 A game framework skeleton
-</h3>
+<h3 id="ch2-3-1">2.3.1 A game framework skeleton</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>We are going to develop a game - not all at once, let’s divide the
 whole job into a series of smaller tasks. The first step is to create
@@ -7502,14 +7503,14 @@ uses encapsulation to expose only useful methods and properties.</p>
 <p>We will evolve this framework throughout the lessons in this course,
 and cut it in different files once it becomes too large to fit within
 one single file.</p>
-<h4>
-Here is the starting point:
-</h4>
+
+<h4>Here is the starting point:</h4>
+
 <details>
-<summary>
-Source code extract!
-</summary>
-<pre><code>1.  var GF = function(){
+  <summary>Source code extract!</summary>
+  
+<pre><code>
+1.  var GF = function(){
 2.  
 3.    var mainLoop = function(time){
 4.      //Main function, called each frame
@@ -7525,54 +7526,58 @@ Source code extract!
 14.   return {
 15.     start: start
 16.   };
-17. };</code></pre>
+17. };
+</code></pre>
+
 </details>
-<h4>
-With this skeleton, it’s very easy to create a new game instance:
-</h4>
-<pre><code>1.  var game = new GF();
+
+<h4>With this skeleton, it’s very easy to create a new game instance:</h4>
+
+<pre><code>
+1.  var game = new GF();
 2.  
 3.  // Launch the game, start the animation loop, etc.
-4.  game.start();</code></pre>
-<h4>
-Examples
-</h4>
+4.  game.start();
+</code></pre>
+
+<h4>Examples</h4>
+
 <p>Let’s put something into the mainLoop function, and check if it
 works</p>
 <p><a href="https://jsbin.com/tatowa/edit" target="_blank" rel="noopener noreferrer">Try this online example at
 JSBin</a>, with a new mainloop:  (check the JavaScript and output tabs).
 This page should display a different random number every 1/60 second. We
 don’t have a real game yet, but we’re improving our game engine :-)</p>
-<h4>
-Source code extract:
-</h4>
+
+<h4>Source code extract:</h4>
+
 <details>
-<summary>
-Source code extract!
-</summary>
-<pre><code>1.  var mainLoop = function(time){
+  <summary>Source code extract!</summary>
+  
+<pre><code>
+1.  var mainLoop = function(time){
 2.    // main function, called each frame
 3.    document.body.innerHTML = Math.random();
 4.  
 5.    // call the animation loop every 1/60th of second
 6.    requestAnimationFrame(mainLoop);
-7.  };</code></pre>
+7.  };
+</code></pre>
+
 </details>
-<h4>
-Let’s measure that animation’s frame rate
-</h4>
+
+<h4>Let’s measure that animation’s frame rate</h4>
+
 <p>Every game needs to have a function which measures the actual frame
 rate achieved by the code.</p>
 <p>The principle is simple:</p>
+
 <ol type="1">
-<li><p>Count the time elapsed by adding <i>deltas</i> in
-the mainloop.</p></li>
-<li><p>If the sum of the <i>deltas</i> is greater or equal to 1000, then
-1s has elapsed since we started counting.</p></li>
-<li><p>If at the same time, we count the number of <i>frames</i> that
-have been drawn, then we have the <i>frame rate</i> - measured in number
-of frames per second. Remember, it should be around 60 fps!</p></li>
+  <li><p>Count the time elapsed by adding <i>deltas</i> in the mainloop.</p></li>
+  <li><p>If the sum of the <i>deltas</i> is greater or equal to 1000, then 1s has elapsed since we started counting.</p></li>
+  <li><p>If at the same time, we count the number of <i>frames</i> that have been drawn, then we have the <i>frame rate</i> - measured in number of frames per second. Remember, it should be around 60 fps!</p></li>
 </ol>
+
 <p><b>Quick glossary:</b> the word <i>delta</i> is the name of a Greek
 letter (uppercase <b>Δ</b>, lowercase <b>δ</b> or <b>𝛿).</b> The
 upper-case version is used in mathematics as an abbreviation
@@ -7592,19 +7597,23 @@ it online at JSBin</a>):</p>
 <!------------------------------------------------------------------------------------------------>
 <!-------------------- 96. screenshiot of example that displays 60 fps (155) --------------------->
 <!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image0.jpeg?raw=true"
+  alt="Image of the bla bla goes here."
+  style="width:xx%;" />
 <p align="center" width="100%">
 <img src="./images/image096.jpeg"
   style="width:4in;height:1.87097in"
   alt="screenshot of the example that displays 60 frames/s" />
 </p>
-<h4>
-Source code extract:
-</h4>
+
+<h4>Source code extract:</h4>
+
 <details>
-<summary>
-Source code extract!
-</summary>
-<pre><code>1.     // vars for counting frames/s, used by the measureFPS function
+  <summary>Source code extract!</summary>
+  
+<pre><code>
+1.     // vars for counting frames/s, used by the measureFPS function
 2.  var frameCount = 0;
 3.  var lastTime;
 4.  var fpsContainer;
@@ -7631,38 +7640,49 @@ Source code extract!
 25.    // document in the start() function
 26.    fpsContainer.innerHTML = &#39;FPS: &#39; + fps;
 27.    frameCount++;
-28. };</code></pre>
+28. };
+</code></pre>
+
 </details>
+
 <p>Now we can call the measureFPS function from inside the animation
 loop, passing it the current time, given by the high resolution timer
 that comes with the requestAnimationFrame API:</p>
+
 <details>
-<summary>
-Source code extract!
-</summary>
-<pre><code>1.  var mainLoop = function(time){
+  <summary>Source code extract!</summary>
+  
+<pre><code>
+1.  var mainLoop = function(time){
 2.    // compute FPS, called each frame, uses the high resolution time parameter 
 3.    // given by the browser that implements the requestAnimationFrame API
 4.    measureFPS(time);
 5.  
 6.    // call the animation loop every 1/60th of second
 7.    requestAnimationFrame(mainLoop);
-8.  };</code></pre>
+8.  };
+</code></pre>
+
 </details>
+
 <p>And the &lt;div&gt; element used to display FPS on the screen is
 created in this example by the start() function:</p>
+
 <details>
-<summary>
-Source code extract!
-</summary>
-<pre><code>1.  var start = function(){
+  <summary>Source code extract!</summary>
+  
+<pre><code>
+1.  var start = function(){
 2.    // adds a div for displaying the fps value
 3.    fpsContainer = document.createElement(div);
 4.    document.body.appendChild(fpsContainer);
 5.  
 6.    requestAnimationFrame(mainLoop);
-7.  };</code></pre>
+7.  };
+</code></pre>
+
 </details>
+
 <p>Hack:  achieving more than 60 fPS? It’s possible but to be avoided
 except in hackers’ circles!</p>
 <p>We also know methods of implementing loops in JavaScript which
@@ -7670,17 +7690,21 @@ achieve even more than 60fps (this is the limit
 using requestAnimationFrame).</p>
 <p>My favorite hack uses the onerror callback on an &lt;img&gt; element
 like this:</p>
+
 <details>
-<summary>
-Source code extract!
-</summary>
-<pre><code>1.  function mainloop(){
+  <summary>Source code extract!</summary>
+  
+<pre><code>
+1.  function mainloop(){
 2.    var img = new Image;
 3.  
 4.    img.onerror = mainloop;
 5.    img.src = &#39;data:image/png,&#39; + Math.random();
-6.  }</code></pre>
+6.  }
+</code></pre>
+
 </details>
+
 <p>What we are doing here, is creating a new image on each frame and
 providing invalid data as a source of the image. The image cannot be
 displayed properly, so the browser calls the onerror event handler that
@@ -7690,6 +7714,10 @@ and check the number of FPS displayed with this JSBin example</a>.</p>
 <!------------------------------------------------------------------------------------------------>
 <!---------------------------- 97. 4145 fps displayed canvas (157) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image0.jpeg?raw=true"
+  alt="Image of the bla bla goes here."
+  style="width:xx%;" />
 <p align="center" width="100%">
 <img src="./images/image097.jpeg"
   style="width:4in;height:2.26742in"
@@ -7714,9 +7742,7 @@ Code extract!
 10. };</code></pre>
 </details>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch2-3-2">
-2.3.2 Introducing graphics
-</h3>
+<h3 id="ch2-3-2">2.3.2 Introducing graphics</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>[<i>Note</i>: drawing within a canvas is studied in detail during
 the <a
@@ -7740,6 +7766,10 @@ JSBin</a>.</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------- 98. small monster drawn in a canvas (158) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image0.jpeg?raw=true"
+  alt="Image of the bla bla goes here."
+  style="width:xx%;" />
 <p align="center" width="100%">
 <img src="./images/image098.jpeg"
   style="width:2.82292in;height:2.80208in"
@@ -7789,10 +7819,10 @@ restoring it.</p></li>
 </ol>
 <p>Here is JavaScript code which implements those best practices:</p>
 <details>
-<summary>
-Code extract!
-</summary>
-<pre><code>1.  // useful to have them as global variables
+  <summary>Code extract!</summary>
+
+<pre><code>
+1.  // useful to have them as global variables
 2.  var canvas, ctx, w, h;
 3.   
 4.   
@@ -7842,8 +7872,11 @@ Code extract!
 48. 
 49.   // BEST practice: restore the context
 50.   ctx.restore();
-51. }</code></pre>
+51. }
+</code></pre>
+
 </details>
+
 <p>In this small example, we used the context object to draw a monster
 using the default color (black) and wireframe and filled modes:</p>
 <ul>
@@ -7868,9 +7901,9 @@ to ctx.translate(…) does) in a function, it is a best practice to always
 save the previous context  at the beginning of the function and restore
 it at the end of the function (<em>lines 27 and 50</em>).</p></li>
 </ul>
-<h4>
-Animating the monster and including it in our game engine
-</h4>
+
+<h4>Animating the monster and including it in our game engine</h4>
+
 <p>Ok, now that we know how to move the monster, let’s integrate it into
 our game engine:</p>
 <ol type="1">
@@ -7890,6 +7923,11 @@ online at JSBin</a>. </p>
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------------- 99. trembling monster (161) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image0.jpeg?raw=true"
+  alt="Image of the bla bla goes here."
+  style="width:xx%;" />
+
 <p align="center" width="100%">
 <img src="./images/image099.jpeg"
   style="width:2.82292in;height:2.80208in"
@@ -7899,10 +7937,10 @@ online at JSBin</a>. </p>
 HTML code:
 </h4>
 <details>
-<summary>
-Code extract!
-</summary>
-<pre><code>1.  &lt;!DOCTYPE html&gt;
+  <summary>Code extract!</summary>
+
+<pre><code>
+1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.  &lt;head&gt;
 4.  &lt;meta charset=&quot;utf-8&quot;&gt;
@@ -7911,16 +7949,18 @@ Code extract!
 7.  &lt;body&gt;
 8.  &lt;canvas id=&quot;myCanvas&quot; width=&quot;200&quot; height=&quot;200&quot;&gt;&lt;/canvas&gt;
 9.  &lt;/body&gt;
-10. &lt;/html&gt;</code></pre>
+10. &lt;/html&gt;
+</code></pre>
+
 </details>
-<h4>
-JavaScript complete code:
-</h4>
+
+<h4>JavaScript complete code:</h4>
+
 <details>
-<summary>
-Code extract!
-</summary>
-<pre><code>1.  // Inits
+  <summary>Code extract!</summary>
+
+<pre><code>
+1.  // Inits
 2.  window.onload = function init() {
 3.    var game = new GF();
 4.    game.start();
@@ -7984,11 +8024,13 @@ Code extract!
 62. return {
 63.    start: start
 64. };
-65. };</code></pre>
+65. };
+</code></pre>
+
 </details>
-<h4>
-Explanations:
-</h4>
+
+<h4>Explanations:</h4>
+
 <ul>
 <li><p>Note that we now start the game engine in
 a window.onload callback (<em>line 2</em>), so only after the page has
@@ -8010,16 +8052,12 @@ per second!</p>
 <p>Next, let’s see how to interact with it using the mouse or the
 keyboard.</p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch2-3-3">
-2.3.3 User interaction and event handling
-</h3>
+<h3 id="ch2-3-3">2.3.3 User interaction and event handling</h3>
 <!------------------------------------------------------------------------------------------------>
-<h4>
-Input &amp; output: how do events work in Web apps &amp; games?
-</h4>
-<h4>
-HTML5 events
-</h4>
+<h4>Input &amp; output: how do events work in Web apps &amp; games?</h4>
+
+<h4>HTML5 events</h4>
+
 <p>There is no input or output in JavaScript. We
 treat <i>events</i> caused by user actions as inputs, and we manipulate
 the DOM structure as output. Usually in games, we will maintain state
@@ -8028,49 +8066,62 @@ alien ship, and the animation loop will refer to these variables in
 determining the movement of such objects.</p>
 <p>In any case, the events are called DOM events, and we use the DOM
 APIs to create <i>event handlers</i>.</p>
-<h4>
-How to listen to events
-</h4>
+
+<h4>How to listen to events</h4>
+
 <p>There are three ways to manage events in the DOM structure. You could
 attach an event inline in your HTML code like this:</p>
-<h4>
-Method #1: declare an event handler in the HTML code
-</h4>
-<pre><code>&lt;div id=&quot;someDiv&quot; onclick=&quot;alert(&#39;clicked!&#39;)&quot;&gt; content of the
-div &lt;/div&gt;</code></pre>
+
+<h4>Method #1: declare an event handler in the HTML code</h4>
+
+<pre><code>
+&lt;div id=&quot;someDiv&quot; onclick=&quot;alert(&#39;clicked!&#39;)&quot;&gt; content of the
+div &lt;/div&gt;
+</code></pre>
+
 <p>This method is very easy to use, but it is not the recommended way to
 handle events. Indeed, It works today but is <i>deprecated</i> (will
 probably be abandoned in the future). Mixing ‘visual layer’ (HTML) and
 ‘logic layer’ (JavaScript) in one place is really bad practice and
 causes a host of problems during development.</p>
-<h4>
-<p>Method #2: attach an event handler to an HTML element in
-JavaScript</p>
-<pre><code>document.getElementById(&#39;someDiv&#39;).onclick = function() {
+
+<h4><p>Method #2: attach an event handler to an HTML element in JavaScript</p>
+
+<pre><code>
+document.getElementById(&#39;someDiv&#39;).onclick = function() {
    alert(&#39;clicked!&#39;);
-}</code></pre>
+}
+</code></pre>
+
 <p>This method is fine, but  you will not be able to attach
 multiple <i>listener</i> functions. If you need to do this, use the
 version shown below.</p>
 <h4>
 <p>Method #3: register a callback to the event listener with the
 addEventListener method (preferred  method)</p>
-<pre><code>document.getElementById(&#39;someDiv&#39;).addEventListener(&#39;click&#39;, function() {
+
+<pre><code>
+document.getElementById(&#39;someDiv&#39;).addEventListener(&#39;click&#39;, function() {
    alert(&#39;clicked!&#39;);
-}, false);</code></pre>
+}, false);
+</code></pre>
+
 <p>Note that the third parameter describes whether
 the <i>callback</i> has to be called during the captured phase. This is
 not important for now, just set it to false.</p>
-<h4>
-<p>Details of the DOM event are passed to the event listener
-function</p>
+
+<p>Details of the DOM event are passed to the event listener function</p>
 <p>When you create an <i>event listener</i> and attach it to an element,
 the listener will create an <i>event object</i> to describe what
 happened. This object is provided as a parameter of the callback
 function:</p>
-<pre><code>element.addEventListener(&#39;click&#39;, function(event) {
+
+<pre><code>
+element.addEventListener(&#39;click&#39;, function(event) {
    / now you can use event object inside the callback /
-}, false);</code></pre>
+}, false);
+</code></pre>
+
 <p>Depending on the type of event you are listening to, you will consult
 different properties from the event object in order to obtain useful
 information such as: “which keys are pressed down?”, “what is the
@@ -8081,7 +8132,7 @@ keyboard and the mouse (previously covered during the HTML5 Part 1
 course) in the context of a game engine (in particular, how to manage
 multiple events at the same time), and also demonstrate how you can
 accept input from a game pad using the new Gamepad API.</p>
-<h4>
+
 <p>Further reading</p>
 <p>In the method #1 above, we mentioned that “Mixing ‘visual layer’
 (HTML) and ‘logic layer’ (JavaScript) … bad practice”, and this is
@@ -8097,13 +8148,10 @@ href="https://en.wikipedia.org/wiki/Separation_of_concerns" target="_blank" rel=
 of concerns - Wikipedia, the free encyclopedia</a></li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch2-3-4">
-2.3.4 Adding key listeners
-</h3>
+<h3 id="ch2-3-4">2.3.4 Adding key listeners</h3>
 <!------------------------------------------------------------------------------------------------>
-<h4>
-A few reminders
-</h4>
+<h4>A few reminders</h4>
+
 <p>This has been something of a nightmare for years, as different
 browsers had different ways of handling key events and key codes (<a
 href="https://unixpapa.com/js/key.html" target="_blank" rel="noopener noreferrer">read this if you are fond of
@@ -8113,16 +8161,20 @@ years old.</p>
 <p>After a keyboard-related event (eg keydown or keyup), the code of the
 key that fired the event will be passed to the listener function. It is
 possible to test which key has been pressed or released, like this:</p>
+
 <details>
-<summary>
-Source code extract!
-</summary>
-<pre><code>1.  window.addEventListener(&#39;keydown&#39;, function(event) {
+  <summary>Source code extract!</summary>
+  
+<pre><code>
+1.  window.addEventListener(&#39;keydown&#39;, function(event) {
 2.     if (event.keyCode === 37) {
 3.       // Left arrow was pressed
 4.     }
-5.  }, false);</code></pre>
+5.  }, false);
+</code></pre>
+
 </details>
+
 <p>At <i>line 2</i>, the key code of <i>37</i> corresponds to the left
 arrow key.</p>
 <p>You can try key codes <a
@@ -8133,15 +8185,17 @@ Tricks</a></p>
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------------- 100/101. key codes (166) -------------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-&lt;img src=“./images/image100.png”
-style=“width:5.66667in;height:7.61458in”
-<img src="./images/image101.png"
-style="width:5.66667in;height:1.29167in" />
-</p>
-<h4>
-Game requirements: managing multiple keypress / keyrelease events
-</h4>
+<img class="displayed"
+  src="./images/image100.png?raw=true"
+  alt="Key codes."
+  style="width:65%;" />
+<img class="displayed"
+  src="./images/image101.png?raw=true"
+  alt="Key codes."
+  style="width:65%;" />
+
+<h4>Game requirements: managing multiple keypress / keyrelease events</h4>
+
 <p>In a game, we often need to check which keys are being used, at a
 very high frequency - typically from inside the game loop that is
 looping at up to 60 times per second.</p>
@@ -8188,19 +8242,18 @@ you can try at JSBin</a></p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------- 102. monstor up, right and space (168) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image102.jpeg"
-  style="width:2in;height:2.0766in"
-  alt="Trembling monster with multiple key press management." />
-</p>
-<h4>
-And here is the complete source code:
-</h4>
+<img class="displayed"
+  src="./images/image102.jpeg?raw=true"
+  alt="Trembling monster with multiple key press management."
+  style="width:25%;" />
+
+<h4>And here is the complete source code:</h4>
+
 <details>
-<summary>
-Code extract!
-</summary>
-<pre><code>1.  // Inits
+  <summary>Code extract!</summary>
+  
+<pre><code>
+1.  // Inits
 2.  window.onload = function init() {
 3.    var game = new GF();
 4.    game.start();
@@ -8305,8 +8358,11 @@ Code extract!
 103. return {
 104.    start: start
 105. };
-106. };</code></pre>
+106. };
+</code></pre>
+
 </details>
+
 <p>You may notice that on some computers / operating systems, it is not
 possible to simultaneously press the up and down arrow keys, or left and
 right arrow keys, because they are mutually exclusive. However space +
@@ -8318,6 +8374,10 @@ up + right should work in combination.</p>
 <!------------------------------------------------------------------------------------------------>
 <!--------------------------- 103. a schema of mouse internals (170) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image0.jpeg?raw=true"
+  alt="Image of the bla bla goes here."
+  style="width:xx%;" />
 <p align="center" width="100%">
 <img src="./images/image103.jpeg"
   style="width:4in;height:2.73282in"
@@ -8341,6 +8401,10 @@ JSBin</a> that covers all cases correctly.</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------ 104. jsbin example mouse position + button pressed (171) -------------------->
 <!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image0.jpeg?raw=true"
+  alt="Image of the bla bla goes here."
+  style="width:xx%;" />
 <p align="center" width="100%">
 <img src="./images/image104.jpeg"
   style="width:3in;height:1.09515in"
@@ -8417,6 +8481,10 @@ JsBin</a></p>
 <!------------------------------------------------------------------------------------------------>
 <!---------------------- 105. a rectangle that follows mouse cursor (172) ------------------------>
 <!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image0.jpeg?raw=true"
+  alt="Image of the bla bla goes here."
+  style="width:xx%;" />
 <p align="center" width="100%">
 <img src="./images/image105.jpeg"
   style="width:2in;height:2.04192in"
@@ -16705,14 +16773,14 @@ will be called. This is where we will add/remove/search data (you should
 see a message on the console).</p>
 <p>Notice that the version number cannot be a float: “1.2” and “1.4”
 will automatically be rounded to “1”.</p>
-<h4>
-JavaScript code from the example:
-</h4>
+
+<h4>JavaScript code from the example:</h4>
+
 <details>
-<summary>
-function createDatabase code!
-</summary>
-<pre><code>1.  var db; // the database connection we need to initialize
+  <summary>function createDatabase code!</summary>
+
+<pre><code>
+1.  var db; // the database connection we need to initialize
 2.   
 3.  function createDatabase() {
 4.  
@@ -16774,11 +16842,11 @@ function createDatabase code!
 58.      // The result is the database itself
 59.      db = event.target.result;
 60.   };
-61. } // end of function createDatabase</code></pre>
-</details>
-<h4>
-<b>Explanations:</b>
-</h4>
+61. } // end of function createDatabase
+</code</pre>
+
+<h4>Explanations:</h4>
+
 <p>All the “creation” process is done in the onupgradeneeded callback
 (<i>lines 26-50</i>):</p>
 <ul>
@@ -16795,20 +16863,22 @@ properties of JavaScript objects: objectStore.createIndex(“name”,
 <li><p><i>Lines 48-50</i>: populate the
 database: objectStore.add(…).</p></li>
 </ul>
+
 <blockquote>
 <p>Note that we did not create any transaction, as
 the onupgradeneeded callback on a create database request is always in a
 default transaction that cannot overlap with another transaction at the
 same time.</p>
 </blockquote>
+
 <p>If we try to open a database version that exists, then
 the request.onsuccess callback is called. This is where we are going to
 work with data. The DOM event result attribute is the database itself,
 so it is wise to store it in a variable for later use: db=
 event.target.result;</p>
-<h4>
-Deleting a database
-</h4>
+
+<h4>Deleting a database</h4>
+
 <p>You can delete a database simply by running this command: </p>
 <p>indexedDB.deleteDatabase(“databaseName”);</p>
 <p>A common practice, while learning how IndexedDB works, is to type
@@ -16820,6 +16890,10 @@ console:</p>
 <!------------------------------------------------------------------------------------------------>
 <!--------------------- 195.  (##) ----------------------->
 <!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image0.jpeg?raw=true"
+  alt="Image of the bla bla goes here."
+  style="width:xx%;" />
 <p align="center" width="100%">
 <img src="./images/image195.jpeg"
   style="width:6.5in;height:4.48889in"
@@ -16834,9 +16908,7 @@ alt="Refresh IndexedDB display of objectStores." /></p>
 <p><img src="./images/image199.jpeg" style="width:6.5in;height:1.84375in"
 alt="Final result: the objectStore has been deleted." /></p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-6-6">
-3.6.6 Working with data
-</h3>
+<h3 id="ch3-6-6">3.6.6 Working with data</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>Explicit use of a transaction is necessary:</p>
 <blockquote>
@@ -16866,9 +16938,7 @@ become possible.</p>
 remove, and update data. A final example that merges all examples
 together will also be shown at the end of this section.</p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-6-7">
-3.6.7 Inserting data
-</h3>
+<h3 id="ch3-6-7">3.6.7 Inserting data</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>So, about inserting data… Here this is what we did during the
 creation of the database.</p>
@@ -16981,11 +17051,11 @@ the “insert new customer” button.</b></p>
 <!------------------------------------------------------------------------------------------------>
 <!--------------------- 200. inserting data to indexdb example (##) ----------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image200.png"
-  style="width:6.5in;height:2.81667in"
-  alt="Example on JsBin for inserting data in IndexedDB." />
-</p>
+<img class="displayed"
+  src="./images/image200.png?raw=true"
+  alt="Example on JsBin for inserting data in IndexedDB."
+  style="width:60%;" />
+
 <p>The next screenshot shows the IndexedDB object store in Chrome dev.
 tools (use the “Resources” tab). Clicking the “Create CustomerDB”
 database creates or opens the database, and clicking “Add a new
@@ -16994,11 +17064,10 @@ store:</p>
 <!------------------------------------------------------------------------------------------------>
 <!--------------------- 201. devtools showing new customer inserted (##) ----------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image201.png"
-  style="width:6.5in;height:3.53333in"
-  alt="Devtools show that a new customer named Michel Buffa has been inserted." />
-</p>
+<img class="displayed"
+  src="./images/image201.png?raw=true"
+  alt="Devtools show that a new customer named Michel Buffa has been inserted."
+  style="width:65%;" />
 
 <p><b>Code from the example, explanations:</b></p>
 <p>We just added a single function into the example from the previous
@@ -17078,11 +17147,10 @@ datastore remains unchanged.</p>
 <!------------------------------------------------------------------------------------------------>
 <!--------------------- 202.  (##) ----------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image202.png"
-  style="width:6.5in;height:1.23889in"
-  alt="Trace from the devtools console." />
-</p>
+<img class="displayed"
+  src="./images/image200.png?raw=true"
+  alt="Trace from the devtools console."
+  style="width:65%;" />
 
 <h4>Example #2: adding a form and validating inputs</h4>
 
@@ -17091,11 +17159,10 @@ JSBin</a>:</p>
 <!------------------------------------------------------------------------------------------------>
 <!--------------------- 203.  (##) ----------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image203.jpeg"
-  style="width:6.5in;height:1.50278in"
-  alt="A form has been added to the previous example, for creating a new customer." />
-</p>
+<img class="displayed"
+  src="./images/image203.jpeg?raw=true"
+  alt="A form has been added to the previous example, for creating a new customer."
+  style="width:65%;" />
 
 <p>You can try this example by following these steps:</p>
 
@@ -17131,15 +17198,16 @@ with the same ssn. An alert like this should pop up:</p></li>
 <!------------------------------------------------------------------------------------------------>
 <!--------------------- 204.  (##) ----------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image204.jpeg"
-  style="width:6.08333in;height:2.32292in"
-  alt="Insert error." />
-</p>
+<img class="displayed"
+  src="./images/image204.jpeg?raw=true"
+  alt="Insert errors."
+  style="width:60%;" />
 
 <p><b>Here is the updated version of the HTML code of this
 example:</b></p>
-<pre><code>1.  &lt;fieldset&gt;
+
+<pre><code>
+1.  &lt;fieldset&gt;
 2.    SSN: &lt;input type=&quot;text&quot; id=&quot;ssn&quot; placeholder=&quot;444-44-4444&quot;
 3.                required/&gt;&lt;br&gt;
 4.    Name: &lt;input type=&quot;text&quot; id=&quot;name&quot;/&gt;&lt;br&gt;
@@ -17148,9 +17216,10 @@ example:</b></p>
 7.                 unique (we declared it as a &quot;unique&quot; index)&lt;br&gt;
 8.  &lt;/fieldset&gt;
 9.  
-10. &lt;button onclick=&quot;addACustomer();&quot;&gt;Add a new Customer&lt;/button&gt;</code></pre>
-<p><b>And here is the new version of the addACustomer() JavaScript
-function:</b></p>
+10. &lt;button onclick=&quot;addACustomer();&quot;&gt;Add a new Customer&lt;/button&gt;
+</code></pre>
+
+<p><b>And here is the new version of the addACustomer() JavaScript function:</b></p>
 
 <details>
   <summary>function addACustomer extract!</summary>
@@ -17218,11 +17287,11 @@ such a way of coding (!).</p>
 <!------------------------------------------------------------------------------------------------>
 <!--------------------- 205.  (##) ----------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image205.jpeg"
-  style="width:6.5in;height:2.68889in"
-  alt="Devtools show that inserting blank data works." />
-</p>
+<img class="displayed"
+  src="./images/image205.jpeg?raw=true"
+  alt="Devtools show that inserting blank data works."
+  style="width:65%;" />
+
 <p>Indeed, entering an empty value for the keyPath or for indexes is a
 valid value (in the IndexedDB sense). In order to avoid this, you should
 add more JavaScript code. We will let you do this as an exercise.</p>
@@ -17234,11 +17303,10 @@ example at JSBin</a>:</p>
 <!------------------------------------------------------------------------------------------------>
 <!--------------------- 205.  (##) ----------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image205.jpeg"
-  style="width:6.5in;height:2.68889in"
-  alt="Devtools show that a customer has been removed once clicked on the remove customer button." />
-</p>
+<img class="displayed"
+  src="./images/image206.jpeg?raw=true"
+  alt="Devtools show that a customer has been removed once clicked on the remove customer button."
+  style="width:65%;" />
 
 <p>See the changes in Chrome dev. tools: refresh the view (right
 click/refresh) or press F12 or cmd-alt-i twice. There is a bug in the
@@ -17316,9 +17384,7 @@ var request = db.transaction([&quot;customers&quot;], &quot;readwrite&quot;)
 </code></pre>
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-6-9">
-3.6.9 Modifying data
-</h3>
+<h3 id="ch3-6-9">3.6.9 Modifying data</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>We used request.add(object) to add a new customer
 and request.delete(keypath) to remove a customer. Now, to modify data
@@ -17329,11 +17395,10 @@ update a customer!</p>
 <!------------------------------------------------------------------------------------------------>
 <!--------------------- 206.  (##) ----------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image206.jpeg"
-  style="width:6.5in;height:3.44306in"
-  alt="Devtools show a customer being updated in IndexedDB." />
-</p>
+<img class="displayed"
+  src="./images/image206.jpeg?raw=true"
+  alt="Devtools show a customer being updated in IndexedDB."
+  style="width:65%;" />
 
 <p>The above screenshot shows how we added an empty customer
 with ssn=““, (we just clicked on the open database button, then on
@@ -17345,17 +17410,18 @@ this screenshot:</p>
 <!------------------------------------------------------------------------------------------------>
 <!--------------------- 207.  (##) ----------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image207.jpeg"
-  style="width:6.5in;height:1.08194in"
-  alt="Devtools show updated customer." />
-</p>
+<img class="displayed"
+  src="./images/image207.jpeg?raw=true"
+  alt="Devtools show updated customer."
+  style="width:65%;" />
+
 <p>Here is the new code added to our example:</p>
+
 <details>
-<summary>
-function updateACustomer code!
-</summary>
-<pre><code>1.  function updateACustomer() {
+  <summary>function updateACustomer code!</summary>
+
+<pre><code>
+1.  function updateACustomer() {
 2.     if(db === null) {
 3.       alert(&#39;Database must be opened first, please click the Create
 4.              CustomerDB Database first&#39;);
@@ -17393,13 +17459,14 @@ function updateACustomer code!
 36.         event.target.error.name + &quot;. The ssn is not in the
 37.         Database&quot;);
 38.   };
-39. }</code></pre>
+39. }
+</code></pre>
+
 </details>
+
 <p>The update occurs at <i>line 28</i>.</p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-6-10">
-3.6.10 Getting data
-</h3>
+<h3 id="ch3-6-10">3.6.10 Getting data</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>There are several ways to retrieve data from a data store.</p>
 <h4>
@@ -17411,11 +17478,11 @@ It retrieves an object when we know its key/keypath.</p>
 <!------------------------------------------------------------------------------------------------>
 <!--------------------- 208.  (##) ----------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image208.jpeg"
-  style="width:6.5in;height:4.19028in"
-  alt="Getting data from IndexedDB, first enter a ssn, then press the search button." />
-</p>
+<img class="displayed"
+  src="./images/image208.jpeg?raw=true"
+  alt="Getting data from IndexedDB, first enter a ssn, then press the search button."
+  style="width:65%;" />
+
 <p>If the ssn exists in the object store, then the results are displayed
 in the form itself (the code that gets the results and that updates the
 form is in the request.onsuccess callback).</p>
@@ -17601,6 +17668,10 @@ store:</p>
 <!------------------------------------------------------------------------------------------------>
 <!--------------------- 210.  (##) ----------------------->
 <!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image0.jpeg?raw=true"
+  alt="Image of the bla bla goes here."
+  style="width:xx%;" />
 <p align="center" width="100%">
 <img src="./images/image210.jpeg"
   style="width:6.5in;height:1.88889in"
@@ -17707,6 +17778,10 @@ JsBin</a></p>
 <!------------------------------------------------------------------------------------------------>
 <!--------------------- 211.  (##) ----------------------->
 <!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image0.jpeg?raw=true"
+  alt="Image of the bla bla goes here."
+  style="width:xx%;" />
 <p align="center" width="100%">
 <img src="./images/image211.jpeg"
   style="width:6.5in;height:5.12639in"
@@ -17769,6 +17844,10 @@ JSBin that uses the above methods</a>:</p>
 <!------------------------------------------------------------------------------------------------>
 <!--------------------- 212.  (##) ----------------------->
 <!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image0.jpeg?raw=true"
+  alt="Image of the bla bla goes here."
+  style="width:xx%;" />
 <p align="center" width="100%">
 <img src="./images/image212.jpeg"
   style="width:6.5in;height:4.45625in"
@@ -17879,6 +17958,10 @@ JsBin</a> (enter “Gaming”, “Batman” etc. as key range values):</p>
 <!------------------------------------------------------------------------------------------------>
 <!--------------------- 213.  (##) ----------------------->
 <!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image0.jpeg?raw=true"
+  alt="Image of the bla bla goes here."
+  style="width:xx%;" />
 <p align="center" width="100%">
 <img src="./images/image213.jpeg"
   style="width:6.5in;height:6.53819in"
@@ -17888,6 +17971,10 @@ JsBin</a> (enter “Gaming”, “Batman” etc. as key range values):</p>
 <!------------------------------------------------------------------------------------------------>
 <!--------------------- 214.  (##) ----------------------->
 <!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image0.jpeg?raw=true"
+  alt="Image of the bla bla goes here."
+  style="width:xx%;" />
 <p align="center" width="100%">
 <img src="./images/image214.jpeg"
   style="width:6.5in;height:5.99583in"
@@ -21042,7 +21129,7 @@ spec: 
 --->
 <h5>the end…</h5>
 <br>
-<h6>Last Updated: 1-19-2022 9:27pm</h6>
+<h6>Last Updated: 1-20-2022 9:27pm</h6>
 <!---
 <img class="displayed"
   src="./images/image0.jpeg?raw=true"
