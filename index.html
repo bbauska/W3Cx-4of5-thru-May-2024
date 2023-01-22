@@ -7417,12 +7417,16 @@ code.</p>
   alt="Add an asterisk every 200 milliseconds" />
 </p>
 <p>Source code extract:</p>
-<pre><code>1.  var addStarToTheBody = function(){
+
+<pre><code>
+1.  var addStarToTheBody = function(){
 2.     document.body.innerHTML += &quot;*&quot;;
 3.  };
 4.  
 5.  //this will add one star to the document each 200ms (1/5s)
-6.  setInterval(addStarToTheBody, 200);</code></pre>
+6.  setInterval(addStarToTheBody, 200);
+</code></pre>
+
 <p>WRONG:</p>
 <pre><code>1.  setInterval(‘addStarToTheBody()’, 200);
 2.  setInterval(‘document.body.innerHTML += “*”;’, 200);</code></pre>
@@ -7633,14 +7637,9 @@ it online at JSBin</a>):</p>
 <!-------------------- 96. screenshiot of example that displays 60 fps (155) --------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
-  src="./images/image0.jpeg?raw=true"
-  alt="Image of the bla bla goes here."
-  style="width:xx%;" />
-<p align="center" width="100%">
-<img src="./images/image096.jpeg"
-  style="width:4in;height:1.87097in"
-  alt="screenshot of the example that displays 60 frames/s" />
-</p>
+  src="./images/image096.jpeg?raw=true"
+  alt="screenshot of the example that displays 60 frames/s"
+  style="width:40%;" />
 
 <h4>Source code extract:</h4>
 
@@ -7750,22 +7749,17 @@ and check the number of FPS displayed with this JSBin example</a>.</p>
 <!---------------------------- 97. 4145 fps displayed canvas (157) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
-  src="./images/image0.jpeg?raw=true"
-  alt="Image of the bla bla goes here."
-  style="width:xx%;" />
-<p align="center" width="100%">
-<img src="./images/image097.jpeg"
-  style="width:4in;height:2.26742in"
-  alt="Screenshot of example with 4145 FPS displayed" />
-</p>
-<h4>
-Source code extract of this example:
-</h4>
+  src="./images/image097.jpeg?raw=true"
+  alt="Screenshot of example with 4145 FPS displayed"
+  style="width:40%;" />
+
+<h4>Source code extract of this example:</h4>
+
 <details>
-<summary>
-Code extract!
-</summary>
-<pre><code>1.  var mainLoop = function(){
+  <summary>Code extract!</summary>
+  
+<pre><code>
+1.  var mainLoop = function(){
 2.    // main function, called each frame
 3.  
 4.    measureFPS(+(new Date()));
@@ -7774,7 +7768,9 @@ Code extract!
 7.    var img = new Image();
 8.    img.onerror = mainLoop;
 9.    img.src = &#39;data:image/png,&#39; + Math.random();
-10. };</code></pre>
+10. };
+</code></pre>
+
 </details>
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch2-3-2">2.3.2 Introducing graphics</h3>
@@ -7802,22 +7798,17 @@ JSBin</a>.</p>
 <!------------------------- 98. small monster drawn in a canvas (158) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
-  src="./images/image0.jpeg?raw=true"
-  alt="Image of the bla bla goes here."
-  style="width:xx%;" />
-<p align="center" width="100%">
-<img src="./images/image098.jpeg"
-  style="width:2.82292in;height:2.80208in"
-  alt="Small monster drawn in a canvas" />
-</p>
-<h4>
-HTML code (declaration of the canvas):
-</h4>
+  src="./images/image098.jpeg?raw=true"
+  alt="Small monster drawn in a canvas."
+  style="width:25%;" />
+
+<h4>HTML code (declaration of the canvas):</h4>
+
 <details>
-<summary>
-Source code extract!
-</summary>
-<pre><code>1.  &lt;!DOCTYPE html&gt;
+  <summary>Source code extract!</summary>
+  
+<pre><code>
+1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.  &lt;head&gt;
 4.     &lt;meta charset=&quot;utf-8&quot;&gt;
@@ -7826,16 +7817,23 @@ Source code extract!
 7.  &lt;body&gt;
 8.     &lt;canvas id=&quot;myCanvas&quot; width=&quot;200&quot; height=&quot;200&quot;&gt;&lt;/canvas&gt;
 9.  &lt;/body&gt;
-10. &lt;/html&gt;</code></pre>
+10. &lt;/html&gt;
+</code></pre>
+
 </details>
+
 <p>The canvas declaration is at<i> line 8</i>. Use attributes to give
 it a width and a height, but unless you add some CSS properties, you
 will not see it on the screen because it’s transparent!</p>
 <p>Let’s use CSS to reveal the canvas, for example, add a 1px black
 border around it:</p>
-<pre><code>1.  canvas {
+
+<pre><code>
+1.  canvas {
 2.     border: 1px solid black;
-3.  }</code></pre>
+3.  }
+</code></pre>
+
 <p>And here is a reminder of best practices when using the canvas, as
 described in the HTML5 Part 1 course:</p>
 <ol type="1">
@@ -7959,18 +7957,12 @@ online at JSBin</a>. </p>
 <!-------------------------------- 99. trembling monster (161) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
-  src="./images/image0.jpeg?raw=true"
-  alt="Image of the bla bla goes here."
-  style="width:xx%;" />
+  src="./images/image099.jpeg?raw=true"
+  alt="Screenshot of a trembling monster in a 60 f/s animation"
+  style="width:25%;" />
 
-<p align="center" width="100%">
-<img src="./images/image099.jpeg"
-  style="width:2.82292in;height:2.80208in"
-  alt="Screenshot of a trembling monster in a 60 f/s animation" />
-</p>
-<h4>
-HTML code:
-</h4>
+<h4>HTML code:</h4>
+
 <details>
   <summary>Code extract!</summary>
 
@@ -8221,10 +8213,6 @@ Tricks</a></p>
 <!-------------------------------- 100/101. key codes (166) -------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
-  src="./images/image100.png?raw=true"
-  alt="Key codes."
-  style="width:65%;" />
-<img class="displayed"
   src="./images/image101.png?raw=true"
   alt="Key codes."
   style="width:65%;" />
@@ -8410,14 +8398,10 @@ up + right should work in combination.</p>
 <!--------------------------- 103. a schema of mouse internals (170) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
-  src="./images/image0.jpeg?raw=true"
-  alt="Image of the bla bla goes here."
-  style="width:xx%;" />
-<p align="center" width="100%">
-<img src="./images/image103.jpeg"
-  style="width:4in;height:2.73282in"
-  alt="A schema of mouse internals." />
-</p>
+  src="./images/image103.jpeg?raw=true"
+  alt="A schema of mouse internals."
+  style="width:40%;" />
+
 <p>Working with mouse events requires detecting whether a mouse button
 is up or down, identifying that button, keeping track of mouse movement,
 getting the x and y coordinates of the cursor, etc.</p>
@@ -8437,14 +8421,10 @@ JSBin</a> that covers all cases correctly.</p>
 <!------------------ 104. jsbin example mouse position + button pressed (171) -------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
-  src="./images/image0.jpeg?raw=true"
-  alt="Image of the bla bla goes here."
-  style="width:xx%;" />
-<p align="center" width="100%">
-<img src="./images/image104.jpeg"
-  style="width:3in;height:1.09515in"
-  alt="Screenshot of a JsBin example that shows the mouse position + button pressed." />
-</p>
+  src="./images/image104.jpeg?raw=true"
+  alt="Screenshot of a JSBin example that shows the mouse position + button pressed."
+  style="width:35%;" />
+
 <p>Move the mouse over the canvas and press or release mouse buttons.
 Notice that we keep the state of the mouse (position, buttons up or
 down) as part of the inputStates object, just as we do with the keyboard
@@ -8517,14 +8497,9 @@ JsBin</a></p>
 <!---------------------- 105. a rectangle that follows mouse cursor (172) ------------------------>
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
-  src="./images/image0.jpeg?raw=true"
-  alt="Image of the bla bla goes here."
-  style="width:xx%;" />
-<p align="center" width="100%">
-<img src="./images/image105.jpeg"
-  style="width:2in;height:2.04192in"
-  alt="A rectangle that follows the mouse cursor." />
-</p>
+  src="./images/image105.jpeg?raw=true"
+  alt="A rectangle that follows the mouse cursor."
+  style="width:25%;" />
 
 <h4>Source code:</h4>
 
@@ -8619,18 +8594,10 @@ the game engine can be tried at JSBin</a>:</p>
 <!------------------------- 106. message on mouse event listener (174) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
-  src="./images/image0.jpeg?raw=true"
-  alt="Image of the bla bla goes here."
-  style="width:xx%;" />
-<p align="center" width="100%">
-<img src="./images/image106.jpeg"
-  style="width:35%;"
-  alt="Message on mouse event listener." />
-</p>
-<!---
-style="width:2in;height:2.04192in"
-alt="Screenshot of a JsBin example that shows message on mouse events" />
---->
+  src="./images/image106.jpeg?raw=true"
+  alt="Message on mouse event listener."
+  style="width:35%;" />
+
 <p>Try pressing arrows and space keys, moving the mouse, and pressing
 the buttons, all at the same time. You’ll see that the game framework
 handles all these events simultaneously because the global variable
@@ -9066,11 +9033,12 @@ an analog trigger (L2 or R2 on Xbox360 or PS2/PS3 gamepads). </p>
 need to call the scangamepads function from the loop, to generate fresh
 “snapshots” of the gamepad with updated properties. Without this call,
 the gamepad.buttons will return the same  states every time.</p>
+
 <details>
-<summary>
-Code extract!
-</summary>
-<pre><code>1.  function mainloop() {
+  <summary>Code extract!</summary>
+  
+<pre><code>
+1.  function mainloop() {
 2.     // clear, draw objects, etc...
 3.     ...
 4.     scangamepads();
@@ -9079,34 +9047,28 @@ Code extract!
 7.  
 8.     // animate at 60 frames/s
 9.     requestAnimationFrame(mainloop);
-10. }</code></pre>
+10. }
+</code></pre>
+
 </details>
-<h4>
-Detecting axes (joystick) values
-</h4>
+
+<h4>Detecting axes (joystick) values</h4>
 <p><a href="https://jsbin.com/yaxika/edit" target="_blank" rel="noopener noreferrer">Example on JSBin</a></p>
 <!------------------------------------------------------------------------------------------------>
 <!---------------------------------- 112. axes detection (185) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
-  src="./images/image0.jpeg?raw=true"
-  alt="Image of the bla bla goes here."
-  style="width:xx%;" />
-<p align="center" width="100%">
-<img src="./images/image112.jpeg"
-  style="width:65%;"
-  alt="Axes detection in JSBin." />
-</p>
-<!---
-style="width:5in;height:5.18999in"
-alt="axes detection in JsBin" />
---->
+  src="./images/image112.jpeg?raw=true"
+  alt="Axis detection in JSBin."
+  style="width:65%;" />
+
 <p>Code for detecting the axes’ values:</p>
+
 <details>
-<summary>
-Code extract!
-</summary>
-<pre><code>1.  // detect axis (joystick states)
+  <summary>Code extract!</summary>
+  
+<pre><code>
+1.  // detect axis (joystick states)
 2.  function checkAxes(gamepad) {
 3.     if(gamepad === undefined) return;
 4.     if(!gamepad.connected) return;
@@ -9116,12 +9078,13 @@ Code extract!
 8.       // do something with the value
 9.       ...
 10.    }
-11. }</code></pre>
+11. }
+</code></pre>
+
 </details>
-<h4>
-Detecting the direction (left, right, up, down, diagonals) and angle of
-the left joystick
-</h4>
+
+<h4>Detecting the direction (left, right, up, down, diagonals) and angle of the left joystick</h4>
+
 <p>We could add an inputStates object similar to the one we used in the
 game framework, and check its values in the mainloop to decide whether
 to move the player up/down/left/right, including diagonals - or maybe
@@ -9133,23 +9096,14 @@ example</a>:</p>
 <!------------------- 113. direction and angle detection with joystick (186) --------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
-  src="./images/image0.jpeg?raw=true"
-  alt="Image of the bla bla goes here."
-  style="width:xx%;" />
-<p align="center" width="100%">
-<img src="./images/image113.jpeg"
-  style="width:35%;"
-  alt="Direction and angle detection with joystick." />
-</p>
-<!---
-<img src="./images/image113.jpeg" style="width:4in;height:1.98354in"
-alt="direction and angle detection for joystick" />
---->
+  src="./images/image113.jpeg?raw=true"
+  alt="Direction and angle detection with joystick."
+  style="width:35%;" />
+
 <p>Source code extract:</p>
+
 <details>
-<summary>
-Code extract!
-</summary>
+  <summary>Code extract!</summary>
 
 <pre><code>
 1.  var inputStates = {};
@@ -10117,7 +10071,7 @@ JSBin</a>:</p>
 
 <details>
   <summary>Code extract!</summary>
-  
+
 <pre><code>
 &lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
@@ -10476,9 +10430,7 @@ shows 60 fps.</p>
   src="./images/image118.jpeg?raw=true"
   alt="Screenshot of the monster moving at 60 f/s."
   style="width:35%;" />
-<p><img src="./images/image118.jpeg"
-style="width:3.51042in;height:3.66667in"
-alt="screenshot of the monster moving at 60 f/s" /></p>
+
 <p><a href="https://jsbin.com/gazatuquya/edit?html,js,output" target="_blank" rel="noopener noreferrer">Now try
 this slightly modified version</a> in which we added a delay inside the
 animation loop. This should slow down the frame rate.  On a Mac Book Pro
@@ -10486,6 +10438,7 @@ animation loop. This should slow down the frame rate.  On a Mac Book Pro
 monster using the arrow keys, its speed on the screen is the same,
 excepting that it’s not as smooth as in the previous version, which ran
 at 60 fps.</p>
+
 <p><img src="./images/image119.jpeg"
 style="width:3.48958in;height:3.58333in"
 alt="screenshot of example that runs at 37 f/s" /></p>
@@ -10620,8 +10573,10 @@ Animating multiple balls which bounce off horizontal and vertical walls
 </h4>
 <p><a href="https://jsbin.com/fikomik/edit?js,output" target="_blank" rel="noopener noreferrer">Online example at
 JSBin</a>:</p>
-<p><img src="./images/image120.jpeg" style="width:3.1875in;height:3.22917in"
+
+0<p><img src="./images/image120.jpeg" style="width:3.1875in;height:3.22917in"
 alt="Some circular balls that bounce agains vertical and horizontal borders of the canvas" /></p>
+
 <p>In this example, we define <em>a constructor function</em> for
 creating balls. This is a way to design JavaScript “pseudo classes” as
 found in other object-oriented languages like Java, C# etc. It’s useful
@@ -10889,6 +10844,7 @@ while moving to change the monster’s speed. Look at the source code and
 change the parameters controlling the creation of the balls: number,
 speed, radius, etc. Also, try changing the monster’s default speed. See
 the results.</p>
+
 <p><img src="./images/image121.jpeg" style="width:4in;height:4.13077in"
 alt="Monster + balls in the game framework. On the screen we see the monster + a bunch of balls" /></p>
 <p>For this version, we copied and pasted some code from the previous
@@ -10933,7 +10889,7 @@ and we call an updateBalls function to do the same  for the balls: draw
 and update their position.</p>
 
 <details>
-<summary>Code extract!</summary>
+  <summary>Code extract!</summary>
 
 <pre><code>
 1.  function updateMonsterPosition(delta) {
@@ -10984,8 +10940,10 @@ present three “classic” collision tests, and follow them with brief
 sketches of more complex algorithms.</p>
 
 <h4>Circle collision test</h4>
+
 <p><img src="./images/image122.png" style="width:3in;height:2.47in"
 alt="two circles with distances between the centers drawn" /></p>
+
 <p>Collision between circles is easy. Imagine there are two circles:</p>
 <ol type="1">
 <li><p>Circle c1 with center (x1,y1) and radius r1;</p></li>
@@ -11001,16 +10959,19 @@ centers is r1+r2;</p></li>
 collide; whereas</p></li>
 <li><p>any less and they do collide or overlay.</p></li>
 </ul>
+
 <blockquote>
 <p>In other words: if the distance between the center points is less
 than the sum of the radii, then the circles collide.</p>
 </blockquote>
+
 <p>Let’s implement this as a JavaScript function step-by-step:</p>
+
 <details>
-<summary>
-Code extract!
-</summary>
-<pre><code>1.  function circleCollideNonOptimised(x1, y1, r1, x2, y2, r2) {
+  <summary>Code extract!</summary>
+
+<pre><code>
+1.  function circleCollideNonOptimised(x1, y1, r1, x2, y2, r2) {
 2.  var dx = x1 - x2;
 3.  var dy = y1 - y2;
 4.  var distance = Math.sqrt(dx * dx + dy * dy);
@@ -11018,41 +10979,52 @@ Code extract!
 457. 
 &lt;!-- --&gt;
 5.  return (distance &lt; r1 + r2);
-6.  }</code></pre>
+6.  }
+</code></pre>
+
 </details>
+
 <p>This could be optimized a little averting the need to compute a
 square root:</p>
-<pre><code>(x2-x1)^2 + (y1-y2)^2 &lt;= (r1+r2)^2</code></pre>
-<h4>
-Which yields:
-</h4>
-<pre><code>1.  function circleCollide(x1, y1, r1, x2, y2, r2) {
+
+<pre><code>
+(x2-x1)^2 + (y1-y2)^2 &lt;= (r1+r2)^2<
+/code></pre>
+
+<h4>Which yields:</h4>
+
+<pre><code>
+1.  function circleCollide(x1, y1, r1, x2, y2, r2) {
 2.  var dx = x1 - x2;
 3.  var dy = y1 - y2;
 4.  return ((dx * dx + dy * dy) &lt; (r1 + r2)*(r1+r2));
-5.  }</code></pre>
+5.  }
+</code></pre>
+
 <p>This technique is attractive because a “bounding circle” can often be
 used with graphic objects of other shapes, providing they are not too
 elongated horizontally or vertically.</p>
-<h4>
-Let’s test this idea
-</h4>
+
+<h4>Let’s test this idea</h4>
+
 <p><a href="https://jsbin.com/ciyiko/edit" target="_blank" rel="noopener noreferrer">Try this example at
 JSBin</a>: move the monster with the arrow keys and use the mouse to
 move “the player”: a small circle. Try to make collisions between the
 monster and the circle you control.</p>
+
 <p><img src="./images/image123.jpeg" style="width:4in;height:3.97101in"
 alt="monster and small circle: collision, they are drawn in red and a &quot;collision&quot; message appears" /></p>
+
 <p>This online example uses the game framework (without time-based
 animation in this one). We just added a “player” (for the moment, a
 circle that follows the mouse cursor), and a “monster”. We created two
 JavaScript objects for describing the monster and the player, and these
 objects both have a boundingCircleRadius property:</p>
 <details>
-<summary>
-JavaScript code extract!
-</summary>
-<pre><code>// The monster!
+  <summary>JavaScript code extract!</summary>
+  
+<pre><code>
+// The monster!
 var monster = {
   x:80,
   y:80,
@@ -11066,16 +11038,17 @@ var player = {
   x:0,
   y:0,
   boundingCircleRadius: 20
-};</code></pre>
+};
+</code></pre>
 </details>
-<h4>
-The collision test occurs in the main loop:
-</h4>
+
+<h4>The collision test occurs in the main loop:</h4>
+
 <details>
-<summary>
-JavaScript code extract!
-</summary>
-<pre><code>var mainLoop = function(time){
+  <summary>JavaScript code extract!</summary>
+
+<pre><code>
+var mainLoop = function(time){
 //main function, called each frame
 measureFPS(time);
 // Clear the canvas
@@ -11117,13 +11090,13 @@ function circleCollide(x1, y1, r1, x2, y2, r2) {
    var dx = x1 - x2;
    var dy = y1 - y2;
    return ((dx * dx + dy * dy) &lt; (r1 + r2)*(r1+r2));
-}</code></pre>
+}
+</code></pre>
+
 </details>
-<h4>
-[Advanced technique] Use several bounding circles for complex shapes,
-recompute bounding circles when the shape changes over time (animated
-objects)
-</h4>
+
+<h4>[Advanced technique] Use several bounding circles for complex shapes, recompute bounding circles when the shape changes over time (animated objects)</h4>
+
 <p>This is an advanced technique: you can use a list of bounding circles
 or better still, a hierarchy of bounding circles in order to reduce the
 number of tests. The image below of an “arm” can be associated with a
@@ -11134,16 +11107,19 @@ in this course, but it’s a classic optimization.</p>
 <p><img src="./images/image124.png" style="width:4in;height:2.20258in"
 alt="Image of an arm with a hierarchy of bounding circles: one for the whole arm, and two smaller for the forearm and the other part" /></p>
 <p>In 3D, you can use spheres instead of circles:</p>
+
 <p><img src="./images/image125.png" style="width:4in;height:2.2583in"
 alt="a 3D object (a lamp) with bounding spheres" /></p>
 <p>The famous game Gran Turismo 4 on the PlayStation 2 uses bounding
 spheres for detecting collisions between cars:</p>
+
 <p><img src="./images/image126.png" style="width:3in;height:2.26531in"
 alt="Grand turismo used collisions between bounding spheres: image of the game (a car on a road track)" /></p>
 <h4>
 Rectangle (aligned along X and Y axis) detection test
 </h4>
 <p>Let’s look at a simple illustration:</p>
+
 <p><img src="./images/image127.jpeg"
 style="width:4.47917in;height:2.09375in"
 alt="two pictures: one with non intersected rectangles: the projection of horizontal sides of rectangles to the X axis do not intersect (then rectangles do not intersect), the other with both projections intersect (rectangles intersect)" /></p>
@@ -11162,18 +11138,24 @@ demonstration of rectangle - rectangle detection</a>
 </h4>
 <p>1 - Only horizontal axis projections overlap: no collision between
 rectangles</p>
+
 <p><img src="./images/image128.jpeg" style="width:3.53125in;height:2.875in"
 alt="Only horizontal axis overlap: no collision" /></p>
+
 <p>2 - Only vertical axis projections overlap: no collision between
 rectangles</p>
+
 <p><img src="./images/image129.jpeg"
 style="width:3.42708in;height:2.88542in"
 alt="Only vertical axis projections overlap: no collision" /></p>
+
 <p>3 - Horizontal and vertical axis projections overlap: collision
 detected!</p>
+
 <p><img src="./images/image130.jpeg"
 style="width:3.44792in;height:3.01042in"
 alt="the projections of axis overlap: collision detected" /></p>
+
 <p>Here is a JavaScript implementation of a rectangle - rectangle
 (aligned) collision test:</p>
 <pre><code>// Collisions between aligned rectangles
@@ -11197,17 +11179,20 @@ move “the player”: this time a small rectangle. Try to make collisions
 between the monster and the circle you control. Notice that this time
 the collision detection is more accurate and can work with elongated
 shapes.</p>
+
 <p><img src="./images/image131.jpeg"
 style="width:2.39583in;height:1.90625in"
 alt="Player as a square is inside the monster bounding circle but not inside the bounding rectangle, as we use rect rect collision test: no collision detected" /></p>
+
 <p><img src="./images/image132.jpeg" style="width:2.125in;height:1.90625in"
 alt="Same as previous picture but this time the player square is inside the monster bounding rectangle: collision detected" /></p>
 <p>Here is what we modified (in bold) in the code:</p>
+
 <details>
-<summary>
-JavaScript code extract!
-</summary>
-<pre><code>1.  ...
+  <summary>JavaScript code extract!</summary>
+
+<pre><code>
+1.  ...
 2.  // The monster!
 3.  var monster = {
 4.  x: 80,
@@ -11293,11 +11278,13 @@ JavaScript code extract!
 46. return true; // If previous tests failed, then both axis
    projections
     // overlap and the rectangles intersect
-47. }</code></pre>
+47. }
+</code></pre>
+
 </details>
-<h4>
-Many real games use aligned rectangle collision tests
-</h4>
+
+<h4>Many real games use aligned rectangle collision tests</h4>
+
 <p>Testing “circle-circle” or “rectangle-rectangle collisions
 is <em>cheap</em> in terms of computation.”Rectangle-rectangle”
 collisions are used in many 2D games, such as Dodonpachi (one of the
@@ -11317,29 +11304,32 @@ the same time. Collisions have to be tested: did the player’s bullets
 hit an enemy, AND did an enemy bullet (for one of the many enemies) hit
 the player? These examples demonstrate the efficiency of such collision
 test techniques.</p>
-<h4>
-Other collision tests
-</h4>
+
+<h4>Other collision tests</h4>
+
 <p>In this section, we only give sketches and examples of more
 sophisticated collision tests. For further explanation, please follow
 the links provided.</p>
-<h4>
-Aligned rectangle-circle
-</h4>
+
+<h4>Aligned rectangle-circle</h4>
+
 <p>There are only two cases when a circle intersects with
 a rectangle:</p>
+
 <ol type="1">
-<li><p>Either the circle’s center lies inside the rectangle, or</p></li>
-<li><p>One of the edges of the rectangle intersects the circle.</p></li>
+  <li><p>Either the circle’s center lies inside the rectangle, or</p></li>
+  <li><p>One of the edges of the rectangle intersects the circle.</p></li>
 </ol>
+
 <p>We propose this function (implemented after reading <a
 href="https://stackoverflow.com/questions/401847/circle-rectangle-collision-detection-intersection" target="_blank" rel="noopener noreferrer">this
 Thread at StackOverflow</a>):</p>
+
 <details>
-<summary>
-JavaScript code extract!
-</summary>
-<pre><code>1.  // Collisions between rectangle and circle
+  <summary>JavaScript code extract!</summary>
+
+<pre><code>
+1.  // Collisions between rectangle and circle
 2.  function circRectsOverlap(x0, y0, w0, h0, cx, cy, r) {
 3.     var testX=cx;
 4.     var testY=cy;
@@ -11350,18 +11340,25 @@ JavaScript code extract!
 9.     if (testY &gt; (y0+h0)) testY=(y0+h0);
 10. 
 11.    return (((cx-testX)*(cx-testX)+(cy-testY)*(cy-testY))&lt; r*r);
-12. }</code></pre>
+12. }
+</code></pre>
+
 </details>
+
 <p><a href="https://jsbin.com/acohiv/845/edit?html,output" target="_blank" rel="noopener noreferrer">Try this
 function in this example on JSBin</a>.</p>
-<p><img src="./images/image135.jpeg" style="width:2.0625in;height:2.20833in"
-alt="Circle and rectangle not in collision" />
-<img src="./images/image136.jpeg"
-style="width:2.10417in;height:2.19792in"
-alt="circle collides a rectangle" /></p>
-<h4>
-[ADVANCED] Collision between balls (pool like)
-</h4>
+
+<img class="displayed"
+  src="./images/image135.jpeg?raw=true"
+  alt="Circle and rectangle not in collision."
+  style="width:20%;" />
+<img class="displayed"
+  src="./images/image136.jpeg?raw=true"
+  alt="Circle collides with a rectangle."
+  style="width:20%;" />
+
+<h4>[ADVANCED] Collision between balls (pool like)</h4>
+
 <ul>
 <li><p>Math and physics: please read <a
 href="https://web.archive.org/web/20181231090226/http:/archive.ncsa.illinois.edu/Classes/MATH198/townsend/math.html" target="_blank" rel="noopener noreferrer">this
@@ -11372,8 +11369,12 @@ balls at JSBin (author: M.Buffa)</a>, and also <a
 href="https://jsbin.com/nopefe/edit" target="_blank" rel="noopener noreferrer">try this example that does the same
 with a blurring effect</a></p></li>
 </ul>
-<p><img src="./images/image137.jpeg" style="width:5in;height:2.01389in"
-alt="Ball ball collision example." /></p>
+
+<img class="displayed"
+  src="./images/image137.jpeg?raw=true"
+  alt="Ball-ball collision example."
+  style="width:50%;" />
+
 <p>The principle behind collision resolution for pool balls is as
 follows. You have a situation where two balls are colliding, and you
 know their velocities (step 1 in the diagram below). You separate out
@@ -11389,12 +11390,13 @@ plane that is tangent to the two balls at collision point).</p>
 components between the two balls (as we move from step 2 to step 3),
 then finally recombine the velocities for each ball to achieve the
 result (step 4):</p>
-<p><img src="./images/image138.png" style="width:3in;height:2.48276in"
-alt="Diagram with two balls, velocities, tengeantial and normal planes." /></p>
-<p>The above picture has been borrowed from <a
-href="https://sinepost.wordpress.com/2012/09/05/making-your-balls-bounce/" target="_blank" rel="noopener noreferrer">this
-interesting article about how to implement in C# pool like collision
-detection</a>.</p>
+
+<img class="displayed"
+  src="./images/image138.png?raw=true"
+  alt="Diagram with two balls, velocities, tengeantial and normal planes."
+  style="width:35%;" />
+
+<p>The above picture has been borrowed from <a href="https://sinepost.wordpress.com/2012/09/05/making-your-balls-bounce/" target="_blank" rel="noopener noreferrer">this interesting article about how to implement in C# pool like collision detection</a>.</p>
 <p>Of course, we will only compute these steps if the balls collide, and
 for that test we will have used the basic circle collision test outlined
 earlier.</p>
@@ -11414,9 +11416,7 @@ href="https://www.toptal.com/game/video-game-physics-part-i-an-introduction-to-r
 tutorial, that is the first of a three-part series  about  video game
 physics</a>.</p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch2-5-4">
-2.5.4 Adding collision detection to the game framework
-</h3>
+<h3 id="ch2-5-4">2.5.4 Adding collision detection to the game framework</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>Our previous lesson enabled us to animate balls in the game framework
 (<a href="https://jsbin.com/tehuve/edit" target="_blank" rel="noopener noreferrer">this example</a>).</p>
@@ -11427,15 +11427,17 @@ a collision between a ball (circle) and the monster (rectangle), we set
 the ball color to red.</p>
 <p><a href="https://jsbin.com/bohebe/edit?js,output" target="_blank" rel="noopener noreferrer">Try the example at
 JsBin!</a></p>
-<p><img src="./images/image139.jpeg" style="width:3in;height:3.02853in"
-alt="Collision between balls and the monster." /></p>
-<h4>
-Source code extract:
-</h4>
+
+
+<img class="displayed"
+  src="./images/image139.jpeg?raw=true"
+  alt="Collision between balls and the monster."
+  style="width:35%;" />
+
+<h4>Source code extract:</h4>
+
 <details>
-<summary>
-JavaScript code extract!
-</summary>
+  <summary>JavaScript code extract!</summary>
 
 <pre><code>
 1.  function updateBalls(delta) {
@@ -11519,40 +11521,28 @@ First, let’s explain how to use “sprites” in JavaScript and canvas.</p>
 
 <h4>Multiple postures on a single sprite sheet</h4>
 
-<p>A sprite sheet with different “sprite” sets that correspond to
-different “postures”: this is the case for the walking woman we just saw
-in the previous lesson. This sprite sheet contains 8 different sets of
-sprites, or postures, each corresponding to a direction. In this
-example, each posture comprises exactly 13 sprites, aligned in a single
-row across the sprite sheet.</p>
-<!-- page 256 --->
+<p>A sprite sheet with different “sprite” sets that correspond to different “postures”: this is the case for the walking woman we just saw in the previous lesson.<br>
+This sprite sheet contains 8 different sets of sprites, or postures, each corresponding to a direction.<br>
+In this example, each posture comprises exactly 13 sprites, aligned in a single row across the sprite sheet.</p>
 <!------------------------------------------------------------------------------------------------>
 <!--------------------------- 140. woman walking using sprite (256) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image140.png"
-  style="width:35%;"
-  alt="A sprite sheet of a woman walking, with different postures." />
-</p>
-<!---
-<img src="./images/image140.png" style="width:3.5in;height:4.12821in"
---->
-<h4>
-One posture per sprite sheet
-</h4>
-<p>Some sprite sheets have a single sprite set, spreading over multiple
-lines; like this walking robot:</p>
+<img class="displayed"
+  src="./images/image140.png?raw=true"
+  alt="A sprite sheet of a woman walking, with different postures."
+  style="width:35%;" />
+
+<h4>One posture per sprite sheet</h4>
+
+<p>Some sprite sheets have a single sprite set, spreading over multiple lines; like this walking robot:</p>
 <!------------------------------------------------------------------------------------------------>
 <!--------------------------- 142. walking robot using sprite (xxx) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image142.png"
-  style="width:35%;"
-  alt="A sprite sheet with a walking robot (only the posture &quot;move to the right&quot; is in the sprite sheet)." />
-</p>
-<!---
-style="width:3in;height:3in"
---->
+<img class="displayed"
+  src="./images/image142.png?raw=true"
+  alt="A sprite sheet with a walking robot (only the posture &quot;move to the right&quot; is in the sprite sheet)."
+  style="width:35%;" />
+
 <p>This is an example that you will see a lot around the Internet, in
 many sprite sheets. For the full animation of the robot, we will need
 multiple sprite sheets: one for each posture.</p>
@@ -11611,8 +11601,14 @@ sprite is drawn in the small canvas. As you move the slider from one to
 the next, see how the animation is created? </p>
 <p><a href="https://jsbin.com/yukacep/edit?html,js,output" target="_blank" rel="noopener noreferrer">Try it at
 JSBin</a>:</p>
-<p><img src="./images/image145.jpeg" style="width:5in;height:4.31036in"
-alt="Screenshot of the example: move a slider to select a subimage/sprite from the spritesheet" /></p>
+
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 145.  (###) ----------------------->
+<!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image145.jpeg?raw=true"
+  alt="Screenshot of the example: move a slider to select a subimage/sprite from the spritesheet"
+  style="width:50%;" />
 
 <h4>HTML code:</h4>
 
@@ -12048,16 +12044,22 @@ sprite sheet has 8 different postures, so you can call:</p>
 <p><a href="https://jsbin.com/muwoje/edit?js,output" target="_blank" rel="noopener noreferrer">Example at
 JsBin</a></p>
 
-<p><img src="./images/image149.jpeg" style="width:5in;height:2.58547in"
-alt="Woman moving left and right, jsbin screenshot" /></p>
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 149.  (###) ----------------------->
+<!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image149.jpeg?raw=true"
+  alt="Woman moving left and right, jsbin screenshot."
+  style="width:50%;" />
+
 <p>As usual, we used key listeners, an inputStates global object, and
 this time we created 8 woman sprites, one for each direction.</p>
 <p>Notice that we added a drawStopped method in the Sprite model in
 order to stop animating the woman when no key is pressed for moving
 her.</p>
-<h4>
-External resource
-</h4>
+
+<h4>External resource</h4>
+
 <ul>
 <li>Game development tutorial (5 May 2020): <a
 href="https://spicyyoghurt.com/tutorials/html5-javascript-game-development/images-and-sprite-animations" target="_blank" rel="noopener noreferrer">Draw
@@ -17563,11 +17565,11 @@ form is in the request.onsuccess callback).</p>
 <!------------------------------------------------------------------------------------------------>
 <!--------------------- 209.  (##) ----------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image209.jpeg"
-  style="width:6.5in;height:1.98333in"
-  alt="Form updated with data retrieved." />
-</p>
+<img class="displayed"
+  src="./images/image209.jpeg?raw=true"
+  alt="Form updated with data retrieved."
+  style="width:65%;" />
+
 <p>Here is the code added to that example:</p>
 
 <details>
@@ -21203,7 +21205,7 @@ spec: 
 --->
 <h5>the end…</h5>
 <br>
-<h6>Last Updated: 1-21-2022 7:03am</h6>
+<h6>Last Updated: 1-21-2022 9:41pm</h6>
 <!---
 <img class="displayed"
   src="./images/image0.jpeg?raw=true"
