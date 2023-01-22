@@ -11290,6 +11290,7 @@ is <em>cheap</em> in terms of computation.”Rectangle-rectangle”
 collisions are used in many 2D games, such as Dodonpachi (one of the
 most famous and enjoyable shoot’em’ups ever made - you can play it using
 the MAME arcade game emulator):</p>
+
 <p><img src="./images/image133.jpeg" style="width:5in;height:3.13408in"
 alt="screenshot of dodonpachi" /></p>
 <p>You could also try the free Genetos shoot’em up game (Windows
@@ -11297,6 +11298,7 @@ only) that retraces the history of the genre over its different levels
 (<a href="https://tatsuya-koyama.com/works/games/genetos/" target="_blank" rel="noopener noreferrer">download
 here</a>). Press the G key to see the bounding rectangles used for
 collision test. Here is a screenshot:</p>
+
 <p><img src="./images/image134.jpeg" style="width:5in;height:3.77137in"
 alt="genetos screenshot" /></p>
 <p>These games run at 60 fps and can have hundreds of bullets moving at
@@ -12236,14 +12238,17 @@ should add a test in the createBalls function to ensure that no balls
 are created on top of the monster.</p>
 <p><a href="https://jsbin.com/jixolu/edit?js,console,output" target="_blank" rel="noopener noreferrer">Try this
 jsBin!</a></p>
+
 <p><img src="./images/image151.jpeg" style="width:3in;height:3.02821in"
 alt="Eat the ball game" /></p>
+
 <p>Source code extract:</p>
+
 <details>
-<summary>
-JavaScript function updateBalls source code extract!
-</summary>
-<pre><code>1.  function updateBalls(delta) {
+  <summary>JavaScript function updateBalls source code extract!</summary>
+
+<pre><code>
+1.  function updateBalls(delta) {
 2.     // for each ball in the array
 3.     var allBallDead = true;
 4.  
@@ -12277,24 +12282,29 @@ JavaScript function updateBalls source code extract!
 32. 
 33.      // 3) draw the ball
 34.      ball.draw();
-35.   }</code></pre>
+35.   }
+</code></pre>
+
 </details>
+
 <details>
-<summary>
-JavaScript code extract!
-</summary>
-<pre><code>1. if(allBallDead) {
+  <summary>JavaScript code extract!</summary>
+
+<pre><code>
+1. if(allBallDead) {
 2.   // reset all balls, create more balls each time
 3.   // as a way of increasing the difficulty
 4.   // in a real game: change the level, play nice music!
 5.   nbBalls++;
 6.   createBalls(nbBalls);
 7.   }
-8. }</code></pre>
+8. }
+</code></pre>
+
 </details>
-<h4>
-Game states:menus, high score tables, etc.
-</h4>
+
+<h4>Game states:menus, high score tables, etc.</h4>
+
 <p>In this example, let’s make use of a global gameState variable for
 managing the life-cycle of the game. Usually, there is a main menu with
 a “start new game” option, then we play the game, and if we ‘die’ we
@@ -12310,26 +12320,29 @@ JsBin</a>, then look at the source code. Start from the mainloop!</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------- 152. Game Over Screen, asking to press space to start again. (2xx) --------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image152.jpeg"
+<img class="displayed"
+  src="./images/image152.jpeg"
   style="width:4.69792in;height:4.75in"
   alt="Game Over Screen, asking to press space to start again." />
-</p>
-<pre><code>currentGameState = gameStates.gamerunning:</code></pre>
+
+<pre><code>
+currentGameState = gameStates.gamerunning:
+</code></pre>
 <!------------------------------------------------------------------------------------------------>
 <!------------- 153. Game Over Screen, asking to press space to start again. (2xx) --------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image153.jpeg"
+<img class="displayed"
+  src="./images/image153.jpeg"
   style="width:4.78125in;height:4.79167in"
   alt="Game Running, showing score, time, and level." />
-</p>
+
 <p>Game state management in the JavaScript code:</p>
+
 <details>
-<summary>
-JavaScript code extract!
-</summary>
-<pre><code>1.  ...
+  <summary>JavaScript code extract!</summary>
+  
+<pre><code>
+1.  ...
 2.  // game states
 3.  var gameStates = {
 4.     mainMenu: 0,
@@ -12511,18 +12524,18 @@ CSS file in a css subdirectory:</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------------ 154. game.html (280) -------------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image154.jpeg"
+<img class="displayed"
+  src="./images/image154.jpeg"
   style="width:1.98958in;height:2.29167in"
   alt="First game structure." />
-</p>
+
 <p>Try the game: open the game.html file in your browser. If the game
 does not work, open devtools, look at the console, fix the errors, try
 again, etc. You may have to do this several times when you split your
 files and encounter errors.</p>
-<h4>
-Isolate the ball function constructor
-</h4>
+
+<h4>Isolate the ball function constructor</h4>
+
 <p>Put the Ball constructor function in a js/ball.js file, include it in
 the game.html file, and try the game: oops, it doesn’t work! Let’s open
 the console:</p>
@@ -12559,11 +12572,11 @@ devtools console:</p>
 <!------------------------------------------------------------------------------------------------>
 <!---------------- 155. function calcdisktomove error not found in ball.js (279) ----------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image155.jpeg"
+<img class="displayed"
+  src="./images/image155.jpeg"
   style="width:6.08333in;height:5.375in"
   alt="Error the function calcDistToMove not found in ball.js." />
-</p>
+
 <p>Aha! The calcDistanceToMove function is indeed used by the Ball
 constructor in ball.js at <em>line 2</em>7 (it moves the ball using
 time-based animation). If you look carefully, you will see that it’s
@@ -12647,14 +12660,13 @@ fps.js extract!
 <!------------------------------------------------------------------------------------------------>
 <!---------------------------------- 156. game structure (281) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image156.jpeg"
+<img class="displayed"
+  src="./images/image156.jpeg"
   style="width:1.625in;height:2.25in"
   alt="Game structure." />
-</p>
-<h4>
-Let’s continue and isolate the event listeners
-</h4>
+
+<h4>Let’s continue and isolate the event listeners</h4>
+
 <p>Now, consider the code that creates the listeners, can we move
 it from the GF.start() method into a listeners.js file? We’ll have to
 pass the canvas as an extra parameter (to resolve a dependency) and we
@@ -12712,26 +12724,25 @@ function testCollisionWithWalls(ball, w, h) {
 the testCollisionWithWalls function to resolve dependencies. The other
 collision functions (circle-circle and rectangle-rectangle) presented
 during the course, could be put into this file as well.</p>
-<h4>
-Final downloadable version and conclusion
-</h4>
+
+<h4>Final downloadable version and conclusion</h4>
+
 <p>After all that, we reach this tidy structure:</p>
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------- 157. final game structure in files (283) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image157.jpeg"
+<img class="displayed"
+  src="./images/image157.jpeg"
   style="width:1.86458in;height:2.96875in"
   alt="Final game structure in files." />
-</p>
-<h4>
-Final game.html file:
-</h4>
+
+<h4>Final game.html file:</h4>
+
 <details>
-<summary>
-Final game game.html!
-</summary>
-<pre><code>1.  &lt;!DOCTYPE html&gt;
+  <summary>Final game game.html!</summary>
+  
+<pre><code>
+1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.  &lt;head&gt;
 4.  &lt;meta charset=&quot;utf-8&quot;&gt;
@@ -12806,18 +12817,18 @@ course.</li>
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 158. wanted game main screen (2##) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<p><img src="./images/image158.jpeg"
+<img class="displayed"
+  src="./images/image158.jpeg"
   style="width:2in;height:1.80212in"
-  alt="Main screen of the game &quot;Wanted&quot;." /></p>
+  alt="Main screen of the game &quot;Wanted&quot;." />
 <!------------------------------------------------------------------------------------------------>
 <!-------------------- 159. monster with black bombs and gold coins (2##) ------------------------>
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image159.jpeg"
+<img class="displayed"
+  src="./images/image159.jpeg"
   style="width:2.64583in;height:2.65625in"
   alt="The game running, monster with black bombs and gold coins." />
-</p>
+
 <ul>
 <li>Duck Hunt (by Benjamin Reale and Anthony Caron). <a
 href="https://github.com/Ben06/ASCI-CARON-REALE-Duck-Hunt/" target="_blank" rel="noopener noreferrer">Get the
@@ -12830,11 +12841,11 @@ started with the game framework presented in the course.</li>
 <!------------------------------------------------------------------------------------------------>
 <!---------------------------- 160. duck hunt game screenshot (2##) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image160.jpeg"
+<img class="displayed"
+  src="./images/image160.jpeg"
   style="width:4in;height:2.82873in"
   alt="Screenshot of the Duck hunt game" />
-</p>
+
 <ul>
 <li>Shoot em up (by Max Chazarra) (sources <a
 href="https://github.com/MaxChazarra/MIAGE-Jeu-JS/tree/5e78fa85d257b81116fd784460848172040b3b71" target="_blank" rel="noopener noreferrer">on
@@ -12844,11 +12855,11 @@ in the course:</li>
 <!------------------------------------------------------------------------------------------------>
 <!--------------------------- 161. shoot em up game screenshot (2##) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image161.jpeg"
+<img class="displayed"
+  src="./images/image161.jpeg"
   style="width:4in;height:3.88192in"
   alt="Screenshot of the shoot em up game." />
-</p>
+
 <ul>
 <li>Gameboy Tetris (written starting from the game framework presented
 in the course). <a
@@ -12858,11 +12869,11 @@ the sources</a> (author Maxime Demetrio)</li>
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 162. gameboy tetris in html5 (2##) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image162.jpeg"
+<img class="displayed"
+  src="./images/image162.jpeg"
   style="width:3.125in;height:2.83333in"
   alt="Gameboy Tetris in HTML5." />
-</p>
+
 <ul>
 <li>A small “kill the ninjas” game (by Tristan Poilvet). This game used
 the game framework presented in the course as a starting point. <a
@@ -12872,15 +12883,12 @@ available here.</a></li>
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------------- 163. kill the ninja game (2##) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image163.jpeg"
+<img class="displayed"
+  src="./images/image163.jpeg"
   style="width:4in;height:2.34815in"
   alt="A &quot;kill the ninja&quot; game." />
-</p>
-<!------------------------------------------------------------------------------------------------>
-<h2 id="ch3">
-Module 3. HTML5 File Upload and Download
-</h2>
+!------------------------------------------------------------------------------------------------>
+<h2 id="ch3">Module 3. HTML5 File Upload and Download</h2>
 <!------------------------------------------------------------------------------------------------>
 <p>Hi. This week, we will talk about the new version of Ajax called XHR2
 for XMLHttpRequest Level 2 that plays an important role in today’s
@@ -12903,9 +12911,7 @@ and delete data in that database.</p>
 scores</p>
 <p>in the small game you have certainly wrote during week 2. Enjoy!</p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-2-1">
-3.2.1 Ajax and XHR2
-</h3>
+<h3 id="ch3-2-1">3.2.1 Ajax and XHR2</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>We present below a short history of Ajax: an introduction to
 XMLHttpRequest level 2 (XHR2).</p>
@@ -13069,17 +13075,18 @@ it using XHR2.</p>
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 164. download file using xhr2 (2##) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image164.jpeg"
+<img class="displayed"
+  src="./images/image164.jpeg"
   style="width:5in;height:2.48451in"
   alt="Downloading file with Xhr2" />
-</p>
+
 <p><b>Complete source code:</b></p>
+
 <details>
-<summary>
-Complete source code!
-</summary>
-<pre><code>1.  &lt;!DOCTYPE html&gt;
+  <summary>Complete source code!</summary>
+  
+<pre><code>
+1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.   &lt;head&gt;
 4.     &lt;title&gt;XHR2 and binary files + Web Audio API&lt;/title&gt;
@@ -13159,11 +13166,12 @@ Complete source code!
 73.   }
 74. &lt;/script&gt;
 75. &lt;/body&gt;
-76. &lt;/html&gt;</code></pre>
+76. &lt;/html&gt;
+</code></pre>
+
 </details>
-<h4>
-Explanations
-</h4>
+
+<h4>Explanations</h4>
 <p>:</p>
 <ul>
 <li><p><i>Line 12</i>: a click on this button will call
@@ -13187,14 +13195,13 @@ Monitoring uploads or downloads using a progress event
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------------- 165. download progress (281) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image165.jpeg"
+<img class="displayed"
+  src="./images/image165.jpeg"
   style="width:4.41667in;height:0.79167in"
   alt="Downloading progression using a progress element." />
-</p>
-<h4>
-1 - Declare a progress event handler
-</h4>
+
+<h4>1 - Declare a progress event handler</h4>
+
 <p>XHR2 now provides progress event attributes for monitoring data
 transfers. Previous implementations of XmlHttpRequest didn’t tell us
 anything about how much data has been sent or received.
@@ -13335,41 +13342,30 @@ max=10000> will look like this: 
 <!------------------------------------------------------------------------------------------------>
 <!---------------------------------- 166. 1000 of 10,000 (###) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image166.jpeg?raw=true"
+<img class="displayed"
+  src="./images/image166.jpeg?raw=true"
   style="width:35%;"
    alt="." />
-</p>
-<!-------
-style="width:2.66667in;height:0.57292in" alt="progress bar 10%" />
---------->
+
 <p>And a current download of 2000 bytes will define <progress value=2000
 max=10000> and will look like this:</p>
 <!------------------------------------------------------------------------------------------------>
 <!---------------------------------- 167. 2000 of 10,000 (###) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image167.jpeg?raw=true"
+<img class="displayed"
+  src="./images/image167.jpeg?raw=true"
   style="width:35%;"
-   alt="Progress bar 20%." />
-</p>
-<!---------
-style="width:2.66667in;height:0.5in"
------------>
-<h4>
-Complete example: monitoring the download of a song file
-</h4>
+  alt="Progress bar 20%." />
+
+<h4>Complete example: monitoring the download of a song file</h4>
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------- 168. monitor download of song file (###) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image168.jpeg?raw=true"
+<img class="displayed"
+  src="./images/image168.jpeg?raw=true"
   style="width:35%;"
-   alt="Monitoring download." />
-</p>
-<!---------
-style="width:5in;height:1.11271in"
----------->
+  alt="Monitoring download." />
+
 <p>This is a variant of the previous example that uses
 the progress event and a &lt;progress&gt; HTML5 element to display an
 animated progression bar while the download is going on.</p>
@@ -13377,9 +13373,7 @@ animated progression bar while the download is going on.</p>
 JSBin</a> - look at the code, which includes the previous source code
 extract.</p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-2-3">
-3.2.3 Uploading files and monitoring progress
-</h3>
+<h3 id="ch3-2-3">3.2.3 Uploading files and monitoring progress</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>We saw how to download files. Let’s see now how we can upload
 files!</p>
@@ -13440,21 +13434,18 @@ JSBin</a>:</p>
 <!------------------------------ 169. file update example 1 (##) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image169.jpeg?raw=true"
+<img class="displayed"
+  src="./images/image169.jpeg?raw=true"
   style="width:35%;"
   alt="File upload example 1." />
-</p>
-<!------------
-style="width:3.96875in;height:2.21875in" alt="file upload example 1" />
-------------->
-<h4>
-Source code of the example:
-</h4>
+
+<h4>Source code of the example:</h4>
+
 <details>
-<summary>
-HTML source code!
-</summary>
-<pre><code>1.  &lt;!DOCTYPE html&gt;
+  <summary>HTML source code!</summary>
+  
+<pre><code>
+1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.  &lt;head&gt;
 4.     &lt;meta charset=&quot;utf-8&quot; /&gt;
@@ -13487,11 +13478,12 @@ HTML source code!
 31. };
 32. &lt;/script&gt;
 33. &lt;/body&gt;
-34. &lt;/html&gt;</code></pre>
+34. &lt;/html&gt;
+</code></pre>
+
 </details>
-<h4>
-<b>Explanations</b>:
-</h4>
+
+<h4><b>Explanations</b>:</h4>
 <ul>
 <li><p><i>Line 18</i>: callback called when the user selects a
 file.</p></li>
@@ -13523,19 +13515,20 @@ need to upload (i.e., the file size).</p></li>
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------- 170. file upload with progress bar (287) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image170.jpeg?raw=true"
+<img class="displayed"
+  src="./images/image170.jpeg?raw=true"
   style="width:55%;"
   alt="File upload with progress bar." />
-</p>
-<!------------
-style="width:3.89583in;height:1.28125in"
-------------->
+
 <p>Here is the code of such an event listener:</p>
-<pre><code>1. xhr.upload.onprogress = function(e) {
+
+<pre><code>
+1. xhr.upload.onprogress = function(e) {
 2.   progress.value = e.loaded; // number of bytes uploaded
 3.   progress.max = e.total;    // total number of bytes in the file
-4. };</code></pre>
+4. };
+</code></pre>
+
 <p><a href="https://jsbin.com/qedaja/edit?html,css,output" target="_blank" rel="noopener noreferrer">Try the
 example on JSBin</a>:</p>
 <h4>
@@ -13767,22 +13760,18 @@ Screenshot:
 <!------------------------------------------------------------------------------------------------>
 <!--------------------------- 171. drag and drop list example (292) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image171.jpeg?raw=true"
+<img class="displayed"
+  src="./images/image171.jpeg?raw=true"
   style="width:65%;"
   alt="Drag 'n drop fruits." />
-</p>
-<!-----------
-style="width:5in;height:1.60844in"
-------------->
-<h4>
-Complete code from the example:
-</h4>
+
+<h4>Complete code from the example:</h4>
+
 <details>
-<summary>
-Source code!
-</summary>
-<pre><code>1.  &lt;!DOCTYPE html&gt;
+  <summary>Source code!</summary>
+
+<pre><code>
+1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.  &lt;head&gt;
 4.    &lt;script&gt;
@@ -13885,26 +13874,22 @@ Complete example
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------- 172. drag 'n drop fruite (294) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image172.jpeg?raw=true"
+<img class="displayed"
+  src="./images/image172.jpeg?raw=true"
   style="width:65%;"
   alt="Drag 'n drop fruits." />
-</p>
-<!---------
-style="width:3.90625in;height:3.22917in" alt="drag n drop fruits" />
------------>
+
 Try it in your browser below or <a
 href="https://codepen.io/w3devcampus/pen/YyzWKy?editors=110" target="_blank" rel="noopener noreferrer">play with
 it at CodePen</a>:
-</h4>
-<h4>
-Source code:
-</h4>
+
+<h4>Source code:</h4>
+
 <details>
-<summary>
-Code extract!
-</summary>
-<pre><code>1.  &lt;!DOCTYPE html&gt;
+  <summary>Code extract!</summary>
+
+<pre><code>
+1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html&gt;
 3.  &lt;head&gt;
 4.     &lt;script&gt;
@@ -13952,11 +13937,12 @@ Code extract!
 46.        &lt;ol id=&quot;droppedFruits&quot;&gt;&lt;/ol&gt;
 47.    &lt;/div&gt;
 48. &lt;body&gt;
-49. &lt;html&gt;</code></pre>
+49. &lt;html&gt;
+</code></pre>
+
 </details>
-<h4>
-In the above code, note:
-</h4>
+
+<h4>In the above code, note:</h4>
 <ul>
 <li><p><i>Line 44</i>: we define the drop zone (ondrop=…), and when a
 drag enters the zone we prevent event propagation (ondragover=“return
@@ -14046,14 +14032,11 @@ online at JsBin</a> example:</p>
 <!------------------------------------------------------------------------------------------------>
 <!---------------------------- 173. using css attr() function (297) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image173.png?raw=true"
+<img class="displayed"
+  src="./images/image173.png?raw=true"
   style="width:65%;"
   alt="Data attribute using dataset property." />
-</p>
-<!--
-style="width:5in;height:0.80556in"
---->
+
 <p>In this example, when you click on the sentence that starts with
 “John Says”, the end of the sentence changes, and the values displayed
 are taken from data­-* attributes of the &lt;li&gt; element.</p>
@@ -14108,23 +14091,23 @@ JsBin</a>. </p>
 <!------------------------------------------------------------------------------------------------>
 <!---------------------------- 174. using css attr() function (298) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image174.png?raw=true"
+<img class="displayed"
+  src="./images/image174.png?raw=true"
   style="width:35%;"
   alt="Using CSS attr() function." />
-</p>
-<!------------
-style="width:3.17708in;height:0.85417in"
-------------->
-<h4>
-HTML code from this example:
-</h4>
-<pre><code>1.  &lt;input type=&quot;range&quot; min=&quot;0&quot; max=&quot;100&quot; value=&quot;25&quot;&gt;</code></pre>
+
+<h4>HTML code from this example:</h4>
+
+<pre><code>
+1.  &lt;input type=&quot;range&quot; min=&quot;0&quot; max=&quot;100&quot; value=&quot;25&quot;&gt;
+</code></pre>
+
 <p>This is just one of the new input types introduced by HTML5.</p>
-<h4>
-JavaScript code from this example:
-</h4>
-<pre><code>1.  &lt;script&gt;
+
+<h4>JavaScript code from this example:</h4>
+
+<pre><code>
+1.  &lt;script&gt;
 2.  var input = document.querySelector(&#39;input&#39;);
 3.   
 4.  input.dataset.myvaluename = input.value; // Set an initial value.
@@ -14132,18 +14115,22 @@ JavaScript code from this example:
 6.  input.addEventListener(&#39;change&#39;, function(e) {
 7.      this.dataset.myvaluename = this.value;
 8.  });
-9.  &lt;/script&gt;</code></pre>
-<h4>
-CSS code from this example:
-</h4>
-<pre><code>1.  &lt;style&gt;
+9.  &lt;/script&gt;
+</code></pre>
+
+<h4>CSS code from this example:</h4>
+
+<pre><code>
+1.  &lt;style&gt;
 2.  input::after {
 3.      color:red;
 4.      content: attr(data-myvaluename) &#39;/&#39; attr(max);
 5.      position: relative;
 6.      left: 100px; top: -15px;
 7.  }
-8.  &lt;/style&gt;</code></pre>
+8.  &lt;/style&gt;
+</code></pre>
+
 <p>The attr() function takes an attribute name as a parameter and
 returns its value. Here we used the name of the attribute we added on
 the fly.</p>
@@ -14237,22 +14224,18 @@ drop zone):</p>
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------------- 175. css drag operation (301) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image175.jpeg?raw=true"
+<img class="displayed"
+  src="./images/image175.jpeg?raw=true"
   style="width:65%;"
   alt="Drag 'n drop css style and operation." />
-</p>
-<!----------
-style="width:5in;height:2.57746in"
------------>
-<h4>
-Source code extract:
-</h4>
+
+<h4>Source code extract:</h4>
+
 <details>
-<summary>
-Code extract!
-</summary>
-<pre><code>1.  ...
+  <summary>Code extract!</summary>
+
+<pre><code>
+1.  ...
 2.  &lt;style&gt;
 3.    .dragged {
 4.      border: 2px dashed #000;
@@ -14283,14 +14266,16 @@ Code extract!
 29.   &lt;li draggable=&quot;true&quot; data-value=&quot;fruit-apple&quot;&gt;Apples&lt;/li&gt;
 30.   &lt;li draggable=&quot;true&quot; data-value=&quot;fruit-orange&quot;&gt;Oranges&lt;/li&gt;
 31.   &lt;li draggable=&quot;true&quot; data-value=&quot;fruit-pear&quot;&gt;Pears&lt;/li&gt;
-32. &lt;/ol&gt;</code></pre>
+32. &lt;/ol&gt;
+</code></pre>
+
 </details>
+
 <p>Notice at <i>lines 12 and 24</i> the use of the classlist property
 that has been introduced with HTML5 in order to allow CSS class
 manipulation from JavaScript.</p>
-<h4>
-Other events can also be handled:
-</h4>
+
+<h4>Other events can also be handled:</h4>
 <ul>
 <li><p><b>dragenter</b>: usually we bind this event to the drop zone.
 The event occurs when a dragged object enters a drop zone. So, we could
@@ -14437,53 +14422,39 @@ appropriate:</p>
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------------- 176. copy cursor image (304) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image176.jpeg?raw=true"
+<img class="displayed"
+  src="./images/image176.jpeg?raw=true"
   style="width:25%;"
   alt="Copy cursor." />
-</p>
-<!------------
-style="width:2.39583in;height:0.78125in" alt="dropEffect" />
-------------->
+
 <p>If you are “moving” objects, this style of cursor would be
 appropriate:</p>
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------------- 177. moving object image (304) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image177.jpeg?raw=true"
+<img class="displayed"
+  src="./images/image177.jpeg?raw=true"
   style="width:25%;"
   alt="Moving object cursor image." />
-</p>
-<!--
-<img src="./images/image177.jpeg"
-style="width:2.58333in;height:0.88542in" alt="drop effect #2" />
---->
-<p>And if you are making a “link” or a “shortcut”, a cursor would be
-looking like this:</p>
+
+<p>And if you are making a “link” or a “shortcut”, a cursor would be looking like this:</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 178. link or shortcut image (305) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image178.jpeg?raw=true"
+<img class="displayed"
+  src="./images/image178.jpeg?raw=true"
   style="width:25%;"
   alt="Link or shortcut, cursor image." />
-</p>
-<!------------
-style="width:2.65625in;height:0.9375in"
-------------->
+
 <p>Alternatively, you could use any custom image/icon you like:</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------ 179. dropeffect & effectallowed custom image icons (305) -------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image179.jpeg?raw=true"
+<img class="displayed"
+  src="./images/image179.jpeg?raw=true"
   style="width:65%;"
   alt="Drop effect with image." />
-</p>
-<!------------
-style="width:5.13542in;height:4.35417in" alt="drop effect with image" />
--------------->
+
 <p>To give this visual feedback, we use
 the effectAllowed and dropEffect properties of the dataTransfer object.
 To set one of the possible predefined cursors, we specify an effect in
@@ -14491,24 +14462,33 @@ the dragstart handler, and we set the effect (to “move”, “copy”, etc.)
 in the dragEnter or dragOver handler.</p>
 <p>Here is an extract of the code we can add to the example we saw
 earlier:</p>
-<pre><code>1.  function dragStartHandler(event) {
+
+<pre><code>
+1.  function dragStartHandler(event) {
 2.      // Allow a &quot;copy&quot; cursor effect
 3.      event.dataTransfer.effectAllowed = &#39;copy&#39;;
 4.      ...
-5.  }</code></pre>
+5.  }
+</code></pre>
+
 <p>And here is where we can set the cursor to a permitted value:</p>
-<pre><code>1.  function dragEnterHandler(event) {
+
+<pre><code>
+1.  function dragEnterHandler(event) {
 2.     // change the cursor shape to a &quot;+&quot;
 3.     event.dataTransfer.dropEffect = &#39;copy&#39;;
 4.     ...
-5.  }</code></pre>
+5.  }
+</code></pre>
+
 <p>To set a custom image, we also do the following in
 the dragstart handler:</p>
+
 <details>
-<summary>
-Code extract!
-</summary>
-<pre><code>1.  function dragStartHandler(event) {
+  <summary>Code extract!</summary>
+  
+<pre><code>
+1.  function dragStartHandler(event) {
 2.     // allowed cursor effects
 3.     event.dataTransfer.effectAllowed = &#39;copy&#39;;
 4.  
@@ -14520,11 +14500,13 @@ Code extract!
 10.    // set the cursor to this image, with an offset in X, Y
 11.    event.dataTransfer.setDragImage(dragIcon, -10, -10);
 12.    ...
-13. }</code></pre>
+13. }
+</code></pre>
+
 </details>
-<h4>
-Complete online example
-</h4>
+
+<h4>Complete online example</h4>
+
 <p>Here is the previous example (with apples, oranges, etc) that sets a
 “copy” cursor and a custom image. Try it in your browser below (start to
 drag and wait a few seconds for the image to be loaded. You might have
@@ -14544,27 +14526,27 @@ and uninitialized.</p></li>
 values: <b>none</b>, <b>copy</b>, <b>link</b>, <b>move</b>.</p></li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-3-7">
-3.3.7 Drag and drop HTML elements
-</h3>
+<h3 id="ch3-3-7">3.3.7 Drag and drop HTML elements</h3>
 <!------------------------------------------------------------------------------------------------>
-<h4>
-Drag and drop images or any HTML element within a document
-</h4>
+<h4>Drag and drop images or any HTML element within a document</h4>
+
 <p>We saw the main principles of HTML5 drag and drop in the previous
 sections. There are other interesting uses that differ in the way we
 copy and paste things to/from the clipboard. The clipboard is accessed
 through the dataTransfer property of the different events:</p>
-<pre><code>1.  event.dataTransfer.setData(&quot;Fruit&quot;, event.target.dataset.value);
+
+<pre><code>
+1.  event.dataTransfer.setData(&quot;Fruit&quot;, event.target.dataset.value);
 2.  ...
-3.  var data = event.dataTransfer.getData(&quot;Fruit&quot;);</code></pre>
-<h4>
+3.  var data = event.dataTransfer.getData(&quot;Fruit&quot;);
+</code></pre>
+
 <p>&lt;img&gt; elements are all draggable by default!</p>
 <p>Normally, to make an element draggable, you must add
 the draggable=true attribute. &lt;img&gt; elements are an exception:
 they are draggable by default! The next example shows how to drag and
 drop an image from one location in the document to another.</p>
-<h4>
+
 <p>Example: move images as an HTML subtree</p>
 <p>Try this example (adapted from <a
 href="https://web.archive.org/web/20160219080616/http:/html5demo.braincracking.org/demo/dragNDrop.php" target="_blank" rel="noopener noreferrer">braincracking.org</a> (in
@@ -14572,11 +14554,12 @@ French)) in your browser below or <a
 href="https://codepen.io/w3devcampus/pen/xwxEZg" target="_blank" rel="noopener noreferrer">play with it at
 CodePen</a>:</p>
 <p>Code from the example:</p>
+
 <details>
-<summary>
-Code extract!
-</summary>
-<pre><code>1.  &lt;html lang=&quot;en&quot;&gt;
+  <summary>Code extract!</summary>
+  
+<pre><code>
+1.  &lt;html lang=&quot;en&quot;&gt;
 2.  &lt;head&gt;
 3.  &lt;style&gt;
 4.     .box {
@@ -14620,8 +14603,11 @@ Code extract!
 42.         &lt;p&gt;Bad web browsers&lt;/p&gt;
 43.    &lt;/div&gt;
 44. &lt;/body&gt;
-45. &lt;/html&gt;</code></pre>
+45. &lt;/html&gt;
+</code></pre>
+
 </details>
+
 <p>The trick here is to only work on the DOM directly. We used a variant
 of the event handler proposed by the DOM API. This time, we used
 handlers with two parameters (the first parameter, target, is the
@@ -14644,24 +14630,24 @@ position to another location in the page).</p>
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------- 180. drag and drop text selection (309) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image180.png?raw=true"
+<img class="displayed"
+  src="./images/image180.png?raw=true"
   style="width:65%;"
   alt="Drag and drop a text selection." />
-</p>
-<!----------
-style="width:5in;height:1.75374in" />
------------>
+
 <p><b>There is no need to add a dragstart handler on an element that
 contains text.</b> Any selected text is automatically added to the
 clipboard with a name/key equal to “text/plain”. Just add a drop event
 handler on the drop zone and fetch the data from the clipboard using
 “text/plain” as the access key:</p>
-<pre><code>1.  function drop(target, event) {
+
+<pre><code>
+1.  function drop(target, event) {
 2.     event.preventDefault();
 3.     target.innerHTML = event.dataTransfer.getData(&#39;text/plain&#39;);
-4.  };</code></pre>
-<h4>
+4.  };
+</code></pre>
+
 <p>Example: select some text and drag and drop the selection in the drop
 zone</p>
 <p>Try it in your browser below (select text, then drag and drop it into
@@ -14669,11 +14655,12 @@ the drop zone) or <a
 href="https://codepen.io/w3devcampus/pen/vNYXyR" target="_blank" rel="noopener noreferrer">play with it at
 CodePen</a>:</p>
 <p>Complete source code from the example:</p>
+
 <details>
-<summary>
-Code extract!
-</summary>
-<pre><code>1.  &lt;html lang=&quot;en&quot;&gt;
+  <summary>Code extract!</summary>
+  
+<pre><code>
+1.  &lt;html lang=&quot;en&quot;&gt;
 2.  &lt;head&gt;
 3.  &lt;style&gt;
 4.     .box {
@@ -14716,31 +14703,30 @@ Code extract!
 41.      &lt;p&gt;Drop some text selection here.&lt;/p&gt;
 42. &lt;/div&gt;
 43. &lt;/body&gt;
-44. &lt;/html&gt;</code></pre>
+44. &lt;/html&gt;
+</code></pre>
+
 </details>
+
 <p>Here, we use a CSS trick to make the second paragraph non-selectable,
 by setting the user-selected property to none.</p>
 <p>In the next chapter, we will see how to drag and drop files!</p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-3-9">
-3.3.9 Discussion and projects
-</h3>
+<h3 id="ch3-3-9">3.3.9 Discussion and projects</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>Here is the discussion forum for this part of the course. Please
 either post your comments/observations/questions or share your
 creations.</p>
-<h4>
-Suggested topics of discussion:
-</h4>
+
+<h4>Suggested topics of discussion:</h4>
 <ul>
 <li><p>If you find interesting drag and drop examples on the Web, please
 share them in the forum.</p></li>
 <li><p>What other example(s) would you like to be added to the course
 (drag and drop of files is covered in the next lesson)?</p></li>
 </ul>
-<h4>
-Optional projects:
-</h4>
+
+<h4>Optional projects:</h4>
 <ul>
 <li><p>Code an illustrative drag and drop demo, and share it in the
 forum. For example, try to add something similar to the “what is your
@@ -14752,18 +14738,15 @@ grid). In the meantime, the other pictures will have to move to give
 some room for the picture you dropped.</p></li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-4-1">
-3.4.1 Introduction
-</h3>
+<h3 id="ch3-4-1">3.4.1 Introduction</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>In these lectures, we will learn how to <em>drag and drop
 files</em> between the browser and the desktop. The process shares
 similarities with the methods for <em>dragging and dropping
 elements</em> within an HTML document, but it’s even simpler!</p>
-<h4>
-Drag and drop files from the desktop to the browser: the files property
-of the clipboard
-</h4>
+
+<h4>Drag and drop files from the desktop to the browser: the files property of the clipboard</h4>
+
 <p>The principle is the same as in the examples from the
 previous section (drag and drop basics), except that we do not need to
 worry about a dragstart handler. <b>Files will be dragged from the
@@ -14782,11 +14765,12 @@ type, size, last modification date, read it, etc.</p>
 works on files which have been dragged and dropped from the desktop to a
 drop zone associated with this handler with
 an ondrop=dropHandler(event); attribute:</p>
+
 <details>
-<summary>
-Code extract!
-</summary>
-<pre><code>1.  function dropHandler(event) {
+  <summary>Code extract!</summary>
+
+<pre><code>
+1.  function dropHandler(event) {
 2.     // Do not propagate the event
 3.     event.stopPropagation();
 4.     // Prevent default behavior, in particular when we drop images or links
@@ -14803,16 +14787,18 @@ Code extract!
 15.    }
 16. 
 17.    console.log(files.length + &#39; file(s) have been dropped:n&#39; + filenames);
-18. }</code></pre>
+18. }
+</code></pre>
+
 </details>
+
 <p>At <i>lines 7-8</i>, we get the files that have been dropped.</p>
 <p><i>Lines 12-15</i> iterate over the collection and build a string
 which contains the list of file names.</p>
 <p><i>Line 17</i> displays this string on the debugging console.</p>
 <p>Complete working examples are to be presented later on…</p>
-<h4>
-Prevent the browser’s default behavior
-</h4>
+
+<h4>Prevent the browser’s default behavior</h4>
 <p>If we drop an image into an HTML page, the browser will open a new
 tab and display the image. With a .mp3 file, it will open it in a new
 tab and a default player will start streaming it, etc. We need to
@@ -14828,22 +14814,26 @@ the browser will display the image or the web page pointed by the link,
 in a new tab/window. This is not what we would like in an application
 using the drag and drop process. These two lines are necessary to
 prevent the default behavior of the browser:</p>
-<pre><code>1.  // Do not propagate the event
+
+<pre><code>
+1.  // Do not propagate the event
 2.  event.stopPropagation();
 3.  // Prevent default behavior, in particular when we drop images or links
-4.  event.preventDefault();</code></pre>
+4.  event.preventDefault();
+</code></pre>
+
 <blockquote>
 <p><b>Best practice</b>: add these lines to the drop handler AND
 to the dragOver handler attached to the drop zone!</p>
 </blockquote>
-<h4>
-… like in this example:
-</h4>
+
+<h4>… like in this example:</h4>
+
 <details>
-<summary>
-Code extract!
-</summary>
-<pre><code>1.  function dragOverHandler(event) {
+  <summary>Code extract!</summary>
+  
+<pre><code>
+1.  function dragOverHandler(event) {
 2.     // Do not propagate the event
 3.     event.stopPropagation();
 4.  
@@ -14859,11 +14849,12 @@ Code extract!
 14.    // Prevent default behavior, in particular when we drop images or links
 15.    event.preventDefault();
 16.    ...
-17. }</code></pre>
+17. }
+</code></pre>
+
 </details>
-<h4>
-External resources
-</h4>
+
+<h4>External resources</h4>
 <ul>
 <li><p>Web.dev article: “<a href="https://web.dev/drag-and-drop/" target="_blank" rel="noopener noreferrer">Using
 the HTML5 drag and drop API</a>”</p></li>
@@ -14872,9 +14863,7 @@ href="https://www.htmlgoodies.com/html5/javascript/drag-files-into-the-browser-f
 Files Into the Browser From the Desktop with HTML5</a>”</p></li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-4-2">
-3.4.2 Drag and drop files in a drop zone
-</h3>
+<h3 id="ch3-4-2">3.4.2 Drag and drop files in a drop zone</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>Hi! This time let’s look at how we can drag and</p>
 <p>drop files into a document. So, the first thing you must know is
@@ -14923,32 +14912,27 @@ to the dropped zone. That’s all, it is very easy, you drag and drop
 files… in the drop handler you stop the propagation, prevent the default
 behavior, get the files property with all the files copied, do a loop
 and process them. That’s all. Bye, bye!</p>
-<h4>
-Example: drag and drop files to a drop zone, display file details in a
-list
-</h4>
+
+<h4>Example: drag and drop files to a drop zone, display file details in a list</h4>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 181. drag and drop example (315) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image181.jpeg?raw=true"
+<img class="displayed"
+  src="./images/image181.jpeg?raw=true"
   style="width:65%;"
   alt="Example of Drag and drop a file." />
-</p>
-<!--
-style="width:4.64583in;height:3.89583in"
-alt="Example of drag&#39;n&#39;drop of a file" />
--->
+
 <p>Try the example below directly in your browser (just drag and drop
 files to the greyish drop zone), or <a
 href="https://codepen.io/w3devcampus/pen/JYjpqV?editors=111" target="_blank" rel="noopener noreferrer">play with
 it at CodePen</a>:</p>
 <p>Complete source code from the example:</p>
+
 <details>
-<summary>
-Complete source code!
-</summary>
-<pre><code>1.  &lt;!DOCTYPE html&gt;
+  <summary>Complete source code!</summary>
+  
+<pre><code>
+1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.  &lt;head&gt;
 4.     &lt;style&gt;
@@ -15035,9 +15019,13 @@ Complete source code!
 85.      &lt;ol id=&quot;droppedFiles&quot;&gt;&lt;/ol&gt;
 86.   &lt;/div&gt;
 87. &lt;body&gt;
-88. &lt;html&gt;</code></pre>
+88. &lt;html&gt;
+</code></pre>
+
 </details>
+
 <p>Note that:</p>
+
 <ul>
 <li><p>We prevented the browser default behavior in
 the drop and dragover handlers Otherwise, if we dropped a media file (an
@@ -15054,9 +15042,7 @@ worked through earlier, except that this time we’re working with
 files. <em>And when we work with files, it is important to prevent the
 browser’s default behavior.</em></p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-4-3">
-3.4.3 Images with thumbnails
-</h3>
+<h3 id="ch3-4-3">3.4.3 Images with thumbnails</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>This time, let’s reuse the readFilesAndDisplayPreview() method
 (studied in the W3Cx HTML5 Coding Essentials and Best Practices course).
@@ -15070,21 +15056,18 @@ image thumbnails displayed in the open space beneath it:</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 182. choose multiple files (3xx) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image182.png"
+<img class="displayed"
+  src="./images/image182.png"
   style="width:65%;"
   alt="Choose multiple files." />
-</p>
-<!---  
-style="width:6.5in;height:1.83264in" />
---->
-<p>Source code extract (the part that reads the image file content and
-displays the thumbnails):</p>
+
+<p>Source code extract (the part that reads the image file content and displays the thumbnails):</p>
+
 <details>
-<summary>
-function readFilesAndDisplayPreview source code!
-</summary>
-<pre><code>1.  function readFilesAndDisplayPreview(files) {
+  <summary>function readFilesAndDisplayPreview source code!</summary>
+  
+<pre><code>
+1.  function readFilesAndDisplayPreview(files) {
 2.     // Loop through the FileList and render image files
 3.     // as thumbnails.
 4.     for (var i = 0, f; f = files[i]; i++) {
@@ -15110,8 +15093,11 @@ function readFilesAndDisplayPreview source code!
 24.      // only once the image is completely loaded
 25.      reader.readAsDataURL(f);
 26.    }
-27. }</code></pre>
+27. }
+</code></pre>
+
 </details>
+
 <p>At <i>line7</i>, there is a test that will avoid processing non image
 files. The “!” is the NOT operator in JavaScript. The call to continue
 at <em>line 8</em> will make the for loop go to its end and process the
@@ -15131,25 +15117,21 @@ id=“list”&gt;&lt;/output&gt; to the HTML of this example.</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 183.  (3xx) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image183.jpeg"
+<img class="displayed"
+  src="./images/image183.jpeg"
   style="width:65%;"
   alt="Image drag and drop with thumbnails." />
-</p>
-<!---
-<img src="./images/image183.jpeg" style="width:6.5in;height:4.05625in"
-alt="ilmage drag&#39;n&#39;drop with thumbnails" />
---->
+
 <p>Try it below in your browser (drag’n’drop image files into the drop
 zone) or play with it at CodePen:</p>
-<h4>
-Complete source code:
-</h4>
+
+<h4>Complete source code:</h4>
+
 <details>
-<summary>
-Complete source code!
-</summary>
-<pre><code>1.  &lt;!DOCTYPE html&gt;
+  <summary>Complete source code!</summary>
+  
+<pre><code>
+1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.  &lt;head&gt;
 4.      &lt;style&gt;
@@ -15264,19 +15246,17 @@ Complete source code!
 113. &lt;br/&gt;
 114. &lt;output id=&quot;list&quot;&gt;&lt;/output&gt;
 115. &lt;body&gt;
-116. &lt;html&gt;</code></pre>
+116. &lt;html&gt;
+</code></pre>
+
 </details>
+
 Above, we added the readFilesAndDisplayPreview() method detailed
 earlier. We called it at the end of the drop handler (<em>line 77</em>),
-and we added the 
-<output>
-<p> element as a container for the &lt;img&gt; elements (constructed by
-the JavaScript code <em>lines 94-96</em>) which will display the
-thumbnails (<i>line 114</i>).</p>
+and we added the &lt;output&gt; &lt;p&gt; element as a container for the &lt;img&gt; elements (constructed by
+the JavaScript code <em>lines 94-96</em>) which will display the thumbnails (<i>line 114</i>).</p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-4-4">
-3.4.4 Mixing drag and drop and input type=file
-</h3>
+<h3 id="ch3-4-4">3.4.4 Mixing drag and drop and input type=file</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>Let’s go further and also add an &lt;input type=“file”&gt;</p>
 <p>The example below allows files to be selected using a file chooser or
@@ -15285,15 +15265,11 @@ interactive example is a bit further down the page):</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------ 184. example of file/directory chooser (3xx) -------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image184.png"
+<img class="displayed"
+  src="./images/image184.png"
   style="width:65%;"
   alt="Example of file and directory chooser." />
-</p>
-<!---
-<img src="./images/image184.png" style="width:6.5in;height:6.36944in"
-alt="Example of file and dir chooser." />
---->
+
 <p>In the above screenshot, which is derived from the example detailed
 later in this page, we selected some files using the first button (which
 is an &lt;input type=“file” multiple…/&gt;),then we used the second
@@ -15302,20 +15278,19 @@ a directory that contained 11 files. We then dragged and dropped some
 other images to the drop zone. Each time, thumbnails were displayed.
 Both methods (file selector or drag and drop) produced the same
 result.</p>
-<h4>
-Idea: reuse the same code for reading image files and displaying
-thumbnails
-</h4>
+
+<h4>Idea: reuse the same code for reading image files and displaying thumbnails</h4>
 <p>If you look (again) at <a
 href="https://codepen.io/w3devcampus/pen/ZbExbM" target="_blank" rel="noopener noreferrer">the very first example
 that displayed thumbnails, without drag and drop)</a>, you will notice
 that the event handler we used to track the selected files
 using &lt;input type=“file”/&gt; looks like this:</p>
+
 <details>
-<summary>
-Source code!
-</summary>
-<pre><code>1.  &lt;script&gt;
+  <summary>Source code!</summary>
+  
+<pre><code>
+1.  &lt;script&gt;
 2.     function handleFileSelect(evt) {
 3.         var files = evt.target.files; // FileList object
 4.         // do something with files... why not call    readFilesAndDisplayPreview!
@@ -15327,8 +15302,11 @@ Source code!
 10. ...
 11. &lt;body&gt;
 12.    Choose multiple files    :&lt;input type=&quot;file&quot; id=&quot;files&quot; multiple /&gt;&lt;br/&gt;
-13. &lt;/body&gt;</code></pre>
+13. &lt;/body&gt;
+</code></pre>
+
 </details>
+
 <p>It calls readFilesAndDisplayPreview()at <i>line 5</i>! The same
 function with the same parameters is also used by <a
 href="https://codepen.io/w3devcampus/pen/XmWEMQ" target="_blank" rel="noopener noreferrer">the example that used
@@ -15345,20 +15323,22 @@ webkitdirectory&gt; is <b>not</b> in the HTML5 specification. Drag
 and drop functionality will work through a file chooser in any modern
 browser, but the directory chooser will only work with Google
 Chrome).</p>
-<h4>
-Complete interactive example with source code
-</h4>
+
+<h4>Complete interactive example with source code</h4>
+
 <p>Try it in your browser below (use all three functions: firstly using
 the file selector, secondly the directory selector, and finally to drag
 and drop image files into the drop zone), or <a
 href="https://codepen.io/w3devcampus/pen/BoavPb" target="_blank" rel="noopener noreferrer">play with it at
 CodePen</a>:</p>
+
 <p>Complete source code:</p>
+
 <details>
-<summary>
-Complete source code!
-</summary>
-<pre><code>1.  &lt;!DOCTYPE html&gt;
+  <summary>Complete source code!</summary>
+  
+<pre><code>
+1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.  &lt;head&gt;
 4.     &lt;style&gt;
@@ -15497,14 +15477,15 @@ Complete source code!
 137.   &lt;br/&gt;
 138.   &lt;output id=&quot;list&quot;&gt;&lt;/output&gt;
 139. &lt;/body&gt;
-140. &lt;/html&gt;</code></pre>
+140. &lt;/html&gt;
+</code></pre>
+
 </details>
+
 <p>The parts that we have added are in bold. As you can see, all methods
 share the same code for previewing the images.</p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-4-5">
-3.4.5 Files upload using Ajax/XHR2
-</h3>
+<h3 id="ch3-4-5">3.4.5 Files upload using Ajax/XHR2</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>This time, let us mash-up a couple of examples. Let’s combine the
 upload of files using XHR2, with progress monitoring (we worked on in
@@ -15518,19 +15499,18 @@ try to connect):</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------ 185. drag 'n drop and progress element (3xx) -------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image185.jpeg?raw=true"
+<img class="displayed"
+  src="./images/image185.jpeg?raw=true"
   style="width:45%;"
   alt="Example that uses drag&#39;n&#39;drop and a progress element for monitoring the ajax upload of the files." />
-</p>
-<h4>
-Source code extract (we omitted the CSS):
-</h4>
+
+<h4>Source code extract (we omitted the CSS):</h4>
+
 <details>
-<summary>
-HTML source code!
-</summary>
-<pre><code>1.  &lt;!DOCTYPE html&gt;
+  <summary>HTML source code!</summary>
+  
+<pre><code>
+1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html&gt;
 3.  &lt;head&gt;
 4.     &lt;style&gt;
@@ -15626,8 +15606,11 @@ HTML source code!
 94. &lt;br/&gt;
 95.  Uploading progress: &lt;progress id=&quot;progress&quot;&gt;&lt;/progress&gt;
 96. &lt;body&gt;
-97. &lt;html&gt;</code></pre>
+97. &lt;html&gt;
+</code></pre>
+
 </details>
+
 <p>We have highlighted the interesting parts in the example!</p>
 <p>We build (<i>line 75</i>) an object of type FormData (this comes from
 the standard JavaScript DOM API level 2), we fill this object with the
@@ -15637,9 +15620,7 @@ file contents (<i>line 77</i>), then we send the Ajax request (<i>line
 to upload one file at a time with visual feedback, such as: “uploading
 file MichaelJackson.jpg…..”. We will leave this exercise up to you.</p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-4-6">
-3.4.6 Discussion and projects
-</h3>
+<h3 id="ch3-4-6">3.4.6 Discussion and projects</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>Here is the discussion forum for this part of the course. Please
 either post your comments/observations/questions or share your
@@ -15705,8 +15686,8 @@ and drops files, they will start being uploaded immediately. However,
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------- 186. uploading files using xhr2 (3xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image186.jpeg"
+<img class="displayed"
+  src="./images/image186.jpeg"
   style="width:65%;"
   alt="Uploading files using Xhr2, drag 'n drop with progress bar." />
 </p>
@@ -15738,23 +15719,18 @@ start until the submit button has been clicked.</p></li>
 <!------------------------------------------------------------------------------------------------>
 <!--------------------------------- 187. second approach (333) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image187.jpeg"
-  style="width:65%;"
-  alt="2nd approach, send only when the sublet button has been clicked." />
-</p>
-<p><img src="./images/image187.jpeg"
-style="width:6.29167in;height:2.32292in"
-alt="Second approach, send files only when the sublit button has been clicked" /></p>
+<img class="displayed"
+  src="./images/image187.jpeg?raw=true"
+  alt="2nd approach, send only when the sublet button has been clicked."
+  style="width:65%;" />
+
 <p>The difference between this and the first approach is that we are
 sending everything <i>at the same time</i> using Ajax/JavaScript: the
 regular input field content and the selected files.</p>
 <p>The next page provides the source code of several examples, as well
 as the server-side PHP code.</p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-5-2">
-3.5.2 Installation guide
-</h3>
+<h3 id="ch3-5-2">3.5.2 Installation guide</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>Please download all examples (authors: Michel Buffa, improvements and
 fixes by Vincent Mazenod): <a
@@ -15784,35 +15760,30 @@ HTTP header.</p>
 <p>This part of the lesson is optional and is mainly useful for students
 who are also involved in the server side of the Web development.</p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-5-3">
-3.5.3 Serial approach
-</h3>
+<h3 id="ch3-5-3">3.5.3 Serial approach</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>We made two examples that rely on the serial approach:</p>
+
 <ol type="1">
 <li><p>one that uses only a file selector,</p></li>
 <li><p>one that uses drag and drop.</p></li>
 </ol>
+
 <p>We could have merged file selector + drag and drop, as we did in
 examples earlier in the course, but the code would have been longer and
 more difficult to follow.</p>
-<h4>
-Example #1: auto-loading of the files, regular form submission, benefits
-of the HTML5 form validation system
-</h4>
+
+<h4>Example #1: auto-loading of the files, regular form submission, benefitsof the HTML5 form validation system</h4>
+
 <p>Example using a file selector (&lt;input type=“file”&gt;):</p>
 <!------------------------------------------------------------------------------------------------>
 <!---------------------------- 188. example 1 auto file upload (334) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image188.png"
-  style="width:55%;"
-  alt="Example 1 of file upload." />
-</p>
-<!---
-<img src="./images/image188.png" style="width:4.85417in;height:1.79167in"
-alt="example 1 of file upload." />
---->
+<img class="displayed"
+  src="./images/image188.png?raw=true"
+  alt="Example 1 of file upload."
+  style="width:55%;" />
+  
 <p><a href="https://jsbin.com/rozanow/edit?html,css,js,output" target="_blank" rel="noopener noreferrer">Try the
 online example at JSBin</a> (this one does not have the PHP code
 running, but works anyway, even if the files are not uploaded - it
@@ -15847,6 +15818,7 @@ comments.</p>
 <h4>And here is the PHP code for the server-side part of examples #1 and #2</h4>
 
 <h3>This code is given “as is”:</h3>
+
 <details>
   <summary>PHP ‘as is’ source code!</summary>
 
@@ -16820,27 +16792,30 @@ object stores and data:</b></p>
 <!------------------------------------------------------------------------------------------------>
 <!--------------------- 193.  (##) ----------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image193.png"
+<img class="displayed"
+  src="./images/image193.png"
   style="width:6.5in;height:4.77847in"
   alt="." />
-</p>
+
 <p>Normally, when you create a database for the first time, the console
 should show this message:</p>
 <!------------------------------------------------------------------------------------------------>
 <!--------------------- 194.  (##) ----------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image194.jpeg"
+<img class="displayed"
+  src="./images/image194.jpeg"
   style="width:6.5in;height:0.825in"
   alt="Message displayed in console when the database is created the first time you run the example." />
-</p>
 
 <p>This message comes from the
 JavaScript request.onupgradeneeded callback. Indeed, the first time we
 open the database we ask for a specific version (in this example:
 version 2) with:</p>
-<pre><code>1.  var request = indexedDB.open(dbName, 2);</code></pre>
+
+<pre><code>
+1.  var request = indexedDB.open(dbName, 2);
+</code></pre>
+
 <p>…and if there is no version “2” of the database, then we enter
 the onupgradeneeded callback where we actually create the database.</p>
 <p>You can try to click again on the button “CreateCustomerDatabase”, if
@@ -16967,14 +16942,10 @@ console:</p>
 <!--------------------- 195.  (##) ----------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
-  src="./images/image0.jpeg?raw=true"
-  alt="Image of the bla bla goes here."
-  style="width:xx%;" />
-<p align="center" width="100%">
-<img src="./images/image195.jpeg"
-  style="width:6.5in;height:4.48889in"
-  alt="Deleting indexed DB part 1, open the devtool console." />
-</p>
+  src="./images/image195.jpeg?raw=true"
+  alt="Deleting indexed DB part 1, open the devtool console."
+  style="width:65%;" />
+
 <p><img src="./images/image196.jpeg" style="width:6.5in;height:3.34097in"
 alt="Run the command." /></p>
 <p><img src="./images/image197.jpeg" style="width:6.5in;height:1.41319in"
