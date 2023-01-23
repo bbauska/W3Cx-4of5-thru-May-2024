@@ -2083,9 +2083,9 @@ state. </p></li>
 href="https://jsbin.com/higebo/1/edit?html,css,js,output" target="_blank" rel="noopener noreferrer">from the JSBin
 example)</a> that the German subtitle file has been loaded, and that
 none of the other tracks have been loaded. </p>
-<h4>
-Possible values for the readyState attribute of HTML tracks:
-</h4>
+
+<h4>Possible values for the readyState attribute of HTML tracks:</h4>
+
 <ul>
 <li><p><b>0 = NONE</b> ; the text track’s cues have not been
 obtained</p></li>
@@ -2201,14 +2201,13 @@ object.</p>
 track.</p>
 <p>The HTML track element has a track property which returns the
 associated TextTrack object.</p>
-<h4>
-Example source code:
-</h4>
+
+<h4>Example source code:</h4>
 <details>
-<summary>
-Code extract!
-</summary>
-<pre><code>// HTML tracks
+  <summary>Code extract!</summary>
+
+<pre><code>
+// HTML tracks
 var htmlTracks = document.querySelectorAll(&quot;track&quot;);
 
 // The TextTrack object associated with the first HTML track
@@ -2217,8 +2216,11 @@ var kind = textTrack.kind;
 var label = textTrack.label;
 var lang = textTrack.language;
 
-// etc.</code></pre>
+// etc.
+</code></pre>
+
 </details>
+
 <hr>
 <p>Note that once we get a TextTrack object, we can manipulate
 the kind, label, language attributes (be careful, it’s not srclang,
@@ -3170,11 +3172,11 @@ different tracks:</p>
 <!------------------------------------------------------------------------------------------------>
 <!----------- 32. using track api to extract content of webvtt in track element (61) ------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image032.png"
+<img class="displayed"
+  src="./images/image032.png"
   style="width:5in;height:4.47489in"
   alt="Using track api to extract content of webvtt in track element." />
-</p>
+
 <p>This example, adapted from an example from (now offline)
 dev.opera.com, uses some JavaScript code that takes a WebVTT subtitle
 (or caption) file as an argument, parses it, and displays the text
@@ -3996,6 +3998,7 @@ example at JSBin that uses this new .vtt file</a>:</p>
 <!--------------------------- 44. video with nice chapter menu (77) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
+
   src="./images/image044.jpeg?raw=true"
   alt="Video with nice chapter menu that uses thumbnail images."
   style="width:65%;" />
@@ -6832,25 +6835,25 @@ JSBin that uses the BufferLoader utility</a>:</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------- 80. bufferloader utility (136) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image080.jpeg" 
-  style="width:5in;height:1.37255in"
-  alt="Example that loads two sounds and create two buttons for playing them." />
-</p>
-<h4>
-HTML code:
-</h4>
-<pre><code>1.  &lt;button id=&quot;shot1Normal&quot; disabled=true&gt;Shot 1&lt;/button&gt;
-2.  &lt;button id=&quot;shot2Normal&quot; disabled=true&gt;Shot 2&lt;/button&gt;</code></pre>
-<h4>
-JavaScript code extract (does not contain the BufferLoader utility
-code):
-</h4>
+<img class="displayed"
+  src="./images/image080.jpeg?raw=true"
+  alt="Example that loads two sounds and create two buttons for playing them."
+  style="width:50%;" />
+
+<h4>HTML code:</h4>
+
+<pre><code>
+1.  &lt;button id=&quot;shot1Normal&quot; disabled=true&gt;Shot 1&lt;/button&gt;
+2.  &lt;button id=&quot;shot2Normal&quot; disabled=true&gt;Shot 2&lt;/button&gt;
+</code></pre>
+
+<h4>JavaScript code extract (does not contain the BufferLoader utilitycode):</h4>
+
 <details>
-<summary>
-JavaScript code extract!
-</summary>
-<pre><code>1.  var listOfSoundSamplesURLs = [
+  <summary>JavaScript code extract!</summary>
+
+<pre><code>
+1.  var listOfSoundSamplesURLs = [
 2.  &#39;https://mainline.i3s.unice.fr/mooc/shoot1.mp3&#39;,
 3.  &#39;https://mainline.i3s.unice.fr/mooc/shoot2.mp3&#39;
 4.  ];
@@ -6898,8 +6901,11 @@ JavaScript code extract!
 46. 
 47.   // starts loading and decoding the files
 48.   bufferLoader.load();
-49. }</code></pre>
+49. }
+</code></pre>
+
 </details>
+
 <p>After the call to loadAllSoundSamples() (<i>line 13</i>), when all
 the sound sample files have been loaded and decoded, a callback will be
 initiated to onSamplesDecoded(decodedSamples), located at <i>line
@@ -6926,25 +6932,25 @@ JSBin</a>:</p>
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------------- 81. audio graph (138) -------------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image081.jpeg" 
-  style="width:4in;height:2.85641in"
-  alt="Audio Graph used in the previous example source node -&gt; gain -&gt; compressor -&gt; destination." />
-</p>
+<img class="displayed"
+  src="./images/image081.jpeg?raw=true"
+  alt="Audio Graph used in the previous example source node -&gt; gain -&gt; compressor -&gt; destination."
+  style="width:40%;" />
+
 <p>In this example, we added a function (borrowed and adapted from <a
 href="https://www.html5rocks.com/en/tutorials/webaudio/games/" target="_blank" rel="noopener noreferrer">this
 article on HTML5Rocks)</a>:</p>
 <ul>
-<li>makeSource(buffer)</li>
+  <li>makeSource(buffer)</li>
 </ul>
-<h4>
-Here is the source code of this function:
-</h4>
+
+<h4>Here is the source code of this function:</h4>
+
 <details>
-<summary>
-Source code extract!
-</summary>
-<pre><code>1.  function makeSource(buffer) {
+  <summary>Source code extract!</summary>
+  
+<pre><code>
+1.  function makeSource(buffer) {
 2.     // build graph source -&gt; gain -&gt; compressor -&gt; speakers
 3.     // We use a compressor at the end to cut the part of the signal
 4.     // that would make peaks
@@ -6964,16 +6970,20 @@ Source code extract!
 18.   gain.connect(compressor);
 19.   compressor.connect(ctx.destination);
 20. return source;
-21. }</code></pre>
+21. }
+</code></pre>
+
 </details>
+
 <p>And this is the function that plays different sounds in a row,
 eventually creating random time intervals between them and random pitch
 variations:</p>
+
 <details>
-<summary>
-Function playSampleRepeated code extract!
-</summary>
-<pre><code>1.  function playSampleRepeated(buffer, rounds, interval, random, random2) {
+  <summary>Function playSampleRepeated code extract!</summary>
+  
+<pre><code>
+1.  function playSampleRepeated(buffer, rounds, interval, random, random2) {
 2.     if (typeof random == &#39;undefined&#39;) {
 3.        random = 0;
 4.     }
@@ -6988,30 +6998,19 @@ Function playSampleRepeated code extract!
 13.       source.playbackRate.value = 1 + Math.random() * random2;
 14.       source.start(time + i * interval + Math.random() * random);
 15.   } 
-16. }</code></pre>
+16. }
+</code></pre>
+
 </details>
-<h4>
-Explanations:
-</h4>
+
+<h4>Explanations:</h4>
 <ul>
-<li><p><i>Lines 11-15</i>: we make a loop for building multiple routes
-in the graph. The number of routes corresponds to the number of times
-that we want the same buffer to be played. Note that
-the random2 parameter enables us to randomize the playback rate of the
-source node that corresponds to the pitch of the sound. </p></li>
-<li><p><i>Line 14</i>: this is where the sound is being played. Instead
-of calling source.start(), we call source.start(delay), this tells the
-Web Audio scheduler to play the sound after a certain time. </p></li>
-<li><p>The makeSource function builds a graph from one decoded sample to
-the speakers. A gain is added that is also randomized in order to
-generate shot sounds with different volumes (between 0.2 and 1.2 in the
-example). A compressor node is added in order to limit the max intensity
-of the signal in case the gain makes it peak.</p></li>
+  <li><p><i>Lines 11-15</i>: we make a loop for building multiple routes in the graph. The number of routes corresponds to the number of times that we want the same buffer to be played. Note that the random2 parameter enables us to randomize the playback rate of the source node that corresponds to the pitch of the sound. </p></li>
+  <li><p><i>Line 14</i>: this is where the sound is being played. Instead of calling source.start(), we call source.start(delay), this tells the Web Audio scheduler to play the sound after a certain time.</p></li>
+  <li><p>The makeSource function builds a graph from one decoded sample to the speakers. A gain is added that is also randomized in order to generate shot sounds with different volumes (between 0.2 and 1.2 in the example). A compressor node is added in order to limit the max intensity of the signal in case the gain makes it peak.</p></li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch1-5-10">
-1.5.10 Sound samples and effects
-</h3>
+<h3 id="ch1-5-10">1.5.10 Sound samples and effects</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>Any of the effects that discussed during these lectures (gain, stereo
 panner, reverb, compressor, equalizer, analyser node for visualization,
@@ -7023,11 +7022,11 @@ at JSBin</a>:</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------- 49. audio player balance (140) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image049.jpeg" 
-  style="width:2in;height:1.28302in"
-  alt="Audio player with volume meters and waveform." />
-</p>
+<img class="displayed"
+  src="./images/image049.jpeg?raw=true"
+  alt="Audio player with volume meters and waveform."
+  style="width:20%;" />
+
 <p><a href="https://jsbin.com/nazega/edit?html,js,console,output" target="_blank" rel="noopener noreferrer">And
 this one at JSBin</a> (picture taken with the now discontinued FireFox
 WebAudio debugger, you should get similar results with the Chrome
@@ -7035,28 +7034,32 @@ WebAudio Inspector extension):</p>
 <!------------------------------------------------------------------------------------------------>
 <!---------------------------- 82. firefox webaudio debugger (140) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image082.jpeg" 
-  style="width:5in;height:3.57051in"
-  alt="Multiple sound samples played at different intervals and rates." />
-</p>
+<img class="displayed"
+  src="./images/image082.jpeg?raw=true"
+  alt="Multiple sound samples played at different intervals and rates."
+  style="width:50%;" />
+
 <p>And here is the result (<a
 href="https://jsbin.com/coraso/edit?html,js,console,output" target="_blank" rel="noopener noreferrer">try it at
 JSBin</a>):</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------ 83. sound samples and 2d visualization (141) -------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image083.jpeg" 
-  style="width:5in;height:2.56836in"
-  alt="Sound samples and 2D visualization." />
-</p>
+<img class="displayed"
+  src="./images/image083.jpeg?raw=true"
+  alt="Sound samples and 2D visualization."
+  style="width:50%;" />
+
 <p>Here is the audio graph of this example (picture taken with the now
 discontinued FireFox WebAudio debugger, you should get similar results
 with the Chrome WebAudio Inspector extension):</p>
 <!------------------------------------------------------------------------------------------------>
 <!---------------------------------- 84. webaudio graph (142) ------------------------------------>
 <!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image090.png?raw=true"
+  alt="A movie film icon."
+  style="width:10%;" />
 <p align="center" width="100%">
 <img src="./images/image084.jpeg" 
   style="width:5in;height:6.6266in"
@@ -7143,6 +7146,10 @@ was a game by Scott Porter, written using only standard Web technologies
 <!------------------------------------------------------------------------------------------------>
 <!--------------------------------- 85. donkey kong 1998 (144) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image090.png?raw=true"
+  alt="A movie film icon."
+  style="width:10%;" />
 <p align="center" width="100%">
 <img src="./images/image085.png" 
   style="width:2.17708in;height:2.83333in"
@@ -7191,6 +7198,10 @@ very first page dedicated to JavaScript games</a>.</p>
 <!------------------------------------------------------------------------------------------------>
 <!---------------------------------- 87. free civ game (145) ------------------------------------->
 <!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image090.png?raw=true"
+  alt="A movie film icon."
+  style="width:10%;" />
 <p align="center" width="100%">
 <img src="./images/image087.png" 
   style="width:2in;height:2.48341in"
@@ -7211,6 +7222,10 @@ old Sierra games. </p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------------ 88. html5 logo (146) -------------------------------------->
 <!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image090.png?raw=true"
+  alt="A movie film icon."
+  style="width:10%;" />
 <p align="center" width="100%">
 <img src="./images/image088.png" 
   style="width:1in;height:1.32039in"
@@ -7235,6 +7250,10 @@ Drawing: the &lt;canvas&gt; element
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 89. the html5 canvas logo (146) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image090.png?raw=true"
+  alt="A movie film icon."
+  style="width:10%;" />
 <p align="center" width="100%">
 <img src="./images/image089.jpeg" 
   style="width:2in;height:2in"
@@ -7280,11 +7299,11 @@ Videos and animated textures: the &lt;video&gt; element
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------------- 90. a movie film icon (147) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image090.png" 
-  style="width:1in;height:1in"
-  alt="A movie film icon." />
-</p>
+<img class="displayed"
+  src="./images/image090.png?raw=true"
+  alt="A movie film icon."
+  style="width:10%;" />
+
 <p>The HTML5 &lt;video&gt; element was introduced in the HTML5
 specification for the purpose of playing <i>streamed</i> videos or
 movies, partially replacing the object element.  The JavaScript API is
@@ -7302,14 +7321,13 @@ the &lt;audio&gt; element and the Web Audio API
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 91. a picture of a speaker (148) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image091.png" 
-  style="width:2in;height:2.00966in"
-  alt="A picture of a speaker." />
-</p>
-<h4>
-The &lt;audio&gt; element
-</h4>
+<img class="displayed"
+  src="./images/image091.png?raw=true"
+  alt="A picture of a speaker."
+  style="width:20%;" />
+
+<h4>The &lt;audio&gt; element</h4>
+
 <p>&lt;audio&gt; is an HTML element that was introduced to give a
 consistent API for playing <i>streamed</i> sounds in browsers. File
 format support varies between browsers, but MP3 works in nearly all
@@ -7319,27 +7337,25 @@ adapted for sound effects where you would like to change the playing
 speed or add real time effects such as reverberation or doppler. For
 this,  <a href="https://www.w3.org/TR/webaudio/" target="_blank" rel="noopener noreferrer">the Web Audio
 API</a> is preferable.</p>
-<h4>
-The Web Audio API
-</h4>
+
+<h4>The Web Audio API</h4>
+
 <p>This is a 100% JavaScript API designed for working in real time with
 uncompressed sound samples or for generating procedural music. Sound
 samples will need to be loaded into memory and decompressed prior to
 being used. Up to 12 sound effects are provided natively by browsers
 that support the API (all major browsers except IE, although Microsoft
 Edge supports it).</p>
-<h4>
-<b>Interacting</b>: dealing with keyboard and mouse events, the GamePad
-API
-</h4>
+
+<h4><b>Interacting</b>: dealing with keyboard and mouse events, the GamePad API</h4>
 <!------------------------------------------------------------------------------------------------>
 <!--------------------------- 92. a picture of gamepad remote (148) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image092.png" 
-  style="width:0.72917in;height:0.80208in"
-  alt="A picture of gamepad remote." />
-</p>
+<img class="displayed"
+  src="./images/image092.png?raw=true"
+  alt="A picture of gamepad remote."
+  style="width:7%;" />
+
 <p>User inputs will rely on several APIs, some of which are well
 established, such as the DOM API that is used for keyboard, touch or
 mouse inputs. There is also a <a
@@ -7363,24 +7379,22 @@ to poll the server for a reply. </p>
 <!------------------------------------------------------------------------------------------------>
 <!---------------------------- 93. three clients and a server (149) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image093.gif" 
-  style="width:2in;height:2.28807in"
-  alt="A graph showing several clients interacting with a websocket server." />
-</p>
+<img class="displayed"
+  src="./images/image093.gif?raw=true"
+  alt="A graph showing several clients interacting with a websocket server."
+  style="width:20%;" />
+
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch2-2-3">
-2.2.3 The “game loop”
-</h3>
+<h3 id="ch2-2-3">2.2.3 The “game loop”</h3>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <!--------------------------------- 94. game loop diagram (150) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image094.png" 
-  style="width:2in;height:3.78182in"
-  alt="A game loop diagram." />
-</p>
+<img class="displayed"
+  src="./images/image094.png?raw=true"
+  alt="A game loop diagram."
+  style="width:20%;" />
+
 <p>The “game loop” is the main component of any game. It separates the
 game logic and the visual layer from a user’s input and actions.</p>
 <p>Traditional applications respond to user input and do nothing without
@@ -7411,11 +7425,11 @@ code.</p>
 <!------------------------------------------------------------------------------------------------>
 <!----------------------- 95. add an asterisk every 200 milliseconds (151) ----------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image095.png"
-  style="width:6.03125in;height:2.86458in"
-  alt="Add an asterisk every 200 milliseconds" />
-</p>
+<img class="displayed"
+  src="./images/image095.png?raw=true"
+  alt="Add an asterisk every 200 milliseconds."
+  style="width:60%;" />
+
 <p>Source code extract:</p>
 
 <pre><code>
@@ -7431,20 +7445,23 @@ code.</p>
 <pre><code>1.  setInterval(‘addStarToTheBody()’, 200);
 2.  setInterval(‘document.body.innerHTML += “*”;’, 200);</code></pre>
 <p>GOOD:</p>
-<pre><code>1.  setInterval(function(){
+
+<pre><code>
+1.  setInterval(function(){
 2.     document.body.innerHTML += “*”;
-3.  }, 200);</code></pre>
+3.  }, 200);
+</code></pre>
+
 <p>or like we did in the example, with an external function.</p>
 <p>Reminder from the HTML5 Coding Essentials course: with setInterval -
 if we set the number of milliseconds at, say, 200, it will call our game
 loop function EACH 200ms, <u>even if the previous one is not yet
 finished</u>.  Because of this disadvantage, we might prefer to use
 another function, better suited to our goals.</p>
-<h4>
-Using setTimeout() instead of setInterval()
-</h4>
+<h4>Using setTimeout() instead of setInterval()</h4>
+
 <ul>
-<li>Syntax: setTimeout(function, ms);</li>
+  <li>Syntax: setTimeout(function, ms);</li>
 </ul>
 <p>The setTimeout function works like setInterval but with one little
 difference: it calls your function AFTER a given amount of time.</p>
@@ -7453,19 +7470,23 @@ JSBin</a>: open the HTML, JavaScript and output tabs to see the code.
 This example does the same thing as the previous example by adding a “*”
 to the document every 200ms.</p>
 <p>Source code extract:</p>
+
 <details>
-<summary>
-Source code extract!
-</summary>
-<pre><code>1.  var addStarToTheBody = function(){
+  <summary>Source code extract!</summary>
+  
+<pre><code>
+1.  var addStarToTheBody = function(){
 2.      document.body.innerHTML += &quot;*&quot;;
 3.      // calls again itself AFTER 200ms
 4.      setTimeout(addStarToTheBody, 200);
 5.  };
 6.  
 7.  // calls the function AFTER 200ms
-8.  setTimeout(addStarToTheBody, 200);</code></pre>
+8.  setTimeout(addStarToTheBody, 200);
+</code></pre>
+
 </details>
+
 <p>This example will work like the previous example. However, it is a
 definite improvement, because the timer waits for the function to finish
 everything inside before calling it again. </p>
@@ -7493,6 +7514,7 @@ browser won’t keep it running.</p>
 href="https://jsbin.com/geqija/1/edit?html,js,output" target="_blank" rel="noopener noreferrer">online example at
 JSBin</a>.</p>
 <p>Source code extract:</p>
+
 <details>
   <summary>Source code extract!</summary>
 
@@ -9720,9 +9742,9 @@ we only move the rectangle in the animationLoop, in one second the
 rectangle will be moved 25 times on the smartphone compared with 60
 times on the computer! Since we move the rectangle the same number of
 pixels each time, the rectangle moves faster on the computer!</p>
-<h4>
-Example #2: simulating a low-end device
-</h4>
+
+<h4>Example #2: simulating a low-end device</h4>
+
 <p>Here is the same example to which we have added a loop that wastes
 time right in the middle of the animation loop. It will artificially
 extend the time spent inside the animation loop, making the 1/60th of
@@ -9772,10 +9794,12 @@ need to move the shape to achieve a given speed (in pixels/s).</p>
 
 <p><a href="https://jsbin.com/riferi/edit" target="_blank" rel="noopener noreferrer">Online example at
 JSBin</a>:</p>
+
 <p><img src="./images/image116.jpeg"
 style="width:5.26042in;height:1.61458in"
 alt="Bouncing square with time bases animation" /></p>
 <p>Source code from the example:</p>
+
 <details>
   <summary>Code extract!</summary>
   
@@ -17716,14 +17740,9 @@ store:</p>
 <!--------------------- 210.  (##) ----------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
-  src="./images/image0.jpeg?raw=true"
-  alt="Image of the bla bla goes here."
-  style="width:xx%;" />
-<p align="center" width="100%">
-<img src="./images/image210.jpeg"
-  style="width:6.5in;height:1.88889in"
-  alt="Screenshot with a &quot;list all customers button&quot; and an alert showing one of them." />
-</p>
+  src="./images/image210.jpeg?raw=true"
+  alt="Screenshot with a &quot;list all customers button&quot; and an alert showing one of them."
+  style="width:65%;" />
 
 <p>The openCursor() function can take several (optional) arguments.</p>
 
@@ -17826,14 +17845,10 @@ JsBin</a></p>
 <!--------------------- 211.  (##) ----------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
-  src="./images/image0.jpeg?raw=true"
-  alt="Image of the bla bla goes here."
-  style="width:xx%;" />
-<p align="center" width="100%">
-<img src="./images/image211.jpeg"
-  style="width:6.5in;height:5.12639in"
-  alt="Retrieving data using an index. The screenshot shows a button &quot;look for all customers named Bill&quot;, and shows an alert with the result." />
-</p>
+  src="./images/image211.jpeg?raw=true"
+  alt="Retrieving data using an index. The screenshot shows a button &quot;look for all customers named Bill&quot;, and   shows an alert with the result." />
+  style="width:65%;" />
+
 <p>The above example retrieves only the first object that has a
 name/index with the value=“Bill”. Notice that there are two “Bill”s in
 the object store.</p>
@@ -17892,24 +17907,17 @@ JSBin that uses the above methods</a>:</p>
 <!--------------------- 212.  (##) ----------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
-  src="./images/image0.jpeg?raw=true"
-  alt="Image of the bla bla goes here."
-  style="width:xx%;" />
-<p align="center" width="100%">
-<img src="./images/image212.jpeg"
-  style="width:6.5in;height:4.45625in"
-  alt="Getting data using index. The screenshot shows two buttons: one for getting one single data and one for getting all data, using indexes." />
-</p>
+  src="./images/image212.jpeg?raw=true"
+  alt="Getting data using index. The screenshot shows two buttons: one for getting one single data and one for getting all   data, using indexes."
+  style="width:65%;" />
+
 <p>How to try this example:</p>
 <ol type="1">
-<li><p>Press the create/Open CustomerDB database,</p></li>
-<li><p>Add some more customers,</p></li>
-<li><p>Then press the last button “look for all customers with name=Bill
-…”. This will iterate over all the customers in the object store whose
-name is equal to “Bill”. There should be two “Bills”, if this is not the
-case, add two customers with a name equal to “Bill”, then press the last
-button again.</p></li>
+  <li><p>Press the create/Open CustomerDB database,</p></li>
+  <li><p>Add some more customers,</p></li>
+  <li><p>Then press the last button “look for all customers with name=Bill …”. This will iterate over all the customers in the object store whose name is equal to “Bill”. There should be two “Bills”, if this is not the case, add two customers with a name equal to “Bill”, then press the last button again.</p></li>
 </ol>
+
 <p>Source code extract from this example:</p>
 
 <details>
@@ -18006,27 +18014,18 @@ JsBin</a> (enter “Gaming”, “Batman” etc. as key range values):</p>
 <!--------------------- 213.  (##) ----------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
-  src="./images/image0.jpeg?raw=true"
-  alt="Image of the bla bla goes here."
-  style="width:xx%;" />
-<p align="center" width="100%">
-<img src="./images/image213.jpeg"
-  style="width:6.5in;height:6.53819in"
-  alt="Example of use of IdbKeyRange." />
-</p>
-<!-- page 399 ---->
+  src="./images/image213.jpeg?raw=true"
+  alt="Example use of IdKeyRange."
+  style="width:65%;" />
+
 <!------------------------------------------------------------------------------------------------>
 <!--------------------- 214.  (##) ----------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
-  src="./images/image0.jpeg?raw=true"
-  alt="Image of the bla bla goes here."
-  style="width:xx%;" />
-<p align="center" width="100%">
-<img src="./images/image214.jpeg"
-  style="width:6.5in;height:5.99583in"
-  alt="IDBKeyRange in action." />
-</p>
+  src="./images/image214.jpeg?raw=true"
+  alt="IDBKeyRange in action."
+  style="width:65%;" />
+
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch3-6-12">3.6.12 Discussion and projects</h3>
 <!------------------------------------------------------------------------------------------------>
@@ -18247,11 +18246,11 @@ the index.html file located in that directory.</p>
 <!------------------------------------------------------------------------------------------------>
 <!---------------------- 215. running example on apache web server (###) ------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image215.jpeg"
-  style="width:5in;height:2.37393in"
-  alt="Running the example in an Apache Web Server." />
-</p>
+<img class="displayed"
+  src="./images/image215.jpeg?raw=true"
+  alt="Running the example in an Apache Web Server."
+  style="width:50%;" />
+
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch4-2-2">4.2.2 Introduction</h3>
 <!------------------------------------------------------------------------------------------------>
@@ -18270,11 +18269,11 @@ and again when the animation goes back to the first image.</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 216. animated gif in a page (###) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image216.jpeg"
-  style="width:4in;height:2.93333in"
-  alt="Animated gif in a page." />
-</p>
+<img class="displayed"
+  src="./images/image216.jpeg?raw=true"
+  alt="Animated gif in a page."
+  style="width:40%;" />
+
 <p>Click on the image to run the animated GIF demo, or visit <a
 href="https://geelen.github.io/x-gif/#/https://i.imgur.com/iKXH4E2.gif" target="_blank" rel="noopener noreferrer">this
 Web site</a>.</p>
@@ -18298,11 +18297,11 @@ this animated GIF player:</p>
 <!------------------------------------------------------------------------------------------------>
 <!---------------------- 217. shadow root of the x-gif web component (###) ----------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image217.jpeg"
-  style="width:5in;height:2.55502in"
-  alt="Shadow root of the x-gif web component." />
-</p>
+<img class="displayed"
+  src="./images/image217.jpeg?raw=true"
+  alt="Shadow root of the x-gif web component."
+  style="width:50%;" />
+
 <p>…<i>and your document will still be valid.</i> Looking at the source
 code or at the DOM with the devtool’s inspector will not reveal the
 source code (HTML/JavaScript/CSS) used for creating it.</p>
@@ -18321,11 +18320,11 @@ href="https://www.webcomponents.org/" target="_blank" rel="noopener noreferrer">
 <!------------------------------------------------------------------------------------------------>
 <!------------------------- 218. the webcomponents.org home page (###) --------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image218.png"
-  style="width:4in;height:3.0906in"
-  alt="The webcomponents.org home page." />
-</p>
+<img class="displayed"
+  src="./images/image218.png?raw=true"
+  alt="The webcomponents.org home page."
+  style="width:40%;" />
+
 <p>We then search for Web components tagged with the “voice” tag and
 find input fields with voice recognition, and a text area that could
 vocalize the text:</p>
