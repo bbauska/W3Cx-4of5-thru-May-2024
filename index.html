@@ -11064,6 +11064,7 @@ var player = {
   boundingCircleRadius: 20
 };
 </code></pre>
+
 </details>
 
 <h4>The collision test occurs in the main loop:</h4>
@@ -11139,22 +11140,22 @@ spheres for detecting collisions between cars:</p>
 
 <p><img src="./images/image126.png" style="width:3in;height:2.26531in"
 alt="Grand turismo used collisions between bounding spheres: image of the game (a car on a road track)" /></p>
-<h4>
-Rectangle (aligned along X and Y axis) detection test
-</h4>
+
+<h4>Rectangle (aligned along X and Y axis) detection test</h4>
+
 <p>Let’s look at a simple illustration:</p>
 
 <p><img src="./images/image127.jpeg"
 style="width:4.47917in;height:2.09375in"
 alt="two pictures: one with non intersected rectangles: the projection of horizontal sides of rectangles to the X axis do not intersect (then rectangles do not intersect), the other with both projections intersect (rectangles intersect)" /></p>
-<h4>
-From this:
-</h4>
+
+<h4>From this:</h4>
 <blockquote>
 <p>To detect a collision between two aligned rectangles, we project the
 horizontal and vertical axis of the rectangles over the X and Y axis. If
 both projections overlap, there is a collision!</p>
 </blockquote>
+
 <h4>
 <a href="https://silentmatt.com/rectangle-intersection/" target="_blank" rel="noopener noreferrer">&lt;span
 id=“_Toc98696616” class=“anchor”&gt;&lt;/span&gt;Try this online
@@ -19017,13 +19018,13 @@ shadow DOM:</p>
 </code></pre>
 
 <p>Look at <i>lines 2 </i>and<i> 5</i>…</p>
-<p>HTML code for the declaration of the template (the same as in one of
-the previous examples):</p>
+<p>HTML code for the declaration of the template (the same as in one of the previous examples):</p>
+
 <details>
-<summary>
-HTML code!
-</summary>
-<pre><code>1.  &lt;template id=&quot;mytemplate&quot;&gt;
+  <summary>HTML code!</summary>
+
+<pre><code>
+1.  &lt;template id=&quot;mytemplate&quot;&gt;
 2.    &lt;style&gt;
 3.      h1 {
 4.        color:white;
@@ -19036,15 +19037,15 @@ HTML code!
 11.   &lt;p&gt;
 12.     &lt;slot name=&quot;my-paragraph&quot;&gt;My default text&lt;/slot
 13.   &lt;/p&gt;
-14. &lt;/template&gt;</code></pre>
+14. &lt;/template&gt;
+</code></pre>
+
 </details>
-<h4>
-JavaScript code:
-</h4>
+
+<h4>JavaScript code:</h4>
+
 <details>
-<summary>
-JavaScript code!
-</summary>
+  <summary>JavaScript code!</summary>
 
 <pre><code>
 1.  // TIP : use &quot;document.currentScript&quot; here to select
@@ -19076,9 +19077,8 @@ JavaScript code!
 </code></pre>
 
 </details>
-<h4>
-<b>Explanations</b>:
-</h4>
+
+<h4><b>Explanations</b>:</h4>
 <ul>
 <li><p><i>Line 5: </i>we use this particular selector for safety. It
 means “select the element only in the HTML of the document that is
@@ -19381,7 +19381,12 @@ that would look cool with rotating knobs, switches, LEDs, etc.</li>
 <li><p align="center" width="100%">
 <p>&lt;img src=“./images/image236.png?raw=true” width=“65%”
 <!-- style="width:5.48958in;height:2.61458in" --> alt=“Web audio
-controls” /&gt; <img src="./images/image237.jpeg"
+controls” /&gt; 
+
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 237.  (##) ----------------------->
+<!------------------------------------------------------------------------------------------------>
+<img src="./images/image237.jpeg"
 style="width:5.19792in;height:2.52083in"
 alt="guitar amp sim with web components" /></p>
 </p></li>
@@ -19409,39 +19414,27 @@ your Web browsing experiences:</p>
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 2. stop running this script? (412) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<!--
 <img class="displayed"
-  src="./images/image0.jpeg?raw=true"
-  alt="Image of the bla bla goes here."
-  style="width:xx%;" />
-<p align="center" width="100%">
-<img src="./images/image002.png"
-  style="width:4.625in;height:2.04167in"
-  alt="Script not responding2." />
-</p>
+  src="./images/image002.png?raw=true"
+  alt="Script not responding2."
+  style="width:40%;" />
 
 <h4>Or maybe:</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!--------------- 238. run certain cpu-intensive tasks in separate threads (413) ----------------->
 <!------------------------------------------------------------------------------------------------>
-<!--
 <img class="displayed"
-  src="./images/image0.jpeg?raw=true"
-  alt="Image of the bla bla goes here."
-  style="width:xx%;" />
-<p align="center" width="100%">
-<img src="./images/image238.jpeg"
-  style="width:5.85417in;height:1.71875in" 
-  alt="Script not responding2." />
-</p>
+  src="./images/image238.jpeg?raw=true"
+  alt="Script not responding 2."
+  style="width:50%;" />
 
-A solution for this problem, offered by HTML5, is to run certain
+<p>A solution for this problem, offered by HTML5, is to run certain
 CPU-intensive tasks in separate threads from the one managing the
 graphical user interface. So, if you don't want to block the user
 interface, you can perform computationally intensive tasks in one or
 more background threads, using the <i>HTML5 Web Workers</i>. Web Workers =
-CPU threads, in JavaScript.
+CPU threads, in JavaScript.</p>
 
 Terminology check: if the terms <i>background</i> and <i>foreground</i> and the
 concept of <i>multi-tasking</i> are new to you, please review [PC Mag's
@@ -20268,6 +20261,9 @@ Device in the initial position, with Earth (XYZ) and<br /> body (xyz)
 frames aligned.
 </th>
 <th>
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 247.  (##) ----------------------->
+<!------------------------------------------------------------------------------------------------>
 <img src="./images/image247.png"
 style="width:4.6875in;height:4.6875in" alt="start orientation" />
 </th>
@@ -20280,6 +20276,9 @@ Device rotated through angle alpha about z axis,<br /> with previous
 locations of x and y axes shown as x<sub>0</sub> and y<sub>0</sub>.
 </td>
 <td>
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 248.  (##) ----------------------->
+<!------------------------------------------------------------------------------------------------>
 <img src="./images/image248.png"
 style="width:4.6875in;height:4.6875in"
 alt="rotation about z axis" />
@@ -20336,6 +20335,9 @@ Device in the initial position, with Earth (XYZ) and<br /> body (xyz)
 frames aligned.
 </th>
 <th>
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 247.  (##) ----------------------->
+<!------------------------------------------------------------------------------------------------>
 <img src="./images/image247.png"
 style="width:4.6875in;height:4.6875in" alt="Start orientation." />
 </th>
@@ -20348,6 +20350,9 @@ Device rotated through angle gamma about new y axis,<br /> with previous
 locations of x and z axes shown as x<sub>0</sub> and z<sub>0</sub>.
 </td>
 <td>
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 250.  (##) ----------------------->
+<!------------------------------------------------------------------------------------------------>
 <img src="./images/image250.png"
 style="width:4.6875in;height:4.6875in"
 alt="Rotation about y axis." />
@@ -21175,7 +21180,7 @@ spec: 
 --->
 <h5>the end…</h5>
 <br>
-<h6>Last Updated: 1-21-2022 9:41pm</h6>
+<h6>Last Updated: 1-23-2023 10:05pm</h6>
 <!---
 <img class="displayed"
   src="./images/image0.jpeg?raw=true"
