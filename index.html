@@ -98,9 +98,9 @@ function topFunction() {
 <!------------------------------- index.html of W3Cx-4of5-HTML5.2x ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <div style="text-align:center;">
-<h2>
-W3Cx Front-End Web Developer
-</h2>
+
+<h2>W3Cx Front-End Web Developer</h2>
+
 </div>
 <br/>
 <!------------------------------------------------------------------------------------------------>
@@ -852,19 +852,11 @@ discussion: [465](#suggested-topics-of-discussion-6)</a></p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------- 02. script not responding (11) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------------------------------------------------------------------------>
-<!--------------------- xx.  (##) ----------------------->
-<!------------------------------------------------------------------------------------------------>
 <img class="displayed"
-  src="./images/image0.jpeg?raw=true"
-  alt="Image of the bla bla goes here."
+  src="./images/image002.png?raw=true"
+  alt="ScriptNotResponding1."
   style="width:45%;" />
 
-<p style="text-align:center;">
-<img src="./images/image002.png"
-   alt="ScriptNotResponding1"
-   style="width:45%;" />
-</p>
 <p><a href="#scriptnotresponding1">467</a>](#scriptnotresponding1)</p>
 <p><a href="#an-example-that-does-not-use-web-workers">An example that
 does not use Web Workers
@@ -2229,13 +2221,18 @@ and methods are described later in this lesson.</p>
 <p><b>Second method:</b> get TextTrack from the HTML video element.</p>
 <p>The &lt;video&gt; element (and &lt;audio&gt; element too) has
 a TextTrack property accessible from JavaScript:</p>
-<pre><code>var videoElement = document.querySelector(&quot;#myVideo&quot;);
+
+<pre><code>
+var videoElement = document.querySelector(&quot;#myVideo&quot;);
 var textTracks = videoElement.textTracks; // one TextTrack for each HTML track element
 var textTrack = textTracks[0]; // corresponds to the first track element
 var kind = textTrack.kind // e.g. &quot;subtitles&quot;
-var mode = textTrack.mode // e.g. &quot;disabled&quot;, &quot;hidden&quot; or &quot;showing&quot;</code></pre>
+var mode = textTrack.mode // e.g. &quot;disabled&quot;, &quot;hidden&quot; or &quot;showing&quot;
+</code></pre>
+
 <p>The mode property of TextTrack objects TextTrack objects have a
 mode property, that is set to one of:</p>
+
 <ol type="1">
 <li><p>“showing”: the track is either already loaded, or is being loaded
 by the browser. As soon as it is completely loaded, subtitles or
@@ -2275,11 +2272,12 @@ example at JSBin</a></p>
   alt="Test if loaded track.  Load if not by setting mode to hidden." />
 </p>
 <p>Here is what we added to the HTML code:</p>
+
 <details>
-<summary>
-Code extract!
-</summary>
-<pre><code>1.  &lt;button id=&quot;buttonLoadFirstTrack&quot;
+  <summary>Code extract!</summary>
+
+<pre><code>
+1.  &lt;button id=&quot;buttonLoadFirstTrack&quot;
 2.          onclick=&quot;forceLoadTrack(0);&quot;
 3.          disabled&gt;
 4.     Force load track 0
@@ -2288,19 +2286,23 @@ Code extract!
 7.          onclick=&quot;forceLoadTrack(2);&quot;
 8.          disabled&gt;
 9.     Force load track 2
-10. &lt;/button&gt;</code></pre>
+10. &lt;/button&gt;
+</code></pre>
+
 </details>
+
 <hr>
 <p>The buttons will call a function named forceLoadTrack(trackNumber)
 that takes as a parameter the number of the track to get (and force load
 if necessary).</p>
 <p>Here are the additions we made to the JavaScript code from the
 previous example:</p>
+
 <details>
-<summary>
-Functions readContent, getTrack, &amp; forceLoadTrack code extract!
-</summary>
-<pre><code>1.  function readContent(track) {
+  <summary>Functions readContent, getTrack, &amp; forceLoadTrack code extract!</summary>
+
+<pre><code>
+1.  function readContent(track) {
 2.    console.log(&quot;reading content of loaded track...&quot;);
 3.    displayTrackStatuses(htmlTracks); // update document with new
       track statuses
@@ -2332,11 +2334,12 @@ Functions readContent, getTrack, &amp; forceLoadTrack code extract!
 28.   // second = a callback function called when the track is loaded,
 29.   // that takes the loaded TextTrack as parameter
 30.   getTrack(htmlTracks[n], readContent);
-31. }</code></pre>
+31. }
+</code></pre>
+
 </details>
-<h4>
-Explanations:
-</h4>
+
+<h4>Explanations:</h4>
 <ul>
 <li><p><i>Lines 26-31</i>: the function called when a button has been
 clicked. This function in turn calls the getTrack(trackNumber,
@@ -2452,9 +2455,9 @@ file. See the HTML5 course Part 1 about cue positioning.</p></li>
   style="width:5in;height:2.01365in"
   alt="A webVtt file extract with arrows showing id, startTime, endTime and text." />
 </p>
-<h4>
-Example that displays the content of a track
-</h4>
+
+<h4>Example that displays the content of a track</h4>
+
 <p><a href="https://jsbin.com/teruhay/1/edit?html,css,js,output" target="_blank" rel="noopener noreferrer">Here is
 an example at JSBin that displays the content of a track</a>:</p>
 <!------------------------------------------------------------------------------------------------>
@@ -2470,11 +2473,12 @@ an example at JSBin that displays the content of a track</a>:</p>
 </p>
 <p>We just changed the content of the <em>readContent(track)</em> method
 from the example in the previous lesson:</p>
+
 <details>
-<summary>
-Function readContent extract!
-</summary>
-<pre><code>1.  function readContent(track) {
+  <summary>Function readContent extract!</summary>
+
+<pre><code>
+1.  function readContent(track) {
 2.     console.log(&quot;reading content of loaded track...&quot;);
 3.     //displayTrackStatuses(htmlTracks);
 4.     // instead of displaying the track statuses, we display
@@ -2493,8 +2497,11 @@ Function readContent extract!
 17.       var text = cue.text + &quot;&lt;P&gt;&quot;
 18.       trackStatusesDiv.innerHTML += id + timeSegment + text;
 19.    }
-20. }</code></pre>
+20. }
+</code></pre>
+
 </details>
+
 <p>As you can see, the code is simple: you first get the cues for the
 given TextTrack (it must be loaded; this is the case since we took care
 of it earlier), then iterate on the list of cues, and use the
@@ -2584,23 +2591,25 @@ the video, with your own style and animations…</p>
 <p>Or you display the entire set of subtitles to the side of the video
 and you want to highlight the current one…</p>
 <p>For this, you can listen for different sorts of events.</p>
-<h4>
-The two types of cue event are:
-</h4>
+
+<h4>The two types of cue event are:</h4>
 <ol type="1">
 <li><p>enter and exit events fired for cues.</p></li>
 <li><p>cuechange events fired for TextTrack objects (good
 support).</p></li>
 </ol>
-<h4>
-Example of cuechange listener on TextTrack
-</h4>
-<pre><code>// track is a loaded TextTrack
+
+<h4>Example of cuechange listener on TextTrack</h4>
+
+<pre><code>
+// track is a loaded TextTrack
 track.addEventListener(&quot;cuechange&quot;, function(e) {
    var cue = this.activeCues[0];
    console.log(&quot;cue change&quot;);
    // do something with the current cue
-});</code></pre>
+});
+</code></pre>
+
 <p>In the above example, let’s assume that we have no overlapping cues
 for the current time segment.</p>
 <p>The above code listens for cue change events: when the video is being
@@ -5762,9 +5771,13 @@ with the Chrome WebAudio Inspector extension):</p>
 <p>Example #2: equalizer with a &lt;video&gt; element</p>
 <p>We cloned the previous example and simply changed
 the &lt;audio&gt;…</audio> part of the HTML code by:</p>
-<pre><code>&lt;video id=&quot;player&quot; width=&quot;320&quot; height=&quot;240&quot; controls crossOrigin=&quot;anonymous&quot;&gt;
+
+<pre><code>
+&lt;video id=&quot;player&quot; width=&quot;320&quot; height=&quot;240&quot; controls crossOrigin=&quot;anonymous&quot;&gt;
   &lt;source src=&quot;https://mainline.i3s.unice.fr/mooc/elephants-dream-medium.mp4&quot; &gt;
-&lt;/video&gt;</code></pre>
+&lt;/video&gt;
+</code></pre>
+
 <p>And the example works in the same way, but this time with a video.
 Try moving the sliders to change the sound!</p>
 <p><a href="https://jsbin.com/kukupot/edit?html,css,js,output" target="_blank" rel="noopener noreferrer">Example
@@ -5871,11 +5884,12 @@ JSBin</a></p>
 <p>First, select the audio context and the canvas context, then build
 the audio graph, and finally run the animation loop.</p>
 <p>Typical operations to perform once the HTML page is loaded:</p>
+
 <details>
-<summary>
-Source code!
-</summary>
-<pre><code>1.  window.onload = function() {
+  <summary>Source code!</summary>
+
+<pre><code>
+1.  window.onload = function() {
 2.     // get the audio context
 3.     audioContext= ...;
 4.  
@@ -5890,7 +5904,9 @@ Source code!
 13. 
 14.    // starts the animation at 60 frames/s
 15.    requestAnimationFrame(visualize);
-16. };</code></pre>
+16. };
+</code></pre>
+
 </details>
 <p>Step #1: build the audio graph with an analyser node at the end</p>
 <p>If we want to visualize the sound that is coming out of the speakers,
@@ -5901,24 +5917,24 @@ analyser node connected to the speakers (audioContext.destination). The
 visualization is a graphic animation that
 uses the requestAnimationFrame API presented in teh W3C HTML5 Coding
 Essentials and Best Practices course (Module 4).</p>
-<h4>
-Typical code for building the audio graph:
-</h4>
-<h4>
-HTML code:
-</h4>
-<pre><code>1.  &lt;audio src=&quot;https://mainline.i3s.unice.fr/mooc/guitarRiff1.mp3&quot;
+<h4>Typical code for building the audio graph:</h4>
+
+<h4>HTML code:</h4>
+
+<pre><code>
+1.  &lt;audio src=&quot;https://mainline.i3s.unice.fr/mooc/guitarRiff1.mp3&quot;
 2.      id=&quot;player&quot; controls loop crossorigin=&quot;anonymous&quot;&gt;
 3.  &lt;/audio&gt;
-4.  &lt;canvas id=&quot;myCanvas&quot; width=300 height=100&gt;&lt;/canvas&gt;</code></pre>
-<h4>
-JavaScript code:
-</h4>
+4.  &lt;canvas id=&quot;myCanvas&quot; width=300 height=100&gt;&lt;/canvas&gt;
+</code></pre>
+
+<h4>JavaScript code:</h4>
+
 <details>
-<summary>
-JavaScript source code!
-</summary>
-<pre><code>1.  function buildAudioGraph() {
+  <summary>JavaScript source code!</summary>
+
+<pre><code>
+1.  function buildAudioGraph() {
 2.     var mediaElement = document.getElementById(&#39;player&#39;);
 3.     var sourceNode = audioContext.createMediaElementSource(mediaElement);
 4.  
@@ -5933,8 +5949,11 @@ JavaScript source code!
 13. 
 14.    sourceNode.connect(analyser);
 15.    analyser.connect(audioContext.destination);
-16. }</code></pre>
+16. }
+</code></pre>
+
 </details>
+
 <p>With the exception of <i>lines 8-12</i>, where we set the analyser
 options (explained later), we build the following graph (picture taken
 with the now discontinued FireFox WebAudio debugger, you should get
@@ -5968,11 +5987,12 @@ we want to visualize. Its length is equal to fftSize/2.</p></li>
 constants, to control the analysis during play-back.</p>
 <p>Here is the code that is run 60 times per second to draw the
 waveform:</p>
+
 <details>
-<summary>
-Source code!
-</summary>
-<pre><code>1.  function visualize() {
+  <summary>Source code!</summary>
+
+<pre><code>
+1.  function visualize() {
 2.    // 1 - clear the canvas
 3.    // like this: canvasContext.clearRect(0, 0, width, height);
 4.  
@@ -6016,8 +6036,11 @@ Source code!
 42.   canvasContext.stroke();
 43. 
 44.   // once again call the visualize function at 60 frames/s
-45.   requestAnimationFrame(visualize)Explanations:</code></pre>
+45.   requestAnimationFrame(visualize)Explanations:
+</code></pre>
+
 </details>
+
 <ul>
 <li><i>Lines 9-10</i>: we ask for the time domain analysis data. The
 call to getByteTimeDomainData(dataArray) will fill the array with values
@@ -6122,11 +6145,12 @@ summarised above - just plot the reported values!</p>
 <p>This code is very similar to the first example given at the top of
 this page. We’ve set the FFT size to a lower value, and rewritten the
 animation loop to plot frequency bars instead of a waveform:</p>
-<details>
-<summary>
-Code extract!</summary>
 
-<pre><code>1.  function buildAudioGraph() {
+<details>
+  <summary>Code extract!</summary>
+
+<pre><code>
+1.  function buildAudioGraph() {
 2.    ...
 3.    // Create an analyser node
 4.    analyser = audioContext.createAnalyser();
@@ -6136,20 +6160,22 @@ Code extract!</summary>
 8.    // try 128, 64 etc.? 
 9.    analyser.fftSize = 256;
 10.   ...
-11. }</code></pre>
+11. }
+</code></pre>
+
 </details>
+
 <p>This time, when building the audio graph, we have used a smaller FFT
 size. Values between 64 and 512 are very common here. Try them in the
 JSBin example! Apart from the lines in bold, this function is exactly
 the same as in the first example.</p>
 <p>The new visualization code:</p>
+
 <details>
+  <summary>Code extract!</summary>
 
-<summary>
-Code extract!
-</summary>
-
-<pre><code>1.  function visualize() {
+<pre><code>
+1.  function visualize() {
 2.    // clear the canvas
 3.    canvasContext.clearRect(0, 0, width, height);
 4.  
@@ -6181,11 +6207,13 @@ Code extract!
 30. 
 31.   // once again call the visualize function at 60 frames/s
 32.   requestAnimationFrame(visualize);
-33. }</code></pre>
+33. }
+</code></pre>
+
 </details>
-<h4>
-Explanations:
-</h4>
+
+<h4>Explanations:</h4>
+
 <ul>
 <li><p><i>Line 6</i>: this is different to code which draws a waveform!
 We ask for byteFrequencyData (vs byteTimeDomainData earlier) and it
@@ -6235,12 +6263,12 @@ results with the Chrome WebAudio Inspector extension):</p>
   alt="Audio graph from above example." />
 </p>
 <p>Source code from this example’s the buildAudioGraph function:</p>
-<details>
-<summary>
-Code extract!
-</summary>
 
-<pre><code>1.  function buildAudioGraph() {
+<details>
+  <summary>Code extract!</summary>
+
+<pre><code>
+1.  function buildAudioGraph() {
 2.     var mediaElement = document.getElementById(&#39;player&#39;);
 3.        var sourceNode = audioContext.createMediaElementSource(mediaElement);
 4.  
@@ -6283,12 +6311,12 @@ Code extract!
 41.    // Connect the stereo panner to analyser and analyser to    destination
 42.    stereoPanner.connect(analyser);
 43.    analyser.connect(audioContext.destination);
-44. }</code></pre>
+44. }
+</code></pre>
+
 </details>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch1-5-7">
-1.5.7 Volume Meters
-</h3>
+<h3 id="ch1-5-7">1.5.7 Volume Meters</h3>
 <!------------------------------------------------------------------------------------------------>
 <p><b>Important note:</b> the volume meter implementations below use
 rough approximations and cannot be taken as the most accurate way to
@@ -6311,11 +6339,12 @@ the intensity of the music, we will compute the average intensity of our
 frequency ranges, and draw this value using a nice gradient-filled
 rectangle.</p>
 <p>Here are the two functions we will call from the animation loop:</p>
+
 <details>
-<summary>
-Code extract!
-</summary>
-<pre><code>1.  function drawVolumeMeter() {
+  <summary>Code extract!</summary>
+
+<pre><code>
+1.  function drawVolumeMeter() {
 2.    canvasContext.save();
 3.  
 4.    analyser.getByteFrequencyData(dataArray);
@@ -6343,34 +6372,40 @@ Code extract!
 26. 
 27.   average = values / length;
 28.   return average;
-29. }</code></pre>
+29. }
+</code></pre>
+
 </details>
+
 <p>Note that we are measuring intensity (<i>line 4</i>) and once the
 frequency analysis data is copied into the dataarray, we
 call the getAverageVolume function (<i>line 5</i>) to compute the
 average value which we will draw as the volume meter.</p>
 <p>This is how we create the gradient:</p>
-<details>
-<summary>
-Code extract!
-</summary>
 
-<pre><code>1.  // create a vertical gradient of the height of the canvas
+<details>
+  <summary>Code extract!</summary>
+
+<pre><code>
+1.  // create a vertical gradient of the height of the canvas
 2.  gradient = canvasContext.createLinearGradient(0,0,0, height);
 3.  gradient.addColorStop(1,&#39;#000000&#39;);
 4.  gradient.addColorStop(0.75,&#39;#ff0000&#39;);
 5.  gradient.addColorStop(0.25,&#39;#ffff00&#39;);
-6.  gradient.addColorStop(0,&#39;#ffffff&#39;);</code></pre>
+6.  gradient.addColorStop(0,&#39;#ffffff&#39;);
+</code></pre>
+
 </details>
+
 <p>And here is what the new animation loop looks like (for the sake of
 clarity, we have moved the code that draws the signal waveform to a
 separate function):</p>
-<details>
-<summary>
-Code extract!
-</summary>
 
-<pre><code>1.  function visualize() {
+<details>
+  <summary>Code extract!</summary>
+
+<pre><code>
+1.  function visualize() {
 2.  
 3.    clearCanvas();
 4.  
@@ -6379,8 +6414,11 @@ Code extract!
 7.   
 8.     // call again the visualize function at 60 frames/s
 9.    requestAnimationFrame(visualize);
-10. }</code></pre>
+10. }
+</code></pre>
+
 </details>
+
 <p>Notice that we used the best practices seen in week 3 of the HTML5
 part 1 course: we saved and restored the context in all functions that
 change something in the canvas context (see
@@ -6436,14 +6474,14 @@ waveform, meanwhile the one at the bottom splits the signal and send its
 left and right parts to separate analyser nodes which draw the two
 volume meters. Just before the split, we added a stereoPanner to enable
 adjustment of the left/right balance with a slider.</p>
-<h4>
-Source code extract:
-</h4>
+
+<h4>Source code extract:</h4>
+
 <details>
-<summary>
-Source code extract!
-</summary>
-<pre><code>1.  function buildAudioGraph() {
+  <summary>Source code extract!</summary>
+
+<pre><code>
+1.  function buildAudioGraph() {
 2.    var mediaElement = document.getElementById(&#39;player&#39;);
 3.    var sourceNode = audioContext.createMediaElementSource(mediaElement);
 4.  
@@ -6494,16 +6532,17 @@ Source code extract!
 49.   // No need to connect these analysers to something, the sound
 50.   // is already connected through the route that goes through
 51.   // the analyser used for the waveform
-52. }</code></pre>
+52. }
+</code></pre>
+
 </details>
-<h4>
-And here is the new function for drawing the two volume meters:
-</h4>
+
+<h4>And here is the new function for drawing the two volume meters:</h4>
 <details>
-<summary>
-Source code extract!
-</summary>
-<pre><code>1.  function drawVolumeMeters() {
+  <summary>Source code extract!</summary>
+
+<pre><code>
+1.  function drawVolumeMeters() {
 2.    canvasContext.save();
 3.  
 4.    // set the fill style to a nice gradient
@@ -6524,14 +6563,17 @@ Source code extract!
 19.   canvasContext.fillRect(26,height-averageRight,25,height);
 20. 
 21.   canvasContext.restore();
-22. }</code></pre>
+22. }
+</code></pre>
+
 </details>
+
 <p>The code is very similar to the previous one. We draw two rectangles
 side-by-side, corresponding to the two analyser nodes - instead of the
 single display in the previous example.</p>
-<h4>
-Extra explanations and resources
-</h4>
+
+<h4>Extra explanations and resources</h4>
+
 <p>Indeed, the proposed examples are ok for making things “dancing in
 music” but rather inaccurate if you are looking for a real volume meter.
 Results may also change if you modify the size of the fft in the
@@ -6690,18 +6732,20 @@ once! <br />
 </b> But don’t worry, Web Audio is optimized for handling thousands of
 nodes…</p>
 </blockquote>
-<h4>
-HTML code extract:
-</h4>
-<pre><code>&lt;button id=&quot;playButton&quot; disabled=true&gt;Play sound&lt;/button&gt;</code></pre>
-<h4>
-JavaScript source code:
-</h4>
+
+<h4>HTML code extract:</h4>
+
+<pre><code>
+&lt;button id=&quot;playButton&quot; disabled=true&gt;Play sound&lt;/button&gt;
+</code></pre>
+
+<h4>JavaScript source code:</h4>
+
 <details>
-<summary>
-JavaScript code extract!
-</summary>
-<pre><code>1.  var ctx;
+  <summary>JavaScript code extract!</summary>
+
+<pre><code>
+1.  var ctx;
 2.   
 3.  var soundURL =
 4.  &#39;https://mainline.i3s.unice.fr/mooc/shoot2.mp3&#39;;
@@ -6761,11 +6805,13 @@ JavaScript code extract!
 58.     bufferSource.buffer = buffer;
 59.     bufferSource.connect(ctx.destination);
 60.     bufferSource.start(); // remember, you can start() a source only once!
-61. }</code></pre>
+61. }
+</code></pre>
+
 </details>
-<h4>
-Explanations:
-</h4>
+
+<h4>Explanations:</h4>
+
 <ul>
 <li><p>When the page is loaded, we first call
 the loadSoundUsingAjax function for loading and decoding the sound
@@ -9658,13 +9704,14 @@ frame-rate at 60 fps, meaning that the ideal time between frames will be
 <p><a href="https://jsbin.com/dibuze/edit" target="_blank" rel="noopener noreferrer">Online example at
 JSBin</a></p>
 
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 115.  (##) ----------------------->
+<!------------------------------------------------------------------------------------------------>
 <img class="displayed"
-  src="./images/image0.jpeg?raw=true"
-  alt="Image of the bla bla goes here."
-  style="width:xx%;" />
-<p><img src="./images/image115.jpeg" style="width:2.75in;height:0.8125in"
-alt="image of a small rectangle in a canvas, moving from left to right" /></p>
-
+  src="./images/image115.jpeg?raw=true"
+  alt="Image of a small rectangle in a canvas, moving from left to right."
+  style="width:25%;" />
+  
 <details>
   <summary>Code extract!</summary>
 
@@ -9774,7 +9821,11 @@ constant speed on screen, even when the frame rate changes.</p>
 <p>Let’s modify the example from the previous lesson slightly by adding
 a <em>time-based animation</em>.  Here we use the “standard JavaScript”
 way for measuring time, using JavaScript’s Date object:</p>
-<pre><code>var time = new Date().getTime();</code></pre>
+
+<pre><code>
+var time = new Date().getTime();
+</code></pre>
+
 <p>The getTime() method returns the number of milliseconds since
 midnight on January 1, 1970. This is the number of milliseconds that
 have elapsed during the Unix epoch (!).</p>
@@ -9795,9 +9846,14 @@ need to move the shape to achieve a given speed (in pixels/s).</p>
 <p><a href="https://jsbin.com/riferi/edit" target="_blank" rel="noopener noreferrer">Online example at
 JSBin</a>:</p>
 
-<p><img src="./images/image116.jpeg"
-style="width:5.26042in;height:1.61458in"
-alt="Bouncing square with time bases animation" /></p>
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- xx.  (##) ----------------------->
+<!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image116.jpeg?raw=true"
+  alt="Bouncing square with time bases animation."
+  style="width:50%;" />
+
 <p>Source code from the example:</p>
 
 <details>
@@ -10192,8 +10248,19 @@ frame rate: draw the frame and reset this time to zero.</p></li>
 <p>Here is the <a href="https://jsbin.com/bonutur/edit" target="_blank" rel="noopener noreferrer">online example
 at JSBin</a>.</p>
 <p><b>Try to change the parameter value of the call to: </b></p>
-<pre><code>&lt;sup&gt;setFrameRateInFramesPerSecond(5); // try other values!&lt;/sup&gt;</code></pre>
-<p><img src="./images/image117.png" style="width:4in;height:2.0047in" /></p>
+
+<pre><code>
+&lt;sup&gt;setFrameRateInFramesPerSecond(5); // try other values!&lt;/sup&gt;
+</code></pre>
+
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 117.  (##) ----------------------->
+<!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image117.png?raw=true"
+  alt="."
+  style="width:40%;" />
+  
 <p><b>Source code of the example:</b></p>
 
 <pre><code>
@@ -11012,8 +11079,8 @@ than the sum of the radii, then the circles collide.</p>
 square root:</p>
 
 <pre><code>
-(x2-x1)^2 + (y1-y2)^2 &lt;= (r1+r2)^2<
-/code></pre>
+(x2-x1)^2 + (y1-y2)^2 &lt;= (r1+r2)^2
+</code></pre>
 
 <h4>Which yields:</h4>
 
@@ -11181,9 +11248,10 @@ detected!</p>
 style="width:3.44792in;height:3.01042in"
 alt="the projections of axis overlap: collision detected" /></p>
 
-<p>Here is a JavaScript implementation of a rectangle - rectangle
-(aligned) collision test:</p>
-<pre><code>// Collisions between aligned rectangles
+<p>Here is a JavaScript implementation of a rectangle - rectangle (aligned) collision test:</p>
+
+<pre><code>
+// Collisions between aligned rectangles
 function rectsOverlap(x1, y1, w1, h1, x2, y2, w2, h2) {
   
   if ((x1 &gt; (x2 + w2)) || ((x1 + w1) &lt; x2))
@@ -11194,10 +11262,11 @@ function rectsOverlap(x1, y1, w1, h1, x2, y2, w2, h2) {
 
   return true;    // If previous tests failed, then both axis projections
                   // overlap and the rectangles intersect
-}</code></pre>
-<h4>
-Let’s test this method
-</h4>
+}
+</code></pre>
+
+<h4>Let’s test this method</h4>
+
 <p><a href="https://jsbin.com/fubima/edit" target="_blank" rel="noopener noreferrer">Try this example at
 JSBin</a>: move the monster with the arrow keys and use the mouse to
 move “the player”: this time a small rectangle. Try to make collisions
@@ -12132,11 +12201,12 @@ function, you could use the BufferLoader utility for loading multiple
 resources asynchronously, as  discussed during Module 1.</p></li>
 </ol>
 <p>Source code extract:</p>
+
 <details>
-<summary>
-JavaScript source code extract!
-</summary>
-<pre><code>1.  // Inits
+  <summary>JavaScript source code extract!</summary>
+
+<pre><code>
+1.  // Inits
 2.  window.onload = function init() {
 3.  var game = new GF();
 4.  game.start();
@@ -12241,12 +12311,12 @@ JavaScript source code extract!
 103.   };
 104.   ...
 105.  };
-106.  </code></pre>
+106.  
+</code></pre>
+
 </details>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch2-7-1">
-2.7.1 Menus, high score tables, etc.
-</h3>
+<h3 id="ch2-7-1">2.7.1 Menus, high score tables, etc.</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>With our game framework handling the basics, we can make things more
 exciting by causing something to happen when a collision occurs - maybe
@@ -12341,7 +12411,10 @@ is re-created, and each level has two more than before. How long can you
 survive?</p>
 <p><a href="https://jsbin.com/yatopunuje/edit?html,js,output" target="_blank" rel="noopener noreferrer">Try this
 JsBin</a>, then look at the source code. Start from the mainloop!</p>
-<pre><code>currentGameState = gameStates.gameOver:</code></pre>
+
+<pre><code>
+currentGameState = gameStates.gameOver:
+</code></pre>
 <!------------------------------------------------------------------------------------------------>
 <!------------- 152. Game Over Screen, asking to press space to start again. (2xx) --------------->
 <!------------------------------------------------------------------------------------------------>
@@ -12432,16 +12505,20 @@ currentGameState = gameStates.gamerunning:
 63.     }
 64.      ...
 65.    };
-66. ... </code></pre>
+66. ... 
+</code></pre>
+
 </details>
+
 <p>And below are the functions for starting a new level, starting a new
 game, and the updateBalls function that determines when a player loses
 and changes the current game-state to GameOver:</p>
+
 <details>
-<summary>
-JavaScript extract code!
-</summary>
-<pre><code>1.  function startNewGame() {
+  <summary>JavaScript extract code!</summary>
+
+<pre><code>
+1.  function startNewGame() {
 2.      monster.dead = false;
 3.      currentLevelTime = 5000;
 4.      currentLevel = 1;
@@ -12480,12 +12557,12 @@ JavaScript extract code!
 37.        // 3) draw the ball
 38.        ball.draw();
 39.     }
-40. }</code></pre>
+40. }
+</code></pre>
+
 </details>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch2-7-2">
-2.7.2 Splitting the game into several JS files
-</h3>
+<h3 id="ch2-7-2">2.7.2 Splitting the game into several JS files</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>JSBin is a great tool for sharing code, for experimenting, etc. But
 as soon as the size of your project increases, you’ll find that the tool
@@ -12509,19 +12586,19 @@ separate the rest into functional groupings, eg utils.js, sprites.js,
 collision.js, listeners.js, etc.</p></li>
 </ul>
 <p>Let’s do this together!</p>
-<h4>
-Start with a simple structure
-</h4>
+
+<h4>Start with a simple structure</h4>
+
 <p>First, create a game.html file that contains the actual HTML
 code:</p>
-<h4>
-game.html:
-</h4>
+
+<h4>game.html:</h4>
+
 <details>
-<summary>
-game.html extract!
-</summary>
-<pre><code>1.  &lt;!DOCTYPE html&gt;
+  <summary>game.html extract!</summary>
+
+<pre><code>
+1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.  &lt;head&gt;
 4.    &lt;meta charset=&quot;utf-8&quot;&gt;
@@ -12536,12 +12613,19 @@ game.html extract!
 13. &lt;body&gt;
 14.   &lt;canvas id=&quot;myCanvas&quot; width=&quot;400&quot; height=&quot;400&quot;&gt;&lt;/canvas&gt;
 15. &lt;/body&gt;
-16. &lt;/html&gt;</code></pre>
+16. &lt;/html&gt;
+</code></pre>
+
 </details>
+
 <p>Here is the game.css file (very simple):</p>
-<pre><code>1.  canvas {
+
+<pre><code>
+1.  canvas {
 2.     border: 1px solid black;
-3.  }</code></pre>
+3.  }
+</code></pre>
+
 <p>Let’s take the JavaScript code from the last JSBin example, save it
 to a file called game.js, and locate it in a subdirectory js under the
 directory where the game.html file is located. Similarly, we’ll keep the
@@ -12564,14 +12648,14 @@ files and encounter errors.</p>
 <p>Put the Ball constructor function in a js/ball.js file, include it in
 the game.html file, and try the game: oops, it doesn’t work! Let’s open
 the console:</p>
-<h4>
-Ball.js:
-</h4>
+
+<h4>Ball.js:</h4>
+
 <details>
-<summary>
-Function Ball extract!
-</summary>
-<pre><code>1.  // constructor function for balls
+  <summary>Function Ball extract!</summary>
+
+<pre><code>
+1.  // constructor function for balls
 2.  function Ball(x, y, angle, v, diameter) {
 3.     ...
 4.      this.draw = function () {
@@ -12583,11 +12667,13 @@ Function Ball extract!
 10.       this.x += calcDistanceToMove(delta, incX);
 11.       this.y += calcDistanceToMove(delta, incY);
 12.     };
-13. }</code></pre>
+13. }
+</code></pre>
+
 </details>
-<h4>
-Isolate the time based animation functions into a separate file
-</h4>
+
+<h4>Isolate the time based animation functions into a separate file</h4>
+
 <p>Hmmm… the calcDistanceToMove function is used here, but is defined in
 the game.js file, inside the GF object and will certainly raise an
 error… Also, the ctx variable should be added as a parameter to
@@ -12620,7 +12706,9 @@ timeBasedAnim.js:
 <summary>
 JavaScript code extract!
 </summary>
-<pre><code>1.  var delta, oldTime = 0;
+
+<pre><code>
+1.  var delta, oldTime = 0;
 2.   
 3.  function timer(currentTime) {
 4.     var delta = currentTime - oldTime;
@@ -12631,22 +12719,25 @@ JavaScript code extract!
 9.  var calcDistanceToMove = function (delta, speed) {
 10.    //console.log(&quot;#delta = &quot; + delta + &quot; speed = &quot; + speed);
 11.    return (speed * delta) / 1000;
-12. };</code></pre>
+12. };
+</code></pre>
+
 </details>
-<h4>
-Isolate the part that counts the number of frames per second
-</h4>
+
+<h4>Isolate the part that counts the number of frames per second</h4>
+
 <p>We need to add a small initFPS function for creating
 the &lt;div&gt; that displays the FPS value… this function will be
 called from the GF.start() method. There was code in this start method
 that has been moved into the initFPS function we created and added into
 the fps.js file.</p>
 <p>fps.js:</p>
+
 <details>
-<summary>
-fps.js extract!
-</summary>
-<pre><code>1.  // vars for counting frames, used by the measureFPS function
+  <summary>fps.js extract!</summary>
+
+<pre><code>
+1.  // vars for counting frames, used by the measureFPS function
 2.  var frameCount = 0;
 3.  var lastTime;
 4.  var fpsContainer;
@@ -12679,8 +12770,11 @@ fps.js extract!
 31.    // document in the start() function
 32.    fpsContainer.innerHTML = &#39;FPS: &#39; + fps;
 33.    frameCount++;
-34. };</code></pre>
+34. };
+</code></pre>
+
 </details>
+
 <p>At this stage, the structure looks like this:</p>
 <!------------------------------------------------------------------------------------------------>
 <!---------------------------------- 156. game structure (281) ----------------------------------->
@@ -12696,14 +12790,14 @@ fps.js extract!
 it from the GF.start() method into a listeners.js file? We’ll have to
 pass the canvas as an extra parameter (to resolve a dependency) and we
 also move the getMousePos method into there. </p>
-<h4>
-listeners.js:
-</h4>
+
+<h4>listeners.js:</h4>
+
 <details>
-<summary>
-JavaScript code extract!
-</summary>
-<pre><code>function addListeners(inputStates, canvas) {
+  <summary>JavaScript code extract!</summary>
+
+<pre><code>
+function addListeners(inputStates, canvas) {
    //add the listener to the main, window object, and update the states
    window.addEventListener(&#39;keydown&#39;, function (event) {
       if (event.keyCode === 37) {
@@ -12724,27 +12818,30 @@ JavaScript code extract!
    }, false);
 ...
 }
- 
 function getMousePos(evt, canvas) {
    ...
-}</code></pre>
+}
+</code></pre>
+
 </details>
-<h4>
-Isolate the collision tests
-</h4>
+
+<h4>Isolate the collision tests</h4>
+ 
 <p>Following the same idea, let’s put these into
 a collisions.js file:</p>
-<pre><code>// We can add the other collision functions seen in the
-// course here...
 
+<pre><code>
+// We can add the other collision functions seen in the
+// course here...
 // Collisions between rectangle and circle
 function circRectsOverlap(x0, y0, w0, h0, cx, cy, r) {
    ...
 }
- 
 function testCollisionWithWalls(ball, w, h) {
    ...
-}</code></pre>
+}
+</code></pre>
+
 <p>We added the width and height of the canvas as parameters to
 the testCollisionWithWalls function to resolve dependencies. The other
 collision functions (circle-circle and rectangle-rectangle) presented
@@ -12785,8 +12882,11 @@ during the course, could be put into this file as well.</p>
 16. &lt;body&gt;
 17. &lt;canvas id=&quot;myCanvas&quot; width=&quot;400&quot; height=&quot;400&quot;&gt;&lt;/canvas&gt;
 18. &lt;/body&gt;
-19. &lt;/html&gt;</code></pre>
+19. &lt;/html&gt;
+</code></pre>
+
 </details>
+
 <p>We could go further by defining a monster.js file, turning all the
 code related to the monster/player into a well-formed object, with
 draw and move methods, etc. There are many potential improvements you
@@ -13061,9 +13161,9 @@ browser every second or something like that.</p>
 <p>It’s very easy to monitor the progress.</p>
 <p>You can put vertically this bar using CSS, change the style.</p>
 <p>Refer to the HTML5 Part 1 course for that.</p>
-<h4>
-Ajax and binary files - downloading files and monitoring progress
-</h4>
+
+<h4>Ajax and binary files - downloading files and monitoring progress</h4>
+
 <p>HTTP is a text based protocol, so when you upload/download images,
 videos or any binary file, they must first be text encoded for
 transmission, then decoded on-the-fly upon receipt by the server or
@@ -13079,7 +13179,9 @@ using XMLHttpRequest level 2.</p>
 <p><em>Note</em>: 1) the simple and concise syntax, and 2) the use of
 the new arrayBuffer type for the expected response (<em>line
 5</em>):</p>
-<pre><code>1.  // Load a binary file from a URL as an ArrayBuffer.
+
+<pre><code>
+1.  // Load a binary file from a URL as an ArrayBuffer.
 2.  function loadSoundFile(url) {
 3.  var xhr = new XMLHttpRequest();
 4.  xhr.open(&#39;GET&#39;, url, true);
@@ -13088,11 +13190,11 @@ the new arrayBuffer type for the expected response (<em>line
 7.  initSound(this.response); // this.response is an ArrayBuffer.
 8.  };
 9.  xhr.send();
-10. }</code></pre>
-<h4>
-Example: download a binary song file using XHR2
-and responseType=‘arraybuffer’, and play it using Web Audio
-</h4>
+10. }
+</code></pre>
+
+<h4>Example: download a binary song file using XHR2 and responseType=‘arraybuffer’, and play it using Web Audio</h4>
+
 <p><a href="https://jsbin.com/mecakaz/edit?html,js,console,output" target="_blank" rel="noopener noreferrer">Try
 this example on JSBin</a>:</p>
 <p>In this example, instead of reading the file from disk, we download
@@ -13290,7 +13392,9 @@ successful.</td>
 different depending on the type of operation: a download (using the GET
 HTTP method), or an upload (using POST).</p>
 <p><b>Syntax for download:</b></p>
-<pre><code>1.  var xhr = new XMLHttpRequest();
+
+<pre><code>
+1.  var xhr = new XMLHttpRequest();
 2.  xhr.open(&#39;GET&#39;, url, true);
 3.  ...
 4.  xhr.onprogress = function(e) {
@@ -13298,28 +13402,33 @@ HTTP method), or an upload (using POST).</p>
 6.  }
 580. 
 &lt;!-- --&gt;
-7.  xhr.send();</code></pre>
+7.  xhr.send();
+</code></pre>
+
 <p>Note that an alternative syntax such
 as xhr.addEventListener(‘progress’, callback, false) also works.</p>
 <p><b>Syntax for upload:</b></p>
-<pre><code>1.  var xhr = new XMLHttpRequest();
+
+<pre><code>
+1.  var xhr = new XMLHttpRequest();
 2.  xhr.open(&#39;POST&#39;, url, true);
 3.  ...
 4.  xhr.upload.onprogress = function(e) {
 5.  // do something
 6.  }
 7.   
-8.  xhr.send();</code></pre>
+8.  xhr.send();
+</code></pre>
+
 <p>Notice that the only difference is the “upload” added after the name
 of the request object: with GET we use xhr.onprogress and with POST we
 use xhr.upload.onprogress.</p>
 <p>Note that an alternative syntax such
 as xhr.upload.addEventListener(‘progress’, callback, false) also
 works.</p>
-<h4>
-2 - Get progress values (how many bytes have been downloaded) and the
-total file size
-</h4>
+
+<h4>2 - Get progress values (how many bytes have been downloaded) and the total file size</h4>
+
 <p>The event e passed to the onprogress callback has two pertinent
 properties:</p>
 <ol type="1">
@@ -13330,18 +13439,20 @@ downloaded or uploaded by the browser, so far, and</p></li>
 <p>Combining these with a &lt;progress&gt; element, makes it very easy
 to render an animated <em>progress bar</em>. Here is a source code
 extract that does this for a download operation:</p>
-<h4>
-HTML
-</h4>
-<pre><code>&lt;progress id=&quot;downloadProgress&quot; value=0&gt;&lt;progress&gt;</code></pre>
-<h4>
-Script:
-</h4>
+
+<h4>HTML</h4>
+
+<pre><code>
+&lt;progress id=&quot;downloadProgress&quot; value=0&gt;&lt;progress&gt;
+</code></pre>
+
+<h4>Script:</h4>
+
 <details>
-<summary>
-JavaScript code!
-</summary>
-<pre><code>1.  // progress element
+  <summary>JavaScript code!</summary>
+
+<pre><code>
+1.  // progress element
 2.  var progress = document.querySelector(&#39;#downloadProgress&#39;);
 3.   
 4.  function downloadSoundFile(url) {
@@ -13354,8 +13465,11 @@ JavaScript code!
 11.     progress.max = e.total;
 12.   }
 13.   xhr.send();
-14. }</code></pre>
+14. }
+</code></pre>
+
 </details>
+
 <p><b>Explanations</b>: by setting the value and max attributes of
 the &lt;progress&gt; element with the current number of bytes downloaded
 by the browser and the total size of the file (<em>lines 10-11</em>),
@@ -13556,14 +13670,14 @@ need to upload (i.e., the file size).</p></li>
 
 <p><a href="https://jsbin.com/qedaja/edit?html,css,output" target="_blank" rel="noopener noreferrer">Try the
 example on JSBin</a>:</p>
-<h4>
-Code from this example (nearly the same as previous example’s code):
-</h4>
+
+<h4>Code from this example (nearly the same as previous example’s code):</h4>
+
 <details>
-<summary>
-HTML code!
-</summary>
-<pre><code>1.  &lt;!DOCTYPE html&gt;
+  <summary>HTML code!</summary>
+  
+<pre><code>
+1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.  &lt;head&gt;
 4.     &lt;meta charset=&quot;utf-8&quot; /&gt;
@@ -13603,22 +13717,23 @@ HTML code!
 37. };
 38. &lt;/script&gt;
 39. &lt;/body&gt;
-40. &lt;/html&gt;</code></pre>
+40. &lt;/html&gt;
+</code></pre>
+
 </details>
+
 <p>The only difference between these two worked-examples is
 the onprogress listener which updates the progress
 bar’s value and max attributes. </p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-2-4">
-3.2.4 Discussion and projects
-</h3>
+<h3 id="ch3-2-4">3.2.4 Discussion and projects</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>Here is the discussion forum for this part of the course. Please
 either post your comments/observations/questions or share your
 creations.</p>
-<h4>
-Suggested topics of discussion:
-</h4>
+
+<h4>Suggested topics of discussion:</h4>
+
 <ul>
 <li><p>Did you hear about <a href="https://davidwalsh.name/fetch" target="_blank" rel="noopener noreferrer">the
 Fetch API</a>? This APIs  is easier to use than XhR2, but monitoring
@@ -13760,11 +13875,15 @@ some elements are draggable by default, such
 as &lt;img&gt; elements.</p>
 <p>In order to detect a drag, add an event listener for
 the dragstart event:</p>
-<pre><code>1.  &lt;ol ondragstart=&quot;dragStartHandler(event)&quot;&gt;
+
+<pre><code>
+1.  &lt;ol ondragstart=&quot;dragStartHandler(event)&quot;&gt;
 2.    &lt;li draggable=&quot;true&quot; data-value=&quot;fruit-apple&quot;&gt;Apples&lt;/li&gt;
 3.    &lt;li draggable=&quot;true&quot; data-value=&quot;fruit-orange&quot;&gt;Oranges&lt;/li&gt;
 4.    &lt;li draggable=&quot;true&quot; data-value=&quot;fruit-pear&quot;&gt;Pears&lt;/li&gt;
-5.  &lt;/ol&gt;</code></pre>
+5.  &lt;/ol&gt;
+</code></pre>
+
 <p>In the above code, we made all of the &lt;li&gt; elements draggable,
 and we detect a dragstart event occurring to any item within the ordered
 list: &lt;ol ondragstart=“dragStarthandler(event)”&gt;.</p>
@@ -13815,22 +13934,21 @@ Screenshot:
 16.   &lt;/ol&gt;
 17.   &lt;p&gt;Drop your favorite fruits below:&lt;/p&gt;
 18. &lt;body&gt;
-19. &lt;html&gt;</code></pre>
+19. &lt;html&gt;
+</code></pre>
+
 </details>
 <p>In this script, the event handler will only display an alert showing
 the name of the target element that launched the event. </p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-3-3">
-3.3.3 Drop detection
-</h3>
+<h3 id="ch3-3-3">3.3.3 Drop detection</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>Let’s continue to develop the example. We show how to drag an element
 and detect a drop, receiving a value which corresponds to the dragged
 element. Then we change the page content accordingly.</p>
-<h4>
-Step #1: in the dragstart handler, copy a value in the drag and drop
-clipboard for later use
-</h4>
+
+<h4>Step #1: in the dragstart handler, copy a value in the drag and drop clipboard for later use</h4>
+
 <p>When a draggable &lt;li&gt; element is being dragged, in
 the dragstart handler <a
 href="https://html5doctor.com/html5-custom-data-attributes/" target="_blank" rel="noopener noreferrer">get the
@@ -13843,7 +13961,9 @@ name.</p>
 the &lt;li&gt; element that has been dragged, and
 event.target.dataset.value is the value of its data-value attribute (in
 our case “apples”, “oranges” or “pears”):</p>
-<pre><code>1. function dragStartHandler(event) {
+
+<pre><code>
+1. function dragStartHandler(event) {
 2.   console.log(&#39;dragstart event, target:
      &#39; + event.target.innerHTML);
 3.  
@@ -13851,32 +13971,36 @@ our case “apples”, “oranges” or “pears”):</p>
 5.   // data* attribute of the target,
 6.   // with a type &quot;Fruit&quot;.
 7.   event.dataTransfer.setData(&quot;Fruit&quot;, event.target.dataset.value);
-8. }</code></pre>
-<h4>
-Step #2: define a “drop zone”
-</h4>
+8. }
+</code></pre>
+
+<h4>Step #2: define a “drop zone”</h4>
+
 <p>Any visible HTML element may become a “drop zone”; if we attach an
 event listener for the drop event. Note that most of the time, as events
 may be propagated, we will also listen for dragover or dragend events
 and stop their propagation. More on this later…</p>
-<pre><code>1. &lt;div ondragover=&quot;return false&quot; ondrop=&quot;dropHandler(event);&quot;&gt;
+
+<pre><code>
+1. &lt;div ondragover=&quot;return false&quot; ondrop=&quot;dropHandler(event);&quot;&gt;
 2.   Drop your favorite fruits below:
 3.   &lt;ol id=&quot;droppedFruits&quot;&gt;&lt;/ol&gt;
-4. &lt;/div&gt;</code></pre>
+4. &lt;/div&gt;
+</code></pre>
+
 <p>Whenever the mouse is moving above a (any) drop zone, dragover events
 will fire. Accordingly, a large number of dragover events may need to be
 handled before the element is finally dropped. The ondragover handler is
 used to avoid propagating dragover events. This is done by returning
 the false value at <i>line 1</i>.</p>
-<h4>
-Step #3: write a drop handler, fetch content from the clipboard, and do
-something with it
-</h4>
+
+<h4>Step #3: write a drop handler, fetch content from the clipboard, and do something with it</h4>
+
 <details>
-<summary>
-Code extract!
-</summary>
-<pre><code>1. function dropHandler(event) {
+  <summary>Code extract!</summary>
+
+<pre><code>
+1. function dropHandler(event) {
 2.   console.log(&#39;drop event, target: &#39; + event.target.innerHTML);
 3.  
 4.   ...
@@ -13887,15 +14011,17 @@ Code extract!
 9.  
 10.  // do something with the data
 11.  ...
-12. }</code></pre>
+12. }
+</code></pre>
+
 </details>
+
 <p>Typically, in the drop handler, we need to acquire data about the
 element that has been dropped (we get this from the clipboard
 at <i>lines 6-8,</i> the data was copied there during step 1 in
 the dragstart handler).</p>
-<h4>
-Complete example
-</h4>
+
+<h4>Complete example</h4>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------- 172. drag 'n drop fruite (294) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -13992,11 +14118,12 @@ within the drop zone &lt;div&gt;.</p></li>
 <p>Notice that we use some CSS to set aside some screen-space for the
 drop zone (not presented in the source code above, but available in the
 online example):</p>
+
 <details>
-<summary>
-Code extract!
-</summary>
-<pre><code>1.  div {
+  <summary>Code extract!</summary>
+
+<pre><code>
+1.  div {
 2.     height: 150px;
 3.     width: 150px;
 4.     float: left;
@@ -14011,12 +14138,12 @@ Code extract!
 13. 
 14. li:hover {
 15.    border: 2px dashed #000;
-16. }</code></pre>
+16. }
+</code></pre>
+
 </details>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-3-4">
-3.3.4 A few words about data-* attributes
-</h3>
+<h3 id="ch3-3-4">3.3.4 A few words about data-* attributes</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>Microdata is a powerful way to add structured data into HTML code,
 but HTML5 has also added the possibility of adding arbitrary data to an
@@ -14065,22 +14192,25 @@ online at JsBin</a> example:</p>
 <p>In this example, when you click on the sentence that starts with
 “John Says”, the end of the sentence changes, and the values displayed
 are taken from data­-* attributes of the &lt;li&gt; element.</p>
-<h4>
-HTML code from the example:
-</h4>
-<pre><code>1.  &lt;li class=&quot;user&quot; data-name=&quot;John Resig&quot; data-city=&quot;Boston&quot;
+
+<h4>HTML code from the example:</h4>
+
+<pre><code>
+1.  &lt;li class=&quot;user&quot; data-name=&quot;John Resig&quot; data-city=&quot;Boston&quot;
 2.      data-lang=&quot;js&quot; data-food=&quot;Bacon&quot;&gt;
 3.  John says: &lt;span&gt;Hello, how are you?&lt;/span&gt;
-4.  &lt;/li&gt;</code></pre>
+4.  &lt;/li&gt;
+</code></pre>
+
 <p>We just defined four data attributes. </p>
-<h4>
-JavaScript code from the example:
-</h4>
+
+<h4>JavaScript code from the example:</h4>
+
 <details>
-<summary>
-JavaScript code extract!
-</summary>
-<pre><code>1.  &lt;script&gt;
+  <summary>JavaScript code extract!</summary>
+
+<pre><code>
+1.  &lt;script&gt;
 2.    var user = document.getElementsByTagName(&quot;li&quot;)[0];
 3.    var pos = 0, span = user.getElementsByTagName(&quot;span&quot;)[0];
 4.    var phrases = [
@@ -14099,8 +14229,11 @@ JavaScript code extract!
 17.     // could be replaces by old way..
 18.     // span.innerHTML = phrase.prefix + user.getAttribute(&quot;data-&quot; + phrase.name );
 19.   }, false);
-20. &lt;/script&gt;</code></pre>
+20. &lt;/script&gt;
+</code></pre>
+
 </details>
+
 <p>All data‐ attributes are accessed using the dataset property of the
 HTML element: in this example, user.dataset[phrase.name] is
 either user.dataset.city, user.dataset.food, or user.dataset.lang.</p>
@@ -14318,7 +14451,7 @@ display its full size in a new page, etc.)</p></li>
 process the drop (get the value from the clipboard, etc). It’s also
 necessary to reset the look of the drop zone to default.</p></li>
 </ul>
-<h4>
+
 <p>Complete example with visual feedback on draggable objects and the
 drop zone</p>
 <p>The following example shows how to use these events in a droppable
@@ -14328,11 +14461,12 @@ href="https://codepen.io/w3devcampus/pen/ojNLEL" target="_blank" rel="noopener n
 CodePen</a>:</p>
 <p>Complete source code (for clarity’s sake, we put the CSS and
 JavaScript into a single HTML page):</p>
+
 <details>
-<summary>
-Code extract!
-</summary>
-<pre><code>1.  &lt;!DOCTYPE html&gt;
+  <summary>Code extract!</summary>
+
+<pre><code>
+1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html&gt;
 3.  &lt;head&gt;
 4.    &lt;style&gt;
@@ -14428,16 +14562,15 @@ Code extract!
 94.       &lt;ol id=&quot;droppedFruits&quot;&gt;&lt;/ol&gt;
 95.     &lt;/div&gt;
 96. &lt;/body&gt;
-97. &lt;/html&gt;</code></pre>
+97. &lt;/html&gt;
+</code></pre>
+
 </details>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-3-6">
-3.3.6 The dropEffect property
-</h3>
+<h3 id="ch3-3-6">3.3.6 The dropEffect property</h3>
 <!------------------------------------------------------------------------------------------------>
-<h4>
-More feedback using the dropEffect property: changing the cursor’s shape
-</h4>
+<h4>More feedback using the dropEffect property: changing the cursor’s shape</h4>
+
 <p>It is possible to change the cursor’s shape during the drag process.
 The cursor will turn into a “copy”, “move” or “link” icon, depending on
 the semantic of your drag and drop, when you enter a drop zone during a
@@ -16520,17 +16653,20 @@ Request
 Every request represents one read or one write operation. Requests are
 always run within a transaction. The example below adds a customer to
 the object store named “customers”.</p>
-<pre><code>1.  // Use the transaction to add data...
+
+<pre><code>
+1.  // Use the transaction to add data...
 2.  var objectStore = transaction.objectStore(&quot;customers&quot;);
 3.  for (var i in customerData) {
 4.      var request = objectStore.add(customerData[i]);
 5.      request.onsuccess = function(event) {
 6.          // event.target.result == customerData[i].ssn
 7.  };
-8.  }</code></pre>
-<h4>
-Index
-</h4>
+8.  }
+</code></pre>
+
+<h4>Index</h4>
+
 <p>It is sometimes useful to retrieve <a
 href="https://www.w3.org/TR/IndexedDB/#dfn-record" target="_blank" rel="noopener noreferrer">records</a> from an
 object store through means other than their key.</p>
@@ -16996,8 +17132,12 @@ which object store the transaction will be associated, and specify an
 access mode .</p>
 <p>Source code example for creating a transaction associated with the
 object store named “customers”:</p>
-<pre><code>var transaction = db.transaction([&quot;customers&quot;], &quot;readwrite&quot;);
-  //or &quot;read&quot;...</code></pre>
+
+<pre><code>
+var transaction = db.transaction([&quot;customers&quot;], &quot;readwrite&quot;);
+  //or &quot;read&quot;...
+</code></pre>
+
 <p>Transactions, when created, must have a mode set that is
 either readonly, readwrite or versionchange (this last mode is only for
 creating a new database or for modifying its schemas: i.e. changing the
@@ -17350,9 +17490,13 @@ chaining the different operations using the “.” operator (getting a
 transaction from the db, opening the store, adding a new customer,
 etc.).</p>
 <p>Here is the short version:</p>
-<pre><code>var request = db.transaction([&quot;customers&quot;], &quot;readwrite&quot;)
+
+<pre><code>
+var request = db.transaction([&quot;customers&quot;], &quot;readwrite&quot;)
   .objectStore(&quot;customers&quot;)
-  .add(newCustomer);</code></pre>
+  .add(newCustomer);
+</code></pre>
+
 <p>The above code does not perform all the tests, but you may encounter
 such a way of coding (!).</p>
 <p>Also, note that it works if you try to insert empty data:</p>
@@ -17788,13 +17932,16 @@ object store and add them to an array, like this:</p>
 16.       alert(&quot;Got all customers: &quot; + customers);
 17.     }
 18.  }; // end of onsuccess
-19. } // end of listAllCustomersArray()</code></pre>
+19. } // end of listAllCustomersArray()
+</code></pre>
+
 </details>
+
 <p><a href="https://jsbin.com/bitoqa" target="_blank" rel="noopener noreferrer">You can try this version on
 JSBin</a>.</p>
-<h4>
-Getting data using an index
-</h4>
+
+<h4>Getting data using an index</h4>
+
 <p>Storing customer data using the ssn as a key is logical since
 the ssn uniquely identifies an individual. If you need to look up a
 customer by name, however, you’ll need to iterate over every ssn in the
@@ -17858,8 +18005,12 @@ the object store.</p>
 cursor</i>.</p>
 <p>When we work with indexes, we can open two different types of cursors
 on indexes:</p>
-<pre><code>A normal cursor which maps the index property to the object in the object store, or,
-A key cursor which maps the index property to the key used to store the object in the object store.</code></pre>
+
+<pre><code>
+A normal cursor which maps the index property to the object in the object store, or,
+A key cursor which maps the index property to the key used to store the object in the object store.
+</code></pre>
+
 <p>The differences are illustrated below.</p>
 <p>Normal cursor:</p>
 
@@ -18263,7 +18414,11 @@ type=“date”&gt; elements, for example.</p>
 documents</i>, that render as complex widgets: a better-looking
 calendar, an input text with vocal recognition, a nice chart, etc.</p>
 <p>Let’s start with an example! This code…:</p>
-<pre><code>&lt;x-gif src=&quot;https://i.imgur.com/iKXH4E2.gif&quot; ping-pong&gt;&lt;/x-gif&gt;</code></pre>
+
+<pre><code>
+&lt;x-gif src=&quot;https://i.imgur.com/iKXH4E2.gif&quot; ping-pong&gt;&lt;/x-gif&gt;
+</code></pre>
+
 <p>… renders an animated GIF, and it loops forever in ping-pong mode:
 the order of the animation is reversed when the last image is reached
 and again when the animation goes back to the first image.</p>
@@ -19572,19 +19727,21 @@ Workers on CanIUse</a> (not studied)</p></li>
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch4-3-2">4.3.2 Use cases</h3>
 <!------------------------------------------------------------------------------------------------>
-<h4>
-Use case #1: a “parent HTML5 page” creates workers from a script
-</h4>
+<h4>Use case #1: a “parent HTML5 page” creates workers from a script</h4>
+
 <p>The HTML5 Web Worker API provides the Worker JavaScript interface for
 loading and executing a script in the background, in a different thread
 from the UI. The following instruction  loads and creates a worker:</p>
-<pre><code>var worker = new Worker(&quot;worker0.js&quot;);</code></pre>
+
+<pre><code>
+var worker = new Worker(&quot;worker0.js&quot;);
+</code></pre>
+
 <p>More than one worker can be created/loaded by a parent page. This is
 parallel computing after all :-)</p>
-<h4>
-Use case #2: you manage a worker by communicating with it using
-“messages”
-</h4>
+
+<h4>Use case #2: you manage a worker by communicating with it using “messages”</h4>
+
 <p>Messages can be strings or objects, as long as they can be serialized
 in JSON format (this is the case for most JavaScript objects, and is
 handled by the Web Worker implementation of recent browser
@@ -19616,36 +19773,48 @@ from a worker using this method (code located in the JavaScript file of
 the worker):</li>
 </ol>
 </blockquote>
-<pre><code>1.  onmessage = function (event) {
+
+<pre><code>
+1.  onmessage = function (event) {
 2.     // do something with event.data
 3.    alert(&#39;received &#39; + event.data.firstName);
-4.  };</code></pre>
+4.  };
+</code></pre>
+
 <blockquote>
 <ol start="3" type="1">
 <li>The worker will then send messages back to the parent page (code
 located in the JavaScript file of the worker):</li>
 </ol>
 </blockquote>
-<pre><code>postMessage(&quot;Message from a worker !&quot;);</code></pre>
+
+<pre><code>
+postMessage(&quot;Message from a worker !&quot;);
+</code></pre>
+
 <blockquote>
 <ol start="4" type="1">
 <li>And the parent page can listen to messages from a worker like
 this:</li>
 </ol>
 </blockquote>
-<pre><code>worker.onmessage = function(event){
+
+<pre><code>
+worker.onmessage = function(event){
     // do something with event.data
-};</code></pre>
-<h4>
-Use case #3: a complete example
-</h4>
+};
+</code></pre>
+
+<h4>Use case #3: a complete example</h4>
+
 <p>The “Parent HTML page” of a simplistic example using a dedicated Web
 Worker:</p>
+
 <details>
-<summary>
-HTML code!
-</summary>
-<pre><code>1.  &lt;!DOCTYPE HTML&gt;
+  <summary>HTML code!</summary>
+
+<pre><code>
+1.  &lt;!DOCTYPE HTML&gt;
 2.  &lt;html&gt;
 3.  &lt;head&gt;
 4.    &lt;title&gt;Worker example: One-core computation&lt;/title&gt;
@@ -19666,14 +19835,18 @@ HTML code!
 19.     worker.postMessage(&quot;start&quot;);
 20.   &lt;/script&gt;
 21. &lt;/body&gt;
-22. &lt;/html&gt;</code></pre>
+22. &lt;/html&gt;
+</code></pre>
+
 </details>
+
 <p>The JavaScript code of the worker (worker0.js):</p>
+
 <details>
-<summary>
-JavaScript source code!
-</summary>
-<pre><code>1.  onmessage = function(e){
+  <summary>JavaScript source code!</summary>
+
+<pre><code>
+1.  onmessage = function(e){
 2.     if ( e.data === &quot;start&quot; ) {
 3.        // Do some computation that can last a few seconds...
 4.        // alert the creator of the thread that the job is finished
@@ -19684,18 +19857,21 @@ JavaScript source code!
 9.  function done(){
 10.     // Send back the results to the parent page
 11.     postMessage(&quot;done&quot;);
-12. }</code></pre>
+12. }
+</code></pre>
+
 </details>
-<h4>
-Use case #4: handling errors
-</h4>
+
+<h4>Use case #4: handling errors</h4>
+
 <p>The parent page can handle errors that may occur inside its workers,
 by listening for an onError event from a worker object:</p>
+
 <details>
-<summary>
-JavaScript source code!
-</summary>
-<pre><code>1.  var worker = new Worker(&#39;worker.js&#39;);
+  <summary>JavaScript source code!</summary>
+
+<pre><code>
+1.  var worker = new Worker(&#39;worker.js&#39;);
 2.  worker.onmessage = function (event) {
 3.      // do something with event.data
 4.  };
@@ -19703,23 +19879,23 @@ JavaScript source code!
 6.  worker.onerror = function (event) {
 7.      console.log(event.message, event);
 8.  };
-9.  }</code></pre>
+9.  }
+</code></pre>
+
 </details>
+
 <p>See also the section “how to debug Web Workers” on next page.</p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch4-3-3">
-4.3.3 Examples
-</h3>
+<h3 id="ch4-3-3">4.3.3 Examples</h3>
 <!------------------------------------------------------------------------------------------------>
 <p><i>Dedicated Workers</i> are the simplest kind of Workers. Once
 created, they remain linked to their <i>parent page</i> (the HTML5 page
 that created them). An implicit “communication channel” is opened
 between the Workers and the parent page, so that messages can be
 exchanged.</p>
-<h4>
-Example #1: compute prime numbers in the background while keeping the
-page user interface responsive
-</h4>
+
+<h4>Example #1: compute prime numbers in the background while keeping the page user interface responsive</h4>
+
 <p>Let’s look at <a href="https://www.w3.org/TR/workers/#examples" target="_blank" rel="noopener noreferrer">the
 first example, taken from the W3C specification</a>: “<i>The simplest
 use of workers is for performing a computationally expensive task
@@ -19778,14 +19954,14 @@ worker</p></li>
 <p>Workers can only communicate with their parent page using messages.
 See the code of the worker below to see how the message has been
 sent.</p>
-<h4>
-The code of the worker (worker.js):
-</h4>
+
+<h4>The code of the worker (worker.js):</h4>
+
 <details>
-<summary>
-JavaScript source code!
-</summary>
-<pre><code>1.  var n = 1;
+  <summary>JavaScript source code!</summary>
+
+<pre><code>
+1.  var n = 1;
 2.  search: while (true) {
 3.      n += 1;
 4.      for (var i = 2; i &lt;= Math.sqrt(n); i += 1)
@@ -19793,8 +19969,11 @@ JavaScript source code!
 6.      continue search;
 7.      // found a prime!
 8.     &lt;b&gt; postMessage(n);
-9.  }</code></pre>
+9.  }
+</code></pre>
+
 </details>
+
 <p>There are a few interesting things to note here:</p>
 <ol type="1">
 <li><p>There is an infinite loop in the code at <i>line 2</i> (while
@@ -19929,7 +20108,8 @@ worker.</p>
 <details>
   <summary>HTML code!</summary>
 
-<pre><code>1.  &lt;!DOCTYPE HTML/image0&gt;
+<pre><code>
+1.  &lt;!DOCTYPE HTML/image0&gt;
 2.  &lt;html&gt;
 3.  &lt;head&gt;
 4.  &lt;title&gt;Worker example: One-core computation&lt;/title&gt;
