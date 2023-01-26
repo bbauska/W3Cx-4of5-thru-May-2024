@@ -4759,7 +4759,7 @@ Any fancy visualizations that dance with the music (e.g. waveforms
 and frequencies).
 </li>
 </ul>
-<p>
+
 <p>The Web Audio API fulfills such missing parts, and much more.</p>
 <p>In this course, we do not cover the
 whole <a href="https://webaudio.github.io/web-audio-api/" target="_blank" rel="noopener noreferrer">Web Audio API
@@ -4769,9 +4769,8 @@ audio or video), and on parts that are useful for games (i.e. parts that
 work with small sound samples loaded in memory). There is the API that
 specializes in music synthesis and scheduling notes, that we will not
 study oin this course.</p>
-Here’s a screenshot from one example we will study: an audio player with
-animated waveform and volume meters that ‘dance’ with the music:
-</p>
+<p>Here’s a screenshot from one example we will study: an audio player with
+animated waveform and volume meters that ‘dance’ with the music:</p>
 <!------------------------------------------------------------------------------------------------>
 <!----------------------- 49. audio player with animated wave forms (94) ------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -4801,7 +4800,7 @@ are not studied in this course.</p>
 currentTime (in seconds, from the start of AudioContext creation),
 destination, and the methods for creating each of the various audio
 nodes.</p>
-The easiest way to understand this principle is to look
+<p>The easiest way to understand this principle is to look
 <b><a href="https://jsbin.com/gaduqojeke/edit?html,js" target="_blank" rel="noopener noreferrer">at a first
 example at JSBin</a>.</b>
 </p>
@@ -4850,13 +4849,12 @@ values.</p>
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------------- 52. web audio 'editor' (96) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image052.jpeg" 
-  style="width:5in;height:2.34989in"
+<img class="displayed"
+  src="./images/image052.jpeg?raw=true"
   alt="WebAudio 'editor' tab." />
-</p>
-<p>Note that JSBin examples should be opened in standalone mode (not in
-editor mode).</p>
+  style="width:50%;" />
+
+<p>Note that JSBin examples should be opened in standalone mode (not in editor mode).</p>
 <!------------------------------------------------------------------------------------------------>
 <!---------------------------------- 53. standalone mode (97) ------------------------------------>
 <!------------------------------------------------------------------------------------------------>
@@ -4941,6 +4939,7 @@ above example)</p>
 36. }
 37.  
 </code></pre>
+
 </details>
 
 <h4>Explanations:</h4>
@@ -5173,8 +5172,8 @@ input and one output.”</p>
 <p><a href="https://jsbin.com/tuvaxar/edit?html,js,output" target="_blank" rel="noopener noreferrer">Example at
 JSBin</a>, or try it in your browser, with a lowpass filter, only the
 frequency slider will have a noticeable effect:</p>
-<p>Frequency  Detune  Q  Type        <img
-src="./images/image058.wmf" /></p>
+<p>Frequency  Detune  Q  Type        
+<img src="./images/image058.wmf" alt="" /></p>
 <p>The most useful slider is the frequency slider (that changes
 the frequency value property of the node). The meaning of the
 different properties (frequency, detune and Q) differs depending on
@@ -5675,7 +5674,7 @@ with the Chrome WebAudio Inspector extension):</p>
 
 <p>Example #2: equalizer with a &lt;video&gt; element</p>
 <p>We cloned the previous example and simply changed
-the &lt;audio&gt;…</audio> part of the HTML code by:</p>
+the &lt;audio&gt;…&lt;/audio&gt; part of the HTML code by:</p>
 
 <pre><code>
 &lt;video id=&quot;player&quot; width=&quot;320&quot; height=&quot;240&quot; controls crossOrigin=&quot;anonymous&quot;&gt;
@@ -8045,7 +8044,7 @@ probably be abandoned in the future). Mixing ‘visual layer’ (HTML) and
 ‘logic layer’ (JavaScript) in one place is really bad practice and
 causes a host of problems during development.</p>
 
-<h4><p>Method #2: attach an event handler to an HTML element in JavaScript</p>
+<h4>Method #2: attach an event handler to an HTML element in JavaScript</h4>
 
 <pre><code>
 document.getElementById(&#39;someDiv&#39;).onclick = function() {
@@ -8056,9 +8055,7 @@ document.getElementById(&#39;someDiv&#39;).onclick = function() {
 <p>This method is fine, but  you will not be able to attach
 multiple <i>listener</i> functions. If you need to do this, use the
 version shown below.</p>
-<h4>
-<p>Method #3: register a callback to the event listener with the
-addEventListener method (preferred  method)</p>
+<h4>Method #3: register a callback to the event listener with the addEventListener method (preferred  method)</h4>
 
 <pre><code>
 document.getElementById(&#39;someDiv&#39;).addEventListener(&#39;click&#39;, function() {
@@ -8103,9 +8100,7 @@ development - at the code level, through to the management of staff.
 It’s not part of the course, but professionals may find the following
 references useful:</p>
 <ul>
-<li><a
-href="https://en.wikipedia.org/wiki/Separation_of_concerns" target="_blank" rel="noopener noreferrer">Separation
-of concerns - Wikipedia, the free encyclopedia</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Separation_of_concerns" target="_blank" rel="noopener noreferrer">Separation of concerns - Wikipedia, the free encyclopedia</a></li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch2-3-4">2.3.4 Adding key listeners</h3>
@@ -9251,7 +9246,7 @@ left.</p>
 <p>Take time to look at the code, read slowly the explanation in the
 page and I will meet you in the next video in which we will add enemies
 and obstacles and detect collisions.</p>
-<h4>
+
 <p>Make the monster move using the arrow keys, and to increase its speed
 by pressing a mouse button</p>
 <p>To conclude this topic about events, we will use the arrow keys to
@@ -9357,26 +9352,13 @@ the updateMonsterPosition() function:</p>
 <h4>Explanations:</h4>
 
 <ul>
-<li><p>In this function, we added two properties to
-the monster object: speedX and speedY which will correspond to the
-number of pixels we will add to the x and y position of the monster at
-each new frame of animation.</p></li>
-<li><p>We first set these to zero (<i>line 2</i>), then depending on the
-keyboard input states, we set them to a value equal
-to monster.speed or -monster.speed modified by the keys that are being
-pressed at the time (<i>lines 4-20</i>).</p></li>
-<li><p>Finally, we add speedX and speedY pixels to
-the x and/or y position of the monster (<i>lines 36 and
-37</i>).</p></li>
-<li><p>When the function is called by the game loop,
-if speedX and/or speedY are non-zero they will change
-the x and y position of the monster in successive frames, making it move
-smoothly.</p></li>
-<li><p>If a mouse button is pressed or released we set
-the monster.speed value to +5 or to +1. This will make the monster move
-faster when a mouse button is down, and return to its normal speed when
-no button is down.</p></li>
+  <li><p>In this function, we added two properties to the monster object: speedX and speedY which will correspond to the number of pixels we will add to the x and y position of the monster at each new frame of animation.</p></li>
+  <li><p>We first set these to zero (<i>line 2</i>), then depending on the keyboard input states, we set them to a value equal to monster.speed or -monster.speed modified by the keys that are being pressed at the time (<i>lines 4-20</i>).</p></li>
+  <li><p>Finally, we add speedX and speedY pixels to the x and/or y position of the monster (<i>lines 36 and 37</i>).</p></li>
+  <li><p>When the function is called by the game loop, if speedX and/or speedY are non-zero they will change the x and y position of the monster in successive frames, making it move smoothly.</p></li>
+  <li><p>If a mouse button is pressed or released we set the monster.speed value to +5 or to +1. This will make the monster move faster when a mouse button is down, and return to its normal speed when no button is down.</p></li>
 </ul>
+
 <p>Notice that two arrow keys and a mouse button can be pressed down at
 the same time. In this situation, the monster will take a diagonal
 direction and accelerate. This is why it is important to keep all the
@@ -13812,6 +13794,7 @@ the dragstart event:</p>
 <p>In the above code, we made all of the &lt;li&gt; elements draggable,
 and we detect a dragstart event occurring to any item within the ordered
 list: &lt;ol ondragstart=“dragStarthandler(event)”&gt;.</p>
+
 <blockquote>
 <p>When you put an ondragstart handler on an element, each of its
 draggable children could fire the event! It’s a sort of “inheritance of
@@ -13819,13 +13802,13 @@ handlers”… In the above example, the handler is declared at
 the &lt;ol&gt; level, so any subordinate &lt;li&gt; element will fire
 the event.</p>
 </blockquote>
+
 <p>Try the following interactive example in your browser (just click and
 drag one of the list items) or <a
 href="https://codepen.io/w3devcampus/pen/MaWKZb" target="_blank" rel="noopener noreferrer">play with it at
 CodePen</a>.</p>
-<h4>
-Screenshot:
-</h4>
+
+<h4>Screenshot:</h4>
 <!------------------------------------------------------------------------------------------------>
 <!--------------------------- 171. drag and drop list example (292) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
