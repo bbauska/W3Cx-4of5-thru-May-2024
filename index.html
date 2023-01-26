@@ -19,6 +19,12 @@
 	  margin-left: 3em; }
 	p.em4 {
 	  margin-left: 4em; }
+  img.twoby {
+    margin-left: 30px;
+	margin-right: 60px;
+	margin-top: 40px;
+	margin-bottom: 50px
+}
 
   background: linear-gradient(60deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%);
   
@@ -2329,7 +2335,7 @@ TextTrack object has different properties and the most important one is
 called cues. The cues is the list of every cue inside the VTT file, and
 each cue corresponds to a time segment, has an id and a text
 content.</p>
-<p>If you do <em>track.cues</em>, you’ve got the list of the cues and
+<p>If you do <i>track.cues</em>, you’ve got the list of the cues and
 you can iterate on them.</p>
 <p>For each cue, we are going to get its id: cue.id here. It corresponds
 to the id of the cue number i. In my example, I have got an index in the
@@ -2342,7 +2348,7 @@ content here, we are going to display on the side of the video a
 clickable transcript. And when we will click on it, the video will jump
 to the corresponding position. This is exactly what the edX video player
 does, the one you are watching at right now.</p>
-<p>A <em>TextTrack object</em> has different properties and methods;</p>
+<p>A <i>TextTrack object</i> has different properties and methods;</p>
 <ul>
 <li><p>kind: equivalent to the kind attribute of HTML track elements.
 Its value is either “subtitles”, “caption”, “descriptions”, “chapters”,
@@ -2370,7 +2376,7 @@ time.</p></li>
 by all browsers - a polyfill is given in the examples from the next
 lessons).</p></li>
 </ul>
-<p>A <em>TextTrackCueList</em> is a collection of cues, each of
+<p>A <i>TextTrackCueList</i> is a collection of cues, each of
 which has different properties and methods;</p>
 <ul>
 <li><p>id: the cue id as written in the line that starts cues in the
@@ -2405,7 +2411,7 @@ an example at JSBin that displays the content of a track</a>:</p>
   alt="Example video editor that plays content of a track."
   style="width:45%;" />
 
-<p>We just changed the content of the <em>readContent(track)</em> method
+<p>We just changed the content of the <i>readContent(track)</em> method
 from the example in the previous lesson:</p>
 
 <details>
@@ -8769,8 +8775,8 @@ except Internet Explorer - see the <a
 href="https://caniuse.com/#feat=gamepad" target="_blank" rel="noopener noreferrer">up to date version of this
 feature’s compatibility table</a>. Note that the API is still a draft and
 may change in the future. We recommend using a Wired Xbox 360 Controller
-or a PS2 controller, both of which should work <em>out of the
-box</em> on Windows XP, Windows Vista, Windows, and Linux desktop
+or a PS2 controller, both of which should work <i>out of the
+box</i> on Windows XP, Windows Vista, Windows, and Linux desktop
 distributions. Wireless controllers are supposed to work too, but we
 haven’t tested the API with them. You may find someone who has managed
 but they’ve probably needed to install an operating system driver to
@@ -9304,7 +9310,7 @@ we will look at a far better solution - <i>“time based animation”
 the updateMonsterPosition() function:</p>
 
 <details>
-  <summary>Code extract!</h4>
+  <summary>Code extract!</summary>
 
 <pre><code>
 1.  function updateMonsterPosition() {
@@ -9526,7 +9532,7 @@ will walk on the screen in a 60 fps animation, but his posture will not
 change every 1/60th of second.</p></li>
 <li><p><b>You may also want to accurately set the framerate</b>, leaving
 some CPU time for other tasks. Many games consoles limit
-the <em>frame-rate</em> to 1/30th of a second, in order to allow time
+the <i>frame-rate</i> to 1/30th of a second, in order to allow time
 for other sorts of computations (physics engine, artificial
 intelligence, etc.)</p></li>
 </ul>
@@ -9554,7 +9560,7 @@ frame-rate at 60 fps, meaning that the ideal time between frames will be
 JSBin</a></p>
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 115.  (##) ----------------------->
+<!---------------- 115. small rectangle in a canvas, moving left to right (199) ------------------>
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image115.jpeg?raw=true"
@@ -9668,7 +9674,7 @@ constant speed on screen, even when the frame rate changes.</p>
 
 <p>Method #1: using the JavaScript Date object</p>
 <p>Let’s modify the example from the previous lesson slightly by adding
-a <em>time-based animation</em>.  Here we use the “standard JavaScript”
+a <i>time-based animation</em>.  Here we use the “standard JavaScript”
 way for measuring time, using JavaScript’s Date object:</p>
 
 <pre><code>
@@ -9696,7 +9702,7 @@ need to move the shape to achieve a given speed (in pixels/s).</p>
 JSBin</a>:</p>
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- xx.  (##) ----------------------->
+<!-------------------- 116. bouncing square with time bases animation (202) ---------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image116.jpeg?raw=true"
@@ -9802,9 +9808,9 @@ JSBin</a>:</p>
 
 <p>In this example, we only added a few lines of code for measuring the
 time and computing the time elapsed between two consecutive frames
-(see <em>line 38</em>). Normally, requestAnimationFrame(callback) tries
+(see <i>line 38</em>). Normally, requestAnimationFrame(callback) tries
 to call the callback function every 16.66 ms (this corresponds to 60
-frames/s)… <em>but this is never exactly the case</em>. If you do
+frames/s)… <i>but this is never exactly the case</em>. If you do
 a console.log(delta)in the animation loop, you will see that even on a
 very powerful computer, the delta is “very close” to 16.6666 ms, but 99%
 of the time it will be slightly different.</p>
@@ -9814,7 +9820,7 @@ of the time it will be slightly different.</p>
 href="https://jsbin.com/jeribi" target="_blank" rel="noopener noreferrer">link</a> to run the JSBin example in
 stand-alone mode. Normally you should see no difference in speed, but it
 may look a bit jerky on a low-end smartphone or on a slow
-computer. <em>This is the correct behavior.</em></p>
+computer. <i>This is the correct behavior.</em></p>
 <p>Or you can try the next example that simulates a complex animation
 loop that takes a long time to draw each frame…</p>
 
@@ -9904,12 +9910,10 @@ monotonically increasing, so the difference between two calls will never
 be negative.</em>”</p>
 <p>To sum up:</p>
 <ul>
-<li><p>performance.now() returns the time since the load of the document
-(it is called a DOMHighResTimeStamp), with a sub mill-second accuracy,
-as a floating point value, with very high accuracy.</p></li>
-<li><p>Date.now() returns the number of mill-seconds since the Unix
-epoch, as an integer value.</p></li>
+  <li><p>performance.now() returns the time since the load of the document (it is called a DOMHighResTimeStamp), with a sub mill-second accuracy, as a floating point value, with very high accuracy.</p></li>
+  <li><p>Date.now() returns the number of mill-seconds since the Unix epoch, as an integer value.</p></li>
 </ul>
+
 <p>Support for this API is quite good - see the compatibility table <a
 href="https://caniuse.com/#feat=high-resolution-time" target="_blank" rel="noopener noreferrer">online</a>.</p>
 <p>Here is <a href="https://jsbin.com/wecaho/edit" target="_blank" rel="noopener noreferrer">a version on JSBin of
@@ -10089,25 +10093,23 @@ We can set a global variable that corresponds to the desired frame rate
 and compare the elapsed time between two executions of the animation
 loop:</p>
 <ul>
-<li><p>If the time elapsed is too short for the target frame rate: do
-nothing,</p></li>
-<li><p>If the time elapsed exceeds the delay corresponding to the chosen
-frame rate: draw the frame and reset this time to zero.</p></li>
+  <li><p>If the time elapsed is too short for the target frame rate: do nothing,</p></li>
+  <li><p>If the time elapsed exceeds the delay corresponding to the chosen frame rate: draw the frame and reset this time to zero.</p></li>
 </ul>
 <p>Here is the <a href="https://jsbin.com/bonutur/edit" target="_blank" rel="noopener noreferrer">online example
 at JSBin</a>.</p>
-<p><b>Try to change the parameter value of the call to: </b></p>
+<p><b>Try to change the parameter value of the call to:</b></p>
 
 <pre><code>
 &lt;sup&gt;setFrameRateInFramesPerSecond(5); // try other values!&lt;/sup&gt;
 </code></pre>
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 117.  (##) ----------------------->
+<!------------------------ 117. change parameter value of the call (210) ------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image117.png?raw=true"
-  alt="."
+  alt="Change parameter value of the call."
   style="width:40%;" />
   
 <p><b>Source code of the example:</b></p>
@@ -10365,7 +10367,7 @@ pixels/s and we use time-based animation. Try it and verify the
 smoothness of the animation; the FPS counter on a Mac Book Pro core i7
 shows 60 fps.</p>
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 118.  (##) ----------------------->
+<!------------------- 118. screenshot of the monster moving at 60 f/s (216) ---------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image118.jpeg?raw=true"
@@ -10381,11 +10383,11 @@ excepting that it’s not as smooth as in the previous version, which ran
 at 60 fps.</p>
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 119.  (##) ----------------------->
+<!--------------------- 119. screenshot of example that runs at 37 f/s (217) --------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image119.jpeg?raw=true"
-  alt="screenshot of example that runs at 37 f/s."
+  alt="Screenshot of example that runs at 37 f/s."
   style="width:30%;" />
 
 <p>Here are the parts we changed:</p>
@@ -10514,21 +10516,21 @@ the player but also other objects on the screen.</p>
 <p>Let’s study a simple example: animating a few balls and detecting
 collisions with the surrounding walls. For the sake of simplicity, we
 will not use time-based animation in the first examples.</p>
-<h4>
-Animating multiple balls which bounce off horizontal and vertical walls
-</h4>
+
+<h4>Animating multiple balls which bounce off horizontal and vertical walls</h4>
+
 <p><a href="https://jsbin.com/fikomik/edit?js,output" target="_blank" rel="noopener noreferrer">Online example at
 JSBin</a>:</p>
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 120.  (##) ----------------------->
+<!---------------- 120. balls bounce against vertical & horizontal borders (220) ----------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image120.jpeg?raw=true"
   alt="Some circular balls that bounce agains vertical and horizontal borders of the canvas."
   style="width:35%;" />
 
-<p>In this example, we define <em>a constructor function</em> for
+<p>In this example, we define <i>a constructor function</i> for
 creating balls. This is a way to design JavaScript “pseudo classes” as
 found in other object-oriented languages like Java, C# etc. It’s useful
 when you plan to create many objects of the same class. Using this we
@@ -10797,7 +10799,7 @@ speed, radius, etc. Also, try changing the monster’s default speed. See
 the results.</p>
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 121.  (##) ----------------------->
+<!------------------------ 121. monster + balls in game framework (225) -------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image121.jpeg?raw=true"
@@ -10899,27 +10901,28 @@ sketches of more complex algorithms.</p>
 <h4>Circle collision test</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 122.  (##) ----------------------->
+<!--------------- 122. two circles with distances between the centers drawn (227) ---------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image122.png?raw=true"
-  alt="two circles with distances between the centers drawn."
+  alt="Two circles with distances between the centers drawn."
   style="width:30%;" />
 
 <p>Collision between circles is easy. Imagine there are two circles:</p>
+
 <ol type="1">
-<li><p>Circle c1 with center (x1,y1) and radius r1;</p></li>
-<li><p>Circle c2 with center (x2,y2) and radius r2.</p></li>
+  <li><p>Circle c1 with center (x1,y1) and radius r1;</p></li>
+  <li><p>Circle c2 with center (x2,y2) and radius r2.</p></li>
 </ol>
+
 <p>Imagine there is a line running between those two center points. The
 distances from the center points to the edge of each circle is, by
 definition, equal to their respective radii. So:</p>
+
 <ul>
-<li><p>if the edges of the circles touch, the distance between the
-centers is r1+r2;</p></li>
-<li><p>any greater distance and the circles don’t touch or
-collide; whereas</p></li>
-<li><p>any less and they do collide or overlay.</p></li>
+  <li><p>if the edges of the circles touch, the distance between the centers is r1+r2;</p></li>
+  <li><p>any greater distance and the circles don’t touch or collide; whereas</p></li>
+  <li><p>any less and they do collide or overlay.</p></li>
 </ul>
 
 <blockquote>
@@ -10975,11 +10978,11 @@ move “the player”: a small circle. Try to make collisions between the
 monster and the circle you control.</p>
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 123.  (##) ----------------------->
+<!----------------------------- 123. monster and small circle (228) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image123.jpeg?raw=true"
-  alt="monster and small circle: collision, they are drawn in red and a &quot;collision&quot; message appears."
+  alt="Monster and small circle: collision, they are drawn in red and a &quot;collision&quot; message appears."
   style="width:40%;" />
 
 <p>This online example uses the game framework (without time-based
@@ -11073,23 +11076,29 @@ hierarchy of bounding circles. First, test against the “big one” on the
 left that contains the whole arm, then if there is a collision, test for
 the two sub-circles, etc… this recursive algorithm will not be covered
 in this course, but it’s a classic optimization.</p>
-<p><img src="./images/image124.png" style="width:4in;height:2.20258in"
-alt="Image of an arm with a hierarchy of bounding circles: one for the whole arm, and two smaller for the forearm and the other part" /></p>
+
+<!------------------------------------------------------------------------------------------------>
+<!---------------------- 124. 3d objct (lamp) with bounding spheres (230) ------------------------>
+<!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image124.png?raw=true"
+  alt="Image of an arm with a hierarchy of bounding circles: one for the whole arm, and two smaller for the forearm and the other part."
+  style="width:40%;" />
+
 <p>In 3D, you can use spheres instead of circles:</p>
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 125.  (##) ----------------------->
+<!---------------------- 125. 3d object (lamp) with bounding spheres (231) ----------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image125.png?raw=true"
   alt="A 3D object (a lamp) with bounding spheres."
   style="width:40%;" />
 
-<p>The famous game Gran Turismo 4 on the PlayStation 2 uses bounding
-spheres for detecting collisions between cars:</p>
+<p>The famous game Gran Turismo 4 on the PlayStation 2 uses bounding spheres for detecting collisions between cars:</p>
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 126.  (##) ----------------------->
+<!-------------- 126. gran turismo 4 on playstation 2 detecting collisions (231) ----------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image126.png?raw=true"
@@ -11101,7 +11110,7 @@ spheres for detecting collisions between cars:</p>
 <p>Let’s look at a simple illustration:</p>
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 127.  (##) ----------------------->
+<!------------------- 127. simple illustration rectangle detection test (231) -------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image127.jpeg?raw=true"
@@ -11115,16 +11124,12 @@ horizontal and vertical axis of the rectangles over the X and Y axis. If
 both projections overlap, there is a collision!</p>
 </blockquote>
 
-<h4>
-<a href="https://silentmatt.com/rectangle-intersection/" target="_blank" rel="noopener noreferrer">&lt;span
-id=“_Toc98696616” class=“anchor”&gt;&lt;/span&gt;Try this online
-demonstration of rectangle - rectangle detection</a>
-</h4>
+<h4><a href="https://silentmatt.com/rectangle-intersection/" target="_blank" rel="noopener noreferrer"><span id=“_Toc98696616” class=“anchor”</span>Try this online demonstration of rectangle - rectangle detection</a></h4>
+
 <p>1 - Only horizontal axis projections overlap: no collision between rectangles</p>
 
-
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 128.  (##) ----------------------->
+<!-------------------- 128. only horizontal axis overlap: no collision (232) --------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image128.jpeg?raw=true"
@@ -11134,7 +11139,7 @@ demonstration of rectangle - rectangle detection</a>
 <p>2 - Only vertical axis projections overlap: no collision between rectangles</p>
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 129.  (##) ----------------------->
+<!--------------- 129. only vertical axis projections overlap: no collision (233) ---------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image129.jpeg?raw=true"
@@ -11144,11 +11149,11 @@ demonstration of rectangle - rectangle detection</a>
 <p>3 - Horizontal and vertical axis projections overlap: collision detected!</p>
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 130.  (##) ----------------------->
+<!--------------- 130. the projections of axis overlap: collision detected (233) ----------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image130.jpeg?raw=true"
-  alt="the projections of axis overlap: collision detected."
+  alt="The projections of axis overlap: collision detected."
   style="width:30%;" />
 
 <p>Here is a JavaScript implementation of a rectangle - rectangle (aligned) collision test:</p>
@@ -11178,20 +11183,21 @@ the collision detection is more accurate and can work with elongated
 shapes.</p>
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 131.  (##) ----------------------->
+<!------------------------------ 131. no collision detected (234) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
+  style-"float: left; margin-right: 5%; margin-bottom: 5%;"
   src="./images/image131.jpeg?raw=true"
   alt="Player as a square is inside the monster bounding circle but not inside the bounding rectangle, as we use rect rect collision test: no collision detected."
   style="width:20%;" />
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 132.  (##) ----------------------->
+<!------------------------------- 132. collision detected (234) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image132.jpeg?raw=true"
-alt="Same as previous picture but this time the player square is inside the monster bounding rectangle: collision detected."
-  style="width:30%;" />
+  alt="Same as previous picture but this time the player square is inside the monster bounding rectangle: collision detected."
+  style="width:20%;" />
 
 <p>Here is what we modified (in bold) in the code:</p>
 
@@ -11293,19 +11299,19 @@ alt="Same as previous picture but this time the player square is inside the mons
 <h4>Many real games use aligned rectangle collision tests</h4>
 
 <p>Testing “circle-circle” or “rectangle-rectangle collisions
-is <em>cheap</em> in terms of computation.”Rectangle-rectangle”
+is <i>cheap</i> in terms of computation.”Rectangle-rectangle”
 collisions are used in many 2D games, such as Dodonpachi (one of the
 most famous and enjoyable shoot’em’ups ever made - you can play it using
 the MAME arcade game emulator):</p>
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 133.  (##) ----------------------->
+<!----------------------------- 133. screenshot of dodonpachi (236) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image133.jpeg?raw=true"
-  alt="screenshot of dodonpachi."
+  alt="Screenshot of dodonpachi."
   style="width:50%;" />
-<p><img src="./images/image133.jpeg" style="width:5in;height:3.13408in"
+
 <p>You could also try the free Genetos shoot’em up game (Windows
 only) that retraces the history of the genre over its different levels
 (<a href="https://tatsuya-koyama.com/works/games/genetos/" target="_blank" rel="noopener noreferrer">download
@@ -11313,7 +11319,7 @@ here</a>). Press the G key to see the bounding rectangles used for
 collision test. Here is a screenshot:</p>
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 134.  (##) ----------------------->
+<!-------------------------------- 134. genetos screenshot (236) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image134.jpeg?raw=true"
@@ -11370,14 +11376,14 @@ Thread at StackOverflow</a>):</p>
 function in this example on JSBin</a>.</p>
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 135.  (##) ----------------------->
+<!---------------------- 135. circle and rectangle not in collision (237) ------------------------>
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image135.jpeg?raw=true"
   alt="Circle and rectangle not in collision."
   style="width:20%;" />
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 136.  (##) ----------------------->
+<!------------------------- 136. circle collides with a rectangle (237) -------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image136.jpeg?raw=true"
@@ -11398,7 +11404,7 @@ with a blurring effect</a></p></li>
 </ul>
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 137. ball-ball collision example (##) ----------------------->
+<!--------------------------- 137. ball-ball collision example (238) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image137.jpeg?raw=true"
@@ -11422,7 +11428,7 @@ then finally recombine the velocities for each ball to achieve the
 result (step 4):</p>
 
 <!------------------------------------------------------------------------------------------------>
-<!--------- 138. diagram with two balls, velocities, tengiantial and normal planes  (##) --------->
+<!-------- 138. diagram with two balls, velocities, tengiantial and normal planes  (239) --------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image138.png?raw=true"
@@ -11461,9 +11467,8 @@ the ball color to red.</p>
 <p><a href="https://jsbin.com/bohebe/edit?js,output" target="_blank" rel="noopener noreferrer">Try the example at
 JsBin!</a></p>
 
-
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 139. collision between balls and the monster  (##) ----------------------->
+<!--------------------- 139. collision between balls and the monster (240) ----------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image139.jpeg?raw=true"
@@ -11513,11 +11518,11 @@ function, and the circRectsOverlap function!</p>
 “sprites”. This technique uses components from a collection of animation
 frames. By drawing different component images, rapidly,
 one-after-the-other, we obtain an animation effect.</p>
-<p>Here is an example of a <em>spritesheet</em>, where each
+<p>Here is an example of a <i>spritesheet</em>, where each
 line animates a woman walking in a particular direction:</p>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------- 140. sprite sheet of a woman walking, with different postures ---------------->
+<!-------------- 140. sprite sheet of a woman walking, with different postures (241) ------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image140.png?raw=true"
@@ -11540,7 +11545,7 @@ dirty example to try at JSBin</a> working with the above sprite sheet.
 changing the scale of the sprite as the woman moves up (further from us)
 or down (closer to us).</p>
 <!------------------------------------------------------------------------------------------------>
-<!--------------------------- 141. animated woman using sprite (xxx) ----------------------------->
+<!--------------------------- 141. animated woman using sprite (242) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image141.jpeg?raw=true"
@@ -11553,7 +11558,7 @@ First, let’s explain how to use “sprites” in JavaScript and canvas.</p>
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch2-6-2">2.6.2 Different sorts of sprite sheets</h3>
 <!------------------------------------------------------------------------------------------------>
-<p>There are different sorts of <em>sprite sheets</em>. See some examples below.</p>
+<p>There are different sorts of <i>sprite sheets</em>. See some examples below.</p>
 
 <h4>Multiple postures on a single sprite sheet</h4>
 
@@ -11561,7 +11566,7 @@ First, let’s explain how to use “sprites” in JavaScript and canvas.</p>
 This sprite sheet contains 8 different sets of sprites, or postures, each corresponding to a direction.<br>
 In this example, each posture comprises exactly 13 sprites, aligned in a single row across the sprite sheet.</p>
 <!------------------------------------------------------------------------------------------------>
-<!--------------------------- 140. woman walking using sprite (256) ------------------------------>
+<!--------------------------- 140. woman walking using sprite (243) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image140.png?raw=true"
@@ -11572,23 +11577,21 @@ In this example, each posture comprises exactly 13 sprites, aligned in a single
 
 <p>Some sprite sheets have a single sprite set, spreading over multiple lines; like this walking robot:</p>
 <!------------------------------------------------------------------------------------------------>
-<!--------------------------- 142. walking robot using sprite (xxx) ------------------------------>
+<!--------------------------- 142. walking robot using sprite (244) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image142.png?raw=true"
   alt="A sprite sheet with a walking robot (only the posture &quot;move to the right&quot; is in the sprite sheet)."
   style="width:35%;" />
 
-<p>This is an example that you will see a lot around the Internet, in
-many sprite sheets. For the full animation of the robot, we will need
-multiple sprite sheets: one for each posture.</p>
+<p>This is an example that you will see a lot around the Internet, in many sprite sheets. For the full animation of the robot, we will need multiple sprite sheets: one for each posture.</p>
 <p>As another example, here is the “jumping robot” sprite sheet:</p>
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 143.  (##) ----------------------->
+<!---------------------------- 143. jumping robot sprite sheet (244) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image143.png?raw=true"
-  alt="Sprite sheet for a robot jump."
+  alt="Sprite sheet for a jumping robot."
   style="width:35%;" />
 
 <p>Whereas the walking robot posture is made of 16 sprites, the jumping robot needs 26!</p>
@@ -11599,14 +11602,14 @@ multiple sprite sheets: one for each posture.</p>
 href="https://www.youtube.com/watch?v=1tLNcj1ygFA" target="_blank" rel="noopener noreferrer">the famous Gridrunner
 IOS game by Jeff Minter</a>):</p>
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 144. gridiron sprintsheet (###) ----------------------->
+<!------------------------------- 144. gridiron sprintsheet (245) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image144.png?raw=true"
   alt="Gridrunner spritesheet."
   style="width:35%;" />
 
-<p>So, when we think about writing a “sprite engine”, we need to consider how to support different layouts of sprite sheet.</p>
+<p>So, when we think about writing a “sprite engine”, we need to consider how to support different layouts of sprite sheet</p>
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch2-6-3">2.6.3 Sprite extraction and animation</h3>
 <!------------------------------------------------------------------------------------------------>
@@ -11614,13 +11617,9 @@ IOS game by Jeff Minter</a>):</p>
 
 <p>Before doing anything interesting with the sprites, we need to:</p>
 <ol type="1">
-<li><p>Load the sprite sheet(s),</p></li>
-<li><p>Extract the different postures and store them in an array of
-sprites,</p></li>
-<li><p>Choose the appropriate one, and draw it within the animation
-loop, taking into account elapsed time. We cannot draw a different image
-of the woman walking at 60 updates per second. We will have to create a
-realistic “delay” between each change of sprite image.</p></li>
+  <li><p>Load the sprite sheet(s),</p></li>
+  <li><p>Extract the different postures and store them in an array of sprites,</p></li>
+  <li><p>Choose the appropriate one, and draw it within the animation loop, taking into account elapsed time. We cannot draw a different image of the woman walking at 60 updates per second. We will have to create a realistic “delay” between each change of sprite image.</p></li>
 </ol>
 <p>In this lesson, let’s construct an interactive tool to present the
 principles of sprite extraction and animation.</p>
@@ -11636,7 +11635,7 @@ the next, see how the animation is created? </p>
 JSBin</a>:</p>
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 145.  (###) ----------------------->
+<!-------------------------------- 145. sprite with slider (246) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image145.jpeg?raw=true"
@@ -11694,8 +11693,7 @@ individual sprites:</p>
   <summary>JavaScript source code extract!</summary>
   
 <pre><code>
-1.  var SPRITE_WIDTH = 48;   // Characteristics of the sprites and
-    &gt; spritesheet
+1.  var SPRITE_WIDTH = 48;   // Characteristics of the sprites and &gt; spritesheet
 2.  var SPRITE_HEIGHT = 92;
 3.  var NB_ROWS = 8;
 4.  var NB_FRAMES_PER_POSTURE = 13;
@@ -11799,36 +11797,13 @@ individual sprites:</p>
 
 <h4>Explanations:</h4>
 <ul>
-<li><p><em>Lines 1-4</em>: characteristics of the sprite sheet. How many
-rows, i.e., how many sprites per row, etc.</p></li>
-<li><p><em>Lines 11-39</em>: initializations that run just after the
-page has been loaded. We first get the canvas and contexts. Then we set
-the minimum and maximum values of the slider (an &lt;input
-type=range&gt;) at <em>lines 31-32</em>, and disable it at <em>line
-34</em> (we cannot slide it before the sprite sheet image has been
-loaded). We display the current sprite number 0 in the </p>
-<output>
-<p> field to the right of the slider (<em>line 35</em>).
- Finally, <em>in lines 37-39</em>, we load the sprite sheet
-image.</p></li>
-<li><p><em>Lines 42-58</em>: this callback is run once the sprite sheet
-image has been loaded. We enable the slider, set the big canvas to the
-size of the loaded image, and then draw it (<em>line 51</em>). We also
-draw the first sprite from the sprite sheet in the small canvas and draw
-a red wireframe rectangle around the first sprite in the sprite sheet
-(<em>lines 52-58</em>).</p></li>
-<li><p><em>Lines 61-87</em>: the input listener callback, called each
-time the slider moves. <em>Lines 65-68</em> are the most important ones
-here: we compute the x and y position of the sprite selected with the
-slider. We take into account the number of sprites per posture, the
-number of rows, and the dimensions of each sprite. Then, as in the
-previous step, we draw the current sprite in the small canvas and
-highlight the current sprite with a red rectangle in the sprite
-sheet.</p></li>
-<li><p>The code is generic enough to work with different kinds of sprite
-sheets. Adjust the global parameters in bold at<em> lines 1-5</em> and
-try the extractor.</p></li>
+  <li><i>Lines 1-4</i>: characteristics of the sprite sheet. How many rows, i.e., how many sprites per row, etc.</li>
+  <li><i>Lines 11-39</i>: initializations that run just after the page has been loaded. We first get the canvas and contexts. Then we set the minimum and maximum values of the slider (an &lt;input type=range&gt;) at <i>lines 31-32</i>, and disable it at <i>line 34</i> (we cannot slide it before the sprite sheet image has been loaded).  We display the current sprite number 0 in the &lt;output&gt; field to the right of the slider (<i>line 35</i>).  Finally, <i>in lines 37-39</i>, we load the sprite sheet image.</li>
+  <li><i>Lines 42-58</i>: this callback is run once the sprite sheet image has been loaded. We enable the slider, set the big canvas to the size of the loaded image, and then draw it (<i>line 51</i>). We also draw the first sprite from the sprite sheet in the small canvas and draw a red wireframe rectangle around the first sprite in the sprite sheet (<i>lines 52-58</i>).</li>
+  <li><i>Lines 61-87</i>: the input listener callback, called each time the slider moves. <i>Lines 65-68</i> are the most important ones here: we compute the x and y position of the sprite selected with the slider. We take into account the number of sprites per posture, the number of rows, and the dimensions of each sprite. Then, as in the previous step, we draw the current sprite in the small canvas and highlight the current sprite with a red rectangle in the sprite sheet.</li>
+  <li>The code is generic enough to work with different kinds of sprite sheets. Adjust the global parameters in bold at<i>lines 1-5</i> and try the extractor.</li>
 </ul>
+
 <h4>Example #2</h4>
 
 <ol start="542" type="1">
@@ -11839,7 +11814,7 @@ href="https://jsbin.com/jeledoq/edit?html,js,output" target="_blank" rel="noopen
 </ol>
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 146.  (###) ----------------------->
+<!----------------------- 146. same example with robot spritesheet (242) ------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image146.jpeg?raw=true"
@@ -11900,12 +11875,12 @@ sprite animation framework.</p>
 </details>
 
 <p><a href="https://jsbin.com/rugosu/edit?js,output" target="_blank" rel="noopener noreferrer">Try the example on
-JSBin that uses this framework first!</a> Experiment by editing <em>line
+JSBin that uses this framework first!</a> Experiment by editing <i>line
 20</em>: <b>robot.setNbImagesPerSecond(20); </b>changing the value of
 the parameter and observing the result.</p>
 <!-- 264 -->
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 147.  (###) ----------------------->
+<!------------------------ 147. example sprite framework on jsbin (244) -------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image147.jpeg?raw=true"
@@ -11926,8 +11901,7 @@ yPos position, and at anappropriate size. </p>
 <pre><code>
 1.  function SpriteImage(img, x, y, width, height) {
 2.     this.img = img; // the whole image that contains all sprites
-3.     this.x = x;     // x, y position of the sprite image in the whole
-    &gt; image
+3.     this.x = x;     // x, y position of the sprite image in the whole &gt; image
 4.     this.y = y;
 5.     this.width = width; // width and height of the sprite image
 6.     this.height = height;
@@ -11947,15 +11921,10 @@ yPos position, and at anappropriate size. </p>
 <p>We define the Sprite model. This is the one we used to create the
 small robot in the previous example.</p>
 <ul>
-<li><p>A Sprite is defined by an array of SpriteImage objects.</p></li>
-<li><p>It has a method for extracting all SpriteImages from a given
-sprite sheet and filling the above array.</p></li>
-<li><p>It has a draw method which will draw the current SpriteImage.
-A Sprite is an animated object, therefore, calling draw multiple times
-will involve an automatic change of the current SpriteImage being
-drawn.</p></li>
-<li><p>The number of different images to be drawn per second is a
-parameter of the sprite.</p></li>
+  <li>A Sprite is defined by an array of SpriteImage objects.</li>
+  <li>It has a method for extracting all SpriteImages from a given sprite sheet and filling the above array.</li>
+  <li>It has a draw method which will draw the current SpriteImage.  A Sprite is an animated object, therefore, calling draw multiple times will involve an automatic change of the current SpriteImage being drawn.</li>
+  <li>The number of different images to be drawn per second is a parameter of the sprite.</li>
 </ul>
 <p><b>Here is the code of the Sprite model:</b></p>
 
@@ -11973,25 +11942,21 @@ parameter of the sprite.</p></li>
 8.                                   nbFramesPerPosture,
 9.                                   spriteWidth, spriteHeight) {
 10.     // number of sprites per row in the spritesheet
-11.  
-   &gt;   var nbSpritesPerRow = Math.floor(spritesheet.width / spriteWidth);
+11.     var nbSpritesPerRow = Math.floor(spritesheet.width / spriteWidth);
 12. 
 13.     // Extract each sprite
 14.     var startIndex = (postureToExtract -1) * nbFramesPerPosture;
 15.     var endIndex = startIndex + nbFramesPerPosture;
 16.     for(var index = startIndex; index &lt; maxIndex; index++) {
-17.     // Computation of the x and y position that corresponds to the
-    &gt; sprite
+17.     // Computation of the x and y position that corresponds to the sprite
 18.       // index
 19.       // x is the rest of index/nbSpritesPerRow * width of a sprite
 20.       var x = (index % nbSpritesPerRow) * spriteWidth;
-21.       // y is the divisor of index by nbSpritesPerRow * height of a
-    &gt; sprite
+21.       // y is the divisor of index by nbSpritesPerRow * height of a sprite
 22.       var y = Math.floor(index / nbSpritesPerRow) * spriteHeight;
 23. 
 24.       // build a spriteImage object
-25.    
-    &gt;   var s = new SpriteImage(spritesheet, x, y, spriteWidth, spriteHeight);
+25.       var s = new SpriteImage(spritesheet, x, y, spriteWidth, spriteHeight);
 26. 
 27.       this.spriteArray.push(s);
 28.     }
@@ -12041,11 +12006,11 @@ parameter of the sprite.</p></li>
 JsBin</a></p>
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 148.  (###) ----------------------->
+<!---------------------------- 148. walking woman spritesheet (246) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image148.jpeg?raw=true"
-  alt="Woman animated."
+  alt="Woman animated - walking woman spritesheet."
   style="width:50%;" />
 
 <p>This time, we have changed the parameters of the sprites and sprite
@@ -12078,7 +12043,7 @@ sprite sheet has 8 different postures, so you can call:</p>
 JsBin</a></p>
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 149.  (###) ----------------------->
+<!------------------- 149. woman moving left & right, jsbin screenshot (247) --------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image149.jpeg?raw=true"
@@ -12094,9 +12059,7 @@ her.</p>
 <h4>External resource</h4>
 
 <ul>
-<li>Game development tutorial (5 May 2020): <a
-href="https://spicyyoghurt.com/tutorials/html5-javascript-game-development/images-and-sprite-animations" target="_blank" rel="noopener noreferrer">Draw
-images and sprite animations</a></li>
+  <li>Game development tutorial (5 May 2020): <a href="https://spicyyoghurt.com/tutorials/html5-javascript-game-development/images-and-sprite-animations" target="_blank" rel="noopener noreferrer">Draw images and sprite animations</a></li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch2-6-5">2.6.5 Adding sprites to the game framework</h3>
@@ -12107,34 +12070,28 @@ size of the sprites, the number of postures, etc., and add it all to one
 of the examples that used the game framework (the last one from the time
 based animation lesson (to keep things simple, we did not use the ones
 with gamepad, etc)).</p>
+
 <p><b>First, try this <a
 href="https://jsbin.com/mifeva/edit?js,console,output" target="_blank" rel="noopener noreferrer">example at
 JsBin</a></b></p>
-<p><img src="./images/image150.jpeg" style="width:6.5in;height:3.03819in"
-alt="The woman sprite in the game framework, jsbin screenshot" /></p>
-<h4>
-How to add sprites to the game framework…
-</h4>
+
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 150. woman sprite in the game framework, jsbin screenshot (247) ---------------->
+<!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image150.jpeg?raw=true"
+  alt="Woman sprite in the game framework. jsbin screenshot."
+  style="width:65%;" />
+
+<h4>How to add sprites to the game framework…</h4>
+
 <ol type="1">
-<li><p>We declare a woman object, similar to the monster object, with x,
-y, speed, width properties. We add a direction property that corresponds
-to a posture’s index (so direction = 2 corresponds to the sprite
-animation for the woman moving to the left, whereas direction = 6
-corresponds to the posture of the woman moving to the right…)</p></li>
-<li><p>We add the Sprite and SpriteImage objects to the game
-framework,</p></li>
-<li><p>We write a loadAssets(callback) function which: a) loads the
-sprite sheet, b) extracts all the woman sprites and builds
-the womanSprites array, and c) calls the callback function passed as a
-parameter once finished,</p></li>
-<li><p>We call the loadAssets function from the game
-framework start function, and we start the animation loop only when
-the loadAssets function has completed loading and extracting the
-sprites. In a real game the loadAssets function would also load the
-sounds, and perhaps other sprite sheets or resources etc. In this
-function, you could use the BufferLoader utility for loading multiple
-resources asynchronously, as  discussed during Module 1.</p></li>
+  <li>We declare a woman object, similar to the monster object, with x, y, speed, width properties. We add a direction property that corresponds to a posture’s index (so direction = 2 corresponds to the sprite animation for the woman moving to the left, whereas direction = 6 corresponds to the posture of the woman moving to the right…)</li>
+  <li>We add the Sprite and SpriteImage objects to the game framework,</li>
+  <li>We write a loadAssets(callback) function which: a) loads the sprite sheet, b) extracts all the woman sprites and builds the womanSprites array, and c) calls the callback function passed as a parameter once finished,</li>
+  <li>We call the loadAssets function from the game framework start function, and we start the animation loop only when the loadAssets function has completed loading and extracting the sprites. In a real game the loadAssets function would also load the sounds, and perhaps other sprite sheets or resources etc. In this function, you could use the BufferLoader utility for loading multiple resources asynchronously, as  discussed during Module 1.</li>
 </ol>
+
 <p>Source code extract:</p>
 
 <details>
@@ -12269,8 +12226,13 @@ are created on top of the monster.</p>
 <p><a href="https://jsbin.com/jixolu/edit?js,console,output" target="_blank" rel="noopener noreferrer">Try this
 jsBin!</a></p>
 
-<p><img src="./images/image151.jpeg" style="width:3in;height:3.02821in"
-alt="Eat the ball game" /></p>
+<!------------------------------------------------------------------------------------------------>
+<!-------------------------------- 151. eat the ball game (251) ---------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image151.jpeg?raw=true"
+  alt="Image of the bla bla goes here."
+  style="width:30%;" />
 
 <p>Source code extract:</p>
 
@@ -12624,7 +12586,7 @@ devtools console:</p>
   alt="Error the function calcDistToMove not found in ball.js." />
 
 <p>Aha! The calcDistanceToMove function is indeed used by the Ball
-constructor in ball.js at <em>line 2</em>7 (it moves the ball using
+constructor in ball.js at <i>line 2</i>7 (it moves the ball using
 time-based animation). If you look carefully, you will see that it’s
 also used for moving the monster, etc. In fact, there are parts in the
 game framework related to time-based animation. Let’s move them all into
@@ -12834,7 +12796,7 @@ browser!</p>
 <p>Our intent this week was to show you the primary
 techniques/approaches for dealing with animation, interactions,
 collisions, managing with game states, etc. </p>
-<p>The quizzes for this week are not so important. <em>We’re keen to see
+<p>The quizzes for this week are not so important. <i>We’re keen to see
 you write your own game</em>! You are welcome to freely re-use the
 examples presented in the lessons and modify them, improve the code
 structure, playability, add sounds, better graphics, more levels, etc.
@@ -13090,7 +13052,7 @@ transmission, then decoded on-the-fly upon receipt by the server or
 browser. For a long time, when using Ajax, these binary files had to be
 decoded “by hand”, using JavaScript code. Not recommended!</p>
 <p>We won’t go into too much detail here, but  all browsers (&gt; 2012)
-support <em>XHR2</em>. XHR2 adds the option to directly download binary
+support <i>XHR2</em>. XHR2 adds the option to directly download binary
 data. With XHR2, you can ask the browser to encode/decode the file you
 send/receive, natively. To do this, when you use XMLHttpRequest to send
 or receive a file, you must set the xhr.responseType as arrayBuffer.</p>
@@ -13357,7 +13319,7 @@ downloaded or uploaded by the browser, so far, and</p></li>
 <li><p>total which contains the file’s size (in bytes).</p></li>
 </ol>
 <p>Combining these with a &lt;progress&gt; element, makes it very easy
-to render an animated <em>progress bar</em>. Here is a source code
+to render an animated <i>progress bar</em>. Here is a source code
 extract that does this for a download operation:</p>
 
 <h4>HTML</h4>
@@ -14679,9 +14641,9 @@ element that triggered the event, and the second parameter is the event
 itself). In the dragstart handler we copy just the id of the element in
 the DOM (<em>line 15</em>).</p>
 In the drop handler, we just move the element from one part of the DOM
-tree to another (under the &lt;div&gt; defined at <em>line 38</em>, that
-is the drop zone). This occurs at <em>line 18</em> (get back the id from
-the clipboard), and <em>line 19</em> (make it a child of the div.
+tree to another (under the &lt;div&gt; defined at <i>line 38</em>, that
+is the drop zone). This occurs at <i>line 18</i> (get back the id from
+the clipboard), and <i>line 19</i> (make it a child of the div.
 Consequently, it is no longer a child of the 
 <body>
 <p>, and indeed we have “moved” one &lt;img&gt; from its initial
@@ -14802,10 +14764,10 @@ some room for the picture you dropped.</p></li>
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch3-4-1">3.4.1 Introduction</h3>
 <!------------------------------------------------------------------------------------------------>
-<p>In these lectures, we will learn how to <em>drag and drop
-files</em> between the browser and the desktop. The process shares
-similarities with the methods for <em>dragging and dropping
-elements</em> within an HTML document, but it’s even simpler!</p>
+<p>In these lectures, we will learn how to <i>drag and drop
+files</i> between the browser and the desktop. The process shares
+similarities with the methods for <i>dragging and dropping
+elements</i> within an HTML document, but it’s even simpler!</p>
 
 <h4>Drag and drop files from the desktop to the browser: the files property of the clipboard</h4>
 
@@ -14815,15 +14777,15 @@ worry about a dragstart handler. <b>Files will be dragged from the
 desktop, so the browser only has to copy their content from the
 clipboard</b> and make it available in our JavaScript code.</p>
 <p>Indeed, <b>the main work will be done in the drop handler</b>, where
-we will use the <em>files property</em> of the <em>dataTransfer
-object</em> (aka the clipboard). This is where the browser will copy the
+we will use the <i>files property</i> of the <i>dataTransfer
+object</i> (aka the clipboard). This is where the browser will copy the
 files that have been dragged from the desktop. </p>
-<p>This <em>files object</em> is the same one we saw in the chapter
+<p>This <i>files object</i> is the same one we saw in the chapter
 about the File API in the “HTML5 part 1” course: it is a collection
-of <em>file objects</em> &gt;(sort of file descriptors). From
+of <i>file objects</i> &gt;(sort of file descriptors). From
 each file object, we will be able to extract the name of the file, its
 type, size, last modification date, read it, etc.</p>
-<p>In this source code extract we have a <em>drop</em> handler that
+<p>In this source code extract we have a <i>drop</i> handler that
 works on files which have been dragged and dropped from the desktop to a
 drop zone associated with this handler with
 an ondrop=dropHandler(event); attribute:</p>
@@ -15101,7 +15063,7 @@ and added to the &lt;ol&gt; list.</p></li>
 </ul>
 <p>In principle, this example is very similar to the “fruit” examples we
 worked through earlier, except that this time we’re working with
-files. <em>And when we work with files, it is important to prevent the
+files. <i>And when we work with files, it is important to prevent the
 browser’s default behavior.</em></p>
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch3-4-3">3.4.3 Images with thumbnails</h3>
@@ -15162,7 +15124,7 @@ image thumbnails displayed in the open space beneath it:</p>
 
 <p>At <i>line7</i>, there is a test that will avoid processing non image
 files. The “!” is the NOT operator in JavaScript. The call to continue
-at <em>line 8</em> will make the for loop go to its end and process the
+at <i>line 8</i> will make the for loop go to its end and process the
 next file. See the HTML5 part 1 course about the file API for more
 details (each file has a name, type,
 lastModificationDate and size attribute. The call to match(…) here is a
@@ -15316,7 +15278,7 @@ zone) or play with it at CodePen:</p>
 Above, we added the readFilesAndDisplayPreview() method detailed
 earlier. We called it at the end of the drop handler (<em>line 77</em>),
 and we added the &lt;output&gt; &lt;p&gt; element as a container for the &lt;img&gt; elements (constructed by
-the JavaScript code <em>lines 94-96</em>) which will display the thumbnails (<i>line 114</i>).</p>
+the JavaScript code <i>lines 94-96</em>) which will display the thumbnails (<i>line 114</i>).</p>
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch3-4-4">3.4.4 Mixing drag and drop and input type=file</h3>
 <!------------------------------------------------------------------------------------------------>
@@ -15769,9 +15731,9 @@ form is submitted
 </h4>
 <ul>
 <li><p>This method enables us to send all of the form’s content (regular
-input field values + files selected) at once, <em>using a single Ajax
-request</em> (we will need only one progress bar),</p></li>
-<li><p>or we may <em>use multiple Ajax requests</em>, which we don’t
+input field values + files selected) at once, <i>using a single Ajax
+request</i> (we will need only one progress bar),</p></li>
+<li><p>or we may <i>use multiple Ajax requests</em>, which we don’t
 start until the submit button has been clicked.</p></li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
@@ -16128,8 +16090,8 @@ concepts, so see you there, bye!</p>
 which the W3C deprecated on November 18, 2010 (while still available in
 some browsers, it is no longer in the HTML5 specification). Both are
 solutions for storage, but they do not offer the same functionalities.
-WebSQL Database is <em>a relational database access system</em>,
-whereas </b>IndexedDB is <em>an indexed table system</b></em>.</p>
+WebSQL Database is <i>a relational database access system</em>,
+whereas </b>IndexedDB is <i>an indexed table system</b></em>.</p>
 <p>From <a href="https://www.w3.org/TR/IndexedDB/" target="_blank" rel="noopener noreferrer">the W3C specification
 about IndexedDB</a>: “<em>User agents (apps running in browsers) may
 need to store large numbers of objects locally in order to satisfy
@@ -16140,8 +16102,8 @@ IndexedDB provides in-order retrieval of keys, efficient searching of
 values, and the storage of duplicate values for a key</em>”. </p>
 <p>The W3C specification provides a concrete API to perform advanced
 key-value data management that is at the heart of most sophisticated
-query processors. It does so by using <em>transactional
-databases</em> to store keys and their corresponding values (one or more
+query processors. It does so by using <i>transactional
+databases</i> to store keys and their corresponding values (one or more
 per key), and providing a means of traversing keys in a deterministic
 order. This is often implemented through the use of persistent B-tree
 data structures which are considered efficient for insertion and
@@ -16281,9 +16243,7 @@ complex structured objects (hint: think in terms of JSON objects), and
 keys can be properties of those objects. You can create indexes that use
 any property of the objects for faster searching, as well as ordering
 results.</p>
-<p>Example of data (we reuse a sample from this MDN tutorial: “<a
-href="https://developer.mozilla.org/en-US/docs/IndexedDB/Using_IndexedDB" target="_blank" rel="noopener noreferrer">Using
-IndexedDB</a>)”:</p>
+<p>Example of data (we reuse a sample from this MDN tutorial: “<a href="https://developer.mozilla.org/en-US/docs/IndexedDB/Using_IndexedDB" target="_blank" rel="noopener noreferrer">Using IndexedDB</a>):</p>
 <p>// This is what our customer data looks like.</p>
 <p>const customerData = [];</p>
 <p>Where customerData is an array of  “customers”, each customer having
@@ -21262,7 +21222,7 @@ spec: 
 --->
 <h5>the end…</h5>
 <br>
-<h6>Last Updated: 1-25-2023 11:21pm</h6>
+<h6>Last Updated: 1-26-2023 12:48pm</h6>
 <!---
 <img class="displayed"
   src="./images/image0.jpeg?raw=true"
