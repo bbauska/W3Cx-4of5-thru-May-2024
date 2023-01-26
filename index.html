@@ -2335,7 +2335,7 @@ TextTrack object has different properties and the most important one is
 called cues. The cues is the list of every cue inside the VTT file, and
 each cue corresponds to a time segment, has an id and a text
 content.</p>
-<p>If you do <i>track.cues</em>, you’ve got the list of the cues and
+<p>If you do <i>track.cues</i>, you’ve got the list of the cues and
 you can iterate on them.</p>
 <p>For each cue, we are going to get its id: cue.id here. It corresponds
 to the id of the cue number i. In my example, I have got an index in the
@@ -2411,7 +2411,7 @@ an example at JSBin that displays the content of a track</a>:</p>
   alt="Example video editor that plays content of a track."
   style="width:45%;" />
 
-<p>We just changed the content of the <i>readContent(track)</em> method
+<p>We just changed the content of the <i>readContent(track)</i> method
 from the example in the previous lesson:</p>
 
 <details>
@@ -15521,7 +15521,7 @@ example at JSBin</a> (this example does not work on CodePen. We are
 using a fake remote server and it cancels the connection as soon as we
 try to connect):</p>
 <!------------------------------------------------------------------------------------------------>
-<!------------------------ 185. drag 'n drop and progress element (3xx) -------------------------->
+<!------------------------ 185. drag 'n drop and progress element (318) -------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image185.jpeg?raw=true"
@@ -15704,7 +15704,7 @@ different types.</p>
 and drops files, they will start being uploaded immediately. However,
  the form will only be sent when all the fields are valid. </p>
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------- 186. uploading files using xhr2 (3xx) ------------------------------->
+<!-------------------------- 186. uploading files using xhr2 (322) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image186.jpeg"
@@ -15737,7 +15737,7 @@ request</i> (we will need only one progress bar),</p></li>
 start until the submit button has been clicked.</p></li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
-<!--------------------------------- 187. second approach (333) ----------------------------------->
+<!--------------------------------- 187. second approach (323) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image187.jpeg?raw=true"
@@ -15797,7 +15797,7 @@ more difficult to follow.</p>
 
 <p>Example using a file selector (&lt;input type=“file”&gt;):</p>
 <!------------------------------------------------------------------------------------------------>
-<!---------------------------- 188. example 1 auto file upload (334) ----------------------------->
+<!---------------------------- 188. example 1 auto file upload (324) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image188.png?raw=true"
@@ -17273,8 +17273,7 @@ with the same ssn. An alert like this should pop up:</p></li>
   alt="Insert errors."
   style="width:60%;" />
 
-<p><b>Here is the updated version of the HTML code of this
-example:</b></p>
+<p><b>Here is the updated version of the HTML code of this example:</b></p>
 
 <pre><code>
 1.  &lt;fieldset&gt;
@@ -17329,7 +17328,6 @@ example:</b></p>
 31.    request.onsuccess = function(event) {
 32.      console.log(&quot;Customer with ssn= &quot; + event.target.result + &quot;
 33.                   added.&quot;);
-
 34.      };
 35.  
 36.   request.onerror = function(event) {
@@ -17543,14 +17541,14 @@ this screenshot:</p>
 <h3 id="ch3-6-10">3.6.10 Getting data</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>There are several ways to retrieve data from a data store.</p>
-<h4>
-First method: getting data when we know its key
-</h4>
+
+<h4>First method: getting data when we know its key</h4>
+
 <p>The simplest function from the API is the request.get(key) function.
 It retrieves an object when we know its key/keypath.</p>
 <p><a href="https://jsbin.com/saquru" target="_blank" rel="noopener noreferrer">Online example at JSBin</a>:</p>
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 208.  (##) ----------------------->
+<!---------------------------- 208. getting data from indexdb (363) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image208.jpeg?raw=true"
@@ -17561,7 +17559,7 @@ It retrieves an object when we know its key/keypath.</p>
 in the form itself (the code that gets the results and that updates the
 form is in the request.onsuccess callback).</p>
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 209.  (##) ----------------------->
+<!------------------------- 209. form updated with data retrieved (364) -------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image209.jpeg?raw=true"
@@ -17740,7 +17738,7 @@ JSBin</a>.</p>
 set of alerts, each showing details of an object in the object
 store:</p>
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 210.  (##) ----------------------->
+<!----------------------- 210. screenshot with button application (367) -------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image210.jpeg?raw=true"
@@ -17808,9 +17806,10 @@ database until you find the right one.</p>
 index</i>.</p>
 <p>Remember that we defined two indexes in our data store:</p>
 <ol type="1">
-<li><p>one on the name (non-unique) and</p></li>
-<li><p>one on the email properties (unique).</p></li>
+  <li><p>one on the name (non-unique) and</p></li>
+  <li><p>one on the email properties (unique).</p></li>
 </ol>
+
 <p>Here is a function that examines by name the person-objects in the
 object store, and returns the first one it finds with a name equal to
 “Bill”:</p>
@@ -17848,7 +17847,7 @@ equal to “Bill”.</p>
 <p><a href="https://jsbin.com/gituxa" target="_blank" rel="noopener noreferrer">Online example you can try at
 JsBin</a></p>
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 211.  (##) ----------------------->
+<!-------------------------- 211. retrieve data using index get (369) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image211.jpeg?raw=true"
@@ -18797,7 +18796,7 @@ the content of the button. In the online example, try to change the text
 of the div (<i>line 1</i>), and you will notice that nothing changes.
 Then modify the text at <i>line 11</i> and observe the result</p>
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------------ 230. shadow dom (###) ------------------------------------->
+<!------------------------------------ 230. shadow dom (393) ------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image230.jpeg?raw=true"
@@ -18827,7 +18826,7 @@ etc.</p>
 6.  &lt;/template&gt;
 </code></pre>
 
-<p>The JavaScript part:</p>
+<h4>The JavaScript part:</h4>
 
 <details>
   <summary>Code extract!</summary>
@@ -18850,7 +18849,7 @@ etc.</p>
 <p><a href="https://jsbin.com/quguwa/edit?html,js,output" target="_blank" rel="noopener noreferrer">Online example
 at JSBin</a>:</p>
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------------- 231. shadow dom 3 (###) ------------------------------------>
+<!----------------------------------- 231. shadow dom 3 (394) ------------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image231.jpeg?raw=true"
@@ -18879,7 +18878,8 @@ shadow root (defined in a template with an embedded CSS that selects H1
 elements and makes them white on red); whereas the other is located in
 the body of the document and is not affected by the CSS within the Web
 Component.</p>
-<p>The HTML part:</p>
+
+<h4>The HTML part:</h4>
 
 <details>
   <summary>HTML code!</summary>
@@ -18904,7 +18904,7 @@ Component.</p>
 <p>We added a new H1 at <i>line 11</i>. </p>
 <p>And here is the result:</p>
 <!------------------------------------------------------------------------------------------------>
-<!---------------------------------- 232. shadow dom 4 (###) ------------------------------------->
+<!---------------------------------- 232. shadow dom 4 (395) ------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image232.jpeg?raw=true"
@@ -18922,7 +18922,7 @@ by the first H1. Try to add this CSS rule to this example :</p>
 
 <p>And you should see something like that:</p>
 <!------------------------------------------------------------------------------------------------>
-<!---------------------------- 233. global css and shadow dom (###) ------------------------------>
+<!---------------------------- 233. global css and shadow dom (395) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image233.jpeg?raw=true"
@@ -18971,7 +18971,7 @@ the &lt;slot&gt;…&lt;/slot&gt; element, as shown below:</p>
 <h4>See <a href="https://jsbin.com/jepucoz/edit?html,js,output" target="_blank" rel="noopener noreferrer">the complete
 online example at JSBin</a>:</h4>
 <!------------------------------------------------------------------------------------------------>
-<!-------------- 234. content injection in html templates using slot element (###) --------------->
+<!-------------- 234. content injection in html templates using slot element (396) --------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image234.jpeg?raw=true"
@@ -19002,17 +19002,16 @@ customElements.define(&#39;my-widget&#39;, MyWidget);
 <h4>This is done using JavaScript and there are some constraints:</h4>
 
 <ol type="1">
-<li><p>The element’s new name should have a dash
-(ex: <my-calendar>, <app-list>, etc.)</p></li>
-<li><p>The second parameter is a JavaScript class object that defines
-the behavior of the element. See further examples.</p></li>
+  <li><p>The element’s new name should have a dash (ex: <my-calendar>, <app-list>, etc.)</p></li>
+  <li><p>The second parameter is a JavaScript class object that defines the behavior of the element. See further examples.</p></li>
 </ol>
-<p>Optionally, a third parameter can be used: a JavaScript object
-containing an extends property, which specifies the built-in element
-your element inherits from if any:</p>
+
+<p>Optionally, a third parameter can be used: a JavaScript object containing an extends property, which specifies the built-in element your element inherits from if any:</p>
+
 <ol type="1">
-<li>customElements.define(‘my-widget’, MyWidget, { extends: ‘p’ });</li>
+  <li>customElements.define(‘my-widget’, MyWidget, { extends: ‘p’ });</li>
 </ol>
+
 <p>“Inheritance” is another aspect of object-oriented programming. If it
 is new to you, please see earlier reference material.</p>
 <p>Here is an example which defines a new element
@@ -19093,35 +19092,20 @@ shadow DOM:</p>
 
 <h4><b>Explanations</b>:</h4>
 <ul>
-<li><p><i>Line 5: </i>we use this particular selector for safety. It
-means “select the element only in the HTML of the document that is
-attached to this JavaScript. Web Components might be included in other
-HTML pages, as we will see in the next pages of this course. A good
-practice is to select elements only in the HTML page of the Web
-Component, not in the document that will import the Web
-Component.</p></li>
-<li><p><i>Line 7</i>: definition of the Web Component class attached to
-the custom element <my-widget></p></li>
-<li><p><i>Lines 8-17</i>:  the constructor definition for the class
-always starts by calling super() so that the correct prototype chain is
-established. Inside the constructor, we define all the functionality the
-element will have. Very often this starts by cloning a template in the
-Shadow DOM.</p></li>
-<li><p><i>Lines 22</i>: registration of a new custom element
-named <my-widget>. When the browser encounters <my-widget> within an
-HTML document, it will create an instance of the MyWidget class and
-render the shadow DOM of the Web Component.</p></li>
+  <li><p><i>Line 5: </i>we use this particular selector for safety. It means “select the element only in the HTML of the document that is attached to this JavaScript. Web Components might be included in other HTML pages, as we will see in the next pages of this course. A good practice is to select elements only in the HTML page of the Web Component, not in the document that will import the Web Component.</p></li>
+  <li><p><i>Line 7</i>: definition of the Web Component class attached to the custom element &lt;my-widget&gt;</p></li>
+  <li><p><i>Lines 8-17</i>:  the constructor definition for the class always starts by calling super() so that the correct prototype chain is established. Inside the constructor, we define all the functionality the element will have. Very often this starts by cloning a template in the Shadow DOM.</p></li>
+  <li><p><i>Lines 22</i>: registration of a new custom element named <my-widget>. When the browser encounters &lt;my-widget&gt; within an HTML document, it will create an instance of the MyWidget class and render the shadow DOM of the Web Component.</p></li>
 </ul>
-<h4>
-Full example
-</h4>
+
+<h4>Full example</h4>
 <p>Now, we can use the newly created element and inject content.  The
 template used here is the last one we studied in a previous lesson about
 HTML templates. Check <a
 href="https://jsbin.com/cacuvuf/edit?html,js,console,output" target="_blank" rel="noopener noreferrer">the full
 example online at JSBin</a>: </p>
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------- 235. template with custom elements (407) ---------------------------->
+<!-------------------------- 235. template with custom elements (399) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image235.jpeg?raw=true"
@@ -19245,9 +19229,7 @@ directly!</p>
 <h4>External resource</h4>
 
 <ul>
-<li>MDN’s documentation: <a
-href="https://developer.mozilla.org/en-US/docs/Web/Web_Components/HTML_Imports" target="_blank" rel="noopener noreferrer">HTML
-Imports</a></li>
+  <li>MDN’s documentation: <a href="https://developer.mozilla.org/en-US/docs/Web/Web_Components/HTML_Imports" target="_blank" rel="noopener noreferrer">HTML Imports</a></li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch4-2-9">4.2.9 Web Components as JavaScript Modules</h3>
@@ -19262,13 +19244,13 @@ will have to embed the HTML template part of your component, the CSS
 part for the styling of your component, in the JavaScript part of your
 component. Then, you will be able to include the JavaScript that defines
 your Web Component, as a regular JavaScript file, using
-<script
-src="yourComponent.js"></script>
+
+<script src="yourComponent.js"></script>
+
 <p>or using the new EcmaScript import statement and import the file as a
 ES Module.</p>
-<h4>
-Here is an example:
-</h4>
+
+<h4>Here is an example:</h4>
 <p>index.html (the host html page that imports and instantiates the Web
 Components) :</p>
 
@@ -19294,16 +19276,11 @@ Components) :</p>
 
 <h4><b>Explanations</b>:</h4>
 <ul>
-<li><p><i>Line 6</i>: In this example, the Web Component is in a single
-JavaScript file (./mycomponent/index.js), that is imported as JavaScript
-module (&lt;script type=“module”….&gt;).</p></li>
-<li><p><i>Lines 9 and 10</i>: it can then be used like any Web
-Component, by adding it with its custom HTML tag (<my-components>). The
-components have one HTML attribute “name”.</p></li>
+  <li><p><i>Line 6</i>: In this example, the Web Component is in a single JavaScript file (./mycomponent/index.js), that is imported as JavaScript module (&lt;script type=“module”….&gt;).</p></li>
+  <li><p><i>Lines 9 and 10</i>: it can then be used like any Web Component, by adding it with its custom HTML tag (&lt;my-components&gt;). The components have one HTML attribute “name”.</p></li>
 </ul>
-<h4>
-And here is the code of the Web Component (in ./mycomponent/index.js):
-</h4>
+
+<h4>And here is the code of the Web Component (in ./mycomponent/index.js):</h4>
 
 <details>
   <summary>Source code!</summary>
@@ -19344,89 +19321,53 @@ And here is the code of the Web Component (in ./mycomponent/index.js):
 
 <h4><b>Explanations</b>:</h4>
 <ul>
-<li><p><i>Line 1</i>: we call customElements.define and pass as the
-first parameter the name of the Web Component (here &lt;my-component),
-and as a second parameter the JavaScript class that defines the Web
-Component. Instead of using the className, in this example, the class
-itself is embedded in the call to define(….).</p></li>
-<li><p><i>Line 10</i>: we used the connectedCallback method that is
-called automatically when  the component is created and connected to the
-DOM of its host. In this method we use <a
-href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals" target="_blank" rel="noopener noreferrer">JavaScript
-template literals</a> to embed the HTML template of the component and
-its CSS associated style in the class properties this.html and this.css.
-This is a convenient way to define in a single line both the HTML and
-the CSS for the component (this is done in <i>line 26</i>).</p></li>
-<li><p>Of course, we could have defined a more complex component. This
-simple example shows how we can embed the CSS and HTML template in the
-JavaScript code of the component.</p></li>
+  <li><p><i>Line 1</i>: we call customElements.define and pass as the first parameter the name of the Web Component (here &lt;my-component), and as a second parameter the JavaScript class that defines the Web Component. Instead of using the className, in this example, the class itself is embedded in the call to define(….).</p></li>
+  <li><p><i>Line 10</i>: we used the connectedCallback method that is called automatically when  the component is created and connected to the DOM of its host. In this method we use <a  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals" target="_blank" rel="noopener noreferrer">JavaScript template literals</a> to embed the HTML template of the component and its CSS associated style in the class properties this.html and this.css.  This is a convenient way to define in a single line both the HTML and the CSS for the component (this is done in <i>line 26</i>).</p></li>
+  <li><p>Of course, we could have defined a more complex component. This simple example shows how we can embed the CSS and HTML template in the JavaScript code of the component.</p></li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch4-2-10">4.2.10 Discussion and projects</h3>
 <!------------------------------------------------------------------------------------------------>
-<p>Here is the discussion forum for this part of the course. Please post
-your comments/observations/questions and share your creations.</p>
+<p>Here is the discussion forum for this part of the course. Please post your comments/observations/questions and share your creations.</p>
+
 <h4>Suggested topics of discussion:</h4>
 <ul>
-<li><p>If you’ve followed the course, then you’ve visited the <a
-href="https://www.webcomponents.org/" target="_blank" rel="noopener noreferrer">webcomponents.org</a> Web site and
-browsed some Web components galleries. Did you find any super cool
-components? Did you try them? Please share your findings in the
-forum!</p></li>
-<li><p>What Web component would you like to use and could not find out
-of the box?</p></li>
+  <li>If you’ve followed the course, then you’ve visited the <a href="https://www.webcomponents.org/" target="_blank" rel="noopener noreferrer">webcomponents.org</a> Web site and browsed some Web components galleries. Did you find any super cool components? Did you try them? Please share your findings in the forum!</li>
+  <li>What Web component would you like to use and could not find out of the box?</li>
 </ul>
-<h4>
-Optional projects:
-</h4>
+
+<h4>Optional projects:</h4>
 <ul>
-<li>Try-out <a href="https://github.com/g200kg/webaudio-controls" target="_blank" rel="noopener noreferrer">these
-WebAudio control widgets that look incredibly good</a> (I used them
-with <a href="https://mainline.i3s.unice.fr/AmpSim5/" target="_blank" rel="noopener noreferrer">my Guitar Amp
-Simulator</a>). And use them in your audio player or other applications
-that would look cool with rotating knobs, switches, LEDs, etc.</li>
+  <li>Try-out <a href="https://github.com/g200kg/webaudio-controls" target="_blank" rel="noopener noreferrer">these WebAudio control widgets that look incredibly good</a> (I used them with <a href="https://mainline.i3s.unice.fr/AmpSim5/" target="_blank" rel="noopener noreferrer">my Guitar Amp Simulator</a>). And use them in your audio player or other applications that would look cool with rotating knobs, switches, LEDs, etc.</li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------------- 236. web audio controls (412) --------------------------------->
-<!----------------------- 237. guitar amp sim with web components (412) -------------------------->
+<!-------------------------------- 236. web audio controls (404) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<ul>
-<li><p align="center" width="100%">
-<p>&lt;img src=“./images/image236.png?raw=true” width=“65%”
-<!-- style="width:5.48958in;height:2.61458in" --> alt=“Web audio
-controls” /&gt; 
+  <img class="displayed"
+  src==“./images/image236.png?raw=true”
+  alt=“Web audio controls”
+  style="width:40%;" />
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 237.  (##) ----------------------->
+<!----------------------- 237. guitar amp sim with web components (412) -------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image237.jpeg?raw=true"
-  alt="Guitar amp is wcript not responding2."
+  alt="Guitar amp sim with web components."
   style="width:40%;" />
-<img src="./images/image237.jpeg"
-style="width:5.19792in;height:2.52083in"
-alt="guitar amp sim with web components" /></p>
-</p></li>
-<li><p>Try making your own Web component! For example: an enhanced audio
-player that uses Web Audio. </p></li>
-<li><p>How about building a <gamepad-tester> component which will
-display progress bars and the states of the different buttons/joysticks
-- reuse the example from the course! I couldn’t find any Web component
-like this! Another challenge ;)</p></li>
-<li><p>Try writing a small tutorial about reusing and customizing a
-super cool Web component you have found!</p></li>
+  
+<ul>
+  <li>Try making your own Web component! For example: an enhanced audio player that uses Web Audio.</li>
+  <li>How about building a <gamepad-tester> component which will display progress bars and the states of the different buttons/joysticks - reuse the example from the course! I couldn’t find any Web component like this! Another challenge ;)</li>
+  <li>Try writing a small tutorial about reusing and customizing a super cool Web component you have found!</li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch4-3-1">4.3.1 Introduction</h3>
 <!------------------------------------------------------------------------------------------------>
-<p>In the browser, ‘normal’ JavaScript code is run in a single thread (a
-thread is a light-weight CPU process, see <a
+<p>In the browser, ‘normal’ JavaScript code is run in a single thread (a thread is a light-weight CPU process, see <a
 href="https://en.wikipedia.org/wiki/Thread_(computing)" target="_blank" rel="noopener noreferrer">this Wikipedia
-page for details</a>). This means that the browser GUI, the JavaScript,
-and other tasks are competing for processor time. If you run an
-intensive CPU task, everything else is <i>blocked</i>, including the
-user interface. You have no doubt observed something like this during
-your Web browsing experiences:</p>
+page for details</a>). This means that the browser GUI, the JavaScript, and other tasks are competing for processor time. If you run an intensive CPU task, everything else is <i>blocked</i>, including the user interface. You have no doubt observed something like this during your Web browsing experiences:</p>
+
 <h4>With Internet Explorer:</h4>
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 2. stop running this script? (412) ------------------------------->
@@ -19452,19 +19393,16 @@ graphical user interface. So, if you don't want to block the user
 interface, you can perform computationally intensive tasks in one or
 more background threads, using the <i>HTML5 Web Workers</i>. Web Workers =
 CPU threads, in JavaScript.</p>
-
-Terminology check: if the terms <i>background</i> and <i>foreground</i> and the
-concept of <i>multi-tasking</i> are new to you, please review [PC Mag's
-definition of foreground
-and background](https://www.pcmag.com/encyclopedia/term/foregroundbackground).
+<p>Terminology check: if the terms <i>background</i> and <i>foreground</i> and the
+concept of <i>multi-tasking</i> are new to you, please review <a href="https://www.pcmag.com/encyclopedia/term/foregroundbackground">PC Mag's definition of foreground and background</a>.</p>
 
 <h4>An example that does not use Web Workers</h4>
 
-This example will block the user interface unless you close the
+<p>This example will block the user interface unless you close the
 tab. [Try it at JSBin](https://jsbin.com/qipegi/edit?html,output) but DO
 NOT CLICK ON THE BUTTON unless you are prepared to kill your
 browser/tab, because this routine will consume 100% of CPU time,
-completely blocking the user interface: 
+completely blocking the user interface:</p>
 
 <!------------------------------------------------------------------------------------------------>
 <!-------------------- 239. example blocks user unless close the tab (414) ----------------------->
@@ -19538,29 +19476,16 @@ to the DOM. We must to pass specific data into and out of a thread
 through serialized objects. The separate threads<i> share different
 copies</i> so the problem with the four bytes variable, explained in the
 previous paragraph, cannot occur.</p>
-<h4>
-Different kinds of Web Workers
-</h4>
+
+<h4>Different kinds of Web Workers</h4>
 <p>There are two different kinds of Web Workers described in the
 specification:</p>
+
 <ul>
-<li><p><b>Dedicated Web Workers</b>: threads that are dedicated to one
-single page/tab. Imagine a page with a given URL that runs a Web Worker
-that counts in the background 1-2-3- etc.  It will be duplicated if you
-open the same URL in two different tabs. So each independent thread will
-start counting from 1 at startup time (when the tab/page is
-loaded).</p></li>
-<li><p><b>Shared Web Workers</b>: these are threads which may be shared
-between different pages of tabs (they must conform to the same-origin
-policy) on the same client/browser. These threads will be able to
-communicate, exchange messages, etc. For example, a shared worker, that
-counts in the background 1-2-3- etc. and communicates its current value.
- All the pages/tabs which share its communication channel  will display
-the same value! Also, if you refresh each of those pages, they will
-return displaying the same value as each other. The pages don’t need to
-be the same (with the same URL). However, they must conform to the “same
-origin” policy.</p></li>
+  <li><p><b>Dedicated Web Workers</b>: threads that are dedicated to one single page/tab. Imagine a page with a given URL that runs a Web Worker that counts in the background 1-2-3- etc.  It will be duplicated if you open the same URL in two different tabs. So each independent thread will start counting from 1 at startup time (when the tab/page is loaded).</p></li>
+  <li><p><b>Shared Web Workers</b>: these are threads which may be shared between different pages of tabs (they must conform to the same-origin policy) on the same client/browser. These threads will be able to communicate, exchange messages, etc. For example, a shared worker, that counts in the background 1-2-3- etc. and communicates its current value.  All the pages/tabs which share its communication channel  will display the same value! Also, if you refresh each of those pages, they will return displaying the same value as each other. The pages don’t need to be the same (with the same URL). However, they must conform to the “same origin” policy.</p></li>
 </ul>
+
 <p>Shared Web Workers are not studied in this course. They are not yet
 supported by major browser vendors, and a proper study would require a
 whole module’s worth of material. We may cover this topic in a future
@@ -20304,7 +20229,7 @@ frames aligned.
 </th>
 <th>
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 247.  (##) ----------------------->
+<!--------------------- 247. start orientation (##) ----------------------->
 <!------------------------------------------------------------------------------------------------>
 <img src="./images/image247.png"
 style="width:4.6875in;height:4.6875in" alt="start orientation" />
@@ -20319,7 +20244,7 @@ locations of x and y axes shown as x<sub>0</sub> and y<sub>0</sub>.
 </td>
 <td>
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 248.  (##) ----------------------->
+<!--------------------- 248. rotation about z axis (##) ----------------------->
 <!------------------------------------------------------------------------------------------------>
 <img src="./images/image248.png"
 style="width:4.6875in;height:4.6875in"
@@ -20378,7 +20303,7 @@ frames aligned.
 </th>
 <th>
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 247.  (##) ----------------------->
+<!--------------------- 247. start orientation (##) ----------------------->
 <!------------------------------------------------------------------------------------------------>
 <img src="./images/image247.png"
 style="width:4.6875in;height:4.6875in" alt="Start orientation." />
@@ -20393,7 +20318,7 @@ locations of x and z axes shown as x<sub>0</sub> and z<sub>0</sub>.
 </td>
 <td>
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 250.  (##) ----------------------->
+<!--------------------- 250. rotation about the y axis (##) ----------------------->
 <!------------------------------------------------------------------------------------------------>
 <img src="./images/image250.png"
 style="width:4.6875in;height:4.6875in"
