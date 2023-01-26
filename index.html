@@ -1833,27 +1833,15 @@ let’s look at a WebVTT file:</p>
 
 </details>
 
-<p>The different time segments are called “cues” and each cue has
-an id (1, 2, 3 and 4 in the above example), a startTime and an endTime,
-and a text content that can contain HTML tags for styling (&lt;b&gt;,
-etc…) or be associated with a “voice” as in the above example. In this
-case, the text content is wrapped
-inside &lt;v <i>name_of_speaker</i>&gt;…</v> elements.</p>
-<p>It’s now time to look at the JavaScript API for manipulating tracks,
-cues, and events associated with their life cycle. In the following
-lessons, we will look at different examples which use this API to
-implement missing features such as:</p>
+<p>The different time segments are called “cues” and each cue has an id (1, 2, 3 and 4 in the above example), a startTime and an endTime, and a text content that can contain HTML tags for styling (&lt;b&gt;, etc…) or be associated with a “voice” as in the above example. In this case, the text content is wrapped inside &lt;v <i>name_of_speaker</i>&gt;…&lt;/v&gt; elements.</p>
+<p>It’s now time to look at the JavaScript API for manipulating tracks, cues, and events associated with their life cycle. In the following lessons, we will look at different examples which use this API to implement missing features such as:</p>
 <ul>
-<li><p>how to build a menu for choosing the subtitle track language to
-display,</p></li>
-<li><p>how to display a synchronized description of a video (useful for
-disabled people, for example),</p></li>
-<li><p>how to display a clickable transcript aside the video (similar to
-what the edX video player does),</p></li>
-<li><p>how to show chapters,</p></li>
-<li><p>how to use JSON encoded cue contents (useful for showing external
-resources in the HTML document while a video is playing),</p></li>
-<li><p>etc.</p></li>
+  <li><p>how to build a menu for choosing the subtitle track language to display,</p></li>
+  <li><p>how to display a synchronized description of a video (useful for disabled people, for example),</p></li>
+  <li><p>how to display a clickable transcript aside the video (similar to what the edX video player does),</p></li>
+  <li><p>how to show chapters,</p></li>
+  <li><p>how to use JSON encoded cue contents (useful for showing external resources in the HTML document while a video is playing),</p></li>
+  <li><p>etc.</p></li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch1-2-2">1.2.2 The HTML Track Element, getting the status of a track</h3>
@@ -3896,23 +3884,22 @@ video from the previous example:</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------- 37-43. seven thumbnail chapter images (76) --------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="left" width="80%">
+<p>
 <img src="./images/image037.jpeg" style="width:2.57292in;height:1.20833in" alt="Chapter 1 thumbnail." />
 <img src="./images/image038.jpeg" style="width:2.51042in;height:1.19792in" alt="Chapter 2 thumbnail." />
 </p>
-<p align="left" width="80%">
+<p>
 <img src="./images/image039.jpeg" style="width:2.5625in;height:1.19792in" alt="Chapter 3 thumbnail." />
 <img src="./images/image040.jpeg" style="width:2.54167in;height:1.19792in" alt="Chapter 4 thumbnail." />
 </p>
-<p align="left" width="80%">
+<p>
 <img src="./images/image041.jpeg" style="width:2.53125in;height:1.21875in" alt="Chapter 5 thumbnails." />
 <img src="./images/image042.jpeg" style="width:2.5in;height:1.19792in" alt="Chapter 6 thumbnail." />
 </p>
-<p align="center" width="100%">
+<p>
 <img src="./images/image043.jpeg" style="width:2.54167in;height:1.21875in" alt="Chapter 7 thumbnail." />
 </p>
-<p>To associate these images with its chapter description, we will use
-JSON objects as cue contents:</p>
+<p>To associate these images with its chapter description, we will use JSON objects as cue contents:</p>
 <p><a
 href="https://mainline.i3s.unice.fr/mooc/elephants-dream-chapters-en-JSON.vtt">elephants-dream-chapters-en-JSON.vtt</a>:</p>
 
