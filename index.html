@@ -132,7 +132,7 @@ href="#chb-2"><b>Course outline, grading and due dates</b></a></h3>
 <h3 id="course-practical-information">* <a href="#chb-3"><b>Course
 practical information</b></a></h3>
 <h3 id="course-tools">* <a href="#chb-4"><b>Course tools</b></a></h3>
-</blockquote>
+
 <h2 id="module-1-advanced-html5-multimedia"><a href="#ch1"><b>Module 1:
 Advanced HTML5 Multimedia</b></a></h2>
 <blockquote>
@@ -7720,7 +7720,7 @@ translated by (10, 10).</p></li>
 <li><p>And if we change the coordinate system (this is what the call
 to ctx.translate(…) does) in a function, it is a best practice to always
 save the previous context  at the beginning of the function and restore
-it at the end of the function (<em>lines 27 and 50</em>).</p></li>
+it at the end of the function (<i>lines 27 and 50</i>).</p></li>
 </ul>
 
 <h4>Animating the monster and including it in our game engine</h4>
@@ -7848,7 +7848,7 @@ online at JSBin</a>. </p>
 
 <ul>
 <li><p>Note that we now start the game engine in
-a window.onload callback (<em>line 2</em>), so only after the page has
+a window.onload callback (<i>line 2</i>), so only after the page has
 been loaded.</p></li>
 <li><p>We also moved 99% of the init() method from the previous example
 into the start() method of the game engine, and added the canvas, ctx,
@@ -7859,7 +7859,7 @@ the drawMonster() function, injecting randomicity through the
 parameters:  the monster is drawn with an x,y offset of between 0 and
 10, in successive frames of the animation.</p></li>
 <li><p>And we clear the previous canvas content before drawing the
-current frame (<em>line 35</em>).</p></li>
+current frame (<i>line 35</i>).</p></li>
 </ul>
 <p>If you try the example, you will see a trembling monster. The canvas
 is cleared and the monster drawn in random positions, at around 60 times
@@ -8740,8 +8740,8 @@ accurate “snapshot” of the gamepad state, with fixed values for the
 buttons, axes, etc. If we want to check the current button and joystick
 statuses, we must poll the browser at a high frequency  and call for an
 updated snapshot.</p>
-<p>From the specification: <em>“getGamepads retrieves a snapshot of the
-data for the currently connected and interacted with gamepads.”</em></p>
+<p>From the specification: <i>“getGamepads retrieves a snapshot of the
+data for the currently connected and interacted with gamepads.”</i></p>
 <p>This code will be integrated (as well as the event listeners
 presented earlier) in the next JSBin examples.</p>
 <p>To keep things simple, the above code works with a single gamepad
@@ -9352,8 +9352,8 @@ animation, I go up to 60 FPS and I have got a smooth animation.</p>
 as the animation will be adapted depending on the power of the
 device.</p>
 <p>So this is time-based animation.</p>
-<p>Let’s study an important technique known as <em>“time-based
-animation”</em>, that is used by nearly all “real” video games.</p>
+<p>Let’s study an important technique known as <i>“time-based
+animation”</i>, that is used by nearly all “real” video games.</p>
 <p>This technique is useful when:</p>
 <ul>
 <li><p><b>Your application runs on different devices, and where 60
@@ -9524,7 +9524,7 @@ constant speed on screen, even when the frame rate changes.</p>
 
 <p>Method #1: using the JavaScript Date object</p>
 <p>Let’s modify the example from the previous lesson slightly by adding
-a <i>time-based animation</em>.  Here we use the “standard JavaScript”
+a <i>time-based animation</i>.  Here we use the “standard JavaScript”
 way for measuring time, using JavaScript’s Date object:</p>
 
 <pre><code>
@@ -9658,9 +9658,9 @@ JSBin</a>:</p>
 
 <p>In this example, we only added a few lines of code for measuring the
 time and computing the time elapsed between two consecutive frames
-(see <i>line 38</em>). Normally, requestAnimationFrame(callback) tries
+(see <i>line 38</i>). Normally, requestAnimationFrame(callback) tries
 to call the callback function every 16.66 ms (this corresponds to 60
-frames/s)… <i>but this is never exactly the case</em>. If you do
+frames/s)… <i>but this is never exactly the case</i>. If you do
 a console.log(delta)in the animation loop, you will see that even on a
 very powerful computer, the delta is “very close” to 16.6666 ms, but 99%
 of the time it will be slightly different.</p>
@@ -9670,7 +9670,7 @@ of the time it will be slightly different.</p>
 href="https://jsbin.com/jeribi" target="_blank" rel="noopener noreferrer">link</a> to run the JSBin example in
 stand-alone mode. Normally you should see no difference in speed, but it
 may look a bit jerky on a low-end smartphone or on a slow
-computer. <i>This is the correct behavior.</em></p>
+computer. <i>This is the correct behavior.</i></p>
 <p>Or you can try the next example that simulates a complex animation
 loop that takes a long time to draw each frame…</p>
 
@@ -9746,7 +9746,7 @@ exactly the same. The value returned is a floating point number, not an
 integer value!</p>
 <p>From <a
 href="https://www.sitepoint.com/discovering-the-high-resolution-time-api/" target="_blank" rel="noopener noreferrer">this
-article that explains the High Resolution Time API</a>:  “<em>The only
+article that explains the High Resolution Time API</a>:  “<i>The only
 method exposed is now(), which returns a DOMHighResTimeStamp
 representing the current time in milliseconds. The timestamp is very
 accurate, with precision to a thousandth of a millisecond. Please note
@@ -9757,7 +9757,7 @@ performance.timing.navigationStart(), the start of navigation of the
 document, to the performance.now() call. Another important difference
 between Date.now() and performance.now() is that the latter is
 monotonically increasing, so the difference between two calls will never
-be negative.</em>”</p>
+be negative.</i>”</p>
 <p>To sum up:</p>
 <ul>
   <li><p>performance.now() returns the time since the load of the document (it is called a DOMHighResTimeStamp), with a sub mill-second accuracy, as a floating point value, with very high accuracy.</p></li>
@@ -9835,9 +9835,11 @@ difference.</p>
 
 <p>Method #3: using the optional timestamp parameter of the callback
 function of requestAnimationFrame</p>
+
 <blockquote>
 <p><b>This is the recommended method!</b></p>
 </blockquote>
+
 <p>There is an optional parameter that is passed to the callback
 function called by requestAnimationFrame: a timestamp!</p>
 <p><a href="https://www.w3.org/TR/animation-timing/" target="_blank" rel="noopener noreferrer">The
@@ -10532,11 +10534,11 @@ easier to handle large quantities.</p>
 
 <p><b>Notice that:</b></p>
 <ul>
-  <li><p>All the balls are stored in an array (<em>line 4</em>),</p></li> 
-  <li><p>We wrote a createBalls(nb) function that creates a given number of balls (and stores them in the array) with random values for position and speed (<em>lines 18-32</em>)</p></li>
-  <li><p>In the mainLoop, we iterate on the array of balls and for each ball we: 1) move it, 2) test if it collides with the boundaries of the canvas (in the function testCollisionWithWalls), and 3) we draw the balls (<em>lines 38-50</em>). The order of these steps is not critical
+  <li><p>All the balls are stored in an array (<i>line 4</i>),</p></li> 
+  <li><p>We wrote a createBalls(nb) function that creates a given number of balls (and stores them in the array) with random values for position and speed (<i>lines 18-32</i>)</p></li>
+  <li><p>In the mainLoop, we iterate on the array of balls and for each ball we: 1) move it, 2) test if it collides with the boundaries of the canvas (in the function testCollisionWithWalls), and 3) we draw the balls (<i>lines 38-50</i>). The order of these steps is not critical
   and may be changed.</p></li>
-  <li><p>The function that tests collisions is straightforward (<em>lines 55-76</em>).  We did not use “if… else if” since a ball may sometimes touch two walls at once (in the corners). In that rare case, we need to invert both the horizontal and vertical speeds. When a ball collides with a wall, we need to replace it in a position where it is no longer against the wall (otherwise it will collide again during the next animation loop execution).</p></li>
+  <li><p>The function that tests collisions is straightforward (<i>lines 55-76</i>).  We did not use “if… else if” since a ball may sometimes touch two walls at once (in the corners). In that rare case, we need to invert both the horizontal and vertical speeds. When a ball collides with a wall, we need to replace it in a position where it is no longer against the wall (otherwise it will collide again during the next animation loop execution).</p></li>
 </ul>
 
 <h4>Similar example but with the ball direction as an angle, and a single velocity variable</h4>
@@ -11036,10 +11038,9 @@ shapes.</p>
 <!------------------------------ 131. no collision detected (234) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
-  style-"float: left; margin-right: 5%; margin-bottom: 5%;"
   src="./images/image131.jpeg?raw=true"
   alt="Player as a square is inside the monster bounding circle but not inside the bounding rectangle, as we use rect rect collision test: no collision detected."
-  style="width:20%;" />
+  style="width:20%; float: left; margin-right: 5%; margin-bottom: 5%;" />
 
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------- 132. collision detected (234) ---------------------------------->
@@ -11368,7 +11369,7 @@ function, and the circRectsOverlap function!</p>
 “sprites”. This technique uses components from a collection of animation
 frames. By drawing different component images, rapidly,
 one-after-the-other, we obtain an animation effect.</p>
-<p>Here is an example of a <i>spritesheet</em>, where each
+<p>Here is an example of a <i>spritesheet</i>, where each
 line animates a woman walking in a particular direction:</p>
 
 <!------------------------------------------------------------------------------------------------>
@@ -11408,7 +11409,7 @@ First, let’s explain how to use “sprites” in JavaScript and canvas.</p>
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch2-6-2">2.6.2 Different sorts of sprite sheets</h3>
 <!------------------------------------------------------------------------------------------------>
-<p>There are different sorts of <i>sprite sheets</em>. See some examples below.</p>
+<p>There are different sorts of <i>sprite sheets</i>. See some examples below.</p>
 
 <h4>Multiple postures on a single sprite sheet</h4>
 
@@ -11726,7 +11727,7 @@ sprite animation framework.</p>
 
 <p><a href="https://jsbin.com/rugosu/edit?js,output" target="_blank" rel="noopener noreferrer">Try the example on
 JSBin that uses this framework first!</a> Experiment by editing <i>line
-20</em>: <b>robot.setNbImagesPerSecond(20); </b>changing the value of
+20</i>: <b>robot.setNbImagesPerSecond(20); </b>changing the value of
 the parameter and observing the result.</p>
 <!-- 264 -->
 <!------------------------------------------------------------------------------------------------>
@@ -12647,7 +12648,7 @@ browser!</p>
 techniques/approaches for dealing with animation, interactions,
 collisions, managing with game states, etc. </p>
 <p>The quizzes for this week are not so important. <i>We’re keen to see
-you write your own game</em>! You are welcome to freely re-use the
+you write your own game</i>! You are welcome to freely re-use the
 examples presented in the lessons and modify them, improve the code
 structure, playability, add sounds, better graphics, more levels, etc.
 We like to give points for style and flair, but most especially because
@@ -12902,15 +12903,15 @@ transmission, then decoded on-the-fly upon receipt by the server or
 browser. For a long time, when using Ajax, these binary files had to be
 decoded “by hand”, using JavaScript code. Not recommended!</p>
 <p>We won’t go into too much detail here, but  all browsers (&gt; 2012)
-support <i>XHR2</em>. XHR2 adds the option to directly download binary
+support <i>XHR2</i>. XHR2 adds the option to directly download binary
 data. With XHR2, you can ask the browser to encode/decode the file you
 send/receive, natively. To do this, when you use XMLHttpRequest to send
 or receive a file, you must set the xhr.responseType as arrayBuffer.</p>
 <p>Below is a function that loads a sound sample
 using XMLHttpRequest level 2.</p>
-<p><em>Note</em>: 1) the simple and concise syntax, and 2) the use of
-the new arrayBuffer type for the expected response (<em>line
-5</em>):</p>
+<p><i>Note</i>: 1) the simple and concise syntax, and 2) the use of
+the new arrayBuffer type for the expected response (<i>line
+5</i>):</p>
 
 <pre><code>
 1.  // Load a binary file from a URL as an ArrayBuffer.
@@ -13169,7 +13170,7 @@ downloaded or uploaded by the browser, so far, and</p></li>
 <li><p>total which contains the file’s size (in bytes).</p></li>
 </ol>
 <p>Combining these with a &lt;progress&gt; element, makes it very easy
-to render an animated <i>progress bar</em>. Here is a source code
+to render an animated <i>progress bar</i>. Here is a source code
 extract that does this for a download operation:</p>
 
 <h4>HTML</h4>
@@ -13204,7 +13205,7 @@ extract that does this for a download operation:</p>
 
 <p><b>Explanations</b>: by setting the value and max attributes of
 the &lt;progress&gt; element with the current number of bytes downloaded
-by the browser and the total size of the file (<em>lines 10-11</em>),
+by the browser and the total size of the file (<i>lines 10-11</i>),
 it will reflect the actual proportions of the file downloaded/still to
 come.</p>
 For example, with a file that is 10,000 bytes long, if the current
@@ -13497,9 +13498,9 @@ for a Web app that needs to load resources before starting.</p></li>
 <h3 id="ch3-3-1">3.3.1 Introduction</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>From <a href="https://www.w3.org/TR/html51/editing.html#dnd" target="_blank" rel="noopener noreferrer">the W3C
-HTML 5.1 specification</a>: <em>“the drag and drop API defines an
+HTML 5.1 specification</a>: <i>“the drag and drop API defines an
 event-based drag-and-drop mechanism, it does not define exactly what a
-drag-and-drop operation actually is”</em>.</p>
+drag-and-drop operation actually is”</i>.</p>
 <p>We decided to present this API in a section about HTML5 client-side
 persistence, as it is very often used for dragging and dropping files.
 However, we will also address drag and drop of elements within an HTML
@@ -14489,9 +14490,9 @@ of the event handler proposed by the DOM API. This time, we used
 handlers with two parameters (the first parameter, target, is the
 element that triggered the event, and the second parameter is the event
 itself). In the dragstart handler we copy just the id of the element in
-the DOM (<em>line 15</em>).</p>
+the DOM (<i>line 15</i>).</p>
 In the drop handler, we just move the element from one part of the DOM
-tree to another (under the &lt;div&gt; defined at <i>line 38</em>, that
+tree to another (under the &lt;div&gt; defined at <i>line 38</i>, that
 is the drop zone). This occurs at <i>line 18</i> (get back the id from
 the clipboard), and <i>line 19</i> (make it a child of the div.
 Consequently, it is no longer a child of the 
@@ -14914,7 +14915,7 @@ and added to the &lt;ol&gt; list.</p></li>
 <p>In principle, this example is very similar to the “fruit” examples we
 worked through earlier, except that this time we’re working with
 files. <i>And when we work with files, it is important to prevent the
-browser’s default behavior.</em></p>
+browser’s default behavior.</i></p>
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch3-4-3">3.4.3 Images with thumbnails</h3>
 <!------------------------------------------------------------------------------------------------>
@@ -15126,9 +15127,9 @@ zone) or play with it at CodePen:</p>
 </details>
 
 Above, we added the readFilesAndDisplayPreview() method detailed
-earlier. We called it at the end of the drop handler (<em>line 77</em>),
+earlier. We called it at the end of the drop handler (<i>line 77</i>),
 and we added the &lt;output&gt; &lt;p&gt; element as a container for the &lt;img&gt; elements (constructed by
-the JavaScript code <i>lines 94-96</em>) which will display the thumbnails (<i>line 114</i>).</p>
+the JavaScript code <i>lines 94-96</i>) which will display the thumbnails (<i>line 114</i>).</p>
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch3-4-4">3.4.4 Mixing drag and drop and input type=file</h3>
 <!------------------------------------------------------------------------------------------------>
@@ -15583,7 +15584,7 @@ form is submitted
 <li><p>This method enables us to send all of the form’s content (regular
 input field values + files selected) at once, <i>using a single Ajax
 request</i> (we will need only one progress bar),</p></li>
-<li><p>or we may <i>use multiple Ajax requests</em>, which we don’t
+<li><p>or we may <i>use multiple Ajax requests</i>, which we don’t
 start until the submit button has been clicked.</p></li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
@@ -15940,16 +15941,16 @@ concepts, so see you there, bye!</p>
 which the W3C deprecated on November 18, 2010 (while still available in
 some browsers, it is no longer in the HTML5 specification). Both are
 solutions for storage, but they do not offer the same functionalities.
-WebSQL Database is <i>a relational database access system</em>,
-whereas </b>IndexedDB is <i>an indexed table system</b></em>.</p>
+WebSQL Database is <i>a relational database access system</i>,
+whereas <b>IndexedDB is <i>an indexed table system</i></b>.</p>
 <p>From <a href="https://www.w3.org/TR/IndexedDB/" target="_blank" rel="noopener noreferrer">the W3C specification
-about IndexedDB</a>: “<em>User agents (apps running in browsers) may
+about IndexedDB</a>: “User agents (apps running in browsers) may
 need to store large numbers of objects locally in order to satisfy
 off-line data requirements of Web applications. Where WebStorage (as
 seen in the HTML5 part 1 course -localStorage and sessionStorage) is
 useful for storing pairs of keys and their corresponding values,
 IndexedDB provides in-order retrieval of keys, efficient searching of
-values, and the storage of duplicate values for a key</em>”. </p>
+values, and the storage of duplicate values for a key”.</p>
 <p>The W3C specification provides a concrete API to perform advanced
 key-value data management that is at the heart of most sophisticated
 query processors. It does so by using <i>transactional
@@ -16326,14 +16327,14 @@ when the transaction is created and remains fixed for the life of the
 transaction. The transaction also has a scope that determines the object
 stores with which the transaction may interact*.”</p>
 <p>A transaction in IndexedDB is similar to a transaction in a SQL
-database. It defines: “<em>An atomic and durable set of data-access and
-data-modification operations</em>”. Either all operations succeed or all
+database. It defines: “<i>An atomic and durable set of data-access and
+data-modification operations</i>”. Either all operations succeed or all
 fail. </p>
 <p>A database connection can have several active transactions associated
 with it at a time, but these write transactions cannot have
 overlapping <a
-href="https://developer.mozilla.org/en-US/docs/IndexedDB/Basic_Concepts_Behind_IndexedDB#scope" target="_blank" rel="noopener noreferrer">scopes</a> (<em>they
-cannot work on the same data at the same time</em>). The scope of a
+href="https://developer.mozilla.org/en-US/docs/IndexedDB/Basic_Concepts_Behind_IndexedDB#scope" target="_blank" rel="noopener noreferrer">scopes</a> (<i>they
+cannot work on the same data at the same time</i>). The scope of a
 transaction, which is defined at creation time, determines which
 concurrent transactions can read or write the same data (multiple reads
 can occur, while writes will be sequential, only one at a time), and
