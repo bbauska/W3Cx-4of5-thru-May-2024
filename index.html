@@ -107,6 +107,10 @@ function topFunction() {
 <!--------------------------------------- w3cx logo (01) ----------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <div style="text-align:center;">
+<img class="displayed"
+  src="./images/w3c-logo.png?raw=true"
+  alt="W3Cx HTML 5.2x logo."
+  style="width:15%;" />
 
 <h3>W3Cx-4of5-HTML5.2x - Apps and Games</h3>
 <!------------------------------------------------------------------------------------------------>
@@ -1803,22 +1807,18 @@ an id (1, 2, 3 and 4 in the above example), a startTime and an endTime,
 and a text content that can contain HTML tags for styling (&lt;b&gt;,
 etc…) or be associated with a “voice” as in the above example. In this
 case, the text content is wrapped
-inside &lt;v <i>name_of_speaker</i>&gt;…</v> elements.</p>
+inside &lt;v <i>name_of_speaker</i>&gt;…&lt;/v&gt; elements.</p>
 <p>It’s now time to look at the JavaScript API for manipulating tracks,
 cues, and events associated with their life cycle. In the following
 lessons, we will look at different examples which use this API to
 implement missing features such as:</p>
 <ul>
-<li><p>how to build a menu for choosing the subtitle track language to
-display,</p></li>
-<li><p>how to display a synchronized description of a video (useful for
-disabled people, for example),</p></li>
-<li><p>how to display a clickable transcript aside the video (similar to
-what the edX video player does),</p></li>
-<li><p>how to show chapters,</p></li>
-<li><p>how to use JSON encoded cue contents (useful for showing external
-resources in the HTML document while a video is playing),</p></li>
-<li><p>etc.</p></li>
+  <li><p>how to build a menu for choosing the subtitle track language to display,</p></li>
+  <li><p>how to display a synchronized description of a video (useful for disabled people, for example),</p></li>
+  <li><p>how to display a clickable transcript aside the video (similar to what the edX video player does),</p></li>
+  <li><p>how to show chapters,</p></li>
+  <li><p>how to use JSON encoded cue contents (useful for showing external resources in the HTML document while a video is playing),</p></li>
+  <li><p>etc.</p></li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch1-2-2">1.2.2 The HTML Track Element, getting the status of a track</h3>
@@ -4708,7 +4708,7 @@ are not studied in this course.</p>
 currentTime (in seconds, from the start of AudioContext creation),
 destination, and the methods for creating each of the various audio
 nodes.</p>
-The easiest way to understand this principle is to look
+<p>The easiest way to understand this principle is to look
 <b><a href="https://jsbin.com/gaduqojeke/edit?html,js" target="_blank" rel="noopener noreferrer">at a first
 example at JSBin</a>.</b>
 </p>
@@ -5080,25 +5080,14 @@ that can represent different kinds of filters, tone control devices, and
 graphic equalizers. A <i>BiquadFilterNode</i> always has exactly one
 input and one output.”</p>
 <p>See also the Biquad Filter node’s documentation.</p>
-<p><a href="https://jsbin.com/tuvaxar/edit?html,js,output" target="_blank" rel="noopener noreferrer">Example at
-JSBin</a>, or try it in your browser, with a lowpass filter, only the
-frequency slider will have a noticeable effect:</p>
+<p><a href="https://jsbin.com/tuvaxar/edit?html,js,output" target="_blank" rel="noopener noreferrer">Example at JSBin</a>, or try it in your browser, with a lowpass filter, only the frequency slider will have a noticeable effect:</p>
+
 <p>Frequency  Detune  Q  Type        <img
 src="./images/image058.wmf" /></p>
-<p>The most useful slider is the frequency slider (that changes
-the frequency value property of the node). The meaning of the
-different properties (frequency, detune and Q) differs depending on
-the type of the filter you use (click on the dropdown menu to see the
-different types available). Look at <a
-href="https://developer.mozilla.org/en-US/docs/Web/API/BiquadFilterNode" target="_blank" rel="noopener noreferrer">this
-documentation</a> for details on the different filters and how
-the frequency, detune and Q properties are used with each of these
-filter types.</p>
-<p>Here is <a
-href="https://webaudioapi.com/samples/frequency-response/" target="_blank" rel="noopener noreferrer">a nice
-graphic application that shows the frequency responses to the various
-filters</a>, you can choose the type of filters and play with the
-different property values using sliders:</p>
+
+<p>The most useful slider is the frequency slider (that changes the frequency value property of the node). The meaning of the different properties (frequency, detune and Q) differs depending on the type of the filter you use (click on the dropdown menu to see the different types available). Look at <a
+href="https://developer.mozilla.org/en-US/docs/Web/API/BiquadFilterNode" target="_blank" rel="noopener noreferrer">this documentation</a> for details on the different filters and how the frequency, detune and Q properties are used with each of these filter types.</p>
+<p>Here is <a href="https://webaudioapi.com/samples/frequency-response/" target="_blank" rel="noopener noreferrer">a nice graphic application that shows the frequency responses to the various filters</a>, you can choose the type of filters and play with the different property values using sliders:</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------- 56. frequency responses for filters (104) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -5594,8 +5583,7 @@ the &lt;audio&gt;…</audio> part of the HTML code by:</p>
 
 <p>And the example works in the same way, but this time with a video.
 Try moving the sliders to change the sound!</p>
-<p><a href="https://jsbin.com/kukupot/edit?html,css,js,output" target="_blank" rel="noopener noreferrer">Example
-at JSBin</a>:</p>
+<p><a href="https://jsbin.com/kukupot/edit?html,css,js,output" target="_blank" rel="noopener noreferrer">Example at JSBin</a>:</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 62. video above equalizer (114) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -5603,6 +5591,7 @@ at JSBin</a>:</p>
   src="./images/image062.jpeg"
   style="width:3in;height:3.22115in"
   alt="Same example as previously but with a video above the equalizer." />
+
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch1-5-5">1.5.5 Waveforms</h3>
 <!------------------------------------------------------------------------------------------------>
@@ -12913,9 +12902,7 @@ progress.</p>
 href="https://caniuse.com/#feat=xhr2" target="_blank" rel="noopener noreferrer">related CanIUse’s browser
 compatibility table</a>.</p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-2-2">
-3.2.2 Ajax/XHR2 and binary files
-</h3>
+<h3 id="ch3-2-2">3.2.2 Ajax/XHR2 and binary files</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>Hi everyone! In this lesson, I will present you how we can manage
 file</p>
