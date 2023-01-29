@@ -113,7 +113,7 @@ W3Cx Front-End Web Developer
   style="width:15%;" />
 </div>
   
-<h3>W3Cx-4of5-HTML5.2x - Apps and Games</h3>
+<h3 style="text-align:center">W3Cx-4of5-HTML5.2x - Apps and Games</h3>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 01. W3Cx-4of5-HTML5.2x logo (01) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -286,14 +286,11 @@ As an alternative, do not hesitate to browse the
 courses’ FAQs in edX Help Center</a></b>.
 </li>
 </ul>
-<h2>
-Contents
-</h2>
+<h2>Contents</h2>
 <!------------------------------------------------------------------------------------------------>
 <details>
-<summary>
-CONTENT Here!
-</summary>
+  <summary>CONTENT Here!</summary>
+  
 <p><a href="#module-1-1">Advanced HTML5 Multimedia
 [26](#module-1-1)</a></p>
 <p><a href="#intro-to-the-timed-text-track-api">1.2.1 The Timed Text
@@ -1174,7 +1171,7 @@ tools</a> site.</p>
 <img class="displayed"
   src="./images/image006.png?raw=true"
   alt="W3Cx validator."
-  style="width:1%;" />
+  style="width:15%;" />
 
 <p>The <a href="https://validator.w3.org/" target="_blank" rel="noopener noreferrer">W3C validator</a> checks
 the <a href="https://validator.w3.org/docs/help.html#validation_basics" target="_blank" rel="noopener noreferrer">markup
@@ -1190,7 +1187,7 @@ that use CSS stylesheets.</p>
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image007.png?raw=true"
-  alt="Laptop showing unicorn validator."
+  alt="Laptop showing unicorn css validator."
   style="width:15%;" />
 
 <h4>Unicorn</h4>
@@ -1231,10 +1228,10 @@ properties/elements/attributes/functions in the above-mentioned
 specifications, and further details on those when selecting the one of
 interest.</p>
 <p>The W3C cheatsheet is only available as
-a <a href="https://dev.w3.org/2009/cheatsheet/doc/" target="_blank" rel="noopener noreferrer">pure Web
-application</a>.</p>
+a <a href="https://dev.w3.org/2009/cheatsheet/doc/" target="_blank" rel="noopener noreferrer">pure Web application</a>.</p>
 
 <h4>Browser Compatibility</h4>
+
 <p>The term browser compatibility refers to the ability of a given Web
 site to appear fully functional on the browsers available in the
 market.</p>
@@ -1561,11 +1558,7 @@ video and try to show/hide the subtitles/captions):</p>
 <!------------------------------- 15. elephants dream video (23) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
-  src="./images/image014.jpeg?raw=true"
-  alt="Tim Berners-Lee at his desk in CERN, 1994."
-  style="width:15%" />
-<p style="text-align:center;">
-<img src="./images/image015.png?raw=true"
+  src="./images/image015.png?raw=true"
   style="width:4.90625in;height:2.79167in"
   alt="Elephants dream video." />
 </p>
@@ -1574,33 +1567,21 @@ video and try to show/hide the subtitles/captions):</p>
 from one browser to another, in particular if you are using old
 versions.</p>
 <p>Here is a quick summary (as of May 2020).</p>
+
 <ul>
-<li>Safari provides a menu you can use to choose which subtitle/caption
-track to display. If one of the defined text tracks has
-the default attribute set, then it is loaded by default. Otherwise, the
-default is off.</li>
+  <li>Safari provides a menu you can use to choose which subtitle/caption track to display. If one of the defined text tracks has the default attribute set, then it is loaded by default. Otherwise, the default is off.</li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------------ 16. safari menu (24) -------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
-  src="./images/image014.jpeg?raw=true"
-  alt="Tim Berners-Lee at his desk in CERN, 1994."
-  style="width:15%" />
-<p style="text-align:center;">
-<img src="./images/image016.png"
+  src="./images/image016.png"
   style="width:4.90625in;height:2.79167in" 
   alt="Safari Menu." />
-</p>
+
 <ul>
-<li><p>Chrome and Opera both provide a subtitle menu and load the text
-track set that matches the browser language. If none of the available
-text tracks match the browser’s language, then it loads the track with
-the default attribute, if there is one. Otherwise, it loads none. Let’s
-say that support is very incomplete (!).</p></li>
-<li><p>Firefox provides also a subtitle menu but will show the first
-defined text track <i>only if</i> it has default set. It will load all
-tracks in memory as soon as the page is loaded.</p></li>
+  <li><p>Chrome and Opera both provide a subtitle menu and load the text track set that matches the browser language. If none of the available text tracks match the browser’s language, then it loads the track with the default attribute, if there is one. Otherwise, it loads none. Let’s say that support is very incomplete (!).</p></li>
+  <li><p>Firefox provides also a subtitle menu but will show the first defined text track <i>only if</i> it has default set. It will load all tracks in memory as soon as the page is loaded.</p></li>
 </ul>
 <p>Also, there is <a
 href="https://www.w3.org/TR/html51/semantics-embedded-content.html#timed-text-tracks" target="_blank" rel="noopener noreferrer">a
@@ -1608,9 +1589,9 @@ Timed Text Track API in the HTML5/HTML5.1 specification</a> that enables
 us to manipulate &lt;track&gt; contents from JavaScript. Do you recall
 that text tracks are associated with WebVTT files? As a quick reminder,
 let’s look at a WebVTT file:</p>
-<h4>
-WEBVTT
-</h4>
+
+<h4>WEBVTT</h4>
+
 <details>
   <summary>WEBTT code extract!</summary>
 
@@ -1652,20 +1633,17 @@ inside &lt;v <i>name_of_speaker</i>&gt;…&lt;/v&gt; elements.</p>
 cues, and events associated with their life cycle. In the following
 lessons, we will look at different examples which use this API to
 implement missing features such as:</p>
+
 <ul>
-<li><p>how to build a menu for choosing the subtitle track language to
-display,</p></li>
-<li><p>how to display a synchronized description of a video (useful for
-disabled people, for example),</p></li>
-<li><p>how to display a clickable transcript aside the video (similar to
-what the edX video player does),</p></li>
-<li><p>how to show chapters,</p></li>
-<li><p>how to use JSON encoded cue contents (useful for showing external
-resources in the HTML document while a video is playing),</p></li>
-<li><p>etc.</p></li>
+  <li><p>how to build a menu for choosing the subtitle track language to display,</p></li>
+  <li><p>how to display a synchronized description of a video (useful for disabled people, for example),</p></li>
+  <li><p>how to display a clickable transcript aside the video (similar to what the edX video player does),</p></li>
+  <li><p>how to show chapters,</p></li>
+  <li><p>how to use JSON encoded cue contents (useful for showing external resources in the HTML document while a video is playing),</p></li>
+  <li><p>etc.</p></li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
-<h2 id="ch1">Module 1</h2>
+<h2 id="ch1">Module 1 - Advanced HTML5 Multimedia</h2>
 <!------------------------------------------------------------------------------------------------>
 <p>Hi! Welcome to Part 2 of the W3C HTML5 course. How about we start by
 looking at advanced HTML5 multimedia features? First, we will look at
@@ -1833,9 +1811,8 @@ versions.</p>
 href="http://www.iandevlin.com/blog/2015/04/html5/html5-video-captions-current-browser-status" target="_blank" rel="noopener noreferrer">this
 article by Ian Devlin: “HTML5 Video Captions – Current Browser
 Status”</a>, written in April 2015, for further details.</p>
-<h4>
-Here is a quick summary:
-</h4>
+
+<h4>Here is a quick summary:</h4>
 <ul>
 <li>Safari provides a menu you can use to choose which subtitle/caption
 track to display. If one of the defined text tracks has
@@ -2201,6 +2178,7 @@ track.</p>
 associated TextTrack object.</p>
 
 <h4>Example source code:</h4>
+
 <details>
   <summary>Code extract!</summary>
 
@@ -2272,12 +2250,14 @@ example at JSBin</a></p>
   style="width:5in;height:4.44178in" 
   alt="Test if loaded track.  Load if not by setting mode to hidden." />
 </p>
-<p>Here is what we added to the HTML code:</p>
+
+<h4>Here is what we added to the HTML code:</h4>
+
 <details>
-<summary>
-Code extract!
-</summary>
-<pre><code>1.  &lt;button id=&quot;buttonLoadFirstTrack&quot;
+  <summary>Code extract!</summary>
+  
+<pre><code>
+1.  &lt;button id=&quot;buttonLoadFirstTrack&quot;
 2.          onclick=&quot;forceLoadTrack(0);&quot;
 3.          disabled&gt;
 4.     Force load track 0
@@ -2286,19 +2266,23 @@ Code extract!
 7.          onclick=&quot;forceLoadTrack(2);&quot;
 8.          disabled&gt;
 9.     Force load track 2
-10. &lt;/button&gt;</code></pre>
+10. &lt;/button&gt;
+</code></pre>
+
 </details>
+
 <hr>
 <p>The buttons will call a function named forceLoadTrack(trackNumber)
 that takes as a parameter the number of the track to get (and force load
 if necessary).</p>
 <p>Here are the additions we made to the JavaScript code from the
 previous example:</p>
+
 <details>
-<summary>
-Functions readContent, getTrack, &amp; forceLoadTrack code extract!
-</summary>
-<pre><code>1.  function readContent(track) {
+  <summary>Functions readContent, getTrack, &amp; forceLoadTrack code extract!</summary>
+
+<pre><code>
+1.  function readContent(track) {
 2.    console.log(&quot;reading content of loaded track...&quot;);
 3.    displayTrackStatuses(htmlTracks); // update document with new
       track statuses
@@ -2330,11 +2314,12 @@ Functions readContent, getTrack, &amp; forceLoadTrack code extract!
 28.   // second = a callback function called when the track is loaded,
 29.   // that takes the loaded TextTrack as parameter
 30.   getTrack(htmlTracks[n], readContent);
-31. }</code></pre>
+31. }
+</code></pre>
 </details>
-<h4>
-Explanations:
-</h4>
+
+<h4>Explanations:</h4>
+
 <ul>
 <li><p><i>Lines 26-31</i>: the function called when a button has been
 clicked. This function in turn calls the getTrack(trackNumber,
@@ -2359,9 +2344,7 @@ loaded TextTrack. Here we do nothing special for the moment except that
 we refresh the different track statuses in the HTML document.</p></li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch1-2-4">
-1.2.4 Working With Cues
-</h3>
+<h3 id="ch1-2-4">1.2.4 Working With Cues</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>Hi! We will continue the last example from the previous video, and
 this time when we will click on the “force load track 0” or “force load
@@ -2468,11 +2451,12 @@ an example at JSBin that displays the content of a track</a>:</p>
 </p>
 <p>We just changed the content of the <i>readContent(track)</i> method
 from the example in the previous lesson:</p>
+
 <details>
-<summary>
-Function readContent extract!
-</summary>
-<pre><code>1.  function readContent(track) {
+  <summary>Function readContent extract!</summary>
+  
+<pre><code>
+1.  function readContent(track) {
 2.     console.log(&quot;reading content of loaded track...&quot;);
 3.     //displayTrackStatuses(htmlTracks);
 4.     // instead of displaying the track statuses, we display
@@ -2491,8 +2475,11 @@ Function readContent extract!
 17.       var text = cue.text + &quot;&lt;P&gt;&quot;
 18.       trackStatusesDiv.innerHTML += id + timeSegment + text;
 19.    }
-20. }</code></pre>
+20. }
+</code></pre>
+
 </details>
+
 <p>As you can see, the code is simple: you first get the cues for the
 given TextTrack (it must be loaded; this is the case since we took care
 of it earlier), then iterate on the list of cues, and use the
@@ -2501,9 +2488,7 @@ id, startTime, endTime and text properties of each cue.</p>
 show you how to make a clickable transcript on the side of the video
 - something quite similar to what the edX video player does.</p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch1-2-5">
-1.2.5 Listening to Events
-</h3>
+<h3 id="ch1-2-5">1.2.5 Listening to Events</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>Ok. This time we will talk about track events and cue events.</p>
 <p>First, let’s start by a small demonstration. If I play this video,
@@ -2590,15 +2575,18 @@ The two types of cue event are:
 <li><p>cuechange events fired for TextTrack objects (good
 support).</p></li>
 </ol>
-<h4>
-Example of cuechange listener on TextTrack
-</h4>
-<pre><code>// track is a loaded TextTrack
+
+<h4>Example of cuechange listener on TextTrack</h4>
+
+<pre><code>
+// track is a loaded TextTrack
 track.addEventListener(&quot;cuechange&quot;, function(e) {
    var cue = this.activeCues[0];
    console.log(&quot;cue change&quot;);
    // do something with the current cue
-});</code></pre>
+});
+</code></pre>
+
 <p>In the above example, let’s assume that we have no overlapping cues
 for the current time segment.</p>
 <p>The above code listens for cue change events: when the video is being
@@ -2611,11 +2599,12 @@ event.</p>
 <p>In the following lessons, we show how to deal with overlapping cues
 (cases where we have more than one active cue).</p>
 <p>Example of enter and exit event listeners on a track’s cues.</p>
+
 <details>
-<summary>
-Function addCueListeners code!
-</summary>
-<pre><code>1.   // iterate on all cues of the current track
+  <summary>Function addCueListeners code!</summary>
+  
+<pre><code>
+1.   // iterate on all cues of the current track
 2.   var cues = track.cues;
 3.   for(var i=0, len = cues.length; i &lt; len; i++) {
 4.     // current cue, also add enter and exit listeners to it
@@ -2635,8 +2624,11 @@ Function addCueListeners code!
 18.     console.log(&#39;exit cue id=&#39; + cue.id);
 19.      // do something else
 20.   };
-21. } // end of addCueListeners...</code></pre>
+21. } // end of addCueListeners...
+</code></pre>
+
 </details>
+
 <p>Showing real examples of event listeners</p>
 <p><a href="https://jsbin.com/dohilo/1/edit?html,output" target="_blank" rel="noopener noreferrer">Here is an
 example at JSBin that shows how to listen for cuechange events</a>:</p>
@@ -3419,10 +3411,7 @@ scene’s captions and descriptions.</p>
 <h4>JavaScript code:</h4>
 
 <details>
-  <summary>
-  Functions init, displayTrackStatus, appendToScrollableDiv, clearDiv,
-  clearSubtitlesCaptions, toggleTrack, logCue extract!
-  </summary>
+  <summary>Functions init, displayTrackStatus, appendToScrollableDiv, clearDiv,   clearSubtitlesCaptions, toggleTrack, logCue extract!</summary>
 
 <pre><code>
 var tracks, video, statusDiv, subtitlesCaptionsDiv;
@@ -4271,11 +4260,10 @@ single mp3 file that contains recorded animal sounds</a>.</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------- 46. click button to play animal sound (83) --------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image046.jpeg" 
+<img class="displayed"
+  src="./images/image046.jpeg"
   style="width:5in;height:4.91453in"
   alt="Click a button to play an animal sound." />
-</p>
 
 <h4>Explanations:</h4>
 
@@ -4502,11 +4490,10 @@ of this demo. You’ll need a valid Google API key in order to remove these mess
 <!------------------------------------------------------------------------------------------------>
 <!----------------- 47. video synced with google map and google street map (87) ------------------>
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image047.jpeg"
+<img class="displayed"
+  src="./images/image047.jpeg"
   style="width:5in;height:4.46635in"
   alt="Video synced with google map and google street map." />
-</p>
 
 <h4>Example of a cue content from this demonstration:</h4>
 
@@ -4515,6 +4502,7 @@ of this demo. You’ll need a valid Google API key in order to remove these mess
 </code></pre>
 
 <h4>Cue events and cue content:</h4>
+
 <p>We can acquire a cue DOM object using the techniques we have seen
 previously, or by using the new HTML5 TextTrack getCueById() method.</p>
 
@@ -4539,12 +4527,10 @@ cue.onexit = function(){
 };
 </code></pre>
 
-<p>
-If the getCueById method is not implemented (this is the case in some
+<p>If the getCueById method is not implemented (this is the case in some
 browsers), we use the @<span class="citation"
 data-cites="polyfill">@polyfill</span> presented in the previous
-section:
-</p>
+section:</p>
 
 <pre><code>
 // for browsers that do not implement the getCueById() method
@@ -4568,9 +4554,13 @@ if (typeof track.getCueById !== &quot;function&quot;) {
 <p><a href="https://jsbin.com/gucutiyoyu/2/edit?html,js,output" target="_blank" rel="noopener noreferrer">Try the
 example at JSBin</a></p>
 
-<p align="center" width="100%">
-<p><img src="./images/image051.jpeg" style="width:5in;height:5.55609in"
-alt="video synced with an iframe that shows external URLs and with a google map" /></p>
+<!------------------------------------------------------------------------------------------------>
+<!---------- 51. video synced with an iframe that shows external urls w/google map (87) ---------->
+<!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image051.jpeg"
+  style="width:5in;height:5.55609in"
+  alt="Video synced with an iframe that shows external URLs and with a google map." />
 
 <h4>HTML code extract:</h4>
 
@@ -5899,24 +5889,25 @@ analyser node connected to the speakers (audioContext.destination). The
 visualization is a graphic animation that
 uses the requestAnimationFrame API presented in teh W3C HTML5 Coding
 Essentials and Best Practices course (Module 4).</p>
-<h4>
-Typical code for building the audio graph:
-</h4>
-<h4>
-HTML code:
-</h4>
-<pre><code>1.  &lt;audio src=&quot;https://mainline.i3s.unice.fr/mooc/guitarRiff1.mp3&quot;
+
+<h4>Typical code for building the audio graph:</h4>
+
+<h4>HTML code:</h4>
+
+<pre><code>
+1.  &lt;audio src=&quot;https://mainline.i3s.unice.fr/mooc/guitarRiff1.mp3&quot;
 2.      id=&quot;player&quot; controls loop crossorigin=&quot;anonymous&quot;&gt;
 3.  &lt;/audio&gt;
-4.  &lt;canvas id=&quot;myCanvas&quot; width=300 height=100&gt;&lt;/canvas&gt;</code></pre>
-<h4>
-JavaScript code:
-</h4>
+4.  &lt;canvas id=&quot;myCanvas&quot; width=300 height=100&gt;&lt;/canvas&gt;
+</code></pre>
+
+<h4>JavaScript code:</h4>
+
 <details>
-<summary>
-JavaScript source code!
-</summary>
-<pre><code>1.  function buildAudioGraph() {
+  <summary>JavaScript source code!</summary>
+
+<pre><code>
+1.  function buildAudioGraph() {
 2.     var mediaElement = document.getElementById(&#39;player&#39;);
 3.     var sourceNode = audioContext.createMediaElementSource(mediaElement);
 4.  
@@ -5931,8 +5922,11 @@ JavaScript source code!
 13. 
 14.    sourceNode.connect(analyser);
 15.    analyser.connect(audioContext.destination);
-16. }</code></pre>
+16. }
+</code></pre>
+
 </details>
+
 <p>With the exception of <i>lines 8-12</i>, where we set the analyser
 options (explained later), we build the following graph (picture taken
 with the now discontinued FireFox WebAudio debugger, you should get
@@ -5966,11 +5960,12 @@ we want to visualize. Its length is equal to fftSize/2.</p></li>
 constants, to control the analysis during play-back.</p>
 <p>Here is the code that is run 60 times per second to draw the
 waveform:</p>
+
 <details>
-<summary>
-Source code!
-</summary>
-<pre><code>1.  function visualize() {
+  <summary>Source code!</summary>
+
+<pre><code>
+1.  function visualize() {
 2.    // 1 - clear the canvas
 3.    // like this: canvasContext.clearRect(0, 0, width, height);
 4.  
@@ -6014,8 +6009,11 @@ Source code!
 42.   canvasContext.stroke();
 43. 
 44.   // once again call the visualize function at 60 frames/s
-45.   requestAnimationFrame(visualize)Explanations:</code></pre>
+45.   requestAnimationFrame(visualize)Explanations:
+</code></pre>
+
 </details>
+
 <ul>
 <li><i>Lines 9-10</i>: we ask for the time domain analysis data. The
 call to getByteTimeDomainData(dataArray) will fill the array with values
@@ -6068,13 +6066,10 @@ JSBin</a>:</p>
   alt="Video player + equalizer + waveform visualization." />
 </p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch1-5-6">
-1.5.6 Frequencies
-</h3>
+<h3 id="ch1-5-6">1.5.6 Frequencies</h3>
 <!------------------------------------------------------------------------------------------------>
-<h4>
-First typical example
-</h4>
+<h4>First typical example</h4>
+
 <p><a href="https://jsbin.com/wenuvub/edit?js,output" target="_blank" rel="noopener noreferrer">Example at
 JSBin</a>:</p>
 <!------------------------------------------------------------------------------------------------>
@@ -6120,11 +6115,12 @@ summarised above - just plot the reported values!</p>
 <p>This code is very similar to the first example given at the top of
 this page. We’ve set the FFT size to a lower value, and rewritten the
 animation loop to plot frequency bars instead of a waveform:</p>
-<details>
-<summary>
-Code extract!</summary>
 
-<pre><code>1.  function buildAudioGraph() {
+<details>
+  <summary>Code extract!</summary>
+
+<pre><code>
+1.  function buildAudioGraph() {
 2.    ...
 3.    // Create an analyser node
 4.    analyser = audioContext.createAnalyser();
@@ -6134,20 +6130,22 @@ Code extract!</summary>
 8.    // try 128, 64 etc.? 
 9.    analyser.fftSize = 256;
 10.   ...
-11. }</code></pre>
+11. }
+</code></pre>
+
 </details>
+
 <p>This time, when building the audio graph, we have used a smaller FFT
 size. Values between 64 and 512 are very common here. Try them in the
 JSBin example! Apart from the lines in bold, this function is exactly
 the same as in the first example.</p>
 <p>The new visualization code:</p>
+
 <details>
+  <summary>Code extract!</summary>
 
-<summary>
-Code extract!
-</summary>
-
-<pre><code>1.  function visualize() {
+<pre><code>
+1.  function visualize() {
 2.    // clear the canvas
 3.    canvasContext.clearRect(0, 0, width, height);
 4.  
@@ -6179,11 +6177,13 @@ Code extract!
 30. 
 31.   // once again call the visualize function at 60 frames/s
 32.   requestAnimationFrame(visualize);
-33. }</code></pre>
+33. }
+</code></pre>
+
 </details>
-<h4>
-Explanations:
-</h4>
+
+<h4>Explanations:</h4>
+
 <ul>
 <li><p><i>Line 6</i>: this is different to code which draws a waveform!
 We ask for byteFrequencyData (vs byteTimeDomainData earlier) and it
@@ -6231,12 +6231,11 @@ results with the Chrome WebAudio Inspector extension):</p>
 <img src="./images/image072.jpeg" 
   style="width:6.5in;height:1.06667in"
   alt="Audio graph from above example." />
-</p>
-<p>Source code from this example’s the buildAudioGraph function:</p>
+
+<h4>Source code from this example’s the buildAudioGraph function:</h4>
+
 <details>
-<summary>
-Code extract!
-</summary>
+  <summary>Code extract!</summary>
 
 <pre><code>1.  function buildAudioGraph() {
 2.     var mediaElement = document.getElementById(&#39;player&#39;);
@@ -6308,12 +6307,14 @@ JSBin</a>:</p>
 the intensity of the music, we will compute the average intensity of our
 frequency ranges, and draw this value using a nice gradient-filled
 rectangle.</p>
-<p>Here are the two functions we will call from the animation loop:</p>
+
+<h4>Here are the two functions we will call from the animation loop:</h4>
+
 <details>
-<summary>
-Code extract!
-</summary>
-<pre><code>1.  function drawVolumeMeter() {
+  <summary>Code extract!</summary>
+
+<pre><code>
+1.  function drawVolumeMeter() {
 2.    canvasContext.save();
 3.  
 4.    analyser.getByteFrequencyData(dataArray);
@@ -6341,34 +6342,41 @@ Code extract!
 26. 
 27.   average = values / length;
 28.   return average;
-29. }</code></pre>
+29. }
+</code></pre>
+
 </details>
+
 <p>Note that we are measuring intensity (<i>line 4</i>) and once the
 frequency analysis data is copied into the dataarray, we
 call the getAverageVolume function (<i>line 5</i>) to compute the
 average value which we will draw as the volume meter.</p>
-<p>This is how we create the gradient:</p>
-<details>
-<summary>
-Code extract!
-</summary>
 
-<pre><code>1.  // create a vertical gradient of the height of the canvas
+<h4>This is how we create the gradient:</h4>
+
+<details>
+  <summary>Code extract!</summary>
+
+<pre><code>
+1.  // create a vertical gradient of the height of the canvas
 2.  gradient = canvasContext.createLinearGradient(0,0,0, height);
 3.  gradient.addColorStop(1,&#39;#000000&#39;);
 4.  gradient.addColorStop(0.75,&#39;#ff0000&#39;);
 5.  gradient.addColorStop(0.25,&#39;#ffff00&#39;);
-6.  gradient.addColorStop(0,&#39;#ffffff&#39;);</code></pre>
+6.  gradient.addColorStop(0,&#39;#ffffff&#39;);
+</code></pre>
+
 </details>
+
 <p>And here is what the new animation loop looks like (for the sake of
 clarity, we have moved the code that draws the signal waveform to a
 separate function):</p>
-<details>
-<summary>
-Code extract!
-</summary>
 
-<pre><code>1.  function visualize() {
+<details>
+  <summary>Code extract!</summary>
+
+<pre><code>
+1.  function visualize() {
 2.  
 3.    clearCanvas();
 4.  
@@ -6377,8 +6385,11 @@ Code extract!
 7.   
 8.     // call again the visualize function at 60 frames/s
 9.    requestAnimationFrame(visualize);
-10. }</code></pre>
+10. }
+</code></pre>
+
 </details>
+
 <p>Notice that we used the best practices seen in week 3 of the HTML5
 part 1 course: we saved and restored the context in all functions that
 change something in the canvas context (see
@@ -6434,14 +6445,14 @@ waveform, meanwhile the one at the bottom splits the signal and send its
 left and right parts to separate analyser nodes which draw the two
 volume meters. Just before the split, we added a stereoPanner to enable
 adjustment of the left/right balance with a slider.</p>
-<h4>
-Source code extract:
-</h4>
+
+<h4>Source code extract:</h4>
+
 <details>
-<summary>
-Source code extract!
-</summary>
-<pre><code>1.  function buildAudioGraph() {
+  <summary>Source code extract!</summary>
+
+<pre><code>
+1.  function buildAudioGraph() {
 2.    var mediaElement = document.getElementById(&#39;player&#39;);
 3.    var sourceNode = audioContext.createMediaElementSource(mediaElement);
 4.  
@@ -6492,16 +6503,18 @@ Source code extract!
 49.   // No need to connect these analysers to something, the sound
 50.   // is already connected through the route that goes through
 51.   // the analyser used for the waveform
-52. }</code></pre>
+52. }
+</code></pre>
+
 </details>
-<h4>
-And here is the new function for drawing the two volume meters:
-</h4>
+
+<h4>And here is the new function for drawing the two volume meters:</h4>
+
 <details>
-<summary>
-Source code extract!
-</summary>
-<pre><code>1.  function drawVolumeMeters() {
+  <summary>Source code extract!</summary>
+  
+<pre><code>
+1.  function drawVolumeMeters() {
 2.    canvasContext.save();
 3.  
 4.    // set the fill style to a nice gradient
@@ -6522,14 +6535,17 @@ Source code extract!
 19.   canvasContext.fillRect(26,height-averageRight,25,height);
 20. 
 21.   canvasContext.restore();
-22. }</code></pre>
+22. }
+</code></pre>
+
 </details>
+
 <p>The code is very similar to the previous one. We draw two rectangles
 side-by-side, corresponding to the two analyser nodes - instead of the
 single display in the previous example.</p>
-<h4>
-Extra explanations and resources
-</h4>
+
+<h4>Extra explanations and resources</h4>
+
 <p>Indeed, the proposed examples are ok for making things “dancing in
 music” but rather inaccurate if you are looking for a real volume meter.
 Results may also change if you modify the size of the fft in the
@@ -6548,9 +6564,7 @@ times) audio sampling is 44.1kHz, but it is closer. This also keeps the
 same levels no matter whatFFTsizeyou apply.”<br />
 Here is a codepen with my proposed meters.</p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch1-5-8">
-1.5.8 Sound Samples Loaded in Memory
-</h3>
+<h3 id="ch1-5-8">1.5.8 Sound Samples Loaded in Memory</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>For some applications, it may be necessary to load sound samples into
 memory and uncompress them before they can be used.</p>
@@ -6688,18 +6702,19 @@ once! <br />
 </b> But don’t worry, Web Audio is optimized for handling thousands of
 nodes…</p>
 </blockquote>
-<h4>
-HTML code extract:
-</h4>
-<pre><code>&lt;button id=&quot;playButton&quot; disabled=true&gt;Play sound&lt;/button&gt;</code></pre>
-<h4>
-JavaScript source code:
-</h4>
+
+<h4>HTML code extract:</h4>
+<pre><code>
+&lt;button id=&quot;playButton&quot; disabled=true&gt;Play sound&lt;/button&gt;
+</code></pre>
+
+<h4>JavaScript source code:</h4>
+
 <details>
-<summary>
-JavaScript code extract!
-</summary>
-<pre><code>1.  var ctx;
+  <summary>JavaScript code extract!</summary>
+  
+<pre><code>
+1.  var ctx;
 2.   
 3.  var soundURL =
 4.  &#39;https://mainline.i3s.unice.fr/mooc/shoot2.mp3&#39;;
@@ -6759,69 +6774,43 @@ JavaScript code extract!
 58.     bufferSource.buffer = buffer;
 59.     bufferSource.connect(ctx.destination);
 60.     bufferSource.start(); // remember, you can start() a source only once!
-61. }</code></pre>
+61. }
+</code></pre>
+
 </details>
-<h4>
-Explanations:
-</h4>
+
+<h4>Explanations:</h4>
+
 <ul>
-<li><p>When the page is loaded, we first call
-the loadSoundUsingAjax function for loading and decoding the sound
-sample (<i>line 16</i>), then we define a click listener for the play
-button. Loading and decoding the sound can take some time, so it’s an
-asynchronous process. This means that the call
-to loadSoundUsingAjax will return while the downloading and decoding is
-still in progress. We can define a click listener on the button
-anyway, as it is disabled by default (see the HTML code). Once the
-sample has been loaded and decoded, only then will the button be enabled
-(<i>line 42</i>).</p></li>
-<li><p>The loadSoundUsingAjax function will first create
-an XmlHttpRequest using the “new version of Ajax called XhR2” (described
-in detail during week 3). First we create the request (<i>lines
-26-30</i>): notice the use of ‘arrayBuffer’ as a responseType for the
-request. This has been introduced by Xhr2 and is necessary for binary
-file transfer. Then the request is sent (<i>line 52</i>).</p></li>
-<li><p>Ajax is an asynchronous process: once the browser receives the
-requested file, the request. onload callback will be called (it is
-defined at <i>line 33</i>), and we can decode the file (an mp3, the
-content of which must be uncompressed in memory). This is done by
-calling ctx.decodeAudioData(file, successCallback, errorCallback).  When
-the file is decoded, the success callback is called (<i>lines
-38-43</i>). We store the decoded buffer in the variable decodedSound,
-and we enable the button.</p></li>
-<li><p>Now, when someone clicks on the button, the playSound function
-will be called (<i>lines 55-61</i>). This function builds a simple audio
-graph: it creates an AudioBufferSourceNode (<i>line 57</i>), sets
-its buffer property with the decoded sample, connects this source to the
-speakers (<i>line 59</i>) and plays the sound. <b>Source nodes can only
-be used once (a “fire and forget” philosophy), so to play the sound
-again, we have to rebuild a source node and connect that to the
-destination. This seems strange when you learn Web Audio, but don’t
-worry - it’s a very fast operation, even with hundreds of
-nodes.</b></p></li>
+  <li><p>When the page is loaded, we first call the loadSoundUsingAjax function for loading and decoding the sound sample (<i>line 16</i>), then we define a click listener for the play button. Loading and decoding the sound can take some time, so it’s an asynchronous process. This means that the call to loadSoundUsingAjax will return while the downloading and decoding is still in progress. We can define a click listener on the button anyway, as it is disabled by default (see the HTML code). Once the sample has been loaded and decoded, only then will the button be enabled (<i>line 42</i>).</p></li>
+  <li><p>The loadSoundUsingAjax function will first create an XmlHttpRequest using the “new version of Ajax called XhR2” (described in detail during week 3). First we create the request (<i>lines 26-30</i>): notice the use of ‘arrayBuffer’ as a responseType for the request. This has been introduced by Xhr2 and is necessary for binary file transfer. Then the request is sent (<i>line 52</i>).</p></li>
+  <li><p>Ajax is an asynchronous process: once the browser receives the requested file, the request. onload callback will be called (it is defined at <i>line 33</i>), and we can decode the file (an mp3, the content of which must be uncompressed in memory). This is done by calling ctx.decodeAudioData(file, successCallback, errorCallback).  When the file is decoded, the success callback is called (<i>lines 38-43</i>). We store the decoded buffer in the variable decodedSound, and we enable the button.</p></li>
+  <li><p>Now, when someone clicks on the button, the playSound function will be called (<i>lines 55-61</i>). This function builds a simple audio graph: it creates an AudioBufferSourceNode (<i>line 57</i>), sets its buffer property with the decoded sample, connects this source to the speakers (<i>line 59</i>) and plays the sound. <b>Source nodes can only be used once (a “fire and forget” philosophy), so to play the sound again, we have to rebuild a source node and connect that to the destination. This seems strange when you learn Web Audio, but don’t worry - it’s a very fast operation, even with hundreds of nodes.</b></p></li>
 </ul>
-<h4>
-Loading and decoding multiple sounds: the BufferLoader utility
-</h4>
-<h4>
-The problem: AJax requests are asynchronous
-</h4>
+
+<h4>Loading and decoding multiple sounds: the BufferLoader utility</h4>
+
+<h4>The problem: AJax requests are asynchronous</h4>
+
 <p>The asynchronous aspect of Ajax has always been problematic for
 beginners. For example, if our applications use multiple sound samples
 and we need to be sure that all of them are loaded and decoded, using
 the code we presented in the earlier example will not work as is. We
 cannot call:</p>
-<pre><code>loadSoundSample(urlOfSound1);
+
+<pre><code>
+loadSoundSample(urlOfSound1);
 loadSoundSample(urlOfSound2);
 loadSoundSample(urlOfSound3);
-etc...</code></pre>
+etc...
+</code></pre>
+
 <p>… because we will never know exactly when all the sounds have
 finished being loaded and decoded. All these calls will run operations
 in the background yet return instantly.</p>
-<h4>
-The BufferLoader utility object: useful for preloading sound and image
-assets
-</h4>
+
+<h4>The BufferLoader utility object: useful for preloading sound and image assets</h4>
+
 <p>There are different approaches for dealing with this problem. During
 the HTML5 Coding Essentials and Best Practices course, we presented
 utility functions for loading multiple images. Here we use the same
@@ -7100,9 +7089,7 @@ parameter values into your code.</p></li>
 at ToneJS !</p></li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
-<h2 id="ch2">
-Module 2
-</h2>
+<h2 id="ch2">Module 2 - Game Programming with HTML5</h2>
 <!------------------------------------------------------------------------------------------------>
 <p>Hi! When I was 14, I was fan of the Ramones. I bought an electric
 guitar and I played in a rock band in my school. A few years later, I
@@ -7856,21 +7843,17 @@ border around it:</p>
 
 <p>And here is a reminder of best practices when using the canvas, as
 described in the HTML5 Part 1 course:</p>
+
 <ol type="1">
-<li><p>Use a function that is called AFTER the page is fully loaded (and
-the DOM is ready), set a pointer to the canvas node in the DOM.</p></li>
-<li><p>Then, get a 2D graphic context for this canvas (the context is an
-object we will use to draw on the canvas, to set global properties such
-as color, gradients, patterns and line width).</p></li>
-<li><p>Only then can you can draw something,</p></li>
-<li><p>Do not forget to use global variables for the canvas and context
-objects. I also recommend keeping the width and height of the canvas
-somewhere. These might be useful later.</p></li>
-<li><p>For each function that will change the context (color, line
-width, coordinate system, etc.), start by saving the context, and end by
-restoring it.</p></li>
+  <li><p>Use a function that is called AFTER the page is fully loaded (and the DOM is ready), set a pointer to the canvas node in the DOM.</p></li>
+  <li><p>Then, get a 2D graphic context for this canvas (the context is an object we will use to draw on the canvas, to set global properties such as color, gradients, patterns and line width).</p></li>
+  <li><p>Only then can you can draw something,</p></li>
+  <li><p>Do not forget to use global variables for the canvas and context objects. I also recommend keeping the width and height of the canvas somewhere. These might be useful later.</p></li>
+  <li><p>For each function that will change the context (color, line width, coordinate system, etc.), start by saving the context, and end by restoring it.</p></li>
 </ol>
-<p>Here is JavaScript code which implements those best practices:</p>
+
+<h4>Here is JavaScript code which implements those best practices:</h4>
+
 <details>
   <summary>Code extract!</summary>
 
@@ -11042,6 +11025,7 @@ animation in this one). We just added a “player” (for the moment, a
 circle that follows the mouse cursor), and a “monster”. We created two
 JavaScript objects for describing the monster and the player, and these
 objects both have a boundingCircleRadius property:</p>
+
 <details>
   <summary>JavaScript code extract!</summary>
   
@@ -12091,9 +12075,7 @@ href="https://spicyyoghurt.com/tutorials/html5-javascript-game-development/image
 images and sprite animations</a></li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch2-6-5">
-2.6.5 Adding sprites to the game framework
-</h3>
+<h3 id="ch2-6-5">2.6.5 Adding sprites to the game framework</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>Let us use the animated woman example and take the sprite utility
 functions and some predefined values, such as the sprite sheet URL, the
@@ -12104,11 +12086,17 @@ with gamepad, etc)).</p>
 <p><b>First, try this <a
 href="https://jsbin.com/mifeva/edit?js,console,output" target="_blank" rel="noopener noreferrer">example at
 JsBin</a></b></p>
-<p><img src="./images/image150.jpeg" style="width:6.5in;height:3.03819in"
-alt="The woman sprite in the game framework, jsbin screenshot" /></p>
-<h4>
-How to add sprites to the game framework…
-</h4>
+
+<!------------------------------------------------------------------------------------------------>
+<!------------- 150. the woman sprite in the game framework, jsbin screenshot (###) -------------->
+<!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image150.jpeg"
+  style="width:6.5in;height:3.03819in"
+  alt="The woman sprite in the game framework, jsbin screenshot." />
+
+<h4>How to add sprites to the game framework…</h4>
+
 <ol type="1">
 <li><p>We declare a woman object, similar to the monster object, with x,
 y, speed, width properties. We add a direction property that corresponds
@@ -12129,12 +12117,14 @@ sounds, and perhaps other sprite sheets or resources etc. In this
 function, you could use the BufferLoader utility for loading multiple
 resources asynchronously, as  discussed during Module 1.</p></li>
 </ol>
-<p>Source code extract:</p>
+
+<h4>Source code extract:</h4>
+
 <details>
-<summary>
-JavaScript source code extract!
-</summary>
-<pre><code>1.  // Inits
+  <summary>JavaScript source code extract!</summary>
+  
+<pre><code>
+1.  // Inits
 2.  window.onload = function init() {
 3.  var game = new GF();
 4.  game.start();
@@ -12239,12 +12229,12 @@ JavaScript source code extract!
 103.   };
 104.   ...
 105.  };
-106.  </code></pre>
+106.  
+</code></pre>
+
 </details>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch2-7-1">
-2.7.1 Menus, high score tables, etc.
-</h3>
+<h3 id="ch2-7-1">2.7.1 Menus, high score tables, etc.</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>With our game framework handling the basics, we can make things more
 exciting by causing something to happen when a collision occurs - maybe
@@ -12262,10 +12252,15 @@ are created on top of the monster.</p>
 <p><a href="https://jsbin.com/jixolu/edit?js,console,output" target="_blank" rel="noopener noreferrer">Try this
 jsBin!</a></p>
 
-<p><img src="./images/image151.jpeg" style="width:3in;height:3.02821in"
-alt="Eat the ball game" /></p>
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 151.  (###) ----------------------->
+<!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image151.jpeg" 
+  style="width:3in;height:3.02821in"
+  alt="Eat the ball game" />
 
-<p>Source code extract:</p>
+<h4>Source code extract:</h4>
 
 <details>
   <summary>JavaScript function updateBalls source code extract!</summary>
@@ -13460,7 +13455,6 @@ JSBin</a>:</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 169. file update example 1 (##) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
 <img class="displayed"
   src="./images/image169.jpeg?raw=true"
   style="width:35%;"
@@ -13634,9 +13628,9 @@ simple and efficient?  What is your experience? Please share ;)</p></li>
 second? What would you propose? Did you find any interesting resources
 on the Web that explain that?</p></li>
 </ul>
-<h4>
-Optional projects:
-</h4>
+
+<h4>Optional projects:</h4>
+
 <ul>
 <li><p>If you know how to program server-side code, please make a small
 app that will upload files, monitor the progress of the upload, save the
@@ -13649,9 +13643,7 @@ but this time with a progress bar. This could be useful for a game, or
 for a Web app that needs to load resources before starting.</p></li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-3-1">
-3.3.1 Introduction
-</h3>
+<h3 id="ch3-3-1">3.3.1 Introduction</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>From <a href="https://www.w3.org/TR/html51/editing.html#dnd" target="_blank" rel="noopener noreferrer">the W3C
 HTML 5.1 specification</a>: <i>“the drag and drop API defines an
@@ -13663,9 +13655,9 @@ However, we will also address drag and drop of elements within an HTML
 document.</p>
 <p>We will start by presenting the API itself, and then we will focus on
 the particular case of drag and dropping files.</p>
-<h4>
-External resources
-</h4>
+
+<h4>External resources</h4>
+
 <ul>
 <li><p>MDN article about <a
 href="https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API" target="_blank" rel="noopener noreferrer">HTML
@@ -17183,7 +17175,7 @@ datastore remains unchanged.</p>
 <!--------------------- 202.  (##) ----------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
-  src="./images/image200.png?raw=true"
+  src="./images/image202.png?raw=true"
   alt="Trace from the devtools console."
   style="width:65%;" />
 
@@ -17339,7 +17331,7 @@ example at JSBin</a>:</p>
 <!--------------------- 205.  (##) ----------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
-  src="./images/image206.jpeg?raw=true"
+  src="./images/image205.jpeg?raw=true"
   alt="Devtools show that a customer has been removed once clicked on the remove customer button."
   style="width:65%;" />
 
@@ -19157,18 +19149,19 @@ it’s still not even in a specification. See <a
 href="https://github.com/w3c/webcomponents/blob/gh-pages/proposals/HTML-Imports-and-ES-Modules.md" target="_blank" rel="noopener noreferrer">the
 discussion.</a></p></li>
 </ul>
-<h4>
-If you want to know what HTML Imports were about…
-</h4>
+
+<h4>If you want to know what HTML Imports were about…</h4>
+
 <p>HTML Imports is the simplest API from Web components :-)</p>
 <p>Add a <link rel="import" href="your_html_file" target="_blank" rel="noopener noreferrer"> and all the
 html/css/js code, that defines a Web component you plan to use, will be
 imported:</p>
+
 <ul>
-<li><p>It is similar to including CSS in your page!</p></li>
-<li><p>Package your components into an HTML page (can include CSS, JS,
-etc) and import it!</p></li>
+  <li><p>It is similar to including CSS in your page!</p></li>
+  <li><p>Package your components into an HTML page (can include CSS, JS, etc) and import it!</p></li>
 </ul>
+
 <p>It is as simple as:</p>
 
 <pre><code>
@@ -19216,9 +19209,9 @@ your Web Component, as a regular JavaScript file, using
 src="yourComponent.js"></script>
 <p>or using the new EcmaScript import statement and import the file as a
 ES Module.</p>
-<h4>
-Here is an example:
-</h4>
+
+<h4>Here is an example:</h4>
+
 <p>index.html (the host html page that imports and instantiates the Web
 Components) :</p>
 
@@ -19244,16 +19237,11 @@ Components) :</p>
 
 <h4><b>Explanations</b>:</h4>
 <ul>
-<li><p><i>Line 6</i>: In this example, the Web Component is in a single
-JavaScript file (./mycomponent/index.js), that is imported as JavaScript
-module (&lt;script type=“module”….&gt;).</p></li>
-<li><p><i>Lines 9 and 10</i>: it can then be used like any Web
-Component, by adding it with its custom HTML tag (<my-components>). The
-components have one HTML attribute “name”.</p></li>
+  <li><p><i>Line 6</i>: In this example, the Web Component is in a single JavaScript file (./mycomponent/index.js), that is imported as JavaScript module (&lt;script type=“module”….&gt;).</p></li>
+  <li><p><i>Lines 9 and 10</i>: it can then be used like any Web Component, by adding it with its custom HTML tag (<my-components>). The components have one HTML attribute “name”.</p></li>
 </ul>
-<h4>
-And here is the code of the Web Component (in ./mycomponent/index.js):
-</h4>
+
+<h4>And here is the code of the Web Component (in ./mycomponent/index.js):</h4>
 
 <details>
   <summary>Source code!</summary>
@@ -19294,22 +19282,9 @@ And here is the code of the Web Component (in ./mycomponent/index.js):
 
 <h4><b>Explanations</b>:</h4>
 <ul>
-<li><p><i>Line 1</i>: we call customElements.define and pass as the
-first parameter the name of the Web Component (here &lt;my-component),
-and as a second parameter the JavaScript class that defines the Web
-Component. Instead of using the className, in this example, the class
-itself is embedded in the call to define(….).</p></li>
-<li><p><i>Line 10</i>: we used the connectedCallback method that is
-called automatically when  the component is created and connected to the
-DOM of its host. In this method we use <a
-href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals" target="_blank" rel="noopener noreferrer">JavaScript
-template literals</a> to embed the HTML template of the component and
-its CSS associated style in the class properties this.html and this.css.
-This is a convenient way to define in a single line both the HTML and
-the CSS for the component (this is done in <i>line 26</i>).</p></li>
-<li><p>Of course, we could have defined a more complex component. This
-simple example shows how we can embed the CSS and HTML template in the
-JavaScript code of the component.</p></li>
+  <li><p><i>Line 1</i>: we call customElements.define and pass as the first parameter the name of the Web Component (here &lt;my-component), and as a second parameter the JavaScript class that defines the Web Component. Instead of using the className, in this example, the class itself is embedded in the call to define(….).</p></li>
+  <li><p><i>Line 10</i>: we used the connectedCallback method that is called automatically when  the component is created and connected to the DOM of its host. In this method we use <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals" target="_blank" rel="noopener noreferrer">JavaScript template literals</a> to embed the HTML template of the component and its CSS associated style in the class properties this.html and this.css. This is a convenient way to define in a single line both the HTML and the CSS for the component (this is done in <i>line 26</i>).</p></li>
+  <li><p>Of course, we could have defined a more complex component. This simple example shows how we can embed the CSS and HTML template in the JavaScript code of the component.</p></li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch4-2-10">4.2.10 Discussion and projects</h3>
@@ -19318,49 +19293,35 @@ JavaScript code of the component.</p></li>
 your comments/observations/questions and share your creations.</p>
 <h4>Suggested topics of discussion:</h4>
 <ul>
-<li><p>If you’ve followed the course, then you’ve visited the <a
-href="https://www.webcomponents.org/" target="_blank" rel="noopener noreferrer">webcomponents.org</a> Web site and
-browsed some Web components galleries. Did you find any super cool
-components? Did you try them? Please share your findings in the
-forum!</p></li>
-<li><p>What Web component would you like to use and could not find out
-of the box?</p></li>
+  <li><p>If you’ve followed the course, then you’ve visited the <a href="https://www.webcomponents.org/" target="_blank" rel="noopener noreferrer">webcomponents.org</a> Web site and browsed some Web components galleries. Did you find any super cool components? Did you try them? Please share your findings in the forum!</p></li>
+  <li><p>What Web component would you like to use and could not find out of the box?</p></li>
 </ul>
-<h4>
-Optional projects:
-</h4>
+
+<h4>Optional projects:</h4>
+
 <ul>
-<li>Try-out <a href="https://github.com/g200kg/webaudio-controls" target="_blank" rel="noopener noreferrer">these
-WebAudio control widgets that look incredibly good</a> (I used them
-with <a href="https://mainline.i3s.unice.fr/AmpSim5/" target="_blank" rel="noopener noreferrer">my Guitar Amp
-Simulator</a>). And use them in your audio player or other applications
-that would look cool with rotating knobs, switches, LEDs, etc.</li>
+  <li>Try-out <a href="https://github.com/g200kg/webaudio-controls" target="_blank" rel="noopener noreferrer">these WebAudio control widgets that look incredibly good</a> (I used them with <a href="https://mainline.i3s.unice.fr/AmpSim5/" target="_blank" rel="noopener noreferrer">my Guitar Amp Simulator</a>). And use them in your audio player or other applications that would look cool with rotating knobs, switches, LEDs, etc.</li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------------- 236. web audio controls (412) --------------------------------->
-<!----------------------- 237. guitar amp sim with web components (412) -------------------------->
 <!------------------------------------------------------------------------------------------------>
-<ul>
-<li><p align="center" width="100%">
-<p>&lt;img src=“./images/image236.png?raw=true” width=“65%”
-<!-- style="width:5.48958in;height:2.61458in" --> alt=“Web audio
-controls” /&gt; 
+<img class="displayed"
+  src="./images/image236.png?raw=true"
+  style="width:5.48958in;height:2.61458in"
+  alt=“Web audio controls." />
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 237.  (##) ----------------------->
+<!----------------------- 237. guitar amp sim with web components (412) -------------------------->
 <!------------------------------------------------------------------------------------------------>
-<img src="./images/image237.jpeg"
-style="width:5.19792in;height:2.52083in"
-alt="guitar amp sim with web components" /></p>
-</p></li>
-<li><p>Try making your own Web component! For example: an enhanced audio
-player that uses Web Audio. </p></li>
-<li><p>How about building a <gamepad-tester> component which will
-display progress bars and the states of the different buttons/joysticks
-- reuse the example from the course! I couldn’t find any Web component
-like this! Another challenge ;)</p></li>
-<li><p>Try writing a small tutorial about reusing and customizing a
-super cool Web component you have found!</p></li>
+<img class="displayed"
+  src="./images/image237.jpeg"
+  style="width:5.19792in;height:2.52083in"
+  alt="Guitar amp sim with web components." />
+
+<ul>
+  <li><p>Try making your own Web component! For example: an enhanced audio player that uses Web Audio.</p></li>
+  <li><p>How about building a <gamepad-tester> component which will display progress bars and the states of the different buttons/joysticks - reuse the example from the course! I couldn’t find any Web component like this! Another challenge ;)</p></li>
+  <li><p>Try writing a small tutorial about reusing and customizing a super cool Web component you have found!</p></li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch4-3-1">4.3.1 Introduction</h3>
@@ -19373,6 +19334,7 @@ and other tasks are competing for processor time. If you run an
 intensive CPU task, everything else is <i>blocked</i>, including the
 user interface. You have no doubt observed something like this during
 your Web browsing experiences:</p>
+
 <h4>With Internet Explorer:</h4>
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 2. stop running this script? (412) ------------------------------->
@@ -19399,18 +19361,17 @@ interface, you can perform computationally intensive tasks in one or
 more background threads, using the <i>HTML5 Web Workers</i>. Web Workers =
 CPU threads, in JavaScript.</p>
 
-Terminology check: if the terms <i>background</i> and <i>foreground</i> and the
-concept of <i>multi-tasking</i> are new to you, please review [PC Mag's
-definition of foreground
-and background](https://www.pcmag.com/encyclopedia/term/foregroundbackground).
+<p>Terminology check: if the terms <i>background</i> and <i>foreground</i> and the
+concept of <i>multi-tasking</i> are new to you, please review <a href="https://www.pcmag.com/encyclopedia/term/foregroundbackground">PC Mag's
+definition of foreground and background</a>.</p>
 
 <h4>An example that does not use Web Workers</h4>
 
-This example will block the user interface unless you close the
+<p>This example will block the user interface unless you close the
 tab. [Try it at JSBin](https://jsbin.com/qipegi/edit?html,output) but DO
 NOT CLICK ON THE BUTTON unless you are prepared to kill your
 browser/tab, because this routine will consume 100% of CPU time,
-completely blocking the user interface: 
+completely blocking the user interface:</p>
 
 <!------------------------------------------------------------------------------------------------>
 <!-------------------- 239. example blocks user unless close the tab (414) ----------------------->
@@ -19484,80 +19445,60 @@ to the DOM. We must to pass specific data into and out of a thread
 through serialized objects. The separate threads<i> share different
 copies</i> so the problem with the four bytes variable, explained in the
 previous paragraph, cannot occur.</p>
-<h4>
-Different kinds of Web Workers
-</h4>
+
+<h4>Different kinds of Web Workers</h4>
+
 <p>There are two different kinds of Web Workers described in the
 specification:</p>
+
 <ul>
-<li><p><b>Dedicated Web Workers</b>: threads that are dedicated to one
-single page/tab. Imagine a page with a given URL that runs a Web Worker
-that counts in the background 1-2-3- etc.  It will be duplicated if you
-open the same URL in two different tabs. So each independent thread will
-start counting from 1 at startup time (when the tab/page is
-loaded).</p></li>
-<li><p><b>Shared Web Workers</b>: these are threads which may be shared
-between different pages of tabs (they must conform to the same-origin
-policy) on the same client/browser. These threads will be able to
-communicate, exchange messages, etc. For example, a shared worker, that
-counts in the background 1-2-3- etc. and communicates its current value.
- All the pages/tabs which share its communication channel  will display
-the same value! Also, if you refresh each of those pages, they will
-return displaying the same value as each other. The pages don’t need to
-be the same (with the same URL). However, they must conform to the “same
-origin” policy.</p></li>
+  <li><p><b>Dedicated Web Workers</b>: threads that are dedicated to one single page/tab. Imagine a page with a given URL that runs a Web Worker that counts in the background 1-2-3- etc.  It will be duplicated if you open the same URL in two different tabs. So each independent thread will start counting from 1 at startup time (when the tab/page is loaded).</p></li>
+  <li><p><b>Shared Web Workers</b>: these are threads which may be shared between different pages of tabs (they must conform to the same-origin policy) on the same client/browser. These threads will be able to communicate, exchange messages, etc. For example, a shared worker, that counts in the background 1-2-3- etc. and communicates its current value.  All the pages/tabs which share its communication channel  will display the same value! Also, if you refresh each of those pages, they will return displaying the same value as each other. The pages don’t need to be the same (with the same URL). However, they must conform to the “same origin” policy.</p></li>
 </ul>
+
 <p>Shared Web Workers are not studied in this course. They are not yet
 supported by major browser vendors, and a proper study would require a
 whole module’s worth of material. We may cover this topic in a future
 version of this course when implementations are more
 stable/available.</p>
-<h4>
-External resources:
-</h4>
+
+<h4>External resources:</h4>
+
 <ul>
-<li><p><a href="https://www.w3.org/TR/workers/" target="_blank" rel="noopener noreferrer">W3C specification about
-Web Workers</a></p></li>
-<li><p><a
-href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API" target="_blank" rel="noopener noreferrer">Web
-Workers concepts and usage</a> (from MDN’s documentation)</p></li>
-<li><p><a
-href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers" target="_blank" rel="noopener noreferrer">Using
-Web Workers</a> (from MDN’s documentation)</p></li>
-<li><p>Browser support:</p>
-<ul>
-<li><p><a href="https://caniuse.com/#feat=webworkers" target="_blank" rel="noopener noreferrer">Web Workers’
-feature on CanIUse</a></p></li>
-<li><p><a href="https://caniuse.com/#feat=sharedworkers" target="_blank" rel="noopener noreferrer">Shared Web
-Workers on CanIUse</a> (not studied)</p></li>
-</ul></li>
+  <li><p><a href="https://www.w3.org/TR/workers/" target="_blank" rel="noopener noreferrer">W3C specification about Web Workers</a></p></li>
+  <li><p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API" target="_blank" rel="noopener noreferrer">Web Workers concepts and usage</a> (from MDN’s documentation)</p></li>
+  <li><p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers" target="_blank" rel="noopener noreferrer">Using Web Workers</a> (from MDN’s documentation)</p></li>
+  <li><p>Browser support:</p>
+  <ul>
+    <li><p><a href="https://caniuse.com/#feat=webworkers" target="_blank" rel="noopener noreferrer">Web Workers’ feature on CanIUse</a></p></li>
+    <li><p><a href="https://caniuse.com/#feat=sharedworkers" target="_blank" rel="noopener noreferrer">Shared Web Workers on CanIUse</a> (not studied)</p></li>
+  </ul>
+  </li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch4-3-2">4.3.2 Use cases</h3>
 <!------------------------------------------------------------------------------------------------>
-<h4>
-Use case #1: a “parent HTML5 page” creates workers from a script
-</h4>
+<h4>Use case #1: a “parent HTML5 page” creates workers from a script</h4>
+
 <p>The HTML5 Web Worker API provides the Worker JavaScript interface for
 loading and executing a script in the background, in a different thread
 from the UI. The following instruction  loads and creates a worker:</p>
 <pre><code>var worker = new Worker(&quot;worker0.js&quot;);</code></pre>
 <p>More than one worker can be created/loaded by a parent page. This is
 parallel computing after all :-)</p>
-<h4>
-Use case #2: you manage a worker by communicating with it using
-“messages”
-</h4>
+
+<h4>Use case #2: you manage a worker by communicating with it using “messages”</h4>
+
 <p>Messages can be strings or objects, as long as they can be serialized
 in JSON format (this is the case for most JavaScript objects, and is
 handled by the Web Worker implementation of recent browser
 versions).</p>
 <p>Terminology check: <a
 href="https://en.wikipedia.org/wiki/Serialization" target="_blank" rel="noopener noreferrer">serialized</a></p>
+
 <blockquote>
 <ol type="1">
-<li>Messages can be sent by the parent page to a worker using this kind
-of code:</li>
+  <li>Messages can be sent by the parent page to a worker using this kind of code:</li>
 </ol>
 </blockquote>
 
@@ -19574,41 +19515,48 @@ of code:</li>
 
 <blockquote>
 <ol start="2" type="1">
-<li>Messages (like the object message example, above) are received
-from a worker using this method (code located in the JavaScript file of
-the worker):</li>
+  <li>Messages (like the object message example, above) are received from a worker using this method (code located in the JavaScript file of the worker):</li>
 </ol>
 </blockquote>
-<pre><code>1.  onmessage = function (event) {
+
+<pre><code>
+1.  onmessage = function (event) {
 2.     // do something with event.data
 3.    alert(&#39;received &#39; + event.data.firstName);
-4.  };</code></pre>
+4.  };
+</code></pre>
+
 <blockquote>
 <ol start="3" type="1">
-<li>The worker will then send messages back to the parent page (code
-located in the JavaScript file of the worker):</li>
+  <li>The worker will then send messages back to the parent page (code located in the JavaScript file of the worker):</li>
 </ol>
 </blockquote>
-<pre><code>postMessage(&quot;Message from a worker !&quot;);</code></pre>
+
+<pre><code>
+postMessage(&quot;Message from a worker !&quot;);
+</code></pre>
+
 <blockquote>
 <ol start="4" type="1">
-<li>And the parent page can listen to messages from a worker like
-this:</li>
+  <li>And the parent page can listen to messages from a worker like this:</li>
 </ol>
 </blockquote>
-<pre><code>worker.onmessage = function(event){
+
+<pre><code>
+worker.onmessage = function(event){
     // do something with event.data
-};</code></pre>
-<h4>
-Use case #3: a complete example
-</h4>
-<p>The “Parent HTML page” of a simplistic example using a dedicated Web
-Worker:</p>
+};
+</code></pre>
+
+<h4>Use case #3: a complete example</h4>
+
+<p>The “Parent HTML page” of a simplistic example using a dedicated Web Worker:</p>
+
 <details>
-<summary>
-HTML code!
-</summary>
-<pre><code>1.  &lt;!DOCTYPE HTML&gt;
+  <summary>HTML code!</summary>
+
+<pre><code>
+1.  &lt;!DOCTYPE HTML&gt;
 2.  &lt;html&gt;
 3.  &lt;head&gt;
 4.    &lt;title&gt;Worker example: One-core computation&lt;/title&gt;
@@ -19629,14 +19577,18 @@ HTML code!
 19.     worker.postMessage(&quot;start&quot;);
 20.   &lt;/script&gt;
 21. &lt;/body&gt;
-22. &lt;/html&gt;</code></pre>
+22. &lt;/html&gt;
+</code></pre>
+
 </details>
+
 <p>The JavaScript code of the worker (worker0.js):</p>
+
 <details>
-<summary>
-JavaScript source code!
-</summary>
-<pre><code>1.  onmessage = function(e){
+  <summary>JavaScript source code!</summary>
+  
+<pre><code>
+1.  onmessage = function(e){
 2.     if ( e.data === &quot;start&quot; ) {
 3.        // Do some computation that can last a few seconds...
 4.        // alert the creator of the thread that the job is finished
@@ -19647,18 +19599,21 @@ JavaScript source code!
 9.  function done(){
 10.     // Send back the results to the parent page
 11.     postMessage(&quot;done&quot;);
-12. }</code></pre>
+12. }
+</code></pre>
+
 </details>
-<h4>
-Use case #4: handling errors
-</h4>
+
+<h4>Use case #4: handling errors</h4>
+
 <p>The parent page can handle errors that may occur inside its workers,
 by listening for an onError event from a worker object:</p>
+
 <details>
-<summary>
-JavaScript source code!
-</summary>
-<pre><code>1.  var worker = new Worker(&#39;worker.js&#39;);
+  <summary>JavaScript source code!</summary>
+
+<pre><code>
+1.  var worker = new Worker(&#39;worker.js&#39;);
 2.  worker.onmessage = function (event) {
 3.      // do something with event.data
 4.  };
@@ -19666,23 +19621,23 @@ JavaScript source code!
 6.  worker.onerror = function (event) {
 7.      console.log(event.message, event);
 8.  };
-9.  }</code></pre>
+9.  }
+</code></pre>
+
 </details>
+
 <p>See also the section “how to debug Web Workers” on next page.</p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch4-3-3">
-4.3.3 Examples
-</h3>
+<h3 id="ch4-3-3">4.3.3 Examples</h3>
 <!------------------------------------------------------------------------------------------------>
 <p><i>Dedicated Workers</i> are the simplest kind of Workers. Once
 created, they remain linked to their <i>parent page</i> (the HTML5 page
 that created them). An implicit “communication channel” is opened
 between the Workers and the parent page, so that messages can be
 exchanged.</p>
-<h4>
-Example #1: compute prime numbers in the background while keeping the
-page user interface responsive
-</h4>
+
+<h4>Example #1: compute prime numbers in the background while keeping the page user interface responsive</h4>
+
 <p>Let’s look at <a href="https://www.w3.org/TR/workers/#examples" target="_blank" rel="noopener noreferrer">the
 first example, taken from the W3C specification</a>: “<i>The simplest
 use of workers is for performing a computationally expensive task
@@ -19731,24 +19686,25 @@ file.</p>
 </details>
 
 <h4>Explanations:</h4>
+
 <ul>
-<li><p>the Web Worker is created at <i>line 9</i></p></li>
-<li><p>its code is in the worker.js file</p></li>
-<li><p><i>Lines 10-12</i> process messages sent asynchronously by the
-worker</p></li>
-<li><p>event.data is the message content.</p></li>
+  <li><p>the Web Worker is created at <i>line 9</i></p></li>
+  <li><p>its code is in the worker.js file</p></li>
+  <li><p><i>Lines 10-12</i> process messages sent asynchronously by the worker</p></li>
+  <li><p>event.data is the message content.</p></li>
 </ul>
+
 <p>Workers can only communicate with their parent page using messages.
 See the code of the worker below to see how the message has been
 sent.</p>
-<h4>
-The code of the worker (worker.js):
-</h4>
+
+<h4>The code of the worker (worker.js):</h4>
+
 <details>
-<summary>
-JavaScript source code!
-</summary>
-<pre><code>1.  var n = 1;
+  <summary>JavaScript source code!</summary>
+
+<pre><code>
+1.  var n = 1;
 2.  search: while (true) {
 3.      n += 1;
 4.      for (var i = 2; i &lt;= Math.sqrt(n); i += 1)
@@ -19756,8 +19712,11 @@ JavaScript source code!
 6.      continue search;
 7.      // found a prime!
 8.     &lt;b&gt; postMessage(n);
-9.  }</code></pre>
+9.  }
+</code></pre>
+
 </details>
+
 <p>There are a few interesting things to note here:</p>
 <ol type="1">
 <li><p>There is an infinite loop in the code at <i>line 2</i> (while
