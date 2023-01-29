@@ -5869,8 +5869,7 @@ JSBin</a>:</p>
 <p>Example #3: both previous examples, this time with the graphic equalizer</p>
 <p>Adding the graphic equalizer to the graph changes nothing, we visualize the sound that goes to the speakers. Try lowering the slider
 values - you should see the waveform changing.</p>
-<p><a href="https://jsbin.com/qijujuz/edit?html,js,output" target="_blank" rel="noopener noreferrer">Example at
-JSBin</a></p>
+<p><a href="https://jsbin.com/qijujuz/edit?html,js,output" target="_blank" rel="noopener noreferrer">Example at JSBin</a></p>
 <!------------------------------------------------------------------------------------------------>
 <!----------------------- 66. Video player + equalizer + waveform (120) -------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -5879,8 +5878,7 @@ JSBin</a></p>
   style="width:3in;height:2.5726in"
   alt="Audio player + equalizer + visualization." />
 
-<p><a href="https://jsbin.com/jafoboh/edit?js,console,output" target="_blank" rel="noopener noreferrer">Example at
-JSBin</a>:</p>
+<p><a href="https://jsbin.com/jafoboh/edit?js,console,output" target="_blank" rel="noopener noreferrer">Example at JSBin</a>:</p>
 <!------------------------------------------------------------------------------------------------>
 <!---------------- 67. video player + equalizer + waveform visualization (120) ------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -5888,7 +5886,6 @@ JSBin</a>:</p>
   src="./images/image067.jpeg"
   style="width:3in;height:4.04878in"
   alt="Video player + equalizer + waveform visualization." />
-</p>
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch1-5-6">1.5.6 Frequencies</h3>
 <!------------------------------------------------------------------------------------------------>
@@ -6024,11 +6021,11 @@ at JSBin</a> with this time the graphic equalizer, a master volume
 <!------------------------------------------------------------------------------------------------>
 <!---------------------------- 71. audio graph with equalizer (123) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image071.jpeg" 
+<img class="displayed"
+  src="./images/image071.jpeg"
   style="width:3in;height:3.36034in"
   alt="Previous example with a master volume (gain node) and the equalizer + a stereoPanner node." />
-</p>
+
 <p>And here is the audio graph for this example (picture taken with the
 now discontinued FireFox WebAudio debugger, you should get similar
 results with the Chrome WebAudio Inspector extension):</p>
@@ -8653,25 +8650,18 @@ develop during this week. Bye! Bye!</p>
 <p>Some games, mainly arcade/action games, are designed to be used with
 a gamepad:</p>
 <!------------------------------------------------------------------------------------------------>
-<!--------------------------- 107.  (1##) ----------------------------->
+<!--------------------------- 107. gamepad controller (1##) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image107.png"
   style="width:5in;height:3.22951in"
-  alt="" />
+  alt="Gamepad controller." />
 
 <p><a href="https://w3c.github.io/gamepad/" target="_blank" rel="noopener noreferrer">The Gamepad API </a>is
-currently supported by all major browsers (including Microsoft Edge),
-except Internet Explorer - see the <a
-href="https://caniuse.com/#feat=gamepad" target="_blank" rel="noopener noreferrer">up to date version of this
-feature’s compatibility table</a>. Note that the API is still a draft and
-may change in the future. We recommend using a Wired Xbox 360 Controller
-or a PS2 controller, both of which should work <i>out of the
-box</i> on Windows XP, Windows Vista, Windows, and Linux desktop
-distributions. Wireless controllers are supposed to work too, but we
-haven’t tested the API with them. You may find someone who has managed
-but they’ve probably needed to install an operating system driver to
-make it work.</p>
+currently supported by all major browsers (including Microsoft Edge), except Internet Explorer - see the <a
+href="https://caniuse.com/#feat=gamepad" target="_blank" rel="noopener noreferrer">up to date version of this feature’s compatibility table</a>. Note that the API is still a draft and may change in the future. We recommend using a Wired Xbox 360 Controller or a PS2 controller, both of which should work <i>out of the
+box</i> on Windows XP, Windows Vista, Windows, and Linux desktop distributions. Wireless controllers are supposed to work too, but we haven’t tested the API with them. You may find someone who has managed
+but they’ve probably needed to install an operating system driver to make it work.</p>
 
 <h4>Detecting gamepads</h4>
 
@@ -8682,8 +8672,7 @@ connected, and to see the range of facilities it can offer to
 JavaScript.</p>
 <p>If the user interacts with a controller (presses a button, moves a
 stick) a <a href="https://w3c.github.io/gamepad/#event-gamepadconnected" target="_blank" rel="noopener noreferrer">gamepadconnected</a> event will be sent to the page. NB the page must be visible! The event object passed to the gamepadconnected listener has a gamepad property which describes the connected device.</p>
-<p><a href="https://jsbin.com/kiduwu/edit?console,output" target="_blank" rel="noopener noreferrer">Example on
-JSBin</a></p>
+<p><a href="https://jsbin.com/kiduwu/edit?console,output" target="_blank" rel="noopener noreferrer">Example on JSBin</a></p>
 
 <details>
   <summary>Code extract!</summary>
@@ -10896,8 +10885,13 @@ JSBin</a>: move the monster with the arrow keys and use the mouse to
 move “the player”: a small circle. Try to make collisions between the
 monster and the circle you control.</p>
 
-<p><img src="./images/image123.jpeg" style="width:4in;height:3.97101in"
-alt="monster and small circle: collision, they are drawn in red and a &quot;collision&quot; message appears" /></p>
+<!------------------------------------------------------------------------------------------------>
+<!------------------------- 123. monster & small circle: collision (1xx) ------------------------->
+<!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image123.jpeg"
+  style="width:4in;height:3.97101in"
+  alt="monster and small circle: collision, they are drawn in red and a &quot;collision&quot; message appears." />
 
 <p>This online example uses the game framework (without time-based
 animation in this one). We just added a “player” (for the moment, a
@@ -11050,8 +11044,13 @@ demonstration of rectangle - rectangle detection</a>
 <p>1 - Only horizontal axis projections overlap: no collision between
 rectangles</p>
 
-<p><img src="./images/image128.jpeg" style="width:3.53125in;height:2.875in"
-alt="Only horizontal axis overlap: no collision" /></p>
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 128. only horizontal axis overlap: no collision (1xx) -------------------->
+<!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image128.jpeg"
+  style="width:3.53125in;height:2.875in"
+  alt="Only horizontal axis overlap: no collision" />
 
 <p>2 - Only vertical axis projections overlap: no collision between rectangles</p>
 
@@ -11101,7 +11100,7 @@ the collision detection is more accurate and can work with elongated
 shapes.</p>
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------------- 127. a 3d object (a lamp) with bounding spheres (xxx) ------------------->
+<!---------------------- 131.  (xxx) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image131.jpeg"
@@ -11109,7 +11108,7 @@ shapes.</p>
   alt="Player as a square is inside the monster bounding circle but not inside the bounding rectangle, as we use rect rect collision test: no collision detected." />
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------------- 127. a 3d object (a lamp) with bounding spheres (xxx) ------------------->
+<!---------------------- 132.  (xxx) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image132.jpeg"
@@ -11227,16 +11226,21 @@ the MAME arcade game emulator):</p>
 <img class="displayed"
   src="./images/image133.jpeg"
   style="width:5in;height:3.13408in"
-  alt="screenshot of dodonpachi." />
+  alt="Screenshot of dodonpachi." />
   
 <p>You could also try the free Genetos shoot’em up game (Windows
 only) that retraces the history of the genre over its different levels
-(<a href="https://tatsuya-koyama.com/works/games/genetos/" target="_blank" rel="noopener noreferrer">download
-here</a>). Press the G key to see the bounding rectangles used for
+(<a href="https://tatsuya-koyama.com/works/games/genetos/" target="_blank" rel="noopener noreferrer">download here</a>). Press the G key to see the bounding rectangles used for
 collision test. Here is a screenshot:</p>
 
-<p><img src="./images/image134.jpeg" style="width:5in;height:3.77137in"
-alt="genetos screenshot" /></p>
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------- 134.  (xxx) ---------------------------->
+<!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image134.jpeg"
+  style="width:5in;height:3.77137in"
+  alt="genetos screenshot" />
+
 <p>These games run at 60 fps and can have hundreds of bullets moving at
 the same time. Collisions have to be tested: did the player’s bullets
 hit an enemy, AND did an enemy bullet (for one of the many enemies) hit
