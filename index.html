@@ -1355,9 +1355,9 @@ neutrality, and interoperability, W3C and its community are setting the
 vision and standards for the Web, ensuring the building blocks of the
 Web are open, accessible, secure, international and have been developed
 via the collaboration of global technical experts.</p>
-<h4>
-Essential Steps in Web i18n
-</h4>
+
+<h4>Essential Steps in Web i18n</h4>
+
 <p>You find below three examples (and checks!) to help you to ensure
 that your Web page works for people around the world, and to make it
 work differently for different cultures, where needed. Let’s meet the
@@ -1885,9 +1885,9 @@ forcing some tracks to load programmatically from JavaScript and this
 will enable us to make a sort of menu for choosing the different
 tracks.</p>
 <p>I will explain that in a next video.</p>
-<h4>
-The HTML track element
-</h4>
+
+<h4>The HTML track element</h4>
+
 <h4>Let’s go back to our example. Below is the HTML code:</h4>
 
 <details>
@@ -1969,7 +1969,9 @@ JSBin that displays the different elements we can get from an HTML track</a>:</h
 </details>
 
 <hr>
+
 <h4>The code is rather straightforward:</h4>
+
 <ul>
 <li><p>We cannot access any HTML element before the page has been
 loaded. This is why we do all the work in
@@ -2111,6 +2113,7 @@ track.</p>
 associated TextTrack object.</p>
 
 <h4>Example source code:</h4>
+
 <details>
   <summary>Code extract!</summary>
 
@@ -2244,6 +2247,7 @@ previous example:</p>
 </details>
 
 <h4>Explanations:</h4>
+
 <ul>
 <li><p><i>Lines 26-31</i>: the function called when a button has been
 clicked. This function in turn calls the getTrack(trackNumber,
@@ -4653,6 +4657,7 @@ add an audio or video player to an HTML document, using the
 <p>… render like this in your document:</p>
 
 <h4>Under the hood, this HTML code:</h4>
+
 <ol type="1">
   <li>initiates a network request to stream the content,</li>
   <li>deals with decoding/streaming/buffering the incoming data,</li>
@@ -6357,9 +6362,9 @@ adjustment of the left/right balance with a slider.</p>
 <p>The code is very similar to the previous one. We draw two rectangles
 side-by-side, corresponding to the two analyser nodes - instead of the
 single display in the previous example.</p>
-<h4>
-Extra explanations and resources
-</h4>
+
+<h4>Extra explanations and resources</h4>
+
 <p>Indeed, the proposed examples are ok for making things “dancing in
 music” but rather inaccurate if you are looking for a real volume meter.
 Results may also change if you modify the size of the fft in the
@@ -6489,9 +6494,9 @@ played. Since no pitch correction is applied on the output, this can be
 used to change the pitch of the sample.</p></li>
 <li><p>detune: not relevant for this course.</p></li>
 </ul>
-<h4>
-Loading and decoding a sound sample
-</h4>
+
+<h4>Loading and decoding a sound sample</h4>
+
 <p><b>Before use, a sound sample must be loaded using Ajax, decoded, and
 set to the buffer property of an AudioBufferSourceNode.</b></p>
 <p><a href="https://jsbin.com/botagas/edit?html,js,console,output" target="_blank" rel="noopener noreferrer">Try
@@ -6634,12 +6639,11 @@ destination. This seems strange when you learn Web Audio, but don’t
 worry - it’s a very fast operation, even with hundreds of
 nodes.</b></p></li>
 </ul>
-<h4>
-Loading and decoding multiple sounds: the BufferLoader utility
-</h4>
-<h4>
-The problem: AJax requests are asynchronous
-</h4>
+
+<h4>Loading and decoding multiple sounds: the BufferLoader utility</h4>
+
+<h4>The problem: AJax requests are asynchronous</h4>
+
 <p>The asynchronous aspect of Ajax has always been problematic for
 beginners. For example, if our applications use multiple sound samples
 and we need to be sure that all of them are loaded and decoded, using
@@ -6839,6 +6843,7 @@ variations:</p>
 </details>
 
 <h4>Explanations:</h4>
+
 <ul>
   <li><p><i>Lines 11-15</i>: we make a loop for building multiple routes in the graph. The number of routes corresponds to the number of times that we want the same buffer to be played. Note that the random2 parameter enables us to randomize the playback rate of the source node that corresponds to the pitch of the sound. </p></li>
   <li><p><i>Line 14</i>: this is where the sound is being played. Instead of calling source.start(), we call source.start(delay), this tells the Web Audio scheduler to play the sound after a certain time.</p></li>
@@ -7058,9 +7063,8 @@ Coding Essentials and Best Practices</a> course, we study the canvas,
 drawing, and animation elements. These are going to be revisited in more
 details in this section.</p>
 <p>Here, we present some elements that are useful in writing games.</p>
-<h4>
-Drawing: the &lt;canvas&gt; element
-</h4>
+
+<h4>Drawing: the &lt;canvas&gt; element</h4>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 89. the html5 canvas logo (146) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -7094,18 +7098,17 @@ it in greater detail later in the course.</p>
 Group</a> published <a href="https://www.w3.org/TR/2dcontext/" target="_blank" rel="noopener noreferrer">HTML
 Canvas 2D Context</a> as W3C Recommendation (i.e., Web standard
 status).</p>
-<h4>
-Animating at 60 fps: the requestAnimationFrame API
-</h4>
+
+<h4>Animating at 60 fps: the requestAnimationFrame API</h4>
+
 <p>The requestAnimationFrame API targets 60 frames per second animation
 in canvases. This API is quite simple and also comes with a high
 resolution timer. Animation at 60 fps is often easy to obtain with
 simple 2D games on major desktop computers. This is the preferred way to
 perform animation, as the browser will ensure that animation is not
 performed when the canvas is not visible, thus saving CPU resources.</p>
-<h4>
-Videos and animated textures: the &lt;video&gt; element
-</h4>
+
+<h4>Videos and animated textures: the &lt;video&gt; element</h4>
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------------- 90. a movie film icon (147) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -7120,14 +7123,11 @@ movies, partially replacing the object element.  The JavaScript API is
 nearly the same as the one of the &lt;audio&gt; element and enables full
 control from JavaScript.</p>
 <p>By combining the capabilities of
-the &lt;video&gt; and &lt;canvas&gt; elements, it is possible to
-manipulate video data to incorporate a variety of visual effects  in
+the &lt;video&gt; and &lt;canvas&gt; elements, it is possible to manipulate video data to incorporate a variety of visual effects  in
 real time, and conversely, to use images from videos as “animated
-textures” over graphic objects.</p>
-<h4>
-Audio (streamed audio and real time sound effects):
-the &lt;audio&gt; element and the Web Audio API
-</h4>
+textures over graphic objects.</p>
+
+<h4>Audio (streamed audio and real time sound effects): the &lt;audio&gt; element and the Web Audio API</h4>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 91. a picture of a speaker (148) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -7628,9 +7628,9 @@ let’s draw something, animate it, and move shapes around the screen
 used during the <a
 href="https://www.edx.org/course/html5-coding-essentials-and-best-practices" target="_blank" rel="noopener noreferrer">W3C
 HTML5 Coding Essentials and Best Practices course</a>.</p>
-<h4>
-HTML5 canvas basic usage: drawing a monster
-</h4>
+
+<h4>HTML5 canvas basic usage: drawing a monster</h4>
+
 <p>How to draw a monster in a canvas: <a
 href="https://jsbin.com/ponaki/edit" target="_blank" rel="noopener noreferrer">you can try it online at
 JSBin</a>.</p>
@@ -8067,9 +8067,9 @@ game loop will have to take these three keys into account: move the ship
 left, release a new missile if the previous one is out of the screen or
 if it reached a target, launch a smart bomb if conditions are met,
 etc.</p>
-<h4>
-Keep the list of pertinent keys in a JavaScript object
-</h4>
+
+<h4>Keep the list of pertinent keys in a JavaScript object</h4>
+
 <p>The typical method used is: store the list of the keys (or mouse
 button or whatever game pad button…) that are up or down at a given
 time in a JavaScript object. For our small game engine we will call this
@@ -8077,9 +8077,9 @@ object “inputStates”.</p>
 <p>We will update its content inside the different input event
 listeners, and later check its values inside the game loop to make the
 game react accordingly.</p>
-<h4>
-Add this to our game framework:
-</h4>
+
+<h4>Add this to our game framework:</h4>
+
 <p>These are the changes to our small game engine prototype (which is
 far from finished yet):</p>
 <ol type="1">
@@ -9289,6 +9289,7 @@ input states up-to-date, and not to handle single events
 individually.</p>
 
 <h4>Gamepad enhancements</h4>
+
 <p>Let’s add the gamepad utility functions from the previous lesson (we
 tidied them a bit too, removing the code for displaying the progress
 bars, buttons, etc.), added a gamepad property to the game framework,
@@ -9911,8 +9912,7 @@ resolution timer</a>.</p>
 uncomment the console.log(…) calls in the main loop. You will see the
 difference.</p>
 
-<h4>Method #3: using the optional timestamp parameter of the callback
-function of requestAnimationFrame</h4>
+<h4>Method #3: using the optional timestamp parameter of the callback function of requestAnimationFrame</h4>
 
 <blockquote>
 <p><b>This is the recommended method!</b></p>
@@ -10449,9 +10449,9 @@ the player but also other objects on the screen.</p>
 <p>Let’s study a simple example: animating a few balls and detecting
 collisions with the surrounding walls. For the sake of simplicity, we
 will not use time-based animation in the first examples.</p>
-<h4>
-Animating multiple balls which bounce off horizontal and vertical walls
-</h4>
+
+<h4>Animating multiple balls which bounce off horizontal and vertical walls</h4>
+
 <p><a href="https://jsbin.com/fikomik/edit?js,output" target="_blank" rel="noopener noreferrer">Online example at
 JSBin</a>:</p>
 
@@ -11045,6 +11045,7 @@ spheres for detecting collisions between cars:</p>
   alt="Two pictures: one with non intersected rectangles: the projection of horizontal sides of rectangles to the X axis do not intersect (then rectangles do not intersect), the other with both projections intersect (rectangles intersect)" />
 
 <h4>From this:</h4>
+
 <blockquote>
 <p>To detect a collision between two aligned rectangles, we project the
 horizontal and vertical axis of the rectangles over the X and Y axis. If
@@ -11056,6 +11057,7 @@ both projections overlap, there is a collision!</p>
 id=“_Toc98696616” class=“anchor”&gt;&lt;/span&gt;Try this online
 demonstration of rectangle - rectangle detection</a>
 </h4>
+
 <p>1 - Only horizontal axis projections overlap: no collision between
 rectangles</p>
 
@@ -11064,20 +11066,29 @@ alt="Only horizontal axis overlap: no collision" /></p>
 
 <p>2 - Only vertical axis projections overlap: no collision between rectangles</p>
 
-<p><img src="./images/image129.jpeg"
-style="width:3.42708in;height:2.88542in"
-alt="Only vertical axis projections overlap: no collision" /></p>
+<!------------------------------------------------------------------------------------------------>
+<!----------------- 129. only vertical axis projections overlap: no collision (xxx) -------------->
+<!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image129.jpeg"
+  style="width:3.42708in;height:2.88542in"
+  alt="Only vertical axis projections overlap: no collision." />
 
-<p>3 - Horizontal and vertical axis projections overlap: collision
-detected!</p>
+<p>3 - Horizontal and vertical axis projections overlap: collision detected!</p>
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------- 130. the projections of axis overlap: collision detected (xxx) --------------->
+<!------------------------------------------------------------------------------------------------>
+<img class="displayed"
 <p><img src="./images/image130.jpeg"
 style="width:3.44792in;height:3.01042in"
 alt="the projections of axis overlap: collision detected" /></p>
 
 <p>Here is a JavaScript implementation of a rectangle - rectangle
 (aligned) collision test:</p>
-<pre><code>// Collisions between aligned rectangles
+
+<pre><code>
+// Collisions between aligned rectangles
 function rectsOverlap(x1, y1, w1, h1, x2, y2, w2, h2) {
   
   if ((x1 &gt; (x2 + w2)) || ((x1 + w1) &lt; x2))
@@ -11088,10 +11099,11 @@ function rectsOverlap(x1, y1, w1, h1, x2, y2, w2, h2) {
 
   return true;    // If previous tests failed, then both axis projections
                   // overlap and the rectangles intersect
-}</code></pre>
-<h4>
-Let’s test this method
-</h4>
+}
+</code></pre>
+
+<h4>Let’s test this method</h4>
+
 <p><a href="https://jsbin.com/fubima/edit" target="_blank" rel="noopener noreferrer">Try this example at
 JSBin</a>: move the monster with the arrow keys and use the mouse to
 move “the player”: this time a small rectangle. Try to make collisions
@@ -11099,12 +11111,22 @@ between the monster and the circle you control. Notice that this time
 the collision detection is more accurate and can work with elongated
 shapes.</p>
 
-<p><img src="./images/image131.jpeg"
-style="width:2.39583in;height:1.90625in"
-alt="Player as a square is inside the monster bounding circle but not inside the bounding rectangle, as we use rect rect collision test: no collision detected" /></p>
+<!------------------------------------------------------------------------------------------------>
+<!---------------------- 127. a 3d object (a lamp) with bounding spheres (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image131.jpeg"
+  style="width:2.39583in;height:1.90625in"
+  alt="Player as a square is inside the monster bounding circle but not inside the bounding rectangle, as we use rect rect collision test: no collision detected." />
 
-<p><img src="./images/image132.jpeg" style="width:2.125in;height:1.90625in"
-alt="Same as previous picture but this time the player square is inside the monster bounding rectangle: collision detected" /></p>
+<!------------------------------------------------------------------------------------------------>
+<!---------------------- 127. a 3d object (a lamp) with bounding spheres (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image132.jpeg"
+  style="width:2.125in;height:1.90625in"
+  alt="Same as previous picture but this time the player square is inside the monster bounding rectangle: collision detected." />
+
 <p>Here is what we modified (in bold) in the code:</p>
 
 <details>
@@ -11210,8 +11232,14 @@ collisions are used in many 2D games, such as Dodonpachi (one of the
 most famous and enjoyable shoot’em’ups ever made - you can play it using
 the MAME arcade game emulator):</p>
 
-<p><img src="./images/image133.jpeg" style="width:5in;height:3.13408in"
-alt="screenshot of dodonpachi" /></p>
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------- 133. screenshot of dodonpachi (xxx) ---------------------------->
+<!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image133.jpeg"
+  style="width:5in;height:3.13408in"
+  alt="screenshot of dodonpachi." />
+  
 <p>You could also try the free Genetos shoot’em up game (Windows
 only) that retraces the history of the genre over its different levels
 (<a href="https://tatsuya-koyama.com/works/games/genetos/" target="_blank" rel="noopener noreferrer">download
@@ -11269,10 +11297,16 @@ Thread at StackOverflow</a>):</p>
 <p><a href="https://jsbin.com/acohiv/845/edit?html,output" target="_blank" rel="noopener noreferrer">Try this
 function in this example on JSBin</a>.</p>
 
+<!------------------------------------------------------------------------------------------------>
+<!------------------------ 135. circle and rectangle not in collision (xxx) ---------------------->
+<!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image135.jpeg?raw=true"
   alt="Circle and rectangle not in collision."
   style="width:20%;" />
+<!------------------------------------------------------------------------------------------------>
+<!---------------------------- 136. circle collides with rectangle (xxx) ------------------------->
+<!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image136.jpeg?raw=true"
   alt="Circle collides with a rectangle."
@@ -11291,6 +11325,9 @@ href="https://jsbin.com/nopefe/edit" target="_blank" rel="noopener noreferrer">t
 with a blurring effect</a></p></li>
 </ul>
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 137. ball-ball collision example (xxx) --------------------------->
+<!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image137.jpeg?raw=true"
   alt="Ball-ball collision example."
@@ -11312,6 +11349,9 @@ components between the two balls (as we move from step 2 to step 3),
 then finally recombine the velocities for each ball to achieve the
 result (step 4):</p>
 
+<!------------------------------------------------------------------------------------------------>
+<!--------- 138. diagram with two balls, velocities, tengeantial & normal planes. (xxx) ---------->
+<!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image138.png?raw=true"
   alt="Diagram with two balls, velocities, tengeantial and normal planes."
@@ -11327,9 +11367,9 @@ displays the different vectors in real time, with only two balls</a>.
 The math for the collision test have also been expanded in the source
 code to make computations clearer. Note that this is not for beginners:
 advanced math and physics are involved!</p>
-<h4>
-To go further… video game physics!
-</h4>
+
+<h4>To go further… video game physics!</h4>
+
 <p>For the ones who are not afraid by some math and physics and would
 like to learn how to do collision detection in a more realistic way
 (using physics modeling), we recommend <a
@@ -11349,7 +11389,9 @@ the ball color to red.</p>
 <p><a href="https://jsbin.com/bohebe/edit?js,output" target="_blank" rel="noopener noreferrer">Try the example at
 JsBin!</a></p>
 
-
+<!------------------------------------------------------------------------------------------------>
+<!------------------------ 139. collision between balls & the monster (xxx) ---------------------->
+<!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image139.jpeg?raw=true"
   alt="Collision between balls and the monster."
@@ -11717,6 +11759,7 @@ sheet.</p></li>
 sheets. Adjust the global parameters in bold at<i> lines 1-5</i> and
 try the extractor.</p></li>
 </ul>
+
 <h4>Example #2</h4>
 
 <ol start="542" type="1">
@@ -11982,14 +12025,10 @@ her.</p>
 <h4>External resource</h4>
 
 <ul>
-<li>Game development tutorial (5 May 2020): <a
-href="https://spicyyoghurt.com/tutorials/html5-javascript-game-development/images-and-sprite-animations" target="_blank" rel="noopener noreferrer">Draw
-images and sprite animations</a></li>
+  <li>Game development tutorial (5 May 2020): <a href="https://spicyyoghurt.com/tutorials/html5-javascript-game-development/images-and-sprite-animations" target="_blank" rel="noopener noreferrer">Draw images and sprite animations</a></li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch2-6-5">
-2.6.5 Adding sprites to the game framework
-</h3>
+<h3 id="ch2-6-5">2.6.5 Adding sprites to the game framework</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>Let us use the animated woman example and take the sprite utility
 functions and some predefined values, such as the sprite sheet URL, the
@@ -12000,11 +12039,12 @@ with gamepad, etc)).</p>
 <p><b>First, try this <a
 href="https://jsbin.com/mifeva/edit?js,console,output" target="_blank" rel="noopener noreferrer">example at
 JsBin</a></b></p>
+
 <p><img src="./images/image150.jpeg" style="width:6.5in;height:3.03819in"
 alt="The woman sprite in the game framework, jsbin screenshot" /></p>
-<h4>
-How to add sprites to the game framework…
-</h4>
+
+<h4>How to add sprites to the game framework…</h4>
+
 <ol type="1">
 <li><p>We declare a woman object, similar to the monster object, with x,
 y, speed, width properties. We add a direction property that corresponds
@@ -12387,35 +12427,26 @@ is not suited for developing large systems. </p>
 <p>In order to keep working on this game framework, we recommend that
 you modularize the project and split the JavaScript code into several
 JavaScript files:</p>
+
 <ul>
-<li><p>Review the different functions and isolate those that have no
-dependence on the framework. Obviously, the sprite utility functions,
-the collision detection functions, and the ball constructor function can
-be separated from the game framework, and could easily be reused in
-other projects. Key and mouse listeners also can be isolated, gamepad
-code too…</p></li>
-<li><p>Look at what you could change to reduce dependencies: add a
-parameter in order to make a function independent from global variables,
-for example.</p></li>
-<li><p>In the end, try to limit the game.js file to the core of the game
-framework (init function, mainloop, game states, score, levels), and
-separate the rest into functional groupings, eg utils.js, sprites.js,
-collision.js, listeners.js, etc.</p></li>
+  <li><p>Review the different functions and isolate those that have no dependence on the framework. Obviously, the sprite utility functions, the collision detection functions, and the ball constructor function can be separated from the game framework, and could easily be reused in other projects. Key and mouse listeners also can be isolated, gamepad code too…</p></li>
+  <li><p>Look at what you could change to reduce dependencies: add a parameter in order to make a function independent from global variables, for example.</p></li>
+  <li><p>In the end, try to limit the game.js file to the core of the game framework (init function, mainloop, game states, score, levels), and separate the rest into functional groupings, eg utils.js, sprites.js, collision.js, listeners.js, etc.</p></li>
 </ul>
+
 <p>Let’s do this together!</p>
-<h4>
-Start with a simple structure
-</h4>
-<p>First, create a game.html file that contains the actual HTML
-code:</p>
-<h4>
-game.html:
-</h4>
+
+<h4>Start with a simple structure</h4>
+
+<p>First, create a game.html file that contains the actual HTML code:</p>
+
+<h4>game.html:</h4>
+
 <details>
-<summary>
-game.html extract!
-</summary>
-<pre><code>1.  &lt;!DOCTYPE html&gt;
+  <summary>game.html extract!</summary>
+  
+<pre><code>
+1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.  &lt;head&gt;
 4.    &lt;meta charset=&quot;utf-8&quot;&gt;
@@ -12430,12 +12461,19 @@ game.html extract!
 13. &lt;body&gt;
 14.   &lt;canvas id=&quot;myCanvas&quot; width=&quot;400&quot; height=&quot;400&quot;&gt;&lt;/canvas&gt;
 15. &lt;/body&gt;
-16. &lt;/html&gt;</code></pre>
+16. &lt;/html&gt;
+</code></pre>
+
 </details>
+
 <p>Here is the game.css file (very simple):</p>
-<pre><code>1.  canvas {
+
+<pre><code>
+1.  canvas {
 2.     border: 1px solid black;
-3.  }</code></pre>
+3.  }
+</code></pre>
+
 <p>Let’s take the JavaScript code from the last JSBin example, save it
 to a file called game.js, and locate it in a subdirectory js under the
 directory where the game.html file is located. Similarly, we’ll keep the
@@ -12458,14 +12496,14 @@ files and encounter errors.</p>
 <p>Put the Ball constructor function in a js/ball.js file, include it in
 the game.html file, and try the game: oops, it doesn’t work! Let’s open
 the console:</p>
-<h4>
-Ball.js:
-</h4>
+
+<h4>Ball.js:</h4>
+
 <details>
-<summary>
-Function Ball extract!
-</summary>
-<pre><code>1.  // constructor function for balls
+  <summary>Function Ball extract!</summary>
+
+<pre><code>
+1.  // constructor function for balls
 2.  function Ball(x, y, angle, v, diameter) {
 3.     ...
 4.      this.draw = function () {
@@ -12477,11 +12515,13 @@ Function Ball extract!
 10.       this.x += calcDistanceToMove(delta, incX);
 11.       this.y += calcDistanceToMove(delta, incY);
 12.     };
-13. }</code></pre>
+13. }
+</code></pre>
+
 </details>
-<h4>
-Isolate the time based animation functions into a separate file
-</h4>
+
+<h4>Isolate the time based animation functions into a separate file</h4>
+
 <p>Hmmm… the calcDistanceToMove function is used here, but is defined in
 the game.js file, inside the GF object and will certainly raise an
 error… Also, the ctx variable should be added as a parameter to
@@ -12507,14 +12547,14 @@ and add a ctx parameter to the draw method of ball.js. Don’t forget to
 add it in game.js where ball.draw() is called. The call should be
 now ball.draw(<b>ctx</b>); instead of ball.draw() without any
 parameter.</p>
-<h4>
-timeBasedAnim.js:
-</h4>
+
+<h4>timeBasedAnim.js:</h4>
+
 <details>
-<summary>
-JavaScript code extract!
-</summary>
-<pre><code>1.  var delta, oldTime = 0;
+  <summary>JavaScript code extract!</summary>
+  
+<pre><code>
+1.  var delta, oldTime = 0;
 2.   
 3.  function timer(currentTime) {
 4.     var delta = currentTime - oldTime;
@@ -12525,22 +12565,26 @@ JavaScript code extract!
 9.  var calcDistanceToMove = function (delta, speed) {
 10.    //console.log(&quot;#delta = &quot; + delta + &quot; speed = &quot; + speed);
 11.    return (speed * delta) / 1000;
-12. };</code></pre>
+12. };
+</code></pre>
+
 </details>
-<h4>
-Isolate the part that counts the number of frames per second
-</h4>
+
+<h4>Isolate the part that counts the number of frames per second</h4>
+
 <p>We need to add a small initFPS function for creating
 the &lt;div&gt; that displays the FPS value… this function will be
 called from the GF.start() method. There was code in this start method
 that has been moved into the initFPS function we created and added into
 the fps.js file.</p>
-<p>fps.js:</p>
+
+<h4>fps.js:</h4>
+
 <details>
-<summary>
-fps.js extract!
-</summary>
-<pre><code>1.  // vars for counting frames, used by the measureFPS function
+  <summary>fps.js extract!</summary>
+  
+<pre><code>
+1.  // vars for counting frames, used by the measureFPS function
 2.  var frameCount = 0;
 3.  var lastTime;
 4.  var fpsContainer;
@@ -12573,8 +12617,11 @@ fps.js extract!
 31.    // document in the start() function
 32.    fpsContainer.innerHTML = &#39;FPS: &#39; + fps;
 33.    frameCount++;
-34. };</code></pre>
+34. };
+</code></pre>
+
 </details>
+
 <p>At this stage, the structure looks like this:</p>
 <!------------------------------------------------------------------------------------------------>
 <!---------------------------------- 156. game structure (281) ----------------------------------->
@@ -12590,14 +12637,14 @@ fps.js extract!
 it from the GF.start() method into a listeners.js file? We’ll have to
 pass the canvas as an extra parameter (to resolve a dependency) and we
 also move the getMousePos method into there. </p>
-<h4>
-listeners.js:
-</h4>
+
+<h4>listeners.js:</h4>
+
 <details>
-<summary>
-JavaScript code extract!
-</summary>
-<pre><code>function addListeners(inputStates, canvas) {
+  <summary>JavaScript code extract!</summary>
+  
+<pre><code>
+function addListeners(inputStates, canvas) {
    //add the listener to the main, window object, and update the states
    window.addEventListener(&#39;keydown&#39;, function (event) {
       if (event.keyCode === 37) {
@@ -12621,14 +12668,18 @@ JavaScript code extract!
  
 function getMousePos(evt, canvas) {
    ...
-}</code></pre>
+}
+</code></pre>
+
 </details>
-<h4>
-Isolate the collision tests
-</h4>
+
+<h4>Isolate the collision tests</h4>
+
 <p>Following the same idea, let’s put these into
 a collisions.js file:</p>
-<pre><code>// We can add the other collision functions seen in the
+
+<pre><code>
+// We can add the other collision functions seen in the
 // course here...
 
 // Collisions between rectangle and circle
@@ -12638,7 +12689,9 @@ function circRectsOverlap(x0, y0, w0, h0, cx, cy, r) {
  
 function testCollisionWithWalls(ball, w, h) {
    ...
-}</code></pre>
+}
+</code></pre>
+
 <p>We added the width and height of the canvas as parameters to
 the testCollisionWithWalls function to resolve dependencies. The other
 collision functions (circle-circle and rectangle-rectangle) presented
@@ -12700,38 +12753,30 @@ structure, playability, add sounds, better graphics, more levels, etc.
 We like to give points for style and flair, but most especially because
 we’ve been (pleasantly) surprised!</p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch2-7-3">
-2.7.3 Discussion and projects
-</h3>
+<h3 id="ch2-7-3">2.7.3 Discussion and projects</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>Here is the discussion forum for this part of the course. Please
 either post your comments/observations/questions or share your
 creations.</p>
-<h4>
-Suggested topics of discussion:
-</h4>
+
+<h4>Suggested topics of discussion:</h4>
+
 <ul>
-<li><p>What additional content would you like to see in this part of the
-course?</p></li>
-<li><p>Did you notice we gave you (without saying) a small particle
-engine during Week 1? This is very useful for simulating explosions or
-bullet impacts…</p></li>
+  <li><p>What additional content would you like to see in this part of the course?</p></li>
+  <li><p>Did you notice we gave you (without saying) a small particle engine during Week 1? This is very useful for simulating explosions or bullet impacts…</p></li>
 </ul>
-<h4>
-Optional projects: create your own game!
-</h4>
+
+<h4>Optional projects: create your own game!</h4>
+
 <p>Try to make your own game, either by modifying/completing the given
 example (change the scenario, add levels, colors, sound effects,
 sprites, shots, etc.) or by writing your own using the methods explained
 in the course.<br />
 To inspire you, here are some examples written by Michel’s students.
 Some of them are based on the framework presented in the course.</p>
+
 <ul>
-<li><a href="https://output.jsbin.com/cuwuso/" target="_blank" rel="noopener noreferrer">The Wanted</a>: escape
-the Police and steal as many gold coins as you can! This game did not
-really follow the game framework presented in the course, but the final
-game is fun and is an interesting variation on examples presented in the
-course.</li>
+  <li><a href="https://output.jsbin.com/cuwuso/" target="_blank" rel="noopener noreferrer">The Wanted</a>: escape the Police and steal as many gold coins as you can! This game did not really follow the game framework presented in the course, but the final game is fun and is an interesting variation on examples presented in the course.</li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 158. wanted game main screen (2##) ------------------------------->
@@ -12955,9 +13000,9 @@ browser every second or something like that.</p>
 <p>It’s very easy to monitor the progress.</p>
 <p>You can put vertically this bar using CSS, change the style.</p>
 <p>Refer to the HTML5 Part 1 course for that.</p>
-<h4>
-Ajax and binary files - downloading files and monitoring progress
-</h4>
+
+<h4>Ajax and binary files - downloading files and monitoring progress</h4>
+
 <p>HTTP is a text based protocol, so when you upload/download images,
 videos or any binary file, they must first be text encoded for
 transmission, then decoded on-the-fly upon receipt by the server or
@@ -12973,7 +13018,9 @@ using XMLHttpRequest level 2.</p>
 <p><i>Note</i>: 1) the simple and concise syntax, and 2) the use of
 the new arrayBuffer type for the expected response (<i>line
 5</i>):</p>
-<pre><code>1.  // Load a binary file from a URL as an ArrayBuffer.
+
+<pre><code>
+1.  // Load a binary file from a URL as an ArrayBuffer.
 2.  function loadSoundFile(url) {
 3.  var xhr = new XMLHttpRequest();
 4.  xhr.open(&#39;GET&#39;, url, true);
@@ -12982,15 +13029,14 @@ the new arrayBuffer type for the expected response (<i>line
 7.  initSound(this.response); // this.response is an ArrayBuffer.
 8.  };
 9.  xhr.send();
-10. }</code></pre>
-<h4>
-Example: download a binary song file using XHR2
-and responseType=‘arraybuffer’, and play it using Web Audio
-</h4>
+10. }
+</code></pre>
+
+<h4>Example: download a binary song file using XHR2 and responseType=‘arraybuffer’, and play it using Web Audio</h4>
+
 <p><a href="https://jsbin.com/mecakaz/edit?html,js,console,output" target="_blank" rel="noopener noreferrer">Try
 this example on JSBin</a>:</p>
-<p>In this example, instead of reading the file from disk, we download
-it using XHR2.</p>
+<p>In this example, instead of reading the file from disk, we download it using XHR2.</p>
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 164. download file using xhr2 (2##) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
@@ -13091,26 +13137,17 @@ it using XHR2.</p>
 </details>
 
 <h4>Explanations</h4>
+
 <p>:</p>
+
 <ul>
-<li><p><i>Line 12</i>: a click on this button will call
-the downloadSoundFile function, passing it the URL of a sample mp3
-file.</p></li>
-<li><p><i>Lines 58-73</i>: this function sends the Ajax request, and
-when the file has arrived, the xhr.onload callback is called (<i>line
-63</i>).</p></li>
-<li><p><i>Lines 39-55</i>: The initSound function decodes the mp3 into
-memory using the WebAudio API, and enables the play and stop
-buttons.</p></li>
-<li><p>When the play button is enabled and clicked (<i>line 15</i>) it
-calls the playSound function. This builds a minimal Web Audio graph with
-a BufferSource node that contains the decoded sound (<i>lines
-31-32</i>), connects it to the speakers (<i>line 35</i>), and then plays
-it.</p></li>
+  <li><p><i>Line 12</i>: a click on this button will call the downloadSoundFile function, passing it the URL of a sample mp3 file.</p></li>
+  <li><p><i>Lines 58-73</i>: this function sends the Ajax request, and when the file has arrived, the xhr.onload callback is called (<i>line 63</i>).</p></li>
+  <li><p><i>Lines 39-55</i>: The initSound function decodes the mp3 into memory using the WebAudio API, and enables the play and stop buttons.</p></li>
+  <li><p>When the play button is enabled and clicked (<i>line 15</i>) it calls the playSound function. This builds a minimal Web Audio graph with a BufferSource node that contains the decoded sound (<i>lines 31-32</i>), connects it to the speakers (<i>line 35</i>), and then plays it.</p></li>
 </ul>
-<h4>
-Monitoring uploads or downloads using a progress event
-</h4>
+
+<h4>Monitoring uploads or downloads using a progress event</h4>
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------------- 165. download progress (281) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -13180,11 +13217,14 @@ successful.</td>
 </tr>
 </tbody>
 </table>
+
 <p>The syntax for declaring progress event handlers is slightly
 different depending on the type of operation: a download (using the GET
 HTTP method), or an upload (using POST).</p>
 <p><b>Syntax for download:</b></p>
-<pre><code>1.  var xhr = new XMLHttpRequest();
+
+<pre><code>
+1.  var xhr = new XMLHttpRequest();
 2.  xhr.open(&#39;GET&#39;, url, true);
 3.  ...
 4.  xhr.onprogress = function(e) {
@@ -13192,50 +13232,58 @@ HTTP method), or an upload (using POST).</p>
 6.  }
 580. 
 &lt;!-- --&gt;
-7.  xhr.send();</code></pre>
+7.  xhr.send();
+</code></pre>
+
 <p>Note that an alternative syntax such
 as xhr.addEventListener(‘progress’, callback, false) also works.</p>
 <p><b>Syntax for upload:</b></p>
-<pre><code>1.  var xhr = new XMLHttpRequest();
+
+<pre><code>
+1.  var xhr = new XMLHttpRequest();
 2.  xhr.open(&#39;POST&#39;, url, true);
 3.  ...
 4.  xhr.upload.onprogress = function(e) {
 5.  // do something
 6.  }
 7.   
-8.  xhr.send();</code></pre>
+8.  xhr.send();
+</code></pre>
+
 <p>Notice that the only difference is the “upload” added after the name
 of the request object: with GET we use xhr.onprogress and with POST we
 use xhr.upload.onprogress.</p>
 <p>Note that an alternative syntax such
 as xhr.upload.addEventListener(‘progress’, callback, false) also
 works.</p>
-<h4>
-2 - Get progress values (how many bytes have been downloaded) and the
-total file size
-</h4>
+
+<h4>2 - Get progress values (how many bytes have been downloaded) and the total file size</h4>
+
 <p>The event e passed to the onprogress callback has two pertinent
 properties:</p>
+
 <ol type="1">
-<li><p>loaded which corresponds to the number of bytes that have been
-downloaded or uploaded by the browser, so far, and</p></li>
-<li><p>total which contains the file’s size (in bytes).</p></li>
+  <li><p>loaded which corresponds to the number of bytes that have been downloaded or uploaded by the browser, so far, and</p></li>
+  <li><p>total which contains the file’s size (in bytes).</p></li>
 </ol>
+
 <p>Combining these with a &lt;progress&gt; element, makes it very easy
 to render an animated <i>progress bar</i>. Here is a source code
 extract that does this for a download operation:</p>
-<h4>
-HTML
-</h4>
-<pre><code>&lt;progress id=&quot;downloadProgress&quot; value=0&gt;&lt;progress&gt;</code></pre>
-<h4>
-Script:
-</h4>
+
+<h4>HTML</h4>
+
+<pre><code>
+&lt;progress id=&quot;downloadProgress&quot; value=0&gt;&lt;progress&gt;
+</code></pre>
+
+<h4>Script:</h4>
+
 <details>
-<summary>
-JavaScript code!
-</summary>
-<pre><code>1.  // progress element
+  <summary>JavaScript code!</summary>
+
+<pre><code>
+1.  // progress element
 2.  var progress = document.querySelector(&#39;#downloadProgress&#39;);
 3.   
 4.  function downloadSoundFile(url) {
@@ -13352,7 +13400,6 @@ JSBin</a>:</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 169. file update example 1 (##) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
 <img class="displayed"
   src="./images/image169.jpeg?raw=true"
   style="width:35%;"
@@ -13403,33 +13450,24 @@ JSBin</a>:</p>
 </details>
 
 <h4><b>Explanations</b>:</h4>
+
 <ul>
-<li><p><i>Line 18</i>: callback called when the user selects a
-file.</p></li>
-<li><p><i>Lines 19-20</i>: preparation of the XHR2 request.</p></li>
-<li><p><i>Lines 27-30</i>: a FormData object is created (this will
-contain the (MIME) multipart form-data which will be sent by the POST
-request).</p></li>
-<li><p><i>Line 30</i>: the request is sent, with the FormData
-object passed as a parameter (all data is sent).</p></li>
-<li><p><i>Line 23</i>: when the file is completely uploaded,
-the onload listener is called and an alert message is
-displayed.</p></li>
+  <li><p><i>Line 18</i>: callback called when the user selects a file.</p></li>
+  <li><p><i>Lines 19-20</i>: preparation of the XHR2 request.</p></li>
+  <li><p><i>Lines 27-30</i>: a FormData object is created (this will contain the (MIME) multipart form-data which will be sent by the POST request).</p></li>
+  <li><p><i>Line 30</i>: the request is sent, with the FormData object passed as a parameter (all data is sent).</p></li>
+  <li><p><i>Line 23</i>: when the file is completely uploaded, the onload listener is called and an alert message is displayed.</p></li>
 </ul>
-<h4>
-Monitor the upload progress
-</h4>
+
+<h4>Monitor the upload progress</h4>
+
 <p>Here is a more user-friendly example. It is basically the same, but
 this time, we’ll monitor the progress of the upload using a method
 similar to that used for monitoring file downloads:</p>
+
 <ul>
-<li><p>We use a &lt;progress&gt; element and its two
-attributes value and max.</p></li>
-<li><p>We also bind an event handler to the progress event that an
-XMLHttpRequest will trigger. The event has two
-properties: loaded and total that respectively correspond to the number
-of bytes that have been uploaded, and to the total number of bytes we
-need to upload (i.e., the file size).</p></li>
+  <li><p>We use a &lt;progress&gt; element and its two attributes value and max.</p></li>
+  <li><p>We also bind an event handler to the progress event that an XMLHttpRequest will trigger. The event has two properties: loaded and total that respectively correspond to the number of bytes that have been uploaded, and to the total number of bytes we need to upload (i.e., the file size).</p></li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------- 170. file upload with progress bar (287) ---------------------------->
@@ -13450,14 +13488,14 @@ need to upload (i.e., the file size).</p></li>
 
 <p><a href="https://jsbin.com/qedaja/edit?html,css,output" target="_blank" rel="noopener noreferrer">Try the
 example on JSBin</a>:</p>
-<h4>
-Code from this example (nearly the same as previous example’s code):
-</h4>
+
+<h4>Code from this example (nearly the same as previous example’s code):</h4>
+
 <details>
-<summary>
-HTML code!
-</summary>
-<pre><code>1.  &lt;!DOCTYPE html&gt;
+  <summary>HTML code!</summary>
+
+<pre><code>
+1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.  &lt;head&gt;
 4.     &lt;meta charset=&quot;utf-8&quot; /&gt;
@@ -13503,32 +13541,22 @@ HTML code!
 the onprogress listener which updates the progress
 bar’s value and max attributes. </p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-2-4">
-3.2.4 Discussion and projects
-</h3>
+<h3 id="ch3-2-4">3.2.4 Discussion and projects</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>Here is the discussion forum for this part of the course. Please
 either post your comments/observations/questions or share your
 creations.</p>
-<h4>
-Suggested topics of discussion:
-</h4>
+
+<h4>Suggested topics of discussion:</h4>
+
 <ul>
-<li><p>Did you hear about <a href="https://davidwalsh.name/fetch" target="_blank" rel="noopener noreferrer">the
-Fetch API</a>? This APIs  is easier to use than XhR2, but monitoring
-progress is a bit trickier and will require the use of the streams API.
-Monitoring upload is not yet supported. <a
-href="https://javascript.info/fetch-progress" target="_blank" rel="noopener noreferrer">See for example this
-article</a>.</p></li>
-<li><p>Did you note that using XHR2 for monitoring progress is really
-simple and efficient?  What is your experience? Please share ;)</p></li>
-<li><p>How can we monitor the speed of an upload/download in bytes per
-second? What would you propose? Did you find any interesting resources
-on the Web that explain that?</p></li>
+  <li><p>Did you hear about <a href="https://davidwalsh.name/fetch" target="_blank" rel="noopener noreferrer">the Fetch API</a>? This APIs  is easier to use than XhR2, but monitoring progress is a bit trickier and will require the use of the streams API. Monitoring upload is not yet supported. <a href="https://javascript.info/fetch-progress" target="_blank" rel="noopener noreferrer">See for example this article</a>.</p></li>
+  <li><p>Did you note that using XHR2 for monitoring progress is really simple and efficient?  What is your experience? Please share ;)</p></li>
+  <li><p>How can we monitor the speed of an upload/download in bytes per second? What would you propose? Did you find any interesting resources on the Web that explain that?</p></li>
 </ul>
-<h4>
-Optional projects:
-</h4>
+
+<h4>Optional projects:</h4>
+
 <ul>
 <li><p>If you know how to program server-side code, please make a small
 app that will upload files, monitor the progress of the upload, save the
@@ -13555,20 +13583,13 @@ However, we will also address drag and drop of elements within an HTML
 document.</p>
 <p>We will start by presenting the API itself, and then we will focus on
 the particular case of drag and dropping files.</p>
-<h4>
-External resources
-</h4>
+
+<h4>External resources</h4>
+
 <ul>
-<li><p>MDN article about <a
-href="https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API" target="_blank" rel="noopener noreferrer">HTML
-Drag and Drop API</a>.</p></li>
-<li><p>Medium article entitled “<a
-href="https://medium.com/@ralzohairi/how-to-drag-drop-html-elements-and-files-using-javascript-d31d15279369" target="_blank" rel="noopener noreferrer">How
-to Drag &amp; Drop HTML Elements and Files using
-Javascript</a>”</p></li>
-<li><p>Nice <a
-href="https://nettutsplus.s3.amazonaws.com/64_html5dragdrop/demo/index.html" target="_blank" rel="noopener noreferrer">shopping
-cart demo</a>.</p></li>
+  <li><p>MDN article about <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API" target="_blank" rel="noopener noreferrer">HTML Drag and Drop API</a>.</p></li>
+  <li><p>Medium article entitled “<a href="https://medium.com/@ralzohairi/how-to-drag-drop-html-elements-and-files-using-javascript-d31d15279369" target="_blank" rel="noopener noreferrer">How to Drag &amp; Drop HTML Elements and Files using Javascript</a>”</p></li>
+  <li><p>Nice <a href="https://nettutsplus.s3.amazonaws.com/64_html5dragdrop/demo/index.html" target="_blank" rel="noopener noreferrer">shopping cart demo</a>.</p></li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch3-3-2">
@@ -13654,11 +13675,15 @@ some elements are draggable by default, such
 as &lt;img&gt; elements.</p>
 <p>In order to detect a drag, add an event listener for
 the dragstart event:</p>
-<pre><code>1.  &lt;ol ondragstart=&quot;dragStartHandler(event)&quot;&gt;
+
+<pre><code>
+1.  &lt;ol ondragstart=&quot;dragStartHandler(event)&quot;&gt;
 2.    &lt;li draggable=&quot;true&quot; data-value=&quot;fruit-apple&quot;&gt;Apples&lt;/li&gt;
 3.    &lt;li draggable=&quot;true&quot; data-value=&quot;fruit-orange&quot;&gt;Oranges&lt;/li&gt;
 4.    &lt;li draggable=&quot;true&quot; data-value=&quot;fruit-pear&quot;&gt;Pears&lt;/li&gt;
-5.  &lt;/ol&gt;</code></pre>
+5.  &lt;/ol&gt;
+</code></pre>
+
 <p>In the above code, we made all of the &lt;li&gt; elements draggable,
 and we detect a dragstart event occurring to any item within the ordered
 list: &lt;ol ondragstart=“dragStarthandler(event)”&gt;.</p>
@@ -13673,9 +13698,8 @@ the event.</p>
 drag one of the list items) or <a
 href="https://codepen.io/w3devcampus/pen/MaWKZb" target="_blank" rel="noopener noreferrer">play with it at
 CodePen</a>.</p>
-<h4>
-Screenshot:
-</h4>
+
+<h4>Screenshot:</h4>
 <!------------------------------------------------------------------------------------------------>
 <!--------------------------- 171. drag and drop list example (292) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
@@ -13709,22 +13733,22 @@ Screenshot:
 16.   &lt;/ol&gt;
 17.   &lt;p&gt;Drop your favorite fruits below:&lt;/p&gt;
 18. &lt;body&gt;
-19. &lt;html&gt;</code></pre>
+19. &lt;html&gt;
+</code></pre>
+
 </details>
+
 <p>In this script, the event handler will only display an alert showing
 the name of the target element that launched the event. </p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-3-3">
-3.3.3 Drop detection
-</h3>
+<h3 id="ch3-3-3">3.3.3 Drop detection</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>Let’s continue to develop the example. We show how to drag an element
 and detect a drop, receiving a value which corresponds to the dragged
 element. Then we change the page content accordingly.</p>
-<h4>
-Step #1: in the dragstart handler, copy a value in the drag and drop
-clipboard for later use
-</h4>
+
+<h4>Step #1: in the dragstart handler, copy a value in the drag and drop clipboard for later use</h4>
+
 <p>When a draggable &lt;li&gt; element is being dragged, in
 the dragstart handler <a
 href="https://html5doctor.com/html5-custom-data-attributes/" target="_blank" rel="noopener noreferrer">get the
@@ -13737,7 +13761,9 @@ name.</p>
 the &lt;li&gt; element that has been dragged, and
 event.target.dataset.value is the value of its data-value attribute (in
 our case “apples”, “oranges” or “pears”):</p>
-<pre><code>1. function dragStartHandler(event) {
+
+<pre><code>
+1. function dragStartHandler(event) {
 2.   console.log(&#39;dragstart event, target:
      &#39; + event.target.innerHTML);
 3.  
@@ -13745,32 +13771,36 @@ our case “apples”, “oranges” or “pears”):</p>
 5.   // data* attribute of the target,
 6.   // with a type &quot;Fruit&quot;.
 7.   event.dataTransfer.setData(&quot;Fruit&quot;, event.target.dataset.value);
-8. }</code></pre>
-<h4>
-Step #2: define a “drop zone”
-</h4>
+8. }
+</code></pre>
+
+<h4>Step #2: define a “drop zone”</h4>
+
 <p>Any visible HTML element may become a “drop zone”; if we attach an
 event listener for the drop event. Note that most of the time, as events
 may be propagated, we will also listen for dragover or dragend events
 and stop their propagation. More on this later…</p>
-<pre><code>1. &lt;div ondragover=&quot;return false&quot; ondrop=&quot;dropHandler(event);&quot;&gt;
+
+<pre><code>
+1. &lt;div ondragover=&quot;return false&quot; ondrop=&quot;dropHandler(event);&quot;&gt;
 2.   Drop your favorite fruits below:
 3.   &lt;ol id=&quot;droppedFruits&quot;&gt;&lt;/ol&gt;
-4. &lt;/div&gt;</code></pre>
+4. &lt;/div&gt;
+</code></pre>
+
 <p>Whenever the mouse is moving above a (any) drop zone, dragover events
 will fire. Accordingly, a large number of dragover events may need to be
 handled before the element is finally dropped. The ondragover handler is
 used to avoid propagating dragover events. This is done by returning
 the false value at <i>line 1</i>.</p>
-<h4>
-Step #3: write a drop handler, fetch content from the clipboard, and do
-something with it
-</h4>
+
+<h4>Step #3: write a drop handler, fetch content from the clipboard, and do something with it</h4>
+
 <details>
-<summary>
-Code extract!
-</summary>
-<pre><code>1. function dropHandler(event) {
+  <summary>Code extract!</summary>
+
+<pre><code>
+1. function dropHandler(event) {
 2.   console.log(&#39;drop event, target: &#39; + event.target.innerHTML);
 3.  
 4.   ...
@@ -13781,15 +13811,17 @@ Code extract!
 9.  
 10.  // do something with the data
 11.  ...
-12. }</code></pre>
+12. }
+</code></pre>
+
 </details>
+
 <p>Typically, in the drop handler, we need to acquire data about the
 element that has been dropped (we get this from the clipboard
 at <i>lines 6-8,</i> the data was copied there during step 1 in
 the dragstart handler).</p>
-<h4>
-Complete example
-</h4>
+
+<h4>Complete example</h4>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------- 172. drag 'n drop fruite (294) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -13947,9 +13979,8 @@ online at JsBin</a> example:</p>
 <p>In this example, when you click on the sentence that starts with
 “John Says”, the end of the sentence changes, and the values displayed
 are taken from data­-* attributes of the &lt;li&gt; element.</p>
-<h4>
-HTML code from the example:
-</h4>
+
+<h4>HTML code from the example:</h4>
 
 <pre><code>
 1.  &lt;li class=&quot;user&quot; data-name=&quot;John Resig&quot; data-city=&quot;Boston&quot;
@@ -15544,6 +15575,7 @@ implementing file uploads associated with a form.</p>
 and front-end development - so, the PHP code is given “as is”.</p>
 
 <h4>The problem</h4>
+
 <p>Imagine that we have a regular HTML5 form, but as well as the input
 fields for entering a name, address, age, etc., we also want to select
 and upload multiple files (which might include images).</p>
@@ -15957,17 +15989,16 @@ order. This is often implemented through the use of persistent B-tree
 data structures which are considered efficient for insertion and
 deletion, as well as for in-order traversal of very large numbers of
 data records.</p>
-<p><b>To sum up:</b></p>
+
+<h4>To sum up:</h4>
+
 <ol type="1">
-<li><p><b>IndexedDB is a transactional Object Store in which you will be
-able to store JavaScript objects.</b></p></li>
-<li><p><b>Indexes on some properties of these objects facilitate faster
-retrieval and search.</b></p></li>
-<li><p><b>Applications using IndexedDB can work both online and
-offline.</b></p></li>
-<li><p><b>IndexedDB is transactional: it manages concurrent access to
-data.</b></p></li>
+  <li><p><b>IndexedDB is a transactional Object Store in which you will be able to store JavaScript objects.</b></p></li>
+  <li><p><b>Indexes on some properties of these objects facilitate faster retrieval and search.</b></p></li>
+  <li><p><b>Applications using IndexedDB can work both online and offline.</b></p></li>
+  <li><p><b>IndexedDB is transactional: it manages concurrent access to data.</b></p></li>
 </ol>
+
 <h4>Examples of applications where IndexedDB should be considered</h4>
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 192. google drive and indexdb (3xx) ------------------------------>
@@ -16226,6 +16257,7 @@ specification</a>. Please read this page to familiarize yourself with
 the terms.</p>
 
 <h4>Database</h4>
+
 <ul>
   <li><p>Each <a href="https://www.w3.org/TR/IndexedDB/#dfn-origin" target="_blank" rel="noopener noreferrer">origin</a> (you may consider as “each application”) has an associated set of <a href="https://www.w3.org/TR/IndexedDB/#dfn-database" target="_blank" rel="noopener noreferrer">databases</a>. A <i>database</i> comprises one or more <a href="https://www.w3.org/TR/IndexedDB/#dfn-object-store" target="_blank" rel="noopener noreferrer">object stores</a> which hold the data stored in the database.</p></li>
   <li><p>Every database has a <i>name</i> that identifies it within a specific origin. The name can be any string value, including the empty string, and stays constant for the lifetime of the database.</p></li>
@@ -16903,9 +16935,9 @@ cursor.continue(),</p>
 earlier with the previous</p>
 <p>case when we got multiple results, this time it wasn’t using an
 index.</p>
-<h4>
-Example #1: basic steps
-</h4>
+
+<h4>Example #1: basic steps</h4>
+
 <p><a href="https://jsbin.com/jukifo" target="_blank" rel="noopener noreferrer">Online example at JSBin</a>:</p>
 <p>Execute this example and look at the IndexedDB object store content
 from the Chrome dev tools (F12 or cmd-alt-i). One more customer should
@@ -17337,9 +17369,9 @@ this screenshot:</p>
 <h3 id="ch3-6-10">3.6.10 Getting data</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>There are several ways to retrieve data from a data store.</p>
-<h4>
-First method: getting data when we know its key
-</h4>
+
+<h4>First method: getting data when we know its key</h4>
+
 <p>The simplest function from the API is the request.get(key) function.
 It retrieves an object when we know its key/keypath.</p>
 <p><a href="https://jsbin.com/saquru" target="_blank" rel="noopener noreferrer">Online example at JSBin</a>:</p>
@@ -17805,9 +17837,9 @@ from this MDN article</a>):</p>
 </code></pre>
 
 </details>
-<h4>
-Complete example
-</h4>
+
+<h4>Complete example</h4>
+
 <p>Adapted from an example on gitHub, today no more available (<a
 href="https://github.com/mdn/IDBKeyRange-example/blob/gh-pages/index.html" target="_blank" rel="noopener noreferrer">original
 URL</a>):</p>
@@ -17839,42 +17871,31 @@ your comments/observations/questions and share your creations.</p>
 <h4>Suggested topics of discussion:</h4>
 
 <ul>
-<li><p>IndexedDB is certainly the most complex API presented in this
-course. However, using it is rather simple once you’ve climbed the
-learning curve. If you have prior experience with databases, can you
-tell your feelings in the forum?</p></li>
-<li><p>If you found handy tools for using IndexedDB, or other external
-tutorials and examples, please share!</p></li>
+  <li><p>IndexedDB is certainly the most complex API presented in this course. However, using it is rather simple once you’ve climbed the learning curve. If you have prior experience with databases, can you tell your feelings in the forum?</p></li>
+  <li><p>If you found handy tools for using IndexedDB, or other external tutorials and examples, please share!</p></li>
 </ul>
 
 <h4>Optional projects:</h4>
 
 <ul>
-<li><p>Start from the examples provided in the IndexedDB course and
-adapt them in order to manage a database of the HTML5 interactive
-examples (also provided in this course). For example, objects stores in
-the datastore may be composed of:</p>
-<ul>
-<li><p>the jsbin.com URL of the example,</p></li>
-<li><p>a description,</p></li>
-<li><p>the name of the week in which the example has been presented,
-and,</p></li>
-<li><p>the name of the lesson in the chapter,</p></li>
-<li><p>eventually, a screenshot for the example (URL, or if you are a
-bit of a geek, image content).</p></li>
-</ul></li>
+  <li><p>Start from the examples provided in the IndexedDB course and adapt them in order to manage a database of the HTML5 interactive examples (also provided in this course). For example, objects stores in the datastore may be composed of:</p>
+  <ul>
+    <li><p>the jsbin.com URL of the example,</p></li>
+    <li><p>a description,</p></li>
+    <li><p>the name of the week in which the example has been presented,
+    and,</p></li>
+    <li><p>the name of the lesson in the chapter,</p></li>
+    <li><p>eventually, a screenshot for the example (URL, or if you are a bit of a geek, image content).</p></li>
+  </ul>
+  </li>
 </ul>
 
 <ul>
-<li>Produce an HTML page which contains your application. When loaded,
-it must populate the indexedDB database with at least 10 different
-examples, and display them in a table or in a list. The GUI must also
-provide a search form for retrieving all the examples from a given
-chapter. </li>
+  <li>Produce an HTML page which contains your application. When loaded, it must populate the indexedDB database with at least 10 different examples, and display them in a table or in a list. The GUI must also provide a search form for retrieving all the examples from a given chapter.</li>
 </ul>
-<h4>
-Conclusion
-</h4>
+
+<h4>Conclusion</h4>
+
 <p>The two W3Cx courses, <a
 href="https://www.edx.org/course/html5-coding-essentials-and-best-practices">HTML5
 Coding Essentials and Best Practices</a> and this one (HTML5 Apps and
@@ -17913,18 +17934,14 @@ resources so that it can run in offline mode.</p>
 </blockquote>
 
 <h4>External resources</h4>
+
 <ul>
-<li>You might be interested by <a
-href="https://developers.google.com/web/fundamentals/instant-and-offline/web-storage/cache-api">the
-Cache API</a> to make your application data available offline (in other
-terms: making your Web page or your Web app. available offline). </li>
+  <li>You might be interested by <a href="https://developers.google.com/web/fundamentals/instant-and-offline/web-storage/cache-api">the Cache API</a> to make your application data available offline (in other terms: making your Web page or your Web app. available offline). </li>
 </ul>
+
 <!-- -->
 <ul>
-<li>Read also <a href="https://web.dev/storage-for-the-web/">this
-article that covers all different options for storing data in the
-browser and gives another look at what has been presented in this
-chapter of the course</a>.</li>
+  <li>Read also <a href="https://web.dev/storage-for-the-web/">this article that covers all different options for storing data in the browser and gives another look at what has been presented in this chapter of the course</a>.</li>
 </ul>
 
 <!------------------------------------------------------------------------------------------------>
@@ -18115,6 +18132,7 @@ code or at the DOM with the devtool’s inspector will not reveal the
 source code (HTML/JavaScript/CSS) used for creating it.</p>
 
 <h4>Web components availability</h4>
+
 <p>There are already hundreds of Web components made by others that you
 can use. On the <a
 href="https://www.webcomponents.org/" target="_blank" rel="noopener noreferrer">webcomponents.org</a> Web site,
@@ -18305,18 +18323,13 @@ the template’s content and true means “deep copy” the content.</p>
 </code></pre>
 
 <h4>Explanations</h4>
+
 <p>:</p>
 <ul>
-<li><p>In this example, <i>line 1</i> assigns the DOM node corresponding
-to the template we defined to variable t.</p></li>
-<li><p>t.content (<i>line 3</i>) is the root of the subtree in the
-template (in other words, the lines of HTML code inside the template
-element)</p></li>
-<li><p>Note that we set the value of the src attribute of the image
-inside the template at <i>line 3</i>, using a CSS selector on the
-template’s content.</p></li>
-<li><p><i>Lines 5 and 6</i> clone the template’s content and add it to
-the &lt;body&gt; of the document.</p></li>
+  <li><p>In this example, <i>line 1</i> assigns the DOM node corresponding to the template we defined to variable t.content</p></li>
+  <li><p>t.content (<i>line 3</i>) is the root of the subtree in the template (in other words, the lines of HTML code inside the template element)</p></li>
+  <li><p>Note that we set the value of the src attribute of the image inside the template at <i>line 3</i>, using a CSS selector on the template’s content.</p></li>
+  <li><p><i>Lines 5 and 6</i> clone the template’s content and add it to the &lt;body&gt; of the document.</p></li>
 </ul>
 
 <h4>Example</h4>
@@ -18436,33 +18449,30 @@ Bye!</p>
 is not necessary to see!</p>
 <p>If you are new to programming or object-oriented terminology you may
 find these references a helpful start:</p>
+
 <ol type="1">
-<li><p><a
-href="https://en.wikipedia.org/wiki/Encapsulation_(computer_programming)" target="_blank" rel="noopener noreferrer">Wikipedia
-offers a description</a> especially of the “information hiding”
-aspect</p></li>
-<li><p>MDN offers a <a
-href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects" target="_blank" rel="noopener noreferrer">tutorial
-in programming JavaScript objects</a></p></li>
+  <li><p><a href="https://en.wikipedia.org/wiki/Encapsulation_(computer_programming)" target="_blank" rel="noopener noreferrer">Wikipedia offers a description</a> especially of the “information hiding” aspect</p></li>
+  <li><p>MDN offers a <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects" target="_blank" rel="noopener noreferrer">tutorial in programming JavaScript objects</a></p></li>
 </ol>
+
 <p>It is not obvious but the Shadow DOM API is already used by browsers’
 developers for &lt;audio&gt; or &lt;video&gt; elements, and also for the
 new &lt;input type=“date”&gt;, &lt;input type=“color”&gt; elements,
 etc.</p>
-<p><b>The three rules of Shadow DOM:</b></p>
+
+<h4>The three rules of Shadow DOM:</h4>
+
 <ol type="1">
-<li><p>With Shadow DOM, elements are associated with a new kind of
-node: <i>a shadow root</i>.</p></li>
-<li><p>An element that has a shadow root associated with it is
-called <i>a shadow host</i>.</p></li>
-<li><p><i>The content of a shadow host isn’t rendered; the content of
-the shadow root is rendered instead.</i></p></li>
+  <li><p>With Shadow DOM, elements are associated with a new kind of node: <i>a shadow root</i>.</p></li>
+  <li><p>An element that has a shadow root associated with it is called <i>a shadow host</i>.</p></li>
+  <li><p><i>The content of a shadow host isn’t rendered; the content of the shadow root is rendered instead.</i></p></li>
 </ol>
+
 <p>NB: Because other browsers do not offer the tool-set, all of the
 examples we discuss on this subject use Google Chrome or Chromium.</p>
-<h4>
-Example using the Shadow DOM: the &lt;video&gt; element
-</h4>
+
+<h4>Example using the Shadow DOM: the &lt;video&gt; element</h4>
+
 <p>Let’s have a look at a simple &lt;video&gt; element.</p>
 <p>Open <a href="https://jsbin.com/mojoqaw/edit?html,output" target="_blank" rel="noopener noreferrer">this JSBin
 example</a> in your browser, and fire up the devtools console (F12 on
@@ -20894,7 +20904,7 @@ spec: 
 --->
 <h5>the end…</h5>
 <br>
-<h6>Last Updated: 1-26-2023 8:17pm</h6>
+<h6>Last Updated: 1-28-2023 8:27pm</h6>
 <!---
 <img class="displayed"
   src="./images/image0.jpeg?raw=true"
