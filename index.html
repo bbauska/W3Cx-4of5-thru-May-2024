@@ -122,7 +122,6 @@ W3Cx Front-End Web Developer
   alt="W3Cx HTML 5.2x logo."
   style="width:45%;" />
 
-</div>
 <h2 id="table-of-contents"><a href="#table-of-contents">Table of
 contents</a></h2>
 <h2 id="about-w3c-and-the-web"><a href="#cha"><b>About W3C and the
@@ -1869,7 +1868,7 @@ an id (1, 2, 3 and 4 in the above example), a startTime and an endTime,
 and a text content that can contain HTML tags for styling (&lt;b&gt;,
 etc…) or be associated with a “voice” as in the above example. In this
 case, the text content is wrapped
-inside &lt;v <i>name_of_speaker</i>&gt;…</v> elements.</p>
+inside &lt;v <i>name_of_speaker</i>&gt;…&lt;/v&gt; elements.</p>
 <p>It’s now time to look at the JavaScript API for manipulating tracks,
 cues, and events associated with their life cycle. In the following
 lessons, we will look at different examples which use this API to
@@ -3505,8 +3504,8 @@ function logCue() {
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch1-3-3">1.3.3 With Buttons for Choosing the Subtitle Language</h3>
 <!------------------------------------------------------------------------------------------------>
-<p>Example #3: adding buttons for choosing the subtitle/caption
-track</p>
+<p>Example #3: adding buttons for choosing the subtitle/caption track</p>
+
 <p>You might have noticed that with some browsers, before 2018, the
 standard implementation of the video element did not let the user choose
 the subtitle language. Now, recent browsers offers a menu to choose the
@@ -3516,7 +3515,7 @@ feature using the Track API.</p>
 <p><a href="https://jsbin.com/balowuq/1/edit?html,css,js,output" target="_blank" rel="noopener noreferrer">Here is
 a simple example at JSBin</a>: we added two buttons below the video to
 enable/disable subtitles/captions and let you choose which track you
-prefer. </p>
+prefer.</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------- 34. choose track/language (68) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -3640,6 +3639,7 @@ prefer. </p>
 </details>
 
 <h4>External resources</h4>
+
 <ul>
   <li><p>If you are interested in building a complete custom video player, MDN offers an online tutorial with further information about <a href="https://developer.mozilla.org/en-US/Apps/Build/Audio_and_video_delivery/Adding_captions_and_subtitles_to_HTML5_video">styling and integrating a “CC” button</a>.</p></li>
   <li><p>The MDN documentation on <a href="https://developer.mozilla.org/fr/docs/Web/API/WebVTT_API">Web Video Text Tracks Format</a> (WebVTT).</p></li>
@@ -3926,21 +3926,21 @@ video from the previous example:</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------- 37-43. seven thumbnail chapter images (76) --------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="left" width="80%">
+<p style="width="80%;">
 <img src="./images/image037.jpeg" style="width:2.57292in;height:1.20833in" alt="Chapter 1 thumbnail." />
+<p style="width="80%;">
 <img src="./images/image038.jpeg" style="width:2.51042in;height:1.19792in" alt="Chapter 2 thumbnail." />
-</p>
-<p align="left" width="80%">
+<p style="width="80%;">
 <img src="./images/image039.jpeg" style="width:2.5625in;height:1.19792in" alt="Chapter 3 thumbnail." />
+<p style="width="80%;">
 <img src="./images/image040.jpeg" style="width:2.54167in;height:1.19792in" alt="Chapter 4 thumbnail." />
-</p>
-<p align="left" width="80%">
+<p style="width="80%;">
 <img src="./images/image041.jpeg" style="width:2.53125in;height:1.21875in" alt="Chapter 5 thumbnails." />
+<p style="width="80%;">
 <img src="./images/image042.jpeg" style="width:2.5in;height:1.19792in" alt="Chapter 6 thumbnail." />
-</p>
-<p align="center" width="100%">
+<p style="width="80%;">
 <img src="./images/image043.jpeg" style="width:2.54167in;height:1.21875in" alt="Chapter 7 thumbnail." />
-</p>
+
 <p>To associate these images with its chapter description, we will use
 JSON objects as cue contents:</p>
 <p><a
@@ -5223,6 +5223,7 @@ JSBin,</a> or try it in your browser:</p>
 </details>
 
 <h4>Biquad filter</h4>
+
 <p>Definition: “<i>The BiquadFilterNode</i> interface represents a
 simple low-order filter, and is created using
 the <i>AudioContext.createBiquadFilter()</i> method. It is an AudioNode
@@ -5234,7 +5235,7 @@ input and one output.”</p>
 JSBin</a>, or try it in your browser, with a lowpass filter, only the
 frequency slider will have a noticeable effect:</p>
 <p>Frequency  Detune  Q  Type        <img
-src="./images/image058.wmf" /></p>
+src="./images/image058.wmf" alt="" /></p>
 <p>The most useful slider is the frequency slider (that changes
 the frequency value property of the node). The meaning of the
 different properties (frequency, detune and Q) differs depending on
@@ -5735,10 +5736,14 @@ with the Chrome WebAudio Inspector extension):</p>
 
 <p>Example #2: equalizer with a &lt;video&gt; element</p>
 <p>We cloned the previous example and simply changed
-the &lt;audio&gt;…</audio> part of the HTML code by:</p>
-<pre><code>&lt;video id=&quot;player&quot; width=&quot;320&quot; height=&quot;240&quot; controls crossOrigin=&quot;anonymous&quot;&gt;
+the &lt;audio&gt;…&lt;/audio&gt; part of the HTML code by:</p>
+
+<pre><code>
+&lt;video id=&quot;player&quot; width=&quot;320&quot; height=&quot;240&quot; controls crossOrigin=&quot;anonymous&quot;&gt;
   &lt;source src=&quot;https://mainline.i3s.unice.fr/mooc/elephants-dream-medium.mp4&quot; &gt;
-&lt;/video&gt;</code></pre>
+&lt;/video&gt;
+</code></pre>
+
 <p>And the example works in the same way, but this time with a video.
 Try moving the sliders to change the sound!</p>
 <p><a href="https://jsbin.com/kukupot/edit?html,css,js,output" target="_blank" rel="noopener noreferrer">Example
@@ -6638,7 +6643,7 @@ JSBin</a>:</p>
   src="./images/image078.png"
   style="width:4in;height:4.26316in" 
   alt="HowlerJS library creating scatter graph." />
-</p>
+
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch1-5-9">1.5.9 Load and play sound samples</h3>
 <!------------------------------------------------------------------------------------------------>
@@ -7033,20 +7038,13 @@ with the Chrome WebAudio Inspector extension):</p>
 <!---------------------------------- 84. webaudio graph (142) ------------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
-  src="./images/image090.png?raw=true"
-  alt="A movie film icon."
-  style="width:10%;" />
-<p align="center" width="100%">
-<img src="./images/image084.jpeg" 
+  src="./images/image084.jpeg"
   style="width:5in;height:6.6266in"
   alt="WebAudio graph of the previous example." />
-</p>
-<p>Look at the source code on JSBin, it’s a quick merge of the two
-previous examples.</p>
+
+<p>Look at the source code on JSBin, it’s a quick merge of the two previous examples.</p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch1-5-11">
-1.5.11 Useful third party libraries
-</h3>
+<h3 id="ch1-5-11">1.5.11 Useful third party libraries</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>It’s best practice to know the Web Audio API itself. Many of the
 examples demonstrated during this course may be hard to write using
@@ -7108,27 +7106,21 @@ Audio API seen during Week 1.</p>
 will share your own creations and enjoy this funny part of the
 course.</p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch2-2-1">
-2.2.1 History of JavaScript games
-</h3>
+<h3 id="ch2-2-1">2.2.1 History of JavaScript games</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>There is a widely-held belief that games running in Web browsers and
 without the help of plugins are a relatively new phenomenon. This is not
 true: back in 1998, Donkey Kong ran in a browser (screenshot below). It
 was a game by Scott Porter, written using only standard Web technologies
-(HTML, JavaScript, and CSS) .</p>
+(HTML, JavaScript, and CSS).</p>
 <!------------------------------------------------------------------------------------------------>
 <!--------------------------------- 85. donkey kong 1998 (144) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
-  src="./images/image090.png?raw=true"
-  alt="A movie film icon."
-  style="width:10%;" />
-<p align="center" width="100%">
-<img src="./images/image085.png" 
+  src="./images/image085.png"
   style="width:2.17708in;height:2.83333in"
   alt="A screenshot of a DHTML / Javascript Donkey Kong from 1998" />
-</p>
+
 <p>Just a few years after the Web was born, JavaScript appeared -  a
 simple script language with C-like syntax for interacting and changing
 the structure of documents - together with HTML, the <a
@@ -7242,18 +7234,17 @@ it in greater detail later in the course.</p>
 Group</a> published <a href="https://www.w3.org/TR/2dcontext/" target="_blank" rel="noopener noreferrer">HTML
 Canvas 2D Context</a> as W3C Recommendation (i.e., Web standard
 status).</p>
-<h4>
-Animating at 60 fps: the requestAnimationFrame API
-</h4>
+
+<h4>Animating at 60 fps: the requestAnimationFrame API</h4>
+
 <p>The requestAnimationFrame API targets 60 frames per second animation
 in canvases. This API is quite simple and also comes with a high
 resolution timer. Animation at 60 fps is often easy to obtain with
 simple 2D games on major desktop computers. This is the preferred way to
 perform animation, as the browser will ensure that animation is not
 performed when the canvas is not visible, thus saving CPU resources.</p>
-<h4>
-Videos and animated textures: the &lt;video&gt; element
-</h4>
+
+<h4>Videos and animated textures: the &lt;video&gt; element</h4>
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------------- 90. a movie film icon (147) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -7272,10 +7263,9 @@ the &lt;video&gt; and &lt;canvas&gt; elements, it is possible to
 manipulate video data to incorporate a variety of visual effects  in
 real time, and conversely, to use images from videos as “animated
 textures” over graphic objects.</p>
-<h4>
-Audio (streamed audio and real time sound effects):
-the &lt;audio&gt; element and the Web Audio API
-</h4>
+
+<h4>Audio (streamed audio and real time sound effects): the &lt;audio&gt; element and the Web Audio API</h4>
+
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 91. a picture of a speaker (148) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -7321,9 +7311,9 @@ href="https://www.w3.org/TR/gamepad/" target="_blank" rel="noopener noreferrer">
 Draft status) that is already implemented by some browsers, which we
 will also cover in this course. The Gamepad specification defines a
 low-level interface that represents gamepad devices.</p>
-<h4>
-Multi-participants feature: WebSockets
-</h4>
+
+<h4>Multi-participants feature: WebSockets</h4>
+
 <p>IMPORTANT INFORMATION: NOT COVERED IN THIS COURSE</p>
 <p>Using <a href="https://fr.wikipedia.org/wiki/WebSocket" target="_blank" rel="noopener noreferrer">the
 WebSockets technology</a> (which is not part of HTML5 but comes from the
@@ -7768,9 +7758,9 @@ let’s draw something, animate it, and move shapes around the screen
 used during the <a
 href="https://www.edx.org/course/html5-coding-essentials-and-best-practices" target="_blank" rel="noopener noreferrer">W3C
 HTML5 Coding Essentials and Best Practices course</a>.</p>
-<h4>
-HTML5 canvas basic usage: drawing a monster
-</h4>
+
+<h4>HTML5 canvas basic usage: drawing a monster</h4>
+
 <p>How to draw a monster in a canvas: <a
 href="https://jsbin.com/ponaki/edit" target="_blank" rel="noopener noreferrer">you can try it online at
 JSBin</a>.</p>
@@ -8088,7 +8078,7 @@ probably be abandoned in the future). Mixing ‘visual layer’ (HTML) and
 ‘logic layer’ (JavaScript) in one place is really bad practice and
 causes a host of problems during development.</p>
 
-<h4><p>Method #2: attach an event handler to an HTML element in JavaScript</p>
+<h4>Method #2: attach an event handler to an HTML element in JavaScript</h4>
 
 <pre><code>
 document.getElementById(&#39;someDiv&#39;).onclick = function() {
@@ -8099,7 +8089,7 @@ document.getElementById(&#39;someDiv&#39;).onclick = function() {
 <p>This method is fine, but  you will not be able to attach
 multiple <i>listener</i> functions. If you need to do this, use the
 version shown below.</p>
-<h4>
+
 <p>Method #3: register a callback to the event listener with the
 addEventListener method (preferred  method)</p>
 
@@ -8207,9 +8197,9 @@ game loop will have to take these three keys into account: move the ship
 left, release a new missile if the previous one is out of the screen or
 if it reached a target, launch a smart bomb if conditions are met,
 etc.</p>
-<h4>
-Keep the list of pertinent keys in a JavaScript object
-</h4>
+
+<h4>Keep the list of pertinent keys in a JavaScript object</h4>
+
 <p>The typical method used is: store the list of the keys (or mouse
 button or whatever game pad button…) that are up or down at a given
 time in a JavaScript object. For our small game engine we will call this
@@ -8217,9 +8207,9 @@ object “inputStates”.</p>
 <p>We will update its content inside the different input event
 listeners, and later check its values inside the game loop to make the
 game react accordingly.</p>
-<h4>
-Add this to our game framework:
-</h4>
+
+<h4>Add this to our game framework:</h4>
+
 <p>These are the changes to our small game engine prototype (which is
 far from finished yet):</p>
 <ol type="1">
@@ -9032,6 +9022,7 @@ the gamepad.buttons will return the same  states every time.</p>
 </details>
 
 <h4>Detecting axes (joystick) values</h4>
+
 <p><a href="https://jsbin.com/yaxika/edit" target="_blank" rel="noopener noreferrer">Example on JSBin</a></p>
 <!------------------------------------------------------------------------------------------------>
 <!---------------------------------- 112. axes detection (185) ----------------------------------->
@@ -9295,7 +9286,7 @@ left.</p>
 <p>Take time to look at the code, read slowly the explanation in the
 page and I will meet you in the next video in which we will add enemies
 and obstacles and detect collisions.</p>
-<h4>
+
 <p>Make the monster move using the arrow keys, and to increase its speed
 by pressing a mouse button</p>
 <p>To conclude this topic about events, we will use the arrow keys to
@@ -9305,6 +9296,7 @@ two keys at the same time will make it move diagonally.</p>
 <p><a href="https://jsbin.com/yebufu/edit" target="_blank" rel="noopener noreferrer">Check this online example at
 JSBin</a>: we’ve changed very few lines of code from the previous
 evolution!</p>
+
 <h4>Add a JavaScript object to describe the monster</h4>
 
 <pre><code>
@@ -9353,7 +9345,7 @@ we will look at a far better solution - <i>“time based animation”
 the updateMonsterPosition() function:</p>
 
 <details>
-  <summary>Code extract!</h4>
+  <summary>Code extract!</summary>
 
 <pre><code>
 1.  function updateMonsterPosition() {
@@ -9428,6 +9420,7 @@ input states up-to-date, and not to handle single events
 individually.</p>
 
 <h4>Gamepad enhancements</h4>
+
 <p>Let’s add the gamepad utility functions from the previous lesson (we
 tidied them a bit too, removing the code for displaying the progress
 bars, buttons, etc.), added a gamepad property to the game framework,
@@ -9628,7 +9621,7 @@ JSBin</a></p>
 <img class="displayed"
   src="./images/image115.jpeg"
   style="width:2.75in;height:0.8125in"
-  alt="image of a small rectangle in a canvas, moving from left to right" />
+  alt="Image of a small rectangle in a canvas, moving from left to right." />
 
 <details>
   <summary>Code extract!</summary>
@@ -10577,9 +10570,9 @@ the player but also other objects on the screen.</p>
 <p>Let’s study a simple example: animating a few balls and detecting
 collisions with the surrounding walls. For the sake of simplicity, we
 will not use time-based animation in the first examples.</p>
-<h4>
-Animating multiple balls which bounce off horizontal and vertical walls
-</h4>
+
+<h4>Animating multiple balls which bounce off horizontal and vertical walls</h4>
+
 <p><a href="https://jsbin.com/fikomik/edit?js,output" target="_blank" rel="noopener noreferrer">Online example at
 JSBin</a>:</p>
 
@@ -10967,7 +10960,7 @@ sketches of more complex algorithms.</p>
 <img class="displayed"
   src="./images/image122.png"
   style="width:3in;height:2.47in"
-  alt="two circles with distances between the centers drawn." />
+  alt="Two circles with distances between the centers drawn." />
 
 <p>Collision between circles is easy. Imagine there are two circles:</p>
 <ol type="1">
@@ -11043,7 +11036,7 @@ monster and the circle you control.</p>
 <img class="displayed"
   src="./images/image123.jpeg"
   style="width:4in;height:3.97101in"
-  alt="monster and small circle: collision, they are drawn in red and a &quot;collision&quot; message appears" />
+  alt="Monster and small circle: collision, they are drawn in red and a &quot;collision&quot; message appears." />
 
 <p>This online example uses the game framework (without time-based
 animation in this one). We just added a “player” (for the moment, a
@@ -11143,7 +11136,7 @@ in this course, but it’s a classic optimization.</p>
 <img class="displayed"
   src="./images/image124.png"
   style="width:4in;height:2.20258in"
-  alt="Image of an arm with a hierarchy of bounding circles: one for the whole arm, and two smaller for the forearm and the other part" />
+  alt="Image of an arm with a hierarchy of bounding circles: one for the whole arm, and two smaller for the forearm and the other part." />
 
 <p>In 3D, you can use spheres instead of circles:</p>
 
@@ -11153,7 +11146,7 @@ in this course, but it’s a classic optimization.</p>
 <img class="displayed"
   src="./images/image125.png"
   style="width:4in;height:2.2583in"
-  alt="a 3D object (a lamp) with bounding spheres" />
+  alt="A 3D object (a lamp) with bounding spheres." />
 
 <p>The famous game Gran Turismo 4 on the PlayStation 2 uses bounding
 spheres for detecting collisions between cars:</p>
@@ -11191,6 +11184,7 @@ both projections overlap, there is a collision!</p>
 id=“_Toc98696616” class=“anchor”&gt;&lt;/span&gt;Try this online
 demonstration of rectangle - rectangle detection</a>
 </h4>
+
 <p>1 - Only horizontal axis projections overlap: no collision between
 rectangles</p>
 
@@ -11200,7 +11194,7 @@ rectangles</p>
 <img class="displayed"
   src="./images/image128.jpeg"
   style="width:3.53125in;height:2.875in"
-  alt="Only horizontal axis overlap: no collision" />
+  alt="Only horizontal axis overlap: no collision." />
 
 <p>2 - Only vertical axis projections overlap: no collision between
 rectangles</p>
@@ -11479,9 +11473,9 @@ displays the different vectors in real time, with only two balls</a>.
 The math for the collision test have also been expanded in the source
 code to make computations clearer. Note that this is not for beginners:
 advanced math and physics are involved!</p>
-<h4>
-To go further… video game physics!
-</h4>
+
+<h4>To go further… video game physics!</h4>
+
 <p>For the ones who are not afraid by some math and physics and would
 like to learn how to do collision detection in a more realistic way
 (using physics modeling), we recommend <a
@@ -11838,6 +11832,7 @@ individual sprites:</p>
 </details>
 
 <h4>Explanations:</h4>
+
 <ul>
 <li><p><i>Lines 1-4</i>: characteristics of the sprite sheet. How many
 rows, i.e., how many sprites per row, etc.</p></li>
@@ -11846,8 +11841,8 @@ page has been loaded. We first get the canvas and contexts. Then we set
 the minimum and maximum values of the slider (an &lt;input
 type=range&gt;) at <i>lines 31-32</i>, and disable it at <i>line
 34</i> (we cannot slide it before the sprite sheet image has been
-loaded). We display the current sprite number 0 in the </p>
-<output>
+loaded). We display the current sprite number 0 in the &lt;/p&gt;
+&lt;output&gt;
 <p> field to the right of the slider (<i>line 35</i>).
  Finally, <i>in lines 37-39</i>, we load the sprite sheet
 image.</p></li>
@@ -11869,6 +11864,7 @@ sheet.</p></li>
 sheets. Adjust the global parameters in bold at<i> lines 1-5</i> and
 try the extractor.</p></li>
 </ul>
+
 <h4>Example #2</h4>
 
 <ol start="542" type="1">
@@ -12566,19 +12562,19 @@ separate the rest into functional groupings, eg utils.js, sprites.js,
 collision.js, listeners.js, etc.</p></li>
 </ul>
 <p>Let’s do this together!</p>
-<h4>
-Start with a simple structure
-</h4>
+
+<h4>Start with a simple structure</h4>
+
 <p>First, create a game.html file that contains the actual HTML
 code:</p>
-<h4>
-game.html:
-</h4>
+
+<h4>game.html:</h4>
+
 <details>
-<summary>
-game.html extract!
-</summary>
-<pre><code>1.  &lt;!DOCTYPE html&gt;
+  <summary>game.html extract!</summary>
+
+<pre><code>
+1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.  &lt;head&gt;
 4.    &lt;meta charset=&quot;utf-8&quot;&gt;
@@ -12593,12 +12589,19 @@ game.html extract!
 13. &lt;body&gt;
 14.   &lt;canvas id=&quot;myCanvas&quot; width=&quot;400&quot; height=&quot;400&quot;&gt;&lt;/canvas&gt;
 15. &lt;/body&gt;
-16. &lt;/html&gt;</code></pre>
+16. &lt;/html&gt;
+</code></pre>
+
 </details>
+
 <p>Here is the game.css file (very simple):</p>
-<pre><code>1.  canvas {
+
+<pre><code>
+1.  canvas {
 2.     border: 1px solid black;
-3.  }</code></pre>
+3.  }
+</code></pre>
+
 <p>Let’s take the JavaScript code from the last JSBin example, save it
 to a file called game.js, and locate it in a subdirectory js under the
 directory where the game.html file is located. Similarly, we’ll keep the
@@ -12621,14 +12624,14 @@ files and encounter errors.</p>
 <p>Put the Ball constructor function in a js/ball.js file, include it in
 the game.html file, and try the game: oops, it doesn’t work! Let’s open
 the console:</p>
-<h4>
-Ball.js:
-</h4>
+
+<h4>Ball.js:</h4>
+
 <details>
-<summary>
-Function Ball extract!
-</summary>
-<pre><code>1.  // constructor function for balls
+  <summary>Function Ball extract!</summary>
+
+<pre><code>
+1.  // constructor function for balls
 2.  function Ball(x, y, angle, v, diameter) {
 3.     ...
 4.      this.draw = function () {
@@ -12640,11 +12643,13 @@ Function Ball extract!
 10.       this.x += calcDistanceToMove(delta, incX);
 11.       this.y += calcDistanceToMove(delta, incY);
 12.     };
-13. }</code></pre>
+13. }
+</code></pre>
+
 </details>
-<h4>
-Isolate the time based animation functions into a separate file
-</h4>
+
+<h4>Isolate the time based animation functions into a separate file</h4>
+
 <p>Hmmm… the calcDistanceToMove function is used here, but is defined in
 the game.js file, inside the GF object and will certainly raise an
 error… Also, the ctx variable should be added as a parameter to
@@ -12670,14 +12675,14 @@ and add a ctx parameter to the draw method of ball.js. Don’t forget to
 add it in game.js where ball.draw() is called. The call should be
 now ball.draw(<b>ctx</b>); instead of ball.draw() without any
 parameter.</p>
-<h4>
-timeBasedAnim.js:
-</h4>
+
+<h4>timeBasedAnim.js:</h4>
+
 <details>
-<summary>
-JavaScript code extract!
-</summary>
-<pre><code>1.  var delta, oldTime = 0;
+  <summary>JavaScript code extract!</summary>
+
+<pre><code>
+1.  var delta, oldTime = 0;
 2.   
 3.  function timer(currentTime) {
 4.     var delta = currentTime - oldTime;
@@ -12688,22 +12693,25 @@ JavaScript code extract!
 9.  var calcDistanceToMove = function (delta, speed) {
 10.    //console.log(&quot;#delta = &quot; + delta + &quot; speed = &quot; + speed);
 11.    return (speed * delta) / 1000;
-12. };</code></pre>
+12. };
+</code></pre>
+
 </details>
-<h4>
-Isolate the part that counts the number of frames per second
-</h4>
+
+<h4>Isolate the part that counts the number of frames per second</h4>
+
 <p>We need to add a small initFPS function for creating
 the &lt;div&gt; that displays the FPS value… this function will be
 called from the GF.start() method. There was code in this start method
 that has been moved into the initFPS function we created and added into
 the fps.js file.</p>
 <p>fps.js:</p>
+
 <details>
-<summary>
-fps.js extract!
-</summary>
-<pre><code>1.  // vars for counting frames, used by the measureFPS function
+  <summary>fps.js extract!</summary>
+
+<pre><code>
+1.  // vars for counting frames, used by the measureFPS function
 2.  var frameCount = 0;
 3.  var lastTime;
 4.  var fpsContainer;
@@ -12736,8 +12744,11 @@ fps.js extract!
 31.    // document in the start() function
 32.    fpsContainer.innerHTML = &#39;FPS: &#39; + fps;
 33.    frameCount++;
-34. };</code></pre>
+34. };
+</code></pre>
+
 </details>
+
 <p>At this stage, the structure looks like this:</p>
 <!------------------------------------------------------------------------------------------------>
 <!---------------------------------- 156. game structure (281) ----------------------------------->
@@ -12753,14 +12764,14 @@ fps.js extract!
 it from the GF.start() method into a listeners.js file? We’ll have to
 pass the canvas as an extra parameter (to resolve a dependency) and we
 also move the getMousePos method into there. </p>
-<h4>
-listeners.js:
-</h4>
+
+<h4>listeners.js:</h4>
+
 <details>
-<summary>
-JavaScript code extract!
-</summary>
-<pre><code>function addListeners(inputStates, canvas) {
+  <summary>JavaScript code extract!</summary>
+
+<pre><code>
+function addListeners(inputStates, canvas) {
    //add the listener to the main, window object, and update the states
    window.addEventListener(&#39;keydown&#39;, function (event) {
       if (event.keyCode === 37) {
@@ -12784,14 +12795,18 @@ JavaScript code extract!
  
 function getMousePos(evt, canvas) {
    ...
-}</code></pre>
+}
+</code></pre>
+
 </details>
-<h4>
-Isolate the collision tests
-</h4>
+
+<h4>Isolate the collision tests</h4>
+
 <p>Following the same idea, let’s put these into
 a collisions.js file:</p>
-<pre><code>// We can add the other collision functions seen in the
+
+<pre><code>
+// We can add the other collision functions seen in the
 // course here...
 
 // Collisions between rectangle and circle
@@ -12801,7 +12816,9 @@ function circRectsOverlap(x0, y0, w0, h0, cx, cy, r) {
  
 function testCollisionWithWalls(ball, w, h) {
    ...
-}</code></pre>
+}
+</code></pre>
+
 <p>We added the width and height of the canvas as parameters to
 the testCollisionWithWalls function to resolve dependencies. The other
 collision functions (circle-circle and rectangle-rectangle) presented
@@ -12863,16 +12880,14 @@ structure, playability, add sounds, better graphics, more levels, etc.
 We like to give points for style and flair, but most especially because
 we’ve been (pleasantly) surprised!</p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch2-7-3">
-2.7.3 Discussion and projects
-</h3>
+<h3 id="ch2-7-3">2.7.3 Discussion and projects</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>Here is the discussion forum for this part of the course. Please
 either post your comments/observations/questions or share your
 creations.</p>
-<h4>
-Suggested topics of discussion:
-</h4>
+
+<h4>Suggested topics of discussion:</h4>
+
 <ul>
 <li><p>What additional content would you like to see in this part of the
 course?</p></li>
@@ -12880,9 +12895,9 @@ course?</p></li>
 engine during Week 1? This is very useful for simulating explosions or
 bullet impacts…</p></li>
 </ul>
-<h4>
-Optional projects: create your own game!
-</h4>
+
+<h4>Optional projects: create your own game!</h4>
+
 <p>Try to make your own game, either by modifying/completing the given
 example (change the scenario, add levels, colors, sound effects,
 sprites, shots, etc.) or by writing your own using the methods explained
@@ -12969,6 +12984,7 @@ available here.</a></li>
   src="./images/image163.jpeg"
   style="width:4in;height:2.34815in"
   alt="A &quot;kill the ninja&quot; game." />
+  
 !------------------------------------------------------------------------------------------------>
 <h2 id="ch3">Module 3. HTML5 File Upload and Download</h2>
 <!------------------------------------------------------------------------------------------------>
@@ -13118,9 +13134,9 @@ browser every second or something like that.</p>
 <p>It’s very easy to monitor the progress.</p>
 <p>You can put vertically this bar using CSS, change the style.</p>
 <p>Refer to the HTML5 Part 1 course for that.</p>
-<h4>
-Ajax and binary files - downloading files and monitoring progress
-</h4>
+
+<h4>Ajax and binary files - downloading files and monitoring progress</h4>
+
 <p>HTTP is a text based protocol, so when you upload/download images,
 videos or any binary file, they must first be text encoded for
 transmission, then decoded on-the-fly upon receipt by the server or
@@ -13136,7 +13152,9 @@ using XMLHttpRequest level 2.</p>
 <p><i>Note</i>: 1) the simple and concise syntax, and 2) the use of
 the new arrayBuffer type for the expected response (<i>line
 5</i>):</p>
-<pre><code>1.  // Load a binary file from a URL as an ArrayBuffer.
+
+<pre><code>
+1.  // Load a binary file from a URL as an ArrayBuffer.
 2.  function loadSoundFile(url) {
 3.  var xhr = new XMLHttpRequest();
 4.  xhr.open(&#39;GET&#39;, url, true);
@@ -13145,11 +13163,11 @@ the new arrayBuffer type for the expected response (<i>line
 7.  initSound(this.response); // this.response is an ArrayBuffer.
 8.  };
 9.  xhr.send();
-10. }</code></pre>
-<h4>
-Example: download a binary song file using XHR2
-and responseType=‘arraybuffer’, and play it using Web Audio
-</h4>
+10. }
+</code></pre>
+
+<h4>Example: download a binary song file using XHR2 and responseType=‘arraybuffer’, and play it using Web Audio</h4>
+
 <p><a href="https://jsbin.com/mecakaz/edit?html,js,console,output" target="_blank" rel="noopener noreferrer">Try
 this example on JSBin</a>:</p>
 <p>In this example, instead of reading the file from disk, we download
@@ -13162,7 +13180,7 @@ it using XHR2.</p>
   style="width:5in;height:2.48451in"
   alt="Downloading file with Xhr2" />
 
-<p><b>Complete source code:</b></p>
+<h4>Complete source code:</h4>
 
 <details>
   <summary>Complete source code!</summary>
@@ -13254,6 +13272,7 @@ it using XHR2.</p>
 </details>
 
 <h4>Explanations</h4>
+
 <p>:</p>
 <ul>
 <li><p><i>Line 12</i>: a click on this button will call
@@ -13271,9 +13290,8 @@ a BufferSource node that contains the decoded sound (<i>lines
 31-32</i>), connects it to the speakers (<i>line 35</i>), and then plays
 it.</p></li>
 </ul>
-<h4>
-Monitoring uploads or downloads using a progress event
-</h4>
+
+<h4>Monitoring uploads or downloads using a progress event</h4>
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------------- 165. download progress (281) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -13359,36 +13377,41 @@ HTTP method), or an upload (using POST).</p>
 <p>Note that an alternative syntax such
 as xhr.addEventListener(‘progress’, callback, false) also works.</p>
 <p><b>Syntax for upload:</b></p>
-<pre><code>1.  var xhr = new XMLHttpRequest();
+
+<pre><code>
+1.  var xhr = new XMLHttpRequest();
 2.  xhr.open(&#39;POST&#39;, url, true);
 3.  ...
 4.  xhr.upload.onprogress = function(e) {
 5.  // do something
 6.  }
 7.   
-8.  xhr.send();</code></pre>
+8.  xhr.send();
+</code></pre>
+
 <p>Notice that the only difference is the “upload” added after the name
 of the request object: with GET we use xhr.onprogress and with POST we
 use xhr.upload.onprogress.</p>
 <p>Note that an alternative syntax such
 as xhr.upload.addEventListener(‘progress’, callback, false) also
 works.</p>
-<h4>
-2 - Get progress values (how many bytes have been downloaded) and the
-total file size
-</h4>
+
+<h4>2 - Get progress values (how many bytes have been downloaded) and the total file size</h4>
+
 <p>The event e passed to the onprogress callback has two pertinent
 properties:</p>
+
 <ol type="1">
-<li><p>loaded which corresponds to the number of bytes that have been
-downloaded or uploaded by the browser, so far, and</p></li>
-<li><p>total which contains the file’s size (in bytes).</p></li>
+  <li><p>loaded which corresponds to the number of bytes that have been downloaded or uploaded by the browser, so far, and</p></li>
+  <li><p>total which contains the file’s size (in bytes).</p></li>
 </ol>
+
 <p>Combining these with a &lt;progress&gt; element, makes it very easy
-to render an animated <em>progress bar</em>. Here is a source code
+to render an animated <i>progress bar</i>. Here is a source code
 extract that does this for a download operation:</p>
 
 <h4>HTML</h4>
+
 <pre><code>
 &lt;progress id=&quot;downloadProgress&quot; value=0&gt;&lt;progress&gt;
 </code></pre>
@@ -13569,6 +13592,7 @@ JSBin</a>:</p>
 </details>
 
 <h4><b>Explanations</b>:</h4>
+
 <ul>
 <li><p><i>Line 18</i>: callback called when the user selects a
 file.</p></li>
@@ -13582,9 +13606,9 @@ object passed as a parameter (all data is sent).</p></li>
 the onload listener is called and an alert message is
 displayed.</p></li>
 </ul>
-<h4>
-Monitor the upload progress
-</h4>
+
+<h4>Monitor the upload progress</h4>
+
 <p>Here is a more user-friendly example. It is basically the same, but
 this time, we’ll monitor the progress of the upload using a method
 similar to that used for monitoring file downloads:</p>
@@ -13616,14 +13640,14 @@ need to upload (i.e., the file size).</p></li>
 
 <p><a href="https://jsbin.com/qedaja/edit?html,css,output" target="_blank" rel="noopener noreferrer">Try the
 example on JSBin</a>:</p>
-<h4>
-Code from this example (nearly the same as previous example’s code):
-</h4>
+
+<h4>Code from this example (nearly the same as previous example’s code):</h4>
+
 <details>
-<summary>
-HTML code!
-</summary>
-<pre><code>1.  &lt;!DOCTYPE html&gt;
+  <summary>HTML code!</summary>
+  
+<pre><code>
+1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.  &lt;head&gt;
 4.     &lt;meta charset=&quot;utf-8&quot; /&gt;
@@ -13663,22 +13687,23 @@ HTML code!
 37. };
 38. &lt;/script&gt;
 39. &lt;/body&gt;
-40. &lt;/html&gt;</code></pre>
+40. &lt;/html&gt;
+</code></pre>
+
 </details>
+
 <p>The only difference between these two worked-examples is
 the onprogress listener which updates the progress
 bar’s value and max attributes. </p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-2-4">
-3.2.4 Discussion and projects
-</h3>
+<h3 id="ch3-2-4">3.2.4 Discussion and projects</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>Here is the discussion forum for this part of the course. Please
 either post your comments/observations/questions or share your
 creations.</p>
-<h4>
-Suggested topics of discussion:
-</h4>
+
+<h4>Suggested topics of discussion:</h4>
+
 <ul>
 <li><p>Did you hear about <a href="https://davidwalsh.name/fetch" target="_blank" rel="noopener noreferrer">the
 Fetch API</a>? This APIs  is easier to use than XhR2, but monitoring
@@ -13818,11 +13843,15 @@ some elements are draggable by default, such
 as &lt;img&gt; elements.</p>
 <p>In order to detect a drag, add an event listener for
 the dragstart event:</p>
-<pre><code>1.  &lt;ol ondragstart=&quot;dragStartHandler(event)&quot;&gt;
+
+<pre><code>
+1.  &lt;ol ondragstart=&quot;dragStartHandler(event)&quot;&gt;
 2.    &lt;li draggable=&quot;true&quot; data-value=&quot;fruit-apple&quot;&gt;Apples&lt;/li&gt;
 3.    &lt;li draggable=&quot;true&quot; data-value=&quot;fruit-orange&quot;&gt;Oranges&lt;/li&gt;
 4.    &lt;li draggable=&quot;true&quot; data-value=&quot;fruit-pear&quot;&gt;Pears&lt;/li&gt;
-5.  &lt;/ol&gt;</code></pre>
+5.  &lt;/ol&gt;
+</code></pre>
+
 <p>In the above code, we made all of the &lt;li&gt; elements draggable,
 and we detect a dragstart event occurring to any item within the ordered
 list: &lt;ol ondragstart=“dragStarthandler(event)”&gt;.</p>
@@ -13837,9 +13866,8 @@ the event.</p>
 drag one of the list items) or <a
 href="https://codepen.io/w3devcampus/pen/MaWKZb" target="_blank" rel="noopener noreferrer">play with it at
 CodePen</a>.</p>
-<h4>
-Screenshot:
-</h4>
+
+<h4>Screenshot:</h4>
 <!------------------------------------------------------------------------------------------------>
 <!--------------------------- 171. drag and drop list example (292) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
@@ -13878,17 +13906,14 @@ Screenshot:
 <p>In this script, the event handler will only display an alert showing
 the name of the target element that launched the event. </p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-3-3">
-3.3.3 Drop detection
-</h3>
+<h3 id="ch3-3-3">3.3.3 Drop detection</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>Let’s continue to develop the example. We show how to drag an element
 and detect a drop, receiving a value which corresponds to the dragged
 element. Then we change the page content accordingly.</p>
-<h4>
-Step #1: in the dragstart handler, copy a value in the drag and drop
-clipboard for later use
-</h4>
+
+<h4>Step #1: in the dragstart handler, copy a value in the drag and drop clipboard for later use</h4>
+
 <p>When a draggable &lt;li&gt; element is being dragged, in
 the dragstart handler <a
 href="https://html5doctor.com/html5-custom-data-attributes/" target="_blank" rel="noopener noreferrer">get the
@@ -13901,7 +13926,9 @@ name.</p>
 the &lt;li&gt; element that has been dragged, and
 event.target.dataset.value is the value of its data-value attribute (in
 our case “apples”, “oranges” or “pears”):</p>
-<pre><code>1. function dragStartHandler(event) {
+
+<pre><code>
+1. function dragStartHandler(event) {
 2.   console.log(&#39;dragstart event, target:
      &#39; + event.target.innerHTML);
 3.  
@@ -13909,32 +13936,36 @@ our case “apples”, “oranges” or “pears”):</p>
 5.   // data* attribute of the target,
 6.   // with a type &quot;Fruit&quot;.
 7.   event.dataTransfer.setData(&quot;Fruit&quot;, event.target.dataset.value);
-8. }</code></pre>
-<h4>
-Step #2: define a “drop zone”
-</h4>
+8. }
+</code></pre>
+
+<h4>Step #2: define a “drop zone”</h4>
+
 <p>Any visible HTML element may become a “drop zone”; if we attach an
 event listener for the drop event. Note that most of the time, as events
 may be propagated, we will also listen for dragover or dragend events
 and stop their propagation. More on this later…</p>
-<pre><code>1. &lt;div ondragover=&quot;return false&quot; ondrop=&quot;dropHandler(event);&quot;&gt;
+
+<pre><code>
+1. &lt;div ondragover=&quot;return false&quot; ondrop=&quot;dropHandler(event);&quot;&gt;
 2.   Drop your favorite fruits below:
 3.   &lt;ol id=&quot;droppedFruits&quot;&gt;&lt;/ol&gt;
-4. &lt;/div&gt;</code></pre>
+4. &lt;/div&gt;
+</code></pre>
+
 <p>Whenever the mouse is moving above a (any) drop zone, dragover events
 will fire. Accordingly, a large number of dragover events may need to be
 handled before the element is finally dropped. The ondragover handler is
 used to avoid propagating dragover events. This is done by returning
 the false value at <i>line 1</i>.</p>
-<h4>
-Step #3: write a drop handler, fetch content from the clipboard, and do
-something with it
-</h4>
+
+<h4>Step #3: write a drop handler, fetch content from the clipboard, and do something with it</h4>
+
 <details>
-<summary>
-Code extract!
-</summary>
-<pre><code>1. function dropHandler(event) {
+  <summary>Code extract!</summary>
+  
+<pre><code>
+1. function dropHandler(event) {
 2.   console.log(&#39;drop event, target: &#39; + event.target.innerHTML);
 3.  
 4.   ...
@@ -13945,15 +13976,17 @@ Code extract!
 9.  
 10.  // do something with the data
 11.  ...
-12. }</code></pre>
+12. }
+</code></pre>
+
 </details>
+
 <p>Typically, in the drop handler, we need to acquire data about the
 element that has been dropped (we get this from the clipboard
 at <i>lines 6-8,</i> the data was copied there during step 1 in
 the dragstart handler).</p>
-<h4>
-Complete example
-</h4>
+
+<h4>Complete example</h4>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------- 172. drag 'n drop fruite (294) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -13962,9 +13995,9 @@ Complete example
   style="width:65%;"
   alt="Drag 'n drop fruits." />
 
-Try it in your browser below or <a
+<p>Try it in your browser below or <a
 href="https://codepen.io/w3devcampus/pen/YyzWKy?editors=110" target="_blank" rel="noopener noreferrer">play with
-it at CodePen</a>:
+it at CodePen</a>:</p>
 
 <h4>Source code:</h4>
 
@@ -14026,6 +14059,7 @@ it at CodePen</a>:
 </details>
 
 <h4>In the above code, note:</h4>
+
 <ul>
 <li><p><i>Line 44</i>: we define the drop zone (ondrop=…), and when a
 drag enters the zone we prevent event propagation (ondragover=“return
@@ -14104,9 +14138,9 @@ more appropriate attributes or elements.”</p>
 by CSS rules: embed initial values for some data, or
 use data- attributes instead of JavaScript variables for easier CSS
 mapping, etc.</b></p>
-<h4>
-JavaScript API: the dataset property
-</h4>
+
+<h4>JavaScript API: the dataset property</h4>
+
 <p>Data attributes can be created and accessed using
 the dataset property of any HTML element.</p>
 <p>Here
@@ -14123,22 +14157,25 @@ online at JsBin</a> example:</p>
 <p>In this example, when you click on the sentence that starts with
 “John Says”, the end of the sentence changes, and the values displayed
 are taken from data­-* attributes of the &lt;li&gt; element.</p>
-<h4>
-HTML code from the example:
-</h4>
-<pre><code>1.  &lt;li class=&quot;user&quot; data-name=&quot;John Resig&quot; data-city=&quot;Boston&quot;
+
+<h4>HTML code from the example:</h4>
+
+<pre><code>
+1.  &lt;li class=&quot;user&quot; data-name=&quot;John Resig&quot; data-city=&quot;Boston&quot;
 2.      data-lang=&quot;js&quot; data-food=&quot;Bacon&quot;&gt;
 3.  John says: &lt;span&gt;Hello, how are you?&lt;/span&gt;
-4.  &lt;/li&gt;</code></pre>
+4.  &lt;/li&gt;
+</code></pre>
+
 <p>We just defined four data attributes. </p>
-<h4>
-JavaScript code from the example:
-</h4>
+
+<h4>JavaScript code from the example:</h4>
+
 <details>
-<summary>
-JavaScript code extract!
-</summary>
-<pre><code>1.  &lt;script&gt;
+  <summary>JavaScript code extract!</summary>
+  
+<pre><code>
+1.  &lt;script&gt;
 2.    var user = document.getElementsByTagName(&quot;li&quot;)[0];
 3.    var pos = 0, span = user.getElementsByTagName(&quot;span&quot;)[0];
 4.    var phrases = [
@@ -14157,15 +14194,18 @@ JavaScript code extract!
 17.     // could be replaces by old way..
 18.     // span.innerHTML = phrase.prefix + user.getAttribute(&quot;data-&quot; + phrase.name );
 19.   }, false);
-20. &lt;/script&gt;</code></pre>
+20. &lt;/script&gt;
+</code></pre>
+
 </details>
+
 <p>All data‐ attributes are accessed using the dataset property of the
 HTML element: in this example, user.dataset[phrase.name] is
 either user.dataset.city, user.dataset.food, or user.dataset.lang.</p>
-<h4>
-Using CSS pseudo elements ::before and ::after with the attr() function
-to display the value of data-* attributes
-</h4>
+
+<h4>Using CSS pseudo elements ::before and ::after with the attr() function
+to display the value of data-* attributes</h4>
+
 <p>This example shows how data-* attributes can be added on the fly by
 JavaScript code and accessed from a CSS rule using
 the attr() CSS function.</p>
@@ -14279,14 +14319,14 @@ You can use different values for the allowEffect and dropEffect, that I
 explained in the course for producing small icons similar to the ones
 you’ve got on Windows when making shortcuts or just moving a file from
 one folder to another. Bye bye!</p>
-<h4>
-Add visual feedback when you drag something, when the mouse enters a
-drop zone, etc.
-</h4>
+
+<h4>Add visual feedback when you drag something, when the mouse enters a drop zone, etc.</h4>
+
 <p>We can associate some CSS styling with the lifecycle of a drag and
 drop. This is easy to do as the drag and drop API provides many events
 we can listen to, and can be used on the draggable elements as well as
 in the drop zones:</p>
+
 <ul>
 <li><p><b>dragstart</b>: this event, which we discussed in a previous
 section, is used on draggable elements. We used it to get a value from
@@ -14359,6 +14399,7 @@ that has been introduced with HTML5 in order to allow CSS class
 manipulation from JavaScript.</p>
 
 <h4>Other events can also be handled:</h4>
+
 <ul>
 <li><p><b>dragenter</b>: usually we bind this event to the drop zone.
 The event occurs when a dragged object enters a drop zone. So, we could
@@ -14376,9 +14417,8 @@ display its full size in a new page, etc.)</p></li>
 process the drop (get the value from the clipboard, etc). It’s also
 necessary to reset the look of the drop zone to default.</p></li>
 </ul>
-<h4>
-<p>Complete example with visual feedback on draggable objects and the
-drop zone</p>
+
+<p>Complete example with visual feedback on draggable objects and the drop zone</p>
 <p>The following example shows how to use these events in a droppable
 zone. </p>
 <p>Try it in your browser below or <a
@@ -14386,11 +14426,12 @@ href="https://codepen.io/w3devcampus/pen/ojNLEL" target="_blank" rel="noopener n
 CodePen</a>:</p>
 <p>Complete source code (for clarity’s sake, we put the CSS and
 JavaScript into a single HTML page):</p>
+
 <details>
-<summary>
-Code extract!
-</summary>
-<pre><code>1.  &lt;!DOCTYPE html&gt;
+  <summary>Code extract!</summary>
+  
+<pre><code>
+1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html&gt;
 3.  &lt;head&gt;
 4.    &lt;style&gt;
@@ -14486,16 +14527,15 @@ Code extract!
 94.       &lt;ol id=&quot;droppedFruits&quot;&gt;&lt;/ol&gt;
 95.     &lt;/div&gt;
 96. &lt;/body&gt;
-97. &lt;/html&gt;</code></pre>
+97. &lt;/html&gt;
+</code></pre>
+
 </details>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-3-6">
-3.3.6 The dropEffect property
-</h3>
+<h3 id="ch3-3-6">3.3.6 The dropEffect property</h3>
 <!------------------------------------------------------------------------------------------------>
-<h4>
-More feedback using the dropEffect property: changing the cursor’s shape
-</h4>
+<h4>More feedback using the dropEffect property: changing the cursor’s shape</h4>
+
 <p>It is possible to change the cursor’s shape during the drag process.
 The cursor will turn into a “copy”, “move” or “link” icon, depending on
 the semantic of your drag and drop, when you enter a drop zone during a
@@ -14802,6 +14842,7 @@ either post your comments/observations/questions or share your
 creations.</p>
 
 <h4>Suggested topics of discussion:</h4>
+
 <ul>
 <li><p>If you find interesting drag and drop examples on the Web, please
 share them in the forum.</p></li>
@@ -14810,6 +14851,7 @@ share them in the forum.</p></li>
 </ul>
 
 <h4>Optional projects:</h4>
+
 <ul>
 <li><p>Code an illustrative drag and drop demo, and share it in the
 forum. For example, try to add something similar to the “what is your
@@ -14882,6 +14924,7 @@ which contains the list of file names.</p>
 <p>Complete working examples are to be presented later on…</p>
 
 <h4>Prevent the browser’s default behavior</h4>
+
 <p>If we drop an image into an HTML page, the browser will open a new
 tab and display the image. With a .mp3 file, it will open it in a new
 tab and a default player will start streaming it, etc. We need to
@@ -14938,6 +14981,7 @@ to the dragOver handler attached to the drop zone!</p>
 </details>
 
 <h4>External resources</h4>
+
 <ul>
 <li><p>Web.dev article: “<a href="https://web.dev/drag-and-drop/" target="_blank" rel="noopener noreferrer">Using
 the HTML5 drag and drop API</a>”</p></li>
@@ -15195,7 +15239,7 @@ with an id of “list”.</p>
 <p>So, let’s add this method to our code example, to display file
 details once dropped, and also add an &lt;output
 id=“list”&gt;&lt;/output&gt; to the HTML of this example.</p>
-<h4>
+
 <p>Complete example of drag and drop + thumbnails of images</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 183.  (3xx) -------------------------------->
@@ -15769,7 +15813,7 @@ and drops files, they will start being uploaded immediately. However,
   src="./images/image186.jpeg"
   style="width:65%;"
   alt="Uploading files using Xhr2, drag 'n drop with progress bar." />
-</p>
+
 <!---
 <img src="./images/image186.jpeg" style="width:6.5in;height:3.98264in"
 alt="uploading files using Xhr2, drag&#39;n&#39;drop and progress bar" />
@@ -15876,10 +15920,9 @@ topic of the HTML5 Part 1 course.</p>
 “example 1” <a
 href="https://courses.edx.org/assets/courseware/v1/e694f9e43a0ef0139fb57f71fae0d0ed/asset-v1:W3Cx+HTML5.2x+2T2020a+type@asset+block/upload.zip" target="_blank" rel="noopener noreferrer">in
 the zip archive that contains all examples</a>.</p>
-<h4>
-Example #2: similar example but using drag and drop instead of a file
-selector
-</h4>
+
+<h4>Example #2: similar example but using drag and drop instead of a file selector</h4>
+
 <p>Here is much the same code, but this time it uses drag and drop to
 collect the filenames, not an input field. <a
 href="https://jsbin.com/qijoza/edit?html,css,js,output" target="_blank" rel="noopener noreferrer">Try it at
@@ -16178,6 +16221,7 @@ offline.</b></p></li>
 <li><p><b>IndexedDB is transactional: it manages concurrent access to
 data.</b></p></li>
 </ol>
+
 <h4>Examples of applications where IndexedDB should be considered</h4>
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 192. google drive and indexdb (3xx) ------------------------------>
@@ -17130,9 +17174,10 @@ cursor.continue(),</p>
 earlier with the previous</p>
 <p>case when we got multiple results, this time it wasn’t using an
 index.</p>
+
 <h4>
-Example #1: basic steps
-</h4>
+Example #1: basic steps</h4>
+
 <p><a href="https://jsbin.com/jukifo" target="_blank" rel="noopener noreferrer">Online example at JSBin</a>:</p>
 <p>Execute this example and look at the IndexedDB object store content
 from the Chrome dev tools (F12 or cmd-alt-i). One more customer should
@@ -17560,9 +17605,9 @@ this screenshot:</p>
 <h3 id="ch3-6-10">3.6.10 Getting data</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>There are several ways to retrieve data from a data store.</p>
-<h4>
-First method: getting data when we know its key
-</h4>
+
+<h4>First method: getting data when we know its key</h4>
+
 <p>The simplest function from the API is the request.get(key) function.
 It retrieves an object when we know its key/keypath.</p>
 <p><a href="https://jsbin.com/saquru" target="_blank" rel="noopener noreferrer">Online example at JSBin</a>:</p>
@@ -17807,13 +17852,16 @@ object store and add them to an array, like this:</p>
 16.       alert(&quot;Got all customers: &quot; + customers);
 17.     }
 18.  }; // end of onsuccess
-19. } // end of listAllCustomersArray()</code></pre>
+19. } // end of listAllCustomersArray()
+</code></pre>
+
 </details>
+
 <p><a href="https://jsbin.com/bitoqa" target="_blank" rel="noopener noreferrer">You can try this version on
 JSBin</a>.</p>
-<h4>
-Getting data using an index
-</h4>
+
+<h4>Getting data using an index</h4>
+
 <p>Storing customer data using the ssn as a key is logical since
 the ssn uniquely identifies an individual. If you need to look up a
 customer by name, however, you’ll need to iterate over every ssn in the
@@ -17866,7 +17914,7 @@ JsBin</a></p>
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image211.jpeg?raw=true"
-  alt="Retrieving data using an index. The screenshot shows a button &quot;look for all customers named Bill&quot;, and   shows an alert with the result." />
+  alt="Retrieving data using an index. The screenshot shows a button &quot;look for all customers named Bill&quot;, and   shows an alert with the result."
   style="width:65%;" />
 
 <p>The above example retrieves only the first object that has a
@@ -17877,8 +17925,12 @@ the object store.</p>
 cursor</i>.</p>
 <p>When we work with indexes, we can open two different types of cursors
 on indexes:</p>
-<pre><code>A normal cursor which maps the index property to the object in the object store, or,
-A key cursor which maps the index property to the key used to store the object in the object store.</code></pre>
+
+<pre><code>
+A normal cursor which maps the index property to the object in the object store, or,
+A key cursor which maps the index property to the key used to store the object in the object store.
+</code></pre>
+
 <p>The differences are illustrated below.</p>
 <p>Normal cursor:</p>
 
@@ -18021,9 +18073,9 @@ from this MDN article</a>):</p>
 </code></pre>
 
 </details>
-<h4>
-Complete example
-</h4>
+
+<h4>Complete example</h4>
+
 <p>Adapted from an example on gitHub, today no more available (<a
 href="https://github.com/mdn/IDBKeyRange-example/blob/gh-pages/index.html" target="_blank" rel="noopener noreferrer">original
 URL</a>):</p>
@@ -18088,9 +18140,9 @@ examples, and display them in a table or in a list. The GUI must also
 provide a search form for retrieving all the examples from a given
 chapter. </li>
 </ul>
-<h4>
-Conclusion
-</h4>
+
+<h4>Conclusion</h4>
+
 <p>The two W3Cx courses, <a
 href="https://www.edx.org/course/html5-coding-essentials-and-best-practices">HTML5
 Coding Essentials and Best Practices</a> and this one (HTML5 Apps and
@@ -18130,6 +18182,7 @@ resources so that it can run in offline mode.</p>
 
 <h4>External resources</h4>
 <ul>
+
 <li>You might be interested by <a
 href="https://developers.google.com/web/fundamentals/instant-and-offline/web-storage/cache-api">the
 Cache API</a> to make your application data available offline (in other
@@ -18327,6 +18380,7 @@ code or at the DOM with the devtool’s inspector will not reveal the
 source code (HTML/JavaScript/CSS) used for creating it.</p>
 
 <h4>Web components availability</h4>
+
 <p>There are already hundreds of Web components made by others that you
 can use. On the <a
 href="https://www.webcomponents.org/" target="_blank" rel="noopener noreferrer">webcomponents.org</a> Web site,
@@ -18517,6 +18571,7 @@ the template’s content and true means “deep copy” the content.</p>
 </code></pre>
 
 <h4>Explanations</h4>
+
 <p>:</p>
 <ul>
 <li><p>In this example, <i>line 1</i> assigns the DOM node corresponding
@@ -18672,9 +18727,9 @@ the shadow root is rendered instead.</i></p></li>
 </ol>
 <p>NB: Because other browsers do not offer the tool-set, all of the
 examples we discuss on this subject use Google Chrome or Chromium.</p>
-<h4>
-Example using the Shadow DOM: the &lt;video&gt; element
-</h4>
+
+<h4>Example using the Shadow DOM: the &lt;video&gt; element</h4>
+
 <p>Let’s have a look at a simple &lt;video&gt; element.</p>
 <p>Open <a href="https://jsbin.com/mojoqaw/edit?html,output" target="_blank" rel="noopener noreferrer">this JSBin
 example</a> in your browser, and fire up the devtools console (F12 on
@@ -18748,9 +18803,9 @@ of sandboxing</a>.</p>
 <p>Browser developers have been using Web Components for a while, and
 now it’s available to every Web developer!</p>
 </blockquote>
-<h4>
-Another simple example
-</h4>
+
+<h4>Another simple example</h4>
+
 <p>Let’s have a look at a very simple example:</p>
 
 <details>
@@ -18822,7 +18877,8 @@ hidden in a shadow root is protected from external CSS, scripts,
 etc.</p>
 
 <h4>An example that mixes templates and shadow DOM</h4>
-<p>HTML part:</p>
+
+<h4>HTML part:</h4>
 
 <pre><code>
 1.  &lt;template id=&quot;mytemplate&quot;&gt;
@@ -18871,9 +18927,9 @@ root.</p>
 French (and other languages) means “Instantiate” in English. We hope
 you’ll translate, as appropriate; but if you seek definitions or use the
 word in web-searches, then the English spelling will help!</p>
-<h4>
-Internal CSS does not apply outside the template/shadow DOM
-</h4>
+
+<h4>Internal CSS does not apply outside the template/shadow DOM</h4>
+
 <p>The CSS inside the template will not affect any other H1 elements on
 the page. This CSS rule (<i>lines 2-4</i> in the HTML part) will only
 apply to the template’s content, with no side-effects on other elements
@@ -19097,7 +19153,8 @@ shadow DOM:</p>
 
 </details>
 
-<h4><b>Explanations</b>:</h4>
+<h4>Explanations:</h4>
+
 <ul>
 <li><p><i>Line 5: </i>we use this particular selector for safety. It
 means “select the element only in the HTML of the document that is
@@ -19118,9 +19175,9 @@ named <my-widget>. When the browser encounters <my-widget> within an
 HTML document, it will create an instance of the MyWidget class and
 render the shadow DOM of the Web Component.</p></li>
 </ul>
-<h4>
-Full example
-</h4>
+
+<h4>Full example</h4>
+
 <p>Now, we can use the newly created element and inject content.  The
 template used here is the last one we studied in a previous lesson about
 HTML templates. Check <a
@@ -19135,6 +19192,7 @@ example online at JSBin</a>: </p>
   style="width:75%;" />
 
 <h4>External resources</h4>
+
 <p>This lesson is only an introduction to custom elements. Here are a
 few pointers for learners who would like to see how a custom element can
 inherit from another custom element.</p>
@@ -19182,6 +19240,7 @@ would do something similar to HTML imports, but this is not even in a
 specification yet…</p>
 
 <h4>Here is where we are:</h4>
+
 <ul>
 <li><p><b>RECOMMENDED</b>: There is a polyfill for HTML imports that
 works very well. Just include it and your code that use HTML imports
@@ -19299,7 +19358,8 @@ Components) :</p>
 
 </details>
 
-<h4><b>Explanations</b>:</h4>
+<h4>Explanations:</h4>
+
 <ul>
   <li><p><i>Line 6</i>: In this example, the Web Component is in a single JavaScript file (./mycomponent/index.js), that is imported as JavaScript module (&lt;script type=“module”….&gt;).</p></li>
   <li><p><i>Lines 9 and 10</i>: it can then be used like any Web Component, by adding it with its custom HTML tag (<my-components>). The components have one HTML attribute “name”.</p></li>
@@ -19345,6 +19405,7 @@ Components) :</p>
 </details>
 
 <h4><b>Explanations</b>:</h4>
+
 <ul>
   <li><p><i>Line 1</i>: we call customElements.define and pass as the first parameter the name of the Web Component (here &lt;my-component), and as a second parameter the JavaScript class that defines the Web Component. Instead of using the className, in this example, the class itself is embedded in the call to define(….).</p></li>
   <li><p><i>Line 10</i>: we used the connectedCallback method that is called automatically when  the component is created and connected to the DOM of its host. In this method we use <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals" target="_blank" rel="noopener noreferrer">JavaScript template literals</a> to embed the HTML template of the component and its CSS associated style in the class properties this.html and this.css. This is a convenient way to define in a single line both the HTML and the CSS for the component (this is done in <i>line 26</i>).</p></li>
@@ -19355,7 +19416,9 @@ Components) :</p>
 <!------------------------------------------------------------------------------------------------>
 <p>Here is the discussion forum for this part of the course. Please post
 your comments/observations/questions and share your creations.</p>
+
 <h4>Suggested topics of discussion:</h4>
+
 <ul>
   <li><p>If you’ve followed the course, then you’ve visited the <a href="https://www.webcomponents.org/" target="_blank" rel="noopener noreferrer">webcomponents.org</a> Web site and browsed some Web components galleries. Did you find any super cool components? Did you try them? Please share your findings in the forum!</p></li>
   <li><p>What Web component would you like to use and could not find out of the box?</p></li>
@@ -19796,9 +19859,9 @@ graphic animation has been added to this example, and you can verify
 that the animation is not affected by the computations in the
 background.</p></li>
 </ol>
-<h4>
-Try an improved version of the first example yourself
-</h4>
+
+<h4>Try an improved version of the first example yourself</h4>
+
 <p>We can improve this example a little by testing whether the browser
 supports Web Workers, and by displaying some additional messages.</p>
 <blockquote>
@@ -19827,7 +19890,9 @@ worker.js code for displaying a message and have it wait 3 seconds
 before starting the computation of prime numbers.</p>
 <p>You can download this example: <a
 href="https://courses.edx.org/assets/courseware/v1/4af4dd2326f40b5d5d55aa15bbb12d70/asset-v1:W3Cx+HTML5.2x+2T2020a+type@asset+block/WebWorkersExample1.zip" target="_blank" rel="noopener noreferrer">WebWorkersExample1.zip</a></p>
+
 <h4>HTML code:</h4>
+
 <details>
   <summary>HTML code!</summary>
 
@@ -19978,7 +20043,7 @@ worker.</p>
 <p>A Web worker can also kill itself by calling the close() method in
 the worker’s JavaScript file:</p>
 
-<h4><b>To sum up, there are 3 different ways to kill a Web Worker:</b></h4>
+<h4>To sum up, there are 3 different ways to kill a Web Worker:</h4>
 
 <ol type="1">
   <li><p>Close the tab/window of the parent. This will kill all workers that have been created by this parent tab/window.</p></li>
@@ -19990,14 +20055,17 @@ the worker’s JavaScript file:</p>
 
 <p>External scripts can be loaded by workers using
 the importScripts() function.</p>
-<h4>
-worker.js:
-</h4>
-<pre><code>importScripts(&#39;script1.js&#39;);
+
+<h4>worker.js:</h4>
+
+<pre><code>
+importScripts(&#39;script1.js&#39;);
 importScripts(&#39;script2.js&#39;);
 
 // Other possible syntax
-importScripts(&#39;script1.js&#39;, &#39;script2.js&#39;);</code></pre>
+importScripts(&#39;script1.js&#39;, &#39;script2.js&#39;);
+</code></pre>
+
 <p>The included scripts must follow <a
 href="https://developer.mozilla.org/en-US/docs/JavaScript/Same_origin_policy_for_JavaScript?redirectlocale=en-US&amp;redirectslug=Same_origin_policy_for_JavaScript" target="_blank" rel="noopener noreferrer">the
 same-origin policy</a>.</p>
@@ -20006,9 +20074,9 @@ function importScripts() doesn’t return until all the scripts have been
 loaded and executed. If an error occurs during a script importing
 process, a NETWORK_ERROR is thrown by the importScripts function and the
 code that follows won’t be executed.</p>
-<h4>
-Limitations of Web Workers
-</h4>
+
+<h4>Limitations of Web Workers</h4>
+
 <p>Debugging threads may become a nightmare when working on the same
 object (see the “thread security” section at the beginning of this
 page). To avoid such a pain, the Web Workers API does several
@@ -20020,9 +20088,9 @@ received: no more thread security problems.</p></li>
 this is a subset of those usually available in standard JS
 scripts.</p></li>
 </ol>
-<h4>
-Objects available in Web Workers:
-</h4>
+
+<h4>Objects available in Web Workers:</h4>
+
 <ul>
 <li><p>The navigator object</p></li>
 <li><p>The location object (read-only)</p></li>
@@ -20037,21 +20105,19 @@ the importScripts() method</p></li>
 href="https://www.html5rocks.com/en/tutorials/workers/basics/?redirect_from_locale=fr#toc-enviornment-subworkers" target="_blank" rel="noopener noreferrer">Spawning
 other Web Workers</a></p></li>
 </ul>
-<h4>
-Workers do NOT have access to:
-</h4>
+
+<h4>Workers do NOT have access to:</h4>
+
 <ul>
 <li><p>The DOM (it’s not thread-safe)</p></li>
 <li><p>The window object</p></li>
 <li><p>The document object</p></li>
 <li><p>The parent object</p></li>
 </ul>
-<h4>
-WOW! This is a lot! So, please be careful!
-</h4>
-<h4>
-This is well illustrated below:
-</h4>
+
+<h4>WOW! This is a lot! So, please be careful!</h4>
+
+<h4>This is well illustrated below:</h4>
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------------- 239. web workers scope (424) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -20084,7 +20150,6 @@ This is well illustrated below:
   alt="Chrome debug web workers."
   style="width:65%;" />
 
-
 <!-- style="width:1in;height:1in" --->
 
 <ul>
@@ -20094,6 +20159,7 @@ This is well illustrated below:
 <h3 id="ch4-3-4">4.3.4 Demos</h3>
 <!------------------------------------------------------------------------------------------------>
 <h4>Demo #1</h4>
+
 This is a variation of the prime number example (previous lecture) which
 shows that an interaction in the parent page is not affected by the
 background computation of prime numbers. Try it <a
@@ -20113,6 +20179,7 @@ reacts instantly…
   style="width:65%;" />
 
 <!--- style="width:5in;height:3.12767in" --->
+
 <h4>Demo #2</h4>
 
 <p>Do ray tracing using a variable number of Workers, and try it <a href="https://nerget.com/rayjs-mt/rayjs.html" target="_blank" rel="noopener noreferrer">online</a> (if you’ve not heard of it before, <a href="https://www.cs.unc.edu/~rademach/xroads-RT/RTarticle.html" target="_blank" rel="noopener noreferrer">here’s
@@ -20228,13 +20295,9 @@ device to steer your character in a motorcycle or airplane game!</p>
 its understanding of <i>direction</i> with our own view of ‘the Earth’.
 Once we have a unified <i>coordinate system</i>, we apply rotations in
 the following order:</p>
-<h4>
-Rotate the device frame around its z axis by alpha degrees,
-with alpha in [0, 360]
-</h4>
-<!------------------------------------------------------------------------------------------------>
-<!----------------- 247 / 248. start orientation & rotation about z axis (433) ------------------->
-<!------------------------------------------------------------------------------------------------>
+
+<h4>Rotate the device frame around its z axis by alpha degrees, with alpha in [0, 360]</h4>
+
 <table>
 <colgroup>
 <col style="width: 23%" />
@@ -20248,10 +20311,12 @@ frames aligned.
 </th>
 <th>
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 247.  (##) ----------------------->
+<!----------------- 247. start orientation & rotation about z axis (433) ------------------->
 <!------------------------------------------------------------------------------------------------>
-<img src="./images/image247.png"
-style="width:4.6875in;height:4.6875in" alt="start orientation" />
+<img class="displayed"
+  src="./images/image247.png"
+  style="width:4.6875in;height:4.6875in"
+  alt="start orientation" />
 </th>
 </tr>
 </thead>
@@ -20265,17 +20330,16 @@ locations of x and y axes shown as x<sub>0</sub> and y<sub>0</sub>.
 <!------------------------------------------------------------------------------------------------>
 <!--------------------- 248.  (##) ----------------------->
 <!------------------------------------------------------------------------------------------------>
-<img src="./images/image248.png"
-style="width:4.6875in;height:4.6875in"
-alt="rotation about z axis" />
+<img class="displayed"
+  src="./images/image248.png"
+  style="width:4.6875in;height:4.6875in"
+  alt="rotation about z axis" />
 </td>
 </tr>
 </tbody>
 </table>
+
 <h4>Rotate the device frame around its x axis by beta degrees, with beta in[-180, 180]</h4>
-<!------------------------------------------------------------------------------------------------>
-<!-------------------- 247. start orientation & rotation about x axis (434) ---------------------->
-<!------------------------------------------------------------------------------------------------>
 <table>
 <colgroup>
 <col style="width: 21%" />
@@ -20284,6 +20348,9 @@ alt="rotation about z axis" />
 <thead>
 <tr class="header">
 <th>Device in the initial position, with Earth (XYZ) and<br /> body (xyz) frames aligned.</th>
+<!------------------------------------------------------------------------------------------------>
+<!-------------------- 247. start orientation & rotation about x axis (434) ---------------------->
+<!------------------------------------------------------------------------------------------------>
 <th><img src="./images/image247.png" style="width:4.6875in;height:4.6875in" alt="start orientation" /></th>
 </tr>
 </thead>
@@ -20324,8 +20391,10 @@ frames aligned.
 <!------------------------------------------------------------------------------------------------>
 <!--------------------- 247.  (##) ----------------------->
 <!------------------------------------------------------------------------------------------------>
-<img src="./images/image247.png"
-style="width:4.6875in;height:4.6875in" alt="Start orientation." />
+<img class="displayed"
+  src="./images/image247.png"
+  style="width:4.6875in;height:4.6875in"
+  alt="Start orientation." />
 </th>
 </tr>
 </thead>
@@ -20339,9 +20408,10 @@ locations of x and z axes shown as x<sub>0</sub> and z<sub>0</sub>.
 <!------------------------------------------------------------------------------------------------>
 <!--------------------- 250.  (##) ----------------------->
 <!------------------------------------------------------------------------------------------------>
-<img src="./images/image250.png"
-style="width:4.6875in;height:4.6875in"
-alt="Rotation about y axis." />
+<img class="displayed"
+  src="./images/image250.png"
+  style="width:4.6875in;height:4.6875in"
+  alt="Rotation about y axis." />
 </td>
 </tr>
 </tbody>
@@ -21150,6 +21220,7 @@ spec: 
 </ul>
 
 <h4>Optional projects:</h4>
+
 <ul>
   <li><a href="https://mainline.i3s.unice.fr/mooc/SkywardBound/" target="_blank" rel="noopener noreferrer">The Christmas 
   game</a> developed by students from the previous run is a perfect candidate to be controlled using the APIs seen in this course!! I would start with the orientation API and try to move the bunny left/right…</li>
