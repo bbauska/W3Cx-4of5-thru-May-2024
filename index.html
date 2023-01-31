@@ -54,7 +54,9 @@
   ul.task-list{list-style: none;}
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
 </style>
+
 </head>
+
 <body>
 <!------------------------------------------------------------------------------------------------>
 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
@@ -198,10 +200,13 @@ interactions</b></a></h3>
 <h3 id="drag-and-drop-working-with-files">3.4. <a href="#ch3-4-1"><b>Drag and drop: working with files</b></a></h3>
 
 <h3 id="forms-and-files">3.5. <a href="#ch3-5-1"><b>Forms and files</b></a></h3>
+
 <h3 id="indexeddb">3.6. <a href="#ch3-6-1"><b>IndexedDB</b></a></h3>
+
 <h3 id="conclusion-on-client-side-persistence">3.7. <a href="#ch3-7-1"><b>Conclusion on client-side persistence</b></a></h3>
 
 </blockquote>
+
 <h2 id="module-4-web-components-and-other-html5-apis"><a href="#ch4"><b>Module 4: Web components and other HTML5 APIs</b></a></h2>
 
 <blockquote>
@@ -981,7 +986,7 @@ discussion: [509](#suggested-topics-of-discussion-8)</a></p>
 </details>
 <!------------------------------------------------------------------------------------------------>
 <hr>
-<h3>Welcome!</h3>
+<h3 id="cha-1">Welcome!</h3>
 
 <p>This course is one of the courses composing the <a href="https://www.edx.org/professional-certificate/front-end-web-developer-9" target="_blank" rel="noopener noreferrer">“Front-End Web Developer”</a></p>
 
@@ -2120,11 +2125,15 @@ and methods are described later in this lesson.</p>
 <p><b>Second method:</b> get TextTrack from the HTML video element.</p>
 <p>The &lt;video&gt; element (and &lt;audio&gt; element too) has
 a TextTrack property accessible from JavaScript:</p>
-<pre><code>var videoElement = document.querySelector(&quot;#myVideo&quot;);
+
+<pre><code>
+var videoElement = document.querySelector(&quot;#myVideo&quot;);
 var textTracks = videoElement.textTracks; // one TextTrack for each HTML track element
 var textTrack = textTracks[0]; // corresponds to the first track element
 var kind = textTrack.kind // e.g. &quot;subtitles&quot;
-var mode = textTrack.mode // e.g. &quot;disabled&quot;, &quot;hidden&quot; or &quot;showing&quot;</code></pre>
+var mode = textTrack.mode // e.g. &quot;disabled&quot;, &quot;hidden&quot; or &quot;showing&quot;
+</code></pre>
+
 <p>The mode property of TextTrack objects TextTrack objects have a
 mode property, that is set to one of:</p>
 <ol type="1">
@@ -2230,6 +2239,7 @@ previous example:</p>
 30.   getTrack(htmlTracks[n], readContent);
 31. }
 </code></pre>
+
 </details>
 
 <h4>Explanations:</h4>
@@ -2822,8 +2832,11 @@ this example at JSBin</a>:</p>
 28.             src=&quot;https://...../elephants-dream-chapters-en.vtt&quot;&gt;
 29. &lt;/video&gt;
 30. &lt;div id=&quot;transcript&quot;&gt;&lt;/div&gt;
-31. &lt;/section&gt;</code></pre>
+31. &lt;/section&gt;
+</code></pre>
+
 </details>
+
 <h4>CSS code:</h4>
 
 <details>
@@ -3054,8 +3067,11 @@ this example at JSBin</a>:</p>
 170.    transcriptText.classList.remove(&quot;current&quot;);
 171. };
 172. 
-173. } // end of addCueListeners...</code></pre>
+173. } // end of addCueListeners...
+</code></pre>
+
 </details>
+
 <p>Load a WebVTT file using Ajax/XHR2 and parse it manually.</p>
 <p>This is an old example written in 2012 at a time when the track API
 was not supported by browsers. It downloads WebVTT files using Ajax and
@@ -4916,6 +4932,7 @@ above example)</p>
 36. }
 37.  
 </code></pre>
+
 </details>
 
 <h4>Explanations:</h4>
@@ -5089,6 +5106,7 @@ JSBin</a>, or try it in your browser:</p>
 13. gainNode.gain.value = evt.target.value;
 14. };
 </code></pre>
+
 </details>
 
 <p>The gain property (<i>line 13</i> in the above code) corresponds to
@@ -5426,7 +5444,9 @@ with the Chrome WebAudio Inspector extension):</p>
 &lt;label for=&quot;gainSlider1&quot;&gt;Gain&lt;/label&gt;
 &lt;input type=&quot;range&quot; min=&quot;0&quot; max=&quot;10&quot; step=&quot;0.01&quot;
         value=&quot;8&quot; id=&quot;gainSlider1&quot; /&gt;
-&lt;button id=&quot;compressorButton&quot;&gt;Turn compressor On&lt;/button&gt;</code></pre>
+&lt;button id=&quot;compressorButton&quot;&gt;Turn compressor On&lt;/button&gt;
+</code></pre>
+
 </details>
 
 <h4>JavaScript source code:</h4>
@@ -5765,11 +5785,12 @@ JSBin</a></p>
 <p>First, select the audio context and the canvas context, then build
 the audio graph, and finally run the animation loop.</p>
 <p>Typical operations to perform once the HTML page is loaded:</p>
+
 <details>
-<summary>
-Source code!
-</summary>
-<pre><code>1.  window.onload = function() {
+  <summary>Source code!</summary>
+
+<pre><code>
+1.  window.onload = function() {
 2.     // get the audio context
 3.     audioContext= ...;
 4.  
@@ -5784,8 +5805,11 @@ Source code!
 13. 
 14.    // starts the animation at 60 frames/s
 15.    requestAnimationFrame(visualize);
-16. };</code></pre>
+16. };
+</code></pre>
+
 </details>
+
 <p>Step #1: build the audio graph with an analyser node at the end</p>
 <p>If we want to visualize the sound that is coming out of the speakers,
 we have to put an analyser node at almost the end of the sound graph.
@@ -9646,7 +9670,11 @@ constant speed on screen, even when the frame rate changes.</p>
 <p>Let’s modify the example from the previous lesson slightly by adding
 a <i>time-based animation</i>.  Here we use the “standard JavaScript”
 way for measuring time, using JavaScript’s Date object:</p>
-<pre><code>var time = new Date().getTime();</code></pre>
+
+<pre><code>
+var time = new Date().getTime();
+</code></pre>
+
 <p>The getTime() method returns the number of milliseconds since
 midnight on January 1, 1970. This is the number of milliseconds that
 have elapsed during the Unix epoch (!).</p>
@@ -12658,7 +12686,8 @@ the &lt;div&gt; that displays the FPS value… this function will be
 called from the GF.start() method. There was code in this start method
 that has been moved into the initFPS function we created and added into
 the fps.js file.</p>
-<p>fps.js:</p>
+
+<h4>fps.js:</h4>
 
 <details>
   <summary>fps.js extract!</summary>
@@ -12807,8 +12836,11 @@ during the course, could be put into this file as well.</p>
 16. &lt;body&gt;
 17.   &lt;canvas id=&quot;myCanvas&quot; width=&quot;400&quot; height=&quot;400&quot;&gt;&lt;/canvas&gt;
 18. &lt;/body&gt;
-19. &lt;/html&gt;</code></pre>
+19. &lt;/html&gt;
+</code></pre>
+
 </details>
+
 <p>We could go further by defining a monster.js file, turning all the
 code related to the monster/player into a well-formed object, with
 draw and move methods, etc. There are many potential improvements you
@@ -13824,8 +13856,11 @@ CodePen</a>.</p>
 16.   &lt;/ol&gt;
 17.   &lt;p&gt;Drop your favorite fruits below:&lt;/p&gt;
 18. &lt;body&gt;
-19. &lt;html&gt;</code></pre>
+19. &lt;html&gt;
+</code></pre>
+
 </details>
+
 <p>In this script, the event handler will only display an alert showing
 the name of the target element that launched the event. </p>
 <!------------------------------------------------------------------------------------------------>
@@ -13984,33 +14019,20 @@ it at CodePen</a>:</p>
 <h4>In the above code, note:</h4>
 
 <ul>
-<li><p><i>Line 44</i>: we define the drop zone (ondrop=…), and when a
-drag enters the zone we prevent event propagation (ondragover=“return
-false”)</p></li>
-<li><p>When we enter the dragstart listener (<i>line 5</i>), we copy the
-dragged-element’s data-value attribute to the drag and drop clipboard
-with a name/key equal to “Fruit” (<i>line 11</i>),</p></li>
-<li><p>When a drop occurs in the “drop zone” (the &lt;div&gt; at <i>line
-44</i>), the dropHandler(event) function is called. This always occurs
-after a call to the dragstart handler. In other words: when we enter
-the drop handler, there must always be something on the clipboard! We
-use an event.dataTransfer.setData(…) in the dragstart handler, and
-an event.dataTransfer.getData(…) in the drop handler.</p></li>
-<li><p>The dropHandler function is called (<i>line 15</i>), we get the
-object with a name/key equal to “Fruit” (<i>line 21</i>) from the
-clipboard , we create a &lt;li&gt; element (<i>line 18</i>), and set its
-value according to the value in that clipboard object (<i>lines
-23-31</i>),</p></li>
-<li><p>Finally we add the &lt;li&gt; element to the &lt;ol&gt; list
-within the drop zone &lt;div&gt;.</p></li>
+  <li><p><i>Line 44</i>: we define the drop zone (ondrop=…), and when a drag enters the zone we prevent event propagation (ondragover=“return false”)</p></li>
+  <li><p>When we enter the dragstart listener (<i>line 5</i>), we copy the dragged-element’s data-value attribute to the drag and drop clipboard with a name/key equal to “Fruit” (<i>line 11</i>),</p></li>
+  <li><p>When a drop occurs in the “drop zone” (the &lt;div&gt; at <i>line 44</i>), the dropHandler(event) function is called. This always occurs after a call to the dragstart handler. In other words: when we enter the drop handler, there must always be something on the clipboard! We use an event.dataTransfer.setData(…) in the dragstart handler, and an event.dataTransfer.getData(…) in the drop handler.</p></li>
+  <li><p>The dropHandler function is called (<i>line 15</i>), we get the object with a name/key equal to “Fruit” (<i>line 21</i>) from the clipboard , we create a &lt;li&gt; element (<i>line 18</i>), and set its value according to the value in that clipboard object (<i>lines 23-31</i>),</p></li>
+  <li><p>Finally we add the &lt;li&gt; element to the &lt;ol&gt; list within the drop zone &lt;div&gt;.</p></li>
 </ul>
+
 <p>Notice that we use some CSS to set aside some screen-space for the
 drop zone (not presented in the source code above, but available in the
 online example):</p>
+
 <details>
-<summary>
-Code extract!
-</summary>
+  <summary>Code extract!</summary>
+
 <pre><code>1.  div {
 2.     height: 150px;
 3.     width: 150px;
@@ -14027,6 +14049,7 @@ Code extract!
 14. li:hover {
 15.    border: 2px dashed #000;
 16. }</code></pre>
+
 </details>
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch3-3-4">3.3.4 A few words about data-* attributes</h3>
@@ -15766,6 +15789,9 @@ href="https://courses.edx.org/assets/courseware/v1/5909531330a0343fa4499895a2de1
 file containing all examples (html + css + js + php + readmes)</a></p>
 <p>The examples can be tried online at JSBin (see in the following
 pagesà, but the upload is “faked”. These online examples do not use a
+/ PHP).</p>
+<p>Unzip the archive and follow the included READMEs. These examples
+propose <b>different implementations of the two approaches</b> presented
 real server, but are useful for playing with the code and understanding
 how it works. You can try them and see uploads’ progress, etc.</p>
 <p>However, we also provide complete source code for these examples,
@@ -15773,9 +15799,6 @@ including the server-side PHP code. The course is about HTML5, not PHP,
 so we provide this code “as is”: it is only a few lines long per
 example, and has been tested with the latest version of PHP.  It should
 run out of the box with most WAMP, LAMP, and MAMP distributions (Apache
-/ PHP).</p>
-<p>Unzip the archive and follow the included READMEs. These examples
-propose <b>different implementations of the two approaches</b> presented
 in the previous lecture, and both with an &lt;input type=file&gt; and
 drag and drop.</p>
 <p>The HTML part of the examples is also using a technique, seen during
@@ -15793,8 +15816,8 @@ who are also involved in the server side of the Web development.</p>
 <p>We made two examples that rely on the serial approach:</p>
 
 <ol type="1">
-<li><p>one that uses only a file selector,</p></li>
-<li><p>one that uses drag and drop.</p></li>
+  <li><p>one that uses only a file selector,</p></li>
+  <li><p>one that uses drag and drop.</p></li>
 </ol>
 
 <p>We could have merged file selector + drag and drop, as we did in
@@ -17516,7 +17539,7 @@ this screenshot:</p>
 It retrieves an object when we know its key/keypath.</p>
 <p><a href="https://jsbin.com/saquru" target="_blank" rel="noopener noreferrer">Online example at JSBin</a>:</p>
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 208.  (##) ----------------------->
+<!----------------------------- 208. getting data from indexdb (##) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image208.jpeg?raw=true"
@@ -17527,7 +17550,7 @@ It retrieves an object when we know its key/keypath.</p>
 in the form itself (the code that gets the results and that updates the
 form is in the request.onsuccess callback).</p>
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 209.  (##) ----------------------->
+<!------------------------- 209. form updated with data retrieved (##) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image209.jpeg?raw=true"
@@ -17706,7 +17729,7 @@ JSBin</a>.</p>
 set of alerts, each showing details of an object in the object
 store:</p>
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 210.  (##) ----------------------->
+<!--------------------------- 210. list all customers screenshot (##) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image210.jpeg?raw=true"
@@ -17814,7 +17837,7 @@ equal to “Bill”.</p>
 <p><a href="https://jsbin.com/gituxa" target="_blank" rel="noopener noreferrer">Online example you can try at
 JsBin</a></p>
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 211.  (##) ----------------------->
+<!-------------------------- 211. retrieving data using an index (##) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image211.jpeg?raw=true"
@@ -17880,7 +17903,7 @@ A key cursor which maps the index property to the key used to store the object 
 <p>You can try <a href="https://jsbin.com/kubuwof" target="_blank" rel="noopener noreferrer">an online example at
 JSBin that uses the above methods</a>:</p>
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 212.  (##) ----------------------->
+<!----------------------------- 212. getting data using index (##) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image212.jpeg?raw=true"
@@ -17987,7 +18010,7 @@ URL</a>):</p>
 JsBin</a> (enter “Gaming”, “Batman” etc. as key range values):</p>
 <!-- page 398 ---->
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 213.  (##) ----------------------->
+<!---------------------------- 213. example use of idkeyrange (##) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image213.jpeg?raw=true"
@@ -17995,7 +18018,7 @@ JsBin</a> (enter “Gaming”, “Batman” etc. as key range values):</p>
   style="width:65%;" />
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 214.  (##) ----------------------->
+<!------------------------------ 214. idbkeyrange in action (##) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image214.jpeg?raw=true"
@@ -18011,38 +18034,26 @@ your comments/observations/questions and share your creations.</p>
 <h4>Suggested topics of discussion:</h4>
 
 <ul>
-<li><p>IndexedDB is certainly the most complex API presented in this
-course. However, using it is rather simple once you’ve climbed the
-learning curve. If you have prior experience with databases, can you
-tell your feelings in the forum?</p></li>
-<li><p>If you found handy tools for using IndexedDB, or other external
-tutorials and examples, please share!</p></li>
+  <li><p>IndexedDB is certainly the most complex API presented in this course. However, using it is rather simple once you’ve climbed the learning curve. If you have prior experience with databases, can you tell your feelings in the forum?</p></li>
+  <li><p>If you found handy tools for using IndexedDB, or other external tutorials and examples, please share!</p></li>
 </ul>
 
 <h4>Optional projects:</h4>
 
 <ul>
-<li><p>Start from the examples provided in the IndexedDB course and
-adapt them in order to manage a database of the HTML5 interactive
-examples (also provided in this course). For example, objects stores in
-the datastore may be composed of:</p>
-<ul>
-<li><p>the jsbin.com URL of the example,</p></li>
-<li><p>a description,</p></li>
-<li><p>the name of the week in which the example has been presented,
-and,</p></li>
-<li><p>the name of the lesson in the chapter,</p></li>
-<li><p>eventually, a screenshot for the example (URL, or if you are a
-bit of a geek, image content).</p></li>
-</ul></li>
+  <li><p>Start from the examples provided in the IndexedDB course and adapt them in order to manage a database of the HTML5 interactive examples (also provided in this course). For example, objects stores in the datastore may be composed of:</p>
+  <ul>
+    <li><p>the jsbin.com URL of the example,</p></li>
+    <li><p>a description,</p></li>
+    <li><p>the name of the week in which the example has been presented, and,</p></li>
+    <li><p>the name of the lesson in the chapter,</p></li>
+    <li><p>eventually, a screenshot for the example (URL, or if you are a bit of a geek, image content).</p></li>
+  </ul>
+  </li>
 </ul>
 
 <ul>
-<li>Produce an HTML page which contains your application. When loaded,
-it must populate the indexedDB database with at least 10 different
-examples, and display them in a table or in a list. The GUI must also
-provide a search form for retrieving all the examples from a given
-chapter. </li>
+  <li>Produce an HTML page which contains your application. When loaded, it must populate the indexedDB database with at least 10 different examples, and display them in a table or in a list. The GUI must also provide a search form for retrieving all the examples from a given chapter.</li>
 </ul>
 
 <h4>Conclusion</h4>
@@ -18053,29 +18064,18 @@ Coding Essentials and Best Practices</a> and this one (HTML5 Apps and
 Games), have covered a lot of material, and you may have trouble
 identifying which of the different techniques you have learned best suit
 your needs.</p>
+
 <p>To sum up:</p>
+
 <ul>
-<li><b>If you need to work with transactions</b> (in the database sense:
-protect data against concurrent access, etc.), or do some searches on a
-large amount of data, if you need indexes, etc., <b>then use
-IndexedDB</b></li>
+  <li><b>If you need to work with transactions</b> (in the database sense: protect data against concurrent access, etc.), or do some searches on a large amount of data, if you need indexes, etc., <b>then use IndexedDB</b></li>
 </ul>
 
 <ul>
-<li><p><b>If you need a way to store simple strings or JSON objects,
-then use localStorage/sessionStorage</b>. <i>Example</i>: store HTML
-form content as you type, store a game’s hi-scores, preferences of an
-application, etc.</p></li>
-<li><p><b>If you need to manipulate files (read or download/upload),
-then use the File API and XHR2.</b></p></li>
-<li><p>If you need to manipulate a file system, there is a FileSystem
-and a FileWriter API which are very poorly supported and will certainly
-be replaced in HTML 5.1. We decided not to discuss these in the course
-because they lack agreement within the community and browser
-vendors.</p></li>
-<li><p>If you need an SQL database client-side: No! Forget this idea,
-please! There was once a WebSQL API, but it disappeared
-rapidly.</p></li>
+  <li><p><b>If you need a way to store simple strings or JSON objects, then use localStorage/sessionStorage</b>. <i>Example</i>: store HTML form content as you type, store a game’s hi-scores, preferences of an application, etc.</p></li>
+  <li><p><b>If you need to manipulate files (read or download/upload), then use the File API and XHR2.</b></p></li>
+  <li><p>If you need to manipulate a file system, there is a FileSystem and a FileWriter API which are very poorly supported and will certainly be replaced in HTML 5.1. We decided not to discuss these in the course because they lack agreement within the community and browser vendors.</p></li>
+  <li><p>If you need an SQL database client-side: No! Forget this idea, please! There was once a WebSQL API, but it disappeared rapidly.</p></li>
 </ul>
 
 <blockquote>
@@ -18085,19 +18085,13 @@ resources so that it can run in offline mode.</p>
 </blockquote>
 
 <h4>External resources</h4>
-<ul>
 
-<li>You might be interested by <a
-href="https://developers.google.com/web/fundamentals/instant-and-offline/web-storage/cache-api">the
-Cache API</a> to make your application data available offline (in other
-terms: making your Web page or your Web app. available offline). </li>
-</ul>
-<!-- -->
 <ul>
-<li>Read also <a href="https://web.dev/storage-for-the-web/">this
-article that covers all different options for storing data in the
-browser and gives another look at what has been presented in this
-chapter of the course</a>.</li>
+  <li>You might be interested by <a href="https://developers.google.com/web/fundamentals/instant-and-offline/web-storage/cache-api">the Cache API</a> to make your application data available offline (in other terms: making your Web page or your Web app. available offline). </li>
+</ul>
+
+<ul>
+  <li>Read also <a href="https://web.dev/storage-for-the-web/">this article that covers all different options for storing data in the browser and  gives another look at what has been presented in this chapter of the course</a>.</li>
 </ul>
 
 <!------------------------------------------------------------------------------------------------>
@@ -20215,12 +20209,12 @@ frames aligned.
 </th>
 <th>
 <!------------------------------------------------------------------------------------------------>
-<!----------------- 247. start orientation & rotation about z axis (433) ------------------->
+<!-------------------- 247. start orientation & rotation about z axis (433) ---------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image247.png"
   style="width:4.6875in;height:4.6875in"
-  alt="start orientation" />
+  alt="Start orientation." />
 </th>
 </tr>
 </thead>
@@ -20232,12 +20226,12 @@ locations of x and y axes shown as x<sub>0</sub> and y<sub>0</sub>.
 </td>
 <td>
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 248.  (##) ----------------------->
+<!------------------------------ 248. rotation about z axis (###) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image248.png"
   style="width:4.6875in;height:4.6875in"
-  alt="rotation about z axis" />
+  alt="Rotation about z axis." />
 </td>
 </tr>
 </tbody>
@@ -20255,7 +20249,12 @@ locations of x and y axes shown as x<sub>0</sub> and y<sub>0</sub>.
 <!------------------------------------------------------------------------------------------------>
 <!-------------------- 247. start orientation & rotation about x axis (434) ---------------------->
 <!------------------------------------------------------------------------------------------------>
-<th><img src="./images/image247.png" style="width:4.6875in;height:4.6875in" alt="start orientation" /></th>
+<th>
+<img class="displayed"
+  src="./images/image247.png"
+  style="width:4.6875in;height:4.6875in"
+  alt="Start orientation." />
+</th>
 </tr>
 </thead>
 <tbody>
@@ -20275,11 +20274,8 @@ locations of x and y axes shown as x<sub>0</sub> and y<sub>0</sub>.
 </table>
 
 <p>Rotate the device frame around its y axis by gamma degrees,
-with gamma in [-90, 90]
-</p>
-<!------------------------------------------------------------------------------------------------>
-<!----------------- 247 / 250. start orientation & rotation about y axis (435) ------------------->
-<!------------------------------------------------------------------------------------------------>
+with gamma in [-90, 90]</p>
+
 <table>
 <colgroup>
 <col style="width: 18%" />
