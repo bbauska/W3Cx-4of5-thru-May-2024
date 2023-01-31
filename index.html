@@ -14660,17 +14660,14 @@ In the drop handler, we just move the element from one part of the DOM
 tree to another (under the &lt;div&gt; defined at <i>line 38</i>, that
 is the drop zone). This occurs at <i>line 18</i> (get back the id from
 the clipboard), and <i>line 19</i> (make it a child of the div.
-Consequently, it is no longer a child of the 
-<body>
+Consequently, it is no longer a child of the <body>
 <p>, and indeed we have “moved” one &lt;img&gt; from its initial
 position to another location in the page).</p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-3-8">
-3.3.8 Drag and drop a text selection
-</h3>
+<h3 id="ch3-3-8">3.3.8 Drag and drop a text selection</h3>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------- 180. drag and drop text selection (309) ----------------------------->
+<!-------------------------- 180. drag and drop text selection (298) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image180.png?raw=true"
@@ -14961,7 +14958,7 @@ and process them. That’s all. Bye, bye!</p>
 
 <h4>Example: drag and drop files to a drop zone, display file details in a list</h4>
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 181. drag and drop example (315) -------------------------------->
+<!------------------------------ 181. drag and drop example (305) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image181.jpeg?raw=true"
@@ -14972,7 +14969,8 @@ and process them. That’s all. Bye, bye!</p>
 files to the greyish drop zone), or <a
 href="https://codepen.io/w3devcampus/pen/JYjpqV?editors=111" target="_blank" rel="noopener noreferrer">play with
 it at CodePen</a>:</p>
-<p>Complete source code from the example:</p>
+
+<h4>Complete source code from the example:</h4>
 
 <details>
   <summary>Complete source code!</summary>
@@ -15070,19 +15068,13 @@ it at CodePen</a>:</p>
 
 </details>
 
-<p>Note that:</p>
+<h4>Note that:</h4>
 
 <ul>
-<li><p>We prevented the browser default behavior in
-the drop and dragover handlers Otherwise, if we dropped a media file (an
-image, an audio of video file), the browser would try to display/play it
-in a new window/tab. We also stop the  propagation for performance
-reasons, because when we drag an object it can raise many events within
-the parents of the drop zone element as well.</p></li>
-<li><p><i>Lines 73-74</i> create a &lt;li&gt; element. Its value is
-initialized with the file name of the current file in the collection,
-and added to the &lt;ol&gt; list.</p></li>
+  <li><p>We prevented the browser default behavior in the drop and dragover handlers Otherwise, if we dropped a media file (an image, an audio of video file), the browser would try to display/play it in a new window/tab. We also stop the  propagation for performance reasons, because when we drag an object it can raise many events within the parents of the drop zone element as well.</p></li>
+  <li><p><i>Lines 73-74</i> create a &lt;li&gt; element. Its value is initialized with the file name of the current file in the collection, and added to the &lt;ol&gt; list.</p></li>
 </ul>
+
 <p>In principle, this example is very similar to the “fruit” examples we
 worked through earlier, except that this time we’re working with
 files. <i>And when we work with files, it is important to prevent the
@@ -15100,7 +15092,7 @@ CodePen</a>).</p>
 type=“file”&gt; element), select one or more images – and you should see
 image thumbnails displayed in the open space beneath it:</p>
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 182. choose multiple files (3xx) -------------------------------->
+<!------------------------------ 182. choose multiple files (308) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image182.png"
@@ -15161,7 +15153,7 @@ id=“list”&gt;&lt;/output&gt; to the HTML of this example.</p>
 
 <p>Complete example of drag and drop + thumbnails of images</p>
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 183.  (3xx) -------------------------------->
+<!----------------------- 183. image drag and drop with thumbnails (309) ------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image183.jpeg"
@@ -15308,7 +15300,7 @@ and we added the &lt;output&gt; &lt;p&gt; element as a container for the &lt;
 by drag and dropping them, like in the screenshot below (the
 interactive example is a bit further down the page):</p>
 <!------------------------------------------------------------------------------------------------>
-<!------------------------ 184. example of file/directory chooser (3xx) -------------------------->
+<!------------------------ 184. example of file/directory chooser (313) -------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image184.png"
@@ -15542,7 +15534,7 @@ a &lt;progress&gt; element to the drag and drop example.</p>
 using a fake remote server and it cancels the connection as soon as we
 try to connect):</p>
 <!------------------------------------------------------------------------------------------------>
-<!------------------------ 185. drag 'n drop and progress element (3xx) -------------------------->
+<!------------------------ 185. drag 'n drop and progress element (318) -------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image185.jpeg?raw=true"
@@ -15726,7 +15718,7 @@ different types.</p>
 and drops files, they will start being uploaded immediately. However,
  the form will only be sent when all the fields are valid. </p>
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------- 186. uploading files using xhr2 (3xx) ------------------------------->
+<!-------------------------- 186. uploading files using xhr2 (322) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image186.jpeg"
@@ -15758,7 +15750,7 @@ request</i> (we will need only one progress bar),</p></li>
 start until the submit button has been clicked.</p></li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
-<!--------------------------------- 187. second approach (333) ----------------------------------->
+<!--------------------------------- 187. second approach (323) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image187.jpeg?raw=true"
@@ -15818,7 +15810,7 @@ more difficult to follow.</p>
 
 <p>Example using a file selector (&lt;input type=“file”&gt;):</p>
 <!------------------------------------------------------------------------------------------------>
-<!---------------------------- 188. example 1 auto file upload (334) ----------------------------->
+<!---------------------------- 188. example 1 auto file upload (324) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image188.png?raw=true"
@@ -15848,7 +15840,7 @@ href="https://jsbin.com/qijoza/edit?html,css,js,output" target="_blank" rel="noo
 JSBin</a> and look at the source code - there are plenty of
 comments.</p>
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 189. example 2 of file upload (335) ------------------------------>
+<!----------------------------- 189. example 2 of file upload (325) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image189.png?raw=true"
@@ -15857,7 +15849,7 @@ comments.</p>
 
 <h4>And here is the PHP code for the server-side part of examples #1 and #2</h4>
 
-<h3>This code is given “as is”:</h3>
+<h4>This code is given "as is":</h4>
 
 <details>
   <summary>PHP ‘as is’ source code!</summary>
@@ -15932,7 +15924,7 @@ submitted.</p>
 href="https://jsbin.com/quzohi/edit?html,css,js,output" target="_blank" rel="noopener noreferrer">try this example
 at JSBin</a>, and look at the source code and comments for details.</p>
 <!------------------------------------------------------------------------------------------------>
-<!---------------------------- 190. example 3 of file uploads (337) ------------------------------>
+<!---------------------------- 190. example 3 of file uploads (327) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image190.png?raw=true"
@@ -15944,7 +15936,7 @@ at JSBin</a>, and look at the source code and comments for details.</p>
 <p><a href="https://jsbin.com/xonemow/edit?html,css,output" target="_blank" rel="noopener noreferrer">Try the
 example at JSBin</a> and look at source code and comments.</p>
 <!------------------------------------------------------------------------------------------------>
-<!------------------------ 191. example 4 using drag n drop files (337) -------------------------->
+<!------------------------ 191. example 4 using drag n drop files (327) -------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image191.png?raw=true"
@@ -16143,7 +16135,7 @@ data.</b></p></li>
 
 <h4>Examples of applications where IndexedDB should be considered</h4>
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 192. google drive and indexdb (3xx) ------------------------------>
+<!----------------------------- 192. google drive and indexdb (331) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image192.jpeg?raw=true"
@@ -16440,8 +16432,7 @@ a given database at any given time.</p></li>
 </li>
 </ul>
 
-<p>Further details will be given in the next chapter “Using
-IndexedDB”.</p>
+<p>Further details will be given in the next chapter “Using IndexedDB”.</p>
 
 <h4>Version</h4>
 
@@ -16797,7 +16788,7 @@ that:</p>
 </ol>
 <p><b>Chrome DevTools (F12 or cmd-alt-i) shows the IndexedDB databases, object stores and data:</b></p>
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 193. one javascript function for customerdb (###) ------------------------>
+<!--------------------- 193. one javascript function for customerdb (345) ------------------------>
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image193.png"
@@ -16807,7 +16798,7 @@ that:</p>
 <p>Normally, when you create a database for the first time, the console should show this message:</p>
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------ 194. message when database is created the first time (##) ------------------->
+<!----------------- 194. message when database is created the first time (345) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image194.jpeg"
@@ -16946,7 +16937,7 @@ opening one of the JsBin examples , then opening the devtool console,
 then executing indexedDB.deleteDatabase(“CustomerDB”); in the
 console:</p>
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 195.  (##) ----------------------->
+<!--------------------- 195.  (348) ----------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image195.jpeg?raw=true"
@@ -17094,8 +17085,7 @@ earlier with the previous</p>
 <p>case when we got multiple results, this time it wasn’t using an
 index.</p>
 
-<h4>
-Example #1: basic steps</h4>
+<h4>Example #1: basic steps</h4>
 
 <p><a href="https://jsbin.com/jukifo" target="_blank" rel="noopener noreferrer">Online example at JSBin</a>:</p>
 <p>Execute this example and look at the IndexedDB object store content
@@ -17104,7 +17094,7 @@ have been added.</p>
 <p><b>Be sure to click on the “create database” button before clicking
 the “insert new customer” button.</b></p>
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 200. inserting data to indexdb example (##) ----------------------->
+<!------------------------ 200. inserting data to indexdb example (353) -------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image200.png?raw=true"
@@ -17117,14 +17107,15 @@ database creates or opens the database, and clicking “Add a new
 Customer” button adds a customer named “Michel Buffa” into the object
 store:</p>
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 201. devtools showing new customer inserted (##) ----------------------->
+<!--------------------- 201. devtools showing new customer inserted (354) ------------------------>
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image201.png?raw=true"
   alt="Devtools show that a new customer named Michel Buffa has been inserted."
   style="width:65%;" />
 
-<p><b>Code from the example, explanations:</b></p>
+<h4>Code from the example, explanations:</h4>
+
 <p>We just added a single function into the example from the previous
 section - the function AddACustomer() that adds one customer:</p>
 
@@ -17183,15 +17174,17 @@ section - the function AddACustomer() that adds one customer:</p>
 
 </details>
 
-<p><b>Explanations:</b></p>
+<h4>Explanations:</h4>
+
 <p>In the code above, <i>lines 4, 19 and 22</i> show the main calls you
 have to perform in order to add a new object to the store:</p>
+
 <ol type="1">
-<li><p>Create a transaction.</p></li>
-<li><p>Map the transaction onto the object store.</p></li>
-<li><p>Create an “add” request that will take part in the
-transaction.</p></li>
+  <li><p>Create a transaction.</p></li>
+  <li><p>Map the transaction onto the object store.</p></li>
+  <li><p>Create an “add” request that will take part in the transaction.</p></li>
 </ol>
+
 <p>The different callbacks are in <i>lines 9 and 14</i> for the
 transaction, and in <i>lines 28 and 35</i> for the request.</p>
 <p>You may have several requests for the same transaction. Once all
@@ -17200,7 +17193,7 @@ In any other case the transaction.onerror callback is called, and the
 datastore remains unchanged.</p>
 <p>Here is the trace from the dev tools console:</p>
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 202.  (##) ----------------------->
+<!------------------------- 202. trace from the devtools console (356) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image202.png?raw=true"
@@ -17212,26 +17205,22 @@ datastore remains unchanged.</p>
 <p><a href="https://jsbin.com/jayida" target="_blank" rel="noopener noreferrer">Online example available at
 JSBin</a>:</p>
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 203.  (##) ----------------------->
+<!------------------------ 203. create a new customer with a form (356) -------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image203.jpeg?raw=true"
   alt="A form has been added to the previous example, for creating a new customer."
   style="width:65%;" />
 
-<p>You can try this example by following these steps:</p>
+<h4>You can try this example by following these steps:</h4>
 
 <ol type="1">
-<li><p>Press first the “Create database” button</p></li>
-<li><p>then add a new customer using the form</p></li>
-<li><p>click the “add a new Customer” button</p></li>
-<li><p>then press F12 or cmd-alt-i to use the Chrome dev tools and
-inspect the IndexedDB store content. Sometimes it is necessary to
-refresh the view (right click on IndexedDB/refresh), and sometimes it is
-necessary to close/open the dev. tools to have a view that shows the
-changes (press F12 or cmd-alt-i twice). Chrome dev. tools are a bit
-strange from time to time.</p></li>
+  <li><p>Press first the “Create database” button</p></li>
+  <li><p>then add a new customer using the form</p></li>
+  <li><p>click the “add a new Customer” button</p></li>
+  <li><p>then press F12 or cmd-alt-i to use the Chrome dev tools and inspect the IndexedDB store content. Sometimes it is necessary to refresh the view (right click on IndexedDB/refresh), and sometimes it is necessary to close/open the dev. tools to have a view that shows the changes (press F12 or cmd-alt-i twice). Chrome dev. tools are a bit strange from time to time.</p></li>
 </ol>
+
 <p>This time, we added some tests for checking that the database is open
 before trying to insert an element, and we added a small form for
 entering a new customer.</p>
@@ -17251,15 +17240,14 @@ true });</p></li>
 with the same ssn. An alert like this should pop up:</p></li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 204.  (##) ----------------------->
+<!---------------------------------- 204. insert errors (357) ------------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image204.jpeg?raw=true"
   alt="Insert errors."
   style="width:60%;" />
 
-<p><b>Here is the updated version of the HTML code of this
-example:</b></p>
+<h4>Here is the updated version of the HTML code of this example:</h4>
 
 <pre><code>
 1.  &lt;fieldset&gt;
@@ -17274,7 +17262,7 @@ example:</b></p>
 10. &lt;button onclick=&quot;addACustomer();&quot;&gt;Add a new Customer&lt;/button&gt;
 </code></pre>
 
-<p><b>And here is the new version of the addACustomer() JavaScript function:</b></p>
+<h4>And here is the new version of the addACustomer() JavaScript function:</h4>
 
 <details>
   <summary>function addACustomer extract!</summary>
@@ -17332,15 +17320,20 @@ example:</b></p>
 chaining the different operations using the “.” operator (getting a
 transaction from the db, opening the store, adding a new customer,
 etc.).</p>
-<p>Here is the short version:</p>
-<pre><code>var request = db.transaction([&quot;customers&quot;], &quot;readwrite&quot;)
+
+<h4>Here is the short version:</h4>
+
+<pre><code>
+var request = db.transaction([&quot;customers&quot;], &quot;readwrite&quot;)
   .objectStore(&quot;customers&quot;)
-  .add(newCustomer);</code></pre>
+  .add(newCustomer);
+</code></pre>
+
 <p>The above code does not perform all the tests, but you may encounter
 such a way of coding (!).</p>
 <p>Also, note that it works if you try to insert empty data:</p>
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 205.  (##) ----------------------->
+<!------------------ 205. devtools show that inserting blank data works (359) -------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image205.jpeg?raw=true"
@@ -17356,7 +17349,7 @@ add more JavaScript code. We will let you do this as an exercise.</p>
 <p>Let’s move to the next <a href="https://jsbin.com/bavifa" target="_blank" rel="noopener noreferrer">online
 example at JSBin</a>:</p>
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 205.  (##) ----------------------->
+<!--------------------- 205. devtools shows customer has been removed (359) ---------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image205.jpeg?raw=true"
@@ -17367,19 +17360,14 @@ example at JSBin</a>:</p>
 click/refresh) or press F12 or cmd-alt-i twice. There is a bug in the
 refresh feature with some versions of Google Chrome.</p>
 <p>How to try the example:</p>
+
 <ol type="1">
-<li><p>Be sure to click the “create database button” to open the
-existing database.</p></li>
-<li><p>Then use Chrome dev tools  to check that the customer
-with ssn=444-44-444 exists. If it’s not there, just insert into the
-database like we did earlier in the course.</p></li>
-<li><p>Right click on indexDB in the Chrome dev tools and refresh the
-display of the IndexedDB’s content if necessary if you cannot see
-customer with ssn=444-44-444. Then click on the “Remove Customer
-ssn=444-44-4444(Bill)” button. Refresh the display of the database. The
-‘Bill’ object should have disappeared!</p></li>
+  <li><p>Be sure to click the “create database button” to open the existing database.</p></li>
+  <li><p>Then use Chrome dev tools  to check that the customer with ssn=444-44-444 exists. If it’s not there, just insert into the database like we did earlier in the course.</p></li>
+  <li><p>Right click on indexDB in the Chrome dev tools and refresh the display of the IndexedDB’s content if necessary if you cannot see customer with ssn=444-44-444. Then click on the “Remove Customer ssn=444-44-4444(Bill)” button. Refresh the display of the database. The ‘Bill’ object should have disappeared!</p></li>
 </ol>
-<p>Code added in this example:</p>
+
+<h4>Code added in this example:</h4>
 
 <details>
   <summary>function removeACustomer code!</summary>
@@ -17426,7 +17414,9 @@ ssn=444-44-4444(Bill)” button. Refresh the display of the database. The
 <p>Notice that after the deletion of the Customer (<i>line 23</i>),
 the request.onsuccess callback is called. And if you try to print the
 value of the event.target.result variable, it is “undefined”.</p>
-<p><b>Short way of doing the delete:</b></p>
+
+<h4>Short way of doing the delete:</h4>
+
 <p>It is also possible to shorten the code of the above function a lot
 by concatenating the different operations (getting the store from the
 db, getting the request, calling delete, etc.). Here is the short
@@ -17446,9 +17436,9 @@ and request.delete(keypath) to remove a customer. Now, to modify data
 from an object store with IndexedDB, we use request.put(keypath) to
 update a customer!</p>
 <p><a href="https://jsbin.com/zugowe" target="_blank" rel="noopener noreferrer">Online example at JSBin</a>:</p>
-<!--- 389 --->
+
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 206.  (##) ----------------------->
+<!-------------------- 206. devtools show updated customer in indexdb (361) ---------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image206.jpeg?raw=true"
@@ -17463,14 +17453,14 @@ object with ssn=““ and click on the”update data about an existing
 customer” button. This updates the data in the object store, as shown in
 this screenshot:</p>
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 207.  (##) ----------------------->
+<!------------------------- 207. devtools show updated customer (362) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image207.jpeg?raw=true"
   alt="Devtools show updated customer."
   style="width:65%;" />
 
-<p>Here is the new code added to our example:</p>
+<h4>Here is the new code added to our example:</h4>
 
 <details>
   <summary>function updateACustomer code!</summary>
