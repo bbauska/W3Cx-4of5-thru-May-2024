@@ -11548,9 +11548,9 @@ consider how to support different layouts of sprite sheet.</p>
 <p>Before doing anything interesting with the sprites, we need to:</p>
 
 <ol type="1">
-  <li><p>Load the sprite sheet(s),</p></li>
-  <li><p>Extract the different postures and store them in an array of sprites,</p></li>
-  <li><p>Choose the appropriate one, and draw it within the animation loop, taking into account elapsed time. We cannot draw a different image of the woman walking at 60 updates per second. We will have to create a realistic “delay” between each change of sprite image.</p></li>
+  <li>Load the sprite sheet(s),</li>
+  <li>Extract the different postures and store them in an array of sprites,</li>
+  <li>Choose the appropriate one, and draw it within the animation loop, taking into account elapsed time. We cannot draw a different image of the woman walking at 60 updates per second. We will have to create a realistic “delay” between each change of sprite image.</li>
 </ol>
 
 <p>In this lesson, let’s construct an interactive tool to present the principles of sprite extraction and animation.</p>
@@ -15803,15 +15803,11 @@ JSBin</a> and look at the source code - there are plenty of comments.</p>
 
 </details>
 
-<p><b>Explanations</b>:</p>
+<h4>Explanations:</h4>
+
 <ul>
-<li><p>When files are first uploaded, they are stored in a directory
-called upload/RecycleBin. If it does not exist, this directory is
-created (<i>lines 22-32</i>).</p></li>
-<li><p>When the form is submitted, a directory whose name is today’s
-date is created, and the files located in the RecycleBin directory are
-moved to that directory. If it does not already exist, the directory
-will be created  (<i>lines 7-20</i>).</p></li>
+  <li>When files are first uploaded, they are stored in a directory called upload/RecycleBin. If it does not exist, this directory is created (<i>lines 22-32</i>).</li>
+  <li>When the form is submitted, a directory whose name is today’s date is created, and the files located in the RecycleBin directory are moved to that directory. If it does not already exist, the directory will be created  (<i>lines 7-20</i>).</li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch3-5-4">3.5.4 Package approach</h3>
@@ -15918,12 +15914,8 @@ have to deal with a temporary “RecycleBin” directory.</p>
 <h4>Suggested topics of discussion:</h4>
 
 <ul>
-<li><p>The given examples come with PHP code. If you adapt them to work
-with another server side languages, please share!</p></li>
-<li><p>There are many possible improvements to the provided examples in
-the client code: monitoring the speed of upload/downloads, canceling an
-upload, etc. The examples are given “as is”… if you improve them, as
-usual, share them in the forum!</p></li>
+  <li><p>The given examples come with PHP code. If you adapt them to work with another server side languages, please share!</p></li>
+  <li><p>There are many possible improvements to the provided examples in the client code: monitoring the speed of upload/downloads, canceling an upload, etc. The examples are given “as is”… if you improve them, as usual, share them in the forum!</p></li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch3-6-1">3.6.1 Concepts (part 1)</h3>
@@ -16066,13 +16058,9 @@ href="https://developer.mozilla.org/en-US/docs/IndexedDB/Using_IndexedDB" target
 IndexedDB</a>).</p>
 
 <ul>
-<li><p><a href="https://www.w3.org/TR/IndexedDB/" target="_blank" rel="noopener noreferrer">W3C specification
-about IndexedDB</a></p></li>
-<li><p><a href="https://developer.mozilla.org/en/IndexedDB" target="_blank" rel="noopener noreferrer">MDN’s page
-about the IndexedDB API</a></p></li>
-<li><p><a
-href="https://itnext.io/getting-started-with-persistent-offline-storage-with-indexeddb-1af66727246c" target="_blank" rel="noopener noreferrer">Getting
-Started with Persistent Offline Storage with IndexedDB</a></p></li>
+  <li><p><a href="https://www.w3.org/TR/IndexedDB/" target="_blank" rel="noopener noreferrer">W3C specification about IndexedDB</a></p></li>
+  <li><p><a href="https://developer.mozilla.org/en/IndexedDB" target="_blank" rel="noopener noreferrer">MDN’s page about the IndexedDB API</a></p></li>
+  <li><p><a href="https://itnext.io/getting-started-with-persistent-offline-storage-with-indexeddb-1af66727246c" target="_blank" rel="noopener noreferrer">Getting Started with Persistent Offline Storage with IndexedDB</a></p></li>
 </ul>
 
 <p><a href="https://caniuse.com/#search=indexed" target="_blank" rel="noopener noreferrer">Current support is
@@ -16082,9 +16070,7 @@ excellent</a> both on mobile and desktop browsers.</p>
 <!------------------------------------------------------------------------------------------------>
 <p>Among the concepts used by IndexedDB is the concept of transactions.</p>
 <p>A transactional database ensures that concurrent access to data would not compromise this data.</p>
-<p>It uses a locking system, that means that when an instance of your Web application is modifying</p>
-<p>some data and another instance or another application on the same domain is reading this data, there won’t be anything wrong regarding to
-this data.</p>
+<p>It uses a locking system, that means that when an instance of your Web application is modifying some data and another instance or another application on the same domain is reading this data, there won’t be anything wrong regarding to this data.</p>
 <p>When do we need such a mechanism? When you have multiple tabs opened
 on the same WebApp or WebApps from the same domain. Or you have got
 multiple games that store high scores and they are all coming from
@@ -16282,6 +16268,7 @@ reference. We recommend you skim read it, then do the next section
 (“using IndexedDB”), then come back to this page if you need any
 clarification.</p>
 </blockquote>
+
 <p>These definitions come from <a
 href="https://www.w3.org/TR/IndexedDB/#database-api" target="_blank" rel="noopener noreferrer">the W3C
 specification</a>. Please read this page to familiarize yourself with
@@ -16290,26 +16277,10 @@ the terms.</p>
 <h4>Database</h4>
 
 <ul>
-<li><p>Each <a
-href="https://www.w3.org/TR/IndexedDB/#dfn-origin" target="_blank" rel="noopener noreferrer">origin</a> (you may
-consider as “each application”) has an associated set of <a
-href="https://www.w3.org/TR/IndexedDB/#dfn-database" target="_blank" rel="noopener noreferrer">databases</a>.
-A <i>database</i> comprises one or more <a
-href="https://www.w3.org/TR/IndexedDB/#dfn-object-store" target="_blank" rel="noopener noreferrer">object
-stores</a> which hold the data stored in the database.</p></li>
-<li><p>Every database has a <i>name</i> that identifies it within a
-specific origin. The name can be any string value, including the empty
-string, and stays constant for the lifetime of the database.</p></li>
-<li><p>Each database also has a current version. When a database is
-first created, its <a
-href="https://www.w3.org/TR/IndexedDB/#dfn-version" target="_blank" rel="noopener noreferrer">version</a> is 0, if
-not specified otherwise.  Each database can only have one version at any
-given time. A database can’t exist in multiple versions at
-once.</p></li>
-<li><p>The act of opening a database creates <i>a connection</i>. There
-may be multiple <a
-href="https://www.w3.org/TR/IndexedDB/#dfn-connection" target="_blank" rel="noopener noreferrer">connections</a> to
-a given database at any given time.</p></li>
+  <li>Each <a href="https://www.w3.org/TR/IndexedDB/#dfn-origin" target="_blank" rel="noopener noreferrer">origin</a> (you may consider as “each application”) has an associated set of <a href="https://www.w3.org/TR/IndexedDB/#dfn-database" target="_blank" rel="noopener noreferrer">databases</a>. A <i>database</i> comprises one or more <a href="https://www.w3.org/TR/IndexedDB/#dfn-object-store" target="_blank" rel="noopener noreferrer">object stores</a> which hold the data stored in the database.</li>
+  <li>Every database has a <i>name</i> that identifies it within a specific origin. The name can be any string value, including the empty string, and stays constant for the lifetime of the database.</li>
+  <li>Each database also has a current version. When a database is first created, its <a href="https://www.w3.org/TR/IndexedDB/#dfn-version" target="_blank" rel="noopener noreferrer">version</a> is 0, if not specified otherwise.  Each database can only have one version at any given time. A database can’t exist in multiple versions at once.</li>
+  <li>The act of opening a database creates <i>a connection</i>. There may be multiple <a href="https://www.w3.org/TR/IndexedDB/#dfn-connection" target="_blank" rel="noopener noreferrer">connections</a> to a given database at any given time.</li>
 </ul>
 
 <h4>Object store</h4>
@@ -16337,6 +16308,7 @@ a given database at any given time.</p></li>
   <li><p>When a database is first created, its version is the integer 0. Each database has one version at a time; a database can’t exist in multiple versions at once.</p></li>
   <li><p>The only way to change the version is by opening it with a higher version number than the current one. This will start a versionchange transaction and fire an upgradeneeded event. The only place where the schema of the database can be updated is inside the handler of that event.</p></li>
 </ul>
+
 <p>This definition describes<a
 href="https://w3c.github.io/IndexedDB/" target="_blank" rel="noopener noreferrer"> the most recent
 specification</a>, which is only implemented in up-to-date browsers. Old
@@ -16552,14 +16524,15 @@ provide simple examples for creating, adding, removing, updating, and
 searching data in an IndexedDB database. They explain the basic steps to
 perform such common operations, while explaining the
 programming principles behind IndexedDB.</p>
-<p><b>In the “Using IndexedDB” pages of this course, you will learn
-about:</b></p>
+
+<h4>In the “Using IndexedDB” pages of this course, you will learn about:</h4>
+
 <ul>
-<li><p>Creating and populating a database,</p></li>
-<li><p>Working with data,</p></li>
-<li><p>Using transactions,</p></li>
-<li><p>Inserting, deleting, updating and getting data,</p></li>
-<li><p>Creating and populating a database.</p></li>
+  <li>Creating and populating a database,</li>
+  <li>Working with data,</li>
+  <li>Using transactions,</li>
+  <li>Inserting, deleting, updating and getting data,</li>
+  <li>Creating and populating a database.</li>
 </ul>
 
 <h4>External resources</h4>
@@ -16820,13 +16793,10 @@ either readonly, readwrite or versionchange (this last mode is only for
 creating a new database or for modifying its schemas: i.e. changing the
 primary key or the indexes).</p>
 
-<blockquote>
-When you can, use readonly mode. Concurrent read transactions will become possible.
-</blockquote>
+<p>When you can, use readonly mode. Concurrent read transactions will become possible.</p>
 
-<p>In the following pages, we will explain how to insert, search,
-remove, and update data. A final example that merges all examples
-together will also be shown at the end of this section.</p>
+<p>In the following pages, we will explain how to insert, search, remove, and update data.<br>
+A final example that merges all examples together will also be shown at the end of this section.</p>
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch3-6-7">3.6.7 Inserting data</h3>
 <!------------------------------------------------------------------------------------------------>
@@ -16854,17 +16824,13 @@ transaction.</p>
 <p>Getting more than one piece of data will be performed using a concept called “cursors”.</p>
 <p>If we are looking for more than one result… in this example, we are looking for multiple</p>
 <p>results, then instead of having an “onsuccess” callback, you’ve got an objectStore.openCursor().onsuccess</p>
-<p>And in that case, what you’ve got as a result is a “cursor”. A cursor is like</p>
-<p>a pointer on a collection of results, and by calling cursor.continue(), you will go</p>
-<p>from one result to the next one. And the cursor itself is the object, the “current” object.</p>
-<p>So, if we’re getting a collection, then the current cursor.key, the current cursor.value.name,</p>
-<p>the current cursor.value.age, will be the values from the data you retrieved, and by calling cursor.continue(), you go to the next result.</p>
+<p>And in that case, what you’ve got as a result is a “cursor”. A cursor is like a pointer on a collection of results, and by calling cursor.continue(), you will go from one result to the next one. And the cursor itself is the object, the “current” object.</p>
+<p>So, if we’re getting a collection, then the current cursor.key, the current cursor.value.name, the current cursor.value.age, will be the values from the data you retrieved, and by calling cursor.continue(), you go to the next result.</p>
 <p>When the cursor is “null” then there is no more entries and you finish processing all your results.</p>
 <p>You can also use indexes. Instead of using the “get” method, you first indicate which index you are going to use for getting data, on the objectStore transaction you call a method called “index(…) », and you pass as a parameter the index name.</p>
 <p>Then, on the index itself, you do a “get(…)”. In that case it means “please, look for data whose name is equal to Bill, and the name is an index!“. In that case, in the callback, the event.target.result is the resulting data you’ve just looked for.</p>
 <p>You can also look for more than one result. In that case, you do just “index.openCursor().onsuccess”… instead of “index.onsuccess” and you will get a collection of data.</p>
-<p>The cursor will point to the current data (in the collection). Then you iterate using cursor.continue(),</p>
-<p>on the collection of results, exactly the same way we explained earlier with the previous case when we got multiple results, this time it wasn’t using an index.</p>
+<p>The cursor will point to the current data (in the collection). Then you iterate using cursor.continue(), on the collection of results, exactly the same way we explained earlier with the previous case when we got multiple results, this time it wasn’t using an index.</p>
 
 <h4>Example #1: basic steps</h4>
 
@@ -17320,7 +17286,7 @@ form is in the request.onsuccess callback).</p>
   alt="Form updated with data retrieved."
   style="width:65%;" />
 
-<p>Here is the code added to that example:</p>
+<h4>Here is the code added to that example:</h4>
 
 <details>
   <summary>function searchACustomer code!</summary>
@@ -17622,7 +17588,8 @@ A key cursor which maps the index property to the key used to store the object 
 </code></pre>
 
 <p>The differences are illustrated below.</p>
-<p>Normal cursor:</p>
+
+<h4>Normal cursor:</h4>
 
 <details>
   <summary>Normal cursor code!</summary>
@@ -17642,7 +17609,7 @@ A key cursor which maps the index property to the key used to store the object 
 
 </details>
 
-<p>Key cursor:</p>
+<h4>Key cursor:</h4>
 
 <details>
   <summary>Key cursor code!</summary>
@@ -17680,7 +17647,7 @@ JSBin that uses the above methods</a>:</p>
   <li><p>Then press the last button “look for all customers with name=Bill …”. This will iterate over all the customers in the object store whose name is equal to “Bill”. There should be two “Bills”, if this is not the case, add two customers with a name equal to “Bill”, then press the last button again.</p></li>
 </ol>
 
-<p>Source code extract from this example:</p>
+<h4>Source code extract from this example:</h4>
 
 <details>
   <summary>function getAllCustomersByName!</summary>
@@ -17996,7 +17963,11 @@ type=“date”&gt; elements, for example.</p>
 documents</i>, that render as complex widgets: a better-looking
 calendar, an input text with vocal recognition, a nice chart, etc.</p>
 <p>Let’s start with an example! This code…:</p>
-<pre><code>&lt;x-gif src=&quot;https://i.imgur.com/iKXH4E2.gif&quot; ping-pong&gt;&lt;/x-gif&gt;</code></pre>
+
+<pre><code>
+&lt;x-gif src=&quot;https://i.imgur.com/iKXH4E2.gif&quot; ping-pong&gt;&lt;/x-gif&gt;
+</code></pre>
+
 <p>… renders an animated GIF, and it loops forever in ping-pong mode:
 the order of the animation is reversed when the last image is reached
 and again when the animation goes back to the first image.</p>
@@ -18903,35 +18874,11 @@ specification yet…</p>
 <h4>Here is where we are:</h4>
 
 <ul>
-<li><p><b>RECOMMENDED</b>: There is a polyfill for HTML imports that
-works very well. Just include it and your code that use HTML imports
-will work out of the box on recent browsers (see <a
-href="https://github.com/webcomponents/html-imports#dynamic-imports" target="_blank" rel="noopener noreferrer">ref.</a>).
-We use it on our own applications and it works 100% with cascading
-imports, imports created dynamically, etc. Very solid.</p></li>
-<li><p><b>RECOMMENDED</b>: The above polyfill is also integrated in the
-“Web Component polyfill” that will also emulate other Web Components
-features (see webcomponentsjs). It is  the one used in the course’s
-examples. This “global” polyfill has been made to make apps that use Web
-Components cross-browser compatible. If you have old Web Components code
-that use the version 0 of the APIs, you can use its v0 branch and your
-old code will work on modern browsers . There are also other alternative
-polyfills for each feature, like AshleyScirra’s  but we haven’t tried
-these…</p></li>
-<li><p><b>WORKS BUT REQUIRES EXTRA WORK</b>: You can bundle the code of
-your Web Components into a single JavaScript file, using bundlers
-like <a href="https://webpack.js.org/" target="_blank" rel="noopener noreferrer">webpack</a> or <a
-href="https://parceljs.org/" target="_blank" rel="noopener noreferrer">parcel</a>, then use JavaScript modules
-(</p>
-<script type="module" src=...>
-<p>).  This is what the Polymer 3 Web Component framework dev team did
-when they had to remove HTML imports. </p></li>
-<li><p><b>MAYBE A FUTURE STANDARD WAY?</b> There is a lot of debate in
-W3C about future “HTML modules” that would do something close to HTML
-imports did, but while this topic has been under discussion since 2017,
-it’s still not even in a specification. See <a
-href="https://github.com/w3c/webcomponents/blob/gh-pages/proposals/HTML-Imports-and-ES-Modules.md" target="_blank" rel="noopener noreferrer">the
-discussion.</a></p></li>
+  <li><b>RECOMMENDED</b>: There is a polyfill for HTML imports that works very well. Just include it and your code that use HTML imports will work out of the box on recent browsers (see <a href="https://github.com/webcomponents/html-imports#dynamic-imports" target="_blank" rel="noopener noreferrer">ref.</a>). We use it on our own applications and it works 100% with cascading imports, imports created dynamically, etc. Very solid.</li>
+  <li><b>RECOMMENDED</b>: The above polyfill is also integrated in the “Web Component polyfill” that will also emulate other Web Components features (see webcomponentsjs). It is  the one used in the course’s examples. This “global” polyfill has been made to make apps that use Web Components cross-browser compatible. If you have old Web Components code that use the version 0 of the APIs, you can use its v0 branch and your old code will work on modern browsers . There are also other alternative polyfills for each feature, like AshleyScirra’s  but we haven’t tried these…</li>
+  <li><b>WORKS BUT REQUIRES EXTRA WORK</b>: You can bundle the code of your Web Components into a single JavaScript file, using bundlers like <a href="https://webpack.js.org/" target="_blank" rel="noopener noreferrer">webpack</a> or <a href="https://parceljs.org/" target="_blank" rel="noopener noreferrer">parcel</a>, then use JavaScript modules(
+  &lt;script type="module" src=...&gt; ).  This is what the Polymer 3 Web Component framework dev team did when they had to remove HTML imports. </li>
+  <li><b>MAYBE A FUTURE STANDARD WAY?</b> There is a lot of debate in W3C about future “HTML modules” that would do something close to HTML imports did, but while this topic has been under discussion since 2017, it’s still not even in a specification. See <a href="https://github.com/w3c/webcomponents/blob/gh-pages/proposals/HTML-Imports-and-ES-Modules.md" target="_blank" rel="noopener noreferrer">the discussion.</a></li>
 </ul>
 
 <h4>If you want to know what HTML Imports were about…</h4>
@@ -18942,11 +18889,11 @@ html/css/js code, that defines a Web component you plan to use, will be
 imported:</p>
 
 <ul>
-  <li><p>It is similar to including CSS in your page!</p></li>
-  <li><p>Package your components into an HTML page (can include CSS, JS, etc) and import it!</p></li>
+  <li>It is similar to including CSS in your page!</li>
+  <li>Package your components into an HTML page (can include CSS, JS, etc) and import it!</li>
 </ul>
 
-<p>It is as simple as:</p>
+<h4>It is as simple as:</h4>
 
 <pre><code>
 1.  &lt;head&gt;
@@ -19271,7 +19218,11 @@ stable/available.</p>
 <p>The HTML5 Web Worker API provides the Worker JavaScript interface for
 loading and executing a script in the background, in a different thread
 from the UI. The following instruction  loads and creates a worker:</p>
-<pre><code>var worker = new Worker(&quot;worker0.js&quot;);</code></pre>
+
+<pre><code>
+var worker = new Worker(&quot;worker0.js&quot;);
+</code></pre>
+
 <p>More than one worker can be created/loaded by a parent page. This is
 parallel computing after all :-)</p>
 
@@ -19476,10 +19427,10 @@ file.</p>
 <h4>Explanations:</h4>
 
 <ul>
-  <li><p>the Web Worker is created at <i>line 9</i></p></li>
-  <li><p>its code is in the worker.js file</p></li>
-  <li><p><i>Lines 10-12</i> process messages sent asynchronously by the worker</p></li>
-  <li><p>event.data is the message content.</p></li>
+  <li>the Web Worker is created at <i>line 9</i></li>
+  <li>its code is in the worker.js file</li>
+  <li><i>Lines 10-12</i> process messages sent asynchronously by the worker</li>
+  <li>event.data is the message content.</li>
 </ul>
 
 <p>Workers can only communicate with their parent page using messages.
@@ -19505,26 +19456,19 @@ sent.</p>
 
 </details>
 
-<p>There are a few interesting things to note here:</p>
+<h4>There are a few interesting things to note here:</h4>
+
 <ol type="1">
-<li><p>There is an infinite loop in the code at <i>line 2</i> (while
-true…). This is not a problem as it runs in the background.</p></li>
-<li><p>When a prime number is found, it is <i>posted</i> to
-the <i>creator</i> of the Web Worker (aka the <i>parent HTML page</i>),
-using the postMessage(…) function (<i>line 8</i>).</p></li>
-<li><p>Computing prime numbers using such a weak algorithm is very CPU
-intensive. However, the Web page is still responsive: you can refresh it
-and the “script not responding”  error dialog box will not appear, etc.
-There is a demo in the next section of this course chapter in which some
-graphic animation has been added to this example, and you can verify
-that the animation is not affected by the computations in the
-background.</p></li>
+  <li>There is an infinite loop in the code at <i>line 2</i> (while true…). This is not a problem as it runs in the background.</li>
+  <li>When a prime number is found, it is <i>posted</i> to the <i>creator</i> of the Web Worker (aka the <i>parent HTML page</i>), using the postMessage(…) function (<i>line 8</i>).</li>
+  <li>Computing prime numbers using such a weak algorithm is very CPU intensive. However, the Web page is still responsive: you can refresh it and the “script not responding”  error dialog box will not appear, etc. There is a demo in the next section of this course chapter in which some graphic animation has been added to this example, and you can verify that the animation is not affected by the computations in the background.</li>
 </ol>
 
 <h4>Try an improved version of the first example yourself</h4>
 
 <p>We can improve this example a little by testing whether the browser
 supports Web Workers, and by displaying some additional messages.</p>
+
 <blockquote>
 <p><b>CAREFUL</b>: for security reasons you cannot try the examples
 using a file:// URL. <b>You need an HTTP web server that will serve the
@@ -19641,7 +19585,8 @@ worker.</p>
 <details>
   <summary>HTML code!</summary>
 
-<pre><code>1.  &lt;!DOCTYPE HTML/image0&gt;
+<pre><code>
+1.  &lt;!DOCTYPE HTML/image0&gt;
 2.  &lt;html&gt;
 3.  &lt;head&gt;
 4.  &lt;title&gt;Worker example: One-core computation&lt;/title&gt;
@@ -19821,7 +19766,7 @@ other Web Workers</a></p></li>
 <!------------------------------------------------------------------------------------------------>
 <h4>Demo #1</h4>
 
-This is a variation of the prime number example (previous lecture) which
+<p>This is a variation of the prime number example (previous lecture) which
 shows that an interaction in the parent page is not affected by the
 background computation of prime numbers. Try it <a
 href="https://michaeltreat.github.io/Web-Worker-Demo/html/no-web-worker.html" target="_blank" rel="noopener noreferrer">online</a>.
@@ -19830,7 +19775,7 @@ button. Without the use ow Workers, the color will change only after the
 computations are completed and the page GUI is not reactive. Click
 the WITH WORKERS button: this will run the code that computes prime
 numbers in a Web Worker. Now, try to change the color of the button, it
-reacts instantly…
+reacts instantly…</p>
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------------- 241. demo prime numbers (426) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -20109,6 +20054,7 @@ depending on the hardware, these values may change even if the device is
 stationary: a very sensitive sensor might report constantly changing
 values. This is why, in the example, we round the returned values
 with Math.round() at display time (see code).</p>
+
 <p>If we change the orientation of the device here are the results:</p>
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------------- 249. orientation api 3 (429) ---------------------------------->
@@ -20222,6 +20168,7 @@ controlled game…</p>
 href="https://www.youtube.com/watch?v=OrNLhOAGSdE" target="_blank" rel="noopener noreferrer">video</a>.</p>
 
 <h4>Code from the example:</h4>
+
 <details>
   <summary>HTML code!</summary>
 
@@ -20900,7 +20847,7 @@ spec: 
 --->
 <h5>the end…</h5>
 <br>
-<h6>Last Updated: 1-31-2023 7:29pm</h6>
+<h6>Last Updated: 2-1-2023 12:12am</h6>
 <!---
 <img class="displayed"
   src="./images/image0.jpeg?raw=true"
