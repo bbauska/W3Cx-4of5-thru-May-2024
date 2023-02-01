@@ -8220,7 +8220,7 @@ up + right should work in combination.</p>
 <!------------------------------------------------------------------------------------------------>
 <h4>A few reminders</h4>
 <!------------------------------------------------------------------------------------------------>
-<!--------------------------- 103. a schema of mouse internals (170) ----------------------------->
+<!--------------------------- 103. a schema of mouse internals (167) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image103.jpeg?raw=true"
@@ -8243,7 +8243,7 @@ next example.</p>
 <p>Here is <a href="https://jsbin.com/metavu/edit" target="_blank" rel="noopener noreferrer">an online example at
 JSBin</a> that covers all cases correctly.</p>
 <!------------------------------------------------------------------------------------------------>
-<!------------------ 104. jsbin example mouse position + button pressed (171) -------------------->
+<!------------------ 104. jsbin example mouse position + button pressed (168) -------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image104.jpeg?raw=true"
@@ -8319,7 +8319,7 @@ down) as part of the inputStates object, just as we do with the keyboard
 <p><a href="https://jsbin.com/soduko/edit?js,output" target="_blank" rel="noopener noreferrer">Try this example at
 JsBin</a></p>
 <!------------------------------------------------------------------------------------------------>
-<!---------------------- 105. a rectangle that follows mouse cursor (172) ------------------------>
+<!---------------------- 105. a rectangle that follows mouse cursor (169) ------------------------>
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image105.jpeg?raw=true"
@@ -8398,14 +8398,9 @@ JsBin</a></p>
 <h4>Explanations:</h4>
 
 <ul>
-<li><p><i>Line 25</i> calculates the <i>angle</i> between mouse cursor
-and the rectangle,</p></li>
-<li><p><i>Lines 27-28</i> <i>move</i> the rectangle v pixels along
-a line between the rectangle’s current position and the mouse
-cursor,</p></li>
-<li><p><i>Lines 41-46</i> <i>translate</i> the
-rectangle, <i>rotate</i> it, and recenter the <i>rotational point</i> to
-the center of the rectangle (in its new position).</p></li>
+  <li><p><i>Line 25</i> calculates the <i>angle</i> between mouse cursor and the rectangle,</p></li>
+  <li><p><i>Lines 27-28</i> <i>move</i> the rectangle v pixels along a line between the rectangle’s current position and the mouse cursor,</p></li>
+  <li><p><i>Lines 41-46</i> <i>translate</i> the rectangle, <i>rotate</i> it, and recenter the <i>rotational point</i> to the center of the rectangle (in its new position).</p></li>
 </ul>
 
 <h4>Adding mouse listeners to the game framework</h4>
@@ -8416,7 +8411,7 @@ parameter of the getMousePos() function, for example).</p>
 <p><a href="https://jsbin.com/rizuyah/edit" target="_blank" rel="noopener noreferrer">The new online version of
 the game engine can be tried at JSBin</a>:</p>
 <!------------------------------------------------------------------------------------------------>
-<!------------------------- 106. message on mouse event listener (174) --------------------------->
+<!------------------------- 106. message on mouse event listener (171) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image106.jpeg?raw=true"
@@ -8653,7 +8648,7 @@ develop during this week. Bye! Bye!</p>
 <p>Some games, mainly arcade/action games, are designed to be used with
 a gamepad:</p>
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 107. x-box game controller (1##) -------------------------------->
+<!------------------------------ 107. x-box game controller (176) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image107.png"
@@ -8665,13 +8660,8 @@ currently supported by all major browsers (including Microsoft Edge),
 except Internet Explorer - see the <a
 href="https://caniuse.com/#feat=gamepad" target="_blank" rel="noopener noreferrer">up to date version of this
 feature’s compatibility table</a>. Note that the API is still a draft and
-may change in the future. We recommend using a Wired Xbox 360 Controller
-or a PS2 controller, both of which should work <i>out of the
-box</i> on Windows XP, Windows Vista, Windows, and Linux desktop
-distributions. Wireless controllers are supposed to work too, but we
-haven’t tested the API with them. You may find someone who has managed
-but they’ve probably needed to install an operating system driver to
-make it work.</p>
+may change in the future.<br>
+We recommend using a Wired Xbox 360 Controller or a PS2 controller, both of which should work <i>out of the box</i> on Windows XP, Windows Vista, Windows, and Linux desktop distributions. Wireless controllers are supposed to work too, but we haven’t tested the API with them. You may find someone who has managed but they’ve probably needed to install an operating system driver to make it work.</p>
 
 <h4>Detecting gamepads</h4>
 
@@ -8705,7 +8695,7 @@ JSBin</a></p>
 
 </details>
 <!------------------------------------------------------------------------------------------------>
-<!-------------------- 108. gamepad detected, message on jsbin example (180) --------------------->
+<!-------------------- 108. gamepad detected, message on jsbin example (177) --------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image108.jpeg?raw=true"
@@ -8724,7 +8714,7 @@ JSBin</a></p>
 </code></pre>
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------- 109. disconnect game pad (180) --------------------------------->
+<!------------------------------- 109. disconnect game pad (177) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image109.jpeg?raw=true"
@@ -8822,14 +8812,14 @@ properties</a>:</p>
 <p>Digital, on/off buttons evaluate to either one or zero (respectively). Whereas analog buttons will return a floating-point value between zero and one.</p>
 <p><a href="https://jsbin.com/heriqej/edit" target="_blank" rel="noopener noreferrer">Example on JSBin</a>. You might also give a look at at this demo that does the same thing but with multiple gamepads.</p>
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 111. button status detected, example on jsbin (184) ---------------------->
+<!--------------------- 111. button status detected, example on jsbin (181) ---------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image111.jpeg?raw=true"
   alt="Button status detected."
   style="width:65%;" />
 
-<p>Code for checking if a button is pressed:</p>
+<h4>Code for checking if a button is pressed:</h4>
 
 <details>
   <summary>Code extract!</summary>
@@ -8860,7 +8850,7 @@ an analog trigger (L2 or R2 on Xbox360 or PS2/PS3 gamepads). </p>
 <p>Next, we’ll integrate it into the mainloop code. Note that we also
 need to call the scangamepads function from the loop, to generate fresh
 “snapshots” of the gamepad with updated properties. Without this call,
-the gamepad.buttons will return the same  states every time.</p>
+the gamepad.buttons will return the same states every time.</p>
 
 <details>
   <summary>Code extract!</summary>
@@ -8884,14 +8874,14 @@ the gamepad.buttons will return the same  states every time.</p>
 
 <p><a href="https://jsbin.com/yaxika/edit" target="_blank" rel="noopener noreferrer">Example on JSBin</a></p>
 <!------------------------------------------------------------------------------------------------>
-<!---------------------------------- 112. axes detection (185) ----------------------------------->
+<!---------------------------------- 112. axes detection (182) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image112.jpeg?raw=true"
   alt="Axis detection in JSBin."
   style="width:65%;" />
 
-<p>Code for detecting the axes’ values:</p>
+<h4>Code for detecting the axes’ values:</h4>
 
 <details>
   <summary>Code extract!</summary>
@@ -8922,14 +8912,14 @@ manage this:</p>
 <p><a href="https://jsbin.com/vuxoqo/edit?js,output" target="_blank" rel="noopener noreferrer">JSBin
 example</a>:</p>
 <!------------------------------------------------------------------------------------------------>
-<!------------------- 113. direction and angle detection with joystick (186) --------------------->
+<!------------------- 113. direction and angle detection with joystick (183) --------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image113.jpeg?raw=true"
   alt="Direction and angle detection with joystick."
   style="width:35%;" />
 
-<p>Source code extract:</p>
+<h4>Source code extract:</h4>
 
 <details>
   <summary>Code extract!</summary>
@@ -9252,25 +9242,11 @@ the updateMonsterPosition() function:</p>
 <h4>Explanations:</h4>
 
 <ul>
-<li><p>In this function, we added two properties to
-the monster object: speedX and speedY which will correspond to the
-number of pixels we will add to the x and y position of the monster at
-each new frame of animation.</p></li>
-<li><p>We first set these to zero (<i>line 2</i>), then depending on the
-keyboard input states, we set them to a value equal
-to monster.speed or -monster.speed modified by the keys that are being
-pressed at the time (<i>lines 4-20</i>).</p></li>
-<li><p>Finally, we add speedX and speedY pixels to
-the x and/or y position of the monster (<i>lines 36 and
-37</i>).</p></li>
-<li><p>When the function is called by the game loop,
-if speedX and/or speedY are non-zero they will change
-the x and y position of the monster in successive frames, making it move
-smoothly.</p></li>
-<li><p>If a mouse button is pressed or released we set
-the monster.speed value to +5 or to +1. This will make the monster move
-faster when a mouse button is down, and return to its normal speed when
-no button is down.</p></li>
+  <li><p>In this function, we added two properties to the monster object: speedX and speedY which will correspond to the number of pixels we will add to the x and y position of the monster at each new frame of animation.</p></li>
+  <li><p>We first set these to zero (<i>line 2</i>), then depending on the keyboard input states, we set them to a value equal to monster.speed or -monster.speed modified by the keys that are being pressed at the time (<i>lines 4-20</i>).</p></li>
+  <li><p>Finally, we add speedX and speedY pixels to the x and/or y position of the monster (<i>lines 36 and 37</i>).</p></li>
+  <li><p>When the function is called by the game loop, if speedX and/or speedY are non-zero they will change the x and y position of the monster in successive frames, making it move smoothly.</p></li>
+  <li><p>If a mouse button is pressed or released we set the monster.speed value to +5 or to +1. This will make the monster move faster when a mouse button is down, and return to its normal speed when no button is down.</p></li>
 </ul>
 <p>Notice that two arrow keys and a mouse button can be pressed down at
 the same time. In this situation, the monster will take a diagonal
@@ -9289,14 +9265,14 @@ status:</p>
 JSBin:</a></p>
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 114. move the monster with the gamepad, jsbin screenshot (186) ----------------->
+<!--------------- 114. move the monster with the gamepad, jsbin screenshot (190) ----------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image114.jpeg"
   style="width:3.0625in;height:4.02083in"
   alt="Move the monster with the gamepad, jsbin screenshot." />
 
-<p>The new updated mainloop:</p>
+<h4>The new updated mainloop:</h4>
 
 <details>
   <summary>Code extract!</summary>
@@ -9475,7 +9451,7 @@ frame-rate at 60 fps, meaning that the ideal time between frames will be
 JSBin</a></p>
 
 <!------------------------------------------------------------------------------------------------>
-<!------------ 115. image of small rectangle in a canvas, moving left to righ (186) -------------->
+<!------------ 115. image of small rectangle in a canvas, moving left to righ (194) -------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image115.jpeg"
@@ -9617,12 +9593,12 @@ need to move the shape to achieve a given speed (in pixels/s).</p>
 JSBin</a>:</p>
 
 <!------------------------------------------------------------------------------------------------>
-<!------------ 116. bouncing square with time bases animation (1xx) -------------->
+<!-------------------- 116. bouncing square with time bases animation (196) ---------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image116.jpeg"
   style="width:5.26042in;height:1.61458in"
-  alt="Bouncing square with time bases animation" />
+  alt="Bouncing square with time bases animation." />
   
 <h4>Source code from the example:</h4>
 
@@ -9730,7 +9706,7 @@ a console.log(delta)in the animation loop, you will see that even on a
 very powerful computer, the delta is “very close” to 16.6666 ms, but 99%
 of the time it will be slightly different.</p>
 <p>The function calcDistanceToMove(delta, speed) takes two parameters:
-1) the time elapsed in ms, and 2) the target speed in pixels/s. </p>
+1) the time elapsed in ms, and 2) the target speed in pixels/s.</p>
 <p>Try this example on a smartphone, use this <a
 href="https://jsbin.com/jeribi" target="_blank" rel="noopener noreferrer">link</a> to run the JSBin example in
 stand-alone mode. Normally you should see no difference in speed, but it
@@ -9793,12 +9769,14 @@ animation adapts itself!</p>
 
 </details>
 
-<p>Method #2: using the new HTML5 high-resolution timer</p>
+<h4>Method #2: using the new HTML5 high-resolution timer</h4>
+
 <p>Since the beginning of HTML5, game developers, musicians, and
 others have asked for a sub-millisecond timer to be able to avoid some
 glitches that occur with the regular JavaScript timer. This API is
 called the “<a href="https://www.w3.org/TR/hr-time/" target="_blank" rel="noopener noreferrer">High Resolution
 Time API</a>”.</p>
+
 <p>This API is very simple to use - just do:</p>
 
 <pre><code>
@@ -9809,33 +9787,17 @@ var time = performance.now();
 except that the accuracy is much higher and that the result is not
 exactly the same. The value returned is a floating point number, not an
 integer value!</p>
-<p>From <a
-href="https://www.sitepoint.com/discovering-the-high-resolution-time-api/" target="_blank" rel="noopener noreferrer">this
-article that explains the High Resolution Time API</a>:  “<i>The only
-method exposed is now(), which returns a DOMHighResTimeStamp
-representing the current time in milliseconds. The timestamp is very
-accurate, with precision to a thousandth of a millisecond. Please note
-that while Date.now() returns the number of milliseconds elapsed since 1
-January 1970 00:00:00 UTC, performance.now() returns the number of
-milliseconds, with microseconds in the fractional part, from
-performance.timing.navigationStart(), the start of navigation of the
-document, to the performance.now() call. Another important difference
-between Date.now() and performance.now() is that the latter is
-monotonically increasing, so the difference between two calls will never
-be negative.</i>”</p>
-<p>To sum up:</p>
+<p>From <a href="https://www.sitepoint.com/discovering-the-high-resolution-time-api/" target="_blank" rel="noopener noreferrer">this article that explains the High Resolution Time API</a>:  “<i>The only method exposed is now(), which returns a DOMHighResTimeStamp representing the current time in milliseconds. The timestamp is very accurate, with precision to a thousandth of a millisecond. Please note that while Date.now() returns the number of milliseconds elapsed since 1 January 1970 00:00:00 UTC, performance.now() returns the number of milliseconds, with microseconds in the fractional part, from performance.timing.navigationStart(), the start of navigation of the document, to the performance.now() call. Another important difference between Date.now() and performance.now() is that the latter is monotonically increasing, so the difference between two calls will never be negative.</i>”</p>
+
+<h4>To sum up:</h4>
+
 <ul>
-<li><p>performance.now() returns the time since the load of the document
-(it is called a DOMHighResTimeStamp), with a sub mill-second accuracy,
-as a floating point value, with very high accuracy.</p></li>
-<li><p>Date.now() returns the number of mill-seconds since the Unix
-epoch, as an integer value.</p></li>
+  <li>performance.now() returns the time since the load of the document (it is called a DOMHighResTimeStamp), with a sub mill-second accuracy, as a floating point value, with very high accuracy.</li>
+  <li>Date.now() returns the number of mill-seconds since the Unix epoch, as an integer value.</li>
 </ul>
-<p>Support for this API is quite good - see the compatibility table <a
-href="https://caniuse.com/#feat=high-resolution-time" target="_blank" rel="noopener noreferrer">online</a>.</p>
-<p>Here is <a href="https://jsbin.com/wecaho/edit" target="_blank" rel="noopener noreferrer">a version on JSBin of
-the previous example with the bouncing rectangle, that uses the high
-resolution timer</a>.</p>
+
+<p>Support for this API is quite good - see the compatibility table <a href="https://caniuse.com/#feat=high-resolution-time" target="_blank" rel="noopener noreferrer">online</a>.</p>
+<p>Here is <a href="https://jsbin.com/wecaho/edit" target="_blank" rel="noopener noreferrer">a version on JSBin of the previous example with the bouncing rectangle, that uses the high resolution timer</a>.</p>
 
 <h4>Source code of the example:</h4>
 
@@ -10010,22 +9972,24 @@ We can set a global variable that corresponds to the desired frame rate
 and compare the elapsed time between two executions of the animation
 loop:</p>
 <ul>
-<li><p>If the time elapsed is too short for the target frame rate: do
-nothing,</p></li>
-<li><p>If the time elapsed exceeds the delay corresponding to the chosen
-frame rate: draw the frame and reset this time to zero.</p></li>
+  <li><p>If the time elapsed is too short for the target frame rate: do nothing,</p></li>
+  <li><p>If the time elapsed exceeds the delay corresponding to the chosen frame rate: draw the frame and reset this time to zero.</p></li>
 </ul>
-<p>Here is the <a href="https://jsbin.com/bonutur/edit" target="_blank" rel="noopener noreferrer">online example
-at JSBin</a>.</p>
+
+<p>Here is the <a href="https://jsbin.com/bonutur/edit" target="_blank" rel="noopener noreferrer">online example at JSBin</a>.</p>
 <p><b>Try to change the parameter value of the call to: </b></p>
-<pre><code>&lt;sup&gt;setFrameRateInFramesPerSecond(5); // try other values!&lt;/sup&gt;</code></pre>
+
+<pre><code>
+&lt;sup&gt;setFrameRateInFramesPerSecond(5); // try other values!&lt;/sup&gt;
+</code></pre>
+
 <!------------------------------------------------------------------------------------------------>
-<!------------ 117.  (1xx) -------------->
+<!------------ 117. squiggly line (1xx) -------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image117.png"
   style="width:4in;height:2.0047in"
-  alt="" />
+  alt="Squigly line." />
 
 <h4>Source code of the example:</h4>
 
@@ -10306,11 +10270,10 @@ at 60 fps.</p>
   style="width:3.48958in;height:3.58333in"
   alt="Screenshot of example that runs at 37 f/s." />
 
-<p>Here are the parts we changed:</p>
+<h4>Here are the parts we changed:</h4>
 
 <ul>
-<li>Declaration of the monster object - now the speed is in pixels/s
-instead of in pixels per frame</li>
+  <li>Declaration of the monster object - now the speed is in pixels/s instead of in pixels per frame</li>
 </ul>
 
 <pre><code>
@@ -10828,18 +10791,16 @@ sketches of more complex algorithms.</p>
 
 <p>Collision between circles is easy. Imagine there are two circles:</p>
 <ol type="1">
-<li><p>Circle c1 with center (x1,y1) and radius r1;</p></li>
-<li><p>Circle c2 with center (x2,y2) and radius r2.</p></li>
+  <li><p>Circle c1 with center (x1,y1) and radius r1;</p></li>
+  <li><p>Circle c2 with center (x2,y2) and radius r2.</p></li>
 </ol>
 <p>Imagine there is a line running between those two center points. The
 distances from the center points to the edge of each circle is, by
 definition, equal to their respective radii. So:</p>
 <ul>
-<li><p>if the edges of the circles touch, the distance between the
-centers is r1+r2;</p></li>
-<li><p>any greater distance and the circles don’t touch or
-collide; whereas</p></li>
-<li><p>any less and they do collide or overlay.</p></li>
+  <li><p>if the edges of the circles touch, the distance between the centers is r1+r2;</p></li>
+  <li><p>any greater distance and the circles don’t touch or collide; whereas</p></li>
+  <li><p>any less and they do collide or overlay.</p></li>
 </ul>
 
 <blockquote>
@@ -11319,14 +11280,8 @@ function in this example on JSBin</a>.</p>
 <h4>[ADVANCED] Collision between balls (pool like)</h4>
 
 <ul>
-<li><p>Math and physics: please read <a
-href="https://web.archive.org/web/20181231090226/http:/archive.ncsa.illinois.edu/Classes/MATH198/townsend/math.html" target="_blank" rel="noopener noreferrer">this
-external resource (for math), a great article that explains the physics
-of a pool game</a>.</p></li>
-<li><p><a href="https://jsbin.com/juzefa/edit" target="_blank" rel="noopener noreferrer">Example of colliding
-balls at JSBin (author: M.Buffa)</a>, and also <a
-href="https://jsbin.com/nopefe/edit" target="_blank" rel="noopener noreferrer">try this example that does the same
-with a blurring effect</a></p></li>
+  <li><p>Math and physics: please read <a href="https://web.archive.org/web/20181231090226/http:/archive.ncsa.illinois.edu/Classes/MATH198/townsend/math.html" target="_blank" rel="noopener  noreferrer">this external resource (for math), a great article that explains the physics of a pool game</a>.</p></li>
+  <li><p><a href="https://jsbin.com/juzefa/edit" target="_blank" rel="noopener noreferrer">Example of colliding balls at JSBin (author: M.Buffa)</a>, and also <a href="https://jsbin.com/nopefe/edit" target="_blank" rel="noopener noreferrer">try this example that does the same with a blurring effect</a></p></li>
 </ul>
 
 <!------------------------------------------------------------------------------------------------>
@@ -11526,10 +11481,8 @@ multiple sprite sheets: one for each posture.</p>
 
 <h4>Hybrid sprite sheets</h4>
 
-<p>You will also find sprite sheets that contain completely different
-sets of sprites (this one comes from <a
-href="https://www.youtube.com/watch?v=1tLNcj1ygFA" target="_blank" rel="noopener noreferrer">the famous Gridrunner
-IOS game by Jeff Minter</a>):</p>
+<p>You will also find sprite sheets that contain completely different sets of sprites (this one comes from <a
+href="https://www.youtube.com/watch?v=1tLNcj1ygFA" target="_blank" rel="noopener noreferrer">the famous Gridrunner IOS game by Jeff Minter</a>):</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------- 144. gridiron sprintsheet (238) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -11558,19 +11511,19 @@ consider how to support different layouts of sprite sheet.</p>
 <h4>Example #1</h4>
 
 <p>In this example, we’ll move the slider to extract the sprite
-indicated by the slider value. See the red rectangle? This is the sprite
-image currently selected! When you move the slider, the corresponding
-sprite is drawn in the small canvas. As you move the slider from one to
-the next, see how the animation is created? </p>
+indicated by the slider value.<br>
+See the red rectangle?<br>
+This is the sprite image currently selected!<br>
+When you move the slider, the corresponding sprite is drawn in the small canvas.<br>
+As you move the slider from one to the next, see how the animation is created?</p>
 <p><a href="https://jsbin.com/yukacep/edit?html,js,output" target="_blank" rel="noopener noreferrer">Try it at
 JSBin</a>:</p>
-
 <!------------------------------------------------------------------------------------------------>
 <!------ 145. screenshot of example, move a slider to select sprite from spritesheet (239) ------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image145.jpeg?raw=true"
-  alt="Screenshot of the example: move a slider to select a subimage/sprite from the spritesheet"
+  alt="Screenshot of the example: move a slider to select a subimage/sprite from the spritesheet."
   style="width:50%;" />
 
 <h4>HTML code:</h4>
