@@ -60,7 +60,7 @@
 <body>
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-<!-- padding: 30px 30px 2500px --->
+<!-- padding: 30px 30px 2500px -->
 <div style="background-color:black;color:white;padding:30px">Scroll Down</div>
 <div style="background-color:lightgrey;padding:30px 30px 750px">
 </div>
@@ -117,22 +117,21 @@ function topFunction() {
 
 <h3 style="text-align:center">W3Cx-4of5-HTML5.2x - Apps and Games</h3>
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<!------------------------------ 01. W3Cx-4of5-HTML5.2x logo (01) -------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 01. W3Cx-4of5-HTML5.2x logo (01) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 <img class="displayed"
   src="./images/image001.png?raw=true"
   alt="W3Cx HTML 5.2x logo."
   style="width:45%;" />
 
-<h2 id="table-of-contents"><a href="#table-of-contents">Table of
-contents</a></h2>
-<h2 id="about-w3c-and-the-web"><a href="#cha"><b>About W3C and the
-Web</b></a></h2>
+<h2 id="table-of-contents"><a href="#table-of-contents">Table of contents</a></h2>
+
+<h2 id="about-w3c-and-the-web"><a href="#cha"><b>About W3C and the Web</b></a></h2>
+
 <blockquote>
 <h3 id="about-w3c-and-the-web-1">- <a href="#cha-1"><b>About W3C and the Web</b></a></h3>
 <h3 id="why-accessibility-is-important">- <a href="#cha-2"><b>Why accessibility is important</b></a></h3>
 <h3 id="why-internationalization-is-important">- <a href="#cha-3"><b>Why internationalization is important</b></a></h3>
-
 </blockquote>
 
 <h2 id="course-information"><a href="#chb"><b>Course information</b></a></h2>
@@ -11738,49 +11737,22 @@ individual sprites:</p>
 <h4>Explanations:</h4>
 
 <ul>
-<li><p><i>Lines 1-4</i>: characteristics of the sprite sheet. How many
-rows, i.e., how many sprites per row, etc.</p></li>
-<li><p><i>Lines 11-39</i>: initializations that run just after the
-page has been loaded. We first get the canvas and contexts. Then we set
-the minimum and maximum values of the slider (an &lt;input
-type=range&gt;) at <i>lines 31-32</i>, and disable it at <i>line
-34</i> (we cannot slide it before the sprite sheet image has been
-loaded). We display the current sprite number 0 in the &lt;/p&gt;
-&lt;output&gt;
-<p> field to the right of the slider (<i>line 35</i>).
- Finally, <i>in lines 37-39</i>, we load the sprite sheet
-image.</p></li>
-<li><p><i>Lines 42-58</i>: this callback is run once the sprite sheet
-image has been loaded. We enable the slider, set the big canvas to the
-size of the loaded image, and then draw it (<i>line 51</i>). We also
-draw the first sprite from the sprite sheet in the small canvas and draw
-a red wireframe rectangle around the first sprite in the sprite sheet
-(<i>lines 52-58</i>).</p></li>
-<li><p><i>Lines 61-87</i>: the input listener callback, called each
-time the slider moves. <i>Lines 65-68</i> are the most important ones
-here: we compute the x and y position of the sprite selected with the
-slider. We take into account the number of sprites per posture, the
-number of rows, and the dimensions of each sprite. Then, as in the
-previous step, we draw the current sprite in the small canvas and
-highlight the current sprite with a red rectangle in the sprite
-sheet.</p></li>
-<li><p>The code is generic enough to work with different kinds of sprite
-sheets. Adjust the global parameters in bold at<i> lines 1-5</i> and
-try the extractor.</p></li>
+  <li><i>Lines 1-4</i>: characteristics of the sprite sheet. How many rows, i.e., how many sprites per row, etc.</li>
+  <li><i>Lines 11-39</i>: initializations that run just after the page has been loaded. We first get the canvas and contexts. Then we set the minimum and maximum values of the slider (an &lt;input type=range&gt;) at <i>lines 31-32</i>, and disable it at <i>line 34</i> (we cannot slide it before the sprite sheet image has been loaded). We display the current sprite number 0 in the &lt;/p&gt; &lt;output&gt;
+  field to the right of the slider (<i>line 35</i>).  Finally, <i>in lines 37-39</i>, we load the sprite sheet image.</li>
+  <li><i>Lines 42-58</i>: this callback is run once the sprite sheet image has been loaded. We enable the slider, set the big canvas to the size of the loaded image, and then draw it (<i>line 51</i>). We also draw the first sprite from the sprite sheet in the small canvas and draw a red wireframe rectangle around the first sprite in the sprite sheet (<i>lines 52-58</i>).</li>
+  <li><i>Lines 61-87</i>: the input listener callback, called each time the slider moves. <i>Lines 65-68</i> are the most important ones here: we compute the x and y position of the sprite selected with the slider. We take into account the number of sprites per posture, the number of rows, and the dimensions of each sprite. Then, as in the previous step, we draw the current sprite in the small canvas and highlight the current sprite with a red rectangle in the sprite sheet.</li>
+  <li>The code is generic enough to work with different kinds of sprite sheets. Adjust the global parameters in bold at<i> lines 1-5</i> and try the extractor.</li>
 </ul>
 
 <h4>Example #2</h4>
 
 <ol start="542" type="1">
-<li>This is the same application with another sprite sheet.<br />
-We just changed these parameter values: try the same code but with
-another sprite sheet (the one with the robot) - see <a
-href="https://jsbin.com/jeledoq/edit?html,js,output" target="_blank" rel="noopener noreferrer">on JSBin.</a></li>
+  <li>This is the same application with another sprite sheet.<br /> We just changed these parameter values: try the same code but with another sprite sheet (the one with the robot) - see <a href="https://jsbin.com/jeledoq/edit?html,js,output" target="_blank" rel="noopener noreferrer">on JSBin.</a></li>
 </ol>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------ 146. same example buit with the robot spritesheet (242) --------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image146.jpeg?raw=true"
   alt="Same example but with the robot spritesheet."
@@ -11789,9 +11761,9 @@ href="https://jsbin.com/jeledoq/edit?html,js,output" target="_blank" rel="noopen
 <ol start="543" type="1">
   <li>Now it’s time to see how we can make a small sprite animation framework!</li>
 </ol>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-6-4">2.6.4 A small sprite animation framework</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Now that we have presented the principle of sprite extraction
 (sprites as sub-images of a single composite image), let’s write a small
 sprite animation framework.</p>
@@ -11843,9 +11815,9 @@ JSBin that uses this framework first!</a> Experiment by editing <i>line
 20</i>: <b>robot.setNbImagesPerSecond(20); </b>changing the value of
 the parameter and observing the result.</p>
 <!-- 264 -->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-------------------- 147. example of the sprite framework on jsbin (244) ----------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image147.jpeg?raw=true"
   alt="Example of the sprite framework on JSBin. Screenshot."
@@ -11886,17 +11858,13 @@ yPos position, and at anappropriate size. </p>
 <p>We define the Sprite model. This is the one we used to create the
 small robot in the previous example.</p>
 <ul>
-<li><p>A Sprite is defined by an array of SpriteImage objects.</p></li>
-<li><p>It has a method for extracting all SpriteImages from a given
-sprite sheet and filling the above array.</p></li>
-<li><p>It has a draw method which will draw the current SpriteImage.
-A Sprite is an animated object, therefore, calling draw multiple times
-will involve an automatic change of the current SpriteImage being
-drawn.</p></li>
-<li><p>The number of different images to be drawn per second is a
-parameter of the sprite.</p></li>
+  <li><p>A Sprite is defined by an array of SpriteImage objects.</p></li>
+  <li><p>It has a method for extracting all SpriteImages from a given sprite sheet and filling the above array.</p></li>
+  <li><p>It has a draw method which will draw the current SpriteImage. A Sprite is an animated object, therefore, calling draw multiple times will involve an automatic change of the current SpriteImage being drawn.</p></li>
+  <li><p>The number of different images to be drawn per second is a parameter of the sprite.</p></li>
 </ul>
-<p><b>Here is the code of the Sprite model:</b></p>
+
+<h4>Here is the code of the Sprite model:</h4>
 
 <details>
   <summary>Function Sprite source code!</summary>
@@ -11979,9 +11947,9 @@ parameter of the sprite.</p></li>
 <p><a href="http://jsbin.com/fekacu/edit?js,output" target="_blank" rel="noopener noreferrer">Try this
 JsBin</a></p>
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!---------------------------------- 148. woman animated (246) ----------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image148.jpeg?raw=true"
   alt="Woman animated."
@@ -12016,9 +11984,9 @@ sprite sheet has 8 different postures, so you can call:</p>
 <p><a href="https://jsbin.com/muwoje/edit?js,output" target="_blank" rel="noopener noreferrer">Example at
 JsBin</a></p>
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!----------------- 149. woman moving left then right, jsbin screenshot (247) -------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image149.jpeg?raw=true"
   alt="Woman moving left and right, jsbin screenshot."
@@ -12037,9 +12005,9 @@ her.</p>
 href="https://spicyyoghurt.com/tutorials/html5-javascript-game-development/images-and-sprite-animations" target="_blank" rel="noopener noreferrer">Draw
 images and sprite animations</a></li>
 </ul>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-6-5">2.6.5 Adding sprites to the game framework</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Let us use the animated woman example and take the sprite utility
 functions and some predefined values, such as the sprite sheet URL, the
 size of the sprites, the number of postures, etc., and add it all to one
@@ -12050,9 +12018,9 @@ with gamepad, etc)).</p>
 href="https://jsbin.com/mifeva/edit?js,console,output" target="_blank" rel="noopener noreferrer">example at
 JsBin</a></b></p>
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------- 150. the woman sprite in the game framework, jsbin screenshot (248) -------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image150.jpeg"
   style="width:6.5in;height:3.03819in"
@@ -12196,9 +12164,9 @@ resources asynchronously, as  discussed during Module 1.</p></li>
 </code></pre>
 
 </details>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-7-1">2.7.1 Menus, high score tables, etc.</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>With our game framework handling the basics, we can make things more
 exciting by causing something to happen when a collision occurs - maybe
 the player ‘dies’, balls are removed, or we should add to your score?
@@ -12215,9 +12183,9 @@ are created on top of the monster.</p>
 <p><a href="https://jsbin.com/jixolu/edit?js,console,output" target="_blank" rel="noopener noreferrer">Try this
 jsBin!</a></p>
 
-<!------------------------------------------------------------------------------------------------>
-<!--------------------- 151. eat the ball game (###) ----------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--------------------------------- 151. eat the ball game (###) --------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image151.jpeg" 
   style="width:3in;height:3.02821in"
@@ -12301,20 +12269,22 @@ JsBin</a>, then look at the source code. Start from the mainloop!</p>
 <pre><code>
 currentGameState = gameStates.gameOver:
 </code></pre>
-<!------------------------------------------------------------------------------------------------>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------- 152. Game Over Screen, asking to press space to start again. (2xx) --------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image152.jpeg"
   style="width:4.69792in;height:4.75in"
-  alt="Game Over Screen, asking to press space to start again." />
+  alt="Game over screen, asking to press space to start again." />
 
 <pre><code>
 currentGameState = gameStates.gamerunning:
 </code></pre>
-<!------------------------------------------------------------------------------------------------>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------- 153. Game Over Screen, asking to press space to start again. (2xx) --------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image153.jpeg"
   style="width:4.78125in;height:4.79167in"
@@ -12447,9 +12417,9 @@ and changes the current game-state to GameOver:</p>
 </code></pre>
 
 </details>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-7-2">2.7.2 Splitting the game into several JS files</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>JSBin is a great tool for sharing code, for experimenting, etc. But
 as soon as the size of your project increases, you’ll find that the tool
 is not suited for developing large systems. </p>
@@ -12475,8 +12445,7 @@ collision.js, listeners.js, etc.</p></li>
 
 <h4>Start with a simple structure</h4>
 
-<p>First, create a game.html file that contains the actual HTML
-code:</p>
+<p>First, create a game.html file that contains the actual HTML code:</p>
 
 <h4>game.html:</h4>
 
@@ -12516,9 +12485,9 @@ code:</p>
 to a file called game.js, and locate it in a subdirectory js under the
 directory where the game.html file is located. Similarly, we’ll keep the
 CSS file in a css subdirectory:</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------------------------ 154. game.html (280) -------------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image154.jpeg"
   style="width:1.98958in;height:2.29167in"
@@ -12566,9 +12535,9 @@ error… Also, the ctx variable should be added as a parameter to
 the draw method, otherwise it won’t be recognized… </p>
 <p>Just for fun, let’s try the game without fixing this, and look at the
 devtools console:</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!---------------- 155. function calcdisktomove error not found in ball.js (279) ----------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image155.jpeg"
   style="width:6.08333in;height:5.375in"
@@ -16068,16 +16037,14 @@ order. This is often implemented through the use of persistent B-tree
 data structures which are considered efficient for insertion and
 deletion, as well as for in-order traversal of very large numbers of
 data records.</p>
-<p><b>To sum up:</b></p>
+
+<h4>To sum up:</h4>
+
 <ol type="1">
-<li><p><b>IndexedDB is a transactional Object Store in which you will be
-able to store JavaScript objects.</b></p></li>
-<li><p><b>Indexes on some properties of these objects facilitate faster
-retrieval and search.</b></p></li>
-<li><p><b>Applications using IndexedDB can work both online and
-offline.</b></p></li>
-<li><p><b>IndexedDB is transactional: it manages concurrent access to
-data.</b></p></li>
+  <li><p><b>IndexedDB is a transactional Object Store in which you will be able to store JavaScript objects.</b></p></li>
+  <li><p><b>Indexes on some properties of these objects facilitate faster retrieval and search.</b></p></li>
+  <li><p><b>Applications using IndexedDB can work both online and offline.</b></p></li>
+  <li><p><b>IndexedDB is transactional: it manages concurrent access to data.</b></p></li>
 </ol>
 
 <h4>Examples of applications where IndexedDB should be considered</h4>
@@ -16104,6 +16071,7 @@ href="https://developer.mozilla.org/en-US/docs/IndexedDB/Basic_Concepts_Behind_I
 Concepts of IndexedDB</a> and <a
 href="https://developer.mozilla.org/en-US/docs/IndexedDB/Using_IndexedDB" target="_blank" rel="noopener noreferrer">Using
 IndexedDB</a>).</p>
+
 <ul>
 <li><p><a href="https://www.w3.org/TR/IndexedDB/" target="_blank" rel="noopener noreferrer">W3C specification
 about IndexedDB</a></p></li>
@@ -16113,19 +16081,16 @@ about the IndexedDB API</a></p></li>
 href="https://itnext.io/getting-started-with-persistent-offline-storage-with-indexeddb-1af66727246c" target="_blank" rel="noopener noreferrer">Getting
 Started with Persistent Offline Storage with IndexedDB</a></p></li>
 </ul>
+
 <p><a href="https://caniuse.com/#search=indexed" target="_blank" rel="noopener noreferrer">Current support is
 excellent</a> both on mobile and desktop browsers.</p>
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch3-6-2">3.6.2 Concepts (part 2)</h3>
 <!------------------------------------------------------------------------------------------------>
-<p>Among the concepts used by IndexedDB is the concept of
-transactions.</p>
-<p>A transactional database ensures that concurrent access to data would
-not compromise this data.</p>
-<p>It uses a locking system, that means that when an instance of your
-Web application is modifying</p>
-<p>some data and another instance or another application on the same
-domain is reading this data, there won’t be anything wrong regarding to
+<p>Among the concepts used by IndexedDB is the concept of transactions.</p>
+<p>A transactional database ensures that concurrent access to data would not compromise this data.</p>
+<p>It uses a locking system, that means that when an instance of your Web application is modifying</p>
+<p>some data and another instance or another application on the same domain is reading this data, there won’t be anything wrong regarding to
 this data.</p>
 <p>When do we need such a mechanism? When you have multiple tabs opened
 on the same WebApp or WebApps from the same domain. Or you have got
@@ -16207,17 +16172,13 @@ results.</p>
 href="https://developer.mozilla.org/en-US/docs/IndexedDB/Using_IndexedDB" target="_blank" rel="noopener noreferrer">Using
 IndexedDB</a>)”:</p>
 <p>// This is what our customer data looks like.</p>
+
 <p>const customerData = [];</p>
 <p>Where customerData is an array of  “customers”, each customer having
 several properties: ssn for the social security number, a name,
 an age and an email address.</p>
-<p><b>IndexedDB is built on a transactional database
-model.</b> Everything you do in IndexedDB happens in <a
-href="https://developer.mozilla.org/en-US/docs/IndexedDB/Basic_Concepts_Behind_IndexedDB#gloss_transaction" target="_blank" rel="noopener noreferrer">the
-context of a transaction</a>. The IndexedDB API provides lots of objects
-that represent indexes, tables, cursors, and so on, but each is tied to
-a particular transaction. Thus, you cannot execute commands or open
-cursors outside a transaction.</p>
+
+<p><b>IndexedDB is built on a transactional database model.</b> Everything you do in IndexedDB happens in <a href="https://developer.mozilla.org/en-US/docs/IndexedDB/Basic_Concepts_Behind_IndexedDB#gloss_transaction" target="_blank" rel="noopener noreferrer">the context of a transaction</a>. The IndexedDB API provides lots of objects that represent indexes, tables, cursors, and so on, but each is tied to a particular transaction. Thus, you cannot execute commands or open cursors outside a transaction.</p>
 
 <h4>Example of a transaction:</h4>
 
@@ -16251,23 +16212,19 @@ cursors outside a transaction.</p>
 
 </details>
 
-<p>Transactions have a well-defined lifetime. Attempting to use a
-transaction after it has completed throws an exception.</p>
-<p><i>Transactions auto-commit, and cannot be committed
-manually.</i></p>
-<p>This transaction model is really useful when you consider what might
-happen if a user opened two instances of your web app in two different
-tabs simultaneously. Without transactional operations, the two instances
-might stomp all over each others’ modifications. </p>
-<p><b>The IndexedDB API is mostly asynchronous.</b> The API doesn’t give
-you data by returning values; instead, you have to pass a callback
-function. You don’t “store” a value in the database, or “retrieve” a
-value out of the database through synchronous means. Instead, you
-“request” that a database operation happens. You are notified by a DOM
-event when the operation finishes, and the type of event lets you know
-if the operation succeeded or failed. This may sound a little
-complicated at first, but there are some sanity measures baked-in. After
+<p>Transactions have a well-defined lifetime. Attempting to use a transaction after it has completed throws an exception.</p>
+
+<p><i>Transactions auto-commit, and cannot be committed manually.</i></p>
+
+<p>This transaction model is really useful when you consider what might happen if a user opened two instances of your web app in two different
+tabs simultaneously. Without transactional operations, the two instances might stomp all over each others’ modifications. </p>
+
+<p><b>The IndexedDB API is mostly asynchronous.</b> The API doesn’t give you data by returning values; instead, you have to pass a callback
+function. You don’t “store” a value in the database, or “retrieve” a value out of the database through synchronous means. Instead, you
+“request” that a database operation happens. You are notified by a DOM event when the operation finishes, and the type of event lets you know
+if the operation succeeded or failed. This may sound a little complicated at first, but there are some sanity measures baked-in. After
 all, you are a JavaScript programmer, aren’t you? ;-)</p>
+
 <p>So, please review the previous code extracts noting: transaction.
 oncomplete, transaction. onerror, request. onsuccess, etc.</p>
 <p><b>IndexedDB uses requests all over the place.</b> Requests are
@@ -16632,23 +16589,15 @@ to view IndexedDB content in Firefox</a></p></li>
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch3-6-5">3.6.5 Creating and deleting a database</h3>
 <!------------------------------------------------------------------------------------------------>
-<p>Hi! Let’s look now at some pieces of code and examples that will
-explain how to really program an IndexedDB application.</p>
-<p>So… one of the first thing is that you need to create or to open an
-existing database before working with data.</p>
-<p>All operations are asynchronous and, if you want to open a database,
-you use IndexedDB.open(…).</p>
-<p>You specify the name of the database and the version. Each database
-is versioned… and</p>
-<p>if the “CustomerDB” database -from this example- exists with a
-version “2”, it will just open it. If it exists, but with a previous,
-lower version, it will be “upgraded”.</p>
-<p>This is why we need to define, on the object that is returned by
-open(…), some event listeners.</p>
-<p>The “onsuccess” listener is called when the database has been opened.
-“onerror” (listener) if there is an error, and “onupgradeneeded”
-(listener) will be called only if we are creating a new version of the
-database. It’s the case when the database does not exist.</p>
+<p>Hi! Let’s look now at some pieces of code and examples that will explain how to really program an IndexedDB application.</p>
+<p>So… one of the first thing is that you need to create or to open an existing database before working with data.</p>
+<p>All operations are asynchronous and, if you want to open a database, you use IndexedDB.open(…).</p>
+<p>You specify the name of the database and the version. Each database is versioned… and if the “CustomerDB” database -from this example- exists with a version “2”, it will just open it.</p>
+<p>If it exists, but with a previous, lower version, it will be “upgraded”.</p>
+<p>This is why we need to define, on the object that is returned by open(…), some event listeners.</p>
+<p>The “onsuccess” listener is called when the database has been opened. <br>
+“onerror” (listener) if there is an error, and “onupgradeneeded” (listener) will be called only if we are creating a new version of the database.</p>
+<p>It’s the case when the database does not exist.</p>
 <p>So the database has a version, and the first version is “0”. You can
 have the same database that exists in different versions at a time, but
 the very common way is to define the two listeners I talked about, and
@@ -16670,10 +16619,8 @@ for data.</p>
 <p>Now, let’s zoom a little bit on what happens in this listener here,
 because this is where we are going to create the database.</p>
 <p>For creating and populating a new object datastore - a new object
-database -, here is how we proceed:</p>
-<p>in the “onupgradeneeded” listener, we get the database itself… Then
-you create an object store in it, and you need to indicate the name of
-the object store - “customers” - and the name of the “KeyPath”.
+database -, here is how we proceed: in the “onupgradeneeded” listener, we get the database itself…</p>
+<p>Then you create an object store in it, and you need to indicate the name of the object store - “customers” - and the name of the “KeyPath”.
 Remember, the KeyPath is a unique ID that will be attached to all
 objects stored in the database (!: correction -&gt; datastore).</p>
 <p>And we can also create “indexes”. Here, we are saying that every
@@ -16681,37 +16628,19 @@ object that will be stored in the database (!: correction -&gt;
 datastore), will have a property called “name”, that will not be
 necessarily unique, and we will have a property called “email” that will
 be unique.</p>
-<p>Just after creating it, we are populating the objectstore with some
-test data. Here we</p>
-<p>are iterating on the customerData object, that has been defined here.
-It’s an array,</p>
-<p>that contains two persons (two customers) inside: one is “Bill”, age
-35, with an email and a</p>
-<p>unique ID that is its social security number. Let’s try this one: it
-comes from</p>
-<p>the example called “creating and deleting a database”. I open it, I
-open the devtools,</p>
-<p>and I look at “Resources” (tab). I open the “IndexedDB” (item). You
-can see that the</p>
-<p>datastore and the database are not present here. I click on the
-“create customer database” …</p>
-<p>this will run the code I just explained. And if I refresh the
-IndexedDB,</p>
-<p>I can see that the database called “CustomerDB” has been created,
-with inside</p>
-<p>an object store called “customers”, that contains two persons (two
-customers), and I can see</p>
-<p>here the indexes. I can open also the objects. If I want to delete
-the database, I can do</p>
-<p>it in my own program, or I can do it in the console. I run
-IndexedDB.deleteDatabase(…),</p>
-<p>and I indicate the database - “customerDB” - . If I go back to the
-“Resources” tab, and</p>
-<p>refresh the databases, heu.. if I refresh IndexedDB (databases)
--sorry-… normally,</p>
-<p>ok I run it again… normally, it disappears… sometimes the refresh
-does not work correctly,</p>
-<p>but the database is really deleted.</p>
+<p>Just after creating it, we are populating the object store with some test data.<br>
+Here we are iterating on the customerData object, that has been defined here.<br>
+It’s an array, that contains two persons (two customers) inside: one is “Bill”, age
+35, with an email and a unique ID that is its social security number. Let’s try this one: it
+comes from the example called “creating and deleting a database”.</p>
+<p>I open it, I open the devtools, and I look at “Resources” (tab). </p>
+<p>I open the “IndexedDB” (item).</p>
+<p>You can see that the datastore and the database are not present here. I click on the “create customer database” …this will run the code I just explained. And if I refresh the IndexedDB,</p>
+<p>I can see that the database called “CustomerDB” has been created, with inside an object store called “customers”, that contains two persons (two
+customers), and I can see here the indexes. I can open also the objects.</p>
+<p>If I want to delete the database, I can do it in my own program, or I can do it in the console.</p>
+<p>I run IndexedDB.deleteDatabase(…), and I indicate the database - “customerDB” - .</p>
+<p>If I go back to the “Resources” tab, and refresh the databases, heu.. if I refresh IndexedDB (databases) -sorry-… normally, ok I run it again… normally, it disappears… sometimes the refresh does not work correctly, but the database is really deleted.</p>
 
 <h4>Creating a database</h4>
 
@@ -16841,50 +16770,34 @@ will automatically be rounded to “1”.</p>
 61. } // end of function createDatabase
 </code</pre>
 
+</details>
+
 <h4>Explanations:</h4>
 
-<p>All the “creation” process is done in the onupgradeneeded callback
-(<i>lines 26-50</i>):</p>
+<p>All the “creation” process is done in the onupgradeneeded callback (<i>lines 26-50</i>):</p>
+
 <ul>
-<li><p><i>Line 30</i>: get the database created in the result of the dom
-event: db = event.target.result;</p></li>
-<li><p><i>Line 35</i>: create an object store named “customers” with the
-primary key being the social security number (“ssn” property of the
-JavaScript objects we want to store in the object store): var
-objectStore = db.createObjectStore(“customers”, {keyPath:
-“ssn”});</p></li>
-<li><p><i>Lines 39 and 44</i>: create indexes on the “name” and “email”
-properties of JavaScript objects: objectStore.createIndex(“name”,
-“name”, {unique: false});</p></li>
-<li><p><i>Lines 48-50</i>: populate the
-database: objectStore.add(…).</p></li>
+  <li><p><i>Line 30</i>: get the database created in the result of the dom event: db = event.target.result;</p></li>
+  <li><p><i>Line 35</i>: create an object store named “customers” with the primary key being the social security number (“ssn” property of the JavaScript objects we want to store in the object store): var objectStore = db.createObjectStore(“customers”, {keyPath: “ssn”});</p></li>
+  <li><p><i>Lines 39 and 44</i>: create indexes on the “name” and “email” properties of JavaScript objects: objectStore.createIndex(“name”, “name”, {unique: false});</p></li>
+  <li><p><i>Lines 48-50</i>: populate the database: objectStore.add(…).</p></li>
 </ul>
 
 <blockquote>
-<p>Note that we did not create any transaction, as
-the onupgradeneeded callback on a create database request is always in a
-default transaction that cannot overlap with another transaction at the
-same time.</p>
+<p>Note that we did not create any transaction, as the onupgradeneeded callback on a create database request is always in a default transaction that cannot overlap with another transaction at the same time.</p>
 </blockquote>
 
-<p>If we try to open a database version that exists, then
-the request.onsuccess callback is called. This is where we are going to
-work with data. The DOM event result attribute is the database itself,
-so it is wise to store it in a variable for later use: db=
-event.target.result;</p>
+<p>If we try to open a database version that exists, then the request.onsuccess callback is called. This is where we are going to work with data. The DOM event result attribute is the database itself, so it is wise to store it in a variable for later use: db=event.target.result;</p>
 
 <h4>Deleting a database</h4>
 
-<p>You can delete a database simply by running this command: </p>
+<p>You can delete a database simply by running this command:</p>
 <p>indexedDB.deleteDatabase(“databaseName”);</p>
-<p>A common practice, while learning how IndexedDB works, is to type
-this command in the devtool console. For example, we can delete the
-CustomerDB database used in all examples of this course section by
-opening one of the JsBin examples , then opening the devtool console,
-then executing indexedDB.deleteDatabase(“CustomerDB”); in the
-console:</p>
+<p>A common practice, while learning how IndexedDB works, is to type this command in the devtool console. For example, we can delete the
+CustomerDB database used in all examples of this course section by opening one of the JsBin examples , then opening the devtool console,
+then executing indexedDB.deleteDatabase(“CustomerDB”); in the console:</p>
 <!------------------------------------------------------------------------------------------------>
-<!--------------------- 195.  (348) ----------------------->
+<!--------------- 195. deleting indexed db, part 1 - open devtool console (348) ------------------>
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image195.jpeg?raw=true"
@@ -16935,44 +16848,22 @@ together will also be shown at the end of this section.</p>
 <p>So, about inserting data… Here this is what we did during the
 creation of the database.</p>
 <p>We used objectStore.add(…). This is a particular case because when we
-are creating the database,</p>
-<p>nobody can do the same operation at the same time. So we don’t need
-to protect the insertion</p>
-<p>of the data by a transaction. But usually, when you insert data, you
-need</p>
-<p>to create a transaction. This is what is done here: we create a
-transaction on the dataStore</p>
-<p>called “customers », and we are indicating that we are going to read
-data, and also write</p>
-<p>data. You need to have listeners -callbacks- in case there is an
-error during the creation</p>
-<p>of the transaction. Then, if everything went ok, and using this
-object store transaction,</p>
-<p>you will add data. The fact that we are using the transaction here,
-means that if somebody</p>
-<p>is trying to access the same data (at the same time), somebody will
-have to wait until</p>
-<p>the other one finished its operation. In case of success, you need to
-make callbacks,</p>
-<p>on the request this time - on the add request. We can display “ok,
-customer with the social</p>
+are creating the database, nobody can do the same operation at the same time. So we don’t need
+to protect the insertion of the data by a transaction. But usually, when you insert data, you
+need to create a transaction. This is what is done here: we create a transaction on the dataStore</p>
+<p>called “customers », and we are indicating that we are going to read data, and also write</p>
+<p>data. You need to have listeners -callbacks- in case there is an error during the creation</p>
+<p>of the transaction. Then, if everything went ok, and using this object store transaction,</p>
+<p>you will add data. The fact that we are using the transaction here, means that if somebody is trying to access the same data (at the same time), somebody will have to wait until <p>the other one finished its operation.</p>
+<p>In case of success, you need to make callbacks, on the request this time - on the add request. We can display “ok, customer with the social</p>
 <p>serial (security) number has been added”, or we display an error.</p>
-<p>Here, I shortened the error messages. In the course Web page the code
-is more complete.</p>
-<p>Here, the code is rather long… it takes 20 lines of code, but you
-shorten this by</p>
-<p>using the “.” operator and with chaining requests (operations). You
-create a transaction on the database,</p>
-<p>then you create the same transaction on the object store, and you
-add, with a request, a new customer.</p>
-<p>This is much more concise, much shorter, but you cannot spot</p>
-<p>with a lot of precision, the errors that can come. Is it an error
-during</p>
-<p>this operation? During the transaction? When you try to open the
-database in read / write</p>
-<p>mode? You don’t know!</p>
-<p>Deleting data is really similar. So, the only thing that changes is
-the name here,</p>
+<p>Here, I shortened the error messages. In the course Web page the code is more complete.</p>
+<p>Here, the code is rather long… it takes 20 lines of code, but you shorten this by using the “.” operator and with chaining requests (operations).</p>
+<p>You create a transaction on the database,</p> 
+<p>then you create the same transaction on the object store, and you add, with a request, a new customer.</p>
+<p>This is much more concise, much shorter, but you cannot spot with a lot of precision, the errors that can come. Is it an error
+during this operation? During the transaction? When you try to open the database in read / write mode? You don’t know!</p>
+<p>Deleting data is really similar. So, the only thing that changes is the name here,</p>
 <p>of the operation you do on the request transaction. So, if you do a
 “delete”, and specify the</p>
 <p>KeyPath of the data you want to delete, then it will delete the
@@ -17006,31 +16897,19 @@ the “current” object.</p>
 <p>So, if we’re getting a collection, then the current cursor.key, the
 current cursor.value.name,</p>
 <p>the current cursor.value.age, will be the values from the data you
-retrieved, and by calling</p>
-<p>cursor.continue(), you go to the next result. When the cursor is
-“null” then there is no</p>
-<p>more entries and you finish processing all your results.</p>
-<p>You can also use indexes. Instead of using the “get” method, you
-first indicate which</p>
-<p>index you are going to use for getting data, on the objectStore
-transaction you call a</p>
-<p>method called “index(…) », and you pass as a parameter the index
-name. Then, on the</p>
-<p>index itself, you do a “get(…)”. In that case it means “please, look
-for data whose</p>
-<p>name is equal to Bill, and the name is an index!“. In that case, in
-the callback, the</p>
-<p>event.target.result is the resulting data you’ve just looked for.</p>
+retrieved, and by calling cursor.continue(), you go to the next result.</p>
+<p>When the cursor is “null” then there is no more entries and you finish processing all your results.</p>
+<p>You can also use indexes. Instead of using the “get” method, you first indicate which index you are going 
+to use for getting data, on the objectStore transaction you call a method called “index(…) », 
+and you pass as a parameter the index name.</p>
+<p>Then, on the index itself, you do a “get(…)”. In that case it means “please, look
+for data whose name is equal to Bill, and the name is an index!“. In that case, in
+the callback, the event.target.result is the resulting data you’ve just looked for.</p>
 <p>You can also look for more than one result. In that case, you do just
-“index.openCursor().onsuccess”…</p>
-<p>instead of “index.onsuccess” and you will get a collection of data.
-The cursor will</p>
-<p>point to the current data (in the collection). Then you iterate using
-cursor.continue(),</p>
-<p>on the collection of results, exactly the same way we explained
-earlier with the previous</p>
-<p>case when we got multiple results, this time it wasn’t using an
-index.</p>
+“index.openCursor().onsuccess”… instead of “index.onsuccess” and you will get a collection of data.</p>
+<p>The cursor will point to the current data (in the collection). Then you iterate using cursor.continue(),</p>
+<p>on the collection of results, exactly the same way we explained earlier with the previous
+case when we got multiple results, this time it wasn’t using an index.</p>
 
 <h4>Example #1: basic steps</h4>
 
