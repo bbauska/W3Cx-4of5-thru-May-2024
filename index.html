@@ -62,8 +62,8 @@
 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 <!-- padding: 30px 30px 2500px -->
 <div style="background-color:black;color:white;padding:30px">Scroll Down</div>
-<div style="background-color:lightgrey;padding:30px 30px 750px">
-</div>
+<div style="background-color:lightgrey;padding:30px 30px 750px"></div>
+
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 <!--++++++++++ script function: scrollFunction() ++++++++-->
 <!--+ <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang=""> +-->
@@ -99,21 +99,14 @@ function topFunction() {
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 <!--+++++++++++++++++++++++++++++ index.html of W3Cx-4of5-HTML5.2x +++++++++++++++++++++++++++++-->
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<div style="text-align:center;">
-
-<h2>W3Cx Front-End Web Developer</h2>
-
-</div>
-<br/>
+<h2 style="text-align:center">W3Cx Front-End Web Developer</h2>
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 <!--+++++++++++++++++++++++++++++++++++++ w3cx logo (01) +++++++++++++++++++++++++++++++++++++++-->
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<div style="text-align:center;">
 <img class="displayed"
   src="./images/w3cx-logo.jpg?raw=true"
   alt="W3Cx logo."
-  style="width:15%;" />
-</div>
+  style="width:15%;text-align:center;" />
 
 <h3 style="text-align:center">W3Cx-4of5-HTML5.2x - Apps and Games</h3>
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
@@ -16518,6 +16511,7 @@ href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array
 href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/RegExp" target="_blank" rel="noopener noreferrer">regexp</a>, <a
 href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/undefined" target="_blank" rel="noopener noreferrer">undefined</a>,
 and null.</p>
+
 <p>When an object or an array is stored, the properties and values in
 that object or array can also be anything that is a valid value.</p>
 <p>Blobs and files can be stored, (supported by all major browsers, IE
@@ -16573,18 +16567,10 @@ about:</b></p>
 <p>Additional information is available on these Web sites. Take a look
 at these!</p>
 <ul>
-<li><p>MDN’s documentation on “<a
-href="https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Using_IndexedDB" target="_blank" rel="noopener noreferrer">Using
-IndexedDB</a>”</p></li>
-<li><p><a
-href="http://robertnyman.com/2012/03/06/storing-images-and-files-in-indexeddb/" target="_blank" rel="noopener noreferrer">Storing
-images and files in IndexedDB</a></p></li>
-<li><p><a
-href="https://developers.google.com/web/ilt/pwa/working-with-indexeddb" target="_blank" rel="noopener noreferrer">Working
-with IndexedDB</a></p></li>
-<li><p><a
-href="https://stackoverflow.com/questions/9846013/how-to-view-indexeddb-content-in-firefox" target="_blank" rel="noopener noreferrer">How
-to view IndexedDB content in Firefox</a></p></li>
+  <li><p>MDN’s documentation on “<a href="https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Using_IndexedDB" target="_blank" rel="noopener noreferrer">Using IndexedDB</a></p></li>
+  <li><p><a href="http://robertnyman.com/2012/03/06/storing-images-and-files-in-indexeddb/" target="_blank" rel="noopener noreferrer">Storing images and files in IndexedDB</a></p></li>
+  <li><p><a href="https://developers.google.com/web/ilt/pwa/working-with-indexeddb" target="_blank" rel="noopener noreferrer">Working with IndexedDB</a></p></li>
+  <li><p><a href="https://stackoverflow.com/questions/9846013/how-to-view-indexeddb-content-in-firefox" target="_blank" rel="noopener noreferrer">How to view IndexedDB content in Firefox</a></p></li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch3-6-5">3.6.5 Creating and deleting a database</h3>
@@ -16645,18 +16631,10 @@ customers), and I can see here the indexes. I can open also the objects.</p>
 <h4>Creating a database</h4>
 
 <p><a href="https://jsbin.com/govuci" target="_blank" rel="noopener noreferrer">Our online example at
-JSBin</a> shows how to create and populate an object store named
-“CustomerDB”. This example should work on both mobile and desktop
-versions of all major post-2012 browsers.</p>
-<p>We suggest that you follow what is happening using Google
-Chrome’s developer tools. Other browsers offer equivalent means for
-debugging Web applications that use IndexedDB.</p>
-<p>With Chrome, please open the JSBin example and activate the Developer
-tool console (F12 or cmd-alt-i). Open the JavaScript and HTML tabs on
-JSBin.</p>
-<p>Then, click the “Create CustomerDB” button in the HTML user interface
-of the example: it will call the createDB() JavaScript function
-that:</p>
+JSBin</a> shows how to create and populate an object store named “CustomerDB”. This example should work on both mobile and desktop versions of all major post-2012 browsers.</p>
+<p>We suggest that you follow what is happening using Google Chrome’s developer tools. Other browsers offer equivalent means for debugging Web applications that use IndexedDB.</p>
+<p>With Chrome, please open the JSBin example and activate the Developer tool console (F12 or cmd-alt-i). Open the JavaScript and HTML tabs on JSBin.</p>
+<p>Then, click the “Create CustomerDB” button in the HTML user interface of the example: it will call the createDB() JavaScript function that:</p>
 
 <ol type="1">
   <li><p>creates a new IndexedDB database and an object store in it (“customersDB”), and</p></li>
@@ -16768,7 +16746,7 @@ will automatically be rounded to “1”.</p>
 59.      db = event.target.result;
 60.   };
 61. } // end of function createDatabase
-</code</pre>
+</code></pre>
 
 </details>
 
@@ -16802,114 +16780,100 @@ then executing indexedDB.deleteDatabase(“CustomerDB”); in the console:</p>
 <img class="displayed"
   src="./images/image195.jpeg?raw=true"
   alt="Deleting indexed DB part 1, open the devtool console."
-  style="width:65%;" />
+  style="width:45%;" />
 
-<p><img src="./images/image196.jpeg" style="width:6.5in;height:3.34097in"
-alt="Run the command." /></p>
-<p><img src="./images/image197.jpeg" style="width:6.5in;height:1.41319in"
-alt="Execute the command." /></p>
-<p><img src="./images/image198.jpeg" style="width:6.5in;height:2.33264in"
-alt="Refresh IndexedDB display of objectStores." /></p>
-<p><img src="./images/image199.jpeg" style="width:6.5in;height:1.84375in"
-alt="Final result: the objectStore has been deleted." /></p>
+<img class="displayed"
+  src="./images/image196.jpeg"
+  style="width:6.5in;height:3.34097in"
+  alt="Run the command." />
+<img class="displayed"
+  src="./images/image197.jpeg" 
+  style="width:6.5in;height:1.41319in"
+  alt="Execute the command." />
+<img class="displayed"
+  src="./images/image198.jpeg"
+  style="width:6.5in;height:2.33264in"
+  alt="Refresh IndexedDB display of objectStores." />
+<img class="displayed"
+  src="./images/image199.jpeg"
+  style="width:6.5in;height:1.84375in"
+  alt="Final result: the objectStore has been deleted." />
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch3-6-6">3.6.6 Working with data</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>Explicit use of a transaction is necessary:</p>
+
 <blockquote>
-<p><b>All operations in the database should occur within a
-transaction!</b></p>
+<p><b>All operations in the database should occur within a transaction!</b></p>
 </blockquote>
+
 <p>While the creation of the database occurred in a transaction that ran
 “under the hood” without explicit use of the “transaction”
-keyword, <b>for adding/removing/updating/retrieving data, explicit use
+keyword, for adding/removing/updating/retrieving data, explicit use
 of a transaction is required.</b></p>
+
 <p>We generate a transaction object from the database, indicate with
 which object store the transaction will be associated, and specify an
-access mode .</p>
+access mode.</p>
+
 <p>Source code example for creating a transaction associated with the
 object store named “customers”:</p>
-<pre><code>var transaction = db.transaction([&quot;customers&quot;], &quot;readwrite&quot;);
-  //or &quot;read&quot;...</code></pre>
+
+<pre><code>
+var transaction = db.transaction([&quot;customers&quot;], &quot;readwrite&quot;);
+  //or &quot;read&quot;...
+</code></pre>
+
 <p>Transactions, when created, must have a mode set that is
 either readonly, readwrite or versionchange (this last mode is only for
 creating a new database or for modifying its schemas: i.e. changing the
 primary key or the indexes).</p>
+
 <blockquote>
-<p>When you can, use readonly mode. Concurrent read transactions will
-become possible.</p>
+When you can, use readonly mode. Concurrent read transactions will become possible.
 </blockquote>
+
 <p>In the following pages, we will explain how to insert, search,
 remove, and update data. A final example that merges all examples
 together will also be shown at the end of this section.</p>
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch3-6-7">3.6.7 Inserting data</h3>
 <!------------------------------------------------------------------------------------------------>
-<p>So, about inserting data… Here this is what we did during the
-creation of the database.</p>
-<p>We used objectStore.add(…). This is a particular case because when we
-are creating the database, nobody can do the same operation at the same time. So we don’t need
-to protect the insertion of the data by a transaction. But usually, when you insert data, you
-need to create a transaction. This is what is done here: we create a transaction on the dataStore</p>
-<p>called “customers », and we are indicating that we are going to read data, and also write</p>
-<p>data. You need to have listeners -callbacks- in case there is an error during the creation</p>
-<p>of the transaction. Then, if everything went ok, and using this object store transaction,</p>
-<p>you will add data. The fact that we are using the transaction here, means that if somebody is trying to access the same data (at the same time), somebody will have to wait until <p>the other one finished its operation.</p>
-<p>In case of success, you need to make callbacks, on the request this time - on the add request. We can display “ok, customer with the social</p>
-<p>serial (security) number has been added”, or we display an error.</p>
+<p>So, about inserting data… Here this is what we did during the creation of the database.</p>
+<p>We used objectStore.add(…). This is a particular case because when we are creating the database, nobody can do the same operation at the same time. So we don’t need to protect the insertion of the data by a transaction. But usually, when you insert data, you need to create a transaction. This is what is done here: we create a transaction on the dataStore called “customers », and we are indicating that we are going to read data, and also write data.</p>
+<p>You need to have listeners -callbacks- in case there is an error during the creation of the transaction.</p>
+<p>Then, if everything went ok, and using this object store transaction, you will add data.</p>
+<p>The fact that we are using the transaction here, means that if somebody is trying to access the same data (at the same time), somebody will have to wait until the other one finished its operation.</p>
+<p>In case of success, you need to make callbacks, on the request this time - on the add request. We can display “ok, customer with the social
+serial (security) number has been added”, or we display an error.</p>
 <p>Here, I shortened the error messages. In the course Web page the code is more complete.</p>
 <p>Here, the code is rather long… it takes 20 lines of code, but you shorten this by using the “.” operator and with chaining requests (operations).</p>
-<p>You create a transaction on the database,</p> 
-<p>then you create the same transaction on the object store, and you add, with a request, a new customer.</p>
-<p>This is much more concise, much shorter, but you cannot spot with a lot of precision, the errors that can come. Is it an error
-during this operation? During the transaction? When you try to open the database in read / write mode? You don’t know!</p>
-<p>Deleting data is really similar. So, the only thing that changes is the name here,</p>
-<p>of the operation you do on the request transaction. So, if you do a
-“delete”, and specify the</p>
-<p>KeyPath of the data you want to delete, then it will delete the
-object with social serial</p>
-<p>(security) number 444., blah blah blah…</p>
-<p>For modifying data it’s the same thing: you use the “put” method
-on</p>
-<p>the transaction, but this time you need to indicate an object -a
-JavaScript object- whose</p>
-<p>social security number -whose KeyPath- is valid: if this object
-exists in the database</p>
-<p>(datastore), we will update the new age for this customer.</p>
+<p>You create a transaction on the database, then you create the same transaction on the object store, and you add, with a request, a new customer.</p>
+<p>This is much more concise, much shorter, but you cannot spot with a lot of precision, the errors that can come.</p>
+<p>Is it an error during this operation? During the transaction? When you try to open the database in read / write mode? You don’t know!</p>
+<p>Deleting data is really similar. So, the only thing that changes is the name here,of the operation you do on the request transaction.</p>
+<p>So, if you do a “delete”, and specify the KeyPath of the data you want to delete, then it will delete the object with social serial
+(security) number 444., blah blah blah…</p>
+<p>For modifying data it’s the same thing: you use the “put” method 
+on the transaction, but this time you need to indicate an object -a
+JavaScript object- whose social security number -whose KeyPath- is valid: if this object exists in the database (datastore), we will update the new age for this customer.</p>
 <p>Looking for data: you can look for a given data using “get” on the
-transaction. In the</p>
-<p>request, you specify the KeyPath… and in case of success the result
-(the event.target.result)</p>
-<p>that is passed to the callback, to the “onsuccess” callback, will be
-the complete object whose key (KeyPath) is 1234 blah blah blah.</p>
-<p>Getting more than one piece of data will be performed using a concept
-called “cursors”.</p>
-<p>If we are looking for more than one result… in this example, we are
-looking for multiple</p>
-<p>results, then instead of having an “onsuccess” callback, you’ve got
-an objectStore.openCursor().onsuccess</p>
-<p>And in that case, what you’ve got as a result is a “cursor”. A cursor
-is like</p>
-<p>a pointer on a collection of results, and by calling
-cursor.continue(), you will go</p>
-<p>from one result to the next one. And the cursor itself is the object,
-the “current” object.</p>
-<p>So, if we’re getting a collection, then the current cursor.key, the
-current cursor.value.name,</p>
-<p>the current cursor.value.age, will be the values from the data you
-retrieved, and by calling cursor.continue(), you go to the next result.</p>
+transaction.</p>
+<p>In the request, you specify the KeyPath… and in case of success the result (the event.target.result) that is passed to the callback, to the “onsuccess” callback, will be the complete object whose key (KeyPath) is 1234 blah blah blah.</p>
+<p>Getting more than one piece of data will be performed using a concept called “cursors”.</p>
+<p>If we are looking for more than one result… in this example, we are looking for multiple</p>
+<p>results, then instead of having an “onsuccess” callback, you’ve got an objectStore.openCursor().onsuccess</p>
+<p>And in that case, what you’ve got as a result is a “cursor”. A cursor is like</p>
+<p>a pointer on a collection of results, and by calling cursor.continue(), you will go</p>
+<p>from one result to the next one. And the cursor itself is the object, the “current” object.</p>
+<p>So, if we’re getting a collection, then the current cursor.key, the current cursor.value.name,</p>
+<p>the current cursor.value.age, will be the values from the data you retrieved, and by calling cursor.continue(), you go to the next result.</p>
 <p>When the cursor is “null” then there is no more entries and you finish processing all your results.</p>
-<p>You can also use indexes. Instead of using the “get” method, you first indicate which index you are going 
-to use for getting data, on the objectStore transaction you call a method called “index(…) », 
-and you pass as a parameter the index name.</p>
-<p>Then, on the index itself, you do a “get(…)”. In that case it means “please, look
-for data whose name is equal to Bill, and the name is an index!“. In that case, in
-the callback, the event.target.result is the resulting data you’ve just looked for.</p>
-<p>You can also look for more than one result. In that case, you do just
-“index.openCursor().onsuccess”… instead of “index.onsuccess” and you will get a collection of data.</p>
+<p>You can also use indexes. Instead of using the “get” method, you first indicate which index you are going to use for getting data, on the objectStore transaction you call a method called “index(…) », and you pass as a parameter the index name.</p>
+<p>Then, on the index itself, you do a “get(…)”. In that case it means “please, look for data whose name is equal to Bill, and the name is an index!“. In that case, in the callback, the event.target.result is the resulting data you’ve just looked for.</p>
+<p>You can also look for more than one result. In that case, you do just “index.openCursor().onsuccess”… instead of “index.onsuccess” and you will get a collection of data.</p>
 <p>The cursor will point to the current data (in the collection). Then you iterate using cursor.continue(),</p>
-<p>on the collection of results, exactly the same way we explained earlier with the previous
-case when we got multiple results, this time it wasn’t using an index.</p>
+<p>on the collection of results, exactly the same way we explained earlier with the previous case when we got multiple results, this time it wasn’t using an index.</p>
 
 <h4>Example #1: basic steps</h4>
 
