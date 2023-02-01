@@ -16564,8 +16564,7 @@ about:</b></p>
 
 <h4>External resources</h4>
 
-<p>Additional information is available on these Web sites. Take a look
-at these!</p>
+<p>Additional information is available on these Web sites. Take a look at these!</p>
 <ul>
   <li><p>MDN’s documentation on “<a href="https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Using_IndexedDB" target="_blank" rel="noopener noreferrer">Using IndexedDB</a></p></li>
   <li><p><a href="http://robertnyman.com/2012/03/06/storing-images-and-files-in-indexeddb/" target="_blank" rel="noopener noreferrer">Storing images and files in IndexedDB</a></p></li>
@@ -16581,7 +16580,7 @@ at these!</p>
 <p>You specify the name of the database and the version. Each database is versioned… and if the “CustomerDB” database -from this example- exists with a version “2”, it will just open it.</p>
 <p>If it exists, but with a previous, lower version, it will be “upgraded”.</p>
 <p>This is why we need to define, on the object that is returned by open(…), some event listeners.</p>
-<p>The “onsuccess” listener is called when the database has been opened. <br>
+<p>The “onsuccess” listener is called when the database has been opened.<br>
 “onerror” (listener) if there is an error, and “onupgradeneeded” (listener) will be called only if we are creating a new version of the database.</p>
 <p>It’s the case when the database does not exist.</p>
 <p>So the database has a version, and the first version is “0”. You can
@@ -16659,23 +16658,15 @@ JSBin</a> shows how to create and populate an object store named “CustomerDB�
   style="width:6.5in;height:0.825in"
   alt="Message displayed in console when the database is created the first time you run the example." />
 
-<p>This message comes from the
-JavaScript request.onupgradeneeded callback. Indeed, the first time we
-open the database we ask for a specific version (in this example:
-version 2) with:</p>
+<p>This message comes from the JavaScript request.onupgradeneeded callback. Indeed, the first time we open the database we ask for a specific version (in this example: version 2) with:</p>
 
 <pre><code>
 1.  var request = indexedDB.open(dbName, 2);
 </code></pre>
 
-<p>…and if there is no version “2” of the database, then we enter
-the onupgradeneeded callback where we actually create the database.</p>
-<p>You can try to click again on the button “CreateCustomerDatabase”, if
-database version “2” exists, this time the request.onsuccess callback
-will be called. This is where we will add/remove/search data (you should
-see a message on the console).</p>
-<p>Notice that the version number cannot be a float: “1.2” and “1.4”
-will automatically be rounded to “1”.</p>
+<p>…and if there is no version “2” of the database, then we enter the onupgradeneeded callback where we actually create the database.</p>
+<p>You can try to click again on the button “CreateCustomerDatabase”, if database version “2” exists, this time the request.onsuccess callback will be called. This is where we will add/remove/search data (you should see a message on the console).</p>
+<p>Notice that the version number cannot be a float: “1.2” and “1.4” will automatically be rounded to “1”.</p>
 
 <h4>JavaScript code from the example:</h4>
 
@@ -16755,10 +16746,10 @@ will automatically be rounded to “1”.</p>
 <p>All the “creation” process is done in the onupgradeneeded callback (<i>lines 26-50</i>):</p>
 
 <ul>
-  <li><p><i>Line 30</i>: get the database created in the result of the dom event: db = event.target.result;</p></li>
-  <li><p><i>Line 35</i>: create an object store named “customers” with the primary key being the social security number (“ssn” property of the JavaScript objects we want to store in the object store): var objectStore = db.createObjectStore(“customers”, {keyPath: “ssn”});</p></li>
-  <li><p><i>Lines 39 and 44</i>: create indexes on the “name” and “email” properties of JavaScript objects: objectStore.createIndex(“name”, “name”, {unique: false});</p></li>
-  <li><p><i>Lines 48-50</i>: populate the database: objectStore.add(…).</p></li>
+  <li><i>Line 30</i>: get the database created in the result of the dom event: db = event.target.result;</li>
+  <li><i>Line 35</i>: create an object store named “customers” with the primary key being the social security number (“ssn” property of the JavaScript objects we want to store in the object store): var objectStore = db.createObjectStore(“customers”, {keyPath: “ssn”});</li>
+  <li><i>Lines 39 and 44</i>: create indexes on the “name” and “email” properties of JavaScript objects: objectStore.createIndex(“name”, “name”, {unique: false});</li>
+  <li><i>Lines 48-50</i>: populate the database: objectStore.add(…).</li>
 </ul>
 
 <blockquote>
