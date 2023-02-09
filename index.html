@@ -3277,16 +3277,9 @@ function logCue() {
 <!------------------------------------------------------------------------------------------------>
 <p>Example #3: adding buttons for choosing the subtitle/caption track</p>
 
-<p>You might have noticed that with some browsers, before 2018, the
-standard implementation of the video element did not let the user choose
-the subtitle language. Now, recent browsers offers a menu to choose the
-track to display. </p>
-<p>However, before it was available, it was easy to implement this
-feature using the Track API.</p>
-<p><a href="https://jsbin.com/balowuq/1/edit?html,css,js,output" target="_blank" rel="noopener noreferrer">Here is
-a simple example at JSBin</a>: we added two buttons below the video to
-enable/disable subtitles/captions and let you choose which track you
-prefer.</p>
+<p>You might have noticed that with some browsers, before 2018, the standard implementation of the video element did not let the user choose the subtitle language. Now, recent browsers offers a menu to choose the track to display.</p>
+<p>However, before it was available, it was easy to implement this feature using the Track API.</p>
+<p><a href="https://jsbin.com/balowuq/1/edit?html,css,js,output" target="_blank" rel="noopener noreferrer">Here is a simple example at JSBin</a>: we added two buttons below the video to enable/disable subtitles/captions and let you choose which track you prefer.</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------- 34. choose track/language (67) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -3427,10 +3420,8 @@ prefer.</p>
   alt="Simple chapter navigation."
   style="width:50%;" />
 
-<p>We can use WebVTT files to define chapters. The syntax is exactly the
-same as for subtitles/caption .vtt files. The only difference is in the
-declaration of the track. Here is how we declared a chapter track in one
-of the previous examples (in bold in the example below):</p>
+<p>We can use WebVTT files to define chapters. The syntax is exactly the same as for subtitles/caption .vtt files. The only difference is in the
+declaration of the track. Here is how we declared a chapter track in one of the previous examples (in bold in the example below):</p>
 
 <h4>HTML code:</h4>
 
@@ -3461,12 +3452,9 @@ of the previous examples (in bold in the example below):</p>
 
 </details>
 
-<p>If we try this code in an HTML document, nothing special happens. No
-magic menu, no extra button!</p>
-<p>Currently, no browser takes chapter tracks into account. You could
-use one of the enhanced video players presented during the HTML5 Part 1
-course, but as you will see in this lesson: making your own chapter
-navigation menu is not complicated.</p>
+<p>If we try this code in an HTML document, nothing special happens. No magic menu, no extra button!</p>
+<p>Currently, no browser takes chapter tracks into account. You could use one of the enhanced video players presented during the HTML5 Part 1 
+course, but as you will see in this lesson: making your own chapter navigation menu is not complicated.</p>
 <p>Let’s start by examining the sample .vtt file:</p>
 
 <details>
@@ -3506,16 +3494,8 @@ navigation menu is not complicated.</p>
 
 </details>
 
-<p>There are 7 cues (one for each chapter). Each cue id is the word
-“chapter-” followed by the chapter number, then we have the start and
-end time of the cue/chapter, and the cue content. In this case: the
-description of the chapter (“Introduction”, “Watch out!”, “Let’s go”,
-etc…).</p>
-<p>Hmm… let’s try to open this chapter track with <a
-href="https://jsbin.com/zeqoleq/1/edit?html,css,js,output">the example
-we wrote in a previous lesson - the one that displayed the clickable
-transcript for subtitles/captions on the right of the video</a>. We need
-to modify it a little bit:</p>
+<p>There are 7 cues (one for each chapter). Each cue id is the word “chapter-” followed by the chapter number, then we have the start and end time of the cue/chapter, and the cue content. In this case: the description of the chapter (“Introduction”, “Watch out!”, “Let’s go”, etc…).</p>
+<p>Hmm… let’s try to open this chapter track with <a href="https://jsbin.com/zeqoleq/1/edit?html,css,js,output">the example we wrote in a previous lesson - the one that displayed the clickable transcript for subtitles/captions on the right of the video</a>. We need to modify it a little bit:</p>
 
 <ol type="1">
   <li>We add a “show English chapters” button with a click event listener similar to this:</li>
@@ -3546,12 +3526,8 @@ function loadTranscript(lang, kind) {
 }
 </code></pre>
 
-<p>Simple approach: chapters as clickable text on the right of the
-video.</p>
-<p><a href="https://jsbin.com/rifekik/edit?html,css,js" target="_blank" rel="noopener noreferrer">Try it on
-JSBin</a>; this version includes the modifications we presented earlier
-- nothing more. Notice that we kept the existing buttons to display a
-clickable transcript:</p>
+<p>Simple approach: chapters as clickable text on the right of the video.</p>
+<p><a href="https://jsbin.com/rifekik/edit?html,css,js" target="_blank" rel="noopener noreferrer">Try it on JSBin</a>; this version includes the modifications we presented earlier - nothing more. Notice that we kept the existing buttons to display a clickable transcript:</p>
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 35. simple chapter navigation (72) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -3560,11 +3536,8 @@ clickable transcript:</p>
   alt="Again, Simple chapter navigation."
   style="width:55%;" />
 
-<p>Look at the JavaScript and HTML tab of the JSBin example to see the
-source code. It’s the same as in the clickable transcript example,
-except for the small changes we explained earlier.</p>
-<p>Chapter navigation, illustrated in the video player below, is fairly
-popular.</p>
+<p>Look at the JavaScript and HTML tab of the JSBin example to see the source code. It’s the same as in the clickable transcript example, except for the small changes we explained earlier.</p>
+<p>Chapter navigation, illustrated in the video player below, is fairly popular.</p>
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 36. simple chapter navigation (72) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -3573,26 +3546,17 @@ popular.</p>
   alt="Simple chapter navigation"
   style="width:65%;" />
 
-<p>In addition to the clickable chapter list, this one displays an
-enhanced progress bar created using a canvas. The small squares are
-drawn corresponding to the chapter cues’ start and end times. You could
-modify the code provided, in order to add such an enhanced progress
-indicator.</p>
-<p>However, we will see how we can do better by using JSON objects as
-cue contents. This will be the topic of the next two lessons!</p>
+<p>In addition to the clickable chapter list, this one displays an enhanced progress bar created using a canvas. The small squares are drawn corresponding to the chapter cues’ start and end times. You could modify the code provided, in order to add such an enhanced progress indicator.</p>
+<p>However, we will see how we can do better by using JSON objects as cue contents. This will be the topic of the next two lessons!</p>
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch1-3-5">1.3.5 With Thumbnails, Using JSON Cues</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>Example #5: create a chapter menu with image thumbnails.</p>
-<p>Instead of using text (optionally using HTML for styling, multi
-lines, etc.), it is also possible to use JSON objects as cue values that
-can be manipulated from JavaScript. JSON means “JavaScript Object
-Notation”. It’s an open standard for describing JavaScript objects as
+<p>Instead of using text (optionally using HTML for styling, multi lines, etc.), it is also possible to use JSON objects as cue values that
+can be manipulated from JavaScript. JSON means “JavaScript Object Notation”. It’s an open standard for describing JavaScript objects as
 plain text.</p>
-<p>Here is an example cue from a WebVTT file encoded as JSON instead of
-plain text. JSON is useful for describing “structured data”, and
-processing such data from JavaScript is easier than parsing plain
-text.</p>
+<p>Here is an example cue from a WebVTT file encoded as JSON instead of plain text. JSON is useful for describing “structured data”, and
+processing such data from JavaScript is easier than parsing plain text.</p>
 
 <details>
   <summary>WebVTT code extract!</summary>
@@ -3612,10 +3576,8 @@ text.</p>
 
 </details>
 
-<p>This JSON object is a JavaScript object encoded as a text string. If
-we listen for cue events or if we read a WebVTT file as done in previous
-examples, we can extract this text content using the  cue.text property.
-For example:</p>
+<p>This JSON object is a JavaScript object encoded as a text string. If we listen for cue events or if we read a WebVTT file as done in previous
+examples, we can extract this text content using the  cue.text property. For example:</p>
 
 <details>
   <summary>JS code extract!</summary>
@@ -3639,13 +3601,10 @@ For example:</p>
 
 </details>
 
-<p>This is a powerful way of embedding metadata, especially when used in
-conjunction with listening for cue and track events.</p>
-<p>Improved approach: make a nicer chapter menu by embedding a richer
-description of chapter markers</p>
+<p>This is a powerful way of embedding metadata, especially when used in conjunction with listening for cue and track events.</p>
+<p>Improved approach: make a nicer chapter menu by embedding a richer description of chapter markers</p>
 <p>Earlier we saw <a
-href="https://jsbin.com/jiyodit/edit?html,css,js,output">an example that
-could display chapter markers as clickable text on the right of a
+href="https://jsbin.com/jiyodit/edit?html,css,js,output">an example that could display chapter markers as clickable text on the right of a
 video</a>.</p>
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 35. simple chapter navigation (74) ------------------------------->
@@ -3675,8 +3634,7 @@ video</a>.</p>
 
 </details>
 
-<p>We used this example to manually capture the images from the video
-that correspond to each of the seven chapters:</p>
+<p>We used this example to manually capture the images from the video that correspond to each of the seven chapters:</p>
 
 <ul>
   <li><p>We clicked on each chapter link on the right, then paused the video,</p></li>
@@ -3687,8 +3645,7 @@ that correspond to each of the seven chapters:</p>
 <p>(For advanced users: it’s possible to semi-automatize this process
 using the ffmepg command line tool, see for example;
 <a href="https://trac.ffmpeg.org/wiki/Create%20a%20thumbnail%20image%20every%20X%20seconds%20of%20the%20video" target="_blank" rel="noopener noreferrer">this</a> and <a href="https://stackoverflow.com/questions/8679390/ffmpeg-extracting-20-images-from-a-video-of-variable-length" target="_blank" rel="noopener noreferrer">that</a>).</p>
-<p>Here are the images which correspond to the seven chapters of the
-video from the previous example:</p>
+<p>Here are the images which correspond to the seven chapters of the video from the previous example:</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------- 37-43. seven thumbnail chapter images (75) --------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -11141,37 +11098,20 @@ result (step 4):</p>
   style="width:35%;" />
 
 <p>The above picture has been borrowed from <a href="https://sinepost.wordpress.com/2012/09/05/making-your-balls-bounce/" target="_blank" rel="noopener noreferrer">this interesting article about how to implement in C# pool like collision detection</a>.</p>
-<p>Of course, we will only compute these steps if the balls collide, and
-for that test we will have used the basic circle collision test outlined
+<p>Of course, we will only compute these steps if the balls collide, and for that test we will have used the basic circle collision test outlined
 earlier.</p>
-<p>To illustrate the algorithm, <a
-href="https://jsbin.com/vuqeti/6/edit" target="_blank" rel="noopener noreferrer">here is an example at JSBin that
-displays the different vectors in real time, with only two balls</a>.
-The math for the collision test have also been expanded in the source
-code to make computations clearer. Note that this is not for beginners:
-advanced math and physics are involved!</p>
+<p>To illustrate the algorithm, <a href="https://jsbin.com/vuqeti/6/edit" target="_blank" rel="noopener noreferrer">here is an example at JSBin that displays the different vectors in real time, with only two balls</a>. The math for the collision test have also been expanded in the source code to make computations clearer. Note that this is not for beginners: advanced math and physics are involved!</p>
 
 <h4>To go further… video game physics!</h4>
 
-<p>For the ones who are not afraid by some math and physics and would
-like to learn how to do collision detection in a more realistic way
-(using physics modeling), we recommend <a
-href="https://www.toptal.com/game/video-game-physics-part-i-an-introduction-to-rigid-body-dynamics" target="_blank" rel="noopener noreferrer">this
-tutorial, that is the first of a three-part series  about  video game
-physics</a>.</p>
+<p>For the ones who are not afraid by some math and physics and would like to learn how to do collision detection in a more realistic way
+(using physics modeling), we recommend <a href="https://www.toptal.com/game/video-game-physics-part-i-an-introduction-to-rigid-body-dynamics" target="_blank" rel="noopener noreferrer">this tutorial, that is the first of a three-part series about video game physics</a>.</p>
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch2-5-4">2.5.4 Adding collision detection to the game framework</h3>
 <!------------------------------------------------------------------------------------------------>
-<p>Our previous lesson enabled us to animate balls in the game framework
-(<a href="https://jsbin.com/tehuve/edit" target="_blank" rel="noopener noreferrer">this example</a>).</p>
-<p>Now we can add the functionality presented in the last lesson, to
-perform collision tests between a circle and a rectangle. It will be
-called 60 times/s when we update the position of the balls. If there is
-a collision between a ball (circle) and the monster (rectangle), we set
-the ball color to red.</p>
-<p><a href="https://jsbin.com/bohebe/edit?js,output" target="_blank" rel="noopener noreferrer">Try the example at
-JsBin!</a></p>
-
+<p>Our previous lesson enabled us to animate balls in the game framework (<a href="https://jsbin.com/tehuve/edit" target="_blank" rel="noopener noreferrer">this example</a>).</p>
+<p>Now we can add the functionality presented in the last lesson, to perform collision tests between a circle and a rectangle. It will be called 60 times/s when we update the position of the balls. If there is a collision between a ball (circle) and the monster (rectangle), we set the ball color to red.</p>
+<p><a href="https://jsbin.com/bohebe/edit?js,output" target="_blank" rel="noopener noreferrer">Try the example at JsBin!</a></p>
 <!------------------------------------------------------------------------------------------------>
 <!--------------------- 139. collision between balls and the monster (232) ----------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -19811,40 +19751,37 @@ locations of x and z axes shown as x<sub>0</sub> and z<sub>0</sub>.
   <li><p>Extract the angles from the event (use its properties: alpha, beta, gamma).</p></li>
   <li><p><a href="https://jsbin.com/limugat/edit" target="_blank" rel="noopener noreferrer">Here’s an example on JsBin</a>. Try it with  a smartphone, a tablet, or a device with an accelerometer: </p></li>
 </ol>
-<p>(If using a mobile device,  <a href="https://jsbin.com/limugat" target="_blank" rel="noopener noreferrer">open
-the page in standalone mode</a> (without the JsBin editor) )</p>
+
+<p>(If using a mobile device, <a href="https://jsbin.com/limugat" target="_blank" rel="noopener noreferrer">open the page in standalone mode</a> (without the JsBin editor) )</p>
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 248. device orientation api 2 (436) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image248.png?raw=true"
   alt="Device Orientation API 2."
-  style="width:65%;" />
+  style="width:35%;" />
 
-<p>The above screenshot came from an iPad laying immobile on a desk.
-Theoretically, all the angle values will be zero when the device is laid
-flat, providing it has not been moved since the page loaded. However,
-depending on the hardware, these values may change even if the device is
-stationary: a very sensitive sensor might report constantly changing
-values. This is why, in the example, we round the returned values
-with Math.round() at display time (see code).</p>
+<p>The above screenshot came from an iPad laying immobile on a desk. <br>
+Theoretically, all the angle values will be zero when the device is laid flat, providing it has not been moved since the page loaded.<br>
+However, depending on the hardware, these values may change even if the device is stationary: a very sensitive sensor might report constantly changing values.<br>
+This is why, in the example, we round the returned values with Math.round() at display time (see code).</p>
 
 <p>If we change the orientation of the device here are the results:</p>
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------------- 249. orientation api 3 (429) ---------------------------------->
+<!-------------------------------- 249. orientation api 3 (430) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image249.png?raw=true"
   alt="Orientation API 3."
-  style="width:65%;" />
+  style="width:45%;" />
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------------- 250. orientation api 1 (429) ---------------------------------->
+<!-------------------------------- 250. orientation api 1 (430) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image250.png?raw=true"
   alt="Orientation API 1."
-  style="width:65%;" />
+  style="width:45%;" />
 
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------------- 254. orientation api 2 (430) ---------------------------------->
@@ -20036,21 +19973,14 @@ desktop browser:</p>
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch4-4-4">4.4.4 The Device Motion API</h3>
 <!------------------------------------------------------------------------------------------------>
-<p>This section presents the Device Motion API which is used in a
-similar manner to the device orientation API discussed earlier.</p>
-<p>The deviceMotion API deals with <i>accelerations</i> instead
-of <i>orientation </i>only.</p>
+<p>This section presents the Device Motion API which is used in a similar manner to the device orientation API discussed earlier.</p>
+<p>The deviceMotion API deals with <i>accelerations</i> instead of <i>orientation </i>only.</p>
 <p>Use cases proposed by the specification are:</p>
+
 <ul>
-<li><p><b>Controlling a game</b>: a gaming Web application monitors the
-device’s orientation and interprets tilting in a certain direction as a
-means to control an on-screen sprite.</p></li>
-<li><p><b>Gesture recognition</b>: a Web application monitors the
-device’s acceleration and applies signal processing in order to
-recognize certain specific gestures. For example, using a shaking
-gesture to clear a web form.</p></li>
-<li><p><b>Mapping</b>: a mapping Web application uses the device’s
-orientation to correctly align the map with reality.</p></li>
+  <li><p><b>Controlling a game</b>: a gaming Web application monitors the device’s orientation and interprets tilting in a certain direction as a means to control an on-screen sprite.</p></li>
+  <li><p><b>Gesture recognition</b>: a Web application monitors the device’s acceleration and applies signal processing in order to recognize certain specific gestures. For example, using a shaking gesture to clear a web form.</p></li>
+  <li><p><b>Mapping</b>: a mapping Web application uses the device’s orientation to correctly align the map with reality.</p></li>
 </ul>
 
 <h4>Basic usage</h4>
@@ -20070,63 +20000,43 @@ orientation to correctly align the map with reality.</p></li>
 
 <h4>Basics about acceleration</h4>
 
-<p>The deviceMotion API is rather straightforward and is very similar to
-the orientation API except that it returns more than just
-the <i>rotation</i> information, it also
-returns <a href="https://en.wikipedia.org/wiki/Acceleration)information" target="_blank" rel="noopener noreferrer">acceleration</a>
-reflecting the device’s actual movement.</p>
+<p>The deviceMotion API is rather straightforward and is very similar to the orientation API except that it returns more than just the <i>rotation</i> information, it also returns <a href="https://en.wikipedia.org/wiki/Acceleration)information" target="_blank" rel="noopener noreferrer">acceleration</a> reflecting the device’s actual movement.</p>
+
 <p>The <i>acceleration</i> is in three parts:</p>
+
 <ol type="1">
   <li><p>along the X axis</p></li>
   <li><p>along the Y axis</p></li>
   <li><p>along the Z axis</p></li>
 </ol>
 
-<p>Each value is measured in <a
-href="https://en.wikipedia.org/wiki/Metre_per_second_per_second" target="_blank" rel="noopener noreferrer">meters
-per second squared</a> (m/s<sup>2</sup>) - multiply by 3.281 if you’d
-prefer an <i>approximation</i> in feet per second per second.</p>
-<p>The acceleration is returned by the API as an <i>acceleration
-event</i>. The two pertinent properties
-are: accelerationIncludingGravity and acceleration. The latter excludes
-the effects of gravity.</p>
-<p>Why are there two different values? Because some devices have the
-capability of excluding the effects
-of <a href="https://en.wikipedia.org/wiki/Gravity" target="_blank" rel="noopener noreferrer">gravity, eg if
-equipped with a gyroscope.
-Indeed <a href="https://en.wikipedia.org/wiki/Acceleration_of_gravity" target="_blank" rel="noopener noreferrer">there
-is acceleration due implicitly to gravity</a>, see also
-this: <a href="https://en.wikipedia.org/wiki/Acceleration_of_gravity#Earth.27s_gravity" target="_blank" rel="noopener noreferrer">Acceleration
-of Gravity on Earth</a>… </p>
-<p>If the device doesn’t have a gyroscope, the acceleration property
-will be returned as <i>null</i>. In this case, you have no choice but to
-use the accelerationIncludingGravity property. Note that all IOS
-devices, so far, are equipped with a gyroscope.</p>
-<p>The <i>device motion</i> <i>event</i> is a superset of the <i>device
-orientation event</i>; it returns <i>rotation</i> as well
-as <i>acceleration</i> information from the device. </p>
+<p>Each value is measured in <a href="https://en.wikipedia.org/wiki/Metre_per_second_per_second" target="_blank" rel="noopener noreferrer">meters
+per second squared</a> (m/s<sup>2</sup>) - multiply by 3.281 if you’d prefer an <i>approximation</i> in feet per second per second.</p>
+<p>The acceleration is returned by the API as an <i>acceleration event</i>. The two pertinent properties are: accelerationIncludingGravity and acceleration. The latter excludes the effects of gravity.</p>
+<p>Why are there two different values? Because some devices have the capability of excluding the effects of <a href="https://en.wikipedia.org/wiki/Gravity" target="_blank" rel="noopener noreferrer">gravity, eg if equipped with a gyroscope. Indeed <a href="https://en.wikipedia.org/wiki/Acceleration_of_gravity" target="_blank" rel="noopener noreferrer">there is acceleration due implicitly to gravity</a>, see also this: <a href="https://en.wikipedia.org/wiki/Acceleration_of_gravity#Earth.27s_gravity" target="_blank" rel="noopener noreferrer">Acceleration of Gravity on Earth</a>…</p>
+<p>If the device doesn’t have a gyroscope, the acceleration property will be returned as <i>null</i>. In this case, you have no choice but to
+use the accelerationIncludingGravity property. Note that all IOS devices, so far, are equipped with a gyroscope.</p>
+<p>The <i>device motion</i> <i>event</i> is a superset of the <i>device orientation event</i>; it returns <i>rotation</i> as well as <i>acceleration</i> information from the device.</p>
 
 <h4>Example of acceleration values</h4>
 
-<p>If a laptop is in its normal position with the screen facing up, the
-data returned would be <a href="https://developers.google.com/web/fundamentals/native-hardware/device-orientation/" target="_blank" rel="noopener noreferrer">(info taken from this [article]</a>):</p>
+<p>If a laptop is in its normal position with the screen facing up, the data returned would be <a href="https://developers.google.com/web/fundamentals/native-hardware/device-orientation/" target="_blank" rel="noopener noreferrer">(info taken from this [article]</a>):</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 258. acceleration values 1 (436) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image258.png?raw=true"
-  alt="Acceleration value 1."
-  style="width:65%;" />
+  alt="Acceleration values with screen facing up."
+  style="width:35%;" />
 
-<p>A mobile phone rotated along the x-axis so the screen is perpendicular
-to its normal position would return:</p>
+<p>A mobile phone rotated along the x-axis so the screen is perpendicular to its normal position would return:</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 259. acceleration values 2 (436) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image259.png?raw=true"
-  alt="Acceleration values 2."
-  style="width:65%;" />
+  alt="Acceleration values after rotated along x-axis so it is perpendicular to its normal position."
+  style="width:35%;" />
 
 <h4>Remember the coordinate system for a mobile phone:</h4>
 <!------------------------------------------------------------------------------------------------>
@@ -20142,20 +20052,16 @@ to its normal position would return:</p>
 <h4>The principles are the same as for the orientation API:</h4>
 
 <ol type="1">
-<li>Test if the API is supported by the browser,</li>
-<li>Add a listener for ‘devicemotion’ events,</li>
-<li>Get the acceleration values from the DOM event that has been passed
-to the listener,</li>
-<li>Process the data.</li>
+  <li>Test if the API is supported by the browser,</li>
+  <li>Add a listener for ‘devicemotion’ events,</li>
+  <li>Get the acceleration values from the DOM event that has been passed to the listener,</li>
+  <li>Process the data.</li>
 </ol>
 
 <h4>Common processing with acceleration values</h4>
 
-<p>Test the value of the acceleration.z property: If &gt; 0 then the
-device is facing up, otherwise it is facing down. This would be useful
-if you wanted to
-play <a href="https://en.wikipedia.org/wiki/Coin_flipping" target="_blank" rel="noopener noreferrer">heads or
-tails</a> with your phone ;-)</p>
+<p>Test the value of the acceleration.z property: If &gt; 0 then the device is facing up, otherwise it is facing down. This would be useful
+if you wanted to play <a href="https://en.wikipedia.org/wiki/Coin_flipping" target="_blank" rel="noopener noreferrer">heads or tails</a> with your phone ;-)</p>
 
 <pre><code>
 1.  // For example, if acceleration.z is &gt; 0 then the phone is facing up
@@ -20191,8 +20097,7 @@ the event.</p>
 
 </details>
 
-<p>Compute the vertical (direction of the sky) - this extract comes from
-a complete example further down this page…</p>
+<p>Compute the vertical (direction of the sky) - this extract comes from a complete example further down this page…</p>
 
 <pre><code>
 1.  ...
@@ -20207,8 +20112,7 @@ a complete example further down this page…</p>
 10. ctx.stroke();
 </code></pre>
 
-<p>Use acceleration values to move a ball on the screen of a tablet when
-the tablet is tilted front / back or left / right (complete example
+<p>Use acceleration values to move a ball on the screen of a tablet when the tablet is tilted front / back or left / right (complete example
 later on)…</p>
 
 <pre><code>
@@ -20224,8 +20128,7 @@ later on)…</p>
 
 <h4>Move the HTML5 logo</h4>
 
-<p><a href="https://jsbin.com/pasoboyucu/edit?html,js,output" target="_blank" rel="noopener noreferrer">Online
-example at JsBin</a>.</p>
+<p><a href="https://jsbin.com/pasoboyucu/edit?html,js,output" target="_blank" rel="noopener noreferrer">Online example at JsBin</a>.</p>
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 261. devicemotion api example (438) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
@@ -20317,13 +20220,8 @@ example at JsBin</a>.</p>
 
 <h4>Interesting example that uses jQuery mobile</h4>
 
-<p>This example shows how the X and Y acceleration values can be used
-for indicating the sky’s direction (vertical), and how the Z
-acceleration is, in fact, an indicator for the face up / face down
-orientation of the device.</p>
-<p>This example has been adapted and put on jsbin.com so that you can
-tweak
-it: <a href="https://jsbin.com/uyuqek/4/edit" target="_blank" rel="noopener noreferrer">https://jsbin.com/uyuqek/4/edit</a></p>
+<p>This example shows how the X and Y acceleration values can be used for indicating the sky’s direction (vertical), and how the Z acceleration is, in fact, an indicator for the face up / face down orientation of the device.</p>
+<p>This example has been adapted and put on jsbin.com so that you can tweak it: <a href="https://jsbin.com/uyuqek/4/edit" target="_blank" rel="noopener noreferrer">https://jsbin.com/uyuqek/4/edit</a></p>
 <!------------------------------------------------------------------------------------------------>
 <!--------------------------------- 262. devicemotion api (440) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -20419,10 +20317,9 @@ it: <a href="https://jsbin.com/uyuqek/4/edit" target="_blank" rel="noopener nor
 
 <h4>Move a ball on the screen</h4>
 
-<p><a href="https://jsbin.com/eyahuv/2/edit">Try this example at
-JsBin</a>. If using a mobile device, <a href="https://jsbin.com/eyahuv/2" target="_blank" rel="noopener noreferrer">use this URL instead</a>!</p>
+<p><a href="https://jsbin.com/eyahuv/2/edit">Try this example at JsBin</a>. If using a mobile device, <a href="https://jsbin.com/eyahuv/2" target="_blank" rel="noopener noreferrer">use this URL instead</a>!</p>
 <!------------------------------------------------------------------------------------------------>
-<!---------------------- 263. move a ball on the screen - last image (442) ----------------------->
+<!---------------------- 263. move a ball on the screen - last image (440) ----------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image263.png?raw=true"
@@ -20430,6 +20327,8 @@ JsBin</a>. If using a mobile device, <a href="https://jsbin.com/eyahuv/2" targe
   style="width:35%;" />
 
 <!---   style="width:3in;height:1.99379in" --->
+
+<h4>Code from the example:</h4>
 
 <details>
   <summary>Device orientation source code!</summary>
@@ -20610,16 +20509,9 @@ spec: 
   game</a> developed by students from the previous run is a perfect candidate to be controlled using the APIs seen in this course!! I would start with the orientation API and try to move the bunny left/right…</li>
   <li>Using the game framework, try to control the monster using the orientation API, so that it avoids the balls - see the last example from Module 2 of the course!</li>
 </ul>
-<!------------------------------------------------------------------------------------------------>
-<!--------------------- xx.  (##) ----------------------->
-<!------------------------------------------------------------------------------------------------>
-<!---
-<img class="displayed"
-  src="./images/image0.jpeg?raw=true"
-  alt="Image of the bla bla goes here."
-  style="width:xx%;" />
---->
+
 <h5>the end…</h5>
+
 <br>
 <h6>Last Updated: 2-8-2023 1:14pm</h6>
 <!---
