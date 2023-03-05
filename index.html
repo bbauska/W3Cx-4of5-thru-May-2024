@@ -11495,8 +11495,7 @@ small robot in the previous example.</p>
 8.                                   nbFramesPerPosture,
 9.                                   spriteWidth, spriteHeight) {
 10.     // number of sprites per row in the spritesheet
-11.  
-   &gt;   var nbSpritesPerRow = Math.floor(spritesheet.width / spriteWidth);
+11. &gt;   var nbSpritesPerRow = Math.floor(spritesheet.width / spriteWidth);
 12. 
 13.     // Extract each sprite
 14.     var startIndex = (postureToExtract -1) * nbFramesPerPosture;
@@ -11512,8 +11511,7 @@ small robot in the previous example.</p>
 22.       var y = Math.floor(index / nbSpritesPerRow) * spriteHeight;
 23. 
 24.       // build a spriteImage object
-25.    
-    &gt;   var s = new SpriteImage(spritesheet, x, y, spriteWidth, spriteHeight);
+25. &gt;   var s = new SpriteImage(spritesheet, x, y, spriteWidth, spriteHeight);
 26. 
 27.       this.spriteArray.push(s);
 28.     }
@@ -11559,9 +11557,7 @@ small robot in the previous example.</p>
 
 <h4>Same example but with the walking woman sprite sheet</h4>
 
-<p><a href="http://jsbin.com/fekacu/edit?js,output" target="_blank" rel="noopener noreferrer">Try this
-JsBin</a></p>
-
+<p><a href="http://jsbin.com/fekacu/edit?js,output" target="_blank" rel="noopener noreferrer">Try this JsBin</a></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!---------------------------------- 148. woman animated (246) ----------------------------------->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -13281,7 +13277,7 @@ CodePen</a>.</p>
 <h4>Complete code from the example:</h4>
 
 <details>
-  <summary>Source code!</summary>
+  <summary>HTML code!</summary>
 
 <pre><code>
 1.  &lt;!DOCTYPE html&gt;
@@ -13367,7 +13363,7 @@ the false value at <i>line 1</i>.</p>
 <h4>Step #3: write a drop handler, fetch content from the clipboard, and do something with it</h4>
 
 <details>
-  <summary>Code extract!</summary>
+  <summary>function dropHandler!</summary>
   
 <pre><code>
 1. function dropHandler(event) {
@@ -13740,7 +13736,7 @@ drop zone):</p>
 <h4>Source code extract:</h4>
 
 <details>
-  <summary>Code extract!</summary>
+  <summary>css extract!</summary>
 
 <pre><code>
 1.  ...
@@ -13802,7 +13798,7 @@ CodePen</a>:</p>
 JavaScript into a single HTML page):</p>
 
 <details>
-  <summary>Code extract!</summary>
+  <summary>HTML extract!</summary>
   
 <pre><code>
 1.  &lt;!DOCTYPE html&gt;
@@ -13978,7 +13974,7 @@ the dragstart handler, and we set the effect (to “move”, “copy”, etc.)
 the dragstart handler:</p>
 
 <details>
-  <summary>Code extract!</summary>
+  <summary>function dragStartHandler!</summary>
   
 <pre><code>
 1.  function dragStartHandler(event) {
@@ -14049,7 +14045,7 @@ CodePen</a>:</p>
 <p>Code from the example:</p>
 
 <details>
-  <summary>Code extract!</summary>
+  <summary>HTML extract!</summary>
   
 <pre><code>
 1.  &lt;html lang=&quot;en&quot;&gt;
@@ -14147,7 +14143,7 @@ CodePen</a>:</p>
 <h4>Complete source code from the example:</h4>
 
 <details>
-  <summary>Code extract!</summary>
+  <summary>HTML extract!</summary>
   
 <pre><code>
 1.  &lt;html lang=&quot;en&quot;&gt;
@@ -14253,7 +14249,7 @@ drop zone associated with this handler with
 an ondrop=dropHandler(event); attribute:</p>
 
 <details>
-  <summary>Code extract!</summary>
+  <summary>function dropHandler!</summary>
 
 <pre><code>
 1.  function dropHandler(event) {
@@ -14317,7 +14313,7 @@ to the dragOver handler attached to the drop zone!</p>
 <h4>… like in this example:</h4>
 
 <details>
-  <summary>Code extract!</summary>
+  <summary>function dragOverHandler!</summary>
   
 <pre><code>
 1.  function dragOverHandler(event) {
@@ -14415,7 +14411,7 @@ it at CodePen</a>:</p>
 <h4>Complete source code from the example:</h4>
 
 <details>
-  <summary>Complete source code!</summary>
+  <summary>HTML source code!</summary>
   
 <pre><code>
 1.  &lt;!DOCTYPE html&gt;
@@ -14544,7 +14540,7 @@ image thumbnails displayed in the open space beneath it:</p>
 <p>Source code extract (the part that reads the image file content and displays the thumbnails):</p>
 
 <details>
-  <summary>function readFilesAndDisplayPreview source code!</summary>
+  <summary>function readFilesAndDisplayPreview!</summary>
   
 <pre><code>
 1.  function readFilesAndDisplayPreview(files) {
@@ -14608,7 +14604,7 @@ zone) or play with it at CodePen:</p>
 <h4>Complete source code:</h4>
 
 <details>
-  <summary>Complete source code!</summary>
+  <summary>HTML source code!</summary>
   
 <pre><code>
 1.  &lt;!DOCTYPE html&gt;
@@ -14767,7 +14763,7 @@ that the event handler we used to track the selected files
 using &lt;input type=“file”/&gt; looks like this:</p>
 
 <details>
-  <summary>Source code!</summary>
+  <summary>function handleFileSelect!</summary>
   
 <pre><code>
 1.  &lt;script&gt;
@@ -14815,7 +14811,7 @@ CodePen</a>:</p>
 <h4>Complete source code:</h4>
 
 <details>
-  <summary>Complete source code!</summary>
+  <summary>HTML source code!</summary>
   
 <pre><code>
 1.  &lt;!DOCTYPE html&gt;
@@ -16311,7 +16307,7 @@ section - the function AddACustomer() that adds one customer:</p>
 <p>Here is the complete source code of the addACustomer function:</p>
 
 <details>
-  <summary>function addACustomer code!</summary>
+  <summary>function addACustomer!</summary>
   
 <pre><code>
 1.  function addACustomer() {
@@ -16410,18 +16406,11 @@ before trying to insert an element, and we added a small form for
 entering a new customer.</p>
 <p>Notice that the insert will fail and display an alert with an error
 message if:</p>
+
 <ul>
-<li><p>The ssn is already present in the database. This property has
-been declared as the keyPath (a sort of primary key) in the object store
-schema, and <u>it should be
-unique</u>: db.createObjectStore(“customers”, { keyPath: “ssn”
-});</p></li>
-<li><p>The email address is already present in the object store.
-Remember that in our schema, the email property is an index that we
-declared as unique: objectStore.createIndex(“email”, “email”, { unique:
-true });</p></li>
-<li><p>Try to insert the same customer twice, or different customers
-with the same ssn. An alert like this should pop up:</p></li>
+  <li><p>The ssn is already present in the database. This property has been declared as the keyPath (a sort of primary key) in the object store schema, and <u>it should be unique</u>: db.createObjectStore(“customers”, { keyPath: “ssn” });</p></li>
+  <li><p>The email address is already present in the object store. Remember that in our schema, the email property is an index that we declared as unique: objectStore.createIndex(“email”, “email”, { unique: true });</p></li>
+  <li><p>Try to insert the same customer twice, or different customers with the same ssn. An alert like this should pop up:</p></li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!---------------------------------- 204. insert errors (357) ------------------------------------>
@@ -16449,7 +16438,7 @@ with the same ssn. An alert like this should pop up:</p></li>
 <h4>And here is the new version of the addACustomer() JavaScript function:</h4>
 
 <details>
-  <summary>function addACustomer extract!</summary>
+  <summary>function addACustomer!</summary>
 
 <pre><code>
 1.  function addACustomer() {
@@ -16554,7 +16543,7 @@ refresh feature with some versions of Google Chrome.</p>
 <h4>Code added in this example:</h4>
 
 <details>
-  <summary>function removeACustomer code!</summary>
+  <summary>function removeACustomer!</summary>
 
 <pre><code>
 1.  function removeACustomer() {
@@ -16647,7 +16636,7 @@ this screenshot:</p>
 <h4>Here is the new code added to our example:</h4>
 
 <details>
-  <summary>function updateACustomer code!</summary>
+  <summary>function updateACustomer!</summary>
 
 <pre><code>
 1.  function updateACustomer() {
@@ -16726,7 +16715,7 @@ form is in the request.onsuccess callback).</p>
 <h4>Here is the code added to that example:</h4>
 
 <details>
-  <summary>function searchACustomer code!</summary>
+  <summary>function searchACustomer!</summary>
 
 <pre><code>
 1.  function searchACustomer() {
@@ -16811,7 +16800,7 @@ shortened version</a> (the function is at the end of the JavaScript
 code):</p>
 
 <details>
-  <summary>function searchACustomerShort code!</summary>
+  <summary>function searchACustomerShort!</summary>
 
 <pre><code>
 1.  function searchACustomerShort() {
@@ -16975,21 +16964,21 @@ object store, and returns the first one it finds with a name equal to
   
 <pre><code>
 1.  function getCustomerByName() {
-2.     if(db === null) {
-3.       alert(&#39;Database must be opened first, please click the Create
+2.    if(db === null) {
+3.      alert(&#39;Database must be opened first, please click the Create
 4.              CustomerDB Database first&#39;);
-5.       return;
-6.     }
+5.      return;
+6.    }
 7.  
-8.     var objectStore =   
-9.        db.transaction(&quot;customers&quot;).objectStore(&quot;customers&quot;);
+8.    var objectStore =   
+9.      db.transaction(&quot;customers&quot;).objectStore(&quot;customers&quot;);
 10. 
-11.    &lt;b&gt;var index = objectStore.index(&quot;name&quot;);
+11.   &lt;b&gt;var index = objectStore.index(&quot;name&quot;);
 12. 
-13.    &lt;b&gt;index.get(&quot;Bill&quot;).onsuccess = function(event) {
-14.       alert(&quot;Bill&#39;s SSN is &quot; + &lt;b&gt;event.target.result.ssn +
-15.             &quot; his email is &quot; + &lt;b&gt;event.target.result.email);
-16.    };
+13.   &lt;b&gt;index.get(&quot;Bill&quot;).onsuccess = function(event) {
+14.     alert(&quot;Bill&#39;s SSN is &quot; + &lt;b&gt;event.target.result.ssn +
+15.     &quot; his email is &quot; + &lt;b&gt;event.target.result.email);
+16.   };
 17. }
 </code></pre>
 
@@ -17497,47 +17486,27 @@ look and feel.</p>
 is not a single API - rather it’s what we call an “umbrella
 API”, <b>built on top of 4 W3C specifications, </b>which are going to be
 detailed in subsequent lessons.</p>
-<p>The main W3C Web Components resource is
-on <a href="https://github.com/w3c/webcomponents" target="_blank" rel="noopener noreferrer">GitHub</a>:</p>
+<p>The main W3C Web Components resource is on <a href="https://github.com/w3c/webcomponents" target="_blank" rel="noopener noreferrer">GitHub</a>:</p>
+
 <ol type="1">
-<li><p><a href="https://www.w3.org/TR/html-templates/" target="_blank" rel="noopener noreferrer">The HTML
-Templates specification</a></p></li>
-<li><p><a href="https://www.w3.org/TR/shadow-dom/" target="_blank" rel="noopener noreferrer">The Shadow DOM
-specification</a> (Working Group Note, part of the DOM specification) -
-see also this MDN’s documentation “<a
-href="https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM" target="_blank" rel="noopener noreferrer">Using
-shadow DOM”</a></p></li>
-<li><p>The Custom Elements specification is being incorporated into the
-W3C DOM specification and the WHATWG DOM Standard, the W3C HTML
-specification and the WHATWG HTML Standard, and other relevant
-specifications. Please check the W3C <a
-href="https://github.com/w3c/webcomponents/" target="_blank" rel="noopener noreferrer">Web Components
-repository</a> for continuing discussions about this subject.</p></li>
-<li><p><a href="https://w3c.github.io/webcomponents/spec/imports/" target="_blank" rel="noopener noreferrer">The
-HTML Imports specification</a> (HTML imports have been deprecated, see
-further material in this chapter)</p></li>
+  <li><p><a href="https://www.w3.org/TR/html-templates/" target="_blank" rel="noopener noreferrer">The HTML Templates specification</a></p></li>
+  <li><p><a href="https://www.w3.org/TR/shadow-dom/" target="_blank" rel="noopener noreferrer">The Shadow DOM specification</a> (Working Group Note, part of the DOM specification) - see also this MDN’s documentation “<a href="https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM" target="_blank" rel="noopener noreferrer">Using shadow DOM”</a></p></li>
+  <li><p>The Custom Elements specification is being incorporated into the W3C DOM specification and the WHATWG DOM Standard, the W3C HTML specification and the WHATWG HTML Standard, and other relevant specifications. Please check the W3C <a href="https://github.com/w3c/webcomponents/" target="_blank" rel="noopener noreferrer">Web Components repository</a> for continuing discussions about this subject.</p></li>
+  <li><p><a href="https://w3c.github.io/webcomponents/spec/imports/" target="_blank" rel="noopener noreferrer">The HTML Imports specification</a> (HTML imports have been deprecated, see further material in this chapter)</p></li>
 </ol>
+
 <p>You can check the current support for these APIs here: <a
 href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/?q=webcomponents" target="_blank" rel="noopener noreferrer">Microsoft
 Edge’s Web Components</a> and on CanIuse:</p>
+
 <ul>
-<li><p>HTML templates are supported by nearly all modern browsers,
-including mobile browsers (see also this support table <a
-href="https://caniuse.com/#feat=template" target="_blank" rel="noopener noreferrer">online</a>).</p></li>
-<li><p>Shadow DOM v1 is supported by Chrome and Opera,
-and FireFox/Safari offers partial support (see also <a
-href="https://caniuse.com/#feat=shadowdomv1" target="_blank" rel="noopener noreferrer">online</a>).</p></li>
-<li><p>Custom Elements is supported by Chrome and Opera,
-and FireFox/Safari offers partial support. Edge is implementing them
-(see also <a
-href="https://caniuse.com/#feat=custom-elementsv1" target="_blank" rel="noopener noreferrer">online</a>).</p></li>
-<li><p>HTML Imports is deprecated, but can be used with polyfills . A
-new way to import Web Components using JavaScript imports is under
-consideration. More about that in the “HTML imports” material later
-on.</p></li>
+  <li><p>HTML templates are supported by nearly all modern browsers, including mobile browsers (see also this support table <a href="https://caniuse.com/#feat=template" target="_blank" rel="noopener noreferrer">online</a>).</p></li>
+  <li><p>Shadow DOM v1 is supported by Chrome and Opera, and FireFox/Safari offers partial support (see also <a href="https://caniuse.com/#feat=shadowdomv1" target="_blank" rel="noopener noreferrer">online</a>).</p></li>
+  <li><p>Custom Elements is supported by Chrome and Opera, and FireFox/Safari offers partial support. Edge is implementing them (see also <a href="https://caniuse.com/#feat=custom-elementsv1" target="_blank" rel="noopener noreferrer">online</a>).</p></li>
+  <li><p>HTML Imports is deprecated, but can be used with polyfills . A new way to import Web Components using JavaScript imports is under consideration. More about that in the “HTML imports” material later on.</p></li>
 </ul>
-<p>HTML imports have been replaced by a more standard way involving
-JavaScript imports (see <a
+
+<p>HTML imports have been replaced by a more standard way involving JavaScript imports (see <a
 href="https://github.com/w3c/webcomponents/blob/gh-pages/proposals/HTML-Imports-and-ES-Modules.md" target="_blank" rel="noopener noreferrer">discussions</a>).</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-2-3">4.2.3 HTML templates</h3>
@@ -17608,10 +17577,10 @@ not be played, etc.) until the template is used.</p>
 <p>Here is an example of code that defines a template:</p>
 
 <pre><code>
-1.  &lt;template id=&quot;mytemplate&quot;&gt;
-2.     &lt;img src=&quot;&quot; alt=&quot;great image&quot;&gt;
-3.     &lt;div class=&quot;comment&quot;&gt;&lt;/div&gt;
-4.  &lt;/template&gt;
+1. &lt;template id=&quot;mytemplate&quot;&gt;
+2.    &lt;img src=&quot;&quot; alt=&quot;great image&quot;&gt;
+3.    &lt;div class=&quot;comment&quot;&gt;&lt;/div&gt;
+4. &lt;/template&gt;
 </code></pre>
 
 <p>Note that it’s ok to have the <b>src</b> attribute empty here, we
@@ -17630,13 +17599,13 @@ the template’s content and true means “deep copy” the content.</p>
 <p>A template is typically used like this:</p>
 
 <pre><code>
-1.  var t = document.querySelector(&#39;#mytemplate&#39;);
-2.  // Populate the src at runtime.
-3.  t.content.querySelector(&#39;img&#39;).src = &#39;https://webcomponents.github.io/img/logo.svg&#39;;
+1. var t = document.querySelector(&#39;#mytemplate&#39;);
+2. // Populate the src at runtime.
+3. t.content.querySelector(&#39;img&#39;).src = &#39;https://webcomponents.github.io/img/logo.svg&#39;;
 4.  
-5.  // Clone the template, sort of &quot;instantiation&quot;!
-6.  var clone = document.importNode(t.content, true);
-7.  document.body.appendChild(clone);
+5. // Clone the template, sort of &quot;instantiation&quot;!
+6. var clone = document.importNode(t.content, true);
+7. document.body.appendChild(clone);
 </code></pre>
 
 <h4>Explanations</h4>
@@ -17672,14 +17641,14 @@ JSBin</a> that uses exactly the code presented:</p>
 <h4>The HTML part:</h4>
 
 <pre><code>
-1.  &lt;template id=&quot;mytemplate&quot;&gt;
-2.     &lt;img src=&quot;&quot; alt=&quot;great image&quot;&gt;
-3.     &lt;div class=&quot;comment&quot;&gt;hello&lt;/div&gt;
-4.  &lt;/template&gt;
-5.  
-6.  &lt;body&gt;
-7.     &lt;button onclick=&quot;instantiate()&quot;&gt;Instantiate the template&lt;/button&gt;&lt;br&gt;
-8.  &lt;/body&gt;
+1. &lt;template id=&quot;mytemplate&quot;&gt;
+2.   &lt;img src=&quot;&quot; alt=&quot;great image&quot;&gt;
+3.   &lt;div class=&quot;comment&quot;&gt;hello&lt;/div&gt;
+4. &lt;/template&gt;
+5. 
+6. &lt;body&gt;
+7.   &lt;button onclick=&quot;instantiate()&quot;&gt;Instantiate the template&lt;/button&gt;&lt;br&gt;
+8. &lt;/body&gt;
 </code></pre>
 
 <h4>The JavaScript part:</h4>
