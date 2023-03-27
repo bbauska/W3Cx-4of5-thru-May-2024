@@ -15836,44 +15836,44 @@ Complete source code from the example:
 1.  <html lang="en">
 2.  <head>
 3.  <style>
-4.     .box {
-5.        border: silver solid;
-6.        width: 256px;
-7.        height: 128px;
-8.        margin: 10px;
-9.        padding: 5px;
-10.       float: left;
-11.    }
+4.    .box {
+5.      border: silver solid;
+6.      width: 256px;
+7.      height: 128px;
+8.      margin: 10px;
+9.      padding: 5px;
+10.     float: left;
+11.   }
 12. 
-13.    .notDraggable {
-14.       user-select: none;
-15.    }
+13.   .notDraggable {
+14.     user-select: none;
+15.   }
 16. </style>
 17. <script>
-18.     function drop(target, event) {
-19.        event.preventDefault();
-20.        target.innerHTML = event.dataTransfer.getData('text/plain');
-21.     };
+18.   function drop(target, event) {
+19.     event.preventDefault();
+20.     target.innerHTML = event.dataTransfer.getData('text/plain');
+21.   };
 22. </script>
 23. </head>
 24. <body>
 25. <p id="text">
-26.     Drag and drop a text selection from this paragraph</b>. Drag and drop any
-27.     part of this text to
-28.     the drop zone. Notice in the code: there is no need for a dragstart handler in case of
-29.     text selection:
-30.     the text is added to the clipboard when dragged with a key/name equal to "text/plain".
-31.     Just write a
-32.     drop handler that will do an event.dataTransfer.getData("text/plain") and you are
-33.     done!
-34.  </p>
+26.   Drag and drop a text selection from this paragraph</b>. Drag and drop any
+27.   part of this text to
+28.   the drop zone. Notice in the code: there is no need for a dragstart handler in case of
+29.   text selection:
+30.   the text is added to the clipboard when dragged with a key/name equal to "text/plain".
+31.   Just write a
+32.   drop handler that will do an event.dataTransfer.getData("text/plain") and you are
+33.   done!
+34. </p>
 35. 
 36. <p class="notDraggable">
-37.      This paragraph is not selectable however. Look at the CSS in the source code.
+37.   This paragraph is not selectable however. Look at the CSS in the source code.
 38. </p>
 39. 
 40. <div class="box" ondragover="return false" ondrop="drop(this, event)">
-41.      <p>Drop some text selection here.</p>
+41.   <p>Drop some text selection here.</p>
 42. </div>
 43. </body>
 44. </html>
@@ -15950,22 +15950,22 @@ associated with this handler with an ondrop=dropHandler(event); attribute:
 
 ```
 1.  function dropHandler(event) {
-2.     // Do not propagate the event
-3.     event.stopPropagation();
-4.     // Prevent default behavior, in particular when we drop images or links
-5.     event.preventDefault();
+2.    // Do not propagate the event
+3.    event.stopPropagation();
+4.    // Prevent default behavior, in particular when we drop images or links
+5.    event.preventDefault();
 6.  
-7.     // get the dropped files from the clipboard
-8.     var files = event.dataTransfer.files;
+7.    // get the dropped files from the clipboard
+8.    var files = event.dataTransfer.files;
 9.  
-10.    var filenames = "";
+10.   var filenames = "";
 11. 
-12.    // do something with the files...here we iterate on them and log the filenames
-13.    for(var i = 0 ; i < files.length ; i++) {
-14.        filenames += 'n' + files[i].name;
-15.    }
+12.   // do something with the files...here we iterate on them and log the filenames
+13.   for(var i = 0 ; i < files.length ; i++) {
+14.     filenames += 'n' + files[i].name;
+15.   }
 16. 
-17.    console.log(files.length + ' file(s) have been dropped:n' + filenames);
+17.   console.log(files.length + ' file(s) have been dropped:n' + filenames);
 18. }
 ```
 
@@ -15999,7 +15999,7 @@ tab/window. This is not what we would like in an application using the
 drag and drop process. These two lines are necessary to prevent the
 default behavior of the browser:
 
-```
+```js{:copy}
 1.  // Do not propagate the event
 2.  event.stopPropagation();
 3.  // Prevent default behavior, in particular when we drop images or links
@@ -16014,23 +16014,23 @@ default behavior of the browser:
 <details>
   <summary>Code extract!</summary>
 
-```
+```js{:copy}
 1.  function dragOverHandler(event) {
-2.     // Do not propagate the event
-3.     event.stopPropagation();
+2.    // Do not propagate the event
+3.    event.stopPropagation();
 4.  
-5.     // Prevent default behavior, in particular when we drop images or links
-6.     event.preventDefault();
-7.     ...
+5.    // Prevent default behavior, in particular when we drop images or links
+6.    event.preventDefault();
+7.    ...
 8.  }
 9.  
 10. function dropHandler(event) {
-11.    // Do not propagate the event
-12.    event.stopPropagation();
+11.   // Do not propagate the event
+12.   event.stopPropagation();
 13. 
-14.    // Prevent default behavior, in particular when we drop images or links
-15.    event.preventDefault();
-16.    ...
+14.   // Prevent default behavior, in particular when we drop images or links
+15.   event.preventDefault();
+16.   ...
 17. }
 ```
 
@@ -16044,11 +16044,9 @@ default behavior of the browser:
 -   HTML Goodies article: "[Drag Files Into the Browser From the Desktop
     with
     HTML5](https://www.htmlgoodies.com/html5/javascript/drag-files-into-the-browser-from-the-desktop-HTML5.html)"
-
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch3-4-2">3.4.2 Drag and drop files in a drop zone</h3>
 <!------------------------------------------------------------------------------------------------>
-
 Hi! This time let's look at how we can drag and
 
 drop files into a document. So, the first thing you must know is that, 
@@ -16112,10 +16110,7 @@ them. That's all. Bye, bye!
    width="65%"
    alt="Example of Drag and drop a file." />
 </p>
-<!--
-style="width:4.64583in;height:3.89583in"
-alt="Example of drag&#39;n&#39;drop of a file" />
--->
+<!-- style="width:4.64583in;height:3.89583in" alt="Example of drag&#39;n&#39;drop of a file" /> -->
 
 Try the example below directly in your browser (just drag and drop
 files to the greyish drop zone), or [play with it at
@@ -16126,92 +16121,92 @@ Complete source code from the example:
 <details>
   <summary>Complete source code!</summary>
 
-```
+```html5
 1.  <!DOCTYPE html>
 2.  <html lang="en">
 3.  <head>
-4.     <style>
-5.        div {
-6.           height: 150px;
-7.           width: 350px;
-8.           float: left;
-9.           border: 2px solid #666666;
-10.          background-color: #ccc;
-11.          margin-right: 5px;
-12.          border-radius: 10px;
-13.          box-shadow: inset 0 0 3px #000;
-14.          text-align: center;
-15.          cursor: move;
-16.       }
+4.    <style>
+5.      div {
+6.        height: 150px;
+7.        width: 350px;
+8.        float: left;
+9.        border: 2px solid #666666;
+10.       background-color: #ccc;
+11.       margin-right: 5px;
+12.       border-radius: 10px;
+13.       box-shadow: inset 0 0 3px #000;
+14.       text-align: center;
+15.       cursor: move;
+16.     }
 17. 
-18.       .dragged {
-19.          border: 2px dashed #000;
-20.          background-color: green;
-21.       }
+18.     .dragged {
+19.       border: 2px dashed #000;
+20.       background-color: green;
+21.     }
 22. 
-23.       .draggedOver {
-24.          border: 2px dashed #000;
-25.          background-color: green;
-26.       }
+23.     .draggedOver {
+24.       border: 2px dashed #000;
+25.       background-color: green;
+26.     }
 27.  
-28.     </style>
+28.   </style>
 29.     <script>
 30.       function dragLeaveHandler(event) {
-31.           console.log("drag leave");
-32.           // Set style of drop zone to default
-33.           event.target.classList.remove('draggedOver');
-34.       }
+31.         console.log("drag leave");
+32.         // Set style of drop zone to default
+33.         event.target.classList.remove('draggedOver');
+34.       }
 35. 
 36.       function dragEnterHandler(event) {
-37.           console.log("Drag enter");
-38.           // Show some visual feedback
-39.           event.target.classList.add('draggedOver');
-40.       }
+37.         console.log("Drag enter");
+38.         // Show some visual feedback
+39.         event.target.classList.add('draggedOver');
+40.       }
 41. 
 42.       function dragOverHandler(event) {
-43.           //console.log("Drag over a droppable zone");
-44.           // Do not propagate the event
-45.           event.stopPropagation();
-46.           // Prevent default behavior, in particular when we drop images or links
-47.           event.preventDefault();
+43.         //console.log("Drag over a droppable zone");
+44.         // Do not propagate the event
+45.         event.stopPropagation();
+46.         // Prevent default behavior, in particular when we drop images or links
+47.         event.preventDefault();
 48.       }
 49. 
 50.       function dropHandler(event) {
-51.           console.log('drop event');
+51.         console.log('drop event');
 52. 
-53.           // Do not propagate the event
-54.           event.stopPropagation();
-55.           // Prevent default behavior, in particular when we drop images or links
-56.           event.preventDefault();
+53.         // Do not propagate the event
+54.         event.stopPropagation();
+55.         // Prevent default behavior, in particular when we drop images or links
+56.         event.preventDefault();
 57. 
 58. 
-59.           // reset the visual look of the drop zone to default
-60.           event.target.classList.remove('draggedOver');
+59.         // reset the visual look of the drop zone to default
+60.         event.target.classList.remove('draggedOver');
 61. 
 62. 
-63.           // get the files from the clipboard
-64.           var files = event.dataTransfer.files;
-65.           var filesLen = files.length;
-66.           var filenames = "";
+63.         // get the files from the clipboard
+64.         var files = event.dataTransfer.files;
+65.         var filesLen = files.length;
+66.         var filenames = "";
 67. 
-68.           // iterate on the files, get details using the file API
-69.           // Display file names in a list.
-70.           for(var i = 0 ; i < filesLen ; i++) {
-71.               filenames += 'n' + files[i].name;
-72.               // Create a li, set its value to a file name, add it to the ol
-73.               var li = document.createElement('li');
-74.                 li.textContent = files[i].name; document.querySelector("#droppedFiles").appendChild(li);
-75.           }
-76.           console.log(files.length + ' file(s) have been dropped:n' + filenames);
+68.         // iterate on the files, get details using the file API
+69.         // Display file names in a list.
+70.         for(var i = 0 ; i < filesLen ; i++) {
+71.           filenames += 'n' + files[i].name;
+72.           // Create a li, set its value to a file name, add it to the ol
+73.           var li = document.createElement('li');
+74.             li.textContent = files[i].name; document.querySelector("#droppedFiles").appendChild(li);
+75.          }
+76.          console.log(files.length + ' file(s) have been dropped:n' + filenames);
 77.       }
-78.   </script>
-79. </head>
+78.     </script>
+79.   </head>
 80. <body>
 81.   <h2>Drop your files here!</h2>
 82.   <div id="droppableZone" ondragenter="dragEnterHandler(event)" ondrop="dropHandler(event)" 
 83.                           ondragover="dragOverHandler(event)"  ondragleave="dragLeaveHandler(event)">
-84.      Drop zone
-85.      <ol id="droppedFiles"></ol>
+84.     Drop zone
+85.       <ol id="droppedFiles"></ol>
 86.   </div>
 87. <body>
 88. <html>
@@ -16261,42 +16256,41 @@ displayed in the open space beneath it:
   alt="" />
 </p>
 
-<!---  
-style="width:6.5in;height:1.83264in" />
---->
+<!--- style="width:6.5in;height:1.83264in" /> --->
+
 Source code extract (the part that reads the image file content and
 displays the thumbnails):
 
 <details>
   <summary>function readFilesAndDisplayPreview source code!</summary>
 
-```
+```js{:copy}
 1.  function readFilesAndDisplayPreview(files) {
-2.     // Loop through the FileList and render image files
-3.     // as thumbnails.
-4.     for (var i = 0, f; f = files[i]; i++) {
+2.    // Loop through the FileList and render image files
+3.    // as thumbnails.
+4.    for (var i = 0, f; f = files[i]; i++) {
 5.  
-6.       // Only process image files.
-7.       if (!f.type.match('image.')) {
-8.          continue;
-9.       }
+6.      // Only process image files.
+7.      if (!f.type.match('image.')) {
+8.        continue;
+9.      }
 10. 
-11.      var reader = new FileReader();
+11.     var reader = new FileReader();
 12. 
-13.      //capture the file information.
-14.      reader.onload = function(e) {
-15.          // Render thumbnail.
-16.          var span = document.createElement('span');
-17.          span.innerHTML = "<img class='thumb' src='" +
-18.                            e.target.result + "'/>";
-19.          document.getElementById('list').insertBefore(span, null);
-20.      };
+13.     //capture the file information.
+14.     reader.onload = function(e) {
+15.       // Render thumbnail.
+16.       var span = document.createElement('span');
+17.       span.innerHTML = "<img class='thumb' src='" +
+18.                        e.target.result + "'/>";
+19.       document.getElementById('list').insertBefore(span, null);
+20.     };
 21. 
-22.      // Read the image file as a data URL. Will trigger
-23.      // a call to the onload callback above
-24.      // only once the image is completely loaded
-25.      reader.readAsDataURL(f);
-26.    }
+22.     // Read the image file as a data URL. Will trigger
+23.     // a call to the onload callback above
+24.     // only once the image is completely loaded
+25.     reader.readAsDataURL(f);
+26.   }
 27. }
 ```
 
@@ -16328,9 +16322,7 @@ HTML of this example.
   width="65%"
   alt="Image drag and drop with thumbnails." />
 </p>
-<!---
-style="width:6.5in;height:4.05625in"
---->
+<!--- style="width:6.5in;height:4.05625in" --->
 
 Try it below in your browser (drag'n'drop image files into the drop
 zone) or play with it at CodePen:
@@ -16340,11 +16332,11 @@ zone) or play with it at CodePen:
 <details>
   <summary>Complete source code!</summary>
 
-```
+```html5
 1.  <!DOCTYPE html>
 2.  <html lang="en">
 3.  <head>
-4.      <style>
+4.    <style>
 5.         div {
 6.            height: 150px;
 7.            width: 350px;
@@ -16444,7 +16436,7 @@ zone) or play with it at CodePen:
 101.           reader.readAsDataURL(f);
 102.        }
 103.     }
-104.   </script>
+104.  </script>
 105. </head>
 106. <body>
 107. <h2>Drop your files here!</h2>
@@ -16485,9 +16477,7 @@ example is a bit further down the page):
   width="65%"
   alt="Example of file and directory chooser." />
 </p>
-<!---
-style="width:6.5in;height:6.36944in"
---->
+<!--- style="width:6.5in;height:6.36944in" --->
 
 In the above screenshot, which is derived from the example detailed
 later in this page, we selected some files using the first button (which
@@ -16508,7 +16498,7 @@ type="file"/&gt; looks like this:
 <details>
   <summary>Source code!</summary>
 
-```
+```js{:copy}
 1.  <script>
 2.     function handleFileSelect(evt) {
 3.         var files = evt.target.files; // FileList object
