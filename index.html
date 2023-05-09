@@ -1377,7 +1377,7 @@ a kind (subtitles, captions, chapters, metadata, etc.), a language
 width!):</p>
 
 <details>
-  <summary>Code extract!</summary>
+  <summary>HTML code!</summary>
 
 <pre>1.  &lt;video id=&quot;myVideo&quot; preload=&quot;metadata&quot; controls crossOrigin=&quot;anonymous&quot;&gt;
 2.    &lt;source src=&quot;https://...../elephants-dream-medium.mp4&quot; type=&quot;video/mp4&quot;&gt;
@@ -1428,7 +1428,7 @@ from one browser to another, in particular if you are using old versions.</p>
 <h4>WEBVTT</h4>
 
 <details>
-  <summary>WEBTT code extract!</summary>
+  <summary>WEBVTT code!</summary>
 
 <pre>1. 
 2.  1
@@ -1546,7 +1546,7 @@ accepting different origins, then you can add this attribute crossOrigin=“anon
 <p>Here is a small example of a video with 3 different tracks (“……” masks the real URL here, as it is too long to fit in this page width!):</p>
 
 <details>
-  <summary>Code extract!</summary>
+  <summary>Video extract!</summary>
 
 <pre>1.  &lt;video id=&quot;myVideo&quot; preload=&quot;metadata&quot; controls crossOrigin=&quot;anonymous&quot;&gt;
 2.    &lt;source src=&quot;https://...../elephants-dream-medium.mp4&quot; type=&quot;video/mp4&quot;&gt;
@@ -1601,7 +1601,7 @@ Status”</a>, written in April 2015, for further details.</p>
 <p>There is <a href="https://www.w3.org/TR/html51/semantics-embedded-content.html#timed-text-tracks" target="_blank" rel="noopener noreferrer">a Timed Text Track API in the HTML5/HTML5.1 specification</a> that enables us to manipulate &lt;track&gt; contents from JavaScript. Do you recall that text tracks are associated with WebVTT files? As a quick reminder, let’s look at a WebVTT file:</p>
 
 <details>
-  <summary>WEBVTT code extract!</summary>
+  <summary>WEBVTT code!</summary>
 
 <pre>1.  WEBVTT
 2.   
@@ -1714,7 +1714,7 @@ The HTML track element
 <h4>Let’s go back to our example. Below is the HTML code:</h4>
 
 <details>
-  <summary>Code extract!</summary>
+  <summary>Video code!</summary>
 
 <pre>1.  &lt;video id=&quot;myVideo&quot; preload=&quot;metadata&quot; controls crossOrigin=&quot;anonymous&quot;&gt;
 2.    &lt;source src=&quot;https://...../elephants-dream-medium.mp4&quot; type=&quot;video/mp4&quot;&gt;
@@ -1762,7 +1762,7 @@ JSBin that displays the different elements we can get from an HTML track</a>:</h
 <h4>Here is the JavaScript source code:</h4>
 
 <details>
-  <summary>Function displayTrackStatuses code extract!</summary>
+  <summary>JavaScript extract!</summary>
 
 <pre>1.  var video, htmlTracks;
 2.  var trackStatusesDiv;
@@ -1925,7 +1925,7 @@ associated TextTrack object.</p>
 <h4>Example source code:</h4>
 
 <details>
-  <summary>Code extract!</summary>
+  <summary>HTML extract!</summary>
 
 <pre>1. // HTML tracks
 2. var htmlTracks = document.querySelectorAll(&quot;track&quot;);
@@ -1987,7 +1987,7 @@ video as soon as the track has finished loading.</p>
 <h4>Here is what we added to the HTML code:</h4>
 
 <details>
-  <summary>Code extract!</summary>
+  <summary>HTML extract!</summary>
   
 <pre>1.  &lt;button id=&quot;buttonLoadFirstTrack&quot;
 2.          onclick=&quot;forceLoadTrack(0);&quot;
@@ -2009,7 +2009,7 @@ video as soon as the track has finished loading.</p>
 previous example:</p>
 
 <details>
-  <summary>Functions readContent, getTrack, &amp; forceLoadTrack code extract!</summary>
+  <summary>JavaScript extract!</summary>
 
 <pre>1.  function readContent(track) {
 2.    console.log(&quot;reading content of loaded track...&quot;);
@@ -2144,7 +2144,7 @@ an example at JSBin that displays the content of a track</a>:</p>
 from the example in the previous lesson:</p>
 
 <details>
-  <summary>Function readContent extract!</summary>
+  <summary>JavaScript extract!</summary>
   
 <pre>1.  function readContent(track) {
 2.     console.log(&quot;reading content of loaded track...&quot;);
@@ -2289,7 +2289,7 @@ event.</p>
 <p>Example of enter and exit event listeners on a track’s cues.</p>
 
 <details>
-  <summary>Function addCueListeners code!</summary>
+  <summary>JavaScript extract!</summary>
   
 <pre>1.  // iterate on all cues of the current track
 2.  var cues = track.cues;
@@ -2331,7 +2331,7 @@ event.</p>
 <h4>Source code extract:</h4>
 
 <details>
-  <summary>Function readContent code!</summary>
+  <summary>JavaScript extract!</summary>
 
 <pre>1.  function readContent(track) {
 2.     console.log(&quot;adding cue change listener to loaded track...&quot;);
@@ -2364,7 +2364,7 @@ how to use enter and exit events on cues</a>:</p>
 <h4>Source code extract:</h4>
 
 <details>
-  <summary>Functions readContent &amp; addCueListeners code extract!</summary>
+  <summary>JavaScript extract!</summary>
 
 <pre>1.  function readContent(track) {
 2.     console.log(&quot;adding enter and exit listeners to all cues of this &gt; track&quot;);
@@ -2588,7 +2588,7 @@ location.</p>
 <h4>CSS code:</h4>
 
 <details>
-  <summary>CSS code extract!</summary>
+  <summary>CSS code!</summary>
 
 <pre>1.  #all {
 2.     background-color: lightgrey;
@@ -2640,7 +2640,7 @@ location.</p>
 <h4>JavaScript code:</h4>
 
 <details>
-  <summary>JavaScript code extract!</summary>
+  <summary>JavaScript extract!</summary>
 
 <pre>1.  var video, transcriptDiv;
 2.  // TextTracks, html tracks, urls of tracks
@@ -2846,7 +2846,7 @@ on screen, in an element with an id of transcript.</p>
 <h4>Extract from HTML code:</h4>
 
 <details>
-  <summary>HTML video code extract!</summary>
+  <summary>Video code!</summary>
 
 <pre>1.  ...
 2.  &lt;video preload=&quot;metadata&quot; controls &gt;
@@ -2873,7 +2873,7 @@ on screen, in an element with an id of transcript.</p>
 <h4>JavaScript code:</h4>
 
 <details>
-  <summary>Functions loadTranscript, loadTranscriptFile, getVoices, removeHTML extract!</summary>
+  <summary>JavaScript extract!</summary>
 
 <pre>1.  // Transcript.js, by dev.opera.com
 2.  function loadTranscript(lang) {
@@ -3007,7 +3007,7 @@ scene’s captions and descriptions.</p>
 <h4>Extract from HTML code:</h4>
 
 <details>
-  <summary>Video code extract!</summary>
+  <summary>Video code!</summary>
 
 <pre>1.  &lt;html lang=&quot;en&quot;&gt;
 2.  ...
@@ -3079,7 +3079,7 @@ scene’s captions and descriptions.</p>
 <h4>JavaScript code:</h4>
 
 <details>
-  <summary>Functions init, displayTrackStatus, appendToScrollableDiv, clearDiv,   clearSubtitlesCaptions, toggleTrack, logCue extract!</summary>
+  <summary>JavaScript extract!</summary>
 
 <pre>1.  var tracks, video, statusDiv, subtitlesCaptionsDiv;
 2.  
@@ -3195,7 +3195,7 @@ scene’s captions and descriptions.</p>
 <h4>HTML code:</h4>
 
 <details>
-  <summary>HTML code extract!</summary>
+  <summary>HTML code!</summary>
 
 <pre>1.  ...
 2.  &lt;body onload=&quot;init()&quot;&gt;
@@ -3230,7 +3230,7 @@ scene’s captions and descriptions.</p>
 <h4>JavaScript code:</h4>
 
 <details>
-  <summary>JavaScript code extract!</summary>
+  <summary>JavaScript extract!</summary>
 
 <pre>1.  var langButtonDiv, currentLangSpan, video;
 2.   
@@ -3328,7 +3328,7 @@ declaration of the track. Here is how we declared a chapter track in one of the 
 <h4>HTML code:</h4>
 
 <details>
-  <summary>HTML code extract!</summary>
+  <summary>HTML code!</summary>
 
 <pre>1.  &lt;video id=&quot;myVideo&quot; preload=&quot;metadata&quot; controls crossOrigin=&quot;anonymous&quot;&gt;
 2.    &lt;source src=&lt;https://...../elephants-dream-medium.mp4&gt;
@@ -3358,7 +3358,7 @@ declaration of the track. Here is how we declared a chapter track in one of the 
 <p>Let’s start by examining the sample .vtt file:</p>
 
 <details>
-  <summary>WEBVTT code elephant-dream-chapters-en.vtt extract!</summary>
+  <summary>WEBVTT code!</summary>
 
 <pre>1.  WEBVTT
 2.  
@@ -3456,10 +3456,9 @@ plain text.</p>
 processing such data from JavaScript is easier than parsing plain text.</p>
 
 <details>
-  <summary>WebVTT code extract!</summary>
+  <summary>WEBVTT code!</summary>
 
-<pre>
-1.  WEBVTT
+<pre>1.  WEBVTT
 2.  Wikipedia
 3.  00:01:15.200 --&gt; 00:02:18.800
 4.  {
@@ -3477,10 +3476,9 @@ processing such data from JavaScript is easier than parsing plain text.</p>
 examples, we can extract this text content using the  cue.text property. For example:</p>
 
 <details>
-  <summary>JS code extract!</summary>
+  <summary>JavaScript extract!</summary>
 
-<pre>
-1.  var videoElement = document.querySelector(&quot;#myvideo&quot;);
+<pre>1.  var videoElement = document.querySelector(&quot;#myvideo&quot;);
 2.  var textTracks = videoElement.textTracks; // one for each track element
 3.  var textTrack = textTracks[0]; // corresponds to the first track element
 4.  
@@ -3514,10 +3512,9 @@ video</a>.</p>
 <h4>This example used only standard plain text content for the cues:</h4>
 
 <details>
-  <summary>WebVTT code extract!</summary>
+  <summary>WEBVTT code!</summary>
 
-<pre>
-1.  WEBVTT
+<pre>1.  WEBVTT
 2.  
 3.  chapter-1
 4.  00:00:00.000 --&gt; 00:00:26.000
@@ -3567,10 +3564,9 @@ JSON objects as cue contents:</p>
 href="https://mainline.i3s.unice.fr/mooc/elephants-dream-chapters-en-JSON.vtt">elephants-dream-chapters-en-JSON.vtt</a>:</p>
 
 <details>
-  <summary>WebVTT code extract!</summary>
+  <summary>WEBVTT code!</summary>
 
-<pre>
-1.  WEBVTT
+<pre>1.  WEBVTT
 2.   
 3.  chapter-1
 4.  00:00:00.000 --&gt; 00:00:26.000
@@ -3605,10 +3601,9 @@ example at JSBin that uses this new .vtt file</a>:</p>
 <h4>HTML code:</h4>
 
 <details>
-  <summary>HTML code extract!</summary>
+  <summary>HTML code!</summary>
 
-<pre>
-1.  ...
+<pre>1.  ...
 2.  &lt;video id=&quot;myVideo&quot; preload=&quot;metadata&quot; controls crossOrigin=&quot;anonymous&quot;&gt;
 3.    &lt;source src=&quot;https://...../elephants-dream-medium.mp4&quot;
 4.      type=&quot;video/mp4&quot;&gt;
@@ -3640,10 +3635,9 @@ right of the video.</p>
 <h4>JavaScript code:</h4>
 
 <details>
-  <summary>JavaScript code extract!</summary>
+  <summary>JavaScript extract!</summary>
 
-<pre>
-1.  var video, chapterMenuDiv;
+<pre>1.  var video, chapterMenuDiv;
 2.  var tracks, trackElems, tracksURLs = [];
 3.   
 4.  window.onload = function() {
@@ -3777,10 +3771,9 @@ it easy to style and position the thumbnails using CSS.</p>
 <h4>CSS source code extract:</h4>
 
 <details>
-  <summary>CSS code extract!</summary>
+  <summary>CSS code!</summary>
 
-<pre>
-1.  #chapterMenuSection {
+<pre>1.  #chapterMenuSection {
 2.     background-color: lightgrey;
 3.     border-radius:10px;
 4.     padding: 20px;
@@ -3883,10 +3876,9 @@ single mp3 file that contains recorded animal sounds</a>.</p>
 sounds in this audio file:</p>
 
 <details>
-  <summary>JavaScript code extract!</summary>
+  <summary>JavaScript extract!</summary>
 
-<pre>
-1.  var sounds = [
+<pre>1.  var sounds = [
 2.      {
 3.         id: &quot;purr&quot;,
 4.         startTime: 0.200,
@@ -3930,8 +3922,7 @@ in some browsers), it’s easy to use this small polyfill:</p>
 <details>
   <summary>Code extract!</summary>
 
-<pre>
-1.   // for browsers that do not implement the getCueById() method
+<pre>1.   // for browsers that do not implement the getCueById() method
 2.  
 3.   // let&#39;s assume we&#39;re adding the getCueById function to a TextTrack object
 4.   //named &quot;track&quot;
@@ -3978,8 +3969,7 @@ instance</i> - as above. Note that the track <b>must</b> be a
 <details>
   <summary>Code extract!</summary>
 
-<pre>
-1. ...
+<pre>1. ...
 2. &lt;h1&gt;Playing audio sprites with the track element&lt;/h1&gt;
 3.  &lt;p&gt;A demo by Sam Dutton, adapted for JsBin by M.Buffa&lt;/p&gt;
 4.  
@@ -4081,8 +4071,7 @@ within a cuechange listener attached to a TextTrack:</p>
 <details>
   <summary>Code extract!</summary>
 
-<pre>
-1. textTrack.oncuechange = function (){
+<pre>1. textTrack.oncuechange = function (){
 2.     // &quot;this&quot; is the textTrack that fired the event.
 3.     // Let&#39;s get the first active cue for this time segment
 4.     var cue = this.activeCues[0]; 
@@ -4178,10 +4167,9 @@ example at JSBin</a></p>
 <h4>HTML code extract:</h4>
 
 <details>
-  <summary>HTML source code!</summary>
+  <summary>HTML code!</summary>
 
-<pre>
-1.  &lt;!DOCTYPE html&gt;
+<pre>1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.  &lt;head&gt;
 4.  &lt;meta charset=&quot;utf-8&quot;&gt;
@@ -4216,10 +4204,9 @@ example at JSBin</a></p>
 <h4>JavaScript code:</h4>
 
 <details>
-  <summary>JavaScript source code extract!</summary>
+  <summary>JavaScript extract!</summary>
 
-<pre>
-1.  window.onload = function() {
+<pre>1.  window.onload = function() {
 2.      var videoElement = document.querySelector(&quot;#myVideo&quot;);
 3.      var myIFrame = document.querySelector(&quot;#myIframe&quot;);
 4.      var currentURLSpan = document.querySelector(&quot;#currentURL&quot;);
@@ -4542,10 +4529,9 @@ above example)</p>
 <h4>HTML code extract:</h4>
 
 <details>
-  <summary>HTML source code extract!</summary>
+  <summary>HTML code!</summary>
 
-<pre>
-1. &lt;audio src=&quot;https://mainline.i3s.unice.fr/mooc/drums.mp3&quot;
+<pre>1. &lt;audio src=&quot;https://mainline.i3s.unice.fr/mooc/drums.mp3&quot;
 2.         id=&quot;gainExample&quot;
 3.         controls loop
 4.         crossorigin=&quot;anonymous&quot;&gt;
@@ -4560,10 +4546,9 @@ above example)</p>
 <h4>JavaScript source code:</h4>
 
 <details>
-  <summary>JavaScript source code!</summary>
+  <summary>JavaScript extract!</summary>
 
-<pre>
-1.  // This line is a trick to initialize the AudioContext
+<pre>1.  // This line is a trick to initialize the AudioContext
 2.  // that will work on all recent browsers
 3.  var ctx = window.AudioContext || window.webkitAudioContext;
 4.  var audioContext;
@@ -4748,10 +4733,9 @@ JSBin</a>, or try it in your browser:</p>
 <h4>Source code extract:</h4>
 
 <details>
-  <summary>Source code extract!</summary>
+  <summary>Source code!</summary>
 
-<pre>
-1.  /* Gain Node */
+<pre>1.  /* Gain Node */
 2.   
 3.  var gainExample = document.querySelector(&#39;#gainExample&#39;);
 4.  var gainSlider = document.querySelector(&#39;#gainSlider&#39;);
@@ -4792,10 +4776,9 @@ JSBin,</a> or try it in your browser:</p>
 <h4>Source code extract:</h4>
 
 <details>
-  <summary>Source code extract!</summary>
+  <summary>Code extract!</summary>
 
-<pre>
-1.  // the audio element
+<pre>1.  // the audio element
 2.  playerPanner = document.querySelector(&#39;#pannerPlayer&#39;);
 3.  pannerSlider = document.querySelector(&#39;#pannerSlider&#39;);
 4.   
@@ -4857,10 +4840,9 @@ equalizer in a next lesson, and use six filters with type=peaking. </p>
 <h4>Source code extract:</h4>
 
 <details>
-  <summary>Source code extract!</summary>
+  <summary>Code extract!</summary>
 
-<pre>
-1.  var ctx = window.AudioContext || window.webkitAudioContext;
+<pre>1.  var ctx = window.AudioContext || window.webkitAudioContext;
 2.  var audioContext = new ctx();
 3.   
 4.  /* BiquadFilterNode */
@@ -4956,10 +4938,9 @@ decodeAudioData method. Once the impulse is decoded, we can build the
 graph. So typical use is as follows:</p>
 
 <details>
-  <summary>Source code extract!</summary>
+  <summary>Code extract!</summary>
 
-<pre>
-1.  var impulseURL = &quot;https://mainline.i3s.unice.fr/mooc/Scala-Milan-Opera-Hall.wav&quot;;
+<pre>1.  var impulseURL = &quot;https://mainline.i3s.unice.fr/mooc/Scala-Milan-Opera-Hall.wav&quot;;
 2.  var decodedImpulse;
 3.  ...
 4.  loadImpulse(impulseURL, function() {
@@ -5023,10 +5004,9 @@ WebAudio debugger, you should get similar results with the Chrome WebAudio Inspe
 <h4>And here is the function which builds the graph:</h4>
 
 <details>
-  <summary>Source code extract!</summary>
+  <summary>Code extract!</summary>
 
-<pre>
-1.  function buildAudioGraphConvolver() {
+<pre>1.  function buildAudioGraphConvolver() {
 2.    // create the nodes
 3.    var source = audioContext.createMediaElementSource(playerConvolver);
 4.    convolverNode = audioContext.createConvolver();
@@ -5093,10 +5073,9 @@ with the Chrome WebAudio Inspector extension):</p>
 <h4>Extract of the HTML code:</h4>
 
 <details>
-  <summary>Source code extract!</summary>
+  <summary>Code extract!</summary>
 
-<pre>
-1. &lt;audio src=&quot;https://mainline.i3s.unice.fr/mooc/guitarRiff1.mp3&quot;
+<pre>1. &lt;audio src=&quot;https://mainline.i3s.unice.fr/mooc/guitarRiff1.mp3&quot;
 2.   id=&quot;compressorExample&quot; controls loop
 3.   crossorigin=&quot;anonymous&quot;&gt;&lt;/audio&gt;
 4. &lt;br&gt;
@@ -5111,10 +5090,9 @@ with the Chrome WebAudio Inspector extension):</p>
 <h4>JavaScript source code:</h4>
 
 <details>
-  <summary>JavaScript source code!</summary>
+  <summary>JavaScript extract!</summary>
 
-<pre>
-1.  // This line is a trick to initialize the AudioContext
+<pre>1.  // This line is a trick to initialize the AudioContext
 2.  // that will work on all recent browsers
 3.  var ctx = window.AudioContext || window.webkitAudioContext;
 4.  var audioContext;
@@ -5217,10 +5195,9 @@ range of frequency values.</p>
 <h4>HTML code extract:</h4>
 
 <details>
-  <summary>HTML source code extract!</summary>
+  <summary>HTML code!</summary>
 
-<pre>
-1.  &lt;h2&gt;Equalizer made with the Web Audio API&lt;/h2&gt;
+<pre>1.  &lt;h2&gt;Equalizer made with the Web Audio API&lt;/h2&gt;
 2.   
 3.  &lt;div class=&quot;eq&quot;&gt;
 4.    &lt;audio id=&quot;player&quot; controls crossorigin=&quot;anonymous&quot; loop&gt;
@@ -5263,10 +5240,9 @@ range of frequency values.</p>
 <h4>JavaScript code:</h4>
 
 <details>
-  <summary>JavaScript source code!</summary>
+  <summary>JavaScript extract!</summary>
 
-<pre>
-1.  //Builds an equalizer with multiple biquad filters
+<pre>1.  //Builds an equalizer with multiple biquad filters
 2.   
 3.  var ctx = window.AudioContext || window.webkitAudioContext;
 4.  var context = new ctx();
@@ -5441,8 +5417,7 @@ the audio graph, and finally run the animation loop.</p>
 <details>
   <summary>Source code!</summary>
 
-<pre>
-1.  window.onload = function() {
+<pre>1.  window.onload = function() {
 2.     // get the audio context
 3.     audioContext= ...;
 4.  
@@ -5486,10 +5461,9 @@ Essentials and Best Practices course (Module 4).</p>
 <h4>JavaScript code:</h4>
 
 <details>
-  <summary>JavaScript source code!</summary>
+  <summary>JavaScript extract!</summary>
 
-<pre>
-1.  function buildAudioGraph() {
+<pre>1.  function buildAudioGraph() {
 2.     var mediaElement = document.getElementById(&#39;player&#39;);
 3.     var sourceNode = audioContext.createMediaElementSource(mediaElement);
 4.  
@@ -5548,8 +5522,7 @@ waveform:</p>
 <details>
   <summary>Source code!</summary>
 
-<pre>
-1. function visualize() {
+<pre>1. function visualize() {
 2.   // 1 - clear the canvas
 3.   // like this: canvasContext.clearRect(0, 0, width, height);
 4. 
@@ -5688,8 +5661,7 @@ animation loop to plot frequency bars instead of a waveform:</p>
 <details>
   <summary>Code extract!</summary>
 
-<pre>
-1.  function buildAudioGraph() {
+<pre>1.  function buildAudioGraph() {
 2.    ...
 3.    // Create an analyser node
 4.    analyser = audioContext.createAnalyser();
@@ -5799,8 +5771,7 @@ results with the Chrome WebAudio Inspector extension):</p>
 <details>
   <summary>Code extract!</summary>
 
-<pre>
-1.  function buildAudioGraph() {
+<pre>1.  function buildAudioGraph() {
 2.     var mediaElement = document.getElementById(&#39;player&#39;);
 3.        var sourceNode = audioContext.createMediaElementSource(mediaElement);
 4.  
@@ -5877,8 +5848,7 @@ rectangle.</p>
 <details>
   <summary>Code extract!</summary>
 
-<pre>
-1.  function drawVolumeMeter() {
+<pre>1.  function drawVolumeMeter() {
 2.    canvasContext.save();
 3.  
 4.    analyser.getByteFrequencyData(dataArray);
@@ -5921,8 +5891,7 @@ average value which we will draw as the volume meter.</p>
 <details>
   <summary>Code extract!</summary>
 
-<pre>
-1. // create a vertical gradient of the height of the canvas
+<pre>1. // create a vertical gradient of the height of the canvas
 2. gradient = canvasContext.createLinearGradient(0,0,0, height);
 3. gradient.addColorStop(1,&#39;#000000&#39;);
 4. gradient.addColorStop(0.75,&#39;#ff0000&#39;);
@@ -5939,8 +5908,7 @@ separate function):</p>
 <details>
   <summary>Code extract!</summary>
 
-<pre>
-1.  function visualize() {
+<pre>1.  function visualize() {
 2.  
 3.    clearCanvas();
 4.  
@@ -6010,10 +5978,9 @@ adjustment of the left/right balance with a slider.</p>
 <h4>Source code extract:</h4>
 
 <details>
-  <summary>Source code extract!</summary>
+  <summary>Code extract!</summary>
 
-<pre>
-1.  function buildAudioGraph() {
+<pre>1.  function buildAudioGraph() {
 2.    var mediaElement = document.getElementById(&#39;player&#39;);
 3.    var sourceNode = audioContext.createMediaElementSource(mediaElement);
 4.  
@@ -6072,10 +6039,9 @@ adjustment of the left/right balance with a slider.</p>
 <h4>And here is the new function for drawing the two volume meters:</h4>
 
 <details>
-  <summary>Source code extract!</summary>
+  <summary>Code extract!</summary>
   
-<pre>
-1.  function drawVolumeMeters() {
+<pre>1.  function drawVolumeMeters() {
 2.    canvasContext.save();
 3.  
 4.    // set the fill style to a nice gradient
@@ -6265,10 +6231,9 @@ nodes…</p>
 <h4>JavaScript source code:</h4>
 
 <details>
-  <summary>JavaScript code extract!</summary>
+  <summary>JavaScript extract!</summary>
   
-<pre>
-1.  var ctx;
+<pre>1.  var ctx;
 2.   
 3.  var soundURL =
 4.  &#39;https://mainline.i3s.unice.fr/mooc/shoot2.mp3&#39;;
@@ -6391,10 +6356,9 @@ JSBin that uses the BufferLoader utility</a>:</p>
 <h4>JavaScript code extract (does not contain the BufferLoader utilitycode):</h4>
 
 <details>
-  <summary>JavaScript code extract!</summary>
+  <summary>JavaScript extract!</summary>
 
-<pre>
-1.  var listOfSoundSamplesURLs = [
+<pre>1.  var listOfSoundSamplesURLs = [
 2.  &#39;https://mainline.i3s.unice.fr/mooc/shoot1.mp3&#39;,
 3.  &#39;https://mainline.i3s.unice.fr/mooc/shoot2.mp3&#39;
 4.  ];
@@ -6489,10 +6453,9 @@ article on HTML5Rocks)</a>:</p>
 <h4>Here is the source code of this function:</h4>
 
 <details>
-  <summary>Source code extract!</summary>
+  <summary>Source code!</summary>
   
-<pre>
-1.  function makeSource(buffer) {
+<pre>1.  function makeSource(buffer) {
 2.     // build graph source -&gt; gain -&gt; compressor -&gt; speakers
 3.     // We use a compressor at the end to cut the part of the signal
 4.     // that would make peaks
@@ -6522,10 +6485,9 @@ eventually creating random time intervals between them and random pitch
 variations:</p>
 
 <details>
-  <summary>Function playSampleRepeated code extract!</summary>
+  <summary>JavaScript extract!</summary>
   
-<pre>
-1.  function playSampleRepeated(buffer, rounds, interval, random, random2) {
+<pre>1.  function playSampleRepeated(buffer, rounds, interval, random, random2) {
 2.     if (typeof random == &#39;undefined&#39;) {
 3.        random = 0;
 4.     }
@@ -6969,10 +6931,9 @@ JSBin</a>: open the HTML, JavaScript and output tabs to see the code. This exam
 <h4>Source code extract:</h4>
 
 <details>
-  <summary>Source code extract!</summary>
+  <summary>Source code!</summary>
   
-<pre>
-1. var addStarToTheBody = function(){
+<pre>1. var addStarToTheBody = function(){
 2.     document.body.innerHTML += &quot;*&quot;;
 3.     // calls again itself AFTER 200ms
 4.     setTimeout(addStarToTheBody, 200);
@@ -7014,10 +6975,9 @@ JSBin</a>.</p>
 <h4>Source code extract:</h4>
 
 <details>
-  <summary>Source code extract!</summary>
+  <summary>Source code!</summary>
 
-<pre>
-1.  window.onload = function init() {
+<pre>1.  window.onload = function init() {
 2.     // called after the page is entirely loaded
 3.     requestAnimationFrame(mainloop);
 4.  };
@@ -7047,10 +7007,9 @@ JSBin</a>.</p>
 <h4>Here is the starting point:</h4>
 
 <details>
-  <summary>Source code extract!</summary>
+  <summary>Source code!</summary>
   
-<pre>
-1.  var GF = function(){
+<pre>1.  var GF = function(){
 2.  
 3.    var mainLoop = function(time){
 4.      //Main function, called each frame
@@ -7088,10 +7047,9 @@ JSBin</a>.</p>
 <h4>Source code extract:</h4>
 
 <details>
-  <summary>Source code extract!</summary>
+  <summary>Source code!</summary>
   
-<pre>
-1. var mainLoop = function(time){
+<pre>1. var mainLoop = function(time){
 2.   // main function, called each frame
 3.   document.body.innerHTML = Math.random();
 4.  
@@ -7126,10 +7084,9 @@ JSBin</a>.</p>
 <h4>Source code extract:</h4>
 
 <details>
-  <summary>Source code extract!</summary>
+  <summary>Source code!</summary>
   
-<pre>
-1.     // vars for counting frames/s, used by the measureFPS function
+<pre>1.     // vars for counting frames/s, used by the measureFPS function
 2.  var frameCount = 0;
 3.  var lastTime;
 4.  var fpsContainer;
@@ -7164,10 +7121,9 @@ JSBin</a>.</p>
 <p>Now we can call the measureFPS function from inside the animation loop, passing it the current time, given by the high resolution timer that comes with the requestAnimationFrame API:</p>
 
 <details>
-  <summary>Source code extract!</summary>
+  <summary>Source code!</summary>
   
-<pre>
-1. var mainLoop = function(time){
+<pre>1. var mainLoop = function(time){
 2.   // compute FPS, called each frame, uses the high resolution time parameter 
 3.   // given by the browser that implements the requestAnimationFrame API
 4.   measureFPS(time);
@@ -7182,10 +7138,9 @@ JSBin</a>.</p>
 <p>And the &lt;div&gt; element used to display FPS on the screen is created in this example by the start() function:</p>
 
 <details>
-  <summary>Source code extract!</summary>
+  <summary>Source code!</summary>
   
-<pre>
-1. var start = function(){
+<pre>1. var start = function(){
 2.   // adds a div for displaying the fps value
 3.   fpsContainer = document.createElement(div);
 4.   document.body.appendChild(fpsContainer);
@@ -7201,10 +7156,9 @@ JSBin</a>.</p>
 <p>My favorite hack uses the onerror callback on an &lt;img&gt; element like this:</p>
 
 <details>
-  <summary>Source code extract!</summary>
+  <summary>Source code!</summary>
   
-<pre>
-1. function mainloop(){
+<pre>1. function mainloop(){
 2.   var img = new Image;
 3.  
 4.   img.onerror = mainloop;
@@ -7233,8 +7187,7 @@ and check the number of FPS displayed with this JSBin example</a>.</p>
 <details>
   <summary>Code extract!</summary>
   
-<pre>
-1.  var mainLoop = function(){
+<pre>1.  var mainLoop = function(){
 2.    // main function, called each frame
 3.  
 4.    measureFPS(+(new Date()));
@@ -7278,10 +7231,9 @@ HTML5 Coding Essentials and Best Practices course</a>.</p>
 <h4>HTML code (declaration of the canvas):</h4>
 
 <details>
-  <summary>Source code extract!</summary>
+  <summary>HTML code!</summary>
   
-<pre>
-1.  &lt;!DOCTYPE html&gt;
+<pre>1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.  &lt;head&gt;
 4.     &lt;meta charset=&quot;utf-8&quot;&gt;
@@ -7321,10 +7273,9 @@ described in the HTML5 Part 1 course:</p>
 <h4>Here is JavaScript code which implements those best practices:</h4>
 
 <details>
-  <summary>Code extract!</summary>
+  <summary>JavaScript extract!</summary>
 
-<pre>
-1.  // useful to have them as global variables
+<pre>1.  // useful to have them as global variables
 2.  var canvas, ctx, w, h;
 3.   
 4.   
@@ -7415,10 +7366,9 @@ using the default color (black) and wireframe and filled modes:</p>
 <h4>HTML code:</h4>
 
 <details>
-  <summary>Code extract!</summary>
+  <summary>HTML code!</summary>
 
-<pre>
-1.  &lt;!DOCTYPE html&gt;
+<pre>1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.  &lt;head&gt;
 4.  &lt;meta charset=&quot;utf-8&quot;&gt;
@@ -7435,10 +7385,9 @@ using the default color (black) and wireframe and filled modes:</p>
 <h4>JavaScript complete code:</h4>
 
 <details>
-  <summary>Code extract!</summary>
+  <summary>JavaScript extract!</summary>
 
-<pre>
-1.  // Inits
+<pre>1.  // Inits
 2.  window.onload = function init() {
 3.    var game = new GF();
 4.    game.start();
@@ -7617,10 +7566,9 @@ key that fired the event will be passed to the listener function. It is
 possible to test which key has been pressed or released, like this:</p>
 
 <details>
-  <summary>Source code extract!</summary>
+  <summary>JavaScript extract!</summary>
   
-<pre>
-1. window.addEventListener(&#39;keydown&#39;, function(event) {
+<pre>1. window.addEventListener(&#39;keydown&#39;, function(event) {
 2.    if (event.keyCode === 37) {
 3.      // Left arrow was pressed
 4.    }
@@ -7699,10 +7647,9 @@ far from finished yet):</p>
 <h4>And here is the complete source code:</h4>
 
 <details>
-  <summary>Code extract!</summary>
+  <summary>JavaScript extract!</summary>
   
-<pre>
-1.  // Inits
+<pre>1.  // Inits
 2.  window.onload = function init() {
 3.    var game = new GF();
 4.    game.start();
@@ -7859,10 +7806,9 @@ down) as part of the inputStates object, just as we do with the keyboard
 <h4>Below is the JavaScript source code for this small example:</h4>
 
 <details>
-  <summary>JavaScript code extract!</summary>
+  <summary>JavaScript extract!</summary>
 
-<pre>
-1.  var canvas, ctx;
+<pre>1.  var canvas, ctx;
 2.  var inputStates = {};
 3.  
 4.  window.onload = function init() {
@@ -7930,10 +7876,9 @@ JsBin</a></p>
 <h4>Source code:</h4>
 
 <details>
-  <summary>Code extract!</summary>
+  <summary>JavaScript extract!</summary>
 
-<pre>
-1.  var canvas, ctx, width, height;
+<pre>1.  var canvas, ctx, width, height;
 2.  var rect = {x:40, y:40, rayon: 30, width:80, height:80, v:1};
 3.  var mousepos = {x:0, y:0};
 4.   
@@ -8028,10 +7973,9 @@ to direct movements every 1/60th second.</p>
 <h4>JavaScript source code:</h4>
 
 <details>
-  <summary>Code extract!</summary>
+  <summary>JavaScript extract!</summary>
 
-<pre>
-1.  // Inits
+<pre>1.  // Inits
 2.  window.onload = function init() {
 3.    var game = new GF();
 4.    game.start();
@@ -8273,14 +8217,12 @@ connected, and to see the range of facilities it can offer to
 JavaScript.</p>
 <p>If the user interacts with a controller (presses a button, moves a
 stick) a <a href="https://w3c.github.io/gamepad/#event-gamepadconnected" target="_blank" rel="noopener noreferrer">gamepadconnected</a> event will be sent to the page. NB the page must be visible! The event object passed to the gamepadconnected listener has a gamepad property which describes the connected device.</p>
-<p><a href="https://jsbin.com/kiduwu/edit?console,output" target="_blank" rel="noopener noreferrer">Example on
-JSBin</a></p>
+<p><a href="https://jsbin.com/kiduwu/edit?console,output" target="_blank" rel="noopener noreferrer">Example on JSBin</a></p>
 
 <details>
-  <summary>Code extract!</summary>
+  <summary>JavaScript extract!</summary>
   
-<pre>
-1.  window.addEventListener(&quot;gamepadconnected&quot;, function(e) {
+<pre>1.  window.addEventListener(&quot;gamepadconnected&quot;, function(e) {
 2.     var gamepad = e.gamepad;
 3.     var index = gamepad.index;
 4.     var id = gamepad.id;
@@ -8334,10 +8276,9 @@ special when the system detects that a gamepad has been unplugged.</p>
 <p>Here is the code to use to scan for a gamepad:</p>
 
 <details>
-  <summary>Code extract!</summary>
+  <summary>JavaScript extract!</summary>
 
-<pre>
-1.  var gamepad;
+<pre>1.  var gamepad;
 2.   
 3.  function mainloop() {
 4.     ...
@@ -12127,8 +12068,7 @@ also move the getMousePos method into there. </p>
 <p>Following the same idea, let’s put these into
 a collisions.js file:</p>
 
-<pre>
-1. // We can add the other collision functions seen in the
+<pre>1. // We can add the other collision functions seen in the
 2. // course here...
 3. // Collisions between rectangle and circle
 4. function circRectsOverlap(x0, y0, w0, h0, cx, cy, r) {
@@ -12160,8 +12100,7 @@ during the course, could be put into this file as well.</p>
 <details>
   <summary>Final game game.html!</summary>
   
-<pre>
-1.  &lt;!DOCTYPE html&gt;
+<pre>1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.  &lt;head&gt;
 4.    &lt;meta charset=&quot;utf-8&quot;&gt;
@@ -12456,8 +12395,7 @@ using XMLHttpRequest level 2.</p>
 the new arrayBuffer type for the expected response (<i>line
 5</i>):</p>
 
-<pre>
-1.  // Load a binary file from a URL as an ArrayBuffer.
+<pre>1.  // Load a binary file from a URL as an ArrayBuffer.
 2.  function loadSoundFile(url) {
 3.  var xhr = new XMLHttpRequest();
 4.  xhr.open(&#39;GET&#39;, url, true);
@@ -12488,8 +12426,7 @@ it using XHR2.</p>
 <details>
   <summary>Complete source code!</summary>
   
-<pre>
-1.  &lt;!DOCTYPE html&gt;
+<pre>1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.   &lt;head&gt;
 4.     &lt;title&gt;XHR2 and binary files + Web Audio API&lt;/title&gt;
@@ -12657,8 +12594,7 @@ different depending on the type of operation: a download (using the GET
 HTTP method), or an upload (using POST).</p>
 <p><b>Syntax for download:</b></p>
 
-<pre>
-1.  var xhr = new XMLHttpRequest();
+<pre>1.  var xhr = new XMLHttpRequest();
 2.  xhr.open(&#39;GET&#39;, url, true);
 3.  ...
 4.  xhr.onprogress = function(e) {
@@ -12672,8 +12608,7 @@ HTTP method), or an upload (using POST).</p>
 <p>Note that an alternative syntax such as xhr.addEventListener(‘progress’, callback, false) also works.</p>
 <p><b>Syntax for upload:</b></p>
 
-<pre>
-1. var xhr = new XMLHttpRequest();
+<pre>1. var xhr = new XMLHttpRequest();
 2. xhr.open(&#39;POST&#39;, url, true);
 3. ...
 4. xhr.upload.onprogress = function(e) {
@@ -12706,8 +12641,7 @@ extract that does this for a download operation:</p>
 
 <h4>HTML</h4>
 
-<pre>
-1. &lt;progress id=&quot;downloadProgress&quot; value=0&gt;&lt;progress&gt;
+<pre>1. &lt;progress id=&quot;downloadProgress&quot; value=0&gt;&lt;progress&gt;
 </pre>
 
 <h4>Script:</h4>
@@ -13213,12 +13147,12 @@ used to avoid propagating dragover events. This is done by returning
 the false value at <i>line 1</i>.</p>
 
 <h4>Step #3: write a drop handler, fetch content from the clipboard, and do something with it</h4>
+<!-- <summary>function dropHandler!</summary> -->
 
 <details>
-  <summary>function dropHandler!</summary>
+  <summary>JavaScript</summary>
   
-<pre>
-1. function dropHandler(event) {
+<pre>1. function dropHandler(event) {
 2.   console.log(&#39;drop event, target: &#39; + event.target.innerHTML);
 3.  
 4.   ...
@@ -13252,13 +13186,12 @@ the dragstart handler).</p>
 href="https://codepen.io/w3devcampus/pen/YyzWKy?editors=110" target="_blank" rel="noopener noreferrer">play with
 it at CodePen</a>:</p>
 
-<h4>Source code:</h4>
+<h4>HTML Source code:</h4>
 
 <details>
   <summary>Code extract!</summary>
 
-<pre>
-1.  &lt;!DOCTYPE html&gt;
+<pre>1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html&gt;
 3.  &lt;head&gt;
 4.     &lt;script&gt;
@@ -13328,8 +13261,7 @@ online example):</p>
 <details>
   <summary>Code extract!</summary>
 
-<pre>
-1.  div {
+<pre>1.  div {
 2.     height: 150px;
 3.     width: 150px;
 4.     float: left;
@@ -13401,8 +13333,7 @@ are taken from data­-* attributes of the &lt;li&gt; element.</p>
 
 <h4>HTML code from the example:</h4>
 
-<pre>
-1. &lt;li class=&quot;user&quot; data-name=&quot;John Resig&quot; data-city=&quot;Boston&quot;
+<pre>1. &lt;li class=&quot;user&quot; data-name=&quot;John Resig&quot; data-city=&quot;Boston&quot;
 2.     data-lang=&quot;js&quot; data-food=&quot;Bacon&quot;&gt;
 3. John says: &lt;span&gt;Hello, how are you?&lt;/span&gt;
 4. &lt;/li&gt;
@@ -13415,8 +13346,7 @@ are taken from data­-* attributes of the &lt;li&gt; element.</p>
 <details>
   <summary>JavaScript code extract!</summary>
   
-<pre>
-1.  &lt;script&gt;
+<pre>1.  &lt;script&gt;
 2.    var user = document.getElementsByTagName(&quot;li&quot;)[0];
 3.    var pos = 0, span = user.getElementsByTagName(&quot;span&quot;)[0];
 4.    var phrases = [
@@ -13462,16 +13392,14 @@ JsBin</a>. </p>
 
 <h4>HTML code from this example:</h4>
 
-<pre>
-1. &lt;input type=&quot;range&quot; min=&quot;0&quot; max=&quot;100&quot; value=&quot;25&quot;&gt;
+<pre>1. &lt;input type=&quot;range&quot; min=&quot;0&quot; max=&quot;100&quot; value=&quot;25&quot;&gt;
 </pre>
 
 <p>This is just one of the new input types introduced by HTML5.</p>
 
 <h4>JavaScript code from this example:</h4>
 
-<pre>
-1. &lt;script&gt;
+<pre>1. &lt;script&gt;
 2. var input = document.querySelector(&#39;input&#39;);
 3.   
 4. input.dataset.myvaluename = input.value; // Set an initial value.
@@ -13484,8 +13412,7 @@ JsBin</a>. </p>
 
 <h4>CSS code from this example:</h4>
 
-<pre>
-1. &lt;style&gt;
+<pre>1. &lt;style&gt;
 2. input::after {
 3.     color:red;
 4.     content: attr(data-myvaluename) &#39;/&#39; attr(max);
@@ -13588,10 +13515,9 @@ drop zone):</p>
 <h4>Source code extract:</h4>
 
 <details>
-  <summary>css extract!</summary>
+  <summary>CSS extract!</summary>
 
-<pre>
-1.  ...
+<pre>1.  ...
 2.  &lt;style&gt;
 3.    .dragged {
 4.      border: 2px dashed #000;
@@ -13652,8 +13578,7 @@ JavaScript into a single HTML page):</p>
 <details>
   <summary>HTML extract!</summary>
   
-<pre>
-1.  &lt;!DOCTYPE html&gt;
+<pre>1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html&gt;
 3.  &lt;head&gt;
 4.    &lt;style&gt;
@@ -13804,8 +13729,7 @@ appropriate:</p>
 the dragstart handler, and we set the effect (to “move”, “copy”, etc.) in the dragEnter or dragOver handler.</p>
 <p>Here is an extract of the code we can add to the example we saw earlier:</p>
 
-<pre>
-1. function dragStartHandler(event) {
+<pre>1. function dragStartHandler(event) {
 2.     // Allow a &quot;copy&quot; cursor effect
 3.     event.dataTransfer.effectAllowed = &#39;copy&#39;;
 4.     ...
@@ -13814,8 +13738,7 @@ the dragstart handler, and we set the effect (to “move”, “copy”, etc.)
 
 <p>And here is where we can set the cursor to a permitted value:</p>
 
-<pre>
-1. function dragEnterHandler(event) {
+<pre>1. function dragEnterHandler(event) {
 2.    // change the cursor shape to a &quot;+&quot;
 3.    event.dataTransfer.dropEffect = &#39;copy&#39;;
 4.    ...
@@ -13826,10 +13749,9 @@ the dragstart handler, and we set the effect (to “move”, “copy”, etc.)
 the dragstart handler:</p>
 
 <details>
-  <summary>function dragStartHandler!</summary>
+  <summary>JavaScript Extract!</summary>
   
-<pre>
-1.  function dragStartHandler(event) {
+<pre>1.  function dragStartHandler(event) {
 2.     // allowed cursor effects
 3.     event.dataTransfer.effectAllowed = &#39;copy&#39;;
 4.  
@@ -14101,7 +14023,7 @@ drop zone associated with this handler with
 an ondrop=dropHandler(event); attribute:</p>
 
 <details>
-  <summary>function dropHandler!</summary>
+  <summary>JavaScript Extract!</summary>
 
 <pre>
 1.  function dropHandler(event) {
@@ -14165,7 +14087,7 @@ to the dragOver handler attached to the drop zone!</p>
 <h4>… like in this example:</h4>
 
 <details>
-  <summary>function dragOverHandler!</summary>
+  <summary>JavaScript Extract!</summary>
   
 <pre>
 1.  function dragOverHandler(event) {
@@ -14263,10 +14185,9 @@ it at CodePen</a>:</p>
 <h4>Complete source code from the example:</h4>
 
 <details>
-  <summary>HTML source code!</summary>
+  <summary>HTML code!</summary>
   
-<pre>
-1.  &lt;!DOCTYPE html&gt;
+<pre>1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.  &lt;head&gt;
 4.     &lt;style&gt;
@@ -14392,10 +14313,9 @@ image thumbnails displayed in the open space beneath it:</p>
 <p>Source code extract (the part that reads the image file content and displays the thumbnails):</p>
 
 <details>
-  <summary>function readFilesAndDisplayPreview!</summary>
+  <summary>JavaScript extract!</summary>
   
-<pre>
-1.  function readFilesAndDisplayPreview(files) {
+<pre>1.  function readFilesAndDisplayPreview(files) {
 2.     // Loop through the FileList and render image files
 3.     // as thumbnails.
 4.     for (var i = 0, f; f = files[i]; i++) {
@@ -14458,8 +14378,7 @@ zone) or play with it at CodePen:</p>
 <details>
   <summary>HTML source code!</summary>
   
-<pre>
-1.  &lt;!DOCTYPE html&gt;
+<pre>1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.  &lt;head&gt;
 4.      &lt;style&gt;
@@ -14615,10 +14534,9 @@ that the event handler we used to track the selected files
 using &lt;input type=“file”/&gt; looks like this:</p>
 
 <details>
-  <summary>function handleFileSelect!</summary>
+  <summary>JavaScript extract!</summary>
   
-<pre>
-1.  &lt;script&gt;
+<pre>1.  &lt;script&gt;
 2.     function handleFileSelect(evt) {
 3.       var files = evt.target.files; // FileList object
 4.       // do something with files... why not call    readFilesAndDisplayPreview!
@@ -14827,8 +14745,7 @@ try to connect):</p>
 <details>
   <summary>HTML source code!</summary>
   
-<pre>
-1.  &lt;!DOCTYPE html&gt;
+<pre>1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html&gt;
 3.  &lt;head&gt;
 4.     &lt;style&gt;
@@ -15128,7 +15045,7 @@ JSBin</a> and look at the source code - there are plenty of comments.</p>
 <h4>This code is given "as is":</h4>
 
 <details>
-  <summary>PHP ‘as is’ source code!</summary>
+  <summary>PHP ‘as is’ code!</summary>
 
 <pre>1.  &lt;?php
 2.  
@@ -15221,7 +15138,7 @@ examples given in the previous section, except that this time we do not
 have to deal with a temporary “RecycleBin” directory.</p>
 
 <details>
-  <summary>PHP ‘as is’ source code!</summary>
+  <summary>PHP ‘as is’ code!</summary>
 
 <pre>
 1.  &lt;?php
@@ -15519,7 +15436,7 @@ an age and an email address.</p>
 <h4>Example of a transaction:</h4>
 
 <details>
-  <summary>Transaction source code!</summary>
+  <summary>Transaction code!</summary>
 
 <pre>
 1.  // Open a transaction for reading and writing on the DB &quot;customer&quot;
@@ -16141,10 +16058,9 @@ section - the function AddACustomer() that adds one customer:</p>
 <p>Here is the complete source code of the addACustomer function:</p>
 
 <details>
-  <summary>function addACustomer!</summary>
+  <summary>JavaScript extract!</summary>
   
-<pre>
-1.  function addACustomer() {
+<pre>1.  function addACustomer() {
 2.     // 1 - get a transaction on the &quot;customers&quot; object store
 3.     // in readwrite, as we are going to insert a new object
 4.     var transaction = db.transaction([&quot;customers&quot;], &quot;readwrite&quot;);
@@ -16256,8 +16172,7 @@ message if:</p>
 
 <h4>Here is the updated version of the HTML code of this example:</h4>
 
-<pre>
-1.  &lt;fieldset&gt;
+<pre>1.  &lt;fieldset&gt;
 2.    SSN: &lt;input type=&quot;text&quot; id=&quot;ssn&quot; placeholder=&quot;444-44-4444&quot;
 3.                required/&gt;&lt;br&gt;
 4.    Name: &lt;input type=&quot;text&quot; id=&quot;name&quot;/&gt;&lt;br&gt;
@@ -16272,10 +16187,9 @@ message if:</p>
 <h4>And here is the new version of the addACustomer() JavaScript function:</h4>
 
 <details>
-  <summary>function addACustomer!</summary>
+  <summary>JavaScript extract!</summary>
 
-<pre>
-1.  function addACustomer() {
+<pre>1.  function addACustomer() {
 2.     if(db === null) {
 3.        alert(&#39;Database must be opened, please click the Create
 4.               CustomerDB Database first&#39;);
@@ -16376,10 +16290,9 @@ refresh feature with some versions of Google Chrome.</p>
 <h4>Code added in this example:</h4>
 
 <details>
-  <summary>function removeACustomer!</summary>
+  <summary>JavaScript extract!</summary>
 
-<pre>
-1.  function removeACustomer() {
+<pre>1.  function removeACustomer() {
 2.     if(db === null) {
 3.        alert(&#39;Database must be opened first, please click the
 4.               Create CustomerDB Database first&#39;);
@@ -16469,10 +16382,9 @@ this screenshot:</p>
 <h4>Here is the new code added to our example:</h4>
 
 <details>
-  <summary>function updateACustomer!</summary>
+  <summary>JavaScript extract!</summary>
 
-<pre>
-1.  function updateACustomer() {
+<pre>1.  function updateACustomer() {
 2.     if(db === null) {
 3.       alert(&#39;Database must be opened first, please click the Create
 4.              CustomerDB Database first&#39;);
@@ -16548,10 +16460,9 @@ form is in the request.onsuccess callback).</p>
 <h4>Here is the code added to that example:</h4>
 
 <details>
-  <summary>function searchACustomer!</summary>
+  <summary>JavaScript extract!</summary>
 
-<pre>
-1.  function searchACustomer() {
+<pre>1.  function searchACustomer() {
 2.     if(db === null) {
 3.       alert(&#39;Database must be opened first, please click the Create
 4.              CustomerDB Database first&#39;);
@@ -16608,10 +16519,9 @@ this function (though, admittedly it won’t take care of all possible
 errors). Here is the shortened version:</p>
 
 <details>
-  <summary>function searchACustomerShort extract!</summary>
+  <summary>JavaScript extract!</summary>
 
-<pre>
-1.  function searchACustomerShort() {
+<pre>1.  function searchACustomerShort() {
 2.    db.transaction(&quot;customers&quot;).objectStore(&quot;customers&quot;)
 3.  .get(document.querySelector(&quot;#ssn&quot;).value).onsuccess =   
 4.     function(event) {
@@ -16633,10 +16543,9 @@ shortened version</a> (the function is at the end of the JavaScript
 code):</p>
 
 <details>
-  <summary>function searchACustomerShort!</summary>
+  <summary>JavaScript extract!</summary>
 
-<pre>
-1.  function searchACustomerShort() {
+<pre>1.  function searchACustomerShort() {
 2.     if(db === null) {
 3.        alert(&#39;Database must be opened first, please click the Create
 4.               CustomerDB Database first&#39;);
@@ -16683,10 +16592,9 @@ between those in a certain range, then you must use <i>a cursor</i>.</p>
 <h4>Here’s what it looks like:</h4>
 
 <details>
-  <summary>function listAllCustomers code!</summary>
+  <summary>JavaScript extract!</summary>
 
-<pre>
-1.  function listAllCustomers() {
+<pre>1.  function listAllCustomers() {
 2.     var objectStore =   
 3.       db.transaction(&quot;customers&quot;).objectStore(&quot;customers&quot;);
 4.  
@@ -16746,10 +16654,9 @@ a success callback, but the result property is undefined.</p>
 object store and add them to an array, like this:</p>
 
 <details>
-  <summary>function ListAllCustomersArray!</summary>
+  <summary>JavaScript extract!</summary>
   
-<pre>
-1.  function listAllCustomersArray() {
+<pre>1.  function listAllCustomersArray() {
 2.    var objectStore =   
 3.        db.transaction(&quot;customers&quot;).objectStore(&quot;customers&quot;);
 4.  
@@ -16793,10 +16700,9 @@ object store, and returns the first one it finds with a name equal to
 “Bill”:</p>
 
 <details>
-  <summary>function getCustomerByName!</summary>
-  
-<pre>
-1.  function getCustomerByName() {
+  <summary>JavaScript extract!</summary>
+
+<pre>1.  function getCustomerByName() {
 2.    if(db === null) {
 3.      alert(&#39;Database must be opened first, please click the Create
 4.              CustomerDB Database first&#39;);
@@ -16853,8 +16759,7 @@ on indexes:</p>
 <details>
   <summary>Normal cursor code!</summary>
   
-<pre>
-1.  &lt;b&gt;index.openCursor().onsuccess = function(event) {
+<pre>1.  &lt;b&gt;index.openCursor().onsuccess = function(event) {
 2.    &lt;b&gt;var cursor = event.target.result;
 3.    if (cursor) {
 4.      // cursor.key is a name, like &quot;Bill&quot;, and &lt;b&gt;cursor.value is  the
@@ -16908,7 +16813,7 @@ JSBin that uses the above methods</a>:</p>
 <h4>Source code extract from this example:</h4>
 
 <details>
-  <summary>function getAllCustomersByName!</summary>
+  <summary>JavaScript extract!</summary>
 
 <pre>1.  function getAllCustomersByName() {
 2.    if(db === null) {
@@ -17971,7 +17876,7 @@ shadow DOM:</p>
 <h4>JavaScript code:</h4>
 
 <details>
-  <summary>JavaScript code!</summary>
+  <summary>JavaScript extract!</summary>
 
 <pre>1.  // TIP : use &quot;document.currentScript&quot; here to select
 2.  // the &quot;local document&quot;, the one corresponding to this page.
@@ -18484,7 +18389,7 @@ href="https://en.wikipedia.org/wiki/Serialization" target="_blank" rel="noopener
 <p>The JavaScript code of the worker (worker0.js):</p>
 
 <details>
-  <summary>JavaScript source code!</summary>
+  <summary>JavaScript extract!</summary>
   
 <pre>1.  onmessage = function(e){
 2.     if ( e.data === &quot;start&quot; ) {
@@ -18508,7 +18413,7 @@ href="https://en.wikipedia.org/wiki/Serialization" target="_blank" rel="noopener
 by listening for an onError event from a worker object:</p>
 
 <details>
-  <summary>JavaScript source code!</summary>
+  <summary>JavaScript extract!</summary>
 
 <pre>1.  var worker = new Worker(&#39;worker.js&#39;);
 2.  worker.onmessage = function (event) {
@@ -18597,7 +18502,7 @@ sent.</p>
 <h4>The code of the worker (worker.js):</h4>
 
 <details>
-  <summary>JavaScript source code!</summary>
+  <summary>JavaScript extract!</summary>
 
 <pre>1.  var n = 1;
 2.  search: while (true) {
@@ -18689,7 +18594,7 @@ href="https://courses.edx.org/assets/courseware/v1/4af4dd2326f40b5d5d55aa15bbb12
 <h4>Here is the worker1.js code:</h4>
 
 <details>
-  <summary>JavaScript code!</summary>
+  <summary>JavaScript extract!</summary>
 
 <pre>1.  postMessage(&quot;Hey, in 3s, I&#39;ll start to compute prime numbers...&quot;);
 2.  
@@ -18776,7 +18681,7 @@ worker.</p>
 <h4>worker2.js is the same as in the last example:</h4>
 
 <details>
-  <summary>JavaScript code!</summary>
+  <summary>JavaScript extract!</summary>
   
 <pre>1.  postMessage(&quot;Hey, in 3s, I&#39;ll start to compute prime numbers...&quot;);
 2.  
@@ -19214,7 +19119,7 @@ This is why, in the example, we round the returned values with Math.round() at
 <h4>Typical use / code from the above example:</h4>
 
 <details>
-  <summary>Device Orientation with HTML5 code!</summary>
+  <summary>HTML code!</summary>
 
 <pre>1.  ...
 2.  &lt;h2&gt;Device Orientation with HTML5&lt;/h2&gt;
@@ -19551,7 +19456,7 @@ later on)…</p>
 <h4>Code from this example:</h4>
 
 <details>
-  <summary>Device Orientation with HTML5 code!</summary>
+  <summary>HTML code!</summary>
 
 <pre>1.  &lt;!doctype html&gt;
 2.  &lt;html&gt;
@@ -19643,7 +19548,7 @@ later on)…</p>
 <h4>Code from the example:</h4>
 
 <details>
-  <summary>Devicemotion API using JQuery mobile source code!</summary>
+  <summary>HTML code!</summary>
 
 <pre>1.  &lt;html&gt;
 2.     &lt;head&gt;
@@ -19740,7 +19645,7 @@ later on)…</p>
 <h4>Code from the example:</h4>
 
 <details>
-  <summary>Device orientation source code!</summary>
+  <summary>HTML code!</summary>
 
 <pre>1.  &lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
 2.  &lt;html xmlns=&quot;https://www.w3.org/1999/xhtml&quot;&gt;
@@ -19921,7 +19826,7 @@ spec: 
 <h5>the end…</h5>
 
 <br>
-<h6>Last Updated: 5-9-2023 11:09am</h6>
+<h6>Last Updated: 5-9-2023 2:34pm</h6>
 <!--
 <img class="displayed"
   src="./images/image0.jpeg?raw=true"
