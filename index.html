@@ -1471,12 +1471,8 @@ from one browser to another, in particular if you are using old versions.</p>
   <li><p>Chrome and Opera both provide a subtitle menu and load the text track set that matches the browser language. If none of the available text tracks match the browser’s language, then it loads the track with the default attribute, if there is one. Otherwise, it loads none. Let’s say that support is very incomplete (!).</p></li>
   <li><p>Firefox provides also a subtitle menu but will show the first defined text track <i>only if</i> it has default set. It will load all tracks in memory as soon as the page is loaded.</p></li>
 </ul>
-<p>Also, there is <a
-href="https://www.w3.org/TR/html51/semantics-embedded-content.html#timed-text-tracks" target="_blank" rel="noopener noreferrer">a
-Timed Text Track API in the HTML5/HTML5.1 specification</a> that enables
-us to manipulate &lt;track&gt; contents from JavaScript. Do you recall
-that text tracks are associated with WebVTT files? As a quick reminder,
-let’s look at a WebVTT file:</p>
+
+<p>Also, there is <a href="https://www.w3.org/TR/html51/semantics-embedded-content.html#timed-text-tracks" target="_blank" rel="noopener noreferrer">a Timed Text Track API in the HTML5/HTML5.1 specification</a> that enables us to manipulate &lt;track&gt; contents from JavaScript. Do you recall that text tracks are associated with WebVTT files? As a quick reminder, let’s look at a WebVTT file:</p>
 
 <h4>WEBVTT</h4>
 
@@ -1636,10 +1632,7 @@ Status”</a>, written in April 2015, for further details.</p>
 <h4>Here is a quick summary:</h4>
 
 <ul>
-<li>Safari provides a menu you can use to choose which subtitle/caption
-track to display. If one of the defined text tracks has
-the default attribute set, then it is loaded by default. Otherwise, the
-default is off.</li>
+  <li>Safari provides a menu you can use to choose which subtitle/caption track to display. If one of the defined text tracks has the default attribute set, then it is loaded by default. Otherwise, the default is off.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-------------------------- 22. safari menu - subtitles/captions (32) --------------------------->
@@ -1654,12 +1647,7 @@ default is off.</li>
   <li><p>Firefox provides a subtitle menu but will show the first defined text track <i>only if</i> it has default set. It will load all tracks in memory as soon as the page is loaded.</p></li>
 </ul>
 
-<p>There is <a
-href="https://www.w3.org/TR/html51/semantics-embedded-content.html#timed-text-tracks" target="_blank" rel="noopener noreferrer">a
-Timed Text Track API in the HTML5/HTML5.1 specification</a> that enables
-us to manipulate &lt;track&gt; contents from JavaScript. Do you recall
-that text tracks are associated with WebVTT files? As a quick reminder,
-let’s look at a WebVTT file:</p>
+<p>There is <a href="https://www.w3.org/TR/html51/semantics-embedded-content.html#timed-text-tracks" target="_blank" rel="noopener noreferrer">a Timed Text Track API in the HTML5/HTML5.1 specification</a> that enables us to manipulate &lt;track&gt; contents from JavaScript. Do you recall that text tracks are associated with WebVTT files? As a quick reminder, let’s look at a WebVTT file:</p>
 
 <details>
   <summary>WEBVTT code extract!</summary>
@@ -4460,48 +4448,29 @@ add an audio or video player to an HTML document, using the
 </p>
 
 <h4>Under the hood, this HTML code:</h4>
+
 <ol type="1">
-<li>
-initiates a network request to stream the content,
-</li>
-<li>
-deals with decoding/streaming/buffering the incoming data,
-</li>
-<li>
-renders audio controls,
-</li>
-<li>
-updates the progress indicator, time, etc.
-</li>
+  <li>initiates a network request to stream the content,</li>
+  <li>deals with decoding/streaming/buffering the incoming data,</li>
+  <li>renders audio controls,</li>
+  <li>updates the progress indicator, time, etc.</li>
 </ol>
-<p>
-You also learned that it’s possible to write a custom player: to make
-your own controls and use the JavaScript API of
-the &lt;audio&gt; and &lt;video&gt; elements; to call play()
-and pause(); to read/write properties such as currentTime; to listen to
-events (ended, error, timeupdate, etc.); and to manage a playlist, etc.
-</p>
-<h4>
-However, there are many things we still cannot do, including:
-</h4>
+
+<p>You also learned that it’s possible to write a custom player: to make
+your own controls and use the JavaScript API of the &lt;audio&gt; and 
+&lt;video&gt; elements; to call play() and pause(); to read/write properties 
+such as currentTime; to listen to events (ended, error, timeupdate, etc.); 
+and to manage a playlist, etc.</p>
+
+<h4>However, there are many things we still cannot do, including:</h4>
+
 <ul>
-<li>
-Play multiple sounds or music in perfect sync,
-</li>
-<li>
-Play non-streamed sounds (this is a requirement for games: sounds must
-be loaded in memory),
-</li>
-<li>
-Output directly to the speakers; adding special effects, equalizer,
-stereo balancing, reverb, etc.
-</li>
-<li>
-Any fancy visualizations that dance with the music (e.g. waveforms
-and frequencies).
-</li>
+  <li>Play multiple sounds or music in perfect sync,</li>
+  <li>Play non-streamed sounds (this is a requirement for games: sounds must be loaded in memory),</li>
+  <li>Output directly to the speakers; adding special effects, equalizer, stereo balancing, reverb, etc.</li>
+  <li>Any fancy visualizations that dance with the music (e.g. waveforms and frequencies).</li>
 </ul>
-<p>
+
 <p>The Web Audio API fulfills such missing parts, and much more.</p>
 <p>In this course, we do not cover the
 whole <a href="https://webaudio.github.io/web-audio-api/" target="_blank" rel="noopener noreferrer">Web Audio API
@@ -5081,19 +5050,17 @@ graph. So typical use is as follows:</p>
 <p>Now let’s consider the function which builds the graph. In order to
 set the quantity of reverb we would like to apply, we need two separate
 routes for the signal:</p>
+
 <ol type="1">
-<li><p>One “dry” route where we directly connect the audio source to the
-destination,</p></li>
-<li><p>One “wet” route where we connect the audio source to the
-convolver node (that will add a reverb effect), then to the
-destination,</p></li>
-<li><p>At the end of both routes, before the destination, we add a gain
-node, so that we can specify the quantity of dry and wet signal we’re
-going to send to the speakers.</p></li>
+  <li><p>One “dry” route where we directly connect the audio source to the destination,</p></li>
+  <li><p>One “wet” route where we connect the audio source to the convolver node (that will add a 
+    reverb effect), then to the destination,</p></li>
+  <li><p>At the end of both routes, before the destination, we add a gain node, so that we can 
+    specify the quantity of dry and wet signal we’re going to send to the speakers.</p></li>
 </ol>
-<p>The audio graph will look like this (picture taken with the now
-discontinued FireFox WebAudio debugger, you should get similar results
-with the Chrome WebAudio Inspector extension):</p>
+
+<p>The audio graph will look like this (picture taken with the now discontinued FireFox 
+WebAudio debugger, you should get similar results with the Chrome WebAudio Inspector extension):</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!----------------------------------- 58. audio graph (107) -------------------------------------->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7755,22 +7722,21 @@ game react accordingly.</p>
 
 <p>These are the changes to our small game engine prototype (which is
 far from finished yet):</p>
+
 <ol type="1">
-<li><p>We add an empty inputStates object as a global property of the
-game engine,</p></li>
-<li><p>In the start() method, we add event listeners for
-each keydown and keyup event which controls the game.</p></li>
-<li><p>In each listener, we test if an arrow key or the space bar has
-been pressed or released, and we set the properties of the inputStates
-object accordingly. For example, if the space bar is pressed, we
-set inputStates.space=true; but if it’s released, we reset
-to inputStates.space=false.</p></li>
-<li><p>In the main loop (to prove everything is working), we add tests
-to check which keys are down; and if a key is down, we print its name on
-the canvas.</p></li>
+  <li><p>We add an empty inputStates object as a global property of the game engine,</p></li>
+  <li><p>In the start() method, we add event listeners for each keydown and keyup event which 
+    controls the game.</p></li>
+  <li><p>In each listener, we test if an arrow key or the space bar has been pressed or 
+    released, and we set the properties of the inputStates object accordingly. For example, 
+	if the space bar is pressed, we set inputStates.space=true; but if it’s released, we reset to 
+	inputStates.space=false.</p></li>
+  <li><p>In the main loop (to prove everything is working), we add tests to check which keys 
+    are down; and if a key is down, we print its name on the canvas.</p></li>
 </ol>
-<p><a href="https://jsbin.com/razeya/edit" target="_blank" rel="noopener noreferrer">Here is the online example
-you can try at JSBin</a></p>
+
+<p><a href="https://jsbin.com/razeya/edit" target="_blank" rel="noopener noreferrer">
+  Here is the online example you can try at JSBin</a></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~ 102. monstor up, right and space (168) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9076,6 +9042,7 @@ left to right. At each animation loop, we erase the canvas content,
 calculate the rectangle’s new position, draw the rectangle, and call the
 animation loop again. So you animate a shape as follows (note: steps 2
 and 3 can be swapped):</p>
+
 <ol type="1">
   <li><p>erase the canvas,</p></li>
   <li><p>draw the shapes,</p></li>
@@ -13079,16 +13046,10 @@ creations.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-3-1">3.3.1 Introduction</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>From <a href="https://www.w3.org/TR/html51/editing.html#dnd" target="_blank" rel="noopener noreferrer">the W3C
-HTML 5.1 specification</a>: <i>“the drag and drop API defines an
-event-based drag-and-drop mechanism, it does not define exactly what a
+<p>From <a href="https://www.w3.org/TR/html51/editing.html#dnd" target="_blank" rel="noopener noreferrer">the W3C HTML 5.1 specification</a>: <i>“the drag and drop API defines an event-based drag-and-drop mechanism, it does not define exactly what a
 drag-and-drop operation actually is”</i>.</p>
-<p>We decided to present this API in a section about HTML5 client-side
-persistence, as it is very often used for dragging and dropping files.
-However, we will also address drag and drop of elements within an HTML
-document.</p>
-<p>We will start by presenting the API itself, and then we will focus on
-the particular case of drag and dropping files.</p>
+<p>We decided to present this API in a section about HTML5 client-side persistence, as it is very often used for dragging and dropping files. However, we will also address drag and drop of elements within an HTML document.</p>
+<p>We will start by presenting the API itself, and then we will focus on the particular case of drag and dropping files.</p>
 
 <h4>External resources</h4>
 
@@ -15505,11 +15466,7 @@ data records.</p>
 <h4>External resources</h4>
 
 <p>Much of this chapter either builds on or is an adaptation of articles
-posted on the Mozilla Developer Network (MDN) Web site (IndexedDB, <a
-href="https://developer.mozilla.org/en-US/docs/IndexedDB/Basic_Concepts_Behind_IndexedDB" target="_blank" rel="noopener noreferrer">Basic
-Concepts of IndexedDB</a> and <a
-href="https://developer.mozilla.org/en-US/docs/IndexedDB/Using_IndexedDB" target="_blank" rel="noopener noreferrer">Using
-IndexedDB</a>).</p>
+posted on the Mozilla Developer Network (MDN) Web site (IndexedDB, <a href="https://developer.mozilla.org/en-US/docs/IndexedDB/Basic_Concepts_Behind_IndexedDB" target="_blank" rel="noopener noreferrer">Basic Concepts of IndexedDB</a> and <a href="https://developer.mozilla.org/en-US/docs/IndexedDB/Using_IndexedDB" target="_blank" rel="noopener noreferrer">Using IndexedDB</a>).</p>
 
 <ul>
   <li><p><a href="https://www.w3.org/TR/IndexedDB/" target="_blank" rel="noopener noreferrer">W3C specification about IndexedDB</a></p></li>
@@ -15693,7 +15650,8 @@ clarification.</p>
   <li><p>The object store persistently holds records (JavaScript objects), which are key-value pairs. One of these keys is  a kind of “primary key” in the SQL database sense. This “key” is a property that every object in the datastore <i>must</i> contain. Values in the object store are structured, but this structure may vary between objects (i.e., if we store persons in a database, and use the email as “the key all objects must define”, some may have first name and last name, others may have an address or no address at all, etc.)</p></li>
   <li><p>Records within an object store are sorted according to <a href="https://developer.mozilla.org/en-US/docs/IndexedDB/Basic_Concepts_Behind_IndexedDB#gloss_key" target="_blank" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">keys</a>, in ascending order.</p></li>
   <li><p>Optionally, an object store may also have a<i> <a href="https://www.w3.org/TR/IndexedDB/#dfn-key-generator" target="_blank" rel="noopener noreferrer">key generator</a> </i>and a <a href="https://www.w3.org/TR/IndexedDB/#dfn-object-store-key-path" target="_blank" rel="noopener noreferrer "><i>key path</i></a>. If the object store has a key path, it is said to use in-line keys. Otherwise, it is said to use <i>out-of-line</i> keys.</p></li>
-  <li><p>The object store can derive <a href="https://www.w3.org/TR/IndexedDB/#key-construct" target="_blank" rel="noopener noreferrer">the key</a> from one of three sources:</p> 
+  <li><p>The object store can derive <a href="https://www.w3.org/TR/IndexedDB/#key-construct" target="_blank" rel="noopener noreferrer">the key</a> from one of three sources:</p>
+  
   <ol type="1">
     <li><p>A key generator. A key generator generates a monotonically increasing number every time a key is needed. This is somewhat similar to auto-incremented primary keys in a SQL database.</p></li>
     <li><p>Keys can be derived via a key path.</p></li>
@@ -15790,8 +15748,8 @@ unique within the same store, so you cannot have multiple records with
 the same key in a given object store.</p>
 <p><b>A key can be one of the following types: <a
 href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" target="_blank" rel="noopener noreferrer">string</a>, <a
-href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date" target="_blank" rel="noopener noreferrer">date</a>, float, </b>and</b> <a
-href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" target="_blank" rel="noopener noreferrer">array</a></b>.
+href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date" target="_blank" rel="noopener noreferrer">date</a>, float, <b>and</b> <a
+href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" target="_blank" rel="noopener noreferrer">array</a>.
 For arrays, the key can range from an empty value to infinity. And you
 can include an array within an array.</p>
 <p>Alternatively, you can also look up records in an object store
@@ -16132,7 +16090,7 @@ then executing indexedDB.deleteDatabase(“CustomerDB”); in the console:</p>
 <p>While the creation of the database occurred in a transaction that ran
 “under the hood” without explicit use of the “transaction”
 keyword, for adding/removing/updating/retrieving data, explicit use
-of a transaction is required.</b></p>
+of a transaction is required.</p>
 
 <p>We generate a transaction object from the database, indicate with
 which object store the transaction will be associated, and specify an
@@ -16964,8 +16922,7 @@ on indexes:</p>
 <details>
   <summary>Key cursor code!</summary>
   
-<pre>
-1.  &lt;b&gt;index.openKeyCursor().onsuccess = function(event) {
+<pre>1.  &lt;b&gt;index.openKeyCursor().onsuccess = function(event) {
 2.     var cursor = event.target.result;
 3.     if (cursor) {
 4.       // cursor.key is a name, like &quot;Bill&quot;,&lt;b&gt; and cursor.value is the
@@ -17002,8 +16959,7 @@ JSBin that uses the above methods</a>:</p>
 <details>
   <summary>function getAllCustomersByName!</summary>
 
-<pre>
-1.  function getAllCustomersByName() {
+<pre>1.  function getAllCustomersByName() {
 2.    if(db === null) {
 3.      alert(&#39;Database must be opened first, please click the Create
 4.             CustomerDB Database first&#39;);
@@ -17053,8 +17009,7 @@ from this MDN article</a>):</p>
 <details>
   <summary>Code extract!</summary>
 
-<pre>
-1.  // Only match &quot;Donna&quot;
+<pre>1.  // Only match &quot;Donna&quot;
 2.  var singleKeyRange = IDBKeyRange.only(&quot;Donna&quot;);
 3.   
 4.  // Match anything past &quot;Bill&quot;, including &quot;Bill&quot;
@@ -17313,8 +17268,7 @@ documents</i>, that render as complex widgets: a better-looking
 calendar, an input text with vocal recognition, a nice chart, etc.</p>
 <p>Let’s start with an example! This code…:</p>
 
-<pre>
-1. &lt;x-gif src=&quot;https://i.imgur.com/iKXH4E2.gif&quot; ping-pong&gt;&lt;/x-gif&gt;
+<pre>1. &lt;x-gif src=&quot;https://i.imgur.com/iKXH4E2.gif&quot; ping-pong&gt;&lt;/x-gif&gt;
 </pre>
 
 <p>… renders an animated GIF, and it loops forever in ping-pong mode:
@@ -17334,8 +17288,7 @@ Web site</a>.</p>
 <p>If you look at the source of the demo page, you note the following at
 the top of the page:</p>
 
-<pre>
-1. &lt;link rel=&quot;import&quot; href=&quot;dist/x-gif.html&quot;&gt;
+<pre>1. &lt;link rel=&quot;import&quot; href=&quot;dist/x-gif.html&quot;&gt;
 </pre>
 
 <p>It’s called an “HTML import”. If your browser supports <i>HTML
@@ -17499,8 +17452,7 @@ JavaScript will not be executed, images will not be loaded, videos will
 not be played, etc.) until the template is used.</p>
 <p>Here is an example of code that defines a template:</p>
 
-<pre>
-1. &lt;template id=&quot;mytemplate&quot;&gt;
+<pre>1. &lt;template id=&quot;mytemplate&quot;&gt;
 2.    &lt;img src=&quot;&quot; alt=&quot;great image&quot;&gt;
 3.    &lt;div class=&quot;comment&quot;&gt;&lt;/div&gt;
 4. &lt;/template&gt;
@@ -17521,8 +17473,7 @@ the document.importNode(templateContent, true) method, where the node is
 the template’s content and true means “deep copy” the content.</p>
 <p>A template is typically used like this:</p>
 
-<pre>
-1. var t = document.querySelector(&#39;#mytemplate&#39;);
+<pre>1. var t = document.querySelector(&#39;#mytemplate&#39;);
 2. // Populate the src at runtime.
 3. t.content.querySelector(&#39;img&#39;).src = &#39;https://webcomponents.github.io/img/logo.svg&#39;;
 4.  
@@ -17563,8 +17514,7 @@ JSBin</a> that uses exactly the code presented:</p>
 
 <h4>The HTML part:</h4>
 
-<pre>
-1. &lt;template id=&quot;mytemplate&quot;&gt;
+<pre>1. &lt;template id=&quot;mytemplate&quot;&gt;
 2.   &lt;img src=&quot;&quot; alt=&quot;great image&quot;&gt;
 3.   &lt;div class=&quot;comment&quot;&gt;hello&lt;/div&gt;
 4. &lt;/template&gt;
@@ -17576,8 +17526,7 @@ JSBin</a> that uses exactly the code presented:</p>
 
 <h4>The JavaScript part:</h4>
 
-<pre>
-1.  function instantiate() {
+<pre>1.  function instantiate() {
 2.     var t = document.querySelector(&#39;#mytemplate&#39;);
 3.     // Populate the src at runtime.
 4.     t.content.querySelector(&#39;img&#39;).src =
@@ -17663,28 +17612,24 @@ Bye!</p>
 is not necessary to see!</p>
 <p>If you are new to programming or object-oriented terminology you may
 find these references a helpful start:</p>
+
 <ol type="1">
-<li><p><a
-href="https://en.wikipedia.org/wiki/Encapsulation_(computer_programming)" target="_blank" rel="noopener noreferrer">Wikipedia
-offers a description</a> especially of the “information hiding”
-aspect</p></li>
-<li><p>MDN offers a <a
-href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects" target="_blank" rel="noopener noreferrer">tutorial
-in programming JavaScript objects</a></p></li>
+  <li><p><a href="https://en.wikipedia.org/wiki/Encapsulation_(computer_programming)" target="_blank" rel="noopener noreferrer">Wikipedia offers a description</a> especially of the “information hiding” aspect</p></li>
+  <li><p>MDN offers a <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects" target="_blank" rel="noopener noreferrer">tutorial in programming JavaScript objects</a></p></li>
 </ol>
+
 <p>It is not obvious but the Shadow DOM API is already used by browsers’
 developers for &lt;audio&gt; or &lt;video&gt; elements, and also for the
 new &lt;input type=“date”&gt;, &lt;input type=“color”&gt; elements,
 etc.</p>
 <p><b>The three rules of Shadow DOM:</b></p>
+
 <ol type="1">
-<li><p>With Shadow DOM, elements are associated with a new kind of
-node: <i>a shadow root</i>.</p></li>
-<li><p>An element that has a shadow root associated with it is
-called <i>a shadow host</i>.</p></li>
-<li><p><i>The content of a shadow host isn’t rendered; the content of
-the shadow root is rendered instead.</i></p></li>
+  <li><p>With Shadow DOM, elements are associated with a new kind of node: <i>a shadow root</i>.</p></li>
+  <li><p>An element that has a shadow root associated with it is called <i>a shadow host</i>.</p></li>
+  <li><p><i>The content of a shadow host isn’t rendered; the content of the shadow root is rendered instead.</i></p></li>
 </ol>
+
 <p>NB: Because other browsers do not offer the tool-set, all of the
 examples we discuss on this subject use Google Chrome or Chromium.</p>
 
@@ -17772,8 +17717,7 @@ now it’s available to every Web developer!</p>
 <details>
   <summary>Code extract!</summary>
 
-<pre>
-1.  &lt;div&gt;Hello this is not rendered!&lt;/div&gt;
+<pre>1.  &lt;div&gt;Hello this is not rendered!&lt;/div&gt;
 2.  &lt;script&gt;
 3.      // the div is the Shadow Host. Its content will not be rendered
 4.      var host = document.querySelector(&#39;div&#39;);
@@ -17841,8 +17785,7 @@ etc.</p>
 
 <h4>HTML part:</h4>
 
-<pre>
-1.  &lt;template id=&quot;mytemplate&quot;&gt;
+<pre>1.  &lt;template id=&quot;mytemplate&quot;&gt;
 2.     &lt;style&gt;
 3.       h1 {color:white; background:red}
 4.     &lt;/style&gt;
@@ -17855,8 +17798,7 @@ etc.</p>
 <details>
   <summary>Code extract!</summary>
 
-<pre>
-1.  // Instanciate the template
+<pre>1.  // Instanciate the template
 2.  var t = document.querySelector(&#39;#mytemplate&#39;);
 3.   
 4.  // Create a root node under our H1 title
@@ -17907,8 +17849,7 @@ Component.</p>
 <details>
   <summary>HTML code!</summary>
 
-<pre>
-1.  &lt;template id=&quot;mytemplate&quot;&gt;
+<pre>1.  &lt;template id=&quot;mytemplate&quot;&gt;
 2.     &lt;style&gt;
 3.       h1 {color:white; background:red}
 4.     &lt;/style&gt;
@@ -17937,8 +17878,7 @@ Component.</p>
 <p>The second H1 is not affected by the CSS defined in the template used
 by the first H1. Try to add this CSS rule to this example :</p>
 
-<pre>
-1.  h1 {
+<pre>1.  h1 {
 2.      color:green;
 3.  }
 </pre>
@@ -17967,8 +17907,7 @@ the &lt;slot&gt;…&lt;/slot&gt; element, as shown below:</p>
 <details>
   <summary>HTML code!</summary>
 
-<pre>
-1.  &lt;template id=&quot;mytemplate&quot;&gt;
+<pre>1.  &lt;template id=&quot;mytemplate&quot;&gt;
 2.      &lt;h1 part=&#39;heading&#39;&gt;This is a shadowed H1&lt;/h1&gt;
 3.      &lt;p part=&quot;paragraph&quot;&gt;
 4.          &lt;slot name=&quot;my-text&quot;&gt;My default text&lt;/slot&gt;
@@ -18018,34 +17957,35 @@ browser how to render them.</p>
 
 <h4>Basic usage:</h4>
 
-<pre>
-1. customElements.define(&#39;my-widget&#39;, MyWidget);
+<pre>1. customElements.define(&#39;my-widget&#39;, MyWidget);
 </pre>
 
 <h4>This is done using JavaScript and there are some constraints:</h4>
 
 <ol type="1">
-<li><p>The element’s new name should have a dash
-(ex: <my-calendar>, <app-list>, etc.)</p></li>
-<li><p>The second parameter is a JavaScript class object that defines
-the behavior of the element. See further examples.</p></li>
+  <li><p>The element’s new name should have a dash (ex: &lt;my-calendar&gt;,
+    &lt;app-list&gt;, etc.)</p></li>
+  <li><p>The second parameter is a JavaScript class object that defines 
+    the behavior of the element. See further examples.</p></li>
 </ol>
+
 <p>Optionally, a third parameter can be used: a JavaScript object
 containing an extends property, which specifies the built-in element
 your element inherits from if any:</p>
+
 <ol type="1">
-<li>customElements.define(‘my-widget’, MyWidget, { extends: ‘p’ });</li>
+  <li>customElements.define(‘my-widget’, MyWidget, { extends: ‘p’ });</li>
 </ol>
+
 <p>“Inheritance” is another aspect of object-oriented programming. If it
 is new to you, please see earlier reference material.</p>
 <p>Here is an example which defines a new element
-named <my-widget>, that will render as an instance of a template with a
+named &lt;my-widget&gt;, that will render as an instance of a template with a
 shadow DOM:</p>
 
 <h4>HTML code for the use of the custom element:</h4>
 
-<pre>
-1.  &lt;body&gt;
+<pre>1.  &lt;body&gt;
 2.  &lt;my-widget&gt;
 3.     &lt;span slot=&quot;my-title&quot;&gt;Title injected&lt;/span&gt;
 4.     &lt;span slot=&quot;my-paragraph&quot;&gt;Paragraph injected&lt;/span&gt;
@@ -18059,8 +17999,7 @@ shadow DOM:</p>
 <details>
   <summary>HTML code!</summary>
 
-<pre>
-1.  &lt;template id=&quot;mytemplate&quot;&gt;
+<pre>1.  &lt;template id=&quot;mytemplate&quot;&gt;
 2.    &lt;style&gt;
 3.      h1 {
 4.        color:white;
@@ -18083,8 +18022,7 @@ shadow DOM:</p>
 <details>
   <summary>JavaScript code!</summary>
 
-<pre>
-1.  // TIP : use &quot;document.currentScript&quot; here to select
+<pre>1.  // TIP : use &quot;document.currentScript&quot; here to select
 2.  // the &quot;local document&quot;, the one corresponding to this page.
 3.  // this may avoid problems when multiple WebComponents files
 4.  // are inserted in the same document. See below...
@@ -18125,14 +18063,14 @@ practice is to select elements only in the HTML page of the Web
 Component, not in the document that will import the Web
 Component.</p></li>
 <li><p><i>Line 7</i>: definition of the Web Component class attached to
-the custom element <my-widget></p></li>
+the custom element &lt;my-widget&gt;</p></li>
 <li><p><i>Lines 8-17</i>:  the constructor definition for the class
 always starts by calling super() so that the correct prototype chain is
 established. Inside the constructor, we define all the functionality the
 element will have. Very often this starts by cloning a template in the
 Shadow DOM.</p></li>
 <li><p><i>Lines 22</i>: registration of a new custom element
-named <my-widget>. When the browser encounters <my-widget> within an
+named &lt;my-widget&gt;. When the browser encounters &lt;my-widget&gt; within an
 HTML document, it will create an instance of the MyWidget class and
 render the shadow DOM of the Web Component.</p></li>
 </ul>
@@ -18213,7 +18151,7 @@ specification yet…</p>
 <h4>If you want to know what HTML Imports were about…</h4>
 
 <p>HTML Imports is the simplest API from Web components :-)</p>
-<p>Add a <link rel="import" href="your_html_file" target="_blank" rel="noopener noreferrer"> and all the
+<p>Add a <link rel="import" href="your_html_file" target="_blank"> and all the
 html/css/js code, that defines a Web component you plan to use, will be
 imported:</p>
 
@@ -18224,8 +18162,7 @@ imported:</p>
 
 <h4>It is as simple as:</h4>
 
-<pre>
-1.  &lt;head&gt;
+<pre>1.  &lt;head&gt;
 2.    &lt;link rel=&quot;import&quot; href=&quot;components/myComponents.html&quot;&gt;
 3.  &lt;/head&gt;
 4.  &lt;body&gt;
@@ -18242,15 +18179,13 @@ defines templates, attachment to a shadow host, CSS, and registering of
 new custom HTML elements is located in myComponents.html.</p>
 <p>You could create a my-widget.html file, add the HTML template and the
 JavaScript code to that file, and import my-widget.html into your
-document and use <my-widget>…</my-widget> from the last lesson
+document and use &lt;my-widget&gt;…&lt;/my-widget&gt; from the last lesson
 directly!</p>
 
 <h4>External resource</h4>
 
 <ul>
-<li>MDN’s documentation: <a
-href="https://developer.mozilla.org/en-US/docs/Web/Web_Components/HTML_Imports" target="_blank" rel="noopener noreferrer">HTML
-Imports</a></li>
+  <li>MDN’s documentation: <a href="https://developer.mozilla.org/en-US/docs/Web/Web_Components/HTML_Imports" target="_blank" rel="noopener noreferrer">HTML Imports</a></li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-2-9">4.2.9 Web Components as JavaScript Modules</h3>
@@ -18278,8 +18213,7 @@ Components) :</p>
 <details>
   <summary>HTML code!</summary>
 
-<pre>
-1.  &lt;!DOCTYPE html&gt;
+<pre>1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.  &lt;head&gt;
 4.    &lt;meta charset=&quot;UTF-8&quot;&gt;
@@ -18307,8 +18241,7 @@ Components) :</p>
 <details>
   <summary>Source code!</summary>
 
-<pre>
-1.  customElements.define(
+<pre>1.  customElements.define(
 2.  &quot;my-component&quot;,
 3.  class extends HTMLElement {
 4.      constructor() {
@@ -18400,7 +18333,7 @@ your comments/observations/questions and share your creations.</p>
   alt="Microsoft Internet Explorer message, Stop running this script?"
   style="width:40%;" />
 
-<h4>Or maybe:</h4>
+<h4>Or, maybe:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~  238. uncaught error, security error, dom exception 18 (403) ~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -18415,8 +18348,7 @@ your comments/observations/questions and share your creations.</p>
 
 <h4>An example that does not use Web Workers</h4>
 
-<p>This example will block the user interface unless you close the tab. [Try it at JSBin](https://jsbin.com/qipegi/edit?html,output) but DO
-NOT CLICK ON THE BUTTON unless you are prepared to kill your browser/tab, because this routine will consume 100% of CPU time, completely blocking the user interface:</p>
+<p>This example will block the user interface unless you close the tab. <a href="https://jsbin.com/qipegi/edit?html,output">Try it at JSBin</a> but DO NOT CLICK ON THE BUTTON unless you are prepared to kill your browser/tab, because this routine will consume 100% of CPU time, completely blocking the user interface:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~ 238. example will block user unless close the tab (404) ~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -18430,8 +18362,7 @@ NOT CLICK ON THE BUTTON unless you are prepared to kill your browser/tab, becaus
 <details>
   <summary>HTML code!</summary>
   
-<pre>
-1.  &lt;!DOCTYPE HTML&gt;
+<pre>1.  &lt;!DOCTYPE HTML&gt;
 2.  &lt;html&gt;
 3.  &lt;head&gt;
 4.    &lt;title&gt;Worker example: One-core computation&lt;/title&gt;
@@ -18503,8 +18434,7 @@ share the same resources (eg JavaScript variables) at the same time. If one task
 loading and executing a script in the background, in a different thread
 from the UI. The following instruction  loads and creates a worker:</p>
 
-<pre>
-var worker = new Worker(&quot;worker0.js&quot;);
+<pre>var worker = new Worker(&quot;worker0.js&quot;);
 </pre>
 
 <p>More than one worker can be created/loaded by a parent page. This is
@@ -18525,8 +18455,7 @@ href="https://en.wikipedia.org/wiki/Serialization" target="_blank" rel="noopener
 </ol>
 </blockquote>
 
-<pre>
-1.  var worker = new Worker(&quot;worker0.js&quot;);
+<pre>1.  var worker = new Worker(&quot;worker0.js&quot;);
 2.  
 3.  // String message example
 4.  worker.postMessage(&quot;Hello&quot;);
@@ -18542,8 +18471,7 @@ href="https://en.wikipedia.org/wiki/Serialization" target="_blank" rel="noopener
 </ol>
 </blockquote>
 
-<pre>
-1.  onmessage = function (event) {
+<pre>1.  onmessage = function (event) {
 2.     // do something with event.data
 3.    alert(&#39;received &#39; + event.data.firstName);
 4.  };
@@ -18555,8 +18483,7 @@ href="https://en.wikipedia.org/wiki/Serialization" target="_blank" rel="noopener
 </ol>
 </blockquote>
 
-<pre>
-1.  postMessage(&quot;Message from a worker !&quot;);
+<pre>1.  postMessage(&quot;Message from a worker !&quot;);
 </pre>
 
 <blockquote>
@@ -18565,8 +18492,7 @@ href="https://en.wikipedia.org/wiki/Serialization" target="_blank" rel="noopener
 </ol>
 </blockquote>
 
-<pre>
-1.  worker.onmessage = function(event){
+<pre>1.  worker.onmessage = function(event){
 2.      // do something with event.data
 3.  };
 </pre>
@@ -18578,8 +18504,7 @@ href="https://en.wikipedia.org/wiki/Serialization" target="_blank" rel="noopener
 <details>
   <summary>HTML code!</summary>
 
-<pre>
-1.  &lt;!DOCTYPE HTML&gt;
+<pre>1.  &lt;!DOCTYPE HTML&gt;
 2.  &lt;html&gt;
 3.  &lt;head&gt;
 4.    &lt;title&gt;Worker example: One-core computation&lt;/title&gt;
@@ -18610,8 +18535,7 @@ href="https://en.wikipedia.org/wiki/Serialization" target="_blank" rel="noopener
 <details>
   <summary>JavaScript source code!</summary>
   
-<pre>
-1.  onmessage = function(e){
+<pre>1.  onmessage = function(e){
 2.     if ( e.data === &quot;start&quot; ) {
 3.        // Do some computation that can last a few seconds...
 4.        // alert the creator of the thread that the job is finished
@@ -18635,8 +18559,7 @@ by listening for an onError event from a worker object:</p>
 <details>
   <summary>JavaScript source code!</summary>
 
-<pre>
-1.  var worker = new Worker(&#39;worker.js&#39;);
+<pre>1.  var worker = new Worker(&#39;worker.js&#39;);
 2.  worker.onmessage = function (event) {
 3.      // do something with event.data
 4.  };
@@ -18688,8 +18611,7 @@ file.</p>
 <details>
   <summary>HTML code!</summary>
   
-<pre>
-1.  &lt;!DOCTYPE HTML&gt;
+<pre>1.  &lt;!DOCTYPE HTML&gt;
 2.  &lt;html&gt;
 3.  &lt;head&gt;
 4.    &lt;title&gt;Worker example: One-core computation&lt;/title&gt;
@@ -18726,8 +18648,7 @@ sent.</p>
 <details>
   <summary>JavaScript source code!</summary>
 
-<pre>
-1.  var n = 1;
+<pre>1.  var n = 1;
 2.  search: while (true) {
 3.      n += 1;
 4.      for (var i = 2; i &lt;= Math.sqrt(n); i += 1)
@@ -18785,8 +18706,7 @@ href="https://courses.edx.org/assets/courseware/v1/4af4dd2326f40b5d5d55aa15bbb12
 <details>
   <summary>HTML code!</summary>
 
-<pre>
-1.  &lt;!DOCTYPE HTML&gt;
+<pre>1.  &lt;!DOCTYPE HTML&gt;
 2.  &lt;html&gt;
 3.  &lt;head&gt;
 4.  &lt;title&gt;Worker example: One-core computation&lt;/title&gt;
@@ -18820,8 +18740,7 @@ href="https://courses.edx.org/assets/courseware/v1/4af4dd2326f40b5d5d55aa15bbb12
 <details>
   <summary>JavaScript code!</summary>
 
-<pre>
-1.  postMessage(&quot;Hey, in 3s, I&#39;ll start to compute prime numbers...&quot;);
+<pre>1.  postMessage(&quot;Hey, in 3s, I&#39;ll start to compute prime numbers...&quot;);
 2.  
 3.  setTimeout(function() {
 4.      // The setTimeout is just useful for displaying the message in
@@ -18869,8 +18788,7 @@ worker.</p>
 <details>
   <summary>HTML code!</summary>
 
-<pre>
-1.  &lt;!DOCTYPE HTML/image0&gt;
+<pre>1.  &lt;!DOCTYPE HTML/image0&gt;
 2.  &lt;html&gt;
 3.  &lt;head&gt;
 4.  &lt;title&gt;Worker example: One-core computation&lt;/title&gt;
@@ -18909,8 +18827,7 @@ worker.</p>
 <details>
   <summary>JavaScript code!</summary>
   
-<pre>
-1.  postMessage(&quot;Hey, in 3s, I&#39;ll start to compute prime numbers...&quot;);
+<pre>1.  postMessage(&quot;Hey, in 3s, I&#39;ll start to compute prime numbers...&quot;);
 2.  
 3.  setTimeout(function() {
 4.       // The setTimeout is just useful for displaying the message in
@@ -18948,8 +18865,7 @@ the importScripts() function.</p>
 
 <h4>worker.js:</h4>
 
-<pre>
-1. importScripts(&#39;script1.js&#39;);
+<pre>1. importScripts(&#39;script1.js&#39;);
 2. importScripts(&#39;script2.js&#39;);
 3.
 4. // Other possible syntax
@@ -19133,20 +19049,11 @@ about the support for this emulation mode).</p>
 <h4>External resources:</h4>
 
 <ul>
-<li><p>The W3C specification: <a
-href="https://www.w3.org/TR/screen-orientation/" target="_blank" rel="noopener noreferrer">The Screen Orientation
-API</a></p></li>
-<li><p>Article on HTML5Rocks.com about device orientation: <a
-href="https://www.html5rocks.com/en/tutorials/device/orientation/" target="_blank" rel="noopener noreferrer">Device
-Orientation and Motion</a></p></li>
-<li><p>Browser compatibility:</p></li>
-<li><p><a
-href="https://caniuse.com/#feat=deviceorientation" target="_blank" rel="noopener noreferrer">DeviceOrientation
-&amp; DeviceMotion events</a> on CanIUse</p></li>
-<li><p><a
-href="https://developer.mozilla.org/en-US/docs/Web/API/Detecting_device_orientation#Browser_compatibility" target="_blank" rel="noopener noreferrer">DeviceOrientationEvent</a> and <a
-href="https://developer.mozilla.org/en-US/docs/Web/API/Detecting_device_orientation#Browser_compatibility" target="_blank" rel="noopener noreferrer">DeviceMotionEvent</a> on
-MDN</p></li>
+  <li><p>The W3C specification: <a href="https://www.w3.org/TR/screen-orientation/" target="_blank" rel="noopener noreferrer">The Screen Orientation API</a></p></li>
+  <li><p>Article on HTML5Rocks.com about device orientation: <a href="https://www.html5rocks.com/en/tutorials/device/orientation/" target="_blank" rel="noopener noreferrer">Device Orientation and Motion</a></p></li>
+  <li><p>Browser compatibility:</p></li>
+  <li><p><a href="https://caniuse.com/#feat=deviceorientation" target="_blank" rel="noopener noreferrer">DeviceOrientation &amp; DeviceMotion events</a> on CanIUse</p></li>
+  <li><p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Detecting_device_orientation#Browser_compatibility" target="_blank" rel="noopener noreferrer">DeviceOrientationEvent</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/API/Detecting_device_orientation#Browser_compatibility" target="_blank" rel="noopener noreferrer">DeviceMotionEvent</a> on MDN</p></li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-4-2">4.4.2 The coordinate system</h3>
@@ -19358,8 +19265,7 @@ This is why, in the example, we round the returned values with Math.round() at
 <details>
   <summary>Device Orientation with HTML5 code!</summary>
 
-<pre>
-1.  ...
+<pre>1.  ...
 2.  &lt;h2&gt;Device Orientation with HTML5&lt;/h2&gt;
 3.  You need to be on a mobile device or use a laptop with
     accelerometer/orientation
@@ -19444,8 +19350,7 @@ href="https://www.youtube.com/watch?v=OrNLhOAGSdE" target="_blank" rel="noopener
 <details>
   <summary>HTML code!</summary>
 
-<pre>
-1.  ...
+<pre>1.  ...
 2.  &lt;h2&gt;Device Orientation with HTML5&lt;/h2&gt;
 3.  You need to be on a mobile device or use a laptop with
     accelerometer/orientation
@@ -19545,8 +19450,7 @@ desktop browser:</p>
 
 <h4>Basic usage</h4>
 
-<pre>
-1. function handleMotionEvent(event) {
+<pre>1. function handleMotionEvent(event) {
 2. 
 3.    var x = event.accelerationIncludingGravity.x;
 4.    var y = event.accelerationIncludingGravity.y;
@@ -19623,8 +19527,7 @@ use the accelerationIncludingGravity property. Note that all IOS devices, so f
 <p>Test the value of the acceleration.z property: If &gt; 0 then the device is facing up, otherwise it is facing down. This would be useful
 if you wanted to play <a href="https://en.wikipedia.org/wiki/Coin_flipping" target="_blank" rel="noopener noreferrer">heads or tails</a> with your phone ;-)</p>
 
-<pre>
-1. // For example, if acceleration.z is &gt; 0 then the phone is facing up
+<pre>1. // For example, if acceleration.z is &gt; 0 then the phone is facing up
 2. var facingUp = -1;
 3. if (acceleration.z &gt; 0) {
 4.     facingUp = +1;
@@ -19638,8 +19541,7 @@ the event.</p>
 <details>
   <summary>HTML code!</summary>
 
-<pre>
-1.  function deviceMotionHandler(eventData) {
+<pre>1.  function deviceMotionHandler(eventData) {
 2.     // Grab the acceleration including gravity from the results
 3.     var acceleration = eventData.accelerationIncludingGravity;
 4.  
