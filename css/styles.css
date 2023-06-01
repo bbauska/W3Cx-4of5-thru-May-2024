@@ -124,7 +124,7 @@ pre {
   padding: 12px 0px 14px 0;
   width: 600px;
   color: #ecf0f1;  /* light grayish cyan */
-  line-height: 100%;
+  line-height: 75%;
 }
 
 pre .line::before {
