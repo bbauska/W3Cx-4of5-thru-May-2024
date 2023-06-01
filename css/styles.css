@@ -93,7 +93,7 @@ body {
 
 details {
   font: 11px Inter, sans-serif, Bahnschrift, Calibri;
-  width: 45%;
+  width: 75%;
 }
 
 details > summary {
@@ -121,10 +121,10 @@ details[open] > summary {
 pre {
   counter-reset: line-numbering;
   background: #2c3e50;  /* very dark desaturated blue */
-  padding: 12px 0px 14px 0;
-  width: 600px;
+  padding: 6px 0 7px 0;  /* 12px 0px 14px 0 */
+  width: 600px;  /* 600px */
   color: #ecf0f1;  /* light grayish cyan */
-  line-height: 75%;
+  line-height: 100%;
 }
 
 pre .line::before {
