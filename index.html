@@ -8471,8 +8471,7 @@ example</a>:</p>
 <details>
   <summary>Code extract!</summary>
 
-<pre>
-1.  var inputStates = {};
+<pre>1.  var inputStates = {};
 2.  ...
 3.  function mainloop() {
 4.     // clear, draw objects, etc...
@@ -8554,8 +8553,7 @@ example</a>:</p>
 80.   // the sinus in order to have the angle in standard
 81.   // x and y axis (y going up)
 82.   inputStates.angle = Math.atan2(-gamepad.axes[1], gamepad.axes[0]);
-83. }
-</pre>
+83. }</pre>
 
 </details>
 
@@ -8678,14 +8676,12 @@ evolution!</p>
 
 <h4>Add a JavaScript object to describe the monster</h4>
 
-<pre>
-1.  // The monster!
+<pre>1.  // The monster!
 2.  var monster = {
 3.    x:10,
 4.    y:10,
 5.    speed:1
-6.  };
-</pre>
+6.  };</pre>
 
 <p>Where monster.x and monster.y define the monster’s
 current position and monster.speed corresponds to the number of pixels
@@ -8699,8 +8695,7 @@ we will look at a far better solution - <i>“time based animation”
 <details>
   <summary>Code extract!</summary>
 
-<pre>
-1.  var mainLoop = function(time){
+<pre>1.  var mainLoop = function(time){
 2.    // Main function, called each frame
 3.    measureFPS(time);
 4.  
@@ -8715,8 +8710,7 @@ we will look at a far better solution - <i>“time based animation”
 13. 
 14.   // Calls the animation loop every 1/60th of second
 15.   requestAnimationFrame(mainLoop);
-16. };
-</pre>
+16. };</pre>
 
 </details>
 
@@ -8726,8 +8720,7 @@ the updateMonsterPosition() function:</p>
 <details>
   <summary>Code extract!</summary>
 
-<pre>
-1.  function updateMonsterPosition() {
+<pre>1.  function updateMonsterPosition() {
 2.    monster.speedX = monster.speedY = 0;
 3.  
 4.    // Checks inputStates
@@ -8764,8 +8757,7 @@ the updateMonsterPosition() function:</p>
 35. 
 36.   monster.x += monster.speedX;
 37.   monster.y += monster.speedY;
-38. }
-</pre>
+38. }</pre>
 
 </details>
 
@@ -8806,8 +8798,7 @@ JSBin:</a></p>
 <details>
   <summary>Code extract!</summary>
 
-<pre>
-1.  var mainLoop = function(time){
+<pre>1.  var mainLoop = function(time){
 2.     //main function, called each frame
 3.     measureFPS(time);
 4.  
@@ -8825,8 +8816,7 @@ JSBin:</a></p>
 16. 
 17.    // Call the animation loop every 1/60th of second
 18.    requestAnimationFrame(mainLoop);
-19. };
-</pre>
+19. };</pre>
 
 </details>
 
@@ -8837,16 +8827,14 @@ lesson):</p>
 <details>
   <summary>Code extract!</summary>
 
-<pre>
-1.  function updateGamePadStatus() {
+<pre>1.  function updateGamePadStatus() {
 2.    // get new snapshot of the gamepad properties
 3.    scangamepads();
 4.    // Check gamepad button states
 5.    checkButtons(gamepad);
 6.    // Check joysticks
 7.    checkAxes(gamepad);
-8.  }
-</pre>
+8.  }</pre>
 
 </details>
 
@@ -8967,8 +8955,7 @@ JSBin</a></p>
 <details>
   <summary>Code extract!</summary>
 
-<pre>
-1.  &lt;!DOCTYPE html&gt;
+<pre>1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.  &lt;head&gt;
 4.    &lt;meta charset=utf-8 /&gt;
@@ -9025,8 +9012,7 @@ JSBin</a></p>
 55. &lt;canvas id=&quot;mycanvas&quot; width=&quot;200&quot; height=&quot;50&quot; style=&quot;border: 2px solid black&quot;&gt;
 56.  &lt;/canvas&gt;
 57. &lt;/body&gt;
-58. &lt;/html&gt;
-</pre>
+58. &lt;/html&gt;</pre>
 
 </details>
 
@@ -9053,16 +9039,14 @@ notice that the square moves much slower on the screen. Indeed, its
 speed is a direct consequence of the extra time spent in the animation
 loop.</p>
 
-<pre>
-1.  function animationLoop() {
+<pre>1.  function animationLoop() {
 2.      ...
 3.      for(var i = 0; i &lt; 50000000; i++) {
 4.         // slow down artificially the animation
 5.      }
 6.      ...
 7.      requestAnimationFrame(animationLoop);
-8.  }
-</pre>
+8.  }</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-4-2">2.4.2 Measuring time between frames</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9074,18 +9058,14 @@ constant speed on screen, even when the frame rate changes.</p>
 a <i>time-based animation</i>.  Here we use the “standard JavaScript”
 way for measuring time, using JavaScript’s Date object:</p>
 
-<pre>
-1. var time = new Date().getTime();
-</pre>
+<pre>1. var time = new Date().getTime();</pre>
 
 <p>The getTime() method returns the number of milliseconds since
 midnight on January 1, 1970. This is the number of milliseconds that
 have elapsed during the Unix epoch (!).</p>
 <p>There is an alternative. We could have called:</p>
 
-<pre>
-1. var time = Date.now();
-</pre>
+<pre>1. var time = Date.now();</pre>
 
 <p>So, if we measure the time at the beginning of each animation loop,
 and store it, we can then compute the delta of times elapsed between two
@@ -9110,8 +9090,7 @@ JSBin</a>:</p>
 <details>
   <summary>Code extract!</summary>
   
-<pre>
-1.  &lt;!DOCTYPE html&gt;
+<pre>1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.  &lt;head&gt;
 4.    &lt;meta charset=utf-8 /&gt;
@@ -9197,8 +9176,7 @@ JSBin</a>:</p>
 84. &lt;body onload=&quot;init();&quot;&gt;
 85.  &lt;canvas id=&quot;mycanvas&quot; width=&quot;200&quot; height=&quot;50&quot; style=&quot;border: 2px solid &gt; black&quot;&gt;&lt;/canvas&gt;
 86. &lt;/body&gt;
-87. &lt;/html&gt;
-</pre>
+87. &lt;/html&gt;</pre>
 
 </details>
 
@@ -9231,8 +9209,7 @@ animation adapts itself!</p>
 <details>
   <summary>Code extract!</summary>
   
-<pre>
-1.  function animationLoop() {
+<pre>1.  function animationLoop() {
 2.     // Measure time
 3.    now = new Date().getTime();
 4.   
@@ -9269,8 +9246,7 @@ animation adapts itself!</p>
 35.   then = now;
 36. 
 37.   requestAnimationFrame(animationLoop);
-38. }
-</pre>
+38. }</pre>
 
 </details>
 
@@ -9284,9 +9260,7 @@ Time API</a>”.</p>
 
 <p>This API is very simple to use - just do:</p>
 
-<pre>
-1. var time = performance.now();
-</pre>
+<pre>1. var time = performance.now();</pre>
 
 <p>… to get a sub-millisecond time-stamp. It is similar to Date.now()
 except that the accuracy is much higher and that the result is not
@@ -9306,8 +9280,7 @@ integer value!</p>
 
 <h4>Source code of the example:</h4>
 
-<pre>
-1.  ...
+<pre>1.  ...
 2.  &lt;script&gt;
 3.    ...
 4.    var speedX; // speedX is the target speed of the rectangle in pixels/s
@@ -9360,8 +9333,7 @@ integer value!</p>
 51.  }
 52.  ...
 53. 
-54.  &lt;/script&gt;
-</pre>
+54.  &lt;/script&gt;</pre>
 
 <p>Only two lines have changed but the accuracy is much higher, if you
 uncomment the console.log(…) calls in the main loop. You will see the
@@ -9389,8 +9361,7 @@ JSBin</a>:</p>
 <details>
   <summary>Code extract!</summary>
 
-<pre>
-1.  &lt;!DOCTYPE html&gt;
+<pre>1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.  &lt;head&gt;
 4.  &lt;meta charset=utf-8 /&gt;
@@ -9464,8 +9435,7 @@ JSBin</a>:</p>
 72. &lt;canvas id=&quot;mycanvas&quot; width=&quot;200&quot; height=&quot;50&quot; style=&quot;border: 2px solid black&quot;&gt;&lt;/canvas&gt;
 73. &lt;/body&gt;
 74. &lt;/html&gt;
-75. 
-</pre>
+75. </pre>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9486,8 +9456,7 @@ loop:</p>
 <p>Here is the <a href="https://jsbin.com/bonutur/edit" target="_blank" rel="noopener noreferrer">online example at JSBin</a>.</p>
 <p><b>Try to change the parameter value of the call to: </b></p>
 
-<pre>1. &lt;sup&gt;setFrameRateInFramesPerSecond(5); // try other values!&lt;/sup&gt;
-</pre>
+<pre>1. &lt;sup&gt;setFrameRateInFramesPerSecond(5); // try other values!&lt;/sup&gt;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 117. squiggly line (1xx) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9498,8 +9467,7 @@ loop:</p>
 
 <h4>Source code of the example:</h4>
 
-<pre>
-1.   &lt;!DOCTYPE html&gt;
+<pre>1.   &lt;!DOCTYPE html&gt;
 2.   &lt;html lang=&quot;en&quot;&gt;
 3.   &lt;head&gt;
 4.   &lt;meta charset=utf-8 /&gt;
@@ -9609,8 +9577,7 @@ loop:</p>
 108. &lt;/script&gt;
 109. &lt;/body&gt;
 110. &lt;/html&gt;
-111. 
-</pre>
+111. </pre>
 
 <p>Same technique with the bouncing rectangle</p>
 <p>See how we can set both the speed (in pixels/s) and the frame-rate
@@ -9623,8 +9590,7 @@ example with the rectangle that also uses this technique</a>. </p>
 <details>
   <summary>HTML code extract!</summary>
   
-<pre>
-1.  &lt;!DOCTYPE html&gt;
+<pre>1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.  &lt;head&gt;
 4.  &lt;meta charset=utf-8 /&gt;
@@ -9723,8 +9689,7 @@ example with the rectangle that also uses this technique</a>. </p>
 97. &lt;body onload=&quot;init();&quot;&gt;
 98.  &lt;canvas id=&quot;mycanvas&quot; width=&quot;200&quot; height=&quot;50&quot; style=&quot;border: 2px solid black&quot;&gt;&lt;/canvas&gt;
 99. &lt;/body&gt;
-100. &lt;/html&gt;
-</pre>
+100. &lt;/html&gt;</pre>
 
 </details>
 
@@ -9781,14 +9746,12 @@ at 60 fps.</p>
   <li>Declaration of the monster object - now the speed is in pixels/s instead of in pixels per frame</li>
 </ul>
 
-<pre>
-1.  // The monster !
+<pre>1.  // The monster !
 2.  var monster = {
 3.     x:10,
 4.     y:10,
 5.     speed:100, // pixels/s this time !
-6.  };
-</pre>
+6.  };</pre>
 
 <ul>
   <li>We added a timer(currentTime) function that returns the delta of the ime elapsed since its last call</li>
@@ -9799,8 +9762,7 @@ at 60 fps.</p>
 <details>
   <summary>Code extract!</summary>
 
-<pre>
-1.  function timer(currentTime) {
+<pre>1.  function timer(currentTime) {
 2.     var delta = currentTime - oldTime;
 3.     oldTime = currentTime;
 4.     return delta;
@@ -9824,8 +9786,7 @@ at 60 fps.</p>
 22. 
 23.    // call the animation loop every 1/60th of second
 24.    requestAnimationFrame(mainLoop);
-25. };
-</pre>
+25. };</pre>
 
 </details>
 
@@ -9833,15 +9794,13 @@ at 60 fps.</p>
   <li>Finally, we use the time-delta in the updateMonsterPosition(…) function</li>
 </ul>
 
-<pre>
-1.  function updateMonsterPosition(delta) {
+<pre>1.  function updateMonsterPosition(delta) {
 2.     ...
 3.     // Compute the incX and inY in pixels depending
 4.     // on the time elapsed since last redraw
 5.     monster.x += calcDistanceToMove(delta, monster.speedX);
 6.     monster.y += calcDistanceToMove(delta, monster.speedY);
-7.   }
-</pre>
+7.   }</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-5-1">2.5.1 Animating multiple objects</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9929,8 +9888,7 @@ variable for adjusting the size of the balls: the radius.</p>
 <details>
   <summary>Code extract!</summary>
 
-<pre>
-1.  // Constructor function for balls
+<pre>1.  // Constructor function for balls
 2.  function Ball(x, y, vx, vy, diameter) {
 3.    // property of each ball: a x and y position, speeds, radius
 4.    this.x = x;
@@ -9952,28 +9910,23 @@ variable for adjusting the size of the balls: the radius.</p>
 20.     this.x += this.vx;
 21.     this.y += this.vy;
 22.  };
-23. }
-</pre>
+23. }</pre>
 
 </details>
 
 <p>Using a constructor function makes it easy to build new balls as
 follows:</p>
 
-<pre>
-1.  var b1 = new Ball(10, 10, 2, 2, 5); // x, y, vx, vy, radius
+<pre>1.  var b1 = new Ball(10, 10, 2, 2, 5); // x, y, vx, vy, radius
 2.  var b1 = new Ball(100, 130, 4, 5, 5); 
-3.  etc...
-</pre>
+3.  etc...</pre>
 
 <p>We defined two methods in the constructor function for moving the
 ball and for drawing the ball as a black filled circle. Here is the
 syntax for moving and drawing a ball:</p>
 
-<pre>
-1.  b1.draw();
-2.  b1.move();
-</pre>
+<pre>1.  b1.draw();
+2.  b1.move();</pre>
 
 <p>We will call these methods from inside the mainLoop, and as you’ll
 see, we will create many balls. This object-oriented design makes it
@@ -9983,8 +9936,7 @@ easier to handle large quantities.</p>
 <details>
   <summary>Code extract!</summary>
 
-<pre>
-1.  var canvas, ctx, width, height;
+<pre>1.  var canvas, ctx, width, height;
 2.  
 3.  // array of balls to animate
 4.  var ballArray = [];
@@ -10059,8 +10011,7 @@ easier to handle large quantities.</p>
 73.     ball.y = height - (ball.radius);
 74.     ball.vy *= -1;
 75.   }
-76. }
-</pre>
+76. }</pre>
 
 </details>
 
@@ -10085,8 +10036,7 @@ highlighted in bold:</p>
 <details>
   <summary>Code extract!</summary>
   
-<pre>
-1.  var canvas, ctx, width, height;
+<pre>1.  var canvas, ctx, width, height;
 2.  
 3.  // Array of balls to animate
 4.  var ballArray = [];
@@ -10157,8 +10107,7 @@ highlighted in bold:</p>
 69.    this.x += this.v * Math.cos(this.angle);
 70.    this.y += this.v * Math.sin(this.angle);
 71.   };
-72. }
-</pre>
+72. }</pre>
 
 </details>
 
@@ -10201,8 +10150,7 @@ jsbin.com is a good playground to try-out and test things…</p>
 <details>
   <summary>Code extract!</summary>
 
-<pre>
-1.  var mainLoop = function(time){
+<pre>1.  var mainLoop = function(time){
 2.    //main function, called each frame
 3.    measureFPS(time);
 4.  
@@ -10223,8 +10171,7 @@ jsbin.com is a good playground to try-out and test things…</p>
 19. 
 20.   // Call the animation loop every 1/60th of second
 21.   requestAnimationFrame(mainLoop);
-22. };
-</pre>
+22. };</pre>
 
 </details>
 
@@ -10235,8 +10182,7 @@ and update their position.</p>
 <details>
   <summary>Code extract!</summary>
 
-<pre>
-1.  function updateMonsterPosition(delta) {
+<pre>1.  function updateMonsterPosition(delta) {
 2.    monster.speedX = monster.speedY = 0;
 3.    // check inputStates
 4.    if (inputStates.left) {
@@ -10267,8 +10213,7 @@ and update their position.</p>
 29.    // 3) draw the ball
 30.    ball.draw();
 31. }
-32. }
-</pre>
+32. }</pre>
 
 </details>
 
@@ -10317,8 +10262,7 @@ than the sum of the radii, then the circles collide.</p>
 <details>
   <summary>Code extract!</summary>
 
-<pre>
-1. function circleCollideNonOptimised(x1, y1, r1, x2, y2, r2) {
+<pre>1. function circleCollideNonOptimised(x1, y1, r1, x2, y2, r2) {
 2. var dx = x1 - x2;
 3. var dy = y1 - y2;
 4. var distance = Math.sqrt(dx * dx + dy * dy);
@@ -10326,27 +10270,22 @@ than the sum of the radii, then the circles collide.</p>
 457. 
 &lt;!-- --&gt;
 5. return (distance &lt; r1 + r2);
-6. }
-</pre>
+6. }</pre>
 
 </details>
 
 <p>This could be optimized a little averting the need to compute a
 square root:</p>
 
-<pre>
-1. (x2-x1)^2 + (y1-y2)^2 &lt;= (r1+r2)^2
-</pre>
+<pre>1. (x2-x1)^2 + (y1-y2)^2 &lt;= (r1+r2)^2</pre>
 
 <h4>Which yields:</h4>
 
-<pre>
-1. function circleCollide(x1, y1, r1, x2, y2, r2) {
+<pre>1. function circleCollide(x1, y1, r1, x2, y2, r2) {
 2. var dx = x1 - x2;
 3. var dy = y1 - y2;
 4. return ((dx * dx + dy * dy) &lt; (r1 + r2)*(r1+r2));
-5. }
-</pre>
+5. }</pre>
 
 <p>This technique is attractive because a “bounding circle” can often be
 used with graphic objects of other shapes, providing they are not too
@@ -10375,8 +10314,7 @@ objects both have a boundingCircleRadius property:</p>
 <details>
   <summary>JavaScript code extract!</summary>
   
-<pre>
-1.  // The monster!
+<pre>1.  // The monster!
 2.  var monster = {
 3.    x:80,
 4.    y:80,
@@ -10390,8 +10328,7 @@ objects both have a boundingCircleRadius property:</p>
 12.   x:0,
 13.   y:0,
 14.   boundingCircleRadius: 20
-15. };
-</pre>
+15. };</pre>
 
 </details>
 
@@ -10400,8 +10337,7 @@ objects both have a boundingCircleRadius property:</p>
 <details>
   <summary>JavaScript code extract!</summary>
 
-<pre>
-1.  var mainLoop = function(time){
+<pre>1.  var mainLoop = function(time){
 2.  //main function, called each frame
 3.  measureFPS(time);
 4.  // Clear the canvas
@@ -10443,8 +10379,7 @@ objects both have a boundingCircleRadius property:</p>
 40.    var dx = x1 - x2;
 41.    var dy = y1 - y2;
 42.    return ((dx * dx + dy * dy) &lt; (r1 + r2)*(r1+r2));
-43. }
-</pre>
+43. }</pre>
 
 </details>
 
@@ -10542,8 +10477,7 @@ detected!</p>
 <p>Here is a JavaScript implementation of a rectangle - rectangle
 (aligned) collision test:</p>
 
-<pre>
-1.  // Collisions between aligned rectangles
+<pre>1.  // Collisions between aligned rectangles
 2.  function rectsOverlap(x1, y1, w1, h1, x2, y2, w2, h2) {
 3.   
 4.    if ((x1 &gt; (x2 + w2)) || ((x1 + w1) &lt; x2))
@@ -10554,8 +10488,7 @@ detected!</p>
 9.
 10.     return true;    // If previous tests failed, then both axis projections
 11.                     // overlap and the rectangles intersect
-12. }
-</pre>
+12. }</pre>
 
 <h4>Let’s test this method</h4>
 
@@ -10585,8 +10518,7 @@ shapes.</p>
 <details>
   <summary>JavaScript code extract!</summary>
 
-<pre>
-1.  ...
+<pre>1.  ...
 2.  // The monster!
 3.  var monster = {
 4.  x: 80,
@@ -10672,8 +10604,7 @@ shapes.</p>
 46. return true; // If previous tests failed, then both axis
    projections
     // overlap and the rectangles intersect
-47. }
-</pre>
+47. }</pre>
 
 </details>
 
@@ -10734,8 +10665,7 @@ Thread at StackOverflow</a>):</p>
 <details>
   <summary>JavaScript code extract!</summary>
 
-<pre>
-1.  // Collisions between rectangle and circle
+<pre>1.  // Collisions between rectangle and circle
 2.  function circRectsOverlap(x0, y0, w0, h0, cx, cy, r) {
 3.     var testX=cx;
 4.     var testY=cy;
@@ -10746,8 +10676,7 @@ Thread at StackOverflow</a>):</p>
 9.     if (testY &gt; (y0+h0)) testY=(y0+h0);
 10. 
 11.    return (((cx-testX)*(cx-testX)+(cy-testY)*(cy-testY))&lt; r*r);
-12. }
-</pre>
+12. }</pre>
 
 </details>
 
@@ -10836,8 +10765,7 @@ earlier.</p>
 <details>
   <summary>JavaScript code extract!</summary>
 
-<pre>
-1.  function updateBalls(delta) {
+<pre>1.  function updateBalls(delta) {
 2.    // for each ball in the array
 3.    for(var i=0; i &lt; ballArray.length; i++) {
 4.      var ball = ballArray[i];
@@ -10860,8 +10788,7 @@ earlier.</p>
 21.     // 3) draw the ball
 22.     ball.draw();
 23.   }
-24. }
-</pre>
+24. }</pre>
 
 </details>
 
@@ -11006,8 +10933,7 @@ JSBin</a>:</p>
 <details>
   <summary>HTML code extract!</summary>
   
-<pre>
-1.  &lt;html lang=&quot;en&quot;&gt;
+<pre>1.  &lt;html lang=&quot;en&quot;&gt;
 2.   &lt;head&gt;
 3.   &lt;title&gt;Extract and draw sprite&lt;/title&gt;
 4.   &lt;style&gt;
@@ -11034,8 +10960,7 @@ JSBin</a>:</p>
 21.  &lt;/p&gt;
 22.    &lt;canvas id=&quot;spritesheet&quot;&gt;&lt;/canvas&gt;
 23.  &lt;/body&gt;
-24. &lt;/html&gt;
-</pre>
+24. &lt;/html&gt;</pre>
 
 </details>
 
@@ -11051,8 +10976,7 @@ individual sprites:</p>
 <details>
   <summary>JavaScript source code extract!</summary>
   
-<pre>
-1.  var SPRITE_WIDTH = 48;   // Characteristics of the sprites and
+<pre>1.  var SPRITE_WIDTH = 48;   // Characteristics of the sprites and
     &gt; spritesheet
 2.  var SPRITE_HEIGHT = 92;
 3.  var NB_ROWS = 8;
@@ -11150,8 +11074,7 @@ individual sprites:</p>
 93.   ctx.strokeRect(x , y, w, h);
 94.   ctx.restore();
 95. }
-96.  
-</pre>
+96.  </pre>
 
 </details>
 
@@ -11194,8 +11117,7 @@ sprite animation framework.</p>
 <details>
   <summary>JavaScript source code extract!</summary>
   
-<pre>
-1.  var robot;
+<pre>1.  var robot;
 2.   
 3.  window.onload = function() {
 4.     canvas = document.getElementById(&quot;canvas&quot;);
@@ -11227,8 +11149,7 @@ sprite animation framework.</p>
 30.   robot.draw(ctx, 0, 0, 1);
 31. 
 32.   requestAnimationFrame(mainloop);
-33. }
-</pre>
+33. }</pre>
 
 </details>
 
@@ -11255,8 +11176,7 @@ yPos position, and at anappropriate size. </p>
 <details>
   <summary>Function SpriteImage code!</summary>
   
-<pre>
-1.  function SpriteImage(img, x, y, width, height) {
+<pre>1.  function SpriteImage(img, x, y, width, height) {
 2.     this.img = img; // the whole image that contains all sprites
 3.     this.x = x;     // x, y position of the sprite image in the whole
     &gt; image
@@ -11271,8 +11191,7 @@ yPos position, and at anappropriate size. </p>
 12.         xPos, yPos, // x, y, width and height of img to draw
 13.         this.width*scale, this.height*scale);
 14.  };
-15. }
-</pre>
+15. }</pre>
 
 </details>
 
@@ -11290,8 +11209,7 @@ small robot in the previous example.</p>
 <details>
   <summary>Function Sprite source code!</summary>
   
-<pre>
-1.  function Sprite() {
+<pre>1.  function Sprite() {
 2.    this.spriteArray = [];
 3.    this.currentFrame = 0;
 4.    this.delayBetweenFrames = 10;
@@ -11356,8 +11274,7 @@ small robot in the previous example.</p>
 61.     // delay in ms between images
 62.     this.delayBetweenFrames = 1000 / nb;
 63.   };
-64. }
-</pre>
+64. }</pre>
 
 </details>
 
@@ -11379,8 +11296,7 @@ sprite sheet has 8 different postures, so you can call:</p>
 <details>
   <summary>JavaScript source code!</summary>
   
-<pre>
-1.  womanDown.extractSprites(spritesheet, NB_POSTURES, 1,
+<pre>1.  womanDown.extractSprites(spritesheet, NB_POSTURES, 1,
 2.                           NB_FRAMES_PER_POSTURE,
 3.                           SPRITE_WIDTH, SPRITE_HEIGHT);
 4.   
@@ -11391,8 +11307,7 @@ sprite sheet has 8 different postures, so you can call:</p>
 9.  womanLeft.extractSprites(spritesheet, NB_POSTURES, 3,
 10.                          NB_FRAMES_PER_POSTURE,
 11.                          SPRITE_WIDTH, SPRITE_HEIGHT);
-12. // etc...
-</pre>
+12. // etc...</pre>
 
 </details>
 
@@ -11455,8 +11370,7 @@ JsBin</a></b></p>
 <details>
   <summary>JavaScript source code extract!</summary>
   
-<pre>
-1.  // Inits
+<pre>1.  // Inits
 2.  window.onload = function init() {
 3.  var game = new GF();
 4.  game.start();
@@ -11561,8 +11475,7 @@ JsBin</a></b></p>
 103.   };
 104.   ...
 105.  };
-106.  
-</pre>
+106. </pre>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -11596,8 +11509,7 @@ are created on top of the monster.</p>
 <details>
   <summary>JavaScript function updateBalls source code extract!</summary>
 
-<pre>
-1.  function updateBalls(delta) {
+<pre>1.  function updateBalls(delta) {
 2.     // for each ball in the array
 3.     var allBallDead = true;
 4.  
@@ -11631,24 +11543,21 @@ are created on top of the monster.</p>
 32. 
 33.      // 3) draw the ball
 34.      ball.draw();
-35.   }
-</pre>
+35.   }</pre>
 
 </details>
 
 <details>
   <summary>JavaScript code extract!</summary>
 
-<pre>
-1. if(allBallDead) {
+<pre>1. if(allBallDead) {
 2.   // reset all balls, create more balls each time
 3.   // as a way of increasing the difficulty
 4.   // in a real game: change the level, play nice music!
 5.   nbBalls++;
 6.   createBalls(nbBalls);
 7.   }
-8. }
-</pre>
+8. }</pre>
 
 </details>
 
@@ -11666,9 +11575,7 @@ survive?</p>
 <p><a href="https://jsbin.com/yatopunuje/edit?html,js,output" target="_blank" rel="noopener noreferrer">Try this
 JsBin</a>, then look at the source code. Start from the mainloop!</p>
 
-<pre>
-1. currentGameState = gameStates.gameOver:
-</pre>
+<pre>1. currentGameState = gameStates.gameOver:</pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~ 152. Game Over Screen, asking to press space to start again. (251) ~~~~~~~~~~~~~-->
@@ -11678,9 +11585,7 @@ JsBin</a>, then look at the source code. Start from the mainloop!</p>
   style="width:4.69792in;height:4.75in"
   alt="Game over screen, asking to press space to start again." />
 
-<pre>
-1. currentGameState = gameStates.gamerunning:
-</pre>
+<pre>1. currentGameState = gameStates.gamerunning:</pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~ 153. Game Over Screen, asking to press space to start again. (252) ~~~~~~~~~~~~~-->
@@ -11695,8 +11600,7 @@ JsBin</a>, then look at the source code. Start from the mainloop!</p>
 <details>
   <summary>JavaScript code extract!</summary>
   
-<pre>
-1.  ...
+<pre>1.  ...
 2.  // game states
 3.  var gameStates = {
 4.     mainMenu: 0,
@@ -11761,8 +11665,7 @@ JsBin</a>, then look at the source code. Start from the mainloop!</p>
 63.     }
 64.      ...
 65.    };
-66. ... 
-</pre>
+66. ...</pre>
 
 </details>
 
@@ -11773,8 +11676,7 @@ and changes the current game-state to GameOver:</p>
 <details>
   <summary>JavaScript extract code!</summary>
   
-<pre>
-1.  function startNewGame() {
+<pre>1.  function startNewGame() {
 2.      monster.dead = false;
 3.      currentLevelTime = 5000;
 4.      currentLevel = 1;
@@ -11813,8 +11715,7 @@ and changes the current game-state to GameOver:</p>
 37.        // 3) draw the ball
 38.        ball.draw();
 39.     }
-40. }
-</pre>
+40. }</pre>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -11844,8 +11745,7 @@ JavaScript files:</p>
 <details>
   <summary>game.html extract!</summary>
 
-<pre>
-1.  &lt;!DOCTYPE html&gt;
+<pre>1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.  &lt;head&gt;
 4.    &lt;meta charset=&quot;utf-8&quot;&gt;
@@ -11860,18 +11760,15 @@ JavaScript files:</p>
 13. &lt;body&gt;
 14.   &lt;canvas id=&quot;myCanvas&quot; width=&quot;400&quot; height=&quot;400&quot;&gt;&lt;/canvas&gt;
 15. &lt;/body&gt;
-16. &lt;/html&gt;
-</pre>
+16. &lt;/html&gt;</pre>
 
 </details>
 
 <p>Here is the game.css file (very simple):</p>
 
-<pre>
-1.  canvas {
+<pre>1.  canvas {
 2.     border: 1px solid black;
-3.  }
-</pre>
+3.  }</pre>
 
 <p>Let’s take the JavaScript code from the last JSBin example, save it
 to a file called game.js, and locate it in a subdirectory js under the
@@ -11901,8 +11798,7 @@ the console:</p>
 <details>
   <summary>Function Ball extract!</summary>
 
-<pre>
-1.  // constructor function for balls
+<pre>1.  // constructor function for balls
 2.  function Ball(x, y, angle, v, diameter) {
 3.     ...
 4.      this.draw = function () {
@@ -11914,8 +11810,7 @@ the console:</p>
 10.       this.x += calcDistanceToMove(delta, incX);
 11.       this.y += calcDistanceToMove(delta, incY);
 12.     };
-13. }
-</pre>
+13. }</pre>
 
 </details>
 
@@ -11952,8 +11847,7 @@ parameter.</p>
 <details>
   <summary>JavaScript code extract!</summary>
 
-<pre>
-1.  var delta, oldTime = 0;
+<pre>1.  var delta, oldTime = 0;
 2.   
 3.  function timer(currentTime) {
 4.     var delta = currentTime - oldTime;
@@ -11964,8 +11858,7 @@ parameter.</p>
 9.  var calcDistanceToMove = function (delta, speed) {
 10.    //console.log(&quot;#delta = &quot; + delta + &quot; speed = &quot; + speed);
 11.    return (speed * delta) / 1000;
-12. };
-</pre>
+12. };</pre>
 
 </details>
 
@@ -11982,8 +11875,7 @@ the fps.js file.</p>
 <details>
   <summary>fps.js extract!</summary>
 
-<pre>
-1.  // vars for counting frames, used by the measureFPS function
+<pre>1.  // vars for counting frames, used by the measureFPS function
 2.  var frameCount = 0;
 3.  var lastTime;
 4.  var fpsContainer;
@@ -12016,8 +11908,7 @@ the fps.js file.</p>
 31.    // document in the start() function
 32.    fpsContainer.innerHTML = &#39;FPS: &#39; + fps;
 33.    frameCount++;
-34. };
-</pre>
+34. };</pre>
 
 </details>
 
@@ -12042,8 +11933,7 @@ also move the getMousePos method into there. </p>
 <details>
   <summary>JavaScript code extract!</summary>
 
-<pre>
-1.  function addListeners(inputStates, canvas) {
+<pre>1.  function addListeners(inputStates, canvas) {
 2.     //add the listener to the main, window object, and update the states
 3.     window.addEventListener(&#39;keydown&#39;, function (event) {
 4.        if (event.keyCode === 37) {
@@ -12064,8 +11954,7 @@ also move the getMousePos method into there. </p>
 19. }
 20. function getMousePos(evt, canvas) {
 21.    ...
-22. }
-</pre>
+22. }</pre>
 
 </details>
 
@@ -12082,8 +11971,7 @@ a collisions.js file:</p>
 6. }
 7. function testCollisionWithWalls(ball, w, h) {
 8.    ...
-9. }
-</pre>
+9. }</pre>
 
 <p>We added the width and height of the canvas as parameters to
 the testCollisionWithWalls function to resolve dependencies. The other
@@ -12124,8 +12012,7 @@ during the course, could be put into this file as well.</p>
 16. &lt;body&gt;
 17.   &lt;canvas id=&quot;myCanvas&quot; width=&quot;400&quot; height=&quot;400&quot;&gt;&lt;/canvas&gt;
 18. &lt;/body&gt;
-19. &lt;/html&gt;
-</pre>
+19. &lt;/html&gt;</pre>
 
 </details>
 
@@ -12410,8 +12297,7 @@ the new arrayBuffer type for the expected response (<i>line
 7.  initSound(this.response); // this.response is an ArrayBuffer.
 8.  };
 9.  xhr.send();
-10. }
-</pre>
+10. }</pre>
 
 <h4>Example: download a binary song file using XHR2 and responseType=‘arraybuffer’, and play it using Web Audio</h4>
 
@@ -12512,8 +12398,7 @@ it using XHR2.</p>
 73.   }
 74. &lt;/script&gt;
 75. &lt;/body&gt;
-76. &lt;/html&gt;
-</pre>
+76. &lt;/html&gt;</pre>
 
 </details>
 
@@ -12608,8 +12493,7 @@ HTTP method), or an upload (using POST).</p>
 6.  }
 580. 
 &lt;!-- --&gt;
-7.  xhr.send();
-</pre>
+7.  xhr.send();</pre>
 
 <p>Note that an alternative syntax such as xhr.addEventListener(‘progress’, callback, false) also works.</p>
 <p><b>Syntax for upload:</b></p>
@@ -12621,8 +12505,7 @@ HTTP method), or an upload (using POST).</p>
 5. // do something
 6. }
 7.   
-8. xhr.send();
-</pre>
+8. xhr.send();</pre>
 
 <p>Notice that the only difference is the “upload” added after the name
 of the request object: with GET we use xhr.onprogress and with POST we
@@ -12647,8 +12530,7 @@ extract that does this for a download operation:</p>
 
 <h4>HTML</h4>
 
-<pre>1. &lt;progress id=&quot;downloadProgress&quot; value=0&gt;&lt;progress&gt;
-</pre>
+<pre>1. &lt;progress id=&quot;downloadProgress&quot; value=0&gt;&lt;progress&gt;</pre>
 
 <h4>Script:</h4>
 
@@ -12668,8 +12550,7 @@ extract that does this for a download operation:</p>
 11.     progress.max = e.total;
 12.   }
 13.   xhr.send();
-14. }
-</pre>
+14. }</pre>
 
 </details>
 
@@ -12780,8 +12661,7 @@ JSBin</a>:</p>
 <details>
   <summary>HTML source code!</summary>
   
-<pre>
-1.  &lt;!DOCTYPE html&gt;
+<pre>1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.  &lt;head&gt;
 4.     &lt;meta charset=&quot;utf-8&quot; /&gt;
@@ -12814,8 +12694,7 @@ JSBin</a>:</p>
 31. };
 32. &lt;/script&gt;
 33. &lt;/body&gt;
-34. &lt;/html&gt;
-</pre>
+34. &lt;/html&gt;</pre>
 
 </details>
 
@@ -12849,12 +12728,10 @@ similar to that used for monitoring file downloads:</p>
 
 <p>Here is the code of such an event listener:</p>
 
-<pre>
-1. xhr.upload.onprogress = function(e) {
+<pre>1. xhr.upload.onprogress = function(e) {
 2.   progress.value = e.loaded; // number of bytes uploaded
 3.   progress.max = e.total;    // total number of bytes in the file
-4. };
-</pre>
+4. };</pre>
 
 <p><a href="https://jsbin.com/qedaja/edit?html,css,output" target="_blank" rel="noopener noreferrer">Try the
 example on JSBin</a>:</p>
@@ -12864,8 +12741,7 @@ example on JSBin</a>:</p>
 <details>
   <summary>HTML code!</summary>
   
-<pre>
-1.  &lt;!DOCTYPE html&gt;
+<pre>1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.  &lt;head&gt;
 4.     &lt;meta charset=&quot;utf-8&quot; /&gt;
@@ -12905,8 +12781,7 @@ example on JSBin</a>:</p>
 37. };
 38. &lt;/script&gt;
 39. &lt;/body&gt;
-40. &lt;/html&gt;
-</pre>
+40. &lt;/html&gt;</pre>
 
 </details>
 
@@ -13032,13 +12907,11 @@ as &lt;img&gt; elements.</p>
 <p>In order to detect a drag, add an event listener for
 the dragstart event:</p>
 
-<pre>
-1. &lt;ol ondragstart=&quot;dragStartHandler(event)&quot;&gt;
+<pre>1. &lt;ol ondragstart=&quot;dragStartHandler(event)&quot;&gt;
 2.   &lt;li draggable=&quot;true&quot; data-value=&quot;fruit-apple&quot;&gt;Apples&lt;/li&gt;
 3.   &lt;li draggable=&quot;true&quot; data-value=&quot;fruit-orange&quot;&gt;Oranges&lt;/li&gt;
 4.   &lt;li draggable=&quot;true&quot; data-value=&quot;fruit-pear&quot;&gt;Pears&lt;/li&gt;
-5. &lt;/ol&gt;
-</pre>
+5. &lt;/ol&gt;</pre>
 
 <p>In the above code, we made all of the &lt;li&gt; elements draggable,
 and we detect a dragstart event occurring to any item within the ordered
@@ -13071,8 +12944,7 @@ CodePen</a>.</p>
 <details>
   <summary>HTML code!</summary>
 
-<pre>
-1.  &lt;!DOCTYPE html&gt;
+<pre>1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.  &lt;head&gt;
 4.    &lt;script&gt;
@@ -13091,8 +12963,7 @@ CodePen</a>.</p>
 16.   &lt;/ol&gt;
 17.   &lt;p&gt;Drop your favorite fruits below:&lt;/p&gt;
 18. &lt;body&gt;
-19. &lt;html&gt;
-</pre>
+19. &lt;html&gt;</pre>
 
 </details>
 
@@ -13120,8 +12991,7 @@ the &lt;li&gt; element that has been dragged, and
 event.target.dataset.value is the value of its data-value attribute (in
 our case “apples”, “oranges” or “pears”):</p>
 
-<pre>
-1. function dragStartHandler(event) {
+<pre>1. function dragStartHandler(event) {
 2.   console.log(&#39;dragstart event, target:
      &#39; + event.target.innerHTML);
 3.  
@@ -13129,8 +12999,7 @@ our case “apples”, “oranges” or “pears”):</p>
 5.   // data* attribute of the target,
 6.   // with a type &quot;Fruit&quot;.
 7.   event.dataTransfer.setData(&quot;Fruit&quot;, event.target.dataset.value);
-8. }
-</pre>
+8. }</pre>
 
 <h4>Step #2: define a “drop zone”</h4>
 
@@ -13139,12 +13008,10 @@ event listener for the drop event. Note that most of the time, as events
 may be propagated, we will also listen for dragover or dragend events
 and stop their propagation. More on this later…</p>
 
-<pre>
-1. &lt;div ondragover=&quot;return false&quot; ondrop=&quot;dropHandler(event);&quot;&gt;
+<pre>1. &lt;div ondragover=&quot;return false&quot; ondrop=&quot;dropHandler(event);&quot;&gt;
 2.   Drop your favorite fruits below:
 3.   &lt;ol id=&quot;droppedFruits&quot;&gt;&lt;/ol&gt;
-4. &lt;/div&gt;
-</pre>
+4. &lt;/div&gt;</pre>
 
 <p>Whenever the mouse is moving above a (any) drop zone, dragover events
 will fire. Accordingly, a large number of dragover events may need to be
@@ -13169,8 +13036,7 @@ the false value at <i>line 1</i>.</p>
 9.  
 10.  // do something with the data
 11.  ...
-12. }
-</pre>
+12. }</pre>
 
 </details>
 
@@ -13245,8 +13111,7 @@ it at CodePen</a>:</p>
 46.        &lt;ol id=&quot;droppedFruits&quot;&gt;&lt;/ol&gt;
 47.    &lt;/div&gt;
 48. &lt;body&gt;
-49. &lt;html&gt;
-</pre>
+49. &lt;html&gt;</pre>
 
 </details>
 
@@ -13282,8 +13147,7 @@ online example):</p>
 13. 
 14. li:hover {
 15.    border: 2px dashed #000;
-16. }
-</pre>
+16. }</pre>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -13342,8 +13206,7 @@ are taken from data­-* attributes of the &lt;li&gt; element.</p>
 <pre>1. &lt;li class=&quot;user&quot; data-name=&quot;John Resig&quot; data-city=&quot;Boston&quot;
 2.     data-lang=&quot;js&quot; data-food=&quot;Bacon&quot;&gt;
 3. John says: &lt;span&gt;Hello, how are you?&lt;/span&gt;
-4. &lt;/li&gt;
-</pre>
+4. &lt;/li&gt;</pre>
 
 <p>We just defined four data attributes.</p>
 
@@ -13371,8 +13234,7 @@ are taken from data­-* attributes of the &lt;li&gt; element.</p>
 17.     // could be replaces by old way..
 18.     // span.innerHTML = phrase.prefix + user.getAttribute(&quot;data-&quot; + phrase.name );
 19.   }, false);
-20. &lt;/script&gt;
-</pre>
+20. &lt;/script&gt;</pre>
 
 </details>
 
@@ -13398,8 +13260,7 @@ JsBin</a>. </p>
 
 <h4>HTML code from this example:</h4>
 
-<pre>1. &lt;input type=&quot;range&quot; min=&quot;0&quot; max=&quot;100&quot; value=&quot;25&quot;&gt;
-</pre>
+<pre>1. &lt;input type=&quot;range&quot; min=&quot;0&quot; max=&quot;100&quot; value=&quot;25&quot;&gt;</pre>
 
 <p>This is just one of the new input types introduced by HTML5.</p>
 
@@ -13413,8 +13274,7 @@ JsBin</a>. </p>
 6. input.addEventListener(&#39;change&#39;, function(e) {
 7.     this.dataset.myvaluename = this.value;
 8. });
-9. &lt;/script&gt;
-</pre>
+9. &lt;/script&gt;</pre>
 
 <h4>CSS code from this example:</h4>
 
@@ -13425,8 +13285,7 @@ JsBin</a>. </p>
 5.     position: relative;
 6.     left: 100px; top: -15px;
 7. }
-8. &lt;/style&gt;
-</pre>
+8. &lt;/style&gt;</pre>
 
 <p>The attr() function takes an attribute name as a parameter and
 returns its value. Here we used the name of the attribute we added on
@@ -13554,8 +13413,7 @@ drop zone):</p>
 29.   &lt;li draggable=&quot;true&quot; data-value=&quot;fruit-apple&quot;&gt;Apples&lt;/li&gt;
 30.   &lt;li draggable=&quot;true&quot; data-value=&quot;fruit-orange&quot;&gt;Oranges&lt;/li&gt;
 31.   &lt;li draggable=&quot;true&quot; data-value=&quot;fruit-pear&quot;&gt;Pears&lt;/li&gt;
-32. &lt;/ol&gt;
-</pre>
+32. &lt;/ol&gt;</pre>
 
 </details>
 
@@ -13680,8 +13538,7 @@ JavaScript into a single HTML page):</p>
 94.       &lt;ol id=&quot;droppedFruits&quot;&gt;&lt;/ol&gt;
 95.     &lt;/div&gt;
 96. &lt;/body&gt;
-97. &lt;/html&gt;
-</pre>
+97. &lt;/html&gt;</pre>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -13739,8 +13596,7 @@ the dragstart handler, and we set the effect (to “move”, “copy”, etc.)
 2.     // Allow a &quot;copy&quot; cursor effect
 3.     event.dataTransfer.effectAllowed = &#39;copy&#39;;
 4.     ...
-5. }
-</pre>
+5. }</pre>
 
 <p>And here is where we can set the cursor to a permitted value:</p>
 
@@ -13748,8 +13604,7 @@ the dragstart handler, and we set the effect (to “move”, “copy”, etc.)
 2.    // change the cursor shape to a &quot;+&quot;
 3.    event.dataTransfer.dropEffect = &#39;copy&#39;;
 4.    ...
-5. }
-</pre>
+5. }</pre>
 
 <p>To set a custom image, we also do the following in
 the dragstart handler:</p>
@@ -13769,8 +13624,7 @@ the dragstart handler:</p>
 10.    // set the cursor to this image, with an offset in X, Y
 11.    event.dataTransfer.setDragImage(dragIcon, -10, -10);
 12.    ...
-13. }
-</pre>
+13. }</pre>
 
 </details>
 
@@ -13804,11 +13658,9 @@ sections. There are other interesting uses that differ in the way we
 copy and paste things to/from the clipboard. The clipboard is accessed
 through the dataTransfer property of the different events:</p>
 
-<pre>
-1. event.dataTransfer.setData(&quot;Fruit&quot;, event.target.dataset.value);
+<pre>1. event.dataTransfer.setData(&quot;Fruit&quot;, event.target.dataset.value);
 2. ...
-3. var data = event.dataTransfer.getData(&quot;Fruit&quot;);
-</pre>
+3. var data = event.dataTransfer.getData(&quot;Fruit&quot;);</pre>
 
 <p>&lt;img&gt; elements are all draggable by default!</p>
 <p>Normally, to make an element draggable, you must add
@@ -13827,8 +13679,7 @@ CodePen</a>:</p>
 <details>
   <summary>HTML extract!</summary>
   
-<pre>
-1.  &lt;html lang=&quot;en&quot;&gt;
+<pre>1.  &lt;html lang=&quot;en&quot;&gt;
 2.  &lt;head&gt;
 3.  &lt;style&gt;
 4.     .box {
@@ -13872,8 +13723,7 @@ CodePen</a>:</p>
 42.         &lt;p&gt;Bad web browsers&lt;/p&gt;
 43.    &lt;/div&gt;
 44. &lt;/body&gt;
-45. &lt;/html&gt;
-</pre>
+45. &lt;/html&gt;</pre>
 
 </details>
 
@@ -13906,12 +13756,10 @@ clipboard with a name/key equal to “text/plain”. Just add a drop event
 handler on the drop zone and fetch the data from the clipboard using
 “text/plain” as the access key:</p>
 
-<pre>
-1.  function drop(target, event) {
+<pre>1.  function drop(target, event) {
 2.     event.preventDefault();
 3.     target.innerHTML = event.dataTransfer.getData(&#39;text/plain&#39;);
-4.  };
-</pre>
+4.  };</pre>
 
 <p>Example: select some text and drag and drop the selection in the drop
 zone</p>
@@ -13925,8 +13773,7 @@ CodePen</a>:</p>
 <details>
   <summary>HTML extract!</summary>
   
-<pre>
-1.  &lt;html lang=&quot;en&quot;&gt;
+<pre>1.  &lt;html lang=&quot;en&quot;&gt;
 2.  &lt;head&gt;
 3.  &lt;style&gt;
 4.     .box {
@@ -13969,8 +13816,7 @@ CodePen</a>:</p>
 41.      &lt;p&gt;Drop some text selection here.&lt;/p&gt;
 42. &lt;/div&gt;
 43. &lt;/body&gt;
-44. &lt;/html&gt;
-</pre>
+44. &lt;/html&gt;</pre>
 
 </details>
 
@@ -14031,8 +13877,7 @@ an ondrop=dropHandler(event); attribute:</p>
 <details>
   <summary>JavaScript Extract!</summary>
 
-<pre>
-1.  function dropHandler(event) {
+<pre>1.  function dropHandler(event) {
 2.     // Do not propagate the event
 3.     event.stopPropagation();
 4.     // Prevent default behavior, in particular when we drop images or links
@@ -14049,8 +13894,7 @@ an ondrop=dropHandler(event); attribute:</p>
 15.    }
 16. 
 17.    console.log(files.length + &#39; file(s) have been dropped:n&#39; + filenames);
-18. }
-</pre>
+18. }</pre>
 
 </details>
 
@@ -14078,12 +13922,10 @@ in a new tab/window. This is not what we would like in an application
 using the drag and drop process. These two lines are necessary to
 prevent the default behavior of the browser:</p>
 
-<pre>
-1. // Do not propagate the event
+<pre>1. // Do not propagate the event
 2. event.stopPropagation();
 3. // Prevent default behavior, in particular when we drop images or links
-4. event.preventDefault();
-</pre>
+4. event.preventDefault();</pre>
 
 <blockquote>
 <p><b>Best practice</b>: add these lines to the drop handler AND
@@ -14095,8 +13937,7 @@ to the dragOver handler attached to the drop zone!</p>
 <details>
   <summary>JavaScript Extract!</summary>
   
-<pre>
-1.  function dragOverHandler(event) {
+<pre>1.  function dragOverHandler(event) {
 2.     // Do not propagate the event
 3.     event.stopPropagation();
 4.  
@@ -14112,8 +13953,7 @@ to the dragOver handler attached to the drop zone!</p>
 14.    // Prevent default behavior, in particular when we drop images or links
 15.    event.preventDefault();
 16.    ...
-17. }
-</pre>
+17. }</pre>
 
 </details>
 
@@ -14280,8 +14120,7 @@ it at CodePen</a>:</p>
 85.      &lt;ol id=&quot;droppedFiles&quot;&gt;&lt;/ol&gt;
 86.   &lt;/div&gt;
 87. &lt;body&gt;
-88. &lt;html&gt;
-</pre>
+88. &lt;html&gt;</pre>
 
 </details>
 
@@ -14347,8 +14186,7 @@ image thumbnails displayed in the open space beneath it:</p>
 24.      // only once the image is completely loaded
 25.      reader.readAsDataURL(f);
 26.    }
-27. }
-</pre>
+27. }</pre>
 
 </details>
 
@@ -14499,8 +14337,7 @@ zone) or play with it at CodePen:</p>
 113. &lt;br/&gt;
 114. &lt;output id=&quot;list&quot;&gt;&lt;/output&gt;
 115. &lt;body&gt;
-116. &lt;html&gt;
-</pre>
+116. &lt;html&gt;</pre>
 
 </details>
 
@@ -14556,8 +14393,7 @@ using &lt;input type=“file”/&gt; looks like this:</p>
 11. &lt;body&gt;
 12.   Choose multiple files    :&lt;input type=&quot;file&quot; 
         id=&quot;files&quot; multiple /&gt;&lt;br/&gt;
-13. &lt;/body&gt;
-</pre>
+13. &lt;/body&gt;</pre>
 
 </details>
 
@@ -14720,8 +14556,7 @@ CodePen</a>:</p>
 137.   &lt;br/&gt;
 138.   &lt;output id=&quot;list&quot;&gt;&lt;/output&gt;
 139. &lt;/body&gt;
-140. &lt;/html&gt;
-</pre>
+140. &lt;/html&gt;</pre>
 
 </details>
 
@@ -14847,8 +14682,7 @@ try to connect):</p>
 94. &lt;br/&gt;
 95.  Uploading progress: &lt;progress id=&quot;progress&quot;&gt;&lt;/progress&gt;
 96. &lt;body&gt;
-97. &lt;html&gt;
-</pre>
+97. &lt;html&gt;</pre>
 
 </details>
 
@@ -15086,8 +14920,7 @@ JSBin</a> and look at the source code - there are plenty of comments.</p>
 31.   exit();
 32. }
 33. 
-34. ?&gt;
-</pre>
+34. ?&gt;</pre>
 
 </details>
 
@@ -15146,8 +14979,7 @@ have to deal with a temporary “RecycleBin” directory.</p>
 <details>
   <summary>PHP ‘as is’ code!</summary>
 
-<pre>
-1.  &lt;?php
+<pre>1.  &lt;?php
 2.  
 3.  if (isset($_POST[&#39;givenname&#39;]) &amp;&amp; isset($_POST[&#39;familyname&#39;])) {
 4.      echo $_POST[&#39;givenname&#39;] . &#39; &#39; . $_POST[&#39;familyname&#39;] . &#39; try to upload
@@ -15191,8 +15023,7 @@ have to deal with a temporary “RecycleBin” directory.</p>
 42.    }
 43. }
 44. 
-45. ?&gt;
-</pre>
+45. ?&gt;</pre>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -15444,8 +15275,7 @@ an age and an email address.</p>
 <details>
   <summary>Transaction code!</summary>
 
-<pre>
-1.  // Open a transaction for reading and writing on the DB &quot;customer&quot;
+<pre>1.  // Open a transaction for reading and writing on the DB &quot;customer&quot;
 2.  var transaction = db.transaction([&quot;customers&quot;], &quot;readwrite&quot;);
 3.  
 4.  // Do something when all the data is added to the database.
@@ -15466,8 +15296,7 @@ an age and an email address.</p>
 19.    request.onsuccess = function(event) {
 20.       // event.target.result == customerData[i].ssn
 21. };
-22. }
-</pre>
+22. }</pre>
 
 </details>
 
@@ -15572,8 +15401,7 @@ href="https://www.w3.org/TR/IndexedDB/#dfn-transaction-create" target="_blank" r
 5.      request.onsuccess = function(event) {
 6.          // event.target.result == customerData[i].ssn
 7.  };
-8.  }
-</pre>
+8.  }</pre>
 
 <h4>Index</h4>
 
@@ -15826,9 +15654,7 @@ JSBin</a> shows how to create and populate an object store named “CustomerDB�
 
 <p>This message comes from the JavaScript request.onupgradeneeded callback. Indeed, the first time we open the database we ask for a specific version (in this example: version 2) with:</p>
 
-<pre>
-1. var request = indexedDB.open(dbName, 2);
-</pre>
+<pre>1. var request = indexedDB.open(dbName, 2);</pre>
 
 <p>…and if there is no version “2” of the database, then we enter the onupgradeneeded callback where we actually create the database.</p>
 <p>You can try to click again on the button “CreateCustomerDatabase”, if database version “2” exists, this time the request.onsuccess callback will be called. This is where we will add/remove/search data (you should see a message on the console).</p>
@@ -15839,8 +15665,7 @@ JSBin</a> shows how to create and populate an object store named “CustomerDB�
 <details>
   <summary>function createDatabase!</summary>
 
-<pre>
-1.  var db; // the database connection we need to initialize
+<pre>1.  var db; // the database connection we need to initialize
 2.   
 3.  function createDatabase() {
 4.  
@@ -15901,8 +15726,7 @@ JSBin</a> shows how to create and populate an object store named “CustomerDB�
 58.      // The result is the database itself
 59.      db = event.target.result;
 60.   };
-61. } // end of function createDatabase
-</pre>
+61. } // end of function createDatabase</pre>
 
 </details>
 
@@ -15975,8 +15799,7 @@ object store named “customers”:</p>
 
 <pre>
 1. var transaction = db.transaction([&quot;customers&quot;], &quot;readwrite&quot;);
-2.   //or &quot;read&quot;...
-</pre>
+2.   //or &quot;read&quot;...</pre>
 
 <p>Transactions, when created, must have a mode set that is
 either readonly, readwrite or versionchange (this last mode is only for
@@ -16058,8 +15881,7 @@ section - the function AddACustomer() that adds one customer:</p>
 
 <pre>
 1. { ssn: &quot;123-45-6789&quot;, name: &quot;Michel Buffa&quot;, age: 47, email: 
-2. &quot;buffa@i3s.unice.fr&quot; }
-</pre>
+2. &quot;buffa@i3s.unice.fr&quot; }</pre>
 
 <p>Here is the complete source code of the addACustomer function:</p>
 
@@ -16105,8 +15927,7 @@ section - the function AddACustomer() that adds one customer:</p>
 36.        console.log(&quot;request.onerror, could not insert customer,
 37.                     errcode = &quot; + event.target.error.name);
 38.    };
-39. }
-</pre>
+39. }</pre>
 
 </details>
 
@@ -16187,8 +16008,7 @@ message if:</p>
 7.                 unique (we declared it as a &quot;unique&quot; index)&lt;br&gt;
 8.  &lt;/fieldset&gt;
 9.  
-10. &lt;button onclick=&quot;addACustomer();&quot;&gt;Add a new Customer&lt;/button&gt;
-</pre>
+10. &lt;button onclick=&quot;addACustomer();&quot;&gt;Add a new Customer&lt;/button&gt;</pre>
 
 <h4>And here is the new version of the addACustomer() JavaScript function:</h4>
 
@@ -16237,8 +16057,7 @@ message if:</p>
 39.            &quot;. Certainly either the ssn or the email is already
 40.            present in the Database&quot;);
 41.   };
-42. }
-</pre>
+42. }</pre>
 
 </details>
 
@@ -16252,8 +16071,7 @@ etc.).</p>
 <pre>
 1. var request = db.transaction([&quot;customers&quot;], &quot;readwrite&quot;)
 2.   .objectStore(&quot;customers&quot;)
-3.   .add(newCustomer);
-</pre>
+3.   .add(newCustomer);</pre>
 
 <p>The above code does not perform all the tests, but you may encounter
 such a way of coding (!).</p>
@@ -16331,8 +16149,7 @@ refresh feature with some versions of Google Chrome.</p>
 31.             = &quot; + event.target.error.name + &quot;. The ssn does not
 32.             exist in the Database&quot;);
 33.    };
-34. }
-</pre>
+34. }</pre>
 
 </details>
 
@@ -16350,8 +16167,7 @@ version:</p>
 <pre>
 1. var request = db.transaction([&quot;customers&quot;], &quot;readwrite&quot;)
 2.   .objectStore(&quot;customers&quot;)
-3.   .delete(&quot;444-44-4444&quot;);
-</pre>
+3.   .delete(&quot;444-44-4444&quot;);</pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-6-9">3.6.9 Modifying data</h3>
@@ -16428,8 +16244,7 @@ this screenshot:</p>
 36.         event.target.error.name + &quot;. The ssn is not in the
 37.         Database&quot;);
 38.   };
-39. }
-</pre>
+39. }</pre>
 
 </details>
 
@@ -16512,8 +16327,7 @@ form is in the request.onsuccess callback).</p>
                 event.target.error.name + &quot;.
 42.             The ssn is not in the Database&quot;);
 43.   };
-44. }
-</pre>
+44. }</pre>
 
 </details>
 
@@ -16538,8 +16352,7 @@ errors). Here is the shortened version:</p>
 9.        document.querySelector(&quot;#email&quot;).value =
 10.                                           event.target.result.email;
 11.   }; // end of onsuccess callback
-12. }
-</pre>
+12. }</pre>
 
 </details>
 
@@ -16569,8 +16382,7 @@ code):</p>
 16.           document.querySelector(&quot;#email&quot;).value =
 17.                                      event.target.result.email;
 18.        };
-19. }
-</pre>
+19. }</pre>
 
 </details>
 
@@ -16620,8 +16432,7 @@ between those in a certain range, then you must use <i>a cursor</i>.</p>
 18.        alert(&quot;No more entries!&quot;);
 19.      }
 20.   }; // end of onsuccess...
-21. } // end of listAllCustomers()
-</pre>
+21. } // end of listAllCustomers()</pre>
 
 </details>
 
@@ -16680,8 +16491,7 @@ object store and add them to an array, like this:</p>
 16.       alert(&quot;Got all customers: &quot; + customers);
 17.     }
 18.  }; // end of onsuccess
-19. } // end of listAllCustomersArray()
-</pre>
+19. } // end of listAllCustomersArray()</pre>
 
 </details>
 
@@ -16724,8 +16534,7 @@ object store, and returns the first one it finds with a name equal to
 14.     alert(&quot;Bill&#39;s SSN is &quot; + &lt;b&gt;event.target.result.ssn +
 15.     &quot; his email is &quot; + &lt;b&gt;event.target.result.email);
 16.   };
-17. }
-</pre>
+17. }</pre>
 
 </details>
 
@@ -16774,8 +16583,7 @@ on indexes:</p>
 7.             email: &quot; +&lt;b&gt; cursor.value.email);
 8.      &lt;b&gt;cursor.continue();
 9.  }
-10. };
-</pre>
+10. };</pre>
 
 </details>
 
@@ -16793,8 +16601,7 @@ on indexes:</p>
 7.       alert(&quot;Name: &quot; + cursor.key + &quot;, &quot;SSN: &quot; + &lt;b&gt;cursor.value);
 8.       cursor.continue();
 9.     }
-10. };
-</pre>
+10. };</pre>
 
 </details>
 
@@ -16848,8 +16655,7 @@ JSBin that uses the above methods</a>:</p>
 25.       cursor.continue();
 26.    }
 27. };
-28. }
-</pre>
+28. }</pre>
 
 </details>
 
@@ -16893,8 +16699,7 @@ from this MDN article</a>):</p>
 20.         // Do something with the matches.
 21.         cursor.continue();
 22.     }
-23. }
-</pre>
+23. }</pre>
 
 </details>
 
@@ -17130,8 +16935,7 @@ documents</i>, that render as complex widgets: a better-looking
 calendar, an input text with vocal recognition, a nice chart, etc.</p>
 <p>Let’s start with an example! This code…:</p>
 
-<pre>1. &lt;x-gif src=&quot;https://i.imgur.com/iKXH4E2.gif&quot; ping-pong&gt;&lt;/x-gif&gt;
-</pre>
+<pre>1. &lt;x-gif src=&quot;https://i.imgur.com/iKXH4E2.gif&quot; ping-pong&gt;&lt;/x-gif&gt;</pre>
 
 <p>… renders an animated GIF, and it loops forever in ping-pong mode:
 the order of the animation is reversed when the last image is reached
@@ -17150,8 +16954,7 @@ Web site</a>.</p>
 <p>If you look at the source of the demo page, you note the following at
 the top of the page:</p>
 
-<pre>1. &lt;link rel=&quot;import&quot; href=&quot;dist/x-gif.html&quot;&gt;
-</pre>
+<pre>1. &lt;link rel=&quot;import&quot; href=&quot;dist/x-gif.html&quot;&gt;</pre>
 
 <p>It’s called an “HTML import”. If your browser supports <i>HTML
 imports</i>, you can now import <i>another HTML document, </i>that will
@@ -17317,8 +17120,7 @@ not be played, etc.) until the template is used.</p>
 <pre>1. &lt;template id=&quot;mytemplate&quot;&gt;
 2.    &lt;img src=&quot;&quot; alt=&quot;great image&quot;&gt;
 3.    &lt;div class=&quot;comment&quot;&gt;&lt;/div&gt;
-4. &lt;/template&gt;
-</pre>
+4. &lt;/template&gt;</pre>
 
 <p>Note that it’s ok to have the <b>src</b> attribute empty here, we
 will initialize it when the template is activated.</p>
@@ -17341,8 +17143,7 @@ the template’s content and true means “deep copy” the content.</p>
 4.  
 5. // Clone the template, sort of &quot;instantiation&quot;!
 6. var clone = document.importNode(t.content, true);
-7. document.body.appendChild(clone);
-</pre>
+7. document.body.appendChild(clone);</pre>
 
 <h4>Explanations</h4>
 
@@ -17383,8 +17184,7 @@ JSBin</a> that uses exactly the code presented:</p>
 5. 
 6. &lt;body&gt;
 7.   &lt;button onclick=&quot;instantiate()&quot;&gt;Instantiate the template&lt;/button&gt;&lt;br&gt;
-8. &lt;/body&gt;
-</pre>
+8. &lt;/body&gt;</pre>
 
 <h4>The JavaScript part:</h4>
 
@@ -17396,8 +17196,7 @@ JSBin</a> that uses exactly the code presented:</p>
 6.  
 7.     var clone = document.importNode(t.content, true);
 8.     document.body.appendChild(clone);
-9.  }
-</pre>
+9.  }</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-2-4">4.2.4 Shadow DOM</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -17591,8 +17390,7 @@ now it’s available to every Web developer!</p>
 10.     // insert something into the shadow DOM, this will be rendered
 11.     shadowRoot.innerHTML = &#39;&lt;h1&gt;Hello Shadow DOM&lt;/h1&gt;&#39;; // Could
     also use appendChild().
-12. &lt;/script&gt;
-</pre>
+12. &lt;/script&gt;</pre>
 
 </details>
 
@@ -17652,8 +17450,7 @@ etc.</p>
 3.       h1 {color:white; background:red}
 4.     &lt;/style&gt;
 5.     &lt;h1&gt;This is a shadowed H1&lt;/h1&gt;
-6.  &lt;/template&gt;
-</pre>
+6.  &lt;/template&gt;</pre>
 
 <p>The JavaScript part:</p>
 
@@ -17669,8 +17466,7 @@ etc.</p>
 7.  const shadowRoot = host.attachShadow({mode: &#39;open&#39;});
 8.  
 9.  // insert something into the shadow DOM, this will be rendered
-10. shadowRoot.appendChild(document.importNode(t.content, true));
-</pre>
+10. shadowRoot.appendChild(document.importNode(t.content, true));</pre>
 
 </details>
 
@@ -17722,8 +17518,7 @@ Component.</p>
 9.     &lt;h1 id=&quot;withShadowDom&quot;&gt;This is a text header&lt;/h1&gt;
 10. 
 11.    &lt;h1&gt;Normal header with no shadow DOM associated.&lt;/h1&gt;
-12. &lt;/body&gt;
-</pre>
+12. &lt;/body&gt;</pre>
 
 </details>
 
@@ -17742,8 +17537,7 @@ by the first H1. Try to add this CSS rule to this example :</p>
 
 <pre>1.  h1 {
 2.      color:green;
-3.  }
-</pre>
+3.  }</pre>
 
 <p>And you should see something like that:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -17780,8 +17574,7 @@ the &lt;slot&gt;…&lt;/slot&gt; element, as shown below:</p>
 9.  &lt;h1 id=&quot;myWidget&quot;&gt;
 10.     &lt;span slot=&quot;my-text&quot;&gt;Injected content using slot elem&lt;/span&gt;
 11. &lt;/h1&gt;
-12. &lt;/body&gt;
-</pre>
+12. &lt;/body&gt;</pre>
 
 </details>
 
@@ -17819,8 +17612,7 @@ browser how to render them.</p>
 
 <h4>Basic usage:</h4>
 
-<pre>1. customElements.define(&#39;my-widget&#39;, MyWidget);
-</pre>
+<pre>1. customElements.define(&#39;my-widget&#39;, MyWidget);</pre>
 
 <h4>This is done using JavaScript and there are some constraints:</h4>
 
@@ -17852,8 +17644,7 @@ shadow DOM:</p>
 3.     &lt;span slot=&quot;my-title&quot;&gt;Title injected&lt;/span&gt;
 4.     &lt;span slot=&quot;my-paragraph&quot;&gt;Paragraph injected&lt;/span&gt;
 5.  &lt;/my-widget&gt;
-6.  &lt;/body&gt;
-</pre>
+6.  &lt;/body&gt;</pre>
 
 <p>Look at <i>lines 2 </i>and<i> 5</i>…</p>
 <p>HTML code for the declaration of the template (the same as in one of the previous examples):</p>
@@ -17874,8 +17665,7 @@ shadow DOM:</p>
 11.   &lt;p&gt;
 12.     &lt;slot name=&quot;my-paragraph&quot;&gt;My default text&lt;/slot
 13.   &lt;/p&gt;
-14. &lt;/template&gt;
-</pre>
+14. &lt;/template&gt;</pre>
 
 </details>
 
@@ -17909,8 +17699,7 @@ shadow DOM:</p>
 23.   console.log(&quot;Element defined&quot;);
 24. } catch (error) {
 25.   console.log(error);
-26. }
-</pre>
+26. }</pre>
 
 </details>
 
@@ -18032,8 +17821,7 @@ imported:</p>
 6.      &lt;span slot=&quot;my-title&quot;&gt;Title injected&lt;/span&gt;
 7.      &lt;span slot=&quot;my-paragraph&quot;&gt;Paragraph injected&lt;/span&gt;
 8.    &lt;/my-widget&gt;
-9.  &lt;/body&gt;
-</pre>
+9.  &lt;/body&gt;</pre>
 
 <p>Look at <i>line 2</i>: this is where the importation of the HTML, CSS
 and JS code of new “components” is done. The HTML+JS+CSS code that
@@ -18086,8 +17874,7 @@ Components) :</p>
 9.    &lt;my-component name=&quot;Michel Buffa&quot;&gt;&lt;/my-component&gt;
 10.   &lt;my-component name=&quot;Marie-Claire Forgue&quot;&gt;&lt;/my-component&gt;
 11. &lt;/body&gt;
-12. &lt;/html&gt;
-</pre>
+12. &lt;/html&gt;</pre>
 
 </details>
 
@@ -18106,33 +17893,32 @@ Components) :</p>
 <pre>1.  customElements.define(
 2.  &quot;my-component&quot;,
 3.  class extends HTMLElement {
-4.      constructor() {
-5.          super();
-6.          this.root = this.attachShadow({ mode:  });
-7.          this.name = this.getAttribute(); // get the &quot;name&quot; attribute value
-8.      }
+4.    constructor() {
+5.      super();
+6.      this.root = this.attachShadow({ mode:  });
+7.      this.name = this.getAttribute(); // get the &quot;name&quot; attribute value
+8.    }
 9.   
-10.     connectedCallback() {
-11.         // called when the component is added to the DOM of its host
-12.         // css+html
-13.         this.css = `
-14.             #div_menu {
-15.                 border : 1px solid black;
-16.             }
-17.             h1 {
-18.                 color: red;
-19.             }
-20.         `;
+10.   connectedCallback() {
+11.     // called when the component is added to the DOM of its host
+12.     // css+html
+13.     this.css = `
+14.       #div_menu {
+15.         border : 1px solid black;
+16.       }
+17.         h1 {
+18.           color: red;
+19.         }
+20.         ;
 21.         this.html = `
 22.             &lt;div id=&#39;div_menu&#39;&gt;
 23.                 &lt;h1&gt;${this.name}
 24.             &lt;/div&gt;
-25.         `;
+25.         ;
 26.         this.root.innerHTML = &quot;&lt;style&gt;${this.css}&lt;/style&gt;&lt;div 
               id=&#39;wrapper&#39;&gt;${this.html}&lt;/div&gt;&quot;;
-27.     }
-28. });
-</pre>
+27.   }
+28. });</pre>
 
 </details>
 
@@ -18233,24 +18019,24 @@ your comments/observations/questions and share your creations.</p>
 7.    &lt;button id=&quot;startButton&quot;&gt;Click to start discovering prime
         numbers&lt;/button&gt;&lt;p&gt; Note that this will make the page
         unresponsive, you will have to close the tab in order to get back your CPU!
-8.    &lt;p&gt;The highest prime number discovered so far is: &lt;output id=&quot;result&quot;&gt;&lt;/output&gt;&lt;/p&gt;
+8.    &lt;p&gt;The highest prime number discovered so 
+        far is: &lt;output id=&quot;result&quot;&gt;&lt;/output&gt;&lt;/p&gt;
 9.    &lt;script&gt;
 10.     function computePrime() {
 11.       var n = 1;
 12.       search: &lt;b&gt;while (true) {
-13.          n += 1;
-14.          for (var i = 2; i &lt;= Math.sqrt(n); i += 1)
-15.          if (n % i == 0)
-16.          continue search;
-17.          // found a prime!
-18.          document.getElementById(&#39;result&#39;).textContent = n;
+13.         n += 1;
+14.         for (var i = 2; i &lt;= Math.sqrt(n); i += 1)
+15.           if (n % i == 0)
+16.             continue search;
+17.             // found a prime!
+18.             document.getElementById(&#39;result&#39;).textContent = n;
 19.       }
-20.     }
+20.     }
 21.     document.querySelector(&quot;#startButton&quot;).addEventListener(&#39;click&#39;, computePrime);
 22.   &lt;/script&gt;
 23. &lt;/body&gt;
-24. &lt;/html&gt;
-</pre>
+24. &lt;/html&gt;</pre>
 
 </details>
 
@@ -18296,8 +18082,7 @@ share the same resources (eg JavaScript variables) at the same time. If one task
 loading and executing a script in the background, in a different thread
 from the UI. The following instruction  loads and creates a worker:</p>
 
-<pre>var worker = new Worker(&quot;worker0.js&quot;);
-</pre>
+<pre>var worker = new Worker(&quot;worker0.js&quot;);</pre>
 
 <p>More than one worker can be created/loaded by a parent page. This is
 parallel computing after all :-)</p>
@@ -18324,8 +18109,7 @@ href="https://en.wikipedia.org/wiki/Serialization" target="_blank" rel="noopener
 5.  
 6.  // Object message example
 7.  var personObject = {&#39;firstName&#39;: &#39;Michel&#39;, &#39;lastName&#39;:&#39;Buffa&#39;};
-8.  worker.postMessage(personObject );
-</pre>
+8.  worker.postMessage(personObject );</pre>
 
 <blockquote>
 <ol start="2" type="1">
@@ -18336,8 +18120,7 @@ href="https://en.wikipedia.org/wiki/Serialization" target="_blank" rel="noopener
 <pre>1.  onmessage = function (event) {
 2.     // do something with event.data
 3.    alert(&#39;received &#39; + event.data.firstName);
-4.  };
-</pre>
+4.  };</pre>
 
 <blockquote>
 <ol start="3" type="1">
@@ -18345,8 +18128,7 @@ href="https://en.wikipedia.org/wiki/Serialization" target="_blank" rel="noopener
 </ol>
 </blockquote>
 
-<pre>1.  postMessage(&quot;Message from a worker !&quot;);
-</pre>
+<pre>1.  postMessage(&quot;Message from a worker !&quot;);</pre>
 
 <blockquote>
 <ol start="4" type="1">
@@ -18356,8 +18138,7 @@ href="https://en.wikipedia.org/wiki/Serialization" target="_blank" rel="noopener
 
 <pre>1.  worker.onmessage = function(event){
 2.      // do something with event.data
-3.  };
-</pre>
+3.  };</pre>
 
 <h4>Use case #3: a complete example</h4>
 
@@ -18387,8 +18168,7 @@ href="https://en.wikipedia.org/wiki/Serialization" target="_blank" rel="noopener
 19.     worker.postMessage(&quot;start&quot;);
 20.   &lt;/script&gt;
 21. &lt;/body&gt;
-22. &lt;/html&gt;
-</pre>
+22. &lt;/html&gt;</pre>
 
 </details>
 
@@ -18408,8 +18188,7 @@ href="https://en.wikipedia.org/wiki/Serialization" target="_blank" rel="noopener
 9.  function done(){
 10.     // Send back the results to the parent page
 11.     postMessage(&quot;done&quot;);
-12. }
-</pre>
+12. }</pre>
 
 </details>
 
@@ -18429,8 +18208,7 @@ by listening for an onError event from a worker object:</p>
 6.  worker.onerror = function (event) {
 7.      console.log(event.message, event);
 8.  };
-9.  }
-</pre>
+9.  }</pre>
 
 </details>
 
@@ -18487,8 +18265,7 @@ file.</p>
 12.     };
 13.   &lt;/script&gt;
 14. &lt;/body&gt;
-15. &lt;/html&gt;
-</pre>
+15. &lt;/html&gt;</pre>
 
 </details>
 
@@ -18518,8 +18295,7 @@ sent.</p>
 6.      continue search;
 7.      // found a prime!
 8.     &lt;b&gt; postMessage(n);
-9.  }
-</pre>
+9.  }</pre>
 
 </details>
 
@@ -18590,8 +18366,7 @@ href="https://courses.edx.org/assets/courseware/v1/4af4dd2326f40b5d5d55aa15bbb12
 18.     }
 19. &lt;/script&gt;
 20. &lt;/body&gt;
-21. &lt;/html&gt;
-</pre>
+21. &lt;/html&gt;</pre>
 
 </details>
 
@@ -18602,23 +18377,23 @@ href="https://courses.edx.org/assets/courseware/v1/4af4dd2326f40b5d5d55aa15bbb12
 <details>
   <summary>JavaScript extract!</summary>
 
-<pre>1.  postMessage(&quot;Hey, in 3s, I&#39;ll start to compute prime numbers...&quot;);
+<pre>
+1.  postMessage(&quot;Hey, in 3s, I&#39;ll start to compute prime numbers...&quot;);
 2.  
 3.  setTimeout(function() {
-4.      // The setTimeout is just useful for displaying the message in
-    line 1 for 3 seconds and
+4.    // The setTimeout is just useful for displaying the message in
+      line 1 for 3 seconds and
 5.      // making it visible
 6.      var n = 1;
 7.      search: while (true) {
-8.         n += 1;
-9.         for (var i = 2; i &lt;= Math.sqrt(n); i += 1)
-10.        if (n % i == 0)
-11.        continue search;
-12.        // found a prime!
-13.        postMessage(n);
-14.      }
-15. }, 3000);
-</pre>
+8.        n += 1;
+9.        for (var i = 2; i &lt;= Math.sqrt(n); i += 1)
+10.         if (n % i == 0)
+11.           continue search;
+12.           // found a prime!
+13.         postMessage(n);
+14.     }
+15. }, 3000);</pre>
 
 </details>
 
@@ -18653,11 +18428,12 @@ worker.</p>
 <pre>1.  &lt;!DOCTYPE HTML/image0&gt;
 2.  &lt;html&gt;
 3.  &lt;head&gt;
-4.  &lt;title&gt;Worker example: One-core computation&lt;/title&gt;
+4.    &lt;title&gt;Worker example: One-core computation&lt;/title&gt;
 5.  &lt;/head&gt;
 6.  &lt;body&gt;
-7.  &lt;p&gt;The highest prime number discovered so far is: &lt;output id=&quot;result&quot;&gt;&lt;/output&gt;&lt;/p&gt;
-8.  &lt;script&gt;
+7.    &lt;p&gt;The highest prime number discovered so far
+        is: &lt;output id=&quot;result&quot;&gt;&lt;/output&gt;&lt;/p&gt;
+8.    &lt;script&gt;
 9.      if(window.Worker){
 10.        // web workers supported by the browser
 11.        var worker=new Worker(&quot;worker2.js&quot;);
@@ -18673,12 +18449,12 @@ worker.</p>
 21.        // After 10 seconds, we kill the worker
 22.       &lt;b&gt; worker.terminate();
 23. 
-24.        document.body.appendChild(document.createTextNode(&quot;Worker killed, 10 seconds elapsed !&quot;)
+24.     document.body.appendChild(document.createTextNode(&quot;Worker killed, 
+          10 seconds elapsed !&quot;)
 25.     );}, 10000);
-26. &lt;/script&gt;
+26.   &lt;/script&gt;
 27. &lt;/body&gt;
-28. &lt;/html&gt;
-</pre>
+28. &lt;/html&gt;</pre>
 
 </details>
 
@@ -18689,23 +18465,23 @@ worker.</p>
 <details>
   <summary>JavaScript extract!</summary>
   
-<pre>1.  postMessage(&quot;Hey, in 3s, I&#39;ll start to compute prime numbers...&quot;);
+<pre>
+1.  postMessage(&quot;Hey, in 3s, I&#39;ll start to compute prime numbers...&quot;);
 2.  
 3.  setTimeout(function() {
-4.       // The setTimeout is just useful for displaying the message in
-    line 1 for 3 seconds and
-5.       // making it visible
-6.       var n = 1;
-7.       search: while (true) {
-8.           n += 1;
-9.           for (var i = 2; i &lt;= Math.sqrt(n); i += 1)
-10.          if (n % i == 0)
-11.          continue search;
-12.          // found a prime!
-13.          postMessage(n);
-14.      }
-15. }, 3000);
-</pre>
+4.    // The setTimeout is just useful for displaying the message in
+      line 1 for 3 seconds and
+5.      // making it visible
+6.      var n = 1;
+7.      search: while (true) {
+8.        n += 1;
+9.        for (var i = 2; i &lt;= Math.sqrt(n); i += 1)
+10.       if (n % i == 0)
+11.         continue search;
+12.         // found a prime!
+13.         postMessage(n);
+14.     }
+15.  }, 3000);</pre>
 
 </details>
 
@@ -18731,8 +18507,7 @@ the importScripts() function.</p>
 2. importScripts(&#39;script2.js&#39;);
 3.
 4. // Other possible syntax
-5. importScripts(&#39;script1.js&#39;, &#39;script2.js&#39;);
-</pre>
+5. importScripts(&#39;script1.js&#39;, &#39;script2.js&#39;);</pre>
 
 <p>The included scripts must follow <a
 href="https://developer.mozilla.org/en-US/docs/JavaScript/Same_origin_policy_for_JavaScript?redirectlocale=en-US&amp;redirectslug=Same_origin_policy_for_JavaScript" target="_blank" rel="noopener noreferrer">the
@@ -19159,8 +18934,7 @@ This is why, in the example, we round the returned values with Math.round() at
 29.    document.querySelector(&quot;#DIR&quot;).innerHTML = &quot;alpha :    &quot; + Math.round(DIR);
 30. }
 31. &lt;/script&gt;
-32.  ...
-</pre>
+32.  ...</pre>
 
 </details>
 
@@ -19253,8 +19027,7 @@ href="https://www.youtube.com/watch?v=OrNLhOAGSdE" target="_blank" rel="noopener
 37.       document.querySelector(&quot;#DIR&quot;).innerHTML = &quot;alpha :    &quot; + Math.round(DIR);
 38. }
 39. &lt;/script&gt;
-40.  ...
-</pre>
+40.  ...</pre>
 
 </details>
 
@@ -19321,8 +19094,7 @@ desktop browser:</p>
 7.    // Process ...
 8. }
 9. 
-10. window.addEventListener(&quot;devicemotion&quot;, handleMotionEvent, true);
-</pre>
+10. window.addEventListener(&quot;devicemotion&quot;, handleMotionEvent, true);</pre>
 
 <h4>Basics about acceleration</h4>
 
@@ -19393,8 +19165,7 @@ if you wanted to play <a href="https://en.wikipedia.org/wiki/Coin_flipping" tar
 2. var facingUp = -1;
 3. if (acceleration.z &gt; 0) {
 4.     facingUp = +1;
-5. }
-</pre>
+5. }</pre>
 
 <p>Compute the angle corresponding to the Left / Right and Front / Back
 tilts. This example uses the accelerationIncludingGravity property of
@@ -19416,8 +19187,7 @@ the event.</p>
 11.    var tiltFB = Math.round(((acceleration.y + 9.81) / 9.81) * 90 * facingUp);
 12. 
 13.    // ... do something
-14. }
-</pre>
+14. }</pre>
 
 </details>
 
@@ -19432,8 +19202,7 @@ the event.</p>
 7.  ctx.moveTo(50,50);
 8.  // Draw sky direction in the canvas
 9.  ctx.lineTo(50-50*Math.cos(angle),50+50*Math.sin(angle));
-10. ctx.stroke();
-</pre>
+10. ctx.stroke();</pre>
 
 <p>Use acceleration values to move a ball on the screen of a tablet when the tablet is tilted front / back or left / right (complete example
 later on)…</p>
@@ -19443,8 +19212,7 @@ later on)…</p>
 3. ball.x += acceleration.x;
 4. ball.y += acceleration.y;
 5.  
-6. ...
-</pre>
+6. ...</pre>
 
 <h4>Complete examples</h4>
 
@@ -19534,8 +19302,7 @@ later on)…</p>
 68.    &lt;/script&gt;
 69.   &lt;/body&gt;
 70. 
-71. &lt;/html&gt;
-</pre>
+71. &lt;/html&gt;</pre>
 
 </details>
 
@@ -19630,8 +19397,7 @@ later on)…</p>
 72.      &lt;/div&gt;
 73. 
 74.    &lt;/body&gt;
-75. &lt;/html&gt;
-</pre>
+75. &lt;/html&gt;</pre>
 
 </details>
 
@@ -19797,8 +19563,7 @@ spec: 
 140. 
 141.   &lt;/body&gt;
 142. 
-143. &lt;/html&gt;
-</pre>
+143. &lt;/html&gt;</pre>
 
 </details>
 
@@ -19832,7 +19597,7 @@ spec: 
 <h5>the end…</h5>
 
 <br>
-<h6>Last Updated: 5-9-2023 2:34pm</h6>
+<h6>Last Updated: 6-9-2023 9:02pm</h6>
 <!--
 <img class="displayed"
   src="./images/image0.jpeg?raw=true"
