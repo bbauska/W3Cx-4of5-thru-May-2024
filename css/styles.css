@@ -14,6 +14,7 @@ p { font-size: 15px;
     font-family: Bahnschrift, Inter, Helvetic, sans-serif;
     text-align: left; 
     margin-left: 5px; }
+	
 p.em1 {
 	margin-left: 1em; }
 p.em2 {
@@ -28,8 +29,6 @@ background: linear-gradient(60deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93
 pre, code {
   font-family: monospace, monospace;
   font-size: 10px;
-}
-pre {
   overflow: auto;
 }
 pre > code {
@@ -65,7 +64,7 @@ h6 { font-size: 10px;
 body {
   font-family: Bahnschrift, Inter, Helvetic, sans-serif;
   font-size: 1.2rem;
-  background-color: #EEEEEE;  /* very light gray */
+  background-color: #eeeeee;  /* very light gray */
   color: #000000;  /* black */
   text-align: left;
   padding: 10px;
@@ -98,7 +97,7 @@ details {
 
 details > summary {
   padding: 2px 6px;
-  width: 12em;
+  width: 20em;
   background-color: #eee;  /* very light gray */
   border: none;
   box-shadow: 3px 3px 4px #00008b;  /* dark blue */
