@@ -15141,18 +15141,15 @@ This example shows how data-* attributes can be added on the fly by
 JavaScript code and accessed from a CSS rule using the attr() CSS function.
 
 Try [the online example at JsBin](https://jsbin.com/alunuk/6/edit). 
-
-<!------------------------------------------------------------------------------------------------>
-<!---------------------------- 174. using css attr() function (298) ------------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 174. using css attr() function (298) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/.webp/image174.webp?raw=true"
   width="35%"
   alt="Using CSS attr() function." />
 </p>
-<!------------
-style="width:3.17708in;height:0.85417in"
-------------->
+<!-- style="width:3.17708in;height:0.85417in" -->
 
 <h4>HTML code from this example:</h4>
 
@@ -15191,11 +15188,9 @@ This is just one of the new input types introduced by HTML5.
 
 The attr() function takes an attribute name as a parameter and returns
 its value. Here we used the name of the attribute we added on the fly.
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-3-5">3.3.5 Add visual feedback</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Hi! Let's add some visual feedback to the drag and drop operations.
 
 In this example, you can see that when we drag elements, the look and
@@ -15289,18 +15284,15 @@ the drag ends and the element is dropped, we reset the style of the
 dragged object to its default. The full runnable online example is a bit
 further down the page (it includes, in addition, visual feedback on the
 drop zone):
-
-<!------------------------------------------------------------------------------------------------>
-<!-------------------------------- 175. css drag operation (301) --------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 175. css drag operation (301) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/.webp/image175.webp?raw=true"
   width="65%"
   alt="Drag 'n drop css style and operation." />
 </p>
-<!----------
-style="width:5in;height:2.57746in"
------------>
+<!-- style="width:5in;height:2.57746in" -->
 
 <h4>Source code extract:</h4>
 
@@ -15483,11 +15475,9 @@ into a single HTML page):
 ```
 
 </details>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-3-6">3.3.6 The dropEffect property</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>More feedback using the dropEffect property: changing the cursor's shape</h4>
 
 It is possible to change the cursor's shape during the drag process. The
@@ -15496,61 +15486,49 @@ semantic of your drag and drop, when you enter a drop zone during a
 drag. For example, if you "copy" a fruit into the drop zone, as we did
 in the previous example, a "copy" cursor like the one below would be
 appropriate:
-
-<!------------------------------------------------------------------------------------------------>
-<!-------------------------------- 176. copy cursor image (304) ---------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 176. copy cursor image (304) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/.webp/image176.webp?raw=true"
   width="25%"
   alt="Copy cursor." />
 </p>
-<!------------
-style="width:2.39583in;height:0.78125in" alt="dropEffect" />
-------------->
+<!-- style="width:2.39583in;height:0.78125in" alt="dropEffect" /> -->
 
 If you are "moving" objects, this style of cursor would be appropriate:
-
-<!------------------------------------------------------------------------------------------------>
-<!-------------------------------- 177. moving object image (304) -------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 177. moving object image (304) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/.webp/image177.webp?raw=true"
    width="25%"
    alt="Moving object cursor image." />
 </p>
-<!--
-style="width:2.58333in;height:0.88542in"
---->
+<!-- style="width:2.58333in;height:0.88542in" -->
 
 And if you are making a "link" or a "shortcut", a cursor would be
 looking like this:
-
-<!------------------------------------------------------------------------------------------------>
-<!------------------------------ 178. link or shortcut image (305) ------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 178. link or shortcut image (305) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/.webp/image178.webp?raw=true"
    width="25%"
    alt="Link or shortcut, cursor image." />
 </p>
-<!------------
-style="width:2.65625in;height:0.9375in"
-------------->
+<!-- style="width:2.65625in;height:0.9375in" -->
 
 Alternatively, you could use any custom image/icon you like:
-
-<!------------------------------------------------------------------------------------------------>
-<!------------------ 179. dropeffect & effectallowed custom image icons (305) -------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ 179. dropeffect & effectallowed custom image icons (305) ~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/.webp/image179.webp?raw=true"
    width="65%"
    alt="Drop effect with image." />
 </p>
-<!------------
-style="width:5.13542in;height:4.35417in" alt="drop effect with image" />
--------------->
+<!-- style="width:5.13542in;height:4.35417in" alt="drop effect with image" /> -->
 
 To give this visual feedback, we use
 the effectAllowed and dropEffect properties of the dataTransfer object.
@@ -15623,10 +15601,9 @@ All possible values for dropEffect and effectAllowed:
 
 -   <b>dataTransfer.dropEffect </b>can take on one of the following
     values: <b>none</b>, <b>copy</b>, <b>link</b>, <b>move</b>.
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-3-7">3.3.7 Drag and drop HTML elements</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <h4>Drag and drop images or any HTML element within a document</h4>
 
@@ -15723,22 +15700,17 @@ drop zone). This occurs at <i>line 18</i> (get back the id from the
 clipboard), and <i>line 19</i> (make it a child of the div. Consequently, it
 is no longer a child of the &lt;body&gt;, and indeed we have "moved"
 one &lt;img&gt; from its initial position to another location in the page).
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-3-8">3.3.8 Drag and drop a text selection</h3>
-<!------------------------------------------------------------------------------------------------>
-
-<!------------------------------------------------------------------------------------------------>
-<!-------------------------- 180. drag and drop text selection (309) ----------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 180. drag and drop text selection (309) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/.webp/image180.webp?raw=true"
    width="65%"
    alt="Drag and drop a text selection." />
 </p>
-<!----------
-style="width:5in;height:1.75374in" />
------------>
+<!-- style="width:5in;height:1.75374in" /> -->
 
 <b>There is no need to add a dragstart handler on an element that
 contains text.</b> Any selected text is automatically added to the
@@ -15817,11 +15789,9 @@ Here, we use a CSS trick to make the second paragraph non-selectable, by
 setting the user-selected property to none.
 
 In the next chapter, we will see how to drag and drop files!
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-3-9">3.3.9 Discussion and projects</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Here is the discussion forum for this part of the course. Please either
 post your comments/observations/questions or share your creations.
 
@@ -15844,11 +15814,9 @@ post your comments/observations/questions or share your creations.
     current position and drop it at another location in the gallery (a
     grid). In the meantime, the other pictures will have to move to give
     some room for the picture you dropped.
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-4-1">3.4.1 Introduction</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 In these lectures, we will learn how to <i>drag and drop files</i> between
 the browser and the desktop. The process shares similarities with the
 methods for <i>dragging and dropping elements</i> within an HTML document,
@@ -15976,9 +15944,9 @@ default behavior of the browser:
 -   HTML Goodies article: "[Drag Files Into the Browser From the Desktop
     with
     HTML5](https://www.htmlgoodies.com/html5/javascript/drag-files-into-the-browser-from-the-desktop-HTML5.html)"
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-4-2">3.4.2 Drag and drop files in a drop zone</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Hi! This time let's look at how we can drag and
 
 drop files into a document. So, the first thing you must know is that, 
@@ -16033,10 +16001,9 @@ default behavior, get the files property with all the files copied, do a loop an
 them. That's all. Bye, bye!
 
 <h4>Example: drag and drop files to a drop zone, display file details in a list</h4>
-
-<!------------------------------------------------------------------------------------------------>
-<!------------------------------ 181. drag and drop example (315) -------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 181. drag and drop example (315) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/.webp/image181.webp?raw=true"
    width="65%"
@@ -16164,11 +16131,9 @@ In principle, this example is very similar to the "fruit" examples we
 worked through earlier, except that this time we're working with
 files. <i>And when we work with files, it is important to prevent the
 browser's default behavior</i>.
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-4-3">3.4.3 Images with thumbnails</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 This time, let's reuse the readFilesAndDisplayPreview() method (studied
 in the W3Cx HTML5 Coding Essentials and Best Practices course). We have
 reproduced the example here - please review the source code to refresh
@@ -16178,14 +16143,13 @@ CodePen](https://codepen.io/w3devcampus/pen/ZbExbM)).
 Click the "Choose files" button (an &lt;input type="file"&gt; element),
 select one or more images -- and you should see image thumbnails
 displayed in the open space beneath it:
-
-<!------------------------------------------------------------------------------------------------>
-<!------------------------------ 182.  (3xx) -------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 182. choose multiple files (316) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/.webp/image182.webp"
   width="65%"
-  alt="" />
+  alt="Choose multiple files form." />
 </p>
 
 <!--- style="width:6.5in;height:1.83264in" /> --->
@@ -16245,10 +16209,9 @@ once dropped, and also add an &lt;output id="list"&gt;&lt;/output&gt; to the
 HTML of this example.
 
 <h4>Complete example of drag and drop + thumbnails of images
-
-<!------------------------------------------------------------------------------------------------>
-<!------------------------ 183. image drag n drop with thumbnails (317) -------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 183. image drag n drop with thumbnails (317) ~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/.webp/image183.webp"
   width="65%"
@@ -16390,20 +16353,17 @@ earlier. We called it at the end of the drop handler (<i>line 77</i>), and we
 added the <output> element as a container for the &lt;img&gt; elements
 (constructed by the JavaScript code <i>lines 94-96</i>) which will display
 the thumbnails (<i>line 114</i>).
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-4-4">3.4.4 Mixing drag and drop and input type=file</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Let's go further and also add an &lt;input type="file">
 
 The example below allows files to be selected using a file chooser or by
 drag and dropping them, like in the screenshot below (the interactive
 example is a bit further down the page):
-
-<!------------------------------------------------------------------------------------------------>
-<!--------------------------- 184. file and directory chooser (321) ------------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 184. file and directory chooser (321) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/.webp/image184.webp"
   width="65%"
@@ -16622,11 +16582,9 @@ CodePen](https://codepen.io/w3devcampus/pen/BoavPb):
 
 The parts that we have added are in bold. As you can see, all methods
 share the same code for previewing the images.
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-4-5">3.4.5 Files upload using Ajax/XHR2</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 This time, let us mash-up a couple of examples. Let's combine the upload
 of files using XHR2, with progress monitoring (we worked on in the 3.2
 lectures) with one of our drag and drop examples. To achieve this, we
@@ -16637,10 +16595,9 @@ a &lt;progress&gt; element to the drag and drop example.
 JSBin](https://jsbin.com/conigekoda/edit) (this example does not work on
 CodePen. We are using a fake remote server and it cancels the connection
 as soon as we try to connect):
-
-<!------------------------------------------------------------------------------------------------>
-<!------------------------ 185. drag 'n drop and progress element (326) -------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 185. drag 'n drop and progress element (326) ~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/.webp/image185.webp?raw=true"
   width="45%"
@@ -16764,11 +16721,9 @@ monitor the upload progress (<i>lines 66-69</i>).
 Instead of uploading all the files at once, it might be interesting to
 upload one file at a time with visual feedback, such as: "uploading file
 MichaelJackson.jpg.....". We will leave this exercise up to you.
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-4-6">3.4.6 Discussion and projects</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Here is the discussion forum for this part of the course. Please either
 post your comments/observations/questions or share your creations.
 
@@ -16793,11 +16748,9 @@ post your comments/observations/questions or share your creations.
     show the proportion of the graphic file as it is transferred
     (alternatively, if you have style-sheet skills, you could try this
     using CSS transitions).
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-5-1">3.5.1 Introduction</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 We had many questions about how to submit a form with regular input
 fields AND benefit from the HTML5 built-in validation AND upload files
 AND monitor the file upload progress with a progress bar.
@@ -16828,10 +16781,9 @@ different types.
 An example of this kind of form is shown below: when the user drags and
 drops files, they will start being uploaded immediately. However,  the
 form will only be sent when all the fields are valid. 
-
-<!------------------------------------------------------------------------------------------------>
-<!-------------------------- 186. uploading files using xhr2 (330) ------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 186. uploading files using xhr2 (330) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/.webp/image186.webp"
   width="65%"
@@ -16862,9 +16814,9 @@ with each of the examples.
 -   or we may <i>use multiple Ajax requests</i>, which we don't start until
     the submit button has been clicked.
 
-<!------------------------------------------------------------------------------------------------>
-<!--------------------------------- 187. second approach (331) ----------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 187. second approach (331) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/.webp/image187.webp"
   width="65%"
@@ -16879,11 +16831,9 @@ sending everything <i>at the same time</i> using Ajax/JavaScript: the regular
 input field content and the selected files.
 
 The next page provides the source code of several examples, as well as the server-side PHP code.
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-5-2">3.5.2 Installation guide</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Please download all examples (authors: Michel Buffa, improvements and
 fixes by Vincent Mazenod): [Zip file containing all examples (html +
 css + js + php +
@@ -16916,11 +16866,9 @@ HTTP header.
 
 This part of the lesson is optional and is mainly useful for students
 who are also involved in the server side of the Web development.
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-5-3">3.5.3 Serial approach</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 We made two examples that rely on the serial approach:
 
 1.  one that uses only a file selector,
@@ -16934,18 +16882,15 @@ more difficult to follow.
 <h4>Example #1: auto-loading of the files, regular form submission, benefits of the HTML5 form validation system</h4>
 
 Example using a file selector (&lt;input type="file"&gt;):
-
-<!------------------------------------------------------------------------------------------------>
-<!---------------------------- 188. example 1 auto file upload (332) ----------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 188. example 1 auto file upload (332) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/.webp/image188.webp"
   width="55%"
   alt="Example 1 of file upload." />
 </p>
-<!---
-style="width:4.85417in;height:1.79167in"
---->
+<!-- style="width:4.85417in;height:1.79167in" -->
 
 [Try the online example at
 JSBin](https://jsbin.com/rozanow/edit?html,css,js,output) (this one does
@@ -16969,18 +16914,15 @@ Here is much the same code, but this time it uses drag and drop to
 collect the filenames, not an input field. [Try it at
 JSBin](https://jsbin.com/qijoza/edit?html,css,js,output) and look at the
 source code - there are plenty of comments.
-
-<!------------------------------------------------------------------------------------------------>
-<!----------------------------- 189. example 2 of file upload (333) ------------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 189. example 2 of file upload (333) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/.webp/image189.webp"
   width="65%"
   alt="Example 2 of file uploads using drag 'n drop." />
 </p>
-<!---
-style="width:6.5in;height:3.98264in"
---->
+<!-- style="width:6.5in;height:3.98264in" -->
 
 <h4>And here is the PHP code for the server-side part of examples #1 and #2</h4>
 
@@ -17039,11 +16981,9 @@ style="width:6.5in;height:3.98264in"
     is created, and the files located in the RecycleBin directory are
     moved to that directory. If it does not already exist, the directory
     will be created  (<i>lines 7-20</i>).
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-5-4">3.5.4 Package approach</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Let's use the previous two examples as a basis for two further examples:
 
 1.  one that uses only a file selector,
@@ -17061,10 +17001,9 @@ of the form).  The uploads only start once the form is submitted.
 You can [try this example at
 JSBin](https://jsbin.com/quzohi/edit?html,css,js,output), and look at
 the source code and comments for details.
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!---------------------------- 190. example 3 of file uploads (335) ------------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/.webp/image190.webp"
   width="65%"
@@ -17079,18 +17018,15 @@ style="width:6.07292in;height:2.17708in"
 [Try the example at
 JSBin](https://jsbin.com/xonemow/edit?html,css,output) and look at
 source code and comments.
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------------ 191. example 4 using drag n drop files (335) -------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/.webp/image191.webp"
   width="65%"
   alt="Example 4 using drag 'n drop files." />
 </p>
-<!---
-style="width:5.38542in;height:3.71875in"
---->
+<!-- style="width:5.38542in;height:3.71875in" -->
 
 <h4>PHP code for the single-packaged examples (with and without drag and drop, the PHP is the same)</h4>
 
@@ -17150,11 +17086,9 @@ have to deal with a temporary "RecycleBin" directory.
 ```
 
 </details>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-5-5">3.5.5 Discussion</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Here is the discussion forum for this part of the course.
 
 <h4>Suggested topics of discussion:</h4>
@@ -17166,11 +17100,9 @@ Here is the discussion forum for this part of the course.
     client code: monitoring the speed of upload/downloads, canceling an
     upload, etc. The examples are given "as is"... if you improve them,
     as usual, share them in the forum!
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-6-1">3.6.1 Concepts (part 1)</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Hello everyone! Today I will talk about IndexedDB.
 
 In this first video, we will present the main concepts of this
@@ -17300,10 +17232,9 @@ are considered efficient for insertion and deletion, as well as for in-order tra
     data.</b>
 
 <h4>Examples of applications where IndexedDB should be considered</h4>
-
-<!------------------------------------------------------------------------------------------------>
-<!----------------------------- 192. google drive and indexdb (339) ------------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 192. google drive and indexdb (339) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/.webp/image192.webp"
   style="width:3.28125in;height:4.04167in"
@@ -17337,11 +17268,9 @@ IndexedDB](https://developer.mozilla.org/en-US/docs/IndexedDB/Using_IndexedDB)).
 
 [Current support is excellent](https://caniuse.com/#search=indexed) both
 on mobile and desktop browsers.
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-6-2">3.6.2 Concepts (part 2)</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Among the concepts used by IndexedDB is the concept of transactions.
 
 A transactional database ensures that concurrent access to data would
@@ -17596,11 +17525,9 @@ Whereas apps at https://www.example.com:8080/dir/ (different port) or https:/
 See this article from MDN about [the same-origin
 policy](https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy) for
 further details and examples.
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-6-3">3.6.3 Definitions</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 > This chapter can be read as is, but it is primarily given as a
 > reference. We recommend you skim read it, then do the next section
 > ("using IndexedDB"), then come back to this page if you need any
@@ -17895,11 +17822,9 @@ You can limit or filter the range using lower and upper bounds. For
 example, you can iterate over all the values of a key between x and y.
 
 For the reference documentation on key range, see IDBKeyRange.
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-6-4">3.6.4 Using IndexedDB</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 This page and the following one, entitled "Using IndexedDB",
 provide simple examples for creating, adding, removing, updating, and
 searching data in an IndexedDB database. They explain the basic steps to
@@ -17934,11 +17859,9 @@ these!
 
 -   [How to view IndexedDB content in
     Firefox](https://stackoverflow.com/questions/9846013/how-to-view-indexeddb-content-in-firefox)
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-6-5">3.6.5 Creating and deleting a database</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Hi! Let's look now at some pieces of code and examples that will explain
 how to really program an IndexedDB application.
 
@@ -18053,10 +17976,9 @@ the example: it will call the createDB() JavaScript function that:
 
 <b>Chrome DevTools (F12 or cmd-alt-i) shows the IndexedDB databases,
 object stores and data:</b>
-
-<!------------------------------------------------------------------------------------------------>
-<!--------------------------- 193. chrome devtools and indexdb (354) ----------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 193. chrome devtools and indexdb (354) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/.webp/image193.webp"
   style="width:6.5in;height:4.77847in"
@@ -18065,10 +17987,9 @@ object stores and data:</b>
 
 Normally, when you create a database for the first time, the console
 should show this message:
-
-<!------------------------------------------------------------------------------------------------>
-<!--------------------------- 194. create database first time (354) ------------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 194. create database first time (354) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/.webp/image194.webp"
   style="width:6.5in;height:0.825in"
@@ -22465,7 +22386,7 @@ device.
 This example has been adapted and put on jsbin.com so that you can tweak
 it: <a href="https://jsbin.com/uyuqek/4/edit">https://jsbin.com/uyuqek/4/edit</a>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--------------------------------- 262. devicemotion api (454) ---------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 262. devicemotion api (454) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/.webp/image262.webp"
@@ -22564,7 +22485,7 @@ it: <a href="https://jsbin.com/uyuqek/4/edit">https://jsbin.com/uyuqek/4/edit</
 mobile device, <a href="https://jsbin.com/eyahuv/2">use this URL instead</a>!
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!---------------------- 263. move a ball on the screen - last image (455) ----------------------->
+<!--~~~~~~~~~~~~~~~~~~~~ 263. move a ball on the screen - last image (455) ~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/.webp/image263.webp"
@@ -22763,9 +22684,9 @@ your comments/observations/questions and share your creations.
     from Module 2 of the course!</li>
 </ul>
 <!--
-<!------------------------------------------------------------------------------------------------>
-<!--------------------- xx.  (##) ----------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ xx.  (##) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 -->
 
 <h5>the end...</h5>
