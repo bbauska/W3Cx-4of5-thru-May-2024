@@ -10,7 +10,7 @@ w3cx-4of5-html5.2x: Coursera - Front-End Web Development - Apps and Games
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w3cx logo (01) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="./images/.webp/.webp/w3cx-logo.webp?raw=true"
+<img src="./images/.webp/w3cx-logo.webp?raw=true"
    width="35%"
    alt="W3C logo." />
 </p>
@@ -20,7 +20,7 @@ w3cx-4of5-html5.2x: Coursera - Front-End Web Development - Apps and Games
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 01. W3Cx-4of5-HTML5.2x logo (01) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="./images/.webp/.webp/image001.webp?raw=true"
+<img src="./images/.webp/image001.webp?raw=true"
    width="65%"
    alt="W3Cx HTML 5.2x logo." />
 </p>
@@ -779,7 +779,7 @@ drop, the PHP is the same)
 <!-------~~~~~~~~~~~~~~~~~~~~~--- 02. script not responding (11) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~----->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="./images/.webp/.webp/image002.webp"
+<img src="./images/.webp/image002.webp"
    alt="ScriptNotResponding1"
    width="45%" />
 </p>
@@ -997,7 +997,7 @@ JavaScript, to create your own HTML5 app and/or game.
 <!-------~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 03. which browser? (14) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-------->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="./images/.webp/.webp/image003.webp?raw=true"
+<img src="./images/.webp/image003.webp?raw=true"
    width="18%"
    alt="A man looking at his laptop screen as if he is considering which browser to use - a few browser logos float in the background." />
 </p>
@@ -1060,7 +1060,7 @@ examples will actually use these.
 <!-------~~~~~~~~~~~~~~~~~~~~~~~~~~~~- 04. js bin logo (15) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~--->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="./images/.webp/.webp/image004.webp"
+<img src="./images/.webp/image004.webp"
    width="10%"
    alt="JS Bin logo." />
 </p>
@@ -1080,7 +1080,7 @@ or on YouTube. Keep in mind that it's always better to be logged in (it's free) 
 <!-------~~~~~~~~~~~~~~~~~~~~~~~~~~~~- 05. codepen logo (15) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="./images/.webp/.webp/image005.webp"
+<img src="./images/.webp/image005.webp"
    width="10%"
    alt="CodePen logo."
 </p>
@@ -1115,7 +1115,7 @@ available as downloadable sources or as free services on the <a href="https://w
 <!-------~~~~~~~~~~~~~~~~~~~~~~~~~~~~- 06. w3c validator (16) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="./images/.webp/.webp/image006.webp"
+<img src="./images/.webp/image006.webp"
    width="15%"
    alt="W3C Validator." />
 </p>
@@ -1133,7 +1133,7 @@ stylesheets.
 <!----------------------------------- 07. css validator (16) ------------------------------------->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="./images/.webp/.webp/image007.webp"
+<img src="./images/.webp/image007.webp"
    width="15%"
    alt="Laptop showing unicorn validator." />
 </p>
@@ -1174,7 +1174,7 @@ internationalization tips.
 <!------------------------------------ 08. w3c lookup (17) --------------------------------------->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="./images/.webp/.webp/image008.webp?raw=true"
+<img src="./images/.webp/image008.webp?raw=true"
    width="35%"
    alt="W3C lookup." />
 </p>
@@ -1224,7 +1224,7 @@ is a snapshot of what information is given by CanIUse when searching for
 <!--~~~~~~~~~ 09. example of a caniuse browser support table (using css3 colors) (18) ~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="./images/.webp/.webp/image009.webp?raw=true"
+<img src="./images/.webp/image009.webp?raw=true"
    width="85%"
    alt="Example of a CanIUse browser support table (using CSS3 colors)." />
 </p>
@@ -1235,7 +1235,7 @@ is a snapshot of what information is given by CanIUse when searching for
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 10. mdn web docs logo (18) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="./images/.webp/.webp/image010.webp?raw=true"
+<img src="./images/.webp/image010.webp?raw=true"
    width="30%"
    alt="MDN Web Docs logo." />
 </p>
@@ -1275,7 +1275,7 @@ technologies are built is a great way to build your expertise.
 <!----------------------------- 11. github (the octocat) logo (19) ------------------------------->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="./images/.webp/.webp/image011.webp?raw=true"
+<img src="./images/.webp/image011.webp?raw=true"
    width="15%"
    alt="GitHub (the Octocat) logo." />
 </p>
@@ -1293,7 +1293,7 @@ see if you find anything where you think you would be ready to help.
 <!---------------------- 12. w3c web incubator community group logo (19) ------------------------->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="./images/.webp/.webp/image012.webp"
+<img src="./images/.webp/image012.webp"
   style="width:2in;height:0.55411in"
   alt="Logo of the W3C Web Incubator Community Group." />
 </p>
@@ -1312,7 +1312,7 @@ Happy Web building!
 <!------------------------------ 13. w3c www consortium logo (19) -------------------------------->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-  <img src="./images/.webp/.webp/image013.webp" 
+  <img src="./images/.webp/image013.webp" 
   style="width:3in;height:0.7612in"
   alt="W3C WWW consortium logo." />
 </p>
@@ -1338,7 +1338,7 @@ and HTML.
 <!--------------------- 14. tim berners-lee at his desk in cern, 1994 (20) ----------------------->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="./images/.webp/.webp/image014.webp?raw=true"
+<img src="./images/.webp/image014.webp?raw=true"
    style="width:2in;height:2in"
    alt="Tim Berners-Lee at his desk in CERN, 1994." />
 </p>
@@ -1544,7 +1544,7 @@ video and try to show/hide the subtitles/captions):
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 15. elephants dream video (23) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="./images/.webp/.webp/image015.webp?raw=true"
+<img src="./images/.webp/image015.webp?raw=true"
   style="width:4.90625in;height:2.79167in"
   alt="Elephants dream video." />
 </p>
@@ -1562,7 +1562,7 @@ Here is a quick summary (as of May 2020).
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 16. safari menu (24) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="./images/.webp/.webp/image016.webp"
+<img src="./images/.webp/image016.webp"
   style="width:4.90625in;height:2.79167in" 
   alt="Safari Menu." />
 </p>
@@ -1613,7 +1613,7 @@ reminder, let's look at a WebVTT file:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 17. tv remote (25) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="./images/.webp/.webp/image017.webp"
+<img src="./images/.webp/image017.webp"
   style="width:2.02083in;height:4.83333in"
   alt="Remote controller with subtitles button." />
 </p>
@@ -1685,7 +1685,7 @@ associated with three different tracks.
 <!--~~~~~~~~~~~~~~ 20. using html views of tracks - one video, three tracks (27) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="./images/.webp/.webp/image020.webp"
+<img src="./images/.webp/image020.webp"
   style="width:6.5in;height:6.36875in"
   alt="A simple three track video example."  />
 </p>
@@ -1727,7 +1727,7 @@ these tracks.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 18. download, caption, language (28) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="./images/.webp/.webp/image018.webp"
+<img src="./images/.webp/image018.webp"
   style="width:5in;height:5.2094in"
   alt="Download, Caption, Language."/>
 </p>
@@ -1735,7 +1735,7 @@ these tracks.
 <!--~~~~~~~~~~~~~~~~~~~~ 19. safari - 0 thru 10:58 - elephants dream (28) ~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="./images/.webp/.webp/image019.webp" 
+<img src="./images/.webp/image019.webp" 
   style="width:5in;height:5.2094in"
   alt="Safari display of elephants dream video." />
 </p>
@@ -1758,7 +1758,7 @@ for the video.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 20. again, tracks and views (30) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-  <mg src="./images/.webp/.webp/image022.webp"
+  <mg src="./images/.webp/image022.webp"
   style="width:4in;height:2.32697in"
   alt="Screenshot of Safari menu fr choosing subtitle track." />
 </p>
@@ -1779,7 +1779,7 @@ crossOrigin="anonymous" in your HTML document and it is going to work.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 20. 3rd time, views and tracks (31) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="./images/.webp/.webp/image020.webp"
+<img src="./images/.webp/image020.webp"
   style="width:4in;height:2.24412in"
   alt="3rd time, Views and Tracks." />
 </p>
@@ -1823,7 +1823,7 @@ video and try to show/hide the subtitles/captions):
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ 21. downloads, caption & pic-in-pic (32) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="./images/.webp/.webp/image021.webp"
+<img src="./images/.webp/image021.webp"
   style="width:4in;height:3.93208in" 
   alt="Downloads, Caption, and Picture-in-Picture." />
 </p>
@@ -1848,7 +1848,7 @@ written in April 2015, for further details.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ 22. safari menu - subtitles/captions (32) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-  <mg src="./images/.webp/.webp/image022.webp"
+  <mg src="./images/.webp/image022.webp"
   style="width:4in;height:2.32697in"
   alt="Safari Menu - subtitles/captions." />
 </p>
@@ -2047,11 +2047,11 @@ manipulate these elements as "HTML elements" - we will call them the
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 23/24. status of html track (36) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="./images/.webp/.webp/image023.webp" 
+<img src="./images/.webp/image023.webp" 
   style="width:4in;height:2.23647in" 
   alt="Elephant's dream." />
 <br />
-<img src="./images/.webp/.webp/image024.webp" 
+<img src="./images/.webp/image024.webp" 
   style="width:4in;height:2.23647in" 
   alt="Track description." />
 </p>
@@ -2342,7 +2342,7 @@ JSBin](https://jsbin.com/bubeye/1/edit?html,console,output)
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ 25. test if track has been loaded (42) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="./images/.webp/.webp/image025.webp" 
+<img src="./images/.webp/image025.webp" 
   style="width:5in;height:4.44178in" 
   alt="Test if loaded track.  Load if not by setting mode to hidden." />
 </p>
@@ -2543,7 +2543,7 @@ properties and methods;
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 26. webvtt with arrows (45) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="./images/.webp/.webp/image026.webp"
+<img src="./images/.webp/image026.webp"
   style="width:5in;height:2.01365in"
   alt="A webVtt file extract with arrows showing id, startTime, endTime and text." />
 </p>
@@ -2557,7 +2557,7 @@ track](https://jsbin.com/teruhay/1/edit?html,css,js,output):
 <!--~~~~~~~~~~~~~~~~~~~~~ 27. example that plays content of a track (46) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="./images/.webp/.webp/image027.webp" 
+<img src="./images/.webp/image027.webp" 
   style="width:4in;height:4.89057in" 
   alt="Example video editor that plays content of a track." />
 </p>
@@ -2767,7 +2767,7 @@ for cuechange events</a>:
 <!--~~~~~~~~ 28. example that displays cue contents with cuechange even listeners (50) ~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="./images/.webp/.webp/image028.webp?raw=true"
+<img src="./images/.webp/image028.webp?raw=true"
   width="40%"
   alt="Example that displays cue contents with cuechange even listeners." />
 </p>
@@ -2803,7 +2803,7 @@ shows how to use enter and exit events on cues</a>:
 <!--~ 29. example displays message in enter and exit cue listeners of the selected track (51) ~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="./images/.webp/.webp/image029.webp?raw=true"
+<img src="./images/.webp/image029.webp?raw=true"
    width="40%"
    alt="Example that displays message in enter and exit cue listeners of the selected track." />
 </p>
@@ -2990,7 +2990,7 @@ We will learn how to do this using the track API.
 <!------------------------------- 30. debug video tracks (54) ------------------------------------>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="./images/.webp/.webp/image030.webp?raw=true"
+<img src="./images/.webp/image030.webp?raw=true"
    width="60%"
    alt="Edx video player to debug video tracks." />
 </p>
@@ -3039,7 +3039,7 @@ JSBin](https://jsbin.com/sodihux/1/edit?html,css,js,output):
 <!--~~~~~~~~~~ 31. use track api to extract content of webvtt in track element (55) ~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="./images/.webp/.webp/image031.webp?raw=true"
+<img src="./images/.webp/image031.webp?raw=true"
   width="60%"
   alt="Using track api to extract content of webvtt in track element." />
 </p>
@@ -3339,7 +3339,7 @@ different tracks:
 <!----------- 32. using track api to extract content of webvtt in track element (61) ------------->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="./images/.webp/.webp/image032.webp"
+<img src="./images/.webp/image032.webp"
   style="width:5in;height:4.47489in"
   alt="Using track api to extract content of webvtt in track element." />
 </p>
@@ -3499,7 +3499,7 @@ tracks do not fire events.
 <!---------------------------- 33. mode property and cue events (64) ----------------------------->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="./images/.webp/.webp/image033.webp"
+<img src="./images/.webp/image033.webp"
   width="65%"
   alt="Example that shows how to toggle track modes and listen to events" />
 </p>
@@ -3713,7 +3713,7 @@ you choose which track you prefer. 
 <!------------------------------- 34. choose track/language (68) --------------------------------->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="./images/.webp/.webp/image034.webp"
+<img src="./images/.webp/image034.webp"
   style="width:6.17708in;height:5.73958in"
   alt="Buttons for choosing the track/language under a standard video player." />
 </p>
@@ -3850,7 +3850,7 @@ Example #4: making a simple chapter navigation menu
 <!----------------------------- 35. simple chapter navigation (70) ------------------------------->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="./images/.webp/.webp/image035.webp"
+<img src="./images/.webp/image035.webp"
   style="width:4.57292in;height:2.08333in"
   alt="Simple chapter navigation." />
 </p>
@@ -3988,7 +3988,7 @@ Notice that we kept the existing buttons to display a clickable transcript:
 <!----------------------------- 35. simple chapter navigation (73) ------------------------------->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="./images/.webp/.webp/image035.webp"
+<img src="./images/.webp/image035.webp"
   style="width:4.57292in;height:2.08333in"
   alt="Again, Simple chapter navigation." />
 </p>
@@ -4004,7 +4004,7 @@ popular.
 <!----------------------------- 36. simple chapter navigation (73) ------------------------------->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="./images/.webp/.webp/image036.webp"
+<img src="./images/.webp/image036.webp"
   style="width:5in;height:2.28152in"
   alt="Simple chapter navigation" />
 </p>
@@ -4091,7 +4091,7 @@ video](https://jsbin.com/jiyodit/edit?html,css,js,output).
 <!----------------------------- 35. simple chapter navigation (75) ------------------------------->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="./images/.webp/.webp/image035.webp"
+<img src="./images/.webp/image035.webp"
   style="width:4.57292in;height:2.08333in"
   alt="Again, 3rd time, Simple chapter navigation." />
 </p>
@@ -4137,19 +4137,19 @@ from the previous example:
 <!------------------------- 37-43. seven thumbnail chapter images (76) --------------------------->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="left" width="80%">
-<img src="./images/.webp/.webp/image037.webp" style="width:2.57292in;height:1.20833in" alt="Chapter 1 thumbnail." />
-<img src="./images/.webp/.webp/image038.webp" style="width:2.51042in;height:1.19792in" alt="Chapter 2 thumbnail." />
+<img src="./images/.webp/image037.webp" style="width:2.57292in;height:1.20833in" alt="Chapter 1 thumbnail." />
+<img src="./images/.webp/image038.webp" style="width:2.51042in;height:1.19792in" alt="Chapter 2 thumbnail." />
 </p>
 <p align="left" width="80%">
-<img src="./images/.webp/.webp/image039.webp" style="width:2.5625in;height:1.19792in" alt="Chapter 3 thumbnail." />
-<img src="./images/.webp/.webp/image040.webp" style="width:2.54167in;height:1.19792in" alt="Chapter 4 thumbnail." />
+<img src="./images/.webp/image039.webp" style="width:2.5625in;height:1.19792in" alt="Chapter 3 thumbnail." />
+<img src="./images/.webp/image040.webp" style="width:2.54167in;height:1.19792in" alt="Chapter 4 thumbnail." />
 </p>
 <p align="left" width="80%">
-<img src="./images/.webp/.webp/image041.webp" style="width:2.53125in;height:1.21875in" alt="Chapter 5 thumbnails." />
-<img src="./images/.webp/.webp/image042.webp" style="width:2.5in;height:1.19792in" alt="Chapter 6 thumbnail." />
+<img src="./images/.webp/image041.webp" style="width:2.53125in;height:1.21875in" alt="Chapter 5 thumbnails." />
+<img src="./images/.webp/image042.webp" style="width:2.5in;height:1.19792in" alt="Chapter 6 thumbnail." />
 </p>
 <p align="center" width="100%">
-<img src="./images/.webp/.webp/image043.webp" style="width:2.54167in;height:1.21875in" alt="Chapter 7 thumbnail." />
+<img src="./images/.webp/image043.webp" style="width:2.54167in;height:1.21875in" alt="Chapter 7 thumbnail." />
 </p>
 
 To associate these images with its chapter description, we will use JSON
@@ -4190,7 +4190,7 @@ file](https://jsbin.com/pulefe/1/edit?html,css,js,output):
 <!--------------------------- 44. video with nice chapter menu (77) ------------------------------>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="./images/.webp/.webp/image044.webp" 
+<img src="./images/.webp/image044.webp" 
   style="width:5in;height:5.72864in"
   alt="Video with nice chapter menu that uses thumbnail images." />
 </p>
@@ -4418,7 +4418,7 @@ mouse over the thumbnail to see its animated shadow):
 <!-------------------------------- 37. again, movie title (81) ----------------------------------->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="./images/.webp/.webp/image037.webp"
+<img src="./images/.webp/image037.webp"
   style="width:4in;height:1.8818in"
   alt="Screenshot of movie title 'the orange open movie...presents'. . .." />
 </p>
@@ -4439,7 +4439,7 @@ code from earlier in this lesson.
 <!----------------- 45. combined techniques - chapter & clickable button (82) -------------------->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="./images/.webp/.webp/image045.webp" 
+<img src="./images/.webp/image045.webp" 
   style="width:5in;height:6.18857in"
   alt="Chapter menu + clickable transcript." />
 </p>
@@ -22567,7 +22567,7 @@ mobile device, <a href="https://jsbin.com/eyahuv/2">use this URL instead</a>!
 <!---------------------- 263. move a ball on the screen - last image (455) ----------------------->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="./images/.webp/.webp/image263.webp"
+<img src="./images/.webp/image263.webp"
   width="35%"
   alt="Move a Ball on the Screen - last image." />
 </p>
