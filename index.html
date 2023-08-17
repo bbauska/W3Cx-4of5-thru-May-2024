@@ -17621,7 +17621,7 @@ specification yet…</p>
 <h4>If you want to know what HTML Imports were about…</h4>
 
 <p>HTML Imports is the simplest API from Web components :-)</p>
-<p>Add a <link rel="import" href="your_html_file" target="_blank"> and all the
+<p>Add a &lt;link rel="import" href="your_html_file" target="_blank"&gt; and all the
 html/css/js code, that defines a Web component you plan to use, will be
 imported:</p>
 
@@ -17701,7 +17701,7 @@ Components) :</p>
 
 <ul>
   <li><p><i>Line 6</i>: In this example, the Web Component is in a single JavaScript file (./mycomponent/index.js), that is imported as JavaScript module (&lt;script type=“module”….&gt;).</p></li>
-  <li><p><i>Lines 9 and 10</i>: it can then be used like any Web Component, by adding it with its custom HTML tag (<my-components>). The components have one HTML attribute “name”.</p></li>
+  <li><p><i>Lines 9 and 10</i>: it can then be used like any Web Component, by adding it with its custom HTML tag (&lt;my-components&gt;). The components have one HTML attribute “name”.</p></li>
 </ul>
 
 <h4>And here is the code of the Web Component (in ./mycomponent/index.js):</h4>
@@ -17782,14 +17782,24 @@ your comments/observations/questions and share your creations.</p>
   alt="Guitar amp simulator with web components." />
 
 <ul>
-  <li><p>Try making your own Web component! For example: an enhanced audio player that uses Web Audio.</p></li>
-  <li><p>How about building a <gamepad-tester> component which will display progress bars and the states of the different buttons/joysticks - reuse the example from the course! I couldn’t find any Web component like this! Another challenge ;)</p></li>
-  <li><p>Try writing a small tutorial about reusing and customizing a super cool Web component you have found!</p></li>
+  <li><p>Try making your own Web component! For example: an enhanced audio player 
+    that uses Web Audio.</p></li>
+  <li><p>How about building a &lt;gamepad-tester&gt; component which will display 
+    progress bars and the states of the different buttons/joysticks - reuse the 
+	example from the course! I couldn’t find any Web component like this! Another 
+	challenge ;)</p></li>
+  <li><p>Try writing a small tutorial about reusing and customizing a super cool 
+    Web component you have found!</p></li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-3-1">4.3.1 Introduction</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>In the browser, ‘normal’ JavaScript code is run in a single thread (a thread is a light-weight CPU process, see <a href="https://en.wikipedia.org/wiki/Thread_(computing)" target="_blank" rel="noopener noreferrer">this Wikipedia page for details</a>). This means that the browser GUI, the JavaScript, and other tasks are competing for processor time. If you run an intensive CPU task, everything else is <i>blocked</i>, including the user interface. You have no doubt observed something like this during your Web browsing experiences:</p>
+<p>In the browser, ‘normal’ JavaScript code is run in a single thread (a thread 
+is a light-weight CPU process, see <a href="https://en.wikipedia.org/wiki/Thread_(computing)" 
+target="_blank" rel="noopener noreferrer">this Wikipedia page for details</a>). This means 
+that the browser GUI, the JavaScript, and other tasks are competing for processor time. If 
+you run an intensive CPU task, everything else is <i>blocked</i>, including the user 
+interface. You have no doubt observed something like this during your Web browsing experiences:</p>
 
 <h4>With Internet Explorer:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -17809,13 +17819,24 @@ your comments/observations/questions and share your creations.</p>
   alt="Uncaught error, security error, dom exception 18."
   style="width:50%;" />
 
-<p>A solution for this problem, offered by HTML5, is to run certain CPU-intensive tasks in separate threads from the one managing the graphical user interface. So, if you don't want to block the user interface, you can perform computationally intensive tasks in one or more background threads, using the <i>HTML5 Web Workers</i>. Web Workers = CPU threads, in JavaScript.</p>
+<p>A solution for this problem, offered by HTML5, is to run certain CPU-intensive 
+tasks in separate threads from the one managing the graphical user interface. So, 
+if you don't want to block the user interface, you can perform computationally 
+intensive tasks in one or more background threads, using the 
+<i>HTML5 Web Workers</i>. Web Workers = CPU threads, in JavaScript.</p>
 
-<p>Terminology check: if the terms <i>background</i> and <i>foreground</i> and the concept of <i>multi-tasking</i> are new to you, please review <a href="https://www.pcmag.com/encyclopedia/term/foregroundbackground">PC Mag's definition of foreground and background</a>.</p>
+<p>Terminology check: if the terms <i>background</i> and <i>foreground</i> and the 
+concept of <i>multi-tasking</i> are new to you, please review 
+<a href="https://www.pcmag.com/encyclopedia/term/foregroundbackground">PC Mag's 
+definition of foreground and background</a>.</p>
 
 <h4>An example that does not use Web Workers</h4>
 
-<p>This example will block the user interface unless you close the tab. <a href="https://jsbin.com/qipegi/edit?html,output">Try it at JSBin</a> but DO NOT CLICK ON THE BUTTON unless you are prepared to kill your browser/tab, because this routine will consume 100% of CPU time, completely blocking the user interface:</p>
+<p>This example will block the user interface unless you close the 
+tab. <a href="https://jsbin.com/qipegi/edit?html,output">Try it at 
+JSBin</a> but DO NOT CLICK ON THE BUTTON unless you are prepared to 
+kill your browser/tab, because this routine will consume 100% of CPU time, 
+completely blocking the user interface:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~ 238. example will block user unless close the tab (404) ~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -18371,7 +18392,8 @@ things:</p>
   <li><p>The location object (read-only)</p></li>
   <li><p>XMLHttpRequest</p></li>
   <li><p>setTimeout()/clearTimeout() and setInterval()/clearInterval()</p></li>
-  <li><p>The <a href="https://www.html5rocks.com/tutorials/appcache/beginner/" target="_blank" rel="noopener noreferrer">Application Cache</a></p></li>
+  <li><p>The <a href="https://www.html5rocks.com/tutorials/appcache/beginner/" 
+    target="_blank" rel="noopener noreferrer">Application Cache</a></p></li>
   <li><p>Importing external scripts using the importScripts() method</p></li>
   <li><p><a href="https://www.html5rocks.com/en/tutorials/workers/basics/?redirect_from_locale=fr#toc-enviornment-subworkers" target="_blank" rel="noopener noreferrer">Spawning other Web Workers</a></p></li>
 </ul>
@@ -18400,8 +18422,8 @@ things:</p>
 <p><b>Note that:</b></p>
 
 <ol type="1">
-  <li><p>Chrome has already implemented a new way for transferring objects from/to Web Workers by reference, in addition to the standard “by copy” method. This is<a href="https://www.w3.org/TR/html51/infrastructure.html#transferable-objects" target="_blank" rel="noopener noreferrer"> in the HTML 5.1 draft specification from the W3C</a> - look for “transferable” objects! </p></li>
-  <li><p>The canvas is not usable from Web Workers, however, <a href "https://www.w3.org/TR/html51/semantics.html#proxying-canvases-to-workers" target="_blank" rel="noopener noreferrer">HTML 5.1 proposes a canvas proxy.</a> </p></li>
+  <li><p>Chrome has already implemented a new way for transferring objects from/to Web Workers by reference, in addition to the standard “by copy” method. This is<a href="https://www.w3.org/TR/html51/infrastructure.html#transferable-objects" target="_blank" rel="noopener noreferrer"> in the HTML 5.1 draft specification from the W3C</a> - look for “transferable” objects!</p></li>
+  <li><p>The canvas is not usable from Web Workers, however, <a href="https://www.w3.org/TR/html51/semantics.html#proxying-canvases-to-workers" target="_blank" rel="noopener noreferrer">HTML 5.1 proposes a canvas proxy.</a></p></li>
 </ol>
 
 <h4>Debugging Web Workers</h4>
@@ -18783,7 +18805,7 @@ JsBin</a></p>
 <img class="displayed"
   src="./images/.webp/image252.webp?raw=true"
   alt="Orientation API example 3."
-  style="width:40%;" />
+  style="width:300px;" />
 
 <p>Results on the iPad: the logo rotates when we change the iPad’s
 orientation. This is a good “visual feedback” for an orientation
@@ -18794,7 +18816,7 @@ controlled game…</p>
 <img class="displayed"
   src="./images/.webp/image256.webp?raw=true"
   alt="Logo position 1."
-  style="width:39%;" />
+  style="width:400px;" />
 
 <!-- <img src="./images/.webp/image256.webp" style="width:2.94792in;height:3.92708in" -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -18882,7 +18904,7 @@ mobile device).</p>
 <img class="displayed"
   src="./images/.webp/image256.webp?raw=true"
   alt="Level tool using device orientation."
-  style="width:50%;" />
+  style="width:400px;" />
   
 <h4>Other interesting uses: mix orientation API and WebSockets</h4>
 
@@ -18903,18 +18925,24 @@ desktop browser:</p>
 <img class="displayed"
   src="./images/.webp/image257.webp?raw=true"
   alt="Orientation API + websockets."
-  style="width:30%;" />
+  style="width:300px;" />
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-4-4">4.4.4 The Device Motion API</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>This section presents the Device Motion API which is used in a similar manner to the device orientation API discussed earlier.</p>
-<p>The deviceMotion API deals with <i>accelerations</i> instead of <i>orientation </i>only.</p>
+<p>This section presents the Device Motion API which is used in a similar manner 
+to the device orientation API discussed earlier.</p>
+<p>The deviceMotion API deals with <i>accelerations</i> instead of <i>orientation</i> only.</p>
 <p>Use cases proposed by the specification are:</p>
 
 <ul>
-  <li><p><b>Controlling a game</b>: a gaming Web application monitors the device’s orientation and interprets tilting in a certain direction as a means to control an on-screen sprite.</p></li>
-  <li><p><b>Gesture recognition</b>: a Web application monitors the device’s acceleration and applies signal processing in order to recognize certain specific gestures. For example, using a shaking gesture to clear a web form.</p></li>
-  <li><p><b>Mapping</b>: a mapping Web application uses the device’s orientation to correctly align the map with reality.</p></li>
+  <li><p><b>Controlling a game</b>: a gaming Web application monitors the device’s 
+    orientation and interprets tilting in a certain direction as a means to control 
+	an on-screen sprite.</p></li>
+  <li><p><b>Gesture recognition</b>: a Web application monitors the device’s 
+    acceleration and applies signal processing in order to recognize certain 
+	specific gestures. For example, using a shaking gesture to clear a web form.</p></li>
+  <li><p><b>Mapping</b>: a mapping Web application uses the device’s 
+    orientation to correctly align the map with reality.</p></li>
 </ul>
 
 <h4>Basic usage</h4>
@@ -18932,7 +18960,11 @@ desktop browser:</p>
 
 <h4>Basics about acceleration</h4>
 
-<p>The deviceMotion API is rather straightforward and is very similar to the orientation API except that it returns more than just the <i>rotation</i> information, it also returns <a href="https://en.wikipedia.org/wiki/Acceleration)information" target="_blank" rel="noopener noreferrer">acceleration</a> reflecting the device’s actual movement.</p>
+<p>The deviceMotion API is rather straightforward and is very similar to the 
+orientation API except that it returns more than just the <i>rotation</i> 
+information, it also returns <a href="https://en.wikipedia.org/wiki/Acceleration)information" 
+target="_blank" rel="noopener noreferrer">acceleration</a> reflecting the device’s 
+actual movement.</p>
 
 <p>The <i>acceleration</i> is in three parts:</p>
 
@@ -18942,17 +18974,33 @@ desktop browser:</p>
   <li><p>along the Z axis</p></li>
 </ol>
 
-<p>Each value is measured in <a href="https://en.wikipedia.org/wiki/Metre_per_second_per_second" target="_blank" rel="noopener noreferrer">meters
-per second squared</a> (m/s<sup>2</sup>) - multiply by 3.281 if you’d prefer an <i>approximation</i> in feet per second per second.</p>
-<p>The acceleration is returned by the API as an <i>acceleration event</i>. The two pertinent properties are: accelerationIncludingGravity and acceleration. The latter excludes the effects of gravity.</p>
-<p>Why are there two different values? Because some devices have the capability of excluding the effects of <a href="https://en.wikipedia.org/wiki/Gravity" target="_blank" rel="noopener noreferrer">gravity, eg if equipped with a gyroscope. Indeed <a href="https://en.wikipedia.org/wiki/Acceleration_of_gravity" target="_blank" rel="noopener noreferrer">there is acceleration due implicitly to gravity</a>, see also this: <a href="https://en.wikipedia.org/wiki/Acceleration_of_gravity#Earth.27s_gravity" target="_blank" rel="noopener noreferrer">Acceleration of Gravity on Earth</a>…</p>
-<p>If the device doesn’t have a gyroscope, the acceleration property will be returned as <i>null</i>. In this case, you have no choice but to
-use the accelerationIncludingGravity property. Note that all IOS devices, so far, are equipped with a gyroscope.</p>
-<p>The <i>device motion</i> <i>event</i> is a superset of the <i>device orientation event</i>; it returns <i>rotation</i> as well as <i>acceleration</i> information from the device.</p>
+<p>Each value is measured in <a href="https://en.wikipedia.org/wiki/Metre_per_second_per_second" 
+target="_blank" rel="noopener noreferrer">meters
+per second squared</a> (m/s<sup>2</sup>) - multiply by 3.281 if you’d prefer an 
+<i>approximation</i> in feet per second per second.</p>
+<p>The acceleration is returned by the API as an <i>acceleration event</i>. The 
+two pertinent properties are: accelerationIncludingGravity and acceleration. The 
+latter excludes the effects of gravity.</p>
+<p>Why are there two different values? Because some devices have the capability 
+of excluding the effects of <a href="https://en.wikipedia.org/wiki/Gravity" 
+target="_blank" rel="noopener noreferrer">gravity, eg if equipped with a 
+gyroscope. Indeed <a href="https://en.wikipedia.org/wiki/Acceleration_of_gravity" 
+target="_blank" rel="noopener noreferrer">there is acceleration due implicitly 
+to gravity</a>, see also this: 
+<a href="https://en.wikipedia.org/wiki/Acceleration_of_gravity#Earth.27s_gravity" 
+target="_blank" rel="noopener noreferrer">Acceleration of Gravity on Earth</a>…</p>
+<p>If the device doesn’t have a gyroscope, the acceleration property will be returned as 
+<i>null</i>. In this case, you have no choice but to
+use the accelerationIncludingGravity property. Note that all IOS devices, so far, are equipped 
+with a gyroscope.</p>
+<p>The <i>device motion</i> <i>event</i> is a superset of the <i>device orientation event</i>; 
+it returns <i>rotation</i> as well as <i>acceleration</i> information from the device.</p>
 
 <h4>Example of acceleration values</h4>
 
-<p>If a laptop is in its normal position with the screen facing up, the data returned would be <a href="https://developers.google.com/web/fundamentals/native-hardware/device-orientation/" target="_blank" rel="noopener noreferrer">(info taken from this [article]</a>):</p>
+<p>If a laptop is in its normal position with the screen facing up, the data returned 
+would be <a href="https://developers.google.com/web/fundamentals/native-hardware/device-orientation/" 
+target="_blank" rel="noopener noreferrer">(info taken from this [article]</a>):</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 258. acceleration values 1 (434) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
