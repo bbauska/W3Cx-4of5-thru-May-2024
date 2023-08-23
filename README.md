@@ -21,7 +21,7 @@ w3cx-4of5-html5.2x: Coursera - Front-End Web Development - Apps and Games
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/.webp/image001.webp?raw=true"
-   width="65%"
+   width="400px;"
    alt="W3Cx HTML 5.2x logo." />
 </p>
 
