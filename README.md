@@ -1080,7 +1080,7 @@ or on YouTube. Keep in mind that it's always better to be logged in (it's free) 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~- 05. codepen logo (15) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="./images/webp/image005.webp"
+<img src="./images/image005.png"
    width="10%"
    alt="CodePen logo."
 </p>
@@ -22669,4 +22669,4 @@ your comments/observations/questions and share your creations.
 
 <h5>the end...</h5>
 
-<h6>Last Updated: 8-24-2023 2:41pm</h6>
+<h6>Last Updated: 8-30-2023 8:59pm</h6>
