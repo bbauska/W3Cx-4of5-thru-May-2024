@@ -1499,24 +1499,23 @@ You will find more quick tips on the <a href="https://www.w3.org/International/
 <h4>Internationalization checker</h4>
 
 When you start creating Web pages, you can also run them through the
-W3C's [Internationalization
-Checker](https://validator.w3.org/i18n-checker/).  If there are
-internationalization problems with your page, this checker explains what
-they are and what to do about it.
+W3C's <a href="https://validator.w3.org/i18n-checker/">Internationalization
+Checker</a>.  If there are internationalization problems with your page, 
+this checker explains what they are and what to do about it.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch1-1-1">Module 1 Advanced HTML5 multimedia</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 In the [W3Cx HTML5 Coding Essentials and Best
-Practices](https://www.edx.org/course/html5-coding-essentials-and-best-practices) course,
+Practices](https://www.edx.org/course/html5-coding-essentials-and-best-practices) course,
 we saw that &lt;video&gt; and &lt;audio&gt; elements can
 have &lt;track&gt; elements. A &lt;track&gt; can have a label,
 a kind (subtitles, captions, chapters, metadata, etc.), a language
 (srclang attribute), a source URL (src attribute), etc.
 
-Here is a small example of a video with 3 different tracks
-("......" masks the real URL here, as it is too long to fit in this page
-width!):
+<p><a href="https://archive.org/download/ElephantsDream/ed_hd.mp4">Here is a small example 
+of a video with 3 different tracks</a> ("......" masks the real URL here, as it is too 
+long to fit in this page width!):</p>
 
 <details>
   <summary>Video code extract!</summary>
