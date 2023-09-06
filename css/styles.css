@@ -26,22 +26,13 @@ p.em4 {
 
 background: linear-gradient(60deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%);
 
-pre, code {
-  font-family: monospace, monospace;
-  font-size: 11px;
-  overflow: auto;
-}
-pre > code {
-  display: block;
-  padding: 1rem;
-  word-wrap: normal;
-}
-pre:hover, pre:focus { width: min-content; }
 
 a {
   text-decoration: none; 
 }
 a[href]:hover {
+  color: #00000;
+  background-color: #ffff00;  /* yellow */
   text-decoration: underline; 
 }
 
@@ -117,24 +108,48 @@ details[open] > summary {
   background-color: yellow;
 }
 
+pre, code {
+  font-family: monospace, monospace;
+  font-size: 10px;
+  margin-left: 10px;
+  }
+pre {
+  overflow: auto;
+}
+pre > code {
+  display: block;
+  margin-left: 10px;
+  padding: 1rem;
+  word-wrap: normal;
+}
+
+pre[href]:hover {
+  text-decoration: none;
+  }
+pre:hover, pre:focust { width: min-content; }
+
+/*
 pre {
   font-size: 11px;
   counter-reset: line-numbering;
-  background: #2c3e50;  /* very dark desaturated blue */
-  padding: 6px 0 7px 0;  /* 12px 0px 14px 0 */
-  width: 600px;  /* 600px */
-  color: #ecf0f1;  /* light grayish cyan */
+  background: #2c3e50;
+  padding: 6px 0 7px 0;
+  width: 600px;
+  color: #ecf0f1;
   line-height: 100%;
 }
+*/
 
-pre .line::before {
+/* pre .line::before {
   content: counter(line-numbering);
   counter-increment: line-numbering;
   padding-right: 1em;
+*/
   /* space after numbers */
-  padding-left: 8px;
+/*  padding-left: 8px;
   width: 1.5em;
   text-align: right;
   opacity: 0.5;
   color: white;
 }
+*/
