@@ -127,849 +127,6 @@ courses, you <i>do NOT need to re-take that course</i>.
     in edX Help Center</a></b>.</li>
 </ul>
 
-<h2>Detailed Contents</h2>
-
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-<details>
-  <summary>CONTENT Here!</summary>
-
-[Advanced HTML5 Multimedia [26](#module-1-1)](#module-1-1)
-
-[1.2.1 The Timed Text Track API
-[26](#intro-to-the-timed-text-track-api)](#intro-to-the-timed-text-track-api)
-
-[The Timed Text Track JavaScript API
-[31](#the-timed-text-track-javascript-api)](#the-timed-text-track-javascript-api)
-
-[1.2.2 The HTML Track Element, getting the status of a track
-[34](#the-html-track-element-getting-the-status-of-a-track)](#the-html-track-element-getting-the-status-of-a-track)
-
-[The HTML track element
-[35](#the-html-track-element)](#the-html-track-element)
-
-[Let's go back to our example. Below is the HTML code:
-[35](#lets-go-back-to-our-example.-below-is-the-html-code)](#lets-go-back-to-our-example.-below-is-the-html-code)
-
-[Getting the status of an HTML track
-[35](#getting-the-status-of-an-html-track)](#getting-the-status-of-an-html-track)
-
-[Example at JSBin that displays the different elements we can get from
-an HTML track: [35](#_Toc98696550)](#_Toc98696550)
-
-[Here is the JavaScript source code:
-[36](#here-is-the-javascript-source-code)](#here-is-the-javascript-source-code)
-
-[The code is rather straightforward:
-[37](#the-code-is-rather-straightforward)](#the-code-is-rather-straightforward)
-
-[Possible values for the readyState attribute of HTML tracks:
-[37](#possible-values-for-the-readystate-attribute-of-html-tracks)](#possible-values-for-the-readystate-attribute-of-html-tracks)
-
-[1.2.3 The TextTrack Object
-[38](#the-texttrack-object)](#the-texttrack-object)
-
-[Example source code: [40](#example-source-code)](#example-source-code)
-
-[1.2.4 Working With Cues [44](#working-with-cues)](#working-with-cues)
-
-[1.2.5 Listening to Events
-[47](#listening-to-events)](#listening-to-events)
-
-[Example of cuechange listener on TextTrack
-[48](#example-of-cuechange-listener-on-texttrack)](#example-of-cuechange-listener-on-texttrack)
-
-[Source code extract: [50](#source-code-extract)](#source-code-extract)
-
-[Source code extract:
-[51](#source-code-extract-1)](#source-code-extract-1)
-
-[1.3 Advanced Features for &lt;audio&gt; and &lt;video&gt; Players
-[52](#advanced-features-for-audio-and-video-players)](#advanced-features-for-audio-and-video-players)
-
-[1.3.1 With a Clickable Transcript on the Side
-[52](#with-a-clickable-transcript-on-the-side)](#with-a-clickable-transcript-on-the-side)
-
-[1.3.2 Captions, Descriptions, Chapters and Metadata
-[66](#captions-descriptions-chapters-and-metadata)](#captions-descriptions-chapters-and-metadata)
-
-[Extract from HTML code:
-[67](#extract-from-html-code)](#extract-from-html-code)
-
-[JavaScript code: [69](#javascript-code)](#javascript-code)
-
-[1.3.4 With a Simple Chapter Navigation Menu
-[73](#with-a-simple-chapter-navigation-menu)](#with-a-simple-chapter-navigation-menu)
-
-[HTML code: [80](#html-code-1)](#html-code-1)
-
-[1.4.2 Update the Document in Sync with a Media Playing
-[91](#update-the-document-in-sync-with-a-media-playing)](#update-the-document-in-sync-with-a-media-playing)
-
-[1.5.1 Introduction [97](#introduction-1)](#introduction-1)
-
-[1.5.2 Working with Streamed Content
-[106](#working-with-streamed-content)](#working-with-streamed-content)
-
-[1.5.3 Most Useful Filter Nodes
-[108](#most-useful-filter-nodes)](#most-useful-filter-nodes)
-
-[1.5.4 Writing an Equalizer
-[118](#writing-an-equalizer)](#writing-an-equalizer)
-
-[1.5.5 Waveforms [121](#waveforms)](#waveforms)
-
-[1.5.9 Load and play sound samples
-[140](#load-and-play-sound-samples)](#load-and-play-sound-samples)
-
-[1.5.10 Sound samples and effects
-[148](#sound-samples-and-effects)](#sound-samples-and-effects)
-
-[1.5.11 Useful third party libraries
-[150](#useful-third-party-libraries)](#useful-third-party-libraries)
-
-[2. Game Programming with HTML5 [151](#module-2)](#module-2)
-
-[2.2.1 History of JavaScript games
-[152](#history-of-javascript-games)](#history-of-javascript-games)
-
-[2.2.2 Elements and APIs useful for writing games
-[154](#elements-and-apis-useful-for-writing-games)](#elements-and-apis-useful-for-writing-games)
-
-[Interacting: dealing with keyboard and mouse events, the GamePad API
-[156](#interacting-dealing-with-keyboard-and-mouse-events-the-gamepad-api)](#interacting-dealing-with-keyboard-and-mouse-events-the-gamepad-api)
-
-[2.2.3 The "game loop" [158](#the-game-loop)](#the-game-loop)
-
-[2.3.1 A game framework skeleton
-[162](#a-game-framework-skeleton)](#a-game-framework-skeleton)
-
-[2.3.2 Introducing graphics
-[166](#introducing-graphics)](#introducing-graphics)
-
-[HTML5 canvas basic usage: drawing a monster
-[167](#html5-canvas-basic-usage-drawing-a-monster)](#html5-canvas-basic-usage-drawing-a-monster)
-
-[2.3.3 User interaction and event handling
-[173](#user-interaction-and-event-handling)](#user-interaction-and-event-handling)
-
-[2.3.4 Adding key listeners
-[175](#adding-key-listeners)](#adding-key-listeners)
-
-[2.3.5 Adding mouse listeners
-[181](#adding-mouse-listeners)](#adding-mouse-listeners)
-
-[2.3.6 Gamepad events [190](#gamepad-events)](#gamepad-events)
-
-[Detecting gamepads [193](#detecting-gamepads)](#detecting-gamepads)
-
-[External resources [204](#external-resources-2)](#external-resources-2)
-
-[2.3.7 Move the monster! [204](#move-the-monster)](#move-the-monster)
-
-[2.4.1 Introduction [212](#introduction-2)](#introduction-2)
-
-[How to measure time when we use requestAnimationFrame?
-[214](#how-to-measure-time-when-we-use-requestanimationframe)](#how-to-measure-time-when-we-use-requestanimationframe)
-
-[Example #1: no use of time-based animation
-[215](#example-1-no-use-of-time-based-animation)](#example-1-no-use-of-time-based-animation)
-
-[Example #2: simulating a low-end device
-[217](#example-2-simulating-a-low-end-device)](#example-2-simulating-a-low-end-device)
-
-[2.4.2 Measuring time between frames
-[218](#measuring-time-between-frames)](#measuring-time-between-frames)
-
-[Method #1: using the JavaScript Date object
-[218](#method-1-using-the-javascript-date-object)](#method-1-using-the-javascript-date-object)
-
-[Method #2: using the new HTML5 high-resolution timer
-[223](#method-2-using-the-new-html5-high-resolution-timer)](#method-2-using-the-new-html5-high-resolution-timer)
-
-[Method #3: using the optional timestamp parameter of the callback
-function of requestAnimationFrame
-[225](#method-3-using-the-optional-timestamp-parameter-of-the-callback-function-of-requestanimationframe)](#method-3-using-the-optional-timestamp-parameter-of-the-callback-function-of-requestanimationframe)
-
-[2.4.3 Setting the frame rate
-[228](#setting-the-frame-rate)](#setting-the-frame-rate)
-
-[Same technique with the bouncing rectangle
-[230](#same-technique-with-the-bouncing-rectangle)](#same-technique-with-the-bouncing-rectangle)
-
-[Can we use setInterval?
-[233](#can-we-use-setinterval)](#can-we-use-setinterval)
-
-[2.4.4 Adding time-based animation
-[234](#adding-time-based-animation)](#adding-time-based-animation)
-
-[2.5.1 Animating multiple objects
-[237](#animating-multiple-objects)](#animating-multiple-objects)
-
-[Animating multiple balls which bounce off horizontal and vertical walls
-[239](#animating-multiple-balls-which-bounce-off-horizontal-and-vertical-walls)](#animating-multiple-balls-which-bounce-off-horizontal-and-vertical-walls)
-
-[Similar example but with the ball direction as an angle, and a single
-velocity variable
-[243](#similar-example-but-with-the-ball-direction-as-an-angle-and-a-single-velocity-variable)](#similar-example-but-with-the-ball-direction-as-an-angle-and-a-single-velocity-variable)
-
-[2.5.2 Adding balls to the game framework
-[245](#adding-balls-to-the-game-framework)](#adding-balls-to-the-game-framework)
-
-[2.5.3 Collision detection
-[248](#collision-detection)](#collision-detection)
-
-[Circle collision test
-[248](#circle-collision-test)](#circle-collision-test)
-
-[Which yields: [249](#which-yields)](#which-yields)
-
-[Let's test this idea [249](#lets-test-this-idea)](#lets-test-this-idea)
-
-[The collision test occurs in the main loop:
-[250](#the-collision-test-occurs-in-the-main-loop)](#the-collision-test-occurs-in-the-main-loop)
-
-[[Advanced technique] Use several bounding circles for complex shapes,
-recompute bounding circles when the shape changes over time (animated
-objects)
-[251](#advanced-technique-use-several-bounding-circles-for-complex-shapes-recompute-bounding-circles-when-the-shape-changes-over-time-animated-objects)](#advanced-technique-use-several-bounding-circles-for-complex-shapes-recompute-bounding-circles-when-the-shape-changes-over-time-animated-objects)
-
-[Rectangle (aligned along X and Y axis) detection test
-[253](#rectangle-aligned-along-x-and-y-axis-detection-test)](#rectangle-aligned-along-x-and-y-axis-detection-test)
-
-[From this: [253](#from-this)](#from-this)
-
-[Try this online demonstration of rectangle - rectangle detection
-[253](#_Toc98696616)](#_Toc98696616)
-
-[Many real games use aligned rectangle collision tests
-[257](#many-real-games-use-aligned-rectangle-collision-tests)](#many-real-games-use-aligned-rectangle-collision-tests)
-
-[Other collision tests
-[259](#other-collision-tests)](#other-collision-tests)
-
-[To go further... video game physics!
-[261](#to-go-further...-video-game-physics)](#to-go-further...-video-game-physics)
-
-[2.5.4 Adding collision detection to the game framework
-[261](#adding-collision-detection-to-the-game-framework)](#adding-collision-detection-to-the-game-framework)
-
-[2.6.1 Introduction [263](#introduction-3)](#introduction-3)
-
-[2.6.2 Different sorts of sprite sheets
-[264](#different-sorts-of-sprite-sheets)](#different-sorts-of-sprite-sheets)
-
-[Multiple postures on a single sprite sheet
-[264](#multiple-postures-on-a-single-sprite-sheet)](#multiple-postures-on-a-single-sprite-sheet)
-
-[One posture per sprite sheet
-[265](#one-posture-per-sprite-sheet)](#one-posture-per-sprite-sheet)
-
-[Hybrid sprite sheets
-[266](#hybrid-sprite-sheets)](#hybrid-sprite-sheets)
-
-[2.6.3 Sprite extraction and animation
-[267](#sprite-extraction-and-animation)](#sprite-extraction-and-animation)
-
-[Principle [267](#principle)](#principle)
-
-[Example #1 [267](#example-1)](#example-1)
-
-[Try it at JSBin: [268](#_Toc98696629)](#_Toc98696629)
-
-[HTML code: [268](#html-code-4)](#html-code-4)
-
-[Explanations: [272](#explanations-8)](#explanations-8)
-
-[Example #2 [272](#example-2)](#example-2)
-
-[2.6.4 A small sprite animation framework
-[273](#a-small-sprite-animation-framework)](#a-small-sprite-animation-framework)
-
-[The SpriteImage object and sprite models
-[275](#the-spriteimage-object-and-sprite-models)](#the-spriteimage-object-and-sprite-models)
-
-[Same example but with the walking woman sprite sheet
-[277](#same-example-but-with-the-walking-woman-sprite-sheet)](#same-example-but-with-the-walking-woman-sprite-sheet)
-
-[Moving the sprites, stopping the sprites
-[278](#moving-the-sprites-stopping-the-sprites)](#moving-the-sprites-stopping-the-sprites)
-
-[External resource [278](#external-resource)](#external-resource)
-
-[2.6.5 Adding sprites to the game framework
-[278](#adding-sprites-to-the-game-framework)](#adding-sprites-to-the-game-framework)
-
-[How to add sprites to the game framework...
-[279](#how-to-add-sprites-to-the-game-framework...)](#how-to-add-sprites-to-the-game-framework...)
-
-[2.7.1 Menus, high score tables, etc.
-[283](#menus-high-score-tables-etc.)](#menus-high-score-tables-etc.)
-
-[Game states:menus, high score tables, etc.
-[286](#game-statesmenus-high-score-tables-etc.)](#game-statesmenus-high-score-tables-etc.)
-
-[2.7.2 Splitting the game into several JS files
-[290](#splitting-the-game-into-several-js-files)](#splitting-the-game-into-several-js-files)
-
-[Start with a simple structure
-[291](#start-with-a-simple-structure)](#start-with-a-simple-structure)
-
-[Isolate the ball function constructor
-[292](#isolate-the-ball-function-constructor)](#isolate-the-ball-function-constructor)
-
-[Isolate the time based animation functions into a separate file
-[293](#isolate-the-time-based-animation-functions-into-a-separate-file)](#isolate-the-time-based-animation-functions-into-a-separate-file)
-
-[Isolate the part that counts the number of frames per second
-[295](#isolate-the-part-that-counts-the-number-of-frames-per-second)](#isolate-the-part-that-counts-the-number-of-frames-per-second)
-
-[Let's continue and isolate the event listeners
-[296](#lets-continue-and-isolate-the-event-listeners)](#lets-continue-and-isolate-the-event-listeners)
-
-[Isolate the collision tests
-[297](#isolate-the-collision-tests)](#isolate-the-collision-tests)
-
-[Final downloadable version and conclusion
-[297](#final-downloadable-version-and-conclusion)](#final-downloadable-version-and-conclusion)
-
-[2.7.3 Discussion and projects
-[299](#discussion-and-projects)](#discussion-and-projects)
-
-[Suggested topics of discussion:
-[299](#suggested-topics-of-discussion)](#suggested-topics-of-discussion)
-
-[Optional projects: create your own game!
-[299](#optional-projects-create-your-own-game)](#optional-projects-create-your-own-game)
-
-[3 File Upload and Download
-[301](#module-3.-html5-file-upload-and-download)](#module-3.-html5-file-upload-and-download)
-
-[3.2.1 Ajax and XHR2 [302](#ajax-and-xhr2)](#ajax-and-xhr2)
-
-[3.2.2 Ajax/XHR2 and binary files
-[303](#ajaxxhr2-and-binary-files)](#ajaxxhr2-and-binary-files)
-
-[Ajax and binary files - downloading files and monitoring progress
-[304](#ajax-and-binary-files---downloading-files-and-monitoring-progress)](#ajax-and-binary-files---downloading-files-and-monitoring-progress)
-
-[Monitoring uploads or downloads using a progress event
-[308](#monitoring-uploads-or-downloads-using-a-progress-event)](#monitoring-uploads-or-downloads-using-a-progress-event)
-
-[Complete example: monitoring the download of a song file
-[310](#complete-example-monitoring-the-download-of-a-song-file)](#complete-example-monitoring-the-download-of-a-song-file)
-
-[3.2.3 Uploading files and monitoring progress
-[311](#uploading-files-and-monitoring-progress)](#uploading-files-and-monitoring-progress)
-
-[Monitor the upload progress
-[313](#monitor-the-upload-progress)](#monitor-the-upload-progress)
-
-[3.2.4 Discussion and projects
-[315](#discussion-and-projects-1)](#discussion-and-projects-1)
-
-[Suggested topics of discussion:
-[315](#suggested-topics-of-discussion-1)](#suggested-topics-of-discussion-1)
-
-[Optional projects: [315](#optional-projects)](#optional-projects)
-
-[3.3.1 Introduction [315](#introduction-4)](#introduction-4)
-
-[External resources [315](#external-resources-3)](#external-resources-3)
-
-[3.3.2 Drag detection [316](#drag-detection)](#drag-detection)
-
-[3.3.3 Drop detection [319](#drop-detection)](#drop-detection)
-
-[Complete example [320](#complete-example)](#complete-example)
-
-[3.3.4 A few words about data-* attributes
-[323](#a-few-words-about-data--attributes)](#a-few-words-about-data--attributes)
-
-[JavaScript API: the dataset property
-[323](#javascript-api-the-dataset-property)](#javascript-api-the-dataset-property)
-
-[Using CSS pseudo elements ::before and ::after with the attr() function
-to display the value of data-* attributes
-[325](#using-css-pseudo-elements-before-and-after-with-the-attr-function-to-display-the-value-of-data--attributes)](#using-css-pseudo-elements-before-and-after-with-the-attr-function-to-display-the-value-of-data--attributes)
-
-[3.3.5 Add visual feedback
-[326](#add-visual-feedback)](#add-visual-feedback)
-
-[Add visual feedback when you drag something, when the mouse enters a
-drop zone, etc.
-[327](#add-visual-feedback-when-you-drag-something-when-the-mouse-enters-a-drop-zone-etc.)](#add-visual-feedback-when-you-drag-something-when-the-mouse-enters-a-drop-zone-etc.)
-
-[3.3.6 The dropEffect property
-[333](#the-dropeffect-property)](#the-dropeffect-property)
-
-[More feedback using the dropEffect property: changing the cursor's
-shape
-[333](#more-feedback-using-the-dropeffect-property-changing-the-cursors-shape)](#more-feedback-using-the-dropeffect-property-changing-the-cursors-shape)
-
-[Complete online example
-[335](#complete-online-example)](#complete-online-example)
-
-[3.3.7 Drag and drop HTML elements
-[336](#drag-and-drop-html-elements)](#drag-and-drop-html-elements)
-
-[Drag and drop images or any HTML element within a document
-[336](#drag-and-drop-images-or-any-html-element-within-a-document)](#drag-and-drop-images-or-any-html-element-within-a-document)
-
-[3.3.8 Drag and drop a text selection
-[338](#drag-and-drop-a-text-selection)](#drag-and-drop-a-text-selection)
-
-[3.3.9 Discussion and projects
-[340](#discussion-and-projects-2)](#discussion-and-projects-2)
-
-[Suggested topics of discussion:
-[340](#suggested-topics-of-discussion-2)](#suggested-topics-of-discussion-2)
-
-[Optional projects: [340](#optional-projects-1)](#optional-projects-1)
-
-[3.4.1 Introduction [341](#introduction-5)](#introduction-5)
-
-[Drag and drop files from the desktop to the browser: the files property
-of the clipboard
-[341](#drag-and-drop-files-from-the-desktop-to-the-browser-the-files-property-of-the-clipboard)](#drag-and-drop-files-from-the-desktop-to-the-browser-the-files-property-of-the-clipboard)
-
-[Prevent the browser's default behavior
-[342](#prevent-the-browsers-default-behavior)](#prevent-the-browsers-default-behavior)
-
-[External resources [344](#external-resources-4)](#external-resources-4)
-
-[3.4.2 Drag and drop files in a drop zone
-[344](#drag-and-drop-files-in-a-drop-zone)](#drag-and-drop-files-in-a-drop-zone)
-
-[Example: drag and drop files to a drop zone, display file details in a
-list
-[345](#example-drag-and-drop-files-to-a-drop-zone-display-file-details-in-a-list)](#example-drag-and-drop-files-to-a-drop-zone-display-file-details-in-a-list)
-
-[3.4.3 Images with thumbnails
-[349](#images-with-thumbnails)](#images-with-thumbnails)
-
-[3.4.4 Mixing drag and drop and input type=file
-[355](#mixing-drag-and-drop-and-input-typefile)](#mixing-drag-and-drop-and-input-typefile)
-
-[Complete interactive example with source code
-[357](#complete-interactive-example-with-source-code)](#complete-interactive-example-with-source-code)
-
-[3.4.5 Files upload using Ajax/XHR2
-[362](#files-upload-using-ajaxxhr2)](#files-upload-using-ajaxxhr2)
-
-[3.4.6 Discussion and projects
-[365](#discussion-and-projects-3)](#discussion-and-projects-3)
-
-[Suggested topics of discussion:
-[365](#suggested-topics-of-discussion-3)](#suggested-topics-of-discussion-3)
-
-[Optional projects: [365](#optional-projects-2)](#optional-projects-2)
-
-[3.5.1 Introduction [366](#introduction-6)](#introduction-6)
-
-[The problem [366](#the-problem)](#the-problem)
-
-[Serial approach: upload the files as soon as they are selected or
-dragged and dropped
-[366](#serial-approach-upload-the-files-as-soon-as-they-are-selected-or-dragged-and-dropped)](#serial-approach-upload-the-files-as-soon-as-they-are-selected-or-dragged-and-dropped)
-
-[Packaged approach: send all form content, including files, only when
-the form is submitted
-[367](#packaged-approach-send-all-form-content-including-files-only-when-the-form-is-submitted)](#packaged-approach-send-all-form-content-including-files-only-when-the-form-is-submitted)
-
-[3.5.2 Installation guide
-[368](#installation-guide)](#installation-guide)
-
-[3.5.3 Serial approach [369](#serial-approach)](#serial-approach)
-
-[Example #1: auto-loading of the files, regular form submission,
-benefits of the HTML5 form validation system
-[369](#example-1-auto-loading-of-the-files-regular-form-submission-benefits-of-the-html5-form-validation-system)](#example-1-auto-loading-of-the-files-regular-form-submission-benefits-of-the-html5-form-validation-system)
-
-[Example #2: similar example but using drag and drop instead of a file
-selector
-[370](#example-2-similar-example-but-using-drag-and-drop-instead-of-a-file-selector)](#example-2-similar-example-but-using-drag-and-drop-instead-of-a-file-selector)
-
-[And here is the PHP code for the server-side part of examples #1 and
-#2
-[371](#and-here-is-the-php-code-for-the-server-side-part-of-examples-1-and-2)](#and-here-is-the-php-code-for-the-server-side-part-of-examples-1-and-2)
-
-[3.5.4 Package approach [372](#package-approach)](#package-approach)
-
-[Example #3: uploading everything at once using a file selector
-[372](#example-3-uploading-everything-at-once-using-a-file-selector)](#example-3-uploading-everything-at-once-using-a-file-selector)
-
-[Example #4: uploading using drag and drop
-[373](#example-4-uploading-using-drag-and-drop)](#example-4-uploading-using-drag-and-drop)
-
-[PHP code for the single-packaged examples (with and without drag and
-drop, the PHP is the same)
-[374](#php-code-for-the-single-packaged-examples-with-and-without-drag-and-drop-the-php-is-the-same)](#php-code-for-the-single-packaged-examples-with-and-without-drag-and-drop-the-php-is-the-same)
-
-[3.5.5 Discussion [375](#discussion)](#discussion)
-
-[Suggested topics of discussion:
-[375](#suggested-topics-of-discussion-4)](#suggested-topics-of-discussion-4)
-
-[3.6.1 Concepts (part 1) [375](#concepts-part-1)](#concepts-part-1)
-
-[External resources [379](#external-resources-5)](#external-resources-5)
-
-[3.6.2 Concepts (part 2) [380](#concepts-part-2)](#concepts-part-2)
-
-[Detailed overview [381](#detailed-overview)](#detailed-overview)
-
-[Example of a transaction:
-[382](#example-of-a-transaction)](#example-of-a-transaction)
-
-[3.6.3 Definitions [384](#definitions)](#definitions)
-
-[Database [385](#database)](#database)
-
-[Object store [385](#object-store)](#object-store)
-
-[Version [386](#version)](#version)
-
-[Transaction [387](#transaction)](#transaction)
-
-[Request [388](#request)](#request)
-
-[Index [388](#index)](#index)
-
-[Key and values [389](#key-and-values)](#key-and-values)
-
-[Range and scope [390](#range-and-scope)](#range-and-scope)
-
-[3.6.4 Using IndexedDB [391](#using-indexeddb)](#using-indexeddb)
-
-[External resources [391](#external-resources-6)](#external-resources-6)
-
-[3.6.5 Creating and deleting a database
-[392](#creating-and-deleting-a-database)](#creating-and-deleting-a-database)
-
-[Creating a database [394](#creating-a-database)](#creating-a-database)
-
-[JavaScript code from the example:
-[396](#javascript-code-from-the-example-1)](#javascript-code-from-the-example-1)
-
-[Explanations: [397](#explanations-10)](#explanations-10)
-
-[Deleting a database [398](#deleting-a-database)](#deleting-a-database)
-
-[3.6.6 Working with data [400](#working-with-data)](#working-with-data)
-
-[3.6.7 Inserting data [401](#inserting-data)](#inserting-data)
-
-[Example #1: basic steps
-[403](#example-1-basic-steps)](#example-1-basic-steps)
-
-[Example #2: adding a form and validating inputs
-[407](#example-2-adding-a-form-and-validating-inputs)](#example-2-adding-a-form-and-validating-inputs)
-
-[3.6.8 Removing data [411](#removing-data)](#removing-data)
-
-[3.6.9 Modifying data [413](#modifying-data)](#modifying-data)
-
-[3.6.10 Getting data [416](#getting-data)](#getting-data)
-
-[First method: getting data when we know its key
-[416](#first-method-getting-data-when-we-know-its-key)](#first-method-getting-data-when-we-know-its-key)
-
-[Second method: getting more than one piece of data
-[420](#second-method-getting-more-than-one-piece-of-data)](#second-method-getting-more-than-one-piece-of-data)
-
-[3.6.11 Limiting the range of values in a cursor
-[427](#limiting-the-range-of-values-in-a-cursor)](#limiting-the-range-of-values-in-a-cursor)
-
-[Complete example [428](#complete-example-1)](#complete-example-1)
-
-[3.6.12 Discussion and projects
-[430](#discussion-and-projects-4)](#discussion-and-projects-4)
-
-[Suggested topics of discussion:
-[430](#suggested-topics-of-discussion-5)](#suggested-topics-of-discussion-5)
-
-[Optional projects: [431](#optional-projects-3)](#optional-projects-3)
-
-[Conclusion [431](#conclusion)](#conclusion)
-
-[External resources [432](#external-resources-7)](#external-resources-7)
-
-[Module 4
-[432](#module-4.-web-components-and-other-html5-apis)](#module-4.-web-components-and-other-html5-apis)
-
-[4.2.1 Web components in video
-[433](#web-components-in-video)](#web-components-in-video)
-
-[Example from the video
-[435](#example-from-the-video)](#example-from-the-video)
-
-[4.2.2 Introduction [435](#introduction-7)](#introduction-7)
-
-[Web components availability
-[437](#web-components-availability)](#web-components-availability)
-
-[Current support [438](#current-support)](#current-support)
-
-[4.2.3 HTML templates [439](#html-templates)](#html-templates)
-
-[To use a template, clone its content!
-[441](#to-use-a-template-clone-its-content)](#to-use-a-template-clone-its-content)
-
-[Example [442](#example)](#example)
-
-[4.2.4 Shadow DOM [443](#shadow-dom)](#shadow-dom)
-
-[Example using the Shadow DOM: the &lt;video&gt; element
-[447](#example-using-the-shadow-dom-the-video-element)](#example-using-the-shadow-dom-the-video-element)
-
-[Another simple example
-[450](#another-simple-example)](#another-simple-example)
-
-[4.2.5 Shadow DOM: encapsulate code
-[452](#shadow-dom-encapsulate-code)](#shadow-dom-encapsulate-code)
-
-[An example that mixes templates and shadow DOM
-[452](#an-example-that-mixes-templates-and-shadow-dom)](#an-example-that-mixes-templates-and-shadow-dom)
-
-[Internal CSS does not apply outside the template/shadow DOM
-[454](#internal-css-does-not-apply-outside-the-templateshadow-dom)](#internal-css-does-not-apply-outside-the-templateshadow-dom)
-
-[4.2.6 Shadow DOM: insert content
-[456](#shadow-dom-insert-content)](#shadow-dom-insert-content)
-
-[External resources [457](#external-resources-8)](#external-resources-8)
-
-[4.2.7 HTML Custom elements
-[457](#html-custom-elements)](#html-custom-elements)
-
-[Full example [460](#full-example)](#full-example)
-
-[External resources [461](#external-resources-9)](#external-resources-9)
-
-[4.2.8 HTML Imports [461](#html-imports)](#html-imports)
-
-[<b><i> Important note </i></b>
-[461](#important-note)](#important-note)
-
-[If you want to know what HTML Imports were about...
-[463](#if-you-want-to-know-what-html-imports-were-about...)](#if-you-want-to-know-what-html-imports-were-about...)
-
-[External resource [463](#external-resource-1)](#external-resource-1)
-
-[4.2.9 Web Components as JavaScript Modules
-[463](#web-components-as-javascript-modules)](#web-components-as-javascript-modules)
-
-[Here is an example : [464](#here-is-an-example)](#here-is-an-example)
-
-[Explanations: [464](#explanations-13)](#explanations-13)
-
-[Explanations: [465](#explanations-14)](#explanations-14)
-
-[4.2.10 Discussion and projects
-[465](#discussion-and-projects-5)](#discussion-and-projects-5)
-
-[Suggested topics of discussion:
-[465](#suggested-topics-of-discussion-6)](#suggested-topics-of-discussion-6)
-
-[Optional projects: [466](#optional-projects-4)](#optional-projects-4)
-
-[4.3.1 Introduction [467](#introduction-8)](#introduction-8)
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 02. script not responding (11) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="./images/webp/image002.webp"
-   alt="ScriptNotResponding1"
-   width="45%" />
-</p>
-
-[467](#scriptnotresponding1)](#scriptnotresponding1)
-
-[An example that does not use Web Workers
-[468](#an-example-that-does-not-use-web-workers)](#an-example-that-does-not-use-web-workers)
-
-[Thread safety problems? Not with Web Workers!
-[469](#thread-safety-problems-not-with-web-workers)](#thread-safety-problems-not-with-web-workers)
-
-[Different kinds of Web Workers
-[470](#different-kinds-of-web-workers)](#different-kinds-of-web-workers)
-
-[External resources:
-[470](#external-resources-10)](#external-resources-10)
-
-[4.3.2 Use cases [471](#use-cases)](#use-cases)
-
-[Use case #1: a "parent HTML5 page" creates workers from a script
-[471](#use-case-1-a-parent-html5-page-creates-workers-from-a-script)](#use-case-1-a-parent-html5-page-creates-workers-from-a-script)
-
-[Use case #2: you manage a worker by communicating with it using
-"messages"
-[471](#use-case-2-you-manage-a-worker-by-communicating-with-it-using-messages)](#use-case-2-you-manage-a-worker-by-communicating-with-it-using-messages)
-
-[Use case #3: a complete example
-[471](#use-case-3-a-complete-example)](#use-case-3-a-complete-example)
-
-[Use case #4: handling errors
-[472](#use-case-4-handling-errors)](#use-case-4-handling-errors)
-
-[4.3.3 Examples [473](#examples-1)](#examples-1)
-
-[Example #1: compute prime numbers in the background while keeping the
-page user interface responsive
-[473](#example-1-compute-prime-numbers-in-the-background-while-keeping-the-page-user-interface-responsive)](#example-1-compute-prime-numbers-in-the-background-while-keeping-the-page-user-interface-responsive)
-
-[Explanations: [474](#explanations-15)](#explanations-15)
-
-[The code of the worker (worker.js):
-[474](#the-code-of-the-worker-worker.js)](#the-code-of-the-worker-worker.js)
-
-[Try an improved version of the first example yourself
-[475](#try-an-improved-version-of-the-first-example-yourself)](#try-an-improved-version-of-the-first-example-yourself)
-
-[HTML code: [476](#html-code-5)](#html-code-5)
-
-[Here is the worker1.js code:
-[476](#here-is-the-worker1.js-code)](#here-is-the-worker1.js-code)
-
-[Example #2: how to stop/kill a worker after a given amount of time
-[477](#example-2-how-to-stopkill-a-worker-after-a-given-amount-of-time)](#example-2-how-to-stopkill-a-worker-after-a-given-amount-of-time)
-
-[HTML code: [477](#html-code-6)](#html-code-6)
-
-[worker2.js is the same as in the last example:
-[478](#worker2.js-is-the-same-as-in-the-last-example)](#worker2.js-is-the-same-as-in-the-last-example)
-
-[To sum up, there are 3 different ways to kill a Web Worker:
-[478](#to-sum-up-there-are-3-different-ways-to-kill-a-web-worker)](#to-sum-up-there-are-3-different-ways-to-kill-a-web-worker)
-
-[A web worker can include external scripts
-[478](#a-web-worker-can-include-external-scripts)](#a-web-worker-can-include-external-scripts)
-
-[worker.js: [478](#worker.js)](#worker.js)
-
-[Limitations of Web Workers
-[478](#limitations-of-web-workers)](#limitations-of-web-workers)
-
-[Objects available in Web Workers:
-[479](#objects-available-in-web-workers)](#objects-available-in-web-workers)
-
-[Workers do NOT have access to:
-[479](#workers-do-not-have-access-to)](#workers-do-not-have-access-to)
-
-[WOW! This is a lot! So, please be careful!
-[479](#wow-this-is-a-lot-so-please-be-careful)](#wow-this-is-a-lot-so-please-be-careful)
-
-[This is well illustrated below:
-[479](#this-is-well-illustrated-below)](#this-is-well-illustrated-below)
-
-[Debugging Web Workers
-[480](#debugging-web-workers)](#debugging-web-workers)
-
-[4.3.4 Demos [481](#demos)](#demos)
-
-[Demo #1 [481](#demo-1)](#demo-1)
-
-[Demo #2 [482](#demo-2)](#demo-2)
-
-[Other demos [483](#other-demos)](#other-demos)
-
-[4.3.5 Discussion and projects
-[483](#discussion-and-projects-6)](#discussion-and-projects-6)
-
-[Suggested topics of discussion:
-[483](#suggested-topics-of-discussion-7)](#suggested-topics-of-discussion-7)
-
-[Optional projects: [483](#optional-projects-5)](#optional-projects-5)
-
-[4.4.1 The Orientation API
-[484](#the-orientation-api)](#the-orientation-api)
-
-[External resources:
-[484](#external-resources-11)](#external-resources-11)
-
-[4.4.2 The coordinate system
-[485](#the-coordinate-system)](#the-coordinate-system)
-
-[Rotate the device frame around its z axis by alpha degrees,
-with alpha in [0, 360]
-[485](#rotate-the-device-frame-around-its-z-axis-by-alpha-degrees-with-alpha-in-0-360)](#rotate-the-device-frame-around-its-z-axis-by-alpha-degrees-with-alpha-in-0-360)
-
-[Rotate the device frame around its x axis by beta degrees,
-with beta in[-180, 180]
-[487](#rotate-the-device-frame-around-its-x-axis-by-beta-degrees-with-beta-in-180-180)](#rotate-the-device-frame-around-its-x-axis-by-beta-degrees-with-beta-in-180-180)
-
-[Rotate the device frame around its y axis by gamma degrees,
-with gamma in [-90, 90]
-[489](#rotate-the-device-frame-around-its-y-axis-by-gamma-degrees-with-gamma-in--90-90)](#rotate-the-device-frame-around-its-y-axis-by-gamma-degrees-with-gamma-in--90-90)
-
-[4.4.3 Get different angles
-[491](#get-different-angles)](#get-different-angles)
-
-[Typical use using the JavaScript HTML5 orientation API
-[491](#typical-use-using-the-javascript-html5-orientation-api)](#typical-use-using-the-javascript-html5-orientation-api)
-
-[Another example that shows how to orient the HTML5 logo using the
-orientation API + CSS3 3D rotations
-[495](#another-example-that-shows-how-to-orient-the-html5-logo-using-the-orientation-api-css3-3d-rotations)](#another-example-that-shows-how-to-orient-the-html5-logo-using-the-orientation-api-css3-3d-rotations)
-
-[Code from the example:
-[496](#code-from-the-example-1)](#code-from-the-example-1)
-
-[A simple level tool using device orientation
-[497](#a-simple-level-tool-using-device-orientation)](#a-simple-level-tool-using-device-orientation)
-
-[Other interesting uses: mix orientation API and WebSockets
-[498](#other-interesting-uses-mix-orientation-api-and-websockets)](#other-interesting-uses-mix-orientation-api-and-websockets)
-
-[4.4.4 The Device Motion API
-[498](#the-device-motion-api)](#the-device-motion-api)
-
-[Basic usage [499](#basic-usage-1)](#basic-usage-1)
-
-[Basics about acceleration
-[499](#basics-about-acceleration)](#basics-about-acceleration)
-
-[Common steps [500](#common-steps)](#common-steps)
-
-[Common processing with acceleration values
-[501](#common-processing-with-acceleration-values)](#common-processing-with-acceleration-values)
-
-[Complete examples [502](#complete-examples)](#complete-examples)
-
-[Move the HTML5 logo [502](#move-the-html5-logo)](#move-the-html5-logo)
-
-[Code from this example:
-[502](#code-from-this-example)](#code-from-this-example)
-
-[Code from the example:
-[504](#code-from-the-example-2)](#code-from-the-example-2)
-
-[Move a ball on the screen
-[506](#move-a-ball-on-the-screen)](#move-a-ball-on-the-screen)
-
-[Code from this example:
-[506](#code-from-this-example-1)](#code-from-this-example-1)
-
-[External resources
-[509](#external-resources-12)](#external-resources-12)
-
-[4.4.5 Discussion and projects
-[509](#discussion-and-projects-7)](#discussion-and-projects-7)
-
-[Suggested topics of discussion:
-[509](#suggested-topics-of-discussion-8)](#suggested-topics-of-discussion-8)
-
-[Optional projects: [509](#optional-projects-6)](#optional-projects-6)
-
-[The end. [509](#the-end.)](#the-end.)
-
-</details>
-
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ end Detailed contents ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-<hr>
-
 <h3>Welcome!</h3>
 
 This course is one of the courses composing the <a href="https://www.edx.org/professional-certificate/front-end-web-developer-9">"Front-End Web
@@ -999,20 +156,23 @@ JavaScript, to create your own HTML5 app and/or game.
 <p align="center" width="100%">
 <img src="./images/webp/image003.webp?raw=true"
    width="18%"
-   alt="A man looking at his laptop screen as if he is considering which browser to use - a few browser logos float in the background." />
+   alt="A man looking at his laptop screen as if he is considering which browser to use 
+     - a few browser logos float in the background." />
 </p>
 
 Not surprisingly, it would be helpful to have a browser (short for "Web
 Browser") installed so that you can see the end result of your source
-code. Most common browsers
-are [Edge ](https://www.microsoft.com/en-us/edge)(and
-IE), [Firefox](https://www.mozilla.org/en-US/firefox/new/), [Chrome](https://www.google.com/chrome/), [Safari](http://www.apple.com/safari/),
+code. Most common browsers are 
+[Edge ](https://www.microsoft.com/en-us/edge)(and IE), 
+[Firefox](https://www.mozilla.org/en-US/firefox/new/), 
+[Chrome](https://www.google.com/chrome/), 
+[Safari](http://www.apple.com/safari/),
 etc.
 
 Look for the [history of Web
-browsers](https://en.wikipedia.org/wiki/Web_browser#History) (on
-Wikipedia). An interesting resource is the [market and platform market
-share](https://www.w3counter.com/globalstats.php) (updated regularly).
+browsers](https://en.wikipedia.org/wiki/Web_browser#History) (on Wikipedia). An 
+interesting resource is the [market and platform market share]
+(https://www.w3counter.com/globalstats.php) (updated regularly).
 
 <h4>Web editors</h4>
 
@@ -1065,15 +225,14 @@ examples will actually use these.
    alt="JS Bin logo." />
 </p>
 
-<a href="http://jsbin.com/">JS Bin</a> is an open source
-collaborative Web development debugging tool. This tool is really
-simple, just open the link to the provided examples, look at the code,
-look at the result, etc. And you can modify the examples as you like,
-you can also modify / clone / save / share them.  
+<a href="http://jsbin.com/">JS Bin</a> is an open source collaborative Web development 
+debugging tool. This tool is really simple, just open the link to the provided examples, 
+look at the code, look at the result, etc. And you can modify the examples as you like,
+you can also modify / clone / save / share them.
   
 Tutorials can be found on the Web (such as <a href="https://code.tutsplus.com/tutorials/javascript-tools-of-the-trade-jsbin--net-36843">this
-one</a>)
-or on YouTube. Keep in mind that it's always better to be logged in (it's free) if you do not want to lose your contributions/personal work.
+one</a>) or on YouTube. Keep in mind that it's always better to be logged in (it's 
+free) if you do not want to lose your contributions/personal work.
 
 <h4>CodePen</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1085,10 +244,9 @@ or on YouTube. Keep in mind that it's always better to be logged in (it's free) 
    alt="CodePen logo."
 </p>
 
-<a href="http://codepen.io/">CodePen</a> is an HTML, CSS, and
-JavaScript code editor that previews/showcases your code bits in your
-browser. It helps with cross-device testing, real-time remote pair
-programming and teaching.
+<a href="http://codepen.io/">CodePen</a> is an HTML, CSS, and JavaScript code editor 
+that previews/showcases your code bits in your browser. It helps with cross-device 
+testing, real-time remote pair programming and teaching.
 
 This is a great service to get you started quickly as it doesn't require
 you to download anything and you can access it, along with your saved
@@ -1544,7 +702,7 @@ video and try to show/hide the subtitles/captions):
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image015.webp?raw=true"
-  style="width:4.90625in;height:2.79167in"
+  style="width:480px;"
   alt="Elephants dream video." />
 </p>
 
@@ -1562,7 +720,7 @@ Here is a quick summary (as of May 2020).
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image016.webp"
-  style="width:4.90625in;height:2.79167in" 
+  style="width:480px;"
   alt="Safari Menu." />
 </p>
 
@@ -1613,7 +771,7 @@ reminder, let's look at a WebVTT file:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image017.webp"
-  style="width:2.02083in;height:4.83333in"
+  style="width:192px;"
   alt="Remote controller with subtitles button." />
 </p>
 
@@ -1685,7 +843,7 @@ associated with three different tracks.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image020.webp"
-  style="width:6.5in;height:6.36875in"
+  style="width:624px;"
   alt="A simple three track video example."  />
 </p>
 
@@ -1727,7 +885,7 @@ these tracks.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image018.webp"
-  style="width:5in;height:5.2094in"
+  style="width:480px;"
   alt="Download, Caption, Language."/>
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1735,7 +893,7 @@ these tracks.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image019.webp" 
-  style="width:5in;height:5.2094in"
+  style="width:480px;"
   alt="Safari display of elephants dream video." />
 </p>
 
@@ -1758,7 +916,7 @@ for the video.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
   <mg src="./images/webp/image022.webp"
-  style="width:4in;height:2.32697in"
+  style="width:384px;"
   alt="Screenshot of Safari menu fr choosing subtitle track." />
 </p>
 
@@ -1779,7 +937,7 @@ crossOrigin="anonymous" in your HTML document and it is going to work.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image020.webp"
-  style="width:4in;height:2.24412in"
+  style="width:384px;"
   alt="3rd time, Views and Tracks." />
 </p>
 
@@ -1823,7 +981,7 @@ video and try to show/hide the subtitles/captions):
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image021.webp"
-  style="width:4in;height:3.93208in" 
+  style="width:384px;"
   alt="Downloads, Caption, and Picture-in-Picture." />
 </p>
 
@@ -1848,7 +1006,7 @@ written in April 2015, for further details.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
   <mg src="./images/webp/image022.webp"
-  style="width:4in;height:2.32697in"
+  style="width:384px;"
   alt="Safari Menu - subtitles/captions." />
 </p>
 
@@ -2047,11 +1205,11 @@ manipulate these elements as "HTML elements" - we will call them the
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image023.webp" 
-  style="width:4in;height:2.23647in" 
+  style="width:384px;"
   alt="Elephant's dream." />
 <br />
 <img src="./images/webp/image024.webp" 
-  style="width:4in;height:2.23647in" 
+  style="width:384px;"
   alt="Track description." />
 </p>
 
@@ -2342,7 +1500,7 @@ JSBin](https://jsbin.com/bubeye/1/edit?html,console,output)
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image025.webp" 
-  style="width:5in;height:4.44178in" 
+  style="width:480px;"
   alt="Test if loaded track.  Load if not by setting mode to hidden." />
 </p>
 
@@ -2543,7 +1701,7 @@ properties and methods;
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image026.webp"
-  style="width:5in;height:2.01365in"
+  style="width:480px;"
   alt="A webVtt file extract with arrows showing id, startTime, endTime and text." />
 </p>
 
@@ -2557,7 +1715,7 @@ track](https://jsbin.com/teruhay/1/edit?html,css,js,output):
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image027.webp" 
-  style="width:4in;height:4.89057in" 
+  style="width:480px;"
   alt="Example video editor that plays content of a track." />
 </p>
 
@@ -2767,7 +1925,7 @@ for cuechange events</a>:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image028.webp?raw=true"
-  width="40%"
+  style="width:384px;"
   alt="Example that displays cue contents with cuechange even listeners." />
 </p>
 <!---- <img style="width:4in;height:4.42106in" ---->
@@ -2803,7 +1961,7 @@ shows how to use enter and exit events on cues</a>:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image029.webp?raw=true"
-   width="40%"
+  style="width:384px;"
    alt="Example that displays message in enter and exit cue listeners of the selected track." />
 </p>
 
@@ -2986,12 +2144,12 @@ corresponding location.
 We will learn how to do this using the track API.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------------- 30. debug video tracks (54) ------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 30. debug video tracks (54) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image030.webp?raw=true"
-   width="60%"
-   alt="Edx video player to debug video tracks." />
+  style="width:480px;"
+  alt="Edx video player to debug video tracks." />
 </p>
 
 Read the WebVTT file at once using the track API and make a clickable
@@ -3039,7 +2197,7 @@ JSBin](https://jsbin.com/sodihux/1/edit?html,css,js,output):
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image031.webp?raw=true"
-  width="60%"
+  style="width:480px;"
   alt="Using track api to extract content of webvtt in track element." />
 </p>
 
@@ -3335,11 +2493,11 @@ cues</u>](https://jsbin.com/vedelequso/edit?html,js,output) in the
 different tracks:
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!----------- 32. using track api to extract content of webvtt in track element (61) ------------->
+<!--~~~~~~~~~ 32. using track api to extract content of webvtt in track element (61) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image032.webp"
-  style="width:5in;height:4.47489in"
+  style="width:480px;"
   alt="Using track api to extract content of webvtt in track element." />
 </p>
 
@@ -3495,7 +2653,7 @@ events (more on that at the end of the first example) whereas disabled
 tracks do not fire events.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!---------------------------- 33. mode property and cue events (64) ----------------------------->
+<!---------------------------- 33. mode property and cue events (64) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image033.webp"
@@ -3709,11 +2867,11 @@ JSBin](https://jsbin.com/balowuq/1/edit?html,css,js,output): we added
 two buttons below the video to enable/disable subtitles/captions and let
 you choose which track you prefer. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------------- 34. choose track/language (68) --------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 34. choose track/language (68) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image034.webp"
-  style="width:6.17708in;height:5.73958in"
+  style="width:592px;"
   alt="Buttons for choosing the track/language under a standard video player." />
 </p>
 
@@ -3846,11 +3004,11 @@ you choose which track you prefer. 
 Example #4: making a simple chapter navigation menu
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!----------------------------- 35. simple chapter navigation (70) ------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 35. simple chapter navigation (70) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image035.webp"
-  style="width:4.57292in;height:2.08333in"
+  style="width:438px;"
   alt="Simple chapter navigation." />
 </p>
 
@@ -3984,11 +3142,11 @@ Simple approach: chapters as clickable text on the right of the video.
 version includes the modifications we presented earlier - nothing more.
 Notice that we kept the existing buttons to display a clickable transcript:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!----------------------------- 35. simple chapter navigation (73) ------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 35. simple chapter navigation (73) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image035.webp"
-  style="width:4.57292in;height:2.08333in"
+  style="width:438px;"
   alt="Again, Simple chapter navigation." />
 </p>
 
@@ -4000,11 +3158,11 @@ Chapter navigation, illustrated in the video player below, is fairly
 popular.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!----------------------------- 36. simple chapter navigation (73) ------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 36. simple chapter navigation (73) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image036.webp"
-  style="width:5in;height:2.28152in"
+  style="width:480px;"
   alt="Simple chapter navigation" />
 </p>
 
@@ -4087,11 +3245,11 @@ clickable text on the right of a
 video](https://jsbin.com/jiyodit/edit?html,css,js,output).
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!----------------------------- 35. simple chapter navigation (75) ------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 35. simple chapter navigation (75) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image035.webp"
-  style="width:4.57292in;height:2.08333in"
+  style="width:438px;"
   alt="Again, 3rd time, Simple chapter navigation." />
 </p>
 
@@ -4133,7 +3291,7 @@ Here are the images which correspond to the seven chapters of the video
 from the previous example:
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------- 37-43. seven thumbnail chapter images (76) --------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 37-43. seven thumbnail chapter images (76) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="left" width="80%">
 <img src="./images/webp/image037.webp" style="width:2.57292in;height:1.20833in" alt="Chapter 1 thumbnail." />
@@ -4186,11 +3344,11 @@ JSBin that uses this new .vtt
 file](https://jsbin.com/pulefe/1/edit?html,css,js,output):
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--------------------------- 44. video with nice chapter menu (77) ------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 44. video with nice chapter menu (77) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image044.webp" 
-  style="width:5in;height:5.72864in"
+  style="width:480px;"
   alt="Video with nice chapter menu that uses thumbnail images." />
 </p>
 
@@ -4414,11 +3572,11 @@ A sample menu marker is shown below (it's also animated - hover your
 mouse over the thumbnail to see its animated shadow):
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!-------------------------------- 37. again, movie title (81) ----------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 37. again, movie title (81) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image037.webp"
-  style="width:4in;height:1.8818in"
+  style="width:384px;"
   alt="Screenshot of movie title 'the orange open movie...presents'. . .." />
 </p>
 
@@ -4435,11 +3593,11 @@ code from earlier in this lesson.
 <a href="https://jsbin.com/zewemaj/edit?html,js,output">Try it at JSBin</a>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!----------------- 45. combined techniques - chapter & clickable button (82) -------------------->
+<!--~~~~~~~~~~~~~~~ 45. combined techniques - chapter & clickable button (82) ~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image045.webp" 
-  style="width:5in;height:6.18857in"
+  style="width:480px;"
   alt="Chapter menu + clickable transcript." />
 </p>
 
@@ -4471,11 +3629,11 @@ from an original demo by Sam Dutton, uses <a href="https://mainline.i3s.unice.f
 
 <h4> Below is the sound file. You can try to play it:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------- 46. click button to play animal sound (83) --------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 46. click button to play animal sound (83) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image046.webp" 
-  style="width:5in;height:4.91453in"
+  style="width:480px;"
   alt="Click a button to play an animal sound." />
 </p>
 
@@ -4708,11 +3866,11 @@ demo. You'll need a valid Google API key in order to remove these
 messages.</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!----------------- 47. video synced with google map and google street map (87) ------------------>
+<!--~~~~~~~~~~~~~~~ 47. video synced with google map and google street map (87) ~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image047.webp"
-  style="width:5in;height:4.46635in"
+  style="width:480px;"
   alt="Video synced with google map and google street map." />
 </p>
 
@@ -5051,11 +4209,11 @@ Here's a screenshot from one example we will study: an audio player with
 animated waveform and volume meters that 'dance' with the music:
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!----------------------- 49. audio player with animated wave forms (94) ------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~ 49. audio player with animated wave forms (94) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
   <img src="./images/webp/image049.webp" 
-  style="width:3in;height:1.92453in"
+  style="width:288px;"
   alt="A fancy audio player with animated wave forms." />
 </p>
 
@@ -5090,11 +4248,11 @@ JSBin</a>.</b>
 </p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------------ 50. audio player with gain (95) --------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 50. audio player with gain (95) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image050.webp" 
-  style="width:3in;height:0.73669in"
+  style="width:288px;"
   alt="Audio player with gain." />
 </p>
 
@@ -5118,11 +4276,11 @@ can install it <a href="https://chrome.google.com/webstore/detail/web-audio-ins
 </p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------------ 51. web audio inspector app (96) -------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 51. web audio inspector app (96) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image051.webp" 
-  style="width:5in;height:4.05556in"
+  style="width:480px;"
   alt="Chrome WebAudio Inspector extension." />
 </p>
 
@@ -5135,11 +4293,11 @@ audio activity can be monitored by the tool. You can click on the
 WebAudio graph nodes to see their properties' values.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!-------------------------------- 52. web audio 'editor' (96) ----------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 52. web audio 'editor' (96) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image052.webp" 
-  style="width:5in;height:2.34989in"
+  style="width:480px;"
   alt="WebAudio 'editor' tab." />
 </p>
 
@@ -5147,11 +4305,11 @@ Note that JSBin examples should be opened in standalone mode (not in
 editor mode).
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!---------------------------------- 53. standalone mode (97) ------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 53. standalone mode (97) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image053.webp" 
-  style="width:5in;height:2.40492in"
+  style="width:480px;"
   alt="How to go in JsBin standalone mode: click the black arrow on top right of the output tab." />
 </p>
 
@@ -5265,11 +4423,11 @@ debugger was still included in FireFox, you should get similar results
 with the Chrome WebAudio Inspector extension).
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--------------------------- 54. audio graph of the vocodor app (99) ---------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 54. audio graph of the vocodor app (99) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image054.webp" 
-  style="width:5in;height:6.84402in"
+  style="width:480px;"
   alt="Audio graph of the vocoder app is made of hundreds of nodes." />
 </p>
 
@@ -5514,11 +4672,11 @@ choose the type of filters and play with the different property values
 using sliders:
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------- 56. frequency responses for filters (104) ---------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 56. frequency responses for filters (104) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image056.webp" 
-  style="width:5in;height:5.08474in"
+  style="width:480px;"
   alt="Frequency responses for various filters. Screenshot of a nice application that visualizes that." />
 </p>
 
@@ -5615,11 +4773,11 @@ Try<a href="https://webaudioapi.com/samples/room-effects/"> this demo</a> to s
 the difference between different impulse files!
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!---------------------------------- 57. web audio api (106) ------------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 57. web audio api (106) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image057.webp"
-  style="width:5in;height:1.92376in"
+  style="width:480px;"
   alt="Screenshot of a webapp that enable you to switch between different impulse files." />
 </p>
 
@@ -5692,11 +4850,11 @@ discontinued FireFox WebAudio debugger, you should get similar results
 with the Chrome WebAudio Inspector extension):
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!----------------------------------- 58. audio graph (107) -------------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 58. audio graph (107) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image058.webp" 
-  style="width:5in;height:2.85737in"
+  style="width:480px;"
   alt="Audio graph." />
 </p>
 
@@ -5771,11 +4929,11 @@ discontinued FireFox WebAudio debugger, you should get similar results
 with the Chrome WebAudio Inspector extension):
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------- 59. example use of compressor node (109) ----------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 59. example use of compressor node (109) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="./images/webp/image059.webp" 
-  style="width:5in;height:3.11966in"
+<img src="./images/webp/image059.webp"
+  style="width:480px;"
   alt="Example of use of a compressor node." />
 </p>
 
@@ -5884,11 +5042,11 @@ at JSBin,](https://jsbin.com/loquwih/edit?html,css,js,output) here is a
 screenshot:
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--------------------------- 60. audio player with equalizer (111) ------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 60. audio player with equalizer (111) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
   <img src="./images/webp/image060.webp" 
-  style="width:3in;height:1.79534in"
+  style="width:288px;"
   alt="An audio player with an equalizer." />
 </p>
 
@@ -6018,11 +5176,11 @@ FireFox WebAudio debugger, you should get similar results with the
 Chrome WebAudio Inspector extension):
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--------------------------- 61. equalizer with video element (113) ----------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 61. equalizer with video element (113) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image061.webp" 
-  style="width:5in;height:3.02403in"
+  style="width:480px;"
   alt="Audio graph of the previous example." />
 </p>
 
@@ -6043,11 +5201,11 @@ moving the sliders to change the sound!
 [Example at JSBin](https://jsbin.com/kukupot/edit?html,css,js,output):
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------------ 62. video above equalizer (114) --------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 62. video above equalizer (114) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image062.webp"
-  style="width:3in;height:3.22115in"
+  style="width:288px;"
   alt="Same example as previously but with a video above the equalizer." />
 </p>
 
@@ -6154,11 +5312,11 @@ Example #1: audio player with waveform visualization
 [Example at JSBin](https://jsbin.com/sufatup/edit?html,js,output)
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--------------------- 63. audio player with waveform visualization (116) ----------------------->
+<!--~~~~~~~~~~~~~~~~~~~ 63. audio player with waveform visualization (116) ~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image063.webp" 
-  style="width:3in;height:1.53543in"
+  style="width:288px;"
   alt="Audio player with waveform visualization." />
 </p>
 
@@ -6247,11 +5405,11 @@ now discontinued FireFox WebAudio debugger, you should get similar
 results with the Chrome WebAudio Inspector extension):
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------ 64. audio graph with analyser node and properties (117) --------------------->
+<!--~~~~~~~~~~~~~~~~ 64. audio graph with analyser node and properties (117) ~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image064.webp"
-  style="width:5in;height:3.3563in"
+  style="width:480px;"
   alt="Audio graph with analyser node and properties." />
 </p>
 
@@ -6352,11 +5510,11 @@ changed "audio" to "video" in the HTML code. 
 JSBin](https://jsbin.com/fuyejuz/edit?html,js,console,output):
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!---------------- 65. video player with real time waveform visualization (119) ------------------>
+<!--~~~~~~~~~~~~~~ 65. video player with real time waveform visualization (119) ~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image065.webp" 
-  style="width:3in;height:3.26685in"
+  style="width:288px;"
   alt="A video player with real time waveform visualization." />
 </p>
 
@@ -6370,22 +5528,22 @@ you should see the waveform changing.
 [Example at JSBin](https://jsbin.com/qijujuz/edit?html,js,output)
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!----------------------- 66. Video player + equalizer + waveform (120) -------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 66. video player + equalizer + waveform (120) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image066.webp" 
-  style="width:3in;height:2.5726in"
+  style="width:288px;"
   alt="Audio player + equalizer + visualization." />
 </p>
 
 [Example at JSBin](https://jsbin.com/jafoboh/edit?js,console,output):
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!---------------- 67. video player + equalizer + waveform visualization (120) ------------------->
+<!--~~~~~~~~~~~~~~ 67. video player + equalizer + waveform visualization (120) ~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image067.webp" 
-  style="width:3in;height:4.04878in"
+  style="width:288px;"
   alt="Video player + equalizer + waveform visualization." />
 </p>
 
@@ -6405,11 +5563,11 @@ you should see the waveform changing.
   alt="Audio player with frequency visualisations with red bars." />
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!---------------------------- 69. frequency at fftsize = 64 (121) ------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 69. frequency at fftsize = 64 (121) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image069.webp" 
-  style="width:3in;height:1.57732in"
+  style="width:288px;"
   alt="Frequency viualization this time fftsize = 64." />
 </p>
 
@@ -6537,11 +5695,11 @@ different look for the visualization: please read the source code
 and try to understand how the drawing of the frequency is done.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!-------------------------- 70. audio graph colored frequency (123) ----------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 70. audio graph colored frequency (123) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image070.webp" 
-  style="width:3in;height:1.57105in"
+  style="width:288px;"
   alt="Same example as before but with symmetric and colored frequency visualizations." />
 </p>
 
@@ -6551,11 +5709,11 @@ graphic equalizer, a master volume (gain) and a stereo panner node just
 before the visualizer node:
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!---------------------------- 71. audio graph with equalizer (123) ------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 71. audio graph with equalizer (123) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image071.webp" 
-  style="width:3in;height:3.36034in"
+  style="width:288px;"
   alt="Previous example with a master volume (gain node) and the equalizer + a stereoPanner node." />
 </p>
 
@@ -6564,11 +5722,11 @@ discontinued FireFox WebAudio debugger, you should get similar results
 with the Chrome WebAudio Inspector extension):
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------- 72. audiograph description of fields (123) --------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 72. audiograph description of fields (123) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image072.webp" 
-  style="width:6.5in;height:1.06667in"
+  style="width:624px;"
   alt="Audio graph from above example." />
 </p>
 
@@ -6639,11 +5797,11 @@ Example #1: add a single volume meter to the audio player
 [Try it at JSBin](https://jsbin.com/kuciset/edit?html,css,js,output):
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------------ 73. animated volume meter (125) --------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 73. animated volume meter (125) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image073.webp" 
-  style="width:3in;height:1.77337in"
+  style="width:288px;"
   alt="Single volume meter that dances with the music." />
 </p>
 
@@ -6771,11 +5929,11 @@ analyser (<i>lines 46 and 47</i> of the example below)
 [Example at JSBin](https://jsbin.com/qezevew/edit?html,css,js,output):
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------------- 52. audio player balance (127) --------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 52. audio player balance (127) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image052.webp" 
-  style="width:3in;height:1.92453in"
+  style="width:288px;"
   alt="Example with stereo volume meters" />
 </p>
 
@@ -6784,11 +5942,11 @@ discontinued FireFox WebAudio debugger, you should get similar results
 with the Chrome WebAudio Inspector extension):
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!----------------------------- 74. flowchart with webaudio (127) -------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 74. flowchart with webaudio (127) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image074.webp" 
-  style="width:5in;height:2.02564in"
+  style="width:480px;"
   alt="Audiograph flowchart with webaudio, from previous example." />
 </p>
 
@@ -6954,11 +6112,11 @@ discontinued FireFox WebAudio debugger, you should get similar results
 with the Chrome WebAudio Inspector extension):
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!----------------------- 75. webaudio graph from firefox debugger (130) ------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~ 75. webaudio graph from firefox debugger (130) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image075.webp?raw=true"
-  width="65%"
+  style="width:384px;"
   alt="Screenshot with buttons that play sound samples many times with different pitch, volume, interval of times." />
 </p>
 <!-- style="width:4in;height:3.27308in" -->
@@ -6974,11 +6132,11 @@ note from the corresponding instrument audio sample. This is all done
 with Web Audio and samples loaded in memory:
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------------- 76. remixer workstation (131) ---------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 76. remixer workstation (131) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image076.webp" 
-  style="width:4in;height:3.87522in"
+  style="width:384px;"
   alt="The remixer DAW workstation, a typical screenshot of a DAW with tracks, mix table etc." />
 </p>
 
@@ -6991,11 +6149,11 @@ GitHub](https://github.com/squallooo/MT5). The documentation is in the
 help menu.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------------ 77. multitrack player mt5 (131) --------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 77. multitrack player mt5 (131) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image077.webp" 
-  style="width:4in;height:3.87438in"
+  style="width:384px;"
   alt="Screenshot of MT5 a multitrack player" />
 </p>
 
@@ -7008,11 +6166,11 @@ fast the sound effects are played. Click as fast as you can!
 [Try the explosion demo at JSBin](https://jsbin.com/gefezu/edit):
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!---------------------------------- 78. scatter graph (132) ------------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 78. scatter graph (132) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image078.webp" 
-  style="width:4in;height:4.26316in" 
+  style="width:384px;"
   alt="HowlerJS library creating scatter graph." />
 </p>
 
@@ -7055,11 +6213,11 @@ to the buffer property of an AudioBufferSourceNode.</b>
 JSBin](https://jsbin.com/botagas/edit?html,js,console,output):
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!----------------------------- 79. load sound sample & play (133) ------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 79. load sound sample & play (133) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image079.webp" 
-  style="width:4.4375in;height:2.07292in"
+  style="width:425px;"
   alt="Example that loads and play a unique sound." />
 </p>
 
@@ -7227,11 +6385,11 @@ have packaged the code into an object called the BufferedLoader.
 utility](https://jsbin.com/javoger/edit?html,js,console,output):
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------------- 80. bufferloader utility (136) --------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 80. bufferloader utility (136) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image080.webp" 
-  style="width:5in;height:1.37255in"
+  style="width:480px;"
   alt="Example that loads two sounds and create two buttons for playing them." />
 </p>
 
@@ -7327,11 +6485,11 @@ with the Chrome WebAudio Inspector extension).
 JSBin](https://jsbin.com/zebokeg/edit?html,js,console,output):
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!----------------------------------- 81. audio graph (138) -------------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 81. audio graph (138) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image081.webp" 
-  style="width:4in;height:2.85641in"
+  style="width:384px;"
   alt="Audio Graph used in the previous example source node -&gt; gain -&gt; compressor -&gt; destination." />
 </p>
 
@@ -7431,11 +6589,11 @@ Below, we have mixed the code from two previous examples:
 [This one at JSBin](https://jsbin.com/vejocav/edit?html,css,js,output):
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------------- 49. audio player balance (140) --------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 49. audio player balance (140) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image049.webp" 
-  style="width:2in;height:1.28302in"
+  style="width:192px;"
   alt="Audio player with volume meters and waveform." />
 </p>
 
@@ -7449,7 +6607,7 @@ get similar results with the Chrome WebAudio Inspector extension):
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image082.webp" 
-  style="width:5in;height:3.57051in"
+  style="width:480px;"
   alt="Multiple sound samples played at different intervals and rates." />
 </p>
 
@@ -7457,11 +6615,11 @@ And here is the result ([try it at
 JSBin](https://jsbin.com/coraso/edit?html,js,console,output)):
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------ 83. sound samples and 2d visualization (141) -------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 83. sound samples and 2d visualization (141) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image083.webp" 
-  style="width:5in;height:2.56836in"
+  style="width:480px;"
   alt="Sound samples and 2D visualization." />
 </p>
 
@@ -7470,11 +6628,11 @@ discontinued FireFox WebAudio debugger, you should get similar results
 with the Chrome WebAudio Inspector extension):
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!---------------------------------- 84. webaudio graph (142) ------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 84. webaudio graph (142) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="./images/webp/image084.webp" 
-  style="width:5in;height:6.6266in"
+<img src="./images/webp/image084.webp"
+  style="width:480px;"
   alt="WebAudio graph of the previous example." />
 </p>
 
@@ -7563,8 +6721,8 @@ was a game by Scott Porter, written using only standard Web technologies
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 85. donkey kong 1998 (144) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="./images/webp/image085.webp" 
-  style="width:2.17708in;height:2.83333in"
+<img src="./images/webp/image085.webp"
+  style="width:210px;"
   alt="A screenshot of a DHTML / Javascript Donkey Kong from 1998" />
 </p>
 
@@ -7592,11 +6750,11 @@ is still possible to play many games created with that library on his
 Web site.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--------------------------------- 86. mario dhtml game (145) ----------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 86. mario dhtml game (145) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image086.webp" 
-  style="width:2in;height:1.63509in"
+  style="width:192px;"
   alt="A mario DHTML game." />
 </p>
 
@@ -7611,11 +6769,11 @@ dedicated to JavaScript
 games](https://web.archive.org/web/20090519005306/http:/www.javascriptgaming.com/).
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!---------------------------------- 87. free civ game (145) ------------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 87. free civ game (145) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image087.webp" 
-  style="width:2in;height:2.48341in"
+  style="width:192px;"
   alt="Free civ game." />
 </p>
 
@@ -7634,11 +6792,11 @@ and[ Sarien.net](http://sarien.net/) by Martin Kool, an emulator of old
 Sierra games. 
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------------------ 88. html5 logo (146) -------------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 88. html5 logo (146) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image088.webp" 
-  style="width:1in;height:1.32039in"
+  style="width:96px;"
   alt="HTML5 logo." />
 </P>
 
@@ -7657,11 +6815,11 @@ Here, we present some elements that are useful in writing games.
 <h4>Drawing: the &lt;canvas&gt; element</h4>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------------ 89. the html5 canvas logo (146) --------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 89. the html5 canvas logo (146) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image089.webp" 
-  style="width:2in;height:2in"
+  style="width:192px;"
   alt="The HTML5 canvas logo." />
 </p>
 
@@ -7711,7 +6869,7 @@ performed when the canvas is not visible, thus saving CPU resources.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image090.webp" 
-  style="width:1in;height:1in"
+  style="width:96px;"
   alt="A movie film icon." />
 </p>
 
@@ -7729,11 +6887,11 @@ as "animated textures" over graphic objects.
 <h4>Audio (streamed audio and real time sound effects): the &lt;audio&gt; element and the Web Audio API</h4>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------------ 91. a picture of a speaker (148) -------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 91. a picture of a speaker (148) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
   <img src="./images/webp/image091.webp" 
-  style="width:2in;height:2.00966in"
+  style="width:192px;"
   alt="A picture of a speaker." />
 </p>
 
@@ -7760,11 +6918,11 @@ Edge supports it).
 <h4><b>Interacting</b>: dealing with keyboard and mouse events, the GamePad API</h4>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--------------------------- 92. a picture of gamepad remote (148) ------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 92. a picture of gamepad remote (148) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image092.webp" 
-  style="width:0.72917in;height:0.80208in"
+  style="width:70px;"
   alt="A picture of gamepad remote." />
 </p>
 
@@ -7792,22 +6950,22 @@ messages to a server and receiving event-driven responses without having
 to poll the server for a reply. 
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!---------------------------- 93. three clients and a server (149) ------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 93. three clients and a server (149) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image093.gif" 
-  style="width:2in;height:2.28807in"
+  style="width:192px;"
   alt="A graph showing several clients interacting with a websocket server." />
 </p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-2-3">2.2.3 The "game loop"</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--------------------------------- 94. game loop diagram (150) ---------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 94. game loop diagram (150) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image094.webp" 
-  style="width:2in;height:3.78182in"
+  style="width:192px;"
   alt="A game loop diagram." />
 </p> 
 
@@ -7847,12 +7005,12 @@ argument.
 HTML, JavaScript and output tabs to see the code.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!----------------------- 95. add an asterisk every 200 milliseconds (151) ----------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~ 95. add an asterisk every 200 milliseconds (151) ~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image095.webp"
-  style="width:6.03125in;height:2.86458in"
-  alt="Add an asterisk every 200 milliseconds" />
+  style="width:576px;"
+  alt="Add an asterisk every 200 milliseconds." />
 </p>
 
 Source code extract:
@@ -8104,11 +7262,11 @@ engine, for measuring FPS ([try it online at
 JSBin](https://jsbin.com/noqibu/edit)):
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!-------------------- 96. screenshiot of example that displays 60 fps (155) --------------------->
+<!--~~~~~~~~~~~~~~~~~~ 96. screenshiot of example that displays 60 fps (155) ~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image096.webp"
-  style="width:4in;height:1.87097in"
+  style="width:384px;"
   alt="Screenshot of the example that displays 60 frames/s." />
 </p>
 
@@ -8220,11 +7378,11 @@ Funny right? Please [try this and check the number of FPS displayed with
 this JSBin example](https://jsbin.com/notupe/edit).
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!---------------------------- 97. 4145 fps displayed canvas (157) ------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 97. 4145 fps displayed canvas (157) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image097.webp"
-  style="width:4in;height:2.26742in"
+  style="width:384px;"
   alt="Screenshot of example with 4145 FPS displayed." />
 </p>
 
@@ -8274,7 +7432,7 @@ JSBin](https://jsbin.com/ponaki/edit).
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image098.webp"
-  style="width:2.82292in;height:2.80208in"
+  style="width:270px;"
   alt="Small monster drawn in a canvas." />
 </p>
 
@@ -8449,7 +7607,7 @@ JSBin](https://jsbin.com/xuruja/edit). 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image099.webp"
-  style="width:2.82292in;height:2.80208in"
+  style="width:282px;"
   alt="Screenshot of a trembling monster in a 60 f/s animation." />
 </p>
 
@@ -8769,11 +7927,11 @@ far from finished yet):
 JSBin](https://jsbin.com/razeya/edit)
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------- 102. monstor up, right and space (168) ------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 102. monstor up, right and space (168) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image102.webp"
-  style="width:2in;height:2.0766in"
+  style="width:192px;"
   alt="Trembling monster with multiple key press management." />
 </p>
 
@@ -8909,7 +8067,7 @@ up + right should work in combination.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image103.webp"
-  style="width:4in;height:2.73282in"
+  style="width:384px;"
   alt="A schema of mouse internals." />
 </p>
 
@@ -8935,11 +8093,11 @@ Here is [an online example at JSBin](https://jsbin.com/metavu/edit) that
 covers all cases correctly.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------ 104. jsbin example mouse position + button pressed (171) -------------------->
+<!--~~~~~~~~~~~~~~~~ 104. jsbin example mouse position + button pressed (171) ~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image104.webp"
-  style="width:3in;height:1.09515in"
+  style="width:288px;"
   alt="Screenshot of a JsBin example that shows the mouse position + button pressed." />
 </p>
 
@@ -9016,7 +8174,7 @@ down) as part of the inputStates object, just as we do with the keyboard
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image105.webp"
-  style="width:2in;height:2.04192in"
+  style="width:192px;"
   alt="A rectangle that follows the mouse cursor." />
 </p>
 
@@ -9115,7 +8273,7 @@ JSBin](https://jsbin.com/rizuyah/edit):
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image106.webp"
-  width="35%"
+  style="width:192px;"
   alt="Message on mouse event listener." />
 </p>
 <!---
@@ -9364,7 +8522,7 @@ Some games, mainly arcade/action games, are designed to be used with a gamepad:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image107.webp"
-  style="width:5in;height:3.22951in"
+  style="width:480px;"
   alt="Gamepad." />
 </p>
 
@@ -9422,7 +8580,7 @@ describes the connected device.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image108.webp"
-  width="35%"
+  style="width:480px;"
   alt="Message on mouse event listener." />
 </p>
 <!---
@@ -9444,11 +8602,11 @@ their connected property set to false.
 ```
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------------- 109. disconnect game pad (180) --------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 109. disconnect game pad (180) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image109.webp"
-  width="35%"
+  style="width:376px;"
   alt="Game pad disconnected." />
 </p>
 <!---
@@ -9546,14 +8704,9 @@ properties](https://w3c.github.io/gamepad/#gamepad-interface):
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image110.webp"
-  width="35%"
+  style="width:336px;"
   alt="Standard default layout of a gamepad." />
 </p>
-<!---
-style="width:5in;height:2.60684in"
-</u>](https://courses.edx.org/assets/courseware/v1/5a634bfb4d73130fbd4edb3ec19f4d1f/asset-v1:W3Cx+HTML5.2x+2T2020a+type@asset+block/standardGPLayout.jpg)Click
-the above image to open a large view in another window/tab.
---->
 
 -   axes: an array of floating point values containing the state of each
     > axis on the device. Usually these represent the analog sticks,
@@ -9586,11 +8739,11 @@ and one.
 a look at at this demo that does the same thing but with multiple
 gamepads.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--------------------- 111. button status detected, example on jsbin (184) ---------------------->
+<!--~~~~~~~~~~~~~~~~~~~ 111. button status detected, example on jsbin (184) ~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image111.webp"
-  width="65%"
+  style="width:576px;"
   alt="Button status detected." />
 </p>
 <!-- style="width:6in;height:4.96603in" -->
@@ -9653,11 +8806,11 @@ the gamepad.buttons will return the same  states every time.
 [Example on JSBin](https://jsbin.com/yaxika/edit)
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!---------------------------------- 112. axes detection (185) ----------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 112. axes detection (185) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image112.webp"
-  width="65%"
+  style="width:480px;"
   alt="Axes detection in JSBin." />
 </p>
 <!---
@@ -9696,11 +8849,11 @@ manage this:
 [JSBin example](https://jsbin.com/vuxoqo/edit?js,output):
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------- 113. direction and angle detection with joystick (186) --------------------->
+<!--~~~~~~~~~~~~~~~~~ 113. direction and angle detection with joystick (186) ~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image113.webp"
-  width="35%"
+  style="width:384px;"
   alt="Direction and angle detection with joystick." />
 </p>
 <!-- style="width:4in;height:1.98354in" -->
@@ -10063,11 +9216,11 @@ and added one new call in the game loop for updating the gamepad status:
 [Check the result on JSBin:](https://jsbin.com/yidohe/edit)
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!---------------------------- 114. move monster with gamepad (192) ------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 114. move monster with gamepad (192) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image114.webp"
-  style="width:3.0625in;height:4.02083in"
+  style="width:294px;"
   alt="Move the monster with the gamepad, jsbin screenshot." />
 </p>
 
@@ -10129,24 +9282,27 @@ monster moves by joystick command!
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Hi! This time I will talk to you about what is called time-based animation. 
 
-Here, we have got a simple example of a bouncing rectangle and the animation 
-is done in an animationLoop that is called 60 times per seconds using the 
-requestAnimationFrame. 
-We clear the rectangle that corresponds to the canvas area, and we add a fixed increment to the x position.
+Here, we have got a simple example of a bouncing rectangle and the animation is done 
+in an animationLoop that is called 60 times per seconds using the requestAnimationFrame. 
+We clear the rectangle that corresponds to the canvas area, and we add a fixed increment 
+to the x position.
 
 If x is just bounces on the side, we just reverse the speed.
 
-The speed is a fixed value of 3px per frame. What is happening if we run
-this application on a low end-smartphone or a Raspberry Pi, a low end-computer with a not
+The speed is a fixed value of 3px per frame. What is happening if we run this 
+application on a low end-smartphone or a Raspberry Pi, a low end-computer with a not
 very powerful GPU? 
 
-We can simulate what would happen by just adding a big loop here to slow down artificially the animation.
+We can simulate what would happen by just adding a big loop here to slow down 
+artificially the animation.
 
 This is what I have done here. Here I count up to 70 millions in the loop. 
 
 This takes time and slows down the animation. 
 
-The rectangle is just moving 3px every frame, but as the the frame rate drops down a lot, the actual speed on the screen of the rectangle is much slower than what I have got here.
+The rectangle is just moving 3px every frame, but as the the frame rate drops down 
+a lot, the actual speed on the screen of the rectangle is much slower than what I 
+have got here.
 
 And here I added also a loop so this is a normal speed. 
 
@@ -10154,25 +9310,34 @@ What we can do in order not to have the speed going down?
 
 We will compute the time between two consecutive frames.
 
-So here I am using the date object from JavaScript to get the current time and I compute a delta that is a difference between the current time and the time at the previous animation. 
+So here I am using the date object from JavaScript to get the current time and I 
+compute a delta that is a difference between the current time and the time at the 
+previous animation. 
 
 So the delta is the number of milliseconds elapsed since the last animation. 
 
-And then we will compute the distance instead of using 3px per frame, the number of pixels we move the rectangle will increase if the time between frames increases. 
+And then we will compute the distance instead of using 3px per frame, the number 
+of pixels we move the rectangle will increase if the time between frames increases. 
 
-So we have got a function that is explained in the course that will compute the distance taking into account the time elapsed since the last frame and the speed we want to achieve in pixels per seconds, not in pixels per frames, but in pixels per seconds.
+So we have got a function that is explained in the course that will compute the 
+distance taking into account the time elapsed since the last frame and the speed 
+we want to achieve in pixels per seconds, not in pixels per frames, but in pixels 
+per seconds.
 
 This time, we are adding the increment but it is adjusted at each frame of animation.
 
-Here is an example that I slow down and if I change the time that this will take you can see that it goes from smooth to a bit jerky… to really jerky, but the speed on the screen is the same.
+Here is an example that I slow down and if I change the time that this will take 
+you can see that it goes from smooth to a bit jerky… to really jerky, but the 
+speed on the screen is the same.
 
 It takes the same time to bounce from on side to another.
 
 This is what is done in real games. 
 
-I wanted to show you also another thing, instead of using the date object from JavaScript that gives the time in
-milliseconds, but as we are animating at 60 times per seconds, having an high resolution timer that has a sub-millisecond accuracy is much better and was asked by game
-developers.
+I wanted to show you also another thing, instead of using the date object from 
+JavaScript that gives the time in milliseconds, but as we are animating at 60 
+times per seconds, having an high resolution timer that has a sub-millisecond 
+accuracy is much better and was asked by game developers.
 
 The callback function that is called when you use requestAnimationFrame
 can have an extra parameter that we have not used until now.
@@ -10187,11 +9352,12 @@ Here, I added this technique to the game framework.
 So, I am in the mainLoop from the last example we used with the game
 framework for moving the small monster using the keys. 
 
-I artificially slowed down the animation. So if I do this, I have got 8 frames per seconds, and you can see that the monster moves,
-but it jumps with larger steps between two consecutive frames.
+I artificially slowed down the animation. So if I do this, I have got 8 frames per 
+seconds, and you can see that the monster moves, but it jumps with larger steps 
+between two consecutive frames.
 
-If I remove this artificial part of the code that slows down the animation, I go up to 60 FPS and I have got a smooth
-animation.
+If I remove this artificial part of the code that slows down the animation, I go 
+up to 60 FPS and I have got a smooth animation.
 
 That means that this example will be usable on many different devices as
 the animation will be adapted depending on the power of the device. 
@@ -10270,7 +9436,7 @@ second = 16.66 ms.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image115.webp"
-  style="width:2.75in;height:0.8125in"
+  style="width:264px;"
   alt="Image of a small rectangle in a canvas, moving from left to right." />
 </p>
 
@@ -10417,7 +9583,7 @@ to move the shape to achieve a given speed (in pixels/s).
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image116.webp"
-  style="width:5.26042in;height:1.61458in"
+  style="width:505px;"
   alt="Bouncing square with time bases animation." />
 </p>
 
@@ -10843,7 +10009,7 @@ Here is the [online example at JSBin](https://jsbin.com/bonutur/edit).
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image117.webp"
-  style="width:4in;height:2.0047in"
+  style="width:384px;"
   alt="setFrameRateInFramesPerSecond." />
 </p>
 
@@ -11115,7 +10281,7 @@ shows 60 fps.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image118.webp"
-  style="width:3.51042in;height:3.66667in"
+  style="width:337px;"
   alt="Screenshot of the monster moving at 60 f/s." />
 </p>
 
@@ -11127,11 +10293,11 @@ However, if you move the monster using the arrow keys, its speed on the
 screen is the same, excepting that it's not as smooth as in the previous
 version, which ran at 60 fps.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!----------------------------- 119. monster moving at 37 f/s (214) ------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 119. monster moving at 37 f/s (214) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image119.webp"
-  style="width:3.48958in;height:3.58333in"
+  style="width:334px;"
   alt="Screenshot of example that runs at 37 f/s." />
 </p>
 
@@ -11283,11 +10449,11 @@ will not use time-based animation in the first examples.
 [Online example at JSBin](https://jsbin.com/fikomik/edit?js,output):
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!-------------- 120. animating multiple balls bounce off walls (217) ---------------------------->
+<!--~~~~~~~~~~~~~~~~~~ 120. animating multiple balls bounce off walls (217) ~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image120.webp"
-  style="width:3.1875in;height:3.22917in"
+  style="width:306px;"
   alt="Animating multiple balls which bounce off horizontal and vertical walls." />
 </p>
 
@@ -11579,7 +10745,7 @@ radius, etc. Also, try changing the monster's default speed. See the
 results.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--------------------------------- 121. monster + balls (222) ----------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 121. monster + balls (222) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image121.webp"
@@ -11684,7 +10850,7 @@ sketches of more complex algorithms.
 <h4>Circle collision test</h4>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--------------- 122. two circles with distance between the centers drawn (224) ----------------->
+<!--~~~~~~~~~~~~~ 122. two circles with distance between the centers drawn (224) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image122.webp"
@@ -18130,9 +17296,9 @@ CustomerDB database used in all examples of this course section by
 opening one of the JsBin examples , then opening the devtool console,
 then executing indexedDB.deleteDatabase("CustomerDB"); in the console:
 
-<!------------------------------------------------------------------------------------------------>
-<!-------------------- 195-199. steps to delete an indexed record (357-358) ---------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ 195-199. steps to delete an indexed record (357-358) ~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image195.webp"
   style="width:6.5in;height:4.48889in"
@@ -18156,9 +17322,9 @@ then executing indexedDB.deleteDatabase("CustomerDB"); in the console:
   alt="Final result: the objectStore has been deleted." />
 </p>
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-6-6">3.6.6 Working with data</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Explicit use of a transaction is necessary:
 
@@ -18193,9 +17359,9 @@ In the following pages, we will explain how to insert, search, remove,
 and update data. A final example that merges all examples together will
 also be shown at the end of this section.
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-6-7">3.6.7 Inserting data</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Here this is what we did during the creation of the database.
 
