@@ -147,18 +147,18 @@ have fun!</p>
 <ul>
   <li>Play with audio and video in “<b>Module 1</b>: Advanced HTML5 multimedia”.</li>
   <li>Start programming an HTML5-based game of your own in <b>Module 2</b>! Learn 
-  the core techniques for writing 2D video games that run at 60 frames/s. Discover 
-  basic game development concepts, set up a single game framework, understand 
-  time-based animation, animate multiple objects, use sprite sheets, detect 
-  collisions, deal with gamepad events, and many more.</li>
+    the core techniques for writing 2D video games that run at 60 frames/s. Discover 
+	basic game development concepts, set up a single game framework, understand 
+    time-based animation, animate multiple objects, use sprite sheets, detect 
+    collisions, deal with gamepad events, and many more.</li>
   <li><b>Module 3</b> is about drag and drop, upload/download files with 
-  Ajax/XHR2 and IndexedDB. The Indexed Database API is a recommended standard 
-  interface for a local database of records holding simple values and hierarchical 
-  objects. Note that IndexedDB is also useful for storing your HTML5 game scores!</li>
+    Ajax/XHR2 and IndexedDB. The Indexed Database API is a recommended standard 
+	interface for a local database of records holding simple values and hierarchical 
+	objects. Note that IndexedDB is also useful for storing your HTML5 game scores!</li>
   <li>This is the last set of lectures! <b>Module 4</b> gives a lot of space to Web 
-  components as they help build Web pages using ready to use standardized building 
-  blocks. Web components comprise Custom Elements, Shadow DOM and HTML Imports and 
-  Templates.</li>
+    components as they help build Web pages using ready to use standardized building 
+	blocks. Web components comprise Custom Elements, Shadow DOM and HTML Imports and 
+	Templates.</li>
   <li>These specifications are under continuous development at W3C.</li>
 </ul>
 
@@ -168,7 +168,7 @@ other activities; and Web Workers which introduce the power of parallel
 processing to Web apps.</p>
 <p>This HTML5 Apps and Games course is part of
 the <a href="https://www.edx.org/professional-certificate/w3cx-front-end-web-developer">Front-End
-Web Developer” (FEWD) Professional Certificate</a> program. To get this
+19Web Developer” (FEWD) Professional Certificate</a> program. To get this
 FEWD certificate, you will need to successfully pass all 5 courses that
 compose that program. Find out more on <a href="https://w3cx.org/">w3cx.org</a>!</p>
 <p>If you already have a verified certificate in one or more of these courses, you 
@@ -178,739 +178,14 @@ compose that program. Find out more on <a href="https://w3cx.org/">w3cx.org</a>
 
 <ul>
   <li>If you are new to the edX platform, we encourage you to (<b><a
-  href="https://www.edx.org/course/demox">check out DemoX</a></b>], a quick 
-  walk-through of an edX experience. It will help answer basic “how to’s” on taking 
-  an edX course.</li>
+    href="https://www.edx.org/course/demox">check out DemoX</a></b>], a quick 
+	walk-through of an edX experience. It will help answer basic “how to’s” on taking 
+	an edX course.</li>
   <li>As an alternative, do not hesitate to browse the <b><a
-  href="https://support.edx.org/hc/en-us/categories/115002269607-Courses">courses’ 
-  FAQs in edX Help Center</a></b>.</li>
+    href="https://support.edx.org/hc/en-us/categories/115002269607-Courses">courses’ 
+	FAQs in edX Help Center</a></b>.</li>
 </ul>
 
-<h2>Contents</h2>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<details>
-  <summary>CONTENT Here!</summary>
-  
-<p><a href="#module-1-1">Advanced HTML5 Multimedia
-[26](#module-1-1)</a></p>
-<p><a href="#intro-to-the-timed-text-track-api">1.2.1 The Timed Text Track API [26](#intro-to-the-timed-text-track-api)</a></p>
-<p><a href="#the-timed-text-track-javascript-api">The Timed Text Track
-JavaScript API [31](#the-timed-text-track-javascript-api)</a></p>
-<p><a href="#the-html-track-element-getting-the-status-of-a-track">1.2.2
-The HTML Track Element, getting the status of a track
-[34](#the-html-track-element-getting-the-status-of-a-track)</a></p>
-<p><a href="#the-html-track-element">The HTML track element
-[35](#the-html-track-element)</a></p>
-<p><a href="#lets-go-back-to-our-example.-below-is-the-html-code">Let’s
-go back to our example. Below is the HTML code:
-[35](#lets-go-back-to-our-example.-below-is-the-html-code)</a></p>
-<p><a href="#getting-the-status-of-an-html-track">Getting the status of
-an HTML track [35](#getting-the-status-of-an-html-track)</a></p>
-<p><a href="#_Toc98696550">Example at JSBin that displays the different
-elements we can get from an HTML track: [35](#_Toc98696550)</a></p>
-<p><a href="#here-is-the-javascript-source-code">Here is the JavaScript
-source code: [36](#here-is-the-javascript-source-code)</a></p>
-<p><a href="#the-code-is-rather-straightforward">The code is rather
-straightforward: [37](#the-code-is-rather-straightforward)</a></p>
-<p><a
-href="#possible-values-for-the-readystate-attribute-of-html-tracks">Possible
-values for the readyState attribute of HTML tracks:
-[37](#possible-values-for-the-readystate-attribute-of-html-tracks)</a></p>
-<p><a href="#the-texttrack-object">1.2.3 The TextTrack Object
-[38](#the-texttrack-object)</a></p>
-<p><a href="#example-source-code">Example source code:
-[40](#example-source-code)</a></p>
-<p><a href="#working-with-cues">1.2.4 Working With Cues
-[44](#working-with-cues)</a></p>
-<p><a href="#listening-to-events">1.2.5 Listening to Events
-[47](#listening-to-events)</a></p>
-<p><a href="#example-of-cuechange-listener-on-texttrack">Example
-of cuechange listener on TextTrack
-[48](#example-of-cuechange-listener-on-texttrack)</a></p>
-<p><a href="#source-code-extract">Source code extract:
-[50](#source-code-extract)</a></p>
-<p><a href="#source-code-extract-1">Source code extract:
-[51](#source-code-extract-1)</a></p>
-<p><a href="#advanced-features-for-audio-and-video-players">1.3 Advanced
-Features for &lt;audio&gt; and &lt;video&gt; Players
-[52](#advanced-features-for-audio-and-video-players)</a></p>
-<p><a href="#with-a-clickable-transcript-on-the-side">1.3.1 With a
-Clickable Transcript on the Side
-[52](#with-a-clickable-transcript-on-the-side)</a></p>
-<p><a href="#captions-descriptions-chapters-and-metadata">1.3.2
-Captions, Descriptions, Chapters and Metadata
-[66](#captions-descriptions-chapters-and-metadata)</a></p>
-<p><a href="#extract-from-html-code">Extract from HTML code:
-[67](#extract-from-html-code)</a></p>
-<p><a href="#javascript-code">JavaScript code:
-[69](#javascript-code)</a></p>
-<p><a href="#with-a-simple-chapter-navigation-menu">1.3.4 With a Simple
-Chapter Navigation Menu
-[73](#with-a-simple-chapter-navigation-menu)</a></p>
-<p><a href="#html-code-1">HTML code: [80](#html-code-1)</a></p>
-<p><a href="#update-the-document-in-sync-with-a-media-playing">1.4.2
-Update the Document in Sync with a Media Playing
-[91](#update-the-document-in-sync-with-a-media-playing)</a></p>
-<p><a href="#introduction-1">1.5.1 Introduction
-[97](#introduction-1)</a></p>
-<p><a href="#working-with-streamed-content">1.5.2 Working with Streamed
-Content [106](#working-with-streamed-content)</a></p>
-<p><a href="#most-useful-filter-nodes">1.5.3 Most Useful Filter Nodes
-[108](#most-useful-filter-nodes)</a></p>
-<p><a href="#writing-an-equalizer">1.5.4 Writing an Equalizer
-[118](#writing-an-equalizer)</a></p>
-<p><a href="#waveforms">1.5.5 Waveforms [121](#waveforms)</a></p>
-<p><a href="#load-and-play-sound-samples">1.5.9 Load and play sound
-samples [140](#load-and-play-sound-samples)</a></p>
-<p><a href="#sound-samples-and-effects">1.5.10 Sound samples and effects
-[148](#sound-samples-and-effects)</a></p>
-<p><a href="#useful-third-party-libraries">1.5.11 Useful third party
-libraries [150](#useful-third-party-libraries)</a></p>
-<p><a href="#module-2">2. Game Programming with HTML5
-[151](#module-2)</a></p>
-<p><a href="#history-of-javascript-games">2.2.1 History of JavaScript
-games [152](#history-of-javascript-games)</a></p>
-<p><a href="#elements-and-apis-useful-for-writing-games">2.2.2 Elements
-and APIs useful for writing games
-[154](#elements-and-apis-useful-for-writing-games)</a></p>
-<p><a
-href="#interacting-dealing-with-keyboard-and-mouse-events-the-gamepad-api">Interacting:
-dealing with keyboard and mouse events, the GamePad API
-[156](#interacting-dealing-with-keyboard-and-mouse-events-the-gamepad-api)</a></p>
-<p><a href="#the-game-loop">2.2.3 The “game loop”
-[158](#the-game-loop)</a></p>
-<p><a href="#a-game-framework-skeleton">2.3.1 A game framework skeleton
-[162](#a-game-framework-skeleton)</a></p>
-<p><a href="#introducing-graphics">2.3.2 Introducing graphics
-[166](#introducing-graphics)</a></p>
-<p><a href="#html5-canvas-basic-usage-drawing-a-monster">HTML5 canvas
-basic usage: drawing a monster
-[167](#html5-canvas-basic-usage-drawing-a-monster)</a></p>
-<p><a href="#user-interaction-and-event-handling">2.3.3 User interaction
-and event handling [173](#user-interaction-and-event-handling)</a></p>
-<p><a href="#adding-key-listeners">2.3.4 Adding key listeners
-[175](#adding-key-listeners)</a></p>
-<p><a href="#adding-mouse-listeners">2.3.5 Adding mouse listeners
-[181](#adding-mouse-listeners)</a></p>
-<p><a href="#gamepad-events">2.3.6 Gamepad events
-[190](#gamepad-events)</a></p>
-<p><a href="#detecting-gamepads">Detecting gamepads
-[193](#detecting-gamepads)</a></p>
-<p><a href="#external-resources-2">External resources
-[204](#external-resources-2)</a></p>
-<p><a href="#move-the-monster">2.3.7 Move the monster!
-[204](#move-the-monster)</a></p>
-<p><a href="#introduction-2">2.4.1 Introduction
-[212](#introduction-2)</a></p>
-<p><a href="#how-to-measure-time-when-we-use-requestanimationframe">How
-to measure time when we use requestAnimationFrame?
-[214](#how-to-measure-time-when-we-use-requestanimationframe)</a></p>
-<p><a href="#example-1-no-use-of-time-based-animation">Example #1: no
-use of time-based animation
-[215](#example-1-no-use-of-time-based-animation)</a></p>
-<p><a href="#example-2-simulating-a-low-end-device">Example #2:
-simulating a low-end device
-[217](#example-2-simulating-a-low-end-device)</a></p>
-<p><a href="#measuring-time-between-frames">2.4.2 Measuring time between
-frames [218](#measuring-time-between-frames)</a></p>
-<p><a href="#method-1-using-the-javascript-date-object">Method #1: using
-the JavaScript Date object
-[218](#method-1-using-the-javascript-date-object)</a></p>
-<p><a href="#method-2-using-the-new-html5-high-resolution-timer">Method
-#2: using the new HTML5 high-resolution timer
-[223](#method-2-using-the-new-html5-high-resolution-timer)</a></p>
-<p><a
-href="#method-3-using-the-optional-timestamp-parameter-of-the-callback-function-of-requestanimationframe">Method
-#3: using the optional timestamp parameter of the callback function
-of requestAnimationFrame
-[225](#method-3-using-the-optional-timestamp-parameter-of-the-callback-function-of-requestanimationframe)</a></p>
-<p><a href="#setting-the-frame-rate">2.4.3 Setting the frame rate
-[228](#setting-the-frame-rate)</a></p>
-<p><a href="#same-technique-with-the-bouncing-rectangle">Same technique
-with the bouncing rectangle
-[230](#same-technique-with-the-bouncing-rectangle)</a></p>
-<p><a href="#can-we-use-setinterval">Can we use setInterval?
-[233](#can-we-use-setinterval)</a></p>
-<p><a href="#adding-time-based-animation">2.4.4 Adding time-based
-animation [234](#adding-time-based-animation)</a></p>
-<p><a href="#animating-multiple-objects">2.5.1 Animating multiple
-objects [237](#animating-multiple-objects)</a></p>
-<p><a
-href="#animating-multiple-balls-which-bounce-off-horizontal-and-vertical-walls">Animating
-multiple balls which bounce off horizontal and vertical walls
-[239](#animating-multiple-balls-which-bounce-off-horizontal-and-vertical-walls)</a></p>
-<p><a
-href="#similar-example-but-with-the-ball-direction-as-an-angle-and-a-single-velocity-variable">Similar
-example but with the ball direction as an angle, and a single velocity
-variable
-[243](#similar-example-but-with-the-ball-direction-as-an-angle-and-a-single-velocity-variable)</a></p>
-<p><a href="#adding-balls-to-the-game-framework">2.5.2 Adding balls to
-the game framework [245](#adding-balls-to-the-game-framework)</a></p>
-<p><a href="#collision-detection">2.5.3 Collision detection
-[248](#collision-detection)</a></p>
-<p><a href="#circle-collision-test">Circle collision test
-[248](#circle-collision-test)</a></p>
-<p><a href="#which-yields">Which yields: [249](#which-yields)</a></p>
-<p><a href="#lets-test-this-idea">Let’s test this idea
-[249](#lets-test-this-idea)</a></p>
-<p><a href="#the-collision-test-occurs-in-the-main-loop">The collision
-test occurs in the main loop:
-[250](#the-collision-test-occurs-in-the-main-loop)</a></p>
-<p><a
-href="#advanced-technique-use-several-bounding-circles-for-complex-shapes-recompute-bounding-circles-when-the-shape-changes-over-time-animated-objects">[Advanced
-technique] Use several bounding circles for complex shapes, recompute
-bounding circles when the shape changes over time (animated objects)
-[251](#advanced-technique-use-several-bounding-circles-for-complex-shapes-recompute-bounding-circles-when-the-shape-changes-over-time-animated-objects)</a></p>
-<p><a
-href="#rectangle-aligned-along-x-and-y-axis-detection-test">Rectangle
-(aligned along X and Y axis) detection test
-[253](#rectangle-aligned-along-x-and-y-axis-detection-test)</a></p>
-<p><a href="#from-this">From this: [253](#from-this)</a></p>
-<p><a href="#_Toc98696616">Try this online demonstration of rectangle -
-rectangle detection [253](#_Toc98696616)</a></p>
-<p><a href="#many-real-games-use-aligned-rectangle-collision-tests">Many
-real games use aligned rectangle collision tests
-[257](#many-real-games-use-aligned-rectangle-collision-tests)</a></p>
-<p><a href="#other-collision-tests">Other collision tests
-[259](#other-collision-tests)</a></p>
-<p><a href="#to-go-further...-video-game-physics">To go further… video
-game physics! [261](#to-go-further…-video-game-physics)</a></p>
-<p><a href="#adding-collision-detection-to-the-game-framework">2.5.4
-Adding collision detection to the game framework
-[261](#adding-collision-detection-to-the-game-framework)</a></p>
-<p><a href="#introduction-3">2.6.1 Introduction
-[263](#introduction-3)</a></p>
-<p><a href="#different-sorts-of-sprite-sheets">2.6.2 Different sorts of
-sprite sheets [264](#different-sorts-of-sprite-sheets)</a></p>
-<p><a href="#multiple-postures-on-a-single-sprite-sheet">Multiple
-postures on a single sprite sheet
-[264](#multiple-postures-on-a-single-sprite-sheet)</a></p>
-<p><a href="#one-posture-per-sprite-sheet">One posture per sprite sheet
-[265](#one-posture-per-sprite-sheet)</a></p>
-<p><a href="#hybrid-sprite-sheets">Hybrid sprite sheets
-[266](#hybrid-sprite-sheets)</a></p>
-<p><a href="#sprite-extraction-and-animation">2.6.3 Sprite extraction
-and animation [267](#sprite-extraction-and-animation)</a></p>
-<p><a href="#principle">Principle [267](#principle)</a></p>
-<p><a href="#example-1">Example #1 [267](#example-1)</a></p>
-<p><a href="#_Toc98696629">Try it at JSBin: [268](#_Toc98696629)</a></p>
-<p><a href="#html-code-4">HTML code: [268](#html-code-4)</a></p>
-<p><a href="#explanations-8">Explanations:
-[272](#explanations-8)</a></p>
-<p><a href="#example-2">Example #2 [272](#example-2)</a></p>
-<p><a href="#a-small-sprite-animation-framework">2.6.4 A small sprite
-animation framework [273](#a-small-sprite-animation-framework)</a></p>
-<p><a
-href="#the-spriteimage-object-and-sprite-models">The SpriteImage object
-and sprite models
-[275](#the-spriteimage-object-and-sprite-models)</a></p>
-<p><a href="#same-example-but-with-the-walking-woman-sprite-sheet">Same
-example but with the walking woman sprite sheet
-[277](#same-example-but-with-the-walking-woman-sprite-sheet)</a></p>
-<p><a href="#moving-the-sprites-stopping-the-sprites">Moving the
-sprites, stopping the sprites
-[278](#moving-the-sprites-stopping-the-sprites)</a></p>
-<p><a href="#external-resource">External resource
-[278](#external-resource)</a></p>
-<p><a href="#adding-sprites-to-the-game-framework">2.6.5 Adding sprites
-to the game framework
-[278](#adding-sprites-to-the-game-framework)</a></p>
-<p><a href="#how-to-add-sprites-to-the-game-framework...">How to add
-sprites to the game framework…
-[279](#how-to-add-sprites-to-the-game-framework…)</a></p>
-<p><a href="#menus-high-score-tables-etc.">2.7.1 Menus, high score
-tables, etc. [283](#menus-high-score-tables-etc.)</a></p>
-<p><a href="#game-statesmenus-high-score-tables-etc.">Game states:menus,
-high score tables, etc.
-[286](#game-statesmenus-high-score-tables-etc.)</a></p>
-<p><a href="#splitting-the-game-into-several-js-files">2.7.2 Splitting
-the game into several JS files
-[290](#splitting-the-game-into-several-js-files)</a></p>
-<p><a href="#start-with-a-simple-structure">Start with a simple
-structure [291](#start-with-a-simple-structure)</a></p>
-<p><a href="#isolate-the-ball-function-constructor">Isolate the ball
-function constructor
-[292](#isolate-the-ball-function-constructor)</a></p>
-<p><a
-href="#isolate-the-time-based-animation-functions-into-a-separate-file">Isolate
-the time based animation functions into a separate file
-[293](#isolate-the-time-based-animation-functions-into-a-separate-file)</a></p>
-<p><a
-href="#isolate-the-part-that-counts-the-number-of-frames-per-second">Isolate
-the part that counts the number of frames per second
-[295](#isolate-the-part-that-counts-the-number-of-frames-per-second)</a></p>
-<p><a href="#lets-continue-and-isolate-the-event-listeners">Let’s
-continue and isolate the event listeners
-[296](#lets-continue-and-isolate-the-event-listeners)</a></p>
-<p><a href="#isolate-the-collision-tests">Isolate the collision tests
-[297](#isolate-the-collision-tests)</a></p>
-<p><a href="#final-downloadable-version-and-conclusion">Final
-downloadable version and conclusion
-[297](#final-downloadable-version-and-conclusion)</a></p>
-<p><a href="#discussion-and-projects">2.7.3 Discussion and projects
-[299](#discussion-and-projects)</a></p>
-<p><a href="#suggested-topics-of-discussion">Suggested topics of
-discussion: [299](#suggested-topics-of-discussion)</a></p>
-<p><a href="#optional-projects-create-your-own-game">Optional projects:
-create your own game!
-[299](#optional-projects-create-your-own-game)</a></p>
-<p><a href="#module-3.-html5-file-upload-and-download">3 File Upload and
-Download [301](#module-3.-html5-file-upload-and-download)</a></p>
-<p><a href="#ajax-and-xhr2">3.2.1 Ajax and XHR2
-[302](#ajax-and-xhr2)</a></p>
-<p><a href="#ajaxxhr2-and-binary-files">3.2.2 Ajax/XHR2 and binary files
-[303](#ajaxxhr2-and-binary-files)</a></p>
-<p><a
-href="#ajax-and-binary-files--downloading-files-and-monitoring-progress">Ajax
-and binary files - downloading files and monitoring progress
-[304](#ajax-and-binary-files—downloading-files-and-monitoring-progress)</a></p>
-<p><a
-href="#monitoring-uploads-or-downloads-using-a-progress-event">Monitoring
-uploads or downloads using a progress event
-[308](#monitoring-uploads-or-downloads-using-a-progress-event)</a></p>
-<p><a
-href="#complete-example-monitoring-the-download-of-a-song-file">Complete
-example: monitoring the download of a song file
-[310](#complete-example-monitoring-the-download-of-a-song-file)</a></p>
-<p><a href="#uploading-files-and-monitoring-progress">3.2.3 Uploading
-files and monitoring progress
-[311](#uploading-files-and-monitoring-progress)</a></p>
-<p><a href="#monitor-the-upload-progress">Monitor the upload progress
-[313](#monitor-the-upload-progress)</a></p>
-<p><a href="#discussion-and-projects-1">3.2.4 Discussion and projects
-[315](#discussion-and-projects-1)</a></p>
-<p><a href="#suggested-topics-of-discussion-1">Suggested topics of
-discussion: [315](#suggested-topics-of-discussion-1)</a></p>
-<p><a href="#optional-projects">Optional projects:
-[315](#optional-projects)</a></p>
-<p><a href="#introduction-4">3.3.1 Introduction
-[315](#introduction-4)</a></p>
-<p><a href="#external-resources-3">External resources
-[315](#external-resources-3)</a></p>
-<p><a href="#drag-detection">3.3.2 Drag detection
-[316](#drag-detection)</a></p>
-<p><a href="#drop-detection">3.3.3 Drop detection
-[319](#drop-detection)</a></p>
-<p><a href="#complete-example">Complete example
-[320](#complete-example)</a></p>
-<p><a href="#a-few-words-about-data--attributes">3.3.4 A few words about
-data-* attributes [323](#a-few-words-about-data–attributes)</a></p>
-<p><a href="#javascript-api-the-dataset-property">JavaScript API:
-the dataset property [323](#javascript-api-the-dataset-property)</a></p>
-<p><a
-href="#using-css-pseudo-elements-before-and-after-with-the-attr-function-to-display-the-value-of-data--attributes">Using
-CSS pseudo elements ::before and ::after with the attr() function to
-display the value of data-* attributes
-[325](#using-css-pseudo-elements-before-and-after-with-the-attr-function-to-display-the-value-of-data–attributes)</a></p>
-<p><a href="#add-visual-feedback">3.3.5 Add visual feedback
-[326](#add-visual-feedback)</a></p>
-<p><a
-href="#add-visual-feedback-when-you-drag-something-when-the-mouse-enters-a-drop-zone-etc.">Add
-visual feedback when you drag something, when the mouse enters a drop
-zone, etc.
-[327](#add-visual-feedback-when-you-drag-something-when-the-mouse-enters-a-drop-zone-etc.)</a></p>
-<p><a href="#the-dropeffect-property">3.3.6 The dropEffect property
-[333](#the-dropeffect-property)</a></p>
-<p><a
-href="#more-feedback-using-the-dropeffect-property-changing-the-cursors-shape">More
-feedback using the dropEffect property: changing the cursor’s shape
-[333](#more-feedback-using-the-dropeffect-property-changing-the-cursors-shape)</a></p>
-<p><a href="#complete-online-example">Complete online example
-[335](#complete-online-example)</a></p>
-<p><a href="#drag-and-drop-html-elements">3.3.7 Drag and drop HTML
-elements [336](#drag-and-drop-html-elements)</a></p>
-<p><a
-href="#drag-and-drop-images-or-any-html-element-within-a-document">Drag
-and drop images or any HTML element within a document
-[336](#drag-and-drop-images-or-any-html-element-within-a-document)</a></p>
-<p><a href="#drag-and-drop-a-text-selection">3.3.8 Drag and drop a text
-selection [338](#drag-and-drop-a-text-selection)</a></p>
-<p><a href="#discussion-and-projects-2">3.3.9 Discussion and projects
-[340](#discussion-and-projects-2)</a></p>
-<p><a href="#suggested-topics-of-discussion-2">Suggested topics of
-discussion: [340](#suggested-topics-of-discussion-2)</a></p>
-<p><a href="#optional-projects-1">Optional projects:
-[340](#optional-projects-1)</a></p>
-<p><a href="#introduction-5">3.4.1 Introduction
-[341](#introduction-5)</a></p>
-<p><a
-href="#drag-and-drop-files-from-the-desktop-to-the-browser-the-files-property-of-the-clipboard">Drag
-and drop files from the desktop to the browser: the files property of
-the clipboard
-[341](#drag-and-drop-files-from-the-desktop-to-the-browser-the-files-property-of-the-clipboard)</a></p>
-<p><a href="#prevent-the-browsers-default-behavior">Prevent the
-browser’s default behavior
-[342](#prevent-the-browsers-default-behavior)</a></p>
-<p><a href="#external-resources-4">External resources
-[344](#external-resources-4)</a></p>
-<p><a href="#drag-and-drop-files-in-a-drop-zone">3.4.2 Drag and drop
-files in a drop zone [344](#drag-and-drop-files-in-a-drop-zone)</a></p>
-<p><a
-href="#example-drag-and-drop-files-to-a-drop-zone-display-file-details-in-a-list">Example:
-drag and drop files to a drop zone, display file details in a list
-[345](#example-drag-and-drop-files-to-a-drop-zone-display-file-details-in-a-list)</a></p>
-<p><a href="#images-with-thumbnails">3.4.3 Images with thumbnails
-[349](#images-with-thumbnails)</a></p>
-<p><a href="#mixing-drag-and-drop-and-input-typefile">3.4.4 Mixing drag
-and drop and input type=file
-[355](#mixing-drag-and-drop-and-input-typefile)</a></p>
-<p><a href="#complete-interactive-example-with-source-code">Complete
-interactive example with source code
-[357](#complete-interactive-example-with-source-code)</a></p>
-<p><a href="#files-upload-using-ajaxxhr2">3.4.5 Files upload using
-Ajax/XHR2 [362](#files-upload-using-ajaxxhr2)</a></p>
-<p><a href="#discussion-and-projects-3">3.4.6 Discussion and projects
-[365](#discussion-and-projects-3)</a></p>
-<p><a href="#suggested-topics-of-discussion-3">Suggested topics of
-discussion: [365](#suggested-topics-of-discussion-3)</a></p>
-<p><a href="#optional-projects-2">Optional projects:
-[365](#optional-projects-2)</a></p>
-<p><a href="#introduction-6">3.5.1 Introduction
-[366](#introduction-6)</a></p>
-<p><a href="#the-problem">The problem [366](#the-problem)</a></p>
-<p><a
-href="#serial-approach-upload-the-files-as-soon-as-they-are-selected-or-dragged-and-dropped">Serial
-approach: upload the files as soon as they are selected or dragged and
-dropped
-[366](#serial-approach-upload-the-files-as-soon-as-they-are-selected-or-dragged-and-dropped)</a></p>
-<p><a
-href="#packaged-approach-send-all-form-content-including-files-only-when-the-form-is-submitted">Packaged
-approach: send all form content, including files, only when the form is
-submitted
-[367](#packaged-approach-send-all-form-content-including-files-only-when-the-form-is-submitted)</a></p>
-<p><a href="#installation-guide">3.5.2 Installation guide
-[368](#installation-guide)</a></p>
-<p><a href="#serial-approach">3.5.3 Serial approach
-[369](#serial-approach)</a></p>
-<p><a
-href="#example-1-auto-loading-of-the-files-regular-form-submission-benefits-of-the-html5-form-validation-system">Example
-#1: auto-loading of the files, regular form submission, benefits of the
-HTML5 form validation system
-[369](#example-1-auto-loading-of-the-files-regular-form-submission-benefits-of-the-html5-form-validation-system)</a></p>
-<p><a
-href="#example-2-similar-example-but-using-drag-and-drop-instead-of-a-file-selector">Example
-#2: similar example but using drag and drop instead of a file selector
-[370](#example-2-similar-example-but-using-drag-and-drop-instead-of-a-file-selector)</a></p>
-<p><a
-href="#and-here-is-the-php-code-for-the-server-side-part-of-examples-1-and-2">And
-here is the PHP code for the server-side part of examples #1 and #2
-[371](#and-here-is-the-php-code-for-the-server-side-part-of-examples-1-and-2)</a></p>
-<p><a href="#package-approach">3.5.4 Package approach
-[372](#package-approach)</a></p>
-<p><a
-href="#example-3-uploading-everything-at-once-using-a-file-selector">Example
-#3: uploading everything at once using a file selector
-[372](#example-3-uploading-everything-at-once-using-a-file-selector)</a></p>
-<p><a href="#example-4-uploading-using-drag-and-drop">Example #4:
-uploading using drag and drop
-[373](#example-4-uploading-using-drag-and-drop)</a></p>
-<p><a
-href="#php-code-for-the-single-packaged-examples-with-and-without-drag-and-drop-the-php-is-the-same">PHP
-code for the single-packaged examples (with and without drag and drop,
-the PHP is the same)
-[374](#php-code-for-the-single-packaged-examples-with-and-without-drag-and-drop-the-php-is-the-same)</a></p>
-<p><a href="#discussion">3.5.5 Discussion [375](#discussion)</a></p>
-<p><a href="#suggested-topics-of-discussion-4">Suggested topics of
-discussion: [375](#suggested-topics-of-discussion-4)</a></p>
-<p><a href="#concepts-part-1">3.6.1 Concepts (part 1)
-[375](#concepts-part-1)</a></p>
-<p><a href="#external-resources-5">External resources
-[379](#external-resources-5)</a></p>
-<p><a href="#concepts-part-2">3.6.2 Concepts (part 2)
-[380](#concepts-part-2)</a></p>
-<p><a href="#detailed-overview">Detailed overview
-[381](#detailed-overview)</a></p>
-<p><a href="#example-of-a-transaction">Example of a transaction:
-[382](#example-of-a-transaction)</a></p>
-<p><a href="#definitions">3.6.3 Definitions [384](#definitions)</a></p>
-<p><a href="#database">Database [385](#database)</a></p>
-<p><a href="#object-store">Object store [385](#object-store)</a></p>
-<p><a href="#version">Version [386](#version)</a></p>
-<p><a href="#transaction">Transaction [387](#transaction)</a></p>
-<p><a href="#request">Request [388](#request)</a></p>
-<p><a href="#index">Index [388](#index)</a></p>
-<p><a href="#key-and-values">Key and values
-[389](#key-and-values)</a></p>
-<p><a href="#range-and-scope">Range and scope
-[390](#range-and-scope)</a></p>
-<p><a href="#using-indexeddb">3.6.4 Using IndexedDB
-[391](#using-indexeddb)</a></p>
-<p><a href="#external-resources-6">External resources
-[391](#external-resources-6)</a></p>
-<p><a href="#creating-and-deleting-a-database">3.6.5 Creating and
-deleting a database [392](#creating-and-deleting-a-database)</a></p>
-<p><a href="#creating-a-database">Creating a database
-[394](#creating-a-database)</a></p>
-<p><a href="#javascript-code-from-the-example-1">JavaScript code from
-the example: [396](#javascript-code-from-the-example-1)</a></p>
-<p><a href="#explanations-10">Explanations:
-[397](#explanations-10)</a></p>
-<p><a href="#deleting-a-database">Deleting a database
-[398](#deleting-a-database)</a></p>
-<p><a href="#working-with-data">3.6.6 Working with data
-[400](#working-with-data)</a></p>
-<p><a href="#inserting-data">3.6.7 Inserting data
-[401](#inserting-data)</a></p>
-<p><a href="#example-1-basic-steps">Example #1: basic steps
-[403](#example-1-basic-steps)</a></p>
-<p><a href="#example-2-adding-a-form-and-validating-inputs">Example #2:
-adding a form and validating inputs
-[407](#example-2-adding-a-form-and-validating-inputs)</a></p>
-<p><a href="#removing-data">3.6.8 Removing data
-[411](#removing-data)</a></p>
-<p><a href="#modifying-data">3.6.9 Modifying data
-[413](#modifying-data)</a></p>
-<p><a href="#getting-data">3.6.10 Getting data
-[416](#getting-data)</a></p>
-<p><a href="#first-method-getting-data-when-we-know-its-key">First
-method: getting data when we know its key
-[416](#first-method-getting-data-when-we-know-its-key)</a></p>
-<p><a href="#second-method-getting-more-than-one-piece-of-data">Second
-method: getting more than one piece of data
-[420](#second-method-getting-more-than-one-piece-of-data)</a></p>
-<p><a href="#limiting-the-range-of-values-in-a-cursor">3.6.11 Limiting
-the range of values in a cursor
-[427](#limiting-the-range-of-values-in-a-cursor)</a></p>
-<p><a href="#complete-example-1">Complete example
-[428](#complete-example-1)</a></p>
-<p><a href="#discussion-and-projects-4">3.6.12 Discussion and projects
-[430](#discussion-and-projects-4)</a></p>
-<p><a href="#suggested-topics-of-discussion-5">Suggested topics of
-discussion: [430](#suggested-topics-of-discussion-5)</a></p>
-<p><a href="#optional-projects-3">Optional projects:
-[431](#optional-projects-3)</a></p>
-<p><a href="#conclusion">Conclusion [431](#conclusion)</a></p>
-<p><a href="#external-resources-7">External resources
-[432](#external-resources-7)</a></p>
-<p><a href="#module-4.-web-components-and-other-html5-apis">Module 4
-[432](#module-4.-web-components-and-other-html5-apis)</a></p>
-<p><a href="#web-components-in-video">4.2.1 Web components in video
-[433](#web-components-in-video)</a></p>
-<p><a href="#example-from-the-video">Example from the video
-[435](#example-from-the-video)</a></p>
-<p><a href="#introduction-7">4.2.2 Introduction
-[435](#introduction-7)</a></p>
-<p><a href="#web-components-availability">Web components availability
-[437](#web-components-availability)</a></p>
-<p><a href="#current-support">Current support
-[438](#current-support)</a></p>
-<p><a href="#html-templates">4.2.3 HTML templates
-[439](#html-templates)</a></p>
-<p><a href="#to-use-a-template-clone-its-content">To use a template,
-clone its content! [441](#to-use-a-template-clone-its-content)</a></p>
-<p><a href="#example">Example [442](#example)</a></p>
-<p><a href="#shadow-dom">4.2.4 Shadow DOM [443](#shadow-dom)</a></p>
-<p><a
-href="#example-using-the-shadow-dom-the-video-element">Example using the
-Shadow DOM: the &lt;video&gt; element
-[447](#example-using-the-shadow-dom-the-video-element)</a></p>
-<p><a href="#another-simple-example">Another simple example
-[450](#another-simple-example)</a></p>
-<p><a href="#shadow-dom-encapsulate-code">4.2.5 Shadow DOM: encapsulate
-code [452](#shadow-dom-encapsulate-code)</a></p>
-<p><a href="#an-example-that-mixes-templates-and-shadow-dom">An example
-that mixes templates and shadow DOM
-[452](#an-example-that-mixes-templates-and-shadow-dom)</a></p>
-<p><a
-href="#internal-css-does-not-apply-outside-the-templateshadow-dom">Internal
-CSS does not apply outside the template/shadow DOM
-[454](#internal-css-does-not-apply-outside-the-templateshadow-dom)</a></p>
-<p><a href="#shadow-dom-insert-content">4.2.6 Shadow DOM: insert content
-[456](#shadow-dom-insert-content)</a></p>
-<p><a href="#external-resources-8">External resources
-[457](#external-resources-8)</a></p>
-<p><a href="#html-custom-elements">4.2.7 HTML Custom elements
-[457](#html-custom-elements)</a></p>
-<p><a href="#full-example">Full example [460](#full-example)</a></p>
-<p><a href="#external-resources-9">External resources
-[461](#external-resources-9)</a></p>
-<p><a href="#html-imports">4.2.8 HTML Imports
-[461](#html-imports)</a></p>
-<p><a href="#important-note"><b><i> Important note </i></b>
-[461](#important-note)</a></p>
-<p><a href="#if-you-want-to-know-what-html-imports-were-about...">If you
-want to know what HTML Imports were about…
-[463](#if-you-want-to-know-what-html-imports-were-about…)</a></p>
-<p><a href="#external-resource-1">External resource
-[463](#external-resource-1)</a></p>
-<p><a href="#web-components-as-javascript-modules">4.2.9 Web Components
-as JavaScript Modules
-[463](#web-components-as-javascript-modules)</a></p>
-<p><a href="#here-is-an-example">Here is an example :
-[464](#here-is-an-example)</a></p>
-<p><a href="#explanations-13">Explanations:
-[464](#explanations-13)</a></p>
-<p><a href="#explanations-14">Explanations:
-[465](#explanations-14)</a></p>
-<p><a href="#discussion-and-projects-5">4.2.10 Discussion and projects
-[465](#discussion-and-projects-5)</a></p>
-<p><a href="#suggested-topics-of-discussion-6">Suggested topics of
-discussion: [465](#suggested-topics-of-discussion-6)</a></p>
-<p><a href="#optional-projects-4">Optional projects:
-[466](#optional-projects-4)</a></p>
-<p><a href="#introduction-8">4.3.1 Introduction
-[467](#introduction-8)</a></p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 02. script not responding (iv) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<img class="displayed"
-  src="./images/webp/image002.webp"
-  alt="ScriptNotResponding1"
-  style="width:350px;" />
-
-<p><a href="#scriptnotresponding1">467</a>](#scriptnotresponding1)</p>
-<p><a href="#an-example-that-does-not-use-web-workers">An example that
-does not use Web Workers
-[468](#an-example-that-does-not-use-web-workers)</a></p>
-<p><a href="#thread-safety-problems-not-with-web-workers">Thread safety
-problems? Not with Web Workers!
-[469](#thread-safety-problems-not-with-web-workers)</a></p>
-<p><a href="#different-kinds-of-web-workers">Different kinds of Web
-Workers [470](#different-kinds-of-web-workers)</a></p>
-<p><a href="#external-resources-10">External resources:
-[470](#external-resources-10)</a></p>
-<p><a href="#use-cases">4.3.2 Use cases [471](#use-cases)</a></p>
-<p><a
-href="#use-case-1-a-parent-html5-page-creates-workers-from-a-script">Use
-case #1: a “parent HTML5 page” creates workers from a script
-[471](#use-case-1-a-parent-html5-page-creates-workers-from-a-script)</a></p>
-<p><a
-href="#use-case-2-you-manage-a-worker-by-communicating-with-it-using-messages">Use
-case #2: you manage a worker by communicating with it using “messages”
-[471](#use-case-2-you-manage-a-worker-by-communicating-with-it-using-messages)</a></p>
-<p><a href="#use-case-3-a-complete-example">Use case #3: a complete
-example [471](#use-case-3-a-complete-example)</a></p>
-<p><a href="#use-case-4-handling-errors">Use case #4: handling errors
-[472](#use-case-4-handling-errors)</a></p>
-<p><a href="#examples-1">4.3.3 Examples [473](#examples-1)</a></p>
-<p><a
-href="#example-1-compute-prime-numbers-in-the-background-while-keeping-the-page-user-interface-responsive">Example
-#1: compute prime numbers in the background while keeping the page user
-interface responsive
-[473](#example-1-compute-prime-numbers-in-the-background-while-keeping-the-page-user-interface-responsive)</a></p>
-<p><a href="#explanations-15">Explanations:
-[474](#explanations-15)</a></p>
-<p><a href="#the-code-of-the-worker-worker.js">The code of the worker
-(worker.js): [474](#the-code-of-the-worker-worker.js)</a></p>
-<p><a href="#try-an-improved-version-of-the-first-example-yourself">Try
-an improved version of the first example yourself
-[475](#try-an-improved-version-of-the-first-example-yourself)</a></p>
-<p><a href="#html-code-5">HTML code: [476](#html-code-5)</a></p>
-<p><a href="#here-is-the-worker1.js-code">Here is the worker1.js code:
-[476](#here-is-the-worker1.js-code)</a></p>
-<p><a
-href="#example-2-how-to-stopkill-a-worker-after-a-given-amount-of-time">Example
-#2: how to stop/kill a worker after a given amount of time
-[477](#example-2-how-to-stopkill-a-worker-after-a-given-amount-of-time)</a></p>
-<p><a href="#html-code-6">HTML code: [477](#html-code-6)</a></p>
-<p><a
-href="#worker2.js-is-the-same-as-in-the-last-example">worker2.js is the
-same as in the last example:
-[478](#worker2.js-is-the-same-as-in-the-last-example)</a></p>
-<p><a
-href="#to-sum-up-there-are-3-different-ways-to-kill-a-web-worker">To sum
-up, there are 3 different ways to kill a Web Worker:
-[478](#to-sum-up-there-are-3-different-ways-to-kill-a-web-worker)</a></p>
-<p><a href="#a-web-worker-can-include-external-scripts">A web worker can
-include external scripts
-[478](#a-web-worker-can-include-external-scripts)</a></p>
-<p><a href="#worker.js">worker.js: [478](#worker.js)</a></p>
-<p><a href="#limitations-of-web-workers">Limitations of Web Workers
-[478](#limitations-of-web-workers)</a></p>
-<p><a href="#objects-available-in-web-workers">Objects available in Web
-Workers: [479](#objects-available-in-web-workers)</a></p>
-<p><a href="#workers-do-not-have-access-to">Workers do NOT have access
-to: [479](#workers-do-not-have-access-to)</a></p>
-<p><a href="#wow-this-is-a-lot-so-please-be-careful">WOW! This is a lot!
-So, please be careful!
-[479](#wow-this-is-a-lot-so-please-be-careful)</a></p>
-<p><a href="#this-is-well-illustrated-below">This is well illustrated
-below: [479](#this-is-well-illustrated-below)</a></p>
-<p><a href="#debugging-web-workers">Debugging Web Workers
-[480](#debugging-web-workers)</a></p>
-<p><a href="#demos">4.3.4 Demos [481](#demos)</a></p>
-<p><a href="#demo-1">Demo #1 [481](#demo-1)</a></p>
-<p><a href="#demo-2">Demo #2 [482](#demo-2)</a></p>
-<p><a href="#other-demos">Other demos [483](#other-demos)</a></p>
-<p><a href="#discussion-and-projects-6">4.3.5 Discussion and projects
-[483](#discussion-and-projects-6)</a></p>
-<p><a href="#suggested-topics-of-discussion-7">Suggested topics of
-discussion: [483](#suggested-topics-of-discussion-7)</a></p>
-<p><a href="#optional-projects-5">Optional projects:
-[483](#optional-projects-5)</a></p>
-<p><a href="#the-orientation-api">4.4.1 The Orientation API
-[484](#the-orientation-api)</a></p>
-<p><a href="#external-resources-11">External resources:
-[484](#external-resources-11)</a></p>
-<p><a href="#the-coordinate-system">4.4.2 The coordinate system
-[485](#the-coordinate-system)</a></p>
-<p><a
-href="#rotate-the-device-frame-around-its-z-axis-by-alpha-degrees-with-alpha-in-0-360">Rotate
-the device frame around its z axis by alpha degrees, with alpha in [0,
-360]
-[485](#rotate-the-device-frame-around-its-z-axis-by-alpha-degrees-with-alpha-in-0-360)</a></p>
-<p><a
-href="#rotate-the-device-frame-around-its-x-axis-by-beta-degrees-with-beta-in-180-180">Rotate
-the device frame around its x axis by beta degrees, with beta in[-180,
-180]
-[487](#rotate-the-device-frame-around-its-x-axis-by-beta-degrees-with-beta-in-180-180)</a></p>
-<p><a
-href="#rotate-the-device-frame-around-its-y-axis-by-gamma-degrees-with-gamma-in--90-90">Rotate
-the device frame around its y axis by gamma degrees, with gamma in [-90,
-90]
-[489](#rotate-the-device-frame-around-its-y-axis-by-gamma-degrees-with-gamma-in–90-90)</a></p>
-<p><a href="#get-different-angles">4.4.3 Get different angles
-[491](#get-different-angles)</a></p>
-<p><a
-href="#typical-use-using-the-javascript-html5-orientation-api">Typical
-use using the JavaScript HTML5 orientation API
-[491](#typical-use-using-the-javascript-html5-orientation-api)</a></p>
-<p><a
-href="#another-example-that-shows-how-to-orient-the-html5-logo-using-the-orientation-api-css3-3d-rotations">Another
-example that shows how to orient the HTML5 logo using the orientation
-API + CSS3 3D rotations
-[495](#another-example-that-shows-how-to-orient-the-html5-logo-using-the-orientation-api-css3-3d-rotations)</a></p>
-<p><a href="#code-from-the-example-1">Code from the example:
-[496](#code-from-the-example-1)</a></p>
-<p><a href="#a-simple-level-tool-using-device-orientation">A simple
-level tool using device orientation
-[497](#a-simple-level-tool-using-device-orientation)</a></p>
-<p><a
-href="#other-interesting-uses-mix-orientation-api-and-websockets">Other
-interesting uses: mix orientation API and WebSockets
-[498](#other-interesting-uses-mix-orientation-api-and-websockets)</a></p>
-<p><a href="#the-device-motion-api">4.4.4 The Device Motion API
-[498](#the-device-motion-api)</a></p>
-<p><a href="#basic-usage-1">Basic usage [499](#basic-usage-1)</a></p>
-<p><a href="#basics-about-acceleration">Basics about acceleration
-[499](#basics-about-acceleration)</a></p>
-<p><a href="#common-steps">Common steps [500](#common-steps)</a></p>
-<p><a href="#common-processing-with-acceleration-values">Common
-processing with acceleration values
-[501](#common-processing-with-acceleration-values)</a></p>
-<p><a href="#complete-examples">Complete examples
-[502](#complete-examples)</a></p>
-<p><a href="#move-the-html5-logo">Move the HTML5 logo
-[502](#move-the-html5-logo)</a></p>
-<p><a href="#code-from-this-example">Code from this example:
-[502](#code-from-this-example)</a></p>
-<p><a href="#code-from-the-example-2">Code from the example:
-[504](#code-from-the-example-2)</a></p>
-<p><a href="#move-a-ball-on-the-screen">Move a ball on the screen
-[506](#move-a-ball-on-the-screen)</a></p>
-<p><a href="#code-from-this-example-1">Code from this example:
-[506](#code-from-this-example-1)</a></p>
-<p><a href="#external-resources-12">External resources
-[509](#external-resources-12)</a></p>
-<p><a href="#discussion-and-projects-7">4.4.5 Discussion and projects
-[509](#discussion-and-projects-7)</a></p>
-<p><a href="#suggested-topics-of-discussion-8">Suggested topics of
-discussion: [509](#suggested-topics-of-discussion-8)</a></p>
-<p><a href="#optional-projects-6">Optional projects:
-[509](#optional-projects-6)</a></p>
-<p><a href="#the-end.">The end. [509](#the-end.)</a></p>
-</details>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <hr>
 <h3 id="cha-1">Welcome!</h3>
 
@@ -1602,7 +877,7 @@ accepting different origins, then you can add this attribute crossOrigin=“anon
 <p>And here is how it renders in your current browser (please play the
 video and try to show/hide the subtitles/captions):</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 21. downloads, caption & pic-in-pic (32) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 21. downloads, caption & pic-in-pic (19) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image021.webp"
@@ -1625,12 +900,14 @@ Status”</a>, written in April 2015, for further details.</p>
   <li>Safari provides a menu you can use to choose which subtitle/caption track to display. If one of the defined text tracks has the default attribute set, then it is loaded by default. Otherwise, the default is off.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 22. safari menu - subtitles/captions (32) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 22. safari menu - subtitles/captions (19) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image022.webp"
-  style="width:4in;height:2.32697in"
+  style="width:384px;"
   alt="Safari Menu - subtitles/captions." />
+
+<!--  style="width:4in;height:2.32697in" -->
 
 <ul>
   <li><p>Chrome and Opera both provide a subtitle menu and load the text track set that matches the browser language. If none of the available text tracks match the browser’s language, then it loads the track with the default attribute, if there is one. Otherwise, it loads none. Let’s say that support is very incomplete (!).</p></li>
@@ -1746,9 +1023,9 @@ forcing some tracks to load programmatically from JavaScript and this
 will enable us to make a sort of menu for choosing the different
 tracks.</p>
 <p>I will explain that in a next video.</p>
-<h4>
-The HTML track element
-</h4>
+
+<h4>The HTML track element</h4>
+
 <h4>Let’s go back to our example. Below is the HTML code:</h4>
 
 <details>
@@ -1785,16 +1062,18 @@ JSBin that displays the different elements we can get from an HTML track</a>:</h
 [<span id="_Toc98696550" class="anchor"></span>Example at JSBin that displays the different elements we can get from an HTML track](https://jsbin.com/kuqevegapi/2/edit?html,css,output):</h4>
 -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~  23/24. status of html track (35/36) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~  23/24. status of html track (23) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image023.webp"
-  style="width:4in;height:2.23647in" 
+  style="width:384px;"
   alt="Elephant's dream." /> <br />
 <img class="displayed"
   src="./images/webp/image024.webp"
-  style="width:4in;height:2.23647in" 
+  style="width:384px;" 
   alt="Track description." />
+
+<!--  style="width:4in;height:2.23647in" -->
 
 <h4>Here is the JavaScript source code:</h4>
 
@@ -2011,7 +1290,7 @@ a caption file, then the subtitles or captions will be displayed on the
 video as soon as the track has finished loading.</p>
 <p><a href="https://jsbin.com/bubeye/1/edit?html,console,output" target="_blank" rel="noopener noreferrer">Try the example at JSBin</a></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~  25. test if track has been loaded (41) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~  25. test if track has been loaded (29) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image025.webp"
@@ -2151,23 +1430,25 @@ which has different properties and methods;</p>
   <li><p>Others such as align, line, position, size, snapToLines, etc., that correspond to the position of the cue, as specified in the WebVTT file. See the HTML5 course Part 1 about cue positioning.</p></li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 26. webvtt with arrows (45) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 26. webvtt with arrows (32) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image026.webp"
-  style="width:5in;height:2.01365in"
+  style="width:480px;"
   alt="A webVtt file extract with arrows showing id, startTime, endTime and text." />
+
+<!--  style="width:5in;height:2.01365in" -->
 
 <h4>Example that displays the content of a track</h4>
 
 <p><a href="https://jsbin.com/teruhay/1/edit?html,css,js,output" target="_blank" rel="noopener noreferrer">Here is
 an example at JSBin that displays the content of a track</a>:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~  27. example that plays content of a track (45) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~  27. example that plays content of a track (33) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image027.webp"
-  style="width:45%;"
+  style="width:336px;"
   alt="Example video editor that plays content of a track." />
 
 <!-- style="width:4in;height:4.89057in" -->
@@ -2348,11 +1629,11 @@ event.</p>
 <p>Showing real examples of event listeners</p>
 <p><a href="https://jsbin.com/dohilo/1/edit?html,output" target="_blank" rel="noopener noreferrer">Here is an example at JSBin that shows how to listen for cuechange events</a>:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~  28. example that displays cue contents with cuechange even listeners (49) ~~~~~~~~~-->
+<!--~~~~~~~  28. example that displays cue contents with cuechange even listeners (37) ~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image028.webp?raw=true"
-  style="width:40%;"
+  style="width:336px;"
   alt="Example that displays cue contents with cuechange even listeners." />
 
 <!-- <img style="width:4in;height:4.42106in" -->
@@ -2382,11 +1663,11 @@ event.</p>
 here is another modified version of this example at JSBin, that shows
 how to use enter and exit events on cues</a>:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~ 29. example displays message in enter and exit cue listeners of the selected track (50) ~~-->
+<!--~ 29. example displays message in enter and exit cue listeners of the selected track (38) ~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image029.webp?raw=true"
-  style="width:40%;"
+  style="width:336px;"
   alt="Example that displays message in enter and exit cue listeners of the selected track." />
 
 <h4>Source code extract:</h4>
@@ -2538,11 +1819,11 @@ file and displays it as a transcript on the right.</p>
 to the corresponding location.</p>
 <p>We will learn how to do this using the track API.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 30. debug video tracks (53) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 30. debug video tracks (41) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image030.webp?raw=true"
-  style="width:60%;"
+  style="width:480px;"
   alt="Edx video player to debug video tracks." />
 
 <p>Read the WebVTT file at once using the track API and make a clickable
@@ -2567,11 +1848,11 @@ location.</p>
 
 <p><a href="https://jsbin.com/sodihux/1/edit?html,css,js,output" target="_blank" rel="noopener noreferrer">Try this example at JSBin</a>:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~ 31. use track api to extract content of webvtt in track element (54) ~~~~~~~~~~~~-->
+<!--~~~~~~~~~~ 31. use track api to extract content of webvtt in track element (42) ~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image031.webp?raw=true"
-  style="width:60%;"
+  style="width:480px;"
   alt="Using track api to extract content of webvtt in track element." />
 
 <details>
@@ -2855,12 +2136,14 @@ in 2012…</p>
 an example at JSBin that displays the values of the cues</u></a> in the
 different tracks:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~ 32. using track api to extract content of webvtt in track element (60) ~~~~~~~~~~~-->
+<!--~~~~~~~~~ 32. using track api to extract content of webvtt in track element (48) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image032.webp"
-  style="width:5in;height:4.47489in"
+  style="width:480px;"
   alt="Using track api to extract content of webvtt in track element." />
+
+<!--  style="width:5in;height:4.47489in" -->
 
 <p>This example, adapted from an example from (now offline)
 dev.opera.com, uses some JavaScript code that takes a WebVTT subtitle
@@ -3012,7 +2295,7 @@ disabled tracks do not fire events.</p>
 <img class="displayed"
   src="./images/webp/image033.webp?raw=true"
   alt="Example that shows how to toggle track modes and listen to events."
-  style="width:65%;" />
+  style="width:432px;" />
 
 <!--  style="width:5in;height:4.64476in" -->
 <p><a href="https://jsbin.com/bixoru/1/edit?html,css,js,output" target="_blank" rel="noopener noreferrer">Here is
@@ -3205,12 +2488,12 @@ scene’s captions and descriptions.</p>
 <p>However, before it was available, it was easy to implement this feature using the Track API.</p>
 <p><a href="https://jsbin.com/balowuq/1/edit?html,css,js,output" target="_blank" rel="noopener noreferrer">Here is a simple example at JSBin</a>: we added two buttons below the video to enable/disable subtitles/captions and let you choose which track you prefer.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 34. choose track/language (67) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 34. choose track/language (55) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image034.webp?raw=true"
   alt="Buttons for choosing the track/language under a standard video player."
-  style="width:75%;" />
+  style="width:480px;" />
 
 <h4>HTML code:</h4>
 
@@ -3333,12 +2616,12 @@ scene’s captions and descriptions.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Example #4: making a simple chapter navigation menu</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 35. simple chapter navigation (69) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 35. simple chapter navigation (57) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image035.webp?raw=true"
   alt="Simple chapter navigation."
-  style="width:50%;" />
+  style="width:384px;" />
 
 <p>We can use WebVTT files to define chapters. The syntax is exactly the same as for subtitles/caption .vtt files. The only difference is in the
 declaration of the track. Here is how we declared a chapter track in one of the previous examples (in bold in the example below):</p>
@@ -3442,22 +2725,22 @@ declaration of the track. Here is how we declared a chapter track in one of the 
 <p>Simple approach: chapters as clickable text on the right of the video.</p>
 <p><a href="https://jsbin.com/rifekik/edit?html,css,js" target="_blank" rel="noopener noreferrer">Try it on JSBin</a>; this version includes the modifications we presented earlier - nothing more. Notice that we kept the existing buttons to display a clickable transcript:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 35. simple chapter navigation (72) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 35. simple chapter navigation (60) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image035.webp?raw=true"
   alt="Again, Simple chapter navigation."
-  style="width:55%;" />
+  style="width:384px;" />
 
 <p>Look at the JavaScript and HTML tab of the JSBin example to see the source code. It’s the same as in the clickable transcript example, except for the small changes we explained earlier.</p>
 <p>Chapter navigation, illustrated in the video player below, is fairly popular.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 36. simple chapter navigation (72) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 36. simple chapter navigation (60) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image036.webp?raw=true"
   alt="Simple chapter navigation"
-  style="width:65%;" />
+  style="width:384px;" />
 
 <p>In addition to the clickable chapter list, this one displays an enhanced progress bar created using a canvas. The small squares are drawn corresponding to the chapter cues’ start and end times. You could modify the code provided, in order to add such an enhanced progress indicator.</p>
 <p>However, we will see how we can do better by using JSON objects as cue contents. This will be the topic of the next two lessons!</p>
@@ -3516,12 +2799,12 @@ examples, we can extract this text content using the  cue.text property. For 
 href="https://jsbin.com/jiyodit/edit?html,css,js,output">an example that could display chapter markers as clickable text on the right of a
 video</a>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 35. simple chapter navigation (74) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 35. simple chapter navigation (62) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image035.webp?raw=true"
   alt="Again, 3rd time, Simple chapter navigation."
-  style="width:55%;" />
+  style="width:384px;" />
 
 <h4>This example used only standard plain text content for the cues:</h4>
 
@@ -3554,7 +2837,7 @@ using the ffmepg command line tool, see for example;
 <a href="https://trac.ffmpeg.org/wiki/Create%20a%20thumbnail%20image%20every%20X%20seconds%20of%20the%20video" target="_blank" rel="noopener noreferrer">this</a> and <a href="https://stackoverflow.com/questions/8679390/ffmpeg-extracting-20-images-from-a-video-of-variable-length" target="_blank" rel="noopener noreferrer">that</a>).</p>
 <p>Here are the images which correspond to the seven chapters of the video from the previous example:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 37-43. seven thumbnail chapter images (75) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 37-43. seven thumbnail chapter images (63) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p style="width:80%;">
 <img src="./images/webp/image037.webp" style="width:2.57292in;height:1.20833in" alt="Chapter 1 thumbnail." />
@@ -3603,12 +2886,12 @@ href="https://mainline.i3s.unice.fr/mooc/elephants-dream-chapters-en-JSON.vtt">e
 href="https://jsbin.com/pulefe/1/edit?html,css,js,output">try this
 example at JSBin that uses this new .vtt file</a>:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 44. video with nice chapter menu (77) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 44. video with nice chapter menu (64) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image044.webp?raw=true"
   alt="Video with nice chapter menu that uses thumbnail images."
-  style="width:65%;" />
+  style="width:384px;" />
 
 <h4>HTML code:</h4>
 
@@ -3819,12 +3102,12 @@ it easy to style and position the thumbnails using CSS.</p>
 <p>A sample menu marker is shown below (it’s also animated - hover your
 mouse over the thumbnail to see its animated shadow):</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 37. again, movie title (81) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 37. again, movie title (68) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image037.webp?raw=true"
   alt="Screenshot of movie title 'the orange open movie...presents'. . .."
-  style="width:50%;" />
+  style="width:336px;" />
 
 <h4>Introduction</h4>
 
@@ -3837,12 +3120,12 @@ code from earlier in this lesson.</p>
 <p><a href="https://jsbin.com/zewemaj/edit?html,js,output" target="_blank" rel="noopener noreferrer">Try it at
 JSBin</a></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~ 45. combined techniques - chapter & clickable button (82) ~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~ 45. combined techniques - chapter & clickable button (69) ~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image045.webp?raw=true"
   alt="Chapter menu + clickable transcript."
-  style="width:65%;" />
+  style="width:384px;" />
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch1-4-1">1.4.1 Creating Tracks on the Fly</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3870,12 +3153,14 @@ single mp3 file that contains recorded animal sounds</a>.</p>
 
 <h4>Below is the sound file. You can try to play it:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 46. click button to play animal sound (83) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 46. click button to play animal sound (70) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image046.webp"
-  style="width:5in;height:4.91453in"
+  style="width:384px;"
   alt="Click a button to play an animal sound." />
+
+<!--  style="width:5in;height:4.91453in" -->
 
 <h4>Explanations:</h4>
 
@@ -4094,12 +3379,14 @@ Google map and equivalent Google street view are updated. </p>
 might see “for development purpose only” messages during the execution
 of this demo. You’ll need a valid Google API key in order to remove these messages.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~ 47. video synced with google map and google street map (87) ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~ 47. video synced with google map and google street map (75) ~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image047.webp"
-  style="width:5in;height:4.46635in"
+  style="width:384px;"
   alt="Video synced with google map and google street map." />
+
+<!--  style="width:5in;height:4.46635in" -->
 
 <h4>Example of a cue content from this demonstration:</h4>
 
@@ -4152,12 +3439,14 @@ section:</p>
 example at JSBin</a></p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~ 51. video synced with an iframe that shows external urls w/google map (87) ~~~~~~~~-->
+<!--~~~~~~~~ 51. video synced with an iframe that shows external urls w/google map (76) ~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image051.webp"
-  style="width:5in;height:5.55609in"
+  style="width:384px;"
   alt="Video synced with an iframe that shows external URLs and with a google map." />
+
+<!--  style="width:5in;height:5.55609in" -->
 
 <h4>HTML code extract:</h4>
 
@@ -4412,12 +3701,14 @@ study oin this course.</p>
 <p>Here’s a screenshot from one example we will study: an audio player with
 animated waveform and volume meters that ‘dance’ with the music:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~ 49. audio player with animated wave forms (94) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 49. audio player with animated wave forms (82) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image049.webp"
-  style="width:3in;height:1.92453in"
+  style="width:240px;"
   alt="A fancy audio player with animated wave forms." />
+
+<!--  style="width:3in;height:1.92453in" -->
 
 <h4>Web Audio concepts</h4>
 
@@ -4445,12 +3736,14 @@ nodes.</p>
 example at JSBin</a>.</b>
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 50. audio player with gain (95) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 50. audio player with gain (82) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image050.webp"
-  style="width:3in;height:0.73669in"
+  style="width:240px;"
   alt="Audio player with gain." />
+
+<!--  style="width:3in;height:0.73669in" -->
 
 <p>This example is detailed in the next lesson. For the moment, all you
 need to know is that it routes the signal from an &lt;audio&gt; element
@@ -4471,12 +3764,14 @@ can install it <a href="https://chrome.google.com/webstore/detail/web-audio-ins
 the Chrome Web Store]</a>.
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 51. web audio inspector app (96) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 51. web audio inspector app (83) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image051.webp"
-  style="width:5in;height:4.05556in"
+  style="width:432px;"
   alt="Chrome WebAudio Inspector extension." />
+
+<!--  style="width:5in;height:4.05556in" -->
 
 <p>Once installed, open a Web page that contains some WebAudio code (<a
 href="https://output.jsbin.com/gaduqojeke">this one for example</a>),
@@ -4487,22 +3782,27 @@ webpage so that all Web audio activity can be monitored by the tool. You
 can click on the WebAudio graph nodes to see their properties’
 values.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 52. web audio 'editor' (96) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 52. web audio 'editor' (84) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image052.webp"
-  style="width:5in;height:2.34989in"
+  style="width:432px;"
   alt="WebAudio 'editor' tab." />
+
+<!--  style="width:5in;height:2.34989in" -->
 
 <p>Note that JSBin examples should be opened in standalone mode (not in
 editor mode).</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 53. standalone mode (97) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 53. standalone mode (84) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image053.webp"
-  style="width:5in;height:2.40492in"
+  style="width:432px;"
   alt="How to go in JsBin standalone mode: click the black arrow on top right of the output tab." />
+
+<!--  style="width:5in;height:2.40492in" -->
+
 <p>Audio nodes are linked via their inputs and outputs, forming a chain
 that starts with one or more sources, goes through one or more nodes,
 then ends up at a destination (although you don’t have to provide a
@@ -4599,12 +3899,15 @@ application</a>, use hundreds of nodes (the picture below has been taken
 while the WebAudio debugger was still included in FireFox, you should
 get similar results with the Chrome WebAudio Inspector extension).</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 54. audio graph of the vocodor app (99) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 54. audio graph of the vocodor app (87) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image054.webp"
-  style="width:5in;height:6.84402in"
+  style="width:432px;"
   alt="Audio graph of the vocoder app is made of hundreds of nodes." />
+  
+<!--  style="width:5in;height:6.84402in" -->
+
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch1-5-2">1.5.2 Working with Streamed Content</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4810,12 +4113,14 @@ graphic application that shows the frequency responses to the various
 filters</a>, you can choose the type of filters and play with the
 different property values using sliders:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 56. frequency responses for filters (104) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 56. frequency responses for filters (92) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image056.webp"
-  style="width:5in;height:5.08474in"
+  style="width:432px;"
   alt="Frequency responses for various filters. Screenshot of a nice application that visualizes that." />
+
+<!--  style="width:5in;height:5.08474in" -->
 
 <p>Multiple filters are often used together. We will make a multi band
 equalizer in a next lesson, and use six filters with type=peaking. </p>
@@ -18632,12 +17937,12 @@ your comments/observations/questions and share your creations.</p>
   <li><p>There is a wonderful demonstration of a <a href="https://testdrive-archive.azurewebsites.net/Graphics/WorkerFountains/Default.html" target="_blank" rel="noopener noreferrer">fountain animation</a> using <i>particles</i>, made by Microsoft. Can you write something similar, but perhaps with fewer options? The idea was the following: compute <i>particle movements</i> in separate <i>workers</i>, and when a new array of <i>particles</i> is ready to be drawn, post it from the Web Worker. The main page has a mainloop for animating at 60 frames per second. When a new set of <i>particles</i> is ready (posted by a <i>Worker</i>), it is drawn and animated. The demo had up to 10 <i>workers</i> operating in <i>parallel</i>, in the <i>background</i>.</p></li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 243. ie10 web workers fountain demo (428) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 243. ie10 web workers fountain demo (456) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image243.webp?raw=true"
   alt="IE 10 Web Workers fountain demo."
-  style="width:40%;" />
+  style="width:384px;" />
 
 <!-- style="width:4in;height:2.55983in" -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -18711,12 +18016,14 @@ frames aligned.
 </th>
 <th>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~ 247. start orientation & rotation about z axis (420) ~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ 247. start orientation & rotation about z axis (458) ~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image247.webp"
-  style="width:4.6875in;height:4.6875in"
+  style="width:450px;"
   alt="Start orientation." />
+
+<!--  style="width:4.6875in;height:4.6875in" -->
 
 </th>
 </tr>
@@ -18729,11 +18036,11 @@ locations of x and y axes shown as x<sub>0</sub> and y<sub>0</sub>.
 </td>
 <td>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 248. rotation about z axis (421) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 248. rotation about z axis (459) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image248.webp"
-  style="width:4.6875in;height:4.6875in"
+  style="width:450px;"
   alt="Rotation about z axis." />
 </td>
 </tr>
@@ -18750,12 +18057,12 @@ locations of x and y axes shown as x<sub>0</sub> and y<sub>0</sub>.
 <tr class="header">
 <th>Device in the initial position, with Earth (XYZ) and<br /> body (xyz) frames aligned.</th>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~ 247. start orientation & rotation about x axis (422) ~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ 247. start orientation & rotation about x axis (460) ~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <th>
 <img class="displayed"
   src="./images/webp/image247.webp"
-  style="width:4.6875in;height:4.6875in"
+  style="width:450px;"
   alt="Start orientation." />
 </th>
 </tr>
@@ -18765,12 +18072,12 @@ locations of x and y axes shown as x<sub>0</sub> and y<sub>0</sub>.
 <td>Device rotated through angle beta about new x axis,<br /> with previous locations of y and z axes shown as y<sub>0</sub> and z<sub>0</sub>.</td>
 <td>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 249. rotation about the x axis (423) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 249. rotation about the x axis (461) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image249.webp?raw=true"
   alt="Rotation about the x axis."
-  style="width:55%;" />
+  style="width:450px;" />
 </td>
 </tr>
 </tbody>
@@ -18792,12 +18099,14 @@ frames aligned.
 </th>
 <th>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 247. start orientation (424) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 247. start orientation (462) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image247.webp"
-  style="width:4.6875in;height:4.6875in"
+  style="width:450px;"
   alt="Start orientation." />
+<!--  style="width:4.6875in;height:4.6875in" -->
+
 </th>
 </tr>
 </thead>
@@ -18809,12 +18118,14 @@ locations of x and z axes shown as x<sub>0</sub> and z<sub>0</sub>.
 </td>
 <td>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 250. rotation about y axis (425) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 250. rotation about y axis (463) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image250.webp"
-  style="width:4.6875in;height:4.6875in"
+  style="width:450px;"
   alt="Rotation about y axis." />
+<!--  style="width:4.6875in;height:4.6875in" -->
+
 </td>
 </tr>
 </tbody>
@@ -18835,12 +18146,12 @@ locations of x and z axes shown as x<sub>0</sub> and z<sub>0</sub>.
 
 <p>(If using a mobile device, <a href="https://jsbin.com/limugat" target="_blank" rel="noopener noreferrer">open the page in standalone mode</a> (without the JsBin editor) )</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 248. device orientation api 2 (426) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 248. device orientation api 2 (464) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image248.webp?raw=true"
   alt="Device Orientation API 2."
-  style="width:35%;" />
+  style="width:384px;" />
 
 <p>The above screenshot came from an iPad laying immobile on a desk. <br>
 Theoretically, all the angle values will be zero when the device is laid flat, providing it has not been moved since the page loaded.<br>
@@ -18849,26 +18160,26 @@ This is why, in the example, we round the returned values with Math.round() at
 
 <p>If we change the orientation of the device here are the results:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 249. orientation api 3 (427) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 249. orientation api 3 (465) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image249.webp?raw=true"
   alt="Orientation API 3."
-  style="width:45%;" />
+  style="width:384px;" />
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 250. orientation api 1 (427) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 250. orientation api 1 (465) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image250.webp?raw=true"
   alt="Orientation API 1."
-  style="width:45%;" />
+  style="width:384px;" />
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 254 or 251?. orientation api 2 (427) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 254 or 251?. orientation api 2 (466) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image254.webp?raw=true"
   alt="Orientation API 2."
-  style="width:65%;" />
+  style="width:384px;" />
 
 <h4>Typical use / code from the above example:</h4>
 
@@ -18917,39 +18228,39 @@ This is why, in the example, we round the returned values with Math.round() at
 href="https://jsbin.com/manobezoji/edit?html,js,output" target="_blank" rel="noopener noreferrer">try it at
 JsBin</a></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~ 252. html logo orientation api example 3 (429) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 252. html logo orientation api example 3 (467) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image252.webp?raw=true"
   alt="Orientation API example 3."
-  style="width:300px;" />
+  style="width:384px;" />
 
 <p>Results on the iPad: the logo rotates when we change the iPad’s
 orientation. This is a good “visual feedback” for an orientation
 controlled game…</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 253. side-by-side logo 1 (430) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 253. side-by-side logo 1 (468) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image256.webp?raw=true"
   alt="Logo position 1."
-  style="width:400px;" />
+  style="width:288px;" />
 
 <!-- <img src="./images/webp/image256.webp" style="width:2.94792in;height:3.92708in" -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 254. side by side logo 2 (430) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 254. side by side logo 2 (468) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image254.webp?raw=true"
   alt="Logo position 2."
-  style="width:30%;" />
+  style="width:288px;" />
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 255. logo 3, centered beneath 1 & 2 (430) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 255. logo 3, centered beneath 1 & 2 (468) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image255.webp?raw=true"
   alt="Logo position 3."
-  style="width:29%;" />
+  style="width:288px;" />
 
 <p>This example is also on <a
 href="https://www.youtube.com/watch?v=OrNLhOAGSdE" target="_blank" rel="noopener noreferrer">video</a>.</p>
@@ -19016,12 +18327,12 @@ that you can tweak it in JsBin</a>, or <a
 href="https://jsbin.com/quboge" target="_blank" rel="noopener noreferrer">test it in standalone mode</a> (using a
 mobile device).</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~ 256. level tool using device orientation (432) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 256. level tool using device orientation (470) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image256.webp?raw=true"
   alt="Level tool using device orientation."
-  style="width:400px;" />
+  style="width:432px;" />
   
 <h4>Other interesting uses: mix orientation API and WebSockets</h4>
 
@@ -19037,12 +18348,12 @@ this way the tablet “controls” the HTML5 logo that is shown on the
 desktop browser:</p>
 <p>Click on the image to see the YouTube video:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 257. orientation api + websockets (432) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 257. orientation api + websockets (470) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image257.webp?raw=true"
   alt="Orientation API + websockets."
-  style="width:300px;" />
+  style="width:288px;" />
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-4-4">4.4.4 The Device Motion API</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -19119,30 +18430,30 @@ it returns <i>rotation</i> as well as <i>acceleration</i> information from t
 would be <a href="https://developers.google.com/web/fundamentals/native-hardware/device-orientation/" 
 target="_blank" rel="noopener noreferrer">(info taken from this [article]</a>):</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 258. acceleration values 1 (434) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 258. acceleration values 1 (472) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image258.webp?raw=true"
   alt="Acceleration values with screen facing up."
-  style="width:35%;" />
+  style="width:624px;" />
 
 <p>A mobile phone rotated along the x-axis so the screen is perpendicular to its normal position would return:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 259. acceleration values 2 (434) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 259. acceleration values 2 (472) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image259.webp?raw=true"
   alt="Acceleration values after rotated along x-axis so it is perpendicular to its normal position."
-  style="width:35%;" />
+  style="width:624px;" />
 
 <h4>Remember the coordinate system for a mobile phone:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 260. mobile phone coordinates system (434) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 260. mobile phone coordinates system (472) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image260.webp?raw=true"
   alt="Mobile phone coordinates system."
-  style="width:30%;" />
+  style="width:288px;" />
 
 <h4>Common steps</h4>
 
@@ -19219,12 +18530,12 @@ later on)…</p>
 
 <p><a href="https://jsbin.com/pasoboyucu/edit?html,js,output" target="_blank" rel="noopener noreferrer">Online example at JsBin</a>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 261. devicemotion api example (436) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 261. devicemotion api example (474) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image261.webp?raw=true"
   alt="Devicemotion API example."
-  style="width:30%;" />
+  style="width:288px;" />
 
 <h4>Code from this example:</h4>
 
@@ -19310,12 +18621,12 @@ later on)…</p>
 <p>This example shows how the X and Y acceleration values can be used for indicating the sky’s direction (vertical), and how the Z acceleration is, in fact, an indicator for the face up / face down orientation of the device.</p>
 <p>This example has been adapted and put on jsbin.com so that you can tweak it: <a href="https://jsbin.com/uyuqek/4/edit" target="_blank" rel="noopener noreferrer">https://jsbin.com/uyuqek/4/edit</a></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 262. devicemotion api (438) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 262. devicemotion api (476) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image262.webp?raw=true"
   alt="Devicemotion API.  Uses JQuery mobile."
-  style="width:35%;" />
+  style="width:288px;" />
 
 <h4>Code from the example:</h4>
 
@@ -19404,12 +18715,12 @@ later on)…</p>
 
 <p><a href="https://jsbin.com/eyahuv/2/edit">Try this example at JsBin</a>. If using a mobile device, <a href="https://jsbin.com/eyahuv/2" target="_blank" rel="noopener noreferrer">use this URL instead</a>!</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~ 263. move a ball on the screen - last image (440) ~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ 263. move a ball on the screen - last image (478) ~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image263.webp?raw=true"
   alt="Move a ball on the screen - last image."
-  style="width:35%;" />
+  style="width:288px;" />
 
 <!-- style="width:3in;height:1.99379in" -->
 
