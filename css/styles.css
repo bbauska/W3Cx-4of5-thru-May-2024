@@ -16,16 +16,15 @@ p { font-size: 15px;
     margin-left: 5px; }
 	
 p.em1 {
-	margin-left: 1em; }
+  margin-left: 1em; }
 p.em2 {
-	margin-left: 2em; }
+  margin-left: 2em; }
 p.em3 {
   margin-left: 3em; }
 p.em4 {
   margin-left: 4em; }
 
 background: linear-gradient(60deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%);
-
 
 a {
   text-decoration: none; 
