@@ -42,10 +42,10 @@ function scrollFunction() {
   }
 }
 
-// When the user clicks on the button, scroll to the top of the document
+// When the user clicks on the button, scroll to the top of the document. 420 to 0.
 function topFunction() {
-  document.body.scrollTop = 420;
-  document.documentElement.scrollTop = 420;
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }
 </script>
 
@@ -63,7 +63,7 @@ function topFunction() {
 
 <h3 style="text-align:center">W3Cx-4of5-HTML5.2x - Apps and Games</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 01. W3Cx-4of5-HTML5.2x logo (01) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 01. w3cx-4of5-html5.2x logo (01) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image001.webp?raw=true"
@@ -288,10 +288,10 @@ contributions/personal work.</p>
 
 <h4>CodePen</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 05. codepen logo (02) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 05b. codepen logo (02) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
-  src="./images/webp/image005.png?raw=true"
+  src="./images/webp/image005b.webp?raw=true"
   alt="Codepen logo."
   style="width:10%;" />
 
@@ -1391,9 +1391,24 @@ previous example:</p>
 <h4>Explanations:</h4>
 
 <ul>
-  <li><p><i>Lines 26-31</i>: the function called when a button has been clicked. This function in turn calls the getTrack(trackNumber, callback) function. It passes the readContent callback function as a parameter. This is typical JavaScript asynchronous programming: the getTrack() function may force the browser to load the track and this can take some time (a few seconds), then when the track has downloaded, we ask the getTrack function to call the function we passed (the readContent function, which is known as a <i>callback</i> function), with the loaded track as a parameter.</p></li>
-  <li><p><i>Line 6</i>: the getTrack function. It first checks if the HTML track is already loaded (<i>line 10</i>). If it is, it calls the callback function passed by the caller, with the loaded TextTrack as a parameter. If the TextTrack is not loaded, then it sets its mode to “hidden”. This will instruct the browser to load the track. Because that may take some time, we must use a load event listener on the HTML track before calling the callback function. This allows us to be sure that the track is really completely loaded.</p></li>
-  <li><p><i>Lines 1-4</i>: the readContent function is only called with a loaded TextTrack. Here we do nothing special for the moment except that we refresh the different track statuses in the HTML document.</p></li>
+  <li><p><i>Lines 26-31</i>: the function called when a button has been clicked. 
+    This function in turn calls the getTrack(trackNumber, callback) function. It 
+	passes the readContent callback function as a parameter. This is typical JavaScript 
+	asynchronous programming: the getTrack() function may force the browser to 
+	load the track and this can take some time (a few seconds), then when the 
+	track has downloaded, we ask the getTrack function to call the function we 
+	passed (the readContent function, which is known as a <i>callback</i> function), 
+	with the loaded track as a parameter.</p></li>
+  <li><p><i>Line 6</i>: the getTrack function. It first checks if the HTML track 
+    is already loaded (<i>line 10</i>). If it is, it calls the callback function 
+	passed by the caller, with the loaded TextTrack as a parameter. If the TextTrack 
+	is not loaded, then it sets its mode to “hidden”. This will instruct the browser 
+	to load the track. Because that may take some time, we must use a load event 
+	listener on the HTML track before calling the callback function. This allows 
+	us to be sure that the track is really completely loaded.</p></li>
+  <li><p><i>Lines 1-4</i>: the readContent function is only called with a loaded 
+    TextTrack. Here we do nothing special for the moment except that we refresh 
+	the different track statuses in the HTML document.</p></li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch1-2-4">1.2.4 Working With Cues</h3>
@@ -1437,26 +1452,43 @@ does, the one you are watching at right now.</p>
 <p>A <i>TextTrack object</i> has different properties and methods;</p>
 
 <ul>
-  <li><p>kind: equivalent to the kind attribute of HTML track elements. Its value is either “subtitles”, “caption”, “descriptions”, “chapters”, or “metadata”. We will see examples of chapters, descriptions  and metadata tracks in subsequent lessons.</p></li>
-  <li><p>label: the label of the track, equivalent of the label attribute of HTML track elements.</p></li>
-  <li><p>language: the language of the text track, equivalent to the srclang attribute of HTML track elements (be careful: it’s not the same spelling!)</p></li>
-  <li><p>mode: explained earlier. Can have values equal to: “disabled”|“hidden”|“showing”. Can force a track to be loaded (by setting the mode to “hidden” or “showing”).</p></li>
-  <li><p>cues: get a list of cues as a TextTrackCueList object. This is the complete content of the WebVTT file!</p></li>
-  <li><p>activeCues: used in event listeners while the video is playing. Corresponds to the cues located in the current time segment. The start and end times of cues can overlap. In reality this may rarely happen, but this property exists in case it does, returning a  TextTrackCueList object that contains all active tracks at a given time.</p></li>
+  <li><p>kind: equivalent to the kind attribute of HTML track elements. Its value 
+    is either “subtitles”, “caption”, “descriptions”, “chapters”, or “metadata”. 
+	We will see examples of chapters, descriptions  and metadata tracks in subsequent 
+	lessons.</p></li>
+  <li><p>label: the label of the track, equivalent of the label attribute of HTML 
+    track elements.</p></li>
+  <li><p>language: the language of the text track, equivalent to the srclang attribute 
+    of HTML track elements (be careful: it’s not the same spelling!)</p></li>
+  <li><p>mode: explained earlier. Can have values equal to: “disabled”|“hidden”|“showing”. 
+    Can force a track to be loaded (by setting the mode to “hidden” or “showing”).</p></li>
+  <li><p>cues: get a list of cues as a TextTrackCueList object. This is the complete 
+    content of the WebVTT file!</p></li>
+  <li><p>activeCues: used in event listeners while the video is playing. Corresponds 
+    to the cues located in the current time segment. The start and end times of cues 
+	can overlap. In reality this may rarely happen, but this property exists in case 
+	it does, returning a  TextTrackCueList object that contains all active tracks at 
+	a given time.</p></li>
   <li><p>addCue(cue): add a cue to the list of cues.</p></li>
   <li><p>removeCue(cue): remove a cue from the list of cues.</p></li>
-  <li><p>getCueById(id): returns the cue with a given id (not implemented by all browsers - a polyfill is given in the examples from the next lessons).</p></li>
+  <li><p>getCueById(id): returns the cue with a given id (not implemented by all 
+    browsers - a polyfill is given in the examples from the next lessons).</p></li>
 </ul>
 
-<p>A <i>TextTrackCueList</i> is a collection of cues, each of
-which has different properties and methods;</p>
+<p>A <i>TextTrackCueList</i> is a collection of cues, each of which has different 
+properties and methods;</p>
 
 <ul>
   <li><p>id: the cue id as written in the line that starts cues in the WebVTT file.</p></li>
-  <li><p>startTime and endTime: define the time segment for the cue, in seconds, as a floating point value. It is not the formatted String we have in the WebVTT file (<i>see screenshot below</i>).</p></li>
+  <li><p>startTime and endTime: define the time segment for the cue, in seconds, 
+    as a floating point value. It is not the formatted String we have in the WebVTT 
+	file (<i>see screenshot below</i>).</p></li>
   <li><p>text: the cue content.</p></li>
-  <li><p>getCueAsHTML(): a method that returns an HTML version of the cue content, not as plain text.</p></li>
-  <li><p>Others such as align, line, position, size, snapToLines, etc., that correspond to the position of the cue, as specified in the WebVTT file. See the HTML5 course Part 1 about cue positioning.</p></li>
+  <li><p>getCueAsHTML(): a method that returns an HTML version of the cue content, 
+    not as plain text.</p></li>
+  <li><p>Others such as align, line, position, size, snapToLines, etc., that correspond 
+    to the position of the cue, as specified in the WebVTT file. See the HTML5 course 
+	Part 1 about cue positioning.</p></li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 26. webvtt with arrows (32) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1468,8 +1500,9 @@ which has different properties and methods;</p>
 
 <h4>Example that displays the content of a track</h4>
 
-<p><a href="https://jsbin.com/teruhay/1/edit?html,css,js,output" target="_blank" rel="noopener noreferrer">Here is
-an example at JSBin that displays the content of a track</a>:</p>
+<p><a href="https://jsbin.com/teruhay/1/edit?html,css,js,output" target="_blank" 
+rel="noopener noreferrer">Here is an example at JSBin that displays the content 
+of a track</a>:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~  27. example that plays content of a track (33) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1478,8 +1511,8 @@ an example at JSBin that displays the content of a track</a>:</p>
   style="width:30%;" 
   alt="Example video editor that plays content of a track." />
 
-<p>We just changed the content of the <i>readContent(track)</i> method
-from the example in the previous lesson:</p>
+<p>We just changed the content of the <i>readContent(track)</i> method from the 
+example in the previous lesson:</p>
 
 <details>
   <summary>JavaScript code!</summary>
@@ -1507,92 +1540,84 @@ from the example in the previous lesson:</p>
 
 </details>
 
-<p>As you can see, the code is simple: you first get the cues for the
-given TextTrack (it must be loaded; this is the case since we took care
-of it earlier), then iterate on the list of cues, and use the
-id, startTime, endTime and text properties of each cue.</p>
-<p>This technique will be used in one of the next lessons, and we will
-show you how to make a clickable transcript on the side of the video
-- something quite similar to what the edX video player does.</p>
+<p>As you can see, the code is simple: you first get the cues for the given TextTrack 
+(it must be loaded; this is the case since we took care of it earlier), then iterate 
+on the list of cues, and use the id, startTime, endTime and text properties of each 
+cue.</p>
+<p>This technique will be used in one of the next lessons, and we will show you 
+how to make a clickable transcript on the side of the video - something quite similar 
+to what the edX video player does.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch1-2-5">1.2.5 Listening to Events</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Ok. This time we will talk about track events and cue events.</p>
-<p>First, let’s start by a small demonstration. If I play this video,
-the video is going on and I can listen to events like ‘cuenter’ and
-‘cueexit’.</p>
-<p>Each time a new cue is entered, we will display it here, and each
-time it is exited, we will display it here.</p>
-<p>We saw that we can display them in sync with the video now. Each time
-a cue is reached, it means that the current time entered a new time
-segment defined by the starting and ending time of a cue.</p>
+<p>First, let’s start by a small demonstration. If I play this video, the video 
+is going on and I can listen to events like ‘cuenter’ and ‘cueexit’.</p>
+<p>Each time a new cue is entered, we will display it here, and each time it is 
+exited, we will display it here.</p>
+<p>We saw that we can display them in sync with the video now. Each time a cue 
+is reached, it means that the current time entered a new time segment defined by 
+the starting and ending time of a cue.</p>
 <p>Let’s have a look again at one of the VTT files.</p>
-<p>Each cue holds a start time and a end time so when the time enters
-the 15th second, we’ve got a cueenter event and we can get this content
-and show it on the HTML page.</p>
-<p>When we go out of this time period, when we go further than 18
-seconds, we exit this cue and we enter this cue.</p>
-<p>How are these events handled in the JavaScript code? Everything is
-done in the readContent method that we saw earlier.</p>
-<p>This time instead of iterating on different cues of the TextTrack, we
-will just, for each cue individualy, we will iterate on the cues and add
-a listener on that cue, an exist listener and an enter listener.</p>
-<p>So what do we do? We iterate in the cues called addCueListenners for
-the current cue.</p>
-<p>This method, <b>addCueListeners</b>, it will define two listeners:
-the cue enter listener and the cue exit event listener.</p>
-<p>On the cue enter listener we just create a string “entered cue id=”
-and “text=” that will correspond to the text displayed when a cue is
-just reached.</p>
+<p>Each cue holds a start time and a end time so when the time enters the 15th 
+second, we’ve got a cueenter event and we can get this content and show it on the 
+HTML page.</p>
+<p>When we go out of this time period, when we go further than 18 seconds, we exit 
+this cue and we enter this cue.</p>
+<p>How are these events handled in the JavaScript code? Everything is done in the 
+readContent method that we saw earlier.</p>
+<p>This time instead of iterating on different cues of the TextTrack, we will just, 
+for each cue individualy, we will iterate on the cues and add a listener on that 
+cue, an exist listener and an enter listener.</p>
+<p>So what do we do? We iterate in the cues called addCueListenners for the current 
+cue.</p>
+<p>This method, <b>addCueListeners</b>, it will define two listeners: the cue enter 
+listener and the cue exit event listener.</p>
+<p>On the cue enter listener we just create a string “entered cue id=” and “text=” 
+that will correspond to the text displayed when a cue is just reached.</p>
 <p>We display the id and we display the text.</p>
 <p>The same thing is done when we exit.</p>
-<p>When we exit, we just display the id “exited cue id=”. This is how we
-can have individual enter and exit listeners for each cue.</p>
-<p>It will enable us to highlight the current cue in a transcript while
-the video is playing.</p>
-<p>The only problem is that as of December 2015, FireFox still does not
-recognize these sorts of listeners.</p>
-<p>The implementation is not done yet, so you can use a fallback. You
-can use a listener on the track that will listen to the ‘cuechange’
-event.</p>
-<p>If I just comment the function addCueListeners and I uncomment this
-piece of code that has a cueChange listener on the track itself, then
-instead of knowing that we entered of exited and individual cue, we can
-get, for every new time segment, the list of the cues that are
-triggered, that should be activated and displayed for this time segment.
-As the different cues can overlap, the time segments can overlap -it is
-not often the case but it may occur- what the callback function from
-this listener gives is a list of active cues. Most of the time you have
-got only one.</p>
-<p>Anyway, you can just work with the list of the cues. Here we just
-take the first active cue because we are assuming that the cues are not
-overlapping.</p>
-<p>I added a small test here because sometimes we’ve got some strange
-ghost cues that are active and not defined. I do not exactly what was
-the problem when I test it but I added this test here to avoid some
-error messages…</p>
-<p>We have got the first active cue and we just display it. We get the
-id, we get the text and this is all. In that case, if I run the
-application again, instead of having enter and exit, I will just have
-cue change events.</p>
+<p>When we exit, we just display the id “exited cue id=”. This is how we can have 
+individual enter and exit listeners for each cue.</p>
+<p>It will enable us to highlight the current cue in a transcript while the video 
+is playing.</p>
+<p>The only problem is that as of December 2015, FireFox still does not recognize 
+these sorts of listeners.</p>
+<p>The implementation is not done yet, so you can use a fallback. You can use a 
+listener on the track that will listen to the ‘cuechange’ event.</p>
+<p>If I just comment the function addCueListeners and I uncomment this piece of 
+code that has a cueChange listener on the track itself, then instead of knowing 
+that we entered of exited and individual cue, we can get, for every new time segment, 
+the list of the cues that are triggered, that should be activated and displayed 
+for this time segment. As the different cues can overlap, the time segments can 
+overlap -it is not often the case but it may occur- what the callback function from
+this listener gives is a list of active cues. Most of the time you have got only one.</p>
+<p>Anyway, you can just work with the list of the cues. Here we just take the first 
+active cue because we are assuming that the cues are not overlapping.</p>
+<p>I added a small test here because sometimes we’ve got some strange ghost cues 
+that are active and not defined. I do not exactly what was the problem when I test 
+it but I added this test here to avoid some error messages…</p>
+<p>We have got the first active cue and we just display it. We get the id, we get 
+the text and this is all. In that case, if I run the application again, instead 
+of having enter and exit, I will just have cue change events.</p>
 <p>It starts at 15 seconds.</p>
 <p>I had a small bug here, it is not this.id but cue.id…. we can start
 again.</p>
-<p>This is a fallback for FireFox if you want to display the cues in
-sync with the video.</p>
-<p>The next video will show how to display a transcript here with the
-current cue highlighted and you can click on them in order to jump to
-the right place in the video.</p>
-<p>After that I think we will have seen the most useful properties,
-methods, events you can use with tracks and cues…</p>
-<p>Instead of reading the whole content of a track at once, like in the
-previous example, it might be interesting to process the track content
-cue by cue, while the video is being played.</p>
-<p>For example, you choose which track you want - say, German subtitles
-- and you want to display the subtitles in sync with the video, below
-the video, with your own style and animations…</p>
-<p>Or you display the entire set of subtitles to the side of the video
-and you want to highlight the current one…</p>
+<p>This is a fallback for FireFox if you want to display the cues in sync with 
+the video.</p>
+<p>The next video will show how to display a transcript here with the current cue 
+highlighted and you can click on them in order to jump to the right place in the 
+video.</p>
+<p>After that I think we will have seen the most useful properties, methods, events 
+you can use with tracks and cues…</p>
+<p>Instead of reading the whole content of a track at once, like in the previous 
+example, it might be interesting to process the track content cue by cue, while 
+the video is being played.</p>
+<p>For example, you choose which track you want - say, German subtitles - and you 
+want to display the subtitles in sync with the video, below the video, with your 
+own style and animations…</p>
+<p>Or you display the entire set of subtitles to the side of the video and you 
+want to highlight the current one…</p>
 <p>For this, you can listen for different sorts of events.</p>
 
 <h4>The two types of cue event are:</h4>
@@ -1731,73 +1756,62 @@ how to use enter and exit events on cues</a>:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>With a Clickable Transcript on the Side</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Hi! This time, we will just go a little bit further than in the
-previous examples.</p>
-<p>When we click on a button, we will force the loading of the track, we
-will read the content, add cue listeners in order to trigger events when
-the video is played and we will display them on the side this time, and
-there are hyperlinks you can click and if I click somewhere, the video
-starts at the corresponding location and you can see that the cues are
-highlighted in black as the video advances.</p>
-<p>There are not a lot of subtitles at this location but… you can see
-that the transcript is highlighted as the video is playing.</p>
+<p>Hi! This time, we will just go a little bit further than in the previous examples.</p>
+<p>When we click on a button, we will force the loading of the track, we will read 
+the content, add cue listeners in order to trigger events when the video is played 
+and we will display them on the side this time, and there are hyperlinks you can 
+click and if I click somewhere, the video starts at the corresponding location 
+and you can see that the cues are highlighted in black as the video advances.</p>
+<p>There are not a lot of subtitles at this location but… you can see that the 
+transcript is highlighted as the video is playing.</p>
 <p>What have we added to the previous example?</p>
-<p>The first thing is that we just defined a rectangular area here: it
-is just a div with an id=“transcript”, and we added some CSS here, for
-locating the video and the transcript on the same horizontal position,
-so that the video can grow and the transcript too.</p>
-<p>We use floating positions, I put ‘float:left;’ for the transcript
-that is on the right because if I put ‘right’ it will grow but it will
-be aligned on the right… and I prefer it on the left.</p>
-<p>We can give a look at the CSS, there is nothing complicated and this
-can scroll because of the overflow:auto; rule we added to the div.</p>
-<p>When we click on the buttons here, we call a function called
-loadTranscript(), instead of forceLoadTrack(0) and forceLoadTrack(1),
-this time we just ask for a particular language and, it’s implicit, but
-we are also looking for track files that are not chapters.</p>
-<p>Let’s have a look at this loadTranscript() function here. So the
-loadTranscript() function has a parameter that is the language.</p>
-<p>The first thing we do is that we clear the div, we are just setting
-the content to null and then we disable all the tracks: we set the mode
-of the all the tracks ‘disabled’ because when we click here and we can
-change the language of the transcript, we need to disable all track and
-enable just the one we are interested in.</p>
+<p>The first thing is that we just defined a rectangular area here: it is just 
+a div with an id=“transcript”, and we added some CSS here, for locating the video 
+and the transcript on the same horizontal position, so that the video can grow 
+and the transcript too.</p>
+<p>We use floating positions, I put ‘float:left;’ for the transcript that is on 
+the right because if I put ‘right’ it will grow but it will be aligned on the right
+… and I prefer it on the left.</p>
+<p>We can give a look at the CSS, there is nothing complicated and this can scroll 
+because of the overflow:auto; rule we added to the div.</p>
+<p>When we click on the buttons here, we call a function called loadTranscript(), 
+instead of forceLoadTrack(0) and forceLoadTrack(1), this time we just ask for a 
+particular language and, it’s implicit, but we are also looking for track files 
+that are not chapters.</p>
+<p>Let’s have a look at this loadTranscript() function here. So the loadTranscript() 
+function has a parameter that is the language.</p>
+<p>The first thing we do is that we clear the div, we are just setting the content 
+to null and then we disable all the tracks: we set the mode of the all the tracks 
+‘disabled’ because when we click here and we can change the language of the transcript, 
+we need to disable all track and enable just the one we are interested in.</p>
 <p>How can we locate the right track with the language?</p>
-<p>We just iterate on the tracks… this is the text tracks object… and we
-get the current track as an HTML element and as a TextTrack and using
-the TextTrack, we just check the language and the kind.</p>
-<p>And if the language is equal to the one we are looking for, and if
-the kind is different than chapters, then this is the track we would
-like.</p>
-<p>By forcing the mode to “showing”, in case the track has not already
-been loaded, it will trigger (it will ask the browser) to load the
-file.</p>
-<p>This is where we test if the file is already been loaded, it is
-exactly the same test we did in the previous example.</p>
-<p>If the track is already loaded, just display the cues in sync with
-the video and if the track has not been loaded, display the cues after
-the track has been loaded.</p>
-<p>This is the same function as the getContent we had, except that we
-renamed it.</p>
-<p>This takes the track as an HTML element and the TextTrack as
-parameters.</p>
+<p>We just iterate on the tracks… this is the text tracks object… and we get the 
+current track as an HTML element and as a TextTrack and using the TextTrack, we 
+just check the language and the kind.</p>
+<p>And if the language is equal to the one we are looking for, and if the kind 
+is different than chapters, then this is the track we would like.</p>
+<p>By forcing the mode to “showing”, in case the track has not already been loaded, 
+it will trigger (it will ask the browser) to load the file.</p>
+<p>This is where we test if the file is already been loaded, it is exactly the 
+same test we did in the previous example.</p>
+<p>If the track is already loaded, just display the cues in sync with the video 
+and if the track has not been loaded, display the cues after the track has been 
+loaded.</p>
+<p>This is the same function as the getContent we had, except that we renamed it.</p>
+<p>This takes the track as an HTML element and the TextTrack as parameters.</p>
 <p>Let’s have a look at how it is done.</p>
-<p>“displayCuesAfterTrackLoaded” just waits for the load event to be
-triggered and then it called display the cues function that will display
-the cues in sync.</p>
-<p>Either we call it directly if the track is loaded, or we know that
-the loading has been triggered if necessary, and we just wait in the
-load event listener.</p>
+<p>“displayCuesAfterTrackLoaded” just waits for the load event to be triggered 
+and then it called display the cues function that will display the cues in sync.</p>
+<p>Either we call it directly if the track is loaded, or we know that the loading 
+has been triggered if necessary, and we just wait in the load event listener.</p>
 <p>Let’s have a look at what displayCues function does.</p>
-<p>The displayCues function is exactly the same as the readContent we
-had earlier.</p>
-<p>It gets the cue list for the given track, add listeners to the
-track.</p>
-<p>And instead of just displaying the plain text below the video as we
-did earlier, we will just make a nice format and we will add the id of
-the cue in the element we are creating.</p>
-<p>Let’s have a look… I’m calling the inspector… let’s have a look at
-one of the list items here.</p>
+<p>The displayCues function is exactly the same as the readContent we had earlier.</p>
+<p>It gets the cue list for the given track, add listeners to the track.</p>
+<p>And instead of just displaying the plain text below the video as we did earlier, 
+we will just make a nice format and we will add the id of the cue in the element 
+we are creating.</p>
+<p>Let’s have a look… I’m calling the inspector… let’s have a look at one of the 
+list items here.</p>
 <p>You can see that in the list item we use the CSS class called cues,
 just for the formatting, for putting them in blue and adding an
 underline when the mouse is over, and we use the id of the cue in the
@@ -3043,24 +3057,23 @@ right of the video.</p>
 </details>
 
 <h4>Explanations:</h4>
+
 <ul>
-<li><p><i>Lines  4-18</i>: when the page is loaded, we assemble all of
-the track HTML elements and their corresponding TextTrack
-objects.</p></li>
-<li><p><i>Line 19</i>: using that we can build the chapter navigation
-menu. All is done in the window.onload callback, so nothing happens
-until the DOM is ready.</p></li>
-<li><p><i>Lines 24-43</i>: the buildChapterMenu function first locates
-the chapter track for the given language, then checks if this track has
-been loaded by the browser. Once it has been confirmed that the track is
-loaded, the function displayChapters is called. </p></li>
-<li><p><i>Lines 45-65</i>: the displayChapters(track) function will
-iterate over all of the cues within the chapter track passed as
-its parameter. For each cue, the JSON content is re-formatted back into
-a JavaScript object (<i>line 55</i>) and the image filename and
-description of the chapter/cue are extracted (<i>lines 56-57</i>). Then
-an HTML description for the chapter is built and added to the div
-element with id=chapterMenu.</p></li>
+  <li><p><i>Lines  4-18</i>: when the page is loaded, we assemble all of the track 
+    HTML elements and their corresponding TextTrack objects.</p></li>
+  <li><p><i>Line 19</i>: using that we can build the chapter navigation menu. All 
+    is done in the window.onload callback, so nothing happens until the DOM is 
+	ready.</p></li>
+  <li><p><i>Lines 24-43</i>: the buildChapterMenu function first locates the chapter 
+    track for the given language, then checks if this track has been loaded by the 
+	browser. Once it has been confirmed that the track is loaded, the function 
+	displayChapters is called.</p></li>
+  <li><p><i>Lines 45-65</i>: the displayChapters(track) function will iterate over 
+    all of the cues within the chapter track passed as its parameter. For each cue, 
+	the JSON content is re-formatted back into a JavaScript object (<i>line 55</i>) 
+	and the image filename and description of the chapter/cue are extracted 
+	(<i>lines 56-57</i>). Then an HTML description for the chapter is built and 
+	added to the div element with id=chapterMenu.</p></li>
 </ul>
 
 <h4>Here is the HTML code for one menu marker:</h4>
@@ -3072,12 +3085,11 @@ element with id=chapterMenu.</p></li>
 5.    &lt;/figcaption&gt;
 6. &lt;/figure&gt;</pre>
 
-<p>Notice that we add a click listener to each thumbnail image. Clicking
-a chapter thumbnail will cause the video to jump to the chapter time
-location (the example above is for the first chapter with start time =
-0).</p>
-<p>We also added CSS classes “img”, “thumb” and “desc”, which make
-it easy to style and position the thumbnails using CSS.</p>
+<p>Notice that we add a click listener to each thumbnail image. Clicking a chapter 
+thumbnail will cause the video to jump to the chapter time location (the example 
+above is for the first chapter with start time = 0).</p>
+<p>We also added CSS classes “img”, “thumb” and “desc”, which make it easy to style 
+and position the thumbnails using CSS.</p>
 
 <h4>CSS source code extract:</h4>
 
@@ -3119,24 +3131,23 @@ it easy to style and position the thumbnails using CSS.</p>
 
 </details>
 
-<p>A sample menu marker is shown below (it’s also animated - hover your
-mouse over the thumbnail to see its animated shadow):</p>
+<p>A sample menu marker is shown below (it’s also animated - hover your mouse over 
+the thumbnail to see its animated shadow):</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 37. again, movie title (68) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image037.webp?raw=true"
-  alt="Screenshot of movie title 'the orange open movie...presents'. . .."
+  alt="Screenshot of movie title 'the orange open movie...presents'. . ."
   style="width:30%;" />
 
 <h4>Introduction</h4>
 
 <p>Combining techniques: a clickable transcript and a chapter menu</p>
-<p>This example is the same as the previous one except that we have kept
-the features that we saw previously: the buttons for displaying a
-clickable transcript. The code is longer, but it’s just a combination of
-the “clickable transcript” example from the previous lesson, and the
-code from earlier in this lesson.</p>
+<p>This example is the same as the previous one except that we have kept the features 
+that we saw previously: the buttons for displaying a clickable transcript. The 
+code is longer, but it’s just a combination of the “clickable transcript” example 
+from the previous lesson, and the code from earlier in this lesson.</p>
 <p><a href="https://jsbin.com/zewemaj/edit?html,js,output" target="_blank" rel="noopener noreferrer">Try it at
 JSBin</a></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3150,22 +3161,20 @@ JSBin</a></p>
 <h3 id="ch1-4-1">1.4.1 Creating Tracks on the Fly</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>In this lesson, we are going to show:</p>
+
 <ul>
-<li><p>The addTextTrack method for adding a TextTrack to an
-html &lt;track&gt; element, </p></li>
-<li><p>The VTTCue constructor, for creating cues programmatically,
-and </p></li>
-<li><p>the addCue method for adding cues on the fly to
-a TextTrack etc.</p></li>
+  <li><p>The addTextTrack method for adding a TextTrack to an html &lt;track&gt; element,</p></li>
+  <li><p>The VTTCue constructor, for creating cues programmatically, and </p></li>
+  <li><p>the addCue method for adding cues on the fly to a TextTrack etc.</p></li>
 </ul>
-<p>These methods will allow us to create TextTrack objects and cues on
-the fly, programatically.</p>
-<p>The presented example shows how we can create “<b>sound sprites</b>”:
-small sounds that are parts of a mp3 file, and that can be played
-separately. Each sound will be defined as a cue in a track associated
-with the &lt;audio&gt; element.</p>
-<p>Let’s create on the fly a WebVTT file with many cues, in order to cut
-a big sound file into segments and play them on demand</p>
+
+<p>These methods will allow us to create TextTrack objects and cues on the fly, 
+programatically.</p>
+<p>The presented example shows how we can create “<b>sound sprites</b>”: small 
+sounds that are parts of a mp3 file, and that can be played separately. Each sound 
+will be defined as a cue in a track associated with the &lt;audio&gt; element.</p>
+<p>Let’s create on the fly a WebVTT file with many cues, in order to cut a big 
+sound file into segments and play them on demand</p>
 <p><a href="https://jsbin.com/lodiju/edit?html,js,output" target="_blank" rel="noopener noreferrer">This JsBin
 demonstration</a>, adapted from an original demo by Sam Dutton,
 uses <a href="https://mainline.i3s.unice.fr/mooc/animalSounds.mp3" target="_blank" rel="noopener noreferrer">a
@@ -3184,8 +3193,8 @@ single mp3 file that contains recorded animal sounds</a>.</p>
 
 <h4>Explanations:</h4>
 
-<p>The demo uses a JavaScript array for defining the different animal
-sounds in this audio file:</p>
+<p>The demo uses a JavaScript array for defining the different animal sounds in 
+this audio file:</p>
 
 <details>
   <summary>JavaScript code!</summary>
@@ -10462,6 +10471,7 @@ yPos position, and at anappropriate size. </p>
 
 <p>We define the Sprite model. This is the one we used to create the
 small robot in the previous example.</p>
+
 <ul>
   <li><p>A Sprite is defined by an array of SpriteImage objects.</p></li>
   <li><p>It has a method for extracting all SpriteImages from a given sprite sheet and filling the above array.</p></li>
@@ -11349,7 +11359,7 @@ Some of them are based on the framework presented in the course.</p>
 <img class="displayed"
   src="./images/webp/image160.webp"
   style="width:40%;" 
-  alt="Screenshot of the Duck hunt game" />
+  alt="Screenshot of the Duck hunt game." />
 
 <ul>
   <li>Shoot em up (by Max Chazarra) (sources <a href="https://github.com/MaxChazarra/MIAGE-Jeu-JS/tree/5e78fa85d257b81116fd784460848172040b3b71" target="_blank" rel="noopener noreferrer">on the GitHub site</a>). This one started with the game framework presented in the course:</li>
@@ -11363,10 +11373,9 @@ Some of them are based on the framework presented in the course.</p>
   alt="Screenshot of the shoot em up game." />
 
 <ul>
-<li>Gameboy Tetris (written starting from the game framework presented
-in the course). <a
-href="https://courses.edx.org/assets/courseware/v1/b3fc2d6c5c519aaa5986f58e064a6426/asset-v1:W3Cx+HTML5.2x+2T2020a+type@asset+block/Tetris.rar" target="_blank" rel="noopener noreferrer">Download
-the sources</a> (author Maxime Demetrio)</li>
+  <li>Gameboy Tetris (written starting from the game framework presented in the 
+    course). <a href="https://courses.edx.org/assets/courseware/v1/b3fc2d6c5c519aaa5986f58e064a6426/asset-v1:W3Cx+HTML5.2x+2T2020a+type@asset+block/Tetris.rar" target="_blank" rel="noopener noreferrer">Download 
+	the sources</a> (author Maxime Demetrio)</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 162. gameboy tetris in html5 (263) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -12063,16 +12072,28 @@ creations.</p>
 <h4>Suggested topics of discussion:</h4>
 
 <ul>
-  <li>Did you hear about <a href="https://davidwalsh.name/fetch" target="_blank" rel="noopener noreferrer">the Fetch API</a>? This APIs is easier to use than XhR2, but monitoring progress is a bit trickier and will require the use of the streams API. Monitoring upload is not yet supported. <a href="https://javascript.info/fetch-progress" target="_blank" rel="noopener noreferrer">See for example this article</a>.</li>
-  <li>Did you note that using XHR2 for monitoring progress is really simple and efficient?  What is your experience? Please share ;)</li>
-  <li>How can we monitor the speed of an upload/download in bytes per second? What would you propose? Did you find any interesting resources on the Web that explain that?</li>
+  <li>Did you hear about <a href="https://davidwalsh.name/fetch" target="_blank" 
+    rel="noopener noreferrer">the Fetch API</a>? This APIs is easier to use than 
+	XhR2, but monitoring progress is a bit trickier and will require the use of 
+	the streams API. Monitoring upload is not yet supported. <a href="https://javascript.info/fetch-progress" target="_blank" rel="noopener noreferrer">See for example this article</a>.</li>
+  <li>Did you note that using XHR2 for monitoring progress is really simple and 
+    efficient?  What is your experience? Please share ;)</li>
+  <li>How can we monitor the speed of an upload/download in bytes per second? What 
+    would you propose? Did you find any interesting resources on the Web that explain 
+	that?</li>
 </ul>
 
 <h4>Optional projects:</h4>
 
 <ul>
-  <li><p>If you know how to program server-side code, please make a small app that will upload files, monitor the progress of the upload, save the files server-side, and send back a message containing the URLs of the files. Better: create a Web page that displays links to the uploaded files.</p></li>
-  <li><p>Try to write an assetLoader function that will download a set of images and sound (maybe using the BufferUtility seen during Module 1), but this time with a progress bar. This could be useful for a game, or for a Web app that needs to load resources before starting.</p></li>
+  <li><p>If you know how to program server-side code, please make a small app that 
+    will upload files, monitor the progress of the upload, save the files server-side, 
+	and send back a message containing the URLs of the files. Better: create a Web 
+	page that displays links to the uploaded files.</p></li>
+  <li><p>Try to write an assetLoader function that will download a set of images 
+    and sound (maybe using the BufferUtility seen during Module 1), but this time 
+	with a progress bar. This could be useful for a game, or for a Web app that 
+	needs to load resources before starting.</p></li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-3-1">3.3.1 Introduction</h3>
@@ -12383,11 +12404,22 @@ it at CodePen</a>:</p>
 <h4>In the above code, note:</h4>
 
 <ul>
-  <li><p><i>Line 44</i>: we define the drop zone (ondrop=…), and when a drag enters the zone we prevent event propagation (ondragover=“return false”)</p></li>
-  <li><p>When we enter the dragstart listener (<i>line 5</i>), we copy the dragged-element’s data-value attribute to the drag and drop clipboard with a name/key equal to “Fruit” (<i>line 11</i>),</p></li>
-  <li><p>When a drop occurs in the “drop zone” (the &lt;div&gt; at <i>line 44</i>), the dropHandler(event) function is called. This always occurs after a call to the dragstart handler. In other words: when we enter the drop handler, there must always be something on the clipboard! We use an event.dataTransfer.setData(…) in the dragstart handler, and an event.dataTransfer.getData(…) in the drop handler.</p></li>
-  <li><p>The dropHandler function is called (<i>line 15</i>), we get the object with a name/key equal to “Fruit” (<i>line 21</i>) from the clipboard , we create a &lt;li&gt; element (<i>line 18</i>), and set its value according to the value in that clipboard object (<i>lines 23-31</i>),</p></li>
-  <li><p>Finally we add the &lt;li&gt; element to the &lt;ol&gt; list within the drop zone &lt;div&gt;.</p></li>
+  <li><p><i>Line 44</i>: we define the drop zone (ondrop=…), and when a drag enters 
+    the zone we prevent event propagation (ondragover=“return false”)</p></li>
+  <li><p>When we enter the dragstart listener (<i>line 5</i>), we copy the dragged-
+    element’s data-value attribute to the drag and drop clipboard with a name/key 
+	equal to “Fruit” (<i>line 11</i>),</p></li>
+  <li><p>When a drop occurs in the “drop zone” (the &lt;div&gt; at <i>line 44</i>), 
+    the dropHandler(event) function is called. This always occurs after a call to 
+	the dragstart handler. In other words: when we enter the drop handler, there 
+	must always be something on the clipboard! We use an event.dataTransfer.setData(…) 
+	in the dragstart handler, and an event.dataTransfer.getData(…) in the drop handler.</p></li>
+  <li><p>The dropHandler function is called (<i>line 15</i>), we get the object 
+    with a name/key equal to “Fruit” (<i>line 21</i>) from the clipboard , we create 
+	a &lt;li&gt; element (<i>line 18</i>), and set its value according to the value 
+	in that clipboard object (<i>lines 23-31</i>),</p></li>
+  <li><p>Finally we add the &lt;li&gt; element to the &lt;ol&gt; list within the 
+    drop zone &lt;div&gt;.</p></li>
 </ul>
 
 <p>Notice that we use some CSS to set aside some screen-space for the
@@ -12624,8 +12656,13 @@ we can listen to, and can be used on the draggable elements as well as
 in the drop zones:</p>
 
 <ul>
-  <li><p><b>dragstart</b>: this event, which we discussed in a previous section, is used on draggable elements. We used it to get a value from the element that was dragged, and copied it onto the clipboard. It’s a good time to add some visual feedback - for example, by adding a CSS class to the draggable object.</p></li>
-  <li><p><b>dragend</b>: this event is launched when the drag has ended (on a drop or if the user releases the mouse button outside a drop zone). In both cases, it is a best practice to reset the style of the draggable object to default.</p></li>
+  <li><p><b>dragstart</b>: this event, which we discussed in a previous section, 
+    is used on draggable elements. We used it to get a value from the element that 
+	was dragged, and copied it onto the clipboard. It’s a good time to add some 
+	visual feedback - for example, by adding a CSS class to the draggable object.</p></li>
+  <li><p><b>dragend</b>: this event is launched when the drag has ended (on a drop 
+    or if the user releases the mouse button outside a drop zone). In both cases, 
+	it is a best practice to reset the style of the draggable object to default.</p></li>
 </ul>
 
 <p>The next screenshot shows the use of CSS styles (green background +
@@ -12906,12 +12943,12 @@ will not necessarily support all of these; we noticed that copyMove,
 etc. had no effect with Chrome, for example). The values of “move”,
 “copy”, and “link” are widely supported.</p>
 <p>All possible values for dropEffect and effectAllowed:</p>
+
 <ul>
-<li><p><b>dataTransfer.effectAllowed</b> can be set to the following
-values: none, copy, copyLink, copyMove, link, linkMove, move, all,
-and uninitialized.</p></li>
-<li><p><b>dataTransfer.dropEffect </b>can take on one of the following
-values: <b>none</b>, <b>copy</b>, <b>link</b>, <b>move</b>.</p></li>
+  <li><p><b>dataTransfer.effectAllowed</b> can be set to the following values:
+    none, copy, copyLink, copyMove, link, linkMove, move, all, and uninitialized.</p></li>
+  <li><p><b>dataTransfer.dropEffect </b>can take on one of the following values: 
+    <b>none</b>, <b>copy</b>, <b>link</b>, <b>move</b>.</p></li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-3-7">3.3.7 Drag and drop HTML elements</h3>
@@ -13098,10 +13135,10 @@ creations.</p>
 <h4>Suggested topics of discussion:</h4>
 
 <ul>
-<li><p>If you find interesting drag and drop examples on the Web, please
-share them in the forum.</p></li>
-<li><p>What other example(s) would you like to be added to the course
-(drag and drop of files is covered in the next lesson)?</p></li>
+  <li><p>If you find interesting drag and drop examples on the Web, please share 
+    them in the forum.</p></li>
+  <li><p>What other example(s) would you like to be added to the course (drag and 
+    drop of files is covered in the next lesson)?</p></li>
 </ul>
 
 <h4>Optional projects:</h4>
@@ -13969,27 +14006,23 @@ creations.</p>
 <h4>Suggested topics of discussion:</h4>
 
 <ul>
-<li>Did you know that it was possible to gain control over the process
-of dragging a file out of a page, and dropping it onto the desktop (for
-example)?</li>
+  <li>Did you know that it was possible to gain control over the process of dragging 
+    a file out of a page, and dropping it onto the desktop (for example)?</li>
 </ul>
 
 <h4>Optional projects:</h4>
 
 <ul>
-<li><p>If a user were to drag and drop the same file to a drop zone
-several times, this would be confusing. Try to modify some of the
-examples to avoid duplication (i.e.: not uploading the same file
-twice).</p></li>
-<li><p>Try to modify the example that played a song loaded in memory,
-using Web Audio, for allowing a song file to be dragged and
-dropped.</p></li>
-<li><p>Combine these topics with the talents you developed earlier,
-working with canvas: instead of a progress ‘thermometer’ to measure XHR2
-upload progress, try modifying the appearance of the thumbnail to show
-the proportion of the graphic file as it is transferred (alternatively,
-if you have style-sheet skills, you could try this using CSS
-transitions).</p></li>
+  <li><p>If a user were to drag and drop the same file to a drop zone several times, 
+    this would be confusing. Try to modify some of the examples to avoid duplication 
+	(i.e.: not uploading the same file twice).</p></li>
+  <li><p>Try to modify the example that played a song loaded in memory, using Web 
+    Audio, for allowing a song file to be dragged and dropped.</p></li>
+  <li><p>Combine these topics with the talents you developed earlier, working with 
+    canvas: instead of a progress ‘thermometer’ to measure XHR2 upload progress, 
+	try modifying the appearance of the thumbnail to show the proportion of the 
+	graphic file as it is transferred (alternatively, if you have style-sheet skills, 
+	you could try this using CSS transitions).</p></li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-5-1">3.5.1 Introduction</h3>
@@ -14043,11 +14076,11 @@ code provided with each of the examples.</p>
 <h4>Packaged approach: send all form content, including files, only when the form is submitted</h4>
 
 <ul>
-<li><p>This method enables us to send all of the form’s content (regular
-input field values + files selected) at once, <i>using a single Ajax
-request</i> (we will need only one progress bar),</p></li>
-<li><p>or we may <i>use multiple Ajax requests</i>, which we don’t
-start until the submit button has been clicked.</p></li>
+  <li><p>This method enables us to send all of the form’s content (regular input 
+    field values + files selected) at once, <i>using a single Ajax request</i> 
+	(we will need only one progress bar),</p></li>
+  <li><p>or we may <i>use multiple Ajax requests</i>, which we don’t start until 
+    the submit button has been clicked.</p></li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 187. second approach (323) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -14825,6 +14858,7 @@ programming principles behind IndexedDB.</p>
 <h4>External resources</h4>
 
 <p>Additional information is available on these Web sites. Take a look at these!</p>
+
 <ul>
   <li><p>MDN’s documentation on “<a href="https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Using_IndexedDB" target="_blank" rel="noopener noreferrer">Using IndexedDB</a></p></li>
   <li><p><a href="http://robertnyman.com/2012/03/06/storing-images-and-files-in-indexeddb/" target="_blank" rel="noopener noreferrer">Storing images and files in IndexedDB</a></p></li>
@@ -15652,16 +15686,17 @@ code):</p>
 </details>
 
 <p><b>Explanations:</b></p>
+
 <ul>
-<li><p>Since there’s only one object store, you can avoid passing a list
-of object stores that you need in your transaction and just pass the
-name as a string (<i>line 8</i>),</p></li>
-<li><p>We are only reading from the database, so we don’t need a
-“readwrite” transaction. Calling transaction() with no mode specified
-gives a “readonly” transaction (<i>line 8</i>),</p></li>
-<li><p>We don’t actually save the request object to a variable. Since
-the DOM event has the request as its target we can use the event to get
-to the result property (<i>line 9</i>).</p></li>
+  <li><p>Since there’s only one object store, you can avoid passing a list of object 
+    stores that you need in your transaction and just pass the name as a string 
+	(<i>line 8</i>),</p></li>
+  <li><p>We are only reading from the database, so we don’t need a “readwrite” 
+    transaction. Calling transaction() with no mode specified gives a “readonly” 
+	transaction (<i>line 8</i>),</p></li>
+  <li><p>We don’t actually save the request object to a variable. Since the DOM 
+    event has the request as its target we can use the event to get to the result 
+	property (<i>line 9</i>).</p></li>
 </ul>
 
 <h4>Second method: getting more than one piece of data</h4>
@@ -15717,23 +15752,22 @@ store:</p>
 <p>The openCursor() function can take several (optional) arguments.</p>
 
 <ul>
-<li><p>First, you can limit the range of items that are retrieved by
-using a key range object - we’ll get to that in a minute.</p></li>
-<li><p>Second, you can specify the direction that you want to
-iterate.</p></li>
+  <li><p>First, you can limit the range of items that are retrieved by using a 
+    key range object - we’ll get to that in a minute.</p></li>
+  <li><p>Second, you can specify the direction that you want to iterate.</p></li>
 </ul>
-<p>In the above example, we’re iterating over all objects in ascending
-order. The onsuccess callback for cursors is a little special. <b>The
-cursor object itself is the result property of the request</b> (above
-we’re using the shorthand, so it’s event.target.result). Then <b>the
-actual key and value can be found on the key and value properties of the
-cursor object</b>. If you want to keep going, then you have to
-call cursor.continue() on the cursor.</p>
-<p>When you’ve reached the end of the data (or if there were no entries
-that matched your openCursor() request) you still get
-a success callback, but the result property is undefined.</p>
-<p>One common pattern with cursors is to retrieve all objects in an
-object store and add them to an array, like this:</p>
+
+<p>In the above example, we’re iterating over all objects in ascending order. The 
+onsuccess callback for cursors is a little special. <b>The cursor object itself 
+is the result property of the request</b> (above we’re using the shorthand, so 
+it’s event.target.result). Then <b>the actual key and value can be found on the 
+key and value properties of the cursor object</b>. If you want to keep going, then 
+you have to call cursor.continue() on the cursor.</p>
+<p>When you’ve reached the end of the data (or if there were no entries that matched 
+your openCursor() request) you still get a success callback, but the result property 
+is undefined.</p>
+<p>One common pattern with cursors is to retrieve all objects in an object store 
+and add them to an array, like this:</p>
 
 <details>
   <summary>JavaScript code!</summary>
@@ -15765,20 +15799,19 @@ JSBin</a>.</p>
 
 <h4>Getting data using an index</h4>
 
-<p>Storing customer data using the ssn as a key is logical since
-the ssn uniquely identifies an individual. If you need to look up a
-customer by name, however, you’ll need to iterate over every ssn in the
-database until you find the right one.</p>
-<p>Searching in this fashion would be very slow. So instead we use <i>an
-index</i>.</p>
+<p>Storing customer data using the ssn as a key is logical since the ssn uniquely 
+identifies an individual. If you need to look up a customer by name, however, you’ll 
+need to iterate over every ssn in the database until you find the right one.</p>
+<p>Searching in this fashion would be very slow. So instead we use <i>an index</i>.</p>
 <p>Remember that we defined two indexes in our data store:</p>
+
 <ol type="1">
-<li><p>one on the name (non-unique) and</p></li>
-<li><p>one on the email properties (unique).</p></li>
+  <li><p>one on the name (non-unique) and</p></li>
+  <li><p>one on the email properties (unique).</p></li>
 </ol>
-<p>Here is a function that examines by name the person-objects in the
-object store, and returns the first one it finds with a name equal to
-“Bill”:</p>
+
+<p>Here is a function that examines by name the person-objects in the object store, 
+and returns the first one it finds with a name equal to “Bill”:</p>
 
 <details>
   <summary>JavaScript code!</summary>
@@ -16413,17 +16446,16 @@ the template’s content and true means “deep copy” the content.</p>
 <h4>Explanations</h4>
 
 <p>:</p>
+
 <ul>
-<li><p>In this example, <i>line 1</i> assigns the DOM node corresponding
-to the template we defined to variable t.</p></li>
-<li><p>t.content (<i>line 3</i>) is the root of the subtree in the
-template (in other words, the lines of HTML code inside the template
-element)</p></li>
-<li><p>Note that we set the value of the src attribute of the image
-inside the template at <i>line 3</i>, using a CSS selector on the
-template’s content.</p></li>
-<li><p><i>Lines 5 and 6</i> clone the template’s content and add it to
-the &lt;body&gt; of the document.</p></li>
+  <li><p>In this example, <i>line 1</i> assigns the DOM node corresponding to the 
+    template we defined to variable t.</p></li>
+  <li><p>t.content (<i>line 3</i>) is the root of the subtree in the template (in 
+    other words, the lines of HTML code inside the template element)</p></li>
+  <li><p>Note that we set the value of the src attribute of the image inside the 
+    template at <i>line 3</i>, using a CSS selector on the template’s content.</p></li>
+  <li><p><i>Lines 5 and 6</i> clone the template’s content and add it to the &lt;body&gt; 
+    of the document.</p></li>
 </ul>
 
 <h4>Example</h4>
@@ -16971,24 +17003,21 @@ shadow DOM:</p>
 <h4>Explanations:</h4>
 
 <ul>
-<li><p><i>Line 5: </i>we use this particular selector for safety. It
-means “select the element only in the HTML of the document that is
-attached to this JavaScript. Web Components might be included in other
-HTML pages, as we will see in the next pages of this course. A good
-practice is to select elements only in the HTML page of the Web
-Component, not in the document that will import the Web
-Component.</p></li>
-<li><p><i>Line 7</i>: definition of the Web Component class attached to
-the custom element &lt;my-widget&gt;</p></li>
-<li><p><i>Lines 8-17</i>:  the constructor definition for the class
-always starts by calling super() so that the correct prototype chain is
-established. Inside the constructor, we define all the functionality the
-element will have. Very often this starts by cloning a template in the
-Shadow DOM.</p></li>
-<li><p><i>Lines 22</i>: registration of a new custom element
-named &lt;my-widget&gt;. When the browser encounters &lt;my-widget&gt; within an
-HTML document, it will create an instance of the MyWidget class and
-render the shadow DOM of the Web Component.</p></li>
+  <li><p><i>Line 5: </i>we use this particular selector for safety. It means “select 
+    the element only in the HTML of the document that is attached to this JavaScript. 
+	Web Components might be included in other HTML pages, as we will see in the next 
+	pages of this course. A good practice is to select elements only in the HTML page 
+	of the Web Component, not in the document that will import the Web Component.</p></li>
+  <li><p><i>Line 7</i>: definition of the Web Component class attached to the custom 
+    element &lt;my-widget&gt;</p></li>
+  <li><p><i>Lines 8-17</i>:  the constructor definition for the class always starts 
+    by calling super() so that the correct prototype chain is established. Inside 
+	the constructor, we define all the functionality the element will have. Very 
+	often this starts by cloning a template in the Shadow DOM.</p></li>
+  <li><p><i>Lines 22</i>: registration of a new custom element named &lt;my-widget&gt;. 
+    When the browser encounters &lt;my-widget&gt; within an HTML document, it will 
+	create an instance of the MyWidget class and render the shadow DOM of the Web 
+	Component.</p></li>
 </ul>
 
 <h4>Full example</h4>
