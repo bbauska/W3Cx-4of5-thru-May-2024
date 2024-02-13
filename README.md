@@ -8,21 +8,19 @@ w3cx-4of5-html5.2x: Coursera - Front-End Web Development - Apps and Games
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ readme.md of W3Cx-4of5-HTML5.2x ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w3cx logo (01) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/w3cx-logo.webp?raw=true"
-   width="200px;"
-   alt="W3C logo." />
+  style="width:200px;"
+  alt="W3C logo." />
 </p>
 
 <h3 align="center">W3Cx-4of5-HTML5.2x - Apps and Games</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 01. W3Cx-4of5-HTML5.2x logo (01) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image001.webp?raw=true"
-   width="500px;"
-   alt="W3Cx HTML 5.2x logo." />
+  style="width:500px;"
+  alt="W3Cx HTML 5.2x logo." />
 </p>
 
 ## [Table of contents](#table-of-contents)
@@ -152,12 +150,11 @@ JavaScript, to create your own HTML5 app and/or game.
 <h4>Web browsers</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 03. which browser? (14) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image003.webp?raw=true"
-   width="18%"
-   alt="A man looking at his laptop screen as if he is considering which browser to use 
-     - a few browser logos float in the background." />
+  style="width:18%"
+  alt="A man looking at his laptop screen as if he is considering which browser to use 
+    - a few browser logos float in the background." />
 </p>
 
 Not surprisingly, it would be helpful to have a browser (short for "Web
@@ -218,11 +215,10 @@ examples will actually use these.
 <h4>JS Bin</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 04. js bin logo (15) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image004.webp"
-   width="10%"
-   alt="JS Bin logo." />
+  style="width:10%"
+  alt="JS Bin logo." />
 </p>
 
 <a href="http://jsbin.com/">JS Bin</a> is an open source collaborative Web development 
@@ -237,11 +233,10 @@ free) if you do not want to lose your contributions/personal work.
 <h4>CodePen</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~- 05. codepen logo (15) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image005.png"
-   width="10%"
-   alt="CodePen logo."
+  style="width:10%"
+  alt="CodePen logo."
 </p>
 
 <a href="http://codepen.io/">CodePen</a> is an HTML, CSS, and JavaScript code editor 
@@ -271,11 +266,10 @@ available as downloadable sources or as free services on the <a href="https://w
 <h4>W3C Validator</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 06. w3c validator (16) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image006.webp"
-   width="15%"
-   alt="W3C Validator." />
+  style="width:15%"
+  alt="W3C Validator." />
 </p>
 
 The <a href="https://validator.w3.org/">W3C validator</a> checks the <a href="https://validator.w3.org/docs/help.html#validation_basics">markup
@@ -289,11 +283,10 @@ stylesheets.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 07. css validator (16) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image007.webp"
-   width="15%"
-   alt="Laptop showing unicorn validator." />
+  style="width:15%"
+  alt="Laptop showing unicorn validator." />
 </p>
 
 <h4>Unicorn</h4>
@@ -329,12 +322,11 @@ completed by summaries of guidelines developed at W3C, in particular Web
 accessibility guidelines, the Mobile Web Best Practices, and a number of
 internationalization tips.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------------------ 08. w3c lookup (17) --------------------------------------->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 08. w3c lookup (17) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image008.webp?raw=true"
-   width="35%"
-   alt="W3C lookup." />
+  style="width:35%"
+  alt="W3C lookup." />
 </p>
 
 Its main feature is a lookup search box, where one can start typing a
@@ -377,25 +369,22 @@ Docs</a>.
 of front-end Web technologies on desktop and mobile Web browsers. Below
 is a snapshot of what information is given by CanIUse when searching for
 "CSS3 colors".
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~ 09. example of a caniuse browser support table (using css3 colors) (18) ~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image009.webp?raw=true"
-   width="85%"
-   alt="Example of a CanIUse browser support table (using CSS3 colors)." />
+  style="width:85%"
+  alt="Example of a CanIUse browser support table (using CSS3 colors)." />
 </p>
 
 <h3>MDN Web Docs</h3>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 10. mdn web docs logo (18) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image010.webp?raw=true"
-   width="30%"
-   alt="MDN Web Docs logo." />
+  style="width:30%"
+  alt="MDN Web Docs logo." />
 </p>
 
 To help developers make these decisions consciously rather than
@@ -407,9 +396,11 @@ you’re considering for your project, you know exactly which browsers will supp
 
 <h4>External resources:</h4>
 
--   <a href="https://hacks.mozilla.org/2018/02/mdn-browser-compatibility-data/">MDN browser compatibility data: Taking the guesswork out of web compatibility</a>
+-   <a href="https://hacks.mozilla.org/2018/02/mdn-browser-compatibility-data/">
+      MDN browser compatibility data: Taking the guesswork out of web compatibility</a>
 
--   <a href="https://hacks.mozilla.org/2019/09/caniuse-and-mdn-compat-data-collaboration/">Caniuse and MDN compatibility data collaboration</a>
+-   <a href="https://hacks.mozilla.org/2019/09/caniuse-and-mdn-compat-data-collaboration/">
+      Caniuse and MDN compatibility data collaboration</a>
 
 <h4>Help Build the Web Platform</h4>
 
@@ -418,26 +409,22 @@ Web sites are designed and standardized in W3C in a completely open and
 transparent process.
 
 In fact, all W3C specifications are developed in public <a href="https://github.com/w3c/">GitHub
-repositories</a>, so if you are familiar with
-GitHub, you already know how to contribute to W3C specifications! This
-is all about raising issues (with feedback and suggestions) and/or
-bringing pull requests to fix identified issues.
+repositories</a>, so if you are familiar with GitHub, you already know how to contribute to W3C 
+specifications! This is all about raising issues (with feedback and suggestions) and/or bringing 
+pull requests to fix identified issues.
 
 Contribute
 
 Contributing to this standardization process might be a bit scary or
 hard to approach at first, but understanding at a deeper level how these
 technologies are built is a great way to build your expertise.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!----------------------------- 11. github (the octocat) logo (19) ------------------------------->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 11. github (the octocat) logo (19) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image011.webp?raw=true"
-   width="15%"
-   alt="GitHub (the Octocat) logo." />
+  style="width:15%"
+  alt="GitHub (the Octocat) logo." />
 </p>
-<!-- style="width:1in;height:0.82895in" -->
 
 If you're looking to an easy way to dive into this standardization
 processes, check out which [issues in the W3C GitHub repositories have
@@ -448,11 +435,10 @@ see if you find anything where you think you would be ready to help.
 <h4>Shape the future</h4>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!---------------------- 12. w3c web incubator community group logo (19) ------------------------->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ 12. w3c web incubator community group logo (19) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="./images/webp/image012.webp"
-  style="width:2in;height:0.55411in"
+  <img src="./images/webp/image012.webp"
+  style="width:20%;"
   alt="Logo of the W3C Web Incubator Community Group." />
 </p>
 
@@ -467,11 +453,10 @@ Happy Web building!
 <h4>What is W3C?</h4>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------------ 13. w3c www consortium logo (19) -------------------------------->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 13. w3c www consortium logo (19) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
   <img src="./images/webp/image013.webp" 
-  style="width:3in;height:0.7612in"
+  style="width:30%;"
   alt="W3C WWW consortium logo." />
 </p>
 
@@ -493,12 +478,11 @@ communication around the globe. He then created the first Web browser,
 server, and Web page. He wrote the first specifications for URLs, HTTP,
 and HTML.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--------------------- 14. tim berners-lee at his desk in cern, 1994 (20) ----------------------->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ 14. tim berners-lee at his desk in cern, 1994 (20) ~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image014.webp?raw=true"
-   style="width:2in;height:2in"
-   alt="Tim Berners-Lee at his desk in CERN, 1994." />
+  style="width:20%"
+  alt="Tim Berners-Lee at his desk in CERN, 1994." />
 </p>
 
 <p align="center"><i><sub>Tim Berners-Lee at his desk in CERN, 1994</sub></i></p>
@@ -652,7 +636,8 @@ through the course, so come back and review this page at the end.
     people from diverse cultures, check for translatability and
     inappropriate cultural bias.
 
-You will find more quick tips on the <a href="https://www.w3.org/International/quicktips/">Internationalization quick tips</a> page. Remember that these tips do not constitute complete guidelines.
+You will find more quick tips on the <a href="https://www.w3.org/International/quicktips/">
+  Internationalization quick tips</a> page. Remember that these tips do not constitute complete guidelines.
 
 <h4>Internationalization checker</h4>
 
@@ -699,10 +684,9 @@ video and try to show/hide the subtitles/captions):
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 15. elephants dream video (23) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image015.webp?raw=true"
-  style="width:480px;"
+  style="width:45%;"
   alt="Elephants dream video." />
 </p>
 
@@ -717,10 +701,9 @@ Here is a quick summary (as of May 2020).
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 16. safari menu (24) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image016.webp"
-  style="width:480px;"
+  style="width:45%;"
   alt="Safari Menu." />
 </p>
 
@@ -768,10 +751,9 @@ reminder, let's look at a WebVTT file:
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 17. tv remote (25) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image017.webp"
-  style="width:192px;"
+  style="width:15%;"
   alt="Remote controller with subtitles button." />
 </p>
 
@@ -837,13 +819,11 @@ We hope you will enjoy this first week and we wish you the best!
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Hi, today I've prepared for you a small example of a video that is
 associated with three different tracks.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~ 20. using html views of tracks - one video, three tracks (27) ~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image020.webp"
-  style="width:624px;"
+  style="width:65%;"
   alt="A simple three track video example."  />
 </p>
 
@@ -882,18 +862,16 @@ structure of a track. I'm just going to display the content of one of
 these tracks.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 18. download, caption, language (28) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image018.webp"
-  style="width:480px;"
+  style="width:45%;"
   alt="Download, Caption, Language."/>
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~ 19. safari - 0 thru 10:58 - elephants dream (28) ~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image019.webp" 
-  style="width:480px;"
+  style="width:45%;"
   alt="Safari display of elephants dream video." />
 </p>
 
@@ -910,16 +888,13 @@ nice transcript on the side of the video, that you can click to jump at
 the exact time the video tells the words that are on the transcript. And
 we will see also how to choose the subtitle or caption track language
 for the video.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 20. again, tracks and views (30) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
   <mg src="./images/webp/image022.webp"
-  style="width:384px;"
+  style="width:35%;"
   alt="Screenshot of Safari menu fr choosing subtitle track." />
 </p>
-
 
 This is finished for this small introduction video, I will just conclude
 by this thing here: explaining this crossOrigin="anonymous". 
@@ -931,13 +906,11 @@ location than the video file and the tracks files, you will have
 security constraints errors. And if your server is configured for
 accepting different origins, then you can add this attribute
 crossOrigin="anonymous" in your HTML document and it is going to work.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 20. 3rd time, views and tracks (31) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image020.webp"
-  style="width:384px;"
+  style="width:35%;"
   alt="3rd time, Views and Tracks." />
 </p>
 
@@ -978,10 +951,9 @@ video and try to show/hide the subtitles/captions):
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ 21. downloads, caption & pic-in-pic (32) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image021.webp"
-  style="width:384px;"
+  style="width:35%;"
   alt="Downloads, Caption, and Picture-in-Picture." />
 </p>
 
@@ -1003,10 +975,9 @@ written in April 2015, for further details.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ 22. safari menu - subtitles/captions (32) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
   <mg src="./images/webp/image022.webp"
-  style="width:384px;"
+  style="width:35%;"
   alt="Safari Menu - subtitles/captions." />
 </p>
 
@@ -1202,10 +1173,9 @@ manipulate these elements as "HTML elements" - we will call them the
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 23/24. status of html track (36) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image023.webp" 
-  style="width:384px;"
+  style="width:35%;"
   alt="Elephant's dream." />
 <br />
 <img src="./images/webp/image024.webp" 
@@ -1497,10 +1467,9 @@ JSBin](https://jsbin.com/bubeye/1/edit?html,console,output)
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ 25. test if track has been loaded (42) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image025.webp" 
-  style="width:480px;"
+  style="width:40%;"
   alt="Test if loaded track.  Load if not by setting mode to hidden." />
 </p>
 
@@ -1698,10 +1667,9 @@ properties and methods;
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 26. webvtt with arrows (45) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image026.webp"
-  style="width:480px;"
+  style="width:40%;"
   alt="A webVtt file extract with arrows showing id, startTime, endTime and text." />
 </p>
 
@@ -1712,10 +1680,9 @@ track](https://jsbin.com/teruhay/1/edit?html,css,js,output):
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~ 27. example that plays content of a track (46) ~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image027.webp" 
-  style="width:480px;"
+  style="width:40%;"
   alt="Example video editor that plays content of a track." />
 </p>
 
@@ -1922,13 +1889,11 @@ for cuechange events</a>:
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~ 28. example that displays cue contents with cuechange even listeners (50) ~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image028.webp?raw=true"
-  style="width:384px;"
+  style="width:40%"
   alt="Example that displays cue contents with cuechange even listeners." />
 </p>
-<!---- <img style="width:4in;height:4.42106in" ---->
 
 <h4>Source code extract:</h4>
 
@@ -1958,10 +1923,9 @@ shows how to use enter and exit events on cues</a>:
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~ 29. example displays message in enter and exit cue listeners of the selected track (51) ~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image029.webp?raw=true"
-  style="width:384px;"
+  style="width:40%"
    alt="Example that displays message in enter and exit cue listeners of the selected track." />
 </p>
 
@@ -2145,10 +2109,9 @@ We will learn how to do this using the track API.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 30. debug video tracks (54) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image030.webp?raw=true"
-  style="width:480px;"
+  style="width:40%"
   alt="Edx video player to debug video tracks." />
 </p>
 
@@ -2194,10 +2157,9 @@ JSBin](https://jsbin.com/sodihux/1/edit?html,css,js,output):
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~ 31. use track api to extract content of webvtt in track element (55) ~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image031.webp?raw=true"
-  style="width:480px;"
+  style="width:40%"
   alt="Using track api to extract content of webvtt in track element." />
 </p>
 
@@ -2494,10 +2456,9 @@ different tracks:
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~ 32. using track api to extract content of webvtt in track element (61) ~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image032.webp"
-  style="width:480px;"
+  style="width:45%;"
   alt="Using track api to extract content of webvtt in track element." />
 </p>
 
@@ -2653,11 +2614,11 @@ events (more on that at the end of the first example) whereas disabled
 tracks do not fire events.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!---------------------------- 33. mode property and cue events (64) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 33. mode property and cue events (64) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image033.webp"
-  width="65%"
+  style="width:65%"
   alt="Example that shows how to toggle track modes and listen to events" />
 </p>
 <!--  style="width:5in;height:4.64476in" -->
@@ -2868,10 +2829,9 @@ two buttons below the video to enable/disable subtitles/captions and let
 you choose which track you prefer. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 34. choose track/language (68) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image034.webp"
-  style="width:592px;"
+  style="width:55%;"
   alt="Buttons for choosing the track/language under a standard video player." />
 </p>
 
@@ -3002,13 +2962,11 @@ you choose which track you prefer. 
 <h3 id="ch1-3-4">1.3.4 With a Simple Chapter Navigation Menu</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Example #4: making a simple chapter navigation menu
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 35. simple chapter navigation (70) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image035.webp"
-  style="width:438px;"
+  style="width:45%;"
   alt="Simple chapter navigation." />
 </p>
 
@@ -3143,10 +3101,9 @@ version includes the modifications we presented earlier - nothing more.
 Notice that we kept the existing buttons to display a clickable transcript:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 35. simple chapter navigation (73) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image035.webp"
-  style="width:438px;"
+  style="width:45%;"
   alt="Again, Simple chapter navigation." />
 </p>
 
@@ -3159,10 +3116,9 @@ popular.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 36. simple chapter navigation (73) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image036.webp"
-  style="width:480px;"
+  style="width:45%;"
   alt="Simple chapter navigation" />
 </p>
 
@@ -3246,10 +3202,9 @@ video](https://jsbin.com/jiyodit/edit?html,css,js,output).
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 35. simple chapter navigation (75) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image035.webp"
-  style="width:438px;"
+  style="width:45%;"
   alt="Again, 3rd time, Simple chapter navigation." />
 </p>
 
@@ -3292,7 +3247,6 @@ from the previous example:
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~ 37-43. seven thumbnail chapter images (76) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="left" width="80%">
 <img src="./images/webp/image037.webp" style="width:2.57292in;height:1.20833in" alt="Chapter 1 thumbnail." />
 <img src="./images/webp/image038.webp" style="width:2.51042in;height:1.19792in" alt="Chapter 2 thumbnail." />
@@ -3345,10 +3299,9 @@ file](https://jsbin.com/pulefe/1/edit?html,css,js,output):
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ 44. video with nice chapter menu (77) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image044.webp" 
-  style="width:480px;"
+  style="width:45%;"
   alt="Video with nice chapter menu that uses thumbnail images." />
 </p>
 
@@ -3573,10 +3526,9 @@ mouse over the thumbnail to see its animated shadow):
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 37. again, movie title (81) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image037.webp"
-  style="width:384px;"
+  style="width:35%;"
   alt="Screenshot of movie title 'the orange open movie...presents'. . .." />
 </p>
 
@@ -3594,10 +3546,9 @@ code from earlier in this lesson.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~ 45. combined techniques - chapter & clickable button (82) ~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image045.webp" 
-  style="width:480px;"
+  style="width:45%;"
   alt="Chapter menu + clickable transcript." />
 </p>
 
@@ -3630,10 +3581,9 @@ from an original demo by Sam Dutton, uses <a href="https://mainline.i3s.unice.f
 <h4> Below is the sound file. You can try to play it:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~ 46. click button to play animal sound (83) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image046.webp" 
-  style="width:480px;"
+  style="width:45%;"
   alt="Click a button to play an animal sound." />
 </p>
 
@@ -3867,10 +3817,9 @@ messages.</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~ 47. video synced with google map and google street map (87) ~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image047.webp"
-  style="width:480px;"
+  style="width:45%;"
   alt="Video synced with google map and google street map." />
 </p>
 
@@ -4210,10 +4159,9 @@ animated waveform and volume meters that 'dance' with the music:
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~ 49. audio player with animated wave forms (94) ~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
   <img src="./images/webp/image049.webp" 
-  style="width:288px;"
+  style="width:25%;"
   alt="A fancy audio player with animated wave forms." />
 </p>
 
@@ -4249,10 +4197,9 @@ JSBin</a>.</b>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 50. audio player with gain (95) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image050.webp" 
-  style="width:288px;"
+  style="width:25%;"
   alt="Audio player with gain." />
 </p>
 
@@ -4277,10 +4224,9 @@ can install it <a href="https://chrome.google.com/webstore/detail/web-audio-ins
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 51. web audio inspector app (96) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image051.webp" 
-  style="width:480px;"
+  style="width:45%;"
   alt="Chrome WebAudio Inspector extension." />
 </p>
 
@@ -4294,10 +4240,9 @@ WebAudio graph nodes to see their properties' values.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 52. web audio 'editor' (96) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image052.webp" 
-  style="width:480px;"
+  style="width:45%;"
   alt="WebAudio 'editor' tab." />
 </p>
 
@@ -4306,10 +4251,9 @@ editor mode).
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 53. standalone mode (97) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image053.webp" 
-  style="width:480px;"
+  style="width:45%;"
   alt="How to go in JsBin standalone mode: click the black arrow on top right of the output tab." />
 </p>
 
@@ -4424,10 +4368,9 @@ with the Chrome WebAudio Inspector extension).
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ 54. audio graph of the vocodor app (99) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image054.webp" 
-  style="width:480px;"
+  style="width:45%;"
   alt="Audio graph of the vocoder app is made of hundreds of nodes." />
 </p>
 
@@ -4673,10 +4616,9 @@ using sliders:
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~ 56. frequency responses for filters (104) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image056.webp" 
-  style="width:480px;"
+  style="width:45%;"
   alt="Frequency responses for various filters. Screenshot of a nice application that visualizes that." />
 </p>
 
@@ -4774,10 +4716,9 @@ the difference between different impulse files!
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 57. web audio api (106) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image057.webp"
-  style="width:480px;"
+  style="width:45%;"
   alt="Screenshot of a webapp that enable you to switch between different impulse files." />
 </p>
 
@@ -4851,10 +4792,9 @@ with the Chrome WebAudio Inspector extension):
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 58. audio graph (107) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image058.webp" 
-  style="width:480px;"
+  style="width:45%;"
   alt="Audio graph." />
 </p>
 
@@ -4930,10 +4870,9 @@ with the Chrome WebAudio Inspector extension):
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ 59. example use of compressor node (109) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image059.webp"
-  style="width:480px;"
+  style="width:45%;"
   alt="Example of use of a compressor node." />
 </p>
 
@@ -5043,10 +4982,9 @@ screenshot:
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ 60. audio player with equalizer (111) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
   <img src="./images/webp/image060.webp" 
-  style="width:288px;"
+  style="width:25%;"
   alt="An audio player with an equalizer." />
 </p>
 
@@ -5177,10 +5115,9 @@ Chrome WebAudio Inspector extension):
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ 61. equalizer with video element (113) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image061.webp" 
-  style="width:480px;"
+  style="width:45%;"
   alt="Audio graph of the previous example." />
 </p>
 
@@ -5202,10 +5139,9 @@ moving the sliders to change the sound!
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 62. video above equalizer (114) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image062.webp"
-  style="width:288px;"
+  style="width:25%;"
   alt="Same example as previously but with a video above the equalizer." />
 </p>
 
@@ -5313,10 +5249,9 @@ Example #1: audio player with waveform visualization
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~ 63. audio player with waveform visualization (116) ~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image063.webp" 
-  style="width:288px;"
+  style="width:25%;"
   alt="Audio player with waveform visualization." />
 </p>
 
