@@ -20516,6 +20516,7 @@ prime numbers example:
 <p align="center" width="100%">
 <img src="./images/webp/image240.webp?raw=true"
   style="width:65%;"
+  title="Chrome debug web workers"
   alt="Chrome debug web workers." />
 </p>
 <!-- style="width:1in;height:1in" -->
@@ -20543,6 +20544,7 @@ reacts instantly...
 <p align="center" width="100%">
 <img src="./images/webp/image241.webp"
   style="width:65%;"
+  title="Demo prime numbers screenshot"
   alt="Demo prime numbers screenshot." />
 </p>
 
@@ -20565,9 +20567,9 @@ between workers and their creator, instead of computing in parallel.
 <p align="center" width="100%">
 <img src="./images/webp/image242.webp?raw=true"
   style="width:65%;"
+  title="Demo 2: Ray tracer with web workers"
   alt="Demo 2: Ray tracer with web workers." />
 </p>
-
 <!--  style="width:4in;height:3.99165in" -->
 
 <h4>Other demos</h4>
@@ -20611,8 +20613,9 @@ your comments/observations/questions and share your creations.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ 243. ie10 web workers fountain demo (428) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image243.webp?raw=true"
-   width="40%"
-   alt="IE 10 Web Workers fountain demo." />
+  width="40%"
+  title="IE 10 Web Workers fountain demo"
+  alt="IE 10 Web Workers fountain demo." />
 </p>
 <!-- style="width:4in;height:2.55983in" -->
 
@@ -20698,7 +20701,7 @@ order:
 <th>Device in the initial position, with Earth (XYZ) and<br />
 body (xyz) frames aligned.</th>
 <th><img src="./images/webp/image247.webp"
-style="width:4.6875in;height:4.6875in" alt="start orientation" /></th>
+style="width:4.6875in;height:4.6875in" alt="start orientation." title="start orientation" /></th>
 </tr>
 </thead>
 <tbody>
@@ -20708,7 +20711,7 @@ with previous locations of x and y axes shown as x<sub>0</sub> and
 y<sub>0</sub>.</td>
 <td><img src="./images/webp/image248.webp"
 style="width:4.6875in;height:4.6875in"
-alt="rotation about z axis" /></td>
+alt="rotation about z axis." title="rotation about z axis"/></td>
 </tr>
 </tbody>
 </table>
@@ -20727,7 +20730,7 @@ alt="rotation about z axis" /></td>
 <th>Device in the initial position, with Earth (XYZ) and<br />
 body (xyz) frames aligned.</th>
 <th><img src="./images/webp/image247.webp"
-style="width:4.6875in;height:4.6875in" alt="start orientation" /></th>
+style="width:4.6875in;height:4.6875in" alt="Start Orientation" title="Start Orientation"/></th>
 </tr>
 </thead>
 <tbody>
@@ -20737,7 +20740,7 @@ with previous locations of y and z axes shown as y<sub>0</sub> and
 z<sub>0</sub>.</td>
 <td><img src="./images/webp/image249.webp"
 style="width:4.6875in;height:4.6875in"
-alt="rotation about x axis" /></td>
+alt="rotation about x axis." title="rotation about x axis"/></td>
 </tr>
 </tbody>
 </table>
@@ -20755,7 +20758,7 @@ alt="rotation about x axis" /></td>
 <th>Device in the initial position, with Earth (XYZ) and<br />
 body (xyz) frames aligned.</th>
 <th><img src="./images/webp/image247.webp"
-style="width:4.6875in;height:4.6875in" alt="Start orientation." /></th>
+style="width:4.6875in;height:4.6875in" alt="Start orientation." title="Start orientation"/></th>
 </tr>
 </thead>
 <tbody>
@@ -20765,7 +20768,7 @@ with previous locations of x and z axes shown as x<sub>0</sub> and
 z<sub>0</sub>.</td>
 <td><img src="./images/webp/image250.webp"
 style="width:4.6875in;height:4.6875in"
-alt="Rotation about y axis." /></td>
+alt="Rotation about y axis." title="Rotation about y axis" /></td>
 </tr>
 </tbody>
 </table>
@@ -20799,8 +20802,9 @@ mode](https://jsbin.com/limugat) (without the JsBin editor) )
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 248. device orientation api 2 (442) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image248.webp?raw=true"
-   width="65%"
-   alt="Device Orientation API 2." />
+  width="65%"
+  title="Device Orientation API 2"
+  alt="Device Orientation API 2." />
 </p>
 
 The above screenshot came from an iPad laying immobile on a desk.
@@ -20818,6 +20822,7 @@ If we change the orientation of the device here are the results:
 <p align="center" width="100%">
 <img src="./images/webp/image252.webp?raw=true"
   width="400px;"
+  title="Orientation API 3"
   alt="Orientation API 3." />
 </p>
 
@@ -20826,6 +20831,7 @@ If we change the orientation of the device here are the results:
 <p align="center" width="100%">
 <img src="./images/webp/image253.webp?raw=true"
   width="500px;"
+  title="Orientation API 1"
   alt="Orientation API 1." />
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -20833,6 +20839,7 @@ If we change the orientation of the device here are the results:
 <p align="center" width="100%">
 <img src="./images/webp/image254.webp?raw=true"
   width="400px;"
+  title="Orientation API 2"
   alt="Orientation API 2." />
 </p>
 
@@ -20889,6 +20896,7 @@ JsBin](https://jsbin.com/manobezoji/edit?html,js,output)
 <p align="center" width="100%">
 <img src="./images/webp/image252.webp?raw=true"
    width="40%"
+   title="Orientation API example 3"
    alt="Orientation API example 3." />
 </p>
 
@@ -20900,6 +20908,7 @@ controlled game...
 <p align="left" width="50%">
 <img src="./images/webp/image253.webp?raw=true"
   width="30%"
+  title="Logo position 1"
   alt="Logo position 1." />
 <!-- <img src="./images/webp/image256.webp" style="width:2.94792in;height:3.92708in" -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -20907,6 +20916,7 @@ controlled game...
 <p align="right" width="50%">
 <img src="./images/webp/image254.webp?raw=true"
    width="30%"
+   title="Logo position 2"
    alt="Logo position 2." />
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -20914,6 +20924,7 @@ controlled game...
 <p align="center" width="100%">
 <img src="./images/webp/image255.webp?raw=true"
    width="29%"
+   title="Logo position 3"
    alt="Logo position 3." />
 </p>
 
@@ -20988,6 +20999,7 @@ mode](https://jsbin.com/quboge) (using a mobile device).
 <p align="center" width="100%">
 <img src="./images/webp/image256.webp?raw=true"
    width="50%"
+   title="Level tool using device orientation"
    alt="Level tool using device orientation." />
 </p>
 
@@ -21011,6 +21023,7 @@ Click on the image to see the YouTube video:
 <p align="center" width="100%">
 <img src="./images/webp/image257.webp?raw=true"
    width="35%"
+   title="Orientation API + websockets"
    alt="Orientation API + websockets." />
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -21079,10 +21092,8 @@ the effects of gravity.
 Why are there two different values? Because some devices have the
 capability of excluding the effects
 of <a href="https://en.wikipedia.org/wiki/Gravity">gravity, eg if equipped with
-a gyroscope. Indeed <a href="https://en.wikipedia.org/wiki/Acceleration_of_gravity">there is acceleration due implicitly to
-gravity</a>, see
-also this: <a href="https://en.wikipedia.org/wiki/Acceleration_of_gravity#Earth.27s_gravity">Acceleration of Gravity on
-Earth</a>... 
+a gyroscope. Indeed <a href="https://en.wikipedia.org/wiki/Acceleration_of_gravity">there is acceleration due implicitly to gravity</a>, see
+also this: <a href="https://en.wikipedia.org/wiki/Acceleration_of_gravity#Earth.27s_gravity">Acceleration of Gravity on Earth</a>... 
 
 If the device doesn't have a gyroscope, the acceleration property will
 be returned as <i>null</i>. In this case, you have no choice but to use
@@ -21103,6 +21114,7 @@ this [article]</a>):
 <p align="center" width="100%">
 <img src="./images/webp/image258.webp"
   width="500px;"
+  title="Acceleration values 1"
   alt="Acceleration values 1." />
 </p>
 
@@ -21113,6 +21125,7 @@ to its normal position would return:</p>
 <p align="center" width="100%">
 <img src="./images/webp/image259.webp"
   width="400px;"
+  title="Acceleration values 2"
   alt="Acceleration values 2." />
 </p>
 
@@ -21122,6 +21135,7 @@ to its normal position would return:</p>
 <p align="center" width="100%">
 <img src="./images/webp/image260.webp"
   width="30%"
+  title="Mobile phone coordinates system"
   alt="Mobile phone coordinates system." />
 </p>
 
@@ -21215,6 +21229,7 @@ later on)...
 <p align="center" width="100%">
 <img src="./images/webp/image261.webp"
   style="width:30%"
+  title="Devicemotion API example"
   alt="Devicemotion API example." />
 </p>
 
@@ -21313,6 +21328,7 @@ it: <a href="https://jsbin.com/uyuqek/4/edit">https://jsbin.com/uyuqek/4/edit</
 <p align="center" width="100%">
 <img src="./images/webp/image262.webp"
   style="width:35%"
+  title="Devicemotion API.  Uses jQuery mobile"
   alt="Devicemotion API.  Uses jQuery mobile." />
 </p>
 
@@ -21411,6 +21427,7 @@ mobile device, <a href="https://jsbin.com/eyahuv/2">use this URL instead</a>!
 <p align="center" width="100%">
 <img src="./images/webp/image263.webp"
   style="width:20%;"
+  title="Move a Ball on the Screen - last image"
   alt="Move a Ball on the Screen - last image." />
 </p>
 <!-- style="width:3in;height:1.99379in" -->
@@ -21612,4 +21629,4 @@ your comments/observations/questions and share your creations.
 
 <h5>the end...</h5>
 
-<h6>Last Updated: 2-13-2024 2:17am</h6>
+<h6>Last Updated: 3-25-2024 11:52pm</h6>
