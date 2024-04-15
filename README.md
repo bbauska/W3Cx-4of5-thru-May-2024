@@ -11,6 +11,7 @@ w3cx-4of5-html5.2x: Coursera - Front-End Web Development - Apps and Games
 <p align="center" width="100%">
 <img src="./images/webp/w3cx-logo.webp?raw=true"
   style="width:200px;"
+  title="W3C logo"
   alt="W3C logo." />
 </p>
 
@@ -20,6 +21,7 @@ w3cx-4of5-html5.2x: Coursera - Front-End Web Development - Apps and Games
 <p align="center" width="100%">
 <img src="./images/webp/image001.webp?raw=true"
   style="width:500px;"
+  title="W3Cx HTML 5.2x logo"
   alt="W3Cx HTML 5.2x logo." />
 </p>
 
@@ -153,6 +155,8 @@ JavaScript, to create your own HTML5 app and/or game.
 <p align="center" width="100%">
 <img src="./images/webp/image003.webp?raw=true"
   style="width:18%"
+  title="A man looking at his laptop screen as if he is considering which browser to use 
+    - a few browser logos float in the background"
   alt="A man looking at his laptop screen as if he is considering which browser to use 
     - a few browser logos float in the background." />
 </p>
@@ -218,6 +222,7 @@ examples will actually use these.
 <p align="center" width="100%">
 <img src="./images/webp/image004.webp"
   style="width:10%"
+  title="JS Bin logo"
   alt="JS Bin logo." />
 </p>
 
@@ -236,7 +241,8 @@ free) if you do not want to lose your contributions/personal work.
 <p align="center" width="100%">
 <img src="./images/image005.png"
   style="width:10%"
-  alt="CodePen logo."
+  title="CodePen logo"
+  alt="CodePen logo." />
 </p>
 
 <a href="http://codepen.io/">CodePen</a> is an HTML, CSS, and JavaScript code editor 
@@ -21629,4 +21635,5 @@ your comments/observations/questions and share your creations.
 
 <h5>the end...</h5>
 
-<h6>Last Updated: 3-25-2024 11:52pm</h6>
+<h6>Prior Updated: 3-25-2024 11:52pm</h6>
+<h6>Last Updated: 4-14-2024 Sun 5:33pm</h6>
