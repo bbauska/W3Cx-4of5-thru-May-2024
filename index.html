@@ -43,7 +43,8 @@ function scrollFunction() {
 // When the user clicks on the button, scroll to the top of the document. 420 to 0.
 function topFunction() {
   document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+  document.documentElement.scrollTop = 420;
+  window.scrollTo(0,420);
 }
 </script>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -18809,7 +18810,6 @@ would be <a href="https://developers.google.com/web/fundamentals/native-hardware
 target="_blank" rel="noopener noreferrer">(info taken from this [article]</a>):</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 258. acceleration values 1 (472) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image258.webp"
   title="Acceleration values with screen facing up"
@@ -18819,7 +18819,6 @@ target="_blank" rel="noopener noreferrer">(info taken from this [article]</a>):
 <p>A mobile phone rotated along the x-axis so the screen is perpendicular to its normal position would return:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 259. acceleration values 2 (472) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image259.webp"
   title="Acceleration values after rotated along x-axis so it is perpendicular to 
@@ -18831,7 +18830,6 @@ target="_blank" rel="noopener noreferrer">(info taken from this [article]</a>):
 <h4>Remember the coordinate system for a mobile phone:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~ 260. mobile phone coordinates system (472) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image260.webp"
   title="Mobile phone coordinates system"
@@ -18914,7 +18912,6 @@ later on)…</p>
 <p><a href="https://jsbin.com/pasoboyucu/edit?html,js,output" target="_blank" rel="noopener noreferrer">Online example at JsBin</a>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 261. devicemotion api example (474) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image261.webp"
   title="Devicemotion API example"
@@ -19002,15 +18999,18 @@ later on)…</p>
 
 <h4>Interesting example that uses jQuery mobile</h4>
 
-<p>This example shows how the X and Y acceleration values can be used for indicating the sky’s direction (vertical), and how the Z acceleration is, in fact, an indicator for the face up / face down orientation of the device.</p>
-<p>This example has been adapted and put on jsbin.com so that you can tweak it: <a href="https://jsbin.com/uyuqek/4/edit" target="_blank" rel="noopener noreferrer">https://jsbin.com/uyuqek/4/edit</a></p>
+<p>This example shows how the X and Y acceleration values can be used for 
+indicating the sky’s direction (vertical), and how the Z acceleration is, 
+in fact, an indicator for the face up / face down orientation of the device.</p>
+
+<p>This example has been adapted and put on jsbin.com so that you can tweak 
+it: <a href="https://jsbin.com/uyuqek/4/edit" target="_blank" rel="noopener noreferrer">https://jsbin.com/uyuqek/4/edit</a></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 262. devicemotion api (476) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image262.webp"
-  title="Devicemotion API. Uses JQuery mobile."
-  alt="Devicemotion API. Uses JQuery mobile."
+  title="Devicemotion API. Uses jQuery mobile."
+  alt="Devicemotion API. Uses jQuery mobile."
   style="width:30%;" />
 
 <h4>Code from the example:</h4>
@@ -19098,10 +19098,11 @@ later on)…</p>
 
 <h4>Move a ball on the screen</h4>
 
-<p><a href="https://jsbin.com/eyahuv/2/edit">Try this example at JsBin</a>. If using a mobile device, <a href="https://jsbin.com/eyahuv/2" target="_blank" rel="noopener noreferrer">use this URL instead</a>!</p>
+<p><a href="https://jsbin.com/eyahuv/2/edit" target="_blank" rel="noopener noreferrer">
+Try this example at JsBin</a>. If using a mobile device, <a href="https://jsbin.com/eyahuv/2" 
+target="_blank" rel="noopener noreferrer">use this URL instead</a>!</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~ 263. move a ball on the screen - last image (478) ~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image263.webp"
   title="Move a ball on the screen - last image"
@@ -19265,22 +19266,28 @@ spec: 
 
 <ul>
   <li>From the W3C specification: 
-    <a href="https://w3c.github.io/deviceorientation/spec-source-orientation.html#devicemotion" target="_blank" rel="noopener noreferrer">devicemotion Event</a></li>
+    <a href="https://w3c.github.io/deviceorientation/spec-source-orientation.html#devicemotion" 
+	target="_blank" rel="noopener noreferrer">devicemotion Event</a><br><br></li>
   <li>From Google Devs: 
-    "<a href="https://developers.google.com/web/fundamentals/native-hardware/device-orientation/" target="_blank" rel="noopener noreferrer">Device Orientation &amp; Motion</a>"</li>
+    "<a href="https://web.dev/articles/device-orientation"
+	target="_blank" rel="noopener noreferrer">Device Orientation &amp; Motion</a>"<br><br></li>
   <li>On Dev. Opera: 
-    "<a href="https://dev.opera.com/articles/w3c-device-orientation-api/" target="_blank" rel="noopener noreferrer"> The W3C Device Orientation API: Detecting Orientation and Acceleration</a>"</li>
+    "<a href="https://dev.opera.com/articles/w3c-device-orientation-api/" 
+	target="_blank" rel="noopener noreferrer"> The W3C Device Orientation API: 
+	Detecting Orientation and Acceleration</a>"</li>
 </ul>
+<!-- https://developers.google.com/web/fundamentals/native-hardware/device-orientation/" -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-4-5">4.4.5 Discussion and projects</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Here is the discussion forum for this part of the course. Please post your comments/observations/questions and share your creations.</p>
+<p>Here is the discussion forum for this part of the course. Please post your 
+comments/observations/questions and share your creations.</p>
 
 <h4>Suggested topics of discussion:</h4>
 
 <ul>
   <li>Did you know that you can “fake” the orientation using the devtools of some 
-    desktop browsers?</li>
+    desktop browsers?<br><br></li>
   <li>What kind of application would benefit from the Orientation and Motion APIs 
     (apart from games)?</li>
 </ul>
@@ -19292,7 +19299,7 @@ spec: 
     rel="noopener noreferrer">The Christmas game</a> developed by students from 
     the previous run is a perfect candidate to be controlled using the APIs seen 
     in this course!! I would start with the orientation API and try to move the 
-    bunny left/right…</li>
+    bunny left/right…<br><br></li>
   <li>Using the game framework, try to control the monster using the orientation 
     API, so that it avoids the balls - see the last example from Module 2 of the 
     course!</li>
@@ -19300,6 +19307,7 @@ spec: 
 
   <h5>the end…</h5>
   <br>
-  <h6>Last Updated: 3-25-2024 11:50pm</h6>
+  <h6>Prior Updated: 3-25-2024 11:50pm</h6>
+  <h6>Last Updated: 4-14-2024 Sun 5:36pm</h6>
 </body>
 </html>
