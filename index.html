@@ -15034,6 +15034,7 @@ and null.</p>
 
 <p>When an object or an array is stored, the properties and values in
 that object or array can also be anything that is a valid value.</p>
+
 <p>Blobs and files can be stored, (supported by all major browsers, IE
 &gt; 9). The example in the next chapter stores images using blobs.</p>
 
@@ -15063,6 +15064,7 @@ be retrieved from object stores and indexes using keys or a range of
 keys. You can limit or filter the range using lower and upper bounds.
 For example, you can iterate over all the values of a key between x and
 y.</p>
+
 <p>For the reference documentation on key range, see IDBKeyRange.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-6-4">3.6.4 Using IndexedDB</h3>
@@ -15096,57 +15098,90 @@ programming principles behind IndexedDB.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-6-5">3.6.5 Creating and deleting a database</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Hi! Let’s look now at some pieces of code and examples that will explain how to really program an IndexedDB application.</p>
-<p>So… one of the first thing is that you need to create or to open an existing database before working with data.</p>
-<p>All operations are asynchronous and, if you want to open a database, you use IndexedDB.open(…).</p>
-<p>You specify the name of the database and the version. Each database is versioned… and if the “CustomerDB” database -from this example- exists with a version “2”, it will just open it.</p>
+
+<p>Hi! Let’s look now at some pieces of code and examples that will explain how 
+to really program an IndexedDB application.</p>
+
+<p>So… one of the first thing is that you need to create or to open an existing 
+database before working with data.</p>
+
+<p>All operations are asynchronous and, if you want to open a database, you use 
+IndexedDB.open(…).</p>
+
+<p>You specify the name of the database and the version. Each database is 
+versioned… and if the “CustomerDB” database -from this example- exists with 
+a version “2”, it will just open it.</p>
+
 <p>If it exists, but with a previous, lower version, it will be “upgraded”.</p>
-<p>This is why we need to define, on the object that is returned by open(…), some event listeners.</p>
+
+<p>This is why we need to define, on the object that is returned by open(…), 
+some event listeners.</p>
+
 <p>The “onsuccess” listener is called when the database has been opened.<br>
-“onerror” (listener) if there is an error, and “onupgradeneeded” (listener) will be called only if we are creating a new version of the database.</p>
+“onerror” (listener) if there is an error, and “onupgradeneeded” (listener) 
+will be called only if we are creating a new version of the database.</p>
+
 <p>It’s the case when the database does not exist.</p>
+
 <p>So the database has a version, and the first version is “0”. You can
 have the same database that exists in different versions at a time, but
 the very common way is to define the two listeners I talked about, and
 create the database and the schema in the “onupgradeneeded” event
 listener.</p>
+
 <p>And work with data on the “onsuccess” listener… because when you
 enter in the “onsuccess », it means that the database exists.</p>
+
 <p>Be careful because on the Web you will find lots and lots of old
 tutorials that use a previous, deprecated version of the API. You can
 identify that if it uses the setVersion() method on an object called
 IDBDatabase. In that case look for a more recent tutorial!</p>
+
 <p>Here is an example of a database creation: you indicate a name…
 “customerDB”, you try to open it with version “2”, and if the database
 does not exist, you will enter the “onupgradeneeded” listener. If it
 exists, you go to the “onsuccess” listener.</p>
+
 <p>The result (the event.target.result) will be the database itself. We
 will work with this object for inserting, deleting, modifying or looking
 for data.</p>
+
 <p>Now, let’s zoom a little bit on what happens in this listener here,
 because this is where we are going to create the database.</p>
-<p>For creating and populating a new object datastore - a new object
-database -, here is how we proceed: in the “onupgradeneeded” listener, we get the database itself…</p>
+
+<p>For creating and populating a new object datastore - a new object database 
+-, here is how we proceed: in the “onupgradeneeded” listener, we get the database 
+itself…</p>
+
 <p>Then you create an object store in it, and you need to indicate the name of the object store - “customers” - and the name of the “KeyPath”.
 Remember, the KeyPath is a unique ID that will be attached to all
 objects stored in the database (!: correction -&gt; datastore).</p>
+
 <p>And we can also create “indexes”. Here, we are saying that every
 object that will be stored in the database (!: correction -&gt;
 datastore), will have a property called “name”, that will not be
 necessarily unique, and we will have a property called “email” that will
 be unique.</p>
+
 <p>Just after creating it, we are populating the object store with some test data.<br>
 Here we are iterating on the customerData object, that has been defined here.<br>
 It’s an array, that contains two persons (two customers) inside: one is “Bill”, age
 35, with an email and a unique ID that is its social security number. Let’s try this one: it
 comes from the example called “creating and deleting a database”.</p>
+
 <p>I open it, I open the devtools, and I look at “Resources” (tab). </p>
+
 <p>I open the “IndexedDB” (item).</p>
+
 <p>You can see that the datastore and the database are not present here. I click on the “create customer database” …this will run the code I just explained. And if I refresh the IndexedDB,</p>
+
 <p>I can see that the database called “CustomerDB” has been created, with inside an object store called “customers”, that contains two persons (two
 customers), and I can see here the indexes. I can open also the objects.</p>
+
 <p>If I want to delete the database, I can do it in my own program, or I can do it in the console.</p>
+
 <p>I run IndexedDB.deleteDatabase(…), and I indicate the database - “customerDB” - .</p>
+
 <p>If I go back to the “Resources” tab, and refresh the databases, heu.. if I refresh IndexedDB (databases) -sorry-… normally, ok I run it again… normally, it disappears… sometimes the refresh does not work correctly, but the database is really deleted.</p>
 
 <h4>Creating a database</h4>
@@ -15155,12 +15190,14 @@ customers), and I can see here the indexes. I can open also the objects.</p>
 JSBin</a> shows how to create and populate an object store named “CustomerDB”. This example should work on both mobile and desktop versions of all major post-2012 browsers.</p>
 <p>We suggest that you follow what is happening using Google Chrome’s developer tools. Other browsers offer equivalent means for debugging Web applications that use IndexedDB.</p>
 <p>With Chrome, please open the JSBin example and activate the Developer tool console (F12 or cmd-alt-i). Open the JavaScript and HTML tabs on JSBin.</p>
+
 <p>Then, click the “Create CustomerDB” button in the HTML user interface of the example: it will call the createDB() JavaScript function that:</p>
 
 <ol type="1">
   <li><p>creates a new IndexedDB database and an object store in it (“customersDB”), and</p></li>
   <li><p>inserts two javascript objects (look at the console in your devtools - the Web app prints lots of traces in there, explaining what it does under the hood). Note that the social security number is the “Primary key”, called <i>a key path</i> in the IndexedDB vocabulary (red arrow on the right of the screenshot).</p></li>
 </ol>
+
 <p><b>Chrome DevTools (F12 or cmd-alt-i) shows the IndexedDB databases, object stores and data:</b></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~ 193. one javascript function for customerdb (345) ~~~~~~~~~~~~~~~~~~~~~~-->
@@ -15171,7 +15208,8 @@ JSBin</a> shows how to create and populate an object store named “CustomerDB�
   title="IndexDB database, object store and data"
   alt="IndexDB database, object store and data." />
 
-<p>Normally, when you create a database for the first time, the console should show this message:</p>
+<p>Normally, when you create a database for the first time, the console should 
+show this message:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~ 194. message when database is created the first time (345) ~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -15186,7 +15224,9 @@ JSBin</a> shows how to create and populate an object store named “CustomerDB�
 <pre>1. var request = indexedDB.open(dbName, 2);</pre>
 
 <p>…and if there is no version “2” of the database, then we enter the onupgradeneeded callback where we actually create the database.</p>
+
 <p>You can try to click again on the button “CreateCustomerDatabase”, if database version “2” exists, this time the request.onsuccess callback will be called. This is where we will add/remove/search data (you should see a message on the console).</p>
+
 <p>Notice that the version number cannot be a float: “1.2” and “1.4” will automatically be rounded to “1”.</p>
 
 <h4>JavaScript code from example:</h4>
@@ -15271,18 +15311,26 @@ JSBin</a> shows how to create and populate an object store named “CustomerDB�
 </ul>
 
 <blockquote>
-<p>Note that we did not create any transaction, as the onupgradeneeded callback on a create database request is always in a default transaction that cannot overlap with another transaction at the same time.</p>
+  <p>Note that we did not create any transaction, as the onupgradeneeded callback 
+  on a create database request is always in a default transaction that cannot 
+  overlap with another transaction at the same time.</p>
 </blockquote>
 
-<p>If we try to open a database version that exists, then the request.onsuccess callback is called. This is where we are going to work with data. The DOM event result attribute is the database itself, so it is wise to store it in a variable for later use: db=event.target.result;</p>
+<p>If we try to open a database version that exists, then the request.onsuccess 
+callback is called. This is where we are going to work with data. The DOM event 
+result attribute is the database itself, so it is wise to store it in a variable 
+for later use: db=event.target.result;</p>
 
 <h4>Deleting a database</h4>
 
 <p>You can delete a database simply by running this command:</p>
-<p>indexedDB.deleteDatabase(“databaseName”);</p>
-<p>A common practice, while learning how IndexedDB works, is to type this command in the devtool console. For example, we can delete the
-CustomerDB database used in all examples of this course section by opening one of the JsBin examples , then opening the devtool console,
-then executing indexedDB.deleteDatabase(“CustomerDB”); in the console:</p>
+
+<h4>indexedDB.deleteDatabase(“databaseName”);</h4>
+
+<p>A common practice, while learning how IndexedDB works, is to type this command 
+in the devtool console. For example, we can delete the CustomerDB database used 
+in all examples of this course section by opening one of the JsBin examples, 
+then opening the devtool console, then executing indexedDB.deleteDatabase(“CustomerDB”); in the console:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~ 195. deleting indexed db, part 1 - open devtool console (348) ~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -15291,7 +15339,6 @@ then executing indexedDB.deleteDatabase(“CustomerDB”); in the console:</p>
   title="Deleting indexed DB part 1, open the devtool console"
   alt="Deleting indexed DB part 1, open the devtool console."
   style="width:45%;" />
-
 <img class="displayed"
   src="./images/webp/image196.webp"
   style="width:50%"
@@ -15348,35 +15395,59 @@ A final example that merges all examples together will also be shown at the end 
 <h3 id="ch3-6-7">3.6.7 Inserting data</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>So, about inserting data… Here this is what we did during the creation of the database.</p>
+
 <p>We used objectStore.add(…). This is a particular case because when we are creating the database, nobody can do the same operation at the same time. So we don’t need to protect the insertion of the data by a transaction. But usually, when you insert data, you need to create a transaction. This is what is done here: we create a transaction on the dataStore called “customers », and we are indicating that we are going to read data, and also write data.</p>
+
 <p>You need to have listeners -callbacks- in case there is an error during the creation of the transaction.</p>
+
 <p>Then, if everything went ok, and using this object store transaction, you will add data.</p>
+
 <p>The fact that we are using the transaction here, means that if somebody is trying to access the same data (at the same time), somebody will have to wait until the other one finished its operation.</p>
+
 <p>In case of success, you need to make callbacks, on the request this time - on the add request. We can display “ok, customer with the social
 serial (security) number has been added”, or we display an error.</p>
+
 <p>Here, I shortened the error messages. In the course Web page the code is more complete.</p>
+
 <p>Here, the code is rather long… it takes 20 lines of code, but you shorten this by using the “.” operator and with chaining requests (operations).</p>
+
 <p>You create a transaction on the database, then you create the same transaction on the object store, and you add, with a request, a new customer.</p>
+
 <p>This is much more concise, much shorter, but you cannot spot with a lot of precision, the errors that can come.</p>
+
 <p>Is it an error during this operation? During the transaction? When you try to open the database in read / write mode? You don’t know!</p>
+
 <p>Deleting data is really similar. So, the only thing that changes is the name here,of the operation you do on the request transaction.</p>
-<p>So, if you do a “delete”, and specify the KeyPath of the data you want to delete, then it will delete the object with social serial
-(security) number 444., blah blah blah…</p>
+
+<p>So, if you do a “delete”, and specify the KeyPath of the data you want to delete, then it will delete the object with social serial (security) number 444., blah blah blah…</p>
+
 <p>For modifying data it’s the same thing: you use the “put” method 
 on the transaction, but this time you need to indicate an object -a
 JavaScript object- whose social security number -whose KeyPath- is valid: if this object exists in the database (datastore), we will update the new age for this customer.</p>
+
 <p>Looking for data: you can look for a given data using “get” on the
 transaction.</p>
+
 <p>In the request, you specify the KeyPath… and in case of success the result (the event.target.result) that is passed to the callback, to the “onsuccess” callback, will be the complete object whose key (KeyPath) is 1234 blah blah blah.</p>
+
 <p>Getting more than one piece of data will be performed using a concept called “cursors”.</p>
+
 <p>If we are looking for more than one result… in this example, we are looking for multiple</p>
+
 <p>results, then instead of having an “onsuccess” callback, you’ve got an objectStore.openCursor().onsuccess</p>
+
 <p>And in that case, what you’ve got as a result is a “cursor”. A cursor is like a pointer on a collection of results, and by calling cursor.continue(), you will go from one result to the next one. And the cursor itself is the object, the “current” object.</p>
+
 <p>So, if we’re getting a collection, then the current cursor.key, the current cursor.value.name, the current cursor.value.age, will be the values from the data you retrieved, and by calling cursor.continue(), you go to the next result.</p>
+
 <p>When the cursor is “null” then there is no more entries and you finish processing all your results.</p>
+
 <p>You can also use indexes. Instead of using the “get” method, you first indicate which index you are going to use for getting data, on the objectStore transaction you call a method called “index(…) », and you pass as a parameter the index name.</p>
+
 <p>Then, on the index itself, you do a “get(…)”. In that case it means “please, look for data whose name is equal to Bill, and the name is an index!“. In that case, in the callback, the event.target.result is the resulting data you’ve just looked for.</p>
+
 <p>You can also look for more than one result. In that case, you do just “index.openCursor().onsuccess”… instead of “index.onsuccess” and you will get a collection of data.</p>
+
 <p>The cursor will point to the current data (in the collection). Then you iterate using cursor.continue(), on the collection of results, exactly the same way we explained earlier with the previous case when we got multiple results, this time it wasn’t using an index.</p>
 
 <h4>Example #1: basic steps</h4>
@@ -15478,10 +15549,12 @@ have to perform in order to add a new object to the store:</p>
 
 <p>The different callbacks are in <i>lines 9 and 14</i> for the
 transaction, and in <i>lines 28 and 35</i> for the request.</p>
+
 <p>You may have several requests for the same transaction. Once all
 requests have finished, the transaction.oncomplete callback is called.
 In any other case the transaction.onerror callback is called, and the
 datastore remains unchanged.</p>
+
 <p>Here is the trace from the dev tools console:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~ 202. trace from the devtools console (356) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -15515,8 +15588,8 @@ JSBin</a>:</p>
 <p>This time, we added some tests for checking that the database is open
 before trying to insert an element, and we added a small form for
 entering a new customer.</p>
-<p>Notice that the insert will fail and display an alert with an error
-message if:</p>
+
+<p>Notice that the insert will fail and display an alert with an error message if:</p>
 
 <ul>
   <li><p>The ssn is already present in the database. This property has been declared as the keyPath (a sort of primary key) in the object store schema, and <u>it should be unique</u>: db.createObjectStore(“customers”, { keyPath: “ssn” });</p></li>
@@ -15609,6 +15682,7 @@ etc.).</p>
 
 <p>The above code does not perform all the tests, but you may encounter
 such a way of coding (!).</p>
+
 <p>Also, note that it works if you try to insert empty data:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~ 205. devtools show that inserting blank data works (359) ~~~~~~~~~~~~~~~~~~-->
@@ -15634,10 +15708,11 @@ example at JSBin</a>:</p>
   alt="Devtools show that a customer has been removed once clicked on the remove customer button."
   style="width:50%;" />
 
-<p>See the changes in Chrome dev. tools: refresh the view (right
-click/refresh) or press F12 or cmd-alt-i twice. There is a bug in the
-refresh feature with some versions of Google Chrome.</p>
-<p>How to try the example:</p>
+<p>See the changes in Chrome dev. tools: refresh the view (right click/refresh) 
+or press F12 or cmd-alt-i twice. There is a bug in the refresh feature with some 
+versions of Google Chrome.</p>
+
+<h4>How to try the example:</h4>
 
 <ol type="1">
   <li><p>Be sure to click the “create database button” to open the existing database.</p></li>
@@ -15702,16 +15777,14 @@ version:</p>
 1. var request = db.transaction([&quot;customers&quot;], &quot;readwrite&quot;)
 2.   .objectStore(&quot;customers&quot;)
 3.   .delete(&quot;444-44-4444&quot;);</pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-6-9">3.6.9 Modifying data</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>We used request.add(object) to add a new customer
-and request.delete(keypath) to remove a customer. Now, to modify data
-from an object store with IndexedDB, we use request.put(keypath) to
-update a customer!</p>
-<p><a href="https://jsbin.com/zugowe" target="_blank" rel="noopener noreferrer">Online example at JSBin</a>:</p>
+<p>We used request.add(object) to add a new customer and request.delete(keypath) 
+to remove a customer. Now, to modify data from an object store with IndexedDB, we 
+use request.put(keypath) to update a customer!</p>
 
+<p><a href="https://jsbin.com/zugowe" target="_blank" rel="noopener noreferrer">Online example at JSBin</a>:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~ 206. devtools show updated customer in indexdb (361) ~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -15792,6 +15865,7 @@ this screenshot:</p>
 
 <p>The simplest function from the API is the request.get(key) function.
 It retrieves an object when we know its key/keypath.</p>
+
 <p><a href="https://jsbin.com/saquru" target="_blank" rel="noopener noreferrer">Online example at JSBin</a>:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 208. getting data from indexdb (361) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -15868,6 +15942,7 @@ form is in the request.onsuccess callback).</p>
 <p>The search is inititated at <i>line 30</i>, and the callback in the
 case of success is request.onsuccess, <i>lines 32-38</i>. event.target
 with result as the retrieved object (<i>lines 33 to 36</i>).</p>
+
 <p>Well, this is a lot of code, isn’t it? We can considerably abbreviate
 this function (though, admittedly it won’t take care of all possible
 errors). Here is the shortened version:</p>
@@ -15973,6 +16048,7 @@ between those in a certain range, then you must use <i>a cursor</i>.</p>
 
 <p><a href="https://jsbin.com/xetumu" target="_blank" rel="noopener noreferrer">You can try this example on
 JSBin</a>.</p>
+
 <p>It adds a button to our application. Clicking on it will display a
 set of alerts, each showing details of an object in the object
 store:</p>
@@ -15998,9 +16074,11 @@ is the result property of the request</b> (above we’re using the shorthand,
 it’s event.target.result). Then <b>the actual key and value can be found on the 
 key and value properties of the cursor object</b>. If you want to keep going, then 
 you have to call cursor.continue() on the cursor.</p>
+
 <p>When you’ve reached the end of the data (or if there were no entries that matched 
 your openCursor() request) you still get a success callback, but the result property 
 is undefined.</p>
+
 <p>One common pattern with cursors is to retrieve all objects in an object store 
 and add them to an array, like this:</p>
 
@@ -16029,15 +16107,17 @@ and add them to an array, like this:</p>
 
 </details>
 
-<p><a href="https://jsbin.com/bitoqa" target="_blank" rel="noopener noreferrer">You can try this version on
-JSBin</a>.</p>
+<p><a href="https://jsbin.com/bitoqa" target="_blank" rel="noopener noreferrer">
+You can try this version on JSBin</a>.</p>
 
 <h4>Getting data using an index</h4>
 
 <p>Storing customer data using the ssn as a key is logical since the ssn uniquely 
 identifies an individual. If you need to look up a customer by name, however, you’ll 
 need to iterate over every ssn in the database until you find the right one.</p>
+
 <p>Searching in this fashion would be very slow. So instead we use <i>an index</i>.</p>
+
 <p>Remember that we defined two indexes in our data store:</p>
 
 <ol type="1">
@@ -16076,6 +16156,7 @@ and returns the first one it finds with a name equal to “Bill”:</p>
 property. <i>Line 13</i> calls the get() method on this index-object to
 retrieve all of the person-objects from the dataStore which have a name
 equal to “Bill”.</p>
+
 <p><a href="https://jsbin.com/gituxa" target="_blank" rel="noopener noreferrer">Online example you can try at
 JsBin</a></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -16091,9 +16172,12 @@ JsBin</a></p>
 <p>The above example retrieves only the first object that has a
 name/index with the value=“Bill”. Notice that there are two “Bill”s in
 the object store.</p>
+
 <p><b>Retrieving more than one result when using an index</b></p>
+
 <p>In order to get all the “Bills”, once again we have to use <i>a
 cursor</i>.</p>
+
 <p>When we work with indexes, we can open two different types of cursors
 on indexes:</p>
 
@@ -16141,8 +16225,9 @@ on indexes:</p>
 </details>
 
 <p>Can you see the difference? </p>
-<p>You can try <a href="https://jsbin.com/kubuwof" target="_blank" rel="noopener noreferrer">an online example at
-JSBin that uses the above methods</a>:</p>
+
+<p>You can try <a href="https://jsbin.com/kubuwof" target="_blank" rel="noopener noreferrer">
+an online example at JSBin that uses the above methods</a>:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 212. getting data using index (369) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -16153,7 +16238,8 @@ JSBin that uses the above methods</a>:</p>
     one single data and one for getting all data, using indexes."
   style="width:50%;" />
 
-<p>How to try this example:</p>
+<h4>How to try this example:</h4>
+
 <ol type="1">
   <li><p>Press the create/Open CustomerDB database,</p></li>
   <li><p>Add some more customers,</p></li>
@@ -16200,13 +16286,15 @@ JSBin that uses the above methods</a>:</p>
 <h3 id="ch3-6-11">3.6.11 Limiting the range of values in a cursor</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>How to specify the range and direction of cursors with IndexedDB?</p>
+
 <p>It is possible to use a special object called IDBKeyRange, for
 “IndexedDB Key Range”, and pass it as the first argument
 to openCursor() or openKeyCursor(). We can specify the bounds of the
 data we are looking for, by using methods such as upperBound() or
 lowerBound(). The bound may be “closed” (i.e., the key range includes
 the given value(s)) or “open” (i.e., the key range does not include the
-given value(s)). </p>
+given value(s)).</p>
+
 <p>Let’s look at some examples (<a
 href="https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Using_IndexedDB#Specifying_the_range_and_direction_of_cursors" target="_blank" rel="noopener noreferrer">adapted
 from this MDN article</a>):</p>
@@ -16245,6 +16333,7 @@ from this MDN article</a>):</p>
 <p>Adapted from an example on gitHub, today no more available (<a
 href="https://github.com/mdn/IDBKeyRange-example/blob/gh-pages/index.html" target="_blank" rel="noopener noreferrer">original
 URL</a>):</p>
+
 <p>Try <a href="https://jsbin.com/lawaju/edit">the online example at
 JsBin</a> (enter “Gaming”, “Batman” etc. as key range values):</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -16425,33 +16514,44 @@ I go to the webcomponent.org Web site, go to customElements.io
 repository and I look for custom Web components that can do "speech synthesis".
 Let’s try with this one: ‘voice-elements’.
 The same thing: I download the ZIP, I look inside the ZIP… ‘voice
-elements’.
+elements’.</p>
+
 <p>If I read the documentation, I will see that the elements I need to
 import (the HTML files I need to import) are located in the src
 directory.</p>
+
 <p>I copy it to my directory, and I rename it ‘voice’. Then I can read
 the documentation.</p>
+
 <p>I need to import voice-player and if I wanted to use voice
 recognition I would import this one… I add the import for this
 voice-player, and then I can look at the demonstration and at the
 documentation.</p>
+
 <p>I prepared something already… This is just a voice-player element
 that will say an ‘Hi!’ sentence to you my students and I added a
 button.</p>
+
 <p>When I click on the button it will call the speak method from this
 Web component.</p>
+
 <p>Ok let’s try it. Reload. Now, I’ve got the button and listen! [Hi,
 students from the HTML5 Part 2 course. A Web component is speaking]</p>
+
 <p>That’s all, you saw how you can reuse existing components.</p>
+
 <p>Easy! Bye bye!</p>
+
 <p><b>Important note about the above text video:</b> <a
 href="https://www.webcomponents.org/">webcomponents.org</a> and
 customelements.io have been merged in 2017!</p>
+
 <p>The video uses the customelements.io Web site when searching for Web
 Components. It has now been merged with the <a
 href="https://www.webcomponents.org/">webcomponents.org</a> Web Site.
 The search field from webcomponents.org is equivalent to the search
 field that was available on the customelements.io.</p>
+
 <p>The zip file from the video is available for download in the section
 below.</p>
 
@@ -16460,6 +16560,7 @@ below.</p>
 <p>You can download an archive of the example mentioned in the video
 lecture from: <a
 href="https://courses.edx.org/assets/courseware/v1/3d550fbef1593961559d28aa6e373d97/asset-v1:W3Cx+HTML5.2x+2T2020a+type@asset+block/VideoUsingWebComponents2020.zip" target="_blank" rel="noopener noreferrer">VideoUsingWebComponents2020.zip</a></p>
+
 <p>You need to unarchive it in the Web server htdocs directory of your
 WAMP/MAMP/LAMP http distribution, for example. Then open
 the index.html file located in that directory.</p>
@@ -16477,9 +16578,11 @@ the index.html file located in that directory.</p>
 widgets/components using similar methods to those used by browser
 developers to construct the &lt;video&gt;, &lt;audio&gt;, and &lt;input
 type=“date”&gt; elements, for example.</p>
+
 <p>Web components enable you<i> to use custom HTML elements in your HTML
 documents</i>, that render as complex widgets: a better-looking
 calendar, an input text with vocal recognition, a nice chart, etc.</p>
+
 <p>Let’s start with an example! This code…:</p>
 
 <pre>1. &lt;x-gif src=&quot;https://i.imgur.com/iKXH4E2.gif&quot; ping-pong&gt;&lt;/x-gif&gt;</pre>
@@ -16498,6 +16601,7 @@ and again when the animation goes back to the first image.</p>
 <p>Click on the image to run the animated GIF demo, or visit <a
 href="https://geelen.github.io/x-gif/#/https://i.imgur.com/iKXH4E2.gif" target="_blank" rel="noopener noreferrer">this
 Web site</a>.</p>
+
 <p>If you look at the source of the demo page, you note the following at
 the top of the page:</p>
 
@@ -16510,6 +16614,7 @@ page . The code for the animated GIF player, rendered when the browser
 encounters the<i> custom HTML element</i> &lt;x-gif&gt;,  is located in
 the imported HTML file (and this HTML file can in turn include or define
 CSS and JavaScript content).</p>
+
 <p>Even more impressive: if you use the devtools or the right click
 context menu to view the source of the page, you will not see the DOM of
 this animated GIF player:</p>
@@ -16535,6 +16640,7 @@ that defines the components you want to use, and <a
 href="https://www.webcomponents.org/polyfills" target="_blank" rel="noopener noreferrer">maybe also a
 polyfill </a>if you want to use them with browsers that do not
 yet support Web Components.</p>
+
 <p><i>Example</i>: let’s go to the the <a
 href="https://www.webcomponents.org/" target="_blank" rel="noopener noreferrer">Web Components Web site</a>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -16559,7 +16665,9 @@ vocalize the text:</p>
 <p>Now, please try a <a
 href="https://zenorocha.github.io/voice-elements" target="_blank" rel="noopener noreferrer">demonstration of this
 component</a>!</p>
+
 <p>As you see, re-using Web components is easy :-)</p>
+
 <p>Notice that Google, with
 its <a href="https://www.polymer-project.org/" target="_blank" rel="noopener noreferrer">Polymer project</a> and
 Mozilla, with its <a href="https://x-tag.github.io/" target="_blank" rel="noopener noreferrer">X-Tag library</a>,
@@ -16574,6 +16682,7 @@ look and feel.</p>
 is not a single API - rather it’s what we call an “umbrella
 API”, <b>built on top of 4 W3C specifications, </b>which are going to be
 detailed in subsequent lessons.</p>
+
 <p>The main W3C Web Components resource is on <a href="https://github.com/w3c/webcomponents" target="_blank" rel="noopener noreferrer">GitHub</a>:</p>
 
 <ol type="1">
@@ -16584,8 +16693,7 @@ detailed in subsequent lessons.</p>
 </ol>
 
 <p>You can check the current support for these APIs here: <a
-href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/?q=webcomponents" target="_blank" rel="noopener noreferrer">Microsoft
-Edge’s Web Components</a> and on CanIuse:</p>
+href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/?q=webcomponents" target="_blank" rel="noopener noreferrer">Microsoft Edge’s Web Components</a> and on CanIuse:</p>
 
 <ul>
   <li><p>HTML templates are supported by nearly all modern browsers, including mobile browsers (see also this support table <a href="https://caniuse.com/#feat=template" target="_blank" rel="noopener noreferrer">online</a>).</p></li>
@@ -16602,66 +16710,85 @@ href="https://github.com/w3c/webcomponents/blob/gh-pages/proposals/HTML-Imports-
 <p>Hi! In this lesson, I am going to talk about the template API. You
 must know that Web components are what we call ‘an umbrella API’ that is
 built on four W3C specifications.</p>
+
 <p>One is the template specification about how to make HTML code that
 will be duplicated each time you will need to create a new widget. It is
 a sort of ’inert code’: if it includes videos they will not be played;
 if it includes JavaScript, it will not be executed, until you clone this
 template and add it to your document.</p>
-<p>The other APIs we will present in the course are the shadow DOM
-specification that will make encapsulations. In other words, it will
-hide the JavaScript,</p>
-<p>the HTML and the CSS from your widget to the external world. If you
-do ’view source’ in a page, you will not see anything. And if you use
-CSS in your document, it will not cross the boundaries of the different
-Web components.</p>
+
+<p>The other APIs we will present in the course are the shadow DOM specification 
+that will make encapsulations. In other words, it will hide the JavaScript, the 
+HTML and the CSS from your widget to the external world. If you do ’view source’ 
+in a page, you will not see anything. And if you use CSS in your document, it will 
+not cross the boundaries of the different Web components.</p>
+
 <p>The two last APIs are much more simpler. One is for designing custom
 elements like the x-gif Web component element we saw in the previous
 lesson.</p>
+
 <p>You will add new custom elements and the browser will render
 them.</p>
+
 <p>The last one enables the browser to import in an HTML document
 another HTML document.</p>
+
 <p>Here is a small example that defines a template. So you define a
 template using a template element, and usually you give it an id because
 you will use this id from JavaScript in order to clone its content and
 to add it to the document.</p>
+
 <p>So, this code is not rendered: it is just a skeleton. And this
 skeleton, we are going to work with it from JavaScript! In order to
 clone a template and make it live, we need first to select it:
 document.querySelector(‘#mytemplate’) (we select the template with the
 given id), then we can complete its content.</p>
+
 <p>I told you this is a skeleton: in that case it is an image with a
 caption, and the src attribute of the image is kept empty in the
 skeleton.</p>
+
 <p>We can set it from the template object we got in JavaScript. The
 ’t.content’ property corresponds to the DOM of the template.</p>
+
 <p>We can use querySelector to select an image in the template and set
 its src to the HTML5 logo (URL).</p>
+
 <p>Once we completed the content of the template, we can clone it using
 ‘document.importNode’.</p>
+
 <p>The last parameter ‘true’ means deep cloning.</p>
+
 <p>We can have templates that includes templates, and so on.</p>
+
 <p>And then once you cloned the content of the template, you add it to
 the document: ‘document.body.appendChild’, with the cloned template,
 will do that.</p>
+
 <p>Let’s try it, I put a button in the document that calls the
 instantiate function from JavaScript, that does all the different steps
 I detailed just earlier. If I click on the button, it will add all the
 HTML code from the template, and I can do that as many times as I
 want.</p>
+
 <p>This instantiation process is how we create a new skeleton for our
 future Web components.</p>
+
 <p>I hope you liked this video. Bye! Bye!</p>
+
 <p>HTML templates are an important building-block of Web components.
 When you use a custom element like &lt;x-gif….&gt;, the browser will
 (before rendering the document) clone and add  some HTML/CSS/JS code to
 your document, thanks to the HTML template API that is used behind the
 scenes.</p>
+
 <p>HTML templates define fragments of code (HTML, JavaScript and CSS
 styles) that can be reused.</p>
+
 <p>These parts of code are<i> inert</i> (i.e., CSS will not be applied,
 JavaScript will not be executed, images will not be loaded, videos will
 not be played, etc.) until the template is used.</p>
+
 <p>Here is an example of code that defines a template:</p>
 
 <pre>1. &lt;template id=&quot;mytemplate&quot;&gt;
@@ -16679,9 +16806,11 @@ between &lt;template&gt; and &lt;/template&gt;), and to manipulate it we
 use the DOM API and the content attribute of the DOM node that
 corresponds to a given template (<i>line 3</i> of the source code
 example below).</p>
+
 <p>In order to use a template’s content, we clone it using
 the document.importNode(templateContent, true) method, where the node is
 the template’s content and true means “deep copy” the content.</p>
+
 <p>A template is typically used like this:</p>
 
 <pre>1. var t = document.querySelector(&#39;#mytemplate&#39;);
@@ -16747,76 +16876,108 @@ JSBin</a> that uses exactly the code presented:</p>
 <h3 id="ch4-2-4">4.2.4 Shadow DOM</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Hello! Let’s talk about the shadow DOM. What is the</p>
+
 <p>Shadow DOM? Let’s first look at a video. You know the video element,
 we already used many times in this course.</p>
+
 <p>If you look at the source of the video element, or if you try to
 select it using the devtools, you can only select it at once, you can’t
 select individually the buttons, or the progress element, and so on.</p>
+
 <p>Look at the video, you see the video controls, autoplay, source
 elements, and so on. But you can’t look at the internals because this
 video is a Web component.</p>
+
 <p>Web components have been used by browser developers before the APIs
 went public.</p>
+
 <p>You can enable in the settings (I am using Google Chrome here), you
 can enable the visualization of the user agent shadow DOM.</p>
+
 <p>When this option is enabled, then you will see a shadow root in the
 debugger, when you look for a Web component.</p>
+
 <p>This time, if I open the shadow root in the debugger, and if I move
 the inspector, I can see how the Web component is made.</p>
+
 <p>I can see its internals. I can look at the play button for
 example.</p>
+
 <p>The shadow DOM is a way to hide HTML code from the end user. If you
 do ‘view source’,</p>
+
 <p>you will not see how a Web Component is made, except if you set the
 correct debugging settings option.</p>
+
 <p>More than that, the Web component may include some CSS files and the
 CSS of the Web component will only apply to its own elements.</p>
+
 <p>Let’s look at an example. Here, we(ve got a button that is called ‘a
 shadow host’.</p>
+
 <p>This is our Web component. For the moment we are not using custom
 elements, we are just associating a shadow DOM with the button element
 here.</p>
+
 <p>This one is called ’the host’, and as you can see it is not rendered
 because it has a shadow DOM.</p>
+
 <p>The way we add a shadow DOM to an element is that we first select the
 host, then we create a shadow root.</p>
+
 <p>Once you got the shadow root, you can start adding content in this
 node, in order to make the shadow DOM.</p>
+
 <p>Here, ‘root.textContent’ will add this text to the shadow DOM and if
 you look at the button, this is the text that is rendered: ’Hello’.</p>
+
 <p>If I inspect this element using the devtools, I will see a button,
 and a shadow root associated.</p>
+
 <p>In another example in the course, we will talk about templates and
 shadow DOM.</p>
+
 <p>Instead of adding just text in the shadow DOM using textContent or
 innerHTML, we can clone a template. So in this example, I’ve got a
 template that contains a ‘H1’. This is a ‘shadowed H1’ and some CSS
 style defined in the template.</p>
+
 <p>When I create the root element for the shadow DOM, I can append the
 cloned code of the template.</p>
+
 <p>In this case I have got a skeleton: the template.</p>
+
 <p>I instantiate it and I add it to the shadow DOM.</p>
+
 <p>Look at the result here! I have got my host (that is a ‘H1’), and if
 I type things it is not rendered. What is rendered is the content here
 of the template I instantiated.</p>
+
 <p>And this template contains an ‘H1’ that is white on red.</p>
+
 <p>But look: I have got a global CSS that says that all ‘H1s’ must be
 green, and this one is not affected, it does not cross the boundaries of
 the Web component.</p>
+
 <p>The same thing is true for the style in the Web component, that says
 that all ‘H1s’ must be white on red, and it does not affect the ‘H1’ in
 the page.</p>
+
 <p>I added an ‘H1’ that is not associated with the shadow DOM and this
 one is impacted by the normal CSS style that says that the color is
 green for each ‘H1’.</p>
+
 <p>This one is green but not the once inside the shadow DOM. So it is
 good for encapsulation: you can protect your widget (your Web component)
 so that external CSS will not affect it.</p>
+
 <p>In the next lesson, we will see how we can allow some style to cross
 the boundaries, but under control. This is all for this video! Bye!
 Bye!</p>
+
 <p>The Shadow DOM API provides DOM encapsulation: it serves to hide what
 is not necessary to see!</p>
+
 <p>If you are new to programming or object-oriented terminology you may
 find these references a helpful start:</p>
 
@@ -16906,6 +17067,7 @@ different elements:</p>
 <p>Chrome developers are already using the shadow DOM to define their
 own Web Components, such as &lt;video&gt; or &lt;audio&gt; elements! And
 they use the Shadow DOM to hide the internal plumbing.</p>
+
 <p>Furthermore, there is a kind of “boundary” around
 the &lt;video&gt; element, so that external CSS cannot interfere. The
 content of the &lt;video&gt; element is <i>sandboxed</i> (protected from
@@ -16916,8 +17078,8 @@ href="https://en.wikipedia.org/wiki/Sandbox_(computer_security)" target="_blank"
 of sandboxing</a>.</p>
 
 <blockquote>
-<p>Browser developers have been using Web Components for a while, and
-now it’s available to every Web developer!</p>
+  <p>Browser developers have been using Web Components for a while, and
+  now it’s available to every Web developer!</p>
 </blockquote>
 
 <h4>Another simple example</h4>
@@ -16986,6 +17148,7 @@ template’s content by embedding it in the shadow root. In this scenario,
 it’s easy to encapsulate CSS styles and/or JavaScript code so that it
 will affect <b>only</b> the content of the shadow root. Conversely,
 external CSS will not apply inside the shadow root.</p>
+
 <p>This is an important feature: the content of a new “widget” that is
 hidden in a shadow root is protected from external CSS, scripts,
 etc.</p>
@@ -17033,6 +17196,7 @@ at JSBin</a>:</p>
 styles applied. The styles applied are those defined <i>in the
 template’s content</i> that has been cloned and put inside the shadow
 root.</p>
+
 <p>NB a little bit of French squeezed past our filters. “Instanciate” in
 French (and other languages) means “Instantiate” in English. We hope
 you’ll translate, as appropriate; but if you seek definitions or use the
@@ -17043,7 +17207,8 @@ word in web-searches, then the English spelling will help!</p>
 <p>The CSS inside the template will not affect any other H1 elements on
 the page. This CSS rule (<i>lines 2-4</i> in the HTML part) will only
 apply to the template’s content, with no side-effects on other elements
-outside. </p>
+outside.</p>
+
 <p>Look at <a
 href="https://jsbin.com/jopabat/edit?html,css,js,output" target="_blank" rel="noopener noreferrer">this example at
 JSBin</a> that uses two H1s in the document: one is associated  with a
@@ -17051,7 +17216,8 @@ shadow root (defined in a template with an embedded CSS that selects H1
 elements and makes them white on red); whereas the other is located in
 the body of the document and is not affected by the CSS within the Web
 Component.</p>
-<p>The HTML part:</p>
+
+<h4>The HTML part:</h4>
 
 <details>
   <summary>HTML code!</summary>
@@ -17071,7 +17237,8 @@ Component.</p>
 
 </details>
 
-<p>We added a new H1 at <i>line 11</i>. </p>
+<p>We added a new H1 at <i>line 11</i>.</p>
+
 <p>And here is the result:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 229. shadow dom 4 (430) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -17082,7 +17249,7 @@ Component.</p>
   style="width:50%;" />
 
 <p>The second H1 is not affected by the CSS defined in the template used
-by the first H1. Try to add this CSS rule to this example :</p>
+by the first H1. Try to add this CSS rule to this example:</p>
 
 <pre>1.  h1 {
 2.      color:green;
@@ -17107,6 +17274,7 @@ Shadow DOM.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Let’s see how to insert content from the host element within the
 Shadow DOM using slots.</p>
+
 <p>It is possible to define a part of the template into which external
 HTML content will be “injected”. For this, we use
 the &lt;slot&gt;…&lt;/slot&gt; element, as shown below:</p>
@@ -17184,6 +17352,7 @@ your element inherits from if any:</p>
 
 <p>“Inheritance” is another aspect of object-oriented programming. If it
 is new to you, please see earlier reference material.</p>
+
 <p>Here is an example which defines a new element
 named &lt;my-widget&gt;, that will render as an instance of a template with a
 shadow DOM:</p>
@@ -17197,7 +17366,8 @@ shadow DOM:</p>
 5.  &lt;/my-widget&gt;
 6.  &lt;/body&gt;</pre>
 
-<p>Look at <i>lines 2 </i>and<i> 5</i>…</p>
+<h4>Look at <i>lines 2 </i>and<i> 5</i></h4>
+
 <p>HTML code for the declaration of the template (the same as in one of the previous examples):</p>
 
 <details>
@@ -17310,26 +17480,31 @@ WebComponents that use them (like the ones from section 4.2.1 - the
 component that displays animated GIFs, or the voice component), we
 propose some ways to import WebComponents using JavaScript in the next
 part of this chapter.</p>
+
 <p>HTML imports have been implemented so far only by Google Chrome. But
 Google announced that this feature is obsolete since Chrome 73. Although
 it may still work in some browsers, its use is discouraged since it
 could be removed at any time. Try to avoid using it!</p>
+
 <p>The reason other browser vendors did not agree to implement them is
 the merge of ES6 imports and modules. Mozilla, for example, do not want
 to re-implement something that existed for its main features, covered by
 ES6 modules (read this <a
 href="https://hacks.mozilla.org/2015/06/the-state-of-web-components/" target="_blank" rel="noopener noreferrer">discussion
 about HTML imports</a>).</p>
+
 <p>When we created this course, Web Components were a hot topic and
 imports were the only way to reuse external components. Many Web sites
 still use them, such as YouTube. And Google itself is struggling to
 replace them, as there is no easy way today to do something 100%
 equivalent to what HTML imports does today.</p>
+
 <p>There is also an interesting <a
 href="https://groups.google.com/a/chromium.org/forum/#!msg/blink-dev/h-JwMiPUnuU/sl79aLoLBQAJ" target="_blank" rel="noopener noreferrer">discussion
 on the Chromium-dev mailing list</a> about how HTML imports should be
 replaced, and about what you can do today to keep your applications
 working (you will note that I’m part of this discussion too ;-) ).</p>
+
 <p>So… is there a replacement for HTML imports today? The answer is
 clearly NO. But <b>there are ways to still use HTML imports</b> or to
 use a more complicated “JavaScript bundler”. Also, the people at W3C
@@ -17350,6 +17525,7 @@ specification yet…</p>
 <h4>If you want to know what HTML Imports were about…</h4>
 
 <p>HTML Imports is the simplest API from Web components :-)</p>
+
 <p>Add a &lt;link rel="import" href="your_html_file" target="_blank"&gt; and all the
 html/css/js code, that defines a Web component you plan to use, will be
 imported:</p>
@@ -17375,6 +17551,7 @@ imported:</p>
 and JS code of new “components” is done. The HTML+JS+CSS code that
 defines templates, attachment to a shadow host, CSS, and registering of
 new custom HTML elements is located in myComponents.html.</p>
+
 <p>You could create a my-widget.html file, add the HTML template and the
 JavaScript code to that file, and import my-widget.html into your
 document and use &lt;my-widget&gt;…&lt;/my-widget&gt; from the last lesson
@@ -17393,20 +17570,20 @@ Components, the so-called HTML Imports API, has been removed from the
 standard. So…. how can you define a complete Web Component (HTML, CSS,
 JavaScript) and use it in a HTML page or within the HTML of another
 component?</p>
-Well, if you want to rely only on the Web languages (HTML/CSS/JS), you
+
+<p>Well, if you want to rely only on the Web languages (HTML/CSS/JS), you
 will have to embed the HTML template part of your component, the CSS
 part for the styling of your component, in the JavaScript part of your
 component. Then, you will be able to include the JavaScript that defines
 your Web Component, as a regular JavaScript file, using
-<script
-src="yourComponent.js"></script>
-<p>or using the new EcmaScript import statement and import the file as a
+&lt;script src="yourComponent.js"&gt;&lt;/script&gt;
+or using the new EcmaScript import statement and import the file as a
 ES Module.</p>
 
 <h4>Here is an example:</h4>
 
-<p>index.html (the host html page that imports and instantiates the Web
-Components) :</p>
+<h4>index.html (the host html page that imports and instantiates the Web
+Components):</h4>
 
 <details>
   <summary>HTML code!</summary>
@@ -17617,6 +17794,7 @@ the button that calls the computePrime() function, you will notice that the <
 execution (that should normally modify the DOM of the page and display the prime number 
 that has been found) does nothing visible. The UI is unresponsive. <i>This is</i> really, 
 really, bad JavaScript programming - and should be <b>avoided</b> at all costs.</p>
+
 <p>Shortly we will see a “good version” of this example that uses Web Workers.</p>
 
 <h4>Thread safety problems? Not with Web Workers!</h4>
@@ -17628,6 +17806,7 @@ modifying the value of a variable while another one is reading it, this may resu
 some strange behavior. Imagine that thread number 1 is changing the first bytes of a 
 4 byte variable, and thread number 2 is reading it at the same time: the read value 
 will be wrong (1st byte that has been modified + 3 bytes not yet modified).</p>
+
 <p>With Web Workers, the carefully controlled communication points with other threads 
 mean that it’s actually very hard to cause concurrency problems. There’s no access in 
 a worker to non-thread safe components or to the DOM. We must to pass specific data 
@@ -17679,6 +17858,7 @@ parallel computing after all :-)</p>
 in JSON format (this is the case for most JavaScript objects, and is
 handled by the Web Worker implementation of recent browser
 versions).</p>
+
 <p>Terminology check: <a
 href="https://en.wikipedia.org/wiki/Serialization" target="_blank" rel="noopener noreferrer">serialized</a></p>
 
@@ -17758,7 +17938,7 @@ href="https://en.wikipedia.org/wiki/Serialization" target="_blank" rel="noopener
 
 </details>
 
-<p>The JavaScript code of the worker (worker0.js):</p>
+<h4>The JavaScript code of the worker (worker0.js):</h4>
 
 <details>
   <summary>JavaScript code!</summary>
@@ -17901,10 +18081,9 @@ sent.</p>
 supports Web Workers, and by displaying some additional messages.</p>
 
 <blockquote>
-<p><b>CAREFUL</b>: for security reasons you cannot try the examples
-using a file:// URL. <b>You need an HTTP web server that will serve the
-files</b>. Here is what happens if you do not follow this
-constraint:</p>
+  <p><b>CAREFUL</b>: for security reasons you cannot try the examples
+  using a file:// URL. <b>You need an HTTP web server that will serve the
+  files</b>. Here is what happens if you do not follow this constraint:</p>
 </blockquote>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~ 238. using file URL does not work for security reasons (448) ~~~~~~~~~~~~~~~~-->
@@ -17920,10 +18099,12 @@ Chromium, you can run the browser using some command line options to
 override these security constraints. Read, for example, <a
 href="https://suretalent.blogspot.fr/2011/04/javascript-web-workers-local-chrome.html" target="_blank" rel="noopener noreferrer">this
 blog post that explains this method in detail</a>.</p>
+
 <p>Ok, back to our improved version! This time, we test if the browser
 supports Web Workers, and we also use a modified version of the
 worker.js code for displaying a message and have it wait 3 seconds
 before starting the computation of prime numbers.</p>
+
 <p>You can download this example: <a
 href="https://courses.edx.org/assets/courseware/v1/4af4dd2326f40b5d5d55aa15bbb12d70/asset-v1:W3Cx+HTML5.2x+2T2020a+type@asset+block/WebWorkersExample1.zip" target="_blank" rel="noopener noreferrer">WebWorkersExample1.zip</a></p>
 
@@ -17994,6 +18175,7 @@ computation by 3s.</p>
 
 <p>So far, we have created and used a worker. Now we will see how to
 kill it!</p>
+
 <p>A worker is a thread, and a thread uses resources. If you no longer
 need its services,<i> it is best practice to release the used
 resources, </i>especially since some browsers may run very badly when
@@ -18003,6 +18185,7 @@ that was used to create the worker, the worker itself continues to live
 task (therefore memory and other resources are still allocated) but it
 becomes inaccessible. In this situation, we cannot do anything but close
 the tab/page/browser.</p>
+
 <p>The Web Worker API provides a terminate() method that we can use on
 any worker, to end its life. After a worker has been killed, it is not
 possible to undo its termination. The only option is to create a new
@@ -18079,15 +18262,17 @@ the worker’s JavaScript file:</p>
 <h4>To sum up, there are 3 different ways to kill a Web Worker:</h4>
 
 <ol type="1">
-  <li><p>Close the tab/window of the parent. This will kill all workers that have been created by this parent tab/window.</p></li>
-  <li><p>In the parent’s JavaScript file: call the terminate() method on a worker instance. Example: worker.terminate();</p></li>
-  <li><p>Call the close() method in a Worker’s JavaScript file. This will kill the current Worker that is running this code.</p></li>
+  <li><p>Close the tab/window of the parent. This will kill all workers that 
+    have been created by this parent tab/window.</p></li>
+  <li><p>In the parent’s JavaScript file: call the terminate() method on a 
+    worker instance. Example: worker.terminate();</p></li>
+  <li><p>Call the close() method in a Worker’s JavaScript file. This will 
+    kill the current Worker that is running this code.</p></li>
 </ol>
 
 <h4>A web worker can include external scripts</h4>
 
-<p>External scripts can be loaded by workers using
-the importScripts() function.</p>
+<p>External scripts can be loaded by workers using the importScripts() function.</p>
 
 <h4>worker.js:</h4>
 
@@ -18100,11 +18285,11 @@ the importScripts() function.</p>
 <p>The included scripts must follow <a
 href="https://developer.mozilla.org/en-US/docs/JavaScript/Same_origin_policy_for_JavaScript?redirectlocale=en-US&amp;redirectslug=Same_origin_policy_for_JavaScript" target="_blank" rel="noopener noreferrer">the
 same-origin policy</a>.</p>
-<p>The scripts are loaded synchronously and the
-function importScripts() doesn’t return until all the scripts have been
-loaded and executed. If an error occurs during a script importing
-process, a NETWORK_ERROR is thrown by the importScripts function and the
-code that follows won’t be executed.</p>
+
+<p>The scripts are loaded synchronously and the function importScripts() doesn’t 
+return until all the scripts have been loaded and executed. If an error occurs 
+during a script importing process, a NETWORK_ERROR is thrown by the importScripts 
+function and the code that follows won’t be executed.</p>
 
 <h4>Limitations of Web Workers</h4>
 
@@ -18151,8 +18336,7 @@ things:</p>
   alt="Web workers scope."
   style="width:50%;" />
 
-<!-- style="width:5.20833in;height:3.39583in" -->
-<p><b>Note that:</b></p>
+<h4>Note that:</h4>
 
 <ol type="1">
   <li><p>Chrome has already implemented a new way for transferring objects from/to Web Workers by reference, in addition to the standard “by copy” method. This is<a href="https://www.w3.org/TR/html51/infrastructure.html#transferable-objects" target="_blank" rel="noopener noreferrer"> in the HTML 5.1 draft specification from the W3C</a> - look for “transferable” objects!</p></li>
@@ -18207,10 +18391,11 @@ reacts instantly…</p>
 
 <p>Do ray tracing using a variable number of Workers, and try it <a href="https://nerget.com/rayjs-mt/rayjs.html" target="_blank" rel="noopener noreferrer">online</a> (if you’ve not heard of it before, <a href="https://www.cs.unc.edu/~rademach/xroads-RT/RTarticle.html" target="_blank" rel="noopener noreferrer">here’s
 an explanation</a> that tells you more than you will ever want to know about ray tracing!)</p>
-In this demo, you can select the number of Web Workers which will
+
+<p>In this demo, you can select the number of Web Workers which will
 compute parts of the image (pixels). If you use too many Web Workers,
 the performance decreases because too much time is spent exchanging data
-between workers and their creator, instead of computing in parallel.
+between workers and their creator, instead of computing in parallel.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ 242. green blocks and ray tracer (455) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -18222,8 +18407,7 @@ between workers and their creator, instead of computing in parallel.
 <h4>Other demos</h4>
 
 <p><a
-href="https://developer.mozilla.org/en-US/docs/Web/Demos_of_open_web_technologies#Web_APIs" target="_blank" rel="noopener noreferrer">Try
-these other impressive demos at the MDN demo repository!</a></p>
+href="https://developer.mozilla.org/en-US/docs/Web/Demos_of_open_web_technologies#Web_APIs" target="_blank" rel="noopener noreferrer">Try these other impressive demos at the MDN demo repository!</a></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-3-5">4.3.5 Discussion and projects</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -18250,9 +18434,6 @@ your comments/observations/questions and share your creations.</p>
   title="IE 10 Web Workers fountain demo"
   alt="IE 10 Web Workers fountain demo."
   style="width:40%;" />
-
-<!--  style="width:384px;" -->
-<!-- style="width:4in;height:2.55983in" -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-4">4.4 The Orientation and Device Motion APIs</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -18260,10 +18441,12 @@ your comments/observations/questions and share your creations.</p>
 the <a href="https://www.w3.org/TR/screen-orientation/" target="_blank" rel="noopener noreferrer">HTML5
 orientation API</a>: a way to use angle measures provided by
 accelerometers from mobile devices or laptops such as MacBooks.</p>
+
 <p><b>Beware</b>: all examples must be run on a device with an
 orientation sensor and/or with an accelerometer. Furthermore,
 Chrome/Safari and Mozilla support this API, but Opera mobile doesn’t
 (yet) at the time of writing.</p>
+
 <p>If it provides a “mobile device emulation mode”, you can use the
 devtools of a desktop browser to fake the orientation values (see the
 support table below, the columns for desktop versions of browsers are
@@ -18283,6 +18466,7 @@ about the support for this emulation mode).</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Transformations between the Earth coordinate frame and the device
 coordinate frame uses the following system of rotations.</p>
+
 <p>Rotations use the right-hand convention, such that positive rotation
 around an axis is clockwise when viewed along the positive direction of
 the axis. When considering <i>rotations</i>, always think in terms of
@@ -18290,20 +18474,25 @@ looking down: either at your feet on the ground or at a device (or map)
 lying flat on a table. We count <i>clockwise</i> rotation as
 a <i>positive</i> number, and <i>anti-clockwise</i> as <i>negative</i>.
 In this case, <i>rotations</i> are measured in <i>degrees</i>.</p>
+
 <p>If you are not familiar with using a compass to navigate, here is an
 illustrated explanation of <a
 href="https://www.wikihow.com/Use-a-Compass" target="_blank" rel="noopener noreferrer">relating compass readings
 to the real-world/a map</a>.</p>
+
 <p>As well as the (2D) left/right, forward/backward directions on a map
 (or HTML5 canvas!), we need to consider other types of movements.</p>
+
 <p>For example, height/depth: there might be a huge difference in
 position between being at the top or the bottom of a cliff, and yet the
 horizontal distance from one to the other is small. </p>
+
 <p>Another direction that is not apparent when we assume our world is as
 flat as a map, is to tilt. If you’ve ever ridden a motor-cycle you will
 know that it is easier to change its direction by leaning over, than by
 trying to turn the handlebar. Imagine then, tilting or twisting your
 device to steer your character in a motorcycle or airplane game!</p>
+
 <p>Before making use of a <i>location</i>-aware device, we must align
 its understanding of <i>direction</i> with our own view of ‘the Earth’.
 Once we have a unified <i>coordinate system</i>, we apply rotations in
@@ -18328,7 +18517,6 @@ aligned.
 <th>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~ 244. start orientation & rotation about z axis (458) ~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image244.webp"
   style="width:45%;" 
@@ -18352,7 +18540,6 @@ y<sub>0</sub>.
 <td>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 245. rotation about z axis (459) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image245.webp"
   style="width:45%;" 
@@ -18374,7 +18561,6 @@ y<sub>0</sub>.
 <th>Device in the initial position, with Earth (XYZ) and<br /> body (xyz) frames aligned.</th>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~ 245b. start orientation & rotation about x axis (460) ~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <th>
 <img class="displayed"
   src="./images/webp/image245b.webp"
@@ -18396,7 +18582,6 @@ y<sub>0</sub> and z<sub>0</sub>.</td>
 <td>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 246. rotation about the x axis (461) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image246.webp"
   title="Rotation about the x axis"
@@ -18429,7 +18614,6 @@ aligned.
 <th>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 246b. start orientation (462) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image246b.webp"
   style="width:45%;" 
@@ -18455,7 +18639,6 @@ x<sub>0</sub> and z<sub>0</sub>.
 <td>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 247. rotation about y axis (463) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image247.webp"
   style="width:45%;" 
@@ -18474,16 +18657,22 @@ x<sub>0</sub> and z<sub>0</sub>.
 <p>The use of this API is very straightforward:</p>
 
 <ol type="1">
-  <li><p>Test if your browser supports the orientation API (window.DeviceOrientationEvent is not null),</p></li>
-  <li><p>Define a listener for the ‘deviceorientation’ event as follows: window.addEventListener(‘deviceorientation’, callback, false); with the callback function accepting the event object as its single input parameter,</p></li>
+  <li><p>Test if your browser supports the orientation API 
+    (window.DeviceOrientationEvent is not null),</p></li>
+  <li><p>Define a listener for the ‘deviceorientation’ event as follows: 
+    window.addEventListener(‘deviceorientation’, callback, false); with 
+	the callback function accepting the event object as its single input parameter,</p></li>
   <li><p>Extract the angles from the event (use its properties: alpha, beta, gamma).</p></li>
-  <li><p><a href="https://jsbin.com/limugat/edit" target="_blank" rel="noopener noreferrer">Here’s an example on JsBin</a>. Try it with  a smartphone, a tablet, or a device with an accelerometer: </p></li>
+  <li><p><a href="https://jsbin.com/limugat/edit" target="_blank" 
+    rel="noopener noreferrer">Here’s an example on JsBin</a>. Try it with  a 
+	smartphone, a tablet, or a device with an accelerometer:</p></li>
 </ol>
 
-<p>(If using a mobile device, <a href="https://jsbin.com/limugat" target="_blank" rel="noopener noreferrer">open the page in standalone mode</a> (without the JsBin editor) )</p>
+<p>(If using a mobile device, <a href="https://jsbin.com/limugat" 
+target="_blank" rel="noopener noreferrer">open the page in standalone 
+mode</a> (without the JsBin editor) )</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 248. device orientation api 2 (464) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image248.webp"
   title="Device Orientation API 2"
@@ -18498,7 +18687,6 @@ This is why, in the example, we round the returned values with Math.round() at
 <p>If we change the orientation of the device here are the results:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 249. orientation api 3 (465) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image249.webp"
   title="Orientation API 3"
@@ -18506,7 +18694,6 @@ This is why, in the example, we round the returned values with Math.round() at
   style="width:40%;" />
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 250. orientation api 1 (465) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image250.webp"
   title="Orientation API 1"
@@ -18514,7 +18701,6 @@ This is why, in the example, we round the returned values with Math.round() at
   style="width:40%;" />
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 254 or 251?. orientation api 2 (466) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image254.webp"
   title="Orientation API 2"
@@ -18597,7 +18783,6 @@ controlled game…</p>
   style="width:30%;" />
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~ 255. logo 3, centered beneath 1 & 2 (468) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image255.webp"
   title="Logo position 3"
@@ -18664,6 +18849,7 @@ href="https://twitter.com/derekanderson" target="_blank" rel="noopener noreferre
 href="https://imagesupstream.com/" target="_blank" rel="noopener noreferrer">Media Upstream</a>. Original source
 code available <a
 href="https://github.com/imagesupstream/levelToolJS" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
+
 <p><a href="https://jsbin.com/quboge/edit" target="_blank" rel="noopener noreferrer">We adapted the source code so
 that you can tweak it in JsBin</a>, or <a
 href="https://jsbin.com/quboge" target="_blank" rel="noopener noreferrer">test it in standalone mode</a> (using a
@@ -18683,16 +18869,17 @@ mobile device).</p>
 of the device to a server using WebSockets. The server in turn updates
 the logo and position on a PC screen. If multiple devices connect, they
 can chat together and take control of the 3D Logo.</p>
+
 <p>This video shows one of the above examples slightly modified: the
 JavaScript code running in the Web page on the iPad sends in real time
 the device orientation using the Web Sockets API to a server that in
 turns sends the orientation to a client running on a desktop browser. In
 this way the tablet “controls” the HTML5 logo that is shown on the
 desktop browser:</p>
+
 <p>Click on the image to see the YouTube video:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ 257. orientation api + websockets (470) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image257.webp"
   title="Orientation API + websockets"
@@ -18703,7 +18890,9 @@ desktop browser:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>This section presents the Device Motion API which is used in a similar manner 
 to the device orientation API discussed earlier.</p>
+
 <p>The deviceMotion API deals with <i>accelerations</i> instead of <i>orientation</i> only.</p>
+
 <p>Use cases proposed by the specification are:</p>
 
 <ul>
@@ -18784,7 +18973,8 @@ target="_blank" rel="noopener noreferrer">(info taken from this [article]</a>):
   alt="Acceleration values with screen facing up."
   style="width:50%;"  />
 
-<p>A mobile phone rotated along the x-axis so the screen is perpendicular to its normal position would return:</p>
+<p>A mobile phone rotated along the x-axis so the screen is perpendicular to its 
+normal position would return:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 259. acceleration values 2 (472) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -18817,8 +19007,10 @@ target="_blank" rel="noopener noreferrer">(info taken from this [article]</a>):
 
 <h4>Common processing with acceleration values</h4>
 
-<p>Test the value of the acceleration.z property: If &gt; 0 then the device is facing up, otherwise it is facing down. This would be useful
-if you wanted to play <a href="https://en.wikipedia.org/wiki/Coin_flipping" target="_blank" rel="noopener noreferrer">heads or tails</a> with your phone ;-)</p>
+<p>Test the value of the acceleration.z property: If &gt; 0 then the device is 
+facing up, otherwise it is facing down. This would be useful if you wanted to 
+play <a href="https://en.wikipedia.org/wiki/Coin_flipping" target="_blank" 
+rel="noopener noreferrer">heads or tails</a> with your phone ;-)</p>
 
 <pre>1. // For example, if acceleration.z is &gt; 0 then the phone is facing up
 2. var facingUp = -1;
@@ -18826,9 +19018,8 @@ if you wanted to play <a href="https://en.wikipedia.org/wiki/Coin_flipping" tar
 4.     facingUp = +1;
 5. }</pre>
 
-<p>Compute the angle corresponding to the Left / Right and Front / Back
-tilts. This example uses the accelerationIncludingGravity property of
-the event.</p>
+<p>Compute the angle corresponding to the Left / Right and Front / Back tilts. 
+This example uses the accelerationIncludingGravity property of the event.</p>
 
 <details>
   <summary>HTML code!</summary>
@@ -19276,6 +19467,7 @@ comments/observations/questions and share your creations.</p>
   <h5>the end…</h5>
   <br>
   <h6>Prior Updated: 3-25-2024 11:50pm</h6>
-  <h6>Last Updated: 4-14-2024 Sun 5:36pm</h6>
+  <h6>Prior Updated: 4-14-2024 Sun 5:36pm</h6>
+  <h6>Last Updated: 4-15-2024 Mon 12:24pm</h6>
 </body>
 </html>
