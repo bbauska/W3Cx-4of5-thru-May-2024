@@ -653,7 +653,7 @@ Checker</a>.  If there are internationalization problems with your page,
 this checker explains what they are and what to do about it.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch1-1-1">Module 1 Advanced HTML5 multimedia</h3>
+<h3 name="ch1-1-1">Module 1 Advanced HTML5 multimedia</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 In the [W3Cx HTML5 Coding Essentials and Best
 Practices](https://www.edx.org/course/html5-coding-essentials-and-best-practices) course,
@@ -821,7 +821,7 @@ forum!
 We hope you will enjoy this first week and we wish you the best!
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch1-2-1">1.2.1 Intro to the Timed Text Track API</h3>
+<h3 name="ch1-2-1">1.2.1 Intro to the Timed Text Track API</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Hi, today I've prepared for you a small example of a video that is
 associated with three different tracks.
@@ -1057,7 +1057,7 @@ implement missing features such as:
 -   etc.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch1-2-2">1.2.2 The HTML Track Element, getting the status of a track</h3>
+<h3 name="ch1-2-2">1.2.2 The HTML Track Element, getting the status of a track</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Hi, in this video I will show you how we can work with the track
 elements from JavaScript, just to know which track has been loaded and
@@ -1265,7 +1265,7 @@ Now, it's time to look at the twin brother of an HTML track: the
 corresponding TextTrack object!
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch1-2-3">1.2.3 The TextTrack Object</h3>
+<h3 name="ch1-2-3">1.2.3 The TextTrack Object</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Hi! Now we are preparing ourselves for reading the content of the
 different text tracks and display them.
@@ -1574,7 +1574,7 @@ example:
     refresh the different track statuses in the HTML document.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch1-2-4">1.2.4 Working With Cues</h3>
+<h3 name="ch1-2-4">1.2.4 Working With Cues</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Hi! We will continue the last example from the previous video, and this
 time when we will click on the "force load track 0" or "force load track
@@ -1733,7 +1733,7 @@ you how to make a clickable transcript on the side of the video
 - something quite similar to what the edX video player does.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch1-2-5">1.2.5 Listening to Events</h3>
+<h3 name="ch1-2-5">1.2.5 Listening to Events</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Ok. This time we will talk about track events and cue events.
 
@@ -1972,9 +1972,9 @@ shows how to use enter and exit events on cues</a>:
 </details>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch1-3">1.3 Advanced Features for &lt;audio&gt; and &lt;video&gt; Players</h3>
+<h3 name="ch1-3">1.3 Advanced Features for &lt;audio&gt; and &lt;video&gt; Players</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch1-3-1">1.3.1 With a Clickable Transcript on the Side</h3>
+<h3 name="ch1-3-1">1.3.1 With a Clickable Transcript on the Side</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Hi! This time, we will just go a little bit further than in the previous
 examples.
@@ -2607,7 +2607,7 @@ element with an id of transcript.
 </details>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch1-3-2">1.3.2 Captions, Descriptions, Chapters and Metadata</h3>
+<h3 name="ch1-3-2">1.3.2 Captions, Descriptions, Chapters and Metadata</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Example #2: showing video description while playing, listening to
 events, changing the mode of a track.
@@ -2817,7 +2817,7 @@ function logCue() {
 </details>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch1-3-3">1.3.3 With Buttons for Choosing the Subtitle Language</h3>
+<h3 name="ch1-3-3">1.3.3 With Buttons for Choosing the Subtitle Language</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Example #3: adding buttons for choosing the subtitle/caption track
 
@@ -2965,7 +2965,7 @@ you choose which track you prefer. 
     Format](https://developer.mozilla.org/fr/docs/Web/API/WebVTT_API) (WebVTT).
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch1-3-4">1.3.4 With a Simple Chapter Navigation Menu</h3>
+<h3 name="ch1-3-4">1.3.4 With a Simple Chapter Navigation Menu</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Example #4: making a simple chapter navigation menu
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3137,7 +3137,7 @@ However, we will see how we can do better by using JSON objects as cue
 contents. This will be the topic of the next two lessons!
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch1-3-5">1.3.5 With Thumbnails, Using JSON Cues</h3>
+<h3 name="ch1-3-5">1.3.5 With Thumbnails, Using JSON Cues</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Example #5: create a chapter menu with image thumbnails.
 
@@ -3559,7 +3559,7 @@ code from earlier in this lesson.
 </p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch1-4-1">1.4.1 Creating Tracks on the Fly</h3>
+<h3 name="ch1-4-1">1.4.1 Creating Tracks on the Fly</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 In this lesson, we are going to show:
 
@@ -3784,7 +3784,7 @@ addCue does <b>not</b> work with <i>HTMLTrackElement</i> Objects.
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch1-4-2">1.4.2 Update the Document in Sync with a Media Playing</h3>
+<h3 name="ch1-4-2">1.4.2 Update the Document in Sync with a Media Playing</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Mixing JSON cue content with track and cue events, makes the
 synchronization of elements in the HTML document (while the video is
@@ -4011,7 +4011,7 @@ Google map code and classic DOM manipulation for updating HTML content
 (a span that will display the current URL, <i>line 42</i>).
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch1-5-1">1.5.1 Introduction</h3>
+<h3 name="ch1-5-1">1.5.1 Introduction</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Welcome to the WebAudio API lesson! I personnally love this API, playing
 with it is a lot of fun as you will discover! I hope you will like it as
@@ -4381,7 +4381,7 @@ with the Chrome WebAudio Inspector extension).
 </p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch1-5-2">1.5.2 Working with Streamed Content</h3>
+<h3 name="ch1-5-2">1.5.2 Working with Streamed Content</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Hello! Using Web Audio with streamed content is really easy. I’m going
 to show you the most simple example we can do, directly on JSBin.
@@ -4486,7 +4486,7 @@ them in the audio graph will enable us to change the sound in many
 different ways.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch1-5-3">1.5.3 Most Useful Filter Nodes</h3>
+<h3 name="ch1-5-3">1.5.3 Most Useful Filter Nodes</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 All definitions come from the [Mozilla Developer Network (MDN) pages
 giving details about the Web Audio
@@ -4978,7 +4978,7 @@ button is clicked, we remove  or add a compressor in the audio graph
 (<i>lines 28-42</i>) and to achieve this, we disconnect and reconnect some of
 the nodes.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch1-5-4">1.5.4 Writing an Equalizer</h3>
+<h3 name="ch1-5-4">1.5.4 Writing an Equalizer</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Example #1: an audio equalizer with an &lt;audio&gt; element
 
@@ -5152,7 +5152,7 @@ moving the sliders to change the sound!
 </p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch1-5-5">1.5.5 Waveforms</h3>
+<h3 name="ch1-5-5">1.5.5 Waveforms</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Hi, Today I will show you how to write a waveform that will danse with
 the music. I prepared a small skeleton that is just composed of an audio
@@ -5485,7 +5485,7 @@ you should see the waveform changing.
 </p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch1-5-6">1.5.6 Frequencies</h3>
+<h3 name="ch1-5-6">1.5.6 Frequencies</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>First typical example</h4>
 
@@ -5717,7 +5717,7 @@ Source code from this example's the buildAudioGraph function:
 </details>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch1-5-7">1.5.7 Volume Meters</h3>
+<h3 name="ch1-5-7">1.5.7 Volume Meters</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Important note:</b> the volume meter implementations below use rough
 approximations and cannot be taken as the most accurate way to compute
@@ -6006,7 +6006,7 @@ same levels no matter whatFFTsizeyou apply."
 Here is a codepen with my proposed meters.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch1-5-8">1.5.8 Sound Samples Loaded in Memory</h3>
+<h3 name="ch1-5-8">1.5.8 Sound Samples Loaded in Memory</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 For some applications, it may be necessary to load sound samples into
 memory and uncompress them before they can be used.
@@ -6099,7 +6099,7 @@ fast the sound effects are played. Click as fast as you can!
 </p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch1-5-9">1.5.9 Load and play sound samples</h3>
+<h3 name="ch1-5-9">1.5.9 Load and play sound samples</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Use an AudioBufferSourceNode as the source of the sound sample in the
 Web Audio graph.
@@ -6498,7 +6498,7 @@ variations:
     intensity of the signal in case the gain makes it peak.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch1-5-10">1.5.10 Sound samples and effects</h3>
+<h3 name="ch1-5-10">1.5.10 Sound samples and effects</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Any of the effects that discussed during these lectures (gain, stereo
 panner, reverb, compressor, equalizer, analyser node for visualization,
@@ -6557,7 +6557,7 @@ Look at the source code on JSBin, it's a quick merge of the two previous
 examples.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch1-5-11">1.5.11 Useful third party libraries</h3>
+<h3 name="ch1-5-11">1.5.11 Useful third party libraries</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 It's best practice to know the Web Audio API itself. Many of the
 examples demonstrated during this course may be hard to write using
@@ -6626,7 +6626,7 @@ This is one of the most funny weeks of this course so we hope you will
 share your own creations and enjoy this funny part of the course.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch2-2-1">2.2.1 History of JavaScript games</h3>
+<h3 name="ch2-2-1">2.2.1 History of JavaScript games</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 There is a widely-held belief that games running in Web browsers and
 without the help of plugins are a relatively new phenomenon. This is not
@@ -6716,7 +6716,7 @@ Sierra games. 
 And now we are entering a new era in the history of the Web: "HTML5"!
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch2-2-2">2.2.2 Elements and APIs useful for writing games</h3>
+<h3 name="ch2-2-2">2.2.2 Elements and APIs useful for writing games</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 In the W3Cx [HTML5 Coding Essentials and Best
 Practices](https://www.edx.org/course/html5-coding-essentials-and-best-practices) course,
@@ -6867,7 +6867,7 @@ to poll the server for a reply. 
 </p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch2-2-3">2.2.3 The "game loop"</h3>
+<h3 name="ch2-2-3">2.2.3 The "game loop"</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 94. game loop diagram (150) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
@@ -7057,7 +7057,7 @@ exactly that: it gives a high resolution time.
 We will cover this in more detail, later in the course.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch2-3-1">2.3.1 A game framework skeleton</h3>
+<h3 name="ch2-3-1">2.3.1 A game framework skeleton</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 We are going to develop a game - not all at once, let's divide the whole
 job into a series of smaller tasks. The first step is to create
@@ -7310,7 +7310,7 @@ this JSBin example](https://jsbin.com/notupe/edit).
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch2-3-2">2.3.2 Introducing graphics</h3>
+<h3 name="ch2-3-2">2.3.2 Introducing graphics</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 [<i>Note</i>: drawing within a canvas is studied in detail during the [W3C
 HTML5 Coding Essentials and Best Practices
@@ -7633,7 +7633,7 @@ per second!
 Next, let's see how to interact with it using the mouse or the keyboard.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch2-3-3">2.3.3 User interaction and event handling</h3>
+<h3 name="ch2-3-3">2.3.3 User interaction and event handling</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Input & output: how do events work in Web apps & games?</h4>
 
@@ -7730,7 +7730,7 @@ references useful:
     encyclopedia](https://en.wikipedia.org/wiki/Separation_of_concerns)
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch2-3-4">2.3.4 Adding key listeners</h3>
+<h3 name="ch2-3-4">2.3.4 Adding key listeners</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>A few reminders</h4>
 
@@ -7957,7 +7957,7 @@ right arrow keys, because they are mutually exclusive. However space +
 up + right should work in combination.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch2-3-5">2.3.5 Adding mouse listeners</h3>
+<h3 name="ch2-3-5">2.3.5 Adding mouse listeners</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <h4>A few reminders</h4>
@@ -8320,7 +8320,7 @@ to direct movements every 1/60th second.
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch2-3-6">2.3.6 Gamepad events</h3>
+<h3 name="ch2-3-6">2.3.6 Gamepad events</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Hi! In this lesson we will look at how we can manage such an input
 device! This is a Microsoft xbox 360 controller -a wired one- with an USB plug. And we
@@ -8875,7 +8875,7 @@ necessary!</i>
 -   [Gamepad Controls for HTML5 Games](https://blog.teamtreehouse.com/gamepad-controls-html5-games)
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch2-3-7">2.3.7 Move the monster!</h3>
+<h3 name="ch2-3-7">2.3.7 Move the monster!</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Hi, This time, I will show you in that video what we have done so far.
 
@@ -9157,7 +9157,7 @@ without changing any code in the updatePlayerPosition function, the
 monster moves by joystick command!
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch2-4-1">2.4.1 Introduction</h3>
+<h3 name="ch2-4-1">2.4.1 Introduction</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Hi! This time I will talk to you about what is called time-based animation. 
 
@@ -9420,7 +9420,7 @@ consequence of the extra time spent in the animation loop.
 ```
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch2-4-2">2.4.2 Measuring time between frames</h3>
+<h3 name="ch2-4-2">2.4.2 Measuring time between frames</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Let's find out how to measuring time between frames to achieve a
 constant speed on screen, even when the frame rate changes.
@@ -9858,7 +9858,7 @@ timestamp parameter.
 </details>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch2-4-3">2.4.3 Setting the frame rate</h3>
+<h3 name="ch2-4-3">2.4.3 Setting the frame rate</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Principle: even if the mainloop is called 60 times per second, ignore
 some frames in order to reach the desired frame rate.
@@ -10139,7 +10139,7 @@ variable, eyeColor, every second, which will be taken into account
 within the drawMonster function, called 60 times/s from the mainloop.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch-2-4-4">2.4.4 Adding time-based animation</h3>
+<h3 name="ch-2-4-4">2.4.4 Adding time-based animation</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 To add time-based animation to our game engine, we will be using the
 technique discussed in the previous lesson. This technique is now widely
@@ -10243,7 +10243,7 @@ the updateMonsterPosition call:
 ```
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch2-5-1">2.5.1 Animating multiple objects</h3>
+<h3 name="ch2-5-1">2.5.1 Animating multiple objects</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Hi, welcome! Let me show you how we can add many animated objects to the 
 game framework.
@@ -10601,7 +10601,7 @@ in order to attack it, angles would be more practical input to the
 computations required.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch2-5-2">2.5.2 Adding balls to the game framework</h3>
+<h3 name="ch2-5-2">2.5.2 Adding balls to the game framework</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 This time, let's extract the source code used to create the balls, and
 include it in our game framework. We are also going to use time-based
@@ -10712,7 +10712,7 @@ interactions between the player (the monster) and the obstacles/enemies
 (balls, walls)... It's time to take a look at collision detection.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch2-5-3">2.5.3 Collision detection</h3>
+<h3 name="ch2-5-3">2.5.3 Collision detection</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 In this chapter, we explore some techniques for detecting collisions
 between objects. This includes moving and static objects. We first
@@ -11256,7 +11256,7 @@ three-part series  about  video game
 physics](https://www.toptal.com/game/video-game-physics-part-i-an-introduction-to-rigid-body-dynamics).
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch2-5-4">2.5.4 Adding collision detection to the game framework</h3>
+<h3 name="ch2-5-4">2.5.4 Adding collision detection to the game framework</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Our previous lesson enabled us to animate balls in the game framework
 ([this example](https://jsbin.com/tehuve/edit)).
@@ -11315,7 +11315,7 @@ The only additions are: <i>lines 13-19</i> in the updateBalls function, and
 the circRectsOverlap function!
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch2-6-1">2.6.1 Introduction</h3>
+<h3 name="ch2-6-1">2.6.1 Introduction</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 In this lesson, we learn how to animate images - which are known as
 "sprites". This technique uses components from a collection of animation
@@ -11363,7 +11363,7 @@ the small game engine we started to build in earlier chapters. First,
 let's explain how to use "sprites" in JavaScript and canvas.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch2-6-2">2.6.2 Different sorts of sprite sheets</h3>
+<h3 name="ch2-6-2">2.6.2 Different sorts of sprite sheets</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 There are different sorts of <i>sprite sheets</i>. See some examples below.
 
@@ -11433,7 +11433,7 @@ So, when we think about writing a "sprite engine", we need to consider
 how to support different layouts of sprite sheet.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch2-6-3">2.6.3 Sprite extraction and animation</h3>
+<h3 name="ch2-6-3">2.6.3 Sprite extraction and animation</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Principle</h4>
 
@@ -11681,7 +11681,7 @@ sprites:
      framework!
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch2-6-4">2.6.4 A small sprite animation framework</h3>
+<h3 name="ch2-6-4">2.6.4 A small sprite animation framework</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Now that we have presented the principle of sprite extraction (sprites
 as sub-images of a single composite image), let's write a small sprite
@@ -11932,7 +11932,7 @@ animations]
 (https://spicyyoghurt.com/tutorials/html5-javascript-game-development/images-and-sprite-animations)
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch2-6-5">2.6.5 Adding sprites to the game framework</h3>
+<h3 name="ch2-6-5">2.6.5 Adding sprites to the game framework</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Let us use the animated woman example and take the sprite utility
 functions and some predefined values, such as the sprite sheet URL, the
@@ -12094,7 +12094,7 @@ Source code extract:
 </details>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch2-7-1">2.7.1 Menus, high score tables, etc.</h3>
+<h3 name="ch2-7-1">2.7.1 Menus, high score tables, etc.</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 With our game framework handling the basics, we can make things more
 exciting by causing something to happen when a collision occurs - maybe
@@ -12356,7 +12356,7 @@ and changes the current game-state to GameOver:
 </details>
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch2-7-2">2.7.2 Splitting the game into several JS files</h3>
+<h3 name="ch2-7-2">2.7.2 Splitting the game into several JS files</h3>
 <!------------------------------------------------------------------------------------------------>
 
 JSBin is a great tool for sharing code, for experimenting, etc. But as
@@ -12715,7 +12715,7 @@ give points for style and flair, but most especially because we've been
 (pleasantly) surprised!
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch2-7-3">2.7.3 Discussion and projects</h3>
+<h3 name="ch2-7-3">2.7.3 Discussion and projects</h3>
 <!------------------------------------------------------------------------------------------------>
 
 Here is the discussion forum for this part of the course. Please either
@@ -12852,7 +12852,7 @@ scores
 in the small game you have certainly wrote during week 2. Enjoy!
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-2-1">3.2.1 Ajax and XHR2</h3>
+<h3 name="ch3-2-1">3.2.1 Ajax and XHR2</h3>
 <!------------------------------------------------------------------------------------------------>
 
 We present below a short history of Ajax: an introduction to
@@ -12898,7 +12898,7 @@ The current support of XHR2 is excellent: see [related CanIUse's browser
 compatibility table](https://caniuse.com/#feat=xhr2).
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-2-2">3.2.2 Ajax/XHR2 and binary files</h3>
+<h3 name="ch3-2-2">3.2.2 Ajax/XHR2 and binary files</h3>
 <!------------------------------------------------------------------------------------------------>
 
 Hi everyone! In this lesson, I will present you how we can manage file 
@@ -13357,7 +13357,7 @@ while the download is going on.
 the code, which includes the previous source code extract.
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-2-3">3.2.3 Uploading files and monitoring progress</h3>
+<h3 name="ch3-2-3">3.2.3 Uploading files and monitoring progress</h3>
 <!------------------------------------------------------------------------------------------------>
 
 We saw how to download files. Let's see now how we can upload files!
@@ -13600,7 +13600,7 @@ the onprogress listener which updates the progress
 bar's value and max attributes. 
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-2-4">3.2.4 Discussion and projects</h3>
+<h3 name="ch3-2-4">3.2.4 Discussion and projects</h3>
 <!------------------------------------------------------------------------------------------------>
 
 Here is the discussion forum for this part of the course. Please either
@@ -13635,7 +13635,7 @@ post your comments/observations/questions or share your creations.
     game, or for a Web app that needs to load resources before starting.
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-3-1">3.3.1 Introduction</h3>
+<h3 name="ch3-3-1">3.3.1 Introduction</h3>
 <!------------------------------------------------------------------------------------------------>
 
 From [the W3C HTML 5.1
@@ -13664,7 +13664,7 @@ the particular case of drag and dropping files.
     demo](https://nettutsplus.s3.amazonaws.com/64_html5dragdrop/demo/index.html).
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-3-2">3.3.2 Drag detection</h3>
+<h3 name="ch3-3-2">3.3.2 Drag detection</h3>
 <!------------------------------------------------------------------------------------------------>
 
 Hi! Welcome to the drag and drop lesson. So, the first thing is that
@@ -13823,7 +13823,7 @@ In this script, the event handler will only display an alert showing the
 name of the target element that launched the event. 
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-3-3">3.3.3 Drop detection</h3>
+<h3 name="ch3-3-3">3.3.3 Drop detection</h3>
 <!------------------------------------------------------------------------------------------------>
 
 Let's continue to develop the example. We show how to drag an element
@@ -14032,7 +14032,7 @@ online example):
 </details>
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-3-4">3.3.4 A few words about data-* attributes</h3>
+<h3 name="ch3-3-4">3.3.4 A few words about data-* attributes</h3>
 <!------------------------------------------------------------------------------------------------>
 
 Microdata is a powerful way to add structured data into HTML code, but
@@ -14192,7 +14192,7 @@ This is just one of the new input types introduced by HTML5.
 The attr() function takes an attribute name as a parameter and returns
 its value. Here we used the name of the attribute we added on the fly.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch3-3-5">3.3.5 Add visual feedback</h3>
+<h3 name="ch3-3-5">3.3.5 Add visual feedback</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Hi! Let's add some visual feedback to the drag and drop operations.
 
@@ -14479,7 +14479,7 @@ into a single HTML page):
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch3-3-6">3.3.6 The dropEffect property</h3>
+<h3 name="ch3-3-6">3.3.6 The dropEffect property</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>More feedback using the dropEffect property: changing the cursor's shape</h4>
 
@@ -14605,7 +14605,7 @@ All possible values for dropEffect and effectAllowed:
 -   <b>dataTransfer.dropEffect </b>can take on one of the following
     values: <b>none</b>, <b>copy</b>, <b>link</b>, <b>move</b>.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch3-3-7">3.3.7 Drag and drop HTML elements</h3>
+<h3 name="ch3-3-7">3.3.7 Drag and drop HTML elements</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <h4>Drag and drop images or any HTML element within a document</h4>
@@ -14704,7 +14704,7 @@ clipboard), and <i>line 19</i> (make it a child of the div. Consequently, it
 is no longer a child of the &lt;body&gt;, and indeed we have "moved"
 one &lt;img&gt; from its initial position to another location in the page).
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch3-3-8">3.3.8 Drag and drop a text selection</h3>
+<h3 name="ch3-3-8">3.3.8 Drag and drop a text selection</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ 180. drag and drop text selection (309) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -14793,7 +14793,7 @@ setting the user-selected property to none.
 
 In the next chapter, we will see how to drag and drop files!
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch3-3-9">3.3.9 Discussion and projects</h3>
+<h3 name="ch3-3-9">3.3.9 Discussion and projects</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Here is the discussion forum for this part of the course. Please either
 post your comments/observations/questions or share your creations.
@@ -14818,7 +14818,7 @@ post your comments/observations/questions or share your creations.
     grid). In the meantime, the other pictures will have to move to give
     some room for the picture you dropped.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch3-4-1">3.4.1 Introduction</h3>
+<h3 name="ch3-4-1">3.4.1 Introduction</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 In these lectures, we will learn how to <i>drag and drop files</i> between
 the browser and the desktop. The process shares similarities with the
@@ -14948,7 +14948,7 @@ default behavior of the browser:
     with
     HTML5](https://www.htmlgoodies.com/html5/javascript/drag-files-into-the-browser-from-the-desktop-HTML5.html)"
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch3-4-2">3.4.2 Drag and drop files in a drop zone</h3>
+<h3 name="ch3-4-2">3.4.2 Drag and drop files in a drop zone</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Hi! This time let's look at how we can drag and
 
@@ -15135,7 +15135,7 @@ worked through earlier, except that this time we're working with
 files. <i>And when we work with files, it is important to prevent the
 browser's default behavior</i>.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch3-4-3">3.4.3 Images with thumbnails</h3>
+<h3 name="ch3-4-3">3.4.3 Images with thumbnails</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 This time, let's reuse the readFilesAndDisplayPreview() method (studied
 in the W3Cx HTML5 Coding Essentials and Best Practices course). We have
@@ -15357,7 +15357,7 @@ added the <output> element as a container for the &lt;img&gt; elements
 (constructed by the JavaScript code <i>lines 94-96</i>) which will display
 the thumbnails (<i>line 114</i>).
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch3-4-4">3.4.4 Mixing drag and drop and input type=file</h3>
+<h3 name="ch3-4-4">3.4.4 Mixing drag and drop and input type=file</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Let's go further and also add an &lt;input type="file">
 
@@ -15586,7 +15586,7 @@ CodePen](https://codepen.io/w3devcampus/pen/BoavPb):
 The parts that we have added are in bold. As you can see, all methods
 share the same code for previewing the images.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch3-4-5">3.4.5 Files upload using Ajax/XHR2</h3>
+<h3 name="ch3-4-5">3.4.5 Files upload using Ajax/XHR2</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 This time, let us mash-up a couple of examples. Let's combine the upload
 of files using XHR2, with progress monitoring (we worked on in the 3.2
@@ -15725,7 +15725,7 @@ Instead of uploading all the files at once, it might be interesting to
 upload one file at a time with visual feedback, such as: "uploading file
 MichaelJackson.jpg.....". We will leave this exercise up to you.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch3-4-6">3.4.6 Discussion and projects</h3>
+<h3 name="ch3-4-6">3.4.6 Discussion and projects</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Here is the discussion forum for this part of the course. Please either
 post your comments/observations/questions or share your creations.
@@ -15752,7 +15752,7 @@ post your comments/observations/questions or share your creations.
     (alternatively, if you have style-sheet skills, you could try this
     using CSS transitions).
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch3-5-1">3.5.1 Introduction</h3>
+<h3 name="ch3-5-1">3.5.1 Introduction</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 We had many questions about how to submit a form with regular input
 fields AND benefit from the HTML5 built-in validation AND upload files
@@ -15835,7 +15835,7 @@ input field content and the selected files.
 
 The next page provides the source code of several examples, as well as the server-side PHP code.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch3-5-2">3.5.2 Installation guide</h3>
+<h3 name="ch3-5-2">3.5.2 Installation guide</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Please download all examples (authors: Michel Buffa, improvements and
 fixes by Vincent Mazenod): [Zip file containing all examples (html +
@@ -15870,7 +15870,7 @@ HTTP header.
 This part of the lesson is optional and is mainly useful for students
 who are also involved in the server side of the Web development.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch3-5-3">3.5.3 Serial approach</h3>
+<h3 name="ch3-5-3">3.5.3 Serial approach</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 We made two examples that rely on the serial approach:
 
@@ -15985,7 +15985,7 @@ source code - there are plenty of comments.
     moved to that directory. If it does not already exist, the directory
     will be created  (<i>lines 7-20</i>).
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch3-5-4">3.5.4 Package approach</h3>
+<h3 name="ch3-5-4">3.5.4 Package approach</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Let's use the previous two examples as a basis for two further examples:
 
@@ -16090,7 +16090,7 @@ have to deal with a temporary "RecycleBin" directory.
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch3-5-5">3.5.5 Discussion</h3>
+<h3 name="ch3-5-5">3.5.5 Discussion</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Here is the discussion forum for this part of the course.
 
@@ -16104,7 +16104,7 @@ Here is the discussion forum for this part of the course.
     upload, etc. The examples are given "as is"... if you improve them,
     as usual, share them in the forum!
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch3-6-1">3.6.1 Concepts (part 1)</h3>
+<h3 name="ch3-6-1">3.6.1 Concepts (part 1)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Hello everyone! Today I will talk about IndexedDB.
 
@@ -16272,7 +16272,7 @@ IndexedDB](https://developer.mozilla.org/en-US/docs/IndexedDB/Using_IndexedDB)).
 [Current support is excellent](https://caniuse.com/#search=indexed) both
 on mobile and desktop browsers.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch3-6-2">3.6.2 Concepts (part 2)</h3>
+<h3 name="ch3-6-2">3.6.2 Concepts (part 2)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Among the concepts used by IndexedDB is the concept of transactions.
 
@@ -16529,7 +16529,7 @@ See this article from MDN about [the same-origin
 policy](https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy) for
 further details and examples.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch3-6-3">3.6.3 Definitions</h3>
+<h3 name="ch3-6-3">3.6.3 Definitions</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 > This chapter can be read as is, but it is primarily given as a
 > reference. We recommend you skim read it, then do the next section
@@ -16826,7 +16826,7 @@ example, you can iterate over all the values of a key between x and y.
 
 For the reference documentation on key range, see IDBKeyRange.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch3-6-4">3.6.4 Using IndexedDB</h3>
+<h3 name="ch3-6-4">3.6.4 Using IndexedDB</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 This page and the following one, entitled "Using IndexedDB",
 provide simple examples for creating, adding, removing, updating, and
@@ -16863,7 +16863,7 @@ these!
 -   [How to view IndexedDB content in
     Firefox](https://stackoverflow.com/questions/9846013/how-to-view-indexeddb-content-in-firefox)
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch3-6-5">3.6.5 Creating and deleting a database</h3>
+<h3 name="ch3-6-5">3.6.5 Creating and deleting a database</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Hi! Let's look now at some pieces of code and examples that will explain
 how to really program an IndexedDB application.
@@ -17160,7 +17160,7 @@ then executing indexedDB.deleteDatabase("CustomerDB"); in the console:
 </p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch3-6-6">3.6.6 Working with data</h3>
+<h3 name="ch3-6-6">3.6.6 Working with data</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Explicit use of a transaction is necessary:
@@ -17197,7 +17197,7 @@ and update data. A final example that merges all examples together will
 also be shown at the end of this section.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch3-6-7">3.6.7 Inserting data</h3>
+<h3 name="ch3-6-7">3.6.7 Inserting data</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Here this is what we did during the creation of the database.
@@ -17582,14 +17582,13 @@ valid value (in the IndexedDB sense). In order to avoid this, you should
 add more JavaScript code. We will let you do this as an exercise.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch3-6-8">3.6.8 Removing data</h3>
+<h3 name="ch3-6-8">3.6.8 Removing data</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Let's move to the next [online example at
 JSBin](https://jsbin.com/bavifa):
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ 205. insert blank data works, again (368) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image205.webp"
   style="width:6.5in;height:2.68889in"
@@ -17676,7 +17675,7 @@ var request = db.transaction(["customers"], "readwrite")
 ```
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch3-6-9">3.6.9 Modifying data</h3>
+<h3 name="ch3-6-9">3.6.9 Modifying data</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 We used request.add(object) to add a new customer
 and request.delete(keypath) to remove a customer. Now, to modify data
@@ -17765,7 +17764,7 @@ Here is the new code added to our example:
 The update occurs at <i>line 28</i>.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch3-6-10">3.6.10 Getting data</h3>
+<h3 name="ch3-6-10">3.6.10 Getting data</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 There are several ways to retrieve data from a data store.
 
@@ -18214,7 +18213,7 @@ Source code extract from this example:
 </details>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch3-6-11">3.6.11 Limiting the range of values in a cursor</h3>
+<h3 name="ch3-6-11">3.6.11 Limiting the range of values in a cursor</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 How to specify the range and direction of cursors with IndexedDB?
 
@@ -18285,7 +18284,7 @@ Try [the online example at JsBin](https://jsbin.com/lawaju/edit) (enter
 </p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch3-6-12">3.6.12 Discussion and projects</h3>
+<h3 name="ch3-6-12">3.6.12 Discussion and projects</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Here is the discussion forum for this part of the course. Please post
 your comments/observations/questions and share your creations.
@@ -18373,7 +18372,7 @@ To sum up:
     presented in this chapter of the
     course](https://web.dev/storage-for-the-web/).
 
-<h3 id="ch4-1-1">Module 4. Web Components and other HTML5 APIs</h3>
+<h3 name="ch4-1-1">Module 4. Web Components and other HTML5 APIs</h3>
 
 Hi! This is the final week of the course! And this time we will look at
 what the future holds by presenting you the Web components. This is a
@@ -18414,7 +18413,7 @@ interacting with the students is really what makes me happy. I hope you
 enjoyed the course and see you maybe for a next one on W3Cx. Bye-bye!
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch4-2-1">4.2.1 Web components in video</h3>
+<h3 name="ch4-2-1">4.2.1 Web components in video</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Hi! Today, I am going to talk about Web components, that are reusable
@@ -18538,7 +18537,7 @@ the index.html file located in that directory.
 </p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch4-2-2">4.2.2 Introduction</h3>
+<h3 name="ch4-2-2">4.2.2 Introduction</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Web components provide a standard way to build your own
@@ -18700,7 +18699,7 @@ JavaScript imports
 (see [discussions](https://github.com/w3c/webcomponents/blob/gh-pages/proposals/HTML-Imports-and-ES-Modules.md)).
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch4-2-3">4.2.3 HTML templates</h3>
+<h3 name="ch4-2-3">4.2.3 HTML templates</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Hi! In this lesson, I am going to talk about the template API. You must
 know that Web components are what we call ‘an umbrella API’ that is
@@ -18872,7 +18871,7 @@ And here is the complete source code...
 ```
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch4-2-4">4.2.4 Shadow DOM</h3>
+<h3 name="ch4-2-4">4.2.4 Shadow DOM</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Hello! Let's talk about the shadow DOM. What is the
 
@@ -19144,7 +19143,7 @@ observe the result
 </p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch4-2-5">4.2.5 Shadow DOM: encapsulate code</h3>
+<h3 name="ch4-2-5">4.2.5 Shadow DOM: encapsulate code</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 By mixing templates and the shadow DOM, it is possible to hide a
 template's content by embedding it in the shadow root. In this scenario,
@@ -19278,7 +19277,7 @@ the body of the document, not the color of the H1 encapsulated in the
 Shadow DOM.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch4-2-6">4.2.6 Shadow DOM: insert content</h3>
+<h3 name="ch4-2-6">4.2.6 Shadow DOM: insert content</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Let's see how to insert content from the host element within the Shadow
@@ -19341,7 +19340,7 @@ the &lt;slot&gt;...&lt;/slot&gt; element, as shown below:
 -   "[Creating Web Components — Templates and
     Slots](https://levelup.gitconnected.com/creating-web-components-templates-and-slots-bd6905a7092a)"
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch4-2-7">4.2.7 HTML Custom elements</h3>
+<h3 name="ch4-2-7">4.2.7 HTML Custom elements</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 HTML Custom Elements is another API described as HTML Web components. It
 allows you to extend HTML by defining new elements, and to tell the
@@ -19499,7 +19498,7 @@ inherit from another custom element.
 -   From Google devs: [Custom Elements v1: Reusable Web
     Components](https://developers.google.com/web/fundamentals/web-components/customelements)
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch4-2-8">4.2.8 HTML Imports</h3>
+<h3 name="ch4-2-8">4.2.8 HTML Imports</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4><b><i>Important note</i></b></h4>
 
@@ -19620,7 +19619,7 @@ directly!
     Imports](https://developer.mozilla.org/en-US/docs/Web/Web_Components/HTML_Imports)
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch4-2-9">4.2.9 Web Components as JavaScript Modules</h3>
+<h3 name="ch4-2-9">4.2.9 Web Components as JavaScript Modules</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 In the previous section, we said that the proposed way to import Web
 Components, the so-called HTML Imports API, has been removed from the
@@ -19731,7 +19730,7 @@ Components) :
     simple example shows how we can embed the CSS and HTML template in
     the JavaScript code of the component.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch4-2-10">4.2.10 Discussion and projects</h3>
+<h3 name="ch4-2-10">4.2.10 Discussion and projects</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Here is the discussion forum for this part of the course. Please post
 your comments/observations/questions and share your creations.
@@ -19782,7 +19781,7 @@ your comments/observations/questions and share your creations.
     cool Web component you have found!
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch4-3-1">4.3.1 Introduction</h3>
+<h3 name="ch4-3-1">4.3.1 Introduction</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 In the browser, 'normal' JavaScript code is run in a single thread (a
 thread is a light-weight CPU process, see [this Wikipedia page for
@@ -19956,7 +19955,7 @@ version of this course when implementations are more stable/available.
         CanIUse](https://caniuse.com/#feat=sharedworkers) (not studied)
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch4-3-2">4.3.2 Use cases</h3>
+<h3 name="ch4-3-2">4.3.2 Use cases</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <h4>Use case #1: a "parent HTML5 page" creates workers from a script</h4>
@@ -20103,7 +20102,7 @@ listening for an onError event from a worker object:
 See also the section "how to debug Web Workers" on next page.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch4-3-3">4.3.3 Examples</h3>
+<h3 name="ch4-3-3">4.3.3 Examples</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <i>Dedicated Workers</i> are the simplest kind of Workers. Once created, they
@@ -20531,7 +20530,7 @@ prime numbers example:
     tools](https://developer.mozilla.org/en-US/docs/Tools).
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch4-3-4">4.3.4 Demos</h3>
+<h3 name="ch4-3-4">4.3.4 Demos</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Demo #1</h4>
 
@@ -20584,7 +20583,7 @@ between workers and their creator, instead of computing in parallel.
 repository!](https://developer.mozilla.org/en-US/docs/Web/Demos_of_open_web_technologies#Web_APIs)
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch4-3-5">4.3.5 Discussion and projects</h3>
+<h3 name="ch4-3-5">4.3.5 Discussion and projects</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Here is the discussion forum for this part of the course. Please post
@@ -20626,7 +20625,7 @@ your comments/observations/questions and share your creations.
 <!-- style="width:4in;height:2.55983in" -->
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch4-4-1">4.4.1 The Orientation API</h3>
+<h3 name="ch4-4-1">4.4.1 The Orientation API</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 This section covers the <a href="https://www.w3.org/TR/screen-orientation/">HTML5 orientation API</a>: a way to use angle
 measures provided by accelerometers from mobile devices or laptops such
@@ -20659,7 +20658,7 @@ about the support for this emulation mode).
 -   [DeviceOrientationEvent](https://developer.mozilla.org/en-US/docs/Web/API/Detecting_device_orientation#Browser_compatibility) and [DeviceMotionEvent](https://developer.mozilla.org/en-US/docs/Web/API/Detecting_device_orientation#Browser_compatibility) on MDN.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch4-4-2">4.4.2 The coordinate system</h3>
+<h3 name="ch4-4-2">4.4.2 The coordinate system</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Transformations between the Earth coordinate frame and the device
 coordinate frame uses the following system of rotations.
@@ -20780,7 +20779,7 @@ alt="Rotation about y axis." title="Rotation about y axis" /></td>
 </table>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch4-4-3">4.4.3 Get different angles</h3>
+<h3 name="ch4-4-3">4.4.3 Get different angles</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <h4>Typical use using the JavaScript HTML5 orientation API</h4>
@@ -21033,7 +21032,7 @@ Click on the image to see the YouTube video:
    alt="Orientation API + websockets." />
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch4-4-4">4.4.4 The Device Motion API</h3>
+<h3 name="ch4-4-4">4.4.4 The Device Motion API</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 This section presents the Device Motion API which is used in a similar
 manner to the device orientation API discussed earlier.
@@ -21602,7 +21601,7 @@ spec: 
     The W3C Device Orientation API: Detecting Orientation and Acceleration</a>"</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch4-4-5">4.4.5 Discussion and projects</h3>
+<h3 name="ch4-4-5">4.4.5 Discussion and projects</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>
 Here is the discussion forum for this part of the course. Please post
