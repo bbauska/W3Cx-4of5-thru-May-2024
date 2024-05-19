@@ -76,7 +76,6 @@ body {
     padding: 10px;  /* 15px */
     border-radius: 1px;  /* 4px */
   }
-
   #myBtn:hover {
     background-color: #555;  /* very dark gray */
   }
@@ -85,7 +84,6 @@ details {
   font: 11px Inter, sans-serif, Bahnschrift, Calibri;
   width: min-content;  /* 75%; */
 }
-
 details > summary {
   padding: 2px 6px;
   width: max-content;  /* 12em */
@@ -94,7 +92,6 @@ details > summary {
   box-shadow: 3px 3px 4px #00008b;  /* dark blue */
   cursor: pointer;
 }
-
 details > p {
   border-radius: 0 0 10px 10px;
   background-color: #fff;  /* white */
@@ -103,7 +100,6 @@ details > p {
   box-shadow: 3px 3px 4px #0008b;  /* dark blue */
   cursor: pointer;
 }
-
 details[open] > summary {
   background-color: yellow;
 }
@@ -122,34 +118,7 @@ pre > code {
   padding: 1rem;
   word-wrap: normal;
 }
-
-pre[href]:hover {
+re[href]:hover {
   text-decoration: none;
   }
 pre:hover, pre:focust { width: min-content; }
-
-/*
-pre {
-  font-size: 11px;
-  counter-reset: line-numbering;
-  background: #2c3e50;
-  padding: 6px 0 7px 0;
-  width: 600px;
-  color: #ecf0f1;
-  line-height: 100%;
-}
-*/
-
-/* pre .line::before {
-  content: counter(line-numbering);
-  counter-increment: line-numbering;
-  padding-right: 1em;
-*/
-  /* space after numbers */
-/*  padding-left: 8px;
-  width: 1.5em;
-  text-align: right;
-  opacity: 0.5;
-  color: white;
-}
-*/
