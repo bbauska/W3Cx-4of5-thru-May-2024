@@ -7748,9 +7748,9 @@ parameter of the getMousePos() function, for example).</p>
 the game engine can be tried at JSBin</a>:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~ 106. message on mouse event listener (171) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image106.webp"
+  loading="lazy"
   title="Message on mouse event listener"
   alt="Message on mouse event listener."
   style="width:35%;" />
@@ -8006,13 +8006,13 @@ axes 60 times per second… the rest of the code is the same as I presented
 earlier. So I hope you enjoyed this part of the course and that you will use a 
 gamepad in the small game you are going to develop during this week. Bye! Bye!</p>
 
-<p>Some games, mainly arcade/action games, are designed to be used with
+<p>Some games, mainly arcade/action games, are designed to be used with 
 a gamepad:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 107. x-box game controller (176) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image107.webp"
+  loading="lazy"
   style="width:50%;" 
   title="X-box game controller"
   alt="X-box game controller." />
@@ -8062,9 +8062,9 @@ stick) a <a href="https://w3c.github.io/gamepad/#event-gamepadconnected" target
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~ 108. gamepad detected, message on jsbin example (177) ~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image108.webp"
+  loading="lazy"
   title="Message on mouse event listener"
   alt="Message on mouse event listener."
   style="width:35%;" />
@@ -8079,9 +8079,9 @@ stick) a <a href="https://w3c.github.io/gamepad/#event-gamepadconnected" target
 6.  });</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 109. disconnect game pad (177) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image109.webp"
+  loading="lazy"
   title="Game pad disconnected"
   alt="Game pad disconnected."
   style="width:35%;" />
@@ -8140,8 +8140,8 @@ updated snapshot.</p>
 <p>From the specification: <i>“getGamepads retrieves a snapshot of the
 data for the currently connected and interacted with gamepads.”</i></p>
 
-<p>This code will be integrated (as well as the event listeners
-presented earlier) in the next JSBin examples.</p>
+<p>This code will be integrated (as well as the event listeners presented earlier) 
+in the next JSBin examples.</p>
 
 <p>To keep things simple, the above code works with a single gamepad
 - <a href="https://github.com/luser/gamepadtest" target="_blank" rel="noopener noreferrer">here’s a good example
@@ -8151,42 +8151,59 @@ of managing multiple gamepads</a>.</p>
 
 <p>Properties of the gamepad object</p>
 
-<p>The gamepad object returned in the event listener <a
-href="https://w3c.github.io/gamepad/#gamepad-interface" target="_blank" rel="noopener noreferrer">has different
-properties</a>:</p>
+<p>The gamepad object returned in the event listener 
+<a href="https://w3c.github.io/gamepad/#gamepad-interface" target="_blank" rel="noopener noreferrer">
+has different properties</a>:</p>
 
 <ul>
   <li>id: a string indicating the id of the gamepad. Useful with &gt; the mapping property below.</li>
   <li>index: an integer used to distinguish multiple controllers (gamepad &gt; 1, gamepad 2, etc.).</li>
   <li>connected: true if the controller is still connected, false if it &gt; has been disconnected.</li>
-  <li>mapping: not implemented yet by most browsers. It will allow the &gt; controllers of the gamepad to be remapped. A layout map is &gt; associated with the id of the gamepad. By default, and before they &gt; implement support for different mapping, all connected &gt; gamepads <a href="https://w3c.github.io/gamepad/#remapping" target="_blank" rel="noopener noreferrer">use a standard default &gt; layout</a>.</li>
+  <li>mapping: not implemented yet by most browsers. It will allow the &gt; controllers of 
+    the gamepad to be remapped. A layout map is &gt; associated with the id of the gamepad. By 
+    default, and before they &gt; implement support for different mapping, all connected &gt; 
+    gamepads <a href="https://w3c.github.io/gamepad/#remapping" target="_blank" rel="noopener noreferrer">
+    use a standard default &gt; layout</a>.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~ 110. standard default layout - gamepad (182) ~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image110.webp"
+  loading="lazy"
   title="Standard default layout of a gamepad"
   alt="Standard default layout of a gamepad."
   style="width:35%;" />
 
 <ul>
-  <li>axes: an array of floating point values containing the state of each &gt; axis on the device. Usually these represent the analog sticks, &gt; with a pair of axes giving the position of the stick in its X and &gt; Y axes. Each axis is normalized to the range of -1.0…1.0, with &gt; -1.0 representing the up or left-most position of the axis, and &gt; 1.0 representing the down or right-most position of the axis.</li>
-  <li>buttons: an array &gt; of <a href="https://w3c.github.io/gamepad/#idl-def-GamepadButton" target="_blank" rel="noopener noreferrer">GamepadButton</a> objects &gt; containing the state of each button on the device. Each &gt; GamepadButton has a pressed and a value property.</li>
-  <li>The pressed property is a Boolean property indicating whether the &gt; button is currently pressed (true) or unpressed (false).</li>
-  <li>The value property is a floating point value used to enable &gt; representing analog buttons, such as the triggers, on many modern &gt; gamepads. The values are normalized to the range 0.0…1.0, with &gt; 0.0 representing a button that is not pressed, and 1.0 &gt; representing a button that is fully depressed.</li>
+  <li>axes: an array of floating point values containing the state of each &gt; axis on the 
+    device. Usually these represent the analog sticks, &gt; with a pair of axes giving the 
+    position of the stick in its X and &gt; Y axes. Each axis is normalized to the range of 
+    -1.0…1.0, with &gt; -1.0 representing the up or left-most position of the axis, and &gt; 
+    1.0 representing the down or right-most position of the axis.</li>
+  <li>buttons: an array &gt; of <a href="https://w3c.github.io/gamepad/#idl-def-GamepadButton" 
+    target="_blank" rel="noopener noreferrer">GamepadButton</a> objects &gt; containing the state 
+    of each button on the device. Each &gt; GamepadButton has a pressed and a value property.</li>
+  <li>The pressed property is a Boolean property indicating whether the &gt; button is currently 
+    pressed (true) or unpressed (false).</li>
+  <li>The value property is a floating point value used to enable &gt; representing analog buttons, 
+    such as the triggers, on many modern &gt; gamepads. The values are normalized to the range 0.0…1.0, 
+    with &gt; 0.0 representing a button that is not pressed, and 1.0 &gt; representing a button that is 
+    fully depressed.</li>
 </ul>
 
 <h4>Detecting whether a button is pressed</h4>
 
-<p>Digital, on/off buttons evaluate to either one or zero (respectively). Whereas analog buttons will return a floating-point value between zero and one.</p>
+<p>Digital, on/off buttons evaluate to either one or zero (respectively). Whereas analog 
+buttons will return a floating-point value between zero and one.</p>
 
-<p><a href="https://jsbin.com/heriqej/edit" target="_blank" rel="noopener noreferrer">Example on JSBin</a>. You might also give a look at at this demo that does the same thing but with multiple gamepads.</p>
+<p><a href="https://jsbin.com/heriqej/edit" target="_blank" rel="noopener noreferrer">
+Example on JSBin</a>. You might also give a look at at this demo that does the same thing 
+but with multiple gamepads.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~ 111. button status detected, example on jsbin (181) ~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image111.webp"
+  loading="lazy"
   title="Button status detected"
   alt="Button status detected."
   style="width:50%;" />
@@ -8244,9 +8261,9 @@ the gamepad.buttons will return the same states every time.</p>
 <p><a href="https://jsbin.com/yaxika/edit" target="_blank" rel="noopener noreferrer">Example on JSBin</a></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 112. axes detection (182) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image112.webp"
+  loading="lazy"
   title="Axis detection in JSBin"
   alt="Axis detection in JSBin."
   style="width:50%;" />
@@ -8282,9 +8299,9 @@ manage this:</p>
 example</a>:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~ 113. direction and angle detection with joystick (183) ~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image113.webp"
+  loading="lazy"
   title="Direction and angle detection with joystick"
   alt="Direction and angle detection with joystick."
   style="width:35%;" />
@@ -8652,9 +8669,9 @@ status:</p>
 JSBin:</a></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~ 114. move the monster with the gamepad, jsbin screenshot (190) ~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image114.webp"
+  loading="lazy"
   style="width:30%;" 
   title="Move the monster with the gamepad, jsbin screenshot"
   alt="Move the monster with the gamepad, jsbin screenshot." />
@@ -8861,9 +8878,9 @@ frame-rate at 60 fps, meaning that the ideal time between frames will be
 JSBin</a></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~ 115. image of small rectangle in a canvas, moving left to righ (194) ~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image115.webp"
+  loading="lazy"
   style="width:25%;" 
   title="Image of a small rectangle in a canvas, moving from left to right"
   alt="Image of a small rectangle in a canvas, moving from left to right." />
@@ -8999,9 +9016,9 @@ need to move the shape to achieve a given speed (in pixels/s).</p>
 JSBin</a>:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~ 116. bouncing square with time bases animation (196) ~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image116.webp"
+  loading="lazy"
   style="width:50%;" 
   title="Bouncing square with time bases animation"
   alt="Bouncing square with time bases animation." />
@@ -9101,36 +9118,33 @@ JSBin</a>:</p>
 
 </details>
 
-<p>In this example, we only added a few lines of code for measuring the
-time and computing the time elapsed between two consecutive frames
-(see <i>line 38</i>). Normally, requestAnimationFrame(callback) tries
-to call the callback function every 16.66 ms (this corresponds to 60
-frames/s)… <i>but this is never exactly the case</i>. If you do
-a console.log(delta)in the animation loop, you will see that even on a
-very powerful computer, the delta is “very close” to 16.6666 ms, but 99%
-of the time it will be slightly different.</p>
+<p>In this example, we only added a few lines of code for measuring the time and computing the time 
+elapsed between two consecutive frames (see <i>line 38</i>). Normally, requestAnimationFrame(callback) 
+tries to call the callback function every 16.66 ms (this corresponds to 60 frames/s)… <i>but this is never 
+exactly the case</i>. If you do a console.log(delta)in the animation loop, you will see that even on a
+very powerful computer, the delta is “very close” to 16.6666 ms, but 99% of the time it will be slightly 
+different.</p>
 
-<p>The function calcDistanceToMove(delta, speed) takes two parameters:
-1) the time elapsed in ms, and 2) the target speed in pixels/s.</p>
+<p>The function calcDistanceToMove(delta, speed) takes two parameters: 1) the time elapsed in ms, and 
+2) the target speed in pixels/s.</p>
 
-<p>Try this example on a smartphone, use this <a
-href="https://jsbin.com/jeribi" target="_blank" rel="noopener noreferrer">link</a> to run the JSBin example in
-stand-alone mode. Normally you should see no difference in speed, but it
-may look a bit jerky on a low-end smartphone or on a slow
-computer. <i>This is the correct behavior.</i></p>
+<p>Try this example on a smartphone, use this 
+<a href="https://jsbin.com/jeribi" target="_blank" rel="noopener noreferrer">link</a> to run the JSBin example in
+stand-alone mode. Normally you should see no difference in speed, but it may look a bit jerky on a low-end 
+smartphone or on a slow computer. <i>This is the correct behavior.</i></p>
 
-<p>Or you can try the next example that simulates a complex animation
-loop that takes a long time to draw each frame…</p>
+<p>Or you can try the next example that simulates a complex animation loop that takes a 
+long time to draw each frame…</p>
 
-<p>Example #2: using a simulation that spends a lot of time in the
-animation loop, to compare with the previous example</p>
+<p>Example #2: using a simulation that spends a lot of time in the animation loop, to 
+compare with the previous example</p>
 
-<p><a href="https://jsbin.com/jeribi/edit" target="_blank" rel="noopener noreferrer">Try it on JsBin</a>:</p>
+<p><a href="https://jsbin.com/jeribi/edit" target="_blank" rel="noopener noreferrer">
+Try it on JsBin</a>:</p>
 
-<p>We added a long loop in the middle of the animation loop. This time,
-the animation should be very jerky. However, notice that the apparent
-speed of the square is the same as in the previous example: the
-animation adapts itself!</p>
+<p>We added a long loop in the middle of the animation loop. This time, the animation 
+should be very jerky. However, notice that the apparent speed of the square is the same 
+as in the previous example: the animation adapts itself!</p>
 
 <details>
   <summary>JavaScript code!</summary>
@@ -9178,33 +9192,39 @@ animation adapts itself!</p>
 
 <h4>Method #2: using the new HTML5 high-resolution timer</h4>
 
-<p>Since the beginning of HTML5, game developers, musicians, and
-others have asked for a sub-millisecond timer to be able to avoid some
-glitches that occur with the regular JavaScript timer. This API is
-called the “<a href="https://www.w3.org/TR/hr-time/" target="_blank" rel="noopener noreferrer">High Resolution
-Time API</a>”.</p>
+<p>Since the beginning of HTML5, game developers, musicians, and others have asked for a 
+sub-millisecond timer to be able to avoid some glitches that occur with the regular JavaScript 
+timer. This API is called the “<a href="https://www.w3.org/TR/hr-time/" target="_blank" rel="noopener noreferrer">
+High Resolution Time API</a>”.</p>
 
 <p>This API is very simple to use - just do:</p>
 
 <pre>1. var time = performance.now();</pre>
 
-<p>… to get a sub-millisecond time-stamp. It is similar to Date.now()
-except that the accuracy is much higher and that the result is not
-exactly the same. The value returned is a floating point number, not an
-integer value!</p>
+<p>… to get a sub-millisecond time-stamp. It is similar to Date.now() except that the accuracy is much higher and 
+that the result is not exactly the same. The value returned is a floating point number, not an integer value!</p>
 
-<p>From <a href="https://www.sitepoint.com/discovering-the-high-resolution-time-api/" target="_blank" rel="noopener noreferrer">this article that explains the High Resolution Time API</a>:  “<i>The only method exposed is now(), which returns a DOMHighResTimeStamp representing the current time in milliseconds. The timestamp is very accurate, with precision to a thousandth of a millisecond. Please note that while Date.now() returns the number of milliseconds elapsed since 1 January 1970 00:00:00 UTC, performance.now() returns the number of milliseconds, with microseconds in the fractional part, from performance.timing.navigationStart(), the start of navigation of the document, to the performance.now() call. Another important difference between Date.now() and performance.now() is that the latter is monotonically increasing, so the difference between two calls will never be negative.</i>”</p>
+<p>From <a href="https://www.sitepoint.com/discovering-the-high-resolution-time-api/" target="_blank" rel="noopener noreferrer">
+this article that explains the High Resolution Time API</a>:  “<i>The only method exposed is now(), which returns a DOMHighResTimeStamp 
+representing the current time in milliseconds. The timestamp is very accurate, with precision to a thousandth of a millisecond. Please 
+note that while Date.now() returns the number of milliseconds elapsed since 1 January 1970 00:00:00 UTC, performance.now() returns the 
+number of milliseconds, with microseconds in the fractional part, from performance.timing.navigationStart(), the start of navigation of 
+the document, to the performance.now() call. Another important difference between Date.now() and performance.now() is that the latter is 
+monotonically increasing, so the difference between two calls will never be negative.</i>”</p>
 
 <h4>To sum up:</h4>
 
 <ul>
-  <li>performance.now() returns the time since the load of the document (it is called a DOMHighResTimeStamp), with a sub mill-second accuracy, as a floating point value, with very high accuracy.</li>
+  <li>performance.now() returns the time since the load of the document (it is called a DOMHighResTimeStamp), with a sub mill-second accuracy, 
+    as a floating point value, with very high accuracy.</li>
   <li>Date.now() returns the number of mill-seconds since the Unix epoch, as an integer value.</li>
 </ul>
 
-<p>Support for this API is quite good - see the compatibility table <a href="https://caniuse.com/#feat=high-resolution-time" target="_blank" rel="noopener noreferrer">online</a>.</p>
+<p>Support for this API is quite good - see the compatibility table 
+<a href="https://caniuse.com/#feat=high-resolution-time" target="_blank" rel="noopener noreferrer">online</a>.</p>
 
-<p>Here is <a href="https://jsbin.com/wecaho/edit" target="_blank" rel="noopener noreferrer">a version on JSBin of the previous example with the bouncing rectangle, that uses the high resolution timer</a>.</p>
+<p>Here is <a href="https://jsbin.com/wecaho/edit" target="_blank" rel="noopener noreferrer">
+a version on JSBin of the previous example with the bouncing rectangle, that uses the high resolution timer</a>.</p>
 
 <h4>Source code:</h4>
 
@@ -9399,9 +9419,9 @@ loop:</p>
 <pre>1. &lt;sup&gt;setFrameRateInFramesPerSecond(5); // try other values!&lt;/sup&gt;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 117. squiggly line (204) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image117.webp"
+  loading="lazy"
   style="width:40%;" 
   title="Squigly line"
   alt="Squigly line." />
@@ -9668,9 +9688,9 @@ smoothness of the animation; the FPS counter on a Mac Book Pro core i7
 shows 60 fps.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~ 118. screenshot of the monster moving at 60 f/s (209) ~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image118.webp"
+  loading="lazy"
   title="Screenshot of the monster moving at 60 f/s"
   alt="Screenshot of the monster moving at 60 f/s."
   style="width:35%;" />
@@ -9682,12 +9702,11 @@ animation loop. This should slow down the frame rate.  On a Mac Book Pro
 monster using the arrow keys, its speed on the screen is the same,
 excepting that it’s not as smooth as in the previous version, which ran
 at 60 fps.</p>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~ 119. screenshot of the monster moving at 37 f/s (209) ~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image119.webp"
+  loading="lazy"
   style="width:30%;" 
   title="Screenshot of example that runs at 37 f/s"
   alt="Screenshot of example that runs at 37 f/s." />
@@ -9832,9 +9851,9 @@ will not use time-based animation in the first examples.</p>
 JSBin</a>:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~ 120. some circular balls that bounce against vertical & horizontal borders (212) ~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image120.webp"
+  loading="lazy"
   style="width:30%;" 
   title="Some circular balls that bounce agains vertical and horizontal borders of the canvas"
   alt="Some circular balls that bounce agains vertical and horizontal borders of the canvas." />
@@ -10099,9 +10118,9 @@ speed, radius, etc. Also, try changing the monster’s default speed. See
 the results.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~ 121. monster + balls in game framework (217) ~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image121.webp"
+  loading="lazy"
   style="width:40%;" 
   title="Monster + balls in the game framework. On the screen we see the monster + a bunch of balls"
   alt="Monster + balls in the game framework. On the screen we see the monster + a bunch of balls." />
@@ -10190,17 +10209,17 @@ interactions between the player (the monster) and the obstacles/enemies
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-5-3">2.5.3 Collision detection</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>In this chapter, we explore some techniques for detecting collisions
-between objects. This includes moving and static objects. We first
-present three “classic” collision tests, and follow them with brief
+<p>In this chapter, we explore some techniques for detecting collisions 
+between objects. This includes moving and static objects. We first 
+present three “classic” collision tests, and follow them with brief 
 sketches of more complex algorithms.</p>
 
 <h4>Circle collision test</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~ 122. two circles with distances between the centers drawn (219) ~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image122.webp"
+  loading="lazy"
   style="width:30%;" 
   title="Two circles with distances between the centers drawn"
   alt="Two circles with distances between the centers drawn." />
@@ -10267,9 +10286,9 @@ move “the player”: a small circle. Try to make collisions between the
 monster and the circle you control.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~ 123. monster and small circle: collision (220) ~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image123.webp"
+  loading="lazy"
   style="width:40%;"
   title="Monster and small circle: collision, they are drawn in red and a &quot;collision&quot; message appears"
   alt="Monster and small circle: collision, they are drawn in red and a &quot;collision&quot; message appears." />
@@ -10363,9 +10382,9 @@ the two sub-circles, etc… this recursive algorithm will not be covered
 in this course, but it’s a classic optimization.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~ 124. image of an arm with a hierarchy of bounding circles (222) ~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image124.webp"
+  loading="lazy"
   style="width:40%;"
   title="Image of an arm with a hierarchy of bounding circles: one for the whole arm, and two smaller for the forearm and the other part"
   alt="Image of an arm with a hierarchy of bounding circles: one for the whole arm, and two smaller for the forearm and the other part." />
@@ -10373,9 +10392,9 @@ in this course, but it’s a classic optimization.</p>
 <p>In 3D, you can use spheres instead of circles:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ 125. 3d lamp with bounding spheres (222) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image125.webp"
+  loading="lazy"
   style="width:40%;" 
   title="A 3D object (a lamp) with bounding spheres"
   alt="A 3D object (a lamp) with bounding spheres." />
@@ -10387,7 +10406,8 @@ spheres for detecting collisions between cars:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image126.webp"
-  style="width:30%;"
+  loading="lazy"
+  style="width:40%;" 
   title="Grand turismo used collisions between bounding spheres: image of the game (a car on a road track)"
   alt="Grand turismo used collisions between bounding spheres: image of the game (a car on a road track)." />
 
@@ -10396,12 +10416,16 @@ spheres for detecting collisions between cars:</p>
 <p>Let’s look at a simple illustration:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 127. collision and no collision (223) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image127.webp"
+  loading="lazy"
   style="width:40%;" 
-  title="Two pictures: one with non intersected rectangles: the projection of horizontal sides of rectangles to the X axis do not intersect (then rectangles do not intersect), the other with both projections intersect (rectangles intersect)"
-  alt="Two pictures: one with non intersected rectangles: the projection of horizontal sides of rectangles to the X axis do not intersect (then rectangles do not intersect), the other with both projections intersect (rectangles intersect)." />
+  title="Two pictures: one with non intersected rectangles: the projection of horizontal 
+    sides of rectangles to the X axis do not intersect (then rectangles do not intersect), 
+    the other with both projections intersect (rectangles intersect)"
+  alt="Two pictures: one with non intersected rectangles: the projection of horizontal 
+    sides of rectangles to the X axis do not intersect (then rectangles do not intersect), 
+    the other with both projections intersect (rectangles intersect)." />
 
 <h4>From this:</h4>
 
@@ -10420,9 +10444,9 @@ demonstration of rectangle - rectangle detection</a>
 <p>1 - Only horizontal axis projections overlap: no collision between rectangles</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~ 128. Only vertical axis projections overlap: no collision (224) ~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image128.webp"
+  loading="lazy"
   style="width:30%;" 
   title="Only horizontal axis overlap: no collision"
   alt="Only horizontal axis overlap: no collision." />
@@ -10430,9 +10454,9 @@ demonstration of rectangle - rectangle detection</a>
 <p>2 - Only vertical axis projections overlap: no collision between rectangles</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~ 129. Only vertical axis projections overlap: no collision (224) ~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image129.webp"
+  loading="lazy"
   style="width:30%;" 
   title="Only vertical axis projections overlap: no collision"
   alt="Only vertical axis projections overlap: no collision." />
@@ -10440,9 +10464,9 @@ demonstration of rectangle - rectangle detection</a>
 <p>3 - Horizontal and vertical axis projections overlap: collision detected!</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~ 130. rectangle intersection demonstration (225) ~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image130.webp"
+  loading="lazy"
   style="width:30%;"
   title="The projections of axis overlap: collision detected"
   alt="The projections of axis overlap: collision detected." />
@@ -10473,21 +10497,21 @@ the collision detection is more accurate and can work with elongated
 shapes.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~ 131. monster inside circle x=144, y=84 (226) ~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image131.webp"
+  loading="lazy"
   style="width:20%;" 
   title="Player as a square is inside the monster bounding circle but not 
     inside the bounding rectangle, as we use rect rect collision test: no 
-	collision detected"
+    collision detected"
   alt="Player as a square is inside the monster bounding circle but not 
     inside the bounding rectangle, as we use rect rect collision test: 
-	no collision detected." />
+    no collision detected." />
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~ 132. monster inside circle x=134, y=83 (226) ~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image132.webp"
+  loading="lazy"
   style="width:20%;"
   title="Same as previous picture but this time the player square is inside 
     the monster bounding rectangle: collision detected"
@@ -10598,9 +10622,9 @@ most famous and enjoyable shoot’em’ups ever made - you can play it using
 the MAME arcade game emulator):</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 133. Screenshot of dodonpachi (229) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image133.webp"
+  loading="lazy"
   style="width:50%;" 
   title="Screenshot of dodonpachi"
   alt="Screenshot of dodonpachi." />
@@ -10612,9 +10636,9 @@ here</a>). Press the G key to see the bounding rectangles used for
 collision test. Here is a screenshot:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 134. genetos screenshot (229) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image134.webp"
+  loading="lazy"
   style="width:50%;" 
   title="Genetos screenshot"
   alt="Genetos screenshot." />
@@ -10667,17 +10691,17 @@ Thread at StackOverflow</a>):</p>
 function in this example on JSBin</a>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~ 135. circle and rectangle not in collision (230) ~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image135.webp"
+  loading="lazy"
   title="Circle and rectangle not in collision"
   alt="Circle and rectangle not in collision."
   style="width:20%;" />
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~ 136. circle collides with a rectangle (230) ~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image136.webp"
+  loading="lazy"
   title="Circle collides with a rectangle"
   alt="Circle collides with a rectangle."
   style="width:20%;" />
@@ -10688,12 +10712,11 @@ function in this example on JSBin</a>.</p>
   <li><p>Math and physics: please read <a href="https://web.archive.org/web/20181231090226/http:/archive.ncsa.illinois.edu/Classes/MATH198/townsend/math.html" target="_blank" rel="noopener  noreferrer">this external resource (for math), a great article that explains the physics of a pool game</a>.</p></li>
   <li><p><a href="https://jsbin.com/juzefa/edit" target="_blank" rel="noopener noreferrer">Example of colliding balls at JSBin (author: M.Buffa)</a>, and also <a href="https://jsbin.com/nopefe/edit" target="_blank" rel="noopener noreferrer">try this example that does the same with a blurring effect</a></p></li>
 </ul>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 137. ball-ball collision example (231) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image137.webp"
+  loading="lazy"
   title="Ball-ball collision example"
   alt="Ball-ball collision example."
   style="width:50%;" />
@@ -10716,9 +10739,9 @@ result (step 4):</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~ 138. diagram with two balls, velocities, tengeantial and normal planes (231) ~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image138.webp"
+  loading="lazy"
   title="Diagram with two balls, velocities, tengeantial and normal planes"
   alt="Diagram with two balls, velocities, tengeantial and normal planes."
   style="width:35%;" />
@@ -10740,9 +10763,9 @@ earlier.</p>
 <p><a href="https://jsbin.com/bohebe/edit?js,output" target="_blank" rel="noopener noreferrer">Try the example at JsBin!</a></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~ 139. collision between balls and the monster (232) ~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image139.webp"
+  loading="lazy"
   title="Collision between balls and the monster"
   alt="Collision between balls and the monster."
   style="width:35%;" />
@@ -10793,9 +10816,9 @@ line animates a woman walking in a particular direction:</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~ 140. sprite sheet of a woman walking, with different postures (234) ~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image140.webp"
+  loading="lazy"
   title="Sprite sheet of a woman walking, with different postures"
   alt="Sprite sheet of a woman walking, with different postures."
   style="width:40%;" />
@@ -10817,9 +10840,9 @@ changing the scale of the sprite as the woman moves up (further from us)
 or down (closer to us).</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ 141. animated woman using sprite (235) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image141.webp"
+  loading="lazy"
   title="A woman animated using sprite. Screenshot of the JsBin example that 
     explains how to run it in standalone mode"
   alt="A woman animated using sprite. Screenshot of the JsBin example that 
@@ -10841,7 +10864,6 @@ First, let’s explain how to use “sprites” in JavaScript and canvas.</p>
 <p>In this example, each posture comprises exactly 13 sprites, aligned in a single row across the sprite sheet.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ 140. woman walking using sprite (236) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image140.webp"
   title="A sprite sheet of a woman walking, with different postures"
@@ -10853,9 +10875,9 @@ First, let’s explain how to use “sprites” in JavaScript and canvas.</p>
 <p>Some sprite sheets have a single sprite set, spreading over multiple lines; like this walking robot:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ 142. walking robot using sprite (236) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image142.webp"
+  loading="lazy"
   title="A sprite sheet with a walking robot (only the posture &quot;move to the 
     right&quot; is in the sprite sheet)"
   alt="A sprite sheet with a walking robot (only the posture &quot;move to the 
@@ -10868,9 +10890,9 @@ multiple sprite sheets: one for each posture.</p>
 <p>As another example, here is the “jumping robot” sprite sheet:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ 143. sprite sheet for a robot jump (237) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image143.webp"
+  loading="lazy"
   title="Sprite sheet for a robot jump"
   alt="Sprite sheet for a robot jump."
   style="width:35%;" />
@@ -10883,9 +10905,9 @@ multiple sprite sheets: one for each posture.</p>
 href="https://www.youtube.com/watch?v=1tLNcj1ygFA" target="_blank" rel="noopener noreferrer">the famous Gridrunner IOS game by Jeff Minter</a>):</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 144. gridiron sprintsheet (236) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image144.webp"
+  loading="lazy"
   title="Gridrunner spritesheet"
   alt="Gridrunner spritesheet."
   style="width:35%;" />
@@ -10919,9 +10941,9 @@ indicated by the slider value.</p>
 JSBin</a>:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~ 145. screenshot of example, move a slider to select sprite from spritesheet (237) ~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image145.webp"
+  loading="lazy"
   title="Screenshot of the example: move a slider to select a subimage/sprite from the spritesheet"
   alt="Screenshot of the example: move a slider to select a subimage/sprite from the spritesheet."
   style="width:50%;" />
@@ -11094,9 +11116,9 @@ individual sprites:</p>
 </ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~ 146. same example buit with the robot spritesheet (240) ~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image146.webp"
+  loading="lazy"
   title="Same example but with the robot spritesheet"
   alt="Same example but with the robot spritesheet."
   style="width:50%;" />
@@ -11158,9 +11180,9 @@ JSBin that uses this framework first!</a> Experiment by editing <i>line
 the parameter and observing the result.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~ 147. example of the sprite framework on jsbin (244) ~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image147.webp"
+  loading="lazy"
   title="Example of the sprite framework on JSBin. Screenshot"
   alt="Example of the sprite framework on JSBin. Screenshot."
   style="width:50%;" />
@@ -11504,6 +11526,7 @@ are created on top of the monster.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 151. eat the ball game (249) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image151.webp" 
+  loading="lazy"
   style="width:30%;" 
   title="Eat the ball game"
   alt="Eat the ball game." />
@@ -11586,9 +11609,9 @@ JsBin</a>, then look at the source code. Start from the mainloop!</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~ 152. Game Over Screen, asking to press space to start again. (251) ~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image152.webp"
+  loading="lazy"
   style="width:45%;" 
   title="Game over screen, asking to press space to start again"
   alt="Game over screen, asking to press space to start again." />
@@ -11597,9 +11620,9 @@ JsBin</a>, then look at the source code. Start from the mainloop!</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~ 153. Game Over Screen, asking to press space to start again. (252) ~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image153.webp"
+  loading="lazy"
   style="width:45%;" 
   title="Game Running, showing score, time, and level"
   alt="Game Running, showing score, time, and level." />
@@ -11786,9 +11809,9 @@ directory where the game.html file is located. Similarly, we’ll keep the
 CSS file in a css subdirectory:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 154. game.html (256) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image154.webp"
+  loading="lazy"
   style="width:20%;" 
   title="First game structure"
   alt="First game structure." />
@@ -11835,9 +11858,9 @@ the draw method, otherwise it won’t be recognized… </p>
 devtools console:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~ 155. function calcdisktomove error not found in ball.js (257) ~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image155.webp"
+  loading="lazy"
   style="width:60%;"
   title="Error the function calcDistToMove not found in ball.js"
   alt="Error the function calcDistToMove not found in ball.js." />
@@ -11928,9 +11951,9 @@ the fps.js file.</p>
 <p>At this stage, the structure looks like this:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 156. game structure (259) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image156.webp"
+  loading="lazy"
   style="width:15%;" 
   title="Game structure"
   alt="Game structure." />
@@ -11997,9 +12020,9 @@ during the course, could be put into this file as well.</p>
 <p>After all that, we reach this tidy structure:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ 157. final game structure in files (260) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image157.webp"
+  loading="lazy"
   style="width:20%;" 
   title="Final game structure in files"
   alt="Final game structure in files." />
@@ -12055,8 +12078,8 @@ we’ve been (pleasantly) surprised!</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-7-3">2.7.3 Discussion and projects</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Here is the discussion forum for this part of the course. Please
-either post your comments/observations/questions or share your
+<p>Here is the discussion forum for this part of the course. Please 
+either post your comments/observations/questions or share your 
 creations.</p>
 
 <h4>Suggested topics of discussion:</h4>
@@ -12080,17 +12103,17 @@ Some of them are based on the framework presented in the course.</p>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 158. wanted game main screen (262) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image158.webp"
+  loading="lazy"
   style="width:20%;" 
   title="Main screen of the game &quot;Wanted&quot;"
   alt="Main screen of the game &quot;Wanted&quot;." />
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~ 159. monster with black bombs and gold coins (262) ~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image159.webp"
+  loading="lazy"
   style="width:25%;" 
   title="The game running, monster with black bombs and gold coins"
   alt="The game running, monster with black bombs and gold coins." />
@@ -12100,9 +12123,9 @@ Some of them are based on the framework presented in the course.</p>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 160. duck hunt game screenshot (262) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image160.webp"
+  loading="lazy"
   style="width:40%;" 
   title="Screenshot of the Duck hunt game"
   alt="Screenshot of the Duck hunt game." />
@@ -12112,9 +12135,9 @@ Some of them are based on the framework presented in the course.</p>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ 161. shoot em up game screenshot (262) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image161.webp"
+  loading="lazy"
   style="width:40%;" 
   title="Screenshot of the shoot em up game"
   alt="Screenshot of the shoot em up game." />
@@ -12126,9 +12149,9 @@ Some of them are based on the framework presented in the course.</p>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 162. gameboy tetris in html5 (263) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image162.webp"
+  loading="lazy"
   style="width:30%;" 
   title="Gameboy Tetris in HTML5"
   alt="Gameboy Tetris in HTML5." />
@@ -12138,9 +12161,9 @@ Some of them are based on the framework presented in the course.</p>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 163. kill the ninja game (264) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image163.webp"
+  loading="lazy"
   style="width:40%;" 
   title="A &quot;kill the ninja&quot; game"
   alt="A &quot;kill the ninja&quot; game." />
@@ -12384,9 +12407,9 @@ this example on JSBin</a>:</p>
 it using XHR2.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 164. download file using xhr2 (268) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image164.webp"
+  loading="lazy"
   style="width:50%;" 
   title="Downloading file with Xhr2"
   alt="Downloading file with Xhr2." />
@@ -12492,9 +12515,9 @@ it using XHR2.</p>
 <h4>Monitoring uploads or downloads using a progress event</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 165. download progress (270) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image165.webp"
+  loading="lazy"
   style="width:40%;" 
   title="Downloading progression using a progress element"
   alt="Downloading progression using a progress element." />
@@ -12644,9 +12667,9 @@ number of bytes downloaded is 1000, then &lt;progress value=1000
 max=10000&gt; will look like this:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 166. 1000 of 10,000 (272) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image166.webp"
+  loading="lazy"
   style="width:35%;"
   title="Progress bar 1,000 of 10,000 (10%)"
   alt="Progress bar 1,000 of 10,000 (10%)." />
@@ -12654,9 +12677,9 @@ max=10000&gt; will look like this:</p>
 <p>And a current download of 2000 bytes will define &lt;progress value=2000 max=10000&gt; and will look like this:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 167. 2000 of 10,000 (272) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image167.webp"
+  loading="lazy"
   style="width:35%;"
   title="Progress bar 2,000 of 10,000 (20%)"
   alt="Progress bar 2,000 of 10,000 (20%)." />
@@ -12664,9 +12687,9 @@ max=10000&gt; will look like this:</p>
 <h4>Complete example: monitoring the download of a song file</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ 168. monitor download of song file (272) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image168.webp"
+  loading="lazy"
   style="width:35%;"
   title="Monitoring download"
   alt="Monitoring download." />
@@ -12757,9 +12780,9 @@ lecture.</p>
 JSBin</a>:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 169. file update example 1 (274) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image169.webp"
+  loading="lazy"
   style="width:35%;"
   title="File upload example 1"
   alt="File upload example 1." />
@@ -12828,9 +12851,9 @@ similar to that used for monitoring file downloads:</p>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ 170. file upload with progress bar (287) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image170.webp"
+  loading="lazy"
   style="width:55%;"
   title="File upload with progress bar"
   alt="File upload with progress bar." />
@@ -13057,9 +13080,9 @@ CodePen</a>.</p>
 <h4>Screenshot:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ 171. drag and drop list example (292) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image171.webp"
+  loading="lazy"
   style="width:50%;"
   title="Drag 'n drop fruits"
   alt="Drag 'n drop fruits." />
@@ -13173,9 +13196,9 @@ the dragstart handler).</p>
 <h4>Complete example</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 172. drag 'n drop fruit (293) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image172.webp"
+  loading="lazy"
   style="width:50%;"
   title="Drag 'n drop fruits"
   alt="Drag 'n drop fruits." />
@@ -13329,9 +13352,9 @@ is <a href="https://jsbin.com/yowimebawo/edit?html,css,js,output" target="_blan
 online at JsBin</a> example:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 173. using css attr() function (297) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image173.webp"
+  loading="lazy"
   style="width:50%;"
   title="Data attribute using dataset property"
   alt="Data attribute using dataset property." />
@@ -13391,9 +13414,9 @@ Try <a href="https://jsbin.com/alunuk/6/edit" target="_blank" rel="noopener nor
 JsBin</a>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 174. using css attr() function (298) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image174.webp"
+  loading="lazy"
   style="width:35%;"
   title="Using CSS attr() function"
   alt="Using CSS attr() function." />
@@ -13504,11 +13527,11 @@ in the drop zones:</p>
 <ul>
   <li><p><b>dragstart</b>: this event, which we discussed in a previous section, 
     is used on draggable elements. We used it to get a value from the element that 
-	was dragged, and copied it onto the clipboard. It’s a good time to add some 
-	visual feedback - for example, by adding a CSS class to the draggable object.</p></li>
+    was dragged, and copied it onto the clipboard. It’s a good time to add some 
+    visual feedback - for example, by adding a CSS class to the draggable object.</p></li>
   <li><p><b>dragend</b>: this event is launched when the drag has ended (on a drop 
     or if the user releases the mouse button outside a drop zone). In both cases, 
-	it is a best practice to reset the style of the draggable object to default.</p></li>
+    it is a best practice to reset the style of the draggable object to default.</p></li>
 </ul>
 
 <p>The next screenshot shows the use of CSS styles (green background +
@@ -13519,9 +13542,9 @@ further down the page (it includes, in addition, visual feedback on the
 drop zone):</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 175. css drag operation (301) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image175.webp"
+  loading="lazy"
   style="width:50%;"
   title="Drag 'n drop css style and operation"
   alt="Drag 'n drop css style and operation." />
@@ -13703,9 +13726,9 @@ in the previous example, a “copy” cursor like the one below would be
 appropriate:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 176. copy cursor image (304) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image176.webp"
+  loading="lazy"
   style="width:25%;"
   title="Copy cursor"
   alt="Copy cursor." />
@@ -13713,9 +13736,9 @@ appropriate:</p>
 <p>If you are “moving” objects, this style of cursor would be appropriate:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 177. moving object image (304) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image177.webp"
+  loading="lazy"
   style="width:25%;"
   title="Moving object cursor image"
   alt="Moving object cursor image." />
@@ -13723,9 +13746,9 @@ appropriate:</p>
 <p>And if you are making a “link” or a “shortcut”, a cursor would be looking like this:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 178. link or shortcut image (305) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image178.webp"
+  loading="lazy"
   style="width:25%;"
   title="Link or shortcut, cursor image"
   alt="Link or shortcut, cursor image." />
@@ -13733,9 +13756,9 @@ appropriate:</p>
 <p>Alternatively, you could use any custom image/icon you like:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~ 179. dropeffect & effectallowed custom image icons (305) ~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image179.webp"
+  loading="lazy"
   style="width:50%;"
   title="Drop effect with image"
   alt="Drop effect with image." />
@@ -13896,9 +13919,9 @@ position to another location in the page).</p>
 <h3 id="ch3-3-8">3.3.8 Drag and drop a text selection</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ 180. drag and drop text selection (298) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image180.webp"
+  loading="lazy"
   style="width:50%;"
   title="Drag and drop a text selection"
   alt="Drag and drop a text selection." />
@@ -14170,9 +14193,9 @@ and process them. That’s all. Bye, bye!</p>
 <h4>Example: drag and drop files to a drop zone, display file details in a list</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 181. drag and drop example (305) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image181.webp"
+  loading="lazy"
   style="width:50%;"
   title="Example of Drag and Drop"
   alt="Example of Drag and Drop." />
@@ -14303,9 +14326,9 @@ type=“file”&gt; element), select one or more images – and you should see
 image thumbnails displayed in the open space beneath it:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 182. choose multiple files (308) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/webp/image182.webp"
+  loading="lazy"
   style="width:50%;"
   title="Choose multiple files"
   alt="Choose multiple files." />
@@ -15346,68 +15369,79 @@ excellent</a> both on mobile and desktop browsers.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-6-2">3.6.2 IndexDB Concepts (part 2)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Among the concepts used by IndexedDB is the concept of transactions.</p>
-<p>A transactional database ensures that concurrent access to data would not compromise this data.</p>
-<p>It uses a locking system, that means that when an instance of your Web application is modifying some data and another instance or another application on the same domain is reading this data, there won’t be anything wrong regarding to this data.</p>
+<p>Among the concepts used by IndexedDB is the concept of transactions.
+A transactional database ensures that concurrent access to data would not compromise this data.</p>
+
+<p>It uses a locking system, that means that when an instance of your Web application is modifying 
+some data and another instance or another application on the same domain is reading this data, there 
+won’t be anything wrong regarding to this data.</p>
+
 <p>When do we need such a mechanism? When you have multiple tabs opened
 on the same WebApp or WebApps from the same domain. Or you have got
 multiple games that store high scores and they are all coming from
 the”MyBeautifulGame.com” domain. They will share the same database</p>
+
 <p>You need to have some security system. But remember also that HTML5
 is also used for writing applications that run outside of the
 traditional browser, like on a game console…the PS4, the Xbox One… your
 Windows desktop uses also applications written in HTML5.</p>
+
 <p>All these applications will belong to the same default domain and if
 they need to store data, in an IndexedDB database -there is an IndexedDB
-database in your Xbox or in your PlayStation-!</p>
-<p>Then, in that case all these applications will have to fight for
-accessing the data and you need transactions.</p>
-<p>Another concept is called the KeyPath.</p>
-<p>The KeyPath is like a unique ID attached to each data in your
-database.</p>
-<p>And this KeyPath is either one explicit property, in that case the
-social security number, it’s a unique ID attached to each data in your
-data store and it is called the KeyPath, it should be unique. It can be
-explicit or implicit, if you do not specify any KeyPath when you create
-your database another extra property will be added to your object. It’s
-a bit like the auto-incremented primary keys in the SQL world.</p>
-<p>You can also have flexible schemas for your data.</p>
-<p>All your data need to share the unique ID I just talked about, but
+database in your Xbox or in your PlayStation-! Then, in that case all these 
+applications will have to fight for accessing the data and you need transactions.</p>
+
+<p>Another concept is called the KeyPath. The KeyPath is like a unique ID attached 
+to each data in your database. And this KeyPath is either one explicit property, in 
+that case the social security number, it’s a unique ID attached to each data in your
+data store and it is called the KeyPath, it should be unique. It can be explicit or 
+implicit, if you do not specify any KeyPath when you create your database another extra 
+property will be added to your object. It’s a bit like the auto-incremented primary keys 
+in the SQL world.</p>
+
+<p>You can also have flexible schemas for your data.
+All your data need to share the unique ID I just talked about, but
 they can have some variable properties… you can have some contacts for
 example, in your data store, that have one single phone number or
 multiple phone numbers, or a description, or an age, or a name attached
 to them…</p>
+
 <p>… but not all objects must share the same schema like what you have
 got in relational tables in a relational databases. Another concept we
 find in most databases is the concept of ‘indexes’. You can specify that
 a property of your object you store in a database is an index. In that
 case, the retrieval of data using this index will be much faster.</p>
-<p>And indexes, contrarily to KeyPath, can be unique or non unique.</p>
-<p>For example if my object has a lastName, I can have several objects
+
+<p>And indexes, contrarily to KeyPath, can be unique or non unique.
+For example if my object has a lastName, I can have several objects
 with lastName being Buffa, my family name, and I can send a request to
 the database asking for all the people whose lastName is equal to
-Buffa.</p>
-<p>And in that case, the retrieval will be much faster than if lastName
+Buffa. And in that case, the retrieval will be much faster than if lastName
 was not an index.</p>
+
 <p>To sum up: IndexedDB is a NoSQL database, that stores JavaScript
 objects. It runs in your browser (client side), it uses transactions -
 so several tabs or several applications on the same domain can access
-with a lot of security a same data at the same time.</p>
-<p>It uses indexes for faster retrieval, and finally it can hold huge
+with a lot of security a same data at the same time.
+It uses indexes for faster retrieval, and finally it can hold huge
 amount of data.</p>
+
 <p>Thanks for your attention, in the next videos we will look at some
 pieces of code to learn how to program some application that will use
 IndexedDB. Bye bye!</p>
+
 <p>IndexedDB is very different from SQL databases, but don’t be afraid
 if you’ve only used SQL databases: IndexedDB might seem complex at first
-sight, but it really isn’t.</p>
-<p>Let’s quickly look at the main concepts of IndexedDB, as we will go
+sight, but it really isn’t.
+Let’s quickly look at the main concepts of IndexedDB, as we will go
 into detail later on:</p>
 
 <ul>
   <li><p>IndexedDB stores and retrieves objects which are indexed by a “key”.</p></li>
-  <li><p>Changes to the database happen <a href="https://en.wikipedia.org/wiki/Database_transaction" target="_blank" rel="noopener noreferrer">within transactions</a>.</p></li>
-  <li><p>IndexedDB follows <a href="https://www.w3.org/Security/wiki/Same_Origin_Policy" target="_blank" rel="noopener noreferrer">a same-origin policy</a>. While you can access stored data within a domain, you cannot access data across different domains.</p></li>
+  <li><p>Changes to the database happen <a href="https://en.wikipedia.org/wiki/Database_transaction" target="_blank" rel="noopener noreferrer">
+    within transactions</a>.</p></li>
+  <li><p>IndexedDB follows <a href="https://www.w3.org/Security/wiki/Same_Origin_Policy" target="_blank" rel="noopener noreferrer">
+    a same-origin policy</a>. While you can access stored data within a domain, you cannot access data across different domains.</p></li>
   <li><p>It makes extensive use of an asynchronous API: most processing will be done in callback functions - and we mean <i>LOTS of callback functions</i>!</p></li>
 </ul>
 
@@ -15418,13 +15452,14 @@ complex structured objects (hint: think in terms of JSON objects), and
 keys can be properties of those objects. You can create indexes that use
 any property of the objects for faster searching, as well as ordering
 results.</p>
+
 <p>Example of data (we reuse a sample from this MDN tutorial: “<a
 href="https://developer.mozilla.org/en-US/docs/IndexedDB/Using_IndexedDB" target="_blank" rel="noopener noreferrer">Using
 IndexedDB</a>)”:</p>
+
 <p>// This is what our customer data looks like.</p>
 
 <p>const customerData = [];</p>
-
 
 <p>Where customerData is an array of  “customers”, each customer having
 several properties: ssn for the social security number, a name,
@@ -18273,8 +18308,10 @@ Components):</h4>
 <h4>Explanations:</h4>
 
 <ul>
-  <li><p><i>Line 6</i>: In this example, the Web Component is in a single JavaScript file (./mycomponent/index.js), that is imported as JavaScript module (&lt;script type=“module”….&gt;).</p></li>
-  <li><p><i>Lines 9 and 10</i>: it can then be used like any Web Component, by adding it with its custom HTML tag (&lt;my-components&gt;). The components have one HTML attribute “name”.</p></li>
+  <li><p><i>Line 6</i>: In this example, the Web Component is in a single JavaScript file (./mycomponent/index.js), 
+    that is imported as JavaScript module (&lt;script type=“module”….&gt;).</p></li>
+  <li><p><i>Lines 9 and 10</i>: it can then be used like any Web Component, by adding it with its custom HTML tag 
+    (&lt;my-components&gt;). The components have one HTML attribute “name”.</p></li>
 </ul>
 
 <h4>And here is the code of the Web Component (in ./mycomponent/index.js):</h4>
@@ -18330,14 +18367,19 @@ your comments/observations/questions and share your creations.</p>
 <h4>Suggested topics of discussion:</h4>
 
 <ul>
-  <li><p>If you’ve followed the course, then you’ve visited the <a href="https://www.webcomponents.org/" target="_blank" rel="noopener noreferrer">webcomponents.org</a> Web site and browsed some Web components galleries. Did you find any super cool components? Did you try them? Please share your findings in the forum!</p></li>
+  <li><p>If you’ve followed the course, then you’ve visited the <a href="https://www.webcomponents.org/" target="_blank" rel="noopener noreferrer">
+    webcomponents.org</a> Web site and browsed some Web components galleries. Did you find any super cool components? Did you try them? Please 
+    share your findings in the forum!</p></li>
   <li><p>What Web component would you like to use and could not find out of the box?</p></li>
 </ul>
 
 <h4>Optional projects:</h4>
 
 <ul>
-  <li>Try-out <a href="https://github.com/g200kg/webaudio-controls" target="_blank" rel="noopener noreferrer">these WebAudio control widgets that look incredibly good</a> (I used them with <a href="https://mainline.i3s.unice.fr/AmpSim5/" target="_blank" rel="noopener noreferrer">my Guitar Amp Simulator</a>). And use them in your audio player or other applications that would look cool with rotating knobs, switches, LEDs, etc.</li>
+  <li>Try-out <a href="https://github.com/g200kg/webaudio-controls" target="_blank" rel="noopener noreferrer">
+    these WebAudio control widgets that look incredibly good</a> (I used them with <a href="https://mainline.i3s.unice.fr/AmpSim5/" 
+    target="_blank" rel="noopener noreferrer">my Guitar Amp Simulator</a>). And use them in your audio player or other applications 
+    that would look cool with rotating knobs, switches, LEDs, etc.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 233. web audio controls (440) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
