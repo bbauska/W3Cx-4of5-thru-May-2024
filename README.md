@@ -1,5 +1,10 @@
 ---
 w3cx-4of5-html5.2x: Coursera - Front-End Web Development - Apps and Games
+author: "bbauska"
+date last editted: "3/16/2024 2+pm"
+output: 
+  markdown:
+    with some style
 ---
 
 <h2 align="center">W3Cx Front-End Web Developer</h2>
