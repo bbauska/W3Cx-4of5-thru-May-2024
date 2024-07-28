@@ -11,7 +11,6 @@ You will learn how to download and upload files using XHR2, monitoring
 the upload/download progress, etc.
 
 The course will provide full examples of HTML5 forms that handle files
-
 with client and server-side code provided. Drag'n'drop will be covered
 as well, between elements inside an HTML document but also with files
 from and to the desktop.
@@ -22,9 +21,7 @@ examples will be provided that will help you create, research, update
 and delete data in that database.
 
 We encourage you to use IndexedDB for saving and restoring the high
-scores
-
-in the small game you have certainly wrote during week 2. Enjoy!
+scores in the small game you have certainly wrote during week 2. Enjoy!
 
 ## 3.2.1 Ajax and XHR2
 
@@ -73,7 +70,6 @@ browser compatibility table](https://caniuse.com/#feat=xhr2).
 ## 3.2.2 Ajax/XHR2 and binary files
 
 Hi everyone! In this lesson, I will present you how we can manage file
-
 uploads and file downloads with nice visualization of the progression.
 
 In this example, I\'m downloading directly binary files into the browser
@@ -181,9 +177,7 @@ When we started the request, we added a xhr.onprogress callback here
 that gets in event sent by the browser, that has two properties.
 
 One is called \"total\", that is a total number of bytes in the files we
-are downloading,
-
-and \"loaded\" is the number of bytes we have actually downloaded.
+are downloading, and \"loaded\" is the number of bytes we have actually downloaded.
 
 And we can set these two properties directly to the \"value\" property
 of the progress element and to the \"max\" property.
@@ -218,25 +212,18 @@ Below is a function that loads a sound sample using XMLHttpRequest level
 *Note*: 1) the simple and concise syntax, and 2) the use of the
 new arrayBuffer type for the expected response (*line 5*):
 
+```
 1.  // Load a binary file from a URL as an ArrayBuffer.
-
 2.  function loadSoundFile(url) {
-
 3.  var xhr = new XMLHttpRequest();
-
 4.  xhr.open(\'GET\', url, true);
-
 5.  **xhr**.responseType = \'arraybuffer\';
-
 6.  xhr.onload = function(e) {
-
 7.  initSound(this.response); // this.response is an ArrayBuffer.
-
 8.  };
-
 9.  xhr.send();
-
 10. }
+```
 
 #### Example: download a binary song file using XHR2 and responseType=\'arraybuffer\', and play it using Web Audio
 
@@ -252,164 +239,86 @@ height="2.484508967629046in"}
 
 **Complete source code:**
 
+```
 1.  \<!DOCTYPE html\>
-
 2.  \<html lang=\"en\"\>
-
 3.   \<head\>
-
 4.     \<title\>XHR2 and binary files + Web Audio API\</title\>
-
 5.   \</head\>
-
 6.  \<body\>
-
 7.  \<p\>Example of using XHR2 and \<code\>xhr.responseType =
     \'arraybuffer\';\</code\> to download a binary sound file
-
 8.  and start playing it on user-click using the Web Audio API.\</p\>
-
 9.  
-
 10. \<p\>
-
 11. \<h2\>Load file using Ajax/XHR2 and the arrayBuffer response
     type\</h2\>
-
 12. \<button **onclick=\"downloadSoundFile(\'https://myserver.com/song.mp3\');**\"\>
-
 13.      Download and play example song.
-
 14.  \</button\>
-
 15. \<button onclick=\"playSound()\" disabled\>Start\</button\>
-
 16. \<button onclick=\"stopSound()\" disabled\>Stop\</button\>
-
 17. \<script\>
-
 18.   // WebAudio context
-
 19.   var context = new window.AudioContext();
-
 20.   var source = null;
-
 21.   var audioBuffer = null;
-
 22.  
-
 23.   function stopSound() {
-
 24.     if (source) {
-
 25.        source.stop();
-
 26.     }
-
 27.   }
-
 28.  
-
 29.   function playSound() {
-
 30.     // Build a source node for the audio graph
-
 31.     source = context.createBufferSource();
-
 32.     source.buffer = audioBuffer;
-
 33.     source.loop = false;
-
 34.     // connect to the speakers
-
 35.     source.connect(context.destination);
-
 36.     source.start(0); // Play immediately.
-
 37.   }
-
 38.  
-
 39.   function initSound(audioFile) {
-
-40.     // The audio file may be an mp3 - we must decode it before
-    playing it from memory
-
+40.     // The audio file may be an mp3 - we must decode it before playing it from memory
 41.     context.decodeAudioData(audioFile, function(buffer) {
-
 42.       console.log(\"Song decoded!\");
-
-43.       // audioBuffer the decoded audio file we\'re going to work
-    with
-
+43.       // audioBuffer the decoded audio file we\'re going to work with
 44.       audioBuffer = buffer;
-
 45. 
-
 46.       // Enable all buttons once the audio file is
-
 47.       // decoded
-
 48.       var buttons = document.querySelectorAll(\'button\');
-
 49.       buttons\[1\].disabled = false; // play
-
 50.       buttons\[2\].disabled = false; // stop
-
-51.       alert(\"Binary file has been loaded and decoded, use play /
-    stop buttons!\")
-
+51.       alert(\"Binary file has been loaded and decoded, use play stop buttons!\")
 52.     }, function(e) {
-
 53.        console.log(\'Error decoding file\', e);
-
 54.     });
-
 55.   }
-
 56.  
-
 57.   // Load a binary file from a URL as an ArrayBuffer.
-
 58.   function downloadSoundFile(url) {
-
 59.     var xhr = new XMLHttpRequest();
-
 60.     xhr.open(\'GET\', url, true);
-
 61.  
-
-62.     **xhr.responseType = \'arraybuffer\'; // THIS IS NEW WITH
-    HTML5!**
-
+62.     **xhr.responseType = \'arraybuffer\'; // THIS IS NEW WITH HTML5!**
 63.     xhr.onload = function(e) {
-
 64.        console.log(\"Song downloaded, decoding\...\");
-
 65.        initSound(this.response); // this.response is an ArrayBuffer.
-
 66.     };
-
 67.     xhr.onerror = function(e) {
-
 68.       console.log(\"error downloading file\");
-
 69.     }
-
 70.  
-
 71.     xhr.send();
-
-72.        console.log(\"Ajax request sent\... wait until it downloads
-    completely\");
-
+72.        console.log(\"Ajax request sent\... wait until it downloads completely\");
 73.   }
-
 74. \</script\>
-
 75. \</body\>
-
 76. \</html\>
+```
 
 **Explanations**: 
 
@@ -442,27 +351,19 @@ anything about how much data has been sent or received.
 The [ProgressEvent](https://www.w3.org/TR/progress-events/) interface
 adds 7 events relating to uploading or downloading files.
 
-  ----------------------------------------------------------------------------------
-  **attribute**    **type**       **Explanation**
-  ---------------- -------------- --------------------------------------------------
-  onloadstart      loadstart      When the request starts.
-
-  **onprogress**   **progress**   **While loading and sending data.**
-
-  onabort          abort          When the request has been aborted, either by
-                                  invoking the abort() method or navigating away
-                                  from the page.
-
-  onerror          error          When the request has failed.
-
-  onload           load           When the request has successfully completed.
-
-  ontimeout        timeout        When the author specified timeout has passed
-                                  before the request could complete.
-
-  onloadend        loadend        When the request has completed, regardless of
-                                  whether or not it was successful.
-  ----------------------------------------------------------------------------------
+**attribute** | **type** | **Explanation**
+|-------------|----------|------------------------------------------------------
+| onloadstart | loadstart | When the request starts. |
+| **onprogress** |  **progress** |  **While loading and sending data.** |
+| onabort | abort | When the request has been aborted, either by |
+|         |       | invoking the abort() method or navigating away |
+|         |       | from the page. |
+| onerror |  error | When the request has failed. |
+| onload | load  | When the request has successfully completed. |
+| ontimeout | timeout | When the author specified timeout has passed |
+|           |         | before the request could complete. |
+| onloadend | loadend | When the request has completed, regardless of |
+|           |         | whether or not it was successful. |
 
 The syntax for declaring progress event handlers is slightly different
 depending on the type of operation: a download (using the GET HTTP
@@ -470,40 +371,31 @@ method), or an upload (using POST).
 
 **Syntax for download:**
 
+```
 1.  var xhr = new XMLHttpRequest();
-
 2.  xhr.open(\'GET\', url, true);
-
 3.  \...
-
 4.  xhr.onprogress = function(e) {
-
 5.  // do something
-
 6.  }
-
 7.  xhr.send();
+```
 
 Note that an alternative syntax such
 as xhr.addEventListener(\'progress\', callback, false) also works.
 
 **Syntax for upload:**
 
+```
 1.  var xhr = new XMLHttpRequest();
-
 2.  xhr.open(\'POST\', url, true);
-
 3.  \...
-
 4.  **xhr.upload.onprogress = function(e) {**
-
 5.  **// do something**
-
 6.  **}**
-
 7.   
-
 8.  xhr.send();
+```
 
 Notice that the only difference is the \"upload\" added after the name
 of the request object: with GET we use xhr.onprogress and with POST we
@@ -529,37 +421,28 @@ does this for a download operation:
 
 HTML:
 
+```
 1.  \<progress id=\"downloadProgress\" value=0\>\<progress\>
+```
 
 ### JavaScript:
 
+```
 1.  // progress element
-
 2.  **var progress = document.querySelector(\'#downloadProgress\');**
-
 3.   
-
 4.  function downloadSoundFile(url) {
-
 5.    var xhr = new XMLHttpRequest();
-
 6.    xhr.open(\'GET\', url, true);
-
 7.   
-
 8.    \...
-
 9.    xhr.onprogress = function(e) {
-
 10.     **progress.value = e.loaded;**
-
 11.     **progress.max = e.total;**
-
 12.   }
-
 13.   xhr.send();
-
 14. }
+```
 
 **Explanations**: by setting the value and max attributes of
 the \<progress\> element with the current number of bytes downloaded by
@@ -685,73 +568,42 @@ height="2.21875in"}
 ### Source code of the example:
 
 1.  \<!DOCTYPE html\>
-
 2.  \<html lang=\"en\"\>
-
 3.  \<head\>
-
 4.     \<meta charset=\"utf-8\" /\>
-
-5.     \<title\>File upload with XMLHttpRequest level 2 and
-    HTML5\</title\>
-
+5.     \<title\>File upload with XMLHttpRequest level 2 and HTML5\</title\>
 6.  \</head\>
-
 7.   
-
 8.  \<body\>
-
 9.  \<h1\>Example of XHR2 file upload\</h1\>
-
 10.   Choose a file and wait a little until it is uploaded (on a fake  
-
 11.   server). A message should pop up once the file is uploaded 100%.
-
 12. \<p\>
-
 13. \<input id=\"file\" type=\"file\" /\>
-
 14. \</p\>
-
 15. \<script\>
-
 16. var fileInput = document.querySelector(\'#file\');
-
 17.  
-
 18. fileInput.onchange = function() {
-
 19.    var xhr = new XMLHttpRequest();
-
 20.    xhr.open(\'POST\', \'upload.html\'); // With FormData,
-
 21.                                     // POST is mandatory
-
 22.  
 
 23.    **xhr.onload = function() {**
 
 24.      **alert(\'Upload complete !\');**
-
 25.    **};**
-
 26.  
-
 27.    **var form = new FormData();**
-
 28.    **form.append(\'file\', fileInput.files\[0\]);**
-
 29.    // send the request
-
 30.    xhr.send(form);
-
 31. };
-
 32. \</script\>
-
 33. \</body\>
-
 34. \</html\>
+```
 
 ### **Explanations**:
 
@@ -788,98 +640,59 @@ height="1.28125in"}
 
 Here is the code of such an event listener:
 
+```
 3.  xhr.upload.onprogress = function(e) {
-
 4.    progress.value = e.loaded; // number of bytes uploaded
-
 5.    progress.max = e.total;    // total number of bytes in the file
-
 6.  };
+```
 
 ### [Try the example on JSBin](https://jsbin.com/qedaja/edit?html,css,output):
 
 ### Code from this example (nearly the same as previous example\'s code):
 
+```
 1.  \<!DOCTYPE html\>
-
 2.  \<html lang=\"en\"\>
-
 3.  \<head\>
-
 4.     \<meta charset=\"utf-8\" /\>
-
 5.     \<title\>HTML5 file upload with monitoring\</title\>
-
 6.  \</head\>
-
 7.   
-
 8.  \<body\>
-
 9.  \<h1\>Example of XHR2 file upload, with progress bar\</h1\>
-
-10. Choose a file and wait a little until it is uploaded (on a fake
-    server).
-
+10. Choose a file and wait a little until it is uploaded (on a fake server).
 11. \<p\>
-
 12. \<input id=\"file\" type=\"file\" /\>
-
 13. \<br/\>\<br/\>
-
 14. **\<progress id=\"progress\" value=0\>\</progress\>**
-
 15.  
-
 16. \<script\>
-
 17.    var fileInput = document.querySelector(\'#file\'),
-
 18.    **progress = document.querySelector(\'#progress\');**
-
 19.  
-
 20.    fileInput.onchange = function() {
-
 21.      var xhr = new XMLHttpRequest();
-
 22.      xhr.open(\'POST\', \'upload.html\');
-
 23.  
-
 24.      **xhr.upload.onprogress = function(e) {**
-
 25.        **progress.value = e.loaded;**
-
 26.        **progress.max = e.total;**
-
 27.      **};**
-
 28. 
-
 29.      xhr.onload = function() {
-
 30.      alert(\'Upload complete!\');
-
 31.    };
-
 32.  
-
 33.    var form = new FormData();
-
 34.    form.append(\'file\', fileInput.files\[0\]);
-
 35.  
-
 36.    xhr.send(form);
-
 37. };
-
 38. \</script\>
-
 39. \</body\>
-
 40. \</html\>
+```
 
 The only difference between these two worked-examples is
 the onprogress listener which updates the progress
@@ -998,18 +811,12 @@ content!
 And these attributes, these data attributes, are all valid! I go back to
 the initial code.
 
-Once we managed to detect a drag,
-
-and can get some values\... some interesting values from the dragged
-object, now we will
-
-detect a drop!
+Once we managed to detect a drag, and can get some values\... some interesting values from the dragged
+object, now we will detect a drop!
 
 What do we do when we want to drag something and drop it somewhere, and
 make something happen in the drop zone? We need to copy, in the
-dragstart handler,
-
-some data that will be obtained back in the drop handler. There is a
+dragstart handler, some data that will be obtained back in the drop handler. There is a
 clipboard called event.dataTransfer, that is specialized for drag and
 drop. And it\'s got a setData method for writing in it a key/value pair,
 so here we copy, with the name \"fruit\", the value of the data
@@ -1019,31 +826,20 @@ getData.
 
 We wrote a value with a key=\"fruit\", we get this value back here. And
 in the drop handler, in that case, we create a list item element and
-then we
-
-initialize, we set the text content of the list item, with the value
-
+then we initialize, we set the text content of the list item, with the value
 corresponding to the value we got back from the clipboard.
 
 And then, we just add to do drop zone\...
 (#droppedFruits)\...appendChild() the list item. Let\'s look
-
 at how the drop zone was defined: the drop zone in that
-
 example is a div. We\'ve got an ondrop listener, that calls the drop
 callback we just saw.
 
 And we also added an ondragover=\"return false\" listener. This will
-avoid the
-
-propagation of the event, because when we drag over
-
+avoid the propagation of the event, because when we drag over
 the drop zone, each mouse movement will fire a lot of dagover events and
-
 this can slow down the browser\... so in that case we just returned
-false for
-
-performance reasons. So, when I drop it, I\'m in the drop handler, I get
+false for performance reasons. So, when I drop it, I\'m in the drop handler, I get
 back \"Apples »,
 
 I creates a list item, I set the list item content with \"Apples\", and
@@ -1053,14 +849,10 @@ to the div. That\'s all for this video! You understood the main steps
 for doing drag and drop:
 
 detect a drag, copy some data in the clipboard, detect a drop, get back
-the data
-
-and do something. And avoid firing too many events by just stopping the
-
+the data and do something. And avoid firing too many events by just stopping the
 propagation with an ondragover=\"return false\";
 
 See you for the next video! I will explain how to give a nice visual
-
 feedback when we drag and drop things.
 
 In order to make any visible element *draggable*, add
@@ -1070,18 +862,13 @@ that some elements are draggable by default, such as \<img\> elements.
 In order to detect a drag, add an event listener for
 the dragstart event:
 
+```
 1.  \<ol **ondragstart=\"dragStartHandler(event)\"**\>
-
-2.   
-     \<li **draggable=\"true\"** data-value=\"fruit-apple\"\>Apples\</li\>
-
-3.   
-     \<li **draggable=\"true\"** data-value=\"fruit-orange\"\>Oranges\</li\>
-
-4.   
-     \<li **draggable=\"true\"** data-value=\"fruit-pear\"\>Pears\</li\>
-
+2.  \<li **draggable=\"true\"** data-value=\"fruit-apple\"\>Apples\</li\>
+3.  \<li **draggable=\"true\"** data-value=\"fruit-orange\"\>Oranges\</li\>
+4.  \<li **draggable=\"true\"** data-value=\"fruit-pear\"\>Pears\</li\>
 5.  \</ol\>
+```
 
 In the above code, we made all of the \<li\> elements draggable, and we
 detect a dragstart event occurring to any item within the ordered
@@ -1104,47 +891,28 @@ height="1.6084405074365704in"}
 
 ### Complete code from the example:
 
+```
 1.  \<!DOCTYPE html\>
-
 2.  \<html lang=\"en\"\>
-
 3.  \<head\>
-
 4.     \<script\>
-
 5.       function dragStartHandler(event) {
-
 6.           alert(\'dragstart event, target:
-    \' + event.target.innerHTML);
-
+     \' + event.target.innerHTML);
 7.       }
-
-8.     \</script\>
-
-9.  \</head\>
-
-10. \<body\>
-
-11.   \<p\>What fruits do you like? Try to drag an element!\</p\>
-
-12.   \<ol ondragstart=\"dragStartHandler(event)\"\>
-
-13.    
-      \<li draggable=\"true\" data-value=\"fruit-apple\"\>Apples\</li\>
-
-14.    
-      \<li draggable=\"true\" data-value=\"fruit-orange\"\>Oranges\</li\>
-
-15.    
-      \<li draggable=\"true\" data-value=\"fruit-pear\"\>Pears\</li\>
-
-16.   \</ol\>
-
+8.   \</script\>
+9.   \</head\>
+10.  \<body\>
+11.  \<p\>What fruits do you like? Try to drag an element!\</p\>
+12.  \<ol ondragstart=\"dragStartHandler(event)\"\>
+13.  \<li draggable=\"true\" data-value=\"fruit-apple\"\>Apples\</li\>
+14.  \<li draggable=\"true\" data-value=\"fruit-orange\"\>Oranges\</li\>
+15.  \<li draggable=\"true\" data-value=\"fruit-pear\"\>Pears\</li\>
+16.  \</ol\>
 17. \<p\>Drop your favorite fruits below:\</p\>
-
 18.  \<body\>
-
 19. \<html\>
+```
 
 In this script, the event handler will only display an alert showing the
 name of the target element that launched the event. 
@@ -1169,23 +937,17 @@ The variable event.target at *line 5* below is the \<li\> element that
 has been dragged, and event.target.dataset.value is the value of its
 data-value attribute (in our case \"apples\", \"oranges\" or \"pears\"):
 
+```
 1.  function dragStartHandler(event) {
-
 2.      console.log(\'dragstart event, target:
     \' + event.target.innerHTML);
-
 3.  
-
 4.      // Copy to the drag\'n\'drop clipboard the value of the
-
 5.      // data\* attribute of the target,
-
 6.      // with a type \"Fruit\".
-
-7.   
-      **event.dataTransfer.setData(\"Fruit\", event.target.dataset.value);**
-
+7.   **event.dataTransfer.setData(\"Fruit\", event.target.dataset.value);**
 8.  }
+```
 
 #### Step #2: define a \"drop zone\"
 
@@ -1194,13 +956,12 @@ event listener for the drop event. Note that most of the time, as events
 may be propagated, we will also listen for dragover or dragend events
 and stop their propagation. More on this later\...
 
+```
 1.  \<div **ondragover=\"return false\"** **ondrop=\"dropHandler(event);**\"\>
-
 2.  Drop your favorite fruits below:
-
 3.  \<ol id=\"droppedFruits\"\>\</ol\>
-
 4.  \</div\>
+```
 
 Whenever the mouse is moving above a (any) drop zone, dragover events
 will fire. Accordingly, a large number of dragover events may need to be
@@ -1210,29 +971,20 @@ the false value at *line 1*.
 
 #### Step #3: write a drop handler, fetch content from the clipboard, and do something with it
 
+```
 1.  function dropHandler(event) {
-
 2.     console.log(\'drop event, target: \' + event.target.innerHTML);
-
 3.  
-
 4.     \...
-
 5.  
-
 6.     // get the data from the drag\'n\'drop clipboard,GET
-
 7.     // with a type=\"Fruit\"
-
 8.     var data = event.dataTransfer.getData(\"Fruit\");
-
 9.  
-
 10.    // do something with the data
-
 11.    \...
-
 12. }
+```
 
 Typically, in the drop handler, we need to acquire data about the
 element that has been dropped (we get this from the clipboard at *lines
@@ -1248,107 +1000,61 @@ height="3.2291666666666665in"}
 
 ### Source code:
 
+```
 1.  \<!DOCTYPE html\>
-
 2.  \<html\>
-
 3.  \<head\>
-
 4.     \<script\>
-
 5.        function dragStartHandler(event) {
-
 6.            console.log(\'dragstart event, target: \' +
-
 7.                         event.target.innerHTML);
-
 8.            // Copy to the drag\'n\'drop clipboard the value
-
 9.            // of the data\* attribute of
-
 10.           // the target, with a type \"Fruits\".
-
 11.           event.dataTransfer.setData(\"Fruit\",
-
 12.                                 event.target.dataset.value);
-
 13.       }
-
 14. 
-
 15.       function dropHandler(event) {
-
 16.          console.log(\'drop event, target: \' +
-
 17.                                 event.target.innerHTML);
-
 18.          var li = document.createElement(\'li\');
-
 19.          // get the data from the drag\'n\'drop clipboard,
-
 20.          // with a type=\"Fruit\"
-
 21.          var data = event.dataTransfer.getData(\"Fruit\");
-
 22. 
-
 23.          if (data == \'fruit-apple\') {
-
 24.             li.textContent = \'Apples\';
-
 25.          } else if (data == \'fruit-orange\') {
-
 26.             li.textContent = \'Oranges\';
-
 27.          } else if (data == \'fruit-pear\') {
-
 28.             li.textContent = \'Pears\';
-
 29.          } else {
-
 30.             li.textContent = \'Unknown Fruit\';
-
 31.          }
-
 32.          // add the dropped data as a child of the list.
-
 33.          document.querySelector(\"#droppedFruits\").appendChild(li);
-
 34.       }
-
 35.   \</script\>
-
 36. \</head\>
-
 37. \<body\>
-
 38.    \<p\>What fruits do you like? Try to drag an element!\</p\>
-
 39.    \<ol ondragstart=\"dragStartHandler(event)\"\>
-
 40.    
-      \<li draggable=\"true\" data-value=\"fruit-apple\"\>Apples\</li\>
-
+     \<li draggable=\"true\" data-value=\"fruit-apple\"\>Apples\</li\>
 41.    
-      \<li draggable=\"true\" data-value=\"fruit-orange\"\>Oranges\</li\>
-
+     \<li draggable=\"true\" data-value=\"fruit-orange\"\>Oranges\</li\>
 42.    
       \<li draggable=\"true\" data-value=\"fruit-pear\"\>Pears\</li\>
-
 43.    \</ol\>
-
 44.  
      \<div ondragover=\"return false\" ondrop=\"dropHandler(event);\"\>
-
 45.        Drop your favorite fruits below:
-
 46.        \<ol id=\"droppedFruits\"\>\</ol\>
-
 47.    \</div\>
-
 48. \<body\>
-
 49. \<html\>
+```
 
 ### In the above code, note:
 
@@ -1380,37 +1086,24 @@ Notice that we use some CSS to set aside some screen-space for the drop
 zone (not presented in the source code above, but available in the
 online example):
 
+```
 1.  div {
-
 2.     height: 150px;
-
 3.     width: 150px;
-
 4.     float: left;
-
 5.     border: 2px solid #666666;
-
 6.     background-color: #ccc;
-
 7.     margin-right: 5px;
-
 8.     border-radius: 10px;
-
 9.     box-shadow: inset 0 0 3px #000;
-
 10.    text-align: center;
-
 11.    cursor: move;
-
 12. }
-
 13. 
-
 14. li:hover {
-
 15.    border: 2px dashed #000;
-
 16. }
+```
 
 ## 3.3.4 A few words about data-\* attributes
 
@@ -1465,60 +1158,42 @@ are taken from data­-\* attributes of the \<li\> element.
 
 ### HTML code from the example:
 
+```
 1.  \<li class=\"user\" **data-name=\"John
     Resig\"** **data-city=\"Boston\"**
-
 2.      **data-lang=\"js\"** **data-food=\"Bacon\"**\>
-
 3.  \<b\>John says:\</b\> \<span\>Hello, how are you?\</span\>
-
 4.  \</li\>
+```
 
 We just defined four data‐ attributes. 
 
 ### JavaScript code from the example:
 
+```
 1.  \<script\>
-
 2.    var user = document.getElementsByTagName(\"li\")\[0\];
-
 3.    var pos = 0, span = user.getElementsByTagName(\"span\")\[0\];
-
 4.    var phrases = \[
-
 5.      {name: \"city\", prefix: \"I am from \"},
-
 6.      {name: \"food\", prefix: \"I like to eat \"},
-
 7.      {name: \"lang\", prefix: \"I like to program in \"}
-
 8.    \];
-
 9.    user.addEventListener( \"click\", function(){
-
 10.     // Pick the first, second or third phrase
-
 11.     var phrase = phrases\[ pos++ % 3 \];
-
 12. 
-
 13.     // Use the .dataset property depending on the value of
     phrase.name
-
 14.     // phrase.name is \"city\", \"food\" or \"lang\"
-
 15.     span.innerHTML = phrase.prefix + user.dataset\[ phrase.name \];
-
 16. 
-
 17.     // could be replaces by old way..
-
 18.     // span.innerHTML = phrase.prefix +
     user.getAttribute(\"data-\" + phrase.name );
-
 19.   }, false);
-
 20. \</script\>
+```
 
 All data‐ attributes are accessed using the dataset property of the HTML
 element: in this example, user.dataset\[phrase.name\] is
@@ -1538,47 +1213,38 @@ height="0.8541666666666666in"}
 
 ### HTML code from this example:
 
+```
 1.  \<input type=\"range\" min=\"0\" max=\"100\" value=\"25\"\>
+```
 
 This is just one of the new input types introduced by HTML5.
 
 ### JavaScript code from this example:
 
+```
 1.  \<script\>
-
 2.  var input = document.querySelector(\'input\');
-
 3.   
-
 4.  input.dataset.myvaluename = input.value; // Set an initial value.
-
 5.   
-
 6.  input.addEventListener(\'change\', function(e) {
-
 7.      this.dataset.myvaluename = this.value;
-
 8.  });
-
 9.  \</script\>
+```
 
 ### CSS code from this example:
 
+```
 1.  \<style\>
-
 2.  input::after {
-
 3.      color:red;
-
 4.      content:** attr(data-myvaluename)** \'/\' attr(max);
-
 5.      position: relative;
-
 6.      left: 100px; top: -15px;
-
 7.  }
-
 8.  \</style\>
+```
 
 The attr() function takes an attribute name as a parameter and returns
 its value. Here we used the name of the attribute we added on the fly.
@@ -1634,50 +1300,22 @@ This is how, when I enter the drop zone, the div becomes green. And when
 I leave (this is a 'dragleave' handler), that will remove the class. And
 the same with the the dragstart handler.
 
-When I start
-
-to drag an element, I add the class here. And I exaggerate the opacity,
-
+When I start to drag an element, I add the class here. And I exaggerate the opacity,
 the transparency, by setting a higher value for the opacity. Because
-when you drag and drop
-
-elements, they are a bit lighter than normal, and here we accentuate
+when you drag and drop elements, they are a bit lighter than normal, and here we accentuate
 this effect. We can go further by
-
 using some properties called the \"dropEffect\" and the \"allowEffect\"
-properties. So in that case,
-
-when we start moving here,
-
-we can change the cursor and the \"+\" sign that you see here, can be
-also customized by setting
-
-the dropEffect property
-
-in the 'dropenter listener'. Let\'s look at how we can do that: in the
-'dragstart'
-
-listener, here\... in the dragStartHandler, we create an image, we set
-it to a source, we give it a width,
-
-and we use the dataTransfert.setDragImage(dragIcon). This is the name of
-the image
-
-I created (it\'s the HTML5 logo).
+properties. So in that case, when we start moving here, we can change the cursor and the \"+\" sign that you see here, can be
+also customized by setting the dropEffect property in the 'dropenter listener'. Let\'s look at how we can do that: in the
+'dragstart' listener, here\... in the dragStartHandler, we create an image, we set
+it to a source, we give it a width, and we use the dataTransfert.setDragImage(dragIcon). This is the name of
+the image I created (it\'s the HTML5 logo).
 
 We can also proposes an offset relative to the cursor, the mouse cursor.
-When I enter (in the dragEnterHandler),
-
-by setting the dropEffect property of the dataTransfer object, it
-
+When I enter (in the dragEnterHandler), by setting the dropEffect property of the dataTransfer object, it
 produces a \"+\" sign. You can use different values for the allowEffect
-and dropEffect,
-
-that I explained in the course for producing small icons similar to the
-ones
-
-you\'ve got on Windows when making shortcuts or just moving a file from
-
+and dropEffect, that I explained in the course for producing small icons similar to the
+ones you\'ve got on Windows when making shortcuts or just moving a file from
 one folder to another. Bye bye!
 
 ### Add visual feedback when you drag something, when the mouse enters a drop zone, etc.
@@ -1711,74 +1349,45 @@ height="2.577457349081365in"}
 
 ### Source code extract:
 
+```
 1.  \...
-
 2.  \<style\>
-
 3.    .dragged {
-
 4.       border: 2px dashed #000;
-
 5.       background-color: green;
-
 6.    }
-
 7.  \</style\>
-
 8.  \<script\>
-
 9.    function dragStartHandler(event) {
-
 10.      **// Change CSS class for visual feedback**
-
 11.      event.target.style.opacity = \'0.4\';
-
 12.      event.target.**classList**.add(\'dragged\');
-
 13. 
-
 14.      console.log(\'dragstart event, target: \' + event.target);
-
 15.      // Copy to the drag\'n\'drop clipboard the value of the data\*
-    attribute of the target,
-
+   attribute of the target,
 16.      // with a type \"Fruits\".
-
 17.    
      event.dataTransfer.setData(\"Fruit\", event.target.dataset.value);
-
 18.   }
-
 19. 
-
 20.   function dragEndHandler(event) {
-
 21.      console.log(\"drag end\");
-
 22.      **// Set draggable object to default style**
-
 23.      event.target.style.opacity = \'1\';
-
 24.      event.target.classList.remove(\'dragged\');
-
 25.   }
-
 26. \</script\>
-
 27. \...
-
 28. \<ol
     ondragstart=\"dragStartHandler(event)\" ondragend=\"dragEndHandler(event)\" \>
-
 29.     \<li
     draggable=\"true\" data-value=\"fruit-apple\"\>Apples\</li\>
-
 30.     \<li
     draggable=\"true\" data-value=\"fruit-orange\"\>Oranges\</li\>
-
 31.     \<li draggable=\"true\" data-value=\"fruit-pear\"\>Pears\</li\>
-
 32. \</ol\>
+```
 
 Notice at *lines 12 and 24* the use of the classlist property that has
 been introduced with HTML5 in order to allow CSS class manipulation from
@@ -1815,206 +1424,112 @@ CodePen](https://codepen.io/w3devcampus/pen/ojNLEL):
 Complete source code (for clarity\'s sake, we put the CSS and JavaScript
 into a single HTML page):
 
+```
 1.  \<!DOCTYPE html\>
-
 2.  \<html\>
-
 3.  \<head\>
-
 4.     \<style\>
-
 5.       div {
-
 6.          height: 150px;
-
 7.          width: 150px;
-
 8.          float: left;
-
 9.          border: 2px solid #666666;
-
 10.         background-color: #ccc;
-
 11.         margin-right: 5px;
-
 12.         border-radius: 10px;
-
 13.         box-shadow: inset 0 0 3px #000;
-
 14.         text-align: center;
-
 15.         cursor: move;
-
 16.      }
-
 17. 
-
 18.      .dragged {
-
 19.         border: 2px dashed #000;
-
 20.         background-color: green;
-
 21.      }
-
 22. 
-
 23.      .draggedOver {
-
 24.         border: 2px dashed #000;
-
 25.         background-color: green;
-
 26.      }
-
 27. \</style\>
-
 28. \<script\>
-
 29.      function dragStartHandler(event) {
-
 30.         // Change css class for visual feedback
-
 31.         event.target.style.opacity = \'0.4\';
-
 32.         event.target.classList.add(\'dragged\');
-
 33. 
-
 34.         console.log(\'dragstart event, target:
     \' + event.target.innerHTML);
-
 35.         // Copy in the drag\'n\'drop clipboard the value of the
     data\* attribute of the target,
-
 36.         // with a type \"Fruits\".
-
 37.        
     event.dataTransfer.setData(\"Fruit\", event.target.dataset.value);
-
 38.      }
-
 39. 
-
 40.      function dragEndHandler(event) {
-
 41.         console.log(\"drag end\");
-
 42.         event.target.style.opacity = \'1\';
-
 43.         event.target.classList.remove(\'dragged\');
-
 44.      }
-
 45. 
-
 46.      function dragLeaveHandler(event) {
-
 47.         console.log(\"drag leave\");
-
 48.         event.target.classList.remove(\'draggedOver\');
-
 49.      }
-
 50. 
-
 51.      function dragEnterHandler(event) {
-
 52.         console.log(\"Drag enter\");
-
 53.         event.target.classList.add(\'draggedOver\');
-
 54.      }
-
 55. 
-
 56.      function dragOverHandler(event) {
-
 57.         //console.log(\"Drag over a droppable zone\");
-
 58.         event.preventDefault(); // Necessary. Allows us to drop.
-
 59.      }
-
 60. 
-
 61.      function dropHandler(event) {
-
 62.         console.log(\'drop event, target: \' + event.target);
-
 63.         // reset the visual look of the drop zone to default
-
 64.         event.target.classList.remove(\'draggedOver\');
-
 65. 
-
 66.         var li = document.createElement(\'li\');
-
 67.         // get the data from the drag\'n\'drop clipboard, with a
     type=\"Fruit\"
-
 68.         var data = event.dataTransfer.getData(\"Fruit\");
-
 69. 
-
 70.         if (data == \'fruit-apple\') {
-
 71.             li.textContent = \'Apples\';
-
 72.         } else if (data == \'fruit-orange\') {
-
 73.             li.textContent = \'Oranges\';
-
 74.         } else if (data == \'fruit-pear\') {
-
 75.             li.textContent = \'Pears\';
-
 76.         } else {
-
 77.             li.textContent = \'Unknown Fruit\';
-
 78.      }
-
 79.      // add the dropped data as a child of the list.
-
 80.      document.querySelector(\"#droppedFruits\").appendChild(li);
-
 81.    }
-
 82.   \</script\>
-
 83. \</head\>
-
 84. \<body\>
-
 85. \<p\>What fruits do you like? Try to drag an element!\</p\>
-
 86. \<ol ondragstart=\"dragStartHandler(event)\" ondragend=\"dragEndHandler(event)\" \>
-
 87.  
       \<li draggable=\"true\" data-value=\"fruit-apple\"\>Apples\</li\>
-
 88.  
       \<li draggable=\"true\" data-value=\"fruit-orange\"\>Oranges\</li\>
-
 89.     \<li draggable=\"true\" data-value=\"fruit-pear\"\>Pears\</li\>
-
 90. \</ol\>
-
 91. \<div id=\"droppableZone\" ondragenter=\"dragEnterHandler(event)\" ondrop=\"dropHandler(event)\"
-
 92.    
-      ondragover=\"dragOverHandler(event)\" ondragleave=\"dragLeaveHandler(event)\"\>
-
+     ondragover=\"dragOverHandler(event)\" ondragleave=\"dragLeaveHandler(event)\"\>
 93.       Drop your favorite fruits below:
-
 94.       \<ol id=\"droppedFruits\"\>\</ol\>
-
 95.  \</div\>
-
 96. \<body\>
-
 97. \<html\>
+```
 
 ## 3.3.6 The dropEffect property
 
