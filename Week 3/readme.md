@@ -567,6 +567,7 @@ height="2.21875in"}
 
 ### Source code of the example:
 
+```
 1.  \<!DOCTYPE html\>
 2.  \<html lang=\"en\"\>
 3.  \<head\>
