@@ -12196,7 +12196,7 @@ and delete data in that database.</p>
 <p>We encourage you to use IndexedDB for saving and restoring the high
 scores in the small game you have certainly wrote during week 2. Enjoy!</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch3-2-1">3.2.1 Ajax and XHR2</h3>
+<h3 id="ch3-2">3.2 Ajax and XHR2</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>We present below a short history of Ajax: an introduction to
 XMLHttpRequest level 2 (XHR2).</p>
@@ -12725,53 +12725,37 @@ and the upload.html.</p>
 <p>You see, here, is the URL of a fake server. We don’t have a remote
 server ready in this example, however JSBin handles that and pretends
 that the server exists.</p>
-
 <p>We created the request, indicated the method and the URL of the
 server. Then, we will prepare an object that is a FormData object.</p>
-
 <p>It’s a container in which you can append files or append any sort of
 data.</p>
-
 <p>And the data are key/value pairs. Here I added an object called
 “file” with a value that is the file I have selected earlier using the
 file input type=file element.</p>
-
 <p>And when I send the request, I pass the FormData object that contains
 the file.</p>
-
 <p>And then, as soon as the send method is called, the browser will
 handle the upload in background.</p>
-
 <p>And this may take some time.</p>
-
 <p>Let’s start again here… if I select a file, you see that it takes
 some time before it’s uploaded.</p>
-
 <p>And when the upload you see the “upload complete message” because
 when the upload is complete the browser will call to onload callback for
 your request.</p>
-
 <p>And during the upload, it will call the xhr.upload.onprogress
 callback.</p>
-
 <p>That’s a function that works exactly like the xhr.onprogress callback
 we used for downloading.</p>
-
 <p>It’s just this “.upload” that you write before the “onprogress” here.
 That’s the only difference with monitoring progress with download.</p>
-
 <p>And here you can see that the “upload complete” message appears. If
 we want to send multiple files, we can append multiple files here.</p>
-
 <p>That’s all for this video! Bye! Bye!</p>
-
 <p>Here is an example that uses a FormData object for uploading one or
 more files to an HTTP server.</p>
-
 <p>Notice that the URL of the server is fake, so the request will fail.
 However, the simulation takes time, and it is interesting to see how it
 works.</p>
-
 <p>Later on, we will show full examples of real working code with
 server-side PHP source, during the “File API, drag and drop and XHR2”
 lecture.</p>
@@ -13456,40 +13440,30 @@ the fly.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-3-5">3.3.5 Add visual feedback</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Hi! Let’s add some visual feedback to the drag and drop
-operations.
-In this example, you can see that when we drag elements, the look and
-feel is green with a dashed border around the dragged element.
-And when I enter the drop zone, or drag over the drop zone, you can
-see different things: first, the drop zone is affected: it becomes green
-with a dashed border and also you get a “+” sign that appears, you see
-this? These are things you can configure. The way we do that, is that we
-added to the drop zone a ‘dragenter’ event listener, a ‘dragleave’ event
-listener, a ‘dragover’ event listener. “enter” and “leave” are
-straightforward, and the ‘dragover’ listener is for stopping the
-propagation of the event.
-I explained in the previous video that it’s good for performance
-reasons.
-On the ‘dragstart’ handler, when we start to drag the element, we
-will copy the data we need to get back once we dropped the elements, but
-we will also change some of the style (the CSS style) of the dragged
-element. And to remove this style, we also listen to the ‘dragend’
-event. Let’s have a look at the CSS. In the CSS, we defined two
-classes:</p>
+<p>Hi! Let’s add some visual feedback to the drag and drop operations. In this example, 
+you can see that when we drag elements, the look and feel is green with a dashed border 
+around the dragged element. And when I enter the drop zone, or drag over the drop zone, 
+you can see different things: first, the drop zone is affected: it becomes green with a 
+dashed border and also you get a “+” sign that appears, you see this? These are things 
+you can configure. The way we do that, is that we added to the drop zone a ‘dragenter’ 
+event listener, a ‘dragleave’ event listener, a ‘dragover’ event listener. “enter” and 
+“leave” are straightforward, and the ‘dragover’ listener is for stopping the propagation 
+of the event. I explained in the previous video that it’s good for performance reasons. 
+On the ‘dragstart’ handler, when we start to drag the element, we will copy the data we 
+need to get back once we dropped the elements, but we will also change some of the style 
+(the CSS style) of the dragged element. And to remove this style, we also listen to the 
+‘dragend’ event. Let’s have a look at the CSS. 
 
-<p>one is called “dragged” and the other “draggedOver”. I just
-discovered that they are the same… so there is certainly a way to simplify this example… So,
-the “dragged” and the “draggedOver” classes just add a border (2 pixels
-dashed black) and change the background color to green.
-Let’s have a look at the JavaScript: let’s look at the ‘dragenter’,
-the ‘dropleave’ and the ‘dropenter’ handlers. What do we do when we
-enter the drop zone?
-When we enter the drop zone, we use the classList interface, that was
-also an HTML5 addition, and with this classList interface you can remove
-CSS classes or add CSS classes.
-When we enter the drop zone, we add, to the element we entered, the
-“draggedOver” CSS class, that corresponds to a border and a background
-color.</p>
+<p>In the CSS, we defined two classes: One is called “dragged” and the other 
+“draggedOver”. I just discovered that they are the same… so there is certainly 
+a way to simplify this example… So, the “dragged” and the “draggedOver” classes 
+just add a border (2 pixels dashed black) and change the background color to green.
+Let’s have a look at the JavaScript: let’s look at the ‘dragenter’, the ‘dropleave’ 
+and the ‘dropenter’ handlers. What do we do when we enter the drop zone?
+When we enter the drop zone, we use the classList interface, that was also an HTML5 
+addition, and with this classList interface you can remove CSS classes or add CSS 
+classes. When we enter the drop zone, we add, to the element we entered, the
+“draggedOver” CSS class, that corresponds to a border and a background color.</p>
 
 <p>This is how, when I enter the drop zone, the div becomes green. And
 when I leave (this is a ‘dragleave’ handler), that will remove the
