@@ -1,7 +1,8 @@
 ---
 w3cx-4of5-html5.2x: Coursera - Front-End Web Development - Apps and Games
 author: "bbauska"
-date last editted: "3/16/2024 2+pm"
+date first editted: "3/16/2024 2+pm"
+date last editted: "9/14/2024 6+pm"
 output: 
   markdown:
     with some style
@@ -875,14 +876,14 @@ these tracks.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 18. download, caption, language (28) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image018.webp"
-  style="width:45%;"
+  style="width:65%;"
   alt="Download, Caption, Language."/>
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~ 19. safari - 0 thru 10:58 - elephants dream (28) ~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image019.webp" 
-  style="width:45%;"
+  style="width:65%;"
   alt="Safari display of elephants dream video." />
 </p>
 
@@ -903,7 +904,7 @@ for the video.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 20. again, tracks and views (30) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
   <mg src="./images/webp/image022.webp"
-  style="width:35%;"
+  style="width:65%;"
   alt="Screenshot of Safari menu fr choosing subtitle track." />
 </p>
 
@@ -921,7 +922,7 @@ crossOrigin="anonymous" in your HTML document and it is going to work.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 20. 3rd time, views and tracks (31) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image020.webp"
-  style="width:35%;"
+  style="width:65%;"
   alt="3rd time, Views and Tracks." />
 </p>
 
@@ -1480,7 +1481,7 @@ JSBin](https://jsbin.com/bubeye/1/edit?html,console,output)
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ 25. test if track has been loaded (42) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image025.webp" 
-  style="width:40%;"
+  style="width:65%;"
   alt="Test if loaded track.  Load if not by setting mode to hidden." />
 </p>
 
@@ -1680,7 +1681,7 @@ properties and methods;
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 26. webvtt with arrows (45) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image026.webp"
-  style="width:40%;"
+  style="width:35%;"
   alt="A webVtt file extract with arrows showing id, startTime, endTime and text." />
 </p>
 
@@ -1693,7 +1694,7 @@ track](https://jsbin.com/teruhay/1/edit?html,css,js,output):
 <!--~~~~~~~~~~~~~~~~~~~~~ 27. example that plays content of a track (46) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image027.webp" 
-  style="width:40%;"
+  style="width:35%;"
   alt="Example video editor that plays content of a track." />
 </p>
 
@@ -1705,24 +1706,24 @@ example in the previous lesson:
 
 ```
 1.  function readContent(track) {
-2.     console.log("reading content of loaded track...");
-3.     //displayTrackStatuses(htmlTracks);
-4.     // instead of displaying the track statuses, we display
-5.     // in the same div, the track content//
-6.     // first, empty the div
-7.     trackStatusesDiv.innerHTML = "";
+2.    console.log("reading content of loaded track...");
+3.    //displayTrackStatuses(htmlTracks);
+4.    // instead of displaying the track statuses, we display
+5.    // in the same div, the track content//
+6.    // first, empty the div
+7.    trackStatusesDiv.innerHTML = "";
 8.  
-9.     // get the list of cues for that track   
-10.    var cues = track.cues;
-11.    // iterate on them
-12.    for(var i=0; i < cues.length; i++) {
-13.       // current cue
-14.       var cue = cues[i];
-15.       var id = cue.id + "<br>";
-16.       var timeSegment = cue.startTime + " => " + cue.endTime + "<br>";
-17.       var text = cue.text + "<P>"
-18.       trackStatusesDiv.innerHTML += id + timeSegment + text;
-19.    }
+9.    // get the list of cues for that track   
+10.   var cues = track.cues;
+11.   // iterate on them
+12.   for(var i=0; i < cues.length; i++) {
+13.     // current cue
+14.     var cue = cues[i];
+15.     var id = cue.id + "<br>";
+16.     var timeSegment = cue.startTime + " => " + cue.endTime + "<br>";
+17.     var text = cue.text + "<P>"
+18.     trackStatusesDiv.innerHTML += id + timeSegment + text;
+19.   }
 20. }
 ```
 
@@ -1902,7 +1903,7 @@ for cuechange events</a>:
 <!--~~~~~~~~ 28. example that displays cue contents with cuechange even listeners (50) ~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image028.webp?raw=true"
-  style="width:40%"
+  style="width:50%"
   alt="Example that displays cue contents with cuechange even listeners." />
 </p>
 
@@ -1936,7 +1937,7 @@ shows how to use enter and exit events on cues</a>:
 <!--~ 29. example displays message in enter and exit cue listeners of the selected track (51) ~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image029.webp?raw=true"
-  style="width:40%"
+  style="width:50%"
    alt="Example that displays message in enter and exit cue listeners of the selected track." />
 </p>
 
@@ -2122,7 +2123,7 @@ We will learn how to do this using the track API.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 30. debug video tracks (54) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image030.webp?raw=true"
-  style="width:40%"
+  style="width:50%"
   alt="Edx video player to debug video tracks." />
 </p>
 
@@ -2170,7 +2171,7 @@ JSBin](https://jsbin.com/sodihux/1/edit?html,css,js,output):
 <!--~~~~~~~~~~ 31. use track api to extract content of webvtt in track element (55) ~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image031.webp?raw=true"
-  style="width:40%"
+  style="width:50%"
   alt="Using track api to extract content of webvtt in track element." />
 </p>
 
@@ -2469,7 +2470,7 @@ different tracks:
 <!--~~~~~~~~~ 32. using track api to extract content of webvtt in track element (61) ~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image032.webp"
-  style="width:45%;"
+  style="width:50%;"
   alt="Using track api to extract content of webvtt in track element." />
 </p>
 
@@ -2842,7 +2843,7 @@ you choose which track you prefer. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 34. choose track/language (68) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image034.webp"
-  style="width:55%;"
+  style="width:50%;"
   alt="Buttons for choosing the track/language under a standard video player." />
 </p>
 
@@ -2977,7 +2978,7 @@ Example #4: making a simple chapter navigation menu
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 35. simple chapter navigation (70) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image035.webp"
-  style="width:45%;"
+  style="width:50%;"
   alt="Simple chapter navigation." />
 </p>
 
@@ -3114,7 +3115,7 @@ Notice that we kept the existing buttons to display a clickable transcript:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 35. simple chapter navigation (73) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image035.webp"
-  style="width:45%;"
+  style="width:50%;"
   alt="Again, Simple chapter navigation." />
 </p>
 
@@ -3129,7 +3130,7 @@ popular.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 36. simple chapter navigation (73) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image036.webp"
-  style="width:45%;"
+  style="width:50%;"
   alt="Simple chapter navigation" />
 </p>
 
@@ -3215,11 +3216,11 @@ video](https://jsbin.com/jiyodit/edit?html,css,js,output).
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 35. simple chapter navigation (75) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image035.webp"
-  style="width:45%;"
+  style="width:50%;"
   alt="Again, 3rd time, Simple chapter navigation." />
 </p>
 
-<h4> This example used only standard plain text content for the cues:</h4>
+<h4>This example used only standard plain text content for the cues:</h4>
 
 <details>
   <summary>WebVTT code extract!</summary>
@@ -3312,7 +3313,7 @@ file](https://jsbin.com/pulefe/1/edit?html,css,js,output):
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ 44. video with nice chapter menu (77) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image044.webp" 
-  style="width:45%;"
+  style="width:50%;"
   alt="Video with nice chapter menu that uses thumbnail images." />
 </p>
 
@@ -3451,7 +3452,7 @@ of the video.
 
 <h4>Explanations:</h4>
 
--   <i>Lines  4-18</i>: when the page is loaded, we assemble all of the track
+-   <i>Lines 4-18</i>: when the page is loaded, we assemble all of the track
     HTML elements and their corresponding TextTrack objects.
 
 -   <i>Line 19</i>: using that we can build the chapter navigation menu. All
@@ -3559,10 +3560,9 @@ code from earlier in this lesson.
 <!--~~~~~~~~~~~~~~~ 45. combined techniques - chapter & clickable button (82) ~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image045.webp" 
-  style="width:45%;"
+  style="width:50%;"
   alt="Chapter menu + clickable transcript." />
 </p>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch1-4-1">1.4.1 Creating Tracks on the Fly</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3594,7 +3594,7 @@ from an original demo by Sam Dutton, uses <a href="https://mainline.i3s.unice.f
 <!--~~~~~~~~~~~~~~~~~~~~~~~ 46. click button to play animal sound (83) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image046.webp" 
-  style="width:45%;"
+  style="width:50%;"
   alt="Click a button to play an animal sound." />
 </p>
 
@@ -3830,7 +3830,8 @@ messages.</p>
 <!--~~~~~~~~~~~~~~~ 47. video synced with google map and google street map (87) ~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image047.webp"
-  style="width:45%;"
+  style="width:50%;"
+  title="Video synced with google map and google street map"
   alt="Video synced with google map and google street map." />
 </p>
 
@@ -3903,30 +3904,30 @@ alt="video synced with an iframe that shows external URLs and with a google map"
 1.  <!DOCTYPE html>
 2.  <html lang="en">
 3.  <head>
-4.  <meta charset="utf-8">
-5.  <title>Example syncing element of the document with video metadata in webVTT file</title>
+4.    <meta charset="utf-8">
+5.    <title>Example syncing element of the document with video metadata in webVTT file</title>
 6.  </head>
 7.  <body >
-8.  <main>
-9.  <video id="myVideo" controls crossorigin="anonymous" >
-10.       <source src="https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.mp4"
-11.            type="video/mp4">
-12.    ...
-13.    </source>
-14. <track label="urls track"
-15.         src="https://...../SamuraiPizzaCat-metadata.vtt"
-16.         kind="metadata" >
-17.  </track>
-18. </video>
-19.    <div id="map"></div>
-20. </main>
+8.    <main>
+9.      <video id="myVideo" controls crossorigin="anonymous" >
+10.       <source src="https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.mp4"
+11.              type="video/mp4">
+12.       ...
+13.       </source>
+14.       <track label="urls track"
+15.                src="https://...../SamuraiPizzaCat-metadata.vtt"
+16.               kind="metadata" >
+17.       </track>
+18.     </video>
+19.     <div id="map"></div>
+20.   </main>
 21.  
-22. <aside>
-23.        <iframe sandbox="allow-same-origin" id="myIframe" > </iframe>
-24. </aside>
-25. <h3>Wikipedia URL: <span id="currentURL"> Non défini </span></h3>
+22.   <aside>
+23.     <iframe sandbox="allow-same-origin" id="myIframe" > </iframe>
+24.   </aside>
+25.   <h3>Wikipedia URL: <span id="currentURL"> Non défini </span></h3>
 26.  
-27. <script src="https://maps.google.com/maps/api/js?sensor=false"></script>
+27.   <script src="https://maps.google.com/maps/api/js?sensor=false"></script>
 28. ...
 ```
 
@@ -3939,70 +3940,70 @@ alt="video synced with an iframe that shows external URLs and with a google map"
 
 ```
 1.  window.onload = function() {
-2.      var videoElement = document.querySelector("#myVideo");
-3.      var myIFrame = document.querySelector("#myIframe");
-4.      var currentURLSpan = document.querySelector("#currentURL");
+2.    var videoElement = document.querySelector("#myVideo");
+3.    var myIFrame = document.querySelector("#myIframe");
+4.    var currentURLSpan = document.querySelector("#currentURL");
 5.  
-6.      var textTracks = videoElement.textTracks; // one for each track element
-7.      var textTrack = textTracks[0]; // corresponds to the first track element
+6.    var textTracks = videoElement.textTracks; // one for each track element
+7.    var textTrack = textTracks[0]; // corresponds to the first track element
 8.     
-9.      // change mode so we can use the track
-10.     textTrack.mode = "hidden";
-11.     // Default position on the google map
-12.     var centerpos = new google.maps.LatLng(48.579400,7.7519);
+9.    // change mode so we can use the track
+10.   textTrack.mode = "hidden";
+11.   // Default position on the google map
+12.   var centerpos = new google.maps.LatLng(48.579400,7.7519);
 13.  
-14.     // default options for the google map
-15.     var optionsGmaps = {
-16.        center:centerpos,
-17.        navigationControlOptions: {style:
-18.                  google.maps.NavigationControlStyle.SMALL},
-19.        mapTypeId: google.maps.MapTypeId.ROADMAP,
-20.        zoom: 15
-21.     };
+14.   // default options for the google map
+15.   var optionsGmaps = {
+16.     center:centerpos,
+17.     navigationControlOptions: {style:
+18.       google.maps.NavigationControlStyle.SMALL},
+19.     mapTypeId: google.maps.MapTypeId.ROADMAP,
+20.     zoom: 15
+21.   };
 22.  
-23.     // Init map object
-24.     var map = new google.maps.Map(document.getElementById("map"),
-25.                                   optionsGmaps);
+23.   // Init map object
+24.   var map = new google.maps.Map(document.getElementById("map"),
+25.     optionsGmaps);
 26.  
-27.     // cue change listener, this is where the synchronization between
-28.     // the HTML document and the video is done
-29.     textTrack.oncuechange = function (){
-30.        // we assume that we have no overlapping cues
-31.        var cue = this.activeCues[0];
-32.        if(cue === undefined) return;
+27.   // cue change listener, this is where the synchronization between
+28.   // the HTML document and the video is done
+29.   textTrack.oncuechange = function (){
+30.     // we assume that we have no overlapping cues
+31.     var cue = this.activeCues[0];
+32.     if(cue === undefined) return;
 33. 
-34.        // get cue content as a JavaScript object
-35.        var cueContentJSON = JSON.parse(cue.text);
+34.     // get cue content as a JavaScript object
+35.     var cueContentJSON = JSON.parse(cue.text);
 36. 
-37.        // do different things depending on the type of sync (wikipedia, gmap)
-38.        switch(cueContentJSON.type) {
-39.          case'WikipediaPage':
-40.             var myURL = cueContentJSON.url;
-41.             var myLink = "<a href="" + myURL + "">" + myURL + "</a>";
-42.             currentURLSpan.innerHTML = myLink;
+37.     // do different things depending on the type of sync (wikipedia, gmap)
+38.     switch(cueContentJSON.type) {
+39.       case'WikipediaPage':
+40.         var myURL = cueContentJSON.url;
+41.         var myLink = "<a href="" + myURL + "">" + myURL + "</a>";
+42.         currentURLSpan.innerHTML = myLink;
 43. 
-44.             myIFrame.src = myURL; // assign url to src property
-45.             break;
-46.          case 'LongLat':
-47.             drawPosition(cueContentJSON.long, cueContentJSON.lat);
-48.             break;
-49.        }
-50.    };
+44.         myIFrame.src = myURL; // assign url to src property
+45.         break;
+46.         case 'LongLat':
+47.           drawPosition(cueContentJSON.long, cueContentJSON.lat);
+48.           break;
+49.     }
+50.   };
 51.  
-52.    function drawPosition(long, lat) {
-53.       // Make new object LatLng for Google Maps
-54.       var latlng = new google.maps.LatLng(lat, long);
+52.   function drawPosition(long, lat) {
+53.     // Make new object LatLng for Google Maps
+54.     var latlng = new google.maps.LatLng(lat, long);
 55.  
-56.       // Add a marker at position
-57.       var marker = new google.maps.Marker({
-58.           position: latlng,
-59.           map: map,
-60.           title:"You are here"
-61.       });
+56.     // Add a marker at position
+57.     var marker = new google.maps.Marker({
+58.       position: latlng,
+59.       map: map,
+60.       title:"You are here"
+61.     });
 62. 
-63.       // center map on longitude and latitude
-64.       map.panTo(latlng);
-65.    }
+63.     // center map on longitude and latitude
+64.     map.panTo(latlng);
+65.   }
 66. };
 ```
 
@@ -4172,7 +4173,7 @@ animated waveform and volume meters that 'dance' with the music:
 <!--~~~~~~~~~~~~~~~~~~~~~ 49. audio player with animated wave forms (94) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
   <img src="./images/webp/image049.webp" 
-  style="width:25%;"
+  style="width:35%;"
   alt="A fancy audio player with animated wave forms." />
 </p>
 
@@ -4210,7 +4211,7 @@ JSBin</a>.</b>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 50. audio player with gain (95) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image050.webp" 
-  style="width:25%;"
+  style="width:35%;"
   alt="Audio player with gain." />
 </p>
 
@@ -4237,7 +4238,7 @@ can install it <a href="https://chrome.google.com/webstore/detail/web-audio-ins
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 51. web audio inspector app (96) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image051.webp" 
-  style="width:45%;"
+  style="width:50%;"
   alt="Chrome WebAudio Inspector extension." />
 </p>
 
@@ -4253,7 +4254,7 @@ WebAudio graph nodes to see their properties' values.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 52. web audio 'editor' (96) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image052.webp" 
-  style="width:45%;"
+  style="width:50%;"
   alt="WebAudio 'editor' tab." />
 </p>
 
@@ -4264,7 +4265,7 @@ editor mode).
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 53. standalone mode (97) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image053.webp" 
-  style="width:45%;"
+  style="width:50%;"
   alt="How to go in JsBin standalone mode: click the black arrow on top right of the output tab." />
 </p>
 
@@ -4381,7 +4382,8 @@ with the Chrome WebAudio Inspector extension).
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ 54. audio graph of the vocodor app (99) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image054.webp" 
-  style="width:45%;"
+  style="width:50%;"
+  title="Audio graph of the vocoder app is made of hundreds of nodes"
   alt="Audio graph of the vocoder app is made of hundreds of nodes." />
 </p>
 
@@ -4629,7 +4631,7 @@ using sliders:
 <!--~~~~~~~~~~~~~~~~~~~~~~~ 56. frequency responses for filters (104) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image056.webp" 
-  style="width:45%;"
+  style="width:50%;"
   alt="Frequency responses for various filters. Screenshot of a nice application that visualizes that." />
 </p>
 
@@ -4722,15 +4724,16 @@ OK? <a href="https://www.kvraudio.com/forum/viewtopic.php?p=2102159">here</a>).
 impulse used in the example is the one recorded at the opera: La Scala
 Opera of Milan, in Italy. It's a .wav file.
 
-Try<a href="https://webaudioapi.com/samples/room-effects/"> this demo</a> to see
+Try <a href="https://webaudioapi.com/samples/room-effects/">this demo</a> to see
 the difference between different impulse files!
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 57. web audio api (106) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<a href="https://webaudioapi.com/samples/room-effects/">
 <p align="center" width="100%">
 <img src="./images/webp/image057.webp"
-  style="width:45%;"
-  alt="Screenshot of a webapp that enable you to switch between different impulse files." />
+  style="width:50%;"
+  title="Screenshot of a webapp that enable you to switch between different impulse files"
+  alt="Screenshot of a webapp that enable you to switch between different impulse files." /></a>
 </p>
 
 So before building the audio graph, we need to download the impulse. For
@@ -4749,35 +4752,35 @@ var impulseURL = "https://mainline.i3s.unice.fr/mooc/Scala-Milan-Opera-Hall.w
 var decodedImpulse;
 ...
 loadImpulse(impulseURL, function() {
-   // we only get here once the impulse has finished
-   // loading and is decoded
-   buildAudioGraphConvolver();
+  // we only get here once the impulse has finished
+  // loading and is decoded
+  buildAudioGraphConvolver();
 });
  
 ...
 function loadImpulse(url, callback) {
 
-   ajaxRequest = new XMLHttpRequest();
-   ajaxRequest.open('GET', url, true);
-   ajaxRequest.responseType = 'arraybuffer'; // for binary transfer
+  ajaxRequest = new XMLHttpRequest();
+  ajaxRequest.open('GET', url, true);
+  ajaxRequest.responseType = 'arraybuffer'; // for binary transfer
  
-   ajaxRequest.onload = function() {
-      // The impulse has been loaded
-      var impulseData = ajaxRequest.response;
-      // let's decode it.
-      audioContext.decodeAudioData(impulseData, function(buffer) {
-         // The impulse has been decoded
-         decodedImpulse = buffer;
-         // Let's call the callback function, we're done!
-         callback();
-     });
-   };
+  ajaxRequest.onload = function() {
+    // The impulse has been loaded
+    var impulseData = ajaxRequest.response;
+    // let's decode it.
+    audioContext.decodeAudioData(impulseData, function(buffer) {
+      // The impulse has been decoded
+      decodedImpulse = buffer;
+      // Let's call the callback function, we're done!
+      callback();
+    });
+  };
 
-   ajaxRequest.onerror = function(e) {
-      console.log("Error with loading audio data" + e.err);
-   };
+  ajaxRequest.onerror = function(e) {
+    console.log("Error with loading audio data" + e.err);
+  };
 
-   ajaxRequest.send();
+  ajaxRequest.send();
 }
 ```
 
@@ -4805,7 +4808,7 @@ with the Chrome WebAudio Inspector extension):
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 58. audio graph (107) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image058.webp" 
-  style="width:45%;"
+  style="width:50%;"
   alt="Audio graph." />
 </p>
 
@@ -4883,7 +4886,8 @@ with the Chrome WebAudio Inspector extension):
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ 59. example use of compressor node (109) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image059.webp"
-  style="width:45%;"
+  style="width:50%;"
+  title="Example of use of a compressor node"
   alt="Example of use of a compressor node." />
 </p>
 
@@ -4894,12 +4898,13 @@ with the Chrome WebAudio Inspector extension):
 
 ```
 <audio src="https://mainline.i3s.unice.fr/mooc/guitarRiff1.mp3"
-        id="compressorExample" controls loop
-        crossorigin="anonymous"></audio>
+       id="compressorExample" controls loop
+       crossorigin="anonymous">
+</audio>
 <br>
 <label for="gainSlider1">Gain</label>
 <input type="range" min="0" max="10" step="0.01"
-        value="8" id="gainSlider1" />
+       value="8" id="gainSlider1" />
 <button id="compressorButton">Turn compressor On</button>
 ```
 
@@ -4938,36 +4943,36 @@ with the Chrome WebAudio Inspector extension):
 25.   };
 26. 
 27.   compressorButton.onclick = function(evt) {
-28.      if(compressorOn) {
-29.         // disconnect the compressor and make a
-30.         // direct route from gain to destination
-31.         compressorNode.disconnect(audioContext.destination);
-32.         gainNode1.disconnect(compressorNode);
-33.         gainNode1.connect(audioContext.destination);
-34.         compressorButton.innerHTML="Turn compressor: On";
-35.      } else {
-36.         // compressor was off, we connect the gain to the compressor
-37.         // and the compressor to the destination
-38.         gainNode1.disconnect(audioContext.destination);
-39.         gainNode1.connect(compressorNode);
-40.         compressorNode.connect(audioContext.destination);
-41.         compressorButton.innerHTML="Turn compressor: Off";
-42.      }
-43.      compressorOn = !compressorOn;
-44.    };
+28.     if(compressorOn) {
+29.       // disconnect the compressor and make a
+30.       // direct route from gain to destination
+31.       compressorNode.disconnect(audioContext.destination);
+32.       gainNode1.disconnect(compressorNode);
+33.       gainNode1.connect(audioContext.destination);
+34.       compressorButton.innerHTML="Turn compressor: On";
+35.     } else {
+36.       // compressor was off, we connect the gain to the compressor
+37.       // and the compressor to the destination
+38.       gainNode1.disconnect(audioContext.destination);
+39.       gainNode1.connect(compressorNode);
+40.       compressorNode.connect(audioContext.destination);
+41.       compressorButton.innerHTML="Turn compressor: Off";
+42.     }
+43.     compressorOn = !compressorOn;
+44.   };
 45. };
 46.  
 47. function buildAudioGraph() {
-48.    // create source and gain node
-49.    var gainMediaElementSource =
-50.       audioContext.createMediaElementSource(compressorExemple);
-51.    gainNode1 = audioContext.createGain();
-52.    gainNode1.gain.value = parseFloat(gainSlider1.value);
+48.   // create source and gain node
+49.   var gainMediaElementSource =
+50.     audioContext.createMediaElementSource(compressorExemple);
+51.   gainNode1 = audioContext.createGain();
+52.   gainNode1.gain.value = parseFloat(gainSlider1.value);
 53. 
-54.    // do not connect it yet
-55.    compressorNode = audioContext.createDynamicsCompressor(); //  connect nodes together
-56.    gainMediaElementSource.connect(gainNode1);
-57.    gainNode1.connect(audioContext.destination);
+54.   // do not connect it yet
+55.   compressorNode = audioContext.createDynamicsCompressor(); //  connect nodes together
+56.   gainMediaElementSource.connect(gainNode1);
+57.   gainNode1.connect(audioContext.destination);
 58. }
 ```
 
@@ -4995,7 +5000,7 @@ screenshot:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ 60. audio player with equalizer (111) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
   <img src="./images/webp/image060.webp" 
-  style="width:25%;"
+  style="width:35%;"
   alt="An audio player with an equalizer." />
 </p>
 
@@ -5034,8 +5039,8 @@ The definition says that:
 2.   
 3.  <div class="eq">
 4.    <audio id="player" controls crossorigin="anonymous" loop>
-5.       <source src="https://mainline.i3s.unice.fr/mooc/drums.mp3">
-6.       Your browser does not support the audio tag.
+5.      <source src="https://mainline.i3s.unice.fr/mooc/drums.mp3">
+6.      Your browser does not support the audio tag.
 7.    </audio>
 8.  
 9.    <div class="controls">
@@ -5064,7 +5069,7 @@ The definition says that:
 32.     </input>
 33.     <output id="gain2">0 dB</output>
 34.   </div>
-35. ...
+35.   ...
 36. </div>
 ```
 
@@ -5101,7 +5106,7 @@ The definition says that:
 23. sourceNode.connect(filters[0]);
 24. 
 25. for(var i = 0; i < filters.length - 1; i++) {
-26.    filters[i].connect(filters[i+1]);
+26.   filters[i].connect(filters[i+1]);
 27. }
 28.  
 29. // Connects the last filter to the speakers
@@ -5109,7 +5114,7 @@ The definition says that:
 31.  
 32. // Event listener called by the sliders
 33. function changeGain(sliderVal,nbFilter) {
-34.    var value = parseFloat(sliderVal);
+34.   var value = parseFloat(sliderVal);
 35.   filters[nbFilter].gain.value = value;
 36. 
 37.   // Updates output labels
@@ -5128,7 +5133,8 @@ Chrome WebAudio Inspector extension):
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ 61. equalizer with video element (113) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image061.webp" 
-  style="width:45%;"
+  style="width:50%;"
+  title="Audio graph of the previous example"
   alt="Audio graph of the previous example." />
 </p>
 
@@ -5150,10 +5156,12 @@ moving the sliders to change the sound!
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 62. video above equalizer (114) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<a href="https://jsbin.com/kukupot/edit?html,css,js,output">
 <p align="center" width="100%">
 <img src="./images/webp/image062.webp"
-  style="width:25%;"
-  alt="Same example as previously but with a video above the equalizer." />
+  style="width:35%;"
+  title="Same example as previously but with a video above the equalizer"
+  alt="Same example as previously but with a video above the equalizer." /></a>
 </p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5260,10 +5268,12 @@ Example #1: audio player with waveform visualization
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~ 63. audio player with waveform visualization (116) ~~~~~~~~~~~~~~~~~~~~~-->
+<a href="https://jsbin.com/sufatup/edit?html,js,output">
 <p align="center" width="100%">
 <img src="./images/webp/image063.webp" 
-  style="width:25%;"
-  alt="Audio player with waveform visualization." />
+  style="width:35%;"
+  title="Audio player with waveform visualization"
+  alt="Audio player with waveform visualization." /></a>
 </p>
 
 Do things in order!
@@ -5451,15 +5461,16 @@ Using a &lt;video&gt; element is very similar to using an &lt;audio&gt; ele
 We have made no changes to the JavaScript code here; we Just
 changed "audio" to "video" in the HTML code. 
 
-[Example at
-JSBin](https://jsbin.com/fuyejuz/edit?html,js,console,output):
+[Example at JSBin](https://jsbin.com/fuyejuz/edit?html,js,console,output):
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~ 65. video player with real time waveform visualization (119) ~~~~~~~~~~~~~~~~-->
+<a href="https://jsbin.com/fuyejuz/edit?html,js,console,output"
 <p align="center" width="100%">
 <img src="./images/webp/image065.webp" 
-  style="width:25%;"
-  alt="A video player with real time waveform visualization." />
+  style="width:35%;"
+  title="A video player with real time waveform visualization"
+  alt="A video player with real time waveform visualization." /></a>
 </p>
 
 Example #3: both previous examples, this time with the graphic
@@ -5473,20 +5484,24 @@ you should see the waveform changing.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~ 66. video player + equalizer + waveform (120) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<a href="https://jsbin.com/qijujuz/edit?html,js,output">
 <p align="center" width="100%">
 <img src="./images/webp/image066.webp" 
-  style="width:25%;"
-  alt="Audio player + equalizer + visualization." />
+  style="width:35%;"
+  title="Audio player + equalizer + visualization"
+  alt="Audio player + equalizer + visualization." /></a>
 </p>
 
 [Example at JSBin](https://jsbin.com/jafoboh/edit?js,console,output):
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~ 67. video player + equalizer + waveform visualization (120) ~~~~~~~~~~~~~~~~~-->
+<a href="https://jsbin.com/jafoboh/edit?js,console,output"
 <p align="center" width="100%">
 <img src="./images/webp/image067.webp" 
-  style="width:25%;"
-  alt="Video player + equalizer + waveform visualization." />
+  style="width:35%;"
+  title="Video player + equalizer + waveform visualization"
+  alt="Video player + equalizer + waveform visualization." /></a>
 </p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5498,16 +5513,17 @@ you should see the waveform changing.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 68. red bar frequency audio (121) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<a href="https://jsbin.com/wenuvub/edit?js,output">
 <p align="center" width="100%">
 <img src="./images/webp/image068.webp" 
-  style="width:30%"
-  alt="Audio player with frequency visualisations with red bars." />
-
+  style="width:35%"
+  title="Audio player with frequency visualisations with red bars"
+  alt="Audio player with frequency visualisations with red bars." /></a>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 69. frequency at fftsize = 64 (121) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image069.webp" 
-  style="width:25%;"
+  style="width:35%;"
   alt="Frequency viualization this time fftsize = 64." />
 </p>
 
@@ -5545,7 +5561,7 @@ page. We've set the FFT size to a lower value, and rewritten the
 animation loop to plot frequency bars instead of a waveform:
 
 <details>
-  <summary>Code extract!</h4>
+  <summary>Code extract!</summary>
 
 ```
 1.  function buildAudioGraph() {
@@ -5571,7 +5587,7 @@ the same as in the first example.
 The new visualization code:
 
 <details>
-  <summary>Code extract!</h4>
+  <summary>Code extract!</summary>
 
 ```
 1.  function visualize() {
@@ -5636,10 +5652,12 @@ and try to understand how the drawing of the frequency is done.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ 70. audio graph colored frequency (123) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<a href="https://jsbin.com/muzifi/edit?html,css,js,output">
 <p align="center" width="100%">
 <img src="./images/webp/image070.webp" 
-  style="width:25%;"
-  alt="Same example as before but with symmetric and colored frequency visualizations." />
+  style="width:35%;"
+  title="Same example as before but with symmetric and colored frequency visualizations"
+  alt="Same example as before but with symmetric and colored frequency visualizations." /></a>
 </p>
 
 [Last example at
@@ -5649,10 +5667,12 @@ before the visualizer node:
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 71. audio graph with equalizer (123) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<a href="https://jsbin.com/fekorej/edit?html,js,output">
 <p align="center" width="100%">
 <img src="./images/webp/image071.webp" 
-  style="width:25%;"
-  alt="Previous example with a master volume (gain node) and the equalizer + a stereoPanner node." />
+  style="width:35%;"
+  title="Previous example with a master volume (gain node) and the equalizer + a stereoPanner node"
+  alt="Previous example with a master volume (gain node) and the equalizer + a stereoPanner node." /></a>
 </p>
 
 And here is the audio graph for this example (picture taken with the now
@@ -5664,13 +5684,14 @@ with the Chrome WebAudio Inspector extension):
 <p align="center" width="100%">
 <img src="./images/webp/image072.webp" 
   style="width:65%;"
+  title="Audio graph from above example"
   alt="Audio graph from above example." />
 </p>
 
 Source code from this example's the buildAudioGraph function:
 
 <details>
-  <summary>Code extract!</h4>
+  <summary>Code extract!</summary>
 
 ```
 1.  function buildAudioGraph() {
@@ -5735,10 +5756,12 @@ Example #1: add a single volume meter to the audio player
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 73. animated volume meter (125) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<a href="https://jsbin.com/kuciset/edit?html,css,js,output">
 <p align="center" width="100%">
 <img src="./images/webp/image073.webp" 
-  style="width:25%;"
-  alt="Single volume meter that dances with the music." />
+  style="width:35%;"
+  title="Single volume meter that dances with the music"
+  alt="Single volume meter that dances with the music." /></a>
 </p>
 
 In order to have a "volume meter" which traces upward/downward with the
@@ -5749,7 +5772,7 @@ rectangle.
 Here are the two functions we will call from the animation loop:
 
 <details>
-  <summary>Code extract!</h4>
+  <summary>Code extract!</summary>
 
 ```
 1.  function drawVolumeMeter() {
@@ -5793,7 +5816,7 @@ value which we will draw as the volume meter.
 This is how we create the gradient:
 
 <details>
-  <summary>Code extract!</h4>
+  <summary>Code extract!</summary>
 
 ```
 1.  // create a vertical gradient of the height of the canvas
@@ -5811,7 +5834,7 @@ clarity, we have moved the code that draws the signal waveform to a
 separate function):
 
 <details>
-  <summary>Code extract!</h4>
+  <summary>Code extract!</summary>
 
 ```
 1.  function visualize() {
@@ -5866,10 +5889,12 @@ analyser (<i>lines 46 and 47</i> of the example below)
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 52. audio player balance (127) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<a href="https://jsbin.com/qezevew/edit?html,css,js,output">
 <p align="center" width="100%">
 <img src="./images/webp/image052.webp" 
-  style="width:25%;"
-  alt="Example with stereo volume meters" />
+  style="width:55%;"
+  title="Example with stereo volume meters"
+  alt="Example with stereo volume meters." /></a>
 </p>
 
 This is the audio graph we've built (picture taken with the now
@@ -5880,7 +5905,8 @@ with the Chrome WebAudio Inspector extension):
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 74. flowchart with webaudio (127) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image074.webp" 
-  style="width:45%;"
+  style="width:65%;"
+  title="Audiograph flowchart with webaudio, from previous example"
   alt="Audiograph flowchart with webaudio, from previous example." />
 </p>
 
@@ -6049,7 +6075,7 @@ with the Chrome WebAudio Inspector extension):
 <!--~~~~~~~~~~~~~~~~~~~~~ 75. webaudio graph from firefox debugger (130) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image075.webp?raw=true"
-  style="width:40%;"
+  style="width:50%;"
   alt="Screenshot with buttons that play sound samples many times with different pitch, volume, interval of times." />
 </p>
 
@@ -6065,10 +6091,12 @@ with Web Audio and samples loaded in memory:
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 76. remixer workstation (131) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<a href="https://remixxer.com/app/">
 <p align="center" width="100%">
 <img src="./images/webp/image076.webp" 
-  style="width:35%;"
-  alt="The remixer DAW workstation, a typical screenshot of a DAW with tracks, mix table etc." />
+  style="width:50%;"
+  title="The remixer DAW workstation, a typical screenshot of a DAW with tracks, mix table etc"
+  alt="The remixer DAW workstation, a typical screenshot of a DAW with tracks, mix table etc." /></a>
 </p>
 
 The author of this course wrote a multitrack audio player: it loads
@@ -6081,10 +6109,12 @@ help menu.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 77. multitrack player mt5 (131) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<a href="https://mainline.i3s.unice.fr/">
 <p align="center" width="100%">
 <img src="./images/webp/image077.webp" 
-  style="width:35%;"
-  alt="Screenshot of MT5 a multitrack player" />
+  style="width:50%;"
+  title="Screenshot of MT5 a multitrack player"
+  alt="Screenshot of MT5 a multitrack player." /></a>
 </p>
 
 Try also this small demonstration that uses the [Howler.js
@@ -6097,10 +6127,12 @@ fast the sound effects are played. Click as fast as you can!
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 78. scatter graph (132) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<a href="https://jsbin.com/gefezu/edit"
 <p align="center" width="100%">
 <img src="./images/webp/image078.webp" 
-  style="width:35%;"
-  alt="HowlerJS library creating scatter graph." />
+  style="width:50%;"
+  title="HowlerJS library creating scatter graph"
+  alt="HowlerJS library creating scatter graph." /></a>
 </p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6138,15 +6170,16 @@ This node has different properties:
 <b>Before use, a sound sample must be loaded using Ajax, decoded, and set
 to the buffer property of an AudioBufferSourceNode.</b>
 
-[Try the example at
-JSBin](https://jsbin.com/botagas/edit?html,js,console,output):
+[Try the example at JSBin](https://jsbin.com/botagas/edit?html,js,console,output):
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 79. load sound sample & play (133) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<a href="https://jsbin.com/botagas/edit?html,js,console,output"
 <p align="center" width="100%">
 <img src="./images/webp/image079.webp" 
-  style="width:40%;"
-  alt="Example that loads and play a unique sound." />
+  style="width:45%;"
+  title="Example that loads and play a unique sound"
+  alt="Example that loads and play a unique sound." /></a>
 </p>
 
 In this example, as soon as the page is loaded, we send an Ajax request
@@ -6314,10 +6347,12 @@ utility](https://jsbin.com/javoger/edit?html,js,console,output):
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 80. bufferloader utility (136) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<a href="https://jsbin.com/javoger/edit?html,js,console,output">
 <p align="center" width="100%">
 <img src="./images/webp/image080.webp" 
   style="width:45%;"
-  alt="Example that loads two sounds and create two buttons for playing them." />
+  title="Example that loads two sounds and create two buttons for playing them"
+  alt="Example that loads two sounds and create two buttons for playing them." /></a>
 </p>
 
 <h4>HTML code:</h4>
@@ -6413,10 +6448,12 @@ JSBin](https://jsbin.com/zebokeg/edit?html,js,console,output):
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 81. audio graph (138) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<a href="https://jsbin.com/zebokeg/edit?html,js,console,output">
 <p align="center" width="100%">
 <img src="./images/webp/image081.webp" 
-  style="width:35%;"
-  alt="Audio Graph used in the previous example source node -&gt; gain -&gt; compressor -&gt; destination." />
+  style="width:50%;"
+  title="Audio Graph used in the previous example source node -&gt; gain -&gt; compressor -&gt; destination"
+  alt="Audio Graph used in the previous example source node -&gt; gain -&gt; compressor -&gt; destination." /></a>
 </p>
 
 In this example, we added a function (borrowed and adapted from [this
@@ -6516,10 +6553,12 @@ Below, we have mixed the code from two previous examples:
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 49. audio player balance (140) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<a href="https://jsbin.com/vejocav/edit?html,css,js,output">
 <p align="center" width="100%">
 <img src="./images/webp/image049.webp" 
-  style="width:20%;"
-  alt="Audio player with volume meters and waveform." />
+  style="width:35%;"
+  title="Audio player with volume meters and waveform"
+  alt="Audio player with volume meters and waveform." /></a>
 </p>
 
 [And this one at
@@ -6529,10 +6568,12 @@ get similar results with the Chrome WebAudio Inspector extension):
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 82. firefox webaudio debugger (140) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<a href="https://jsbin.com/nazega/edit?html,js,console,output">
 <p align="center" width="100%">
 <img src="./images/webp/image082.webp" 
-  style="width:45%;"
-  alt="Multiple sound samples played at different intervals and rates." />
+  style="width:50%;"
+  title="Multiple sound samples played at different intervals and rates"
+  alt="Multiple sound samples played at different intervals and rates." /></a>
 </p>
 
 And here is the result ([try it at
@@ -6540,10 +6581,12 @@ JSBin](https://jsbin.com/coraso/edit?html,js,console,output)):
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~ 83. sound samples and 2d visualization (141) ~~~~~~~~~~~~~~~~~~~~~~~~-->
+<a href="https://jsbin.com/coraso/edit?html,js,console,output">
 <p align="center" width="100%">
 <img src="./images/webp/image083.webp" 
-  style="width:45%;"
-  alt="Sound samples and 2D visualization." />
+  style="width:50%;"
+  title="Sound samples and 2D visualization"
+  alt="Sound samples and 2D visualization." /></a>
 </p>
 
 Here is the audio graph of this example (picture taken with the now
@@ -6554,7 +6597,8 @@ with the Chrome WebAudio Inspector extension):
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 84. webaudio graph (142) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image084.webp"
-  style="width:45%;"
+  style="width:50%;"
+  title="WebAudio graph of the previous example"
   alt="WebAudio graph of the previous example." />
 </p>
 
@@ -6643,7 +6687,7 @@ was a game by Scott Porter, written using only standard Web technologies
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 85. donkey kong 1998 (144) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image085.webp"
-  style="width:20%;"
+  style="width:35%;"
   alt="A screenshot of a DHTML / Javascript Donkey Kong from 1998" />
 </p>
 
@@ -6674,7 +6718,7 @@ Web site.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 86. mario dhtml game (145) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image086.webp" 
-  style="width:20%;"
+  style="width:35%;"
   alt="A mario DHTML game." />
 </p>
 
@@ -6692,7 +6736,7 @@ games](https://web.archive.org/web/20090519005306/http:/www.javascriptgaming.com
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 87. free civ game (145) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image087.webp" 
-  style="width:20%;"
+  style="width:35%;"
   alt="Free civ game." />
 </p>
 
@@ -6836,7 +6880,7 @@ Edge supports it).
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ 92. a picture of gamepad remote (148) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image092.webp" 
-  style="width:10%;"
+  style="width:15%;"
   alt="A picture of gamepad remote." />
 </p>
 
@@ -6920,7 +6964,7 @@ HTML, JavaScript and output tabs to see the code.
 <!--~~~~~~~~~~~~~~~~~~~~~ 95. add an asterisk every 200 milliseconds (151) ~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image095.webp"
-  style="width:55%;"
+  style="width:50%;"
   alt="Add an asterisk every 200 milliseconds." />
 </p>
 
@@ -21638,6 +21682,6 @@ your comments/observations/questions and share your creations.
 -->
 
 <h5>the end...</h5>
-
-<h6>Prior Updated: 3-25-2024 11:52pm</h6>
+<h6>Prior Updated: 3-16-2024 dow? 2:0pm"
+<h6>Prior Updated: 3-25-2024 dow? 11:52pm</h6>
 <h6>Last Updated: 4-14-2024 Sun 5:33pm</h6>
