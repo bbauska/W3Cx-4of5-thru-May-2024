@@ -8,64 +8,65 @@ w3cx-4of5-html5.2x: Coursera - Front-End Web Development - Apps and Games
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ readme.md of W3Cx-4of5-HTML5.2x ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w3cx logo (01) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="./images/webp/w3cx-logo.webp?raw=true"
-  style="width:200px;"
+<p align="center">
+  <img src="./images/webp/w3cx-logo.webp?raw=true"
+  style="border: 2px; solid #000000; width:200px;"
+  title="W3C logo"
   alt="W3C logo." />
 </p>
 
 <h3 align="center">W3Cx-4of5-HTML5.2x - Apps and Games</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 01. W3Cx-4of5-HTML5.2x logo (01) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="./images/webp/image001.webp?raw=true"
-  style="width:500px;"
+<p align="center">
+  <img src="./images/webp/image001.webp?raw=true"
+  style="border: 2px solid #000000; width:500px;"
+  title="W3Cx HTML 5.2x logo"
   alt="W3Cx HTML 5.2x logo." />
 </p>
+<h2><a href="#table-of-contents">Table of Contents</a></h2>
 
-## [Table of contents](#table-of-contents)
+### [<b>About W3C and the Web</b>](#cha)
+>#### - [<b>About W3C and the Web</b>](#cha-1)
+>#### - [<b>Why accessibility is important</b>](#cha-2)
+>#### - [<b>Why internationalization is important</b>](#cha-3)
 
-## [<b>About W3C and the Web</b>](#cha)
->### - [<b>About W3C and the Web</b>](#cha-1)
->### - [<b>Why accessibility is important</b>](#cha-2)
->### - [<b>Why internationalization is important</b>](#cha-3)
+### [<b>Course information</b>](#chb)
+>#### * [<b>Welcome to "HTML5.2x - Apps and Games"</b>](#chb-1)
+>#### * [<b>Course outline, grading and due dates</b>](#chb-2)
+>#### * [<b>Course practical information</b>](#chb-3)
+>#### * [<b>Course tools</b>](#chb-4)
 
-## [<b>Course information</b>](#chb)
->### * [<b>Welcome to "HTML5.2x - Apps and Games"</b>](#chb-1)
->### * [<b>Course outline, grading and due dates</b>](#chb-2)
->### * [<b>Course practical information</b>](#chb-3)
->### * [<b>Course tools</b>](#chb-4)
+### [<b>Module 1: Advanced HTML5 Multimedia</b>](#ch1)
+>#### 1.1. [<b>Video introduction - Module 1</b>](#ch1-1-1)
+>#### 1.2. [<b>The Timed Text Track API</b>](#ch1-2-1)
+>#### 1.3. [<b>Advanced features for audio and video players</b>](ch1-3-1)
+>#### 1.4. [<b>Creating tracks on the fly, syncing HTML content with a video</b>](#ch1-4-1)
+>#### 1.5. [<b>The Web Audio API</b>](#ch1-5-1)
 
-## [<b>Module 1: Advanced HTML5 Multimedia</b>](#ch1)
->### 1.1. [<b>Video introduction - Module 1</b>](#ch1-1-1)
->### 1.2. [<b>The Timed Text Track API</b>](#ch1-2-1)
->### 1.3. [<b>Advanced features for audio and video players</b>](ch1-3-1)
->### 1.4. [<b>Creating tracks on the fly, syncing HTML content with a video</b>](#ch1-4-1)
->### 1.5. [<b>The Web Audio API</b>](#ch1-5-1)
+### [<b>Module 2: Game programming with HTML5</b>](#ch2)
+>#### 2.1. [<b>Video introduction - Module 2</b>](#ch2-1-1)
+>#### 2.2. [<b>Basic concepts of HTML5 game development</b>](#ch2-2-1)
+>#### 2.3. [<b>A simple game framework: graphics, animations and interactions</b>](#ch2-3-1)
+>#### 2.4. [<b>Time-based animation</b>](#ch2-4-1)
+>#### 2.5. [<b>Animating multiple objects, collision detection</b>](#ch2-5-1)
+>#### 2.6. [<b>Sprite-based animation</b>](#ch2-6-1)
+>#### 2.7. [<b>Game states</b>](#ch2-7-1)
 
-## [<b>Module 2: Game programming with HTML5</b>](#ch2)
->### 2.1. [<b>Video introduction - Module 2</b>](#ch2-1-1)
->### 2.2. [<b>Basic concepts of HTML5 game development</b>](#ch2-2-1)
->### 2.3. [<b>A simple game framework: graphics, animations and interactions</b>](#ch2-3-1)
->### 2.4. [<b>Time-based animation</b>](#ch2-4-1)
->### 2.5. [<b>Animating multiple objects, collision detection</b>](#ch2-5-1)
->### 2.6. [<b>Sprite-based animation</b>](#ch2-6-1)
->### 2.7. [<b>Game states</b>](#ch2-7-1)
+### [<b>Module 3: HTML5 file upload and download</b>](#ch3)
+>#### 3.1. [<b>Video introduction</b>](#ch3-1-1)
+>#### 3.2. [<b>File API and Ajax / XHR2 requests</b>](#ch3-2-1)
+>#### 3.3. [<b>Drag and drop: the basics</b>](#ch3-3-1)
+>#### 3.4. [<b>Drag and drop: working with files</b>](#ch3-4-1)
+>#### 3.5. [<b>Forms and files</b>](#ch3-5-1)
+>#### 3.6. [<b>IndexedDB</b>](#ch3-6-1)
+>#### 3.7. [<b>Conclusion on client-side persistence</b>](#ch3-7-1)
 
-## [<b>Module 3: HTML5 file upload and download</b>](#ch3)
->### 3.1. [<b>Video introduction</b>](#ch3-1-1)
->### 3.2. [<b>File API and Ajax / XHR2 requests</b>](#ch3-2-1)
->### 3.3. [<b>Drag and drop: the basics</b>](#ch3-3-1)
->### 3.4. [<b>Drag and drop: working with files</b>](#ch3-4-1)
->### 3.5. [<b>Forms and files</b>](#ch3-5-1)
->### 3.6. [<b>IndexedDB</b>](#ch3-6-1)
->### 3.7. [<b>Conclusion on client-side persistence</b>](#ch3-7-1)
-
-## [<b>Module 4: Web components and other HTML5 APIs</b>](#ch4-1-1)
->### 4.2.[<b>Web Components</b>](#ch4-1-1)
->### 4.3.[<b>Web Workers</b>](#ch4-2-1)
->### 4.4.[<b>The Orientation and Device Motion APIs</b>](#ch4-3-1)
->### 4.5.[<b>Where to from here?</b>](#ch4-4-1)
+### [<b>Module 4: Web components and other HTML5 APIs</b>](#ch4-1-1)
+>#### 4.2.[<b>Web Components</b>](#ch4-1-1)
+>#### 4.3.[<b>Web Workers</b>](#ch4-2-1)
+>#### 4.4.[<b>The Orientation and Device Motion APIs</b>](#ch4-3-1)
+>#### 4.5.[<b>Where to from here?</b>](#ch4-4-1)
 
 <b>W3Cx-4of5-HTML5.2x – Apps and Games</b>
 <a href="https://github.com/bbauska/W3Cx-4of5-Apps-and-Games.git">HTML5.2x Apps and Games - git</a>
@@ -150,9 +151,11 @@ JavaScript, to create your own HTML5 app and/or game.
 <h4>Web browsers</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 03. which browser? (14) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="./images/webp/image003.webp?raw=true"
-  style="width:18%"
+<p align="center">
+  <img src="./images/webp/image003.webp?raw=true"
+  style="border: 2px solid #000000; width:18%;"
+  title="A man looking at his laptop screen as if he is considering which browser to use 
+    - a few browser logos float in the background"
   alt="A man looking at his laptop screen as if he is considering which browser to use 
     - a few browser logos float in the background." />
 </p>
@@ -160,7 +163,7 @@ JavaScript, to create your own HTML5 app and/or game.
 Not surprisingly, it would be helpful to have a browser (short for "Web
 Browser") installed so that you can see the end result of your source
 code. Most common browsers are 
-[Edge ](https://www.microsoft.com/en-us/edge)(and IE), 
+[Edge](https://www.microsoft.com/en-us/edge)(and IE), 
 [Firefox](https://www.mozilla.org/en-US/firefox/new/), 
 [Chrome](https://www.google.com/chrome/), 
 [Safari](http://www.apple.com/safari/),
@@ -215,11 +218,14 @@ examples will actually use these.
 <h4>JS Bin</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 04. js bin logo (15) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="./images/webp/image004.webp"
-  style="width:10%"
-  alt="JS Bin logo." />
-</p>
+<a href="http://jsbin.com/">
+  <p align="center">
+    <img src="./images/webp/image004.webp"
+    style="border: 2px solid #000000; width:10%;"
+    title="JS Bin logo"
+    alt="JS Bin logo." />
+  </p>
+</a>
 
 <a href="http://jsbin.com/">JS Bin</a> is an open source collaborative Web development 
 debugging tool. This tool is really simple, just open the link to the provided examples, 
@@ -233,11 +239,14 @@ free) if you do not want to lose your contributions/personal work.
 <h4>CodePen</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~- 05. codepen logo (15) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="./images/image005.png"
-  style="width:10%"
-  alt="CodePen logo."
-</p>
+<a href="http://codepen.io/">
+  <p align="center">
+  <img src="./images/image005.png"
+  style="border: 2px; solid #000000; width:10%;"
+  title="CodePen logo"
+  alt="CodePen logo." />
+  </p>
+</a>
 
 <a href="http://codepen.io/">CodePen</a> is an HTML, CSS, and JavaScript code editor 
 that previews/showcases your code bits in your browser. It helps with cross-device 
@@ -266,9 +275,10 @@ available as downloadable sources or as free services on the <a href="https://w
 <h4>W3C Validator</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 06. w3c validator (16) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="./images/webp/image006.webp"
-  style="width:15%"
+<p align="center">
+  <img src="./images/webp/image006.webp"
+  style="border: 2px solid #000000; width:15%;"
+  title="W3C Validator"
   alt="W3C Validator." />
 </p>
 
@@ -21740,3 +21750,4 @@ your comments/observations/questions and share your creations.
 <h5>the end...</h5>
 
 <h6>Last Updated: 8-30-2023 8:59pm</h6>
+<h6>Last Updated: 9-15-2023 9:08pm</h6>
