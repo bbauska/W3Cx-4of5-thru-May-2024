@@ -63,10 +63,9 @@ w3cx-4of5-html5.2x: Coursera - Front-End Web Development - Apps and Games
 >#### 3.7. [<b>Conclusion on client-side persistence</b>](#ch3-7-1)
 
 ### [<b>Module 4: Web components and other HTML5 APIs</b>](#ch4-1-1)
->#### 4.2.[<b>Web Components</b>](#ch4-1-1)
->#### 4.3.[<b>Web Workers</b>](#ch4-2-1)
->#### 4.4.[<b>The Orientation and Device Motion APIs</b>](#ch4-3-1)
->#### 4.5.[<b>Where to from here?</b>](#ch4-4-1)
+>#### 4.2.[<b>Web Components</b>](#ch4-2-1)
+>#### 4.3.[<b>Web Workers</b>](#ch4-3-1)
+>#### 4.4.[<b>The Orientation and Device Motion APIs</b>](#ch4-4-1)
 
 <b>W3Cx-4of5-HTML5.2x – Apps and Games</b>
 <a href="https://github.com/bbauska/W3Cx-4of5-Apps-and-Games.git">HTML5.2x Apps and Games - git</a>
@@ -4964,7 +4963,7 @@ with the Chrome WebAudio Inspector extension):
 52.    gainNode1.gain.value = parseFloat(gainSlider1.value);
 53. 
 54.    // do not connect it yet
-55.    compressorNode = audioContext.createDynamicsCompressor(); //  connect nodes together
+55.    compressorNode = audioContext.createDynamicsCompressor(); // connect nodes together
 56.    gainMediaElementSource.connect(gainNode1);
 57.    gainNode1.connect(audioContext.destination);
 58. }
@@ -5351,7 +5350,6 @@ results with the Chrome WebAudio Inspector extension):
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~ 64. audio graph with analyser node and properties (117) ~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image064.webp"
   style="width:480px;"
@@ -5456,7 +5454,6 @@ JSBin](https://jsbin.com/fuyejuz/edit?html,js,console,output):
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~ 65. video player with real time waveform visualization (119) ~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image065.webp" 
   style="width:288px;"
@@ -5474,7 +5471,6 @@ you should see the waveform changing.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~ 66. video player + equalizer + waveform (120) ~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image066.webp" 
   style="width:288px;"
@@ -5485,7 +5481,6 @@ you should see the waveform changing.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~ 67. video player + equalizer + waveform visualization (120) ~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image067.webp" 
   style="width:288px;"
@@ -5500,8 +5495,7 @@ you should see the waveform changing.
 [Example at JSBin](https://jsbin.com/wenuvub/edit?js,output):
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!----------------------------- 68. red bar frequency audio (121) -------------------------------->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 68. red bar frequency audio (121) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image068.webp" 
   style="width:3in;height:1.63496in"
@@ -5509,7 +5503,6 @@ you should see the waveform changing.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 69. frequency at fftsize = 64 (121) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image069.webp" 
   style="width:288px;"
@@ -5641,7 +5634,6 @@ and try to understand how the drawing of the frequency is done.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ 70. audio graph colored frequency (123) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image070.webp" 
   style="width:288px;"
@@ -5655,7 +5647,6 @@ before the visualizer node:
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 71. audio graph with equalizer (123) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image071.webp" 
   style="width:288px;"
@@ -5668,7 +5659,6 @@ with the Chrome WebAudio Inspector extension):
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~ 72. audiograph description of fields (123) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image072.webp" 
   style="width:624px;"
@@ -5743,7 +5733,6 @@ Example #1: add a single volume meter to the audio player
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 73. animated volume meter (125) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image073.webp" 
   style="width:288px;"
@@ -5875,7 +5864,6 @@ analyser (<i>lines 46 and 47</i> of the example below)
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 52. audio player balance (127) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image052.webp" 
   style="width:288px;"
@@ -5888,7 +5876,6 @@ with the Chrome WebAudio Inspector extension):
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 74. flowchart with webaudio (127) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image074.webp" 
   style="width:480px;"
@@ -6058,13 +6045,12 @@ with the Chrome WebAudio Inspector extension):
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~ 75. webaudio graph from firefox debugger (130) ~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image075.webp?raw=true"
   style="width:384px;"
-  alt="Screenshot with buttons that play sound samples many times with different pitch, volume, interval of times." />
+  alt="Screenshot with buttons that play sound samples many times with different pitch, volume, 
+    interval of times." />
 </p>
-<!-- style="width:4in;height:3.27308in" -->
 
 Music applications such as Digital Audio Workstations (GarageBand-like
 apps) will need to play/record/loop music tracks in memory.
@@ -6078,7 +6064,6 @@ with Web Audio and samples loaded in memory:
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 76. remixer workstation (131) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image076.webp" 
   style="width:384px;"
@@ -6095,7 +6080,6 @@ help menu.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 77. multitrack player mt5 (131) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image077.webp" 
   style="width:384px;"
@@ -6112,7 +6096,6 @@ fast the sound effects are played. Click as fast as you can!
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 78. scatter graph (132) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image078.webp" 
   style="width:384px;"
@@ -6159,7 +6142,6 @@ JSBin](https://jsbin.com/botagas/edit?html,js,console,output):
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 79. load sound sample & play (133) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image079.webp" 
   style="width:425px;"
@@ -6331,7 +6313,6 @@ utility](https://jsbin.com/javoger/edit?html,js,console,output):
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 80. bufferloader utility (136) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image080.webp" 
   style="width:480px;"
@@ -6431,7 +6412,6 @@ JSBin](https://jsbin.com/zebokeg/edit?html,js,console,output):
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 81. audio graph (138) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image081.webp" 
   style="width:384px;"
@@ -6535,7 +6515,6 @@ Below, we have mixed the code from two previous examples:
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 49. audio player balance (140) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image049.webp" 
   style="width:192px;"
@@ -6549,7 +6528,6 @@ get similar results with the Chrome WebAudio Inspector extension):
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 82. firefox webaudio debugger (140) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image082.webp" 
   style="width:480px;"
@@ -6561,7 +6539,6 @@ JSBin](https://jsbin.com/coraso/edit?html,js,console,output)):
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~ 83. sound samples and 2d visualization (141) ~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image083.webp" 
   style="width:480px;"
@@ -6574,7 +6551,6 @@ with the Chrome WebAudio Inspector extension):
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 84. webaudio graph (142) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image084.webp"
   style="width:480px;"
@@ -6664,7 +6640,6 @@ was a game by Scott Porter, written using only standard Web technologies
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 85. donkey kong 1998 (144) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image085.webp"
   style="width:210px;"
@@ -6696,7 +6671,6 @@ Web site.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 86. mario dhtml game (145) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image086.webp" 
   style="width:192px;"
@@ -6715,7 +6689,6 @@ games](https://web.archive.org/web/20090519005306/http:/www.javascriptgaming.com
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 87. free civ game (145) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image087.webp" 
   style="width:192px;"
@@ -6738,7 +6711,6 @@ Sierra games. 
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 88. html5 logo (146) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image088.webp" 
   style="width:96px;"
@@ -6758,10 +6730,8 @@ be revisited in more details in this section.
 Here, we present some elements that are useful in writing games.
 
 <h4>Drawing: the &lt;canvas&gt; element</h4>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 89. the html5 canvas logo (146) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image089.webp" 
   style="width:192px;"
@@ -6808,10 +6778,8 @@ animation, as the browser will ensure that animation is not
 performed when the canvas is not visible, thus saving CPU resources.
 
 <h4>Videos and animated textures: the &lt;video&gt; element</h4>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 90. a movie film icon (147) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image090.webp" 
   style="width:96px;"
@@ -6833,7 +6801,6 @@ as "animated textures" over graphic objects.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 91. a picture of a speaker (148) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
   <img src="./images/webp/image091.webp" 
   style="width:192px;"
@@ -6864,7 +6831,6 @@ Edge supports it).
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ 92. a picture of gamepad remote (148) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image092.webp" 
   style="width:70px;"
@@ -6896,7 +6862,6 @@ to poll the server for a reply. 
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 93. three clients and a server (149) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image093.gif" 
   style="width:192px;"
@@ -6907,7 +6872,6 @@ to poll the server for a reply. 
 <h3 id="ch2-2-3">2.2.3 The "game loop"</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 94. game loop diagram (150) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image094.webp" 
   style="width:192px;"
@@ -6951,7 +6915,6 @@ HTML, JavaScript and output tabs to see the code.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~ 95. add an asterisk every 200 milliseconds (151) ~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image095.webp"
   style="width:576px;"
@@ -7208,7 +7171,6 @@ JSBin](https://jsbin.com/noqibu/edit)):
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~ 96. screenshiot of example that displays 60 fps (155) ~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image096.webp"
   style="width:384px;"
@@ -7324,7 +7286,6 @@ this JSBin example](https://jsbin.com/notupe/edit).
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 97. 4145 fps displayed canvas (157) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image097.webp"
   style="width:384px;"
@@ -7374,7 +7335,6 @@ JSBin](https://jsbin.com/ponaki/edit).
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~ 98. small monster drawn in a canvas (158) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image098.webp"
   style="width:270px;"
@@ -7549,7 +7509,6 @@ JSBin](https://jsbin.com/xuruja/edit). 
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 99. trembling monster (161) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image099.webp"
   style="width:282px;"
@@ -7810,7 +7769,6 @@ Tricks](https://css-tricks.com/snippets/javascript/javascript-keycodes/)
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 100/101. key codes (166) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image100.webp"
   style="width:5.66667in;height:7.61458in"
@@ -7873,7 +7831,6 @@ JSBin](https://jsbin.com/razeya/edit)
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ 102. monstor up, right and space (168) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image102.webp"
   style="width:192px;"
@@ -8008,8 +7965,7 @@ up + right should work in combination.
 <h4>A few reminders</h4>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--------------------------- 103. a schema of mouse internals (170) ----------------------------->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 103. a schema of mouse internals (170) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image103.webp"
   style="width:384px;"
@@ -8039,7 +7995,6 @@ covers all cases correctly.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~ 104. jsbin example mouse position + button pressed (171) ~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image104.webp"
   style="width:288px;"
@@ -8115,8 +8070,7 @@ down) as part of the inputStates object, just as we do with the keyboard
 <a href="https://jsbin.com/soduko/edit?js,output">Try this example at JsBin</a>.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!---------------------- 105. a rectangle that follows mouse cursor (172) ------------------------>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ 105. a rectangle that follows mouse cursor (172) ~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image105.webp"
   style="width:192px;"
@@ -8214,16 +8168,12 @@ the getMousePos() function, for example).
 JSBin](https://jsbin.com/rizuyah/edit):
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------- 106. message on mouse event listener (174) --------------------------->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 106. message on mouse event listener (174) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image106.webp"
   style="width:192px;"
   alt="Message on mouse event listener." />
 </p>
-<!---
-style="width:2in;height:2.04192in"
---->
 
 Try pressing arrows and space keys, moving the mouse, and pressing the
 buttons, all at the same time. You'll see that the game framework
@@ -8463,8 +8413,7 @@ small game you are going to develop during this week. Bye! Bye!
 Some games, mainly arcade/action games, are designed to be used with a gamepad:
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------------------- 107. gamepad (174) --------------------------------------->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 107. gamepad (174) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image107.webp"
   style="width:480px;"
@@ -8521,8 +8470,7 @@ describes the connected device.
 </details>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!-------------------- 108. gamepad detected, message on jsbin example (180) --------------------->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ 108. gamepad detected, message on jsbin example (180) ~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image108.webp"
   style="width:480px;"
@@ -8548,7 +8496,6 @@ their connected property set to false.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 109. disconnect game pad (180) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image109.webp"
   style="width:376px;"
@@ -8646,7 +8593,6 @@ properties](https://w3c.github.io/gamepad/#gamepad-interface):
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~ 110. standard default layout - gamepad (182) ~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image110.webp"
   style="width:336px;"
@@ -8685,7 +8631,6 @@ a look at at this demo that does the same thing but with multiple
 gamepads.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~ 111. button status detected, example on jsbin (184) ~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image111.webp"
   style="width:576px;"
@@ -8752,7 +8697,6 @@ the gamepad.buttons will return the same  states every time.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 112. axes detection (185) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image112.webp"
   style="width:480px;"
@@ -8795,7 +8739,6 @@ manage this:
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~ 113. direction and angle detection with joystick (186) ~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image113.webp"
   style="width:384px;"
@@ -9162,7 +9105,6 @@ and added one new call in the game loop for updating the gamepad status:
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 114. move monster with gamepad (192) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image114.webp"
   style="width:294px;"
@@ -9378,7 +9320,6 @@ second = 16.66 ms.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~ 115. small rectangle in canvas, moving left to right (196) ~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image115.webp"
   style="width:264px;"
@@ -9525,7 +9466,6 @@ to move the shape to achieve a given speed (in pixels/s).
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~ 116. bouncing square with time bases animation (199) ~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image116.webp"
   style="width:505px;"
@@ -9951,7 +9891,6 @@ Here is the [online example at JSBin](https://jsbin.com/bonutur/edit).
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ 117. setframerateinframespersecond (207) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image117.webp"
   style="width:384px;"
@@ -10223,7 +10162,6 @@ smoothness of the animation; the FPS counter on a Mac Book Pro core i7
 shows 60 fps.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 118. monster moving at 60 f/s (213) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image118.webp"
   style="width:337px;"
@@ -10239,7 +10177,6 @@ screen is the same, excepting that it's not as smooth as in the previous
 version, which ran at 60 fps.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 119. monster moving at 37 f/s (214) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image119.webp"
   style="width:334px;"
@@ -10395,7 +10332,6 @@ will not use time-based animation in the first examples.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~ 120. animating multiple balls bounce off walls (217) ~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image120.webp"
   style="width:306px;"
@@ -10691,7 +10627,6 @@ results.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 121. monster + balls (222) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image121.webp"
   style="width:4in;height:4.13077in"
@@ -10796,7 +10731,6 @@ sketches of more complex algorithms.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~ 122. two circles with distance between the centers drawn (224) ~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image122.webp"
   style="width:3in;height:2.47in"
@@ -10869,8 +10803,7 @@ small circle. Try to make collisions between the monster and the circle
 you control.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!----------------------------- 123. monster and small circle (225) ------------------------------>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 123. monster and small circle (225) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image123.webp"
   style="width:4in;height:3.97101in"
@@ -10970,8 +10903,7 @@ the two sub-circles, etc... this recursive algorithm will not be covered
 in this course, but it's a classic optimization.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!---------------------- 124. image of an arm with bounding circles (227) ------------------------>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ 124. image of an arm with bounding circles (227) ~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image124.webp"
   style="width:4in;height:2.20258in"
@@ -10981,8 +10913,7 @@ in this course, but it's a classic optimization.
 In 3D, you can use spheres instead of circles:
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------ 125. a 3d object with bounding spheres (228) -------------------------->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 125. a 3d object with bounding spheres (228) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image125.webp"
   style="width:4in;height:2.2583in"
@@ -10993,8 +10924,7 @@ The famous game Gran Turismo 4 on the PlayStation 2 uses bounding
 spheres for detecting collisions between cars:
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!-------------------------- 126. grand turismo used collisions (228) ---------------------------->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 126. grand turismo used collisions (228) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image126.webp"
   style="width:3in;height:2.26531in"
@@ -11007,7 +10937,6 @@ Let's look at a simple illustration:
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 127. two pictures (228) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image127.webp"
   style="width:4.47917in;height:2.09375in"
@@ -11026,8 +10955,7 @@ Let's look at a simple illustration:
 rectangles
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!-------------------- 128. only horizontal axis overlap: no collision (229) --------------------->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ 128. only horizontal axis overlap: no collision (229) ~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image128.webp"
   style="width:3.53125in;height:2.875in"
@@ -11038,8 +10966,7 @@ rectangles
 rectangles
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!----------------- 129. only vertical axis projection overlap: collision (230) ------------------>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~ 129. only vertical axis projection overlap: collision (230) ~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image129.webp"
   style="width:3.42708in;height:2.88542in"
@@ -11050,8 +10977,7 @@ rectangles
 detected!
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------ 130. projection of axis overlap: collision detected (230) ------------------->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ 130. projection of axis overlap: collision detected (230) ~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image130.webp"
   style="width:3.44792in;height:3.01042in"
@@ -11091,13 +11017,11 @@ more accurate and can work with elongated shapes.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~ 131. player as a square inside monster (231) ~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img src="./images/webp/image131.webp"
   style="width:2.39583in;height:1.90625in"
   alt="Player as a square is inside the monster bounding circle but not inside the bounding rectangle, as we use rect rect collision test: no collision detected." />
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~ 132. same as previous pic with player inside monster (231) ~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img src="./images/webp/image132.webp"
   style="width:2.125in;height:1.90625in"
   alt="Same as previous picture but this time the player square is inside the monster bounding rectangle: collision detected." />
@@ -11209,7 +11133,6 @@ screenshot:
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 134. genetos screenshot (233) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image134.webp"
   style="width:5in;height:3.77137in"
@@ -11264,7 +11187,6 @@ JSBin](https://jsbin.com/acohiv/845/edit?html,output).
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~ 135/136. circle and rectangle not in collision (234) ~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image135.webp"
   style="width:2.0625in;height:2.20833in"
@@ -11286,7 +11208,6 @@ JSBin](https://jsbin.com/acohiv/845/edit?html,output).
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ 137. ball ball collision example (235) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image137.webp"
   style="width:5in;height:2.01389in"
@@ -11312,7 +11233,6 @@ result (step 4):
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~ 138. diagram with two balls, velocities, tengeantial and normal planes (236) ~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image138.webp"
   style="width:3in;height:2.48276in"
@@ -11358,7 +11278,6 @@ the ball color to red.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~ 139. collision between balls and monster (237) ~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image139.webp"
   style="width:3in;height:3.02853in"
@@ -11415,7 +11334,6 @@ walking in a particular direction:
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ 140. sprite sheet of woman walking (238) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image140.webp"
   style="width:4in;height:4.71795in"
@@ -11568,7 +11486,6 @@ next, see how the animation is created? 
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ 145. move slider to select sprite (243) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image145.webp"
   style="width:5in;height:4.31036in"
@@ -11584,28 +11501,28 @@ next, see how the animation is created? 
 1.  <html lang="en">
 2.   <head>
 3.   <title>Extract and draw sprite</title>
-4.   <style>
-5.     canvas {
-6.        border: 1px solid black;
-7.      }
-8.   </style>
+4.     <style>
+5.       canvas {
+6.         border: 1px solid black;
+7.       }
+8.     </style>
 9.   </head>
 10.  <body>
 11.    Sprite width: 48, height: 92, rows: 8, sprites per
-    > posture: 13<p>
+         posture: 13<p>
 12.    <label for="x">x: <input id="x" type="number" min=0><br/>
 13.    <label for="y">y: <input id="y" type="number" min=0><br/>
 14.    <label for="width">width: <input
-   > id="width" type="number" min=0><br/>
+         id="width" type="number" min=0><br/>
 15.    <label for="height">height: <input
-   > id="height" type="number" min=0><p>
+         id="height" type="number" min=0><p>
 16. 
-17. Select current sprite: <input type=range
-    > id="spriteSelect" value=0> <output id="spriteNumber">
+17.    Select current sprite: <input type=range
+         id="spriteSelect" value=0> <output id="spriteNumber">
 18. 
-19.  <p/>
-20.    <canvas id="canvas" width="48" height="92" />
-21.  </p>
+19.    <p/>
+20.      <canvas id="canvas" width="48" height="92" />
+21.    </p>
 22.    <canvas id="spritesheet"></canvas>
 23.  </body>
 24. </html>
@@ -11627,98 +11544,91 @@ sprites:
   <summary>JavaScript source code extract!</summary>
 
 ```
-1.  var SPRITE_WIDTH = 48;   // Characteristics of the sprites and
-    > spritesheet
+1.  var SPRITE_WIDTH = 48;   // Characteristics of the sprites and spritesheet
 2.  var SPRITE_HEIGHT = 92;
 3.  var NB_ROWS = 8;
 4.  var NB_FRAMES_PER_POSTURE = 13;
 5.   
-6.  // the different input and output fields
+6.  // The different input and output fields
 7.  var xField, yField, wField, hField, spriteSelect, spriteNumber;
 8.  // The two canvases and respective contexts
 9.  var canvas, canvasSpriteSheet, ctx1, ctx2;
 10.  
 11. window.onload = function() {
-12.     canvas = document.getElementById("canvas");
-13.     ctx1 = canvas.getContext("2d");
-14.     canvasSpriteSheet = document.getElementById("spritesheet");
-15.     ctx2 = canvasSpriteSheet.getContext("2d");
+12.   canvas = document.getElementById("canvas");
+13.   ctx1 = canvas.getContext("2d");
+14.   canvasSpriteSheet = document.getElementById("spritesheet");
+15.   ctx2 = canvasSpriteSheet.getContext("2d");
 16. 
-17.     xField = document.querySelector("#x");
-18.     yField = document.querySelector("#y");
-19.     wField = document.querySelector("#width");
-20.     hField = document.querySelector("#height");
-21.     spriteSelect = document.querySelector("#spriteSelect");
-22.     spriteNumber = document.querySelector("#spriteNumber");
+17.   xField = document.querySelector("#x");
+18.   yField = document.querySelector("#y");
+19.   wField = document.querySelector("#width");
+20.   hField = document.querySelector("#height");
+21.   spriteSelect = document.querySelector("#spriteSelect");
+22.   spriteNumber = document.querySelector("#spriteNumber");
 23.     
-24.     // Update values of the input fields in the page
-25.     wField.value = SPRITE_WIDTH;
-26.     hField.value = SPRITE_HEIGHT;
-27.     xField.value = 0;
-28.     yField.value = 0;
-29.     // Set attributes for the slider depending on the number of
-   > sprites on the 
-30.     // sprite sheet
-31.     spriteSelect.min = 0;
-32.     spriteSelect.max=NB_ROWS*NB_FRAMES_PER_POSTURE - 1;
-33.     // By default the slider is disabled until the sprite sheet is
-   > fully loaded
-34.     spriteSelect.disabled = true;
-35.     spriteNumber.innerHTML=0;
+24.   // Update values of the input fields in the page
+25.   wField.value = SPRITE_WIDTH;
+26.   hField.value = SPRITE_HEIGHT;
+27.   xField.value = 0;
+28.   yField.value = 0;
+29.   // Set attributes for the slider depending on the number of sprites on the 
+30.   // sprite sheet
+31.   spriteSelect.min = 0;
+32.   spriteSelect.max=NB_ROWS*NB_FRAMES_PER_POSTURE - 1;
+33.   // By default the slider is disabled until the sprite sheet is fully loaded
+34.   spriteSelect.disabled = true;
+35.   spriteNumber.innerHTML=0;
 36. 
-37.     // Load the spritesheet
-38.     spritesheet = new Image();
-39.     spritesheet.src="https://i.imgur.com/3VesWqx.webp";
+37.   // Load the spritesheet
+38.   spritesheet = new Image();
+39.   spritesheet.src="https://i.imgur.com/3VesWqx.webp";
 40. 
-41.     // Called when the spritesheet has been loaded
-42.     spritesheet.onload = function() {
-43.       // enable slider
-44.       spriteSelect.disabled = false;
+41.   // Called when the spritesheet has been loaded
+42.   spritesheet.onload = function() {
+43.     // enable slider
+44.     spriteSelect.disabled = false;
 45. 
-46.       // Resize big canvas to the size of the sprite sheet image
-47.       canvasSpriteSheet.width = spritesheet.width;
-48.       canvasSpriteSheet.height = spritesheet.height;
+46.     // Resize big canvas to the size of the sprite sheet image
+47.     canvasSpriteSheet.width = spritesheet.width;
+48.     canvasSpriteSheet.height = spritesheet.height;
 49. 
-50.      // Draw the whole spritesheet
-51.      ctx2.drawImage(spritesheet, 0, 0);
-52.      // Draw the first sprite in the big canvas, corresponding to
-   > sprite 0
-53.      // wireframe rectangle in the sprite sheet
-54.    >  drawWireFrameRect(ctx2, 0 , 0, SPRITE_WIDTH, SPRITE_HEIGHT, 'red', 3);
-55.    >      // small canvas, draw sub image corresponding to sprite 0
-56.      ctx1.drawImage(spritesheet, 0, 0, SPRITE_WIDTH, SPRITE_HEIGHT,
-57.                                  0, 0, SPRITE_WIDTH, SPRITE_HEIGHT);
-58.    };
+50.     // Draw the whole spritesheet
+51.     ctx2.drawImage(spritesheet, 0, 0);
+52.     // Draw the first sprite in the big canvas, corresponding to sprite 0
+53.     // wireframe rectangle in the sprite sheet
+54.     drawWireFrameRect(ctx2, 0 , 0, SPRITE_WIDTH, SPRITE_HEIGHT, 'red', 3);
+55.     // small canvas, draw sub image corresponding to sprite 0
+56.     ctx1.drawImage(spritesheet, 0, 0, SPRITE_WIDTH, SPRITE_HEIGHT,
+57.                                 0, 0, SPRITE_WIDTH, SPRITE_HEIGHT);
+58.   };
 59. 
-60.    // input listener on the slider
-61.    spriteSelect.oninput = function(evt) {
-62.      // Current sprite number from 0 to NB_FRAMES_PER_POSTURE *
-    > NB_ROWS
-63.      var index = spriteSelect.value;
+60.   // input listener on the slider
+61.   spriteSelect.oninput = function(evt) {
+62.     // Current sprite number from 0 to NB_FRAMES_PER_POSTURE * NB_ROWS
+63.     var index = spriteSelect.value;
 64. 
-65.      // Computation of the x and y position that corresponds to
-    > the sprite
-66.      // number index as selected by the slider
-67.      var x = index * SPRITE_WIDTH % spritesheet.width;
-68.    >  var y = Math.floor(index / NB_FRAMES_PER_POSTURE) * SPRITE_HEIGHT;
+65.     // Computation of the x and y position that corresponds to the sprite
+66.     // number index as selected by the slider
+67.     var x = index * SPRITE_WIDTH % spritesheet.width;
+68.     var y = Math.floor(index / NB_FRAMES_PER_POSTURE) * SPRITE_HEIGHT;
 69. 
-70.      // Update fields
-71.      xField.value = x;
-72.      yField.value = y;
+70.     // Update fields
+71.     xField.value = x;
+72.     yField.value = y;
 73. 
-74.      // Clear big canvas, draw wireframe rect at x, y, redraw
-    > stylesheet
-75.    >  ctx2.clearRect(0, 0, canvasSpriteSheet.width, canvasSpriteSheet.height);
-76.      ctx2.drawImage(spritesheet, 0, 0);
-77.    >  drawWireFrameRect(ctx2, x , y, SPRITE_WIDTH, SPRITE_HEIGHT, 'red', 3);
+74.     // Clear big canvas, draw wireframe rect at x, y, redraw stylesheet
+75.     ctx2.clearRect(0, 0, canvasSpriteSheet.width, canvasSpriteSheet.height);
+76.     ctx2.drawImage(spritesheet, 0, 0);
+77.     drawWireFrameRect(ctx2, x , y, SPRITE_WIDTH, SPRITE_HEIGHT, 'red', 3);
 78.  
-79.      // Draw the current sprite in the small canvas
-80.      ctx1.clearRect(0, 0, SPRITE_WIDTH, SPRITE_HEIGHT);
-81.      ctx1.drawImage(spritesheet, x, y, SPRITE_WIDTH, SPRITE_HEIGHT,
-82.                                  0, 0, SPRITE_WIDTH, SPRITE_HEIGHT);
+79.     // Draw the current sprite in the small canvas
+80.     ctx1.clearRect(0, 0, SPRITE_WIDTH, SPRITE_HEIGHT);
+81.     ctx1.drawImage(spritesheet, x, y, SPRITE_WIDTH, SPRITE_HEIGHT,
+82.                                 0, 0, SPRITE_WIDTH, SPRITE_HEIGHT);
 83.  
-84.      // Update output elem on the right of the slider
-85.      spriteNumber.innerHTML = index;
+84.     // Update output elem on the right of the slider
+85.     spriteNumber.innerHTML = index;
 86.   };
 87. };
 88.  
@@ -11776,7 +11686,6 @@ sprites:
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 146. robot sprite sheet (247) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image146.webp"
   style="width:5in;height:3.03739in"
@@ -11821,7 +11730,7 @@ Here is how you would create and animate a sprite:
 20.     robot.setNbImagesPerSecond(20);
 21. 
 22.     requestAnimationFrame(mainloop);
-23.  }; // onload
+23.   }; // onload
 24. };
 25.  
 26. function mainloop() {
@@ -11843,7 +11752,6 @@ value of the parameter and observing the result.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 147. example sprite framework (248) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image147.webp"
   style="width:6.5in;height:4.27847in"
@@ -11863,20 +11771,19 @@ yPos position, and at anappropriate size. 
 
 ```
 1.  function SpriteImage(img, x, y, width, height) {
-2.     this.img = img; // the whole image that contains all sprites
-3.     this.x = x;     // x, y position of the sprite image in the whole
-    > image
-4.     this.y = y;
-5.     this.width = width; // width and height of the sprite image
-6.     this.height = height;
+2.    this.img = img; // the whole image that contains all sprites
+3.    this.x = x;     // x, y position of the sprite image in the whole image
+4.    this.y = y;
+5.    this.width = width; // width and height of the sprite image
+6.    this.height = height;
 7.    
-8.     this.draw = function(ctx, xPos, yPos, scale) {
-9.        ctx.drawImage(this.img,
-10.         this.x, this.y, // x, y, width and height of img to extract
-11.         this.width, this.height,
-12.         xPos, yPos, // x, y, width and height of img to draw
-13.         this.width*scale, this.height*scale);
-14.  };
+8.    this.draw = function(ctx, xPos, yPos, scale) {
+9.      ctx.drawImage(this.img,
+10.       this.x, this.y, // x, y, width and height of img to extract
+11.       this.width, this.height,
+12.       xPos, yPos, // x, y, width and height of img to draw
+13.       this.width*scale, this.height*scale);
+14.   };
 15. }
 ```
 
@@ -11914,25 +11821,21 @@ robot in the previous example.
 8.                                   nbFramesPerPosture,
 9.                                   spriteWidth, spriteHeight) {
 10.     // number of sprites per row in the spritesheet
-11.  
-   >   var nbSpritesPerRow = Math.floor(spritesheet.width / spriteWidth);
+11.     var nbSpritesPerRow = Math.floor(spritesheet.width / spriteWidth);
 12. 
 13.     // Extract each sprite
 14.     var startIndex = (postureToExtract -1) * nbFramesPerPosture;
 15.     var endIndex = startIndex + nbFramesPerPosture;
 16.     for(var index = startIndex; index < maxIndex; index++) {
-17.     // Computation of the x and y position that corresponds to the
-    > sprite
+17.     // Computation of the x and y position that corresponds to the sprite
 18.       // index
 19.       // x is the rest of index/nbSpritesPerRow * width of a sprite
 20.       var x = (index % nbSpritesPerRow) * spriteWidth;
-21.       // y is the divisor of index by nbSpritesPerRow * height of a
-    > sprite
+21.       // y is the divisor of index by nbSpritesPerRow * height of a sprite
 22.       var y = Math.floor(index / nbSpritesPerRow) * spriteHeight;
 23. 
 24.       // build a spriteImage object
-25.    
-    >   var s = new SpriteImage(spritesheet, x, y, spriteWidth, spriteHeight);
+25.       var s = new SpriteImage(spritesheet, x, y, spriteWidth, spriteHeight);
 26. 
 27.       this.spriteArray.push(s);
 28.     }
@@ -11982,7 +11885,6 @@ robot in the previous example.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 148. example woman animated (251) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image148.webp"
   style="width:5in;height:2.07853in"
@@ -12018,8 +11920,7 @@ sprite sheet has 8 different postures, so you can call:
 [Example at JsBin](https://jsbin.com/muwoje/edit?js,output)
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--------------------------- 149. woman moving left and right (xxx) ----------------------------->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 149. woman moving left and right (xxx) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image149.webp"
   style="width:5in;height:2.58547in"
@@ -12053,7 +11954,6 @@ JsBin](https://jsbin.com/mifeva/edit?js,console,output)</b>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~ 150. woman sprite in the game framework (xxx) ~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image150.webp"
   style="width:6.5in;height:3.03819in"
@@ -12137,9 +12037,9 @@ Source code extract:
 45.     woman.x += calcDistanceToMove(delta, woman.speed);
 46.   }
 47.  
-48.   /*---------------------------------------*/
+48.   /*--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~--*/
 49.   /* SPRITE UTILITY FUNCTIONS              */
-50.   /*---------------------------------------*/
+50.   /*--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~--*/
 51.   function SpriteImage(img, x, y, width, height) {
 52.     ...
 53.     this.draw = function(ctx, xPos, yPos, scale) {...};
@@ -12152,9 +12052,9 @@ Source code extract:
 60.     this.draw = function(ctx, x, y) {...};
 61.     this.setNbImagesPerSecond = function(nb) {...};
 62.   }
-63.   /*---------------------------------------*/
+63.   /*--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~--*/
 64.   /* EN OF SPRITE UTILITY FUNCTIONS        */
-65.   /*---------------------------------------*/
+65.   /*--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~--*/
 66. 
 67. var loadAssets = function(callback) {
 68.     var SPRITESHEET_URL = "https://i.imgur.com/3VesWqx.webp";
@@ -12223,7 +12123,6 @@ the monster.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 151. eat the ball game (xxx) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image151.webp"
   style="width:3in;height:3.02821in"
@@ -12314,7 +12213,6 @@ currentGameState = gameStates.gameOver:
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~ 152. Game Over Screen, asking to press space to start again. (2xx) ~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image152.webp"
   style="width:4.69792in;height:4.75in"
@@ -12325,9 +12223,8 @@ currentGameState = gameStates.gameOver:
 currentGameState = gameStates.gamerunning:
 ```
 
-<!------------------------------------------------------------------------------------------------>
-<!------------- 153. Game Over Screen, asking to press space to start again. (2xx) --------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~ 153. Game Over Screen, asking to press space to start again. (2xx) ~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image153.webp"
   style="width:4.78125in;height:4.79167in"
@@ -12462,10 +12359,9 @@ and changes the current game-state to GameOver:
 
 </details>
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-7-2">2.7.2 Splitting the game into several JS files</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 JSBin is a great tool for sharing code, for experimenting, etc. But as
 soon as the size of your project increases, you'll find that the tool is
 not suited for developing large systems. 
@@ -12535,9 +12431,8 @@ file called game.js, and locate it in a subdirectory js under the
 directory where the game.html file is located. Similarly, we'll keep the
 CSS file in a css subdirectory:
 
-<!------------------------------------------------------------------------------------------------>
-<!------------------------------------ 154. game.html (280) -------------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 154. game.html (280) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image154.webp"
   style="width:1.98958in;height:2.29167in"
@@ -12587,10 +12482,8 @@ the draw method, otherwise it won't be recognized... 
 
 Just for fun, let's try the game without fixing this, and look at the
 devtools console:
-
-<!------------------------------------------------------------------------------------------------>
-<!---------------- 155. function calcdisktomove error not found in ball.js (279) ----------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~ 155. function calcdisktomove error not found in ball.js (279) ~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image155.webp"
   style="width:6.08333in;height:5.375in"
@@ -12683,10 +12576,8 @@ moved into the initFPS function we created and added into the fps.js file.
 </details>
 
 At this stage, the structure looks like this:
-
-<!------------------------------------------------------------------------------------------------>
-<!---------------------------------- 156. game structure (266) ----------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 156. game structure (266) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image156.webp"
   style="width:1.625in;height:2.25in"
@@ -12762,9 +12653,8 @@ during the course, could be put into this file as well.
 
 After all that, we reach this tidy structure:
 
-<!------------------------------------------------------------------------------------------------>
-<!-------------------------- 157. final game structure in files (268) ---------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 157. final game structure in files (268) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image157.webp"
   style="width:1.86458in;height:2.96875in"
@@ -12820,11 +12710,9 @@ presented in the lessons and modify them, improve the code structure,
 playability, add sounds, better graphics, more levels, etc. We like to
 give points for style and flair, but most especially because we've been
 (pleasantly) surprised!
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-7-3">2.7.3 Discussion and projects</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Here is the discussion forum for this part of the course. Please either
 post your comments/observations/questions or share your creations.
 
@@ -12852,18 +12740,16 @@ Some of them are based on the framework presented in the course.
     game is fun and is an interesting variation on examples presented in
     the course.
 
-<!------------------------------------------------------------------------------------------------>
-<!----------------------------- 158. wanted game main screen (269) ------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 158. wanted game main screen (269) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image158.webp"
   style="width:2in;height:1.80212in"
   alt="Main screen of the game &quot;Wanted&quot;." />
 </p>
 
-<!------------------------------------------------------------------------------------------------>
-<!-------------------- 159. monster with black bombs and gold coins (269) ------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ 159. monster with black bombs and gold coins (269) ~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image159.webp"
   style="width:2.64583in;height:2.65625in"
@@ -12878,9 +12764,8 @@ Some of them are based on the framework presented in the course.
     yourself](https://courses.edx.org/assets/courseware/v1/a48a111288de4f3583b4fd9ae352cc12/asset-v1:W3Cx+HTML5.2x+2T2020a+type@asset+block/DuckHuntSpriteAndSounds.zip) (500k).
     This one started with the game framework presented in the course.
 
-<!------------------------------------------------------------------------------------------------>
-<!---------------------------- 160. duck hunt game screenshot (270) ------------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 160. duck hunt game screenshot (270) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image160.webp"
   style="width:4in;height:2.82873in"
@@ -12891,9 +12776,8 @@ Some of them are based on the framework presented in the course.
     site](https://github.com/MaxChazarra/MIAGE-Jeu-JS/tree/5e78fa85d257b81116fd784460848172040b3b71)).
     This one started with the game framework presented in the course:
 
-<!------------------------------------------------------------------------------------------------>
-<!--------------------------- 161. shoot em up game screenshot (270) ----------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 161. shoot em up game screenshot (270) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image161.webp"
   style="width:4in;height:3.88192in"
@@ -12905,9 +12789,8 @@ Some of them are based on the framework presented in the course.
     sources](https://courses.edx.org/assets/courseware/v1/b3fc2d6c5c519aaa5986f58e064a6426/asset-v1:W3Cx+HTML5.2x+2T2020a+type@asset+block/Tetris.rar) (author
     Maxime Demetrio)
 
-<!------------------------------------------------------------------------------------------------>
-<!----------------------------- 162. gameboy tetris in html5 (271) ------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 162. gameboy tetris in html5 (271) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image162.webp"
   style="width:3.125in;height:2.83333in"
@@ -12919,19 +12802,16 @@ Some of them are based on the framework presented in the course.
     point. [Sources available
     here.](https://courses.edx.org/assets/courseware/v1/19ecac62725b07966804bb28031f0fba/asset-v1:W3Cx+HTML5.2x+2T2020a+type@asset+block/snna.zip)
 
-<!------------------------------------------------------------------------------------------------>
-<!-------------------------------- 163. kill the ninja game (271) -------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 163. kill the ninja game (271) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image163.webp"
   style="width:4in;height:2.34815in"
   alt="A &quot;kill the ninja&quot; game." />
 </p>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch3">Module 3. HTML5 File Upload and Download</h2>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Hi. This week, we will talk about the new version of Ajax called XHR2
 for XMLHttpRequest Level 2 that plays an important role in today's
 modern complex Web apps.
@@ -12954,14 +12834,10 @@ examples will be provided that will help you create, research, update
 and delete data in that database.
 
 We encourage you to use IndexedDB for saving and restoring the high
-scores
-
-in the small game you have certainly wrote during week 2. Enjoy!
-
-<!------------------------------------------------------------------------------------------------>
+scores in the small game you have certainly wrote during week 2. Enjoy!
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-2-1">3.2.1 Ajax and XHR2</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 We present below a short history of Ajax: an introduction to
 XMLHttpRequest level 2 (XHR2).
 
@@ -13004,10 +12880,9 @@ progress.
 The current support of XHR2 is excellent: see [related CanIUse's browser
 compatibility table](https://caniuse.com/#feat=xhr2).
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-2-2">3.2.2 Ajax/XHR2 and binary files</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Hi everyone! In this lesson, I will present you how we can manage file 
 uploads and file downloads with nice visualization of the progression.
 
@@ -13165,13 +13040,13 @@ JSBin](https://jsbin.com/mecakaz/edit?html,js,console,output):
 In this example, instead of reading the file from disk, we download it
 using XHR2.
 
-<!------------------------------------------------------------------------------------------------>
-<!----------------------------- 164. download file using xhr2 (277) ------------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 164. download file using xhr2 (277) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image164.webp"
   style="width:5in;height:2.48451in"
-  alt="Downloading file with Xhr2" />
+  title="Downloading file with Xhr2"
+  alt="Downloading file with Xhr2." />
 </p>
 
 <b>Complete source code:</b>
@@ -13283,13 +13158,12 @@ using XHR2.
     connects it to the speakers (<i>line 35</i>), and then plays it.
 
 <h4>Monitoring uploads or downloads using a progress event</h4>
-
-<!------------------------------------------------------------------------------------------------>
-<!-------------------------------- 165. download progress (281) ---------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 165. download progress (281) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image165.webp"
   style="width:4.41667in;height:0.79167in"
+  title="Downloading progression using a progress element"
   alt="Downloading progression using a progress element." />
 </p>
 
@@ -13415,46 +13289,36 @@ For example, with a file that is 10,000 bytes long, if the current
 number of bytes downloaded is 1000, then &lt;progress value=1000
 max=10000&gt; will look like this:
 
-<!------------------------------------------------------------------------------------------------>
-<!-------------------------- 166. progress value 1000, max 10000 (280) --------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 166. progress value 1000, max 10000 (280) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image166.webp?raw=true"
   width="35%"
+  title="Progress bar at 10 percent, 1000/10000"
   alt="Progress bar at 10 percent, 1000/10000." />
 </p>
-<!-------
-style="width:2.66667in;height:0.57292in" alt="progress bar 10%" />
---------->
 
-And a current download of 2000 bytes will define <progress value=2000
-max=10000> and will look like this:
+And a current download of 2000 bytes will define &lt;progress value=2000
+max=10000&gt; and will look like this:
 
-<!------------------------------------------------------------------------------------------------>
-<!---------------------------- 167. progress bar at 20 percent (280) ----------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 167. progress bar at 20 percent (280) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image167.webp?raw=true"
   width="35%"
+  title="Progress bar 20 percent, 2000/10000"
   alt="Progress bar 20 percent, 2000/10000." />
 </p>
-<!---------
-style="width:2.66667in;height:0.5in"
------------>
 
 <h4>Complete example: monitoring the download of a song file</h4>
-
-<!------------------------------------------------------------------------------------------------>
-<!----------------------- 168. monitoring download of a song file (280) -------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 168. monitoring download of a song file (280) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image168.webp?raw=true"
   width="35%"
+  title="Monitoring download of a song file"
   alt="Monitoring download of a song file." />
 </p>
-<!---------
-style="width:5in;height:1.11271in"
----------->
 
 This is a variant of the previous example that uses the progress event
 and a &lt;progress&gt; HTML5 element to display an animated progression bar
@@ -13463,10 +13327,9 @@ while the download is going on.
 [Try it on JSBin](https://jsbin.com/nuxanaf/edit?html,output) - look at
 the code, which includes the previous source code extract.
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-2-3">3.2.3 Uploading files and monitoring progress</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 We saw how to download files. Let's see now how we can upload files!
 
 Uploading a file means sending it to a remote server. In this example,
@@ -13543,17 +13406,14 @@ lecture.
 
 [Try the example on JSBin](https://jsbin.com/pidusap/edit):
 
-<!------------------------------------------------------------------------------------------------>
-<!------------------------------ 169. file update example 1 (282) -------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 169. file update example 1 (282) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image169.webp?raw=true"
-   width="35%"
-   alt="File upload example 1." />
+  width="35%"
+  title="File upload example 1"
+  alt="File upload example 1." />
 </p>
-<!------------
-style="width:3.96875in;height:2.21875in" alt="file upload example 1" />
-------------->
 
 <h4>Source code of the example:</h4>
 
@@ -13628,17 +13488,14 @@ that used for monitoring file downloads:
     number of bytes that have been uploaded, and to the total number of
     bytes we need to upload (i.e., the file size).
 
-<!------------------------------------------------------------------------------------------------>
-<!-------------------------- 170. file upload with progress bar (283) ---------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 170. file upload with progress bar (283) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image170.webp?raw=true"
-   width="55%"
-   alt="File upload with progress bar." />
+  width="55%"
+  title="File upload with progress bar"
+  alt="File upload with progress bar." />
 </p>
-<!------------
-style="width:3.89583in;height:1.28125in"
-------------->
 
 Here is the code of such an event listener:
 
@@ -13706,10 +13563,9 @@ The only difference between these two worked-examples is
 the onprogress listener which updates the progress
 bar's value and max attributes. 
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-2-4">3.2.4 Discussion and projects</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Here is the discussion forum for this part of the course. Please either
 post your comments/observations/questions or share your creations.
 
@@ -13741,10 +13597,9 @@ post your comments/observations/questions or share your creations.
     1), but this time with a progress bar. This could be useful for a
     game, or for a Web app that needs to load resources before starting.
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-3-1">3.3.1 Introduction</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 From [the W3C HTML 5.1
 specification](https://www.w3.org/TR/html51/editing.html#dnd): <i>"the
 drag and drop API defines an event-based drag-and-drop mechanism, it
@@ -13770,10 +13625,9 @@ the particular case of drag and dropping files.
 -   Nice [shopping cart
     demo](https://nettutsplus.s3.amazonaws.com/64_html5dragdrop/demo/index.html).
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-3-2">3.3.2 Drag detection</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Hi! Welcome to the drag and drop lesson. So, the first thing is that
 before looking at examples is that
 
@@ -13884,17 +13738,14 @@ drag one of the list items) or [play with it at
 CodePen](https://codepen.io/w3devcampus/pen/MaWKZb).
 
 <h4>Screenshot:</h4>
-<!------------------------------------------------------------------------------------------------>
-<!--------------------------- 171. drag and drop list example (292) ------------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 171. drag and drop list example (292) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image171.webp?raw=true"
-   width="65%"
-   alt="Drag 'n drop fruits." />
+  width="65%"
+  title="Drag 'n drop list example: fruits"
+  alt="Drag 'n drop list example: fruits." />
 </p>
-<!-----------
-style="width:5in;height:1.60844in"
-------------->
 
 <h4>Complete code from the example:</h4>
 
@@ -13928,11 +13779,9 @@ style="width:5in;height:1.60844in"
 
 In this script, the event handler will only display an alert showing the
 name of the target element that launched the event. 
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-3-3">3.3.3 Drop detection</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Let's continue to develop the example. We show how to drag an element
 and detect a drop, receiving a value which corresponds to the dragged
 element. Then we change the page content accordingly.
@@ -14011,17 +13860,13 @@ element that has been dropped (we get this from the clipboard at <i>lines
 
 <h4>Complete example</h4>
 
-<!------------------------------------------------------------------------------------------------>
-<!------------------------------- 172. drag 'n drop fruite (294) --------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 172. drag 'n drop fruite (294) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image172.webp?raw=true"
    width="65%"
    alt="Drag 'n drop fruits." />
 </p>
-<!---------
-style="width:3.90625in;height:3.22917in" alt="drag n drop fruits" />
------------>
 
 Try it in your browser below or [play with it at CodePen](https://codepen.io/w3devcampus/pen/YyzWKy?editors=110):</h4>
 
@@ -14138,10 +13983,9 @@ online example):
 
 </details>
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-3-4">3.3.4 A few words about data-* attributes</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Microdata is a powerful way to add structured data into HTML code, but
 HTML5 has also added the possibility of adding arbitrary data to an HTML
 element. For example, adding an attribute to specify the name of the
@@ -14184,17 +14028,13 @@ of any HTML element.
 Here is <a href="https://jsbin.com/yowimebawo/edit?html,css,js,output">an online at
 JsBin</a> example:
 
-<!------------------------------------------------------------------------------------------------>
-<!---------------------------- 173. using css attr() function (297) ------------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 173. using css attr() function (297) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image173.webp?raw=true"
   width="65%"
   alt="Data attribute using dataset property." />
 </p>
-<!--
-style="width:5in;height:0.80556in"
---->
 
 In this example, when you click on the sentence that starts with "John
 Says", the end of the sentence changes, and the values displayed
@@ -14253,13 +14093,11 @@ JavaScript code and accessed from a CSS rule using the attr() CSS function.
 Try [the online example at JsBin](https://jsbin.com/alunuk/6/edit). 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 174. using css attr() function (298) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image174.webp?raw=true"
   width="35%"
   alt="Using CSS attr() function." />
 </p>
-<!-- style="width:3.17708in;height:0.85417in" -->
 
 <h4>HTML code from this example:</h4>
 
@@ -14396,13 +14234,11 @@ further down the page (it includes, in addition, visual feedback on the
 drop zone):
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 175. css drag operation (301) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image175.webp?raw=true"
   width="65%"
   alt="Drag 'n drop css style and operation." />
 </p>
-<!-- style="width:5in;height:2.57746in" -->
 
 <h4>Source code extract:</h4>
 
@@ -14598,7 +14434,6 @@ in the previous example, a "copy" cursor like the one below would be
 appropriate:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 176. copy cursor image (304) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image176.webp?raw=true"
   width="25%"
@@ -14609,36 +14444,30 @@ appropriate:
 If you are "moving" objects, this style of cursor would be appropriate:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 177. moving object image (304) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image177.webp?raw=true"
    width="25%"
    alt="Moving object cursor image." />
 </p>
-<!-- style="width:2.58333in;height:0.88542in" -->
 
 And if you are making a "link" or a "shortcut", a cursor would be
 looking like this:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 178. link or shortcut image (305) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image178.webp?raw=true"
    width="25%"
    alt="Link or shortcut, cursor image." />
 </p>
-<!-- style="width:2.65625in;height:0.9375in" -->
 
 Alternatively, you could use any custom image/icon you like:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~ 179. dropeffect & effectallowed custom image icons (305) ~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image179.webp?raw=true"
    width="65%"
    alt="Drop effect with image." />
 </p>
-<!-- style="width:5.13542in;height:4.35417in" alt="drop effect with image" /> -->
 
 To give this visual feedback, we use
 the effectAllowed and dropEffect properties of the dataTransfer object.
@@ -14814,13 +14643,11 @@ one &lt;img&gt; from its initial position to another location in the page).
 <h3 id="ch3-3-8">3.3.8 Drag and drop a text selection</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ 180. drag and drop text selection (309) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image180.webp?raw=true"
    width="65%"
    alt="Drag and drop a text selection." />
 </p>
-<!-- style="width:5in;height:1.75374in" /> -->
 
 <b>There is no need to add a dragstart handler on an element that
 contains text.</b> Any selected text is automatically added to the
@@ -15113,7 +14940,6 @@ them. That's all. Bye, bye!
 <h4>Example: drag and drop files to a drop zone, display file details in a list</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 181. drag and drop example (315) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image181.webp?raw=true"
    width="65%"
@@ -15255,7 +15081,6 @@ select one or more images -- and you should see image thumbnails
 displayed in the open space beneath it:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 182. choose multiple files (316) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image182.webp"
   width="65%"
@@ -15321,7 +15146,6 @@ HTML of this example.
 <h4>Complete example of drag and drop + thumbnails of images
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~ 183. image drag n drop with thumbnails (317) ~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image183.webp"
   width="65%"
@@ -15473,7 +15297,6 @@ drag and dropping them, like in the screenshot below (the interactive
 example is a bit further down the page):
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ 184. file and directory chooser (321) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image184.webp"
   width="65%"
@@ -15707,7 +15530,6 @@ CodePen. We are using a fake remote server and it cancels the connection
 as soon as we try to connect):
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~ 185. drag 'n drop and progress element (326) ~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image185.webp?raw=true"
   width="45%"
@@ -15893,15 +15715,11 @@ drops files, they will start being uploaded immediately. However,  the
 form will only be sent when all the fields are valid. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ 186. uploading files using xhr2 (330) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image186.webp"
   width="65%"
   alt="Uploading files using Xhr2, drag 'n drop with progress bar." />
 </p>
-<!---
-style="width:6.5in;height:3.98264in"
---->
 
 This approach is similar to Gmail's behavior when you compose a message
 and add an attachment. The attachments are uploaded as soon as they are
@@ -15926,7 +15744,6 @@ with each of the examples.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 187. second approach (331) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image187.webp"
   width="65%"
@@ -15994,7 +15811,6 @@ more difficult to follow.
 Example using a file selector (&lt;input type="file"&gt;):
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 188. example 1 auto file upload (332) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image188.webp"
   width="55%"
@@ -16026,7 +15842,6 @@ JSBin](https://jsbin.com/qijoza/edit?html,css,js,output) and look at the
 source code - there are plenty of comments.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 189. example 2 of file upload (333) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image189.webp"
   width="65%"
@@ -16064,7 +15879,6 @@ source code - there are plenty of comments.
 20. }
 21. 
 22. $fn = (isset($_SERVER['HTTP_X_FILENAME']) ?
-
 23.              $_SERVER['HTTP_X_FILENAME'] : false);
 24. 
 25. if ($fn) {
@@ -16112,16 +15926,12 @@ You can [try this example at
 JSBin](https://jsbin.com/quzohi/edit?html,css,js,output), and look at
 the source code and comments for details.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!---------------------------- 190. example 3 of file uploads (335) ------------------------------>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 190. example 3 of file uploads (335) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image190.webp"
   width="65%"
   alt="Example 3 of file uploads." />
 </p>
-<!---
-style="width:6.07292in;height:2.17708in"
---->
 
 <h4>Example #4: uploading using drag and drop</h4>
 
@@ -16129,14 +15939,12 @@ style="width:6.07292in;height:2.17708in"
 JSBin](https://jsbin.com/xonemow/edit?html,css,output) and look at
 source code and comments.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------ 191. example 4 using drag n drop files (335) -------------------------->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 191. example 4 using drag n drop files (335) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/webp/image191.webp"
   width="65%"
   alt="Example 4 using drag 'n drop files." />
 </p>
-<!-- style="width:5.38542in;height:3.71875in" -->
 
 <h4>PHP code for the single-packaged examples (with and without drag and drop, the PHP is the same)</h4>
 
@@ -20754,7 +20562,7 @@ your comments/observations/questions and share your creations.
 <!-- style="width:4in;height:2.55983in" -->
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch4-4-1">4.4.1 The Orientation API</h3>
+<h3 id="ch4-4-1">4.4.1 The Orientation and Device Motion API</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 This section covers the <a href="https://www.w3.org/TR/screen-orientation/">HTML5 orientation API</a>: a way to use angle
 measures provided by accelerometers from mobile devices or laptops such
@@ -20910,7 +20718,6 @@ alt="Rotation about y axis." /></td>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-4-3">4.4.3 Get different angles</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <h4>Typical use using the JavaScript HTML5 orientation API</h4>
 
 The use of this API is very straightforward:
@@ -21731,7 +21538,6 @@ your comments/observations/questions and share your creations.
        Motion APIs (apart from games)?</li>
 </ul>
 
-<h4>Optional projects:</h4>
 <ul>
   <li><a href="https://mainline.i3s.unice.fr/mooc/SkywardBound/">The Christmas
     game</a> developed by students from the previous run is a perfect candidate to be
@@ -21741,11 +21547,6 @@ your comments/observations/questions and share your creations.
     orientation API, so that it avoids the balls - see the last example
     from Module 2 of the course!</li>
 </ul>
-<!--
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~ xx.  (##) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
--->
 
 <h5>the end...</h5>
 
