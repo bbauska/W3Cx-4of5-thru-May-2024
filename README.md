@@ -11,8 +11,8 @@ w3cx-4of5-html5.2x: Coursera - Front-End Web Development - Apps and Games
 <p align="center">
   <img src="./images/webp/w3cx-logo.webp?raw=true"
   style="border: 2px; solid #000000; width:200px;"
-  title="W3C logo"
-  alt="W3C logo." />
+  title="W3Cx logo"
+  alt="W3Cx logo." />
 </p>
 
 <h3 align="center">W3Cx-4of5-HTML5.2x - Apps and Games</h3>
@@ -78,27 +78,26 @@ one of the many proposed optional projects, to be found at the end of
 each section. Remember that if you are not comfortable with JavaScript,
 no worries. Just start creating from one of the provided examples or
 follow our <a href="https://www.edx.org/course/javascript-introduction">JavaScript
-Introduction</a> course.
-And most of all, have fun!
+Introduction</a> course. And most of all, have fun!
+
 <ul>
-<li>Play with audio and video in "<b>Module 1</b>: Advanced HTML5
-    multimedia".</li>
-<li>Start programming an HTML5-based game of your own in <b>Module 2</b>!
+  <li>Play with audio and video in "<b>Module 1</b>: Advanced HTML5 multimedia".</li>
+  <li>Start programming an HTML5-based game of your own in <b>Module 2</b>!
     Learn the core techniques for writing 2D video games that run at 60
     frames/s. Discover basic game development concepts, set up a single
     game framework, understand time-based animation, animate multiple
     objects, use sprite sheets, detect collisions, deal with gamepad
     events, and many more.</li>
-<li><b>Module 3</b> is about drag and drop, upload/download files with
+  <li><b>Module 3</b> is about drag and drop, upload/download files with
     Ajax/XHR2 and IndexedDB. The Indexed Database API is a recommended
     standard interface for a local database of records holding simple
     values and hierarchical objects. Note that IndexedDB is also useful
     for storing your HTML5 game scores!</li>
-<li>This is the last set of lectures! <b>Module 4</b> gives a lot of space
+  <li>This is the last set of lectures! <b>Module 4</b> gives a lot of space
     to Web components as they help build Web pages using ready to use
     standardized building blocks. Web components comprise Custom
     Elements, Shadow DOM and HTML Imports and Templates.</li>
-<li>These specifications are under continuous development at W3C.</li>
+  <li>These specifications are under continuous development at W3C.</li>
 </ul>
 
 This module also gives you a flavor of other HTML5 APIs such as the
@@ -106,29 +105,31 @@ Orientation API which is useful for monitoring and controlling games and
 other activities; and Web Workers which introduce the power of parallel
 processing to Web apps.
 
-This HTML5 Apps and Games course is part of the <a href="https://www.edx.org/professional-certificate/w3cx-front-end-web-developer">Front-End Web
-Developer" (FEWD) Professional
-Certificate</a> program.
-To get this FEWD certificate, you will need to successfully pass all 5
-courses that compose that program. Find out more
-on <a href="https://w3cx.org/">w3cx.org</a>!
+This HTML5 Apps and Games course is part of the 
+<a href="https://www.edx.org/professional-certificate/w3cx-front-end-web-developer">
+Front-End Web Developer" (FEWD) Professional Certificate</a> program.
+To get this FEWD certificate, you will need to successfully pass all 5 courses that 
+compose that program. Find out more on <a href="https://w3cx.org/">w3cx.org</a>!
 
 If you already have a verified certificate in one or more of these
 courses, you <i>do NOT need to re-take that course</i>.
 
 <h4>Additional information:</h4>
 <ul>
-<li>If you are new to the edX platform, we encourage you to (<b><a href="https://www.edx.org/course/demox">check
-    out DemoX</a></b>], a quick walk-through of an edX experience. It will help answer basic “how
-    to's” on taking an edX course.</li>
-<li>As an alternative, do not hesitate to browse the <b><a href="https://support.edx.org/hc/en-us/categories/115002269607-Courses"> courses' FAQs
-    in edX Help Center</a></b>.</li>
+  <li>If you are new to the edX platform, we encourage you to (<b>
+    <a href="https://www.edx.org/course/demox">check out DemoX</a></b>], a quick walk-
+	through of an edX experience. It will help answer basic “how to's” on taking an edX 
+	course.</li>
+  <li>As an alternative, do not hesitate to browse the <b>
+    <a href="https://support.edx.org/hc/en-us/categories/115002269607-Courses">
+	courses' FAQs in edX Help Center</a></b>.</li>
 </ul>
 
 <h3>Welcome!</h3>
 
-This course is one of the courses composing the <a href="https://www.edx.org/professional-certificate/front-end-web-developer-9">"Front-End Web
-Developer”</a>
+This course is one of the courses composing the 
+<a href="https://www.edx.org/professional-certificate/front-end-web-developer-9">
+"Front-End Web Developer”</a>
 
 <h4>Professional Certificate program.</h4>
 
@@ -142,7 +143,7 @@ JavaScript, to create your own HTML5 app and/or game.
   <li>More APIs, including Web Workers and Service Workers</li>
   <li>Web components</li>
   <li>Persistence techniques for data storage including IndexedDB, File
-      System API and Drag and Drop</li>
+    System API and Drag and Drop</li>
 </ul>
 
 <h3>Web Browsers and Editors</h3>
@@ -168,10 +169,8 @@ code. Most common browsers are 
 [Safari](http://www.apple.com/safari/),
 etc.
 
-Look for the [history of Web
-browsers](https://en.wikipedia.org/wiki/Web_browser#History) (on Wikipedia). An 
-interesting resource is the [market and platform market share]
-(https://www.w3counter.com/globalstats.php) (updated regularly).
+Look for the [history of Web browsers](https://en.wikipedia.org/wiki/Web_browser#History) (on Wikipedia). An 
+interesting resource is the [market and platform market share](https://www.w3counter.com/globalstats.php) (updated regularly).
 
 <h4>Web editors</h4>
 
@@ -21552,3 +21551,4 @@ your comments/observations/questions and share your creations.
 
 <h6>Last Updated: 8-30-2023 8:59pm</h6>
 <h6>Last Updated: 9-15-2023 9:08pm</h6>
+<h6>Last Updated: 10-05-2024 11:16am</h6>
