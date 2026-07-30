@@ -18818,53 +18818,54 @@ Online example at JsBin</a>.</p>
     &lt;div id=&quot;tiltFB&quot;&gt;&lt;/div&gt;
     &lt;div id=&quot;tiltLR&quot;&gt;&lt;/div&gt;
     &lt;div id=&quot;upDown&quot;&gt;&lt;/div&gt;
-  &lt;img src=&quot;https://www.html5rocks.com/en/tutorials/device/orientation/html5_logo.png&quot; id=&quot;imgLogo&quot; class=&quot;logo&quot;&gt;
+    &lt;img src=&quot;https://www.html5rocks.com/en/tutorials/device/orientation/html5_logo.png&quot; 
+      id=&quot;imgLogo&quot; class=&quot;logo&quot;&gt;
       &lt;script type=&quot;text/javascript&quot;&gt;
-         if (window.DeviceMotionEvent != undefined) {
-         console.log(&quot;DeviceMotion is supported&quot;);
-         window.addEventListener(&#39;devicemotion&#39;, function(eventData) {
-            // Grab the acceleration including gravity from the results
-            var acceleration = eventData.accelerationIncludingGravity;
-            // Display the raw acceleration data
-            var rawAcceleration = &quot;[&quot; + Math.round(acceleration.x) 
-              + &quot;, &quot; + Math.round(acceleration.y) 
-              + &quot;, &quot; + Math.round(acceleration.z) + &quot;]&quot;;
-            // Z is the acceleration in the Z axis, and if the device
-            // is facing up or down
-            var facingUp = -1;
-            if (acceleration.z &gt; 0) {
-               facingUp = +1;
-            }
-            // Convert the value from acceleration to degrees
-            // acceleration.x|y is the acceleration according to gravity,
-            //  we&#39;ll assume we&#39;re on Earth and divide
-            // by 9.81 (earth gravity) to get a percentage value,  
-            // and then multiply that by 90 to convert to degrees.
-            var tiltLR = Math.round(((acceleration.x) / 9.81) * -90);
-            var tiltFB = Math.round(((acceleration.y + 9.81) / 9.81) * 90 * facingUp);
-            document.querySelector(&quot;#rawAccel&quot;).innerHTML = 
-              &quot;Raw acceleration&quot; + rawAcceleration;
-            document.querySelector(&quot;#tiltFB&quot;).innerHTML = 
-              &quot;Tilt front/back : &quot; + tiltFB;
-            document.querySelector(&quot;#tiltLR&quot;).innerHTML = 
-              &quot;Tilt left/right : &quot; + tiltLR;
-            document.querySelector(&quot;#upDown&quot;).innerHTML = 
-              &quot;Face Up:Down : &quot; + facingUp;
-            updateLogoOrientation(tiltLR, tiltFB);
-         }, false);
+        if (window.DeviceMotionEvent != undefined) {
+        console.log(&quot;DeviceMotion is supported&quot;);
+        window.addEventListener(&#39;devicemotion&#39;, function(eventData) {
+          // Grab the acceleration including gravity from the results
+          var acceleration = eventData.accelerationIncludingGravity;
+          // Display the raw acceleration data
+          var rawAcceleration = &quot;[&quot; + Math.round(acceleration.x) 
+            + &quot;, &quot; + Math.round(acceleration.y) 
+            + &quot;, &quot; + Math.round(acceleration.z) + &quot;]&quot;;
+          // Z is the acceleration in the Z axis, and if the device
+          // is facing up or down
+          var facingUp = -1;
+          if (acceleration.z &gt; 0) {
+            facingUp = +1;
+          }
+          // Convert the value from acceleration to degrees
+          // acceleration.x|y is the acceleration according to gravity,
+          //  we&#39;ll assume we&#39;re on Earth and divide
+          // by 9.81 (earth gravity) to get a percentage value,  
+          // and then multiply that by 90 to convert to degrees.
+          var tiltLR = Math.round(((acceleration.x) / 9.81) * -90);
+          var tiltFB = Math.round(((acceleration.y + 9.81) / 9.81) * 90 * facingUp);
+          document.querySelector(&quot;#rawAccel&quot;).innerHTML = 
+            &quot;Raw acceleration&quot; + rawAcceleration;
+          document.querySelector(&quot;#tiltFB&quot;).innerHTML = 
+            &quot;Tilt front/back : &quot; + tiltFB;
+          document.querySelector(&quot;#tiltLR&quot;).innerHTML = 
+            &quot;Tilt left/right : &quot; + tiltLR;
+          document.querySelector(&quot;#upDown&quot;).innerHTML = 
+            &quot;Face Up:Down : &quot; + facingUp;
+          updateLogoOrientation(tiltLR, tiltFB);
+        }, false);
       } else {
         alert(&quot;Not supported on your device or browser. Sorry.&quot;);
       }
       function updateLogoOrientation(tiltLR, tiltFB) {
-         // USE CSS3 rotations for rotating the HTML5 logo
-         //for webkit browser
-         document.getElementById(&quot;imgLogo&quot;).style.webkitTransform = 
-           &quot;rotate(&quot; + tiltLR + &quot;deg) 
-           rotate3d(1,0,0, &quot; + (tiltFB * -1) + &quot;deg)&quot;;
-         //for HTML5 standard-compliance
-         document.getElementById(&quot;imgLogo&quot;).style.transform =
-         &quot;rotate(&quot; + tiltLR + &quot;deg) 
-           rotate3d(1,0,0, &quot; + (tiltFB * -1) + &quot;deg)&quot;;
+        // USE CSS3 rotations for rotating the HTML5 logo
+        //for webkit browser
+        document.getElementById(&quot;imgLogo&quot;).style.webkitTransform = 
+          &quot;rotate(&quot; + tiltLR + &quot;deg) 
+          rotate3d(1,0,0, &quot; + (tiltFB * -1) + &quot;deg)&quot;;
+        //for HTML5 standard-compliance
+        document.getElementById(&quot;imgLogo&quot;).style.transform =
+        &quot;rotate(&quot; + tiltLR + &quot;deg) 
+          rotate3d(1,0,0, &quot; + (tiltFB * -1) + &quot;deg)&quot;;
       }
    &lt;/script&gt;
   &lt;/body&gt;
@@ -19101,7 +19102,9 @@ target="_blank" rel="noopener noreferrer">use this URL instead</a>!</p>
   &lt;div id=&quot;ball&quot;&gt;&lt;/div&gt;
   &lt;/div&gt;
   spec: 
-  &lt;a href=&quot;https://w3c.github.io/deviceorientation/spec-source-orientation.html&quot; target=&quot;https://w3c.github.io/deviceorientation/spec-source-orientation.html&quot;&gt;https://w3c.github.io/deviceorientation/spec-source-orientation.html&lt;/a&gt;
+  &lt;a href=&quot;https://w3c.github.io/deviceorientation/spec-source-orientation.html&quot; 
+  target=&quot;https://w3c.github.io/deviceorientation/spec-source-orientation.html&quot;&gt;https:
+  //w3c.github.io/deviceorientation/spec-source-orientation.html&lt;/a&gt;
   &lt;/body&gt;
 &lt;/html&gt;</pre>
 
@@ -19177,6 +19180,7 @@ questions and share your creations.</p>
 	  <td>01-13-2026 Tue 9:07am</td>
 	  <td>01-14-2026 Wed 10:31pm</td>
 	  <td>02-18-2026 Wed 2:05pm</td>
+	  <td>07-29-2026 Wed 10:16pm</td>
 	</tr>
   </table>
   <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
